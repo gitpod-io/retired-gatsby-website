@@ -67,6 +67,10 @@ Check the table below for an overview of the different starting scenarios.
 | Restart Workspace | `before && command` |
 | Snapshot | `before && command` |
 
+### `prebuild` command
+The optional `prebuild` command will be executed during [prebuilds](./46_Prebuilds.md). It is meant to run additional
+long running processes that could be useful, e.g. running test suites.
+
 ### Configuring the Terminal
 
 A task allows to configure where and how the terminal should open using the properties below.
