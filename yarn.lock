@@ -9029,6 +9029,11 @@ react-transition-group@^2.2.1:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
+react-tweet-embed@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-tweet-embed/-/react-tweet-embed-1.1.1.tgz#91243783e1068b8eadf985fbf706405b6208082e"
+  integrity sha512-aVvBiFUWjg7/OhsKN4TQNeXJrer+zqQn2vFgpCGJaNkihy7WTDxiAgru6mD7IukmggNEd1EszTsnc9NYKkm6TA==
+
 react@^16.5.2:
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.5.2.tgz#19f6b444ed139baa45609eee6dc3d318b3895d42"

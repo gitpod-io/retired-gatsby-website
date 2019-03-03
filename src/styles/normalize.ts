@@ -26,6 +26,7 @@ export default `
     background-color: ${colors.background1};
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    padding: 0;
   }
 
   a {
@@ -100,7 +101,7 @@ export default `
   h2 {
     font-size: ${dimensions.headingSizes.h2}rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
   }
 
   h3 {
@@ -117,7 +118,8 @@ export default `
   }
 
   strong {
-    color: ${colors.fontColor1};
+    color: #fff;
+    font-weight: 600;
   }
 
   ul,
@@ -143,11 +145,28 @@ export default `
   }
 
   button {
+    margin: 10px 0px;
     padding: 8px 14px;
     border-radius: 3px;
+    border-color: ${colors.brand};
     background-color: var(--background1);
-    color: var(--fontColor1);
+    color: ${colors.brand};
     cursor: pointer;
+  }
+
+  button:hover {
+      box-shadow: 0px 0px 7px 0.5px ${colors.brand};
+      text-shadow: 0px 0.5px ${colors.brand};
+  }
+
+  button.secondary {
+      border-color: ${colors.fontColor1};
+      color: ${colors.fontColor1};
+  }
+
+  button.secondary:hover {
+      box-shadow: 0px 0px 7px 0.5px ${colors.fontColor1};
+      text-shadow: 0px 0.5px ${colors.fontColor1};
   }
 
   blockquote {
@@ -165,6 +184,22 @@ export default `
     @media (min-width: ${getEmSize(breakpoints.md)}em) {
       padding-right: 5rem;
       padding-left: 1.25rem;
+    }
+  }
+
+  .glow {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 0px ${colors.fontColor1};
+    }
+
+    to {
+        text-shadow: 0 0px 2px #fff;
     }
   }
 `

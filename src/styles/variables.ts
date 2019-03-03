@@ -1,7 +1,7 @@
 /* tslint:disable:max-line-length */
 
 export const colors = {
-  brand: '#212121',
+  brand: '#1aa6e4',
   lilac: '#9d7cbf',
   accent: '#ffb238',
   success: '#37b635',
@@ -19,7 +19,8 @@ export const colors = {
   },
   background1: '#2a2a2a',
   background2: '#3a3a3a',
-  fontColor1: '#ddd'
+  fontColor1: '#dedede',
+  fontColor2: '#666'
 }
 
 export const fonts = {
@@ -34,24 +35,25 @@ export const breakpoints = {
   sm: 576,
   md: 768,
   lg: 992,
-  xl: 1200
+  xl: 1280
 }
 
 export const widths = {
   md: 720,
   lg: 960,
-  xl: 1140
+  xl: 1200
 }
 
 export const dimensions = {
   fontSize: {
-    regular: 12,
-    large: 14
+    regular: 14,
+    large: 16,
+    menu: 16,
   },
   headingSizes: {
-    h1: 2.2,
-    h2: 1.0,
-    h3: 1.5,
+    h1: 3.0,
+    h2: 1.8,
+    h3: 1.3,
     h4: 1.2
   },
   lineHeight: {

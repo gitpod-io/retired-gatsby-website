@@ -40,7 +40,7 @@ const HeaderRight = styled.div`
 
 const HomepageLink = styled(Link)`
   color: ${colors.fontColor1};
-  font-size: 12px;
+  font-size: ${dimensions.fontSize.menu};
   font-weight: 400;
   padding-right: 20px;
 
@@ -58,14 +58,16 @@ const Header: React.SFC<HeaderProps> = () => (
     <StyledHeader>
         <HeaderInner>
             <HeaderLeft>
-                <HomepageLink to="/" style={{ paddingRight: 60 }}><img src={logo} style={{ width: 80 }} /></HomepageLink>
+                <HomepageLink to="/" style={{ paddingRight: 60 }}><img src={logo} style={{ width: 120 }} /></HomepageLink>
                 <HomepageLink to="/features">Features</HomepageLink>
                 <HomepageLink to="/pricing">Pricing</HomepageLink>
                 <HomepageLink to="/docs">Docs</HomepageLink>
                 <HomepageLink to="/blog">Blog</HomepageLink>
             </HeaderLeft>
             <HeaderRight>
-                <HomepageLink to="/blog">Sign up</HomepageLink>
+                <a href="https://gitpod.io/api/login">
+                    <button>Log In</button>
+                </a>
             </HeaderRight>
         </HeaderInner>
     </StyledHeader>
