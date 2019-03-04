@@ -3,9 +3,8 @@ url: https://medium.com/gitpod/developing-native-ui-applications-in-gitpod-15af2
 date: Thu Oct 04 2018 12:47:53 GMT+0000 (UTC)
 author: 32leaves
 title: Developing native UI applications in Gitpod
+image: https://cdn-images-1.medium.com/max/11236/1*YaZqFJXHopwW0puvvmfEew.png
 ---
-
-# Developing native UI applications in Gitpod
 
 Gitpod is a web-based IDE. As such one would think it only works for web-based projects or anything else that does not require a native UI. However, there’s still a plethora of native UI applications around and many of them are here to stay. In this article we’ll go through how to use Gitpod for developing native desktop UI applications.
 

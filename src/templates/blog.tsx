@@ -4,37 +4,49 @@ import { graphql } from 'gatsby'
 import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
+import { colors } from '../styles/variables';
+import Logos from '../components/Logos';
 
 interface BlogTemplateProps {
-  data: {
-    site: {
-      siteMetadata: {
-        title: string
-        description: string
-        author: {
-          name: string
-          url: string
+    data: {
+        site: {
+            siteMetadata: {
+                title: string
+                description: string
+                author: {
+                    name: string
+                    url: string
+                }
+            }
         }
-      }
+        markdownRemark: {
+            html: string
+            frontmatter: {
+                title: string
+                image: string
+                date: string
+                author: string
+            }
+        }
     }
-    markdownRemark: {
-      html: string
-      excerpt: string
-      frontmatter: {
-        title: string
-      }
-    }
-  }
 }
 
 const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => (
-  <IndexLayout>
-    <Page>
-      <Container>
-        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-      </Container>
-    </Page>
-  </IndexLayout>
+    <IndexLayout>
+        <Page>
+            <Logos logos={[
+                    [80, 60, 25],
+                    [680, 90, 70],
+                    [880, 30, 120],
+                    [950, 150, 160],
+                ]} />
+            <Container>
+                <h1 style={{ margin: '50px 0px'}}>{data.markdownRemark.frontmatter.title}</h1>
+                <p style={{ color: colors.fontColor2}}>{new Date(Date.parse(data.markdownRemark.frontmatter.date)).toLocaleDateString()} by <a href={`https://github.com/${data.markdownRemark.frontmatter.author}`}>{data.markdownRemark.frontmatter.author}</a></p>
+                <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+            </Container>
+        </Page>
+    </IndexLayout>
 )
 
 export default BlogTemplate
@@ -56,6 +68,9 @@ export const query = graphql`
       excerpt
       frontmatter {
         title
+        image
+        date
+        author
       }
     }
   }

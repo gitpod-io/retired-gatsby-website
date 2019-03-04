@@ -3,9 +3,8 @@ url: https://medium.com/gitpod/code-never-lies-creating-reproducibles-for-any-pr
 date: Wed Nov 21 2018 13:34:27 GMT+0000 (UTC)
 author: svenefftinge
 title: Code never lies — Creating reproducibles for any programming language
+image: https://cdn-images-1.medium.com/max/7776/0*xIYVtetr9mExEzBd
 ---
-
-# Code never lies — Creating reproducibles for any programming language
 
 Whenever you want to share a reproducible example on StackOverflow or an issue report, providing real code that can be quickly tried, executed and explored is the best you can do. Online code playgrounds, such as CodePen or JSFiddle, are an excellent way to do that, as they are very accessible for both the creator and the readers. Unfortunately, they are not available for every programming platform, language and often don’t work for larger projects or examples.
 

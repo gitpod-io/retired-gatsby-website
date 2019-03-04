@@ -3,9 +3,8 @@ url: https://medium.com/gitpod/gitpod-october-2018-release-672c91294b40
 date: Wed Sep 26 2018 09:35:09 GMT+0000 (UTC)
 author: svenefftinge
 title: Gitpod — October 2018 Release
+image: https://cdn-images-1.medium.com/max/10944/0*TrpIB26qJjpdoAmh
 ---
-
-# Gitpod — October 2018 Release
 
 It has been a month already since we went public with Gitpod.io. We want to take a moment and send out a big thank you for all the great feedback and kind words! ❤️
 

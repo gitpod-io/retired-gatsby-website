@@ -8,6 +8,7 @@ import StarGraph from '../components/StarGraph';
 import 'react-modal-video/css/modal-video.min.css'
 import { graphql } from 'gatsby';
 import GatsbyLink from 'gatsby-link';
+import { colors } from '../styles/variables';
 
 interface BlogPageProps {
     data: {
@@ -30,6 +31,9 @@ interface BlogData {
         },
         frontmatter: {
             title: string
+            image: string
+            date: string
+            author: string
         }
     }
 }
@@ -38,6 +42,9 @@ interface BlogData {
 export default class BlogPage extends React.Component<BlogPageProps, {}> {
 
     render() {
+
+        const blogs = this.props.data.allMarkdownRemark.edges.sort((a,b) =>
+            Date.parse(b.node.frontmatter.date) - Date.parse(a.node.frontmatter.date));
         return <IndexLayout>
             <Page>
                 <Logos logos={[
@@ -49,12 +56,12 @@ export default class BlogPage extends React.Component<BlogPageProps, {}> {
                 <StarGraph graphs={[
                 ]} />
                 <Container>
-                    <div style={{ height: 380, marginTop: 60 }}>
+                    <div style={{ marginTop: 30 }}>
                         <h1>Blog</h1>
-                        <div>
-                            {this.props.data.allMarkdownRemark.edges.map( e => {
+                        <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
+                            {blogs.map( e => {
                                 return <div key={e.node.fields.slug}>
-                                    <GatsbyLink to={e.node.fields.slug}>{e.node.frontmatter.title}</GatsbyLink>
+                                    <BlogPreview blog={e}/>
                                 </div>
                             })}
                         </div>
@@ -62,6 +69,56 @@ export default class BlogPage extends React.Component<BlogPageProps, {}> {
                 </Container>
             </Page>
         </IndexLayout>;
+    }
+}
+
+interface BlogPreviewProps {
+    blog: BlogData;
+}
+
+class BlogPreview extends React.Component<BlogPreviewProps, {}> {
+
+    render() {
+        const b = this.props.blog.node;
+        const date = new Date(Date.parse(b.frontmatter.date));
+        return <div style={{
+                marginBottom: 40,
+                height: 'auto',
+                border: 'solid 1px',
+                borderColor: colors.fontColor2,
+                width: 280,
+                display: 'flex',
+                flexDirection: 'column'}}>
+            <GatsbyLink to={b.fields.slug}>
+                <div style={{
+                            maxWidth: '100%',
+                            height: 160,
+                            backgroundImage: `url('${b.frontmatter.image}')`,
+                            backgroundOrigin: 'border-box',
+                            backgroundPositionX: '50%',
+                            backgroundPositionY: '50%',
+                            backgroundSize: 'cover'
+                        }}
+                    />
+                <div style={{
+                    color: colors.fontColor1,
+                    fontWeight: 600,
+                    fontSize: 16,
+                    padding: 10}}>
+                    {b.frontmatter.title}
+                </div>
+            </GatsbyLink>
+                <a href={`https://github.com/${b.frontmatter.author}`}>
+                <div style={{
+                    color: colors.fontColor2,
+                    padding: '0px 0px 0px 10px'}}>
+                    {date.toLocaleDateString()} by {b.frontmatter.author}
+                </div>
+                </a>
+                <div style={{ color: colors.fontColor1, padding: 10}}>
+                    {b.excerpt}
+                </div>
+        </div>;
     }
 }
 
@@ -81,10 +138,13 @@ export const query = graphql`
                 fileAbsolutePath
                 excerpt
                 headings {
-                value
+                    value
                 }
                 frontmatter {
-                title
+                    title
+                    image
+                    date
+                    author
                 }
             }
             }
