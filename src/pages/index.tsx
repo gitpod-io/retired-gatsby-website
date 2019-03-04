@@ -46,6 +46,10 @@ export default class IndexPage extends React.Component<{}, { isOpen: boolean, is
                     [760, 100, 290],
                     [600, 280, 210],
                     [-120, 460, 30],
+                    [1020, 830, 120],
+                    [1260, 2100, 200],
+                    [900, 2280, 160],
+                    [-120, 2060, 30],
                 ]} />
                 <StarGraph graphs={[
                     [
@@ -56,15 +60,27 @@ export default class IndexPage extends React.Component<{}, { isOpen: boolean, is
                     ],
                     [
                         {x:5, y:630},
-                        {x:15, y:1900},
-                        {x:480, y:2185},
-                        {x:500, y:2430},
+                        {x:5, y:1900},
                     ],
                     [
-                        {x:15, y:1900},
-                        {x:60, y:2070},
-                        {x:30, y:2310},
-                        {x:50, y:2540},
+                        {x:5, y:1900},
+                        {x:550, y:2040},
+                    ],
+                    [
+                        {x:5, y:1900},
+                        {x:550, y:2270},
+                    ],
+                    [
+                        {x:5, y:1900},
+                        {x:550, y:2490},
+                    ],
+                    [
+                        {x:5, y:1900},
+                        {x:70, y:2150},
+                    ],
+                    [
+                        {x:5, y:1900},
+                        {x:70, y:2430},
                     ],
                 ]} />
                 <Container>
@@ -123,19 +139,19 @@ export default class IndexPage extends React.Component<{}, { isOpen: boolean, is
                         marginTop: 80
                     }}>
                         <h2>What do others say?</h2>
-                        <div style={{position: 'absolute', left:40, top: 175, width: 400}}>
+                        <div style={{position: 'absolute', left:502, top: 160, width: 435}}>
                             <TweetEmbed id='1101772731203252229' options={twitterOptions}/>
                         </div>
-                        <div style={{position: 'absolute', left:20, top: 400, width: 400}}>
+                        <div style={{position: 'absolute', left:502, top: 370, width: 435}}>
                             <TweetEmbed id='1101055381386743808' options={twitterOptions}/>
                         </div>
-                        <div style={{position: 'absolute', left:30, top: 640, width: 400}}>
+                        <div style={{position: 'absolute', left:502, top: 600, width: 435}}>
                             <TweetEmbed id='1100698060831764481' options={twitterOptions}/>
                         </div>
-                        <div style={{position: 'absolute', left:470, top: 290, width: 400}}>
+                        <div style={{position: 'absolute', left:23, top: 240, width: 435}}>
                             <TweetEmbed id='1101918877443735558' options={twitterOptions}/>
                         </div>
-                        <div style={{position: 'absolute', left:480, top: 500}}>
+                        <div style={{position: 'absolute', left:23, top: 450, width: 435}}>
                             <TweetEmbed id='1101772691181207552' options={twitterOptions}/>
                         </div>
                     </div>

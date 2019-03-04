@@ -20,7 +20,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
             let slug = permalink
 
             if (!slug) {
-                slug = `/${relativePath.replace('.md', '')}/`
+                slug = `/docs/${relativePath.replace('.md', '')}/`
+            }
+            if (relativePath.endsWith('index.md')) {
+                slug = `/docs/`;
             }
 
             // Used to generate URL to view this content.
@@ -77,7 +80,7 @@ exports.createPages = async ({ graphql, actions }) => {
             // template.
             //
             // Note that the template has to exist first, or else the build will fail.
-            component: path.resolve(`./src/templates/${layout || 'page'}.tsx`),
+            component: path.resolve(`./src/templates/${layout || 'doc'}.tsx`),
             context: {
                 // Data passed to context is available in page queries as GraphQL variables.
                 slug
