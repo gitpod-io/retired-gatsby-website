@@ -1,7 +1,6 @@
 # Tips & Tricks
 
   * [Command Palette](#command-palette)
-    * [Command Palette Context](#command-palette-context)
   * [Color Themes](#color-themes)
   * [Open File](#open-file)
   * [Search in Workspace](#search-in-workspace)

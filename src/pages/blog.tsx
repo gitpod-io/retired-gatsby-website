@@ -43,7 +43,7 @@ export default class BlogPage extends React.Component<BlogPageProps, {}> {
                 <Logos logos={[
                     [80, 60, 25],
                     [280, 90, 70],
-                    [480, -30, 120],
+                    [480, 30, 120],
                     [950, 150, 160],
                 ]} />
                 <StarGraph graphs={[

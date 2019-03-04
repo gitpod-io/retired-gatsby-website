@@ -38,6 +38,9 @@ export default `
       text-decoration: underline;
     }
   }
+  a.anchor svg {
+      fill: ${colors.fontColor1};
+  }
 
   img {
     max-width: 100%;

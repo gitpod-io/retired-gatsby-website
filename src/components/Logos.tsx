@@ -1,5 +1,4 @@
 import * as React from 'react'
-import Container from './Container';
 
 import greyLogo from '../resources/Logo_Gitpod_grey.svg';
 import { clean } from '../clean-url';
@@ -9,7 +8,7 @@ interface LogosProps {
 }
 
 const Logos: React.SFC<LogosProps> = ({ logos }) => (
-    <Container>
+    <>
         {logos.map(logoPlacement => {
             const [left, top, width] = logoPlacement;
             return <img key={''+left+top+width} src={clean(greyLogo)} style={{
@@ -20,7 +19,7 @@ const Logos: React.SFC<LogosProps> = ({ logos }) => (
             }}
             />
         })}
-    </Container>
+    </>
 )
 
 export default Logos;

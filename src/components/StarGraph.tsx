@@ -10,6 +10,8 @@ export interface Position {
 
 interface StarGraphProps {
     graphs: Position[][];
+    top?: number;
+    left?: number;
     width?: number;
 }
 
@@ -25,19 +27,19 @@ function computeHeight(graphs: Position[][]) {
     return maxHeight + 10;
 }
 
-const StarGraph: React.SFC<StarGraphProps> = ({ graphs, width }) => {
-    const theWidth = width || 1200;
+const StarGraph: React.SFC<StarGraphProps> = (p) => {
+    const theWidth = p.width || 1200;
     return <Container>
-        <div style={{ position: 'absolute', left: -40, top: -50, zIndex: -1, width: theWidth+'px' }}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${theWidth} ${computeHeight(graphs)}`}>
+        <div style={{ position: 'absolute', left: p.left || -50, top: p.top || -50, zIndex: -1, width: theWidth+'px' }}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${theWidth} ${computeHeight(p.graphs)}`}>
                 <g>
                     {
-                        graphs.map(positions =>
+                        p.graphs.map(positions =>
                             <path key={`${positions}`} d={"M " + positions.map(({ x, y }) => '' + x + ',' + y).join(' ')} fill="none" stroke={colors.fontColor2} strokeWidth="1" />
                         )
                     }
                     {
-                        graphs.map(positions =>
+                        p.graphs.map(positions =>
                             positions.map(({ x, y, inactive }) => <circle key={`${x}_${y}`} r="4" transform={`translate(${x} ${y})`} fill={inactive ? colors.fontColor2 : colors.brand} />)
                         )
                     }

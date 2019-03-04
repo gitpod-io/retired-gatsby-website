@@ -8,7 +8,6 @@ If you are not logged in, you will see a _Log in_ button. Otherwise, the top-rig
 display your avatar's picture. Clicking it will reveal the User Menu.
 
   * [Workspaces](#workspaces)
-    * [Archived Workspaces](#archived-workspaces)
   * [Account Details](#account-details)
   * [Log Out](#log-out)
 

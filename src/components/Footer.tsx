@@ -14,6 +14,7 @@ const StyledFooter = styled.footer`
   background-color: ${colors.background2};
   color: ${transparentize(0.5, colors.fontColor1)};
   box-shadow: 0px 0px 160px 0px rgba(5,5,5,0.57);
+  z-index: 100;
 `
 
 const FooterInner = styled(Container)`
