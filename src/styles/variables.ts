@@ -9,7 +9,7 @@ export const colors = {
   ui: {
     bright: '#e0d6eb',
     light: '#f5f3f7',
-    whisper: '#fbfafc'
+    whisper: '#3a3a3a'
   },
   code: '#fcf6f0',
   gray: {
@@ -51,10 +51,10 @@ export const dimensions = {
     menu: 16,
   },
   headingSizes: {
-    h1: 3.0,
+    h1: 2.2,
     h2: 1.8,
-    h3: 1.3,
-    h4: 1.2
+    h3: 1.6,
+    h4: 1.5
   },
   lineHeight: {
     regular: 1.45,

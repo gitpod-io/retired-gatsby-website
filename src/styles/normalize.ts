@@ -59,7 +59,7 @@ export default `
   table {
     width: 100%;
     margin-bottom: 1rem;
-    border: 1px solid ${colors.ui.light};
+    border: 1px solid ${colors.fontColor2};
     font-size: 85%;
     border-collapse: collapse;
   }
@@ -67,11 +67,14 @@ export default `
   td,
   th {
     padding: .25rem .5rem;
-    border: 1px solid ${colors.ui.light};
   }
 
   th {
     text-align: left;
+  }
+
+  thead {
+    border: 1px solid ${colors.fontColor2};
   }
 
   tbody {
@@ -175,8 +178,9 @@ export default `
   blockquote {
     margin: .8rem 0;
     padding: .5rem 1rem;
-    border-left: .25rem solid ${colors.ui.light};
-    color: ${colors.gray.calm};
+    border-left: .25rem solid ${colors.brand};
+    color: ${colors.fontColor1};
+    background-color: ${colors.background2};
 
     p {
       &:last-child {
@@ -204,5 +208,9 @@ export default `
     to {
         text-shadow: 0 0px 2px #fff;
     }
+  }
+
+  .gatsby-highlight {
+      font-size: 12px;
   }
 `

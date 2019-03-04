@@ -36,10 +36,8 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => (
     <Page>
       <Container>
         <Logos logos={[
-                    [80, 60, 25],
-                    [280, -10, 30],
-                    [880, 130, 120],
-                    [-120, 460, 30],
+                    [-30, 60, 25],
+                    [980, 130, 120],
                     [20, 630, 70],
                     [1020, 830, 120]
                 ]} />
@@ -95,6 +93,9 @@ const DocMenu: React.SFC<DocMenuProps> = () => {
                     (m.subMenu || []).map(m =>
                         <Link key={m.path} to={`/docs/${m.path}`} style={{color: colors.fontColor2, marginLeft: 20}}>{m.title}</Link>
                     )
+                }
+                {
+                    m.subMenu ? <div style={{height:5}}/> : null
                 }
             </>
         })}
