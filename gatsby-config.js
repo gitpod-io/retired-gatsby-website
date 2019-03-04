@@ -52,10 +52,10 @@ module.exports = {
     },
     'gatsby-transformer-json',
     {
-      resolve: 'gatsby-plugin-canonical-urls',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com'
-      }
+        path: `./src/docs/`,
+      },
     },
     'gatsby-plugin-emotion',
     'gatsby-plugin-typescript',

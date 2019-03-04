@@ -5,7 +5,7 @@ import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 
-interface PageTemplateProps {
+interface BlogTemplateProps {
   data: {
     site: {
       siteMetadata: {
@@ -27,21 +27,20 @@ interface PageTemplateProps {
   }
 }
 
-const PageTemplate: React.SFC<PageTemplateProps> = ({ data }) => (
+const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => (
   <IndexLayout>
     <Page>
       <Container>
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       </Container>
     </Page>
   </IndexLayout>
 )
 
-export default PageTemplate
+export default BlogTemplate
 
 export const query = graphql`
-  query PageTemplateQuery($slug: String!) {
+  query BlogTemplateQuery($slug: String!) {
     site {
       siteMetadata {
         title

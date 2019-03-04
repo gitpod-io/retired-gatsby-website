@@ -4,6 +4,8 @@ import { graphql } from 'gatsby'
 import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
+import { MENU } from '../docs/menu';
+import { Link } from 'gatsby'
 
 interface DocTemplateProps {
   data: {
@@ -31,8 +33,14 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => (
   <IndexLayout>
     <Page>
       <Container>
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+        <div style={{ display: 'flex'}}>
+            <div style={{ width: 200, minWidth: 200}}>
+                <DocMenu/>
+            </div>
+            <div>
+                <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+            </div>
+        </div>
       </Container>
     </Page>
   </IndexLayout>
@@ -61,3 +69,24 @@ export const query = graphql`
     }
   }
 `
+
+
+interface DocMenuProps {
+
+}
+
+const DocMenu: React.SFC<DocMenuProps> = () => {
+
+    return <div style={{ display: 'flex', flexDirection: 'column'}}>
+        {MENU.map( m => {
+            return <>
+                <Link key={m.path} to={`/docs/${m.path}`} style={{marginTop: 0}}>{m.title}</Link>
+                {
+                    (m.subMenu || []).map(m =>
+                        <Link key={m.path} to={`/docs/${m.path}`} style={{marginLeft: 10}}>{m.title}</Link>
+                    )
+                }
+            </>
+        })}
+    </div>
+}

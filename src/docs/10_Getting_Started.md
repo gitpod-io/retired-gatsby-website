@@ -1,6 +1,3 @@
----
-title: Getting Started
----
 # Getting Started
 
 Gitpod delivers the IDE part for the web-based development flows of common code hosting platforms.

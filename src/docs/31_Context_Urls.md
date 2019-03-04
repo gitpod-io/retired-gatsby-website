@@ -1,6 +1,3 @@
----
-title: Context URLs
----
 ## Context URLs
 
  * [GitHub Project Context](#github-project-context)

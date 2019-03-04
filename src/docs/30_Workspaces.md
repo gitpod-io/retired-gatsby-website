@@ -1,6 +1,3 @@
----
-title: Workspaces
----
 # Workspaces
 
 A workspace is what you code in, it consists of the files, configuration and the underlying docker file. Workspace are created on the fly driven by

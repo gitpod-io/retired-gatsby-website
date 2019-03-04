@@ -11,33 +11,41 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     // interpreter if not a single content uses it. Therefore, we're putting them
     // through `createNodeField` so that the fields still exist and GraphQL won't
     // trip up. An empty string is still required in replacement to `null`.
-
+    console.log(JSON.stringify(node, null, '  '));
     switch (node.internal.type) {
         case 'MarkdownRemark': {
-            const { permalink, layout } = node.frontmatter
-            const { relativePath } = getNode(node.parent)
+            const { permalink, configuredLayout } = node.frontmatter
+            const { relativePath, absolutePath } = getNode(node.parent)
 
-            let slug = permalink
-
-            if (!slug) {
-                slug = `/docs/${relativePath.replace('.md', '')}/`
+            let slug = permalink;
+            let layout = configuredLayout;
+            if (absolutePath.indexOf('/docs/') !== -1) {
+                if (relativePath.endsWith('index.md')) {
+                    slug = `/docs/`;
+                } else {
+                    slug = `/docs/${relativePath}`;
+                }
+                layout = layout || 'doc';
+            } else {
+                slug = `/blog/${relativePath}`;
+                layout = layout || 'blog';
             }
-            if (relativePath.endsWith('index.md')) {
-                slug = `/docs/`;
-            }
 
+            if (slug.endsWith('.md')) {
+                slug = slug.replace('.md', '/');
+            }
             // Used to generate URL to view this content.
             createNodeField({
                 node,
                 name: 'slug',
-                value: slug || ''
+                value: slug
             })
 
             // Used to determine a page layout.
             createNodeField({
                 node,
                 name: 'layout',
-                value: layout || ''
+                value: layout
             })
         }
     }
@@ -80,7 +88,7 @@ exports.createPages = async ({ graphql, actions }) => {
             // template.
             //
             // Note that the template has to exist first, or else the build will fail.
-            component: path.resolve(`./src/templates/${layout || 'doc'}.tsx`),
+            component: path.resolve(`./src/templates/${layout}.tsx`),
             context: {
                 // Data passed to context is available in page queries as GraphQL variables.
                 slug
