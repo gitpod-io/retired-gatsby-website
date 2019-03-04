@@ -11,7 +11,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     // interpreter if not a single content uses it. Therefore, we're putting them
     // through `createNodeField` so that the fields still exist and GraphQL won't
     // trip up. An empty string is still required in replacement to `null`.
-    console.log(JSON.stringify(node, null, '  '));
     switch (node.internal.type) {
         case 'MarkdownRemark': {
             const { permalink, configuredLayout } = node.frontmatter
@@ -102,7 +101,6 @@ exports.onCreateWebpackConfig = ({ getConfig, stage, actions }) => {
         return;
     }
     const config = getConfig();
-    console.log(config.devServer);
     const output = config.output || {};
     const url = new URL(execSync('gp url 8000').toString());
     output.publicPath = 'https://' + url.host + ":443/";

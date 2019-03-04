@@ -16,4 +16,4 @@ The following example shows how to use Gitpod with a GitHub repository.
 4. Gitpod will now launch a workspace container for you in the cloud, containing a full Linux system.
    It will also clone the GitHub repository branch based on the GitHub page you were coming from.
 
-Next up you should learn about [Gitpod's IDE](./50_IDE.html).
+Next up you should learn about [Gitpod's IDE](/docs/50_IDE).

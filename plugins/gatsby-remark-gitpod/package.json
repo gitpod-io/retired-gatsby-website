@@ -1,0 +1,12 @@
+{
+  "name": "gatsby-remark-gitpod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "gatsby"
+  ],
+  "dependencies": {
+    "unist-util-visit": "^1.4.0"
+  }
+}

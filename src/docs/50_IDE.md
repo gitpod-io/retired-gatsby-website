@@ -5,8 +5,6 @@ and developed under the umbrella of the Eclipse Foundation, which ensures vendor
 emphasizes diversity.
 
   * [Overview](#overview)
-    * [Views and Editors](#views-and-editors)
-    * [Main Area and Panels](#main-area-and-panels)
   * [Tips & Tricks](52_Tips_and_Tricks.md)
   * [Git Integration](54_Git.md)
   * [Search](56_Search.md)

@@ -3,3 +3,5 @@ ports:
 tasks:
 - init: yarn
   command: yarn dev --host 0.0.0.0
+- init: cd plugins/gatsby-remark-gitpod && npm install
+  openMode: split-right

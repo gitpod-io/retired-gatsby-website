@@ -27,6 +27,12 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/docs/`,
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
@@ -37,6 +43,7 @@ module.exports = {
             }
           },
           'gatsby-remark-prismjs',
+          'gatsby-remark-gitpod',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
           {
@@ -44,23 +51,19 @@ module.exports = {
             options: {
               maxWidth: 1140,
               quality: 90,
-              linkImagesToOriginal: false
+              linkImagesToOriginal: false,
+              backgroundColor: '#2a2a2a'
             }
           }
         ]
       }
     },
     'gatsby-transformer-json',
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `./src/docs/`,
-      },
-    },
     'gatsby-plugin-emotion',
     'gatsby-plugin-typescript',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-react-helmet'
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-catch-links'
   ]
 }

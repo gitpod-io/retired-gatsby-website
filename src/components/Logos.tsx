@@ -12,8 +12,7 @@ const Logos: React.SFC<LogosProps> = ({ logos }) => (
     <Container>
         {logos.map(logoPlacement => {
             const [left, top, width] = logoPlacement;
-            console.log(scroll);
-            return <img key={''+left+top+width+scroll} src={clean(greyLogo)} style={{
+            return <img key={''+left+top+width} src={clean(greyLogo)} style={{
                 position: 'absolute',
                 left,
                 top,
