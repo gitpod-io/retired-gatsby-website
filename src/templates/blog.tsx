@@ -33,11 +33,14 @@ interface BlogTemplateProps {
 }
 
 function currentHeight(): number {
-    var body = document.body,
-        html = document.documentElement;
+    if (typeof window !== "undefined") {
+        var body = window.document.body,
+            html = window.document.documentElement;
 
-    return Math.max( body.scrollHeight, body.offsetHeight,
-                        html.clientHeight, html.scrollHeight, html.offsetHeight );
+        return Math.max( body.scrollHeight, body.offsetHeight,
+                            html.clientHeight, html.scrollHeight, html.offsetHeight );
+    }
+    return 500;
 }
 
 const logos: [number, number, number][] = [
