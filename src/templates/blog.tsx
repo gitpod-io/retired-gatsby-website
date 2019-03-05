@@ -23,6 +23,7 @@ interface BlogTemplateProps {
             html: string
             frontmatter: {
                 title: string
+                subtitle: string
                 image: string
                 date: string
                 author: string
@@ -41,9 +42,14 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => (
                     [950, 150, 160],
                 ]} />
             <Container>
-                <h1 style={{ margin: '50px 0px'}}>{data.markdownRemark.frontmatter.title}</h1>
-                <p style={{ color: colors.fontColor2}}>{new Date(Date.parse(data.markdownRemark.frontmatter.date)).toLocaleDateString()} by <a href={`https://github.com/${data.markdownRemark.frontmatter.author}`}>{data.markdownRemark.frontmatter.author}</a></p>
-                <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+                <div className="blog-post">
+                    <h1 style={{ margin: '50px 0 0 0'}}>{data.markdownRemark.frontmatter.title}</h1>
+                    {data.markdownRemark.frontmatter.subtitle ?
+                        <h2 style={{ color: colors.fontColor3, margin: '10px 0 0 0'}}>{data.markdownRemark.frontmatter.subtitle}</h2>:
+                        null}
+                    <p style={{ margin: '15px 0 50px 0', color: colors.fontColor3}}>{new Date(Date.parse(data.markdownRemark.frontmatter.date)).toLocaleDateString()} by <a href={`https://github.com/${data.markdownRemark.frontmatter.author}`}>{data.markdownRemark.frontmatter.author}</a></p>
+                    <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+                </div>
             </Container>
         </Page>
     </IndexLayout>
@@ -68,6 +74,7 @@ export const query = graphql`
       excerpt
       frontmatter {
         title
+        subtitle
         image
         date
         author

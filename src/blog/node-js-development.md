@@ -18,17 +18,17 @@ The dev environment is called [Gitpod](https://www.gitpod.io/) and is entirely f
 
 ### Table of Contents
 
-* [Hello World](https://medium.com/p/4887bc6e737b#b85f)
+* [Hello World](#hello-world)
 
-* [Automating Node.js setup](https://medium.com/p/4887bc6e737b#8154)
+* [Automating Node.js setup](#automating-nodejs-setup)
 
-* [Working with Pull Requests](https://medium.com/p/4887bc6e737b#1bc9)
+* [Working with Pull Requests](#working-with-pull-requests)
 
-* [Working Together](https://medium.com/p/4887bc6e737b#77a3)
+* [Working Together](#working-together)
 
-* [Developing full-stack Node.js applications](https://medium.com/p/4887bc6e737b#84df)
+* [Developing full-stack Node.js applications](#developing-full-stack-nodejs-applications)
 
-* [Summary](https://medium.com/p/4887bc6e737b#8c36)
+* [Summary](#summary)
 
 ## Hello World
 

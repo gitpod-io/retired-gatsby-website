@@ -224,4 +224,20 @@ export default `
   .gatsby-highlight {
       font-size: 12px;
   }
+
+
+  .blog-post {
+      h1 {
+          font-size: 3em;
+      }
+      h2, h3, h4, h5, h6 {
+        text-transform: none;
+        margin-top: 60px;
+        margin-bottom: 10px;
+      }
+
+      img {
+          margin: 20px 0px;
+      }
+  }
 `
