@@ -42,12 +42,12 @@ export default class IndexPage extends React.Component<{}, { isOpen: boolean, is
                     <StarGraph left={-60} top={-70} graphs={[
                         [
                             { x: 109, y: 360 },
-                            { x: 5, y: 630 },
+                            { x: 35, y: 630 },
                             { x: 130, y: 700, inactive: !this.state.isManualPrefixing },
                             { x: 330, y: 680, inactive: this.state.isManualPrefixing }
                         ],
                         [
-                            { x: 5, y: 630 },
+                            { x: 35, y: 630 },
                             { x: 5, y: 1900 },
                         ],
                         [

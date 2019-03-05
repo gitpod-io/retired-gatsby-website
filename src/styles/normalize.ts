@@ -163,7 +163,6 @@ export default `
 
   button:hover {
       box-shadow: 0px 0px 7px 0.5px ${colors.brand};
-      text-shadow: 0px 0.5px ${colors.brand};
   }
 
   button.secondary {
@@ -173,7 +172,6 @@ export default `
 
   button.secondary:hover {
       box-shadow: 0px 0px 7px 0.5px ${colors.fontColor1};
-      text-shadow: 0px 0.5px ${colors.fontColor1};
   }
 
   blockquote {

@@ -63,8 +63,8 @@ const logos: [number, number, number][] = [
 const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => (
     <IndexLayout>
         <Page>
-            <Logos logos={logos.filter(p => p[1] < currentHeight() - 200)} />
             <Container>
+                <Logos logos={logos.filter(p => p[1] < currentHeight() - 200)} />
                 <div className="blog-post">
                     {data.markdownRemark.frontmatter.subtitle ?
                         <h2 style={{ color: colors.fontColor3, margin: '50px 0 10px 0'}}>{data.markdownRemark.frontmatter.subtitle}</h2>:

@@ -4,7 +4,6 @@ import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 import Logos from '../components/Logos';
-import StarGraph from '../components/StarGraph';
 import 'react-modal-video/css/modal-video.min.css'
 import { graphql } from 'gatsby';
 import GatsbyLink from 'gatsby-link';
@@ -47,15 +46,13 @@ export default class BlogPage extends React.Component<BlogPageProps, {}> {
             Date.parse(b.node.frontmatter.date) - Date.parse(a.node.frontmatter.date));
         return <IndexLayout>
             <Page>
-                <Logos logos={[
-                    [80, 60, 25],
-                    [280, 90, 70],
-                    [480, 30, 120],
-                    [950, 150, 160],
-                ]} />
-                <StarGraph graphs={[
-                ]} />
                 <Container>
+                    <Logos logos={[
+                        [-40, 260, 25],
+                        [280, 20, 70],
+                        [1050, 350, 40],
+                        [-90, 1260, 15],
+                    ]} />
                     <div style={{ marginTop: 30 }}>
                         <h1>Blog</h1>
                         <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
@@ -84,6 +81,7 @@ class BlogPreview extends React.Component<BlogPreviewProps, {}> {
         return <div style={{
                 marginBottom: 40,
                 height: 'auto',
+                minHeight: 350,
                 border: 'solid 1px',
                 borderColor: colors.fontColor2,
                 width: 280,

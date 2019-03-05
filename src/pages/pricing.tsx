@@ -4,7 +4,6 @@ import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 import Logos from '../components/Logos';
-import StarGraph from '../components/StarGraph';
 import 'react-modal-video/css/modal-video.min.css'
 import { clean } from '../clean-url';
 import Python from '../resources/Logo_Python.svg';
@@ -19,14 +18,12 @@ export default class PricingPage extends React.Component<{}, {}> {
     render() {
         return <IndexLayout>
             <Page>
-                <Logos logos={[
-                    [730, -20, 20],
-                    [780, -40, 60],
-                    [1020, 150, 40],
-                ]} />
-                <StarGraph graphs={[
-                ]} />
                 <Container>
+                    <Logos logos={[
+                        [730, -20, 20],
+                        [780, -40, 60],
+                        [1020, 150, 40],
+                    ]} />
                     <div style={{ marginTop: 60 }}>
                         <h4 style={{color: colors.fontColor2}}>Pricing</h4>
                         <h1>Which Pricing Options are Available?</h1>
