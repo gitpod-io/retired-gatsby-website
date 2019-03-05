@@ -1,5 +1,6 @@
 import { dimensions, fonts, colors, breakpoints } from './variables'
 import { getEmSize } from './mixins'
+import tick from '../resources/Tick_pricing.svg';
 
 export default `
   html {
@@ -192,6 +193,16 @@ export default `
       padding-right: 5rem;
       padding-left: 1.25rem;
     }
+  }
+
+  li.checked {
+	margin: 0;
+	padding: 0 0 0 15px;
+	list-style: none;
+	background-image: url(${tick});
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 12px;
   }
 
   .glow {
