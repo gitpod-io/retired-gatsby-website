@@ -2,6 +2,7 @@
 url: https://medium.com/gitpod/gitpod-october-2018-release-672c91294b40
 date: Wed Sep 26 2018 09:35:09 GMT+0000 (UTC)
 author: svenefftinge
+subtitle: What's new this month?
 title: Gitpod — October 2018 Release
 image: https://cdn-images-1.medium.com/max/10944/0*TrpIB26qJjpdoAmh
 ---

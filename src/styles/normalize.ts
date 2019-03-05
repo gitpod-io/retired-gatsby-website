@@ -227,6 +227,10 @@ export default `
 
 
   .blog-post {
+
+      max-width: 80%;
+      margin-left: 10%;
+
       h1 {
           font-size: 3em;
       }
@@ -238,6 +242,14 @@ export default `
 
       img {
           margin: 20px 0px;
+      }
+
+      p {
+          margin-bottom: 30px;
+      }
+
+      li p {
+          margin-bottom: 10px;
       }
   }
 `

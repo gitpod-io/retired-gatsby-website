@@ -2,6 +2,7 @@
 url: https://medium.com/gitpod/developing-native-ui-applications-in-gitpod-15af2967c24e
 date: Thu Oct 04 2018 12:47:53 GMT+0000 (UTC)
 author: 32leaves
+subtitle: Cloud IDEs aren't limited to web apps
 title: Developing native UI applications in Gitpod
 image: https://cdn-images-1.medium.com/max/11236/1*YaZqFJXHopwW0puvvmfEew.png
 ---

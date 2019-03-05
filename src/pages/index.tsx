@@ -9,7 +9,7 @@ import ModalVideo from 'react-modal-video';
 import 'react-modal-video/css/modal-video.min.css'
 import { colors } from '../styles/variables';
 import TweetEmbed from 'react-tweet-embed'
-import PrefixImage from '../resources/Image_Lupe.svg';
+import PrefixImage from '../resources/image-prefix.png';
 import BrowserExtension from '../resources/browser-extension.png';
 import { clean } from '../clean-url';
 import ExampleBox from '../components/ExampleBox';

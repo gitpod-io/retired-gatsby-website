@@ -2,6 +2,7 @@
 url: https://medium.com/gitpod/github-flows-better-with-gitpod-e455d17990f9
 date: Thu Jul 05 2018 11:49:24 GMT+0000 (UTC)
 author: svenefftinge
+subtitle: Stop setting up, start coding!
 title: A Better GitHub Flow
 image: https://cdn-images-1.medium.com/max/2048/0*f260tcqJvgvCguFu
 ---

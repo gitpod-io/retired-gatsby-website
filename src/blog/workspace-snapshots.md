@@ -2,8 +2,8 @@
 url: https://medium.com/gitpod/code-never-lies-creating-reproducibles-for-any-programming-language-7946021a68f2
 date: Wed Nov 21 2018 13:34:27 GMT+0000 (UTC)
 author: svenefftinge
-title: Code never lies
-subtitle: Creating reproducibles for any programming language
+title: Creating reproducibles for any programming language
+subtitle: Code never lies
 image: https://cdn-images-1.medium.com/max/7776/0*xIYVtetr9mExEzBd
 ---
 

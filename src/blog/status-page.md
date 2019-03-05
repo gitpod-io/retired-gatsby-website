@@ -2,7 +2,8 @@
 url: https://medium.com/gitpod/status-update-gitpod-%EF%B8%8F-statusfy-ed8266d63a20
 date: Tue Jan 29 2019 10:32:22 GMT+0000 (UTC)
 author: 32leaves
-title: Status Update - Gitpod ❤️ Statusfy
+subtitle: Status Update
+title: Gitpod ❤️ Statusfy
 image: https://cdn-images-1.medium.com/max/7088/1*8yRrsPnasOhAbZ9CbsTTIg.png
 ---
 

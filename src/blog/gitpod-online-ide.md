@@ -2,6 +2,7 @@
 url: https://medium.com/gitpod/gitpod-gitpod-online-ide-for-github-6296b907a886
 date: Tue Jul 31 2018 06:02:26 GMT+0000 (UTC)
 author: svenefftinge
+subtitle: One Click to Coding!
 title: Gitpod — Online IDE For GitHub
 image: https://cdn-images-1.medium.com/max/6908/1*HNDYawJpDgX6gP_e0w17mg.png
 ---
