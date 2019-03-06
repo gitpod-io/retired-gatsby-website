@@ -52,10 +52,10 @@ export const dimensions = {
     menu: 16,
   },
   headingSizes: {
-    h1: 2.2,
+    h1: 2.3,
     h2: 1.8,
-    h3: 1.6,
-    h4: 1.5
+    h3: 1.3,
+    h4: 1.2
   },
   lineHeight: {
     regular: 1.45,

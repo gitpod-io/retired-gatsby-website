@@ -154,7 +154,7 @@ export default `
   button {
     margin: 10px 0px;
     padding: 8px 14px;
-    border-radius: 3px;
+    border-radius: 2px;
     border-color: ${colors.brand};
     background-color: var(--background1);
     color: ${colors.brand};

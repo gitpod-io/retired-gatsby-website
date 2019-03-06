@@ -39,9 +39,9 @@ export default class IndexPage extends React.Component<{}, { isOpen: boolean, is
         return <IndexLayout>
             <Page>
                 <Container>
-                    <StarGraph left={-60} top={-70} graphs={[
+                    <StarGraph left={-60} top={160} graphs={[
                         [
-                            { x: 109, y: 360 },
+                            { x: 109, y: 240 },
                             { x: 35, y: 630 },
                             { x: 130, y: 700, inactive: !this.state.isManualPrefixing },
                             { x: 330, y: 680, inactive: this.state.isManualPrefixing }
@@ -76,8 +76,8 @@ export default class IndexPage extends React.Component<{}, { isOpen: boolean, is
                         [280, -10, 30],
                         [330, 50, 60],
                         [480, -30, 120],
-                        [760, 100, 290],
-                        [600, 280, 210],
+                        [760, 140, 290],
+                        [600, 330, 210],
                         [-120, 460, 30],
                         [1020, 830, 120],
                         [1260, 2100, 200],
@@ -87,8 +87,8 @@ export default class IndexPage extends React.Component<{}, { isOpen: boolean, is
                     <div style={{ zIndex: 99, position: "fixed", top: 50, left: 'auto' }}>
                         <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='D41zSHJthZI' onClose={() => this.setState({ isOpen: false })} />
                     </div>
-                    <div style={{ height: 380, marginTop: 60 }}>
-                        <h1>Frictionless Coding for GitHub</h1>
+                    <div style={{ height: 500, marginTop: 170 }}>
+                        <h1 style={{ fontSize: '3em'}}>Frictionless Coding for GitHub</h1>
                         <p>Whether you want to fix a bug, have code to review or feel like trying something new on GitHub,<br />
                             Gitpod beams you right into a ready-to-code dev environment with a single click.</p>
                         <button onClick={this.openModal}>Play Video</button>
@@ -127,12 +127,12 @@ export default class IndexPage extends React.Component<{}, { isOpen: boolean, is
                     <Container>
                         <div style={{ height: 425, marginTop: 30 }}>
                             <h2>Try an example!</h2>
-                            <h4>Gitpod works with all major programming languages. Try any of the examples below.</h4>
+                            <p>Gitpod works with all major programming languages. Try any of the examples below.</p>
                             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
-                                <ExampleBox title="Python" image={clean(Python)} link="https://gitpod.io/#" />
-                                <ExampleBox title="Java" image={clean(Java)} link="https://gitpod.io/#" />
-                                <ExampleBox title="JavaScript" image={clean(JS)} link="https://gitpod.io/#" />
-                                <ExampleBox title="Go" image={clean(Go)} link="https://gitpod.io/#" />
+                                <ExampleBox title="Python" description='A Django example project.' image={clean(Python)} link="https://gitpod.io/#" />
+                                <ExampleBox title="Java" description='Spring-Boot example.' image={clean(Java)} link="https://gitpod.io/#" />
+                                <ExampleBox title="JavaScript"  description='A Next.js example project.' image={clean(JS)} link="https://gitpod.io/#" />
+                                <ExampleBox title="Go"  description='A gin web-app example.' image={clean(Go)} link="https://gitpod.io/#" />
                             </div>
                         </div>
                     </Container>
