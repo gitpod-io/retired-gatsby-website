@@ -6,7 +6,6 @@ import IndexLayout from '../layouts'
 import Logos from '../components/Logos';
 import 'react-modal-video/css/modal-video.min.css'
 import { colors } from '../styles/variables';
-import tick from '../resources/Tick_pricing.svg';
 import GatsbyLink from 'gatsby-link';
 import * as icons from '../resources/icons';
 
@@ -108,43 +107,43 @@ export default class PricingPage extends React.Component<{}, {}> {
                             <tbody>
                                 <tr>
                                     <td>Automated Setups</td>
-                                    <td style={{textAlign: 'center'}}><i className="checked"/></td>
-                                    <td style={{textAlign: 'center'}}><i className="checked"/></td>
+                                    <td style={{textAlign: 'center'}}>{icons.tick()}</td>
+                                    <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 </tr>
                                 <tr>
                                     <td>Prebuilt Workspaces</td>
-                                    <td style={{textAlign: 'center'}}><i className="checked"/></td>
-                                    <td style={{textAlign: 'center'}}><i className="checked"/></td>
+                                    <td style={{textAlign: 'center'}}>{icons.tick()}</td>
+                                    <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 </tr>
                                 <tr>
                                     <td>GitHub Integration</td>
-                                    <td style={{textAlign: 'center'}}><i className="checked"/></td>
-                                    <td style={{textAlign: 'center'}}><i className="checked"/></td>
+                                    <td style={{textAlign: 'center'}}>{icons.tick()}</td>
+                                    <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 </tr>
                                 <tr>
                                     <td>GitLab Integration</td>
                                     <td style={{textAlign: 'center'}}></td>
-                                    <td style={{textAlign: 'center'}}><i className="checked"/></td>
+                                    <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 </tr>
                                 <tr>
                                     <td>Custom Extensions*</td>
                                     <td style={{textAlign: 'center'}}></td>
-                                    <td style={{textAlign: 'center'}}><i className="checked"/></td>
+                                    <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 </tr>
                                 <tr>
                                     <td>Self-Hosting &amp; Private Cloud</td>
                                     <td style={{textAlign: 'center'}}></td>
-                                    <td style={{textAlign: 'center'}}><i className="checked"/></td>
+                                    <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 </tr>
                                 <tr>
                                     <td>White Labeling</td>
                                     <td style={{textAlign: 'center'}}></td>
-                                    <td style={{textAlign: 'center'}}><i className="checked"/></td>
+                                    <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 </tr>
                                 <tr>
                                     <td>Crazy Hardware (up to 96 CPUs, 360GB Ram)</td>
                                     <td style={{textAlign: 'center'}}></td>
-                                    <td style={{textAlign: 'center'}}><i className="checked"/></td>
+                                    <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -187,7 +186,8 @@ class PricingBox extends React.Component<PricingBoxProps, {}> {
             borderWidth: 1,
             borderColor: colors.brand,
             borderRadius: 2,
-            padding: 40
+            padding: 40,
+            boxShadow: ` 0 0 1px ${colors.brand}`
         }}>
             <h2 style={{ fontSize: 18, position: 'absolute', top: 224, padding: '0 10px',backgroundColor: colors.background1 }}>{p.title}</h2>
             <p style={{ textAlign: 'center', fontSize: 12, height: 70 }}>
@@ -205,10 +205,10 @@ class PricingBox extends React.Component<PricingBoxProps, {}> {
                 marginLeft: -45,
                 marginBottom: 30,
                 fontSize: 12,
-                listStyleImage: `url('${tick}')`
+                listStyle: 'none',
             }}>
                 {p.features.map(f => (
-                    <li className="checked">{f}</li>
+                    <li style={{ display: 'flex'}}>{icons.tick()}{f}</li>
                 ))}
             </ul>
             <a href={p.link}>

@@ -18,9 +18,10 @@ const ExampleBox: React.SFC<ExampleBoxProps> = (p) => (
         height: 280,
         borderStyle: 'solid',
         borderWidth: 1,
-        borderColor: colors.fontColor1,
+        borderColor: colors.brand,
         borderRadius: 2,
-        padding: '20px 0px'
+        padding: '20px 0px',
+        boxShadow: ` 0 0 1px ${colors.brand}`
     }}>
         <h3 style={{position: 'absolute', top: 140, backgroundColor: colors.background2, padding: '0 10px'}}>{p.title}</h3>
         <p style={{marginTop: 10}}>{p.description}</p>

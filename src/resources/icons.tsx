@@ -77,3 +77,14 @@ export function rocket(style?: React.CSSProperties) {
             C76.9,93,62,96.6,47.8,98.8L48.3,77.6L48.3,77.6z M27.1,46.2L55,72.7"/>
     </svg>;
 }
+
+export function tick(style?: React.CSSProperties) {
+    return <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"  style={merge(style || {
+                        stroke: 'none',
+                        fill: colors.brand,
+                        padding: '3px 3px  0 0 ',
+                        height: 14,
+                    })}>
+        <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/>
+    </svg>;
+}

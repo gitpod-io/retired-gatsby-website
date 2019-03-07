@@ -1,6 +1,5 @@
 import { dimensions, fonts, colors, breakpoints } from './variables'
 import { getEmSize } from './mixins'
-import tick from '../resources/Tick_pricing.svg';
 
 export default `
   html {
@@ -125,10 +124,11 @@ export default `
     background-color: var(--background1);
     color: ${colors.brand};
     cursor: pointer;
+    box-shadow: 0px 0px 1px ${colors.brand};
   }
 
   button:hover {
-      box-shadow: 0px 0px 7px 0.5px ${colors.brand};
+      box-shadow: inset 0px 0px 3px ${colors.brand}, 0px 0px 3px ${colors.brand};
   }
 
   button.secondary {
@@ -137,7 +137,7 @@ export default `
   }
 
   button.secondary:hover {
-      box-shadow: 0px 0px 7px 0.5px ${colors.fontColor1};
+      box-shadow: inset 0px 0px 3px ${colors.fontColor1}, 0px 0px 3px ${colors.fontColor1};
   }
 
   blockquote {
@@ -187,16 +187,6 @@ export default `
     td {
         padding-left: 20px;
     }
-  }
-
-  i.checked {
-	margin: 0;
-	padding: 0 0 0 35px;
-	list-style: none;
-	background-image: url(${tick});
-	background-repeat: no-repeat;
-	background-position: left center;
-	background-size: 12px;
   }
 
   .glow {
