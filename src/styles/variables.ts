@@ -19,6 +19,7 @@ export const colors = {
   },
   background1: '#2a2a2a',
   background2: '#3a3a3a',
+  background3: '#4a4a4a',
   fontColor1: '#dedede',
   fontColor2: '#666',
   fontColor3: '#888'
