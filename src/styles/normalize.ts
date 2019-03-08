@@ -192,7 +192,7 @@ export default `
   .glow {
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
   }
 
   @-webkit-keyframes glow {
@@ -209,6 +209,9 @@ export default `
       font-size: 12px;
   }
 
+  .draggable {
+      cursor: move;
+  }
 
   .article {
 
