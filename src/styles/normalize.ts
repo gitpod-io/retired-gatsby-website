@@ -210,10 +210,7 @@ export default `
   }
 
 
-  .blog-post {
-
-      max-width: 80%;
-      margin-left: 10%;
+  .article {
 
       h1 {
           font-size: 3em;

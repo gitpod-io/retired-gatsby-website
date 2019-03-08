@@ -42,10 +42,11 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => (
                     [1020, 830, 120]
                 ]} />
         <div style={{ display: 'flex'}}>
-            <div style={{ width: 200, minWidth: 200, maxHeight: 550, paddingTop: 15, borderRadius: 3, borderColor: colors.fontColor2, marginRight: 10}}>
+            <div style={{ width: 200, minWidth: 200, maxHeight: 550, paddingTop: 120, borderRadius: 3, borderColor: colors.fontColor2, marginRight: 10}}>
                 <DocMenu/>
             </div>
-            <div>
+            <div className="article">
+                <h4 style={{color: colors.fontColor2, marginBottom: 0, marginTop: 30}}>Docs</h4>
                 <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
             </div>
         </div>
