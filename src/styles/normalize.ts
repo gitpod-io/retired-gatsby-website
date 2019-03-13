@@ -209,6 +209,12 @@ export default `
       font-size: 12px;
   }
 
+  .stargraph {
+      @media (max-width: ${getEmSize(breakpoints.md)}em) {
+          display: none;
+      }
+  }
+
   .draggable {
       cursor: move;
   }

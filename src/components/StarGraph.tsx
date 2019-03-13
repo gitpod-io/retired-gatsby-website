@@ -29,7 +29,7 @@ function computeHeight(graphs: Position[][]) {
 }
 
 function computeMousePosition(evt: MouseEvent) {
-    const svg = document.querySelector('#stargraph');
+    const svg = document.querySelector('.stargraph');
     const CTM = svg.getScreenCTM();
     return {
         x: (evt.clientX - CTM.e) / CTM.a,
@@ -70,8 +70,8 @@ const StarGraph: React.SFC<StarGraphProps> = (p) => {
             width: theWidth+'px'
             }}>
             <svg xmlns="http://www.w3.org/2000/svg"
-                 id="stargraph"
                  viewBox={`0 0 ${theWidth} ${computeHeight(p.graphs)}`}
+                 className="stargraph"
                  onMouseDown={debug ? startDrag : undefined}
                  onMouseMove={debug ? drag : undefined}
                  onMouseUp={debug ? endDrag : undefined}
