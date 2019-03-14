@@ -120,7 +120,7 @@ export default `
     margin: 10px 0px;
     padding: 8px 14px;
     border-radius: 2px;
-    border-color: ${colors.brand};
+    border: 1px solid ${colors.brand};
     background-color: var(--background1);
     color: ${colors.brand};
     cursor: pointer;
