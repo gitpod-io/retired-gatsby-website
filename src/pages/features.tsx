@@ -177,7 +177,7 @@ export default class FeaturesPage extends React.Component<{}, {}> {
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
                             </tr>
                             <tr style={{ borderTopColor: colors.background3 }}>
                                 <td>Ruby</td>
@@ -186,7 +186,7 @@ export default class FeaturesPage extends React.Component<{}, {}> {
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
                             </tr>
                             <tr style={{ borderTopColor: colors.background3 }}>
                                 <td>Rust</td>
@@ -195,7 +195,7 @@ export default class FeaturesPage extends React.Component<{}, {}> {
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
                             </tr>
                             <tr style={{ borderTopColor: colors.background3 }}>
                                 <td>C / C++</td>
@@ -204,7 +204,7 @@ export default class FeaturesPage extends React.Component<{}, {}> {
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
                             </tr>
                             <tr style={{ borderTopColor: colors.background3 }}>
                                 <td>JSON</td>
@@ -212,8 +212,8 @@ export default class FeaturesPage extends React.Component<{}, {}> {
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
                             </tr>
                             <tr style={{ borderTopColor: colors.background3 }}>
                                 <td>Dockerfile</td>
@@ -221,8 +221,8 @@ export default class FeaturesPage extends React.Component<{}, {}> {
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
                             </tr>
                             <tr style={{ borderTopColor: colors.background3 }}>
                                 <td>CSS</td>
@@ -230,26 +230,26 @@ export default class FeaturesPage extends React.Component<{}, {}> {
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
                             </tr>
                             <tr style={{ borderTopColor: colors.background3 }}>
                                 <td>HTML</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
                             </tr>
                             <tr style={{ borderTopColor: colors.background3 }}>
                                 <td>Clojure, Swift, C#, Groovy, Less, Lua, Objective-C, Perl and many more</td>
                                 <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
+                                <td style={{textAlign: 'center'}}>{icons.cross()}</td>
                             </tr>
                         </tbody>
                     </table>
