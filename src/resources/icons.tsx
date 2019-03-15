@@ -79,12 +79,43 @@ export function rocket(style?: React.CSSProperties) {
 }
 
 export function tick(style?: React.CSSProperties) {
-    return <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"  style={merge(style || {
-                        stroke: 'none',
-                        fill: colors.brand,
+    return <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 21.3 14.1" style={merge(style || {
+                        fill: 'none',
+                        stroke: colors.brand,
                         padding: '3px 3px  0 0 ',
                         height: 14,
                     })}>
-        <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/>
+        <path d="M0.6,7.9l5.8,4.9L20.6,0.8"/>
+    </svg>;
+}
+
+export function cross(style?: React.CSSProperties) {
+    return <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 14.4 14.4" style={merge(style || {
+                        fill: 'none',
+                        stroke: colors.fontColor3,
+                        filter: `drop-shadow( 0 0 1px ${colors.fontColor3})`,
+                        padding: '3px 3px  0 0 ',
+                        height: 14,
+                    })}>
+        <g id="Group_14" transform="translate(-716.293 -2919.293)">
+            <path d="M717,2920l13,13"/>
+            <path d="M730,2920l-13,13"/>
+        </g>
+    </svg>;
+}
+
+export function burger(style?: React.CSSProperties) {
+    return <svg xmlns="http://www.w3.org/2000/svg" width="22.206" height="8.019" viewBox="0 0 22.206 8.019" style={merge(style || {
+                        fill: 'none',
+                        stroke: '#fff',
+                        filter: `drop-shadow( 0 0 1px ${colors.fontColor3})`,
+                        padding: '3px 3px  0 0 ',
+                        height: 14,
+                    })}>
+        <g transform="translate(-325.5 -34.148)">
+            <line x2="22.206" transform="translate(325.5 34.648)"/>
+            <line x2="22.206" transform="translate(325.5 38.349)"/>
+            <line x2="12.336" transform="translate(330.818 41.667)"/>
+        </g>
     </svg>;
 }
