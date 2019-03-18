@@ -15,10 +15,25 @@ import InlineCommentsImage from '../resources/inline-comments.png';
 import PrebuiltWorkspacesImage from '../resources/prebuilt-workspaces.png';
 import LinuxInYourBrowserImage from '../resources/linux-in-your-browser.png';
 import * as icons from '../resources/icons';
+import styled from '@emotion/styled';
 
 interface FeaturesPageState {
     isModalOpen: boolean;
 }
+
+const HeaderLink = styled.a`
+    width: 170px;
+    padding: 0 20px;
+    vertical-align: bottom;
+    text-align: center;
+    color: ${colors.fontColor1};
+    text-decoration: none;
+
+    :hover {
+        color: ${colors.brand};
+        text-decoration: none;
+    }
+`;
 
 export default class FeaturesPage extends React.Component<{}, FeaturesPageState> {
 
@@ -41,8 +56,55 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                     <ModalVideo channel='youtube' isModalOpen={this.state.isModalOpen} videoId='D41zSHJthZI' onClose={() => this.setState({ isModalOpen: false })} />
                 </div>
                 <Container>
-                    <GitGraph left={-70} top={200} graph={[
-
+                    <GitGraph left={-900} top={20} graph={[
+                        { start: [0, 115] },
+                        { right: 860 },
+                        {},
+                        { right: 10 },
+                        { down: 200 },
+                        {
+                            fork: [
+                                { right: 115 },
+                                {
+                                    onClick: () => { }
+                                },
+                                { right: 163 },
+                                {
+                                    onClick: () => { }
+                                },
+                                { right: 163 },
+                                {
+                                    onClick: () => { }
+                                },
+                                { right: 163 },
+                                {
+                                    onClick: () => { }
+                                },
+                                { right: 163 },
+                                {
+                                    onClick: () => { }
+                                },
+                                { right: 163 },
+                                {
+                                    onClick: () => { }
+                                }
+                            ]
+                        },
+                        // try an example
+                        { down: 200 },
+                        {},
+                        // what do opthers say
+                        { down: 335 },
+                        {},
+                        { down: 335 },
+                        {},
+                        { down: 337 },
+                        {},
+                        { down: 326 },
+                        {},
+                        { down: 1290 },
+                        { right: 400 },
+                        {}
                     ]} />
                     <Logos logos={[
                         [420, 70, 20],
@@ -55,13 +117,21 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
                         </div>
                     </div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '5rem', marginBottom: '12rem' }}>
-                        <a href="#docker" style={{color: colors.fontColor1, textDecoration: 'none'}}>Docker</a>
-                        <a href="#vs-code" style={{color: colors.fontColor1, textDecoration: 'none'}}>VS Code</a>
-                        <a href="#code-review-mode" style={{color: colors.fontColor1, textDecoration: 'none'}}>Code Review Mode</a>
-                        <a href="#prebuilt-workspaces" style={{color: colors.fontColor1, textDecoration: 'none'}}>Prebuilt Workspaces</a>
-                        <a href="#linux-in-your-browser" style={{color: colors.fontColor1, textDecoration: 'none'}}>Linux in Your Browser</a>
-                        <a href="#supported-languages" style={{color: colors.fontColor1, textDecoration: 'none'}}>Supported Languages</a>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '5rem', marginBottom: '12rem', alignItems: 'flex-end' }}>
+                        <HeaderLink href="#docker">
+                            Docker
+                        </HeaderLink>
+                        <HeaderLink href="#vs-code">
+                            VS Code
+                        </HeaderLink>
+                        <HeaderLink href="#code-review-mode" >Code Reviews
+                        </HeaderLink>
+                        <HeaderLink href="#prebuilt-workspaces" >Collaboration
+                        </HeaderLink>
+                        <HeaderLink href="#linux-in-your-browser" >Linux in Your Browser
+                        </HeaderLink>
+                        <HeaderLink href="#supported-languages" >Supported Languages
+                        </HeaderLink>
                     </div>
                     <Feature
                         title="Docker"
@@ -98,153 +168,153 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         visual={<img src={clean(LinuxInYourBrowserImage)} alt="linux in your browser" />} />
                 </Container>
                 <div style={{ backgroundColor: colors.background2, zIndex: 2, boxShadow: "0px 0px 160px 0px rgba(5,5,5,0.57)", marginTop: 100 }}>
+                    <Container>
+                        <h3 id="supported-languages" style={{ textTransform: 'uppercase' }}>Supported programming languages</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <td style={{ textAlign: 'center' }}>Syntax Coloring</td>
+                                    <td style={{ textAlign: 'center' }}>Code Completion</td>
+                                    <td style={{ textAlign: 'center' }}>Diagnostics</td>
+                                    <td style={{ textAlign: 'center' }}>Hovers</td>
+                                    <td style={{ textAlign: 'center' }}>Navigation</td>
+                                    <td style={{ textAlign: 'center' }}>Refactorings</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style={{ borderTopColor: colors.background3 }}>
+                                    <td>JavaScript / TypeScript</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                </tr>
+                                <tr style={{ borderTopColor: colors.background3 }}>
+                                    <td>Java</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                </tr>
+                                <tr style={{ borderTopColor: colors.background3 }}>
+                                    <td>Python</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                </tr>
+                                <tr style={{ borderTopColor: colors.background3 }}>
+                                    <td>Go</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                </tr>
+                                <tr style={{ borderTopColor: colors.background3 }}>
+                                    <td>PHP</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                </tr>
+                                <tr style={{ borderTopColor: colors.background3 }}>
+                                    <td>Ruby</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                </tr>
+                                <tr style={{ borderTopColor: colors.background3 }}>
+                                    <td>Rust</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                </tr>
+                                <tr style={{ borderTopColor: colors.background3 }}>
+                                    <td>C / C++</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                </tr>
+                                <tr style={{ borderTopColor: colors.background3 }}>
+                                    <td>JSON</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                </tr>
+                                <tr style={{ borderTopColor: colors.background3 }}>
+                                    <td>Dockerfile</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                </tr>
+                                <tr style={{ borderTopColor: colors.background3 }}>
+                                    <td>CSS</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                </tr>
+                                <tr style={{ borderTopColor: colors.background3 }}>
+                                    <td>HTML</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                </tr>
+                                <tr style={{ borderTopColor: colors.background3 }}>
+                                    <td>Clojure, Swift, C#, Groovy, Less, Lua, Objective-C, Perl and many more</td>
+                                    <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                    <td style={{ textAlign: 'center' }}></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginTop: 50 }}>
+                            <p style={{ margin: "10px 20px" }}>Missing your favorite programming language?</p>
+                            <a href="https://github.com/gitpod-io/gitpod/issues" style={{ margin: 10 }} target="_blank">
+                                <button className='primary'>Request Support</button>
+                            </a>
+                        </div>
+                    </Container>
+                </div>
                 <Container>
-                    <h3 id="supported-languages" style={{ textTransform: 'uppercase' }}>Supported programming languages</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <td></td>
-                                <td style={{textAlign: 'center'}}>Syntax Coloring</td>
-                                <td style={{textAlign: 'center'}}>Code Completion</td>
-                                <td style={{textAlign: 'center'}}>Diagnostics</td>
-                                <td style={{textAlign: 'center'}}>Hovers</td>
-                                <td style={{textAlign: 'center'}}>Navigation</td>
-                                <td style={{textAlign: 'center'}}>Refactorings</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style={{ borderTopColor: colors.background3 }}>
-                                <td>JavaScript / TypeScript</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                            </tr>
-                            <tr style={{ borderTopColor: colors.background3 }}>
-                                <td>Java</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                            </tr>
-                            <tr style={{ borderTopColor: colors.background3 }}>
-                                <td>Python</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                            </tr>
-                            <tr style={{ borderTopColor: colors.background3 }}>
-                                <td>Go</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                            </tr>
-                            <tr style={{ borderTopColor: colors.background3 }}>
-                                <td>PHP</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
-                            </tr>
-                            <tr style={{ borderTopColor: colors.background3 }}>
-                                <td>Ruby</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
-                            </tr>
-                            <tr style={{ borderTopColor: colors.background3 }}>
-                                <td>Rust</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
-                            </tr>
-                            <tr style={{ borderTopColor: colors.background3 }}>
-                                <td>C / C++</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
-                            </tr>
-                            <tr style={{ borderTopColor: colors.background3 }}>
-                                <td>JSON</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
-                            </tr>
-                            <tr style={{ borderTopColor: colors.background3 }}>
-                                <td>Dockerfile</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
-                            </tr>
-                            <tr style={{ borderTopColor: colors.background3 }}>
-                                <td>CSS</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
-                            </tr>
-                            <tr style={{ borderTopColor: colors.background3 }}>
-                                <td>HTML</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
-                            </tr>
-                            <tr style={{ borderTopColor: colors.background3 }}>
-                                <td>Clojure, Swift, C#, Groovy, Less, Lua, Objective-C, Perl and many more</td>
-                                <td style={{textAlign: 'center'}}>{icons.tick()}</td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
-                                <td style={{textAlign: 'center'}}></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginTop: 50 }}>
-                        <p style={{margin: "10px 20px"}}>Missing your favorite programming language?</p>
-                        <a href="https://github.com/gitpod-io/gitpod/issues" style={{margin: 10}} target="_blank">
-                          <button className='primary'>Request Support</button>
-                        </a>
+                    <div style={{ textAlign: 'center', margin: 150 }}>
+                        <h3 style={{ marginBottom: '0.7rem' }}>Try It Out</h3>
+                        <button className='primary'>Get Started Free</button>
                     </div>
-                </Container>
-                </div>
-                <Container>
-                <div style={{textAlign: 'center', margin: 150}}>
-                    <h3 style={{marginBottom: '0.7rem'}}>Try It Out</h3>
-                    <button className='primary'>Get Started Free</button>
-                </div>
                 </Container>
             </Page>
         </IndexLayout>;
@@ -268,9 +338,9 @@ class Feature extends React.Component<FeatureProps, {}> {
         const p = this.props;
         return <div style={{ display: 'flex', flexDirection: 'row', marginTop: 100 }}>
             <div style={{ flexBasis: 0, flexGrow: 1, paddingRight: 60 }}>
-                <h3 id={this.slug()} style={{marginTop: 0, marginBottom: '2rem'}}>{p.title}</h3>
+                <h3 id={this.slug()} style={{ marginTop: 0, marginBottom: '2rem' }}>{p.title}</h3>
                 {p.description.split(/\n|\\n|<br\s*\/?>/).map(line => <p>{line}</p>)}
-                <div style={{textAlign: 'right'}}>{p.button}</div>
+                <div style={{ textAlign: 'right' }}>{p.button}</div>
             </div>
             <div style={{ flexBasis: 0, flexGrow: 1.2 }}>
                 {p.visual}
