@@ -30,7 +30,7 @@ function computeHeight(graphs: Position[][]) {
 
 function computeMousePosition(evt: MouseEvent) {
     const svg = document.querySelector('.stargraph');
-    const CTM = svg.getScreenCTM();
+    const CTM = svg!.getScreenCTM();
     return {
         x: (evt.clientX - CTM.e) / CTM.a,
         y: (evt.clientY - CTM.f) / CTM.d

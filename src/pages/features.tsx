@@ -16,12 +16,16 @@ import PrebuiltWorkspacesImage from '../resources/prebuilt-workspaces.png';
 import LinuxInYourBrowserImage from '../resources/linux-in-your-browser.png';
 import * as icons from '../resources/icons';
 
-export default class FeaturesPage extends React.Component<{}, {}> {
+interface FeaturesPageState {
+    isModalOpen: boolean;
+}
+
+export default class FeaturesPage extends React.Component<{}, FeaturesPageState> {
 
     constructor(props: {}) {
         super(props);
         this.state = {
-            isModalOpen: false,
+            isModalOpen: false
         }
         this.openModal = this.openModal.bind(this);
     }
@@ -33,8 +37,11 @@ export default class FeaturesPage extends React.Component<{}, {}> {
     render() {
         return <IndexLayout>
             <Page>
+                <div style={{ zIndex: 99, position: "fixed", top: 50, left: 'auto' }}>
+                    <ModalVideo channel='youtube' isModalOpen={this.state.isModalOpen} videoId='D41zSHJthZI' onClose={() => this.setState({ isModalOpen: false })} />
+                </div>
                 <Container>
-                    <StarGraph left={-70} top={165} graphs={[
+                    <StarGraph left={-70} top={200} graphs={[
                         [
                             { x: 23, y: 335 },
                             { x: 93, y: 170 },
@@ -67,10 +74,7 @@ export default class FeaturesPage extends React.Component<{}, {}> {
                         [550, -20, 70],
                         [830, 70, 140],
                     ]} />
-                    <div style={{ zIndex: 99, position: "fixed", top: 50, left: 'auto' }}>
-                        <ModalVideo channel='youtube' isModalOpen={this.state.isModalOpen} videoId='D41zSHJthZI' onClose={() => this.setState({ isModalOpen: false })} />
-                    </div>
-                    <div style={{ marginTop: 60 }}>
+                    <div style={{ marginTop: 40 }}>
                         <h4 style={{ color: colors.fontColor2, textTransform: 'uppercase' }}>Features</h4>
                         <h1>Why Gitpod?</h1>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
@@ -88,33 +92,33 @@ export default class FeaturesPage extends React.Component<{}, {}> {
                         title="Docker"
                         description="Gitpod instantly starts a machine in the cloud, based on a Docker image supporting your project.\nInstalling dependencies is boring&mdash;just use our standard development image or automate your own setup."
                         button={<a href="https://docs.gitpod.io/40_Configuration.html" target="_blank">
-                            <button>Learn More</button>
+                            <button className='primary'>Learn More</button>
                         </a>}
                         visual={<img src={clean(TerminalsImage)} alt="terminals" />} />
                     <Feature
                         title="VS Code"
                         description="Gitpod is based on Theia, the open-source, VS Code-powered IDE rearchitected for cloud-based development.\nGet code intelligence and a full Linux shell in a browser tab."
                         button={<a href="https://www.theia-ide.org" target="_blank">
-                            <button>Visit theia-ide.org</button>
+                            <button className='primary'>Visit theia-ide.org</button>
                         </a>}
                         visual={<img src={clean(LanguageToolingImage)} alt="language tooling" />} />
                     <Feature
                         title="Code Review Mode"
                         description="Opening a pull request in Gitpod makes it easy to review, navigate and validate the code.\nRun it in a terminal, web preview, or virtual desktop&mdash;iterating on your app has never been so easy."
-                        button={<button onClick={this.openModal}>Play Video</button>}
+                        button={<button className='primary' onClick={this.openModal}>Play Video</button>}
                         visual={<img src={clean(InlineCommentsImage)} alt="inline comments" />} />
                     <Feature
                         title="Prebuilt Workspaces"
                         description="Gitpod continuously builds your code and pull requests in the background to save your time."
                         button={<a href="https://medium.com/@csweichel/waiting-for-code-to-build-is-like-watching-paint-dry-a1c6b25fd601" target="_blank">
-                            <button onClick={this.openModal}>Learn More</button>
+                            <button className='primary' onClick={this.openModal}>Learn More</button>
                         </a>}
                         visual={<img src={clean(PrebuiltWorkspacesImage)} alt="prebuilt workspaces" />} />
                     <Feature
                         title="Linux in Your Browser"
                         description="Instantly access a full terminal with all the tools you know and love, that reconnects on browser reload keeping the full history."
                         button={<a href="https://docs.gitpod.io/42_Config_Docker.html" target="_blank">
-                            <button onClick={this.openModal}>Learn More</button>
+                            <button className='primary' onClick={this.openModal}>Learn More</button>
                         </a>}
                         visual={<img src={clean(LinuxInYourBrowserImage)} alt="linux in your browser" />} />
                 </Container>
@@ -256,7 +260,7 @@ export default class FeaturesPage extends React.Component<{}, {}> {
                     <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginTop: 50 }}>
                         <p style={{margin: "10px 20px"}}>Missing your favorite programming language?</p>
                         <a href="https://github.com/gitpod-io/gitpod/issues" style={{margin: 10}} target="_blank">
-                          <button>Request Support</button>
+                          <button className='primary'>Request Support</button>
                         </a>
                     </div>
                 </Container>
@@ -264,7 +268,7 @@ export default class FeaturesPage extends React.Component<{}, {}> {
                 <Container>
                 <div style={{textAlign: 'center', margin: 150}}>
                     <h3 style={{marginBottom: '0.7rem'}}>Try It Out</h3>
-                    <button>Get Started Free</button>
+                    <button className='primary'>Get Started Free</button>
                 </div>
                 </Container>
             </Page>

@@ -8,6 +8,7 @@ import Container from './Container'
 import twitter from '../resources/twitter.svg';
 import github from '../resources/github.svg';
 import spectrum from '../resources/spectrum.svg';
+import bg from '../resources/bg.jpg';
 
 const StyledFooter = styled.footer`
   padding: 0 ${dimensions.containerPadding}rem;
@@ -15,6 +16,7 @@ const StyledFooter = styled.footer`
   color: ${transparentize(0.5, colors.fontColor1)};
   box-shadow: 0px 0px 160px 0px rgba(5,5,5,0.57);
   z-index: 100;
+  //background-image: url(${bg});
 `
 
 const FooterInner = styled(Container)`

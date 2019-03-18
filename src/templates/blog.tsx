@@ -22,6 +22,7 @@ interface BlogTemplateProps {
         markdownRemark: {
             html: string
             frontmatter: {
+                url: string
                 title: string
                 subtitle: string
                 image: string
@@ -66,7 +67,7 @@ const logos: [number, number, number][] = [3700, 8000].reduce((a, b) => {
 ] as [number, number,  number][]);
 
 const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => (
-    <IndexLayout>
+    <IndexLayout canonical={data.markdownRemark.frontmatter.url}>
         <Page>
             <Container>
                 <Logos logos={logos.filter(p => p[1] < currentHeight() - 200)} />
@@ -109,6 +110,7 @@ export const query = graphql`
         image
         date
         author
+        url
       }
     }
   }

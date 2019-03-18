@@ -16,11 +16,12 @@ type StaticQueryProps = {
         siteMetadata: {
             title: string
             description: string
+            link: string
         }
     }
 }
 
-const IndexLayout: React.SFC = ({ children }) => (
+const IndexLayout: React.SFC<{ canonical?: string}> = ({ canonical, children }) => (
     <StaticQuery
         query={graphql`
       query IndexLayoutQuery {
@@ -34,13 +35,14 @@ const IndexLayout: React.SFC = ({ children }) => (
     `}
         render={(data: StaticQueryProps) => (
             <LayoutRoot>
-                <Helmet
-                    title={data.site.siteMetadata.title}
-                    meta={[
-                        { name: 'description', content: data.site.siteMetadata.description },
-                        { name: 'keywords', content: 'gatsbyjs, gatsby, javascript, sample, something' }
-                    ]}
-                />
+                <Helmet>
+                    <title>{data.site.siteMetadata.title}</title>
+                    <meta name="description" content={data.site.siteMetadata.description}/>
+                    <meta name="keywords" content="cloud ide, github, javascript, online ide, web ide, code review"/>
+                    {
+                        canonical ? <link rel="canonical" href={canonical} /> : null
+                    }
+                </Helmet>
                 <Header title={data.site.siteMetadata.title} />
                 <LayoutMain>
                     {children}

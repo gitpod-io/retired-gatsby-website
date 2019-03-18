@@ -119,3 +119,53 @@ export function burger(style?: React.CSSProperties) {
         </g>
     </svg>;
 }
+
+export function videoPlay(aStyle?: React.CSSProperties, onClick?: ()=>void) {
+    const style = merge(aStyle || {});
+    if (onclick) {
+        style.cursor = 'pointer';
+    }
+    return <svg x="0px" y="0px" viewBox="0 0 100 100" style={style} onClick={onClick}>
+        <circle cx="50" cy="50" r="40"/>
+        <polygon points="40,35 40,70 70,50" style={{fill: style.stroke}} />
+    </svg>;
+}
+
+export function arrowLeft(aStyle?: React.CSSProperties) {
+    const style = merge(aStyle || {});
+    return <svg xmlns="http://www.w3.org/2000/svg" width="27.913" height="58.337" viewBox="0 0 27.913 58.337" style={style}>
+        <path id="Path_104" data-name="Path 104" d="M0,56.995,25.822,28.5,0,0" transform="translate(27.171 57.666) rotate(180)" fill="none" stroke="#707070" stroke-width="2"/>
+    </svg>
+}
+
+export function arrowRight(aStyle?: React.CSSProperties) {
+    const style = merge(aStyle || {});
+    return <svg xmlns="http://www.w3.org/2000/svg" width="27.913" height="58.337" viewBox="0 0 27.913 58.337" style={style}>
+        <path id="Path_103" data-name="Path 103" d="M7682,2534.194l25.822-28.491L7682,2477.2" transform="translate(-7681.259 -2476.528)" fill="none" stroke="#707070" stroke-width="2"/>
+    </svg>
+}
+
+export function brain(aStyle?: React.CSSProperties) {
+    const style = merge(aStyle || {});
+    return <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 100 100" style={style}>
+        <path d="M70.1,94c0,2.6-2.1,4.7-4.6,4.7c-1.8,0-3.4-1.1-4.2-2.7v0l-8.8-14.7c-1.6-2.9-4-7.1-9.1-3.7
+            c-1.9,1.3-4.4,1.7-6.8,1.7c-7.3,0-13.4-5.5-14.5-12.7c-1.3,0.6-2.8,0.9-4.4,0.9c-5.7,0-10.3-4.4-10.9-10.1C3.3,55.5,1,51.8,1,47.6
+            c0-6.2,4.9-11.3,11-11.3c0.2,0,0.3,0,0.4,0c-0.5-1.1-0.8-2.3-0.8-3.6c0-4.8,3.8-8.7,8.5-8.7c1.1,0,2.2,0.2,3.2,0.6
+            c2.5-4.3,7.1-7.2,12.3-7.2c3,0,5.8,1,8.1,2.6c1.5-1.7,3.7-2.7,6.1-2.7c2.6,0,4.9,1.2,6.4,3.1c1.7-0.8,3.5-1.2,5.5-1.2
+            c3.6,0,6.9,1.5,9.3,3.9c0.8-0.2,1.6-0.4,2.5-0.4c4.5,0,8.3,3.7,8.5,8.3c0.5-0.1,0.9-0.1,1.4-0.1c4.6,0,8.4,3.8,8.4,8.6
+            c0,0.5,0,0.9-0.1,1.4c4.3,1.5,7.4,5.7,7.4,10.6c0,2.4-0.7,4.6-1.9,6.4c0.5,1.4,0.7,3,0.7,4.6c0,7.9-6.2,14.2-13.9,14.2
+            c-0.2,0-0.4,0-0.5,0c0,0.3,0,0.6,0.1,1c0.5,4.4-2.4,8.3-5.8,8.3c-3.1,0-3.7-2.2-6.2-1c-1.5,0.8-2.6,2.4-2.6,4.2
+            C68.9,91.1,70.1,91.8,70.1,94L70.1,94z"/>
+        <path d="M96.6,58.1c-1.6,1.5-3.7,2.3-6,2.3c-5,0-9-4.2-9-9.3"/>
+        <path d="M82.5,46.8c0,4.7-3.7,8.4-8.2,8.4c-1.7,0-3.3-0.5-4.6-1.5"/>
+        <path d="M91.9,74c-1.8,1.2-4,1.8-6.2,1.5c-5-0.7-8.4-5.3-7.8-10.4"/>
+        <path d="M25,52.1c1.3,1.9,1.9,4.3,1.6,6.8C26,64.2,21.2,68,16,67.3"/>
+        <path d="M38.4,43.3c0,2.2-0.8,4.4-2.4,6.1c-3.4,3.8-9.1,4.1-12.8,0.6"/>
+        <path d="M54.7,34.4c1.3,0.8,2.4,2.1,2.9,3.7c1.1,3.5-0.8,7.3-4.2,8.4"/>
+        <path d="M68.2,34.1c-1.3-0.9-2.8-1.4-4.5-1.2c-3.6,0.4-6.2,3.7-5.8,7.4"/>
+        <path d="M51.9,46.3c1.1,1.8,1.6,4,1.3,6.3c-0.8,4.9-5.3,8.3-10.1,7.5"/>
+        <path d="M76.3,65.4c-1.5,1.8-3.7,3.1-6.2,3.5c-3.4,0.5-6.7-0.9-8.9-3.3"/>
+        <path d="M81.9,83.7c-1.3,1.2-3,1.9-4.9,1.9c-4.1,0-7.4-3.4-7.4-7.6"/>
+        <path d="M7.5,60.3c-2-3.1-1.3-7.2,1.7-9.3"/>
+    </svg>;
+}

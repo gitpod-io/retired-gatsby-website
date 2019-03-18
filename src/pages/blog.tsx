@@ -81,7 +81,7 @@ class BlogPreview extends React.Component<BlogPreviewProps, {}> {
         return <div style={{
                 marginBottom: 40,
                 height: 'auto',
-                minHeight: 350,
+                minHeight: 400,
                 border: 'solid 1px',
                 borderColor: colors.fontColor2,
                 width: 280,

@@ -36,6 +36,7 @@ export default `
     &:hover,
     &:focus {
       text-decoration: underline;
+      color: ${colors.brand};
     }
   }
   a.anchor svg {
@@ -72,7 +73,6 @@ export default `
 
   h2 {
     font-size: ${dimensions.headingSizes.h2}rem;
-    text-transform: uppercase;
     font-weight: 400;
   }
 
@@ -122,23 +122,27 @@ export default `
     border-radius: 2px;
     border: 1px solid ${colors.brand};
     background-color: var(--background1);
-    color: ${colors.brand};
     cursor: pointer;
-    box-shadow: 0px 0px 1px ${colors.brand};
-  }
-
-  button:hover {
-      box-shadow: inset 0px 0px 3px ${colors.brand}, 0px 0px 3px ${colors.brand};
-  }
-
-  button.secondary {
+    &.primary {
+      border-color: ${colors.brand};
+      color: ${colors.brand};
+      box-shadow: 0px 0px 1px ${colors.brand};
+      &:hover {
+        box-shadow: inset 0px 0px 3px ${colors.brand}, 0px 0px 3px ${colors.brand};
+      }
+    }
+    &.secondary {
       border-color: ${colors.fontColor1};
       color: ${colors.fontColor1};
+      &:hover {
+        box-shadow: inset 0px 0px 3px ${colors.fontColor1}, 0px 0px 3px ${colors.fontColor1};
+      }
+    }
   }
 
-  button.secondary:hover {
-      box-shadow: inset 0px 0px 3px ${colors.fontColor1}, 0px 0px 3px ${colors.fontColor1};
-  }
+
+
+
 
   blockquote {
     margin: .8rem 0;
@@ -190,9 +194,11 @@ export default `
   }
 
   .glow {
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
+    color: ${colors.brand}
+  }
+
+  .button-like:hover {
+      filter: drop-shadow( 0 0 1px ${colors.fontColor1});
   }
 
   @-webkit-keyframes glow {
