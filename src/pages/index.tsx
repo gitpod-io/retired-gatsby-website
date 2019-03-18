@@ -4,7 +4,6 @@ import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 import Logos from '../components/Logos';
-import StarGraph from '../components/StarGraph';
 import ModalVideo from 'react-modal-video';
 import 'react-modal-video/css/modal-video.min.css'
 import { colors } from '../styles/variables';
@@ -21,6 +20,8 @@ import GitHubApp from '../resources/github-app.jpg';
 
 import { arrowLeft, arrowRight, arrow, rocket, brain } from '../resources/icons';
 import styled from '@emotion/styled';
+import GitGraph from '../components/GitGraph';
+import GatsbyLink from 'gatsby-link';
 
 interface IndexPageState { isOpen: boolean, worksMode: number }
 
@@ -74,7 +75,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 contents = <div style={{ margin: 40 }}>
                     <strong>Have a button on every GitHub page.</strong>
                     <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
-                        <p>The browser extension adds a button to every GitHub repository.<br/> So you don't have to prefix manually.</p>
+                        <p>The browser extension adds a button to every GitHub repository.<br /> So you don't have to prefix manually.</p>
                         <button className='primary' style={{ marginLeft: 20, minWidth: 200 }}>Learn More</button>
                     </div>
                     <img style={{ marginTop: 10 }} src={clean(BrowserExtension)} />
@@ -132,38 +133,6 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
         return <IndexLayout>
             <Page>
                 <Container>
-                    <StarGraph left={-60} top={160} graphs={[
-                        // [
-                        //     { x: 109, y: 240 },
-                        //     { x: 35, y: 630 },
-                        //     { x: 130, y: 700, inactive: !this.state.isManualPrefixing },
-                        //     { x: 330, y: 680, inactive: this.state.isManualPrefixing }
-                        // ],
-                        // [
-                        //     { x: 35, y: 630 },
-                        //     { x: 5, y: 1900 },
-                        // ],
-                        // [
-                        //     { x: 5, y: 1900 },
-                        //     { x: 550, y: 2040 },
-                        // ],
-                        // [
-                        //     { x: 5, y: 1900 },
-                        //     { x: 550, y: 2270 },
-                        // ],
-                        // [
-                        //     { x: 5, y: 1900 },
-                        //     { x: 550, y: 2490 },
-                        // ],
-                        // [
-                        //     { x: 5, y: 1900 },
-                        //     { x: 70, y: 2150 },
-                        // ],
-                        // [
-                        //     { x: 5, y: 1900 },
-                        //     { x: 70, y: 2430 },
-                        // ],
-                    ]} />
                     <Logos logos={[
                         [1080, 30, 50],
                         [-70, 560, 70],
@@ -202,6 +171,59 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                     </div>
                 </Container>
                 <Container>
+                    <GitGraph left={-900} top={0} graph={[
+                        { start: [0, 115] },
+                        { right: 860 },
+                        {},
+                        { right: 20 },
+                        { down: 50 },
+                        {
+                            fork: [
+                                { right: 85 },
+                                {
+                                    isActive: () => this.state.worksMode === 0,
+                                    onClick: () => { this.setState({ worksMode: 0 }) }
+                                },
+                                { right: 200 },
+                                {
+                                    isActive: () => this.state.worksMode === 1,
+                                    onClick: () => { this.setState({ worksMode: 1 }) }
+                                },
+                                { right: 200 },
+                                {
+                                    isActive: () => this.state.worksMode === 2,
+                                    onClick: () => { this.setState({ worksMode: 2 }) }
+                                },
+                            ]
+                        },
+                        // try an example
+                        { down: 1180 },
+                        {},
+                        // what do opthers say
+                        { down: 550 },
+                        {},
+                        { down: 60 },
+                        {
+                            fork: [
+                                { right: 480 },
+                                { down: 60 },
+                                {},
+                                { down: 220 },
+                                {},
+                                { down: 220 },
+                                {},
+                                { down: 50 },
+                                { left: 480 },
+                                { down: 20 }
+                            ]
+                        },
+                        { down: 150 },
+                        {},
+                        { down: 250 },
+                        {},
+                        { down: 420 },
+                        {}
+                    ]} />
                     <Logos logos={[
                         [1020, 120, 30]
                     ]} />
@@ -232,7 +254,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                                     <h3>No Setup</h3>
                                     <div style={{ width: 50, height: 3, backgroundColor: colors.brand, marginBottom: 16 }} />
                                     <p>Start coding right away.</p>
-                                    <p>No more 'works on my machine' situations and hour long setups.<br/> With Gitpod developer environments are automated, reproducible and versioned.</p>
+                                    <p>No more 'works on my machine' situations and hour long setups.<br /> With Gitpod developer environments are automated, reproducible and versioned.</p>
                                 </WhyBox>
                             </div>
                         </div>
@@ -261,13 +283,13 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         marginTop: 80
                     }}>
                         <h2>What do others say?</h2>
-                        <div style={{ position: 'absolute', left: 502, top: 160, width: 435 }}>
+                        <div style={{ position: 'absolute', left: 530, top: 160, width: 435 }}>
                             <TweetEmbed id='1101772731203252229' options={twitterOptions} />
                         </div>
-                        <div style={{ position: 'absolute', left: 502, top: 370, width: 435 }}>
+                        <div style={{ position: 'absolute', left: 530, top: 370, width: 435 }}>
                             <TweetEmbed id='1101055381386743808' options={twitterOptions} />
                         </div>
-                        <div style={{ position: 'absolute', left: 502, top: 600, width: 435 }}>
+                        <div style={{ position: 'absolute', left: 530, top: 600, width: 435 }}>
                             <TweetEmbed id='1100698060831764481' options={twitterOptions} />
                         </div>
                         <div style={{ position: 'absolute', left: 23, top: 240, width: 435 }}>
@@ -276,6 +298,13 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         <div style={{ position: 'absolute', left: 23, top: 450, width: 435 }}>
                             <TweetEmbed id='1101772691181207552' options={twitterOptions} />
                         </div>
+                    </div>
+                </Container>
+                <Container>
+                    <div style={{ paddingTop: 80 }}>
+                        <h2>Learn About All the Other Features</h2>
+                        <p>Gitpod supports collaboration, workspace snapshots, many different programming languages and much more.</p>
+                        <GatsbyLink to="/features"><button className="primary">See Features</button></GatsbyLink>
                     </div>
                 </Container>
             </Page>

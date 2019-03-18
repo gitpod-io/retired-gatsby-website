@@ -4,7 +4,7 @@ import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 import Logos from '../components/Logos';
-import StarGraph from '../components/StarGraph';
+import GitGraph from '../components/GitGraph';
 import ModalVideo from 'react-modal-video';
 import 'react-modal-video/css/modal-video.min.css'
 import { clean } from '../clean-url';
@@ -41,33 +41,8 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                     <ModalVideo channel='youtube' isModalOpen={this.state.isModalOpen} videoId='D41zSHJthZI' onClose={() => this.setState({ isModalOpen: false })} />
                 </div>
                 <Container>
-                    <StarGraph left={-70} top={200} graphs={[
-                        [
-                            { x: 23, y: 335 },
-                            { x: 93, y: 170 },
-                        ], [
-                            { x: 23, y: 335 },
-                            { x: 198, y: 170 },
-                        ], [
-                            { x: 23, y: 335 },
-                            { x: 344, y: 170 },
-                        ], [
-                            { x: 23, y: 335 },
-                            { x: 530, y: 170 },
-                        ], [
-                            { x: 23, y: 335 },
-                            { x: 713, y: 170 },
-                        ], [
-                            { x: 23, y: 335 },
-                            { x: 914, y: 170 },
-                        ], [
-                            { x: 23, y: 335 },
-                            { x: 50, y: 650 },
-                            { x: 18, y: 960 },
-                            { x: 46, y: 1275 },
-                            { x: 18, y: 1586 },
-                            { x: 529, y: 2707 }
-                        ]
+                    <GitGraph left={-70} top={200} graph={[
+
                     ]} />
                     <Logos logos={[
                         [420, 70, 20],
