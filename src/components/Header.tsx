@@ -66,7 +66,7 @@ const Header: React.SFC<HeaderProps> = () => (
             </HeaderLeft>
             <HeaderRight>
                 <a href="https://gitpod.io/api/login">
-                    <button>Log In</button>
+                    <button className='primary'>Log In</button>
                 </a>
             </HeaderRight>
         </HeaderInner>

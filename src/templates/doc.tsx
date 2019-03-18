@@ -37,9 +37,9 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => (
       <Container>
         <Logos logos={[
                     [-30, 60, 25],
-                    [980, 130, 120],
-                    [20, 630, 70],
-                    [1020, 830, 120]
+                    [1040, 130, 120],
+                    [-120, 630, 70],
+                    [40, 830, 120]
                 ]} />
         <div style={{ display: 'flex'}}>
             <div style={{ width: 200, minWidth: 200, maxHeight: 550, paddingTop: 120, borderRadius: 3, borderColor: colors.fontColor2, marginRight: 10}}>

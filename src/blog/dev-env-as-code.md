@@ -1,13 +1,13 @@
 ---
-url: https://medium.freecodecamp.org/dev-env-as-code-c25f1ce83ec2
-date: Mon Nov 19 2018 15:39:56 GMT+0000 (UTC)
 subtitle: How to streamline developer onboarding
 title: Dev environments as code
+date: Mon Nov 19 2018 15:39:56 GMT+0000 (UTC)
 image: https://cdn-images-1.medium.com/max/2000/1*GszIo6iudvQRcmZcBfVmIA.gif
 author: svenefftinge
+url: https://medium.freecodecamp.org/dev-env-as-code-c25f1ce83ec2
 ---
 
-Source: http://dilbert.com/strip/2017-01-02
+![Source: http://dilbert.com/strip/2017-01-02](https://cdn-images-1.medium.com/max/2000/1*GszIo6iudvQRcmZcBfVmIA.gif)
 
 Imagine that only a decade ago system administrators deployed, configured, and maintained software systems manually. Doing so burned an endless amount of their precious lifetimes and energy.
 
@@ -75,7 +75,6 @@ Once you push the change to the repository and the docker image gets updated (au
 ![Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/12000/0*_7n4Htwk2Iz-r9qA)*Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
 
 ### **Automated IDE Setup**
-> Disclaimer: I am affiliated with some of the tools mentioned below.
 
 The Docker approach gets a bit clumsy if your development tools have a UI such as a desktop IDE. You can package them in Docker, but you have to expose the IDE’s UI through X11. Another alternative is to go with a terminal editor like vim, but of course, that is not an option for most of us.
 

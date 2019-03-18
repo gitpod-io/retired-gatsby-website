@@ -42,15 +42,15 @@ export const breakpoints = {
 
 export const widths = {
   md: 720,
-  lg: 960,
+  lg: 1024,
   xl: 1200
 }
 
 export const dimensions = {
   fontSize: {
-    regular: 14,
-    large: 16,
-    menu: 16,
+    regular: 16,
+    large: 20,
+    menu: 18,
   },
   headingSizes: {
     h1: 2.3,
