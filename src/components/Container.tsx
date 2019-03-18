@@ -8,7 +8,7 @@ const StyledContainer = styled.div`
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: ${getEmSize(widths.lg)}em;
+  max-width: ${getEmSize(widths.lg)}em;
   padding: ${dimensions.containerPadding}rem;
 `
 
