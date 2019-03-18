@@ -18,7 +18,6 @@ import Go from '../resources/Logo_Go.svg';
 import JS from '../resources/Logo_JS.svg';
 import ScreenshotVideo from '../resources/screenshot-video.jpg';
 import GitHubApp from '../resources/github-app.jpg';
-import bg from '../resources/bg.jpg';
 
 import { arrowLeft, arrowRight, arrow, rocket, brain } from '../resources/icons';
 import styled from '@emotion/styled';
@@ -38,7 +37,6 @@ const Teaser = styled.div`
     background-color: ${colors.background2};
     z-index: 2;
     box-shadow: 0px 0px 160px 0px rgba(5,5,5,0.57);
-    //background-image: url(${bg});
 `;
 
 export default class IndexPage extends React.Component<{}, IndexPageState> {
