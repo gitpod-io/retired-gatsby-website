@@ -29,7 +29,7 @@ const ExampleBox: React.SFC<ExampleBoxProps> = (p) => (
         <img style={{ height: 100, maxWidth: 80, flexGrow: 2 }} src={p.image} />
         <a href={p.link}>
             <button className='secondary'>
-                Start workspace
+                Start Workspace
             </button>
         </a>
     </div>
