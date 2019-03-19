@@ -227,6 +227,11 @@ export default `
 
   .article {
 
+      @media (min-width: ${getEmSize(breakpoints.sm)}em) {
+          max-width: 80%;
+          margin-left: 10%;
+      }
+
       h1 {
           font-size: 3em;
       }

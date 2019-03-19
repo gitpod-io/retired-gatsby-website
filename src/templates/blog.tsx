@@ -71,10 +71,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => (
         <Page>
             <Container>
                 <Logos logos={logos.filter(p => p[1] < currentHeight() - 200)} />
-                <div className="article" style={{
-                    maxWidth: '80%',
-                    marginLeft: '10%'
-                }}>
+                <div className="article">
                     {data.markdownRemark.frontmatter.subtitle ?
                         <h2 style={{ color: colors.fontColor3, margin: '50px 0 10px 0'}}>{data.markdownRemark.frontmatter.subtitle}</h2>:
                         null}

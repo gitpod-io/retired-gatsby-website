@@ -1,4 +1,5 @@
 import * as React from 'react'
+import styled from '@emotion/styled'
 
 import Page from '../components/Page'
 import Container from '../components/Container'
@@ -7,7 +8,34 @@ import Logos from '../components/Logos';
 import 'react-modal-video/css/modal-video.min.css'
 import { graphql } from 'gatsby';
 import GatsbyLink from 'gatsby-link';
-import { colors } from '../styles/variables';
+import { colors, breakpoints } from '../styles/variables';
+import { getEmSize } from '../styles/mixins'
+
+
+const BlogFeed = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width: ${getEmSize(breakpoints.md)}em) {
+        justify-content: space-around;
+    }
+`
+
+const BlogPost = styled.div`
+    margin-bottom: 40px;
+    height: auto;
+    min-height: 400px;
+    border: solid 1px ${colors.fontColor2};
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: ${getEmSize(breakpoints.sm)}em) {
+        width: auto;
+        min-width: 280px;
+    }
+`
 
 interface BlogPageProps {
     data: {
@@ -37,7 +65,6 @@ interface BlogData {
     }
 }
 
-
 export default class BlogPage extends React.Component<BlogPageProps, {}> {
 
     render() {
@@ -55,13 +82,13 @@ export default class BlogPage extends React.Component<BlogPageProps, {}> {
                     ]} />
                     <div style={{ marginTop: 30 }}>
                         <h1>Blog</h1>
-                        <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
+                        <BlogFeed>
                             {blogs.map( e => {
                                 return <div key={e.node.fields.slug}>
                                     <BlogPreview blog={e}/>
                                 </div>
                             })}
-                        </div>
+                        </BlogFeed>
                     </div>
                 </Container>
             </Page>
@@ -78,15 +105,7 @@ class BlogPreview extends React.Component<BlogPreviewProps, {}> {
     render() {
         const b = this.props.blog.node;
         const date = new Date(Date.parse(b.frontmatter.date));
-        return <div style={{
-                marginBottom: 40,
-                height: 'auto',
-                minHeight: 400,
-                border: 'solid 1px',
-                borderColor: colors.fontColor2,
-                width: 280,
-                display: 'flex',
-                flexDirection: 'column'}}>
+        return <BlogPost>
             <GatsbyLink to={b.fields.slug}>
                 <div style={{
                             maxWidth: '100%',
@@ -116,7 +135,7 @@ class BlogPreview extends React.Component<BlogPreviewProps, {}> {
                 <div style={{ color: colors.fontColor1, padding: 10}}>
                     {b.excerpt}
                 </div>
-        </div>;
+        </BlogPost>;
     }
 }
 
