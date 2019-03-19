@@ -29,6 +29,8 @@ interface SVGGraph {
 }
 
 const r = 20;
+const circleRadius = '6';
+const strokeWidth = 1;
 
 function toPath(graph: GraphElement[], direction?: Direction, x?: number, y?: number): SVGGraph {
     let result: SVGGraph = {
@@ -125,7 +127,7 @@ const GitGraph: React.SFC<GitGraphProps> = (p) => {
                             d={p}
                             fill="none"
                             stroke={colors.fontColor2}
-                            strokeWidth={2}
+                            strokeWidth={strokeWidth}
                         />)
                     }
                     {
@@ -133,7 +135,7 @@ const GitGraph: React.SFC<GitGraphProps> = (p) => {
                             key={`${d.x}_${d.y}`}
                             x={d.x}
                             y={d.y}
-                            r='8'
+                            r={circleRadius}
                             transform={`translate(${d.x} ${d.y})`}
                             fill={!d.isActive || d.isActive() ? colors.brand : colors.fontColor2}
                             stroke='none'

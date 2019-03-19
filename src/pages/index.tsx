@@ -175,7 +175,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         { start: [0, 115] },
                         { right: 860 },
                         {},
-                        { right: 20 },
+                        { right: 15 },
                         { down: 50 },
                         {
                             fork: [
