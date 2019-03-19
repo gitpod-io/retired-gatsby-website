@@ -56,46 +56,46 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
     }
 
     protected getHowDoesItWork(): JSX.Element {
-        const modes = ['URL Prefixing', 'Browser Extension', 'GitHub App'];
+        const modes = ['URL Prefix', 'Browser Extension', 'GitHub App'];
         let contents: JSX.Element = <></>;
         switch (this.state.worksMode) {
             case 0: {
                 contents = <div style={{ margin: 40 }}>
-                    <div style={{ marginTop: 60 }}>
-                        <p><strong>Just prefix any GitHub URL with <strong className="glow">gitpod.io/#</strong>.</strong></p>
-                        <p>Gitpod analysis the GitHub URL and beams you into a ready-to-code dev environment for that context.</p>
-                    </div>
-                    <div style={{ margin: '40px 0px' }}>
-                        <UrlAnimation />
+                    <div style={{ marginTop: 30 }}>
+                        <p><strong>Simply prefix any GitHub URL with <strong className="glow">gitpod.io/#</strong></strong></p>
+                        <div style={{ margin: '25px 0px' }}>
+                            <UrlAnimation />
+                        </div>
+                        <p>Gitpod understands the GitHub URL and beams you right into a ready-to-code dev environment for that context.</p>
                     </div>
                 </div>;
                 break;
             }
             case 1: {
                 contents = <div style={{ margin: 40 }}>
-                    <strong>Have a button on every GitHub page.</strong>
+                    <strong>Have a button on every GitHub page</strong>
+                    <img style={{ marginTop: 15 }} src={clean(BrowserExtension)} />
                     <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
                         <p>The browser extension adds a button to every GitHub repository.<br /> So you don't have to prefix manually.</p>
                         <button className='primary' style={{ marginLeft: 20, minWidth: 200 }}>Learn More</button>
                     </div>
-                    <img style={{ marginTop: 10 }} src={clean(BrowserExtension)} />
                 </div>
                 break;
             }
             case 2: {
                 contents = <div style={{ margin: 40 }}>
-                    <p><strong>The GitHub app builds your projects</strong> so you don't have to when starting to code.</p>
+                    <p style={{ marginTop: 30 }}><strong>Autobuild your project</strong> and skip the waiting.</p>
+                    <img style={{ borderRadius: 2, marginTop: 5, marginBottom: 15, width: 700 }} src={GitHubApp} />
                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <p>Just like continuos integration tools, the GitHub app listens for changes on your repository and starts preparing workspaces. When your team starts to code all dependencies are downloaded and the code is already compiled.</p>
+                        <p>Just like Continuous Integration, the GitHub app detects changes in your repository and starts preparing new workspaces. When your team starts to code, all dependencies are downloaded and the code is already compiled.</p>
                         <button className='primary' style={{ marginLeft: 20, minWidth: 200 }}>Learn More</button>
                     </div>
-                    <img style={{ borderRadius: 2, margin: '20px 70px', width: 700 }} src={GitHubApp} />
                 </div>
                 break;
             }
         }
         return <div style={{ height: 600 }}>
-            <h2 >How It Works:</h2>
+            <h2 >Get Started Coding</h2>
             <div style={{ display: 'flex', zIndex: 99 }}>
                 {
                     [0, 1, 2].map(idx =>
@@ -233,28 +233,27 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                     <Container>
                         <div style={{ height: 450 }}>
                             <h2>Why Gitpod?</h2>
-                            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 30 }}>
+                            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
                                 <WhyBox>
                                     {brain({ width: 70 })}
                                     <h3>More Flow</h3>
                                     <div style={{ width: 50, height: 3, backgroundColor: colors.brand, marginBottom: 16 }} />
                                     <p>Gitpod picks you up where you are and beams you into a familiar development environment.</p>
-                                    <p>Based on VS Code and Linux terminals you have access to all your favorite tools in a browser tab.</p>
+                                    <p>Based on VS Code and Linux containers you have access to all your favourite tools in a browser tab.</p>
                                 </WhyBox>
                                 <WhyBox>
                                     {rocket({ width: 70 })}
                                     <h3>Less Waiting</h3>
                                     <div style={{ width: 50, height: 3, backgroundColor: colors.brand, marginBottom: 16 }} />
                                     <p>Gitpod is the first IDE that builds your project before you even open it.</p>
-                                    <p>Install the GitHub App and have prepare ready-to-code dev environments. They are not only checked out but also compiled and tested.</p>
-
+                                    <p>Install the GitHub App and get ready-to-code dev environments. They are not only checked out but also compiled and tested.</p>
                                 </WhyBox>
                                 <WhyBox>
                                     {arrow({ width: 70 })}
                                     <h3>No Setup</h3>
                                     <div style={{ width: 50, height: 3, backgroundColor: colors.brand, marginBottom: 16 }} />
                                     <p>Start coding right away.</p>
-                                    <p>No more 'works on my machine' situations and hour long setups.<br /> With Gitpod developer environments are automated, reproducible and versioned.</p>
+                                    <p>No more 'works on my machine' situations and hour-long setups.<br /> With Gitpod developer environments are automated, reproducible and versioned.</p>
                                 </WhyBox>
                             </div>
                         </div>
@@ -262,7 +261,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 </Teaser>
                 <Container>
                     <div style={{ height: 425, marginTop: 60 }}>
-                        <h2>Try an example!</h2>
+                        <h2>Try It</h2>
                         <p>Gitpod works with all major programming languages. You can try an example right now.</p>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
                             <ExampleBox title="Python" description='Django Application' image={(Python)} link="https://gitpod.io/#" />
@@ -282,7 +281,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         height: 730,
                         marginTop: 80
                     }}>
-                        <h2>What do others say?</h2>
+                        <h2>Don't Just Take Our Word for It</h2>
                         <div style={{ position: 'absolute', left: 530, top: 160, width: 435 }}>
                             <TweetEmbed id='1101772731203252229' options={twitterOptions} />
                         </div>
