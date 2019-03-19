@@ -1,13 +1,42 @@
 import * as React from 'react'
-import { graphql } from 'gatsby'
+import styled from '@emotion/styled'
+import { graphql, navigate } from 'gatsby'
 
 import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 import { MENU } from '../docs/menu';
 import { Link } from 'gatsby'
-import { colors } from '../styles/variables';
+import { colors, breakpoints } from '../styles/variables';
+import { getEmSize } from '../styles/mixins'
 import Logos from '../components/Logos';
+
+const DocContent = styled.div`
+    display: flex;
+
+    @media (max-width: ${getEmSize(breakpoints.md)}em) {
+        flex-direction: column;
+    }
+`
+
+const DocSidebar = styled.div`
+    width: 200px;
+    min-width: 200px;
+    padding-top: 120px;
+    border-radius: 3px;
+    border-color: ${colors.fontColor2};
+    margin-right: 10px;
+
+    @media (max-width: ${getEmSize(breakpoints.md)}em) {
+      padding-top: 60px;
+      width: auto;
+    }
+
+    @media (min-width: ${getEmSize(breakpoints.sm)}em) and (max-width: ${getEmSize(breakpoints.md)}em) {
+      max-width: 80%;
+      margin-left: 10%;
+    }
+`
 
 interface DocTemplateProps {
   data: {
@@ -41,15 +70,20 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => (
                     [-120, 630, 70],
                     [40, 830, 120]
                 ]} />
-        <div style={{ display: 'flex'}}>
-            <div style={{ width: 200, minWidth: 200, maxHeight: 550, paddingTop: 120, borderRadius: 3, borderColor: colors.fontColor2, marginRight: 10}}>
-                <DocMenu/>
-            </div>
+        <DocContent>
+            <DocSidebar>
+                <div className='hidden-md-down'>
+                    <DocMenu/>
+                </div>
+                <div className='hidden-md-up'>
+                    <DocTopicChooser/>
+                </div>
+            </DocSidebar>
             <div className="article">
                 <h4 style={{color: colors.fontColor2, marginBottom: 0, marginTop: 30}}>Docs</h4>
                 <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
             </div>
-        </div>
+        </DocContent>
       </Container>
     </Page>
   </IndexLayout>
@@ -102,3 +136,27 @@ const DocMenu: React.SFC<DocMenuProps> = () => {
         })}
     </div>
 }
+
+interface DocTopicChooserProps {
+}
+
+function onSelectTopic(event: React.FormEvent<HTMLSelectElement>) {
+    navigate(event.currentTarget.value);
+}
+
+export const DocTopicChooser: React.SFC<DocTopicChooserProps> = () => {
+    return <select className='secondary' onChange={onSelectTopic}>
+        <option value='#' selected={true}>Select A Topic</option>
+        {MENU.map(m => {
+            return <>
+                <option key={m.path} value={`/docs/${m.path}`}>{m.title}</option>
+                {
+                    (m.subMenu || []).map(m =>
+                        <option key={m.path} value={`/docs/${m.path}`}>&nbsp;&nbsp;&nbsp;&nbsp;{m.title}</option>
+                    )
+                }
+            </>
+        })}
+    </select>
+}
+

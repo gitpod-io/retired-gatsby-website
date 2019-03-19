@@ -1,5 +1,6 @@
 import { dimensions, fonts, colors, breakpoints } from './variables'
 import { getEmSize } from './mixins'
+import arrowDown from '../resources/Arrow_down.svg';
 
 export default `
   html {
@@ -15,6 +16,7 @@ export default `
   html {
     font-size: ${dimensions.fontSize.regular}px !important;
     line-height: ${dimensions.lineHeight.regular} !important;
+    overflow-x: hidden;
   }
 
   body {
@@ -116,7 +118,7 @@ export default `
     border-top: 1px solid ${colors.ui.light};
   }
 
-  button {
+  button, select {
     margin: 10px 0px;
     padding: 8px 14px;
     border-radius: 2px;
@@ -140,7 +142,15 @@ export default `
     }
   }
 
-
+  select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 25px;
+    width: 100%;
+    background: url('${arrowDown}') no-repeat 95% 55%;
+    background-size: 20px;
+  }
 
 
 
@@ -215,14 +225,20 @@ export default `
       font-size: 12px;
   }
 
-  .stargraph {
-      @media (max-width: ${getEmSize(breakpoints.md)}em) {
+  .draggable {
+      cursor: move;
+  }
+
+  .hidden-md-up {
+      @media (min-width: ${getEmSize(breakpoints.md)}em) {
           display: none;
       }
   }
 
-  .draggable {
-      cursor: move;
+  .hidden-md-down {
+      @media (max-width: ${getEmSize(breakpoints.md)}em) {
+          display: none;
+      }
   }
 
   .article {

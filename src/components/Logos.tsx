@@ -11,7 +11,7 @@ const Logos: React.SFC<LogosProps> = ({ logos }) => (
     <>
         {logos.map(logoPlacement => {
             const [left, top, width] = logoPlacement;
-            return <img key={''+left+top+width} src={clean(greyLogo)} style={{
+            return <img key={''+left+top+width} src={clean(greyLogo)} className='hidden-md-down' style={{
                 position: 'absolute',
                 left,
                 top,

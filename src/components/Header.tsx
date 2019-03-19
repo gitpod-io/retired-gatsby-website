@@ -20,8 +20,7 @@ const StyledHeader = styled.header`
     z-index: 2;
     position: fixed;
     width: 100%;
-    padding: 0;
-    padding-top: 5px;
+    padding: 5px 0;
     margin: 0;
   }
 `
@@ -38,9 +37,13 @@ const HeaderInner = styled(Container)`
 
 const MobileMenu = styled.div`
   margin-left: auto;
+  margin-right: -10px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
 
   > :not(:last-child) {
-    padding-right: 15px;
+    padding-right: 12px;
   }
 
   @media (min-width: ${getEmSize(breakpoints.md)}em) {
@@ -64,6 +67,8 @@ const Menu = styled.div`
     width: 100%;
     margin-top: 15px;
     flex-direction: column;
+    max-height: 85vh;
+    overflow: scroll;
 
     :before {
       content: '';
@@ -99,6 +104,15 @@ const Menu = styled.div`
   }
 `
 
+const HomepageLogo = styled.img`
+  width: 120px;
+
+  @media (max-width: ${getEmSize(breakpoints.md)}em) {
+    width: 100px;
+    margin-top: 3px;
+  }
+`
+
 const HomepageLink = styled(Link)`
   color: ${colors.fontColor1};
   font-size: ${dimensions.fontSize.menu};
@@ -115,30 +129,36 @@ interface HeaderProps {
     title: string
 }
 
-export default class Header extends React.Component<HeaderProps, {}> {
-    constructor(props: {}) {
+interface HeaderState {
+    isMenuOpen: boolean,
+}
+
+export default class Header extends React.Component<HeaderProps, HeaderState> {
+    constructor(props: HeaderProps) {
         super(props);
         this.state = {
-            isMenuOpen: false
+            isMenuOpen: false,
         }
         this.toggleMenu = this.toggleMenu.bind(this);
     }
 
     toggleMenu() {
         const { isMenuOpen } = this.state;
-        this.setState({ isMenuOpen: !isMenuOpen })
+        this.setState({ isMenuOpen: !isMenuOpen });
     }
 
     render() {
         const { isMenuOpen } = this.state;
         return <StyledHeader>
             <HeaderInner>
-                <HomepageLink to="/" style={{ paddingRight: 60 }}><img src={logo} style={{ width: 120 }} /></HomepageLink>
+                <HomepageLink to="/" style={{ paddingRight: 60, lineHeight: 'initial' }}>
+                    <HomepageLogo src={logo} />
+                </HomepageLink>
                 <MobileMenu>
                     {isMenuOpen ? null : <a href="https://gitpod.io/api/login">
-                        <button className='primary'>Log In</button>
+                        <button className='primary' style={{fontSize: '90%', padding: '6px 10px'}}>Log In</button>
                     </a>}
-                    <button onClick={this.toggleMenu} style={{border: 0}}>
+                    <button onClick={this.toggleMenu} style={{ border: 0, padding: '6px 10px' }}>
                         {isMenuOpen ? icons.cross() : icons.burger()}
                     </button>
                 </MobileMenu>
@@ -147,6 +167,8 @@ export default class Header extends React.Component<HeaderProps, {}> {
                     <HomepageLink to="/pricing">Pricing</HomepageLink>
                     <HomepageLink to="/docs">Docs</HomepageLink>
                     <HomepageLink to="/blog">Blog</HomepageLink>
+                    <HomepageLink className="hidden-md-up" to="/about">About</HomepageLink>
+                    <HomepageLink className="hidden-md-up" to="/contact">Contact</HomepageLink>
                     <a href="https://gitpod.io/api/login">
                         <button className='primary'>Log In</button>
                     </a>
