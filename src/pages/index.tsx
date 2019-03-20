@@ -9,14 +9,13 @@ import 'react-modal-video/css/modal-video.min.css'
 import { colors } from '../styles/variables';
 import TweetEmbed from 'react-tweet-embed'
 import BrowserExtension from '../resources/browser-extension.svg';
-import { clean } from '../clean-url';
 import ExampleBox from '../components/ExampleBox';
 import Python from '../resources/Logo_Python.svg';
 import Java from '../resources/Logo_Java.svg';
 import Go from '../resources/Logo_Go.svg';
 import JS from '../resources/Logo_JS.svg';
 import ScreenshotVideo from '../resources/screenshot-video.jpg';
-import GitHubApp from '../resources/github-app.jpg';
+import Octocat from '../resources/Octocat.png';
 
 import { arrowLeft, arrowRight, arrow, rocket, brain } from '../resources/icons';
 import styled from '@emotion/styled';
@@ -62,21 +61,21 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
             case 0: {
                 contents = <div style={{ margin: 40 }}>
                     <div style={{ marginTop: 30 }}>
-                        <p><strong>Simply prefix any GitHub URL with <strong className="glow">gitpod.io/#</strong></strong></p>
+                        <p><strong>Prefix any GitHub URL with <strong className="glow">gitpod.io/#</strong></strong></p>
                         <div style={{ margin: '25px 0px' }}>
                             <UrlAnimation />
                         </div>
-                        <p>Gitpod understands the GitHub URL and beams you right into a ready-to-code dev environment for that context.</p>
+                        <p>... and get beamed into a ready-to-code dev environment immediately.</p>
                     </div>
                 </div>;
                 break;
             }
             case 1: {
                 contents = <div style={{ margin: 40 }}>
-                    <strong>Have a button on every GitHub page</strong>
-                    <img style={{ marginTop: 15 }} src={clean(BrowserExtension)} />
-                    <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
-                        <p>The browser extension adds a button to every GitHub repository.<br /> So you don't have to prefix manually.</p>
+                    <strong>One-click experience on every GitHub page</strong>
+                    <img style={{ marginTop: 15 }} src={BrowserExtension} />
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                        <p>The browser extension adds a button to every GitHub repository, issue and pull request. So you don't have to prefix manually.</p>
                         <button className='primary' style={{ marginLeft: 20, minWidth: 200 }}>Learn More</button>
                     </div>
                 </div>
@@ -84,11 +83,13 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
             }
             case 2: {
                 contents = <div style={{ margin: 40 }}>
-                    <p style={{ marginTop: 30 }}><strong>Autobuild your project</strong> and skip the waiting.</p>
-                    <img style={{ borderRadius: 2, marginTop: 5, marginBottom: 15, width: 700 }} src={GitHubApp} />
                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <p>Just like Continuous Integration, the GitHub app detects changes in your repository and starts preparing new workspaces. When your team starts to code, all dependencies are downloaded and the code is already compiled.</p>
-                        <button className='primary' style={{ marginLeft: 20, minWidth: 200 }}>Learn More</button>
+                        <div>
+                            <p style={{ marginTop: 30 }}><strong>Autobuild your project</strong> and skip the waiting.</p>
+                            <p>Just like Continuous Integration, the GitHub app detects changes in your repository and starts preparing new workspaces. When your team starts to code, all dependencies are downloaded and the code is already compiled.</p>
+                            <button className='primary' style={{ minWidth: 200 }}>Learn More</button>
+                        </div>
+                        <img style={{ marginTop: 15, width: 250 }} src={Octocat} />
                     </div>
                 </div>
                 break;
@@ -141,7 +142,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                     <div style={{ zIndex: 99, position: "fixed", top: 50, left: 'auto' }}>
                         <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='D41zSHJthZI' onClose={() => this.setState({ isOpen: false })} />
                     </div>
-                    <div style={{ maxWidth: 360, height: 550, marginTop: 60, zIndex: 2 }}>
+                    <div style={{ maxWidth: 360, height: 550, marginTop: 140, zIndex: 2 }}>
                         <h2 style={{ color: colors.fontColor2, marginBottom: 15 }}>Frictionless Coding</h2>
                         <h1 style={{ fontSize: '3em' }}>One-Click IDE<br /> for GitHub</h1>
                         <div style={{ height: 3, width: 95, backgroundColor: colors.brand, marginBottom: 30 }} />
@@ -184,7 +185,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                                     isActive: () => this.state.worksMode === 0,
                                     onClick: () => { this.setState({ worksMode: 0 }) }
                                 },
-                                { right: 200 },
+                                { right: 180 },
                                 {
                                     isActive: () => this.state.worksMode === 1,
                                     onClick: () => { this.setState({ worksMode: 1 }) }
@@ -352,12 +353,12 @@ class UrlAnimation extends React.Component<{}, { url: string }>{
     render() {
         return <div style={{
             backgroundColor: 'white',
-            height: 30,
+            height: 34,
             padding: '5px 20px',
             borderRadius: 20
         }}>
             <div style={{
-                fontSize: 13,
+                fontSize: 16,
                 color: '#1e1e1e'
             }}>{this.state.url}<span style={{
                 animation: "blink 1s  infinite",
