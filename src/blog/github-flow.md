@@ -24,7 +24,7 @@ In this article, I will walk you through an automated, cloud-based development w
 Starting a workspace with Gitpod is much easier than with other cloud IDEs. Gitpod doesn’t require you to configure workspaces with container images, Git information and so on. Instead, you directly go to a GitHub repository and click the Gitpod-Button [see below]. Gitpod provides you with a ready to use workspace, so that you can immediately start coding without any configuration steps.
 
 ![Button provided by Gitpod’s browser extension](https://cdn-images-1.medium.com/max/3200/0*MjUIJ1zspz3CF8oo)*Button provided by Gitpod’s browser extension*
-> To see the Gitpod button on the GitHub page, you would have to [install a browser extension](https://gitpod.io). Alternatively, you can manually prefix any GitHub URL with `https://gitpod.io#`. For instance, clicking the following link will instantly provide you a development workspace for the Eclipse Theia project: [https://gitpod.io#https://github.com/theia-ide/theia](https://gitpod.io#https://github.com/theia-ide/theia)
+> To see the Gitpod button on the GitHub page, you would have to [install a browser extension](https://gitpod.io). Alternatively, you can manually prefix any GitHub URL with `https://gitpod.io/#`. For instance, clicking the following link will instantly provide you a development workspace for the Eclipse Theia project: [https://gitpod.io/#https://github.com/theia-ide/theia](https://gitpod.io/#https://github.com/theia-ide/theia)
 
 Of course, different projects need different setups. Gitpod has a three-stage process to determine the workspace configuration, e.g. what docker image to use for development, what startup script to run, and which ports to expose:
 

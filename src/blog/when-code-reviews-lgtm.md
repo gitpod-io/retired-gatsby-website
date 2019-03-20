@@ -65,5 +65,5 @@ While we cannot get rid of context switches completely when doing code reviews, 
 
 Gitpod integrates the review features of GitHub in an online IDE and provides an automated experience with a single click. All you need is a browser, and once you are done with the review, you just close the window and don’t need to look back.
 
-Gitpod is free and you can use it now. Just go to any pull request on GitHub and prefix the URL with. `gitpod.io#`, e.g.
-[https://gitpod.io#https://github.com/theia-ide/theia/pull/1204](https://gitpod.io#https://github.com/theia-ide/theia/pull/1204)
+Gitpod is free and you can use it now. Just go to any pull request on GitHub and prefix the URL with. `gitpod.io/#`, e.g.
+[https://gitpod.io/#https://github.com/theia-ide/theia/pull/1204](https://gitpod.io/#https://github.com/theia-ide/theia/pull/1204)

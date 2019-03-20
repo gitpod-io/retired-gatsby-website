@@ -16,7 +16,7 @@ Now, it is available, and I would like to give you a run through the basics of N
 
 ## Step 0: Open Node.js Shopping Cart example in Gitpod
 
-Start a new workspace for the example GitHub repository: [https://gitpod.io#https://github.com/gitpod-io/nodejs-shopping-cart](https://gitpod.io#https://github.com/gitpod-io/nodejs-shopping-cart)
+Start a new workspace for the example GitHub repository: [https://gitpod.io/#https://github.com/gitpod-io/nodejs-shopping-cart](https://gitpod.io/#https://github.com/gitpod-io/nodejs-shopping-cart)
 
 ![](https://cdn-images-1.medium.com/max/2992/0*WySkgfqLHyOkQq_c)
 

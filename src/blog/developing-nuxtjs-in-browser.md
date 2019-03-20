@@ -26,7 +26,7 @@ Enter any name description, you can later change it.
 
 ## **Step 2: Start a Gitpod workspace**
 
-From your newly created but still empty project you can now start a Gitpod workspace. To do so prefix the GitHub URL with **gitpod.io#**:
+From your newly created but still empty project you can now start a Gitpod workspace. To do so prefix the GitHub URL with **gitpod.io/#**:
 
 ![](https://cdn-images-1.medium.com/max/2776/0*NjvEmIjiTVwbTIaA)
 

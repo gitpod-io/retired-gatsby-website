@@ -42,7 +42,7 @@ Gitpod treats any GitHub repository as a project which can be opened. Let’s st
 
 * enter a repository name and click Create repository.
 
-Now, we can open the created project in Gitpod. You can do it by simply prefixing the repository URL with gitpod.io#. For example, I’ve called my repository node-hello-world and it can be opened in Gitpod with **gitpod.io#**https://github.com/akosyakov/node-hello-world.
+Now, we can open the created project in Gitpod. You can do it by simply prefixing the repository URL with gitpod.io/#. For example, I’ve called my repository node-hello-world and it can be opened in Gitpod with **gitpod.io/#**https://github.com/akosyakov/node-hello-world.
 
 The first time, you will need to sign in Gitpod with your GitHub account. GitHub will ask you to authorize read access to your email address. Write access to repositories can be granted later on [your access control page](https://gitpod.io/access-control/).
 
@@ -136,7 +136,7 @@ And change the Dockerfile to use Node.js 10.x as the base image:
 
 To try it our we need to push the config back to GitHub and open a new workspace. Let’s do this through a pull request, so we learn about the GitHub integration on the way.
 
-*Here is [another snapshot link](https://gitpod.io#snapshot/ea0d6704-a513-4c94-b8e7-fe72c3d8e5fb) to try our configuration without opening a pull request. You can learn more about workspace configuration [here](https://docs.gitpod.io/40_Configuration.html).*
+*Here is [another snapshot link](https://gitpod.io/#snapshot/ea0d6704-a513-4c94-b8e7-fe72c3d8e5fb) to try our configuration without opening a pull request. You can learn more about workspace configuration [here](https://docs.gitpod.io/40_Configuration.html).*
 
 ## Working with Pull Requests
 
@@ -160,7 +160,7 @@ Let’s open a new pull request from Gitpod:
 
 As I’ve mentioned at the beginning Gitpod treats each GitHub repository as a project. Actually, it is even smarter and can figure out from any GitHub URL which branch should be opened and how.
 
-Let’s go to the pull request page on GitHub and prefix its URL with gitpod.io#, just like we did initially:
+Let’s go to the pull request page on GitHub and prefix its URL with gitpod.io/#, just like we did initially:
 
 ![Opening a PR with new workspace image can take some time since Gitpod needs to build the image. But it is only rebuilt when changed.](https://cdn-images-1.medium.com/max/2608/0*YXS_V_quV3Lg7Y-X)*Opening a PR with new workspace image can take some time since Gitpod needs to build the image. But it is only rebuilt when changed.*
 
@@ -188,13 +188,13 @@ You can take a complete snapshot (clone) of your workspace, even including your 
 
 In order to share a workspace snapshot: click on your account avatar, select Share Workspace Snapshot, copy a link and share the copied link where you want.
 
-![The [shared workspace snapshot](https://gitpod.io#snapshot/14dc69f1-0e8c-4a36-b221-0ab16e91326e) preserves not only the development setup but the IDE layout and even selection in the editor.](https://cdn-images-1.medium.com/max/2608/0*-n2I6-4fPuKK70_5)*The [shared workspace snapshot](https://gitpod.io#snapshot/14dc69f1-0e8c-4a36-b221-0ab16e91326e) preserves not only the development setup but the IDE layout and even selection in the editor.*
+![The [shared workspace snapshot](https://gitpod.io/#snapshot/14dc69f1-0e8c-4a36-b221-0ab16e91326e) preserves not only the development setup but the IDE layout and even selection in the editor.](https://cdn-images-1.medium.com/max/2608/0*-n2I6-4fPuKK70_5)*The [shared workspace snapshot](https://gitpod.io/#snapshot/14dc69f1-0e8c-4a36-b221-0ab16e91326e) preserves not only the development setup but the IDE layout and even selection in the editor.*
 
 ## Developing full-stack Node.js applications
 
 So far, we’ve only had a look at a simple Node.js application. In case you wonder whether it will scale to sophisticated applications you can try any of the following repositories:
 
-* [Node.js Shopping Cart](https://github.com/gitpod-io/nodejs-shopping-cart) is a reference Node.js application demonstrating how to use the Express framework. You can open it in Gitpod with [one-click](https://gitpod.io#https://github.com/gitpod-io/nodejs-shopping-cart) and follow along [this blog post](https://medium.com/gitpod/debugging-node-js-applications-in-theia-76c94c76f0a1) explaining in details how to debug the app.
+* [Node.js Shopping Cart](https://github.com/gitpod-io/nodejs-shopping-cart) is a reference Node.js application demonstrating how to use the Express framework. You can open it in Gitpod with [one-click](https://gitpod.io/#https://github.com/gitpod-io/nodejs-shopping-cart) and follow along [this blog post](https://medium.com/gitpod/debugging-node-js-applications-in-theia-76c94c76f0a1) explaining in details how to debug the app.
 
 * Gitpod is based on an open-source IDE framework — [Theia](http://theia-ide.org). It’s built with a lot of JS technologies, including Node.js, Express, TypeScript and React. And, of course, [Gitpod is used to develop Theia](https://github.com/theia-ide/theia/blob/master/doc/Developing.md#run-the-browser-example-with-gitpod).
 

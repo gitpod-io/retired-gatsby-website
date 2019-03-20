@@ -63,7 +63,7 @@ Pick “Share Workspace Snapshot” and copy and share the link or one of the sn
 ![](https://cdn-images-1.medium.com/max/4348/1*2aDOY4sHSyefz2uepzGskw.png)
 
 Here’s the snapshot link for you to try:
-[https://gitpod.io#snapshot/f7f5954a-250b-4113-909c-aae88b64321c](https://gitpod.io#snapshot/f7f5954a-250b-4113-909c-aae88b64321c)
+[https://gitpod.io/#snapshot/f7f5954a-250b-4113-909c-aae88b64321c](https://gitpod.io/#snapshot/f7f5954a-250b-4113-909c-aae88b64321c)
 
 ## Summary
 
