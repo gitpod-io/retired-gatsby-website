@@ -21,6 +21,7 @@ import { arrowLeft, arrowRight, arrow, rocket, brain } from '../resources/icons'
 import styled from '@emotion/styled';
 import GitGraph from '../components/GitGraph';
 import GatsbyLink from 'gatsby-link';
+import { Teaser } from '../components/Teaser';
 
 interface IndexPageState { isOpen: boolean, worksMode: number }
 
@@ -31,12 +32,6 @@ const WhyBox = styled.div`
     align-items: center;
     text-align: center;
     padding: 0 20px;
-`;
-
-const Teaser = styled.div`
-    background-color: ${colors.background2};
-    z-index: 2;
-    box-shadow: 0px 0px 160px 0px rgba(5,5,5,0.57);
 `;
 
 export default class IndexPage extends React.Component<{}, IndexPageState> {
@@ -73,7 +68,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
             case 1: {
                 contents = <div style={{ margin: 40 }}>
                     <strong>One-click experience on every GitHub page</strong>
-                    <img style={{ marginTop: 15 }} src={BrowserExtension} />
+                    <img style={{ marginTop: 15, height: 125 }} src={BrowserExtension} />
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                         <p>The browser extension adds a button to every GitHub repository, issue and pull request. So you don't have to prefix manually.</p>
                         <button className='primary' style={{ marginLeft: 20, minWidth: 200 }}>Learn More</button>
@@ -95,7 +90,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 break;
             }
         }
-        return <div style={{ height: 600 }}>
+        return <div style={{ height: 550 }}>
             <h2 >Get Started Coding</h2>
             <div style={{ display: 'flex', zIndex: 99 }}>
                 {
@@ -197,11 +192,9 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                                 },
                             ]
                         },
-                        // try an example
-                        { down: 1180 },
+                        { down: 1250 },
                         {},
-                        // what do opthers say
-                        { down: 550 },
+                        { down: 650 },
                         {},
                         { down: 60 },
                         {
@@ -261,7 +254,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                     </Container>
                 </Teaser>
                 <Container>
-                    <div style={{ height: 425, marginTop: 60 }}>
+                    <div style={{ height: 525 }}>
                         <h2>Try It</h2>
                         <p>Gitpod works with all major programming languages. You can try an example right now.</p>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>

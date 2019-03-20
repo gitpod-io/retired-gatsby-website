@@ -9,6 +9,7 @@ import { colors } from '../styles/variables';
 import GatsbyLink from 'gatsby-link';
 import * as icons from '../resources/icons';
 import Box from '../components/Box';
+import { Teaser } from '../components/Teaser';
 
 export default class PricingPage extends React.Component<{}, {}> {
 
@@ -76,7 +77,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                     <Box
                         title="Team Subscriptions"
                         style={{
-                            marginTop: 40
+                            marginTop: 80
                         }}>
                         <h3>
                             Increase the productivity of an entire team!
@@ -89,12 +90,12 @@ export default class PricingPage extends React.Component<{}, {}> {
                         </a>
                     </Box>
                     <p style={{
-                        marginTop: 30,
+                        marginTop: 60,
                         textAlign: 'center',
                         fontSize: '70%',
                     }}>Gitpod workspaces may be used for development only. Please refer to the <GatsbyLink to='/terms'>terms of service</GatsbyLink> for details.</p>
                 </Container>
-                <div style={{ backgroundColor: colors.background2, zIndex: 2, boxShadow: "0px 0px 160px 0px rgba(5,5,5,0.57)" }}>
+                <Teaser>
                     <Container>
                         <div style={{ display: 'flex', flexDirection: 'row' }}>
                             {icons.bag({ width: 100, fill: 'none', stroke: colors.brand, margin: '0 60px 0 30px' })}
@@ -105,7 +106,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                             </div>
                         </div>
                     </Container>
-                </div>
+                </Teaser>
                 <Container>
                     <div>
                         <h2 style={{ rotate: '12', textShadow: '0 0 2px', fontWeight: 100, fontSize: '1.3em', color: colors.brand }}>Coming Soon!</h2>
@@ -169,7 +170,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                         <p>
                             Please drop us a mail and we will inform you as soon as <strong>Gitpod Enterprise</strong> is available.
                         </p>
-                        <button className='secondary'>
+                        <button className='primary'>
                             Let's Talk
                         </button>
                     </div>
