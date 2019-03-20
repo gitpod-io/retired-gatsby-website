@@ -17,8 +17,8 @@ export const colors = {
     copy: 'hsla(270, 15.797828016000002%, 0%, 0.88)',
     calm: 'rgba(0, 0, 0, 0.54)'
   },
-  background1: '#2a2a2a',
-  background2: '#3a3a3a',
+  background1: '#1e1e1e',
+  background2: '#262626',
   background3: '#4a4a4a',
   fontColor1: '#dedede',
   fontColor2: '#666',
