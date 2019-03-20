@@ -53,7 +53,7 @@ module.exports = {
               maxWidth: 1140,
               quality: 90,
               linkImagesToOriginal: false,
-              backgroundColor: '#2a2a2a'
+              backgroundColor: '#1e1e1e'
             }
           }
         ]

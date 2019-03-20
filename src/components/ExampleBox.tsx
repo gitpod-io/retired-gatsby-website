@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { colors } from '../styles/variables';
+import Box from './Box';
 
 interface ExampleBoxProps {
     title: string;
@@ -9,22 +9,10 @@ interface ExampleBoxProps {
 }
 
 const ExampleBox: React.SFC<ExampleBoxProps> = (p) => (
-    <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        alignItems: 'center',
+    <Box title={p.title} style={{
         width: 200,
-        height: 310,
-        borderStyle: 'solid',
-        borderWidth: 1,
-        borderColor: colors.fontColor1,
-        borderRadius: 2,
-        padding: '20px 0px',
-        boxShadow: ` 0 0 1px ${colors.brand}`,
-        position: 'relative'
+        height: 310
     }}>
-        <h3 style={{position: 'absolute', top: -35, backgroundColor: colors.background1, padding: '0 15px'}}>{p.title}</h3>
         <p style={{marginTop: 10, maxWidth: '90%', textAlign: 'center'}}>{p.description}</p>
         <img style={{ height: 100, maxWidth: 80, flexGrow: 2 }} src={p.image} />
         <a href={p.link}>
@@ -32,7 +20,7 @@ const ExampleBox: React.SFC<ExampleBoxProps> = (p) => (
                 Start Workspace
             </button>
         </a>
-    </div>
+    </Box>
 )
 
 export default ExampleBox;

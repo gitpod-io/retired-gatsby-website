@@ -7,15 +7,15 @@ import Logos from '../components/Logos';
 import GitGraph from '../components/GitGraph';
 import ModalVideo from 'react-modal-video';
 import 'react-modal-video/css/modal-video.min.css'
-import { clean } from '../clean-url';
 import { colors } from '../styles/variables';
 import TerminalsImage from '../resources/terminals.png';
 import LanguageToolingImage from '../resources/language-tooling.png';
 import InlineCommentsImage from '../resources/inline-comments.png';
 import PrebuiltWorkspacesImage from '../resources/prebuilt-workspaces.png';
-import LinuxInYourBrowserImage from '../resources/linux-in-your-browser.png';
+import CollaborationImage from '../resources/collaboration.png';
 import * as icons from '../resources/icons';
 import styled from '@emotion/styled';
+import GatsbyLink from 'gatsby-link';
 
 interface FeaturesPageState {
     isModalOpen: boolean;
@@ -97,19 +97,17 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                                 }
                             ]
                         },
-                        // try an example
                         { down: 210 },
-                        {},
-                        // what do opthers say
-                        { down: 570 },
-                        {},
-                        { down: 595 },
                         {},
                         { down: 575 },
                         {},
-                        { down: 600 },
+                        { down: 580 },
                         {},
-                        { down: 1620 },
+                        { down: 580 },
+                        {},
+                        { down: 580 },
+                        {},
+                        { down: 1700 },
                         { right: 400 },
                         {}
                     ]} />
@@ -127,8 +125,8 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '5rem', marginBottom: '12rem', alignItems: 'flex-end' }}>
                         <HeaderLink href="#prebuilt-workspaces" >Prebuilt Workspaces</HeaderLink>
                         <HeaderLink href="#vs-code">VS Code</HeaderLink>
-                        <HeaderLink href="#docker">Terminals</HeaderLink>
-                        <HeaderLink href="#code-review-mode" >Code Reviews</HeaderLink>
+                        <HeaderLink href="#terminals">Terminals</HeaderLink>
+                        <HeaderLink href="#code-reviews" >Code Reviews</HeaderLink>
                         <HeaderLink href="#collaboration" >Collaboration</HeaderLink>
                         <HeaderLink href="#supported-languages" >Supported Languages</HeaderLink>
                     </div>
@@ -137,7 +135,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         button={<a href="https://medium.com/@csweichel/waiting-for-code-to-build-is-like-watching-paint-dry-a1c6b25fd601" target="_blank">
                             <button className='primary' onClick={this.openModal}>Learn More</button>
                         </a>}
-                        visual={<img src={clean(PrebuiltWorkspacesImage)} alt="prebuilt workspaces" />}>
+                        visual={<img src={PrebuiltWorkspacesImage} alt="prebuilt workspaces" />}>
                         <p>Gitpod continuously builds your code and pull requests in the background to save your time.</p>
                     </Feature>
                     <Feature
@@ -145,34 +143,36 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         button={<a href="https://www.theia-ide.org" target="_blank">
                             <button className='primary'>Visit theia-ide.org</button>
                         </a>}
-                        visual={<img src={clean(LanguageToolingImage)} alt="language tooling" />} >
-                        <p>Gitpod is based on Theia, the open-source, VS Code-powered IDE rearchitected for cloud-based development.<br/>
-                        Get code intelligence and a full Linux shell in a browser tab.</p>
+                        visual={<img src={LanguageToolingImage} alt="language tooling" />} >
+                        <p>Gitpod is based on Theia, the open-source, VS Code-powered IDE rearchitected for cloud-based development.
+                            Get code intelligence and a Linux shell in a browser tab.</p>
                     </Feature>
                     <Feature
                         title="Terminals"
                         button={<a href="https://docs.gitpod.io/40_Configuration.html" target="_blank">
                             <button className='primary'>Learn More</button>
                         </a>}
-                        visual={<img src={clean(TerminalsImage)} alt="terminals" />}>
+                        visual={<img src={TerminalsImage} alt="terminals" />}>
                         <p>Gitpod instantly starts a machine in the cloud, based on a Docker image supporting your project.
-                        Get all your beloved tools instantly.</p>
+                        All required tools are readily installed and configured.</p>
                     </Feature>
 
                     <Feature
                         title="Code Reviews"
                         button={<button className='primary' onClick={this.openModal}>Play Video</button>}
-                        visual={<img src={clean(InlineCommentsImage)} alt="inline comments" />}  >
-                        <p>Opening a pull request in Gitpod makes it easy to review, navigate and validate the code.<br/>
-                        Run it in a terminal, web preview, or virtual desktop &mdash; iterating on your app has never been so easy.</p>
+                        visual={<img src={InlineCommentsImage} alt="inline comments" />}  >
+                        <p>Opening pull requests in Gitpod and review, navigate and validate from within the IDE.<br/>
+                        Read and write comments and full code reviews without switching back to GitHub.</p>
                     </Feature>
                     <Feature
-                        title="Linux in Your Browser"
-                        button={<a href="https://docs.gitpod.io/42_Config_Docker.html" target="_blank">
-                            <button className='primary' onClick={this.openModal}>Learn More</button>
-                        </a>}
-                        visual={<img src={clean(LinuxInYourBrowserImage)} alt="linux in your browser" />} >
-                        <p>Instantly access a full terminal with all the tools you know and love, that reconnects on browser reload keeping the full history.</p>
+                        title="Collaboration"
+                        visual={<img src={CollaborationImage} alt="collaboration" />} >
+                        <p>Gitpod has too major collaboration modes:
+                            <ol>
+                                <li><GatsbyLink to="/docs/33_Sharing_and_Collaboration#sharing-running-workspaces">Share a live session</GatsbyLink> with your remote co-worker and hunt down bugs together. </li>
+                                <li><GatsbyLink to="/blog/workspace-snapshots/">Create a snapshot</GatsbyLink> of your work and share it anywhere.</li>
+                            </ol>
+                        </p>
                     </Feature>
                 </Container>
                 <div style={{ backgroundColor: colors.background2, zIndex: 2, boxShadow: "0px 0px 160px 0px rgba(5,5,5,0.57)", marginTop: 100 }}>
@@ -344,13 +344,13 @@ class Feature extends React.Component<FeatureProps, {}> {
     render() {
         const p = this.props;
         return <div style={{ margin: 100 }}>
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-end'}}>
-                <div style={{ flexBasis: 0, flexGrow: 1 }}>
-                    <h2 id={this.slug()} style={{ marginTop: 0, marginBottom: '2rem' }}>{p.title}</h2>
-                    {p.children}
+                <h2 id={this.slug()} style={{ marginTop: 0, marginBottom: '2rem' }}>{p.title}</h2>
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent:'space-between' }}>
+                    <div style={{marginTop: 6}}>
+                        {p.children}
+                    </div>
+                    <div style={{ textAlign: 'right', whiteSpace: 'nowrap' }}>{p.button}</div>
                 </div>
-                <div style={{ textAlign: 'right' }}>{p.button}</div>
-            </div>
             <div style={{ flexBasis: 0, flexGrow: 1.2 }}>
                 {p.visual}
             </div>
