@@ -236,7 +236,7 @@ export default `
   }
 
   .hidden-md-down {
-      @media (max-width: ${getEmSize(breakpoints.md)}em) {
+      @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
           display: none;
       }
   }

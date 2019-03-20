@@ -16,7 +16,7 @@ const StyledHeader = styled.header`
   background-color: ${colors.background1};
   color: ${transparentize(0.5, colors.fontColor1)};
 
-  @media (max-width: ${getEmSize(breakpoints.md)}em) {
+  @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
     z-index: 2;
     position: fixed;
     width: 100%;
@@ -62,7 +62,7 @@ const Menu = styled.div`
     margin-left: auto;
   }
 
-  @media (max-width: ${getEmSize(breakpoints.md)}em) {
+  @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
     height: auto;
     width: 100%;
     margin-top: 15px;
@@ -107,7 +107,7 @@ const Menu = styled.div`
 const HomepageLogo = styled.img`
   width: 120px;
 
-  @media (max-width: ${getEmSize(breakpoints.md)}em) {
+  @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
     width: 100px;
     margin-top: 3px;
   }

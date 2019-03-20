@@ -14,7 +14,7 @@ import Logos from '../components/Logos';
 const DocContent = styled.div`
     display: flex;
 
-    @media (max-width: ${getEmSize(breakpoints.md)}em) {
+    @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
         flex-direction: column;
     }
 `
@@ -27,12 +27,12 @@ const DocSidebar = styled.div`
     border-color: ${colors.fontColor2};
     margin-right: 10px;
 
-    @media (max-width: ${getEmSize(breakpoints.md)}em) {
+    @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
       padding-top: 60px;
       width: auto;
     }
 
-    @media (min-width: ${getEmSize(breakpoints.sm)}em) and (max-width: ${getEmSize(breakpoints.md)}em) {
+    @media (min-width: ${getEmSize(breakpoints.sm)}em) and (max-width: ${getEmSize(breakpoints.md - 1)}em) {
       max-width: 80%;
       margin-left: 10%;
     }

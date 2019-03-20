@@ -17,7 +17,7 @@ const BlogFeed = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
 
-    @media (max-width: ${getEmSize(breakpoints.md)}em) {
+    @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
         justify-content: space-around;
     }
 `
@@ -31,7 +31,7 @@ const BlogPost = styled.div`
     display: flex;
     flex-direction: column;
 
-    @media (max-width: ${getEmSize(breakpoints.sm)}em) {
+    @media (max-width: ${getEmSize(breakpoints.sm - 1)}em) {
         width: auto;
         min-width: 280px;
     }
