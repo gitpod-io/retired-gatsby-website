@@ -8,7 +8,7 @@ import ModalVideo from 'react-modal-video';
 import 'react-modal-video/css/modal-video.min.css'
 import { colors } from '../styles/variables';
 import TweetEmbed from 'react-tweet-embed'
-import BrowserExtension from '../resources/browser-extension.svg';
+import BrowserExtension from '../resources/browser-ext.png';
 import ExampleBox from '../components/ExampleBox';
 import Python from '../resources/Logo_Python.svg';
 import Java from '../resources/Logo_Java.svg';
@@ -68,7 +68,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
             case 1: {
                 contents = <div style={{ margin: 40 }}>
                     <strong>One-click experience on every GitHub page</strong>
-                    <img style={{ marginTop: 15, height: 125 }} src={BrowserExtension} />
+                    <img style={{ marginTop: 15, height: 132 }} src={BrowserExtension} />
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                         <p>The browser extension adds a button to every GitHub repository, issue and pull request. So you don't have to prefix manually.</p>
                         <button className='primary' style={{ marginLeft: 20, minWidth: 200 }}>Learn More</button>
