@@ -86,7 +86,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                         <div>
                             <p style={{ marginTop: 30 }}><strong>Autobuild your project</strong> and skip the waiting.</p>
-                            <p>Just like Continuous Integration, the GitHub app detects changes in your repository and starts preparing new workspaces. When your team starts to code, all dependencies are downloaded and the code is already compiled.</p>
+                            <p>Just like Continuous Integration, the GitHub app detects changes in your repository and starts preparing new workspaces. By the time your team starts to code, all dependencies are preinstalled and the code is already compiled.</p>
                             <button className='primary' style={{ minWidth: 200 }}>Learn More</button>
                         </div>
                         <img style={{ marginTop: 15, width: 250 }} src={Octocat} />
