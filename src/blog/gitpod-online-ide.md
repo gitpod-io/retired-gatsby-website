@@ -9,7 +9,7 @@ image: https://cdn-images-1.medium.com/max/6908/1*HNDYawJpDgX6gP_e0w17mg.png
 
 After over one year of intensive work, we are proud to announce the public Beta of Gitpod.
 
-Gitpod is an online IDE which can be launched from any GitHub page. Simply **prefix any GitHub-URL with “*https://gitpod.io#”*** or use our [browser extension](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki?hl=en) that adds a button to GitHub pages.
+Gitpod is an online IDE which can be launched from any GitHub page. Simply **prefix any GitHub-URL with “*https://gitpod.io/#”*** or use our [browser extension](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki?hl=en) that adds a button to GitHub pages.
 
 Within seconds, Gitpod provides you with a fully working development environment, including a VS Code-powered IDE and a cloud-based Linux container configured specifically for the project at hand.
 
@@ -78,22 +78,22 @@ You can use Gitpod with any GitHub repository. The login is done through GitHub 
 Why not try it now? If you don’t have a particular repository in mind, you can pick one of the below:
 
 * **JavaScript**:
-[https://gitpod.io#**https://github.com/ooade/NextSimpleStarter](https://gitpod.io#https://github.com/ooade/NextSimpleStarter)**
+[https://gitpod.io/#**https://github.com/ooade/NextSimpleStarter](https://gitpod.io/#https://github.com/ooade/NextSimpleStarter)**
 
 * **Go**:
-[https://gitpod.io#**https://github.com/demo-apps/go-gin-app](https://gitpod.io#https://github.com/demo-apps/go-gin-app)**
+[https://gitpod.io/#**https://github.com/demo-apps/go-gin-app](https://gitpod.io/#https://github.com/demo-apps/go-gin-app)**
 
 * **Java**:
-[https://gitpod.io#**https://github.com/spring-guides/gs-spring-boot](https://gitpod.io/#https://github.com/spring-guides/gs-spring-boot)**
+[https://gitpod.io/#**https://github.com/spring-guides/gs-spring-boot](https://gitpod.io/#https://github.com/spring-guides/gs-spring-boot)**
 
 * **Ruby**:
-[https://gitpod.io#**https://github.com/gitpod-io/rails_sample_app](https://gitpod.io#https://github.com/gitpod-io/rails_sample_app)**
+[https://gitpod.io/#**https://github.com/gitpod-io/rails_sample_app](https://gitpod.io/#https://github.com/gitpod-io/rails_sample_app)**
 
 * **Python**:
-[https://gitpod.io#**https://github.com/sibtc/django-beginners-guide](https://gitpod.io#https://github.com/sibtc/django-beginners-guide)**
+[https://gitpod.io/#**https://github.com/sibtc/django-beginners-guide](https://gitpod.io/#https://github.com/sibtc/django-beginners-guide)**
 
 * **PHP**:
-[https://gitpod.io#**https://github.com/symfony/demo](https://gitpod.io#https://github.com/symfony/demo)**
+[https://gitpod.io/#**https://github.com/symfony/demo](https://gitpod.io/#https://github.com/symfony/demo)**
 
 ## **Where Are We Going From Here?**
 
