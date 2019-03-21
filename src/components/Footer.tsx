@@ -57,7 +57,7 @@ const Footer: React.SFC<FooterProps> = () => {
                 <HomepageLink to="/about">About</HomepageLink>
                 <HomepageLink to="/careers">Careers</HomepageLink>
                 <HomepageLink to="/status">Status</HomepageLink>
-                <HomepageLink to="/enterprise">Enterprise</HomepageLink>
+                <HomepageLink to="/pricing#enterprise">Enterprise</HomepageLink>
             </div>
             <div style={{ height: 40, display: 'flex', fontSize: 10, color: colors.fontColor1 }}>
                 <p style={{padding: 10}}>Stay connected</p>

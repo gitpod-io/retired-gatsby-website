@@ -109,6 +109,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                 </Teaser>
                 <Container>
                     <div>
+                        <a id="enterprise" style={{position: 'relative', top: 1550}} />
                         <h2 style={{ rotate: '12', textShadow: '0 0 2px', fontWeight: 100, fontSize: '1.3em', color: colors.brand }}>Coming Soon!</h2>
                         <h2>Gitpod Enterprise</h2>
                         <p><strong>Gitpod Enterprise</strong> will be available shortly and allows to run and host Gitpod on your own servers. Self hosted installations can be configured to works with any <strong>GitHub Enterprise</strong> or <strong>GitLab</strong> instance.</p>

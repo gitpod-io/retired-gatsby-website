@@ -13,7 +13,7 @@ A while ago Sven described the idea of [development environment as code](https:/
 
 However, a machine-reproducible version of your development setup enables another powerful capability: your dev-environment can already checkout the latest code, download dependencies and build everything. Once you actually open your IDE, everything’s ready for you. No more siting there and watching p̵̶̵a̵̶̵i̵̶̵n̵̶̵t̵̶̵ ̵̶̵d̵̶̵r̵̶̵y̵̶̵ yarn download the internet.
 
-![[https://xkcd.com/303/](https://xkcd.com/303/) — Compiling](https://cdn-images-1.medium.com/max/2000/1*J-1MC3QGbIuwq4tb-yr-iA.png)*[https://xkcd.com/303/](https://xkcd.com/303/) — Compiling*
+![[https://xkcd.com/303/](https://xkcd.com/303/) — Compiling](https://cdn-images-1.medium.com/max/2000/1*J-1MC3QGbIuwq4tb-yr-iA.png)
 
 ## Paint dries even when you’re not watching
 
