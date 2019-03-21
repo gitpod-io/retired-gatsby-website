@@ -167,8 +167,6 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
                     <HomepageLink to="/pricing">Pricing</HomepageLink>
                     <HomepageLink to="/docs">Docs</HomepageLink>
                     <HomepageLink to="/blog">Blog</HomepageLink>
-                    <HomepageLink className="hidden-md-up" to="/about">About</HomepageLink>
-                    <HomepageLink className="hidden-md-up" to="/contact">Contact</HomepageLink>
                     <a href="https://gitpod.io/api/login">
                         <button className='primary'>Log In</button>
                     </a>
