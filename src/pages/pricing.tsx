@@ -1,15 +1,84 @@
 import * as React from 'react'
+import styled from '@emotion/styled'
 
 import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 import Logos from '../components/Logos';
 import 'react-modal-video/css/modal-video.min.css'
-import { colors } from '../styles/variables';
+import { colors, breakpoints } from '../styles/variables';
+import { getEmSize } from '../styles/mixins';
 import GatsbyLink from 'gatsby-link';
 import * as icons from '../resources/icons';
 import Box from '../components/Box';
 import { Teaser } from '../components/Teaser';
+
+const PricingOptions = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
+        flex-direction: column;
+        align-items: center;
+
+        > :not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+`
+
+const StudentOffer = styled.div`
+    display: flex;
+    flex-direction: row;
+
+    > :not(:first-child) {
+        margin-left: 30px;
+    }
+
+    & svg {
+        width: 100px;
+    }
+
+    @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
+        flex-direction: column;
+        align-items: center;
+
+        > :not(:first-child) {
+            text-align: center;
+            margin-left: 0;
+        }
+
+        & svg {
+            width: 80px;
+        }
+
+        & button {
+            width: 100%;
+        }
+    }
+`
+
+const EnterpriseOffer = styled.div`
+    @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
+        table {
+            font-size: 75%;
+
+            td:first-child {
+                padding-left: 10px;
+            }
+        }
+
+        & h2 {
+            text-align: center;
+        }
+
+        & button {
+            width: 100%
+        }
+    }
+`
 
 export default class PricingPage extends React.Component<{}, {}> {
 
@@ -26,7 +95,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                         <h4 style={{ color: colors.fontColor2, textTransform: 'uppercase' }}>Pricing</h4>
                         <h1>Free for Open-Source</h1>
                         <p>Fair for commercial use. Choose from the following pricing options</p>
-                        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
+                        <PricingOptions>
                             <PricingBox
                                 title="Open Source"
                                 description="For open-source developers."
@@ -72,16 +141,20 @@ export default class PricingPage extends React.Component<{}, {}> {
                                     'Private & Public Repos'
                                 ]}
                                 link="https://gitpod.io/#" />
-                        </div>
+                        </PricingOptions>
                     </div>
                     <Box
                         title="Team Subscriptions"
                         style={{
-                            marginTop: 80
+                            marginTop: 80,
+                            paddingLeft: 30,
+                            paddingRight: 30,
+                            textAlign: 'center',
                         }}>
                         <h3>
                             Increase the productivity of an entire team!
                         </h3>
+                        <div style={{ height: 3, width: 95, backgroundColor: colors.brand, marginBottom: 30 }} />
                         <p>
                             Team subscriptions give you full control and a single invoice.
                         </p>
@@ -97,19 +170,19 @@ export default class PricingPage extends React.Component<{}, {}> {
                 </Container>
                 <Teaser>
                     <Container>
-                        <div style={{ display: 'flex', flexDirection: 'row' }}>
-                            {icons.bag({ width: 100, fill: 'none', stroke: colors.brand, margin: '0 60px 0 30px' })}
+                        <StudentOffer>
+                            {icons.bag({ fill: 'none', stroke: colors.brand, margin: '0 30px' })}
                             <div>
                                 <h3>Special Discount for Students</h3>
                                 <p>We understand that students deserve a better deal. To use a discount make sure your student e-mail is set as your primary E-Mail on GitHub.</p>
                                 <button className="primary">I'm a Student</button>
                             </div>
-                        </div>
+                        </StudentOffer>
                     </Container>
                 </Teaser>
                 <Container>
-                    <div>
-                        <a id="enterprise" style={{position: 'relative', top: 1550}} />
+                    <EnterpriseOffer>
+                        <a id="enterprise" />
                         <h2 style={{ rotate: '12', textShadow: '0 0 2px', fontWeight: 100, fontSize: '1.3em', color: colors.brand }}>Coming Soon!</h2>
                         <h2>Gitpod Enterprise</h2>
                         <p><strong>Gitpod Enterprise</strong> will be available shortly and allows to run and host Gitpod on your own servers. Self hosted installations can be configured to works with any <strong>GitHub Enterprise</strong> or <strong>GitLab</strong> instance.</p>
@@ -174,7 +247,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                         <button className='primary'>
                             Let's Talk
                         </button>
-                    </div>
+                    </EnterpriseOffer>
                 </Container>
             </Page>
         </IndexLayout>;
