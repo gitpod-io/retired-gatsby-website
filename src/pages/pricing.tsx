@@ -93,7 +93,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                         marginTop: 60,
                         textAlign: 'center',
                         fontSize: '70%',
-                    }}>Gitpod workspaces may be used for development only. Please refer to the <GatsbyLink to='/terms'>terms of service</GatsbyLink> for details.</p>
+                    }}>Gitpod workspaces may be used for development only. Please refer to the <GatsbyLink to='/terms#fair-use'>terms of service</GatsbyLink> for details.</p>
                 </Container>
                 <Teaser>
                     <Container>
