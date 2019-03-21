@@ -24,16 +24,24 @@ const FooterInner = styled(Container)`
     justify-content: space-between;
 `
 
-const HomepageLink = styled(Link)`
-  color: ${colors.fontColor1};
-  font-size: 1rem;
-  font-weight: 400;
-  padding-right: 20px;
+const FooterMenu = styled.div`
+    height: 40px;
+    margin-top: 15px;
 
-  &:hover,
-  &:focus {
-    text-decoration: none;
-  }
+    & a {
+        color: ${colors.fontColor1};
+        font-size: 1rem;
+        font-weight: 400;
+
+        :not(:last-child) {
+            padding-right: 20px;
+        }
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
 `
 
 const SocialImg = styled.img`
@@ -49,14 +57,14 @@ const Footer: React.SFC<FooterProps> = () => {
 
     return <StyledFooter>
         <FooterInner>
-            <div style={{height: 40, marginTop: 15}}>
-                <HomepageLink to="/features">Features</HomepageLink>
-                <HomepageLink to="/pricing">Pricing</HomepageLink>
-                <HomepageLink to="/docs">Docs</HomepageLink>
-                <HomepageLink to="/blog">Blog</HomepageLink>
-                <HomepageLink to="/status">Status</HomepageLink>
-                <HomepageLink to="/pricing#enterprise">Enterprise</HomepageLink>
-            </div>
+            <FooterMenu>
+                <Link to="/features">Features</Link>
+                <Link to="/pricing">Pricing</Link>
+                <Link to="/docs">Docs</Link>
+                <Link to="/blog">Blog</Link>
+                <a href="https://status.gitpod.io/" target="_blank">Status</a>
+                <Link to="/pricing#enterprise">Enterprise</Link>
+            </FooterMenu>
             <div style={{ height: 40, display: 'flex', fontSize: 10, color: colors.fontColor1 }}>
                 <p style={{padding: 10}}>Stay connected</p>
                 <SocialImg src={github}/>
@@ -64,7 +72,7 @@ const Footer: React.SFC<FooterProps> = () => {
                 <SocialImg src={twitter}/>
             </div>
             <div style={{ height: 40, marginTop: 15, display: 'flex', fontSize: 10, color: colors.fontColor1 }}>
-                Copyright 2019 TypeFox | All Rights Reserved | <Link to="/imprint">Imprint</Link> | <Link to="/privacy">Privacy Policy</Link> | <Link to="/terms">Terms of Service</Link>
+                Copyright 2019 TypeFox | All Rights Reserved |&nbsp;<Link to="/imprint">Imprint</Link>&nbsp;|&nbsp;<Link to="/privacy">Privacy Policy</Link>&nbsp;|&nbsp;<Link to="/terms">Terms of Service</Link>
             </div>
         </FooterInner>
     </StyledFooter>
