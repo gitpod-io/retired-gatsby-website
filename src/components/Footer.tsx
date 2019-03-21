@@ -54,8 +54,6 @@ const Footer: React.SFC<FooterProps> = () => {
                 <HomepageLink to="/pricing">Pricing</HomepageLink>
                 <HomepageLink to="/docs">Docs</HomepageLink>
                 <HomepageLink to="/blog">Blog</HomepageLink>
-                <HomepageLink to="/about">About</HomepageLink>
-                <HomepageLink to="/careers">Careers</HomepageLink>
                 <HomepageLink to="/status">Status</HomepageLink>
                 <HomepageLink to="/pricing#enterprise">Enterprise</HomepageLink>
             </div>
