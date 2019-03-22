@@ -7,7 +7,8 @@ import Logos from '../components/Logos';
 import GitGraph from '../components/GitGraph';
 import ModalVideo from 'react-modal-video';
 import 'react-modal-video/css/modal-video.min.css'
-import { colors } from '../styles/variables';
+import { colors, breakpoints } from '../styles/variables';
+import { getEmSize } from '../styles/mixins';
 import TerminalsImage from '../resources/terminals.png';
 import LanguageToolingImage from '../resources/language-tooling.png';
 import InlineCommentsImage from '../resources/inline-comments.png';
@@ -34,6 +35,34 @@ const HeaderLink = styled.a`
         text-decoration: none;
     }
 `;
+
+const SupportedLanguages = styled.div`
+    background-color: ${colors.background2};
+    z-index: 2;
+    box-shadow: 0px 0px 160px 0px rgba(5,5,5,0.57);
+    margin-top: 100px;
+`
+
+const MissingLanguage = styled.div`
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+
+    p {
+       margin: 10px 0;
+    }
+    a {
+        margin: 10px;
+        margin-left: 30px;
+    }
+
+    @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
+        flex-direction: column;
+        a {
+            margin: 0;
+        }
+    }
+`
 
 const FeatureColumn = styled.td`
     text-align: center;
@@ -63,7 +92,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                     <ModalVideo channel='youtube' isModalOpen={this.state.isModalOpen} videoId='D41zSHJthZI' onClose={() => this.setState({ isModalOpen: false })} />
                 </div>
                 <Container>
-                    <GitGraph left={-900} top={20} graph={[
+                    <GitGraph left={-900} top={40} graph={[
                         { start: [0, 115] },
                         { right: 860 },
                         {},
@@ -99,15 +128,15 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         },
                         { down: 208 },
                         {},
-                        { down: 592 },
+                        { down: 600 },
                         {},
-                        { down: 590 },
-                        {},
-                        { down: 592 },
+                        { down: 595 },
                         {},
                         { down: 600 },
                         {},
-                        { down: 1700 },
+                        { down: 600 },
+                        {},
+                        { down: 1720 },
                         { right: 400 },
                         {}
                     ]} />
@@ -116,13 +145,13 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         [550, -20, 70],
                         [830, 70, 140],
                     ]} />
-                    <div style={{ marginTop: 40 }}>
+                    <div style={{ marginTop: 60 }}>
                         <h4 style={{ color: colors.fontColor2, textTransform: 'uppercase' }}>Features</h4>
                         <h1>What's In Gitpod?</h1>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
                         </div>
                     </div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '5rem', marginBottom: '12rem', alignItems: 'flex-end' }}>
+                    <div className='flex hidden-md-down' style={{ justifyContent: 'space-between', marginTop: '5rem', marginBottom: '12rem', alignItems: 'flex-end' }}>
                         <HeaderLink href="#prebuilt-workspaces" >Prebuilt Workspaces</HeaderLink>
                         <HeaderLink href="#vs-code">VS Code</HeaderLink>
                         <HeaderLink href="#terminals">Terminals</HeaderLink>
@@ -168,14 +197,14 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         title="Collaboration"
                         visual={<img src={CollaborationImage} alt="collaboration" />} >
                         <p>Gitpod has too major collaboration modes:
-                            <ul>
+                            <ul className='tick-list'>
                                 <li><GatsbyLink to="/docs/33_Sharing_and_Collaboration#sharing-running-workspaces">Share a live session</GatsbyLink> with your remote co-worker and hunt down bugs together</li>
                                 <li><GatsbyLink to="/blog/workspace-snapshots/">Create a snapshot</GatsbyLink> of your work and share it anywhere</li>
                             </ul>
                         </p>
                     </Feature>
                 </Container>
-                <div style={{ backgroundColor: colors.background2, zIndex: 2, boxShadow: "0px 0px 160px 0px rgba(5,5,5,0.57)", marginTop: 100 }}>
+                <SupportedLanguages>
                     <Container>
                         <h3 id="supported-languages" style={{ textTransform: 'uppercase' }}>Supported programming languages</h3>
                         <table>
@@ -310,24 +339,64 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                                 </tr>
                             </tbody>
                         </table>
-                        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginTop: 50 }}>
-                            <p style={{ margin: "10px 0" }}>Missing your favorite programming language?</p>
-                            <a href="https://github.com/gitpod-io/gitpod/issues" style={{ margin: 10, marginLeft: 20 }} target="_blank">
+                        <MissingLanguage>
+                            <p>Missing your favorite programming language?</p>
+                            <a href="https://github.com/gitpod-io/gitpod/issues" target="_blank">
                                 <button className='primary'>Request Support</button>
                             </a>
-                        </div>
+                        </MissingLanguage>
                     </Container>
-                </div>
+                </SupportedLanguages>
                 <Container>
-                    <div style={{ textAlign: 'center', margin: 150 }}>
+                    <div style={{ textAlign: 'center', marginTop: 150, marginBottom: 150 }}>
                         <h3 style={{ marginBottom: '0.7rem' }}>Try It Out</h3>
-                        <button className='primary'>Get Started Free</button>
+                        <a href="https://gitpod.io/api/login">
+                            <button className='primary'>Get Started Free</button>
+                        </a>
                     </div>
                 </Container>
             </Page>
         </IndexLayout>;
     }
 }
+
+const FeatureInner = styled.div`
+    margin: 100px;
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+    p {
+        margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+
+        & :not(:last-child) {
+            margin-bottom: 60px;
+        }
+
+        h2, p {
+            margin-bottom: 0.5rem;
+        }
+        p {
+            margin-top: 0.2rem;
+        }
+
+        > :nth-child(2) {
+            flex-direction: column;
+            order: 1;
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+`
 
 interface FeatureProps {
     title: string;
@@ -343,9 +412,9 @@ class Feature extends React.Component<FeatureProps, {}> {
 
     render() {
         const p = this.props;
-        return <div style={{ margin: 100 }}>
-            <h2 id={this.slug()} style={{ marginTop: 0, marginBottom: '2rem' }}>{p.title}</h2>
-            <div style={{ display: 'flex', flexDirection: 'row', justifyContent:'space-between' }}>
+        return <FeatureInner>
+            <h2 id={this.slug()}>{p.title}</h2>
+            <div style={{ display: 'flex', justifyContent:'space-between' }}>
                 <div style={{marginTop: 6}}>
                     {p.children}
                 </div>
@@ -354,7 +423,7 @@ class Feature extends React.Component<FeatureProps, {}> {
             <div style={{ flexBasis: 0, flexGrow: 1.2, marginTop: 10 }}>
                 {p.visual}
             </div>
-        </div>;
+        </FeatureInner>;
     }
 }
 

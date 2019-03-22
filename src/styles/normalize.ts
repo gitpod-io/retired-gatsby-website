@@ -251,6 +251,21 @@ export default `
       }
   }
 
+  ul.tick-list {
+      list-style-type: none;
+      padding-left: 1.6rem;
+
+      > li {
+          position: relative;
+
+          &:before {
+              content: '✓';
+              position: absolute;
+              left: -1.2rem;
+          }
+      }
+  }
+
   .article {
 
       @media (min-width: ${getEmSize(breakpoints.sm)}em) {
