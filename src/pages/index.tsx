@@ -67,7 +67,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
             }
             case 1: {
                 contents = <div style={{ margin: 40 }}>
-                    <strong>One-click experience on every GitHub page</strong>
+                    <strong>One click away from GitHub</strong>
                     <img style={{ marginTop: 15, height: 132 }} src={BrowserExtension} />
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                         <p>The browser extension adds a button to every GitHub repository, issue and pull request. So you don't have to prefix manually.</p>
@@ -80,8 +80,8 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 contents = <div style={{ margin: 40 }}>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                         <div>
-                            <p style={{ marginTop: 30 }}><strong>Autobuild your project</strong> and skip the waiting.</p>
-                            <p>Just like Continuous Integration, the GitHub app detects changes in your repository and starts preparing new workspaces. By the time your team starts to code, all dependencies are preinstalled and the code is already compiled.</p>
+                            <p><strong>Install Gitpod and skip the waiting</strong></p>
+                            <p>Like Continuous Integration, the GitHub App detects changes in your repository and starts preparing workspaces. By the time your team starts to code, all dependencies are preinstalled, and the code is already compiled.</p>
                             <button className='primary' style={{ minWidth: 200 }}>Learn More</button>
                         </div>
                         <img style={{ marginTop: 15, width: 250 }} src={Octocat} />
@@ -192,22 +192,22 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                                 },
                             ]
                         },
-                        { down: 1250 },
+                        { down: 1252 },
                         {},
-                        { down: 650 },
+                        { down: 653 },
                         {},
                         { down: 60 },
                         {
                             fork: [
-                                { right: 480 },
-                                { down: 60 },
+                                { right: 485 },
+                                { down: 50 },
                                 {},
                                 { down: 220 },
                                 {},
                                 { down: 220 },
                                 {},
                                 { down: 50 },
-                                { left: 480 },
+                                { left: 485 },
                                 { down: 20 }
                             ]
                         },
@@ -259,8 +259,8 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         <p>Gitpod works with all major programming languages. You can try an example right now.</p>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
                             <ExampleBox title="JavaScript" description='React Application' image={(JS)} link="https://gitpod.io/#https://github.com/gitpod-io/react-starter-kit" />
-                            <ExampleBox title="Python" description='Django Application' image={(Python)} link="https://gitpod.io/#" />
-                            <ExampleBox title="Java" description='Spring-Boot Application' image={(Java)} link="https://gitpod.io/#" />
+                            <ExampleBox title="Python" description='Django Application' image={(Python)} link="https://gitpod.io/#https://github.com/sibtc/django-beginners-guide" />
+                            <ExampleBox title="Java" description='Spring-Boot Application' image={(Java)} link="https://gitpod.io/#https://github.com/spring-guides/gs-spring-boot" />
                             <ExampleBox title="Go" description='Gin Web Application' image={(Go)} link="https://gitpod.io/#" />
                         </div>
                     </div>
@@ -295,8 +295,8 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 </Container>
                 <Container>
                     <div style={{ paddingTop: 80 }}>
-                        <h2>Learn About All the Other Features</h2>
-                        <p>Gitpod supports collaboration, workspace snapshots, many different programming languages and much more.</p>
+                        <h2>Tell Me More</h2>
+                        <p>Gitpod supports collaboration, workspace snapshots, all major programming languages, and much more.</p>
                         <GatsbyLink to="/features"><button className="primary">See Features</button></GatsbyLink>
                     </div>
                 </Container>

@@ -97,15 +97,15 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                                 }
                             ]
                         },
-                        { down: 210 },
+                        { down: 208 },
                         {},
-                        { down: 575 },
+                        { down: 592 },
                         {},
-                        { down: 580 },
+                        { down: 590 },
                         {},
-                        { down: 580 },
+                        { down: 592 },
                         {},
-                        { down: 580 },
+                        { down: 600 },
                         {},
                         { down: 1700 },
                         { right: 400 },
@@ -118,7 +118,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                     ]} />
                     <div style={{ marginTop: 40 }}>
                         <h4 style={{ color: colors.fontColor2, textTransform: 'uppercase' }}>Features</h4>
-                        <h1>Why Gitpod?</h1>
+                        <h1>What's In Gitpod?</h1>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
                         </div>
                     </div>
@@ -144,14 +144,14 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                             <button className='primary'>Visit theia-ide.org</button>
                         </a>}
                         visual={<img src={LanguageToolingImage} alt="language tooling" />} >
-                        <p>Gitpod is based on Theia, the open-source, VS Code-powered IDE rearchitected for cloud-based development.
+                        <p>Gitpod is based on <a href="https://www.theia-ide.org" target="_blank">Theia</a>, the open-source VS Code-powered IDE optimized for developing in the cloud.
                             Get code intelligence and a Linux shell in a browser tab.</p>
                     </Feature>
                     <Feature
                         title="Terminals"
-                        button={<a href="https://docs.gitpod.io/40_Configuration.html" target="_blank">
+                        button={<GatsbyLink to="/docs/40_Configuration">
                             <button className='primary'>Learn More</button>
-                        </a>}
+                        </GatsbyLink>}
                         visual={<img src={TerminalsImage} alt="terminals" />}>
                         <p>Gitpod instantly starts a machine in the cloud, based on a Docker image supporting your project.
                         All required tools are readily installed and configured.</p>
@@ -161,17 +161,17 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         title="Code Reviews"
                         button={<button className='primary' onClick={this.openModal}>Play Video</button>}
                         visual={<img src={InlineCommentsImage} alt="inline comments" />}  >
-                        <p>Open pull requests in Gitpod and review, navigate and validate from within the IDE.<br/>
-                        Read and write comments and full code reviews without switching back to GitHub.</p>
+                        <p>Open pull requests in Gitpod to run, navigate, and review the code from within the IDE.<br/>
+                        Reply to comments and publish code reviews without switching back to GitHub.</p>
                     </Feature>
                     <Feature
                         title="Collaboration"
                         visual={<img src={CollaborationImage} alt="collaboration" />} >
                         <p>Gitpod has too major collaboration modes:
-                            <ol>
-                                <li><GatsbyLink to="/docs/33_Sharing_and_Collaboration#sharing-running-workspaces">Share a live session</GatsbyLink> with your remote co-worker and hunt down bugs together. </li>
-                                <li><GatsbyLink to="/blog/workspace-snapshots/">Create a snapshot</GatsbyLink> of your work and share it anywhere.</li>
-                            </ol>
+                            <ul>
+                                <li><GatsbyLink to="/docs/33_Sharing_and_Collaboration#sharing-running-workspaces">Share a live session</GatsbyLink> with your remote co-worker and hunt down bugs together</li>
+                                <li><GatsbyLink to="/blog/workspace-snapshots/">Create a snapshot</GatsbyLink> of your work and share it anywhere</li>
+                            </ul>
                         </p>
                     </Feature>
                 </Container>
@@ -312,7 +312,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         </table>
                         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', marginTop: 50 }}>
                             <p style={{ margin: "10px 0" }}>Missing your favorite programming language?</p>
-                            <a href="https://github.com/gitpod-io/gitpod/issues" style={{ margin: 10 }} target="_blank">
+                            <a href="https://github.com/gitpod-io/gitpod/issues" style={{ margin: 10, marginLeft: 20 }} target="_blank">
                                 <button className='primary'>Request Support</button>
                             </a>
                         </div>
@@ -344,14 +344,14 @@ class Feature extends React.Component<FeatureProps, {}> {
     render() {
         const p = this.props;
         return <div style={{ margin: 100 }}>
-                <h2 id={this.slug()} style={{ marginTop: 0, marginBottom: '2rem' }}>{p.title}</h2>
-                <div style={{ display: 'flex', flexDirection: 'row', justifyContent:'space-between' }}>
-                    <div style={{marginTop: 6}}>
-                        {p.children}
-                    </div>
-                    <div style={{ textAlign: 'right', whiteSpace: 'nowrap' }}>{p.button}</div>
+            <h2 id={this.slug()} style={{ marginTop: 0, marginBottom: '2rem' }}>{p.title}</h2>
+            <div style={{ display: 'flex', flexDirection: 'row', justifyContent:'space-between' }}>
+                <div style={{marginTop: 6}}>
+                    {p.children}
                 </div>
-            <div style={{ flexBasis: 0, flexGrow: 1.2 }}>
+                <div style={{ textAlign: 'right', whiteSpace: 'nowrap' }}>{p.button}</div>
+            </div>
+            <div style={{ flexBasis: 0, flexGrow: 1.2, marginTop: 10 }}>
                 {p.visual}
             </div>
         </div>;
