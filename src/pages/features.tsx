@@ -161,7 +161,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         title="Code Reviews"
                         button={<button className='primary' onClick={this.openModal}>Play Video</button>}
                         visual={<img src={InlineCommentsImage} alt="inline comments" />}  >
-                        <p>Opening pull requests in Gitpod and review, navigate and validate from within the IDE.<br/>
+                        <p>Open pull requests in Gitpod and review, navigate and validate from within the IDE.<br/>
                         Read and write comments and full code reviews without switching back to GitHub.</p>
                     </Feature>
                     <Feature
