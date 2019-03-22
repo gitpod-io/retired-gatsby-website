@@ -211,7 +211,7 @@ export default `
       filter: drop-shadow( 0 0 1px ${colors.fontColor1});
   }
 
-  @-webkit-keyframes glow {
+  @keyframes glow {
     from {
         text-shadow: 0 0 0px ${colors.fontColor1};
     }
@@ -221,12 +221,22 @@ export default `
     }
   }
 
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
   .gatsby-highlight {
       font-size: 12px;
   }
 
   .draggable {
       cursor: move;
+  }
+
+  .flex {
+      display: flex;
   }
 
   .hidden-md-up {
