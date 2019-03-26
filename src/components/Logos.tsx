@@ -4,7 +4,7 @@ import greyLogo from '../resources/Logo_Gitpod_grey.svg';
 import { clean } from '../clean-url';
 
 interface LogosProps {
-    logos: [number, number, number][];
+    logos: number[][];
 }
 
 const Logos: React.SFC<LogosProps> = ({ logos }) => (

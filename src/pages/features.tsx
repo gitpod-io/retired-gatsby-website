@@ -146,7 +146,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         [830, 70, 140],
                     ]} />
                     <div style={{ marginTop: 60 }}>
-                        <h4 style={{ color: colors.fontColor2, textTransform: 'uppercase' }}>Features</h4>
+                        <h4 style={{ color: colors.fontColor2 }}>Features</h4>
                         <h1>What's In Gitpod?</h1>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
                         </div>

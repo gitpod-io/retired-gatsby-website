@@ -92,7 +92,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                         [1020, 150, 40],
                     ]} />
                     <div style={{ marginTop: 60 }}>
-                        <h4 style={{ color: colors.fontColor2, textTransform: 'uppercase' }}>Pricing</h4>
+                        <h4 style={{ color: colors.fontColor2 }}>Pricing</h4>
                         <h1>Free for Open-Source</h1>
                         <p>Fair for commercial use. Choose from the following pricing options</p>
                         <PricingOptions>

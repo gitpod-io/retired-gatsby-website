@@ -67,9 +67,9 @@ const Footer: React.SFC<FooterProps> = () => {
             </FooterMenu>
             <div style={{ height: 40, display: 'flex', fontSize: 10, color: colors.fontColor1 }}>
                 <p style={{padding: 10}}>Stay connected</p>
-                <SocialImg src={github}/>
-                <SocialImg src={spectrum}/>
-                <SocialImg src={twitter}/>
+                <a href="https://github.com/gitpod-io/gitpod"><SocialImg src={github}/></a>
+                <a href="https://spectrum.chat/gitpod"><SocialImg src={spectrum}/></a>
+                <a href="https://twitter.com/gitpodio"><SocialImg src={twitter}/></a>
             </div>
             <div style={{ height: 40, marginTop: 15, display: 'flex', fontSize: 10, color: colors.fontColor1 }}>
                 Copyright 2019 TypeFox | All Rights Reserved |&nbsp;<Link to="/imprint">Imprint</Link>&nbsp;|&nbsp;<Link to="/privacy">Privacy Policy</Link>&nbsp;|&nbsp;<Link to="/terms">Terms of Service</Link>

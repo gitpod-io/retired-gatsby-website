@@ -177,7 +177,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
     protected getHowDoesItWork(): JSX.Element {
         const modes = ['URL Prefix', 'Browser Extension', 'GitHub App'];
         return <div style={{ minHeight: 550 }}>
-            <h2 >Get Started Coding</h2>
+            <h2 >Start Coding</h2>
             <div className='flex hidden-md-down' style={{ zIndex: 99 }}>
                 {
                     [0, 1, 2].map(idx =>
