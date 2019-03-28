@@ -8,7 +8,6 @@ import Logos from '../components/Logos';
 import 'react-modal-video/css/modal-video.min.css'
 import { colors, breakpoints } from '../styles/variables';
 import { getEmSize } from '../styles/mixins';
-import GatsbyLink from 'gatsby-link';
 import * as icons from '../resources/icons';
 import Box from '../components/Box';
 import { Teaser } from '../components/Teaser';
@@ -93,8 +92,8 @@ export default class PricingPage extends React.Component<{}, {}> {
                     ]} />
                     <div style={{ marginTop: 60 }}>
                         <h4 style={{ color: colors.fontColor2 }}>Pricing</h4>
-                        <h1>Free for Open-Source</h1>
-                        <p>Fair for commercial use. Choose the subscription that fits you best. Find team subscriptions below.</p>
+                        <h1>Free for Open Source</h1>
+                        <p>Choose the subscription that fits you best. Find team subscriptions below.</p>
                         <PricingOptions>
                             <PricingBox
                                 title="Open Source"
@@ -150,7 +149,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                             {icons.bag({ fill: 'none', stroke: colors.brand, margin: '0 30px' })}
                             <div>
                                 <h3>Are You a Student?</h3>
-                                <p>Students get the <strong>unlimited</strong> subscription for 10 USD. </p>
+                                <p>Students get the <strong>unlimited</strong> subscription for $10. </p>
                                 <p>Make sure your student e-mail is set as your primary E-Mail on GitHub. And let us know if your educational institution is not correctly recognized.</p>
                                 <button className="primary">I'm a Student</button>
                             </div>
@@ -176,13 +175,8 @@ export default class PricingPage extends React.Component<{}, {}> {
                             <button className="primary">Team Subscriptions</button>
                         </a>
                     </Box>
-                    <p style={{
-                        marginTop: 60,
-                        textAlign: 'center',
-                        fontSize: '70%',
-                    }}>Gitpod workspaces may be used for development only. Please refer to the <GatsbyLink to='/terms#fair-use'>terms of service</GatsbyLink> for details.</p>
                 </Container>
-                
+
                 <Container>
                     <EnterpriseOffer>
                         <a id="enterprise" />
