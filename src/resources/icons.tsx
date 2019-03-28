@@ -134,14 +134,14 @@ export function videoPlay(aStyle?: React.CSSProperties, onClick?: ()=>void) {
 export function arrowLeft(aStyle?: React.CSSProperties) {
     const style = merge(aStyle || {});
     return <svg xmlns="http://www.w3.org/2000/svg" width="27.913" height="58.337" viewBox="0 0 27.913 58.337" style={style}>
-        <path id="Path_104" data-name="Path 104" d="M0,56.995,25.822,28.5,0,0" transform="translate(27.171 57.666) rotate(180)" fill="none" stroke="#707070" stroke-width="2"/>
+        <path id="Path_104" data-name="Path 104" d="M0,56.995,25.822,28.5,0,0" transform="translate(27.171 57.666) rotate(180)" fill="none" stroke="#707070" strokeWidth="2"/>
     </svg>
 }
 
 export function arrowRight(aStyle?: React.CSSProperties) {
     const style = merge(aStyle || {});
     return <svg xmlns="http://www.w3.org/2000/svg" width="27.913" height="58.337" viewBox="0 0 27.913 58.337" style={style}>
-        <path id="Path_103" data-name="Path 103" d="M7682,2534.194l25.822-28.491L7682,2477.2" transform="translate(-7681.259 -2476.528)" fill="none" stroke="#707070" stroke-width="2"/>
+        <path id="Path_103" data-name="Path 103" d="M7682,2534.194l25.822-28.491L7682,2477.2" transform="translate(-7681.259 -2476.528)" fill="none" stroke="#707070" strokeWidth="2"/>
     </svg>
 }
 

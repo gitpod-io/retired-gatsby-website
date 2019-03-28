@@ -23,6 +23,7 @@ import styled from '@emotion/styled';
 import GitGraph from '../components/GitGraph';
 import GatsbyLink from 'gatsby-link';
 import { Teaser } from '../components/Teaser';
+import Bowser from 'bowser';
 
 interface IndexPageState { isOpen: boolean, worksMode: number }
 
@@ -76,8 +77,13 @@ const HowItWorks = styled.div`
     flex-grow: 2;
 
     > * {
-        margin: 40px;
+        margin: 30px;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
+
     .browser-extension-image {
         height: 132px;
     }
@@ -95,7 +101,7 @@ const HowItWorks = styled.div`
         > * {
             margin: 0;
         }
-        > :not(:first-child) {
+        > :not(:first-of-type) {
             margin-top: 70px;
         }
         button {
@@ -161,6 +167,16 @@ const TellMeMore = styled.div`
 
 export default class IndexPage extends React.Component<{}, IndexPageState> {
 
+    protected getBrowserExtension(): string {
+        if (window && window.navigator) {
+            const browser = Bowser.getParser(window.navigator.userAgent);
+            if (browser.getBrowserName().toLowerCase().includes('firefox')) {
+                return 'https://addons.mozilla.org/en-US/firefox/addon/gitpod/';
+            }
+        }
+        return 'https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki'
+    }
+
     constructor(props: {}) {
         super(props);
         this.state = {
@@ -181,7 +197,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
             <div className='flex hidden-md-down' style={{ zIndex: 99 }}>
                 {
                     [0, 1, 2].map(idx =>
-                        (<div style={{ cursor: 'pointer', paddingTop: 30 }} onClick={() => this.setState({ worksMode: idx })}>
+                        (<div key={'menu_'+idx} style={{ cursor: 'pointer', paddingTop: 30 }} onClick={() => this.setState({ worksMode: idx })}>
                             <h3 style={{ paddingRight: 60, color: this.state.worksMode === idx ? colors.fontColor1 : colors.fontColor2 }} >{modes[idx]}</h3>
                         </div>))
                 }
@@ -192,14 +208,12 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 </div>
                 <HowItWorks>
                     <div className={this.state.worksMode === 0 ? 'selected' : ''}>
-                        <div style={{ marginTop: 30 }}>
-                            <h3 className='hidden-md-up'>{modes[0]}</h3>
-                            <p><strong>Prefix any GitHub URL with <strong className="glow">gitpod.io/#</strong></strong></p>
-                            <div style={{ margin: '25px 0px' }}>
-                                <UrlAnimation />
-                            </div>
-                            <p>... and get beamed into a ready-to-code dev environment immediately.</p>
+                        <h3 className='hidden-md-up'>{modes[0]}</h3>
+                        <p><strong>Prefix any GitHub URL with <strong className="glow">gitpod.io/#</strong></strong></p>
+                        <div style={{ margin: '25px 0px' }}>
+                            <UrlAnimation />
                         </div>
+                        <p>... and get beamed into a ready-to-code dev environment immediately.</p>
                     </div>
                     <div className={this.state.worksMode === 1 ? 'selected' : ''}>
                         <h3 className='hidden-md-up'>{modes[1]}</h3>
@@ -207,7 +221,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         <img className='browser-extension-image' style={{ marginTop: 15 }} src={BrowserExtension} />
                         <div className='browser-extension-description' style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
                             <p>The browser extension adds a button to every GitHub repository, issue and pull request. So you don't have to prefix manually.</p>
-                            <button className='primary' style={{ minWidth: 200 }}>Learn More</button>
+                            <a href={this.getBrowserExtension()}><button className='primary' style={{ minWidth: 200 }}>Get the Browser Extension</button></a>
                         </div>
                     </div>
                     <div className={this.state.worksMode === 2 ? 'selected' : ''}>
@@ -229,7 +243,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
             <div className='flex hidden-md-down' style={{ justifyContent: 'center' }}>
                 {
                     [0, 1, 2].map(idx =>
-                        (<div onClick={() => this.setState({ worksMode: idx })} style={{ cursor: 'pointer' }}>
+                        (<div key={'_'+idx} onClick={() => this.setState({ worksMode: idx })} style={{ cursor: 'pointer' }}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" style={{ margin: 3 }}>
                                 <circle cx="5" cy="5" r="5" fill={this.state.worksMode === idx ? colors.fontColor1 : colors.fontColor2} />
                             </svg>
