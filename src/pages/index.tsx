@@ -369,7 +369,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 </Teaser>
                 <Container className="hidden-md-down">
                     <div style={{ height: 525 }}>
-                        <h2>Try It</h2>
+                        <h2>Try Now</h2>
                         <p>Gitpod works with all major programming languages. You can try an example right now.</p>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
                             <ExampleBox title="JavaScript" description='React Application' image={(JS)} link="https://gitpod.io/#https://github.com/gitpod-io/react-starter-kit" />
@@ -409,7 +409,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 </Container>
                 <Container>
                     <TellMeMore>
-                        <h2>Tell Me More</h2>
+                        <h2>Explore Gitpod</h2>
                         <p>Gitpod supports collaboration, workspace snapshots, all major programming languages, and much more.</p>
                         <GatsbyLink to="/features"><button className="primary">See Features</button></GatsbyLink>
                     </TellMeMore>
