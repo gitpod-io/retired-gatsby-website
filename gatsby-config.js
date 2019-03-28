@@ -3,12 +3,12 @@
 module.exports = {
   siteMetadata: {
     title: 'Gitpod',
-    description: 'A starter kit for TypeScript-based Gatsby projects with sensible defaults.',
+    description: 'One-Click IDE for GitHub.',
     siteUrl: 'https://gitpod.netlify.com',
     author: {
-      name: 'Resi Respati',
-      url: 'https://twitter.com/resir014',
-      email: 'resir014@gmail.com'
+      name: 'TypeFox',
+      url: 'https://typefox.io',
+      email: 'contact@typefox.io'
     }
   },
   plugins: [
