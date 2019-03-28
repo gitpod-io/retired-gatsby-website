@@ -329,7 +329,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         {},
                         { down: 250 },
                         {},
-                        { down: 420 },
+                        { down: 442 },
                         {}
                     ]} />
                     <Logos logos={[
