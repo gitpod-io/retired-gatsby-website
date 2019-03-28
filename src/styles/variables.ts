@@ -21,7 +21,7 @@ export const colors = {
   background2: '#262626',
   background3: '#4a4a4a',
   fontColor1: '#dedede',
-  fontColor2: '#666',
+  fontColor2: '#6d6d6d',
   fontColor3: '#888'
 }
 
