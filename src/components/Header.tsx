@@ -156,7 +156,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
                 </HomepageLink>
                 <MobileMenu>
                     {isMenuOpen ? null : <a href="https://gitpod.io/api/login">
-                        <button className='primary' style={{fontSize: '90%', padding: '6px 10px'}}>Log In</button>
+                        <button className='primary' style={{fontSize: '90%', padding: '6px 10px'}}>Go to app</button>
                     </a>}
                     <button onClick={this.toggleMenu} style={{ border: 0, padding: '6px 10px' }}>
                         {isMenuOpen ? icons.cross() : icons.burger()}
@@ -168,7 +168,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
                     <HomepageLink to="/docs">Docs</HomepageLink>
                     <HomepageLink to="/blog">Blog</HomepageLink>
                     <a href="https://gitpod.io/api/login">
-                        <button className='primary'>Log In</button>
+                        <button className='primary'>Go to app</button>
                     </a>
                 </Menu>
             </HeaderInner>
