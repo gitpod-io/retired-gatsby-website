@@ -168,7 +168,7 @@ const TellMeMore = styled.div`
 export default class IndexPage extends React.Component<{}, IndexPageState> {
 
     protected getBrowserExtension(): string {
-        if (window && window.navigator) {
+        if (typeof window !== "undefined" && window.navigator) {
             const browser = Bowser.getParser(window.navigator.userAgent);
             if (browser.getBrowserName().toLowerCase().includes('firefox')) {
                 return 'https://addons.mozilla.org/en-US/firefox/addon/gitpod/';
