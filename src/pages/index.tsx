@@ -357,11 +357,11 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                             <h2>Why Gitpod?</h2>
                             <WhyBoxes>
                                 <WhyBox>
-                                    {brain({ width: 70 })}
-                                    <h3>More Flow</h3>
+                                    {arrow({ width: 70 })}
+                                    <h3>No Setup</h3>
                                     <div style={{ width: 50, height: 3, backgroundColor: colors.brand, marginBottom: 16 }} />
-                                    <p>Gitpod picks you up where you are and beams you into a familiar development environment.</p>
-                                    <p>Based on VS Code and Linux containers you have access to all your favourite tools in a browser tab.</p>
+                                    <p>Start coding right away.</p>
+                                    <p>No more 'works on my machine' situations and hour-long setups.<br /> With Gitpod developer environments are automated, reproducible and versioned.</p>
                                 </WhyBox>
                                 <WhyBox>
                                     {rocket({ width: 70 })}
@@ -371,11 +371,11 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                                     <p>Install the GitHub App and get ready-to-code dev environments. They are not only checked out but also compiled and tested.</p>
                                 </WhyBox>
                                 <WhyBox>
-                                    {arrow({ width: 70 })}
-                                    <h3>No Setup</h3>
+                                    {brain({ width: 70 })}
+                                    <h3>More Flow</h3>
                                     <div style={{ width: 50, height: 3, backgroundColor: colors.brand, marginBottom: 16 }} />
-                                    <p>Start coding right away.</p>
-                                    <p>No more 'works on my machine' situations and hour-long setups.<br /> With Gitpod developer environments are automated, reproducible and versioned.</p>
+                                    <p>Gitpod picks you up where you are and beams you into a familiar development environment.</p>
+                                    <p>Based on VS Code and Linux containers you have access to all your favourite tools in a browser tab.</p>
                                 </WhyBox>
                             </WhyBoxes>
                         </div>
