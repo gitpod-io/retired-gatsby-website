@@ -229,7 +229,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                                     <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
                                 </tr>
                                 <tr>
-                                    <td>Crazy Hardware (up to 96 CPUs, 360GB Ram)</td>
+                                    <td>Crazy Hardware (up to 96 CPUs, 360GB RAM)</td>
                                     <td style={{ textAlign: 'center' }}></td>
                                     <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
                                 </tr>
@@ -239,7 +239,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                             Interested?
                         </h3>
                         <p>
-                            Please drop us a mail and we will inform you as soon as <strong>Gitpod Enterprise</strong> is available.
+                            Please <a href="mailto:info@gitpod.io">contact us</a> and we will inform you as soon as <strong>Gitpod Enterprise</strong> is available.
                         </p>
                         <button className='primary'>
                             Let's Talk
