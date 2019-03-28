@@ -196,10 +196,10 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                     <Feature
                         title="Collaboration"
                         visual={<img src={CollaborationImage} alt="collaboration" />} >
-                        <p>Gitpod has too major collaboration modes:
+                        <p>Gitpod has two different collaboration modes:
                             <ul className='tick-list'>
-                                <li><GatsbyLink to="/docs/33_Sharing_and_Collaboration#sharing-running-workspaces">Share a live session</GatsbyLink> with your remote co-worker and hunt down bugs together</li>
-                                <li><GatsbyLink to="/blog/workspace-snapshots/">Create a snapshot</GatsbyLink> of your work and share it anywhere</li>
+                                <li><GatsbyLink to="/docs/33_Sharing_and_Collaboration#sharing-running-workspaces">Share a live session</GatsbyLink> with your remote co-worker and hunt down bugs together.</li>
+                                <li><GatsbyLink to="/blog/workspace-snapshots/">Create a snapshot</GatsbyLink> of your work and share it with the world.</li>
                             </ul>
                         </p>
                     </Feature>
