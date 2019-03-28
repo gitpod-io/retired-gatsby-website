@@ -94,7 +94,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                     <div style={{ marginTop: 60 }}>
                         <h4 style={{ color: colors.fontColor2 }}>Pricing</h4>
                         <h1>Free for Open-Source</h1>
-                        <p>Fair for commercial use. Choose from the following pricing options</p>
+                        <p>Fair for commercial use. Choose the subscription that fits you best. Find team subscriptions below.</p>
                         <PricingOptions>
                             <PricingBox
                                 title="Open Source"
@@ -127,7 +127,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                                 ]}
                                 link="https://gitpod.io/#" />
                             <PricingBox
-                                title="Professional"
+                                title="Unlimited"
                                 description="For professional developers."
                                 image={icons.rocket({
                                     stroke: colors.brand,
@@ -143,10 +143,24 @@ export default class PricingPage extends React.Component<{}, {}> {
                                 link="https://gitpod.io/#" />
                         </PricingOptions>
                     </div>
+                </Container>
+                <Teaser>
+                    <Container>
+                        <StudentOffer>
+                            {icons.bag({ fill: 'none', stroke: colors.brand, margin: '0 30px' })}
+                            <div>
+                                <h3>Are You a Student?</h3>
+                                <p>Students get the <strong>unlimited</strong> subscription for 10 USD. </p>
+                                <p>Make sure your student e-mail is set as your primary E-Mail on GitHub. And let us know if your educational institution is not correctly recognized.</p>
+                                <button className="primary">I'm a Student</button>
+                            </div>
+                        </StudentOffer>
+                    </Container>
+                </Teaser>
+                <Container>
                     <Box
                         title="Team Subscriptions"
                         style={{
-                            marginTop: 80,
                             paddingLeft: 30,
                             paddingRight: 30,
                             textAlign: 'center',
@@ -156,7 +170,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                         </h3>
                         <div style={{ height: 3, width: 95, backgroundColor: colors.brand, marginBottom: 30 }} />
                         <p>
-                            Team subscriptions give you full control and a single invoice.
+                            Manage the subscriptions of teams at once.
                         </p>
                         <a href="https://gitpod.io/team-subscriptions">
                             <button className="primary">Team Subscriptions</button>
@@ -168,18 +182,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                         fontSize: '70%',
                     }}>Gitpod workspaces may be used for development only. Please refer to the <GatsbyLink to='/terms#fair-use'>terms of service</GatsbyLink> for details.</p>
                 </Container>
-                <Teaser>
-                    <Container>
-                        <StudentOffer>
-                            {icons.bag({ fill: 'none', stroke: colors.brand, margin: '0 30px' })}
-                            <div>
-                                <h3>Special Discount for Students</h3>
-                                <p>We understand that students deserve a better deal. To use a discount make sure your student e-mail is set as your primary E-Mail on GitHub.</p>
-                                <button className="primary">I'm a Student</button>
-                            </div>
-                        </StudentOffer>
-                    </Container>
-                </Teaser>
+                
                 <Container>
                     <EnterpriseOffer>
                         <a id="enterprise" />
@@ -272,7 +275,7 @@ class PricingBox extends React.Component<PricingBoxProps, {}> {
             width: 260
         }}>
             <h2 style={{ fontSize: 18, position: 'absolute', top: -34, padding: '0 10px', backgroundColor: colors.background1 }}>{p.title}</h2>
-            <p style={{ textAlign: 'center', fontSize: 14, height: 70 }}>
+            <p style={{ textAlign: 'center', fontSize: 14, height: 70, paddingTop: 18 }}>
                 {p.description}
             </p>
             {p.image ? p.image : null}
