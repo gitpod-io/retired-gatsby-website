@@ -414,7 +414,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                             <TweetEmbed id='1100698060831764481' options={twitterOptions} />
                         </ResponsiveTweet>
                         <ResponsiveTweet style={{ left: 23, top: 240 }}>
-                            <TweetEmbed id='1101918877443735558' options={twitterOptions} />
+                            <TweetEmbed id='1035182733063057408' options={twitterOptions} />
                         </ResponsiveTweet>
                         <ResponsiveTweet style={{ left: 23, top: 450 }}>
                             <TweetEmbed id='1101772691181207552' options={twitterOptions} />
