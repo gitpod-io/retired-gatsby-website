@@ -182,7 +182,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                             <button className='primary'>Learn More</button>
                         </GatsbyLink>}
                         visual={<img src={TerminalsImage} alt="terminals" />}>
-                        <p>Gitpod instantly starts a machine in the cloud, based on a Docker image supporting your project.
+                        <p>Gitpod instantly starts a machine in the cloud based on a Docker image supporting your project.
                         All required tools are readily installed and configured.</p>
                     </Feature>
 
