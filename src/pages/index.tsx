@@ -193,7 +193,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
     protected getHowDoesItWork(): JSX.Element {
         const modes = ['URL Prefix', 'Browser Extension', 'GitHub App'];
         return <div style={{ minHeight: 550 }}>
-            <h2 >Start Coding</h2>
+            <h2 >Three Ways to Start Coding</h2>
             <div className='flex hidden-md-down' style={{ zIndex: 99 }}>
                 {
                     [0, 1, 2].map(idx =>
@@ -384,7 +384,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 <Container className="hidden-md-down">
                     <div style={{ height: 525 }}>
                         <h2>Try Now</h2>
-                        <p>Gitpod works with all major programming languages. You can try an example right now.</p>
+                        <p>Gitpod works with <GatsbyLink to="features/#supported-languages">all major programming languages</GatsbyLink>. You can try an example right now.</p>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
                             <ExampleBox title="JavaScript" description='React Application' image={(JS)} link="https://gitpod.io/#https://github.com/gitpod-io/react-starter-kit" />
                             <ExampleBox title="Python" description='Django Application' image={(Python)} link="https://gitpod.io/#https://github.com/sibtc/django-beginners-guide" />

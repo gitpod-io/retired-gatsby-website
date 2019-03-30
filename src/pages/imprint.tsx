@@ -3,7 +3,7 @@ import { BoilerPlate } from "../components/Boilerplate";
 
 
 export default () => {
-    return <BoilerPlate maxHeight={2000}>
+    return <BoilerPlate maxHeight={2000} title="Gitpod - Imprint">
         <h1>Imprint</h1>
         <p>TypeFox&nbsp;GmbH
 				<br /> Managing Directors: Sven Efftinge, Moritz Eysholdt, Dr. Jan Köhnlein

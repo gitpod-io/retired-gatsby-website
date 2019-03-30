@@ -5,11 +5,15 @@ import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 import Logos from '../components/Logos';
+import { Helmet } from 'react-helmet';
 
 const NotFoundPage = () => {
     return <IndexLayout>
     <Page>
       <Container>
+        <Helmet>
+            <title>Gitpod - 404</title>
+        </Helmet>
         <Logos logos={[
                 [80, 20, 25],
                 [280, -10, 30],

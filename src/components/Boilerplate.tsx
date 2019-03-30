@@ -4,7 +4,7 @@ import Container from "./Container";
 import Logos from "./Logos";
 
 
-export const BoilerPlate = (p: {maxHeight?: number, children: any}) => <IndexLayout>
+export const BoilerPlate = (p: {title: string, maxHeight?: number, children: any}) => <IndexLayout title={p.title}>
     <Page>
         <Container>
             <Logos logos={[

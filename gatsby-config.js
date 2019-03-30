@@ -2,13 +2,13 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Gitpod',
-    description: 'One-Click IDE for GitHub.',
-    siteUrl: 'https://gitpod.netlify.com',
+    title: 'Gitpod - Frictionless Coding',
+    description: 'One-click ready-to-code development environments for GitHub.',
+    siteUrl: 'https://www.gitpod.io',
     author: {
       name: 'TypeFox',
       url: 'https://typefox.io',
-      email: 'contact@typefox.io'
+      email: 'contact@gitpod.io'
     }
   },
   plugins: [

@@ -3,7 +3,7 @@ import { colors } from "../styles/variables";
 
 
 export default () => {
-    return <BoilerPlate>
+    return <BoilerPlate title="Gitpod - Privacy Policy">
         <h1>Privacy Policy</h1>
 
         <p>Below we provide you with an overview of what data we collect for what purpose and how we ensure the protection of

@@ -82,7 +82,7 @@ const EnterpriseOffer = styled.div`
 export default class PricingPage extends React.Component<{}, {}> {
 
     render() {
-        return <IndexLayout>
+        return <IndexLayout title="Gitpod - Pricing">
             <Page>
                 <Container>
                     <Logos logos={[

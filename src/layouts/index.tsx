@@ -25,7 +25,7 @@ type StaticQueryProps = {
     }
 }
 
-const IndexLayout: React.SFC<{ canonical?: string}> = ({ canonical, children }) => (
+const IndexLayout: React.SFC<{ title?: string, canonical?: string}> = ({ title, canonical, children }) => (
     <StaticQuery
         query={graphql`
       query IndexLayoutQuery {
@@ -41,7 +41,7 @@ const IndexLayout: React.SFC<{ canonical?: string}> = ({ canonical, children }) 
             <LayoutRoot>
                 <Helmet>
                     <html lang="en" />
-                    <title>{data.site.siteMetadata.title}</title>
+                    <title>{title || data.site.siteMetadata.title}</title>
                     <meta name="description" content={data.site.siteMetadata.description}/>
                     <meta name="keywords" content="cloud ide, github, javascript, online ide, web ide, code review"/>
                     {
