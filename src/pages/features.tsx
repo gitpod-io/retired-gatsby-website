@@ -56,7 +56,7 @@ const MissingLanguage = styled.div`
         margin-left: 30px;
     }
 
-    @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
+    @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {        
         flex-direction: column;
         a {
             margin: 0;
@@ -190,23 +190,25 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         title="Code Reviews"
                         button={<button className='primary' onClick={this.openModal}>Play Video</button>}
                         visual={<img src={InlineCommentsImage} alt="inline comments" />}  >
-                        <p>Open pull requests in Gitpod to run, navigate, and review the code from within the IDE.<br/>
-                        Reply to comments and publish code reviews without switching back to GitHub.</p>
+                        <p>Open pull requests in Gitpod to run, navigate, and review the code from within the IDE.<br />
+                            Reply to comments and publish code reviews without switching back to GitHub.</p>
                     </Feature>
                     <Feature
                         title="Collaboration"
                         visual={<img src={CollaborationImage} alt="collaboration" />} >
-                        <p>Gitpod has two different collaboration modes:
+                        <div>
+                            <p>Gitpod has two different collaboration modes:</p>
                             <ul className='tick-list'>
                                 <li><GatsbyLink to="/docs/33_Sharing_and_Collaboration#sharing-running-workspaces">Share a live session</GatsbyLink> with your remote co-worker and hunt down bugs together.</li>
                                 <li><GatsbyLink to="/blog/workspace-snapshots/">Create a snapshot</GatsbyLink> of your work and share it with the world.</li>
                             </ul>
-                        </p>
+                        </div>
                     </Feature>
                 </Container>
                 <SupportedLanguages>
+                    <a id="supported-languages" style={{position: 'relative', top: 100}}/>
                     <Container>
-                        <h3 id="supported-languages">Supported Programming Languages</h3>
+                        <h2>Supported Programming Languages</h2>
                         <p>Gitpod comes pre-configured with support for many programming languages. Very soon you can even install VS Code extensions.</p>
                         <table>
                             <thead>
@@ -363,7 +365,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
 
 const FeatureInner = styled.div`
     margin: 100px;
-
+    height: 500px;
     h2 {
         margin-top: 0;
         margin-bottom: 2rem;
@@ -375,6 +377,7 @@ const FeatureInner = styled.div`
     @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
         margin: 0;
         display: flex;
+        height: 400px;
         flex-direction: column;
 
         & :not(:last-child) {
@@ -388,7 +391,7 @@ const FeatureInner = styled.div`
             margin-top: 0.2rem;
         }
 
-        > :nth-child(2) {
+        > :nth-of-type(2) {
             flex-direction: column;
             order: 1;
 
@@ -415,8 +418,8 @@ class Feature extends React.Component<FeatureProps, {}> {
         const p = this.props;
         return <FeatureInner>
             <h2 id={this.slug()}>{p.title}</h2>
-            <div style={{ display: 'flex', justifyContent:'space-between' }}>
-                <div style={{marginTop: 6}}>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <div style={{ marginTop: 6 }}>
                     {p.children}
                 </div>
                 <div style={{ textAlign: 'right', whiteSpace: 'nowrap' }}>{p.button}</div>

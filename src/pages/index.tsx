@@ -148,8 +148,6 @@ const ResponsiveTweet = styled.div`
     @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
         position: static;
         width: 106%;
-        margin-left: -3%;
-        margin-right: -3%;
     }
 `
 

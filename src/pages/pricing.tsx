@@ -214,7 +214,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                                     <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
                                 </tr>
                                 <tr>
-                                    <td>Custom Extensions*</td>
+                                    <td>Custom Extensions</td>
                                     <td style={{ textAlign: 'center' }}></td>
                                     <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
                                 </tr>
