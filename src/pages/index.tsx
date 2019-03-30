@@ -206,27 +206,24 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 </div>
                 <HowItWorks>
                     <div className={this.state.worksMode === 0 ? 'selected' : ''}>
-                        <h3 className='hidden-md-up'>{modes[0]}</h3>
-                        <p><strong>Prefix any GitHub URL with <strong className="glow">gitpod.io/#</strong></strong></p>
-                        <div style={{ margin: '25px 0px' }}>
+                        <h3>Prefix any GitHub URL with <strong className="glow">gitpod.io/#</strong></h3>
+                        <div style={{ marginBottom: 25 }}>
                             <UrlAnimation />
                         </div>
                         <p>... and get beamed into a ready-to-code dev environment immediately.</p>
                     </div>
                     <div className={this.state.worksMode === 1 ? 'selected' : ''}>
-                        <h3 className='hidden-md-up'>{modes[1]}</h3>
-                        <strong>One click away from GitHub</strong>
-                        <img className='browser-extension-image' style={{ marginTop: 15 }} src={BrowserExtension} />
+                        <h3>Install the Browser Extension</h3>
+                        <img className='browser-extension-image' src={BrowserExtension} />
                         <div className='browser-extension-description' style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
                             <p>The browser extension adds a button to every GitHub repository, issue and pull request. So you don't have to prefix manually.</p>
                             <a href={this.getBrowserExtension()}><button className='primary' style={{ minWidth: 200 }}>Get the Browser Extension</button></a>
                         </div>
                     </div>
                     <div className={this.state.worksMode === 2 ? 'selected' : ''}>
-                        <h3 className='hidden-md-up'>{modes[2]}</h3>
                         <div style={{ display: 'flex', alignItems: 'center' }}>
                             <div>
-                                <p><strong>Install Gitpod and skip the waiting</strong></p>
+                                <h3>Install the GitHub app</h3>
                                 <p>Like Continuous Integration, the GitHub App detects changes in your repository and starts preparing workspaces. By the time your team starts to code, all dependencies are preinstalled, and the code is already compiled.</p>
                                 <button className='primary' style={{ minWidth: 200 }}>Learn More</button>
                             </div>
