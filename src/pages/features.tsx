@@ -126,17 +126,17 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                                 }
                             ]
                         },
-                        { down: 208 },
-                        {},
-                        { down: 600 },
-                        {},
-                        { down: 595 },
+                        { down: 205 },
                         {},
                         { down: 600 },
                         {},
                         { down: 600 },
                         {},
-                        { down: 1754 },
+                        { down: 600 },
+                        {},
+                        { down: 600 },
+                        {},
+                        { down: 1725 },
                         { right: 400 },
                         {}
                     ]} />
