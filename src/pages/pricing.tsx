@@ -239,11 +239,13 @@ export default class PricingPage extends React.Component<{}, {}> {
                             Interested?
                         </h3>
                         <p>
-                            Please <a href="mailto:info@gitpod.io">contact us</a> and we will inform you as soon as <strong>Gitpod Enterprise</strong> is available.
+                            Please <a href="mailto:contact@gitpod.io">contact us</a> and we will inform you as soon as <strong>Gitpod Enterprise</strong> is available.
                         </p>
-                        <button className='primary'>
-                            Let's Talk
-                        </button>
+                        <a href="mailto:contact@gitpod.io">
+                            <button className='primary'>
+                                Let's Talk
+                            </button>
+                        </a>
                     </EnterpriseOffer>
                 </Container>
             </Page>
