@@ -76,6 +76,21 @@ Gitpod comes with two major features supporting collaboration.
 
 ![Collaboration](/gitpod-launch/collaboration.png)
 
+## Pricing – Unlimited & Free
+
+An important part of leaving the beta was to find a good pricing model that addresses the needs for the various user groups.
+
+We think we have found a good balance by providing 
+ - a **free 100-hour subscription** for open-source development, 
+ - a **paid 100-hour subscription** for individuals working privately, and
+ - a **paid unlimited subscriptions** for professional use. 
+ 
+ _(I know some of you are lucky enough to do professional open-source. Decide what works best for you in that case ;-))_
+
+We also offer **team subscriptions**, which allow managers to buy a batch of subscriptions and provide them to the team.
+
+And, of course, a special **students discount** is in store, eligible if your primary GitHub URL belongs to an educational institution.
+
 ## Summary
 Gitpod removes tedious plumbing tasks and reduces painful waiting time. We no longer need to maintain and sync our dev environments manually but can rely on a reproducible setup. All you need is a browser.
 
