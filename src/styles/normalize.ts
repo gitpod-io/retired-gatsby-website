@@ -278,8 +278,8 @@ export default `
       }
       h2, h3, h4, h5, h6 {
         text-transform: none;
-        margin-top: 60px;
-        margin-bottom: 10px;
+        margin-top: 50px;
+        margin-bottom: 20px;
       }
 
       img {
@@ -287,7 +287,7 @@ export default `
       }
 
       p {
-          margin-bottom: 30px;
+          margin-bottom: 20px;
       }
 
       li p {
