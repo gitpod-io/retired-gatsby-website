@@ -72,7 +72,7 @@ const Footer: React.SFC<FooterProps> = () => {
                 <a href="https://twitter.com/gitpodio"><SocialImg src={twitter}/></a>
             </div>
             <div style={{ height: 40, marginTop: 15, display: 'flex', fontSize: 10, color: colors.fontColor1 }}>
-                Copyright 2019 <a href="https://typefox.io" target="_blank">TypeFox</a>&nbsp;| All Rights Reserved |&nbsp;<Link to="/imprint">Imprint</Link>&nbsp;|&nbsp;<Link to="/privacy">Privacy Policy</Link>&nbsp;|&nbsp;<Link to="/terms">Terms of Service</Link>
+                Copyright © 2019&nbsp;<a href="https://typefox.io" target="_blank">TypeFox</a>&nbsp;| All Rights Reserved |&nbsp;<Link to="/imprint">Imprint</Link>&nbsp;|&nbsp;<Link to="/privacy">Privacy Policy</Link>&nbsp;|&nbsp;<Link to="/terms">Terms of Service</Link>
             </div>
         </FooterInner>
     </StyledFooter>
