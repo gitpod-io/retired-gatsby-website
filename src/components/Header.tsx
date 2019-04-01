@@ -124,6 +124,17 @@ const HomepageLink = styled(Link)`
     text-decoration: none;
   }
 `
+const HomepageA = styled.a`
+  color: ${colors.fontColor1};
+  font-size: ${dimensions.fontSize.menu};
+  font-weight: 400;
+  padding-right: 20px;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+`
 
 interface HeaderProps {
     title: string
@@ -167,6 +178,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
                     <HomepageLink to="/pricing">Pricing</HomepageLink>
                     <HomepageLink to="/docs">Docs</HomepageLink>
                     <HomepageLink to="/blog">Blog</HomepageLink>
+                    <HomepageA href="https://spectrum.chat/gitpod" target="_blank">Community</HomepageA>
                     <a href="https://gitpod.io/api/login">
                         <button className='primary'>Go to app</button>
                     </a>
