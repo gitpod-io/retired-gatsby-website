@@ -1,4 +1,4 @@
-## Exposing Ports
+# Exposing Ports
 
 If you want to access services running in your workspace, e.g. a development HTTP server on port `8080`,
 you need to expose that port first. Gitpod has two means of doing that:
@@ -15,7 +15,7 @@ ports:
 Ports are mapped to their own URLs. In a workspace you can get the URL mapped to a port using `gp url <port>`. At the moment you can only expose
 HTTP servers.
 
-### Configure the Opening Behavior
+## Configure the Opening Behavior
 
 When a newly started service gets detected, you usually get a notification telling you about it.
 If it is not yet exposed, because it is not listed in the `.gitpod.yml`, the notification will allow you to expose the port.

@@ -1,4 +1,4 @@
-## Working with Go
+# Working with Go
 
 Go projects need a [specific workspace layout](https://golang.org/doc/code.html#Organization):
 the source code of your repository and its dependencies must be in the directories
