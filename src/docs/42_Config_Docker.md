@@ -1,9 +1,9 @@
-## Docker Image
+# Docker Image
 
 If the standard Docker image that is provided by Gitpod does not include all the tools you need for
 developing your project, you can provide a custom Docker image.
 
-### Configure a Custom Docker Image
+## Configure a Custom Docker Image
 
 There are two ways to configure a custom Docker image in your `.gitpod.yml` file:
 
@@ -23,7 +23,7 @@ There are two ways to configure a custom Docker image in your `.gitpod.yml` file
     ```
     The Docker image is rebuilt automatically whenever the Dockerfile changes.
 
-### Creating Docker Images for Gitpod
+## Creating Docker Images for Gitpod
 
 A good starting point for creating custom Docker Images is the
 [`gitpod/workspace-full`](https://hub.docker.com/r/gitpod/workspace-full/) image. It already contains all the tools necessary to work with all languages Gitpod supports.
