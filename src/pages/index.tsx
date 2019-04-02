@@ -15,7 +15,7 @@ import Python from '../resources/Logo_Python.svg';
 import Java from '../resources/Logo_Java.svg';
 import Go from '../resources/Logo_Go.svg';
 import JS from '../resources/Logo_JS.svg';
-import ScreenshotVideo from '../resources/screenshot-video.jpg';
+import ScreenshotVideo from '../resources/gitpod-mac.jpg';
 import Octocat from '../resources/Octocat.png';
 
 import { arrowLeft, arrowRight, arrow, rocket, brain } from '../resources/icons';
