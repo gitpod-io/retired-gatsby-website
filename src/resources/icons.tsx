@@ -15,7 +15,7 @@ function merge(style?: React.CSSProperties) {
 }
 
 export function arrow(style?: React.CSSProperties) {
-    return <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 100 100" style={merge(style)}>
+    return <svg version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style={merge(style)}>
         <path d="M75.3,33.7C87,49.8,85.6,72.5,71.1,87c-16,16-42,16-58.1,0c-16-16-16-42,0-58.1C27.5,14.4,50.2,13,66.3,24.7" />
         <path d="M67.2,41.9c7.4,11.5,6.1,27-4,37.1C51.5,90.6,32.6,90.6,21,79C9.4,67.4,9.4,48.5,21,36.9 c10.1-10.1,25.6-11.4,37.1-4" />
         <path d="M58.9,50.2C62,57,60.8,65.4,55.2,71c-7.2,7.2-18.9,7.2-26.2,0c-7.2-7.2-7.2-18.9,0-26.2 c5.6-5.6,14-6.9,20.9-3.7" />
@@ -27,7 +27,7 @@ export function arrow(style?: React.CSSProperties) {
 }
 
 export function bag(style?: React.CSSProperties) {
-    return <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 100 100" style={merge(style)}>
+    return <svg version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style={merge(style)}>
         <path d="M94.2,58.6v37.1c0,1.8-1.5,3.3-3.3,3.3H9.1c-1.8,0-3.3-1.5-3.3-3.3V59.2" />
         <path d="M35.2,26.8v-9.4c0-3,2.4-5.4,5.4-5.4h18.9c3,0,5.4,2.5,5.4,5.4v9.4" />
         <path d="M40.9,66C27.2,65.3,13.3,62.5,1,56.5l0.1-26.2c0-1.8,1.5-3.3,3.3-3.3h91.3c1.8,0,3.3,1.5,3.3,3.3L99,55.8 C86.6,62.4,72.4,65.3,58.5,66" />
@@ -36,7 +36,7 @@ export function bag(style?: React.CSSProperties) {
 }
 
 export function heart(style?: React.CSSProperties) {
-    return <svg version="1.1" id="Layer_1" x="0px" y="0px"
+    return <svg version="1.1" x="0px" y="0px"
         viewBox="0 0 100 100" style={merge(style)}>
         <path d="M86.7,61.1l6.3-6.3c10.8-10.8,5.5-25.4-3.2-34.7c-2.9-3.1-6.1-5.8-9.5-7.7c-4.4-2.5-18.3-6.1-27.3,2.7 L34.1,33.9c-5.1,5.1,7.7,9.9,14.2,3.5l4.7-4.7c7-6.3,15.8,6.4,26.7-2.3" />
         <path d="M13.5,58.1l-6.3-6.2C-13.6,31,22.5-4.7,43.7,15.9l4.2,4.2" />
@@ -49,7 +49,7 @@ export function heart(style?: React.CSSProperties) {
 }
 
 export function lamp(style?: React.CSSProperties) {
-    return <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 100 100" style={merge(style)}>
+    return <svg version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style={merge(style)}>
         <path  d="M33.7,74.8c-1.1-16.4-13.8-8.1-15.2-30.4c-0.9-14.1,12.2-25.5,27.2-25.5s28.2,11.5,27.2,25.5 c-1.4,19-10.8,15.2-14.3,25.1"/>
         <line  x1="34.1" y1="94.4" x2="58.6" y2="88"/>
         <line  x1="34.1" y1="85.1" x2="58.6" y2="78.7"/>
@@ -67,7 +67,7 @@ export function lamp(style?: React.CSSProperties) {
 }
 
 export function rocket(style?: React.CSSProperties) {
-    return <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 100 100" style={merge(style)}>
+    return <svg version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style={merge(style)}>
         <path d="M44.1,74.8l-2.5,9.6c-0.5,1.7-3.3,1.3-4.6,0.1L16,64.4c-1.3-1.2-1.8-4.2-0.1-4.6l9.3-3.1 M35.5,65.5l-0.2-0.2
             L22.6,53.1c9.5-13.3,20.3-31.2,31.3-42.7C63.5,0.2,79.1-1.5,93.7,4.4l0.1,0.1c6.7,14.5,5.4,30.2-4.2,40.2
             c-11,11.5-28.4,23-41.4,33.1L35.5,65.5L35.5,65.5z M67.5,2.3C75.6,0,84.8,0.8,93.7,4.4l0.1,0.1c4.1,8.8,5.2,18.1,3.3,26.2L67.5,2.3
@@ -97,7 +97,7 @@ export function cross(style?: React.CSSProperties) {
                         padding: '3px 3px  0 0 ',
                         height: 14,
                     })}>
-        <g id="Group_14" transform="translate(-716.293 -2919.293)">
+        <g transform="translate(-716.293 -2919.293)">
             <path d="M717,2920l13,13"/>
             <path d="M730,2920l-13,13"/>
         </g>
@@ -134,14 +134,14 @@ export function videoPlay(aStyle?: React.CSSProperties, onClick?: ()=>void) {
 export function arrowLeft(aStyle?: React.CSSProperties) {
     const style = merge(aStyle || {});
     return <svg xmlns="http://www.w3.org/2000/svg" width="27.913" height="58.337" viewBox="0 0 27.913 58.337" style={style}>
-        <path id="Path_104" data-name="Path 104" d="M0,56.995,25.822,28.5,0,0" transform="translate(27.171 57.666) rotate(180)" fill="none" stroke="#707070" strokeWidth="2"/>
+        <path d="M0,56.995,25.822,28.5,0,0" transform="translate(27.171 57.666) rotate(180)" fill="none" stroke="#707070" strokeWidth="2"/>
     </svg>
 }
 
 export function arrowRight(aStyle?: React.CSSProperties) {
     const style = merge(aStyle || {});
     return <svg xmlns="http://www.w3.org/2000/svg" width="27.913" height="58.337" viewBox="0 0 27.913 58.337" style={style}>
-        <path id="Path_103" data-name="Path 103" d="M7682,2534.194l25.822-28.491L7682,2477.2" transform="translate(-7681.259 -2476.528)" fill="none" stroke="#707070" strokeWidth="2"/>
+        <path d="M7682,2534.194l25.822-28.491L7682,2477.2" transform="translate(-7681.259 -2476.528)" fill="none" stroke="#707070" strokeWidth="2"/>
     </svg>
 }
 
