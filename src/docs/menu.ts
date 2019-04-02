@@ -69,6 +69,10 @@ export const MENU: MenuEntry[] = [
             M(
                 "Working with Go",
                 "45_Config_Go"
+            ),
+            M(
+                "Prebuilt Workspaces",
+                "46_Prebuilds.md"
             )
         ]
     ),
