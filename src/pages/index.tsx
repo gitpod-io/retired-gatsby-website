@@ -263,7 +263,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                     </div>
                     <GitpodHeader>
                         <h2 style={{ color: colors.fontColor2, marginBottom: 15 }}>Frictionless Coding</h2>
-                        <h1 style={{ fontSize: '3em' }}>One-Click IDE<br /> for GitHub</h1>
+                        <h1 style={{ fontSize: '2.4em' }}>One-Click Online IDE<br /> for GitHub</h1>
                         <div style={{ height: 3, width: 95, backgroundColor: colors.brand, marginBottom: 30 }} />
                         <p>Gitpod beams you into a ready-to-code dev environment from any GitHub page.</p>
                     </GitpodHeader>
@@ -402,8 +402,8 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         <ResponsiveTweet style={{ left: 530, top: 160 }}>
                             <TweetEmbed id='1101772731203252229' options={twitterOptions} />
                         </ResponsiveTweet>
-                        <ResponsiveTweet style={{ left: 530, top: 370 }}>
-                            <TweetEmbed id='1101055381386743808' options={twitterOptions} />
+                        <ResponsiveTweet style={{ left: 530, top: 360 }}>
+                            <TweetEmbed id='1054079167841660928' options={twitterOptions} />
                         </ResponsiveTweet>
                         <ResponsiveTweet style={{ left: 530, top: 600 }}>
                             <TweetEmbed id='1100698060831764481' options={twitterOptions} />
@@ -411,7 +411,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         <ResponsiveTweet style={{ left: 23, top: 240 }}>
                             <TweetEmbed id='1035182733063057408' options={twitterOptions} />
                         </ResponsiveTweet>
-                        <ResponsiveTweet style={{ left: 23, top: 450 }}>
+                        <ResponsiveTweet style={{ left: 23, top: 465 }}>
                             <TweetEmbed id='1101772691181207552' options={twitterOptions} />
                         </ResponsiveTweet>
                     </div>
