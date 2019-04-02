@@ -12,9 +12,6 @@ To enable prebuilt workspaces follow these steps:
 3. You will be forwarded to Gitpod where you need to confirm the installation
 
 By default Gitpod prebuilds workspaces for all changes on the default branch (i.e. `master`) and for pull requests coming from the same repository.
-The [gitpod-io GitHub app](https://github.com/apps/gitpod-io) will also add a button to each pull request for which it is running a prebuild.
-
-![](./images/gitpod-bot.png)
 
 > **Note**: prebuilds are executed as the user who installed the GitHub app. This means that if you want to use
 > prebuilds on a private repository, the user who installed the GitHub app (e.g. you) need to give access to private
