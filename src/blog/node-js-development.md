@@ -4,13 +4,12 @@ date: Wed Dec 12 2018 11:44:33 GMT+0000 (UTC)
 author: akosyakov
 title: Sustainable Node.js development with only a browser
 image: https://cdn-images-1.medium.com/max/4000/1*7zkVCKjkjvyutzD5hFn_Tw.jpeg
+teaserImage: https://cdn-images-1.medium.com/max/4000/1*7zkVCKjkjvyutzD5hFn_Tw.jpeg
 ---
 
 Nowadays, there are many collaborative platforms for showcasing JS code snippets and frameworks. Most of them run in your browser, some even manage to magically run Node.js applications in the cloud. They abstract away many possibilities in order to focus on prototyping and learning.
 
 This simplification (or even magic) eventually turns out to be a hard wall. Once we leave the prototype stage, we need to be able to control and freely combine different versions of frontend and Node.js frameworks, connect to the database that best fits our use case, use different JS flavors and deployment services.
-
-![Photo by [Clark Young](https://unsplash.com/photos/fQxMGkYXqFU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/%22workshop%22?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](https://cdn-images-1.medium.com/max/4000/1*7zkVCKjkjvyutzD5hFn_Tw.jpeg)*Photo by [Clark Young](https://unsplash.com/photos/fQxMGkYXqFU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/%22workshop%22?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
 In this blog post, I will show you a transparent way of getting started with Node.js easily without the magic. The approach taken provides a low entry barrier without the wall once you grow out of it. You will learn how to write Node.js applications in a browser-based environment, that has all the depth of a full local dev environment with VS Code but the friendly onboarding of JSFiddle. These environments can be freely shared to work together and showcase your applications.
 

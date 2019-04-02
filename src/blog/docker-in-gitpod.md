@@ -3,12 +3,13 @@ url: https://medium.com/gitpod/bring-your-own-docker-image-to-gitpod-52db1aa861d
 date: Wed Sep 12 2018 08:25:15 GMT+0000 (UTC)
 author: geropl
 title: Bring your own (Docker) image to Gitpod
-image: https://medium.com/media/75e088faf659f6c20dcb82abcff84f01
+image: https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff
+teaserImage: https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff
 ---
 
 Since we released Gitpod into Public Beta it has been incredibly exciting to see people from all over the world use our service. Even more so with feedback like this:
 
-<iframe src="https://medium.com/media/75e088faf659f6c20dcb82abcff84f01" frameborder=0></iframe>
+[![Gitpod Tweet](./docker-in-gitpod/tweet.png)](https://twitter.com/gkalpakas/status/1037800090977619973)
 
 Of course, there is always room for improvement, especially with a service as new as Gitpod. Luckily, people have started to share their questions and ideas with us on [https://github.com/gitpod-io/gitpod](https://github.com/gitpod-io/gitpod). One of the most often asked questions was:
 
@@ -50,7 +51,21 @@ Gitpod to the rescue!
 
 I went to [gitpod-io/definitely-gp](https://github.com/gitpod-io/definitely-gp/) and added a [*.*gitpod.yml](https://github.com/gitpod-io/definitely-gp/blob/master/rust-web-with-rocket/.gitpod.yml) and [Dockerfile](https://github.com/gitpod-io/definitely-gp/blob/master/rust-web-with-rocket/Dockerfile) there. The *.*gitpod.yml file looks like this:
 
-<iframe src="https://medium.com/media/18a3f0e6a78fe28d7e7eb3d77c50d22b" frameborder=0></iframe>
+```yaml
+image:
+  file: Dockerfile
+tasks:
+  - command: >
+      echo DATABASE_URL=$DATABASE_URL >> .env &&
+      echo ROCKET_ADDRESS=$ROCKET_ADDRESS >> .env &&
+      echo ROCKET_PORT=$ROCKET_PORT >> .env &&
+      pg_start.sh &&
+      diesel setup &&
+      cargo build &&
+      cargo run
+ports:
+ - port: 8000
+```
 
 It references the Dockerfile next to it, says that the resulting app should be accessible on port 8000 and contains the command executed on workspace startup: set config, start postgres, build and run app (I basically copied those from the repo’s .md file).
 
@@ -64,7 +79,42 @@ The Dockerfile itself inherits from our default image [gitpod/workspace-full](ht
 
 Here it is:
 
-<iframe src="https://medium.com/media/40806efadb1f5b95d21f4d13c934ed99" frameborder=0></iframe>
+```bash
+FROM gitpod/workspace-full:latest
+
+# Install postgres
+USER root
+RUN apt-get update && apt-get install -y \
+        postgresql \
+        postgresql-contrib \
+    && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
+
+# Setup postgres server for user gitpod
+USER gitpod
+ENV PATH="/usr/lib/postgresql/10/bin:$PATH"
+RUN mkdir -p ~/pg/data; mkdir -p ~/pg/scripts; mkdir -p ~/pg/logs; mkdir -p ~/pg/sockets; initdb -D pg/data/
+RUN echo '#!/bin/bash\n\
+pg_ctl -D ~/pg/data/ -l ~/pg/logs/log -o "-k ~/pg/sockets" start' > ~/pg/scripts/pg_start.sh
+RUN echo '#!/bin/bash\n\
+pg_ctl -D ~/pg/data/ -l ~/pg/logs/log -o "-k ~/pg/sockets" stop' > ~/pg/scripts/pg_stop.sh
+RUN chmod +x ~/pg/scripts/*
+ENV PATH="$HOME/pg/scripts:$PATH"
+
+# Project specifics
+# Setup diesel_cli
+ENV PATH="$HOME/.cargo/bin:$PATH"
+RUN cargo install diesel_cli --no-default-features --features postgres
+
+# Some transitive dependencies are very picky: We need the nightly build build on the 2018-04-14, meant for the 2018-04-15
+RUN rustup default nightly-2018-04-15
+# Set some environment variables
+ENV DATABASE_URL=postgres://gitpod@127.0.0.1/rust-web-with-rocket
+ENV ROCKET_ADDRESS=0.0.0.0
+ENV ROCKET_PORT=8000
+
+# Give back control
+USER root
+```
 
 Remember, this is done once per project. Most projects already have those setup descriptions, they are just buried inside their README.
 

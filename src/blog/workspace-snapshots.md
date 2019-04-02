@@ -5,11 +5,10 @@ author: svenefftinge
 title: Creating reproducibles for any programming language
 subtitle: Code never lies
 image: https://cdn-images-1.medium.com/max/7776/0*xIYVtetr9mExEzBd
+teaserImage: https://cdn-images-1.medium.com/max/7776/0*xIYVtetr9mExEzBd
 ---
 
 Whenever you want to share a reproducible example on StackOverflow or an issue report, providing real code that can be quickly tried, executed and explored is the best you can do. Online code playgrounds, such as CodePen or JSFiddle, are an excellent way to do that, as they are very accessible for both the creator and the readers. Unfortunately, they are not available for every programming platform, language and often don’t work for larger projects or examples.
-
-![Photo by [Hannah Jacobson](https://unsplash.com/@hannahj236?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/7776/0*xIYVtetr9mExEzBd)*Photo by [Hannah Jacobson](https://unsplash.com/@hannahj236?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
 
 In this post I’d like to introduce you to a new feature in [Gitpod](https://gitpod.io), that lets you create reproducible examples for any programming environment and any size of project.
 
