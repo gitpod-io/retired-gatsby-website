@@ -10,7 +10,7 @@ const Logos: React.SFC<LogosProps> = ({ logos }) => (
     <>
         {logos.map(logoPlacement => {
             const [left, top, width] = logoPlacement;
-            return <img key={''+left+top+width} src={greyLogo} className='hidden-md-down' style={{
+            return <img alt='Gitpod Logo' key={''+left+top+width} src={greyLogo} className='hidden-md-down' style={{
                 position: 'absolute',
                 left,
                 top,
