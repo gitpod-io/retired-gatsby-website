@@ -217,7 +217,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         <img className='browser-extension-image' src={BrowserExtension} />
                         <div className='browser-extension-description' style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
                             <p>The browser extension adds a button to every GitHub repository, issue and pull request. So you don't have to prefix manually.</p>
-                            <a href={this.getBrowserExtension()}><button className='primary' style={{ minWidth: 200 }}>Get the Browser Extension</button></a>
+                            <a href={this.getBrowserExtension()} target='_blank'><button className='primary' style={{ minWidth: 200 }}>Get Browser Extension</button></a>
                         </div>
                     </div>
                     <div className={this.state.worksMode === 2 ? 'selected' : ''}>
@@ -225,7 +225,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                             <div>
                                 <h3>Install the GitHub app</h3>
                                 <p>Like Continuous Integration, the GitHub App detects changes in your repository and starts preparing workspaces. By the time your team starts to code, all dependencies are preinstalled, and the code is already compiled.</p>
-                                <button className='primary' style={{ minWidth: 200 }}>Learn More</button>
+                                <a href='https://github.com/apps/gitpod-io' target='_blank'><button className='primary' style={{ minWidth: 200 }}>Get App</button></a>
                             </div>
                             <img className='hidden-md-down' style={{ marginTop: 15, width: 250 }} src={Octocat} />
                         </div>
