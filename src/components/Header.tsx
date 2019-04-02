@@ -163,7 +163,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
         return <StyledHeader>
             <HeaderInner>
                 <HomepageLink to="/" style={{ paddingRight: 60, lineHeight: 'initial' }}>
-                    <HomepageLogo src={logo} />
+                    <HomepageLogo alt="Gitpod Logo" src={logo} />
                 </HomepageLink>
                 <MobileMenu>
                     {isMenuOpen ? null : <a href="https://gitpod.io/api/login">

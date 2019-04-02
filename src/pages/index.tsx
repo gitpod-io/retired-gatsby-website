@@ -285,7 +285,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                             <circle cx="50" cy="50" r="40" />
                             <polygon points="40,35 40,70 70,50" style={{ fill: colors.fontColor1 }} />
                         </svg>
-                        <img style={{ maxWidth: 700 }} src={ScreenshotVideo}>
+                        <img alt="Gitpod Video" style={{ maxWidth: 700 }} src={ScreenshotVideo}>
                         </img>
                     </VideoLaptop>
                 </Container>
