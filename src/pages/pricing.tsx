@@ -169,7 +169,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                         </h3>
                         <div style={{ height: 3, width: 95, backgroundColor: colors.brand, marginBottom: 30 }} />
                         <p>
-                            Manage the subscriptions of teams at once.
+                            Manage the subscriptions of teams with a single invoice.
                         </p>
                         <a href="https://gitpod.io/team-subscriptions">
                             <button className="primary">Team Subscriptions</button>
