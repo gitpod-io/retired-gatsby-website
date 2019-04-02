@@ -4,12 +4,11 @@ date: Thu Dec 20 2018 21:51:05 GMT+0000 (UTC)
 title: When code reviews LGTM
 subtitle: Say goodbye to shallow reviews!
 image: https://cdn-images-1.medium.com/max/13440/0*mNLW_yw55sVQgN36
+teaserImage: https://cdn-images-1.medium.com/max/13440/0*mNLW_yw55sVQgN36
 author: svenefftinge
 ---
 
 Learn how to streamline your code review experience.
-
-![Photo by [NESA by Makers](https://unsplash.com/@nesabymakers?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/13440/0*mNLW_yw55sVQgN36)*Photo by [NESA by Makers](https://unsplash.com/@nesabymakers?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
 
 Code reviews are one of the best things you can do to keep your codebase clean. They improve code quality, reduce code ownership and let you learn a lot from your teammates.
 
