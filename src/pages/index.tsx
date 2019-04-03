@@ -210,7 +210,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         <div style={{ marginBottom: 25 }}>
                             <UrlAnimation />
                         </div>
-                        <p>... and get beamed into a ready-to-code dev environment immediately.</p>
+                        <p>... and get a ready-to-code dev environment immediately.</p>
                     </div>
                     <div className={this.state.worksMode === 1 ? 'selected' : ''}>
                         <h3>Install the Browser Extension</h3>
@@ -265,7 +265,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         <h2 style={{ color: colors.fontColor2, marginBottom: 15 }}>Frictionless Coding</h2>
                         <h1 style={{ fontSize: '2.4em' }}>One-Click Online IDE<br /> for GitHub</h1>
                         <div style={{ height: 3, width: 95, backgroundColor: colors.brand, marginBottom: 30 }} />
-                        <p>Gitpod beams you into a ready-to-code dev environment from any GitHub page.</p>
+                        <p>Gitpod launches ready-to-code dev environments from any GitHub page.</p>
                     </GitpodHeader>
                     <VideoLaptop>
                         <svg x="0px" y="0px" viewBox="0 0 100 100"

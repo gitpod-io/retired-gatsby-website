@@ -42,7 +42,7 @@ When creating a workspace, Gitpod will analyze the provided GitHub URL. If you a
 
 Some great features, which are heavily used on GitHub, are issues and pull requests. If you want to start working on a GitHub issue, you simply spawn a fresh workspace from the issue page on GitHub. Gitpod puts you into the right context, by automatically creating a local branch using the issue number and even pre-configures the commit message accordingly. All is set up for you to start coding and testing. Once you are happy with the changes you made, use the Git integration to create a commit and push it to a remote branch. Finally, you can even create the actual pull request right from within Gitpod.
 
-Lastly, of course, when clicking the Gitpod button on a pull request, Gitpod beams you right into the code review mode. A panel on the left will list the changed files, allowing you to go through them one by one. Changes are opened in the diff editor where you can also read and add review comments. And because it is a full IDE, we can navigate through the entire code base, run code or add commits at will. Approving the pull request is supported, too.
+Lastly, of course, when clicking the Gitpod button on a pull request, Gitpod beams you right into code review mode. A panel on the left will list the changed files, allowing you to go through them one by one. Changes are opened in the diff editor where you can also read and add review comments. And because it is a full IDE, we can navigate through the entire code base, run code or add commits at will. Approving the pull request is supported, too.
 
 ![Inline code review comments](https://cdn-images-1.medium.com/max/3200/0*8N39dT5P6Q1zQdIR)*Inline code review comments*
 

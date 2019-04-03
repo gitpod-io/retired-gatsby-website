@@ -3,7 +3,7 @@
 [Gitpod](https://www.gitpod.io) is frictionless coding.
 
 Whether you just want to hack, have code to review or feel like trying something new on
-GitHub, Gitpod beams you right into a ready-to-code dev environment with a single click.
+GitHub, Gitpod launches a ready-to-code dev environment with a single click.
 
 Because Gitpod is based on OSS tech like VS Code, Docker and Kubernetes, it is familiar,
 comprehensive, extensible, and easy to use. With deep GitHub integration, tools for
