@@ -18,14 +18,14 @@ Here's how Gitpod works: You are on GitHub and want to start working on a projec
 
 ![GitHub button](./gitpod-launch/browser-ext.png)
 
-Don’t see the button on GitHub yet? You need to [install a small browser extension](/docs/20_Browser_Extension) to have it. Alternatively, you can just prefix any GitHub URL with “https://gitpod.io/#”.
+Don’t see the button on GitHub yet? You need to [install a small browser extension](/docs/20_Browser_Extension) to get it. Alternatively, you can just prefix any GitHub URL with “https://gitpod.io/#”.
 
 You can try Gitpod right now. It's free for public repositories.
 
 ## No Setup
 Not all projects are equal. We maintain a [developer friendly docker image](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile) that includes all the commonly used tools and version managers. But you can point to your own docker image in a __.gitpod.yml__ file. Gitpod will pick it up and even build the image if needed. Read [Gero's post](/blog/docker-in-gitpod) for more details.
 
-With Gitpod contributors don’t need to go through a list of usually outdated setup instructions. Instead, they get exactly what they need for the project at hand with no additional effort. As a side-effect, any "works-on-my-machine" scenarios are eliminated, because every team member uses the same working setup on the same kind of machine in the cloud. Since the __.gitpod.yml__ is versioned with the code, going back to old releases and branches becomes super easy, too. We call this [dev environment as code](/blog/dev-env-as-code).
+With Gitpod, contributors don’t need to go through a list of usually outdated setup instructions. Instead, they get exactly what they need for the project at hand with no additional effort. As a side-effect, any "works-on-my-machine" scenarios are eliminated, because every team member uses the same working setup on the same kind of machine in the cloud. Since the __.gitpod.yml__ is versioned with the code, going back to old releases and branches becomes super easy, too. We call this [dev environment as code](/blog/dev-env-as-code).
 
 To optimize the experience, the __.gitpod.yml__ accepts [further configuration](/docs/40_Configuration), where you can automatically start builds, watchers and dev servers in multiple terminals. You can configure how they appear in the IDE layout and hook up all your web ports and previews.
 
@@ -49,7 +49,7 @@ We call this feature prebuilt workspaces and you can read more about it in [Chri
 ![Prebuilt Workspaces](./gitpod-launch/prebuilt-workspaces.png)
 
 ## More Flow
-The dev environments open differently depending on the GitHub page you are coming from. You can, for instance, open branches or files by simply going to the respective GitHub page and pressing the button (or prefixing the URL) there.
+Your dev environment opens differently depending on the GitHub page you are coming from. You can, for instance, open branches or files by simply going to the respective GitHub page and pressing the button (or prefixing the URL) there.
 
 When coming from an issue, Gitpod understands you want to fix it, so you’ll get a fresh local branch and the commit message is prepared with a reference to the issue.
 
@@ -62,7 +62,7 @@ Even if you prefer your local machine for development, being able to do [deep co
 ## A Complete IDE Running in the Cloud
 While Gitpod keeps the convenience and accessibility of online coding playgrounds and sandboxes, it is not a toy but a complete dev environment running in the cloud.
 
-We teamed-up with Google, Ericsson, Arm and Red Hat to develop the open-source project [Eclipse Theia](https://theia-ide.org). The project puts [VS Code](https://code.visualstudio.com/)’s state-of-the-art technology and UX into the browser based on an extensible architecture that optimized for the cloud.
+We teamed-up with Google, Ericsson, Arm and Red Hat to develop the open-source project [Eclipse Theia](https://theia-ide.org). The project puts [VS Code](https://code.visualstudio.com/)’s state-of-the-art technology and UX into the browser based on an extensible architecture that is optimized for the cloud.
 
 Gitpod already comes with several VS Code extensions pre-installed (such as Go support from Microsoft’s own extension). We will be adding more popular VS Code extensions shortly, and later allow users to define any extensions they want.
 
@@ -92,7 +92,7 @@ We also offer **team subscriptions**, which allow managers to buy a batch of sub
 And, of course, a special **students discount** is in store, eligible if your primary GitHub URL belongs to an educational institution.
 
 ## Thank You ❤️
-I want to take the opportunity to thank all the people who have helped to make Gitpod a reality: all the [enthusiastic](https://twitter.com/JeremyJaydan/status/1096742668137246721) [early](https://twitter.com/RalfDMueller/status/1054079167841660928) [adopters](https://twitter.com/doppelganger9/status/1088926330857680896) who provided [great feedback](https://github.com/gitpod-io/gitpod/issues) during the beta phase, contributors who have helped to identify bugs and sharing their use cases and of course the [Eclipse Theia community](https://github.com/theia-ide/theia/graphs/contributors) working with passion on an open-source IDE platform for the future.
+I want to take the opportunity to thank all the people who have helped to make Gitpod a reality: all the [enthusiastic](https://twitter.com/JeremyJaydan/status/1096742668137246721) [early](https://twitter.com/RalfDMueller/status/1054079167841660928) [adopters](https://twitter.com/doppelganger9/status/1088926330857680896) who provided [great feedback](https://github.com/gitpod-io/gitpod/issues) during the beta phase; contributors who have helped by identifying bugs and by sharing their use cases; and of course the [Eclipse Theia community](https://github.com/theia-ide/theia/graphs/contributors) working with passion on an open-source IDE platform for the future.
 
 Furthermore, I want to thank Michael Bernstein from [Reify](https://www.reifyworks.com/) for clarifying our messaging with us and Kelly Fitzpatrick and the rest of the [Redmonk](https://redmonk.com/) team for their guidance and helpful feedback.
 
