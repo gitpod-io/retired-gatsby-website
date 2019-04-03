@@ -161,8 +161,8 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                     </div>
                     <Feature
                         title="Prebuilt Workspaces"
-                        button={<a href="https://medium.com/@csweichel/waiting-for-code-to-build-is-like-watching-paint-dry-a1c6b25fd601" target="_blank">
-                            <button className='primary' onClick={this.openModal}>Learn More</button>
+                        button={<a href="https://github.com/marketplace/gitpod-io" target="_blank">
+                            <button className='primary'>GitHub Marketplace</button>
                         </a>}
                         visual={<img src={PrebuiltWorkspacesImage} alt="prebuilt workspaces" />}>
                         <p>Gitpod continuously builds your code and pull requests in the background to save your time.</p>

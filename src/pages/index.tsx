@@ -226,7 +226,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                             <div>
                                 <h3>Install the GitHub app</h3>
                                 <p>Like Continuous Integration, the GitHub App detects changes in your repository and starts preparing workspaces. By the time your team starts to code, all dependencies are preinstalled, and the code is already compiled.</p>
-                                <a href='https://github.com/apps/gitpod-io' target='_blank'><button className='primary' style={{ minWidth: 200 }}>Get App</button></a>
+                                <a href='https://github.com/marketplace/gitpod-io' target='_blank'><button className='primary' style={{ minWidth: 200 }}>GitHub Marketplace</button></a>
                             </div>
                             <img className='hidden-md-down' style={{ marginTop: 15, width: 250 }} src={Octocat} />
                         </div>
