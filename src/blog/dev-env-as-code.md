@@ -2,12 +2,12 @@
 subtitle: How to streamline developer onboarding
 title: Dev environments as code
 date: Mon Nov 19 2018 15:39:56 GMT+0000 (UTC)
-image: https://cdn-images-1.medium.com/max/2000/1*GszIo6iudvQRcmZcBfVmIA.gif
+image: /dev-env-gilbert.gif
 author: svenefftinge
-url: https://medium.freecodecamp.org/dev-env-as-code-c25f1ce83ec2
+url: /dev-env-gilbert.gif
 ---
 
-![Source: http://dilbert.com/strip/2017-01-02](https://cdn-images-1.medium.com/max/2000/1*GszIo6iudvQRcmZcBfVmIA.gif)
+![Source: http://dilbert.com/strip/2017-01-02](/dev-env-gilbert.gif)
 
 Imagine that only a decade ago system administrators deployed, configured, and maintained software systems manually. Doing so burned an endless amount of their precious lifetimes and energy.
 

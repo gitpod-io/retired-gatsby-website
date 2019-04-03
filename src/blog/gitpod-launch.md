@@ -2,8 +2,8 @@
 subtitle: No Setup, Less Waiting, More Flow
 title: Introducing Gitpod – Frictionless Coding on GitHub
 date: Mon Apr 5 2019 15:00:00 GMT+0000 (UTC)
-image: https://images.unsplash.com/reserve/unsplash_5256df5dea82e_1.JPG
-teaserImage: https://images.unsplash.com/reserve/unsplash_5256df5dea82e_1.JPG
+image: /teaser-launch-min.jpg
+teaserImage: /teaser-launch-min.jpg
 author: svenefftinge
 ---
 

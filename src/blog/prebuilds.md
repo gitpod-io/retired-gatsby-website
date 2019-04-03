@@ -4,16 +4,16 @@ author: 32leaves
 subtitle: Prebuild your workspaces
 title: Waiting for code to build is like watching paint dry
 date: Sun Feb 24 2019 16:16:17 GMT+0000 (UTC)
-image: https://cdn-images-1.medium.com/max/2000/1*J-1MC3QGbIuwq4tb-yr-iA.png
+image: /compiling-xkcd.png
 ---
 
 Once your development environment is freed from manual setup procedures it can do work even while you are not. We call this continuous development.
 
-A while ago Sven described the idea of [development environment as code](https://medium.freecodecamp.org/dev-env-as-code-c25f1ce83ec2). His main point: instead of using outdated README files that describe how to set up our development environment we should have executable, replicable and version-controlled descriptions thereof. In such a dev-environment as code world, on-boarding new team members/contributors is dead easy, going back to an old branch becomes a breeze (that old setup you had a year ago is now easy to restore) and playing with a new project becomes a joy. All those situations are very much *direct use *scenarios; you set up a dev-environment using code which you as a developer use straight away.
+A while ago Sven described the idea of [development environment as code](/blog/dev-env-as-code). His main point: instead of using outdated README files that describe how to set up our development environment we should have executable, replicable and version-controlled descriptions thereof. In such a dev-environment as code world, on-boarding new team members/contributors is dead easy, going back to an old branch becomes a breeze (that old setup you had a year ago is now easy to restore) and playing with a new project becomes a joy. All those situations are very much *direct use *scenarios; you set up a dev-environment using code which you as a developer use straight away.
 
 However, a machine-reproducible version of your development setup enables another powerful capability: your dev-environment can already checkout the latest code, download dependencies and build everything. Once you actually open your IDE, everything’s ready for you. No more siting there and watching p̵̶̵a̵̶̵i̵̶̵n̵̶̵t̵̶̵ ̵̶̵d̵̶̵r̵̶̵y̵̶̵ yarn download the internet.
 
-![[https://xkcd.com/303/](https://xkcd.com/303/) — Compiling](https://cdn-images-1.medium.com/max/2000/1*J-1MC3QGbIuwq4tb-yr-iA.png)
+![[https://xkcd.com/303/](https://xkcd.com/303/) — Compiling](/compiling-xkcd.png)
 
 ## Paint dries even when you’re not watching
 
@@ -26,11 +26,11 @@ The result of *continuous development* is a ready-to-code workspace. The second 
 
 ## How could we build this?
 
-![Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](https://cdn-images-1.medium.com/max/12000/1*Sa1JcYpRMddE0xVo2ofosA.jpeg)*Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
+![Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](./prebuilds/colored-hands.jpg)*Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
 To build a continuous development system we need three things:
 
-1. A dev-environment-as-code, e.g. based on Docker — there are [various ways](https://medium.freecodecamp.org/dev-env-as-code-c25f1ce83ec2#ef8b) of how this can be achieved.
+1. A dev-environment-as-code, e.g. based on Docker — there are [various ways](/blog/dev-env-as-code#dev-environment-as-code) of how this can be achieved.
 
 1. Means to trigger an action when our code changes. The obvious candidates are [webhooks](https://developer.github.com/webhooks/), [GitHub actions](https://github.com/features/actions), or something tied in to your CI system.
 
