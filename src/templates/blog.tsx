@@ -73,8 +73,9 @@ const logos: [number, number, number][] = [3700, 8000].reduce((a, b) => {
   [980, 3690, 120],
 ] as [number, number, number][]);
 
-const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => (
-  <IndexLayout canonical={data.markdownRemark.frontmatter.url}>
+const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
+
+  return (<IndexLayout canonical={data.markdownRemark.frontmatter.url}>
     <Page>
       <Helmet>
         <title>{data.markdownRemark.frontmatter.title}</title>
@@ -120,8 +121,8 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => (
         </div>
       </Container>
     </Page>
-  </IndexLayout>
-)
+  </IndexLayout>);
+}
 
 export default BlogTemplate
 

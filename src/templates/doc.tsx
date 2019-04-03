@@ -5,11 +5,12 @@ import { graphql, navigate } from 'gatsby'
 import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
-import { MENU } from '../docs/menu';
+import { MENU, getMenuContext, MenuEntry } from '../docs/menu';
 import { Link } from 'gatsby'
 import { colors, breakpoints } from '../styles/variables';
 import { getEmSize } from '../styles/mixins'
 import Logos from '../components/Logos';
+import GatsbyLink from 'gatsby-link';
 
 const DocContent = styled.div`
     display: flex;
@@ -53,6 +54,9 @@ interface DocTemplateProps {
     markdownRemark: {
       html: string
       excerpt: string
+      fields: {
+        slug: string;
+      }
       frontmatter: {
         title: string
       }
@@ -60,7 +64,9 @@ interface DocTemplateProps {
   }
 }
 
-const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => (
+const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => { 
+  const menuCtx = getMenuContext(data.markdownRemark.fields.slug);
+  return (
   <IndexLayout>
     <Page>
       <Container>
@@ -71,9 +77,10 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => (
                     [40, 830, 120]
                 ]} />
         <DocContent>
+            
             <DocSidebar>
                 <div className='hidden-md-down'>
-                    <DocMenu/>
+                    <DocMenu current={menuCtx.thisEntry!}/>
                 </div>
                 <div className='hidden-md-up'>
                     <DocTopicChooser/>
@@ -82,12 +89,17 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => (
             <div className="article">
                 <h4 style={{color: colors.fontColor2, marginBottom: 0, marginTop: 30}}>Docs</h4>
                 <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+                <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+                  {menuCtx.prev ? <GatsbyLink to={menuCtx.prev.path} title={menuCtx.prev.title}>&lt; prev</GatsbyLink>: <div/>}
+                  {menuCtx.next ? <GatsbyLink to={menuCtx.next.path} title={menuCtx.next.title}>next ></GatsbyLink>: <div/>}
+                </div>
             </div>
         </DocContent>
       </Container>
     </Page>
   </IndexLayout>
-)
+);
+}
 
 export default DocTemplate
 
@@ -106,6 +118,9 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       excerpt
+      fields {
+        slug
+      }
       frontmatter {
         title
       }
@@ -115,18 +130,18 @@ export const query = graphql`
 
 
 interface DocMenuProps {
-
+  current: MenuEntry
 }
 
-const DocMenu: React.SFC<DocMenuProps> = () => {
+const DocMenu: React.SFC<DocMenuProps> = (p) => {
 
     return <div style={{ display: 'flex', flexDirection: 'column'}}>
         {MENU.map( m => {
             return <>
-                <Link key={m.path} to={`/docs/${m.path}`} style={{color: colors.fontColor1, marginTop: 0}}>{m.title}</Link>
+                <Link key={m.path} to={m.path} style={{color: m.path === p.current.path ? colors.brand : colors.fontColor1, marginTop: 0}}>{m.title}</Link>
                 {
                     (m.subMenu || []).map(m =>
-                        <Link key={m.path} to={`/docs/${m.path}`} style={{color: colors.fontColor2, marginLeft: 20}}>{m.title}</Link>
+                        <Link key={m.path} to={m.path} style={{color: m.path === p.current.path ? colors.brand :colors.fontColor2, marginLeft: 20}}>{m.title}</Link>
                     )
                 }
                 {
@@ -149,10 +164,10 @@ export const DocTopicChooser: React.SFC<DocTopicChooserProps> = () => {
         <option value='#' selected={true}>Select A Topic</option>
         {MENU.map(m => {
             return <>
-                <option key={m.path} value={`/docs/${m.path}`}>{m.title}</option>
+                <option key={m.path} value={m.path}>{m.title}</option>
                 {
                     (m.subMenu || []).map(m =>
-                        <option key={m.path} value={`/docs/${m.path}`}>&nbsp;&nbsp;&nbsp;&nbsp;{m.title}</option>
+                        <option key={m.path} value={m.path}>&nbsp;&nbsp;&nbsp;&nbsp;{m.title}</option>
                     )
                 }
             </>
