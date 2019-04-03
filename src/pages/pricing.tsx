@@ -11,6 +11,7 @@ import { getEmSize } from '../styles/mixins';
 import * as icons from '../resources/icons';
 import Box from '../components/Box';
 import { Teaser } from '../components/Teaser';
+import GitLabLogo from '../resources/gitlab-logo.png';
 
 const PricingOptions = styled.div`
     display: flex;
@@ -69,10 +70,6 @@ const EnterpriseOffer = styled.div`
             }
         }
 
-        & h2 {
-            text-align: center;
-        }
-
         & button {
             width: 100%
         }
@@ -109,7 +106,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                                     'Unlimited Workspaces',
                                     'Public Repositories'
                                 ]}
-                                link="https://gitpod.io/#" />
+                                link="https://gitpod.io/login" />
                             <PricingBox
                                 title="Standard"
                                 description="For developers working on private software projects."
@@ -124,7 +121,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                                     'Unlimited Workspaces',
                                     'Private & Public Repos'
                                 ]}
-                                link="https://gitpod.io/#" />
+                                link="https://gitpod.io/subcription" />
                             <PricingBox
                                 title="Unlimited"
                                 description="For professional developers."
@@ -139,23 +136,10 @@ export default class PricingPage extends React.Component<{}, {}> {
                                     'Unlimited Workspaces',
                                     'Private & Public Repos'
                                 ]}
-                                link="https://gitpod.io/#" />
+                                link="https://gitpod.io/subcription" />
                         </PricingOptions>
                     </div>
                 </Container>
-                <Teaser>
-                    <Container>
-                        <StudentOffer>
-                            {icons.bag({ fill: 'none', stroke: colors.brand, margin: '0 30px' })}
-                            <div>
-                                <h3>Are You a Student?</h3>
-                                <p>Students get the <strong>unlimited</strong> subscription for $10. </p>
-                                <p>Make sure your student e-mail is set as your primary E-Mail on GitHub. And let us know if your educational institution is not correctly recognized.</p>
-                                <button className="primary">I'm a Student</button>
-                            </div>
-                        </StudentOffer>
-                    </Container>
-                </Teaser>
                 <Container>
                     <Box
                         title="Team Subscriptions"
@@ -165,23 +149,43 @@ export default class PricingPage extends React.Component<{}, {}> {
                             textAlign: 'center',
                         }}>
                         <h3>
-                            Increase the productivity of an entire team!
+                            Increase the productivity of your team!
                         </h3>
                         <div style={{ height: 3, width: 95, backgroundColor: colors.brand, marginBottom: 30 }} />
                         <p>
-                            Manage the subscriptions of teams with a single invoice.
+                            Manage one subscription for your entire team from a single account.
                         </p>
-                        <a href="https://gitpod.io/team-subscriptions">
-                            <button className="primary">Team Subscriptions</button>
+                        <a href="https://gitpod.io/teams">
+                            <button className="primary">Team subscription</button>
                         </a>
                     </Box>
                 </Container>
+                <Teaser>
+                    <Container>
+                        <StudentOffer>
+                            {icons.bag({ fill: 'none', stroke: colors.brand, margin: '0 30px' })}
+                            <div>
+                                <h3>Are You a Student?</h3>
+                                <p>Students get the <strong>unlimited subscription for $9.</strong></p>
+                                <p>Make sure your student e-mail is set as your primary E-Mail on GitHub. And let us know if your educational institution is not correctly recognized.</p>
+                                <a href="https://gitpod.io/subscription">
+                                  <button className="primary">I'm a student</button>
+                                </a>
+                            </div>
+                        </StudentOffer>
+                    </Container>
+                </Teaser>
 
                 <Container>
                     <EnterpriseOffer>
                         <a id="enterprise" />
-                        <h2 style={{ rotate: '12', textShadow: '0 0 2px', fontWeight: 100, fontSize: '1.3em', color: colors.brand }}>Coming Soon!</h2>
-                        <h2>Gitpod Enterprise</h2>
+                        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
+                          <div>
+                            <h2 style={{ rotate: '12', textShadow: '0 0 2px', fontWeight: 100, fontSize: '1.3em', color: colors.brand }}>Coming Soon!</h2>
+                            <h2>Gitpod Enterprise</h2>
+                          </div>
+                          <img style={{maxHeight: 80 }}src={GitLabLogo}/>
+                        </div>
                         <p><strong>Gitpod Enterprise</strong> will be available shortly and allows to run and host Gitpod on your own servers. Self hosted installations can be configured to works with any <strong>GitHub Enterprise</strong> or <strong>GitLab</strong> instance.</p>
 
                         <table>
@@ -229,7 +233,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                                     <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
                                 </tr>
                                 <tr>
-                                    <td>Crazy Hardware (up to 96 CPUs, 360GB RAM)</td>
+                                    <td>More Power (up to 96 CPUs, GPUs, 360GB RAM)</td>
                                     <td style={{ textAlign: 'center' }}></td>
                                     <td style={{ textAlign: 'center' }}>{icons.tick()}</td>
                                 </tr>
@@ -243,7 +247,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                         </p>
                         <a href="mailto:contact@gitpod.io">
                             <button className='primary'>
-                                Let's Talk
+                                Let's talk
                             </button>
                         </a>
                     </EnterpriseOffer>
@@ -294,7 +298,7 @@ class PricingBox extends React.Component<PricingBoxProps, {}> {
             </ul>
             <a href={p.link}>
                 <button className='primary'>
-                    Get Started
+                    Get started
             </button>
             </a>
         </Box>;
