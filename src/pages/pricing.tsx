@@ -144,6 +144,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                     <Box
                         title="Team"
                         style={{
+                            marginTop: '1.5rem',
                             paddingLeft: 30,
                             paddingRight: 30,
                             textAlign: 'center',
@@ -274,7 +275,6 @@ class PricingBox extends React.Component<PricingBoxProps, {}> {
         return <Box title={this.props.title} style={{
             width: 260
         }}>
-            <h2 style={{ fontSize: 18, position: 'absolute', top: -34, padding: '0 10px', backgroundColor: colors.background1 }}>{p.title}</h2>
             <p style={{ textAlign: 'center', fontSize: 14, height: 70, paddingTop: 18 }}>
                 {p.description}
             </p>
