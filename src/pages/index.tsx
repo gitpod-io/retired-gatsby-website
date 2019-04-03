@@ -24,6 +24,7 @@ import GitGraph from '../components/GitGraph';
 import GatsbyLink from 'gatsby-link';
 import { Teaser } from '../components/Teaser';
 import Bowser from 'bowser';
+import PrefixScreenshot from '../resources/prefix-screenshot.png';
 
 interface IndexPageState { isOpen: boolean, worksMode: number }
 
@@ -78,7 +79,7 @@ const HowItWorks = styled.div`
 
     > * {
         margin: 30px;
-        min-height: 300px;
+        min-height: 360px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -207,8 +208,8 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 <HowItWorks>
                     <div className={this.state.worksMode === 0 ? 'selected' : ''}>
                         <h3>Prefix any GitHub URL with <strong className="glow">gitpod.io/#</strong></h3>
-                        <div style={{ marginBottom: 25 }}>
-                            <UrlAnimation />
+                        <div style={{ marginBottom: 10 }}>
+                            <img src={PrefixScreenshot} />
                         </div>
                         <p>... and get a ready-to-code dev environment immediately.</p>
                     </div>
@@ -315,9 +316,9 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                                 },
                             ]
                         },
-                        { down: 1252 },
+                        { down: 1305 },
                         {},
-                        { down: 653 },
+                        { down: 650 },
                         {},
                         { down: 60 },
                         {
@@ -338,7 +339,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         {},
                         { down: 250 },
                         {},
-                        { down: 442 },
+                        { down: 445 },
                         {}
                     ]} />
                     <Logos logos={[
@@ -425,71 +426,5 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 </Container>
             </Page>
         </IndexLayout>;
-    }
-}
-
-const AnimatedUrl = styled.div`
-    font-size: 16px;
-    color: #898989;
-
-    @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
-        width: 75vw;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
-`
-
-class UrlAnimation extends React.Component<{}, { url: string }>{
-    protected start: number = 0;
-    protected prefix: string;
-    protected stepTime: number;
-    protected initialStepTime: number;
-    protected startDelay: number;
-    protected gitpodUrl: string;
-    protected githubUrl: string;
-
-    constructor(p: {}) {
-        super(p);
-        this.githubUrl = 'https://github.com/my-org/my-project';
-        this.gitpodUrl = 'https://gitpod.io/#';
-        this.prefix = '';
-        this.startDelay = 2000;
-        this.initialStepTime = 80;
-        this.stepTime = this.initialStepTime;
-        this.state = { url: '' };
-    }
-
-    protected writeALetter = (timestamp: number) => {
-        if (!this.start) this.start = timestamp;
-        var progress = timestamp - this.start;
-        if ((this.prefix === '' && progress > this.startDelay) || (this.prefix !== '' && progress > this.stepTime)) {
-            this.prefix = this.gitpodUrl.substring(0, this.prefix.length + 1);
-            this.setState({ url: this.prefix });
-            this.start = timestamp;
-            this.stepTime = this.initialStepTime + (100 * Math.random());
-        }
-        if (this.prefix !== this.gitpodUrl) {
-            window.requestAnimationFrame(this.writeALetter);
-        }
-    };
-
-    componentDidMount() {
-        window.requestAnimationFrame(this.writeALetter);
-    }
-    render() {
-        return <div style={{
-            backgroundColor: 'white',
-            height: 34,
-            padding: '5px 20px',
-            borderRadius: 20
-        }}>
-            <AnimatedUrl><span style={{ color: '#1e1e1e' }}>{this.state.url}</span><span style={{
-                animation: "blink 1s  infinite",
-                borderLeft: "1px solid #333",
-                width: 1,
-                height: 20,
-            }}></span>{this.githubUrl}</AnimatedUrl>
-        </div>
     }
 }
