@@ -138,10 +138,14 @@ const DocMenu: React.SFC<DocMenuProps> = (p) => {
     return <div style={{ display: 'flex', flexDirection: 'column'}}>
         {MENU.map( m => {
             return <>
-                <Link key={m.path} to={m.path} style={{color: m.path === p.current.path ? colors.brand : colors.fontColor1, marginTop: 0}}>{m.title}</Link>
+                <Link key={m.path} to={m.path} style={{
+                  textDecoration: m.path === p.current.path ? 'underline' : 'none', 
+                  color: colors.fontColor1, marginTop: 0}}>{m.title}</Link>
                 {
                     (m.subMenu || []).map(m =>
-                        <Link key={m.path} to={m.path} style={{color: m.path === p.current.path ? colors.brand :colors.fontColor2, marginLeft: 20}}>{m.title}</Link>
+                        <Link key={m.path} to={m.path} style={{
+                          textDecoration: m.path === p.current.path ? 'underline' : 'none', 
+                          color: m.path === p.current.path ? colors.fontColor1: colors.fontColor2, marginLeft: 20}}>{m.title}</Link>
                     )
                 }
                 {
