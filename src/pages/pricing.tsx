@@ -90,7 +90,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                     <div style={{ marginTop: 60 }}>
                         <h4 style={{ color: colors.fontColor2 }}>Pricing</h4>
                         <h1>Free for Open Source</h1>
-                        <p>Choose the subscription that fits you best. Find team subscriptions below.</p>
+                        <p>Choose the plan that fits you best. Find team plans below.</p>
                         <PricingOptions>
                             <PricingBox
                                 title="Open Source"
@@ -142,7 +142,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                 </Container>
                 <Container>
                     <Box
-                        title="Team Subscriptions"
+                        title="Team"
                         style={{
                             paddingLeft: 30,
                             paddingRight: 30,
@@ -153,10 +153,10 @@ export default class PricingPage extends React.Component<{}, {}> {
                         </h3>
                         <div style={{ height: 3, width: 95, backgroundColor: colors.brand, marginBottom: 30 }} />
                         <p>
-                            Manage one subscription for your entire team from a single account.
+                            Manage one plan for your entire team from a single account.
                         </p>
                         <a href="https://gitpod.io/teams">
-                            <button className="primary">Team subscription</button>
+                            <button className="primary">Gitpod for teams</button>
                         </a>
                     </Box>
                 </Container>
