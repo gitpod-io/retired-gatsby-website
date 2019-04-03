@@ -21,7 +21,7 @@ const Box: React.SFC<BoxProps> = (p) => (
         position: 'relative',
         ...p.style
     }}>
-        <h3 style={{position: 'absolute', top: -35, backgroundColor: colors.background1, padding: '0 15px'}}>{p.title}</h3>
+        <h3 style={{fontSize: 19, position: 'absolute', top: -35, backgroundColor: colors.background1, padding: '0 15px'}}>{p.title}</h3>
         {p.children}
     </div>
 )
