@@ -118,7 +118,7 @@ USER root
 
 Remember, this is done once per project. Most projects already have those setup descriptions, they are just buried inside their README.
 
-Now whenever anyone accesses the repository through Gitpod, be it a branch, a particular commit, an issue or a[ PR,](https://medium.com/gitpod/when-code-reviews-lgtm-2fd4ffd66f87) they will get a custom workspace with all the tools set up and running, out of the box. [Give it a spin](http://gitpod.io/#https://github.com/lankydan/rust-web-with-rocket)!
+Now whenever anyone accesses the repository through Gitpod, be it a branch, a particular commit, an issue or a[ PR,](/blog/when-code-reviews-lgtm) they will get a custom workspace with all the tools set up and running, out of the box. [Give it a spin](http://gitpod.io/#https://github.com/lankydan/rust-web-with-rocket)!
 
 Once the service has build and is running, we just follow the tutorial:
 

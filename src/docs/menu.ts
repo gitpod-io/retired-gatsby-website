@@ -72,7 +72,7 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Prebuilt Workspaces",
-                "46_Prebuilds.md"
+                "46_Prebuilds"
             )
         ]
     ),

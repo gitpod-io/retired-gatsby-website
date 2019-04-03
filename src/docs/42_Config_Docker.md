@@ -55,4 +55,4 @@ ENV ...
 USER root
 ```
 
-See also [Gero's blog post](https://medium.com/gitpod/bring-your-own-docker-image-to-gitpod-52db1aa861de) running through an example.
+See also [Gero's blog post](/blog/docker-in-gitpod) running through an example.

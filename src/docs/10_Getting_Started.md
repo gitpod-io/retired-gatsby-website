@@ -9,7 +9,7 @@ The following example shows how to use Gitpod with a GitHub repository.
    https://gitpod.io/#https://github.com/arunoda/learnnextjs-demo) or push the _Gitpod_ button if you
    have installed the [Gitpod extension](20_Browser_Extension.md).
 
-   ![](./images/gitpod_prefix.jpg)
+   ![](./images/prefix-screenshot.png)
 
 3. On first use you will have to authorize access to your GitHub account. This is necessary so you
    can access your data from within Gitpod.

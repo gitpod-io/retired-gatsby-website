@@ -31,7 +31,7 @@ Most projects need special tools, which can be provided by naming a custom Docke
 
 Starting today, you can point to a *Dockerfile* that sits next to the *.gitpod* file. Gitpod will take care of building and caching it for you. Instead of managing your own docker builds and versions, simply put the *Dockerfile* into the repository and you will always have a working setup for the branch at hand.
 
-Please read [Gero’s post](https://medium.com/gitpod/bring-your-own-docker-image-to-gitpod-52db1aa861de) explaining this feature in more detail.
+Please read [Gero’s post](/blog/docker-in-gitpod) explaining this feature in more detail.
 
 ![](https://cdn-images-1.medium.com/max/3988/1*IBKSgvfSNzbcyz8YUIc4cg.png)
 

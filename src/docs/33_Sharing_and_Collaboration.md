@@ -53,7 +53,7 @@ differently than if you had created a fresh workspace from git. Also, this is us
 Unlike sharing running workspaces snapshoted workspaces are full copies. This means users can do what ever
 they like with the content. And of course, no access to any of your credentials is shared.
 
-Read more about this feature [here](https://medium.com/gitpod/code-never-lies-creating-reproducibles-for-any-programming-language-7946021a68f2).
+Read more about this feature [here](/blog/workspace-snapshots).
 
 ### How To Take a Snapshot URL
 
