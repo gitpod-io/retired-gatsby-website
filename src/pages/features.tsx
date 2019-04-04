@@ -147,7 +147,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                     ]} />
                     <div style={{ marginTop: 60 }}>
                         <h4 style={{ color: colors.fontColor2 }}>Features</h4>
-                        <h1>A Complete Dev Environment In Your Browser</h1>
+                        <h1>A complete dev environment in your browser</h1>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
                         </div>
                     </div>
@@ -208,7 +208,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                 <SupportedLanguages>
                     <a id="supported-languages" style={{position: 'relative', top: 100}}/>
                     <Container>
-                        <h2>Supported Programming Languages</h2>
+                        <h2>Supported programming languages</h2>
                         <p>Gitpod comes pre-configured with support for many programming languages. Very soon you can even install VS Code extensions.</p>
                         <table>
                             <thead>
@@ -345,16 +345,16 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         <MissingLanguage>
                             <p>Missing your favorite programming language?</p>
                             <a href="https://github.com/gitpod-io/gitpod/issues/new?template=feature_request.md" target="_blank">
-                                <button className='primary'>Request Support</button>
+                                <button className='primary'>Request support</button>
                             </a>
                         </MissingLanguage>
                     </Container>
                 </SupportedLanguages>
                 <Container>
                     <div style={{ textAlign: 'center', marginTop: 150, marginBottom: 150 }}>
-                        <h3 style={{ marginBottom: '0.7rem' }}>Try It Out</h3>
+                        <h3 style={{ marginBottom: '0.7rem' }}>Try it out</h3>
                         <a href="https://gitpod.io/api/login">
-                            <button className='primary'>Get Started Free</button>
+                            <button className='primary'>Get started free</button>
                         </a>
                     </div>
                 </Container>
