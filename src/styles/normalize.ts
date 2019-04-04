@@ -17,12 +17,12 @@ export default `
     font-size: ${dimensions.fontSize.regular}px !important;
     line-height: ${dimensions.lineHeight.regular} !important;
     overflow-x: hidden;
+    overflow-y: scroll;
   }
 
   body {
     width: 100%;
     overflow-x: hidden;
-    overflow-y: scroll;
     font-family: ${fonts.sansSerif};
     color: ${colors.fontColor1};
     background-color: ${colors.background1};
