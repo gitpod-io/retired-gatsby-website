@@ -56,7 +56,7 @@ const MissingLanguage = styled.div`
         margin-left: 30px;
     }
 
-    @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {        
+    @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
         flex-direction: column;
         a {
             margin: 0;
@@ -344,7 +344,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         </table>
                         <MissingLanguage>
                             <p>Missing your favorite programming language?</p>
-                            <a href="https://github.com/gitpod-io/gitpod/issues" target="_blank">
+                            <a href="https://github.com/gitpod-io/gitpod/issues/new?template=feature_request.md" target="_blank">
                                 <button className='primary'>Request Support</button>
                             </a>
                         </MissingLanguage>
