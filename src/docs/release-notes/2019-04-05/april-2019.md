@@ -34,25 +34,25 @@ Gitpod now directly uses Microsoft's great Go support for VS Code.
 
 If you don't feel comfortable with a time-based limit, you can now purchase the 'Unlimited' plan to use Gitpod as much as you like on public and private repositories.
 
-We also offer [unlimited subscriptions for teams](https://gitpod.io/teams) and [for students](https://www.gitpod.io/pricing) the price for an Unlimited subscription is only 9$/8€.
+We also offer [unlimited plans for teams](https://gitpod.io/teams), and [for students](https://www.gitpod.io/pricing) the price for an unlimited plan is only 9$ or 8€.
 
-> If you have created your account during the beta, i.e. before April 5th, you will be able to work on private repositories for another month.
+> If you have created your account during the beta, i.e. before April 5th, you will be able to work on private repositories for free for another month, on us.
 
 You can check out the various [pricing options on the website](https://www.gitpod.io/pricing).
 
 ## New Design 💄
 
-As part of the launch, we have overhauled the design of Gitpod. The website and dashboard now is in dark theme as well and the UI of the
+As part of the launch, we have refreshed the design of Gitpod. The website and dashboard now use a new dark theme that we hope you'll like, and the UI of the
 IDE is more closely matching the look of VS Code.
 
 ![New Dashboard](./img/dashboard-design.png)
 
 ## Delete Workspace
 
-You can now delete workspaces in the dashboard. Please note, that deletion can not be reversed as we are really
+You can now delete workspaces in the dashboard. Please note that deletion can not be reversed as we are really
 deleting all the contents of your workspace.
 
-You can also delete your entire account (Hopefully the most unused feature).
+You can also delete your entire account (hopefully the least used feature).
 
 ## Many Small Improvements
 
@@ -64,4 +64,4 @@ We have merged 146 PRs in Gitpod and [206 in Theia](https://github.com/theia-ide
 With this release we have already added some VS Code extensions. Going forward we will double down on the integration.
 We are looking at one programming language after the other, making sure the experience is excellent and the VS Code extensions
 work as epected. Once we've reached a state where we are confident VS Code extensions work reliably in general, we will allow users to install them.
-Furthermore, we are focussing on start-up time improvements and, of course, bugfixing and helping you having a great development experience.
+Furthermore, we are focusing on start-up time improvements and, of course, bug-fixing and offering you a great development experience.
