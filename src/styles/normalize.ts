@@ -277,8 +277,10 @@ export default `
       line-height: 1.58;
 
       &.blog {
-          max-width: 76%;
-          margin-left: 12%;
+          @media (min-width: ${getEmSize(breakpoints.sm)}em) {
+              max-width: 76%;
+              margin-left: 12%;
+          }
 
           font-size: 20px;
           font-weight: 300;
