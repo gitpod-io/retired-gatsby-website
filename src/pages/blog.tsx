@@ -27,6 +27,7 @@ const BlogPost = styled.div`
     height: auto;
     min-height: 400px;
     border: solid 1px ${colors.fontColor2};
+    box-shadow: 0 0 1px ${colors.fontColor2};
     width: 280px;
     display: flex;
     flex-direction: column;
@@ -106,7 +107,7 @@ class BlogPreview extends React.Component<BlogPreviewProps, {}> {
         const b = this.props.blog.node;
         const date = new Date(Date.parse(b.frontmatter.date));
         return <BlogPost>
-            <GatsbyLink to={b.fields.slug}>
+            <GatsbyLink to={b.fields.slug} style={{ color: colors.fontColor1, textDecoration: 'none' }}>
                 <div style={{
                             maxWidth: '100%',
                             height: 160,
@@ -118,20 +119,16 @@ class BlogPreview extends React.Component<BlogPreviewProps, {}> {
                         }}
                     />
                 <div style={{
-                    color: colors.fontColor1,
                     fontWeight: 600,
                     fontSize: 16,
                     padding: 10}}>
                     {b.frontmatter.title}
                 </div>
             </GatsbyLink>
-                <a href={`https://github.com/${b.frontmatter.author}`}>
-                <div style={{
-                    color: colors.fontColor2,
-                    padding: '0px 0px 0px 10px'}}>
-                    {date.toLocaleDateString()} by {b.frontmatter.author}
+                <div style={{ color: colors.fontColor2, padding: '0px 0px 0px 10px' }}>
+                    {date.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })} by&nbsp;
+                    <a href={`https://github.com/${b.frontmatter.author}`} target="_blank" style={{ color: colors.fontColor2 }}>{b.frontmatter.author}</a>
                 </div>
-                </a>
                 <div style={{ color: colors.fontColor1, padding: 10}}>
                     {b.excerpt}
                 </div>
