@@ -83,7 +83,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
         <meta name="keywords" content="cloud ide, github, javascript, online ide, web ide, code review" />
 
         <meta name="twitter:card" content="summary"></meta>
-        <meta name="twitter:site" content="@gitpodio"></meta>
+        <meta name="twitter:site" content="@gitpod"></meta>
         <meta name="twitter:creator" content={'@' + data.markdownRemark.frontmatter.author}></meta>
 
         <meta property="og:url" content={data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug} />
