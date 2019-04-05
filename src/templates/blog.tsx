@@ -98,7 +98,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
       </Helmet>
       <Container>
         <Logos logos={logos.filter(p => p[1] < currentHeight() - 200)} />
-        <div className="article">
+        <div className="article blog">
           {data.markdownRemark.frontmatter.subtitle ?
             <h2 style={{ color: colors.fontColor3, margin: '50px 0 10px 0' }}>{data.markdownRemark.frontmatter.subtitle}</h2> :
             null}
@@ -117,7 +117,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
           </div>) : null
       }
       <Container>
-        <div className="article">
+        <div className="article blog">
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: 60 }}>
