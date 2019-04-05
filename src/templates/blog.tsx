@@ -6,6 +6,7 @@ import Container from '../components/Container'
 import IndexLayout from '../layouts'
 import { colors } from '../styles/variables';
 import Logos from '../components/Logos';
+import twitter from '../resources/twitter.svg';
 import { Helmet } from 'react-helmet';
 
 interface BlogTemplateProps {
@@ -118,6 +119,11 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
       <Container>
         <div className="article">
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: 60 }}>
+          <a title="Share on Twitter" href={'https://twitter.com/intent/tweet?text=' + encodeURIComponent(`${data.markdownRemark.frontmatter.title} by @${data.markdownRemark.frontmatter.author} ${data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug}`)} target="_blank">
+            <img alt="Share on Twitter" src={twitter} style={{ height: 25, margin: 8 }}/>
+          </a>
         </div>
       </Container>
     </Page>
