@@ -103,7 +103,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
             <h2 style={{ color: colors.fontColor3, margin: '50px 0 10px 0' }}>{data.markdownRemark.frontmatter.subtitle}</h2> :
             null}
           <h1 style={{ margin: '0 0 0 0' }}>{data.markdownRemark.frontmatter.title}</h1>
-          <p style={{ margin: '15px 0 0px 0', color: colors.fontColor3 }}>{new Date(Date.parse(data.markdownRemark.frontmatter.date)).toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })} by <a href={`https://github.com/${data.markdownRemark.frontmatter.author}`}>{data.markdownRemark.frontmatter.author}</a></p>
+          <p style={{ margin: '15px 0 0px 0', color: colors.fontColor3 }}>{new Date(Date.parse(data.markdownRemark.frontmatter.date)).toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })} by <a href={`https://github.com/${data.markdownRemark.frontmatter.author}`} target="_blank">{data.markdownRemark.frontmatter.author}</a></p>
         </div>
       </Container>
       {
