@@ -9,9 +9,9 @@ image: /compiling-xkcd.png
 
 Once your development environment is freed from manual setup procedures it can do work even while you are not. We call this continuous development.
 
-A while ago Sven described the idea of [development environment as code](/blog/dev-env-as-code). His main point: instead of using outdated README files that describe how to set up our development environment we should have executable, replicable and version-controlled descriptions thereof. In such a dev-environment as code world, on-boarding new team members/contributors is dead easy, going back to an old branch becomes a breeze (that old setup you had a year ago is now easy to restore) and playing with a new project becomes a joy. All those situations are very much *direct use *scenarios; you set up a dev-environment using code which you as a developer use straight away.
+A while ago Sven described the idea of [development environment as code](/blog/dev-env-as-code). His main point: instead of using outdated README files that describe how to set up our development environment we should have executable, replicable and version-controlled descriptions thereof. In such a dev-environment as code world, on-boarding new team members/contributors is dead easy, going back to an old branch becomes a breeze (that old setup you had a year ago is now easy to restore) and playing with a new project becomes a joy. All those situations are very much *direct use* scenarios; you set up a dev-environment using code which you as a developer use straight away.
 
-However, a machine-reproducible version of your development setup enables another powerful capability: your dev-environment can already checkout the latest code, download dependencies and build everything. Once you actually open your IDE, everything’s ready for you. No more siting there and watching p̵̶̵a̵̶̵i̵̶̵n̵̶̵t̵̶̵ ̵̶̵d̵̶̵r̵̶̵y̵̶̵ yarn download the internet.
+However, a machine-reproducible version of your development setup enables another powerful capability: your dev-environment can already checkout the latest code, download dependencies and build everything. Once you actually open your IDE, everything’s ready for you. No more siting there and watching ~~paint dry~~ yarn download the internet.
 
 ![[https://xkcd.com/303/](https://xkcd.com/303/) — Compiling](/compiling-xkcd.png)
 
@@ -22,7 +22,7 @@ Turns out we don’t actually have to be present for those things to happen. Wha
 Sounds an awful lot like continuous integration (CI). Except there’s a subtle difference: CI checks if everything still fits together, i.e. does the code still build and do the tests still pass? The result of continuous integration is a test report and a bunch of built binaries/Docker images/update sites/APK files/you get the point. A CI build does not give you a ready-to-code workspace. But it tells you that the next time you want to build your software things will likely be fine.
 > Continuous Development means that your code is built before you even open it. Once you open an IDE on your project, everything is ready to go.
 
-The result of *continuous development* is a ready-to-code workspace. The second you open your IDE you can start working because all dependencies have been downloaded, indices updated, code generated and compiled, a̶n̶d̶ ̶c̶o̶f̶f̶e̶e̶ ̶h̶a̶s̶ ̶b̶e̶e̶n̶ ̶b̶r̶e̶w̶e̶d̶. Your dev environment has done all the things you’d otherwise do manually, except you didn’t have to trigger them or watch them finish.
+The result of *continuous development* is a ready-to-code workspace. The second you open your IDE you can start working because all dependencies have been downloaded, indices updated, code generated and compiled, ~~and coffee has been brewed~~. Your dev environment has done all the things you’d otherwise do manually, except you didn’t have to trigger them or watch them finish.
 
 ## How could we build this?
 
