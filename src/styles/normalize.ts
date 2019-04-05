@@ -277,7 +277,7 @@ export default `
       line-height: 1.58;
 
       h1 {
-          font-size: 48px;
+          font-size: 42px;
       }
       h2, h3, h4, h5, h6 {
         text-transform: none;
