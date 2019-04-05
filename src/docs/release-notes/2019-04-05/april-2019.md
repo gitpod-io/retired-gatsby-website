@@ -10,23 +10,23 @@ Besides a complete relaunch of the website and app, we have added some very exci
 ## GitHub App / Prebuilt Workspaces 🚀
 
 We have been busy developing a [new GitHub app](https://github.com/marketplace/gitpod-io), that once installed on your repository will prebuild your project on every push.
-On GitHub pull requests this is communicated through the status as checks on PRs. 
-
-As a result, Gitpod is now the first IDE that builds your project, before you open it.
+On GitHub pull requests this is communicated through a status check.
 
 ![Prebuilt Check on PR](./img/prebuilt-check.png)
+
+As a result, Gitpod is now the first IDE that builds your project, before you open it.
 
 Read more about this exciting feature in [the docs](https://www.gitpod.io/docs/46_Prebuilds) and in [Chris' blog post](https://www.gitpod.io/blog/prebuilds).
 
 ## Better `localhost` Handling
 
 When starting web servers in Gitpod, often times you need to explicitly make sure the dev server allows connections from non-localhost.
-Starting today, you no longer need to worry about that. Gitpod now forwards the port locally and rewrites the host headers, 
+Starting today, you no longer need to worry about that. Gitpod now forwards the port locally and rewrites the host headers,
 so that dev servers will be fine.
 
-## Better Go Support 
+## Better Go Support
 
-Gitpod now directly uses Microsoft's great Go support for VS Code. 
+Gitpod now directly uses Microsoft's great Go support for VS Code.
 
 ![VS Code Go Extension](./img/vscode-go.png)
 
@@ -49,7 +49,7 @@ IDE is more closely matching the look of VS Code.
 
 ## Delete Workspace
 
-You can now delete workspaces in the dashboard. Please note, that deletion can not be reversed as we are really 
+You can now delete workspaces in the dashboard. Please note, that deletion can not be reversed as we are really
 deleting all the contents of your workspace.
 
 You can also delete your entire account (Hopefully the most unused feature).
