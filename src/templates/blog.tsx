@@ -1,10 +1,12 @@
 import * as React from 'react'
+import styled from '@emotion/styled';
 import { graphql } from 'gatsby'
 
 import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
-import { colors } from '../styles/variables';
+import { colors, breakpoints } from '../styles/variables';
+import { getEmSize } from '../styles/mixins';
 import Logos from '../components/Logos';
 import reddit from '../resources/reddit.svg';
 import twitter from '../resources/twitter.svg';
@@ -75,6 +77,16 @@ const logos: [number, number, number][] = [3700, 8000].reduce((a, b) => {
   [980, 3690, 120],
 ] as [number, number, number][]);
 
+const TeaserImage = styled.div`
+  height: 400px;
+  background-position: center;
+  background-size: 100%;
+
+  @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
+    height: 250px;
+  }
+`
+
 const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
 
   return (<IndexLayout canonical={data.markdownRemark.frontmatter.url}>
@@ -109,13 +121,10 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
       </Container>
       {
         data.markdownRemark.frontmatter.teaserImage ?
-          (<div style={{
-            height: 400,
+          (<TeaserImage style={{
             backgroundImage: 'url(' + data.markdownRemark.frontmatter.teaserImage + ')',
-            backgroundPosition: 'center',
-            backgroundSize: '100%'
           }}>
-          </div>) : null
+          </TeaserImage>) : null
       }
       <Container>
         <div className="article blog">
