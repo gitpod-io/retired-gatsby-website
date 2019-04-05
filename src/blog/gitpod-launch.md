@@ -44,7 +44,7 @@ Starting today, [the new Gitpod app is available on the GitHub marketplace](http
 
 Once you've installed the app for your GitHub repository, it will pre-build dev environments on every commit. So when anybody opens a Gitpod environment on your project, the dev environment is opened as described above. But now also the build ran through and all dependencies are already there.
 
-We call this feature prebuilt workspaces and you can read more about it in [Chris' post](/blog/prebuilt-workspaces).
+We call this feature prebuilt workspaces and you can read more about it in [Chris' post](/blog/prebuilds).
 
 ![Prebuilt Workspaces](./gitpod-launch/prebuilt-workspaces.png)
 
