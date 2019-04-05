@@ -16,50 +16,60 @@ import LayoutMain from '../components/LayoutMain'
 import Footer from '../components/Footer';
 
 type StaticQueryProps = {
-    site: {
-        siteMetadata: {
-            title: string
-            description: string
-            link: string
-        }
+  site: {
+    siteMetadata: {
+      title: string
+      description: string
+      siteUrl: string
     }
+  }
 }
 
-const IndexLayout: React.SFC<{ title?: string, canonical?: string}> = ({ title, canonical, children }) => (
-    <StaticQuery
-        query={graphql`
+const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title, canonical, children }) => (
+  <StaticQuery
+    query={graphql`
       query IndexLayoutQuery {
         site {
           siteMetadata {
             title
             description
+            siteUrl
           }
         }
       }
     `}
-        render={(data: StaticQueryProps) => (
-            <LayoutRoot>
-                <Helmet>
-                    <html lang="en" />
-                    <title>{title || data.site.siteMetadata.title}</title>
-                    <meta name="description" content={data.site.siteMetadata.description}/>
-                    <meta name="keywords" content="cloud ide, github, javascript, online ide, web ide, code review"/>
-                    {
-                        canonical ? <link rel="canonical" href={canonical} /> : null
-                    }
-                    <meta name="theme-color" content={colors.background1}/>
-                    <link rel="icon" type="image/png" href={GitpodIcon196} sizes="196x196"/>
-                    <link rel="icon" type="image/svg+xml" href={GitpodIcon} sizes="any"/>
-                    <link rel="apple-touch-icon" type="image/png" href={GitpodIconApple} sizes="180x180"/>
-                </Helmet>
-                <Header title={data.site.siteMetadata.title} />
-                <LayoutMain>
-                    {children}
-                </LayoutMain>
-                <Footer />
-            </LayoutRoot>
-        )}
-    />
+    render={(data: StaticQueryProps) => (
+      <LayoutRoot>
+        <Helmet>
+          <html lang="en" />
+          <title>{title || data.site.siteMetadata.title}</title>
+          <meta name="description" content={data.site.siteMetadata.description} />
+          <meta name="keywords" content="cloud ide, github, javascript, online ide, web ide, code review" />
+          {
+            canonical ? <link rel="canonical" href={canonical} /> : null
+          }
+          <meta name="theme-color" content={colors.background1} />
+          <link rel="icon" type="image/png" href={GitpodIcon196} sizes="196x196" />
+          <link rel="icon" type="image/svg+xml" href={GitpodIcon} sizes="any" />
+          <link rel="apple-touch-icon" type="image/png" href={GitpodIconApple} sizes="180x180" />
+
+          <meta name="twitter:card" content="summary"></meta>
+          <meta name="twitter:site" content="@gitpod"></meta>
+          <meta name="twitter:creator" content="@gitpod"></meta>
+
+          <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
+          <meta property="og:title" content={title || data.site.siteMetadata.title} />
+          <meta property="og:description" content={data.site.siteMetadata.description} />
+          <meta property="og:image" content="https://www.gitpod.io/media-image.jpg" />
+        </Helmet>
+        <Header title={data.site.siteMetadata.title} />
+        <LayoutMain>
+          {children}
+        </LayoutMain>
+        <Footer />
+      </LayoutRoot>
+    )}
+  />
 )
 
 export default IndexLayout
