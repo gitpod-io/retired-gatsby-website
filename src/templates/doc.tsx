@@ -11,6 +11,7 @@ import { colors, breakpoints } from '../styles/variables';
 import { getEmSize } from '../styles/mixins'
 import Logos from '../components/Logos';
 import GatsbyLink from 'gatsby-link';
+import { Helmet } from 'react-helmet';
 
 const DocContent = styled.div`
     display: flex;
@@ -64,11 +65,14 @@ interface DocTemplateProps {
   }
 }
 
-const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => { 
+const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
   const menuCtx = getMenuContext(data.markdownRemark.fields.slug);
   return (
   <IndexLayout>
     <Page>
+      <Helmet>
+        <title>{data.markdownRemark.frontmatter.title || 'Gitpod - Docs'}</title>
+      </Helmet>
       <Container>
         <Logos logos={[
                     [-30, 60, 25],
@@ -77,7 +81,6 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
                     [40, 830, 120]
                 ]} />
         <DocContent>
-            
             <DocSidebar>
                 <div className='hidden-md-down'>
                     <DocMenu current={menuCtx.thisEntry!}/>
@@ -139,12 +142,12 @@ const DocMenu: React.SFC<DocMenuProps> = (p) => {
         {MENU.map( m => {
             return <>
                 <Link key={m.path} to={m.path} style={{
-                  textDecoration: m.path === p.current.path ? 'underline' : 'none', 
+                  textDecoration: m.path === p.current.path ? 'underline' : 'none',
                   color: colors.fontColor1, marginTop: 0}}>{m.title}</Link>
                 {
                     (m.subMenu || []).map(m =>
                         <Link key={m.path} to={m.path} style={{
-                          textDecoration: m.path === p.current.path ? 'underline' : 'none', 
+                          textDecoration: m.path === p.current.path ? 'underline' : 'none',
                           color: m.path === p.current.path ? colors.fontColor1: colors.fontColor2, marginLeft: 20}}>{m.title}</Link>
                     )
                 }
