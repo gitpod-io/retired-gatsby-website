@@ -89,7 +89,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
         return <IndexLayout title="Gitpod - Features">
             <Page>
                 <div style={{ zIndex: 99, position: "fixed", top: 50, left: 'auto' }}>
-                    <ModalVideo channel='youtube' isModalOpen={this.state.isModalOpen} videoId='D41zSHJthZI' onClose={() => this.setState({ isModalOpen: false })} />
+                    <ModalVideo channel='youtube' autoplay={true} isOpen={this.state.isModalOpen} videoId='D41zSHJthZI' onClose={() => this.setState({ isModalOpen: false })} />
                 </div>
                 <Container>
                     <GitGraph left={-900} top={40} graph={[
@@ -178,8 +178,8 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                     </Feature>
                     <Feature
                         title="Terminals"
-                        button={<GatsbyLink to="/docs/40_Configuration">
-                            <button className='primary'>Learn More</button>
+                        button={<GatsbyLink to="/docs/42_Config_Docker/">
+                            <button className='primary'>Read docs</button>
                         </GatsbyLink>}
                         visual={<img src={TerminalsImage} alt="terminals" />}>
                         <p>Gitpod instantly starts a machine in the cloud based on a Docker image supporting your project.
@@ -188,7 +188,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
 
                     <Feature
                         title="Code Reviews"
-                        button={<button className='primary' onClick={this.openModal}>Play Video</button>}
+                        button={<button className='primary' onClick={this.openModal}>Play video</button>}
                         visual={<img src={InlineCommentsImage} alt="inline comments" />}  >
                         <p>Open pull requests in Gitpod to run, navigate, and review the code from within the IDE.<br />
                             Reply to comments and publish code reviews without switching back to GitHub.</p>

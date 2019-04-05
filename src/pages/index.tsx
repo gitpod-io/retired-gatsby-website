@@ -260,7 +260,15 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         [10, 540, 40]
                     ]} />
                     <div style={{ zIndex: 99, position: "fixed", top: 50, left: 'auto' }}>
-                        <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='D41zSHJthZI' onClose={() => this.setState({ isOpen: false })} />
+                        <ModalVideo channel='youtube'
+                            youtube={{
+                              autoplay: 1,
+                              cc_load_policy: 1,
+                              theme: 'dark'
+                            }}
+                            isOpen={this.state.isOpen}
+                            videoId='D41zSHJthZI'
+                            onClose={() => this.setState({ isOpen: false })} />
                     </div>
                     <GitpodHeader>
                         <h2 style={{ color: colors.fontColor2, marginBottom: 15 }}>Frictionless Coding</h2>

@@ -121,7 +121,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                                     'Unlimited Workspaces',
                                     'Private & Public Repos'
                                 ]}
-                                link="https://gitpod.io/subcription" />
+                                link="https://gitpod.io/subscription" />
                             <PricingBox
                                 title="Unlimited"
                                 description="For professional developers."
@@ -136,7 +136,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                                     'Unlimited Workspaces',
                                     'Private & Public Repos'
                                 ]}
-                                link="https://gitpod.io/subcription" />
+                                link="https://gitpod.io/subscription" />
                         </PricingOptions>
                     </div>
                 </Container>
@@ -177,9 +177,9 @@ export default class PricingPage extends React.Component<{}, {}> {
                     </Container>
                 </Teaser>
 
+                <a id="enterprise"/>
                 <Container>
                     <EnterpriseOffer>
-                        <a id="enterprise" />
                         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
                           <div>
                             <h2 style={{ rotate: '12', textShadow: '0 0 2px', fontWeight: 100, fontSize: '1.3em', color: colors.brand }}>Coming Soon!</h2>
