@@ -267,7 +267,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                               theme: 'dark'
                             }}
                             isOpen={this.state.isOpen}
-                            videoId='D41zSHJthZI'
+                            videoId='bFZMKpDV3GQ'
                             onClose={() => this.setState({ isOpen: false })} />
                     </div>
                     <GitpodHeader>
