@@ -168,8 +168,8 @@ export default class PricingPage extends React.Component<{}, {}> {
                             <div>
                                 <h3>Are You a Student?</h3>
                                 <p>Students get the <strong>unlimited subscription for $9.</strong></p>
-                                <p>Make sure your student e-mail is set as your primary E-Mail on GitHub. And let us know if your educational institution is not correctly recognized.</p>
-                                <a href="https://gitpod.io/subscription">
+                                <p>Make sure your student email is set as your primary email on GitHub. And please let us know if your educational institution is not correctly recognized.</p>
+                                <a href="mailto:contact@gitpod.io?subject=I'm%20a%20student">
                                   <button className="primary">I'm a student</button>
                                 </a>
                             </div>
