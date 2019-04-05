@@ -6,6 +6,7 @@ import Container from '../components/Container'
 import IndexLayout from '../layouts'
 import { colors } from '../styles/variables';
 import Logos from '../components/Logos';
+import reddit from '../resources/reddit.svg';
 import twitter from '../resources/twitter.svg';
 import { Helmet } from 'react-helmet';
 
@@ -122,7 +123,10 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: 60 }}>
           <a title="Share on Twitter" href={'https://twitter.com/intent/tweet?text=' + encodeURIComponent(`${data.markdownRemark.frontmatter.title} by @${data.markdownRemark.frontmatter.author} ${data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug}`)} target="_blank">
-            <img alt="Share on Twitter" src={twitter} style={{ height: 25, margin: 8 }}/>
+            <img alt="Share on Twitter" src={twitter} style={{ margin: 8, height: 36, padding: 6 }}/>
+          </a>
+          <a title="Share on Reddit" href={`http://www.reddit.com/submit?url=${encodeURIComponent(data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug)}&title=${encodeURIComponent(data.markdownRemark.frontmatter.title)}`} target="_blank">
+            <img alt="Share on Reddit" src={reddit} style={{ margin: 8, height: 36, padding: 2 }}/>
           </a>
         </div>
       </Container>
