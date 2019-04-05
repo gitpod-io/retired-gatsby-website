@@ -281,6 +281,7 @@ export default `
           margin-left: 12%;
 
           font-size: 20px;
+          font-weight: 300;
       }
 
       h1 {
