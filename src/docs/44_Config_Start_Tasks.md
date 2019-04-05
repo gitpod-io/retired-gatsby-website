@@ -36,7 +36,7 @@ tasks:
 ### `init` command
 
 The `init` property can be used to specify shell commands that should only be executed after a workspace was freshly cloned and needs to be initialized somehow.
-Such tasks are usually builds or downloading dependencies. Anything you only want to do once but not when you restart a workspace or start a [snapshot](33_Sharing_anc_Collaborationb.md).
+Such tasks are usually builds or downloading dependencies. Anything you only want to do once but not when you restart a workspace or start a [snapshot](33_Sharing_and_Collaboration.md).
 
 Here is an example for a node project that makes use of `init`:
 
