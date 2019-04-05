@@ -273,7 +273,6 @@ export default `
           margin-left: 10%;
       }
 
-      font-size: 18px;
       line-height: 1.58;
 
       &.blog {
