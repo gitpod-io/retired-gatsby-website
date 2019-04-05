@@ -71,7 +71,7 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
   <IndexLayout>
     <Page>
       <Helmet>
-        <title>{data.markdownRemark.frontmatter.title || 'Gitpod - Docs'}</title>
+        <title>{`Gitpod - ${menuCtx.thisEntry!.title || 'Docs'}`}</title>
       </Helmet>
       <Container>
         <Logos logos={[
