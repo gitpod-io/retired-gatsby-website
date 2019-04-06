@@ -89,6 +89,7 @@ module.exports = {
         // siteSpeedSampleRate: 10,
         // cookieDomain: "example.com",
       },
-    }
+    },
+    'gatsby-plugin-sitemap'
   ]
 }

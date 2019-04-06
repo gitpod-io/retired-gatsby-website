@@ -35,6 +35,7 @@
     "gatsby-plugin-google-analytics": "^2.0.18",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sharp": "^2.0.5",
+    "gatsby-plugin-sitemap": "^2.0.11",
     "gatsby-plugin-typescript": "^2.0.0",
     "gatsby-remark-autolink-headers": "^2.0.15",
     "gatsby-remark-copy-linked-files": "^2.0.5",
