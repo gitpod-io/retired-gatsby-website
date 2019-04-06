@@ -187,7 +187,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                           </div>
                           <img style={{maxHeight: 80 }}src={GitLabLogo}/>
                         </div>
-                        <p><strong>Gitpod Enterprise</strong> will be available shortly and allows to run and host Gitpod on your own servers. Self hosted installations can be configured to works with any <strong>GitHub Enterprise</strong> or <strong>GitLab</strong> instance.</p>
+                        <p><strong>Gitpod Enterprise</strong> will be available shortly and allows to run and host Gitpod on your own servers. Self hosted installations can be configured to work with any <strong>GitHub Enterprise</strong> or <strong>GitLab</strong> instance.</p>
 
                         <table>
                             <thead>
