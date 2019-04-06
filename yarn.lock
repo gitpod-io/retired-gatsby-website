@@ -9725,10 +9725,10 @@ react-transition-group@^2.2.1:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react-tweet-embed@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/react-tweet-embed/-/react-tweet-embed-1.1.1.tgz#91243783e1068b8eadf985fbf706405b6208082e"
-  integrity sha512-aVvBiFUWjg7/OhsKN4TQNeXJrer+zqQn2vFgpCGJaNkihy7WTDxiAgru6mD7IukmggNEd1EszTsnc9NYKkm6TA==
+react-tweet-embed@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/react-tweet-embed/-/react-tweet-embed-1.2.2.tgz#b518510a6e6ef17609f9c9b16bc4775624730d8a"
+  integrity sha512-Y932BlSaJsDUsKDucC2opzzd+uhc0YNhrlTa/4Beb2be1od+AjLGo6Fhuo2wPT0D+fF4VTXOyoZyA8Yc88RdYA==
 
 react@16.5.2:
   version "16.5.2"
