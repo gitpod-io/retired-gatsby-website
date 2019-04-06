@@ -251,7 +251,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
 
     render() {
         const twitterOptions = { theme: 'light', dnt: true, cards: 'hidden' };
-        return <IndexLayout>
+        return <IndexLayout canonical="https://www.gitpod.io/">
             <Page>
                 <Container>
                     <Logos logos={[

@@ -72,7 +72,7 @@ export default class BlogPage extends React.Component<BlogPageProps, {}> {
 
         const blogs = this.props.data.allMarkdownRemark.edges.sort((a,b) =>
             Date.parse(b.node.frontmatter.date) - Date.parse(a.node.frontmatter.date));
-        return <IndexLayout title="Gitpod - Blog">
+        return <IndexLayout title="Gitpod - Blog" canonical="https://www.gitpod.io/blog">
             <Page>
                 <Container>
                     <Logos logos={[
