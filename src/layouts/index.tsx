@@ -61,6 +61,8 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
           <meta property="og:title" content={title || data.site.siteMetadata.title} />
           <meta property="og:description" content={data.site.siteMetadata.description} />
           <meta property="og:image" content="https://www.gitpod.io/media-image.jpg" />
+
+          <meta name="google-site-verification" content="NBio3hCkfn2FKJpqZritJpXuyKo54noPGZzWsjDIp-M" />
         </Helmet>
         <Header title={data.site.siteMetadata.title} />
         <LayoutMain>
