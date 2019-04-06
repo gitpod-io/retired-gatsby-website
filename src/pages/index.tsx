@@ -408,8 +408,8 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         marginTop: 80
                     }}>
                         <h2>Don't Just Take Our Word for It</h2>
-                        <ResponsiveTweet style={{ left: 530, top: 160 }}>
-                            <TweetEmbed id='1101772731203252229' options={twitterOptions} />
+                        <ResponsiveTweet style={{ left: 530, top: 120 }}>
+                            <TweetEmbed id='1114254120012144645' options={twitterOptions} />
                         </ResponsiveTweet>
                         <ResponsiveTweet style={{ left: 530, top: 360 }}>
                             <TweetEmbed id='1054079167841660928' options={twitterOptions} />
