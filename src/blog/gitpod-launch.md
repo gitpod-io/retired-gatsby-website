@@ -81,13 +81,13 @@ Gitpod comes with two major features supporting collaboration.
 An important part of leaving the beta was to find a good pricing model that addresses the needs for the various user groups.
 
 We think we have found a good balance by providing the following individual subscription options:
- - a **free 100-hour subscription** for open-source development
- - a **paid 100-hour subscription** for individuals working privately
- - a **paid unlimited subscriptions** for professional use
+ - a **free 100-hour per month plan** for open-source development
+ - a **paid 100-hour per month plan** for individuals working privately
+ - a **paid unlimited plan** for professional use
 
  _(I know some of you are lucky enough to do professional open-source. Decide what works best for you in that case ;-))_
 
-We also offer **team subscriptions**, which allow managers to buy a batch of subscriptions and provide them to the team.
+We also offer **team subscriptions**, which allow managers to buy a batch of seats and assign them to the team.
 
 And, of course, a special **students discount** is in store, eligible if your primary GitHub URL belongs to an educational institution.
 
