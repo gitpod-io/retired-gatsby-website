@@ -48,7 +48,7 @@
     "gatsby-transformer-remark": "2.3.8",
     "gatsby-transformer-sharp": "2.1.17",
     "modern-normalize": "0.5.0",
-    "normalize.css": "8.0.0",
+    "normalize.css": "8.0.1",
     "polished": "2.0.3",
     "prism-themes": "1.0.1",
     "prismjs": "1.15.0",
