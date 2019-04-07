@@ -113,6 +113,9 @@ const HowItWorks = styled.div`
         }
         .browser-extension-description {
             flex-direction: column;
+            > * {
+                width: 100%;
+            }
         }
     }
 `
