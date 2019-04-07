@@ -90,7 +90,7 @@ github:
 
 #### Badge
 Instead of adding a comment, Gitpod can also modify the description of a pull request to add the "Review in Gitpod" button.
-This approach produces fewer GitHub notifications, but can also create a concurent editing conflict when the bot and a user try to edit the description of a pull request at the same time.
+This approach produces fewer GitHub notifications, but can also create a concurrent editing conflict when the bot and a user try to edit the description of a pull request at the same time.
 
 You can enable this behaviour in the `.gitpod.yml` file in your default/master branch:
 ```YAML
@@ -113,5 +113,5 @@ github:
     addLabel: prebuilt-in-gitpod-or-any-other-label
 ```
 
-**Note**: This is very much a beta-feature and not neccesarily reliable. If a label has been added to a PR, a prebuild exists.
+**Note**: This is very much a beta-feature and not necessarily reliable. If a label has been added to a PR, a prebuild exists.
 But sometimes a label may not be added even though the workspace was prebuilt.
