@@ -169,7 +169,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
                     {isMenuOpen ? null : <a href="https://gitpod.io/api/login">
                         <button className='primary' style={{fontSize: '90%', padding: '6px 10px'}}>Go to app</button>
                     </a>}
-                    <button onClick={this.toggleMenu} style={{ border: 0, padding: '6px 10px' }}>
+                    <button aria-label="Toggle menu" onClick={this.toggleMenu} style={{ border: 0, padding: '6px 10px' }}>
                         {isMenuOpen ? icons.cross() : icons.burger()}
                     </button>
                 </MobileMenu>
