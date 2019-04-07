@@ -22,8 +22,8 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "@emotion/core": "10.0.5",
-    "@emotion/styled": "10.0.5",
+    "@emotion/core": "10.0.10",
+    "@emotion/styled": "10.0.10",
     "babel-plugin-styled-components": "1.10.0",
     "bowser": "2.2.0",
     "classnames": "2.2.6",
