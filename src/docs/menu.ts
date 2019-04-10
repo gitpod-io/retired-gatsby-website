@@ -73,6 +73,10 @@ export const MENU: MenuEntry[] = [
             M(
                 "Prebuilt Workspaces",
                 "46_Prebuilds"
+            ),
+            M(
+                "Examples",
+                "47_Examples"
             )
         ]
     ),
