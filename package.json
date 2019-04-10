@@ -25,7 +25,7 @@
     "@emotion/core": "10.0.10",
     "@emotion/styled": "10.0.10",
     "babel-plugin-styled-components": "1.10.0",
-    "bowser": "2.2.0",
+    "bowser": "2.1.2",
     "classnames": "2.2.6",
     "gatsby": "2.3.16",
     "gatsby-image": "2.0.37",
