@@ -12,14 +12,12 @@ There are two ways to configure a custom Docker image in your `.gitpod.yml` file
     ```yaml
     image: node:alpine
     ```
-    The official Gitpod Docker images are hosted on [DockerHub](https://hub.docker.com/u/gitpod/).
+    The official Gitpod Docker images are hosted on [Docker Hub](https://hub.docker.com/u/gitpod/).
 * Reference a Dockerfile next to your `.gitpod.yml` file:
 
     ```yaml
     image:
-      file: docker/gitpod.Dockerfile
-      # Context is optional, defaults to an empty context
-      context: docker
+      file: .gitpod.dockerfile
     ```
     The Docker image is rebuilt automatically whenever the Dockerfile changes.
 

@@ -51,7 +51,7 @@ export const MENU: MenuEntry[] = [
         "40_Configuration",
         [
             M(
-                "Gitpod Config File",
+                ".gitpod.yml",
                 "41_Config_Gitpod_File"
             ),
             M(

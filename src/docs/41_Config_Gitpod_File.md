@@ -1,4 +1,4 @@
-# Gitpod Config File
+# .gitpod.yml
 
  * [Checked-in Gitpod Config File](#checked-in-gitpod-file)
  * [definitely-gp Repository](#definitely-gp-repository)
@@ -8,13 +8,15 @@ A workspace gets configured through a `.gitpod.yml` file written in YAML syntax.
 
 ```yaml
 # The Docker image to run your workspace in. Defaults to gitpod/workspace-full
-image: "<your-workspace-image>"
+image: <your-workspace-image>
 # Command to start on workspace startup (optional)
 tasks:
-  - command: "yarn install && yarn build"
+  - init: yarn install
+    command: yarn build
 # Ports to expose on workspace startup (optional)
 ports:
   - port: 8000
+    onOpen: open-preview
 ```
 
 There are three ways you can provide this file:
