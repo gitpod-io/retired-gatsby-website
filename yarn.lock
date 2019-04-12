@@ -2209,10 +2209,10 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
 
-bowser@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/bowser/-/bowser-2.2.0.tgz#acff2606ef513a5f55657284ad81e555902c29d6"
-  integrity sha512-5flcHjBFWx/ASfXcJHKA768HSSg+pIMaHPjuEdr6/rrQNu4s6/5KV4PoOk7jdTe6nMTY68+LI9UhqooI7VlBOw==
+bowser@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/bowser/-/bowser-2.2.1.tgz#a3763878ba5a63703a9a2209cf87d7c2705f13e2"
+  integrity sha512-5juDN48U85WUgYctziMoE4KMZ0LhfJzKmTWgdCVrkZQsmQxlOpDhbS91JnXiNmyfQkgppbuF6Vv3z+fuxz86pQ==
 
 boxen@^1.2.1:
   version "1.3.0"
