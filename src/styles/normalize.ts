@@ -308,7 +308,7 @@ export default `
       table {
         width: 100%;
         margin-bottom: 1rem;
-        border: 1px solid ${colors.fontColor2};
+        border: 1px solid ${colors.background2};
         font-size: 85%;
         border-collapse: collapse;
     }
@@ -323,17 +323,17 @@ export default `
     }
 
     thead {
-        border: 1px solid ${colors.fontColor2};
+        border: 1px solid ${colors.background2};
     }
 
     tbody {
         tr {
         &:nth-of-type(odd) {
             td {
-            background-color: ${colors.ui.whisper};
+            background-color: ${colors.background2};
             }
             tr {
-            background-color: ${colors.ui.whisper};
+            background-color: ${colors.background2};
             }
         }
         }
