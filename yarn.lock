@@ -9717,10 +9717,10 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
-react-modal-video@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/react-modal-video/-/react-modal-video-1.2.1.tgz#9e38906681a774d95722a5588685d8e53a465750"
-  integrity sha512-/ZjUUPK+yCSVecgyAcsh/3vIUNZGWtmi5pPE705xhue6h5351LaSQAX+DJqQBgfQskixqAusxpRjDE6+SuwHdQ==
+react-modal-video@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/react-modal-video/-/react-modal-video-1.2.2.tgz#d45069f112a4e79306470b7e893fbe03252b8e6b"
+  integrity sha512-isfaRFvCZZRWkPvoPRzXL1FaHtI3PQHqkX2UrtOGjGUPNGZeMBDT5xPqON7h4e5CGvpf62XIq3lxT0InPKAUgw==
   dependencies:
     react-transition-group "^2.2.1"
 
