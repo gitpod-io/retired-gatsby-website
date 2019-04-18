@@ -1,7 +1,11 @@
 ports:
 - port: 8000
+  onOpen: open-preview
+- port: 8888
+  onOpen: ignore
 tasks:
-- init: yarn && yarn build
-  command: yarn dev --host 0.0.0.0
+- before: npm install netlify-cli -g
+  init: yarn && yarn build
+  command: netlify dev --live
 - init: cd plugins/gatsby-remark-gitpod && npm install
   openMode: split-right
