@@ -194,7 +194,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
 
     protected getHowDoesItWork(): JSX.Element {
         const modes = ['URL Prefix', 'Browser Extension', 'GitHub App'];
-        return <div style={{ minHeight: 550 }}>
+        return <div style={{ minHeight: 550 }} >
             <h2 >Three Ways to Start Coding</h2>
             <div className='flex hidden-md-down' style={{ zIndex: 99 }}>
                 {
@@ -221,7 +221,9 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         <img className='browser-extension-image' src={BrowserExtension} />
                         <div className='browser-extension-description' style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
                             <p>The browser extension adds a button to every GitHub repository, issue and pull request. So you don't have to prefix manually.</p>
-                            <a href={this.getBrowserExtension()} target='_blank'><button className='primary' style={{ minWidth: 200 }}>Get Browser Extension</button></a>
+                            <button className='primary' style={{ minWidth: 200 }} onClick={()=>{
+                                window.open(this.getBrowserExtension(), '_blank');
+                            }}>Get Browser Extension</button>
                         </div>
                     </div>
                     <div className={this.state.worksMode === 2 ? 'selected' : ''}>
