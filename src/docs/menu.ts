@@ -73,6 +73,10 @@ export const MENU: MenuEntry[] = [
             M(
                 "Prebuilt Workspaces",
                 "46_Prebuilds"
+            ),
+            M(
+                "Environment Variables",
+                "46_Environment_Variables"
             )
         ]
     ),
