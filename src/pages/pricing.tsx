@@ -108,18 +108,19 @@ export default class PricingPage extends React.Component<{}, {}> {
                                 ]}
                                 link="https://gitpod.io/login" />
                             <PricingBox
-                                title="Standard"
-                                description="For developers working on private software projects."
+                                title="Personal"
+                                description="For developers working on personal software projects."
                                 image={icons.lamp({
                                     stroke: colors.brand,
                                     fill: 'none',
                                     width: 80
                                 })}
-                                price="$19"
+                                price="$9"
                                 featureOne="100 hours / month"
                                 features={[
                                     'Unlimited Workspaces',
-                                    'Private & Public Repos'
+                                    'Private & Public Repos',
+                                    'Non-commercial use only'
                                 ]}
                                 link="https://gitpod.io/subscription" />
                             <PricingBox
@@ -289,6 +290,7 @@ class PricingBox extends React.Component<PricingBoxProps, {}> {
                 textAlign: 'left',
                 marginLeft: -45,
                 marginBottom: 30,
+                minHeight: 60,
                 fontSize: 13,
                 listStyle: 'none',
             }}>
