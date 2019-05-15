@@ -2,5 +2,5 @@
   "extends": [
     "config:base"
   ],
-  "ignorePresets": [ "monorepo:gatsby" ]
+  "schedule": "on wednesday"
 }
