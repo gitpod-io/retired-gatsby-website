@@ -2,7 +2,5 @@
   "extends": [
     "config:base"
   ],
-  "ignoreDeps": [
-    "gatsby"
-  ]
+  "ignorePresets": [ "monorepo:gatsby" ]
 }
