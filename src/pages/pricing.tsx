@@ -18,11 +18,9 @@ const PricingOptions = styled.div`
     flex-direction: row;
     justify-content: space-between;
     margin-top: 50px;
-
     @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
         flex-direction: column;
         align-items: center;
-
         > :not(:last-child) {
             margin-bottom: 50px;
         }
@@ -32,28 +30,22 @@ const PricingOptions = styled.div`
 const StudentOffer = styled.div`
     display: flex;
     flex-direction: row;
-
     > :not(:first-child) {
         margin-left: 30px;
     }
-
     & svg {
         width: 100px;
     }
-
     @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
         flex-direction: column;
         align-items: center;
-
         > :not(:first-child) {
             text-align: center;
             margin-left: 0;
         }
-
         & svg {
             width: 80px;
         }
-
         & button {
             width: 100%;
         }
@@ -64,12 +56,10 @@ const EnterpriseOffer = styled.div`
     @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
         table {
             font-size: 75%;
-
             td:first-child {
                 padding-left: 10px;
             }
         }
-
         & button {
             width: 100%
         }
