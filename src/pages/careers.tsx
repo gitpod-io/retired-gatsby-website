@@ -5,14 +5,10 @@ import Container from '../components/Container'
 import IndexLayout from '../layouts'
 import Logos from '../components/Logos';
 import GitGraph from '../components/GitGraph';
-import 'react-modal-video/css/modal-video.min.css'
 import { colors } from '../styles/variables';
 import styled from '@emotion/styled';
-// import GatsbyLink from 'gatsby-link';
 
-interface CareersPageState {
-    isModalOpen: boolean;
-}
+
 
 
 const FeatureList = styled.ul`
@@ -82,80 +78,58 @@ const Job = styled.div`
 
 `
 
-export default class CareersPage extends React.Component<{}, CareersPageState> {
+export default class CareersPage extends React.Component {
 
     constructor(props: {}) {
-        super(props);
+        super(props)
         this.state = {
-            isModalOpen: false
+
         }
-        this.openModal = this.openModal.bind(this);
     }
 
-    openModal() {
-        this.setState({ isModalOpen: true })
-    }
 
     render() {
         return <IndexLayout title="Gitpod - Careers" canonical="https://www.gitpod.io/careers">
             <Page>
                 <Container>
                     <GitGraph left={-900} top={40} graph={[
-                        { start: [0, 115] },
+                        { start: [0, 150] },
                         { right: 860 },
                         {},
                         { right: 10 },
                         { down: 200 },
                         {
                             fork: [
-                                { right: 115 },
+                                { right: 145 },
                                 {
-                                    onClick: () => { }
                                 },
-                                { right: 163 },
+                                { right: 200 },
                                 {
-                                    onClick: () => { }
                                 },
-                                { right: 163 },
+                                { right: 200 },
                                 {
-                                    onClick: () => { }
                                 },
-                                { right: 163 },
+                                { right: 200 },
                                 {
-                                    onClick: () => { }
                                 },
-                                { right: 163 },
+                                { right: 160 },
                                 {
-                                    onClick: () => { }
-                                },
-                                { right: 163 },
-                                {
-                                    onClick: () => { }
                                 }
                             ]
-                        },
-                        { down: 205 },
-                        {},
-                        { down: 600 },
-                        {},
-                        { down: 1725 },
-                        { right: 400 },
-                        {}
+                        }
                     ]} />
                     <Logos logos={[
                         [1050, 125, 40],
                     ]} />
                     <div style={{ marginTop: 60 }}>
-                        <h4 style={{ color: colors.fontColor2 }}>We're Hiring</h4>
+                        <h4 style={{ color: colors.fontColor2 }}>We're hiring</h4>
                         <h1>Become Part of the Team</h1>
                         <div style={{ height: 3, width: 95, backgroundColor: colors.brand, marginBottom: 30 }} />
-                        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
-                        </div>
                     </div>
-                    <p>
+                    <p style={{marginBottom: '230px'}} >
                         Our Employees are the core of Gitpod and sharing its future.
                         <br />
-                        We're convinced that great results are built on culture of trust, empathy and productivity. That's why working with us means
+                        We're convinced that great results are built on culture of trust, empathy and productivity. That's why working with us means:
                     </p>
                     <FeatureList className='flex hidden-md-down' style={{ justifyContent: 'space-between', marginTop: '5rem', marginBottom: '12rem', alignItems: 'flex-end' }}>
                         <li>
@@ -272,7 +246,7 @@ export default class CareersPage extends React.Component<{}, CareersPageState> {
 
                     <p style={{margin: "70px 0 40px 0"}}>
                         If no current Job offer fits your qualifications, but you're totally in love with Gitpod and want to help us improving it,
-                        please send your application at careers@typefox.io anyway. We're curious to hear about you.
+                        please send your application at <a href="mailto:careers@typefox.io">careers@typefox.io</a> anyway. We're curious to hear about you.
                     </p>
 
                 </Container>
