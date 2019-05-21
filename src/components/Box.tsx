@@ -16,7 +16,7 @@ const Box: React.SFC<BoxProps> = (p) => (
         borderWidth: 1,
         borderColor: colors.fontColor1,
         borderRadius: 2,
-        padding: '20px 0px',
+        padding: '30px 15px',
         boxShadow: ` 0 0 1px ${colors.brand}`,
         position: 'relative',
         ...p.style
