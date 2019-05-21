@@ -8,60 +8,46 @@ import GitGraph from '../components/GitGraph';
 import { colors } from '../styles/variables';
 import styled from '@emotion/styled';
 
-
-
-
 const FeatureList = styled.ul`
     list-style: none;
     text-align: center;
 `
 
 const TeamContainer = styled.div`
-
     div {
         text-align: center;
         margin-bottom: 20px;
     }
-
    @media (min-width: 768px) {
         display: flex;
         flex-direction: row;
-
         div {
             padding: 0 100px;
         }
-
         p {
             width: 80%;
         }
-
    }
-
 `
 
 const Job = styled.div`
-    background:#2a2a2a;
+    background: ${colors.background2};
     padding: 15px 35px;
     margin-bottom: 40px;
-
     p {
         margin-bottom: 40px;
     }
-
     h3 {
         margin: 0;
     }
-
     h4 {
         margin-top: 70px;
         font-weight: bold;
     }
-
     li {
         position: relative;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
         list-style: none;
-
         &::before {
             content: '';
             position: absolute;
@@ -71,52 +57,33 @@ const Job = styled.div`
             background: #1aa6e4;
             height: 2px;
             width: 22px;
-
         }
-
     }
 
 `
 
-export default class CareersPage extends React.Component {
-
-    constructor(props: {}) {
-        super(props)
-        this.state = {
-
-        }
-    }
-
-
-    render() {
-        return <IndexLayout title="Gitpod - Careers" canonical="https://www.gitpod.io/careers">
+const CareersPage: React.SFC<{}> =  () => (
+    <IndexLayout title="Gitpod - Careers" canonical="https://www.gitpod.io/careers">
             <Page>
                 <Container>
-                    <GitGraph left={-900} top={40} graph={[
+                     <GitGraph left={-900} top={150} graph={[
                         { start: [0, 150] },
                         { right: 860 },
+                        { down: 100 },
+                        { right: 145 },
                         {},
-                        { right: 10 },
-                        { down: 200 },
-                        {
-                            fork: [
-                                { right: 145 },
-                                {
-                                },
-                                { right: 200 },
-                                {
-                                },
-                                { right: 200 },
-                                {
-                                },
-                                { right: 200 },
-                                {
-                                },
-                                { right: 160 },
-                                {
-                                }
-                            ]
-                        }
+                        { right: 210 },
+                        {},
+                        { right: 200 },
+                        {},
+                        { right: 180 },
+                        {},
+                        { right: 200 },
+                        {},
+                        { right: 145 },
+                        { up: 100 },
+                        { right: 860 },
+
                     ]} />
                     <Logos logos={[
                         [1050, 125, 40],
@@ -126,47 +93,17 @@ export default class CareersPage extends React.Component {
                         <h1>Become Part of the Team</h1>
                         <div style={{ height: 3, width: 95, backgroundColor: colors.brand, marginBottom: 30 }} />
                     </div>
-                    <p style={{marginBottom: '230px'}} >
+                    <p style={{ marginBottom: 170 }} >
                         Our Employees are the core of Gitpod and sharing its future.
                         <br />
                         We're convinced that great results are built on culture of trust, empathy and productivity. That's why working with us means:
                     </p>
-                    <FeatureList className='flex hidden-md-down' style={{ justifyContent: 'space-between', marginTop: '5rem', marginBottom: '12rem', alignItems: 'flex-end' }}>
-                        <li>
-                            Flat Hierarchy
-                            <br />
-                            &
-                            <br />
-                            short-decision paths
-                        </li>
-                        <li>
-                            Flexible working hours
-                            <br />
-                            &
-                            <br />
-                            Home Office
-                        </li>
-                        <li>
-                            Great team sprit
-                            <br />
-                            &
-                            <br />
-                            Regular Events
-                        </li>
-                        <li>
-                            Organic fruit Baskets
-                            <br />
-                            &
-                            <br />
-                            Soft Drinks
-                        </li>
-                        <li>
-                            Central Office
-                            <br />
-                            &
-                            <br />
-                            A view over Kiel harbor
-                        </li>
+                    <FeatureList className='flex hidden-md-down' style={{ justifyContent: 'space-between', marginTop: '5rem', marginBottom: '8rem', alignItems: 'flex-end' }}>
+                        <li>Flat Hierarchy<br />&amp;<br />short-decision paths</li>
+                        <li>Flexible working hours<br />&amp;<br />Home Office</li>
+                        <li>Great team sprit<br />&amp;<br />Regular Events</li>
+                        <li>Organic fruit Baskets<br />&amp;<br />Soft Drinks</li>
+                        <li>Central Office<br />&amp;<br />A view over Kiel harbor</li>
                     </FeatureList>
                 </Container>
                 <Container>
@@ -244,7 +181,7 @@ export default class CareersPage extends React.Component {
                         <h3>Solution Engineer</h3>
                     </Job>
 
-                    <p style={{margin: "70px 0 40px 0"}}>
+                    <p style={{ margin: "70px 0 40px 0" }}>
                         If no current Job offer fits your qualifications, but you're totally in love with Gitpod and want to help us improving it,
                         please send your application at <a href="mailto:careers@typefox.io">careers@typefox.io</a> anyway. We're curious to hear about you.
                     </p>
@@ -254,8 +191,7 @@ export default class CareersPage extends React.Component {
 
 
             </Page>
-        </IndexLayout>;
-    }
-}
+        </IndexLayout>
+)
 
-
+export default CareersPage
