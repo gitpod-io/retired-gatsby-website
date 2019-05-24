@@ -241,12 +241,29 @@ const CareersPage: React.SFC<{}> = () => (
                 <h3>Jobs</h3>
                 <Job>
                     <h2>Gitpod Developer Advocate</h2>
+                    <p>As a Developer Advocate, you will connect with developers around the world, try out new frameworks and technologies, and share what you’ve learned with the world. You will craft great resources to help developers build with Gitpod, including sample projects, blog posts, and documentation. You’ll help grow our developer community, champion the interests of our users and translate their feedback into actionable product insights.
+                    <h4>What you’ll do:</h4>
+                    <ul>
+                        <li>Create momentum and drive adoption of Gitpod through your interactions with developers building applications and projects with Gitpod</li>
+                        <li>Champion Gitpod in person and online by presenting at conferences, writing technical tutorials, publishing articles and videos</li>
+                        <li>Build inspiring demos, sample apps, and continuously improve the developer experience of Gitpod</li>
+                        <li>Identify strategic partnership opportunities to grow our developer community</li>
+                        <li>Influence the direction of Gitpod’s development by gathering insights from our developer community</li>
+                        <li>Engage with developers to help them get the most out of Gitpod</li>
+                    </ul>
+                    <h4>What we’re looking for:</h4>
+                    <ul>
+                        <li>Creative, empathetic, communicative, and clever</li>
+                        <li>Confident and comfortable presenting to different types of audiences, large and small</li>
+                        <li>Adept at communicating technically complicated topics simply and elegantly</li>
+                        <li>Strong hands-on developer who is comfortable with full-stack development</li>
+                        <li>Intellectually curious, with great problem-solving skills</li>
+                        <li>Happy to travel regularly</li>
+                    </ul>
                 </Job>
                 <Job>
                     <h2>Gitpod Sales Engineer</h2>
-                    <p>
-                        We are looking for a passionate Sales Engineer who takes control of our inbound marketing and builds a technical understanding of Gitpod. You should like to engage with organizations such as Enterprises and Universities, to understand their needs and improve their development processes with Gitpod-based solutions. We support remote work and collaboration across different time zones.
-                        </p>
+                    <p>As a Sales Engineer, you will take control of our inbound marketing, and leverage Gitpod to make life easier for other software companies. You should like to engage with Enterprises and Universities, and advize them on their development tools and processes.</p>
                     <h4>What you’ll do</h4>
                     <ul>
                         <li>engage with customers to identify the best solutions for their needs</li>
@@ -261,10 +278,6 @@ const CareersPage: React.SFC<{}> = () => (
                         <li>ability to creatively explain and present complex concepts in an easy to understand manner</li>
                         <li>solid technical background with hands-on experience in software development and web technologies</li>
                     </ul>
-                    <h4>Contact</h4>
-                    <p>
-                        Would you like to join our team? Then we’re looking forward to hearing from you. Please send your application to <a href="mailto:contact@gitpod.io">contact@gitpod.io</a>.
-                        </p>
                 </Job>
                 <p style={{ margin: "70px 0 40px 0" }}>
                     If no current Job offer fits your qualifications, but you're totally in love with Gitpod and want to help us improving it,
