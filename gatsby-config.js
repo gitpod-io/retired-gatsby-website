@@ -90,6 +90,11 @@ module.exports = {
         // cookieDomain: "example.com",
       },
     },
-    'gatsby-plugin-sitemap'
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        exclude: ['/careers', '/education'],
+      },
+    },
   ]
 }
