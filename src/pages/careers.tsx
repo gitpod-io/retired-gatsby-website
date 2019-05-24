@@ -25,7 +25,7 @@ const Job = styled.div`
         margin: 0;
     }
     h4 {
-        margin-top: 70px;
+        margin-top: 50px;
         font-weight: bold;
     }
     li {
@@ -61,7 +61,6 @@ const SectionAbout = styled.section`
                 padding-right: 60px;
             }
         }
-
     }
     .svg-container {
         text-align: center;
@@ -73,7 +72,6 @@ const SectionAbout = styled.section`
     p {
         margin-top: -10px;
     }
-
     p + p {
         margin-top: 22px;
     }
@@ -106,21 +104,19 @@ const CareersPage: React.SFC<{}> = () => (
                     [1050, 125, 40],
                 ]} />
                 <div style={{ marginTop: 60 }}>
-                    <h4 style={{ color: colors.fontColor2 }}>We're hiring</h4>
-                    <h1>Become Part of the Team</h1>
+                    <h4 style={{ color: colors.fontColor2 }}>We're hiring!</h4>
+                    <h1>Join the Gitpod team</h1>
                     <div style={{ height: 3, width: 95, backgroundColor: colors.brand, marginBottom: 30 }} />
                 </div>
                 <p style={{ marginBottom: 170 }} >
-                    Our Employees are the core of Gitpod and sharing its future.
-                        <br />
-                    We're convinced that great results are built on culture of trust, empathy and productivity. That's why working with us means:
-                    </p>
+                    Gitpod aims to make development better for everyone, and it's built on a culture of trust and empathy. Help us shape its future!
+                </p>
                 <FeatureList className='flex hidden-md-down' style={{ justifyContent: 'space-between', marginTop: '5rem', marginBottom: '8rem', alignItems: 'flex-end' }}>
-                    <li>Flat Hierarchy<br />&amp;<br />short-decision paths</li>
-                    <li>Flexible working hours<br />&amp;<br />Home Office</li>
-                    <li>Great team sprit<br />&amp;<br />Regular Events</li>
-                    <li>Organic fruit Baskets<br />&amp;<br />Soft Drinks</li>
-                    <li>Central Office<br />&amp;<br />A view over Kiel harbor</li>
+                    <li>Remote-friendly</li>
+                    <li>A worthy mission</li>
+                    <li>People who care</li>
+                    <li>Travel opportunities</li>
+                    <li>An office with a view</li>
                 </FeatureList>
             </Container>
             <Container>
@@ -160,19 +156,19 @@ const CareersPage: React.SFC<{}> = () => (
                                 Gitpod is an online one-click IDE that launches ready-to-code dev environments from any GitHub page. Automating development environments eliminates hours of tedious setup time, improves teamwork, and makes software development more reproducible and scalable.
                                 </p>
                             <p>
-                                We started developing Gitpod about 2 years ago and this April we officially launched it. Gitpod is a very young product which gives you lots of opportunities to shape its future. Currently we’re working in a team of less than 20 people and we’re planning to grow continually.
+                                Officially launched in April 2019, Gitpod is a very young product which gives you lots of opportunities to shape its future. Currently we’re working in a team of less than 20 people and we’re planning to grow continually.
                                 </p>
                         </div>
                         <div className='col'>
                             <div className="svg-container">
                                 <svg id="Gruppe_170" data-name="Gruppe 170" xmlns="http://www.w3.org/2000/svg" width="116.521" height="71.526" viewBox="0 0 116.521 71.526">
-                                    <path id="Pfad_275" data-name="Pfad 275" d="M305.72,115.889c-4.938-9.669-5.116-18.31-2.1-25.9,3.512-8.832,11.353-16.187,21.04-22.062l1.347-.816L326,68.68l-.061,11.188a65.709,65.709,0,0,1,14.454,2.323c6.924,1.664,12.7,3.394,19.457,2.39,5.8-.857-7.061,11.352-24.958,15.017-11.483,2.353-17.435,8.9-19.165,15.722a17.212,17.212,0,0,0,.784,10.969,13.714,13.714,0,0,0,7.14,7.339c4.2,1.8,9.791,1.557,16.331-2.106a46.985,46.985,0,0,0,7.408-.873q.543-.106,1.085-.223l-.561.447c-10.278,8.2-19.28,9.173-25.785,6.27a17.877,17.877,0,0,1-9.022-9.357A21.373,21.373,0,0,1,312,114.268c1.983-8.114,8.831-15.8,22.105-18.519a71.547,71.547,0,0,0,11.447-3.166,29.222,29.222,0,0,0,7.729-4.278c-3.163-.024-6.81-.9-10.879-1.876-5.752-1.382-12.377-2.972-19.479-2.554l-.938.056,0-.941.05-8.777c-7.266,4.952-12.685,11-15.084,17.942a25.991,25.991,0,0,0,.475,17.894A21.62,21.62,0,0,0,306,116.431Z" transform="translate(-301.626 -67.107)" fill="#fff" fill-rule="evenodd" />
-                                    <path id="Pfad_276" data-name="Pfad 276" d="M377.508,125.328l2.929-3.1,4.139,3.483Z" transform="translate(-352.724 -104.225)" fill="#fff" fill-rule="evenodd" />
-                                    <path id="Pfad_277" data-name="Pfad 277" d="M348.5,138.516c10.388,4.863,19.877,3.947,28.8.227,9.031-3.765,17.537-10.409,25.813-16.876,2.564-2,5.108-3.991,7.645-5.879l-13.224,4.161,6.5-15.435-.992.3a40.718,40.718,0,0,0-6.177,6.772,74.89,74.89,0,0,0-8.686,16.048c-1.816,1.2-3.651,2.33-5.5,3.365a87.207,87.207,0,0,1,10.579-21.121c4.424-6.181,9.429-10.552,15.026-13.066,5.723-2.57,11.873-2.944,18.588-1.324,3.661.726,27.2,12.4,20.866,12.006-13.7-5.038-27.194,5.527-40.838,16.208l-1.365,1.067c-8.468,6.617-17.167,13.413-26.564,17.389-9.495,4.017-19.646,5.141-30.868.3l-.423-.183-.092-.456c-.087-.429-.159-.867-.215-1.31s-.1-.9-.125-1.337l-.084-1.473Z" transform="translate(-332.287 -85.694)" fill="#fff" fill-rule="evenodd" />
+                                    <path d="M305.72,115.889c-4.938-9.669-5.116-18.31-2.1-25.9,3.512-8.832,11.353-16.187,21.04-22.062l1.347-.816L326,68.68l-.061,11.188a65.709,65.709,0,0,1,14.454,2.323c6.924,1.664,12.7,3.394,19.457,2.39,5.8-.857-7.061,11.352-24.958,15.017-11.483,2.353-17.435,8.9-19.165,15.722a17.212,17.212,0,0,0,.784,10.969,13.714,13.714,0,0,0,7.14,7.339c4.2,1.8,9.791,1.557,16.331-2.106a46.985,46.985,0,0,0,7.408-.873q.543-.106,1.085-.223l-.561.447c-10.278,8.2-19.28,9.173-25.785,6.27a17.877,17.877,0,0,1-9.022-9.357A21.373,21.373,0,0,1,312,114.268c1.983-8.114,8.831-15.8,22.105-18.519a71.547,71.547,0,0,0,11.447-3.166,29.222,29.222,0,0,0,7.729-4.278c-3.163-.024-6.81-.9-10.879-1.876-5.752-1.382-12.377-2.972-19.479-2.554l-.938.056,0-.941.05-8.777c-7.266,4.952-12.685,11-15.084,17.942a25.991,25.991,0,0,0,.475,17.894A21.62,21.62,0,0,0,306,116.431Z" transform="translate(-301.626 -67.107)" fill="#fff" fill-rule="evenodd" />
+                                    <path d="M377.508,125.328l2.929-3.1,4.139,3.483Z" transform="translate(-352.724 -104.225)" fill="#fff" fill-rule="evenodd" />
+                                    <path d="M348.5,138.516c10.388,4.863,19.877,3.947,28.8.227,9.031-3.765,17.537-10.409,25.813-16.876,2.564-2,5.108-3.991,7.645-5.879l-13.224,4.161,6.5-15.435-.992.3a40.718,40.718,0,0,0-6.177,6.772,74.89,74.89,0,0,0-8.686,16.048c-1.816,1.2-3.651,2.33-5.5,3.365a87.207,87.207,0,0,1,10.579-21.121c4.424-6.181,9.429-10.552,15.026-13.066,5.723-2.57,11.873-2.944,18.588-1.324,3.661.726,27.2,12.4,20.866,12.006-13.7-5.038-27.194,5.527-40.838,16.208l-1.365,1.067c-8.468,6.617-17.167,13.413-26.564,17.389-9.495,4.017-19.646,5.141-30.868.3l-.423-.183-.092-.456c-.087-.429-.159-.867-.215-1.31s-.1-.9-.125-1.337l-.084-1.473Z" transform="translate(-332.287 -85.694)" fill="#fff" fill-rule="evenodd" />
                                 </svg>
                             </div>
                             <p>
-                                TypeFox is the company behind Gitpod with a team of developer tool specialists and longtime contributors to many open-source projects. We’re a driving force behind the language server protocol and initiators of Eclipse Theia, the next generation IDE that powers Gitpod. A characteristic of our team is a fervour to learn new things. We’re convinced that missing knowledge shouldn’t hold one back, but encourage us to learn more.
+                                TypeFox is the company behind Gitpod, a team of developer tool specialists and longtime contributors to many open-source projects. We’re a driving force behind the language server protocol and initiators of Eclipse Theia, the next generation IDE that powers Gitpod. A characteristic of our team is a fervour to learn new things.
                                 </p>
                         </div>
                         <div className='col'>
@@ -222,9 +218,9 @@ const CareersPage: React.SFC<{}> = () => (
                                             </g>
                                         </g>
                                         <g id="Gruppe_102" data-name="Gruppe 102" transform="translate(23.678)">
-                                            <path id="Pfad_191-4" data-name="Pfad 191" className="cls-1" d="M17203.283,14556.793s-8.078-54.373,18.926-55.273,17.486,55.273,17.486,55.273"
+                                            <path className="cls-1" d="M17203.283,14556.793s-8.078-54.373,18.926-55.273,17.486,55.273,17.486,55.273"
                                                 transform="translate(-17202.15 -14475.022)" />
-                                            <g id="Ellipse_189-4" data-name="Ellipse 189" className="cls-1" transform="translate(5.374)">
+                                            <g className="cls-1" transform="translate(5.374)">
                                                 <ellipse className="cls-2" cx="14.241" cy="13.781" rx="14.241" ry="13.781"
                                                 />
                                                 <ellipse className="cls-3" cx="14.241" cy="13.781" rx="13.241" ry="12.781"
@@ -235,60 +231,44 @@ const CareersPage: React.SFC<{}> = () => (
                                 </svg>
                             </div>
                             <p>
-                                We’re a young and tech-driven team with the mission of creating developer tools for everyone. In our team we seek for an open and honest mindset, as well as an effective pragmatism. We lead, collaborate and contribute for open-source projects and would love to share that with you. We’re convinced that continuous learning and exploring is the way to go for sustainably building the best solutions. Therefore we’re always curious about new approaches.
+                                We’re a young and tech-driven team with the mission of making development better for everyone. In our team value an open and honest mindset, and effective pragmatism. We lead, collaborate and contribute to open-source projects and would love to share that with you. We’re convinced that continuous learning and exploring is the way to go for sustainably building the best solutions. Therefore we’re always curious about new approaches.
                                 </p>
                         </div>
                     </div>
                 </SectionAbout>
             </Container>
             <Container>
-                <h3>Current Job Offers</h3>
+                <h3>Jobs</h3>
                 <Job>
-                    <h2>Gitpod Enterprise Sales Representative</h2>
+                    <h2>Gitpod Developer Advocate</h2>
+                </Job>
+                <Job>
+                    <h2>Gitpod Sales Engineer</h2>
                     <p>
-                        Gitpod is an online one-click IDE that launches ready-to-code dev environments from any GitHub page. Automating development environments eliminates hours of tedious setup time, improves teamwork, and makes software development more reproducible and scalable.
-                        </p>
-                    <p>
-                        TypeFox is the company behind Gitpod with a team of developer tool specialists and longtime contributors to many open-source projects. We’re a driving force behind the language server protocol and initiators of Eclipse Theia, the next generation IDE that powers Gitpod. A characteristic of our team is a fervour to learn new things. We’re convinced that missing knowledge shouldn’t hold one back, but encourage us to learn more.
-                        </p>
-                    <p>
-                        We started developing Gitpod about 2 years ago and this April we officially launched it. Gitpod is a very young product which gives you lots of opportunities to shape its future. Currently we’re working in a team of less than 20 people and we’re planning to grow continually.
-                        </p>
-                    <p>
-                        Now we are looking for a passionate sales representative who takes control of our inbound marketing. You should have an understanding of Gitpod’s technical background and like to engage with industrial customers. We especially support remote work and collaboration from different time zones.
+                        We are looking for a passionate Sales Engineer who takes control of our inbound marketing and builds a technical understanding of Gitpod. You should like to engage with organizations such as Enterprises and Universities, to understand their needs and improve their development processes with Gitpod-based solutions. We support remote work and collaboration across different time zones.
                         </p>
                     <h4>What you’ll do</h4>
                     <ul>
-                        <li>engage with industrial customers to find the best solutions and prices</li>
+                        <li>engage with customers to identify the best solutions for their needs</li>
                         <li>follow-up on leads from inbound marketing and conferences</li>
                         <li>tailor demonstrations for customers, conferences, and special events</li>
-                        <li>work closely with the customer to set up and maintain a successful demo period, be available to answer questions and trouble-shoot as needed</li>
-                        <li>confer with customers and engineers to assess equipment needs and to determine system requirements</li>
+                        <li>set up proof-of-concepts and work closely with the customer to answer questions and troubleshoot as needed</li>
+                        <li>confer with customers and engineering to assess technical constraints and determine requirements</li>
                     </ul>
-                    <h4>
-                        What we’re looking for
-                        </h4>
+                    <h4>What we’re looking for</h4>
                     <ul>
+                        <li>prior experience with sales activities in enterprise or academia</li>
                         <li>ability to creatively explain and present complex concepts in an easy to understand manner</li>
                         <li>solid technical background with hands-on experience in software development and web technologies</li>
                     </ul>
                     <h4>Contact</h4>
                     <p>
-                        Would you like to join our team? Then we’re looking forward to hearing from you. Please send your application, including your motivation and your CV to career@typefox.io
+                        Would you like to join our team? Then we’re looking forward to hearing from you. Please send your application to <a href="mailto:contact@gitpod.io">contact@gitpod.io</a>.
                         </p>
-                </Job>
-                <Job>
-                    <h3>Software Engineer Developer Tools</h3>
-                </Job>
-                <Job>
-                    <h3>Operation and Sales Manager</h3>
-                </Job>
-                <Job>
-                    <h3>Solution Engineer</h3>
                 </Job>
                 <p style={{ margin: "70px 0 40px 0" }}>
                     If no current Job offer fits your qualifications, but you're totally in love with Gitpod and want to help us improving it,
-                        please send your application at <a href="mailto:careers@typefox.io">careers@typefox.io</a> anyway. We're curious to hear about you.
+                        please send your application at <a href="mailto:contact@gitpod.io">contact@gitpod.io</a> anyway. We're curious to hear about you.
                     </p>
             </Container>
         </Page>
