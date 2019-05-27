@@ -166,7 +166,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
                     <HomepageLogo alt="Gitpod Logo" src={logo} />
                 </HomepageLink>
                 <MobileMenu role="navigation">
-                    {isMenuOpen ? null : <a href="https://gitpod.io/api/login">
+                    {isMenuOpen ? null : <a href="https://gitpod.io/api/login" rel="noreferrer">
                         <button className='primary' style={{fontSize: '90%', padding: '6px 10px'}}>Go to app</button>
                     </a>}
                     <button aria-label="Toggle menu" onClick={this.toggleMenu} style={{ border: 0, padding: '6px 10px' }}>
@@ -178,8 +178,8 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
                     <HomepageLink to="/pricing">Pricing</HomepageLink>
                     <HomepageLink to="/docs">Docs</HomepageLink>
                     <HomepageLink to="/blog">Blog</HomepageLink>
-                    <HomepageA href="https://spectrum.chat/gitpod" target="_blank">Community</HomepageA>
-                    <a href="https://gitpod.io/api/login">
+                    <HomepageA href="https://spectrum.chat/gitpod" target="_blank" rel="noreferrer" >Community</HomepageA>
+                    <a href="https://gitpod.io/api/login" rel="noreferrer">
                         <button className='primary'>Go to app</button>
                     </a>
                 </Menu>

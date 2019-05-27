@@ -161,7 +161,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                     </div>
                     <Feature
                         title="Prebuilt Workspaces"
-                        button={<a href="https://github.com/marketplace/gitpod-io" target="_blank">
+                        button={<a href="https://github.com/marketplace/gitpod-io" target="_blank" rel="noreferrer">
                             <button className='primary'>GitHub Marketplace</button>
                         </a>}
                         visual={<img src={PrebuiltWorkspacesImage} alt="prebuilt workspaces" />}>
@@ -169,11 +169,11 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                     </Feature>
                     <Feature
                         title="VS Code"
-                        button={<a href="https://www.theia-ide.org" target="_blank">
+                        button={<a href="https://www.theia-ide.org" target="_blank" rel="noreferrer">
                             <button className='primary'>Visit theia-ide.org</button>
                         </a>}
                         visual={<img src={LanguageToolingImage} alt="language tooling" />} >
-                        <p>Gitpod is based on <a href="https://www.theia-ide.org" target="_blank">Theia</a>, the open-source VS Code-powered IDE optimized for developing in the cloud.
+                        <p>Gitpod is based on <a href="https://www.theia-ide.org" target="_blank" rel="noreferrer">Theia</a>, the open-source VS Code-powered IDE optimized for developing in the cloud.
                             Get code intelligence and a Linux shell in a browser tab.</p>
                     </Feature>
                     <Feature
@@ -344,7 +344,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         </table>
                         <MissingLanguage>
                             <p>Missing your favorite programming language?</p>
-                            <a href="https://github.com/gitpod-io/gitpod/issues/new?template=feature_request.md" target="_blank">
+                            <a href="https://github.com/gitpod-io/gitpod/issues/new?template=feature_request.md" target="_blank" rel="noreferrer">
                                 <button className='primary'>Request Support</button>
                             </a>
                         </MissingLanguage>
@@ -353,7 +353,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                 <Container>
                     <div style={{ textAlign: 'center', marginTop: 150, marginBottom: 150 }}>
                         <h3 style={{ marginBottom: '0.7rem' }}>Try It Out</h3>
-                        <a href="https://gitpod.io/api/login">
+                        <a href="https://gitpod.io/api/login" rel="noreferrer">
                             <button className='primary'>Get Started Free</button>
                         </a>
                     </div>

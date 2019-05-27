@@ -34,7 +34,6 @@ const GitpodHeader = styled.div`
     height: 550px;
     margin-top: 140px;
     z-index: 2;
-
     @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
         height: auto;
         margin-left: auto;
@@ -213,13 +212,17 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                     <div className={this.state.worksMode === 0 ? 'selected' : ''}>
                         <h3>Prefix any GitHub URL with <strong className="glow">gitpod.io/#</strong></h3>
                         <div style={{ marginBottom: 10 }}>
-                            <img src={PrefixScreenshot} />
+                            <img src={PrefixScreenshot} alt="Prefix any github URL" />
                         </div>
                         <p>... and get a ready-to-code dev environment immediately.</p>
                     </div>
                     <div className={this.state.worksMode === 1 ? 'selected' : ''}>
                         <h3>Install the Browser Extension</h3>
-                        <img className='browser-extension-image' src={BrowserExtension} />
+                        <img
+                            className='browser-extension-image'
+                            src={BrowserExtension}
+                            alt="Browser Extension"
+                        />
                         <div className='browser-extension-description' style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
                             <p>The browser extension adds a button to every GitHub repository, issue and pull request. So you don't have to prefix manually.</p>
                             <button className='primary' style={{ minWidth: 200 }} onClick={()=>{
@@ -232,9 +235,14 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                             <div>
                                 <h3>Install the GitHub app</h3>
                                 <p>Like Continuous Integration, the GitHub App detects changes in your repository and starts preparing workspaces. By the time your team starts to code, all dependencies are preinstalled, and the code is already compiled.</p>
-                                <a href='https://github.com/marketplace/gitpod-io' target='_blank'><button className='primary' style={{ minWidth: 200 }}>GitHub Marketplace</button></a>
+                                <a href='https://github.com/marketplace/gitpod-io' target='_blank' rel="noreferrer"><button className='primary' style={{ minWidth: 200 }}>GitHub Marketplace</button></a>
                             </div>
-                            <img className='hidden-md-down' style={{ marginTop: 15, width: 250 }} src={Octocat} />
+                            <img
+                                className='hidden-md-down'
+                                style={{ marginTop: 15, width: 250 }}
+                                src={Octocat}
+                                alt="Github Octocat Logo"
+                            />
                         </div>
                     </div>
                 </HowItWorks>

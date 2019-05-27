@@ -96,6 +96,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                                     'Unlimited Workspaces',
                                     'Public Repositories'
                                 ]}
+                                rel="noreferrer"
                                 link="https://gitpod.io/login" />
                             <PricingBox
                                 title="Personal"
@@ -112,6 +113,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                                     'Private & Public Repos',
                                     'Non-commercial use only'
                                 ]}
+                                rel="noreferrer"
                                 link="https://gitpod.io/subscription" />
                             <PricingBox
                                 title="Unlimited"
@@ -127,6 +129,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                                     'Unlimited Workspaces',
                                     'Private & Public Repos'
                                 ]}
+                                rel="noreferrer"
                                 link="https://gitpod.io/subscription" />
                         </PricingOptions>
                     </div>
@@ -147,7 +150,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                         <p>
                             Manage one plan for your entire team from a single account.
                         </p>
-                        <a href="https://gitpod.io/teams">
+                        <a href="https://gitpod.io/teams" rel="noreferrer">
                             <button className="primary">Gitpod for teams</button>
                         </a>
                     </Box>
@@ -176,7 +179,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                             <h2 style={{ rotate: '12', textShadow: '0 0 2px', fontWeight: 100, fontSize: '1.3em', color: colors.brand }}>Coming Soon!</h2>
                             <h2>Gitpod Enterprise</h2>
                           </div>
-                          <img style={{maxHeight: 80 }}src={GitLabLogo}/>
+                          <img style={{maxHeight: 80 }}src={GitLabLogo} alt="Gitlab Logo"/>
                         </div>
                         <p><strong>Gitpod Enterprise</strong> will be available shortly and allows to run and host Gitpod on your own servers. Self hosted installations can be configured to work with any <strong>GitHub Enterprise</strong> or <strong>GitLab</strong> instance.</p>
 
@@ -257,6 +260,7 @@ interface PricingBoxProps {
     features: string[];
     image?: JSX.Element;
     link: string;
+    rel: string;
 }
 
 class PricingBox extends React.Component<PricingBoxProps, {}> {
