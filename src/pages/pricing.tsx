@@ -9,6 +9,7 @@ import 'react-modal-video/css/modal-video.min.css'
 import { colors, breakpoints } from '../styles/variables';
 import { getEmSize } from '../styles/mixins';
 import * as icons from '../resources/icons';
+import Card from '../components/Card';
 import Box from '../components/Box';
 import { Teaser } from '../components/Teaser';
 import GitLabLogo from '../resources/gitlab-logo.png';
@@ -92,7 +93,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                         <h1>Free for Open Source</h1>
                         <p>Choose the plan that fits you best. Find team plans below.</p>
                         <PricingOptions>
-                            <PricingBox
+                            <Card
                                 title="Open Source"
                                 description="For open-source developers."
                                 image={icons.heart({
@@ -107,7 +108,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                                     'Public Repositories'
                                 ]}
                                 link="https://gitpod.io/login" />
-                            <PricingBox
+                            <Card
                                 title="Personal"
                                 description="For developers working on personal software projects."
                                 image={icons.lamp({
@@ -123,7 +124,7 @@ export default class PricingPage extends React.Component<{}, {}> {
                                     'Non-commercial use only'
                                 ]}
                                 link="https://gitpod.io/subscription" />
-                            <PricingBox
+                            <Card
                                 title="Unlimited"
                                 description="For professional developers."
                                 image={icons.rocket({
@@ -259,50 +260,5 @@ export default class PricingPage extends React.Component<{}, {}> {
     }
 }
 
-interface PricingBoxProps {
-    title: string;
-    description: string;
-    price: string;
-    featureOne: string;
-    features: string[];
-    image?: JSX.Element;
-    link: string;
-}
 
-class PricingBox extends React.Component<PricingBoxProps, {}> {
 
-    render() {
-        const p = this.props;
-        return <Box title={this.props.title} style={{
-            width: 260
-        }}>
-            <p style={{ textAlign: 'center', fontSize: 14, height: 70, paddingTop: 18 }}>
-                {p.description}
-            </p>
-            {p.image ? p.image : null}
-            <p style={{ textAlign: 'center', fontSize: 24, margin: '20px 0 0 0' }}>
-                {p.price}
-            </p>
-            <p style={{ textAlign: 'center', fontSize: 18, marginBottom: 30 }}>
-                {p.featureOne}
-            </p>
-            <ul style={{
-                textAlign: 'left',
-                marginLeft: -45,
-                marginBottom: 30,
-                minHeight: 60,
-                fontSize: 13,
-                listStyle: 'none',
-            }}>
-                {p.features.map(f => (
-                    <li style={{ display: 'flex' }}>{icons.tick({ width: 20, height: 20, padding: 4 })}{f}</li>
-                ))}
-            </ul>
-            <a href={p.link}>
-                <button className='primary'>
-                    Get started
-            </button>
-            </a>
-        </Box>;
-    }
-}
