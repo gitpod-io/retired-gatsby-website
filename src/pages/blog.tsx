@@ -22,7 +22,7 @@ const BlogFeed = styled.div`
     }
 `
 
-const BlogPost = styled.div`
+const BlogPost = styled.article`
     margin-bottom: 40px;
     height: auto;
     min-height: 400px;

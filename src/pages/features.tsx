@@ -36,7 +36,7 @@ const HeaderLink = styled.a`
     }
 `;
 
-const SupportedLanguages = styled.div`
+const SupportedLanguages = styled.section`
     background-color: ${colors.background2};
     z-index: 2;
     box-shadow: 0px 0px 160px 0px rgba(5,5,5,0.57);

@@ -55,7 +55,7 @@ interface FooterProps {
 
 const Footer: React.SFC<FooterProps> = () => {
 
-    return <StyledFooter>
+    return <StyledFooter role="footer">
         <FooterInner>
             <FooterMenu>
                 <Link to="/features">Features</Link>
