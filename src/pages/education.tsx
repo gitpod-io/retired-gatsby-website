@@ -14,8 +14,7 @@ import iconChair from '../resources/icon-chair.svg';
 
 const Hero = styled.section`
     display: flex;
-    min-height: 570px;
-    margin-top: 100px;
+    margin-top: 60px;
     .text-box {
         width: 50%;
         @media(max-width: ${getEmSize(breakpoints.md - 1)}em) {
@@ -24,6 +23,8 @@ const Hero = styled.section`
     }
     .svg-container {
         width: 50%;
+        position: absolute;
+        right: 0;
         margin-top: -170px;
         transform: rotate(12deg);
 
@@ -37,7 +38,7 @@ const Hero = styled.section`
 `
 
 const SectionFeatures = styled.section`
-    margin-top: -150px;
+    margin-top: 50px;
     .features {
         width: 100%;
         display: flex;
@@ -64,8 +65,8 @@ const SectionFeatures = styled.section`
 
 `
 
-const HeadingMission = styled.h3`
-    font-size: 140%;
+const HeadingMission = styled.h2`
+    line-height: 42px;
     text-align: center;
     background-color: ${colors.background2};
     padding: 50px;
@@ -100,14 +101,14 @@ const EducationPage: React.SFC<{}> = () => (
                 <Hero>
                     <div className='text-box'>
                         <h4 style={{ color: colors.fontColor2 }}>Gitpod for Education</h4>
-                        <h1 style={{ lineHeight: 1.5 }}>Let's teach code<br />not boring setups</h1>
+                        <h1 style={{ lineHeight: 1.5 }}>Let's Teach Programming<br />Not Tweaking Setups</h1>
                         <div style={{ height: 3, width: 95, backgroundColor: colors.brand, marginBottom: 30 }} />
                         <p>
                             Gitpod simplifies the onboarding process, makes coding accessible from any device and provides a productive learning environment.
                         </p>
                     </div>
                     <div className='svg-container'>
-                        <svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1417.32 1984.25" fill="#1e1e1e" stroke="#1aa6e4" strokeWidth={6}>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1417.32 1984.25" fill="#1e1e1e" stroke="#1aa6e4" strokeWidth={6}>
                             <path className="st0" d="M297.79,815.06l102.53-148.29l54.19,37.47c7.28,2.3,15.7-0.75,20.45-8c9.11-13.91-8.28-26.77,8.59-51.17	c13.99-20.23,41.73-25.29,61.96-11.3c20.23,13.99,25.29,41.73,11.3,61.96c-15.38,22.25-33.24,13.21-42.67,27.6	c-3.46,5.29-3.7,14.98-1.9,20.83l53.66,37.1l-39.99,57.84c-4.85,0.13-10.07-0.77-13.47-3c-14.39-9.43-5.35-27.29-27.6-42.67	c-20.23-13.99-47.97-8.93-61.96,11.3c-13.99,20.24-8.93,47.97,11.3,61.96c24.4,16.87,37.25-0.52,51.16,8.58	c4.13,2.7,6.89,6.59,8.08,10.79l-42.02,60.77L303.13,844.32C293.61,837.74,291.21,824.57,297.79,815.06L297.79,815.06z"
                             />
                             <path className="st0" d="M934.94,1118.05l-98.04,151.29c-6.29,9.71-19.38,12.51-29.09,6.21l-151.29-98.04"
@@ -123,24 +124,24 @@ const EducationPage: React.SFC<{}> = () => (
                 </Hero>
             </Container>
             <Container>
-                <GitGraph left={-900} top={-150} graph={[
+                <GitGraph left={-900} top={-5} graph={[
                     { start: [0, 150] },
                     { right: 860 },
-                    { down: 170 },
+                    { down: 200 },
+                    { right: 207 },
+                    {},
+                    { right: 325 },
+                    {},
+                    { right: 328 },
+                    {},
                     { right: 200 },
-                    {},
-                    { right: 335 },
-                    {},
-                    { right: 330 },
-                    {},
-                    { right: 230 },
-                    { up: 190 },
+                    { up: 200 },
                     { right: 860 },
                     { start: [0, 150] },
                     { right: 860 },
                     { right: 230 },
                     {},
-                    { right: 330 },
+                    { right: 320 },
                     {},
                     { right: 330 },
                     {},
@@ -148,7 +149,7 @@ const EducationPage: React.SFC<{}> = () => (
                     { right: 860 },
                 ]} />
                 <SectionFeatures>
-                    <h3>How Gitpod enhances the learning process</h3>
+                    <h2>How Gitpod enhances the learning process</h2>
                     <div className="features">
                         <div className="feature">
                             <h4>No setup</h4>
@@ -179,14 +180,14 @@ const EducationPage: React.SFC<{}> = () => (
                     </div>
                 </SectionFeatures>
             </Container>
-            <HeadingMission>Our mission is to convey our passion for coding to students by eliminating barriers.</HeadingMission>
+            <HeadingMission>Our mission is to convey our passion for coding to students by eliminating barriers</HeadingMission>
             <SectionPricing>
                 <Container>
                     <h3>Pricing</h3>
                     <p>We love to support educational programs. That's why we have a special pricing for universities, colleges, schools and non-commercial courses. Students also have the opportunity to get an individual subscription for 75% off.</p>
                     <div className='pricing-cards'>
                         <PricingBox
-                            title="Class Room"
+                            title="Classroom"
                              description="For educators\nGet access for your whole class and assign seats to your students."
                             image={<img src={iconChair} style={{marginTop: 10}} />}
                             price="From $39"
@@ -200,7 +201,7 @@ const EducationPage: React.SFC<{}> = () => (
                             link="https://gitpod.io/subscription"
                         />
                         <PricingBox
-                            title="Students Unlimited"
+                            title="Student Unlimited"
                             description="Exclusive for Students\n$9 instead of $39 for the Unlimited subscription"
                             image={icons.bag({ fill: 'none', stroke: colors.brand, width: 80 })}
                             price="$9"
@@ -212,15 +213,15 @@ const EducationPage: React.SFC<{}> = () => (
                             link="https://gitpod.io/subscription"
                         />
                     </div>
-                    <h3 style={{ marginTop: 150 }}>Let’s teach software development, not just fixing dependencies.</h3>
-                    <p style={{ marginTop: 30, marginBottom: 170 }}>If you're interested or have any question, we'd love to hear from you. &nbsp;&nbsp;&nbsp;
+                    <h3 style={{ marginTop: 120 }}>Let's teach software engineering, not just tweaking dependencies.</h3>
+                    <p>If you're interested or have any question, we'd love to hear from you. &nbsp;&nbsp;&nbsp;
                              <a href='#'>
                             <button className='primary'>
                                 Let's Talk
                                 </button>
                         </a>
                     </p>
-                    <p>If you’d like to use Gitpod for commercial training courses, please have a look at our &nbsp;&nbsp;&nbsp;
+                    <p style={{ marginTop: 110 }}>If you’d like to use Gitpod for commercial training courses, please have a look at our &nbsp;&nbsp;&nbsp;
                             <a href='#'>
                             <button className='primary'>
                                 Partner Program
