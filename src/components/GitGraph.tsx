@@ -69,12 +69,26 @@ function toPath(graph: GraphElement[], direction?: Direction, x?: number, y?: nu
                 d = 'd';
                 result.pathes[0] += `l0,${e.down - reduce}`;
             } else if (e.up) {
-                //TODO not used yet
+                let reduce = 0;
+                if (d === 'r') {
+                    result.pathes[0]+=`c ${r},0 ${r},-${r} ${r},-${r}`;
+                    reduce = r;
+                    currentX += reduce;
+                } else if (d === 'l') {
+                    result.pathes[0]+=`c -${r},0 -${r},-${r} -${r},-${r}`;
+                    reduce = r;
+                    currentX -= reduce;
+                }
+                currentY -= e.up;
                 d = 'u';
-                result.pathes[0] += `l0,-${e.up}`;
+                result.pathes[0] += `l0,-${e.up - reduce}`;
             } else if (e.right) {
                 let reduce = 0;
-                if (d === 'd') {
+                if (d === 'u') {
+                    result.pathes[0]+=`c 0,-${r} ${r},-${r} ${r},-${r}`;
+                    reduce = r;
+                    currentY += reduce;
+                } else if (d === 'd') {
                     result.pathes[0]+=`c 0,${r} ${r},${r} ${r},${r}`;
                     reduce = r;
                     currentY += reduce;
@@ -85,7 +99,11 @@ function toPath(graph: GraphElement[], direction?: Direction, x?: number, y?: nu
                 result.pathes[0] += `l${e.right - reduce},0`;
             } else if (e.left) {
                 let reduce = 0;
-                if (d === 'd') {
+                if (d === 'u') {
+                    result.pathes[0]+= `c 0,-${r} -${r},-${r} -${r},-${r}`;
+                    reduce = r;
+                    currentY -= reduce;
+                } else if (d === 'd') {
                     result.pathes[0]+= `c 0,${r} -${r},${r} -${r},${r}`;
                     reduce = r;
                     currentY -= reduce;
