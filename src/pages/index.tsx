@@ -145,7 +145,7 @@ const WhyBox = styled.div`
     }
 `;
 
-const ResponsiveTweet = styled.blockquote`
+const ResponsiveTweet = styled.div`
     position: absolute;
     width: 435px;
 
@@ -212,7 +212,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                     <div className={this.state.worksMode === 0 ? 'selected' : ''}>
                         <h3>Prefix any GitHub URL with <strong className="glow">gitpod.io/#</strong></h3>
                         <div style={{ marginBottom: 10 }}>
-                            <img src={PrefixScreenshot} alt="Prefix any github URL" />
+                            <img src={PrefixScreenshot} alt="Gitpod URL Prefix" />
                         </div>
                         <p>... and get a ready-to-code dev environment immediately.</p>
                     </div>
@@ -241,7 +241,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                                 className='hidden-md-down'
                                 style={{ marginTop: 15, width: 250 }}
                                 src={Octocat}
-                                alt="Github Octocat Logo"
+                                alt="GitHub Octocat"
                             />
                         </div>
                     </div>

@@ -169,11 +169,11 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                     </Feature>
                     <Feature
                         title="VS Code"
-                        button={<a href="https://www.theia-ide.org" target="_blank" rel="noreferrer">
+                        button={<a href="https://www.theia-ide.org" target="_blank">
                             <button className='primary'>Visit theia-ide.org</button>
                         </a>}
                         visual={<img src={LanguageToolingImage} alt="language tooling" />} >
-                        <p>Gitpod is based on <a href="https://www.theia-ide.org" target="_blank" rel="noreferrer">Theia</a>, the open-source VS Code-powered IDE optimized for developing in the cloud.
+                        <p>Gitpod is based on <a href="https://www.theia-ide.org" target="_blank">Theia</a>, the open-source VS Code-powered IDE optimized for developing in the cloud.
                             Get code intelligence and a Linux shell in a browser tab.</p>
                     </Feature>
                     <Feature
@@ -353,7 +353,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                 <Container>
                     <div style={{ textAlign: 'center', marginTop: 150, marginBottom: 150 }}>
                         <h3 style={{ marginBottom: '0.7rem' }}>Try It Out</h3>
-                        <a href="https://gitpod.io/api/login" rel="noreferrer">
+                        <a href="https://gitpod.io/api/login">
                             <button className='primary'>Get Started Free</button>
                         </a>
                     </div>
@@ -430,4 +430,3 @@ class Feature extends React.Component<FeatureProps, {}> {
         </FeatureInner>;
     }
 }
-
