@@ -35,7 +35,7 @@ const HeaderInner = styled(Container)`
     z-index: 2;
 `
 
-const MobileMenu = styled.div`
+const MobileMenu = styled.nav`
   margin-left: auto;
   margin-right: -10px;
   display: flex;
@@ -51,7 +51,7 @@ const MobileMenu = styled.div`
   }
 `
 
-const Menu = styled.div`
+const Menu = styled.nav`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -160,12 +160,12 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
 
     render() {
         const { isMenuOpen } = this.state;
-        return <StyledHeader>
+        return <StyledHeader role="banner">
             <HeaderInner>
                 <HomepageLink to="/" style={{ paddingRight: 60, lineHeight: 'initial' }}>
                     <HomepageLogo alt="Gitpod Logo" src={logo} />
                 </HomepageLink>
-                <MobileMenu>
+                <MobileMenu role="navigation">
                     {isMenuOpen ? null : <a href="https://gitpod.io/api/login">
                         <button className='primary' style={{fontSize: '90%', padding: '6px 10px'}}>Go to app</button>
                     </a>}
@@ -173,7 +173,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
                         {isMenuOpen ? icons.cross() : icons.burger()}
                     </button>
                 </MobileMenu>
-                <Menu className={isMenuOpen ? 'open' : ''}>
+                <Menu className={isMenuOpen ? 'open' : ''} role="navigation">
                     <HomepageLink to="/features">Features</HomepageLink>
                     <HomepageLink to="/pricing">Pricing</HomepageLink>
                     <HomepageLink to="/docs">Docs</HomepageLink>

@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { colors } from "../styles/variables";
 
 
- export const Teaser = styled.div`
+ export const Teaser = styled.section`
     background-color: ${colors.background2};
     z-index: 2;
     margin: 80px 0;

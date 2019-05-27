@@ -8,6 +8,7 @@ import ModalVideo from 'react-modal-video';
 import 'react-modal-video/css/modal-video.min.css'
 import { colors, breakpoints } from '../styles/variables';
 import { getEmSize } from '../styles/mixins';
+import {UnderLine} from '../styles/typography';
 import TweetEmbed from 'react-tweet-embed'
 import BrowserExtension from '../resources/browser-ext.png';
 import ExampleBox from '../components/ExampleBox';
@@ -74,7 +75,7 @@ const VideoLaptop = styled.div`
     }
 `
 
-const HowItWorks = styled.div`
+const HowItWorks = styled.section`
     flex-grow: 2;
 
     > * {
@@ -145,7 +146,7 @@ const WhyBox = styled.div`
     }
 `;
 
-const ResponsiveTweet = styled.div`
+const ResponsiveTweet = styled.blockquote`
     position: absolute;
     width: 435px;
 
@@ -278,7 +279,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                     <GitpodHeader>
                         <h2 style={{ color: colors.fontColor2, marginBottom: 15 }}>Frictionless Coding</h2>
                         <h1 style={{ fontSize: '2.4em' }}>One-Click Online IDE<br /> for GitHub</h1>
-                        <div style={{ height: 3, width: 95, backgroundColor: colors.brand, marginBottom: 30 }} />
+                        <UnderLine />
                         <p>Gitpod launches ready-to-code dev environments from any GitHub page.</p>
                     </GitpodHeader>
                     <VideoLaptop>

@@ -27,7 +27,7 @@ const PricingOptions = styled.div`
     }
 `
 
-const StudentOffer = styled.div`
+const StudentOffer = styled.section`
     display: flex;
     flex-direction: row;
     > :not(:first-child) {
@@ -52,7 +52,7 @@ const StudentOffer = styled.div`
     }
 `
 
-const EnterpriseOffer = styled.div`
+const EnterpriseOffer = styled.section`
     @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
         table {
             font-size: 75%;

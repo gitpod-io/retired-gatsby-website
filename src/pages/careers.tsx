@@ -6,6 +6,7 @@ import IndexLayout from '../layouts'
 import Logos from '../components/Logos';
 import GitGraph from '../components/GitGraph';
 import { colors, breakpoints } from '../styles/variables';
+import {UnderLine} from '../styles/typography';
 import styled from '@emotion/styled';
 import { getEmSize } from '../styles/mixins';
 
@@ -106,7 +107,7 @@ const CareersPage: React.SFC<{}> = () => (
                 <div style={{ marginTop: 60 }}>
                     <h4 style={{ color: colors.fontColor2 }}>We're hiring!</h4>
                     <h1>Join the Gitpod team</h1>
-                    <div style={{ height: 3, width: 95, backgroundColor: colors.brand, marginBottom: 30 }} />
+                    <UnderLine/>
                 </div>
                 <p style={{ marginBottom: 170 }} >
                     Gitpod aims to make development better for everyone, and it's built on a culture of trust and empathy. Help us shape its future!
@@ -241,7 +242,7 @@ const CareersPage: React.SFC<{}> = () => (
                 <h3>Jobs</h3>
                 <Job>
                     <h2>Gitpod Developer Advocate</h2>
-                    <p>As a Developer Advocate, you will connect with developers around the world, try out new frameworks and technologies, and share what you’ve learned with the world. You will craft great resources to help developers build with Gitpod, including sample projects, blog posts, and documentation. You’ll help grow our developer community, champion the interests of our users and translate their feedback into actionable product insights.
+                    <p>As a Developer Advocate, you will connect with developers around the world, try out new frameworks and technologies, and share what you’ve learned with the world. You will craft great resources to help developers build with Gitpod, including sample projects, blog posts, and documentation. You’ll help grow our developer community, champion the interests of our users and translate their feedback into actionable product insights.</p>
                     <h4>What you’ll do:</h4>
                     <ul>
                         <li>Create momentum and drive adoption of Gitpod through your interactions with developers building applications and projects with Gitpod</li>
