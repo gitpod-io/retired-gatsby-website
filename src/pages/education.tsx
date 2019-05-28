@@ -53,7 +53,6 @@ const SectionFeatures = styled.section`
         @media(min-width: ${getEmSize(breakpoints.md)}em) {
             flex: 3.33;
         }
-        text-align: center;
         padding: 15px 25px 25px 25px;
     }
     h3 {
@@ -75,7 +74,7 @@ const HeadingMission = styled.h2`
 const SectionPricing = styled.section`
     padding: 50px 0 0 0;
     .pricing-cards {
-         display: flex;
+        display: flex;
         flex-direction: row;
         justify-content: space-around;
         margin-top: 50px;
@@ -96,12 +95,13 @@ const EducationPage: React.SFC<{}> = () => (
         <Page>
             <Container>
                 <Logos logos={[
-                    [1050, 125, 40],
+                    [-150, 270, 35],
+                    [-110, 335, 55],
                 ]} />
                 <Hero>
                     <div className='text-box'>
                         <h4 style={{ color: colors.fontColor2 }}>Gitpod for Education</h4>
-                        <h1 style={{ lineHeight: 1.5 }}>Let's Teach Programming<br />Not Tweaking Setups</h1>
+                        <h1 style={{ lineHeight: 1.5 }}>Let's Skip The Setup<br />And Teach Programming</h1>
                         <div style={{ height: 3, width: 95, backgroundColor: colors.brand, marginBottom: 30 }} />
                         <p>
                             Gitpod simplifies the onboarding process, makes coding accessible from any device and provides a productive learning environment.
@@ -149,7 +149,7 @@ const EducationPage: React.SFC<{}> = () => (
                     { right: 860 },
                 ]} />
                 <SectionFeatures>
-                    <h2>How Gitpod enhances the learning process</h2>
+                    <h2>How <a href="https://www.gitpod.io/">Gitpod.io</a> simplifies teaching and learning</h2>
                     <div className="features">
                         <div className="feature">
                             <h4>No setup</h4>
@@ -160,27 +160,27 @@ const EducationPage: React.SFC<{}> = () => (
                             <p>With Gitpod coding gets accessible for everyone. Your students can contribute with a Chromebook or a tablet.</p>
                         </div>
                         <div className="feature">
-                            <h4>Enhances the workflow</h4>
-                            <p>Create customized lessons for your students. Everyone can start working on new asignments within minutes.</p>
+                            <h4>Makes teaching easier</h4>
+                            <p>Create customized lessons for your students with reproducible snapshots. Everyone can start working on new assignments within seconds.</p>
                         </div>
                     </div>
                     <div className="features">
                         <div className="feature">
-                            <h4>Collaborative</h4>
-                            <p>Gitpod strengthens collaboration between your students. Code reviews have never been this easy, and sharable snapshots foster the team workflow.</p>
+                            <h4>Teamwork</h4>
+                            <p>Gitpod facilitates students-teacher interactions. Shareable environment snapshots and live tutoring make collaboration easy.</p>
                         </div>
                         <div className="feature">
-                            <h4>Continuous support</h4>
-                            <p>Easy maintenance, flexible subscriptions and continuous support.</p>
+                            <h4>Industry-standard workspaces</h4>
+                            <p>Gitpod supports all major programming languages, and goes beyond playgrounds with modern developer tools and environments.</p>
                         </div>
                         <div className="feature">
-                            <h4>A safe place</h4>
-                            <p>Data safety is of utmost importance. Gitpod has high security standards to keep your students and their data safe.</p>
+                            <h4>____</h4>
+                            <p>____ ____ ____ ____ ____ ____ ____ ____ ____ ____.</p>
                         </div>
                     </div>
                 </SectionFeatures>
             </Container>
-            <HeadingMission>Our mission is to convey our passion for coding to students by eliminating barriers</HeadingMission>
+            <HeadingMission>Our mission is to convey our passion for coding by eliminating barriers for teachers and students</HeadingMission>
             <SectionPricing>
                 <Container>
                     <h3>Pricing</h3>
@@ -190,19 +190,18 @@ const EducationPage: React.SFC<{}> = () => (
                             title="Classroom"
                              description="For educators\nGet access for your whole class and assign seats to your students."
                             image={<img src={iconChair} style={{marginTop: 10}} />}
-                            price="From $39"
+                            price="$9 per seat"
                             featureOne="Unlimited hours"
                             features={[
                                 'Unlimited workspaces',
                                 'Public & private repositories',
-                                'Flexible seat management',
-                                'Continuous support'
+                                'Simplified team management'
                             ]}
                             link="https://gitpod.io/subscription"
                         />
                         <PricingBox
                             title="Student Unlimited"
-                            description="Exclusive for Students\n$9 instead of $39 for the Unlimited subscription"
+                            description="Exclusive for Students\nThe Unlimited plan for $9 instead of $39"
                             image={icons.bag({ fill: 'none', stroke: colors.brand, width: 80 })}
                             price="$9"
                             featureOne="Unlimited hours"
