@@ -219,13 +219,6 @@ const EducationPage: React.SFC<{}> = () => (
                                 </button>
                         </a>
                     </p>
-                    <p style={{ marginTop: 110 }}>If you’d like to use Gitpod for commercial training courses, please have a look at our &nbsp;&nbsp;&nbsp;
-                            <a href='#'>
-                            <button className='primary'>
-                                Partner Program
-                                </button>
-                        </a>
-                    </p>
                 </Container>
             </SectionPricing>
         </Page>
