@@ -53,7 +53,6 @@ const SectionAbout = styled.section`
         width: 100%;
     }
     .col {
-        padding: 15px 0;
         text-align: center;
         @media(min-width: ${getEmSize(breakpoints.md)}em) {
             flex: 3.33;
@@ -65,7 +64,8 @@ const SectionAbout = styled.section`
     }
     .svg-container {
         text-align: center;
-        padding: 40px 0;
+        padding-top: 25px;
+        padding-bottom: 45px;
         svg {
             height: 60px;
         }
@@ -85,19 +85,19 @@ const CareersPage: React.SFC<{}> = () => (
                 <GitGraph left={-900} top={150} graph={[
                     { start: [0, 150] },
                     { right: 860 },
-                    { down: 100 },
+                    { down: 80 },
                     { right: 145 },
                     {},
-                    { right: 210 },
+                    { right: 165 },
                     {},
-                    { right: 200 },
+                    { right: 170 },
                     {},
-                    { right: 180 },
+                    { right: 190 },
                     {},
-                    { right: 200 },
+                    { right: 235 },
                     {},
-                    { right: 145 },
-                    { up: 100 },
+                    { right: 160 },
+                    { up: 80 },
                     { right: 860 },
 
                 ]} />
@@ -112,17 +112,17 @@ const CareersPage: React.SFC<{}> = () => (
                 <p style={{ marginBottom: 170 }} >
                     Gitpod aims to make development better for everyone, and it's built on a culture of trust and empathy. Help us shape its future!
                 </p>
-                <FeatureList className='flex hidden-md-down' style={{ justifyContent: 'space-between', marginTop: '5rem', marginBottom: '8rem', alignItems: 'flex-end' }}>
+                <FeatureList className='flex hidden-md-down' style={{ justifyContent: 'space-between', marginTop: '5rem', marginBottom: '3.5rem', alignItems: 'flex-end' }}>
                     <li>Remote-friendly</li>
-                    <li>A worthy mission</li>
+                    <li>Worthy mission</li>
                     <li>People who care</li>
                     <li>Travel opportunities</li>
-                    <li>An office with a view</li>
+                    <li>Panoramic offices with sea view</li>
                 </FeatureList>
             </Container>
             <Container>
                 <SectionAbout>
-                    <h3>About us</h3>
+                    <h2>About us</h2>
                     <div className='row'>
                         <div className='col'>
                             <div className="svg-container">
@@ -154,7 +154,7 @@ const CareersPage: React.SFC<{}> = () => (
                                 </svg>
                             </div>
                             <p>
-                                Gitpod is an online one-click IDE that launches ready-to-code dev environments from any GitHub page. Automating development environments eliminates hours of tedious setup time, improves teamwork, and makes software development more reproducible and scalable.
+                                Gitpod is an online one-click IDE that launches ready-to-code dev environments from any GitHub page. Automating environments eliminates hours of tedious setup time, and makes software development more reproducible and scalable.
                                 </p>
                             <p>
                                 Officially launched in April 2019, Gitpod is a very young product which gives you lots of opportunities to shape its future. Currently we’re working in a team of less than 20 people and we’re planning to grow continually.
@@ -232,21 +232,21 @@ const CareersPage: React.SFC<{}> = () => (
                                 </svg>
                             </div>
                             <p>
-                                We’re a young and tech-driven team with the mission of making development better for everyone. In our team value an open and honest mindset, and effective pragmatism. We lead, collaborate and contribute to open-source projects and would love to share that with you. We’re convinced that continuous learning and exploring is the way to go for sustainably building the best solutions. Therefore we’re always curious about new approaches.
+                                We’re a young and tech-driven team with the mission of making development better for everyone. In our team we value an open and honest mindset, and effective pragmatism. We lead, collaborate and contribute to open-source projects and would love to share that with you. We’re convinced that continuous learning and exploring is the way to go for sustainably building the best solutions. Therefore we’re always curious about new approaches.
                                 </p>
                         </div>
                     </div>
                 </SectionAbout>
             </Container>
             <Container>
-                <h3>Jobs</h3>
+                <h2>Jobs</h2>
                 <Job>
                     <h2>Gitpod Developer Advocate</h2>
                     <p>As a Developer Advocate, you will connect with developers around the world, try out new frameworks and technologies, and share what you’ve learned with the world. You will craft great resources to help developers build with Gitpod, including sample projects, blog posts, and documentation. You’ll help grow our developer community, champion the interests of our users and translate their feedback into actionable product insights.</p>
                     <h4>What you’ll do:</h4>
                     <ul>
-                        <li>Create momentum and drive adoption of Gitpod through your interactions with developers building applications and projects with Gitpod</li>
-                        <li>Champion Gitpod in person and online by presenting at conferences, writing technical tutorials, publishing articles and videos</li>
+                        <li>Create momentum and drive adoption of Gitpod through your interactions with developers building with Gitpod</li>
+                        <li>Champion Gitpod in person and online by presenting at meetups, conferences, writing technical tutorials, publishing articles and videos</li>
                         <li>Build inspiring demos, sample apps, and continuously improve the developer experience of Gitpod</li>
                         <li>Identify strategic partnership opportunities to grow our developer community</li>
                         <li>Influence the direction of Gitpod’s development by gathering insights from our developer community</li>
@@ -255,29 +255,29 @@ const CareersPage: React.SFC<{}> = () => (
                     <h4>What we’re looking for:</h4>
                     <ul>
                         <li>Creative, empathetic, communicative, and clever</li>
-                        <li>Confident and comfortable presenting to different types of audiences, large and small</li>
+                        <li>Confident and comfortable presenting to different types of audiences, at meetups or conferences</li>
                         <li>Adept at communicating technically complicated topics simply and elegantly</li>
-                        <li>Strong hands-on developer who is comfortable with full-stack development</li>
+                        <li>Hands-on developer who is comfortable with full-stack development</li>
                         <li>Intellectually curious, with great problem-solving skills</li>
                         <li>Happy to travel regularly</li>
                     </ul>
                 </Job>
                 <Job>
                     <h2>Gitpod Sales Engineer</h2>
-                    <p>As a Sales Engineer, you will take control of our inbound marketing, and leverage Gitpod to make life easier for other software companies. You should like to engage with Enterprises and Universities, and advize them on their development tools and processes.</p>
+                    <p>As a Sales Engineer, you will take control of our inbound marketing, and leverage Gitpod to help software organizations build better software faster. You will engage with Enterprises and Universities around the globe, understand the way they build software and identify needs and bottlenecks, and build Gitpod-based solutions that make developers happier and more productive.</p>
                     <h4>What you’ll do</h4>
                     <ul>
-                        <li>engage with customers to identify the best solutions for their needs</li>
-                        <li>follow-up on leads from inbound marketing and conferences</li>
-                        <li>tailor demonstrations for customers, conferences, and special events</li>
-                        <li>set up proof-of-concepts and work closely with the customer to answer questions and troubleshoot as needed</li>
-                        <li>confer with customers and engineering to assess technical constraints and determine requirements</li>
+                        <li>Engage with organizations to identify their development needs and bottlenecks</li>
+                        <li>Tailor demonstrations for customers, conferences, and special events</li>
+                        <li>Follow-up on leads from inbound marketing and conferences</li>
+                        <li>Set up proof-of-concepts and work closely with the customers to answer questions and solve problems</li>
+                        <li>Confer with customers and engineering to determine requirements, assess technical constraints, and build solutions that solve problems</li>
                     </ul>
                     <h4>What we’re looking for</h4>
                     <ul>
-                        <li>prior experience with sales activities in enterprise or academia</li>
-                        <li>ability to creatively explain and present complex concepts in an easy to understand manner</li>
-                        <li>solid technical background with hands-on experience in software development and web technologies</li>
+                        <li>Prior experience with sales activities in enterprise or academia</li>
+                        <li>Ability to creatively explain and present complex concepts in an easy to understand manner</li>
+                        <li>Solid technical background with hands-on experience in software development and web technologies</li>
                     </ul>
                 </Job>
                 <p style={{ margin: "70px 0 40px 0" }}>
