@@ -25,7 +25,7 @@ const Hero = styled.section`
         width: 50%;
         position: absolute;
         right: 0;
-        margin-top: -170px;
+        margin-top: -160px;
         transform: rotate(12deg);
 
         @media(max-width: ${getEmSize(breakpoints.md - 1)}em) {
@@ -47,7 +47,6 @@ const SectionFeatures = styled.section`
         @media(max-width:${getEmSize(breakpoints.md - 1)}em) {
             flex-direction: column;
         }
-
     }
     .feature {
         @media(min-width: ${getEmSize(breakpoints.md)}em) {
@@ -124,10 +123,10 @@ const EducationPage: React.SFC<{}> = () => (
                 </Hero>
             </Container>
             <Container>
-                <GitGraph left={-900} top={-5} graph={[
+                <GitGraph left={-900} top={-1} graph={[
                     { start: [0, 150] },
                     { right: 860 },
-                    { down: 200 },
+                    { down: 225 },
                     { right: 207 },
                     {},
                     { right: 325 },
@@ -135,7 +134,7 @@ const EducationPage: React.SFC<{}> = () => (
                     { right: 328 },
                     {},
                     { right: 200 },
-                    { up: 200 },
+                    { up: 225 },
                     { right: 860 },
                     { start: [0, 150] },
                     { right: 860 },
@@ -166,7 +165,7 @@ const EducationPage: React.SFC<{}> = () => (
                     </div>
                     <div className="features">
                         <div className="feature">
-                            <h4>Teamwork</h4>
+                            <h4>Live tutoring</h4>
                             <p>Gitpod facilitates students-teacher interactions. Shareable environment snapshots and live tutoring make collaboration easy.</p>
                         </div>
                         <div className="feature">
