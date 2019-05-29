@@ -146,48 +146,48 @@ const CareersPage: React.SFC<{}> = () => (
                                 <svg xmlns="http://www.w3.org/2000/svg" width="120.084" height="82.37"
                                     viewBox="0 0 120.084 82.37" stroke="#1aa6e4" fill="#1e1e1e">
                                     <defs />
-                                    <g id="Gruppe_169" data-name="Gruppe 169" transform="translate(1.053)">
-                                        <g id="Gruppe_101" data-name="Gruppe 101" transform="translate(48.047 8.415)">
-                                            <path id="Pfad_192" data-name="Pfad 192" className="cls-1" d="M17203.043,14544.99s-6.35-42.762,14.889-43.471,13.748,43.471,13.748,43.471"
+                                    <g transform="translate(1.053)">
+                                        <g transform="translate(48.047 8.415)">
+                                            <path className="cls-1" d="M17203.043,14544.99s-6.35-42.762,14.889-43.471,13.748,43.471,13.748,43.471"
                                                 transform="translate(-17202.154 -14480.678)" />
-                                            <g id="Ellipse_190" data-name="Ellipse 190" className="cls-1" transform="translate(4.227)">
+                                            <g className="cls-1" transform="translate(4.227)">
                                                 <ellipse className="cls-2" cx="11.2" cy="10.839" rx="11.2" ry="10.839"
                                                 />
                                                 <ellipse className="cls-3" cx="11.2" cy="10.839" rx="10.2" ry="9.839"
                                                 />
                                             </g>
                                         </g>
-                                        <g id="Gruppe_103" data-name="Gruppe 103" transform="translate(78.804)">
-                                            <path id="Pfad_191" data-name="Pfad 191" className="cls-1" d="M17203.283,14556.793s-8.078-54.373,18.926-55.273,17.486,55.273,17.486,55.273"
+                                        <g transform="translate(78.804)">
+                                            <path className="cls-1" d="M17203.283,14556.793s-8.078-54.373,18.926-55.273,17.486,55.273,17.486,55.273"
                                                 transform="translate(-17202.15 -14475.022)" />
-                                            <g id="Ellipse_189" data-name="Ellipse 189" className="cls-1" transform="translate(5.374)">
+                                            <g className="cls-1" transform="translate(5.374)">
                                                 <ellipse className="cls-2" cx="14.241" cy="13.781" rx="14.241" ry="13.781"
                                                 />
                                                 <ellipse className="cls-3" cx="14.241" cy="13.781" rx="13.241" ry="12.781"
                                                 />
                                             </g>
                                         </g>
-                                        <g id="Gruppe_104" data-name="Gruppe 104" transform="translate(68.154 18.163)">
-                                            <path id="Pfad_191-2" data-name="Pfad 191" className="cls-1" d="M17203.039,14544.754s-6.32-42.527,14.8-43.234,13.676,43.234,13.676,43.234"
+                                        <g transform="translate(68.154 18.163)">
+                                            <path className="cls-1" d="M17203.039,14544.754s-6.32-42.527,14.8-43.234,13.676,43.234,13.676,43.234"
                                                 transform="translate(-17202.152 -14480.791)" />
-                                            <g id="Ellipse_189-2" data-name="Ellipse 189" className="cls-1" transform="translate(4.204)">
+                                            <g className="cls-1" transform="translate(4.204)">
                                                 <ellipse className="cls-2" cx="11.139" cy="10.78" rx="11.139" ry="10.78"
                                                 />
                                                 <ellipse className="cls-3" cx="11.139" cy="10.78" rx="10.139" ry="9.78"
                                                 />
                                             </g>
                                         </g>
-                                        <g id="Gruppe_105" data-name="Gruppe 105" transform="translate(0 8.54)">
-                                            <path id="Pfad_191-3" data-name="Pfad 191" className="cls-1" d="M17203.047,14544.986s-6.355-42.76,14.885-43.467,13.748,43.467,13.748,43.467"
+                                        <g transform="translate(0 8.54)">
+                                            <path className="cls-1" d="M17203.047,14544.986s-6.355-42.76,14.885-43.467,13.748,43.467,13.748,43.467"
                                                 transform="translate(-17202.156 -14480.678)" />
-                                            <g id="Ellipse_189-3" data-name="Ellipse 189" className="cls-1" transform="translate(4.227)">
+                                            <g className="cls-1" transform="translate(4.227)">
                                                 <ellipse className="cls-2" cx="11.201" cy="10.839" rx="11.201" ry="10.839"
                                                 />
                                                 <ellipse className="cls-3" cx="11.201" cy="10.839" rx="10.201" ry="9.839"
                                                 />
                                             </g>
                                         </g>
-                                        <g id="Gruppe_102" data-name="Gruppe 102" transform="translate(23.678)">
+                                        <g transform="translate(23.678)">
                                             <path className="cls-1" d="M17203.283,14556.793s-8.078-54.373,18.926-55.273,17.486,55.273,17.486,55.273"
                                                 transform="translate(-17202.15 -14475.022)" />
                                             <g className="cls-1" transform="translate(5.374)">
@@ -233,7 +233,7 @@ const CareersPage: React.SFC<{}> = () => (
                     </div>
                 </ExpandableJob>
                 <ExpandableJob jobTitle='Gitpod Sales Engineer'>
-                    <p>As a Sales Engineer, you will take control of our inbound marketing, and leverage Gitpod to help software organizations build better software faster. You will engage with Enterprises and Universities around the globe, understand the way they build software and identify needs and bottlenecks, and build Gitpod-based solutions that make developers happier and more productive.</p>
+                    <p>As a Sales Engineer, you will take control of our inbound marketing, and leverage Gitpod to help software organizations build better software faster. You will engage with Enterprises and Universities around the globe, understand the way they build software and identify their needs and bottlenecks, then design Gitpod-based solutions to make their developers happy and more productive.</p>
                     <h4>What you’ll do</h4>
                     <ul>
                         <li>Engage with organizations to identify their development needs and bottlenecks</li>
