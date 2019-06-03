@@ -77,6 +77,16 @@ A task allows to configure where and how the terminal should open using the prop
 Please note that this information is used if no previous terminals in the layout exist.
 Snapshots will first try to reuse existing terminals in the layout, before opening new ones.
 
+```yaml
+tasks:
+  - command: python3 -m http.server 8080
+    name: Static Server
+  - openMode: split-right
+    command: echo SplitTerminal
+  - openIn: left
+    command: echo LeftPanelTerminal
+```
+
 ## openIn
 
 You can configure where in the IDE the terminal should be opened:
