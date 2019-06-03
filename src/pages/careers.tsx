@@ -51,10 +51,10 @@ const CareersPage: React.SFC<{}> = () => (
     <IndexLayout title="Gitpod - Careers" canonical="https://www.gitpod.io/careers">
         <Page>
             <Container>
-                <GitGraph left={-900} top={155} graph={[
+                <GitGraph left={-900} top={170} graph={[
                     { start: [0, 150] },
                     { right: 845 },
-                    { down: 85 },
+                    { down: 70 },
                     { right: 177 },
                     {},
                     { right: 263 },
@@ -64,7 +64,7 @@ const CareersPage: React.SFC<{}> = () => (
                     { right: 256 },
                     {},
                     { right: 150 },
-                    { up: 85 },
+                    { up: 70 },
                     { right: 860 },
 
                 ]} />
@@ -91,12 +91,12 @@ const CareersPage: React.SFC<{}> = () => (
                 <h2>Job openings</h2>
                 <ExpandableJob jobTitle="Gitpod Developer Advocate">
                     <div>
-                        <p>As a Developer Advocate, you will connect with developers around the world, try out new frameworks and technologies, and share what you've learned with the world. You will craft great resources to help developers build with Gitpod, including sample projects, blog posts, and documentation. You'll help grow our developer community, champion the interests of our users and translate their feedback into actionable product insights.</p>
+                        <p>As a Developer Advocate, you will connect with developers around the globe, try out new frameworks and technologies, and share what you've learned with the world. You will craft great resources to help developers build with Gitpod, including automated setups, sample projects, blog posts, and documentation. You'll help grow our developer community, champion the interests of our users and translate their feedback into actionable product insights.</p>
                         <h4>What you'll do:</h4>
                         <ul>
-                            <li>Create momentum and drive adoption of Gitpod through your interactions with developers building with Gitpod</li>
+                            <li>Create momentum and drive adoption of Gitpod through your interactions with developers</li>
                             <li>Champion Gitpod in person and online by presenting at meetups, conferences, writing technical tutorials, publishing articles and videos</li>
-                            <li>Build inspiring demos, sample apps, and continuously improve the developer experience of Gitpod</li>
+                            <li>Build inspiring demos, sample apps, and help continuously improve the developer experience of Gitpod</li>
                             <li>Identify strategic partnership opportunities to grow our developer community</li>
                             <li>Influence the direction of Gitpod's development by gathering insights from our developer community</li>
                             <li>Engage with developers to help them get the most out of Gitpod</li>
@@ -117,10 +117,10 @@ const CareersPage: React.SFC<{}> = () => (
                     <h4>What you'll do</h4>
                     <ul>
                         <li>Engage with organizations to identify their development needs and bottlenecks</li>
-                        <li>Tailor demonstrations for customers, conferences, and special events</li>
                         <li>Follow-up on leads from inbound marketing and conferences</li>
-                        <li>Set up proof-of-concepts and work closely with the customers to answer questions and solve problems</li>
-                        <li>Confer with customers and engineering to determine requirements, assess technical constraints, and build solutions that solve problems</li>
+                        <li>Set up proof-of-concepts and work closely with customers to answer questions and solve problems</li>
+                        <li>Confer with customers and engineering to deliver great solutions that meet requirements and technical constraints</li>
+                        <li>Tailor demonstrations for customers, conferences, and special events</li>
                     </ul>
                     <h4>What we're looking for</h4>
                     <ul>

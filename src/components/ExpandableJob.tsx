@@ -7,7 +7,7 @@ const Job = styled.div`
     position: relative;
     background: ${colors.background2};
     padding: 15px 35px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     p {
         margin-bottom: 40px;
     }
