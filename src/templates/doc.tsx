@@ -58,6 +58,7 @@ interface DocTemplateProps {
             fields: {
                 slug: string;
             }
+            fileAbsolutePath: string,
             frontmatter: {
                 title: string
             }
@@ -67,6 +68,7 @@ interface DocTemplateProps {
 
 const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
     const menuCtx = getMenuContext(data.markdownRemark.fields.slug);
+    const editUrl = data.markdownRemark.fileAbsolutePath.replace(/^.*\/src\/docs\//, 'https://gitpod.io/#https://github.com/gitpod-io/website/blob/master/src/docs/');
     return (
         <IndexLayout>
             <Page>
@@ -89,14 +91,17 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
                                 <DocTopicChooser />
                             </div>
                         </DocSidebar>
-                        <div className="article" style={{ position: "relative" }}>
+                        <div className="article" style={{ position: "relative", flexGrow: 1 }}>
                             <h4 style={{ color: colors.fontColor2, marginBottom: 0, marginTop: 30 }}>Docs</h4>
-                            <div style={{ position: 'absolute', top: 40, right: 0 }} title="Edit Docs">
-                                <a href="https://gitpod.io/#https://github.com/gitpod-io/website/blob/master/src/docs/index.md" aria-label="Edit Docs Button"><svg style={{ height: 30, fill: `${colors.background1}`, stroke: `#fff` }} id="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.12 57.65">
-                                    <polyline className="st0" points="3.49,43.76 1.78,54.07 12.39,52.66 52.53,12.48 43.67,3.58 43.67,3.58 3.49,43.76"
-                                    />
-                                    <line className="st0" x1="46.05" y1="18.68" x2="37.32" y2="9.95" />
-                                </svg></a>
+                            <div style={{ position: 'absolute', top: 40, right: 0 }} title="Edit this page in Gitpod">
+                                <a href={editUrl} aria-label="Edit Button" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.12 57.65" style={{
+                                        height: 25,
+                                        fill: 'transparent',
+                                        stroke: colors.fontColor1,
+                                        filter: `drop-shadow(0 0 1px ${colors.fontColor1})`,
+                                        }}><polyline className="st0" points="3.49,43.76 1.78,54.07 12.39,52.66 52.53,12.48 43.67,3.58 43.67,3.58 3.49,43.76" /><line className="st0" x1="46.05" y1="18.68" x2="37.32" y2="9.95" /></svg>
+                                </a>
                             </div>
                             <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
                             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
@@ -131,6 +136,7 @@ export const query = graphql`
       fields {
         slug
       }
+      fileAbsolutePath
       frontmatter {
         title
       }
