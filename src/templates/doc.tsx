@@ -75,10 +75,10 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
                 </Helmet>
                 <Container>
                     <Logos logos={[
-                        [-30, 60, 25],
-                        [1040, 130, 120],
-                        [-120, 630, 70],
-                        [40, 830, 120]
+                        [-30, 60, 12],
+                        [1040, 130, 60],
+                        [-120, 630, 35],
+                        [40, 830, 60]
                     ]} />
                     <DocContent>
                         <DocSidebar>
@@ -89,8 +89,15 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
                                 <DocTopicChooser />
                             </div>
                         </DocSidebar>
-                        <div className="article">
+                        <div className="article" style={{ position: "relative" }}>
                             <h4 style={{ color: colors.fontColor2, marginBottom: 0, marginTop: 30 }}>Docs</h4>
+                            <div style={{ position: 'absolute', top: 40, right: 0 }} title="Edit Docs">
+                                <a href="https://gitpod.io/#https://github.com/gitpod-io/website/blob/master/src/docs/index.md" aria-label="Edit Docs Button"><svg style={{ height: 30, fill: `${colors.background1}`, stroke: `#fff` }} id="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.12 57.65">
+                                    <polyline className="st0" points="3.49,43.76 1.78,54.07 12.39,52.66 52.53,12.48 43.67,3.58 43.67,3.58 3.49,43.76"
+                                    />
+                                    <line className="st0" x1="46.05" y1="18.68" x2="37.32" y2="9.95" />
+                                </svg></a>
+                            </div>
                             <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
                             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
                                 {menuCtx.prev ? <GatsbyLink to={menuCtx.prev.path} title={menuCtx.prev.title}>&lt; prev</GatsbyLink> : <div />}
@@ -172,18 +179,18 @@ export const DocTopicChooser: React.SFC<DocTopicChooserProps> = () => {
     return (
         <div>
             <select className='secondary' onChange={onSelectTopic}>
-            <option value='#' selected={true}>Select A Topic</option>
-            {MENU.map(m => {
-                return <>
-                    <option key={m.path} value={m.path}>{m.title}</option>
-                    {
-                        (m.subMenu || []).map(m =>
-                            <option key={m.path} value={m.path}>&nbsp;&nbsp;&nbsp;&nbsp;{m.title}</option>
-                        )
-                    }
-                </>
-            })}
-        </select>
+                <option value='#' selected={true}>Select A Topic</option>
+                {MENU.map(m => {
+                    return <>
+                        <option key={m.path} value={m.path}>{m.title}</option>
+                        {
+                            (m.subMenu || []).map(m =>
+                                <option key={m.path} value={m.path}>&nbsp;&nbsp;&nbsp;&nbsp;{m.title}</option>
+                            )
+                        }
+                    </>
+                })}
+            </select>
         </div>
     )
 }
