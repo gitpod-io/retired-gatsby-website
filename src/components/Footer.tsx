@@ -62,8 +62,9 @@ const Footer: React.SFC<FooterProps> = () => {
                 <Link to="/pricing">Pricing</Link>
                 <Link to="/docs">Docs</Link>
                 <Link to="/blog">Blog</Link>
-                <a href="https://status.gitpod.io" target="_blank">Status</a>
+                <Link to="/careers">Careers</Link>
                 <Link to="/pricing#enterprise">Enterprise</Link>
+                <a href="https://status.gitpod.io" target="_blank">Status</a>
             </FooterMenu>
             <div style={{ height: 40, display: 'flex', fontSize: 10, color: colors.fontColor1 }}>
                 <p style={{padding: 10}}>Stay connected</p>

@@ -93,7 +93,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        exclude: ['/careers', '/education'],
+        exclude: ['/education'],
       },
     },
   ]
