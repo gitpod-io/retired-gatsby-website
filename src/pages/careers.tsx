@@ -63,7 +63,7 @@ const CareersPage: React.SFC<{}> = () => (
                     {},
                     { right: 256 },
                     {},
-                    { right: 150 },
+                    { right: 177 },
                     { up: 70 },
                     { right: 860 },
 
@@ -86,53 +86,6 @@ const CareersPage: React.SFC<{}> = () => (
                     <li>People who care<br/>&amp;<br/>Regular team events</li>
                     <li>Worthy mission<br/>&amp;<br/>Effective pragmatism</li>
                 </FeatureList>
-            </Container>
-            <Container>
-                <h2>Job openings</h2>
-                <ExpandableJob jobTitle="Gitpod Developer Advocate">
-                    <div>
-                        <p>As a Developer Advocate, you will connect with developers around the globe, try out new frameworks and technologies, and share what you've learned with the world. You will craft great resources to help developers build with Gitpod, including automated setups, sample projects, blog posts, and documentation. You'll help grow our developer community, champion the interests of our users and translate their feedback into actionable product insights.</p>
-                        <h4>What you'll do:</h4>
-                        <ul>
-                            <li>Create momentum and drive adoption of Gitpod through your interactions with developers</li>
-                            <li>Champion Gitpod in person and online by presenting at meetups, conferences, writing technical tutorials, publishing articles and videos</li>
-                            <li>Build inspiring demos, sample apps, and help continuously improve the developer experience of Gitpod</li>
-                            <li>Identify strategic partnership opportunities to grow our developer community</li>
-                            <li>Influence the direction of Gitpod's development by gathering insights from our developer community</li>
-                            <li>Engage with developers to help them get the most out of Gitpod</li>
-                        </ul>
-                        <h4>What we're looking for:</h4>
-                        <ul>
-                            <li>Creative, empathetic, communicative, and clever</li>
-                            <li>Confident and comfortable presenting to different types of audiences, at meetups or conferences</li>
-                            <li>Adept at communicating technically complicated topics simply and elegantly</li>
-                            <li>Hands-on developer who is comfortable with full-stack development</li>
-                            <li>Intellectually curious, with great problem-solving skills</li>
-                            <li>Happy to travel regularly</li>
-                        </ul>
-                    </div>
-                </ExpandableJob>
-                <ExpandableJob jobTitle='Gitpod Sales Engineer'>
-                    <p>As a Sales Engineer, you will take control of our inbound marketing, and leverage Gitpod to help software organizations build better software faster. You will engage with Enterprises and Universities around the globe, understand the way they build software and identify their needs and bottlenecks, then design Gitpod-based solutions to make their developers happy and more productive.</p>
-                    <h4>What you'll do</h4>
-                    <ul>
-                        <li>Engage with organizations to identify their development needs and bottlenecks</li>
-                        <li>Follow-up on leads from inbound marketing and conferences</li>
-                        <li>Set up proof-of-concepts and work closely with customers to answer questions and solve problems</li>
-                        <li>Confer with customers and engineering to deliver great solutions that meet requirements and technical constraints</li>
-                        <li>Tailor demonstrations for customers, conferences, and special events</li>
-                    </ul>
-                    <h4>What we're looking for</h4>
-                    <ul>
-                        <li>Prior experience with sales activities in enterprise or academia</li>
-                        <li>Ability to creatively explain and present complex concepts in an easy to understand manner</li>
-                        <li>Solid technical background with hands-on experience in software development and web technologies</li>
-                    </ul>
-                </ExpandableJob>
-                <p style={{ margin: "70px 0 40px 0" }}>
-                    If no current Job offer fits your qualifications, but you're totally in love with Gitpod and want to help us improving it,
-                        please send your application at <a href="mailto:contact@gitpod.io">contact@gitpod.io</a> anyway. We're curious to hear about you.
-                    </p>
             </Container>
             <Container>
                 <SectionAbout>
@@ -242,6 +195,53 @@ const CareersPage: React.SFC<{}> = () => (
                         </div>
                     </div>
                 </SectionAbout>
+            </Container>
+            <Container>
+                <h2>Job openings</h2>
+                <ExpandableJob jobTitle="Gitpod Developer Advocate">
+                    <div>
+                        <p>As a Developer Advocate, you will connect with developers around the globe, try out new frameworks and technologies, and share what you've learned with the world. You will craft great resources to help developers build with Gitpod, including automated setups, sample projects, blog posts, and documentation. You'll help grow our developer community, champion the interests of our users and translate their feedback into actionable product insights.</p>
+                        <h4>What you'll do:</h4>
+                        <ul>
+                            <li>Create momentum and drive adoption of Gitpod through your interactions with developers</li>
+                            <li>Champion Gitpod in person and online by presenting at meetups, conferences, writing technical tutorials, publishing articles and videos</li>
+                            <li>Build inspiring demos, sample apps, and help continuously improve the developer experience of Gitpod</li>
+                            <li>Identify strategic partnership opportunities to grow our developer community</li>
+                            <li>Influence the direction of Gitpod's development by gathering insights from our developer community</li>
+                            <li>Engage with developers to help them get the most out of Gitpod</li>
+                        </ul>
+                        <h4>What we're looking for:</h4>
+                        <ul>
+                            <li>Creative, empathetic, communicative, and clever</li>
+                            <li>Confident and comfortable presenting to different types of audiences, at meetups or conferences</li>
+                            <li>Adept at communicating technically complicated topics simply and elegantly</li>
+                            <li>Hands-on developer who is comfortable with full-stack development</li>
+                            <li>Intellectually curious, with great problem-solving skills</li>
+                            <li>Happy to travel regularly</li>
+                        </ul>
+                    </div>
+                </ExpandableJob>
+                <ExpandableJob jobTitle='Gitpod Sales Engineer'>
+                    <p>As a Sales Engineer, you will take control of our inbound marketing, and leverage Gitpod to help software organizations build better software faster. You will engage with Enterprises and Universities around the globe, understand the way they build software and identify their needs and bottlenecks, then design Gitpod-based solutions to make their developers happy and more productive.</p>
+                    <h4>What you'll do</h4>
+                    <ul>
+                        <li>Engage with organizations to identify their development needs and bottlenecks</li>
+                        <li>Follow-up on leads from inbound marketing and conferences</li>
+                        <li>Set up proof-of-concepts and work closely with customers to answer questions and solve problems</li>
+                        <li>Confer with customers and engineering to deliver great solutions that meet requirements and technical constraints</li>
+                        <li>Tailor demonstrations for customers, conferences, and special events</li>
+                    </ul>
+                    <h4>What we're looking for</h4>
+                    <ul>
+                        <li>Prior experience with sales activities in enterprise or academia</li>
+                        <li>Ability to creatively explain and present complex concepts in an easy to understand manner</li>
+                        <li>Solid technical background with hands-on experience in software development and web technologies</li>
+                    </ul>
+                </ExpandableJob>
+                <p style={{ margin: "70px 0 40px 0" }}>
+                    If no current Job offer fits your qualifications, but you're totally in love with Gitpod and want to help us improving it,
+                        please send your application at <a href="mailto:contact@gitpod.io">contact@gitpod.io</a> anyway. We're curious to hear about you.
+                    </p>
             </Container>
         </Page>
     </IndexLayout >
