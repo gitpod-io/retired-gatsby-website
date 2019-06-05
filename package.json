@@ -60,7 +60,7 @@
     "typescript": "3.5.1"
   },
   "devDependencies": {
-    "@types/classnames": "2.2.7",
+    "@types/classnames": "2.2.8",
     "@types/node": "10.14.8",
     "@types/react": "16.8.19",
     "@types/react-dom": "16.8.4",
