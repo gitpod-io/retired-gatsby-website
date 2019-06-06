@@ -72,8 +72,8 @@ const CareersPage: React.SFC<{}> = () => (
                     [1050, 125, 40],
                 ]} />
                 <div style={{ marginTop: 60 }}>
-                    <h4 style={{ color: colors.fontColor2 }}>We're hiring!</h4>
-                    <h1>Join the Gitpod team</h1>
+                    <h4 style={{ color: colors.fontColor2 }}>Help us build your favorite dev environment!</h4>
+                    <h1>Join the team</h1>
                     <UnderLine />
                 </div>
                 <p style={{ marginBottom: 150 }} >
@@ -82,7 +82,7 @@ const CareersPage: React.SFC<{}> = () => (
                 </p>
                 <FeatureList className='flex hidden-md-down' style={{ justifyContent: 'space-between', marginBottom: '2rem', alignItems: 'flex-end' }}>
                     <li>Flat hierarchy<br/>&amp;<br/>Short decision-paths</li>
-                    <li>Flexible working hours<br/>&amp;<br/>Remote-friendly</li>
+                    <li>Work remotely<br/>&amp;<br/>Flexible working hours</li>
                     <li>People who care<br/>&amp;<br/>Regular team events</li>
                     <li>Worthy mission<br/>&amp;<br/>Effective pragmatism</li>
                 </FeatureList>
@@ -131,7 +131,8 @@ const CareersPage: React.SFC<{}> = () => (
                                     <path d="M348.5,138.516c10.388,4.863,19.877,3.947,28.8.227,9.031-3.765,17.537-10.409,25.813-16.876,2.564-2,5.108-3.991,7.645-5.879l-13.224,4.161,6.5-15.435-.992.3a40.718,40.718,0,0,0-6.177,6.772,74.89,74.89,0,0,0-8.686,16.048c-1.816,1.2-3.651,2.33-5.5,3.365a87.207,87.207,0,0,1,10.579-21.121c4.424-6.181,9.429-10.552,15.026-13.066,5.723-2.57,11.873-2.944,18.588-1.324,3.661.726,27.2,12.4,20.866,12.006-13.7-5.038-27.194,5.527-40.838,16.208l-1.365,1.067c-8.468,6.617-17.167,13.413-26.564,17.389-9.495,4.017-19.646,5.141-30.868.3l-.423-.183-.092-.456c-.087-.429-.159-.867-.215-1.31s-.1-.9-.125-1.337l-.084-1.473Z" transform="translate(-332.287 -85.694)" fill="#fff" fill-rule="evenodd" />
                                 </svg>
                             </div>
-                            <p>TypeFox is the company behind Gitpod. A team of developer tool specialists and longtime contributors to many open-source projects, we're a driving force behind the Language Server Protocol and initiators of Eclipse Theia, the next generation IDE that powers Gitpod.</p>
+                            <p>TypeFox is the young bootstrapped start-up behind Gitpod.<br/><br/>
+                            Driven by technical founders and a passionate team, we want to make the the lives of developers better. We are contributing to many open-source projects and are the initiators of the Theia IDE, the open-source, vendor neutral, cloud &amp; desktop IDE that powers Gitpod.</p>
                         </div>
                         <div className='col'>
                             <div className="svg-container">
@@ -191,14 +192,37 @@ const CareersPage: React.SFC<{}> = () => (
                                     </g>
                                 </svg>
                             </div>
-                            <p>Come join a young tech-driven team, with the mission of making software development better for everyone, and strong values around openness, honesty, and effective pragmatism. We're convinced that continuous learning and exploring is the way to build the best solutions sustainably, therefore we're always curious about new approaches.</p>
+                            <p>Come join a young tech-driven team, with the mission of making software development better for everyone, and strong values around openness, honesty, and effective pragmatism. <br/><br/>
+                            We're convinced that continuous learning and exploring is the way to build the best solutions sustainably, therefore we're always curious about new approaches.</p>
                         </div>
                     </div>
                 </SectionAbout>
             </Container>
             <Container>
-                <h2>Job openings</h2>
-                <ExpandableJob jobTitle="Gitpod Developer Advocate">
+                <h2>Current job openings</h2>
+                <ExpandableJob jobTitle="Developer Tools Engineer 👩🏻‍💻">
+                    <div>
+                        <p>As a Developer Tools Engineer, you will help making Gitpod and Theia a frictionless developer experience. You will collaborate with engineers around the globe. Become a professional open-source developer and work with a highly specialized and well experienced team.</p>
+                        <h4>What you'll do:</h4>
+                        <ul>
+                            <li>Use the tools you build to build the tools you use.</li>
+                            <li>Implement the features you always wanted to have using TypeScript &amp; Go.</li>
+                            <li>Participate in product design and direction of Gitpod and Theia.</li>
+                            <li>Develop customized versions of Gitpod and Theia for our clients targeting interesting vertical domains (e.g. embedded, aerospace, education)</li>
+                            <li>Measure and optimize our applications for maximum speed and scalability</li>
+                            <li>Engage with developers to help them get the most out of Gitpod</li>
+                        </ul>
+                        <h4>What we're looking for:</h4>
+                        <ul>
+                            <li>Self responsible acting and decision making</li>
+                            <li>Fast and confident learner</li>
+                            <li>Hands-on developer who is comfortable with full-stack development</li>
+                            <li>More than 4 years of experience as a developer</li>
+                            <li>Creative, communicative, and clever</li>
+                        </ul>
+                    </div>
+                </ExpandableJob>
+                <ExpandableJob jobTitle="Developer Advocate 🥑">
                     <div>
                         <p>As a Developer Advocate, you will connect with developers around the globe, try out new frameworks and technologies, and share what you've learned with the world. You will craft great resources to help developers build with Gitpod, including automated setups, sample projects, blog posts, and documentation. You'll help grow our developer community, champion the interests of our users and translate their feedback into actionable product insights.</p>
                         <h4>What you'll do:</h4>
@@ -221,7 +245,25 @@ const CareersPage: React.SFC<{}> = () => (
                         </ul>
                     </div>
                 </ExpandableJob>
-                <ExpandableJob jobTitle='Gitpod Sales Engineer'>
+                <ExpandableJob jobTitle='Cloud Operations Engineer ⛅️'>
+                    <p>As a Cloud Operations Engineer, you will help improve and operate the microservice architecture behind Gitpod, automate monitoring and install and support on-premise installations.</p>
+                    <h4>What you'll do</h4>
+                    <ul>
+                        <li>Ensure reliable operation for Gitpod production environments</li>
+                        <li>Diagnose and troubleshooting technical issues, including network configuration</li>
+                        <li>Collect, analyze, and summarize operating and engineering data and trends</li>
+                        <li>Implement security and data protection</li>
+                        <li>Develop and improve infrastructure automation and continuous deployment pipelines</li>
+                    </ul>
+                    <h4>What we're looking for</h4>
+                    <ul>
+                        <li>Experience with Kubernetes, VMs and containers</li>
+                        <li>Linux / Unix and networking know how</li>
+                        <li>Programming experience with Go, Rust or similar.</li>
+                        <li>Creative, clever and nice</li>
+                    </ul>
+                </ExpandableJob>
+                <ExpandableJob jobTitle='Sales Engineer 🤝'>
                     <p>As a Sales Engineer, you will take control of our inbound marketing, and leverage Gitpod to help software organizations build better software faster. You will engage with Enterprises and Universities around the globe, understand the way they build software and identify their needs and bottlenecks, then design Gitpod-based solutions to make their developers happy and more productive.</p>
                     <h4>What you'll do</h4>
                     <ul>
