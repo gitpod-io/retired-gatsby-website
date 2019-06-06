@@ -26,7 +26,7 @@ const FooterInner = styled(Container)`
 `
 
 const FooterMenu = styled.div`
-    margin-top: 10px;
+    margin-top: 12px;
     @media(min-width: ${getEmSize(breakpoints.sm)}em) {
         height: 40px;
     }
@@ -59,10 +59,10 @@ const SocialImg = styled.img`
 
 const SocialLinks = styled.div`
     display: flex;
-    height: 40px;
+    height: 45px;
     margin: 10px 0;
     font-size: 10px;
-    color: colors.fontColor1;
+    color: ${colors.fontColor1};
 `
 
 interface FooterProps {
@@ -88,7 +88,7 @@ const Footer: React.SFC<FooterProps> = () => {
                 <a href="https://spectrum.chat/gitpod"><SocialImg alt="Spectrum Icon" src={spectrum}/></a>
                 <a href="https://twitter.com/gitpod"><SocialImg alt="Twitter Icon" src={twitter}/></a>
             </SocialLinks>
-            <div style={{ height: 40, fontSize: 13, color: colors.fontColor1, textAlign: 'center' }}>
+            <div style={{ height: 50, fontSize: 13, color: colors.fontColor1, textAlign: 'center' }}>
                 Copyright © 2019&nbsp;<a href="https://typefox.io" target="_blank">TypeFox</a> All Rights Reserved
                 <div style={{marginTop: 5}}>
                     <Link to="/imprint">Imprint</Link>&nbsp; | &nbsp;<Link to="/privacy">Privacy Policy</Link>&nbsp; | &nbsp;<Link to="/terms">Terms of Service</Link>
