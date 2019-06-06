@@ -63,12 +63,11 @@ class ExpandableJob extends React.Component<ExpandableJobProps, ExpandableJobSta
         const { jobTitle, children } = this.props
         return (
             <Job>
-                <h3 onClick={this.toggleIsDisplayed} style={{ cursor: 'pointer' }}>{jobTitle}</h3>
-                <div onClick={this.toggleIsDisplayed} style={{ cursor: 'pointer' }}>
-                    {this.state.isDisplayed && (<svg xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 59.414 59.414" style={{ enableBackground: 'new 0 0 59.414 59.414' }} xmlSpace="preserve" width="512px" height="512px"><g transform="matrix(-1, 1.22465e-16, -1.22465e-16, -1, 59.414, 59.414)"><link type="text/css" id="dark-mode" rel="stylesheet" /><polygon points="29.707,45.268 0,15.561 1.414,14.146 29.707,42.439 58,14.146 59.414,15.561  " data-original="#48A0DC" className="active-path" data-old_color="#6d6d6d" fill="#6d6d6d" /></g></svg>
-                    ) || (<svg xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 59.414 59.414" style={{ enableBackground: 'new 0 0 59.414 59.414' }} xmlSpace="preserve" width="512px" height="512px"><link type="text/css" id="dark-mode" rel="stylesheet" /><polygon points="29.707,45.268 0,15.561 1.414,14.146 29.707,42.439 58,14.146 59.414,15.561  " data-original="#48A0DC" className="active-path" data-old_color="#6d6d6d" fill="#6d6d6d" /></svg>)}
-                </div>
+                <h3 onClick={this.toggleIsDisplayed} style={{ cursor: 'pointer' }}><span>{jobTitle}</span> <span style={{float: 'right', fontWeight: 600}}>{this.state.isDisplayed && 'v' || <span>&#652;</span>}</span></h3>
                 <div style={this.state.isDisplayed ? {} : { display: 'none' }}>{children}</div>
+                <div style={this.state.isDisplayed ? {} : { display: 'none' }}>
+                    <h4>Interested? <a href={"mailto:contact@gitpod.io?subject=Application as " + jobTitle}>Send us a mail!</a></h4>
+                </div>
             </Job>
         )
     }
