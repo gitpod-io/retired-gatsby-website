@@ -3,7 +3,8 @@ import styled from '@emotion/styled'
 import { transparentize } from 'polished'
 import { Link } from 'gatsby'
 
-import { dimensions, colors } from '../styles/variables'
+import { dimensions, colors, breakpoints } from '../styles/variables'
+import { getEmSize } from '../styles/mixins'
 import Container from './Container'
 import twitter from '../resources/twitter.svg';
 import github from '../resources/github.svg';
@@ -25,14 +26,21 @@ const FooterInner = styled(Container)`
 `
 
 const FooterMenu = styled.div`
-    height: 40px;
-    margin-top: 15px;
-
+    margin-top: 10px;
+    @media(min-width: ${getEmSize(breakpoints.sm)}em) {
+        height: 40px;
+    }
+    @media(max-width: ${getEmSize(breakpoints.sm) - 1}em) {
+        width: 100%;
+    }
     & a {
         color: ${colors.fontColor1};
         font-size: 1rem;
         font-weight: 400;
-
+        @media(max-width: ${getEmSize(breakpoints.sm) - 1}em) {
+            display: block;
+            margin-bottom: .6rem;
+        }
         :not(:last-child) {
             padding-right: 20px;
         }
@@ -47,6 +55,14 @@ const FooterMenu = styled.div`
 const SocialImg = styled.img`
   height: 20px;
   margin: 8px;
+`
+
+const SocialLinks = styled.div`
+    display: flex;
+    height: 40px;
+    margin: 10px 0;
+    font-size: 10px;
+    color: colors.fontColor1;
 `
 
 interface FooterProps {
@@ -66,14 +82,17 @@ const Footer: React.SFC<FooterProps> = () => {
                 <Link to="/pricing#enterprise">Enterprise</Link>
                 <a href="https://status.gitpod.io" target="_blank">Status</a>
             </FooterMenu>
-            <div style={{ height: 40, display: 'flex', fontSize: 10, color: colors.fontColor1 }}>
+            <SocialLinks>
                 <p style={{padding: 10}}>Stay connected</p>
                 <a href="https://github.com/gitpod-io/gitpod"><SocialImg alt="GitHub Icon" src={github}/></a>
                 <a href="https://spectrum.chat/gitpod"><SocialImg alt="Spectrum Icon" src={spectrum}/></a>
                 <a href="https://twitter.com/gitpod"><SocialImg alt="Twitter Icon" src={twitter}/></a>
-            </div>
-            <div style={{ height: 40, marginTop: 15, display: 'flex', fontSize: 10, color: colors.fontColor1 }}>
-                Copyright © 2019&nbsp;<a href="https://typefox.io" target="_blank">TypeFox</a>&nbsp;| All Rights Reserved |&nbsp;<Link to="/imprint">Imprint</Link>&nbsp;|&nbsp;<Link to="/privacy">Privacy Policy</Link>&nbsp;|&nbsp;<Link to="/terms">Terms of Service</Link>
+            </SocialLinks>
+            <div style={{ height: 40, fontSize: 13, color: colors.fontColor1, textAlign: 'center' }}>
+                Copyright © 2019&nbsp;<a href="https://typefox.io" target="_blank">TypeFox</a> All Rights Reserved
+                <div style={{marginTop: 5}}>
+                    <Link to="/imprint">Imprint</Link>&nbsp; | &nbsp;<Link to="/privacy">Privacy Policy</Link>&nbsp; | &nbsp;<Link to="/terms">Terms of Service</Link>
+                </div>
             </div>
         </FooterInner>
     </StyledFooter>
