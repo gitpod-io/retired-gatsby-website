@@ -1,5 +1,6 @@
 import * as React from 'react'
-
+import DownArrow from '../resources/down-arrow.svg';
+import UpArrow from '../resources/up-arrow.svg';
 import styled from '@emotion/styled';
 import { colors } from '../styles/variables';
 
@@ -25,7 +26,7 @@ const Job = styled.div`
         &::before {
             content: '';
             position: absolute;
-            top: 50%;
+            top: 11px;
             left: -40px;
             display: block;
             background: #1aa6e4;
@@ -38,6 +39,10 @@ const Job = styled.div`
         top: 30px;
         right: -205px;
         height: 40px;
+    }
+
+    img {
+        height: 25px;
     }
 `
 
@@ -63,7 +68,7 @@ class ExpandableJob extends React.Component<ExpandableJobProps, ExpandableJobSta
         const { jobTitle, children } = this.props
         return (
             <Job>
-                <h3 onClick={this.toggleIsDisplayed} style={{ cursor: 'pointer' }}><span>{jobTitle}</span> <span style={{float: 'right', fontWeight: 600}}>{this.state.isDisplayed && 'v' || <span>&#652;</span>}</span></h3>
+                <h3 onClick={this.toggleIsDisplayed} style={{ cursor: 'pointer' }}><span>{jobTitle}</span> <span style={{ float: 'right', fontWeight: 600 }}>{this.state.isDisplayed && <img src={UpArrow} alt="Hide description Arrow" aria-label="Hide description button" /> || <img src={DownArrow} alt="Show description Arrow" aria-label="Show description button" />}</span></h3>
                 <div style={this.state.isDisplayed ? {} : { display: 'none' }}>{children}</div>
                 <div style={this.state.isDisplayed ? {} : { display: 'none' }}>
                     <h4>Interested? <a href={"mailto:contact@gitpod.io?subject=Application as " + jobTitle}>Send us a mail!</a></h4>
