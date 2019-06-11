@@ -132,7 +132,7 @@ const CareersPage: React.SFC<{}> = () => (
                                 </svg>
                             </div>
                             <p>TypeFox is the young bootstrapped start-up behind Gitpod.<br/><br/>
-                            Driven by technical founders and a passionate team, we want to make the the lives of developers better. We are contributing to many open-source projects and are the initiators of the Theia IDE, the open-source, vendor neutral, cloud &amp; desktop IDE that powers Gitpod.</p>
+                            Driven by technical founders and a passionate team, we want to make the lives of developers better. We are contributing to many open-source projects and are the initiators of the Theia IDE, the open-source, vendor neutral, cloud &amp; desktop IDE that powers Gitpod.</p>
                         </div>
                         <div className='col'>
                             <div className="svg-container">
