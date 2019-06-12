@@ -82,13 +82,13 @@ const CareersPage: React.SFC<{}> = () => (
                     [1050, 125, 40],
                 ]} />
                 <div style={{ marginTop: 60 }}>
-                    <h4 style={{ color: colors.fontColor2 }}>Help us build your favorite dev environment!</h4>
+                    <h4 style={{ color: colors.fontColor2 }}>Help us build your favourite developer environment!</h4>
                     <h1>Join the team</h1>
                     <UnderLine />
                 </div>
                 <p style={{ marginBottom: 150 }} >
                     Gitpod aims to make development better for everyone, and it's built on a culture of trust and empathy.<br />
-                    Help us shape its future, from Berlin, Paris, or anywhere in the world!
+                    Help us shape its future in Berlin, Paris, or anywhere in the world!
                 </p>
                 <FeatureList className='flex hidden-md-down' style={{ justifyContent: 'space-between', marginBottom: '2rem', alignItems: 'flex-end' }}>
                     <li>Flat hierarchy<br />&amp;<br />Short decision-paths</li>
@@ -130,7 +130,7 @@ const CareersPage: React.SFC<{}> = () => (
                                     />
                                 </svg>
                             </div>
-                            <p>Gitpod is a one-click online IDE that launches ready-to-code environments from any GitHub page. Automating dev environments eliminates hours of tedious setup time, and makes development more reproducible and scalable.<br /><br />
+                            <p>Gitpod is a one-click online IDE that launches ready-to-code workspaces from any GitHub page. Automating developer environments eliminates hours of tedious setup time, and makes development more reproducible and scalable.<br /><br />
                                 Launched in April 2019, Gitpod is a very young product which gives you lots of opportunities to shape its future.</p>
                         </div>
                         <div className='col'>
@@ -142,7 +142,7 @@ const CareersPage: React.SFC<{}> = () => (
                                 </svg>
                             </div>
                             <p>TypeFox is the young bootstrapped start-up behind Gitpod.<br /><br />
-                                Driven by technical founders and a passionate team, we want to make the lives of developers better. We are contributing to many open-source projects and are the initiators of the Theia IDE, the open-source, vendor neutral, cloud &amp; desktop IDE that powers Gitpod.</p>
+                                Driven by technical founders and a passionate team, we want to make the lives of developers better. We contribute to many open-source projects and are the initiators of Theia IDE, the open-source, vendor neutral, cloud &amp; desktop IDE that powers Gitpod.</p>
                         </div>
                         <div className='col'>
                             <div className="svg-container">
@@ -204,13 +204,13 @@ const CareersPage: React.SFC<{}> = () => (
             </Container>
             <Container>
                 <h2>Current job openings</h2>
-                <ExpandableJob jobTitle="Developer Tools Engineer 👩🏻‍💻">
+                <ExpandableJob jobTitle="Developer Tools Engineer 🛠">
                     <div>
-                        <p>As a Developer Tools Engineer, you will help making Gitpod and Theia a frictionless developer experience. You will collaborate with engineers around the globe. Become a professional open-source developer and work with a highly specialized and well experienced team.</p>
+                        <p>As a Developer Tools Engineer, you will help make Gitpod and Theia a frictionless developer experience, and collaborate with engineers around the globe. Become a professional open-source developer and work with a highly specialized and experienced team.</p>
                         <h4>What you'll do:</h4>
                         <ul>
                             <li>Use the tools you build to build the tools you use.</li>
-                            <li>Implement the features you always wanted to have using TypeScript &amp; Go.</li>
+                            <li>Implement the features you've always wanted using TypeScript &amp; Go.</li>
                             <li>Participate in product design and direction of Gitpod and Theia.</li>
                             <li>Develop customized versions of Gitpod and Theia for our clients targeting interesting vertical domains (e.g. embedded, aerospace, education)</li>
                             <li>Measure and optimize our applications for maximum speed and scalability</li>
@@ -228,7 +228,7 @@ const CareersPage: React.SFC<{}> = () => (
                 </ExpandableJob>
                 <ExpandableJob jobTitle="Developer Advocate 🥑">
                     <div>
-                        <p>As a Developer Advocate, you will connect with developers around the globe, try out new frameworks and technologies, and share what you've learned with the world. You will craft great resources to help developers build with Gitpod, including automated setups, sample projects, blog posts, and documentation. You'll help grow our developer community, champion the interests of our users and translate their feedback into actionable product insights.</p>
+                        <p>As a Developer Advocate, you will connect with developers around the globe, try out new frameworks and technologies, and share what you've learned with the world. You will craft great resources to help developers build with Gitpod, including automated dev setups, sample projects, blog posts, and documentation. You will help grow our developer community, champion the interests of our users and translate their feedback into actionable product insights.</p>
                         <h4>What you'll do:</h4>
                         <ul>
                             <li>Create momentum and drive adoption of Gitpod through your interactions with developers</li>
@@ -241,7 +241,7 @@ const CareersPage: React.SFC<{}> = () => (
                         <h4>What we're looking for:</h4>
                         <ul>
                             <li>Creative, empathetic, communicative, and clever</li>
-                            <li>Confident and comfortable presenting to different types of audiences, at meetups or conferences</li>
+                            <li>Comfortable presenting to different types of audiences, at meetups or conferences</li>
                             <li>Adept at communicating technically complicated topics simply and elegantly</li>
                             <li>Hands-on developer who is comfortable with full-stack development</li>
                             <li>Intellectually curious, with great problem-solving skills</li>
@@ -250,11 +250,11 @@ const CareersPage: React.SFC<{}> = () => (
                     </div>
                 </ExpandableJob>
                 <ExpandableJob jobTitle='Cloud Operations Engineer ⛅️'>
-                    <p>As a Cloud Operations Engineer, you will help improve and operate the microservice architecture behind Gitpod, automate monitoring and install and support on-premise installations.</p>
+                    <p>As a Cloud Operations Engineer, you will help improve and operate the globally distributed Kubernetes clusters behind Gitpod, automate monitoring and incident response, and install and support on-premise installations.</p>
                     <h4>What you'll do</h4>
                     <ul>
                         <li>Ensure reliable operation for Gitpod production environments</li>
-                        <li>Diagnose and troubleshooting technical issues, including network configuration</li>
+                        <li>Diagnose and troubleshoot technical issues, including network configuration</li>
                         <li>Collect, analyze, and summarize operating and engineering data and trends</li>
                         <li>Implement security and data protection</li>
                         <li>Develop and improve infrastructure automation and continuous deployment pipelines</li>
@@ -263,15 +263,15 @@ const CareersPage: React.SFC<{}> = () => (
                     <ul>
                         <li>Experience with Kubernetes, VMs and containers</li>
                         <li>Linux / Unix and networking know how</li>
-                        <li>Programming experience with Go, Rust or similar.</li>
+                        <li>Programming experience with Go, Rust or similar</li>
                         <li>Creative, clever and nice</li>
                     </ul>
                 </ExpandableJob>
                 <ExpandableJob jobTitle='Sales Engineer 🤝'>
-                    <p>As a Sales Engineer, you will take control of our inbound marketing, and leverage Gitpod to help software organizations build better software faster. You will engage with Enterprises and Universities around the globe, understand the way they build software and identify their needs and bottlenecks, then design Gitpod-based solutions to make their developers happy and more productive.</p>
+                    <p>As a Sales Engineer, you will take control of our inbound marketing, and leverage Gitpod to help software organizations build better software faster. You will engage with Enterprises and Universities around the globe, understand the way they build software, identify their needs and bottlenecks, and design Gitpod-based solutions that make developers happy and more productive.</p>
                     <h4>What you'll do</h4>
                     <ul>
-                        <li>Engage with organizations to identify their development needs and bottlenecks</li>
+                        <li>Engage with organizations to identify their development process and bottlenecks</li>
                         <li>Follow-up on leads from inbound marketing and conferences</li>
                         <li>Set up proof-of-concepts and work closely with customers to answer questions and solve problems</li>
                         <li>Confer with customers and engineering to deliver great solutions that meet requirements and technical constraints</li>
