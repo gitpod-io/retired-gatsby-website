@@ -168,6 +168,7 @@ const TellMeMore = styled.div`
 
 const SectionBuiltOn = styled.section`
     padding: 80px 0 0 0;
+    margin-bottom: 50px;
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -401,7 +402,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         {},
                         { down: 424 },
                         {},
-                        { down: 377 },
+                        { down: 425 },
                         {}
                     ]} />
                     <Logos logos={[
@@ -530,7 +531,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                                         </svg>
                                     </a>
                                 </div>
-                                <h5>Typescript</h5>
+                                <h5>TypeScript</h5>
                             </div>
                             <div className='col'>
                                 <div className='svg-container'>
@@ -587,7 +588,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                             <div className='col'>
                                 <div className='svg-container'>
                                     <a href="https://www.docker.com/" target="_blank">
-                                        <svg height="512" style={{ transform: 'scale(1.3)' }} viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                        <svg className="docker" height="512" style={{ transform: 'scale(1.3) translateX(4px)' }} viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
                                             <g fill="#099cec" id="_x39_7-docker">
                                                 <rect height="43.193" width="47.506" x="229.999" y="147.225" />
                                                 <rect height="42.69" width="47.506" x="229.999" y="199.115" />
