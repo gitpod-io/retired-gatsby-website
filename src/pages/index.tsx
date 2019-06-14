@@ -483,7 +483,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 <Container>
                     <SectionBuiltOn>
                         <h2>Built On Open Source</h2>
-                         <p>Gitpod is based on industry-proven open source software to bring you a seamless, safe, and blazing fast development experience</p>
+                         <p>Gitpod is based on planet-scale Open-Source technologies to bring you a seamless and familiar development experience.</p>
                         <div className='row'>
                             <div className='col'>
                                 <div className='svg-container'>
