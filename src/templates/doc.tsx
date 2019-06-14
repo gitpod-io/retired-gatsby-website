@@ -61,6 +61,7 @@ interface DocTemplateProps {
             fileAbsolutePath: string,
             frontmatter: {
                 title: string
+                url: string
             }
         }
     }
@@ -70,7 +71,7 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
     const menuCtx = getMenuContext(data.markdownRemark.fields.slug);
     const editUrl = data.markdownRemark.fileAbsolutePath.replace(/^.*\/src\/docs\//, 'https://gitpod.io/#https://github.com/gitpod-io/website/blob/master/src/docs/');
     return (
-        <IndexLayout>
+        <IndexLayout canonical={data.markdownRemark.frontmatter.url || `https://www.gitpod.io${data.markdownRemark.fields.slug}`}>
             <Page>
                 <Helmet>
                     <title>{`Gitpod - ${menuCtx.thisEntry!.title || 'Docs'}`}</title>

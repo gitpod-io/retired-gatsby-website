@@ -2,7 +2,7 @@ import { BoilerPlate } from "../components/Boilerplate";
 
 export default () => {
     return (
-            <BoilerPlate title="Gitpod - Privacy Policy">
+            <BoilerPlate title="Gitpod - Privacy Policy" canonical="https://www.gitpod.io/privacy">
                 <h1>Privacy Policy</h1>
 
                 <p>Below we provide you with an overview of what data we collect for what purpose and how we ensure the protection of

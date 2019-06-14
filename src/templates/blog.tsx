@@ -89,7 +89,7 @@ const TeaserImage = styled.div`
 
 const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
 
-  return (<IndexLayout canonical={data.markdownRemark.frontmatter.url}>
+  return (<IndexLayout canonical={data.markdownRemark.frontmatter.url || `https://www.gitpod.io${data.markdownRemark.fields.slug}`}>
     <Page>
       <Helmet>
         <title>{data.markdownRemark.frontmatter.title}</title>

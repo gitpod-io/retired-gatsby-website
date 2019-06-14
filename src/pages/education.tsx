@@ -91,7 +91,7 @@ const SectionPricing = styled.section`
 `
 
 const EducationPage: React.SFC<{}> = () => (
-    <IndexLayout title="Gitpod - for Education" canonical="https://www.gitpod.io/education">
+    <IndexLayout title="Gitpod for Education" canonical="https://www.gitpod.io/education">
         <Page>
             <Container>
                 <Logos logos={[
@@ -108,8 +108,8 @@ const EducationPage: React.SFC<{}> = () => (
                         </p>
                     </div>
                     <div className='svg-container'>
-                       <img src={puzzleIcon} alt="Puzzle" />  
-                    </div>             
+                       <img src={puzzleIcon} alt="Puzzle" />
+                    </div>
                 </Hero>
             </Container>
             <Container>
@@ -178,7 +178,7 @@ const EducationPage: React.SFC<{}> = () => (
                         <PricingBox
                             title="Classroom"
                              description="For educators\nGet access for your whole class and assign seats to your students."
-                            image={<img src={iconChair} style={{marginTop: 10}} />}
+                            image={<img alt="Seat" src={iconChair} style={{marginTop: 10}} />}
                             price="$9 per seat"
                             featureOne="Unlimited hours"
                             features={[

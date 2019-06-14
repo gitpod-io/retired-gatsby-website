@@ -28,11 +28,11 @@ version your workspace configuration together with your code. If, for example, y
 an old branch that required a different Docker image, it will start with the correct image, since that
 bit of configuration is part of your codebase.
 
-## [definitely-gp](https://github.com/gitpod-io/definitely-gp) Repository
+## <a href="https://github.com/gitpod-io/definitely-gp" target="_blank">definitely-gp</a> Repository
 
 Sometimes you can't check in a `.gitpod.yml` file, for instance because you do not have sufficient
 access rights. However, you can still provide a `.gitpod.yml` file through the central
-[definitely-gp](https://github.com/gitpod-io/definitely-gp) repository. Note that it contains
+<a href="https://github.com/gitpod-io/definitely-gp" target="_blank">definitely-gp</a> repository. Note that it contains
 `.gitpod.yml` files for public GitHub repositories only. To add your `.gitpod.yml` file to `definitely-gp`,
 simply raise a PR.
 

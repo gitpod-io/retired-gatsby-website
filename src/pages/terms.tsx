@@ -4,7 +4,7 @@ import { colors } from "../styles/variables";
 
 export default () => {
     return (
-        <BoilerPlate title="Gitpod - Terms of Service">
+        <BoilerPlate title="Gitpod - Terms of Service" canonical="https://www.gitpod.io/terms">
             <h1>
                 Gitpod Terms of Service
 			</h1>

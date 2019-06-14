@@ -161,23 +161,23 @@ export default class PricingPage extends React.Component<{}, {}> {
                                 <h3>Are You a Student?</h3>
                                 <p>Students get the <strong>unlimited subscription for $9.</strong></p>
                                 <p>Make sure your student email is set as your primary email on GitHub. And please let us know if your educational institution is not correctly recognized.</p>
-                                <a href="mailto:contact@gitpod.io?subject=I'm%20a%20student">
-                                  <button className="primary">I'm a student</button>
+                                <a href="mailto:contact@gitpod.io?subject=I'm%20a%20student" target="_blank">
+                                    <button className="primary">I'm a student</button>
                                 </a>
                             </div>
                         </StudentOffer>
                     </Container>
                 </Teaser>
 
-                <a id="enterprise"/>
+                <a id="enterprise" />
                 <Container>
                     <EnterpriseOffer>
-                        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
-                          <div>
-                            <h2 style={{ rotate: '12', textShadow: '0 0 2px', fontWeight: 100, fontSize: '1.3em', color: colors.brand }}>Coming Soon!</h2>
-                            <h2>Gitpod Enterprise</h2>
-                          </div>
-                          <img style={{maxHeight: 80 }}src={GitLabLogo} alt="GitLab Logo"/>
+                        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <div>
+                                <h2 style={{ rotate: '12', textShadow: '0 0 2px', fontWeight: 100, fontSize: '1.3em', color: colors.brand }}>Coming Soon!</h2>
+                                <h2>Gitpod Enterprise</h2>
+                            </div>
+                            <img style={{ maxHeight: 80 }} src={GitLabLogo} alt="GitLab Logo" />
                         </div>
                         <p><strong>Gitpod Enterprise</strong> will be available shortly and allows to run and host Gitpod on your own servers. Self hosted installations can be configured to work with any <strong>GitHub Enterprise</strong> or <strong>GitLab</strong> instance.</p>
 
@@ -232,13 +232,13 @@ export default class PricingPage extends React.Component<{}, {}> {
                                 </tr>
                             </tbody>
                         </table>
-                        <h3>
+                        <h3 style={{ marginTop: 120 }}>
                             Interested?
                         </h3>
                         <p>
                             Please <a href="mailto:contact@gitpod.io">contact us</a> and we will inform you as soon as <strong>Gitpod Enterprise</strong> is available.
                         </p>
-                        <a href="mailto:contact@gitpod.io">
+                        <a href="mailto:contact@gitpod.io" target="_blank">
                             <button className='primary'>
                                 Let's talk
                             </button>

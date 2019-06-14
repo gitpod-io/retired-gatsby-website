@@ -252,7 +252,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
             </div>
             <div style={{ display: 'flex', minHeight: 280 }}>
                 <UnstyledButton className='hidden-md-down' aria-label="arrow left button" style={{ minWidth: 40, margin: 'auto' }} onClick={() => this.setState({ worksMode: (this.state.worksMode + 2) % 3 })}>
-                    {arrowLeft({ width: 16, cursor: 'pointer', margin: 12 })}
+                    {arrowLeft({ width: 16, cursor: 'pointer', margin: 12, filter: 'none' })}
                 </UnstyledButton>
                 <HowItWorks>
                     <div className={this.state.worksMode === 0 ? 'selected' : ''}>
@@ -293,7 +293,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                     </div>
                 </HowItWorks>
                 <UnstyledButton className='hidden-md-down' aria-label="arrow right button" style={{ minWidth: 40, margin: 'auto' }} onClick={() => this.setState({ worksMode: (this.state.worksMode + 1) % 3 })}>
-                    {arrowRight({ width: 16, cursor: 'pointer', margin: 12 })}
+                    {arrowRight({ width: 16, cursor: 'pointer', margin: 12, filter: 'none' })}
                 </UnstyledButton>
             </div>
             <div className='flex hidden-md-down' style={{ justifyContent: 'center' }}>
@@ -354,8 +354,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                             <circle cx="50" cy="50" r="40" />
                             <polygon points="40,35 40,70 70,50" style={{ fill: colors.fontColor1 }} />
                         </svg>
-                        <img alt="Gitpod Video" style={{ maxWidth: 700 }} src={ScreenshotVideo}>
-                        </img>
+                        <img alt="Gitpod Video" style={{ maxWidth: 700 }} src={ScreenshotVideo} />
                     </VideoLaptop>
                 </Container>
                 <Teaser>

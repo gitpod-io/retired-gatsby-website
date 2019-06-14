@@ -7,7 +7,7 @@ and your code will already be built.
 ## Enable Prebuilt Workspaces
 To enable prebuilt workspaces follow these steps:
 
-1. Go to the [gitpod-io GitHub app](https://github.com/apps/gitpod-io) and click "Configure"
+1. Go to the <a href="https://github.com/apps/gitpod-io" target="_blank">gitpod-io GitHub app</a> and click "Configure"
 2. Choose the organizations/accounts you want to install the Gitpod integration for, and click _install_
 3. You will be forwarded to Gitpod where you need to confirm the installation
 

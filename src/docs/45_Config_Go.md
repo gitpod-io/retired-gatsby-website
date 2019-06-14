@@ -1,13 +1,13 @@
 # Working with Go
 
-Go projects need a [specific workspace layout](https://golang.org/doc/code.html#Organization):
+Go projects need a <a href="https://golang.org/doc/code.html#Organization" target="_blank">specific workspace layout</a>:
 the source code of your repository and its dependencies must be in the directories
 ```sh
 src/[repository-provider]/[repository-owner]/[repository-name]
 ```
 in the `$GOPATH`. Using the `.gitpod.yml` file, you can bring about such a workspace layout. Here is
 how we do that for the example
-[go-gin-app](https://github.com/gitpod-io/definitely-gp/blob/master/go-gin-app/.gitpod.yml) repository:
+<a href="https://github.com/gitpod-io/definitely-gp/blob/master/go-gin-app/.gitpod.yml" target="_blank">go-gin-app</a> repository:
 ```yaml
 ...
 checkoutLocation: "go/src/github.com/demo-apps/go-gin-app"

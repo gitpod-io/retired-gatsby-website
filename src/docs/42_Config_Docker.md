@@ -12,7 +12,7 @@ There are two ways to configure a custom Docker image in your `.gitpod.yml` file
     ```yaml
     image: node:alpine
     ```
-    The official Gitpod Docker images are hosted on [Docker Hub](https://hub.docker.com/u/gitpod/).
+    The official Gitpod Docker images are hosted on <a href="https://hub.docker.com/u/gitpod/" target="_blank">Docker Hub</a>.
 * Reference a Dockerfile next to your `.gitpod.yml` file:
 
     ```yaml
@@ -24,8 +24,8 @@ There are two ways to configure a custom Docker image in your `.gitpod.yml` file
 ## Creating Docker Images for Gitpod
 
 A good starting point for creating custom Docker Images is the
-[`gitpod/workspace-full`](https://hub.docker.com/r/gitpod/workspace-full/) image. It already contains all the tools necessary to work with all languages Gitpod supports.
-You can find the source code in [this GitHub repository](https://github.com/gitpod-io/workspace-images).
+<a href="https://hub.docker.com/r/gitpod/workspace-full/" target="_blank">gitpod/workspace-full</a> image. It already contains all the tools necessary to work with all languages Gitpod supports.
+You can find the source code in <a href="https://github.com/gitpod-io/workspace-images" target="_blank">this GitHub repository</a>.
 
 ```Dockerfile
 FROM gitpod/workspace-full

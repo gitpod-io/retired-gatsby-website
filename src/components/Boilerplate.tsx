@@ -47,7 +47,7 @@ const Wrapper = styled.div`
     }
 `
 
-export const BoilerPlate = (p: {title: string, maxHeight?: number, children: any}) => <IndexLayout title={p.title}>
+export const BoilerPlate = (p: {title: string, maxHeight?: number, children: any, canonical: string}) => <IndexLayout title={p.title} canonical={p.canonical} >
     <Page>
         <Container>
             <Logos logos={[

@@ -24,8 +24,8 @@ The IDE is open-source and based on [Eclipse Theia](50_IDE.md). Theia is highly 
 builds upon mature technologies such as TypeScript, VS Code, Webpack, and Node.js.
 
 This site provides all the details on how to use Gitpod and Theia. If you have questions
-or want discuss something, please join the [Gitpod community on Spectrum](https://spectrum.chat/gitpod).
-
+or want discuss something, please join the
+<a href="https://spectrum.chat/gitpod" target="_blank">Gitpod community on Spectrum</a>.
 ## Architecture
 
 Gitpod.io runs in multiple Kubernetes clusters hosted on Google Cloud infrastructure in three different regions:

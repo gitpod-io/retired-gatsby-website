@@ -84,9 +84,9 @@ const Footer: React.SFC<FooterProps> = () => {
             </FooterMenu>
             <SocialLinks>
                 <p style={{padding: 10}}>Stay connected</p>
-                <a href="https://github.com/gitpod-io/gitpod"><SocialImg alt="GitHub Icon" src={github}/></a>
-                <a href="https://spectrum.chat/gitpod"><SocialImg alt="Spectrum Icon" src={spectrum}/></a>
-                <a href="https://twitter.com/gitpod"><SocialImg alt="Twitter Icon" src={twitter}/></a>
+                <a href="https://github.com/gitpod-io/gitpod" target="_blank"><SocialImg alt="GitHub Icon" src={github}/></a>
+                <a href="https://spectrum.chat/gitpod" target="_blank"><SocialImg alt="Spectrum Icon" src={spectrum}/></a>
+                <a href="https://twitter.com/gitpod" target="_blank"><SocialImg alt="Twitter Icon" src={twitter}/></a>
             </SocialLinks>
             <div style={{ height: 50, fontSize: 13, color: colors.fontColor1, textAlign: 'center' }}>
                 Copyright © 2019&nbsp;<a href="https://typefox.io" target="_blank">TypeFox</a> All Rights Reserved

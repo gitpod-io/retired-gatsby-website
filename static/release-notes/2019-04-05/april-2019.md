@@ -9,7 +9,7 @@ Besides a complete relaunch of the website and app, we have added some very exci
 
 ## GitHub App / Prebuilt Workspaces 🚀
 
-We have been busy developing a [new GitHub app](https://github.com/marketplace/gitpod-io), that once installed on your repository will prebuild your project on every push.
+We have been busy developing a <a href="https://github.com/marketplace/gitpod-io" target="_blank">new GitHub app</a>, that once installed on your repository will prebuild your project on every push.
 On GitHub pull requests this is communicated through a status check.
 
 ![Prebuilt Check on PR](./img/prebuilt-check.png)
@@ -57,7 +57,7 @@ You can also delete your entire account (hopefully the least used feature).
 ## Many Small Improvements
 
 Besides these bigger features, we have fixed many bugs and improved the performance and user experience of Gitpod.
-We have merged 146 PRs in Gitpod and [206 in Theia](https://github.com/theia-ide/theia/pulls?utf8=%E2%9C%93&q=is%3Apr+merged%3A%3E2019-02-05+).
+We have merged 146 PRs in Gitpod and <a href="https://github.com/theia-ide/theia/pulls?utf8=%E2%9C%93&q=is%3Apr+merged%3A%3E2019-02-05+" target="_blank">206 in Theia</a>.
 
 ## What's next?
 
