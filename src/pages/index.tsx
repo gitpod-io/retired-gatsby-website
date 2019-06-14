@@ -136,7 +136,7 @@ const WhyBox = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding: 0 20px;
 
     @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
@@ -438,8 +438,8 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                                     {arrow({ width: 70 })}
                                     <h3>No Setup</h3>
                                     <div style={{ width: 50, height: 3, backgroundColor: colors.brand, marginBottom: 16 }} />
-                                    <p>Start coding right away.</p>
-                                    <p>No more 'works on my machine' situations and hour-long setups.<br /> With Gitpod developer environments are automated, reproducible and versioned.</p>
+                                    <p>Start coding right away.
+                                    No more 'works on my machine' situations and hour-long setups.<br style={{marginBottom: 15}}/> With Gitpod developer environments are automated, reproducible and versioned.</p>
                                 </WhyBox>
                                 <WhyBox>
                                     {rocket({ width: 70 })}

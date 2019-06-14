@@ -93,7 +93,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                 </div>
                 <Container>
                     <GitGraph left={-900} top={40} graph={[
-                        { start: [0, 115] },
+                        { start: [0, 170] },
                         { right: 860 },
                         {},
                         { right: 10 },
@@ -140,12 +140,17 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         { right: 400 },
                         {}
                     ]} />
-                    <Logos logos={[
-                        [420, 70, 20],
-                        [550, -20, 70],
-                        [830, 70, 140],
+                   <Logos logos={[
+                        [600, 80, 20],
+                        [1020, 200, 60],
+                        [970, 700, 30],
+                        [1020, 1200, 60],
+                        [1000, 1800, 30],
+                        [1030, 2300, 50],
+                        [1020, 2800, 45],
+                        [1000, 3400, 30]
                     ]} />
-                    <div style={{ marginTop: 60 }}>
+                    <div style={{ marginTop: 120 }}>
                         <h4 style={{ color: colors.fontColor2 }}>Features</h4>
                         <h1>A Complete Dev Environment In Your Browser</h1>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
@@ -165,7 +170,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                             <button className='primary'>GitHub Marketplace</button>
                         </a>}
                         visual={<img src={PrebuiltWorkspacesImage} alt="prebuilt workspaces" />}>
-                        <p>Gitpod continuously builds your code and pull requests in the background to save your time.</p>
+                        <p>Gitpod continuously builds your code and pull requests in the <br/>background to save your time.</p>
                     </Feature>
                     <Feature
                         title="VS Code"
@@ -182,7 +187,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                             <button className='primary'>Read docs</button>
                         </GatsbyLink>}
                         visual={<img src={TerminalsImage} alt="terminals" />}>
-                        <p>Gitpod instantly starts a machine in the cloud based on a Docker image supporting your project.
+                        <p>Gitpod instantly starts a machine in the cloud based on a Docker image<br/> supporting your project.
                         All required tools are readily installed and configured.</p>
                     </Feature>
 

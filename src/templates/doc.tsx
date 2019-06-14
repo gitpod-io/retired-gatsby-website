@@ -14,7 +14,7 @@ import GatsbyLink from 'gatsby-link';
 import { Helmet } from 'react-helmet';
 
 const DocContent = styled.div`
-    display: flex;
+       display: flex;
 
     @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
         flex-direction: column;
@@ -78,10 +78,14 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
                 </Helmet>
                 <Container>
                     <Logos logos={[
-                        [-30, 60, 12],
+                        [-30, 60, 25],
                         [1040, 130, 60],
                         [-120, 630, 35],
-                        [40, 830, 60]
+                        [1050, 900, 50],
+                        [40, 830, 60],
+                        [-10, 1380, 35],
+                        [40, 1590, 60],
+                        [1050, 1400, 50]
                     ]} />
                     <DocContent>
                         <DocSidebar>
@@ -92,7 +96,7 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
                                 <DocTopicChooser />
                             </div>
                         </DocSidebar>
-                        <div className="article" style={{ position: "relative", flexGrow: 1 }}>
+                        <div className="article" style={{gridColumnStart: 2}}>
                             <h4 style={{ color: colors.fontColor2, marginBottom: 0, marginTop: 30 }}>Docs</h4>
                             <div style={{ position: 'absolute', top: 40, right: 0 }} title="Edit this page in Gitpod">
                                 <a href={editUrl} aria-label="Edit Button" target="_blank">
