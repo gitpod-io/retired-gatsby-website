@@ -119,6 +119,10 @@ export const MENU: MenuEntry[] = [
         "80_Release_Notes",
         [
             M(
+                "June 2019",
+                "release-notes/2019-06-17/june-2019"
+            ),
+            M(
                 "April 2019",
                 "release-notes/2019-04-05/april-2019"
             ),
