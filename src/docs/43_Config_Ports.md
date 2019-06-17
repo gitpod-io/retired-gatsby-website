@@ -19,11 +19,11 @@ HTTP servers.
 
 You can configure entire ranges and tell Gitpod how it should behave when a service in such a range is opened.
 
-For instance, the following configs will stop notifying the user when a service opens on a port between 3000 and 8000:
+For instance, the following configs will stop notifying the user when a service opens on a port between 3000 and 8999:
 ```yaml
 ports:
-  - port: 3000-8000
-  - onOpen: ignore
+  - port: 3000-8999
+    onOpen: ignore
 ```
 
 ## Configure the Opening Behavior
