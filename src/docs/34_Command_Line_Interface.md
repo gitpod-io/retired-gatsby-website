@@ -48,3 +48,13 @@ In Gitpod services/servers running on a port need to be _exposed_ before they be
 Sometimes it is not possible to make a server listen on `0.0.0.0`, e.g. because it is not your code and there are simply no means of configuration.
 
 In that case, `gp forward-port <port>` can be used to forward all traffic form a socket listing on all network interfaces to your process listening on localhost only.
+
+## Await Port
+
+When writing tasks to be executed on workspace start, one sometimes wants to wait for an http service to be available. `gp await-port` does that.
+
+Here's an example that will open a certain path once a service is a available:
+
+```sh
+gp await-port 3000 && gp preview $(gp url 3000)my/path/index.html
+```

@@ -15,6 +15,17 @@ ports:
 Ports are mapped to their own URLs. In a workspace you can get the URL mapped to a port using `gp url <port>`. At the moment you can only expose
 HTTP servers.
 
+## Port Ranges
+
+You can configure entire ranges and tell Gitpod how it should behave when a service in such a range is opened.
+
+For instance, the following configs will stop notifying the user when a service opens on a port between 3000 and 8000:
+```yaml
+ports:
+  - port: 3000-8000
+  - onOpen: ignore
+```
+
 ## Configure the Opening Behavior
 
 When a newly started service gets detected, you usually get a notification telling you about it.
