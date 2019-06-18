@@ -13,7 +13,6 @@ The _command palette_ is at the core of a keyboard-centric interaction, and can 
 looking up available commands and key bindings. It is available through the following two keyboard
 shortcuts:
   - <kbd>F1</kbd>
-  - <kbd>Ctrl+Shift+P</kbd> (<kbd>⌘+Shift+P</kbd> on macOS)
 
 ![](./images/command_palette.jpg)
 
