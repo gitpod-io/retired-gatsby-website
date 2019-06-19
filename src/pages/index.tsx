@@ -377,9 +377,9 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                                 },
                             ]
                         },
-                        { down: 1305 },
+                        { down: 1306 },
                         {},
-                        { down: 650 },
+                        { down: 651 },
                         {},
                         { down: 60 },
                         {
@@ -400,9 +400,9 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         {},
                         { down: 250 },
                         {},
-                        { down: 424 },
+                        { down: 423 },
                         {},
-                        { down: 425 },
+                        { down: 423 },
                         {}
                     ]} />
                     <Logos logos={[
@@ -483,7 +483,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 <Container>
                     <SectionBuiltOn>
                         <h2>Built On Open Source</h2>
-                         <p>Gitpod is based on planet-scale Open-Source technologies to bring you a seamless and familiar development experience.</p>
+                         <p>Gitpod is based on planet-scale open source technologies to bring you a seamless and familiar development experience.</p>
                         <div className='row'>
                             <div className='col'>
                                 <div className='svg-container'>
