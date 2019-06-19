@@ -57,7 +57,7 @@
     "react-helmet": "5.2.1",
     "react-modal-video": "1.2.2",
     "react-tweet-embed": "1.2.2",
-    "typescript": "3.5.1"
+    "typescript": "3.5.2"
   },
   "devDependencies": {
     "@types/classnames": "2.2.8",
