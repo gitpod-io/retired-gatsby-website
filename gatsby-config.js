@@ -2,7 +2,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Gitpod - Frictionless Coding',
+    title: 'Gitpod - Online IDE for GitHub',
     description: 'One-click ready-to-code development environments for GitHub.',
     siteUrl: 'https://www.gitpod.io',
     author: {
