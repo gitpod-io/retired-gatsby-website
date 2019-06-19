@@ -10,8 +10,8 @@
 ## Command Palette
 
 The _command palette_ is at the core of a keyboard-centric interaction, and can be also useful for
-looking up available commands and key bindings. It is available through the following two keyboard
-shortcuts:
+looking up available commands and key bindings. It is available through the following keyboard
+shortcut:
   - <kbd>F1</kbd>
 
 ![](./images/command_palette.jpg)
