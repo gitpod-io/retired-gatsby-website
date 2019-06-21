@@ -206,6 +206,12 @@ const SectionBuiltOn = styled.section`
     }
 `
 
+const UnstyledButton = styled.button`
+    border: none;
+    padding: 0;
+    margin: 0;
+`
+
 export default class IndexPage extends React.Component<{}, IndexPageState> {
 
     protected getBrowserExtension(): string {
@@ -238,15 +244,15 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
             <div className='flex hidden-md-down' style={{ zIndex: 99 }}>
                 {
                     [0, 1, 2].map(idx =>
-                        (<div key={'menu_' + idx} style={{ cursor: 'pointer', paddingTop: 30 }} onClick={() => this.setState({ worksMode: idx })}>
+                        (<UnstyledButton key={'menu_' + idx} style={{ cursor: 'pointer', paddingTop: 30 }} onClick={() => this.setState({ worksMode: idx })}>
                             <h3 style={{ paddingRight: 60, color: this.state.worksMode === idx ? colors.fontColor1 : colors.fontColor2 }} >{modes[idx]}</h3>
-                        </div>))
+                        </UnstyledButton>))
                 }
             </div>
             <div style={{ display: 'flex', minHeight: 280 }}>
-                <div className='hidden-md-down' style={{ minWidth: 40, margin: 'auto' }} onClick={() => this.setState({ worksMode: (this.state.worksMode + 2) % 3 })}>
+                <UnstyledButton className='hidden-md-down' aria-label="arrow left button" style={{ minWidth: 40, margin: 'auto' }} onClick={() => this.setState({ worksMode: (this.state.worksMode + 2) % 3 })}>
                     {arrowLeft({ width: 16, cursor: 'pointer', margin: 12 })}
-                </div>
+                </UnstyledButton>
                 <HowItWorks>
                     <div className={this.state.worksMode === 0 ? 'selected' : ''}>
                         <h3>Prefix any GitHub URL with <strong className="glow">gitpod.io/#</strong></h3>
@@ -285,18 +291,18 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         </div>
                     </div>
                 </HowItWorks>
-                <div className='hidden-md-down' style={{ minWidth: 40, margin: 'auto' }} onClick={() => this.setState({ worksMode: (this.state.worksMode + 1) % 3 })}>
+                <UnstyledButton className='hidden-md-down' aria-label="arrow right button" style={{ minWidth: 40, margin: 'auto' }} onClick={() => this.setState({ worksMode: (this.state.worksMode + 1) % 3 })}>
                     {arrowRight({ width: 16, cursor: 'pointer', margin: 12 })}
-                </div>
+                </UnstyledButton>
             </div>
             <div className='flex hidden-md-down' style={{ justifyContent: 'center' }}>
                 {
                     [0, 1, 2].map(idx =>
-                        (<div key={'_' + idx} onClick={() => this.setState({ worksMode: idx })} style={{ cursor: 'pointer' }}>
+                        (<UnstyledButton aria-label="dot button to toggle the content" key={'_' + idx} onClick={() => this.setState({ worksMode: idx })} style={{ cursor: 'pointer' }}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" style={{ margin: 3 }}>
                                 <circle cx="5" cy="5" r="5" fill={this.state.worksMode === idx ? colors.fontColor1 : colors.fontColor2} />
                             </svg>
-                        </div>))
+                        </UnstyledButton>))
                 }
             </div>
         </div>
