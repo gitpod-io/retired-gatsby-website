@@ -210,6 +210,7 @@ const UnstyledButton = styled.button`
     border: none;
     padding: 0;
     margin: 0;
+    outline: 0;
 `
 
 export default class IndexPage extends React.Component<{}, IndexPageState> {
