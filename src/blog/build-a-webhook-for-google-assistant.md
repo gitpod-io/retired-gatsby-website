@@ -24,7 +24,76 @@ First of all I would like to start this section by saying, I ❤ Gitpod. Gitpod 
 
 I have created a Github repo which will help you get started without any hassle. The repo is basically a boilerplate to get started with building your webhook. The code is written in Node JS, So it would be easier for you to build on top of it if you are already familiar with Node JS. We will be using the [action-on-google](https://www.npmjs.com/package/actions-on-google) Node JS library (This client library makes it easy to create Actions for the Google Assistant and supports Dialogflow, Actions SDK, and Smart Home fulfillment.).
 
-### Steps to follow
+### Create your Action
+* Head over to https://console.actions.google.com/ and click on New Project.
+
+![Annotation-2019-06-28-141627](https://blog.anudeepreddy.ml/content/images/2019/06/Annotation-2019-06-28-141627.png)
+
+* Enter your project name and click on create project.
+
+![gitpod-action](https://blog.anudeepreddy.ml/content/images/2019/06/gitpod-action.png)
+
+* Now select a category for your Action.
+* Now under the Develop menu, give your action a name.
+* Now head over to actions menu in Develop tab and click on **Add your first action**.
+
+![temp2](https://blog.anudeepreddy.ml/content/images/2019/06/temp2.png)
+
+* In the next section choose **custom intent** and click on **build**. Doing this will redirect you to the **Dialogflow console** and it should look something like this.
+
+![temp3](https://blog.anudeepreddy.ml/content/images/2019/06/temp3.png)
+
+* Click on create to **create** your agent on Dialogflow.
+* Once your agent is ready, you will already have two default Intents (Default Fallback Intent and Default Welcome Intent) in place and these two do pretty good at their job.
+* Now it's time to create a new intent and enable fulfillments for that intent so that we can serve responses from the webhook that we will be building in the next section.
+* Click on create a new intent, give it a name and training phrase (training phrase will be used to invoke the intent). Now that your intent is almost ready scroll down and under fulfillments **enable webhook call** for the new Default welcome intent and the new intent you just created.
+
+### Understanding .gitpod.yml
+
+The .gitpod.yml file is used to automate setting up the environment required to run your app.
+
+![carbon--4-](https://blog.anudeepreddy.ml/content/images/2019/06/carbon--4-.png)
+
+If you want to access services running in your workspace, e.g. a development HTTP server on port 8080, you need to expose that port first. Gitpod has two means of doing that:
+
+1. On-the-fly: when you start a process which listens on a port in your workspace, Gitpod will ask you if you want to expose that port to the internet.
+2. In your configuration: if you already know that you want a particular port exposed, you can configure it in the .gitpod.yml file and skip the extra click later on. For example:
+
+```
+ports:
+  - port: 3000
+```
+
+When starting or restarting a workspace you typically want to run certain tasks. Most probably that includes the build and maybe also running tests and automatically start the application in e.g. a dev server.
+
+Gitpod allows you to configure start tasks in the .gitpod.yml file.
+
+For instance, the start script for this repository is defined as:
+```
+tasks:
+- init: npm install
+  command: npm start
+```
+
+You can have multiple tasks, which are opened on separated terminals.
+```
+tasks:
+- init: npm install
+  command: npm start
+- command: echo -e "\n\nwebhook url - $(gp url 3000)/webhook \n\nCopy and paste this url in the Dialogflow console"
+```
+
+#### `init` command
+The init property can be used to specify shell commands that should only be executed after a workspace was freshly cloned and needs to be initialized somehow. Such tasks are usually builds or downloading dependencies. Anything you only want to do once but not when you restart a workspace or start a snapshot.
+
+In our case the `init` command is
+```
+tasks:
+- init: npm install
+```
+
+
+### Get the Gitpod setup running
 * Fork my [repo (dialogflow-webhook-boilerplate-nodejs)](https://github.com/anudeepreddy/dialogflow-webhook-boilerplate-nodejs) **or** just click on the run in gitpod button in my repo. (If you do this you have to fork it from the workspace so that you can commit your own changes to your repo).
 * Now you can just prefix your repo url with "https://gitpod.io/#". This should take you to Gitpod and start your workspace. The workspace take a little while to start.
 * Once the workspace is running you should see something like this.
@@ -39,7 +108,33 @@ I have created a Github repo which will help you get started without any hassle.
 
 ![Annotation-2019-06-25-172359](https://blog.anudeepreddy.ml/content/images/2019/06/Annotation-2019-06-25-172359.png)
 
-* Now you can test your Google assistant action in the online emulator or on your phone. You can also edit the index.js file to add responses to you own intents. One you are done making changes to the index.js file stop the running app and re-run it using the command `npm start`.
+* Open the index.js file which contains the code for the webhook.
+
+![carbon--1-](https://blog.anudeepreddy.ml/content/images/2019/06/carbon--1-.png)
+
+The file initially contains this code. Now lets add some more code to it to display a card when we invoke the new intent we created in the previous section.
+actions-on-google library provides many functionalities to can simplify your task to render rich responses in your action.
+
+We will be adding the following code to display a card when the new intent is invoked.
+
+![carbon--3-](https://blog.anudeepreddy.ml/content/images/2019/06/carbon--3-.png)
+
+Replace the URL's and other contents in the code and stop the previous instance of the app from running and start it again after you have made changes to the code by running `npm start` in the terminal.
+
+* To test your action you can click on **See how it works in Google Assistant** in the Dialogflow console.
+
+![Annotation-2019-06-28-175558](https://blog.anudeepreddy.ml/content/images/2019/06/Annotation-2019-06-28-175558.png)
+
+* Invoking the intent would give you response similar to this.
+
+![Screenshot_20190628-181019](https://blog.anudeepreddy.ml/content/images/2019/06/Screenshot_20190628-181019.png)
+
+Refer to the links below to add your own functionalities.
+
+## Links to Refer
+* If you would like to learn more about the actions-on-google library, you can find it here - https://www.npmjs.com/package/actions-on-google
+* Go through these examples - https://developers.google.com/actions/samples/github
+* Rich responses example - https://github.com/actions-on-google/dialogflow-conversation-components-nodejs
 
 ## Conclusion
 
