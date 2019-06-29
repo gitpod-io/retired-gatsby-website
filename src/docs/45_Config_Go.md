@@ -7,7 +7,7 @@ src/[repository-provider]/[repository-owner]/[repository-name]
 ```
 in the `$GOPATH`. Using the `.gitpod.yml` file, you can bring about such a workspace layout. Here is
 how we do that for the example
-[go-gin-app](https://github.com/gitpod-io/definitely-gp/blob/master/go-gin-app/.gitpod) repository:
+[go-gin-app](https://github.com/gitpod-io/definitely-gp/blob/master/go-gin-app/.gitpod.yml) repository:
 ```yaml
 ...
 checkoutLocation: "go/src/github.com/demo-apps/go-gin-app"
