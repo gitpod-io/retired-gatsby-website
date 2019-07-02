@@ -4,7 +4,7 @@ You can pass environment variables into your workspace.
 
 ## User-Specific Environment Variables
 Gitpod supports encrypted, user-specific environment variables.
-They are stored as part of your user settings and can be used to to set access tokens, or pass any other kind of user-specific information to your workspaces.
+They are stored as part of your user settings and can be used to set access tokens, or pass any other kind of user-specific information to your workspaces.
 
 ### Using the command line: `gp env`
 
