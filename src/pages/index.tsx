@@ -31,7 +31,7 @@ interface IndexPageState { isOpen: boolean, worksMode: number }
 
 const GitpodHeader = styled.div`
     max-width: 360px;
-    height: 550px;
+    height: 450px;
     margin-top: 140px;
     z-index: 2;
     @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
@@ -334,7 +334,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         <h2 style={{ color: colors.fontColor2, marginBottom: 15 }}>Frictionless Coding</h2>
                         <h1 style={{ fontSize: '2.4em' }}>One-Click Online IDE<br /> for GitHub</h1>
                         <UnderLine />
-                        <p>Gitpod launches ready-to-code dev environments from any GitHub page.</p>
+                        <p>Gitpod launches ready-to-code development environments from any GitHub page.</p>
                     </GitpodHeader>
                     <VideoLaptop>
                         <svg x="0px" y="0px" viewBox="0 0 100 100"
@@ -358,6 +358,19 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         </img>
                     </VideoLaptop>
                 </Container>
+                <Teaser>
+                    <Container>
+                        <div style={{ minHeight: 160, textAlign: 'center' }}>
+                            <h2>Our Mission: Start Coding Now! 🚀</h2>
+                            <p>
+                                Every day <span style={{fontWeight: 600, color: 'white'}}>developers waste millions of hours</span> switching contexts between projects and branches, setting up development environments, and waiting for builds to finish, when all they want is to start coding.
+                            </p>
+                            <p>
+                                We remove this friction and waste of energy by providing <span style={{fontWeight: 600, color: 'white'}}>automated, disposable development environments as a service.</span>
+                            </p>
+                        </div>
+                    </Container>
+                </Teaser>
                 <Container>
                     <GitGraph left={-900} top={0} graph={[
                         { start: [0, 115] },
@@ -384,7 +397,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                                 },
                             ]
                         },
-                        { down: 1306 },
+                        { down: 1300 },
                         {},
                         { down: 651 },
                         {},
@@ -407,7 +420,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         {},
                         { down: 250 },
                         {},
-                        { down: 423 },
+                        { down: 445 },
                         {},
                         { down: 423 },
                         {}
