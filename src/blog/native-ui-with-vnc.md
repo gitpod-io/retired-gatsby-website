@@ -11,7 +11,7 @@ Gitpod is a web-based IDE. As such one would think it only works for web-based p
 
 ![](https://cdn-images-1.medium.com/max/11236/1*YaZqFJXHopwW0puvvmfEew.png)
 
-A few days ago [Gero introduced Docker builds to Gitpod](/blog/gitpod/docker-in-gitpod) with which you can bring your own Dockerfile (instead of a pre-built image), and Gitpod will build the image for you. We’ll use that feature to setup a cloud-based development environment for native UI applications.
+A few days ago [Gero introduced Docker builds to Gitpod](/blog/docker-in-gitpod) with which you can bring your own Dockerfile (instead of a pre-built image), and Gitpod will build the image for you. We’ll use that feature to setup a cloud-based development environment for native UI applications.
 
 ## Hello World
 

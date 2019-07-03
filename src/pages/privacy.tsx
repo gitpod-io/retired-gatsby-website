@@ -390,13 +390,13 @@ export default () => {
 			        </h3>
                 <p>
                     For the further use of the Gitpod Service on the Website you submit more data depending on the way of use of our services
-				according to our <a href="terms.html">terms of service</a>.
+				according to our <a href="/terms">terms of service</a>.
 			        </p>
 
                 <p>
                     We use the information and data collected in the Service, including your personal data, in order to fulfill our contractual
                     obligations for you/our customers based on the legal basis of Art. 6 (1) b. GDPR or TMG and as further set forth in this
-				privacy policy or our <a href="terms.html">terms of service</a>. This also includes sending
+				privacy policy or our <a href="/terms">terms of service</a>. This also includes sending
                                       you emails and notifications necessary for the Service.
 			        </p>
 
