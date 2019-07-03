@@ -24,7 +24,7 @@
   "dependencies": {
     "@emotion/core": "10.0.14",
     "@emotion/styled": "10.0.14",
-    "babel-plugin-styled-components": "1.10.2",
+    "babel-plugin-styled-components": "1.10.6",
     "bowser": "2.4.0",
     "classnames": "2.2.6",
     "gatsby": "2.10.5",
