@@ -361,12 +361,12 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 <Teaser>
                     <Container>
                         <div style={{ minHeight: 160, textAlign: 'center' }}>
-                            <h2>Our Mission: Start Coding Now! 🚀</h2>
+                            <h2>Any Project, any Task: Start Coding Now! 🚀</h2>
                             <p>
                                 Every day <span style={{fontWeight: 600, color: 'white'}}>developers waste millions of hours</span> switching contexts between projects and branches, setting up development environments, and waiting for builds to finish, when all they want is to start coding.
                             </p>
                             <p>
-                                We remove this friction and waste of energy by providing <span style={{fontWeight: 600, color: 'white'}}>automated, disposable development environments as a service.</span>
+                                We streamline these tedious workflows and waste of energy by providing <span style={{fontWeight: 600, color: 'white'}}>automated, disposable development environments as a service.</span>
                             </p>
                         </div>
                     </Container>
