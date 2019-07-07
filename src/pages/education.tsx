@@ -5,6 +5,7 @@ import Container from '../components/Container'
 import IndexLayout from '../layouts'
 import Logos from '../components/Logos';
 import GitGraph from '../components/GitGraph';
+import Highlight from '../components/Highlight';
 import { colors, breakpoints } from '../styles/variables';
 import { getEmSize } from '../styles/mixins';
 import * as icons from '../resources/icons';
@@ -62,13 +63,6 @@ const SectionFeatures = styled.section`
         text-align: center;
     }
 
-`
-
-const HeadingMission = styled.h2`
-    line-height: 42px;
-    text-align: center;
-    background-color: ${colors.background2};
-    padding: 50px;
 `
 
 const SectionPricing = styled.section`
@@ -169,7 +163,7 @@ const EducationPage: React.SFC<{}> = () => (
                     </div>
                 </SectionFeatures>
             </Container>
-            <HeadingMission>Our mission is to convey our passion for coding by eliminating barriers for teachers and students</HeadingMission>
+            <Highlight>Our mission is to convey our passion for coding by eliminating barriers for teachers and students</Highlight>
             <SectionPricing>
                 <Container>
                     <h3>Pricing</h3>
