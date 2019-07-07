@@ -4,7 +4,7 @@ date: Wed Jun 26 2019 11:57:00 GMT+0000 (UTC)
 author: anudeepreddy
 subtitle: Build and test your webhook using Gitpod
 title: Build a Webhook for Google Assistant Action
-image: https://blog.anudeepreddy.ml/content/images/2019/06/Build-and-test-your-webhook.png
+image: https://res-3.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/Build-and-test-your-webhook.png
 ---
 
 This post is all about how to build your webhook for your Google Assistant action and host it temporarily on Gitpod and test your code.
@@ -27,21 +27,21 @@ I have created a Github repo which will help you get started without any hassle.
 ### Create your Action
 * Head over to https://console.actions.google.com/ and click on New Project.
 
-![Annotation-2019-06-28-141627](https://blog.anudeepreddy.ml/content/images/2019/06/Annotation-2019-06-28-141627.png)
+![Annotation-2019-06-28-141627](https://res-2.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/Annotation-2019-06-28-141627.png)
 
 * Enter your project name and click on create project.
 
-![gitpod-action](https://blog.anudeepreddy.ml/content/images/2019/06/gitpod-action.png)
+![gitpod-action](https://res-1.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/gitpod-action.png)
 
 * Now select a category for your Action.
 * Now under the Develop menu, give your action a name.
 * Now head over to actions menu in Develop tab and click on **Add your first action**.
 
-![temp2](https://blog.anudeepreddy.ml/content/images/2019/06/temp2.png)
+![temp2](https://res-1.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/temp2.png)
 
 * In the next section choose **custom intent** and click on **build**. Doing this will redirect you to the **Dialogflow console** and it should look something like this.
 
-![temp3](https://blog.anudeepreddy.ml/content/images/2019/06/temp3.png)
+![temp3](https://res-3.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/temp3.png)
 
 * Click on create to **create** your agent on Dialogflow.
 * Once your agent is ready, you will already have two default Intents (Default Fallback Intent and Default Welcome Intent) in place and these two do pretty good at their job.
@@ -52,7 +52,7 @@ I have created a Github repo which will help you get started without any hassle.
 
 The .gitpod.yml file is used to automate setting up the environment required to run your app.
 
-![carbon--4-](https://blog.anudeepreddy.ml/content/images/2019/06/carbon--4-.png)
+![carbon--4-](https://res-5.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/carbon--4-.png)
 
 If you want to access services running in your workspace, e.g. a development HTTP server on port 8080, you need to expose that port first. Gitpod has two means of doing that:
 
@@ -98,36 +98,37 @@ tasks:
 * Now you can just prefix your repo url with "https://gitpod.io/#". This should take you to Gitpod and start your workspace. The workspace take a little while to start.
 * Once the workspace is running you should see something like this.
 
-![Annotation-2019-06-25-171555](https://blog.anudeepreddy.ml/content/images/2019/06/Annotation-2019-06-25-171555.png)
+![Annotation-2019-06-25-171555](https://res-2.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/Annotation-2019-06-25-171555.png)
 
 * If you notice the Node app is already running in the first terminal. This is automated by a Gitpod configuration file. And the webhook URL is printed on to the second terminal. All the dependencies that are required are also installed while creating the workspace.
 
-![Annotation-2019-06-25-171555-crop](https://blog.anudeepreddy.ml/content/images/2019/06/Annotation-2019-06-25-171555-crop.png)
+![Annotation-2019-06-25-171555-crop](https://res-5.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/Annotation-2019-06-25-171555-crop.png)
 
 * Now that the webhook is running and i presume that you already have your agent on Dialogflow (If not create an agent), Next thing you need to do is to copy the webhook URL from the terminal and paste it in the Fulfillments section in the Dialogflow Console.
 
-![Annotation-2019-06-25-172359](https://blog.anudeepreddy.ml/content/images/2019/06/Annotation-2019-06-25-172359.png)
+![Annotation-2019-06-25-172359](https://res-5.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/Annotation-2019-06-25-172359.png)
+
 
 * Open the index.js file which contains the code for the webhook.
 
-![carbon--1-](https://blog.anudeepreddy.ml/content/images/2019/06/carbon--1-.png)
+![carbon--1-](https://res-1.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/carbon--1-.png)
 
 The file initially contains this code. Now lets add some more code to it to display a card when we invoke the new intent we created in the previous section.
 actions-on-google library provides many functionalities to can simplify your task to render rich responses in your action.
 
 We will be adding the following code to display a card when the new intent is invoked.
 
-![carbon--3-](https://blog.anudeepreddy.ml/content/images/2019/06/carbon--3-.png)
+![carbon--3-](https://res-1.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/carbon--3-.png)
 
 Replace the URL's and other contents in the code and stop the previous instance of the app from running and start it again after you have made changes to the code by running `npm start` in the terminal.
 
 * To test your action you can click on **See how it works in Google Assistant** in the Dialogflow console.
 
-![Annotation-2019-06-28-175558](https://blog.anudeepreddy.ml/content/images/2019/06/Annotation-2019-06-28-175558.png)
+![Annotation-2019-06-28-175558](https://res-3.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/Annotation-2019-06-28-175558.png)
 
 * Invoking the intent would give you response similar to this.
 
-![Screenshot_20190628-181019](https://blog.anudeepreddy.ml/content/images/2019/06/Screenshot_20190628-181019.png)
+![Screenshot_20190628-181019](https://res-5.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/Screenshot_20190628-181019.png)
 
 Refer to the links below to add your own functionalities.
 
@@ -140,6 +141,6 @@ Refer to the links below to add your own functionalities.
 
 Gitpod can make your life much simpler by automating your development setup just by adding a simple configuration file to your repo. You can refer to the Gitpod [Docs](https://www.gitpod.io/docs/) to learn more about the platform. Gitpod lets you work with unlimited workspace but with 100hrs/month runtime. It also provides Personal and unlimited plans as well. If you are a student then you can claim Gitpod Unlimited plan for just $9.
 
-![character](https://blog.anudeepreddy.ml/content/images/2019/06/character.gif)
+![character](https://res-3.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/character.gif)
 # Happy coding with Gitpod ✨
 
