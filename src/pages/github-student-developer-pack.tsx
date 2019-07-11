@@ -24,8 +24,8 @@ const BackPackImg = styled.image`
         right: 30px;
         height: 360px;
          @media(max-width: 800px) {
-             top: 360px;
-             height: 250px;
+             top: 340px;
+             height: 230px;
              right: 50%;
              transform: translateX(50%);
         }
@@ -34,7 +34,7 @@ const BackPackImg = styled.image`
 
 const Offers = styled.div`
     display: flex;
-    margin-top: 80px;
+    margin-top: 50px;
 
       @media(max-width: ${getEmSize(breakpoints.md) - 1}em) {
           flex-direction: column;
@@ -54,6 +54,12 @@ const Offers = styled.div`
                 margin-right: 5rem;
             }
         }
+
+        @media(max-width: 752px) {
+            &:nth-child(2) {
+                margin-top: 120px;
+            }
+        }
     }
 
     span {
@@ -66,16 +72,39 @@ const Offers = styled.div`
         font-size: 18px;
         background: ${colors.background1};
         transform: translateY(-22px);
+
+        &--0 {
+            width: 73%;
+            margin: 0 auto;
+        }
+
+        &--1 {
+            width: 63%;
+            margin: 0 auto;
+        }
     }
 
     .title {
         font-size: 28px;
 
         & > span {
-            display: inline;
-            margin-right: 8px;
-            text-decoration: line-through;
+            display: inline-block;
+            position: relative;
             opacity: .5;
+            margin-right: 8px;
+            font-weight: 300;
+            font-size: 26px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: -3%;
+                display: block;
+                height: 2.3px;
+                width: 110%;
+                background-color: #fff;
+            }
         }
     }
 
@@ -117,7 +146,14 @@ const Offers = styled.div`
 `
 
 const Styled = styled.div`
-    margin-top: 50px;
+    position: relative;
+    display: block;
+    margin: 50px 0;
+
+    @media(max-width: 752px) {
+        display: flex;
+        justify-contents: center;
+    }
 
     &::after {
         content: '';
@@ -133,21 +169,34 @@ const Styled = styled.div`
         font-size: 18px;
 
         &:first-child {
-            width: 29%;
+            width: 28%;
+
+            @media(max-width: 752px) {
+                position: absolute;
+                top: -1030px;
+                transform: translateX(33%);
+            }
         }
 
         &:last-child {
-            transform: translateX(4%);
-            width: 65%;
+            width: 60%;
+            transform: scaleX(1.1);
         }
 
         &:not(:last-child) {
-            margin-right: 5%;
+            margin-right: 11%;
+        }
+
+        @media(max-width: 752px) {
+            width: 60% !important;
+            margin: 0 auto; !important;
         }
     }
 `
 const Highlight = styled.h2`
+    margin: 80px 0;
     line-height: 42px;
+    font-size: 1.6rem;
     text-align: center;
     background-color: ${colors.background2};
     padding: 50px;
@@ -181,7 +230,7 @@ const CareersPage: React.SFC<{}> = () => (
     <IndexLayout title="Gitpod - Github Student Developer Pack" canonical="https://www.gitpod.io/github-student-developer-pack">
         <Page>
             <Container>
-                <div style={{ marginTop: 60, position: 'relative' }}>
+                <div style={{ marginTop: 120, position: 'relative' }}>
                     <h4 style={{ color: colors.fontColor2 }}>Github Student Developer Pack</h4>
                     <h1>Make your life easier with Gitpod</h1>
                     <UnderLine />
@@ -193,11 +242,11 @@ const CareersPage: React.SFC<{}> = () => (
                         <img src={BackPack} alt="Github Backpack" />
                     </BackPackImg>
                 </div>
-                <h2 style={{ marginTop: 280 }}>Github Student Offer</h2>
-                <p>With the <a href="https://education.github.com/pack" style={{ color: 'inherit', textDecoration: 'underline' }}>Github Student Developer Pack</a>, you get the same features as with our usual subscription but at a much better price. It's great to support students!</p>
+                <h2 style={{ marginTop: 300 }}>Github Student Offer</h2>
+                <p>With the <a href="https://education.github.com/pack" style={{ color: 'inherit', textDecoration: 'underline' }}>Github Student Developer Pack</a>, you get the same features as with our usual subscription but at a much better price. We’re happy to be able to empower student developers participating in it.</p>
                 <Offers>
                     <div className="offer" style={{ opacity: .5 }}>
-                        <span className="caption">Open-source</span>
+                        <span className="caption caption--0">Open-source</span>
                         <img src={Heart} alt="Handshake" />
                         <span className="title">Free</span>
                         <span className="subtitle">100 hours/month</span>
@@ -211,7 +260,7 @@ const CareersPage: React.SFC<{}> = () => (
                         </a>
                     </div>
                     <div className="offer">
-                        <span className="caption">Students</span>
+                        <span className="caption caption--1">Personal</span>
                         <img src={Student} alt="Student sitting on a desk." />
                         <span className="title">
                             <span>$9</span>
@@ -251,7 +300,7 @@ const CareersPage: React.SFC<{}> = () => (
                 </Styled>
             </Container>
             <Highlight>
-                Stop Wasting Time with tedious setups, learn amazing programming skills instead!
+                Stop wasting time with tedious setups, learn amazing programming skills instead!
             </Highlight>
             <Container>
                 <SectionInfo>
@@ -260,7 +309,7 @@ const CareersPage: React.SFC<{}> = () => (
                         <p>You can simply start coding in Gitpod by prefixing any Github URL with              <b>gitpod.io#</b></p>
                         <p>If you'd like to have a detailed description about Gitpod and it's IDE, Theia, please have a look at our documentation.</p>
                         <Link to="/docs/10_Getting_Started/">
-                            <button className="primary">Gitpod Docs</button>
+                            <button className="primary" style={{ marginBottom: '50px' }}>Gitpod Docs</button>
                         </Link>
                     </div>
                     <div>
