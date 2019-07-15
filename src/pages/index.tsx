@@ -461,7 +461,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                     </Container>
                 </Teaser>
                 <Container className="hidden-md-down">
-                    <div style={{ height: 525 }}>
+                    <div style={{ height: 525 }} id="try">
                         <h2>Try Now</h2>
                         <p>Gitpod works with <GatsbyLink to="/features/#supported-languages">all major programming languages</GatsbyLink>. You can try an example right now.</p>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
