@@ -6,6 +6,7 @@
   * [Search in Workspace](#search-in-workspace)
   * [Symbols and References](#symbols-and-references)
   * [Format Document](#format-document)
+  * [Linters](#linters)
 
 ## Command Palette
 
@@ -65,3 +66,16 @@ you navigate between them in both directions:
 To tidy up your code, many languages support `Format Document` (<kbd>Alt+Shift+F</kbd>).
 If you want to apply this to only a subsection of the current document, select the desired region
 and pick `Format Selection` from the editor's context menu.
+
+## Linters
+
+You can [create a `setup.cfg` or a `pycodestyle.cfg` in the project root](https://github.com/palantir/python-language-server#configuration) and [adjust pycodestyle](http://pycodestyle.pycqa.org/en/latest/intro.html#configuration) rules there like this:
+
+```
+[pycodestyle]
+ignore = E226,E302,E41
+max-line-length = 160
+statistics = True
+```
+
+You'll need to refresh the browser in order to update these rule. [Source](https://github.com/gitpod-io/gitpod/issues/640#issuecomment-506622491).
