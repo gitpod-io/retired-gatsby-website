@@ -227,11 +227,11 @@ const SocialImg = styled.img`
 `
 
 const CareersPage: React.SFC<{}> = () => (
-    <IndexLayout title="Gitpod - Github Student Developer Pack" canonical="https://www.gitpod.io/github-student-developer-pack">
+    <IndexLayout title="Gitpod - GitHub Student Developer Pack" canonical="https://www.gitpod.io/github-student-developer-pack">
         <Page>
             <Container>
                 <div style={{ marginTop: 120, position: 'relative' }}>
-                    <h4 style={{ color: colors.fontColor2 }}>Github Student Developer Pack</h4>
+                    <h4 style={{ color: colors.fontColor2 }}>GitHub Student Developer Pack</h4>
                     <h1>Make your life easier with Gitpod</h1>
                     <UnderLine />
                     <p>With Gitpod you have no more tedious setups,<br /> you save hours of compiling code,<br /> and you can start coding from any device, immediately.</p>
@@ -239,11 +239,11 @@ const CareersPage: React.SFC<{}> = () => (
                         <button className='primary'>Try now</button>
                     </Link>
                     <BackPackImg>
-                        <img src={BackPack} alt="Github Backpack" />
+                        <img src={BackPack} alt="GitHub Backpack" />
                     </BackPackImg>
                 </div>
-                <h2 style={{ marginTop: 300 }}>Github Student Offer</h2>
-                <p>With the <a href="https://education.github.com/pack" style={{ color: 'inherit', textDecoration: 'underline' }}>Github Student Developer Pack</a>, you get the same features as with our usual subscription but at a much better price. We’re happy to be able to empower student developers participating in it.</p>
+                <h2 style={{ marginTop: 300 }}>GitHub Student Offer</h2>
+                <p>With the <a href="https://education.github.com/pack" style={{ color: 'inherit', textDecoration: 'underline' }}>GitHub Student Developer Pack</a>, you get the same features as with our usual subscription but at a much better price. We’re happy to be able to empower student developers participating in it.</p>
                 <Offers>
                     <div className="offer" style={{ opacity: .5 }}>
                         <span className="caption caption--0">Open-source</span>
@@ -296,7 +296,7 @@ const CareersPage: React.SFC<{}> = () => (
                 </Offers>
                 <Styled>
                     <p>Always Free for open-source</p>
-                    <p style={{ borderColor: '#FDB02F' }}><a href="https://education.github.com/pack" style={{ color: 'inherit', textDecoration: 'underline' }}>Github Student Developer Pack</a></p>
+                    <p style={{ borderColor: '#FDB02F' }}><a href="https://education.github.com/pack" style={{ color: 'inherit', textDecoration: 'underline' }}>GitHub Student Developer Pack</a></p>
                 </Styled>
             </Container>
             <Highlight>
@@ -306,7 +306,7 @@ const CareersPage: React.SFC<{}> = () => (
                 <SectionInfo>
                     <div>
                         <h3>Getting started with Gitpod</h3>
-                        <p>You can simply start coding in Gitpod by prefixing any Github URL with              <b>gitpod.io#</b></p>
+                        <p>You can simply start coding in Gitpod by prefixing any GitHub URL with              <b>gitpod.io#</b></p>
                         <p>If you'd like to have a detailed description about Gitpod and it's IDE, Theia, please have a look at our documentation.</p>
                         <Link to="/docs/10_Getting_Started/">
                             <button className="primary" style={{ marginBottom: '50px' }}>Gitpod Docs</button>
@@ -318,7 +318,7 @@ const CareersPage: React.SFC<{}> = () => (
                         <div>
                             <a href="https://twitter.com/gitpod"><SocialImg alt="Twitter Icon" src={twitter} /></a>
                             <a href="https://spectrum.chat/gitpod"><SocialImg alt="Spectrum Icon" src={spectrum} /></a>
-                            <a href="mailto:contact@gitpod.io?subject=Github%20Student%20Pack%20question"><SocialImg alt="GitHub Icon" src={Envolpe} style={{ fill: "#fff" }} /></a>
+                            <a href="mailto:contact@gitpod.io?subject=GitHub%20Student%20Pack%20question"><SocialImg alt="GitHub Icon" src={Envolpe} style={{ fill: "#fff" }} /></a>
                         </div>
                     </div>
                 </SectionInfo>
