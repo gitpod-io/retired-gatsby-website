@@ -62,7 +62,7 @@ Subsequently `*/*` makes that variable available everywhere.
 
 # Passing Environment Variables
 
-In addition to user-specific env variables, Gitpod also alows passing in variables through the `gitpod.io/#` URL.
+In addition to user-specific env variables, Gitpod also allows passing in variables through the `gitpod.io/#` URL.
 The syntax for that is
 ```
     https://gitpod.io/#var=value,var2=value2/https://github.com/my-org/repo-to-work-on

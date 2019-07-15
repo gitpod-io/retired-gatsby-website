@@ -63,5 +63,5 @@ We have merged 146 PRs in Gitpod and [206 in Theia](https://github.com/theia-ide
 
 With this release we have already added some VS Code extensions. Going forward we will double down on the integration.
 We are looking at one programming language after the other, making sure the experience is excellent and the VS Code extensions
-work as epected. Once we've reached a state where we are confident VS Code extensions work reliably in general, we will allow users to install them.
+work as expected. Once we've reached a state where we are confident VS Code extensions work reliably in general, we will allow users to install them.
 Furthermore, we are focusing on start-up time improvements and, of course, bug-fixing and offering you a great development experience.
