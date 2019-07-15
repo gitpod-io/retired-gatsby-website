@@ -235,9 +235,9 @@ const CareersPage: React.SFC<{}> = () => (
                     <h1>Make your life easier with Gitpod</h1>
                     <UnderLine />
                     <p>With Gitpod you have no more tedious setups,<br /> you save hours of compiling code,<br /> and you can start coding from any device, immediately.</p>
-                    <Link to="/#try">
+                    <a href="https://gitpod.io/#https://github.com/gitpod-io/NextSimpleStarter" target="_blank">
                         <button className='primary'>Try now</button>
-                    </Link>
+                    </a>
                     <BackPackImg>
                         <img src={BackPack} alt="GitHub Backpack" />
                     </BackPackImg>
@@ -246,14 +246,14 @@ const CareersPage: React.SFC<{}> = () => (
                 <p>With the <a href="https://education.github.com/pack" style={{ color: 'inherit', textDecoration: 'underline' }}>GitHub Student Developer Pack</a>, you get the same features as with our usual subscription but at a much better price. We’re happy to be able to empower student developers participating in it.</p>
                 <Offers>
                     <div className="offer" style={{ opacity: .5 }}>
-                        <span className="caption caption--0">Open-source</span>
+                        <span className="caption caption--0">Open Source</span>
                         <img src={Heart} alt="Handshake" />
                         <span className="title">Free</span>
-                        <span className="subtitle">100 hours/month</span>
+                        <span className="subtitle">100 hours / month</span>
                         <span className="features">
-                            <span>Unlimited&nbsp;workspaces</span><span><b>Public</b> &amp; <b>Private</b></span>
+                            <span>Unlimited&nbsp;workspaces</span><span>Public repositories</span>
                         </span>
-                        <a href="https://gitpod.io/subscription">
+                        <a href="https://gitpod.io/subscription" target="_blank">
                             <button className='primary'>
                                 Get started
                             </button>
@@ -266,28 +266,28 @@ const CareersPage: React.SFC<{}> = () => (
                             <span>$9</span>
                             Free
                         </span>
-                        <span className="subtitle">100 hours/month</span>
+                        <span className="subtitle">100 hours / month</span>
                         <span className="features">
                             <span>Unlimited&nbsp;workspaces</span><span><b>Public</b> &amp; <b>Private</b></span>
                         </span>
-                        <a href="https://education.github.com/pack">
+                        <a href="https://education.github.com/pack" target="_blank">
                             <button className='primary'>
                                 Get Student Pack
                             </button>
                         </a>
                     </div>
                     <div className="offer">
-                        <span className="caption">Students Unlimited</span>
+                        <span className="caption">Student Unlimited</span>
                         <img src={Briefcase} alt="briefcase" />
                         <span className="title">
                             <span>$39</span>
                             $9
                         </span>
-                        <span className="subtitle"><b>Unlimited hours</b>/month</span>
+                        <span className="subtitle"><b>Unlimited hours</b> / month</span>
                         <span className="features">
                             <span>Unlimited&nbsp;workspaces</span><span><b>Public</b> &amp; <b>Private</b></span>
                         </span>
-                        <a href=" https://education.github.com/pack">
+                        <a href=" https://education.github.com/pack" target="_blank">
                             <button className='primary'>
                                 Get Student Pack
                             </button>
@@ -295,26 +295,26 @@ const CareersPage: React.SFC<{}> = () => (
                     </div>
                 </Offers>
                 <Styled>
-                    <p>Always Free for open-source</p>
+                    <p>Always Free for Open Source</p>
                     <p style={{ borderColor: '#FDB02F' }}><a href="https://education.github.com/pack" style={{ color: 'inherit', textDecoration: 'underline' }}>GitHub Student Developer Pack</a></p>
                 </Styled>
             </Container>
             <Highlight>
-                Stop wasting time with tedious setups, learn amazing programming skills instead!
+                Don't waste time on tedious setups, learn amazing coding skills instead!
             </Highlight>
             <Container>
                 <SectionInfo>
                     <div>
                         <h3>Getting started with Gitpod</h3>
-                        <p>You can simply start coding in Gitpod by prefixing any GitHub URL with              <b>gitpod.io#</b></p>
-                        <p>If you'd like to have a detailed description about Gitpod and it's IDE, Theia, please have a look at our documentation.</p>
+                        <p>You can start coding on any project simply by prefixing any GitHub URL with              <b>gitpod.io/#</b></p>
+                        <p>For a detailed description of Gitpod and its IDE, Theia, please have a look at our documentation.</p>
                         <Link to="/docs/10_Getting_Started/">
                             <button className="primary" style={{ marginBottom: '50px' }}>Gitpod Docs</button>
                         </Link>
                     </div>
                     <div>
                         <h3>Do you need help?</h3>
-                        <p>If you have any quwstions, issues and feedback, please get in touch. We love to hear your feedback and help you out</p>
+                        <p>If you have any questions, issues or feedback, please get in touch. We love to hear your feedback and help you out.</p>
                         <div>
                             <a href="https://twitter.com/gitpod"><SocialImg alt="Twitter Icon" src={twitter} /></a>
                             <a href="https://spectrum.chat/gitpod"><SocialImg alt="Spectrum Icon" src={spectrum} /></a>
