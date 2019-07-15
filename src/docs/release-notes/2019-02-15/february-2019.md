@@ -41,7 +41,7 @@ tasks:
 
 ### Lifecycles
 
-In addition we have introduced multiple lifecycle phases for the tasks, such as [init](https://docs.gitpod.io/44_Config_Start_Tasks.html#init-command) and [before](https://docs.gitpod.io/44_Config_Start_Tasks.html#before-command). The main purpose is to avoid reruning unnecessary commands such as full builds, when restarting workspaces or opening snapshots.
+In addition we have introduced multiple lifecycle phases for the tasks, such as [init](https://docs.gitpod.io/44_Config_Start_Tasks.html#init-command) and [before](https://docs.gitpod.io/44_Config_Start_Tasks.html#before-command). The main purpose is to avoid rerunning unnecessary commands such as full builds, when restarting workspaces or opening snapshots.
 
 Check the table below for an overview of the different starting scenarios.
 
