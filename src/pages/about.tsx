@@ -97,7 +97,7 @@ const Description = styled.div`
         height: auto
         display: block;
         margin: 50px auto 70px;
-        border: 1px solid #eee;
+        border: 1px solid transparent;
 
         &--hafen {
             width: 195px;
@@ -122,7 +122,10 @@ const Description = styled.div`
 
 const Timeline = styled.div`
     margin: 50px 0 100px 0;
-    transform: translateX(-85px);
+    
+    @media(min-width: ${getEmSize(breakpoints.md)}em) {
+        transform: translateX(-85px);
+    }
 
     & > div {
         display: flex;
@@ -166,7 +169,7 @@ const Timeline = styled.div`
             top: 2;
             left: 17%;
             content: '';
-            transform: translateY(60%);
+            transform: translateY(59%);
             display: block;
             height: 100%;
             width: 8%;
@@ -224,8 +227,8 @@ const AboutPage: React.SFC<{}> = () => (
         <Page>
             <Container>
                 <div style={{ marginTop: 120 }}>
-                    <h4 style={{ color: colors.fontColor2 }}>About us</h4>
-                    <h1>The Company behind Gitpod</h1>
+                    <h4 style={{ color: colors.fontColor2 }}>About Us</h4>
+                    <h1>The Company Behind Gitpod</h1>
                 </div>
                 <About>
                     <div className='logo-container'>
@@ -234,7 +237,7 @@ const AboutPage: React.SFC<{}> = () => (
                     </div>
                     <div className="text-container">
                         <p>
-                            Gitpod is developed <a href="https://typefox.io" target="_blank" style={{ textDecoration: 'underline' }}>TypeFox</a>, a team of developer tool specialists and longtime contributors to many open-source projects. We are a driving force behind the language server protocol and the initiators of Eclipse Theia, the next generation IDE that powers Gitpod.
+                            Gitpod is developed by <a href="https://typefox.io" target="_blank" style={{ textDecoration: 'underline' }}>TypeFox</a>, a team of developer tool specialists and longtime contributors to many open-source projects. We are a driving force behind the language server protocol and the initiators of Eclipse Theia, the next generation IDE that powers Gitpod.
                         </p>
                         <p>
                             Open-source projects like Kubernetes, Theia, TypeScript, VS Code and thousands of other libraries are the giants' shoulders Gitpod is standing on. The TypeFox team is happy and truly thankful to live in a time where we can participate in such lively and creative communties with so many cool ideas and so much passion. Without those, developing Gitpod would not have been possible.
@@ -243,14 +246,14 @@ const AboutPage: React.SFC<{}> = () => (
                 </About>
             </Container>
             <Container>
-                <h2>By developers for developers</h2>
+                <h2>By Developers For Developers</h2>
                 <Description>
                     <div>
                         <div className="img-container img-container--hafen" >
                             <img src={KeilHafen} className="hafen" />
                         </div>
                         <p className="para">
-                            TypeFox was founded in 2016 by Sven Efftinge, Mortiz Eysholdt and Dr. Jan Koehnlein. They founded TypeFox with the mission to remove friction in developer's  life. The headquarters is located in Kiel, Germany.
+                            TypeFox was founded in 2016 by Sven Efftinge, Mortiz Eysholdt and Dr. Jan Koehnlein, with the mission to remove friction in developers' life. The headquarters is located in Kiel, Germany.
                         </p>
                     </div>
                     <br />
@@ -259,28 +262,28 @@ const AboutPage: React.SFC<{}> = () => (
                             <img src={Team} />
                         </div>
                         <p>
-                            We're a team of less than 20 people which has over 10 years experience in language design, IDE and tool development. If you'd like to join the team, have a look at the <Link to='/careers' style={{ textDecoration: 'underline' }}>career page</Link>. We're always curious to hear from talented and commited tech lovers.
+                            We're a small team with over 10 years of experience in language design, IDEs and tool development. If you're interested in joining us, please have a look at the <Link to='/careers' style={{ textDecoration: 'underline' }}>careers page</Link>. We're always curious to hear from talented and committed tech enthusiasts.
                         </p>
                     </div>
                 </Description>
             </Container>
             <Hightlight>
-                Open-source let us build the future together.
+                Open Source lets us build the future together.
             </Hightlight>
             <Container>
-                <h2 style={{marginTop: 100}}>Our Journey</h2>
+                <h2 style={{ marginTop: 100 }}>Our Journey</h2>
                 <Timeline>
                     <div>
                         <div className="date">04/2019</div>
-                        <div className="description">Launch of Gitpod.</div>
+                        <div className="description">Launch of Gitpod</div>
                     </div>
                     <div>
                         <div className="date">08/2018</div>
-                        <div className="description">Announcement of beta Gitpod <span>| online IDE for Github based on Theia</span></div>
+                        <div className="description">Announcement of Gitpod Beta</div>
                     </div>
                     <div>
                         <div className="date">03/2017</div>
-                        <div className="description">Creation of Theia <span>| open-source IDE in cooperation with Ericsson</span></div>
+                        <div className="description">Creation of Theia <span>, an open-source IDE in cooperation with Ericsson</span></div>
                     </div>
                     <div className="since">
                         <div className="date"><span>00/</span>2016</div>
@@ -288,36 +291,36 @@ const AboutPage: React.SFC<{}> = () => (
                     </div>
                     <div className="last">
                         <div className="date">01/2016</div>
-                        <div className="description">Founding TypeFox <span>| tool development, language design, consulting</span></div>
+                            <div className="description">Founding of TypeFox <span>for tool development, language design and consulting</span></div>
                     </div>
                 </Timeline>
             </Container>
             <Container>
-                <h2 style={{marginBottom: 40}}>Our Partners</h2>
+                <h2 style={{ marginBottom: 40 }}>Our Partners</h2>
                 <Partners>
                     <div className='img-container'>
                         <img src={ARM} alt="ARM Logo" />
                     </div>
                     <div className='img-container'>
-                        <img src={Bosch} alt="Bosch Logo" style={{transform: 'scale(2) translateY(-5px)'}} />
+                        <img src={Bosch} alt="Bosch Logo" style={{ transform: 'scale(2) translateY(-5px)' }} />
                     </div>
                     <div className='img-container'>
-                        <img src={Eclipse} alt="Eclipse Logo" style={{transform: 'scale(1.6)'}}/>
+                        <img src={Eclipse} alt="Eclipse Logo" style={{ transform: 'scale(1.6)' }} />
                     </div>
                     <div className='img-container'>
-                        <img src={Ericsson} alt="Ericsson Logo" style={{transform: 'scale(2)'}}/>
+                        <img src={Ericsson} alt="Ericsson Logo" style={{ transform: 'scale(2)' }} />
                     </div>
                     <div className='img-container'>
-                        <img src={GoogleCloud} alt="Google Cloud Logo" style={{transform: 'scale(2.2)'}}/>
+                        <img src={GoogleCloud} alt="Google Cloud Logo" style={{ transform: 'scale(2.2)' }} />
                     </div>
                     <div className='img-container'>
-                        <img src={Redhat} alt="Redhat Logo" style={{transform: 'scale(1.5)'}}/>
+                        <img src={Redhat} alt="Redhat Logo" style={{ transform: 'scale(1.5)' }} />
                     </div>
                     <div className='img-container'>
-                        <img src={Sap} alt="SAP Logo"/>
+                        <img src={Sap} alt="SAP Logo" />
                     </div>
                     <div className='img-container'>
-                        <img src={IBM} alt="IBM Logo" style={{transform: 'scale(1.4)'}}/>
+                        <img src={IBM} alt="IBM Logo" style={{ transform: 'scale(1.4)' }} />
                     </div>
                 </Partners>
             </Container>
