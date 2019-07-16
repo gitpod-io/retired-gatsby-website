@@ -97,7 +97,7 @@ const Description = styled.div`
         height: auto
         display: block;
         margin: 50px auto 70px;
-        border: 1px solid transparent;
+        border: none;
 
         &--hafen {
             width: 195px;
@@ -122,7 +122,7 @@ const Description = styled.div`
 
 const Timeline = styled.div`
     margin: 50px 0 100px 0;
-    
+
     @media(min-width: ${getEmSize(breakpoints.md)}em) {
         transform: translateX(-85px);
     }
@@ -279,7 +279,7 @@ const AboutPage: React.SFC<{}> = () => (
                     </div>
                     <div>
                         <div className="date">08/2018</div>
-                        <div className="description">Announcement of Gitpod Beta</div>
+                        <div className="description">Announcement of Gitpod Beta, an online IDE for Github based on Theia</div>
                     </div>
                     <div>
                         <div className="date">03/2017</div>
@@ -291,7 +291,7 @@ const AboutPage: React.SFC<{}> = () => (
                     </div>
                     <div className="last">
                         <div className="date">01/2016</div>
-                            <div className="description">Founding of TypeFox <span>for tool development, language design and consulting</span></div>
+                        <div className="description">Founding of TypeFox <span>for tool development, language design and consulting</span></div>
                     </div>
                 </Timeline>
             </Container>
