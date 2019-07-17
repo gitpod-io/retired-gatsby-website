@@ -43,7 +43,7 @@ const Offers = styled.div`
     & > div {
         position: relative;
         padding: 10px 40px 10px;
-        max-width: 340px;
+        max-width: 360px;
         border: 1px solid;
         text-align: center;
         margin: 2rem auto;
@@ -122,7 +122,7 @@ const Offers = styled.div`
 
     .features {
         text-align: left;
-        margin: 35px 20px;
+        margin: 35px 0 35px 10px;
 
         & span {
             position: relative;
@@ -275,7 +275,7 @@ const CareersPage: React.SFC<{}> = () => (
                         </span>
                         <span className="subtitle">100 hours / month</span>
                         <span className="features">
-                            <span>Unlimited&nbsp;workspaces</span><span><b>Public</b> &amp; <b>Private</b></span>
+                            <span>Unlimited&nbsp;workspaces</span><span><b>Public</b> &amp; <b>Private</b></span><span>Non-commercial&nbsp;use&nbsp;only</span>
                         </span>
                     </div>
                     <div className="offer">
@@ -287,7 +287,7 @@ const CareersPage: React.SFC<{}> = () => (
                         </span>
                         <span className="subtitle"><b>Unlimited hours</b> / month</span>
                         <span className="features">
-                            <span>Unlimited&nbsp;workspaces</span><span><b>Public</b> &amp; <b>Private</b></span>
+                            <span>Unlimited&nbsp;workspaces</span><span><b>Public</b> &amp; <b>Private</b></span><span>Non-commercial&nbsp;use&nbsp;only</span>
                         </span>
                     </div>
                 </Offers>
