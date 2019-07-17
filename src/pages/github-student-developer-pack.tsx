@@ -165,7 +165,7 @@ const Styled = styled.div`
         float: left;
         text-align: center;
         border-top: 3px solid;
-        padding-top: 20px;
+        padding-top: 25px;
         font-size: 18px;
 
         &:first-child {
@@ -173,7 +173,7 @@ const Styled = styled.div`
 
             @media(max-width: 752px) {
                 position: absolute;
-                top: -1030px;
+                top: -920px;
                 transform: translateX(33%);
             }
         }
@@ -190,6 +190,18 @@ const Styled = styled.div`
         @media(max-width: 752px) {
             width: 60% !important;
             margin: 0 auto; !important;
+        }
+    }
+
+    .p1 {
+        border-color: #FDB02F;
+        font-size: 17px;
+        padding-top: 15px;
+
+        @media(max-width: ${getEmSize(breakpoints.md - 1)}em) {
+            button {
+                margin-top: 20px;
+            }
         }
     }
 `
@@ -232,11 +244,11 @@ const CareersPage: React.SFC<{}> = () => (
             <Container>
                 <div style={{ marginTop: 120, position: 'relative' }}>
                     <h4 style={{ color: colors.fontColor2 }}>GitHub Student Developer Pack</h4>
-                    <h1>Make your life easier with Gitpod</h1>
+                    <h1>Make Your Life Easier with Gitpod</h1>
                     <UnderLine />
                     <p>With Gitpod you have no more tedious setups,<br /> you save hours of compiling code,<br /> and you can start coding from any device, immediately.</p>
                     <a href="https://gitpod.io/#https://github.com/gitpod-io/NextSimpleStarter" target="_blank">
-                        <button className='primary'>Try now</button>
+                        <button className='primary'>Try Gitpod</button>
                     </a>
                     <BackPackImg>
                         <img src={BackPack} alt="GitHub Backpack" />
@@ -246,21 +258,16 @@ const CareersPage: React.SFC<{}> = () => (
                 <p>With the <a href="https://education.github.com/pack" style={{ color: 'inherit', textDecoration: 'underline' }}>GitHub Student Developer Pack</a>, you get the same features as with our usual subscription but at a much better price. We’re happy to be able to empower student developers participating in it.</p>
                 <Offers>
                     <div className="offer" style={{ opacity: .5 }}>
-                        <span className="caption caption--0">Open Source</span>
+                        <span className="caption caption--0">Open-source</span>
                         <img src={Heart} alt="Handshake" />
                         <span className="title">Free</span>
                         <span className="subtitle">100 hours / month</span>
                         <span className="features">
                             <span>Unlimited&nbsp;workspaces</span><span>Public repositories</span>
                         </span>
-                        <a href="https://gitpod.io/subscription" target="_blank">
-                            <button className='primary'>
-                                Get started
-                            </button>
-                        </a>
                     </div>
                     <div className="offer">
-                        <span className="caption caption--1">Personal</span>
+                        <span className="caption caption--1">Students</span>
                         <img src={Student} alt="Student sitting on a desk." />
                         <span className="title">
                             <span>$9</span>
@@ -270,14 +277,9 @@ const CareersPage: React.SFC<{}> = () => (
                         <span className="features">
                             <span>Unlimited&nbsp;workspaces</span><span><b>Public</b> &amp; <b>Private</b></span>
                         </span>
-                        <a href="https://education.github.com/pack" target="_blank">
-                            <button className='primary'>
-                                Get Student Pack
-                            </button>
-                        </a>
                     </div>
                     <div className="offer">
-                        <span className="caption">Student Unlimited</span>
+                        <span className="caption">Students Unlimited</span>
                         <img src={Briefcase} alt="briefcase" />
                         <span className="title">
                             <span>$39</span>
@@ -287,33 +289,34 @@ const CareersPage: React.SFC<{}> = () => (
                         <span className="features">
                             <span>Unlimited&nbsp;workspaces</span><span><b>Public</b> &amp; <b>Private</b></span>
                         </span>
-                        <a href=" https://education.github.com/pack" target="_blank">
-                            <button className='primary'>
-                                Get Student Pack
-                            </button>
-                        </a>
                     </div>
                 </Offers>
                 <Styled>
                     <p>Always Free for Open Source</p>
-                    <p style={{ borderColor: '#FDB02F' }}><a href="https://education.github.com/pack" style={{ color: 'inherit', textDecoration: 'underline' }}>GitHub Student Developer Pack</a></p>
+                    <p className="p1">Special offer for the <a href="https://education.github.com/pack" style={{ color: 'inherit', textDecoration: 'underline' }}>GitHub Student Developer Pack</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="https://gitpod.io/subscription/" target="_blank">
+                        <button className='primary' style={{fontSize: 14}}>
+                            Claim Offer
+                            </button>
+                    </a></p>
                 </Styled>
             </Container>
             <Highlight>
-                Don't waste time on tedious setups, learn amazing coding skills instead!
+                Stop wasting time with tedious setups, learn amazing programming skills instead!
             </Highlight>
             <Container>
                 <SectionInfo>
                     <div>
-                        <h3>Getting started with Gitpod</h3>
-                        <p>You can start coding on any project simply by prefixing any GitHub URL with              <b>gitpod.io/#</b></p>
-                        <p>For a detailed description of Gitpod and its IDE, Theia, please have a look at our documentation.</p>
+                        <h3>Getting Started with Gitpod</h3>
+                        <p>You can simply start coding in Gitpod by prefixing any GitHub URL with <b>gitpod.io/#</b></p>
+                        <p>If you'd like to have a detailed description about Gitpod and it's IDE, Theia, please have a look at our documentation.</p>
                         <Link to="/docs/10_Getting_Started/">
                             <button className="primary" style={{ marginBottom: '50px' }}>Gitpod Docs</button>
                         </Link>
                     </div>
                     <div>
-                        <h3>Do you need help?</h3>
+                        <h3>Do You Need Help?</h3>
                         <p>If you have any questions, issues or feedback, please get in touch. We love to hear your feedback and help you out.</p>
                         <div>
                             <a href="https://twitter.com/gitpod"><SocialImg alt="Twitter Icon" src={twitter} /></a>
