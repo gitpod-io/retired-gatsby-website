@@ -173,7 +173,7 @@ const Styled = styled.div`
 
             @media(max-width: 752px) {
                 position: absolute;
-                top: -920px;
+                top: -985px;
                 transform: translateX(33%);
             }
         }
@@ -196,7 +196,7 @@ const Styled = styled.div`
     .p1 {
         border-color: #FDB02F;
         font-size: 17px;
-        padding-top: 15px;
+        padding-top: 12px;
 
         @media(max-width: ${getEmSize(breakpoints.md - 1)}em) {
             button {
@@ -293,13 +293,11 @@ const CareersPage: React.SFC<{}> = () => (
                 </Offers>
                 <Styled>
                     <p>Always Free for Open Source</p>
-                    <p className="p1">Special offer for the <a href="https://education.github.com/pack" style={{ color: 'inherit', textDecoration: 'underline' }}>GitHub Student Developer Pack</a>
-                    &nbsp;&nbsp;&nbsp;
-                    <a href="https://gitpod.io/subscription/" target="_blank">
-                        <button className='primary' style={{fontSize: 14}}>
-                            Claim Offer
-                            </button>
-                    </a></p>
+                    <p className="p1">
+                        <a href="https://gitpod.io/subscription/" target="_blank">
+                            <button className='primary' style={{fontSize: 14}}>Claim Offer</button>
+                        </a>
+                    </p>
                 </Styled>
             </Container>
             <Highlight>
