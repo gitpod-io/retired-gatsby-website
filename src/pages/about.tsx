@@ -232,7 +232,7 @@ const Partners = styled.div`
 `
 
 const AboutPage: React.SFC<{}> = () => (
-    <IndexLayout title="Gitpod - About" canonical="https://www.gitpod.io/about">
+    <IndexLayout title="Gitpod - About" canonical="https://www.gitpod.io/about/">
         <Page>
             <Container>
                 <div style={{ marginTop: 120 }}>

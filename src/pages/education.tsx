@@ -85,7 +85,7 @@ const SectionPricing = styled.section`
 `
 
 const EducationPage: React.SFC<{}> = () => (
-    <IndexLayout title="Gitpod for Education" canonical="https://www.gitpod.io/education">
+    <IndexLayout title="Gitpod for Education" canonical="https://www.gitpod.io/education/">
         <Page>
             <Container>
                 <Logos logos={[

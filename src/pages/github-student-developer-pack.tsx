@@ -239,7 +239,7 @@ const SocialImg = styled.img`
 `
 
 const CareersPage: React.SFC<{}> = () => (
-    <IndexLayout title="Gitpod - GitHub Student Developer Pack" canonical="https://www.gitpod.io/github-student-developer-pack">
+    <IndexLayout title="Gitpod - GitHub Student Developer Pack" canonical="https://www.gitpod.io/github-student-developer-pack/">
         <Page>
             <Container>
                 <div style={{ marginTop: 120, position: 'relative' }}>

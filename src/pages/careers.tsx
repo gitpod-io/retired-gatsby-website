@@ -59,7 +59,7 @@ const SectionAbout = styled.section`
 `
 
 const CareersPage: React.SFC<{}> = () => (
-    <IndexLayout title="Gitpod - Careers" canonical="https://www.gitpod.io/careers">
+    <IndexLayout title="Gitpod - Careers" canonical="https://www.gitpod.io/careers/">
         <Page>
             <Container>
                 <GitGraph left={-900} top={170} graph={[

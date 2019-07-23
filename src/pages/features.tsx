@@ -86,7 +86,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
     }
 
     render() {
-        return <IndexLayout title="Gitpod - Features" canonical="https://www.gitpod.io/features">
+        return <IndexLayout title="Gitpod - Features" canonical="https://www.gitpod.io/features/">
             <Page>
                 <div style={{ zIndex: 99, position: "fixed", top: 50, left: 'auto' }}>
                     <ModalVideo channel='youtube' autoplay={true} isOpen={this.state.isModalOpen} videoId='D41zSHJthZI' onClose={() => this.setState({ isModalOpen: false })} />

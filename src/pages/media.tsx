@@ -89,7 +89,7 @@ const MediaKit = styled.div`
 `
 
 const PressPage: React.SFC<{}> = () => (
-    <IndexLayout title="Gitpod - Media Kit" canonical="https://www.gitpod.io/media">
+    <IndexLayout title="Gitpod - Media Kit" canonical="https://www.gitpod.io/media/">
         <Page>
             <Container>
                 <Logos logos={[
