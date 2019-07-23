@@ -137,13 +137,21 @@ const Timeline = styled.div`
     }
 
     .date {
+        width: 30%;
+        @media(max-width: ${getEmSize(breakpoints.md - 1)}em) {
+            width: 40%;
+        }
         position: relative;
         border-right: 1px solid #aaa;
 
         &::after {
             position absolute;
-            right: -4.5%;
-            top: 50%;
+            right: -3.6%;
+            top: 40%;
+            @media(max-width: ${getEmSize(breakpoints.md - 1)}em) {
+                right: -7%;
+                top: 45px;
+            }
             transform: translateY(-50%);
             content: '';
             display: block;
@@ -152,14 +160,15 @@ const Timeline = styled.div`
             border-radius: 50%;
             background: ${colors.brand};
         }
+
     }
 
     .description {
-        font-weight: bold;
-
-        & span {
-            font-weight: normal;
+        width: 70%;
+        @media(max-width: ${getEmSize(breakpoints.md - 1)}em) {
+            width: 60%;
         }
+        font-weight: normal;
     }
 
     .last {
@@ -228,7 +237,7 @@ const AboutPage: React.SFC<{}> = () => (
             <Container>
                 <div style={{ marginTop: 120 }}>
                     <h4 style={{ color: colors.fontColor2 }}>About Us</h4>
-                    <h1>The Company Behind Gitpod</h1>
+                    <h1>Better Software Engineering</h1>
                 </div>
                 <About>
                     <div className='logo-container'>
@@ -237,10 +246,10 @@ const AboutPage: React.SFC<{}> = () => (
                     </div>
                     <div className="text-container">
                         <p>
-                            Gitpod is developed by <a href="https://typefox.io" target="_blank" style={{ textDecoration: 'underline' }}>TypeFox</a>, a team of developer tool specialists and longtime contributors to many open-source projects. We are a driving force behind the language server protocol and the initiators of Eclipse Theia, the next generation IDE that powers Gitpod.
+                            Gitpod is developed by <a href="https://typefox.io" target="_blank" >TypeFox</a>, a team of developer tool specialists and longtime contributors to many open-source projects. We are a driving force behind the <a href="https://microsoft.github.io/language-server-protocol/" target="_blank" >language server protocol</a> and the initiators of <a href="https://www.theia-ide.org/" target="_blank" >Eclipse Theia</a>, the next generation IDE that powers Gitpod.
                         </p>
                         <p>
-                            Open-source projects like Kubernetes, Theia, TypeScript, VS Code and thousands of other libraries are the giants' shoulders Gitpod is standing on. The TypeFox team is happy and truly thankful to live in a time where we can participate in such lively and creative communties with so many cool ideas and so much passion. Without those, developing Gitpod would not have been possible.
+                            With Gitpod, we set out to streamline how software is written today. We democratize software development by streamlining onboarding and context switches through instant, automated, ready-to-code development environments.
                         </p>
                     </div>
                 </About>
@@ -253,7 +262,7 @@ const AboutPage: React.SFC<{}> = () => (
                             <img src={KeilHafen} className="hafen" />
                         </div>
                         <p className="para">
-                            TypeFox was founded in 2016 by Sven Efftinge, Mortiz Eysholdt and Dr. Jan Koehnlein, with the mission to remove friction in developers' life. The headquarters is located in Kiel, Germany.
+                            TypeFox was founded in 2016 by <a href="https://www.linkedin.com/in/efftinge/">Sven Efftinge</a>, <a href="https://www.linkedin.com/in/moritzeysholdt" >Moritz Eysholdt</a> and <a href="https://www.linkedin.com/in/dr-jan-k%C3%B6hnlein-7895038/">Dr. Jan Koehnlein</a>, with the mission to build smart tools for smart people (engineers). The headquarters are located in Kiel, Germany.
                         </p>
                     </div>
                     <br />
@@ -262,41 +271,13 @@ const AboutPage: React.SFC<{}> = () => (
                             <img src={Team} />
                         </div>
                         <p>
-                            We're a small team with over 10 years of experience in language design, IDEs and tool development. If you're interested in joining us, please have a look at the <Link to='/careers' style={{ textDecoration: 'underline' }}>careers page</Link>. We're always curious to hear from talented and committed tech enthusiasts.
+                            We're a small team with collectively over 50 years of experience in language design, IDEs and tool development. If you're interested in joining us, please have a look at the <Link to='/careers'>careers page</Link>.
                         </p>
                     </div>
                 </Description>
             </Container>
             <Hightlight>
-                Open Source lets us build the future together.
-            </Hightlight>
-            <Container>
-                <h2 style={{ marginTop: 100 }}>Our Journey</h2>
-                <Timeline>
-                    <div>
-                        <div className="date">04/2019</div>
-                        <div className="description">Launch of Gitpod</div>
-                    </div>
-                    <div>
-                        <div className="date">08/2018</div>
-                        <div className="description">Announcement of Gitpod Beta, an online IDE for Github based on Theia</div>
-                    </div>
-                    <div>
-                        <div className="date">03/2017</div>
-                        <div className="description">Creation of Theia <span>, an open-source IDE in cooperation with Ericsson</span></div>
-                    </div>
-                    <div className="since">
-                        <div className="date"><span>00/</span>2016</div>
-                        <div className="description">Development of Xtext, Sprotty &amp; Language Service Protocol (LSP)</div>
-                    </div>
-                    <div className="last">
-                        <div className="date">01/2016</div>
-                        <div className="description">Founding of TypeFox <span>for tool development, language design and consulting</span></div>
-                    </div>
-                </Timeline>
-            </Container>
-            <Container>
-                <h2 style={{ marginBottom: 40 }}>Our Partners</h2>
+                <h2 style={{ marginBottom: 40 }}>Partners &amp; Friends</h2>
                 <Partners>
                     <div className='img-container'>
                         <img src={ARM} alt="ARM Logo" />
@@ -323,6 +304,31 @@ const AboutPage: React.SFC<{}> = () => (
                         <img src={IBM} alt="IBM Logo" style={{ transform: 'scale(1.4)' }} />
                     </div>
                 </Partners>
+            </Hightlight>
+            <Container>
+                <h2 style={{ marginTop: 100 }}>Our Journey</h2>
+                <Timeline>
+                    <div>
+                        <div className="date">04/2019</div>
+                        <div className="description">Launch of Gitpod.io</div>
+                    </div>
+                    <div>
+                        <div className="date">08/2018</div>
+                        <div className="description">Announcement of Gitpod Beta, an online IDE for Github based on Theia</div>
+                    </div>
+                    <div>
+                        <div className="date">03/2017</div>
+                        <div className="description">Creation of Theia , an open-source IDE in cooperation with Ericsson</div>
+                    </div>
+                    <div>
+                        <div className="date">Since 2016</div>
+                        <div className="description">Development of Xtext, Sprotty &amp; various Language Servers for our international clients</div>
+                    </div>
+                    <div className="last">
+                        <div className="date">01/2016</div>
+                        <div className="description">Founding of TypeFox for tool development, language design and consulting</div>
+                    </div>
+                </Timeline>
             </Container>
         </Page>
     </IndexLayout >
