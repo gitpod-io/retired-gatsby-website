@@ -262,7 +262,7 @@ const AboutPage: React.SFC<{}> = () => (
                             <img src={KeilHafen} className="hafen" />
                         </div>
                         <p className="para">
-                            TypeFox was founded in 2016 by <a href="https://www.linkedin.com/in/efftinge/">Sven Efftinge</a>, <a href="https://www.linkedin.com/in/moritzeysholdt" >Moritz Eysholdt</a> and <a href="https://www.linkedin.com/in/dr-jan-k%C3%B6hnlein-7895038/">Dr. Jan Koehnlein</a>, with the mission to build smart tools for smart people. The headquarters are located in Kiel, Germany.
+                            TypeFox was founded in 2016 by <a href="https://www.linkedin.com/in/efftinge/" target="_blank">Sven Efftinge</a>, <a href="https://www.linkedin.com/in/moritzeysholdt" target="_blank" >Moritz Eysholdt</a> and <a href="https://www.linkedin.com/in/dr-jan-k%C3%B6hnlein-7895038/" target="_blank">Dr. Jan Koehnlein</a>, with the mission to build smart tools for smart people. The headquarters are located in Kiel, Germany.
                         </p>
                     </div>
                     <br />
@@ -277,31 +277,31 @@ const AboutPage: React.SFC<{}> = () => (
                 </Description>
             </Container>
             <Hightlight>
-                <h2 style={{ marginBottom: 40 }}>Our Clients &amp; Partners</h2>
+                <h2 style={{ marginBottom: 40 }}>Some of our clients &amp; partners</h2>
                 <Partners>
                     <div className='img-container'>
-                        <img src={ARM} alt="ARM Logo" />
+                        <a href="https://arm.com" target="_blank"><img src={ARM} alt="ARM Logo" /></a>
                     </div>
                     <div className='img-container'>
-                        <img src={Bosch} alt="Bosch Logo" style={{ transform: 'scale(2) translateY(-5px)' }} />
+                        <a href="https://bosch.com" target="_blank"><img src={Bosch} alt="Bosch Logo" style={{ transform: 'scale(2) translateY(-5px)' }} /></a>
                     </div>
                     <div className='img-container'>
-                        <img src={Eclipse} alt="Eclipse Logo" style={{ transform: 'scale(1.6)' }} />
+                        <a href="https://eclipse.org" target="_blank"><img src={Eclipse} alt="Eclipse Logo" style={{ transform: 'scale(1.6)' }} /></a>
                     </div>
                     <div className='img-container'>
-                        <img src={Ericsson} alt="Ericsson Logo" style={{ transform: 'scale(2)' }} />
+                        <a href="https://ericsson.com" target="_blank"><img src={Ericsson} alt="Ericsson Logo" style={{ transform: 'scale(2)' }} /></a>
                     </div>
                     <div className='img-container'>
-                        <img src={GoogleCloud} alt="Google Cloud Logo" style={{ transform: 'scale(2.2)' }} />
+                       <a href="https://cloud.google.com" target="_blank"> <img src={GoogleCloud} alt="Google Cloud Logo" style={{ transform: 'scale(2.2)' }} /></a>
                     </div>
                     <div className='img-container'>
-                        <img src={Redhat} alt="Redhat Logo" style={{ transform: 'scale(1.5)' }} />
+                        <a href="https://redhat.com" target="_blank"><img src={Redhat} alt="Redhat Logo" style={{ transform: 'scale(1.5)' }} /></a>
                     </div>
                     <div className='img-container'>
-                        <img src={Sap} alt="SAP Logo" />
+                        <a href="https://sap.com" target="_blank"><img src={Sap} alt="SAP Logo" /></a>
                     </div>
                     <div className='img-container'>
-                        <img src={IBM} alt="IBM Logo" style={{ transform: 'scale(1.4)' }} />
+                        <a href="https://ibm.com" target="_blank"><img src={IBM} alt="IBM Logo" style={{ transform: 'scale(1.4)' }} /></a>
                     </div>
                 </Partners>
             </Hightlight>
