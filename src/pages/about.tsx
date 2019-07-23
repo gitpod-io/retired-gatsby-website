@@ -249,7 +249,7 @@ const AboutPage: React.SFC<{}> = () => (
                             Gitpod is developed by <a href="https://typefox.io" target="_blank" >TypeFox</a>, a team of developer tool specialists and longtime contributors to many open-source projects. We are a driving force behind the <a href="https://microsoft.github.io/language-server-protocol/" target="_blank" >language server protocol</a> and the initiators of <a href="https://www.theia-ide.org/" target="_blank" >Eclipse Theia</a>, the next generation IDE that powers Gitpod.
                         </p>
                         <p>
-                            With Gitpod, we set out to streamline how software is written today. We democratize software development by streamlining onboarding and context switches through instant, automated, ready-to-code development environments.
+                            With Gitpod, we set out to streamline how software is written today. We democratize software development by minimizing onboarding effort and context switches through instant, automated, ready-to-code development environments.
                         </p>
                     </div>
                 </About>
@@ -262,7 +262,7 @@ const AboutPage: React.SFC<{}> = () => (
                             <img src={KeilHafen} className="hafen" />
                         </div>
                         <p className="para">
-                            TypeFox was founded in 2016 by <a href="https://www.linkedin.com/in/efftinge/">Sven Efftinge</a>, <a href="https://www.linkedin.com/in/moritzeysholdt" >Moritz Eysholdt</a> and <a href="https://www.linkedin.com/in/dr-jan-k%C3%B6hnlein-7895038/">Dr. Jan Koehnlein</a>, with the mission to build smart tools for smart people (engineers). The headquarters are located in Kiel, Germany.
+                            TypeFox was founded in 2016 by <a href="https://www.linkedin.com/in/efftinge/">Sven Efftinge</a>, <a href="https://www.linkedin.com/in/moritzeysholdt" >Moritz Eysholdt</a> and <a href="https://www.linkedin.com/in/dr-jan-k%C3%B6hnlein-7895038/">Dr. Jan Koehnlein</a>, with the mission to build smart tools for smart people. The headquarters are located in Kiel, Germany.
                         </p>
                     </div>
                     <br />
@@ -277,7 +277,7 @@ const AboutPage: React.SFC<{}> = () => (
                 </Description>
             </Container>
             <Hightlight>
-                <h2 style={{ marginBottom: 40 }}>Partners &amp; Friends</h2>
+                <h2 style={{ marginBottom: 40 }}>Our Clients &amp; Partners</h2>
                 <Partners>
                     <div className='img-container'>
                         <img src={ARM} alt="ARM Logo" />
