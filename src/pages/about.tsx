@@ -277,7 +277,7 @@ const AboutPage: React.SFC<{}> = () => (
                 </Description>
             </Container>
             <Hightlight>
-                <h2 style={{ marginBottom: 40 }}>Some of our clients &amp; partners</h2>
+                <h2 style={{ marginBottom: 40 }}>Some of Our Clients &amp; Partners</h2>
                 <Partners>
                     <div className='img-container'>
                         <a href="https://arm.com" target="_blank"><img src={ARM} alt="ARM Logo" /></a>
