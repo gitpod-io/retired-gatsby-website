@@ -642,7 +642,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                     <TellMeMore>
                         <h2>Explore Gitpod</h2>
                         <p>Learn about collaboration, workspace snapshots, supported programming languages, and much more.</p>
-                        <GatsbyLink to="/features"><button className="primary">See Features</button></GatsbyLink>
+                        <GatsbyLink to="/features/"><button className="primary">See Features</button></GatsbyLink>
                     </TellMeMore>
                 </Container>
             </Page>
