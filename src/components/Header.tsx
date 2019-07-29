@@ -174,12 +174,12 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
                     </button>
                 </MobileMenu>
                 <Menu className={isMenuOpen ? 'open' : ''} role="navigation">
-                    <HomepageLink to="/features">Features</HomepageLink>
-                    <HomepageLink to="/pricing">Pricing</HomepageLink>
-                    <HomepageLink to="/docs">Docs</HomepageLink>
-                    <HomepageLink to="/blog">Blog</HomepageLink>
+                    <HomepageLink to="/features/">Features</HomepageLink>
+                    <HomepageLink to="/pricing/">Pricing</HomepageLink>
+                    <HomepageLink to="/docs/">Docs</HomepageLink>
+                    <HomepageLink to="/blog/">Blog</HomepageLink>
                     <HomepageA href="https://spectrum.chat/gitpod" target="_blank" rel="noreferrer" >Community</HomepageA>
-                    <HomepageLink to="/about">About</HomepageLink>
+                    <HomepageLink to="/about/">About</HomepageLink>
                     <a href="https://gitpod.io/api/login">
                         <button className='primary'>Go to app</button>
                     </a>

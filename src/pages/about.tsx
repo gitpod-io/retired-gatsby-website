@@ -271,7 +271,7 @@ const AboutPage: React.SFC<{}> = () => (
                             <img src={Team} />
                         </div>
                         <p>
-                            We're a small team with collectively over 50 years of experience in language design, IDEs and tool development. If you're interested in joining us, please have a look at the <Link to='/careers'>careers page</Link>.
+                            We're a small team with collectively over 50 years of experience in language design, IDEs and tool development. If you're interested in joining us, please have a look at the <Link to='/careers/'>careers page</Link>.
                         </p>
                     </div>
                 </Description>

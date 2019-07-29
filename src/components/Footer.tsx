@@ -74,12 +74,12 @@ const Footer: React.SFC<FooterProps> = () => {
     return <StyledFooter role="contentinfo">
         <FooterInner>
             <FooterMenu>
-                <Link to="/features">Features</Link>
-                <Link to="/pricing">Pricing</Link>
-                <Link to="/docs">Docs</Link>
-                <Link to="/blog">Blog</Link>
-                <Link to="/careers">Careers</Link>
-                <Link to="/pricing#enterprise">Enterprise</Link>
+                <Link to="/features/">Features</Link>
+                <Link to="/pricing/">Pricing</Link>
+                <Link to="/docs/">Docs</Link>
+                <Link to="/blog/">Blog</Link>
+                <Link to="/careers/">Careers</Link>
+                <Link to="/pricing/#enterprise">Enterprise</Link>
                 <a href="https://status.gitpod.io" target="_blank">Status</a>
             </FooterMenu>
             <SocialLinks>
@@ -91,7 +91,7 @@ const Footer: React.SFC<FooterProps> = () => {
             <div style={{ height: 50, fontSize: 13, color: colors.fontColor1, textAlign: 'center' }}>
                 Copyright © 2019&nbsp;<a href="https://typefox.io" target="_blank">TypeFox</a> All Rights Reserved
                 <div style={{marginTop: 5}}>
-                    <Link to="/imprint">Imprint</Link>&nbsp; | &nbsp;<Link to="/privacy">Privacy Policy</Link>&nbsp; | &nbsp;<Link to="/terms">Terms of Service</Link>
+                    <Link to="/imprint/">Imprint</Link>&nbsp; | &nbsp;<Link to="/privacy/">Privacy Policy</Link>&nbsp; | &nbsp;<Link to="/terms/">Terms of Service</Link>
                 </div>
             </div>
         </FooterInner>
