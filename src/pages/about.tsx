@@ -20,6 +20,7 @@ import Ericsson from '../resources/ericsson.svg'
 import GoogleCloud from '../resources/google-cloud.svg'
 import Sap from '../resources/sap.svg'
 import Redhat from '../resources/redhat.svg'
+import GitGraph from '../components/GitGraph';
 
 const About = styled.div`
     display: flex;
@@ -120,97 +121,6 @@ const Description = styled.div`
     }
 `
 
-const Timeline = styled.div`
-    margin: 50px 0 100px 0;
-
-    @media(min-width: ${getEmSize(breakpoints.md)}em) {
-        transform: translateX(-85px);
-    }
-
-    & > div {
-        display: flex;
-
-        div {
-            padding: 35px 80px;
-            font-size: 18px;
-        }
-    }
-
-    .date {
-        width: 30%;
-        @media(max-width: ${getEmSize(breakpoints.md - 1)}em) {
-            width: 40%;
-        }
-        position: relative;
-        border-right: 1px solid #aaa;
-
-        &::after {
-            position absolute;
-            right: -3.6%;
-            top: 40%;
-            @media(max-width: ${getEmSize(breakpoints.md - 1)}em) {
-                right: -7%;
-                top: 45px;
-            }
-            transform: translateY(-50%);
-            content: '';
-            display: block;
-            height: 20px;
-            width: 20px;
-            border-radius: 50%;
-            background: ${colors.brand};
-        }
-
-    }
-
-    .description {
-        width: 70%;
-        @media(max-width: ${getEmSize(breakpoints.md - 1)}em) {
-            width: 60%;
-        }
-        font-weight: normal;
-    }
-
-    .last {
-        position: relative;
-        &::after {
-            position: absolute;
-            top: 2;
-            left: 17%;
-            content: '';
-            transform: translateY(59%);
-            display: block;
-            height: 100%;
-            width: 8%;
-            background: ${colors.background1};
-
-            @media(max-width: 850px) {
-                transform: translateY(57%);
-            }
-        }
-    }
-
-    .since {
-        color: #797979;
-
-        .date {
-            span {
-                position: relative;
-                color: transparent;
-
-                &::before {
-                    content: "Since";
-                    position: absolute;
-                    left: -22px;
-                    display: inline-block;
-                    color: #797979;
-                }
-            }
-        }
-    }
-
-`
-
 const Partners = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -231,6 +141,19 @@ const Partners = styled.div`
     }
 `
 
+const JourneyEntry = styled.div`
+    display: flex;
+
+    .date {
+        width: 20%;
+        height: 80px;
+    }
+
+    .description {
+        width: 80%;
+    }
+`;
+
 const AboutPage: React.SFC<{}> = () => (
     <IndexLayout title="Gitpod - About" canonical="https://www.gitpod.io/about/">
         <Page>
@@ -246,7 +169,8 @@ const AboutPage: React.SFC<{}> = () => (
                     </div>
                     <div className="text-container">
                         <p>
-                            Gitpod is developed by <a href="https://typefox.io" target="_blank" >TypeFox</a>, a team of developer tool specialists and longtime contributors to many open-source projects. We are a driving force behind the <a href="https://microsoft.github.io/language-server-protocol/" target="_blank" >language server protocol</a> and the initiators of <a href="https://www.theia-ide.org/" target="_blank" >Eclipse Theia</a>, the next generation IDE that powers Gitpod.
+                            Gitpod is developed by <a href="https://typefox.io" target="_blank" >TypeFox</a>, a team of developer tool specialists and longtime contributors to many open-source projects.
+                            We are a driving force behind the <a href="https://microsoft.github.io/language-server-protocol/" target="_blank" >language server protocol</a> and the initiators of <a href="https://www.theia-ide.org/" target="_blank" >Eclipse Theia</a>, the next generation IDE that powers Gitpod.
                         </p>
                         <p>
                             With Gitpod, we set out to streamline how software is written today. We democratize software development by minimizing onboarding effort and context switches through instant, automated, ready-to-code development environments.
@@ -277,58 +201,78 @@ const AboutPage: React.SFC<{}> = () => (
                 </Description>
             </Container>
             <Hightlight>
-                <h2 style={{ marginBottom: 40 }}>Some of Our Clients &amp; Partners</h2>
-                <Partners>
-                    <div className='img-container'>
-                        <a href="https://arm.com" target="_blank"><img src={ARM} alt="ARM Logo" /></a>
-                    </div>
-                    <div className='img-container'>
-                        <a href="https://bosch.com" target="_blank"><img src={Bosch} alt="Bosch Logo" style={{ transform: 'scale(2) translateY(-5px)' }} /></a>
-                    </div>
-                    <div className='img-container'>
-                        <a href="https://eclipse.org" target="_blank"><img src={Eclipse} alt="Eclipse Logo" style={{ transform: 'scale(1.6)' }} /></a>
-                    </div>
-                    <div className='img-container'>
-                        <a href="https://ericsson.com" target="_blank"><img src={Ericsson} alt="Ericsson Logo" style={{ transform: 'scale(2)' }} /></a>
-                    </div>
-                    <div className='img-container'>
-                       <a href="https://cloud.google.com" target="_blank"> <img src={GoogleCloud} alt="Google Cloud Logo" style={{ transform: 'scale(2.2)' }} /></a>
-                    </div>
-                    <div className='img-container'>
-                        <a href="https://redhat.com" target="_blank"><img src={Redhat} alt="Redhat Logo" style={{ transform: 'scale(1.5)' }} /></a>
-                    </div>
-                    <div className='img-container'>
-                        <a href="https://sap.com" target="_blank"><img src={Sap} alt="SAP Logo" /></a>
-                    </div>
-                    <div className='img-container'>
-                        <a href="https://ibm.com" target="_blank"><img src={IBM} alt="IBM Logo" style={{ transform: 'scale(1.4)' }} /></a>
-                    </div>
-                </Partners>
+                <Container>
+                    <h2 style={{ marginBottom: 40 }}>Some of Our Clients &amp; Partners</h2>
+                    <Partners>
+                        <div className='img-container'>
+                            <a href="https://arm.com" target="_blank"><img src={ARM} alt="ARM Logo" /></a>
+                        </div>
+                        <div className='img-container'>
+                            <a href="https://bosch.com" target="_blank"><img src={Bosch} alt="Bosch Logo" style={{ transform: 'scale(2) translateY(-5px)' }} /></a>
+                        </div>
+                        <div className='img-container'>
+                            <a href="https://eclipse.org" target="_blank"><img src={Eclipse} alt="Eclipse Logo" style={{ transform: 'scale(1.6)' }} /></a>
+                        </div>
+                        <div className='img-container'>
+                            <a href="https://ericsson.com" target="_blank"><img src={Ericsson} alt="Ericsson Logo" style={{ transform: 'scale(2)' }} /></a>
+                        </div>
+                        <div className='img-container'>
+                            <a href="https://cloud.google.com" target="_blank"> <img src={GoogleCloud} alt="Google Cloud Logo" style={{ transform: 'scale(2.2)' }} /></a>
+                        </div>
+                        <div className='img-container'>
+                            <a href="https://redhat.com" target="_blank"><img src={Redhat} alt="Redhat Logo" style={{ transform: 'scale(1.5)' }} /></a>
+                        </div>
+                        <div className='img-container'>
+                            <a href="https://sap.com" target="_blank"><img src={Sap} alt="SAP Logo" /></a>
+                        </div>
+                        <div className='img-container'>
+                            <a href="https://ibm.com" target="_blank"><img src={IBM} alt="IBM Logo" style={{ transform: 'scale(1.4)' }} /></a>
+                        </div>
+                    </Partners>
+                </Container>
             </Hightlight>
             <Container>
+                <GitGraph left={-900} top={0} graph={[
+                        { start: [0, 115] },
+                        { right: 860 },
+                        { right: 15 },
+                        { down: 128 },
+                        {},
+                        { down: 25 },
+                        { right: 120 },
+                        { down: 35 },
+                        {},
+                        { down: 80 },
+                        {},
+                        { down: 80 },
+                        {},
+                        { down: 80 },
+                        {},
+                        { down: 200 },
+                    ]} />
                 <h2 style={{ marginTop: 100 }}>Our Journey</h2>
-                <Timeline>
-                    <div>
+                <div>
+                    <JourneyEntry>
                         <div className="date">04/2019</div>
                         <div className="description">Launch of Gitpod.io</div>
-                    </div>
-                    <div>
+                    </JourneyEntry>
+                    <JourneyEntry>
                         <div className="date">08/2018</div>
                         <div className="description">Announcement of Gitpod Beta, an online IDE for Github based on Theia</div>
-                    </div>
-                    <div>
+                    </JourneyEntry>
+                    <JourneyEntry>
                         <div className="date">03/2017</div>
                         <div className="description">Creation of Theia , an open-source IDE in cooperation with Ericsson</div>
-                    </div>
-                    <div>
+                    </JourneyEntry>
+                    <JourneyEntry>
                         <div className="date">Since 2016</div>
                         <div className="description">Development of Xtext, Sprotty &amp; various Language Servers for our international clients</div>
-                    </div>
-                    <div className="last">
+                    </JourneyEntry>
+                    <JourneyEntry>
                         <div className="date">01/2016</div>
                         <div className="description">Founding of TypeFox for tool development, language design and consulting</div>
-                    </div>
-                </Timeline>
+                    </JourneyEntry>
+                </div>
             </Container>
         </Page>
     </IndexLayout >
