@@ -33,7 +33,7 @@ Here’s a small screencast:
 ## Where Do I Find Extensions?
 
 Microsoft prohibits the direct use of the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode) for any other software but their own. Although most extensions are open-source and not even developed or maintained by MS, the access to the Marketplace is restricted.
-However, if you have the `.vsix` file available, you can upload the extension yourself. `.vsix` files are not only available from the Visual Studio Marketplace but can be found on [GitHub as well](https://github.com/prettier/prettier-vscode/releases).
+However, if you have the `.vsix` file available, you can upload the extension yourself. `.vsix` files are not only available from the Visual Studio Marketplace but can be found on GitHub as well, e.g. [prettier-vscode](https://github.com/prettier/prettier-vscode/releases).
 
 An extension only needs to be uploaded once and is available for you and your teammates afterwards. Please make sure you comply with the licenses of those extensions.
 Additionally, of course, you can develop and upload your own extensions. They won’t be listed anywhere publicly except in your own `.gitpod.yml` file.
