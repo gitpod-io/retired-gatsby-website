@@ -152,7 +152,9 @@ export default `
     background-size: 20px;
   }
 
-
+  :not(pre) > code[class*="language-"] {
+      font-size: smaller;
+  }
 
   blockquote {
     margin: .8rem 0;
