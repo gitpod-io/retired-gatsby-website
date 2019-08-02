@@ -56,6 +56,7 @@ module.exports = {
                     'gatsby-remark-gitpod',
                     'gatsby-remark-autolink-headers',
                     'gatsby-remark-copy-linked-files',
+                    'gatsby-remark-external-links',
                     'gatsby-remark-smartypants',
                     {
                         resolve: 'gatsby-remark-images',
