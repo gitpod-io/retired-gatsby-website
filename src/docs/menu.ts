@@ -67,8 +67,12 @@ export const MENU: MenuEntry[] = [
                 "44_Config_Start_Tasks"
             ),
             M(
-                "Working with Go",
-                "45_Config_Go"
+                "VS Code Extensions",
+                "vscode-extensions"
+            ),
+            M(
+                "Workspace Location",
+                "45_Checkout_Location"
             ),
             M(
                 "Prebuilt Workspaces",

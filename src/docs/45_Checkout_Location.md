@@ -1,6 +1,6 @@
-# Working with Go
+# Checkout and Workspace Location
 
-Go projects need a <a href="https://golang.org/doc/code.html#Organization" target="_blank">specific workspace layout</a>:
+Older Go projects without module support need a <a href="https://golang.org/doc/code.html#Organization" target="_blank">specific workspace layout</a>:
 the source code of your repository and its dependencies must be in the directories
 ```sh
 src/[repository-provider]/[repository-owner]/[repository-name]
