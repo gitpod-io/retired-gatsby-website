@@ -8,7 +8,7 @@ In professional projects, however, you might miss one or the other functionality
 Installing extensions is a matter of dragging and dropping a *.vsix file into the extension view. Gitpod will automatically install and activate the new extension, and add an entry to the .gitpod.yml file. You can now test the experience and if you are happy with it share this new experience with your team by pushing the change to your remote Git repository.
 Here’s a small screencast:
 
-[![VSCode Extensions Video](images/vscode-extensions.png)](https://youtu.be/hEqmXM62cjo)
+`youtube: hEqmXM62cjo`
 
 Once you have uploaded an extension, the `.gitpod.yml` is updated automatically. Of course you can also directly edit extensions sections in the editor to delete an extension or copy some of them from another project's `.gitpod.yml`.
 Here is an example of how an extensions section might look like:
