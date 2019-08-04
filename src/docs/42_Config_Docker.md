@@ -54,3 +54,13 @@ USER root
 ```
 
 See also [Gero's blog post](/blog/docker-in-gitpod) running through an example.
+
+## Trying out changes to your Dockerfile
+
+The easiest way to try out your changes is to push them to a branch and then start another workspace on that branch, keeping the first workspace open as your main editing workspace.
+
+On start of the second workspace the docker build will start and show the output. If your Dockerfile has issues and the build fails or the resulting workspace does not look like you expected,
+you can force push changes to your config using your first, still running workspace and simply start a fresh workspace again to try them out.
+
+We are working on allowing dockerbuilds directly from within workspaces, but until then this approach has been proven to be the most productive.
+
