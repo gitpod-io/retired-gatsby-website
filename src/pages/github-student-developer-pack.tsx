@@ -309,7 +309,7 @@ const CareersPage: React.SFC<{}> = () => (
                         <h3>Getting Started with Gitpod</h3>
                         <p>You can simply start coding in Gitpod by prefixing any GitHub URL with <b>gitpod.io/#</b></p>
                         <p>If you'd like to have a detailed description about Gitpod and it's IDE, Theia, please have a look at our documentation.</p>
-                        <Link to="/docs/10_Getting_Started/">
+                        <Link to="/docs/10_getting_started/">
                             <button className="primary" style={{ marginBottom: '50px' }}>Gitpod Docs</button>
                         </Link>
                     </div>

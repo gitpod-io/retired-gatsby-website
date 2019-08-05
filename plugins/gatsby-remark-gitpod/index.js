@@ -4,7 +4,7 @@ module.exports = (param, pluginOptions) => {
     traverseNode(param.markdownAST, node => {
         if (node.type === 'link') {
             if (node.url.endsWith('.md')) {
-                node.url = `/docs/${node.url.replace('.md','')}`;
+                node.url = `/docs/${node.url.replace('.md','/').toLowerCase()}`;
             }
         }
     });

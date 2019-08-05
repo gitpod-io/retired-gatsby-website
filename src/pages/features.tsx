@@ -178,7 +178,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                     </Feature>
                     <Feature
                         title="Terminals"
-                        button={<GatsbyLink to="/docs/42_Config_Docker/">
+                        button={<GatsbyLink to="/docs/42_config_docker/">
                             <button className='primary'>Read docs</button>
                         </GatsbyLink>}
                         visual={<img src={TerminalsImage} alt="terminals" />}>
@@ -199,7 +199,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         <div>
                             <p>Gitpod has two different collaboration modes:</p>
                             <ul className='tick-list'>
-                                <li><GatsbyLink to="/docs/33_Sharing_and_Collaboration/#sharing-running-workspaces">Share a live session</GatsbyLink> with your remote co-worker and hunt down bugs together.</li>
+                                <li><GatsbyLink to="/docs/33_sharing_and_collaboration/#sharing-running-workspaces">Share a live session</GatsbyLink> with your remote co-worker and hunt down bugs together.</li>
                                 <li><GatsbyLink to="/blog/workspace-snapshots/">Create a snapshot</GatsbyLink> of your work and share it with the world.</li>
                             </ul>
                         </div>

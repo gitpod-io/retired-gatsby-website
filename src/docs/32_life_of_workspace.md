@@ -6,7 +6,7 @@
 
 Gitpod makes creating fresh workspaces as easy as clicking a button on a GitHub page.
 In most cases it is easier to create fresh workspaces rather than going back to older ones.
-See the [dashboard documentation](60_Dashboard.md) on where to find your workspace history
+See the [dashboard documentation](/docs/60_dashboard/) on where to find your workspace history
 and how to restart the older workspaces.
 
 ## Timeouts
@@ -25,17 +25,17 @@ archived workspaces are not shown in the workspace list of the dashboard and wil
 when starting a fresh workspace for the same context URL.
 
 Workspaces can also be stopped, started, archived, and unarchived from the
-[dashboard](60_Dashboard.md).
+[dashboard](/docs/60_dashboard/).
 
 ## Changes are Saved
 Gitpod continuously backs up the current state of the workspace's repository in the cloud, so that
 you can revisit it later. Files in other locations will not be saved. Gitpod never deletes a
-workspace. See [dashboard](60_Dashboard.md) for details.
+workspace. See [dashboard](/docs/60_dashboard/) for details.
 
 ## Starting: Initial and Restart
 Gitpod workspaces have two start modes, for which you can configure dedicated tasks on startup:
  - initial
  - restart
 
-Read more about how to configure tasks in [configuring start tasks](44_Config_Start_Tasks.md).
+Read more about how to configure tasks in [configuring start tasks](/docs/44_config_start_tasks/).
 

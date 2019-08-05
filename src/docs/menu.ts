@@ -18,53 +18,53 @@ export const MENU: MenuEntry[] = [
     ),
     M(
         "Getting Started",
-        "10_Getting_Started"
+        "10_getting_started"
     ),
     M(
         "Browser Extension",
-        "20_Browser_Extension"
+        "20_browser_extension"
     ),
     M(
         "Workspaces",
-        "30_Workspaces",
+        "30_workspaces",
         [
             M(
                 "Context URLs",
-                "31_Context_Urls"
+                "31_context_urls"
             ),
             M(
                 "Life of a Workspace",
-                "32_Life_of_Workspace"
+                "32_life_of_workspace"
             ),
             M(
                 "Collaboration & Sharing",
-                "33_Sharing_and_Collaboration"
+                "33_sharing_and_collaboration"
             ),
             M(
                 "Command Line Interface",
-                "34_Command_Line_Interface"
+                "34_command_line_interface"
             )
         ]
     ),
     M(
         "Configure Your Repository",
-        "40_Configuration",
+        "40_configuration",
         [
             M(
                 ".gitpod.yml",
-                "41_Config_Gitpod_File"
+                "41_config_gitpod_file"
             ),
             M(
                 "Docker Image",
-                "42_Config_Docker"
+                "42_config_docker"
             ),
             M(
                 "Exposing Ports",
-                "43_Config_Ports"
+                "43_config_ports"
             ),
             M(
                 "Start Tasks",
-                "44_Config_Start_Tasks"
+                "44_config_start_tasks"
             ),
             M(
                 "VS Code Extensions",
@@ -72,55 +72,55 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Workspace Location",
-                "45_Checkout_Location"
+                "45_checkout_location"
             ),
             M(
                 "Prebuilt Workspaces",
-                "46_Prebuilds"
+                "46_prebuilds"
             ),
             M(
                 "Environment Variables",
-                "47_Environment_Variables"
+                "47_environment_variables"
             )
         ]
     ),
     M(
         "Theia – Gitpod's IDE",
-        "50_IDE",
+        "50_ide",
         [
             M(
                 "Tips & Tricks",
-                "52_Tips_and_Tricks"
+                "52_tips_and_tricks"
             ),
             M(
                 "Git Integration",
-                "54_Git"
+                "54_git"
             ),
             M(
                 "Search",
-                "56_Search"
+                "56_search"
             ),
             M(
                 "Pull Requests",
-                "58_Pull_Requests"
+                "58_pull_requests"
             ),
             M(
                 "Code Reviews",
-                "59_Code_Reviews"
+                "59_code_reviews"
             )
         ]
     ),
     M(
         "Dashboard",
-        "60_Dashboard"
+        "60_dashboard"
     ),
     M(
         "Subscriptions",
-        "70_Subscriptions"
+        "70_subscriptions"
     ),
     M(
         "Release Notes",
-        "80_Release_Notes",
+        "80_release_notes",
         [
             M(
                 "June 2019",
