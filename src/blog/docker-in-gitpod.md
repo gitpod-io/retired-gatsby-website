@@ -132,7 +132,7 @@ Once the service has build and is running, we just follow the tutorial:
 
 ## Try it yourself
 
-You can either create a PR on[ gitpod-io/definitely-gp](https://github.com/gitpod-io/definitely-gp) — or dive right in and create the [.gitpod.yml in your repositories](/docs/41_Config_Gitpod_File/#checked-in-gitpod-config-file)! For details on how this works and what is possible please head over to [the docs](/docs/41_Config_Gitpod_File/).
+You can either create a PR on[ gitpod-io/definitely-gp](https://github.com/gitpod-io/definitely-gp) — or dive right in and create the [.gitpod.yml in your repositories](/docs/41_config_gitpod_file/#checked-in-gitpod-config-file)! For details on how this works and what is possible please head over to [the docs](/docs/41_config_gitpod_file/).
 
 ¹ It is not required to inherit from that image at all. You can even start with a plain alpine or debian based image. I used it here for convenience.
 
