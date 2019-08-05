@@ -8,7 +8,7 @@
   ],
   "main": "n/a",
   "scripts": {
-    "build": "cp -r src/docs/release-notes/* static/release-notes/ && gatsby build",
+    "build": "node build-release-notes.js && gatsby build",
     "clean": "rimraf public",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "dev": "gatsby develop",
