@@ -282,7 +282,7 @@ RUN sudo apt-get update \
 
 To learn more, please see our dedicated post on [Developing native UI applications in Gitpod](/blog/native-ui-with-vnc/).
 
-Or check out this fun [Windows 95 in Electron](https://github.com/felixrieseberg/windows95) example (see the [Gitpod demo](https://github.com/felixrieseberg/windows95/blob/master/docs/docker-kubernetes-gitpod.md), [.gitpod.yml](https://github.com/gitpod-io/definitely-gp/blob/master/windows95/.gitpod.yml), and [Dockerfile](https://github.com/gitpod-io/definitely-gp/blob/master/windows95/Dockerfile)).
+Or check out this fun [Windows 95 in Electron](https://github.com/felixrieseberg/windows95) example (see the <a href="https://github.com/felixrieseberg/windows95/blob/master/docs/docker-kubernetes-gitpod.md" target="_blank">Gitpod demo</a>, [.gitpod.yml](https://github.com/gitpod-io/definitely-gp/blob/master/windows95/.gitpod.yml), and [Dockerfile](https://github.com/gitpod-io/definitely-gp/blob/master/windows95/Dockerfile)).
 
 ## Opening previews
 
