@@ -26,7 +26,7 @@ But it is not only the one-off onboarding I want to discuss. Our projects change
 
 We should automate dev environments using code, just as we do with testing, staging and production environments for continuous deployments.
 
-> When a developer wants to start a task, on some branch, in some project, she should be able to do so without spending hours of getting into the right environment.
+> When a developer wants to start a task, on some branch, in some project, she should be able to do so without spending hours on getting into the right environment.
 
 ## Disposable Dev Environments
 
