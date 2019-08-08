@@ -46,7 +46,7 @@ Just like CI tools that build your project after you have submitted a change, a 
 
 > A tool for providing continuous automated dev environments should prebuild your project, so you don't have to wait.
 
-Gitpod prebuilds your branches continuously, so that you can start coding immediately without having to wait for builds to complete. Starting a new dev environment and seeing belows output in the terminal makes me smile every time.
+Gitpod prebuilds your branches continuously, so that you can start coding immediately without having to wait for builds to complete. Starting a new dev environment and seeing below output in the terminal makes me smile every time:
 
 ![🍌 This task ran as part of a workspace prebuild. 🎉 You just saved 5 minutes of watching your code build.](./continuous-dev-environment-in-devops/prebuilds.png)
 
