@@ -40,7 +40,7 @@ It's almost 2020 and we understand that automating complex systems through code 
 
 ## Prebuilt Dev Environments - No More Waiting for Builds!
 
-Initial setups are annoying, but the real time sink is [waiting for builds](/blog/prebuilds). Compilers, generators, downloading dependencies, and running tests need to be executed to initialize your dev environment.
+Initial setups are annoying, but the real time sink is [waiting for builds](/blog/prebuilds). Compilers, generators, downloading dependencies, and running tests all need to be executed before you can use your dev environment.
 
 Just like CI tools that build your project after you have submitted a change, a continuous dev environment service builds your project **before** you need it. That way you can start on a clean state immediately.
 
