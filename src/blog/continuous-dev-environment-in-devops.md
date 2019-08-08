@@ -9,7 +9,7 @@ teaserImage: /devops.jpg
 
 [DevOps](https://en.wikipedia.org/wiki/DevOps) has been all the rage for the last couple of years. Today, something like GitHub / GitLab with Continuous Integration seems to be the absolute minimum for a decent development toolchain. Such tools allow faster feedback cycles, better reproducibility, and generally more productivity.
 
-> However, in one crucial aspect most of us are still wasting endless hours every day.
+> However, in one crucial aspect most of us are still wasting many hours every day.
 
 Getting our dev environments into a ready-to-code state is usually still done manually, wasting an endless amount of precious developer time and energy.
 
