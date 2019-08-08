@@ -18,7 +18,7 @@ Getting our dev environments into a ready-to-code state is usually still done ma
 **Continuous dev environments** are a crucial part in a fully optimized DevOps toolchain, that allow to instantaneously spin up a ready-to-code development environment from any git state. Continuous dev environments reduce friction in onboarding and task switching and improves reproducibility across the project.
 
 ## Automated Dev Environments
-Automating dev environments is not new and usually focusses on the initial setup, but that doesn't quite cut it. Of course, we all have felt the pain of being on-boarded in a new project, spending the first week figuring out what tools to install and how to configure them correctly. Manually setting up a dev environment is a waste of energy. Surprising that we do such things, given that we developers are usually busy automating everything else in the world.
+Automating dev environments is not new and usually focusses on the initial setup, but that doesn't quite cut it. Of course, we all have felt the pain of being on-boarded in a new project, spending the first week figuring out what tools to install and how to configure them correctly. Manually setting up a dev environment is a waste of energy. Surprising that we still do such things, given that we developers are usually busy automating everything else in the world.
 
 ![disposable dev environments](./continuous-dev-environment-in-devops/gears.jpg)
 
