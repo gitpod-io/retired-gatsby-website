@@ -80,4 +80,4 @@ I'm pretty sure, automated ready-to-code dev environments will become mainstream
 
 Gitpod is available [to open-source projects for free and affordable for commercial projects](/pricing), through the Saas offering (Gitpod.io). [Gitpod Enterprise](/pricing#enterprise) will soon be released, allows self-hosting Gitpod on any Kubernetes cluster, and integrates with GitHub Enterprise, GitLab, Jenkins, JIRA and other tools in your DevOps toolchain.
 
-[Comments?](https://www.reddit.com/r/devops/comments/cnln7f/continuous_dev_environments/)
+[Comments?](https://dev.to/svenefftinge/continuous-dev-environments-the-next-step-in-devops-4ab7)
