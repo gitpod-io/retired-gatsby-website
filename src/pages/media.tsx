@@ -106,7 +106,7 @@ const PressPage: React.SFC<{}> = () => (
                 <MediaKit>
                     <div style={{ position: 'relative' }}>
                         <a href={mediaKitPDF} download>
-                            <img src={mediaKitPreview} alt="Fact Sheet PDF Preview" className="preview-img" />
+                            <img src={mediaKitPreview} alt="Gitpod Fact Sheet PDF Preview" className="preview-img" />
                         </a>
                         <p style={{ marginTop: 15 }}>Fact Sheet</p>
                     </div>
@@ -114,7 +114,7 @@ const PressPage: React.SFC<{}> = () => (
                         <div className="logo">
                             <div className="svg-container" style={{ background: '#fff' }}>
                                 <a download href={LogoDark}>
-                                    <img src={LogoDark} alt="Logo Dark" />
+                                    <img src={LogoDark} alt="Gitpod logo light" />
                                 </a>
                             </div>
                             <span>Logo for bright backgrounds</span>
@@ -122,7 +122,7 @@ const PressPage: React.SFC<{}> = () => (
                         <div className="logo">
                             <div className="svg-container">
                                 <a download href={LogoLight}>
-                                    <img src={LogoLight} alt="Logo Dark" />
+                                    <img src={LogoLight} alt="Gitpod logo dark" />
                                 </a>
                             </div>
                             <span>Logo for dark backgrounds</span>
@@ -130,7 +130,7 @@ const PressPage: React.SFC<{}> = () => (
                         <div className="logo">
                             <div className="svg-container">
                                 <a download href={Logo}>
-                                    <img src={Logo} alt="Logo with Text" style={{transform: 'scale(2.5) translateY(17px)'}}/>
+                                    <img src={Logo} alt="Gitpod logo no text" style={{transform: 'scale(2.5) translateY(17px)'}}/>
                                 </a>
                             </div>
                              <span>Logo without text</span>
