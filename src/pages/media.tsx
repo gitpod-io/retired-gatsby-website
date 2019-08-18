@@ -9,7 +9,7 @@ import styled from '@emotion/styled';
 import { getEmSize } from '../styles/mixins';
 import { colors, breakpoints } from '../styles/variables';
 import mediaKitPreview from '../resources/media-kit.png';
-import mediaKitPDF from '../resources/Media_kit2.pdf';
+import mediaKitPDF from '../resources/gitpod-factsheet.pdf';
 import LogoDark from '../resources/logo-dark.svg';
 import LogoLight from '../resources/logo-light.svg';
 import Logo from '../resources/logo-textless.svg';
