@@ -248,7 +248,7 @@ const CareersPage: React.SFC<{}> = () => (
                     <UnderLine />
                     <p>With Gitpod you have no more tedious setups,<br /> you save hours of compiling code,<br /> and you can start coding from any device, immediately.</p>
                     <a href="https://gitpod.io/#https://github.com/gitpod-io/NextSimpleStarter" target="_blank">
-                        <button className='primary'>Try Gitpod</button>
+                        <button className='primary'>Claim Offer</button>
                     </a>
                     <BackPackImg>
                         <img src={BackPack} alt="GitHub Backpack" />
