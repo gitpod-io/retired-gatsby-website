@@ -170,7 +170,7 @@ const AboutPage: React.SFC<{}> = () => (
                     <div className="text-container">
                         <p>
                             Gitpod is developed by <a href="https://typefox.io" target="_blank" >TypeFox</a>, a team of developer tool specialists and longtime contributors to many open-source projects.
-                            We are a driving force behind the <a href="https://microsoft.github.io/language-server-protocol/" target="_blank" >language server protocol</a> and the initiators of <a href="https://www.theia-ide.org/" target="_blank" >Eclipse Theia</a>, the next generation IDE that powers Gitpod.
+                            We are a driving force behind the <a href="https://microsoft.github.io/language-server-protocol/" target="_blank" rel="noopener">language server protocol</a> and the initiators of <a href="https://www.theia-ide.org/" target="_blank" >Eclipse Theia</a>, the next generation IDE that powers Gitpod.
                         </p>
                         <p>
                             With Gitpod, we set out to streamline how software is written today. We democratize software development by minimizing onboarding effort and context switches through instant, automated, ready-to-code development environments.
@@ -183,16 +183,16 @@ const AboutPage: React.SFC<{}> = () => (
                 <Description>
                     <div>
                         <div className="img-container img-container--hafen" >
-                            <img src={KeilHafen} className="hafen" />
+                            <img src={KeilHafen} className="hafen" alt="TypeFox office" />
                         </div>
                         <p className="para">
-                            TypeFox was founded in 2016 by <a href="https://www.linkedin.com/in/efftinge/" target="_blank">Sven Efftinge</a>, <a href="https://www.linkedin.com/in/moritzeysholdt" target="_blank" >Moritz Eysholdt</a> and <a href="https://www.linkedin.com/in/dr-jan-k%C3%B6hnlein-7895038/" target="_blank">Dr. Jan Koehnlein</a>, with the mission to build smart tools for smart people. The headquarters are located in Kiel, Germany.
+                            TypeFox was founded in 2016 by <a href="https://www.linkedin.com/in/efftinge/" target="_blank" rel="noopener">Sven Efftinge</a>, <a href="https://www.linkedin.com/in/moritzeysholdt" target="_blank" rel="noopener">Moritz Eysholdt</a> and <a href="https://www.linkedin.com/in/dr-jan-k%C3%B6hnlein-7895038/" target="_blank" rel="noopener">Dr. Jan Koehnlein</a>, with the mission to build smart tools for smart people. The headquarters are located in Kiel, Germany.
                         </p>
                     </div>
                     <br />
                     <div>
                         <div className="img-container">
-                            <img src={Team} />
+                            <img src={Team} alt="TypeFox team" />
                         </div>
                         <p>
                             We're a small team with collectively over 50 years of experience in language design, IDEs and tool development. If you're interested in joining us, please have a look at the <Link to='/careers/'>careers page</Link>.
@@ -205,28 +205,28 @@ const AboutPage: React.SFC<{}> = () => (
                     <h2 style={{ marginBottom: 40 }}>Some of Our Clients &amp; Partners</h2>
                     <Partners>
                         <div className='img-container'>
-                            <a href="https://arm.com" target="_blank"><img src={ARM} alt="ARM Logo" /></a>
+                            <a href="https://arm.com" target="_blank" rel="noopener"><img src={ARM} alt="ARM Logo" /></a>
                         </div>
                         <div className='img-container'>
-                            <a href="https://bosch.com" target="_blank"><img src={Bosch} alt="Bosch Logo" style={{ transform: 'scale(2) translateY(-5px)' }} /></a>
+                            <a href="https://bosch.com" target="_blank" rel="noopener"><img src={Bosch} alt="Bosch Logo" style={{ transform: 'scale(2) translateY(-5px)' }} /></a>
                         </div>
                         <div className='img-container'>
-                            <a href="https://eclipse.org" target="_blank"><img src={Eclipse} alt="Eclipse Logo" style={{ transform: 'scale(1.6)' }} /></a>
+                            <a href="https://eclipse.org" target="_blank" rel="noopener"><img src={Eclipse} alt="Eclipse Logo" style={{ transform: 'scale(1.6)' }} /></a>
                         </div>
                         <div className='img-container'>
-                            <a href="https://ericsson.com" target="_blank"><img src={Ericsson} alt="Ericsson Logo" style={{ transform: 'scale(2)' }} /></a>
+                            <a href="https://ericsson.com" target="_blank" rel="noopener"><img src={Ericsson} alt="Ericsson Logo" style={{ transform: 'scale(2)' }} /></a>
                         </div>
                         <div className='img-container'>
-                            <a href="https://cloud.google.com" target="_blank"> <img src={GoogleCloud} alt="Google Cloud Logo" style={{ transform: 'scale(2.2)' }} /></a>
+                            <a href="https://cloud.google.com" target="_blank" rel="noopener"> <img src={GoogleCloud} alt="Google Cloud Logo" style={{ transform: 'scale(2.2)' }} /></a>
                         </div>
                         <div className='img-container'>
-                            <a href="https://redhat.com" target="_blank"><img src={Redhat} alt="Redhat Logo" style={{ transform: 'scale(1.5)' }} /></a>
+                            <a href="https://redhat.com" target="_blank" rel="noopener"><img src={Redhat} alt="Redhat Logo" style={{ transform: 'scale(1.5)' }} /></a>
                         </div>
                         <div className='img-container'>
-                            <a href="https://sap.com" target="_blank"><img src={Sap} alt="SAP Logo" /></a>
+                            <a href="https://sap.com" target="_blank" rel="noopener"><img src={Sap} alt="SAP Logo" /></a>
                         </div>
                         <div className='img-container'>
-                            <a href="https://ibm.com" target="_blank"><img src={IBM} alt="IBM Logo" style={{ transform: 'scale(1.4)' }} /></a>
+                            <a href="https://ibm.com" target="_blank" rel="noopener"><img src={IBM} alt="IBM Logo" style={{ transform: 'scale(1.4)' }} /></a>
                         </div>
                     </Partners>
                 </Container>

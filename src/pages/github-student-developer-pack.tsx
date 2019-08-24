@@ -247,8 +247,8 @@ const CareersPage: React.SFC<{}> = () => (
                     <h1>Make Your Life Easier with Gitpod</h1>
                     <UnderLine />
                     <p>With Gitpod you have no more tedious setups,<br /> you save hours of compiling code,<br /> and you can start coding from any device, immediately.</p>
-                    <a href="https://gitpod.io/#https://github.com/gitpod-io/NextSimpleStarter" target="_blank">
-                        <button className='primary'>Try Gitpod</button>
+                    <a href="https://gitpod.io/subscription/" target="_blank">
+                        <button className='primary'>Claim Offer</button>
                     </a>
                     <BackPackImg>
                         <img src={BackPack} alt="GitHub Backpack" />
