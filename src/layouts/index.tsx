@@ -49,9 +49,9 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
             canonical ? <link rel="canonical" href={canonical} /> : null
           }
           <meta name="theme-color" content={colors.background1} />
+          <link rel="apple-touch-icon" type="image/png" href={GitpodIconApple} sizes="180x180" />
           <link rel="icon" type="image/png" href={GitpodIcon196} sizes="196x196" />
           <link rel="icon" type="image/svg+xml" href={GitpodIcon} sizes="any" />
-          <link rel="apple-touch-icon" type="image/png" href={GitpodIconApple} sizes="180x180" />
 
           <meta name="twitter:card" content="summary"></meta>
           <meta name="twitter:site" content="@gitpod"></meta>
