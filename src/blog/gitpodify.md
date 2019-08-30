@@ -227,22 +227,24 @@ Then, you'll be able to start the Redis server by running this in a Terminal or 
 redis-server
 ```
 
-### RethinkDB
+### MongoDB
 
-To get RethinkDB for your project, you can use our dedicated [RethinkDB image](https://github.com/gitpod-io/workspace-images/blob/master/rethinkdb/Dockerfile) built on top of `gitpod/workspace-full`.
+To get MongoDB for your project, you can use our dedicated [MongoDB image](https://github.com/gitpod-io/workspace-images/blob/master/mongodb/Dockerfile) built on top of `gitpod/workspace-full`.
 
 Simply base your `.gitpod.dockerfile` on:
 
 ```Dockerfile
-FROM gitpod/workspace-rethinkdb
+FROM gitpod/workspace-mongodb
 ```
 <br>
 
-Then start the RethinkDB server by running this in a Terminal or in a `.gitpod.yml` command:
+Then start the MongoDB server by running this in a Terminal or in a `.gitpod.yml` command:
 
 ```bash
-rethinkdb
+mkdir -p /workspace/data && mongod --dbpath /workspace/data
 ```
+
+Note: Storing MongoDB's data inside `/workspace` ensures that it will get backed up and restored properly when you stop and restart a workspace, or share a snapshot.
 
 ## Getting a Virtual Desktop
 
