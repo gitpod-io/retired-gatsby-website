@@ -84,7 +84,7 @@ Why not try it now? If you don’t have a particular repository in mind, you can
 [https://gitpod.io/#**https://github.com/demo-apps/go-gin-app**](https://gitpod.io/#https://github.com/demo-apps/go-gin-app)
 
 * **Java**:
-[https://gitpod.io/#**https://github.com/spring-guides/gs-spring-boot**](https://gitpod.io/#https://github.com/spring-guides/gs-spring-boot)
+[https://gitpod.io/#**https://github.com/gitpod-io/spring-petclinic**](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic)
 
 * **Ruby**:
 [https://gitpod.io/#**https://github.com/gitpod-io/rails\_sample\_app**](https://gitpod.io/#https://github.com/gitpod-io/rails_sample_app)

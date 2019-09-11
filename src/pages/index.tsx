@@ -466,7 +466,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
                             <ExampleBox title="JavaScript" description='React Application' image={(JS)} link="https://gitpod.io/#https://github.com/gitpod-io/NextSimpleStarter" />
                             <ExampleBox title="Python" description='Django Application' image={(Python)} link="https://gitpod.io/#https://github.com/gitpod-io/django-locallibrary-tutorial" />
-                            <ExampleBox title="Java" description='Spring-Boot Application' image={(Java)} link="https://gitpod.io/#https://github.com/gitpod-io/gs-spring-boot" />
+                            <ExampleBox title="Java" description='Spring-Boot Application' image={(Java)} link="https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic" />
                             <ExampleBox title="Go" description='Gin Web Application' image={(Go)} link="https://gitpod.io/#https://github.com/gitpod-io/go-gin-app" />
                         </div>
                     </div>
