@@ -70,7 +70,6 @@ module.exports = {
                 ]
             }
         },
-          'gatsby-plugin-feed',
         'gatsby-transformer-json',
         'gatsby-plugin-emotion',
         'gatsby-plugin-typescript',
@@ -135,7 +134,7 @@ module.exports = {
                                     guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                                     custom_elements: [
                                         { "content:encoded": edge.node.html },
-                                        {"teaserImage": (edge.node.frontmatter.teaserImage.startsWith('http') ? '' : 'https://gitpod.io') + edge.node.frontmatter.teaserImage}
+                                        {"teaserImage": (edge.node.frontmatter.teaserImage.startsWith('http') ? '' : 'https://www.gitpod.io') + edge.node.frontmatter.teaserImage}
                                     ],
                                 })
                             })
