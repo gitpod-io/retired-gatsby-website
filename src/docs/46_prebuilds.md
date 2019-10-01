@@ -29,22 +29,22 @@ It is similar to regular workspace starts with the difference that the `command`
 
 The rest is configured using the `github` section.
 
-See below for an example using the default values:
+See below for an example:
 ```YAML
 github:
   prebuilds:
     # enable for the master/default branch (defaults to true)
     master: true
     # enable for all branches in this repo (defaults to false)
-    branches: false
+    branches: true
     # enable for pull requests coming from this repo (defaults to true)
     pullRequests: true
     # enable for pull requests coming from forks (defaults to false)
-    pullRequestsFromForks: false
+    pullRequestsFromForks: true
     # add a check to pull requests (defaults to true)
     addCheck: true
     # add a "Review in Gitpod" button as a comment to pull requests (defaults to false)
-    addComment: false
+    addComment: true
     # add a "Review in Gitpod" button to the pull request's description (defaults to false)
     addBadge: false
     # add a label once the prebuild is ready to pull requests (defaults to false)
