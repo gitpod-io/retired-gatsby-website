@@ -70,6 +70,7 @@ module.exports = {
                 ]
             }
         },
+          'gatsby-plugin-feed',
         'gatsby-transformer-json',
         'gatsby-plugin-emotion',
         'gatsby-plugin-typescript',
