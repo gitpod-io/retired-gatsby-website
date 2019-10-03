@@ -80,6 +80,10 @@ Once you or your team mates start a dev environment, you will get the prebuild s
 
 ## IDE features
 
+> 🚧 Please help improve this section by [editing it](https://gitpod.io/#https://github.com/gitpod-io/website/blob/master/src/docs/java_in_gitpod.md).
+> * Explain what the extensions do, and how to use them
+> * Explain how to set up a Java project for debugging
+
 Gitpod comes equipped with the following VS Code extensions:
 
  - [Language Support for Java(TM)](https://marketplace.visualstudio.com/items?itemName=redhat.java)
