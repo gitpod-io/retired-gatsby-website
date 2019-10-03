@@ -117,11 +117,11 @@ export const MENU: MenuEntry[] = [
             M(
                 "Java",
                 "java_in_gitpod"
-            ),
+            )/*,
             M(
                 "Python",
                 "python_in_gitpod"
-            )
+            )*/
         ]
     ),
     M(
@@ -131,25 +131,25 @@ export const MENU: MenuEntry[] = [
     M(
         "Subscriptions",
         "70_subscriptions"
-    ),
-    // M(
-    //     "Release Notes",
-    //     "80_release_notes",
-    //     [
-    //         M(
-    //             "June 2019",
-    //             "release-notes/2019-06-17/june-2019"
-    //         ),
-    //         M(
-    //             "April 2019",
-    //             "release-notes/2019-04-05/april-2019"
-    //         ),
-    //         M(
-    //             "February 2019",
-    //             "release-notes/2019-02-15/february-2019"
-    //         )
-    //     ]
-    // )
+    )/*,
+    M(
+        "Release Notes",
+        "80_release_notes",
+        [
+            M(
+                "June 2019",
+                "release-notes/2019-06-17/june-2019"
+            ),
+            M(
+                "April 2019",
+                "release-notes/2019-04-05/april-2019"
+            ),
+            M(
+                "February 2019",
+                "release-notes/2019-02-15/february-2019"
+            )
+        ]
+    )*/
 ];
 
 interface MenuContext {
