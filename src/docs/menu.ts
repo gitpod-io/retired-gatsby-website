@@ -131,7 +131,7 @@ export const MENU: MenuEntry[] = [
     M(
         "Subscriptions",
         "70_subscriptions"
-    )/*,
+    ),
     M(
         "Release Notes",
         "80_release_notes",
@@ -149,7 +149,7 @@ export const MENU: MenuEntry[] = [
                 "release-notes/2019-02-15/february-2019"
             )
         ]
-    )*/
+    )
 ];
 
 interface MenuContext {
