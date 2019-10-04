@@ -6,8 +6,8 @@ A great example for a ready-to-code Java dev environment is our [Spring Petclini
 
 ## Ready-to-code Dev Environments for Java
 
-In order to setup your project, you should run `gp init` in the terminal first. This will create the two configuration files needed to explain Gitpod what your project needs.
-A dev environment is based on a Docker image. But don't fear you don't need to understand Docker in order to get started. In most cases the default docker image is enough.
+In order to setup your project, you should run `gp init` in the terminal first. This will create the two configuration files needed to tell Gitpod what your project needs.
+A dev environment is based on a Docker image. But have no fear, you don't need to understand Docker in order to get started. In most cases the default docker image is enough.
 
 ### SDKMAN
 
