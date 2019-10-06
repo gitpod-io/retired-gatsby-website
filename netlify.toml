@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/gitpod-business.html"
+  to = "/pricing/#enterprise"
+  status = 301
+
+[[redirects]]
+  from = "/docs/45_Config_Go"
+  to = "/docs/45_checkout_location/"
+  status = 301
+
+[[redirects]]
+  from = "/privacy/terms.html"
+  to = "/terms/"
+  status = 301
