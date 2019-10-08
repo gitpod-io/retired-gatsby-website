@@ -1,18 +1,18 @@
 ---
 subtitle: Frictionless Open Source Contributions For Everyone
-title: Announcing contribute.dev — Open-Source in One Click
+title: Announcing contribute.dev — Open Source in One Click
 date: Mon Oct 7 2019
 author: nisarhassan12
 image: https://user-images.githubusercontent.com/46004116/66325437-b11a9980-e940-11e9-9db4-69af48a0a52a.png
 ---
 
-To celebrate Open Source and Hacktoberfest, we're stoked 🧙✨🥰 to announce <a href="https:// contribute.dev" target="blank">contribute.dev</a>, a list of welcoming open-source projects featuring ready-to-code Gitpod setups.
+To celebrate Open Source and Hacktoberfest, we're stoked 🧙✨🥰 to announce <a href="https://contribute.dev" target="blank">contribute.dev</a>, a list of welcoming open-source projects featuring ready-to-code Gitpod setups.
 
 ![Projects List](https://user-images.githubusercontent.com/46004116/66307071-d695ac00-e91c-11e9-9eb1-8aa97bb6ca67.png)
 
 Setup for all of the listed projects is completely automated with the help of [Gitpod](https://gitpod.io). So within seconds, you get a fully working development environment, including a VS Code-like interface and a cloud-based Linux container configured specifically for the project. All you need is a browser!
 
-For getting started with the project of your choice just hit the blue `Open in Gitpod` button in the bottom right corner.
+For getting started with the project of your choice just hit the blue `Open in Gitpod` button in the bottom right corner:
 
 ![image](https://user-images.githubusercontent.com/46004116/66307306-82d79280-e91d-11e9-9c8b-00d92b710892.png)
 
@@ -24,6 +24,6 @@ Now you can make your contribution and once you're done you can do all sorts of 
 
 ##Want the same for your project?
 
-If the project that you're looking for is not in the list please file an issue [here &rarr;](https://github.com/gitpod-io/contribute.dev/issues/new?title=Please+add+project) with a link to your repository and we'll help you set it up. Once the experience is great we're happy to add your project to the list.
+If the project that you're looking for is not in the list please file an issue [here &rarr;](https://github.com/gitpod-io/contribute.dev/issues/new?labels=&template=add-project.md&title=Add+%3CRepo+URL+here%3E) with a link to your repository and we'll help you set it up. Once the experience is great we're happy to add your project to the list.
 
 Happy contributing! 🥰
