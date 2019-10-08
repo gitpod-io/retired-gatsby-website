@@ -1,13 +1,12 @@
 ---
-subtitle: Frictionless Open Source Contributions
+subtitle: Frictionless Open Source contributions for everyone
 title: Announcing contribute.dev — contribute to OSS in one click!
-date: Mon Oct 7 2019 15:00:00 GMT+0000 (UTC)
+date: Mon Oct 7 2019
 author: nisarhassan12
 image: https://user-images.githubusercontent.com/46004116/66325437-b11a9980-e940-11e9-9db4-69af48a0a52a.png
 ---
 
-> <h3 style="margin: 1rem 0;">TL;DR</h3>
-> To celebrate Open Source and Hacktoberfest, we're stoked 🧙✨🥰 to announce <a href="https:// contribute.dev" target="blank">contribute.dev</a> It has a list of really cool Open Source projects and can all get you started coding with a single click!
+> To celebrate Open Source and Hacktoberfest, we're stoked 🧙✨🥰 to announce <a href="https:// contribute.dev" target="blank">contribute.dev</a>. It has a list of really cool open-source projects that can get you started coding with a single click!
 
 Contributing to Open Source can be intimidating as you have to spend a lot of time while going through long README files to find out how to do the development setup that is essential for getting started. This is a serious barrier for contributors. It can be a huge pain especially if you're someone who is just starting out.
 
@@ -21,7 +20,7 @@ Contrary to Carbon, other popular and valuable Open Source projects usually have
 
 What if something could save us from spending our time and energy on configuring all these cryptic and repetitive development setups? What if we could automate all of this with a single click, so that we can focus and spend more time on our goal which is contributing to Open Source, while forgetting about the development environment?
 
-Well! [contribute.dev](https://contribute.dev) is here to help we're stoked 🧙✨🥰 to announce it. It has a list of really cool Open Source Projects that are beginner-friendly and can all get you started with a single click:
+Well! [contribute.dev](https://contribute.dev) is here to help, and we're stoked 🧙✨🥰 to announce it. It has a list of really cool Open Source Projects that are beginner-friendly and can all get you started with a single click:
 
 ![Projects List](https://user-images.githubusercontent.com/46004116/66307071-d695ac00-e91c-11e9-9eb1-8aa97bb6ca67.png)
 
