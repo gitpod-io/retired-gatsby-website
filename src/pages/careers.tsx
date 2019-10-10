@@ -150,29 +150,6 @@ const CareersPage: React.SFC<{}> = () => (
                         </ul>
                     </div>
                 </ExpandableJob>
-                <ExpandableJob jobTitle="Developer Advocate 🥑">
-                    <div>
-                        <p>As a Developer Advocate, you will connect with developers around the globe, try out new frameworks and technologies, and share what you've learned with the world. You will craft great resources to help developers build with Gitpod, including automated dev setups, sample projects, blog posts, and documentation. You will help grow our developer community, champion the interests of our users and translate their feedback into actionable product insights.</p>
-                        <h4>What you'll do:</h4>
-                        <ul>
-                            <li>Create momentum and drive adoption of Gitpod through your interactions with developers</li>
-                            <li>Champion Gitpod in person and online by presenting at meetups, conferences, writing technical tutorials, publishing articles and videos</li>
-                            <li>Build inspiring demos, sample apps, and help continuously improve the developer experience of Gitpod</li>
-                            <li>Identify strategic partnership opportunities to grow our developer community</li>
-                            <li>Influence the direction of Gitpod's development by gathering insights from our developer community</li>
-                            <li>Engage with developers to help them get the most out of Gitpod</li>
-                        </ul>
-                        <h4>What we're looking for:</h4>
-                        <ul>
-                            <li>Creative, empathetic, communicative, and clever</li>
-                            <li>Comfortable presenting to different types of audiences, at meetups or conferences</li>
-                            <li>Adept at communicating technically complicated topics simply and elegantly</li>
-                            <li>Hands-on developer who is comfortable with full-stack development</li>
-                            <li>Intellectually curious, with great problem-solving skills</li>
-                            <li>Happy to travel regularly</li>
-                        </ul>
-                    </div>
-                </ExpandableJob>
                 <ExpandableJob jobTitle='Cloud Operations Engineer ⛅️'>
                     <p>As a Cloud Operations Engineer, you will help improve and operate the globally distributed Kubernetes clusters behind Gitpod, automate monitoring and incident response, and install and support on-premise installations.</p>
                     <h4>What you'll do</h4>
