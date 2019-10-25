@@ -79,9 +79,9 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
                 <Container>
                     <Logos logos={[
                         [-30, 60, 12],
-                        [1040, 130, 60],
+                        [1140, 370, 60],
                         [-120, 630, 35],
-                        [40, 830, 60]
+                        [-80, 830, 60]
                     ]} />
                     <DocContent>
                         <DocSidebar>
