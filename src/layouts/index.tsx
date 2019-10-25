@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
+import CookieConsent from "react-cookie-consent";
 
 import 'modern-normalize'
 import '../styles/normalize'
@@ -66,6 +67,9 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
         </Helmet>
         <Header title={data.site.siteMetadata.title} />
         <LayoutMain>
+            <CookieConsent>
+                This website uses cookies to enhance the user experience read our <Link to="/privacy">privacy</Link> policy for more info.
+            </CookieConsent>
           {children}
         </LayoutMain>
         <Footer />
