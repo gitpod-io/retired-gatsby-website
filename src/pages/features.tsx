@@ -153,10 +153,10 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                     </div>
                     <div className='flex hidden-md-down' style={{ justifyContent: 'space-between', marginTop: '5rem', marginBottom: '12rem', alignItems: 'flex-end' }}>
                         <HeaderLink href="#prebuilt-workspaces" >Prebuilt Workspaces</HeaderLink>
-                        <HeaderLink href="#vs-code">VS Code</HeaderLink>
+                        <HeaderLink href="#vs-code-extensions">VS Code Extensions</HeaderLink>
                         <HeaderLink href="#terminals">Terminals</HeaderLink>
                         <HeaderLink href="#code-reviews" >Code Reviews</HeaderLink>
-                        <HeaderLink href="#collaboration" >Collaboration</HeaderLink>
+                        <HeaderLink href="#snapshots" >Snapshots</HeaderLink>
                         <HeaderLink href="#supported-languages" >Supported Languages</HeaderLink>
                     </div>
                     <Feature
@@ -168,13 +168,13 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                         <p>Gitpod continuously builds your code and pull requests in the background to save your time.</p>
                     </Feature>
                     <Feature
-                        title="VS Code"
+                        title="VS Code Extensions"
                         button={<a href="https://www.theia-ide.org" target="_blank">
                             <button className='primary'>Visit theia-ide.org</button>
                         </a>}
                         visual={<img src={LanguageToolingImage} alt="language tooling" />} >
-                        <p>Gitpod is based on <a href="https://www.theia-ide.org" target="_blank">Theia</a>, the open-source VS Code-powered IDE optimized for developing in the cloud.
-                            Get code intelligence and a Linux shell in a browser tab.</p>
+                        <p>Gitpod is based on <a href="https://www.theia-ide.org" target="_blank">Theia</a>, the vendor-neutral VS Code-alternative optimized for developing in the cloud and supporting VS Code Extensions.
+                        </p>
                     </Feature>
                     <Feature
                         title="Terminals"
@@ -194,14 +194,12 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                             Reply to comments and publish code reviews without switching back to GitHub.</p>
                     </Feature>
                     <Feature
-                        title="Collaboration"
-                        visual={<img src={CollaborationImage} alt="collaboration" />} >
+                        title="Snapshots"
+                        visual={<img src={CollaborationImage} alt="snapshots" />} >
                         <div>
-                            <p>Gitpod has two different collaboration modes:</p>
-                            <ul className='tick-list'>
-                                <li><GatsbyLink to="/docs/33_sharing_and_collaboration/#sharing-running-workspaces">Share a live session</GatsbyLink> with your remote co-worker and hunt down bugs together.</li>
-                                <li><GatsbyLink to="/blog/workspace-snapshots/">Create a snapshot</GatsbyLink> of your work and share it with the world.</li>
-                            </ul>
+                            <p>Want to share what you've been working on?<br/>
+                            <GatsbyLink to="/docs/33_sharing_and_collaboration/#sharing-snapshots">Create a snapshot</GatsbyLink> of your work and share it with the world.
+                            </p>
                         </div>
                     </Feature>
                 </Container>

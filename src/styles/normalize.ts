@@ -63,7 +63,7 @@ export default `
     margin-top: 1.414rem;
     margin-bottom: 1.5rem;
     color: ${colors.fontColor1};
-    font-weight: 400;
+    font-weight: 300;
     line-height: ${dimensions.lineHeight.heading};
     text-rendering: optimizeLegibility;
   }
@@ -75,7 +75,6 @@ export default `
 
   h2 {
     font-size: ${dimensions.headingSizes.h2}rem;
-    font-weight: 400;
   }
 
   h3 {
@@ -89,6 +88,7 @@ export default `
   p {
     margin-top: 0;
     margin-bottom: 1rem;
+    font-weight: 100;
   }
 
   strong {

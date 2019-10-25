@@ -360,13 +360,12 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 <Teaser>
                     <Container>
                         <div style={{ minHeight: 160, textAlign: 'center' }}>
-                            <h2>Any Project, any Task: Start Coding Now! 🚀</h2>
-                            <p>
-                                Every day developers <span style={{fontWeight: 600, color: 'white'}}>waste millions of hours</span> switching contexts between projects and branches, setting up development environments, and waiting for builds to finish, when all they want is to start coding.
-                            </p>
-                            <p>
-                                We streamline these tedious workflows and energy waste by providing automated, disposable, cloud-based <span style={{fontWeight: 600, color: 'white'}}>development environments as a service.</span>
-                            </p>
+                            <h2 style={{fontWeight: 100}}>
+                                Every day developers <span style={{fontWeight: 600, color: 'white'}}>waste millions of hours</span> with setting up development environments and waiting for builds to finish, when all they want is to start coding.
+                            </h2>
+                            <h2 style={{fontWeight: 100}}>
+                                Gitpod removes these productivity blockers and provides <span style={{fontWeight: 600, color: 'white'}}>ready-to-code development environments</span> with just one click.
+                            </h2>
                         </div>
                     </Container>
                 </Teaser>
@@ -462,7 +461,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 <Container className="hidden-md-down">
                     <div style={{ height: 525 }} id="try">
                         <h2>Try Now</h2>
-                        <p>Gitpod works with <GatsbyLink to="/features/#supported-languages">all major programming languages</GatsbyLink>. You can try an example right now.</p>
+                        <p><GatsbyLink to="/docs/vscode-extensions">Gitpod runs VS Code extensions</GatsbyLink> and therefore supports <GatsbyLink to="/features/#supported-languages">all popular programming languages</GatsbyLink>. Try one of the example projects below:</p>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 50 }}>
                             <ExampleBox title="JavaScript" description='React Application' image={(JS)} link="https://gitpod.io/#https://github.com/gitpod-io/NextSimpleStarter" />
                             <ExampleBox title="Python" description='Django Application' image={(Python)} link="https://gitpod.io/#https://github.com/gitpod-io/django-locallibrary-tutorial" />
