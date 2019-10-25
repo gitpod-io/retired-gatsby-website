@@ -209,7 +209,7 @@ export default class FeaturesPage extends React.Component<{}, FeaturesPageState>
                     <a id="supported-languages" style={{position: 'relative', top: 100}}/>
                     <Container>
                         <h2>Supported Programming Languages</h2>
-                        <p>Gitpod comes pre-configured with support for many programming languages. Very soon you can even install VS Code extensions.</p>
+                        <p>Gitpod comes with support for the most used programming languages and you can <GatsbyLink to="/docs/vscode-extensions/">install additional support through a VS Code extension</GatsbyLink>.</p>
                         <table>
                             <thead>
                                 <tr>
