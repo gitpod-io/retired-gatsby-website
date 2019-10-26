@@ -67,8 +67,20 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
         </Helmet>
         <Header title={data.site.siteMetadata.title} />
         <LayoutMain>
-            <CookieConsent>
-                This website uses cookies to enhance the user experience read our <Link to="/privacy">privacy</Link> policy for more info.
+            <CookieConsent buttonClasses="primary" buttonStyle={{
+                margin: '15px 15px 15px 0px',
+                padding: '8px 14px',
+                borderRadius: 2,
+                border: '1px solid #1aa6e4',
+                backgroundColor: 'var(--background1)',
+                cursor: 'pointer',
+                borderColor: '#1aa6e4',
+                color: '#1aa6e4',
+                boxShadow: '0px 0px 1px #1aa6e4',
+
+            }}
+            >
+                This website uses cookies to enhance the user experience. Read our <Link to="/privacy">privacy policy</Link> for more info.
             </CookieConsent>
           {children}
         </LayoutMain>
