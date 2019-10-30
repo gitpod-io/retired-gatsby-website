@@ -341,4 +341,8 @@ export default `
         }
     }
   }
+
+  .gatsby-resp-image-wrapper {
+    margin-bottom: 4rem;
+  }
 `
