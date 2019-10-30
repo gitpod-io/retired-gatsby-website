@@ -40,6 +40,25 @@ const DocSidebar = styled.div`
     }
 `
 
+const DocBody = styled.div`
+
+    h1 {
+        margin-bottom: 3rem;
+    }
+
+    li {
+        font-weight: 300;
+    }
+
+    li + li {
+        margin-top: 18px;
+    }
+
+    pre {
+        margin: 1.5rem 0;
+    }
+`
+
 interface DocTemplateProps {
     data: {
         site: {
@@ -104,7 +123,7 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
                                         }}><polyline className="st0" points="3.49,43.76 1.78,54.07 12.39,52.66 52.53,12.48 43.67,3.58 43.67,3.58 3.49,43.76" /><line className="st0" x1="46.05" y1="18.68" x2="37.32" y2="9.95" /></svg>
                                 </a>
                             </div>
-                            <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+                            <DocBody dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
                             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
                                 {menuCtx.prev ? <GatsbyLink to={menuCtx.prev.path} title={menuCtx.prev.title}>&lt; prev</GatsbyLink> : <div />}
                                 {menuCtx.next ? <GatsbyLink to={menuCtx.next.path} title={menuCtx.next.title}>next ></GatsbyLink> : <div />}

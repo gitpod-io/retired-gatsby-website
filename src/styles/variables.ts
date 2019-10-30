@@ -59,7 +59,7 @@ export const dimensions = {
     h4: 1.3
   },
   lineHeight: {
-    regular: 1.45,
+    regular: 1.55,
     heading: 1.2
   },
   containerPadding: 1.5
