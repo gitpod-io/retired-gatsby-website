@@ -153,6 +153,12 @@ const ResponsiveTweet = styled.div`
         position: static;
         width: 106%;
     }
+
+    @-moz-document url-prefix(){
+        &.firefox--offset {
+            top: 622px !important;
+        }
+    }
 `
 
 const TellMeMore = styled.div`
@@ -487,7 +493,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                         <ResponsiveTweet style={{ left: 530, top: 360 }}>
                             <TweetEmbed id='1054079167841660928' options={twitterOptions} />
                         </ResponsiveTweet>
-                        <ResponsiveTweet style={{ left: 530, top: 600 }}>
+                        <ResponsiveTweet style={{ left: 530, top: 600 }} className="firefox--offset">
                             <TweetEmbed id='1100698060831764481' options={twitterOptions} />
                         </ResponsiveTweet>
                         <ResponsiveTweet style={{ left: 23, top: 240 }}>
