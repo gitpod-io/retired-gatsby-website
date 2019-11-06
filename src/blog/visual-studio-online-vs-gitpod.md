@@ -6,19 +6,19 @@ date: Tue Nov 05 2019 16:16:17 GMT+0000 (UTC)
 image: /gitpod-vs-code-online.png
 ---
 
-With [Visual Studio Online](https://visualstudio.microsoft.com/) (VSO) Microsoft is entering the space of cloud-based development environments. So, what are the differences? Glad you asked:
+With [Visual Studio Online](https://visualstudio.microsoft.com/services/visual-studio-online/) (VSO) Microsoft is entering the space of cloud-based development environments. So, what are the differences? Glad you asked:
 
 # Next Generation Cloud IDE
 
-Cloud IDEs are not exactly a new thing. Platforms like Cloud9 or Eclipse Che have been around for quite some time. However, these days we see the advent of a new generation of cloud IDEs, which are either based on VS Code or on the vendor-neutral alternative [Eclipse Theia](https://theia-ide.org).
+Cloud IDEs are not exactly a new thing. Platforms like Cloud9 or Eclipse Che have been around for quite some time. However, these days we see the advent of a new generation of cloud IDEs, which are either based on VS Code, like VSO, or on the vendor-neutral alternative [Eclipse Theia](https://theia-ide.org), such as Gitpod.
 
-Make no mistake, the “Eclipse” in Eclipse Theia doesn’t mean it is based on the classic Eclipse IDE, but that it is governed by the [Eclipse Foundation](https://www.eclipse.org/org/), a not-for-profit Open-Source Foundation, rather than controlled by a single company.
+Make no mistake, the “Eclipse” in Eclipse Theia doesn’t mean it is based on the classic Eclipse IDE, but that it is governed by the [Eclipse Foundation](https://www.eclipse.org/org/) rather than controlled by a single company. The Eclipse Foundation is a not-for-profit Open-Source Foundation.
 
-> This is open-source at it’s best, as it means others can innovate on top of a stable platform without risking the project is making unexpected turns.
+> This is open-source at its best, as it means others can innovate on top of a stable platform without risking the project is making unexpected turns.
 
 Theia has not even seen a 1.0 release, yet, but is already adopted by many companies, such as Google, ARM, Arduino, RedHat, IBM, SAP, Ericsson and yes, Gitpod. We actually started the project together with Ericsson and are still among the most active contributors.
 
-With regards to features neither VS Code nor Theia has a significant competitive advantage over the other as both support VS Code extensions and the UI is almost identical. Theia is more flexible when it comes to extended though, but as an end user of Gitpod this doesn't really make a difference.
+With regards to features neither VS Code nor Theia has a significant competitive advantage over the other as both support VS Code extensions and the UI is almost identical. Theia is more flexible when it comes to extending the core IDE, though, as you can build all kinds of modern cloud and desktop IDEs based on it. But as an end user of Gitpod this doesn't really make a difference as we are embracing the look and feel of VS Code.
 
 Long story short, from the user’s perspective the IDE itself is a common good and therefore not a real differentiator, so we need to dig a little deeper to discover the real differences.
 
@@ -28,7 +28,7 @@ Long story short, from the user’s perspective the IDE itself is a common good 
 
 > We believe that the way to go are short-lived dev environments that are easy and fast to create from any Git branch.
 
-For that we eliminated any ‘create environment’ wizards and dashboards where you have to manually start, stop and maintain your dev environment. With Gitpod you just go to your Git project and start coding. GitHub or GitLab is your dashboard.
+For that we eliminated any ‘create environment’-wizards and dashboards standing between you and your dev environment. With Gitpod you just go to your Git project and start coding. GitHub or GitLab is your dashboard.
 
 In the launch post for VSO disposable dev environments are mentioned, which is an important part of our vision, but unfortunately VSO doesn’t embrace it in the actual product. After getting through the account creation of VSO, you land on a dashboard and create a dev environment through a form based configuration dialog. Due to the lack of prebuilds, creating fresh dev environments all the time is tedious, as you need to wait for the build, downloading dependencies and running tests. This dashboard-centric approach encourages people to reuse their workspaces instead of relying on a well-working, automated setup continuously.
 
@@ -44,14 +44,16 @@ On VSO there is something called ‘self-hosted’ but that doesn’t mean you c
 
 A list of checkboxes doesn’t make a good product, although in terms of features Gitpod definitely is ahead of VSO, as it supports capabilities like snapshots, prebuilds, the deep integration with GitHub and GitLab or all the advanced automation possibilities the configuration allows.
 
-That said, the Gitpod team is not striving for an ever growing feature list. Instead,
-> we are focussing on a coherent developer experience (DX), that doesn’t get into your way but lets you focus on coding.
+That said, VSO is still in beta and they have features on their agenda that are also not yet supported on Gitpod, such as starting Windows VMs.
+
+Anyhow, the Gitpod team is not striving for an ever growing feature list. Instead,
+> we are focussing on a coherent developer experience (DX) that doesn’t get into your way, but lets you focus on coding.
 
 # Microsoft Monopoly?
 
-I’m honestly a little concerned about the massive control MS has gained over the developer world in the last few years. They have hired awesome talent and allow them to create crazy good developer products such as TypeScript and VS Code. Acquiring GitHub was another huge cornerstone and I wonder if the other big tech companies don’t realize this or whether they already have given up.
+Not really related to product functionality, but I’m honestly a little concerned about the massive control MS has gained over the developer world in the last few years. They have hired awesome talent and allow them to create crazy good developer products such as TypeScript and VS Code. Acquiring GitHub was another huge cornerstone and I wonder if the other big tech companies don’t realize this or whether they already have given up on this.
 
-For GitHub, GitLab seems to be the only real competitor and Azure DevOps is trying to take over the CI tools space. [VS Code has surpassed 50% market share](https://insights.stackoverflow.com/survey/2019/#development-environments-and-tools) which I belief is the highest number for an IDE/Editor in history. The stuff MS has created is amazing and the people behind them are great and friendly engineers, but it is definitely not healthy to put everything under control of a single vendor.
+For GitHub, GitLab seems to be the only real competitor and Azure DevOps is trying to take over the CI tools space. [VS Code has surpassed 50% market share](https://insights.stackoverflow.com/survey/2019/#development-environments-and-tools) which I believe is the highest number for an IDE/Editor in history. The stuff MS has created is amazing and the people behind them are great and friendly engineers, but for the rest of the industry is definitely not healthy to have everything under control of a single vendor as it hinders competition and with that diversity and inventions.
 
 # Conclusion
 
