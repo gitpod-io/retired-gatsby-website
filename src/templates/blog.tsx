@@ -11,6 +11,7 @@ import Logos from '../components/Logos';
 import reddit from '../resources/reddit.svg';
 import twitter from '../resources/twitter.svg';
 import { Helmet } from 'react-helmet';
+import { authors } from '../utils/authors';
 
 interface BlogTemplateProps {
   data: {
@@ -88,6 +89,18 @@ const TeaserImage = styled.div`
 `
 
 const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
+  const authorName = data.markdownRemark.frontmatter.author;
+  let author = authors[authorName];
+  if (!author) {
+      author = {
+          description: "",
+          name: authorName,
+          socialProfiles: {
+            github: authorName,
+            twitter: authorName
+          }
+      }
+  }
 
   return (<IndexLayout canonical={data.markdownRemark.frontmatter.url || `https://www.gitpod.io${data.markdownRemark.fields.slug}`}>
     <Page>
@@ -98,7 +111,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
 
         <meta name="twitter:card" content="summary"></meta>
         <meta name="twitter:site" content="@gitpod"></meta>
-        <meta name="twitter:creator" content={'@' + data.markdownRemark.frontmatter.author}></meta>
+        <meta name="twitter:creator" content={'@' + author.socialProfiles.twitter}></meta>
 
         <meta property="og:url" content={data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug} />
         <meta property="og:title" content={data.markdownRemark.frontmatter.title} />
@@ -116,7 +129,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
             <h2 style={{ color: colors.fontColor3, margin: '50px 0 10px 0' }}>{data.markdownRemark.frontmatter.subtitle}</h2> :
             null}
           <h1 style={{ margin: '0 0 0 0' }}>{data.markdownRemark.frontmatter.title}</h1>
-          <p style={{ margin: '15px 0 0px 0', color: colors.fontColor3 }}>{new Date(Date.parse(data.markdownRemark.frontmatter.date)).toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })} by <a href={`https://github.com/${data.markdownRemark.frontmatter.author}`} target="_blank">{data.markdownRemark.frontmatter.author}</a></p>
+          <p style={{ margin: '15px 0 0px 0', color: colors.fontColor3 }}>{new Date(Date.parse(data.markdownRemark.frontmatter.date)).toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })} by <a href={`https://github.com/${author.socialProfiles.github}`} target="_blank">{author.name}</a></p>
         </div>
       </Container>
       {
@@ -131,7 +144,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: 60 }}>
-          <a title="Share on Twitter" href={'https://twitter.com/intent/tweet?text=' + encodeURIComponent(`${data.markdownRemark.frontmatter.title} by @${data.markdownRemark.frontmatter.author} ${data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug}`)} target="_blank">
+          <a title="Share on Twitter" href={'https://twitter.com/intent/tweet?text=' + encodeURIComponent(`${data.markdownRemark.frontmatter.title} by @${author.socialProfiles} ${data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug}`)} target="_blank">
             <img alt="Share on Twitter" src={twitter} style={{ margin: 8, height: 36, padding: 6 }}/>
           </a>
           <a title="Share on Reddit" href={`http://www.reddit.com/submit?url=${encodeURIComponent(data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug)}&title=${encodeURIComponent(data.markdownRemark.frontmatter.title)}`} target="_blank">
