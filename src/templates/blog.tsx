@@ -2,12 +2,8 @@ import * as React from 'react'
 import styled from '@emotion/styled';
 import { graphql } from 'gatsby'
 
-import Page from '../components/Page'
-import Container from '../components/Container'
 import IndexLayout from '../layouts'
-import { colors, breakpoints } from '../styles/variables';
-import { getEmSize } from '../styles/mixins';
-import Logos from '../components/Logos';
+import { colors , sizes} from '../styles/variables';
 import reddit from '../resources/reddit.svg';
 import twitter from '../resources/twitter.svg';
 import { Helmet } from 'react-helmet';
@@ -45,45 +41,12 @@ interface BlogTemplateProps {
   }
 }
 
-function currentHeight(): number {
-  if (typeof window !== "undefined") {
-    var body = window.document.body,
-      html = window.document.documentElement;
-
-    return Math.max(body.scrollHeight, body.offsetHeight,
-      html.clientHeight, html.scrollHeight, html.offsetHeight);
-  }
-  return 500;
-}
-
-const logos: [number, number, number][] = [3700, 8000].reduce((a, b) => {
-  return [
-    ...a,
-    ...a.map(p => [p[0], p[1] + b, p[2]] as [number, number, number])
-  ]
-}, [
-  [20, 160, 25],
-  [40, 80, 60],
-  [980, 830, 40],
-  [940, 880, 70],
-  [40, 1280, 35],
-  [0, 1390, 50],
-  [960, 1690, 120],
-  [80, 2060, 25],
-  [30, 2100, 60],
-  [1010, 2530, 40],
-  [950, 2650, 50],
-  [40, 3280, 35],
-  [80, 3390, 50],
-  [980, 3690, 120],
-] as [number, number, number][]);
-
 const TeaserImage = styled.div`
   height: 400px;
   background-position: center;
   background-size: 100%;
 
-  @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
+  @media (max-width: ${sizes.breakpoints.md}}em) {
     height: 250px;
   }
 `
@@ -103,7 +66,6 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
   }
 
   return (<IndexLayout canonical={data.markdownRemark.frontmatter.url || `https://www.gitpod.io${data.markdownRemark.fields.slug}`}>
-    <Page>
       <Helmet>
         <title>{data.markdownRemark.frontmatter.title}</title>
         <meta name="description" content={data.markdownRemark.frontmatter.subtitle} />
@@ -122,16 +84,15 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
         }
 
       </Helmet>
-      <Container>
-        <Logos logos={logos.filter(p => p[1] < currentHeight() - 200)} />
+      <div>
         <div className="article blog">
           {data.markdownRemark.frontmatter.subtitle ?
-            <h2 style={{ color: colors.fontColor3, margin: '50px 0 10px 0' }}>{data.markdownRemark.frontmatter.subtitle}</h2> :
+            <h2 style={{ color: colors.textLight, margin: '50px 0 10px 0' }}>{data.markdownRemark.frontmatter.subtitle}</h2> :
             null}
           <h1 style={{ margin: '0 0 0 0' }}>{data.markdownRemark.frontmatter.title}</h1>
-          <p style={{ margin: '15px 0 0px 0', color: colors.fontColor3 }}>{new Date(Date.parse(data.markdownRemark.frontmatter.date)).toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })} by <a href={`https://github.com/${author.socialProfiles.github}`} target="_blank">{author.name}</a></p>
+          <p style={{ margin: '15px 0 0px 0', color: colors.text }}>{new Date(Date.parse(data.markdownRemark.frontmatter.date)).toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })} by <a href={`https://github.com/${author.socialProfiles.github}`} target="_blank">{author.name}</a></p>
         </div>
-      </Container>
+      </div>
       {
         data.markdownRemark.frontmatter.teaserImage ?
           (<TeaserImage style={{
@@ -139,7 +100,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
           }}>
           </TeaserImage>) : null
       }
-      <Container>
+      <div className="row">
         <div className="article blog">
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
         </div>
@@ -151,8 +112,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
             <img alt="Share on Reddit" src={reddit} style={{ margin: 8, height: 36, padding: 2 }}/>
           </a>
         </div>
-      </Container>
-    </Page>
+      </div>
   </IndexLayout>);
 }
 

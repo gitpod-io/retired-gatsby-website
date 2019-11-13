@@ -2,21 +2,18 @@ import * as React from 'react'
 import styled from '@emotion/styled'
 import { graphql, navigate } from 'gatsby'
 
-import Page from '../components/Page'
-import Container from '../components/Container'
+
 import IndexLayout from '../layouts'
 import { MENU, getMenuContext, MenuEntry } from '../docs/menu';
 import { Link } from 'gatsby'
-import { colors, breakpoints } from '../styles/variables';
-import { getEmSize } from '../styles/mixins'
-import Logos from '../components/Logos';
+import { colors , sizes } from '../styles/variables';
 import GatsbyLink from 'gatsby-link';
 import { Helmet } from 'react-helmet';
 
 const DocContent = styled.div`
     display: flex;
 
-    @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
+    @media (max-width: ${sizes.breakpoints.md}) {
         flex-direction: column;
     }
 `
@@ -26,15 +23,15 @@ const DocSidebar = styled.div`
     min-width: 200px;
     padding-top: 120px;
     border-radius: 3px;
-    border-color: ${colors.fontColor2};
+    border-color: ${colors.text};
     margin-right: 10px;
 
-    @media (max-width: ${getEmSize(breakpoints.md - 1)}em) {
+    @media (max-width: ${sizes.breakpoints.md}) {
       padding-top: 60px;
       width: auto;
     }
 
-    @media (min-width: ${getEmSize(breakpoints.sm)}em) and (max-width: ${getEmSize(breakpoints.md - 1)}em) {
+    @media (min-width: ${sizes.breakpoints.md} and (max-width: ${sizes.breakpoints.md}) {
       max-width: 80%;
       margin-left: 10%;
     }
@@ -91,17 +88,10 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
     const editUrl = data.markdownRemark.fileAbsolutePath.replace(/^.*\/src\/docs\//, 'https://gitpod.io/#https://github.com/gitpod-io/website/blob/master/src/docs/');
     return (
         <IndexLayout canonical={data.markdownRemark.frontmatter.url || `https://www.gitpod.io${data.markdownRemark.fields.slug.toLowerCase()}`}>
-            <Page>
                 <Helmet>
                     <title>{`Gitpod - ${menuCtx.thisEntry!.title || 'Docs'}`}</title>
                 </Helmet>
-                <Container>
-                    <Logos logos={[
-                        [-30, 60, 12],
-                        [1140, 370, 60],
-                        [-120, 630, 35],
-                        [-80, 830, 60]
-                    ]} />
+                <div className="row">
                     <DocContent>
                         <DocSidebar>
                             <div className='hidden-md-down'>
@@ -112,14 +102,14 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
                             </div>
                         </DocSidebar>
                         <div className="article" style={{ position: "relative", flexGrow: 1 }}>
-                            <h4 style={{ color: colors.fontColor2, marginBottom: 0, marginTop: 30 }}>Docs</h4>
+                            <h4 style={{ color: colors.textDark, marginBottom: 0, marginTop: 30 }}>Docs</h4>
                             <div style={{ position: 'absolute', top: 40, right: 0 }} title="Edit this page in Gitpod">
                                 <a href={editUrl} aria-label="Edit Button" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.12 57.65" style={{
                                         height: 25,
                                         fill: 'transparent',
-                                        stroke: colors.fontColor1,
-                                        filter: `drop-shadow(0 0 1px ${colors.fontColor1})`,
+                                        stroke: colors.text,
+                                        filter: `drop-shadow(0 0 1px ${colors.text})`,
                                         }}><polyline className="st0" points="3.49,43.76 1.78,54.07 12.39,52.66 52.53,12.48 43.67,3.58 43.67,3.58 3.49,43.76" /><line className="st0" x1="46.05" y1="18.68" x2="37.32" y2="9.95" /></svg>
                                 </a>
                             </div>
@@ -130,8 +120,7 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
                             </div>
                         </div>
                     </DocContent>
-                </Container>
-            </Page>
+                </div>
         </IndexLayout>
     );
 }
@@ -176,13 +165,13 @@ const DocMenu: React.SFC<DocMenuProps> = (p) => {
             return <>
                 <Link key={m.path} to={m.path} style={{
                     textDecoration: m.path === p.current.path ? 'underline' : 'none',
-                    color: colors.fontColor1, marginTop: 0
+                    color: colors.text, marginTop: 0
                 }}>{m.title}</Link>
                 {
                     (m.subMenu || []).map(m =>
                         <Link key={m.path} to={m.path} style={{
                             textDecoration: m.path === p.current.path ? 'underline' : 'none',
-                            color: m.path === p.current.path ? colors.fontColor1 : colors.fontColor2, marginLeft: 20
+                            color: m.path === p.current.path ? colors.text : colors.textLight, marginLeft: 20
                         }}>{m.title}</Link>
                     )
                 }

@@ -10,11 +10,8 @@ import GitpodIcon from '../resources/gitpod.svg';
 import GitpodIcon196 from '../resources/gitpod-196x196.png';
 import GitpodIconApple from '../resources/apple-touch-icon.png';
 
-import Header from '../components/Header'
 import LayoutRoot from '../components/LayoutRoot'
 import LayoutMain from '../components/LayoutMain'
-
-import Footer from '../components/Footer';
 
 type StaticQueryProps = {
   site: {
@@ -47,9 +44,10 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
           <meta name="description" content={data.site.siteMetadata.description} />
           <meta name="keywords" content="cloud ide, github, javascript, online ide, web ide, code review" />
           {
-            canonical ? <link rel="canonical" href={canonical} /> : null
+            canonical ? <link rel="canonical" href={`${data.site.siteMetadata.siteUrl}${canonical}`} /> : null
           }
-          <meta name="theme-color" content={colors.background1} />
+          <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,600&display=swap" rel="stylesheet" />
+          <meta name="theme-color" content={colors.white} />
           <link rel="apple-touch-icon" type="image/png" href={GitpodIconApple} sizes="180x180" />
           <link rel="icon" type="image/png" href={GitpodIcon196} sizes="196x196" />
           <link rel="icon" type="image/svg+xml" href={GitpodIcon} sizes="any" />
@@ -65,17 +63,16 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
 
           <meta name="google-site-verification" content="NBio3hCkfn2FKJpqZritJpXuyKo54noPGZzWsjDIp-M" />
         </Helmet>
-        <Header title={data.site.siteMetadata.title} />
+        {/* Nav */}
         <LayoutMain>
             <CookieConsent buttonClasses="primary" buttonStyle={{
                 margin: '15px 15px 15px 0px',
-                padding: '8px 14px',
+                padding: '1rem 3rem',
                 borderRadius: 2,
-                border: '1px solid #1aa6e4',
-                backgroundColor: 'var(--background1)',
+                border: `1px solid ${colors.link}`,
+                backgroundColor: colors.link,
                 cursor: 'pointer',
-                borderColor: '#1aa6e4',
-                color: '#1aa6e4',
+                color: colors.white,
                 boxShadow: '0px 0px 1px #1aa6e4',
 
             }}
@@ -84,7 +81,7 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
             </CookieConsent>
           {children}
         </LayoutMain>
-        <Footer />
+        {/* Footer */}
       </LayoutRoot>
     )}
   />
