@@ -36,6 +36,7 @@ const StyledNav = styled.nav`
         position: relative;
         color: ${colors.text};
         padding-bottom: .8rem;
+        font-weight: 400;
 
         &::after {
             content: "";

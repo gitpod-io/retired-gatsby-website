@@ -1,4 +1,4 @@
-import { sizes, colors } from "./variables";
+import { sizes, colors, shadows } from "./variables";
 
 export default `
     /* ------------------------------------------- */
@@ -48,7 +48,7 @@ export default `
     }
 
     /* ------------------------------------------- */
-    /* ----- Headings ----- */
+    /* ----- Headings & Paragraphs----- */
     /* ------------------------------------------- */
 
     h1,
@@ -60,34 +60,50 @@ export default `
     }
 
     h1,
-    h2,
-    h3 {
+    h2 {
         font-weight: 400;
     }
 
+    h3,
     h4 {
         font-weight: 600;
     }
 
     h1,
+    h2,
     h3,
     h4 {
         color: ${colors.textDark};
-    }
-
-    h2 {
-        color: ${colors.textLight};
     }
 
     h1 {
         font-size: ${sizes.font.h1};
     }
 
+    h2 {
+        font-size: ${sizes.font.h2};
+        margin-bottom: 6rem;
+    }
+
+    h3 {
+        font-size: ${sizes.font.h3};
+        margin-bottom: 3rem;
+    }
+
+    p + p {
+        margin-top: 2rem;
+    }
+
     /* ------------------------------------------- */
     /* ----- Links & Buttons ----- */
     /* ------------------------------------------- */
 
+    button {
+        font-family: inherit;
+    }
+
     a {
+        font-weight: 600;
         color: ${colors.link};
         text-decoration: none;
     }
@@ -95,6 +111,7 @@ export default `
     .btn {
         display: inline-block;
         padding: 1rem 2.5rem;
+        font-weight: 400;
         color: ${colors.textDark};
         border: 1px solid;
         border-radius: 100px;
@@ -112,14 +129,27 @@ export default `
 
             &:hover,
             &:focus {
-                box-shadow: 0 0 1px 6px #0087BE4A;
+                box-shadow: ${shadows.btnCta};
             }
         }
 
         & + & {
             @media(min-width: ${sizes.breakpoints.sm}) {
-                margin-left: 3rem;
+                margin-left: 2.5rem;
             }
+        }
+    }
+
+    .toggle {
+        display: inline-block;
+        padding: 1rem 3rem;
+        font-weight: 600;
+        color: ${colors.white};
+        background: ${colors.offWhite2};
+        border: none;
+
+        &--active {
+            background: ${colors.link};
         }
     }
 
