@@ -26,6 +26,7 @@ export default `
 
     .row {
         max-width: ${sizes.grid.maxWidth};
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -35,5 +36,41 @@ export default `
 
     a {
         color: ${colors.link};
+        text-decoration: none;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 1rem 2.5rem;
+        border: 1px solid;
+        border-radius: 100px;
+        transition: all .2s;
+
+        &--cta {
+            color: ${colors.white};
+            background: ${colors.link};
+            border-color: ${colors.link};
+        }
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 0 1px 6px #0087BE4A;
+        }
+    }
+
+    /* ------------------------------------------- */
+    /* ----- Lists ----- */
+    /* ------------------------------------------- */
+
+    ul {
+        list-style: none;
+    }
+
+    /* ------------------------------------------- */
+    /* ----- Images ----- */
+    /* ------------------------------------------- */
+
+    img {
+        object-fit: contain;
     }
 `

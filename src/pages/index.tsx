@@ -11,7 +11,6 @@ const StyledIndexPage = styled.div`
 const IndexPage: React.SFC<{}> = () => (
     <IndexLayout canonical={'/blog/'}>
         <StyledIndexPage>
-            Ready to Rock!!!!
         </StyledIndexPage>
     </IndexLayout>
 )

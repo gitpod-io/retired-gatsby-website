@@ -3,8 +3,6 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import CookieConsent from "react-cookie-consent";
 
-import 'modern-normalize'
-import '../styles/normalize'
 import { colors } from '../styles/variables';
 import GitpodIcon from '../resources/gitpod.svg';
 import GitpodIcon196 from '../resources/gitpod-196x196.png';
@@ -12,6 +10,7 @@ import GitpodIconApple from '../resources/apple-touch-icon.png';
 
 import LayoutRoot from '../components/LayoutRoot'
 import LayoutMain from '../components/LayoutMain'
+import Nav from '../components/Nav';
 
 type StaticQueryProps = {
   site: {
@@ -63,7 +62,7 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
 
           <meta name="google-site-verification" content="NBio3hCkfn2FKJpqZritJpXuyKo54noPGZzWsjDIp-M" />
         </Helmet>
-        {/* Nav */}
+        <Nav />
         <LayoutMain>
             <CookieConsent buttonClasses="primary" buttonStyle={{
                 margin: '15px 15px 15px 0px',
