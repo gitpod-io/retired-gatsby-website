@@ -8,10 +8,14 @@ import { colors } from '../styles/variables'
 
 
 const StyledNav = styled.nav`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4rem 0;
+    background: ${colors.offWhite};
+
+    & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 0;
+    }
 
     img {
         height: 4rem;
@@ -56,16 +60,18 @@ const StyledNav = styled.nav`
 `
 
 const Nav: React.SFC<{}> = () => (
-    <StyledNav role="navigation" className="row">
-        <Link to="/"><img alt="Gitpod Logo" src={GitpodLogoDark} /></Link>
-        <ul>
-            <li><Link to='/features' className="link">Features</Link></li>
-            <li><Link to='/pricing' className="link">Pricing</Link></li>
-            <li><Link to='/enterprise' className="link">Enterprise</Link></li>
-            <li><Link to='/solutions' className="link">Solutions</Link></li>
-            <li><Link to='/resources' className="link">Resources</Link></li>
-            <li><Link to="/#getting-started" className="btn btn--cta">Start for Free</Link></li>
-        </ul>
+    <StyledNav role="navigation">
+        <div className="row">
+            <Link to="/"><img alt="Gitpod Logo" src={GitpodLogoDark} /></Link>
+            <ul>
+                <li><Link to='/features' className="link">Features</Link></li>
+                <li><Link to='/pricing' className="link">Pricing</Link></li>
+                <li><Link to='/enterprise' className="link">Enterprise</Link></li>
+                <li><Link to='/solutions' className="link">Solutions</Link></li>
+                <li><Link to='/resources' className="link">Resources</Link></li>
+                <li><Link to="/#getting-started" className="btn btn--cta">Start for Free</Link></li>
+            </ul>
+        </div>
     </StyledNav>
 )
 

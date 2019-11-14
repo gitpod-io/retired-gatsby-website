@@ -45,7 +45,7 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
           {
             canonical ? <link rel="canonical" href={`${data.site.siteMetadata.siteUrl}${canonical}`} /> : null
           }
-          <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,600&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet" />
           <meta name="theme-color" content={colors.white} />
           <link rel="apple-touch-icon" type="image/png" href={GitpodIconApple} sizes="180x180" />
           <link rel="icon" type="image/png" href={GitpodIcon196} sizes="196x196" />

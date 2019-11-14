@@ -18,7 +18,7 @@ export const sizes = {
     },
     breakpoints: {
         sm: '400px',
-        md: '780px',
+        md: '800px',
     },
     grid: {
         maxWidth: '114rem',

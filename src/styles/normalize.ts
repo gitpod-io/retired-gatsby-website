@@ -15,10 +15,18 @@ export default `
 
     html {
         font-size: 62.5%; // 10 / 16 = 0.625 * 100 = 62.5 = 10px
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            font-size: 56.5%;
+        }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            font-size: 54.5%;
+        }
     }
 
     body {
-        font: 400 ${sizes.font.text}/1.6 'Open Sans', sans-serif;
+        font: 400 ${sizes.font.text}/1.6 'Montserrat', sans-serif;
         color: ${colors.text};
         background: ${colors.white};
         box-sizing: border-box;
@@ -29,6 +37,14 @@ export default `
         max-width: ${sizes.grid.maxWidth};
         width: 100%;
         margin: 0 auto;
+
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            width: 95%;
+        }
+    }
+
+    section {
+        padding: 10rem 0;
     }
 
     /* ------------------------------------------- */
