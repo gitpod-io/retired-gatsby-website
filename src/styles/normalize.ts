@@ -114,7 +114,7 @@ export default `
 
     .btn {
         display: inline-block;
-        padding: 1rem 2.5rem;
+        padding: .8rem 2.2rem;
         font-weight: 400;
         color: ${colors.textDark};
         border: 1px solid;
@@ -123,7 +123,7 @@ export default `
 
         &--normal {
             font-size: ${sizes.font.btnNormal};
-            padding: 1.2rem 3.5rem;
+            padding: 1rem 3rem;
         }
 
         &--cta {
