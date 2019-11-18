@@ -64,19 +64,22 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
         </Helmet>
         <Nav />
         <LayoutMain>
-            <CookieConsent buttonClasses="primary" buttonStyle={{
-                margin: '15px 15px 15px 0px',
-                padding: '1rem 3rem',
-                borderRadius: 2,
-                border: `1px solid ${colors.link}`,
-                backgroundColor: colors.link,
-                cursor: 'pointer',
-                color: colors.white,
-                boxShadow: '0px 0px 1px #1aa6e4',
-
-            }}
+            <CookieConsent buttonClasses="primary"
+                buttonStyle={{
+                    margin: '15px 15px 15px 0px',
+                    padding: '1rem 3rem',
+                    borderRadius: 100,
+                    border: `1px solid ${colors.link}`,
+                    backgroundColor: colors.link,
+                    cursor: 'pointer',
+                    color: colors.white,
+                    boxShadow: '0px 0px 1px #1aa6e4',
+                }}
+                style={{
+                    background: 'rgba(0,0,0, .85)',
+                }}
             >
-                This website uses cookies to enhance the user experience. Read our <Link to="/privacy">privacy policy</Link> for more info.
+                This website uses cookies to enhance the user experience. Read our <Link style={{color: '#35C9FF'}} to="/privacy">privacy policy</Link> for more info.
             </CookieConsent>
           {children}
         </LayoutMain>
