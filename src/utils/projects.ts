@@ -10,26 +10,31 @@ export const projects = [
     {
         image: JS,
         title: 'React Application',
-        href: ""
+        href: "",
+        alt: "JavaScript Logo",
     },
     {
         image: TS,
         title: 'TypeScript Application',
-        href: ""
+        href: "",
+        alt: "TypeScript Logo",
     },
     {
         image: GO,
         title: 'Gin Application',
-        href: ""
+        href: "",
+        alt: "Go Logo",
     },
     {
         image: JAVA,
         title: 'Spring Petclinic',
-        href: ""
+        href: "",
+        alt: "Java Logo",
     },
     {
         image: PY,
         title: 'Hangman',
-        href: ""
+        href: "",
+        alt: "Python Logo",
     },
 ]

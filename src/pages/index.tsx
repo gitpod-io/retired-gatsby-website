@@ -346,7 +346,7 @@ const IndexPage: React.SFC<{}> = () => (
                             (project, i) =>
                             <Project
                                 key={i}
-                                image={<img alt="" src={project.image}/>}
+                                image={<img alt={project.alt} src={project.image}/>}
                                 title={project.title}
                                 href={project.href}
                             />
