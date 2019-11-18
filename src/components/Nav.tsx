@@ -70,7 +70,7 @@ const Nav: React.SFC<{}> = () => (
                 <li><Link to='/enterprise' className="link">Enterprise</Link></li>
                 <li><Link to='/solutions' className="link">Solutions</Link></li>
                 <li><Link to='/resources' className="link">Resources</Link></li>
-                <li><Link to="/#getting-started" className="btn btn--cta">Start for Free</Link></li>
+                <li><Link to="/#get-started" className="btn btn--cta">Start for Free</Link></li>
             </ul>
         </div>
     </StyledNav>

@@ -11,9 +11,9 @@ export const colors = {
 export const sizes = {
     font: {
         h1: '3.5rem',
-        h2: '3.2rem',
-        h3: '2.3rem',
-        h4: '2.5rem',
+        h2: '3.1rem',
+        h3: '2.2rem',
+        h4: '2rem',
         text: '1.6rem',
         btnNormal: '1.8rem',
     },
@@ -28,5 +28,11 @@ export const sizes = {
 
 export const shadows = {
     btnCta: '0 0 1px 6px #0087BE4A',
-    light: '0 .5rem 1rem rgba(0,0,0, .15)',
+    light: '0 .4rem .6rem rgba(0,0,0, .05)',
+    light1: '0 .5rem .8rem rgba(0,0,0, .1)',
+
+}
+
+export const borders = {
+    light: '1px solid rgba(0,0,0, .08)',
 }

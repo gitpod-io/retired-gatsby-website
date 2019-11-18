@@ -10,7 +10,7 @@ export default `
     *::after {
         margin: 0;
         padding: 0;
-
+        box-sizing: inherit;
     }
 
     html {
@@ -33,6 +33,14 @@ export default `
         overflow-x: hidden;
     }
 
+    section {
+        padding: 10rem 0;
+    }
+
+    /* ------------------------------------------- */
+    /* ----- Reusable Classes ----- */
+    /* ------------------------------------------- */
+
     .row {
         max-width: ${sizes.grid.maxWidth};
         width: 100%;
@@ -41,10 +49,6 @@ export default `
         @media(max-width: ${sizes.breakpoints.sm}) {
             width: 95%;
         }
-    }
-
-    section {
-        padding: 10rem 0;
     }
 
     /* ------------------------------------------- */
