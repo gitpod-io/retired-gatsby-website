@@ -12,6 +12,10 @@ import AutomatedSetup from '../resources/automatedsetup.png'
 import PrefixImage from '../resources/prefix-image.png'
 import { projects } from '../utils/projects'
 import Project from '../components/Project'
+import AntDesignWorkspace from '../resources/ant-design-workspace.png'
+import AppliToolsLogo from '../resources/aplitools.svg'
+import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
+import CodeInstituteLogo from '../resources/code.png'
 
 const StyledIndexPage = styled.div`
     /* ------------------------------------------- */
@@ -225,6 +229,55 @@ const StyledIndexPage = styled.div`
         }
     }
 
+    /* ------------------------------------------- */
+    /* ----- Section Open Source ----- */
+    /* ------------------------------------------- */
+
+    .open-source {
+        background: ${colors.offWhite};
+
+        &__content {
+            display: flex;
+            align-items: center;
+        }
+
+        &__text {
+            padding: 8rem 2rem;
+            background: ${colors.white};
+            box-shadow: ${shadows.light};
+            transform: translateY(-1rem);
+        }
+    }
+
+    /* ------------------------------------------- */
+    /* ----- Section Trusted By ----- */
+    /* ------------------------------------------- */
+
+    .trusted {
+
+        &__logos {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__logo {
+            height: 8rem;
+            width: 16rem;
+        }
+    }
+
+    /* ------------------------------------------- */
+    /* ----- Section Explore ----- */
+    /* ------------------------------------------- */
+
+    .explore {
+        margin-bottom: 10rem;
+
+        p {
+            margin: -2rem 0 2rem;
+        }
+    }
+
 `
 
 const IndexPage: React.SFC<{}> = () => (
@@ -354,6 +407,46 @@ const IndexPage: React.SFC<{}> = () => (
                     }
                 </div>
 
+            </section>
+
+            {/* ----- Section Open Source ----- */}
+
+            <section className="open-source">
+                <div className="row">
+                    <h2>Free for Open-Source</h2>
+                    <div className="open-source__content">
+                            <img alt="Ant Design Workspace" src={AntDesignWorkspace} />
+                            <div className="open-source__text">
+                                <h3>Giving Back to<br/>Open-Source!</h3>
+                                <p>Gitpod is built on open-source and wouldn’t exist without it.</p>
+                                <p>Did you know that you can see all contributor-friendly open-source projects at one glance?</p>
+                                <p>Find your next project on <a href="https://contribute.dev" target="_blank">contribute.dev!</a></p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ----- Section Trusted By ----- */}
+
+            <section className="trusted row">
+                <h2>Trusted by</h2>
+                <div className="trusted__logos">
+                    <img alt="Aplitools Image" src={AppliToolsLogo} className="trusted__logo" />
+                    <img alt="4 Geeks Academy" src={FourGeeksAcademyLogo} className="trusted__logo" />
+                    <img alt="Aplitools Image" src={AppliToolsLogo} className="trusted__logo" />
+                    <img alt="Code Institute" src={CodeInstituteLogo} className="trusted__logo" />
+                    <img alt="4 Geeks Academy" src={FourGeeksAcademyLogo} className="trusted__logo" />
+                    <img alt="Code Institute" src={CodeInstituteLogo} className="trusted__logo" />
+                </div>
+            </section>
+
+            {/* ----- Section Explore Gitpod ----- */}
+
+            <section className="explore row">
+                <h2>Explore Gitpod</h2>
+                <p>Learn about collaboration, workspace snapshots, supported programming languages, and much more.</p>
+                <Link to="/blog" className="btn btn--cta">See Blog</Link>
+                <Link to="/features" className="btn">See Features</Link>
             </section>
 
         </StyledIndexPage>

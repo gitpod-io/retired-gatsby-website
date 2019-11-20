@@ -28,8 +28,7 @@ export const sizes = {
 
 export const shadows = {
     btnCta: '0 0 1px 6px #0087BE4A',
-    light: '0 .4rem .6rem rgba(0,0,0, .05)',
-    light1: '0 .5rem .8rem rgba(0,0,0, .1)',
+    light: '0 .5rem .8rem rgba(0,0,0, .1)',
 
 }
 

@@ -9,7 +9,7 @@ const StyledProject = styled.div`
     font-size: 90%;
     background: ${colors.offWhite};
     border: ${borders.light};
-    box-shadow: ${shadows.light1};
+    box-shadow: ${shadows.light};
     font-weight: 600;
 
     img {
