@@ -11,6 +11,7 @@ import GitpodIconApple from '../resources/apple-touch-icon.png';
 import LayoutRoot from '../components/LayoutRoot'
 import LayoutMain from '../components/LayoutMain'
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 type StaticQueryProps = {
   site: {
@@ -83,7 +84,7 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
             </CookieConsent>
           {children}
         </LayoutMain>
-        {/* Footer */}
+        <Footer />
       </LayoutRoot>
     )}
   />
