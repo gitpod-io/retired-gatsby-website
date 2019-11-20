@@ -10,7 +10,7 @@ import Spectrum from '../resources/spectrum.svg'
 
 const StyledFooter = styled.footer`
     background: ${colors.offWhite};
-    padding: 8rem 0 4rem;
+    padding: 7rem 0 4rem;
     font-size: 1.4rem;
 
     .links {
