@@ -295,7 +295,7 @@ const IndexPage: React.SFC<{}> = () => (
                         </h1>
                         <p>Gitpod launches ready-to-code dev environments with a single click.</p>
                         <a href="#get-started" className="btn btn--normal btn--cta">Start for Free</a>
-                        <Link to="/hosting" className="btn btn--normal">Host Yourself</Link>
+                        <Link to="/self-hosted/" className="btn btn--normal">Host Yourself</Link>
                     </div>
                     <div className="banner__screenshot-container">
                         <img alt="Gitpod Screenshot" src={ReflectionScreenshot} className="banner__screenshot"/>

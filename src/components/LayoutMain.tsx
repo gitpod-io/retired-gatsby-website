@@ -6,6 +6,7 @@ const StyledLayoutMain = styled.main`
   flex-direction: column;
   flex: 1;
   flex-grow: 2;
+  min-height: 50vh;
 `
 
 interface LayoutMainProps {

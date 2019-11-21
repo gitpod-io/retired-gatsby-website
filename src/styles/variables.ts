@@ -20,6 +20,7 @@ export const sizes = {
     breakpoints: {
         sm: '400px',
         md: '800px',
+        lg: '1140px',
     },
     grid: {
         maxWidth: '114rem',
@@ -34,4 +35,5 @@ export const shadows = {
 
 export const borders = {
     light: '1px solid rgba(0,0,0, .08)',
+    light1: '1px solid rgba(0,0,0, .2)'
 }

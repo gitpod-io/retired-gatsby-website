@@ -46,6 +46,10 @@ export default `
         width: 100%;
         margin: 0 auto;
 
+        @media(max-width: ${sizes.breakpoints.lg}) {
+            padding: 0 2rem;
+        }
+
         @media(max-width: ${sizes.breakpoints.sm}) {
             width: 95%;
         }
@@ -82,16 +86,30 @@ export default `
 
     h1 {
         font-size: ${sizes.font.h1};
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            font-size: 3rem;
+        }
     }
 
     h2 {
         font-size: ${sizes.font.h2};
         margin-bottom: 6rem;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            font-size: 2.6rem;
+            margin-bottom: 4rem;
+        }
     }
 
     h3 {
         font-size: ${sizes.font.h3};
-        margin-bottom: 3rem;
+        margin-bottom: 2.8rem;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
     }
 
     p + p {
