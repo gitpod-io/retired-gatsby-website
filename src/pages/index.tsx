@@ -16,6 +16,7 @@ import AntDesignWorkspace from '../resources/ant-design-workspace.png'
 import AppliToolsLogo from '../resources/aplitools.svg'
 import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
 import CodeInstituteLogo from '../resources/code.png'
+import Details from '../components/Details'
 
 const StyledIndexPage = styled.div`
     /* ------------------------------------------- */
@@ -266,18 +267,6 @@ const StyledIndexPage = styled.div`
         }
     }
 
-    /* ------------------------------------------- */
-    /* ----- Section Explore ----- */
-    /* ------------------------------------------- */
-
-    .explore {
-        margin-bottom: 10rem;
-
-        p {
-            margin: -2rem 0 2rem;
-        }
-    }
-
 `
 
 const IndexPage: React.SFC<{}> = () => (
@@ -397,12 +386,12 @@ const IndexPage: React.SFC<{}> = () => (
                     {
                         projects.map(
                             (project, i) =>
-                            <Project
-                                key={i}
-                                image={<img alt={project.alt} src={project.image}/>}
-                                title={project.title}
-                                href={project.href}
-                            />
+                                <Project
+                                    key={i}
+                                    image={<img alt={project.alt} src={project.image}/>}
+                                    title={project.title}
+                                    href={project.href}
+                                />
                         )
                     }
                 </div>
@@ -442,12 +431,11 @@ const IndexPage: React.SFC<{}> = () => (
 
             {/* ----- Section Explore Gitpod ----- */}
 
-            <section className="explore row">
-                <h2>Explore Gitpod</h2>
-                <p>Learn about collaboration, workspace snapshots, supported programming languages, and much more.</p>
-                <Link to="/blog" className="btn btn--cta">See Blog</Link>
-                <Link to="/features" className="btn">See Features</Link>
-            </section>
+            <Details
+                title="Explore Gitpod"
+                text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
+                anchors={[{href: '/blog', text: 'See Blog'}, {href: '/features', text: 'See Features'}]}
+            />
 
         </StyledIndexPage>
     </IndexLayout>

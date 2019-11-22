@@ -6,11 +6,12 @@ import { colors, sizes, shadows, borders } from '../styles/variables'
 import Cloud from '../resources/cloud.png'
 import { Link } from 'gatsby'
 import Kubernetes from '../resources/kubernetes.svg'
+import Details from '../components/Details'
 
 const StyledSelfHostedPage = styled.div`
 
     .grey-container {
-            background: ${colors.offWhite};
+        background: ${colors.offWhite};
     }
 
     /* ------------------------------------------- */
@@ -21,14 +22,11 @@ const StyledSelfHostedPage = styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10rem 0;
+        padding: 14rem 0 10rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
             flex-direction: column-reverse;
             padding: 5rem 0;
-        }
-
-        &__text {
         }
 
         h3 {
@@ -174,6 +172,23 @@ const StyledSelfHostedPage = styled.div`
         }
     }
 
+    /* ------------------------------------------- */
+    /* ----- Section Install ----- */
+    /* ------------------------------------------- */
+
+    .customizations {
+        display: block;
+        max-width: 60rem;
+        margin: 10rem auto;
+        padding: 5rem;
+        text-align: center;
+        background: ${colors.offWhite};
+        box-shadow: ${shadows.light};
+
+        p {
+            margin: -3rem 0 4rem;
+        }
+    }
 `
 
 const SelfHostedPage: React.SFC<{}> = () => (
@@ -233,7 +248,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
                         <ol className="install__steps">
                             <li className="install__step"><span>1. </span>Git clone
                                 <a href="https://github.com/gitpod-io/self-hosted" target="_blank">https://github.com/gitpod-io/self-hosted</a>
-                            in your terminal.</li>
+                            <br />in your terminal.</li>
                             <li className="install__step"><span>2.</span>Follow readme.</li>
                             <li className="install__step"><span>3.</span>Enjoy!</li>
                         </ol>
@@ -247,7 +262,25 @@ const SelfHostedPage: React.SFC<{}> = () => (
                         <p className="install__more-details">For more details see <a href="">Kubernetes Cluster.</a></p>
                     </div>
                 </section>
+
             </div>
+
+            {/* ----- Section Customizations ----- */}
+
+            <section className="customizations">
+                <h2>Do You Need Customizations?</h2>
+                <p>We’re happy to adjust Gitpod to your needs. Please, get in touch for details.</p>
+                <Link to="/contact" className="btn btn--cta btn--normal">Contact</Link>
+            </section>
+
+            {/* ----- Section More About Self Hosting ----- */}
+
+            <Details
+                title="More About Self-Hosting"
+                text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
+                anchors={[{href: '/pricing', text: 'Pricing'}, {href: '/docs', text: 'Documentation'}]}
+            />
+
         </StyledSelfHostedPage>
     </IndexLayout>
 )

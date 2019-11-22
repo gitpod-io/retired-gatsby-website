@@ -138,6 +138,7 @@ export default `
         border: 1px solid;
         border-radius: 100px;
         transition: all .2s;
+        white-space: nowrap;
 
         &--normal {
             font-size: ${sizes.font.btnNormal};
@@ -156,8 +157,16 @@ export default `
         }
 
         & + & {
-            @media(min-width: ${sizes.breakpoints.sm}) {
-                margin-left: 2.5rem;
+            margin-left: 2.5rem;
+
+            @media(max-width: 327px) {
+                margin-left: 0;
+            }
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                &:not(:first-child) {
+                    margin-top: 2.5rem;
+                }
             }
         }
     }
