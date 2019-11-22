@@ -24,6 +24,11 @@ const StyledBanner = styled.header`
         color: ${colors.textLight};
     }
 
+    .para {
+        margin-top: 3rem;
+    }
+
+
     .btn + p {
         display: inline-block;
 
@@ -34,7 +39,7 @@ const StyledBanner = styled.header`
     }
 
     .btn {
-        margin: 6rem 2rem 0 0;
+        margin: 5rem 2rem 0 0;
 
         @media(max-width: ${sizes.breakpoints.sm}) {
             margin: 3rem 0 2rem;
@@ -68,7 +73,7 @@ const Banner: React.SFC<BannerProps> = ({subtitle, title, paragraph, linkPath, l
             <div className="banner__text">
                 <h3>{subtitle}</h3>
                 {title}
-                { paragraph ? <p>{paragraph}</p> : null }
+                { paragraph ? <p className="para">{paragraph}</p> : null }
                 <Link to={linkPath} className="btn btn--cta">{linkText}</Link>
                 {children}
             </div>

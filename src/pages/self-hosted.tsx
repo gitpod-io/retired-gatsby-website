@@ -2,7 +2,7 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import styled from '@emotion/styled'
-import { colors, sizes, shadows, borders } from '../styles/variables'
+import { colors, sizes, borders } from '../styles/variables'
 import Cloud from '../resources/cloud.png'
 import { Link } from 'gatsby'
 import Kubernetes from '../resources/kubernetes.svg'
@@ -10,6 +10,7 @@ import Details from '../components/Details'
 import Banner from '../components/Banner'
 import Features from '../components/Features'
 import Feature from '../components/Feature'
+import ActionCard from '../components/ActionCard'
 
 const StyledSelfHostedPage = styled.div`
     /* ------------------------------------------- */
@@ -79,23 +80,6 @@ const StyledSelfHostedPage = styled.div`
         }
     }
 
-    /* ------------------------------------------- */
-    /* ----- Section Install ----- */
-    /* ------------------------------------------- */
-
-    .customizations {
-        display: block;
-        max-width: 60rem;
-        margin: 10rem auto;
-        padding: 5rem;
-        text-align: center;
-        background: ${colors.offWhite};
-        box-shadow: ${shadows.light};
-
-        p {
-            margin: -3rem 0 4rem;
-        }
-    }
 `
 
 const SelfHostedPage: React.SFC<{}> = () => (
@@ -169,11 +153,11 @@ const SelfHostedPage: React.SFC<{}> = () => (
 
             {/* ----- Section Customizations ----- */}
 
-            <section className="customizations">
-                <h2>Do You Need Customizations?</h2>
-                <p>We’re happy to adjust Gitpod to your needs. Please, get in touch for details.</p>
-                <Link to="/contact" className="btn btn--cta btn--normal">Contact</Link>
-            </section>
+            <ActionCard
+                title="Do You Need Customizations?"
+                text="We’re happy to adjust Gitpod to your needs. Please, get in touch for details."
+                anchors={[{href: '/contact', text: 'Contact'}]}
+            />
 
             {/* ----- Section More About Self Hosting ----- */}
 

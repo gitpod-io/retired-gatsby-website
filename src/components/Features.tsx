@@ -4,16 +4,18 @@ import styled from '@emotion/styled'
 import { sizes } from '../styles/variables'
 
 const StyledFeatures  = styled.section`
-    display: flex;
-    flex-wrap: wrap;
+    .features {
+        display: flex;
+        flex-wrap: wrap;
 
-    @media(min-width: ${sizes.breakpoints.md}) {
-        justify-content: space-between;
-    }
+        @media(min-width: ${sizes.breakpoints.md}) {
+            justify-content: space-between;
+        }
 
-    @media(max-width: ${sizes.breakpoints.md}) {
-        flex-direction: column;
-        align-items: center;
+        @media(max-width: ${sizes.breakpoints.md}) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 `
 
@@ -23,9 +25,11 @@ interface FeaturesProps {
 
 const Features: React.SFC<FeaturesProps> = ({ title, children }) => (
     <div className="row">
-        { title ? <h2>{title}</h2> : null }
         <StyledFeatures>
-            {children}
+            { title ? <h2>{title}</h2> : null }
+            <div className="features">
+                {children}
+            </div>
         </StyledFeatures>
     </div>
 )

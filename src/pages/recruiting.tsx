@@ -6,6 +6,10 @@ import Cloud from '../resources/cloud.png'
 import Features from '../components/Features'
 import Feature from '../components/Feature'
 import Quote from '../components/Quote'
+import RecruitingBG from '../resources/recruiting-bg.png'
+import Bg from '../components/Bg'
+import ActionCard from '../components/ActionCard'
+import Details from '../components/Details'
 
 const RecrutingPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/recruting/'>
@@ -52,6 +56,26 @@ const RecrutingPage: React.SFC<{}> = () => (
         <Quote
             title="We create the most convenient dev environments."
         />
+
+        {/* ----- BG ----- */}
+
+        <Bg url={RecruitingBG} />
+
+        {/* ----- Didn't find ----- */}
+
+        <ActionCard
+            title='Didn’t find what you’re looking for?'
+            text='Please, get in touch. We’re happy to answer your questions.'
+            anchors={[{href: '/schedule-call',text: 'Schedule a Call'}, {href: '/contact', text: 'Contact'}]}
+        />
+
+        <Details
+            title="Explore Gitpod"
+            text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
+            anchors={[{href: '/blog', text: 'See Blog'}, {href: '/features', text: 'Features'}]}
+        />
+
+
     </IndexLayout>
 )
 
