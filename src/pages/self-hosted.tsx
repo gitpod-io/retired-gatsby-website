@@ -7,104 +7,11 @@ import Cloud from '../resources/cloud.png'
 import { Link } from 'gatsby'
 import Kubernetes from '../resources/kubernetes.svg'
 import Details from '../components/Details'
+import Banner from '../components/Banner'
+import Features from '../components/Features'
+import Feature from '../components/Feature'
 
 const StyledSelfHostedPage = styled.div`
-
-    .grey-container {
-        background: ${colors.offWhite};
-    }
-
-    /* ------------------------------------------- */
-    /* ----- Banner ----- */
-    /* ------------------------------------------- */
-
-    .banner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 14rem 0 10rem;
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            flex-direction: column-reverse;
-            padding: 5rem 0;
-        }
-
-        h3 {
-            font-weight: 400;
-            color: ${colors.textLight};
-        }
-
-        p {
-            display: inline-block;
-
-            span {
-                color: ${colors.link};
-                font-weight: 600;
-            }
-        }
-
-        .btn {
-            margin: 6rem 2rem 0 0;
-
-            @media(max-width: ${sizes.breakpoints.sm}) {
-                margin: 3rem 0 2rem;
-            }
-        }
-
-        &__img {
-            display: block;
-            height: 35rem;
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                height: 20rem;
-                margin-bottom: 5rem;
-            }
-        }
-    }
-
-    /* ------------------------------------------- */
-    /* ----- Section Features ----- */
-    /* ------------------------------------------- */
-
-    .feature {
-        padding: 3rem;
-        background: ${colors.white};
-        box-shadow: ${shadows.light};
-        max-width: 38rem;
-
-        @media(min-width: ${sizes.breakpoints.md}) {
-            width: 32%;
-        }
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            &:not(:last-child) {
-                margin-bottom: 5rem;
-            }
-        }
-
-        &-container {
-            display: flex;
-
-            @media(min-width: ${sizes.breakpoints.md}) {
-                justify-content: space-between;
-            }
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-
-        &__title {
-            text-align: center;
-        }
-
-        &__read-more {
-            margin-top: 6rem;
-        }
-
-    }
-
     /* ------------------------------------------- */
     /* ----- Section Install ----- */
     /* ------------------------------------------- */
@@ -199,43 +106,38 @@ const SelfHostedPage: React.SFC<{}> = () => (
 
                 {/* ----- Banner ----- */}
 
-                <div className="row">
-                    <header role="banner" className="banner">
-                        <div className="banner__text">
-                            <h3>Self-hosted Gitpod</h3>
-                            <h1>
-                                Make Gitpod Available In-House,
-                                <br />
-                                Hosted on <strong>Your Own Infrastructure.</strong>
-                            </h1>
-                            <Link to="#" className="btn btn--cta">View Install Instructions</Link>
-                            <p>1 Month for <span>Free.</span></p>
-                        </div>
-                        <img alt="Cloud" src={Cloud} className="banner__img"/>
-                    </header>
-                </div>
+                <Banner
+                    subtitle="Self-hosted Gitpod"
+                    title={<h1>
+                            Make Gitpod Available In-House,
+                            <br />
+                            Hosted on <strong>Your Own Infrastructure.</strong>
+                    </h1>}
+                    linkPath="#"
+                    linkText="View Install Instructions"
+                    img={<img alt="Cloud" src={Cloud}/>}
+                    children={<p>1 Month for <span>Free.</span></p>}
+                />
 
                 {/* ----- Section Features ----- */}
 
                 <div className="row">
-                    <section className="feature-container">
-                        <div className="feature">
-                            <h3 className="feature__title">Keep Data on your Network</h3>
-                            <p>All data remains on your infrastructure, as Gitpod will run on air-gapped networks, disconnected from the internet.</p>
-                            <p className="feature__read-more">Read more about <Link to="#">Data Control.</Link></p>
-                        </div>
-                        <div className="feature">
-                            <h3 className="feature__title">Full Integration</h3>
-                            <p>Gitpod integrates smoothly with with self-hosted services like npm registry, docker registry or maven registry.</p>
-                            <p>It also highly compatible with Git Hosting solution like GitHub Enterprise, GitLab Community Edition or Enterprise Edition. BitBucket will be available soon.</p>
-                            <p className="feature__read-more">Read more about <Link to="#">Full Integration.</Link></p>
-                        </div>
-                        <div className="feature">
-                            <h3 className="feature__title">Easy Administration</h3>
-                            <p>With Gitpod no additional User Management is needed. You can just use OAuth from Git Hosting and enjoy its the privileges.</p>
-                            <p>No need to waste time on administrations.</p>
-                        </div>
-                    </section>
+                    <Features>
+                        <Feature
+                            title="Keep Data on your Network"
+                            paragraphs={['All data remains on your infrastructure, as Gitpod will run on air-gapped networks, disconnected from the internet.']}
+                            more={<p className="read-more">Read more about <Link to="#">Data Control.</Link></p>}
+                        />
+                        <Feature
+                            title="Full Integration"
+                            paragraphs={['Gitpod integrates smoothly with with self-hosted services like npm registry, docker registry or maven registry.', 'It also highly compatible with Git Hosting solution like GitHub Enterprise, GitLab Community Edition or Enterprise Edition. BitBucket will be available soon.']}
+                            more={<p className="read-more">Read more about <Link to="#">Full Integration.</Link></p>}
+                        />
+                        <Feature
+                            title="Easy Administration"
+                            paragraphs={['With Gitpod no additional User Management is needed. You can just use OAuth from Git Hosting and enjoy its the privileges.', 'No need to waste time on administrations.']}
+                        />
+                    </Features>
                 </div>
             </div>
 

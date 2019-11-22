@@ -55,6 +55,10 @@ export default `
         }
     }
 
+    .grey-container {
+        background: ${colors.offWhite};
+    }
+
     /* ------------------------------------------- */
     /* ----- Headings & Paragraphs----- */
     /* ------------------------------------------- */
