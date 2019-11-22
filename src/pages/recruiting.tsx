@@ -5,6 +5,7 @@ import Banner from '../components/Banner'
 import Cloud from '../resources/cloud.png'
 import Features from '../components/Features'
 import Feature from '../components/Feature'
+import Quote from '../components/Quote'
 
 const RecrutingPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/recruting/'>
@@ -45,6 +46,12 @@ const RecrutingPage: React.SFC<{}> = () => (
                 />
             </Features>
         </div>
+
+        {/* ----- Quote ----- */}
+
+        <Quote
+            title="We create the most convenient dev environments."
+        />
     </IndexLayout>
 )
 
