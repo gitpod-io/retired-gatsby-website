@@ -84,12 +84,6 @@ const Footer: React.SFC<{}> = () => (
                     <li><Link to="/career">Career</Link></li>
                     <li><Link to="#">Media Kit</Link></li>
                 </ul>
-                <ul>
-                    <li>Company</li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/career">Career</Link></li>
-                    <li><Link to="#">Media Kit</Link></li>
-                </ul>
                 <ul className="contact">
                     <li>Contact</li>
                     <li>
