@@ -15,7 +15,7 @@ export const sizes = {
         h3: '2.2rem',
         h4: '2rem',
         text: '1.6rem',
-        btnNormal: '1.8rem',
+        btnNormal: '1.7rem',
     },
     breakpoints: {
         sm: '400px',
