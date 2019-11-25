@@ -270,7 +270,7 @@ const StyledIndexPage = styled.div`
 `
 
 const IndexPage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/blog/'>
+    <IndexLayout canonical='/'>
         <StyledIndexPage>
 
             {/* ----- Banner ----- */}
