@@ -1,13 +1,15 @@
 import * as React from 'react'
-import styled from '@emotion/styled';
+import styled from '@emotion/styled'
 import { graphql } from 'gatsby'
 
 import IndexLayout from '../layouts'
-import { colors , sizes} from '../styles/variables';
-import reddit from '../resources/reddit.svg';
-import twitter from '../resources/twitter.svg';
-import { Helmet } from 'react-helmet';
-import { authors } from '../utils/authors';
+import PostBanner from '../components/PostBanner'
+import reddit from '../resources/reddit.svg'
+import twitter from '../resources/twitter.svg'
+import { Helmet } from 'react-helmet'
+import { authors } from '../utils/authors'
+import { colors, shadows } from '../styles/variables'
+import NewsletterForm from '../components/NewsletterForm'
 
 interface BlogTemplateProps {
   data: {
@@ -41,15 +43,54 @@ interface BlogTemplateProps {
   }
 }
 
-const TeaserImage = styled.div`
-  height: 400px;
-  background-position: center;
-  background-size: 100%;
+const StyledBlogTemplate = styled.div`
+    max-width: 80rem;
+    margin: 12rem auto;
+    box-shadow: ${shadows.light};
 
-  @media (max-width: ${sizes.breakpoints.md}}em) {
-    height: 250px;
+    .contents {
+        padding: 5rem 3rem;
+    }
+
+    img {
+        display: inline-block;
+        max-width: 100%;
+        max-height: 50rem;
+        margin-bottom: 2rem;
+    }
+
+    h2, h1 {
+        margin: 6rem 0 2.5rem;
+    }
+
+    li + li {
+        margin-top: 2rem;
+    }
+
+
+  table {
+      font-size: 90%;
+      background-color: ${colors.offWhite};
+      border: 1px solid rgba(0,0,0, .1);
+      border-collapse: collapse;
+      overflow-x: scroll;
+      box-shadow: ${shadows.light};
+      border-radius: 3px;
   }
+  th {
+    padding: 1rem;
+  }
+  td {
+    text-align: center;
+    border: 1px solid rgba(0,0,0, .1);
+    &:last-child {
+      text-align: left;
+      padding: 3rem;
+    }
+  }
+
 `
+
 
 const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
   const authorName = data.markdownRemark.frontmatter.author;
@@ -65,7 +106,8 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
       }
   }
 
-  return (<IndexLayout canonical={data.markdownRemark.frontmatter.url || `https://www.gitpod.io${data.markdownRemark.fields.slug}`}>
+  return (
+  <IndexLayout canonical={data.markdownRemark.frontmatter.url || `https://www.gitpod.io${data.markdownRemark.fields.slug}`}>
       <Helmet>
         <title>{data.markdownRemark.frontmatter.title}</title>
         <meta name="description" content={data.markdownRemark.frontmatter.subtitle} />
@@ -84,36 +126,30 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
         }
 
       </Helmet>
-      <div>
-        <div className="article blog">
-          {data.markdownRemark.frontmatter.subtitle ?
-            <h2 style={{ color: colors.textLight, margin: '50px 0 10px 0' }}>{data.markdownRemark.frontmatter.subtitle}</h2> :
-            null}
-          <h1 style={{ margin: '0 0 0 0' }}>{data.markdownRemark.frontmatter.title}</h1>
-          <p style={{ margin: '15px 0 0px 0', color: colors.text }}>{new Date(Date.parse(data.markdownRemark.frontmatter.date)).toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })} by <a href={`https://github.com/${author.socialProfiles.github}`} target="_blank">{author.name}</a></p>
-        </div>
+      <div className="grey-container">
+          <StyledBlogTemplate>
+            <PostBanner
+                teaserImage={data.markdownRemark.frontmatter.teaserImage ? data.markdownRemark.frontmatter.teaserImage : data.markdownRemark.frontmatter.image}
+                title={data.markdownRemark.frontmatter.title}
+                date={<span>{new Date(Date.parse(data.markdownRemark.frontmatter.date)).toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>}
+                author={<span>By <a href={`https://github.com/${author.socialProfiles.github}`} target="_blank">{author.name}</a></span>}
+            />
+            <div className="contents">
+                <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+                    <div style={{ display: 'flex', marginTop: 60 }}>
+                    <a title="Share on Twitter" href={'https://twitter.com/intent/tweet?text=' + encodeURIComponent(`${data.markdownRemark.frontmatter.title} by @${author.socialProfiles} ${data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug}`)} target="_blank">
+                        <img alt="Share on Twitter" src={twitter} style={{ margin: 8, height: 56, padding: 6 }}/>
+                    </a>
+                    <a title="Share on Reddit" href={`http://www.reddit.com/submit?url=${encodeURIComponent(data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug)}&title=${encodeURIComponent(data.markdownRemark.frontmatter.title)}`} target="_blank">
+                        <img alt="Share on Reddit" src={reddit} style={{ margin: 8, height: 56, padding: 2 }}/>
+                    </a>
+                </div>
+            </div>
+      </StyledBlogTemplate>
       </div>
-      {
-        data.markdownRemark.frontmatter.teaserImage ?
-          (<TeaserImage style={{
-            backgroundImage: 'url(' + data.markdownRemark.frontmatter.teaserImage + ')',
-          }}>
-          </TeaserImage>) : null
-      }
-      <div className="row">
-        <div className="article blog">
-          <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-        </div>
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: 60 }}>
-          <a title="Share on Twitter" href={'https://twitter.com/intent/tweet?text=' + encodeURIComponent(`${data.markdownRemark.frontmatter.title} by @${author.socialProfiles} ${data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug}`)} target="_blank">
-            <img alt="Share on Twitter" src={twitter} style={{ margin: 8, height: 36, padding: 6 }}/>
-          </a>
-          <a title="Share on Reddit" href={`http://www.reddit.com/submit?url=${encodeURIComponent(data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug)}&title=${encodeURIComponent(data.markdownRemark.frontmatter.title)}`} target="_blank">
-            <img alt="Share on Reddit" src={reddit} style={{ margin: 8, height: 36, padding: 2 }}/>
-          </a>
-        </div>
-      </div>
-  </IndexLayout>);
+      <NewsletterForm />
+  </IndexLayout>
+    );
 }
 
 export default BlogTemplate

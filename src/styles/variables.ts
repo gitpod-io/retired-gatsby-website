@@ -30,7 +30,7 @@ export const sizes = {
 export const shadows = {
     btnCta: '0 0 1px 6px #0087BE4A',
     light: '0px 3px 6px #00000029',
-
+    light1: '0 1rem 2rem #00000029'
 }
 
 export const borders = {
