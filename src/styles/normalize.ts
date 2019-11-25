@@ -114,6 +114,12 @@ export default `
             font-size: 2rem;
             margin-bottom: 2rem;
         }
+
+        &.sub {
+            font-weight: 400;
+            color: ${colors.textLight};
+            margin-bottom: 1.5rem;
+        }
     }
 
     p + p {

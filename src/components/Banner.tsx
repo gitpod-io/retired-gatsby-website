@@ -19,11 +19,6 @@ const StyledBanner = styled.header`
         padding: 5rem 0;
     }
 
-    h3 {
-        font-weight: 400;
-        color: ${colors.textLight};
-    }
-
     .para {
         margin-top: 3rem;
     }
@@ -71,7 +66,7 @@ const Banner: React.SFC<BannerProps> = ({subtitle, title, paragraph, linkPath, l
      <div className="row">
         <StyledBanner role="banner" className="banner">
             <div className="banner__text">
-                <h3>{subtitle}</h3>
+                <h3 className="sub">{subtitle}</h3>
                 {title}
                 { paragraph ? <p className="para">{paragraph}</p> : null }
                 <Link to={linkPath} className="btn btn--cta">{linkText}</Link>
