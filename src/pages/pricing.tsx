@@ -2,8 +2,10 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import IndexLayout from '../layouts'
-import { plans } from '../utils/plans'
 import PricingBox from '../components/PricingBox'
+import Bg from '../components/Bg'
+import PricingBg from '../resources/pricing-bg.png'
+import { plans } from '../utils/plans'
 import { Link } from 'gatsby'
 import { sizes } from '../styles/variables'
 
@@ -109,6 +111,10 @@ const PricingPage: React.SFC<{}> = () => (
                             <Link to="/vendor" className="btn">Vendor</Link>
                         </div>
                     </section>
+
+                    {/* ----- BG ----- */}
+
+                    <Bg url={PricingBg}/>
 
                 </div>
             </div>
