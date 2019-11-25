@@ -8,6 +8,8 @@ import PricingBg from '../resources/pricing-bg.png'
 import { plans } from '../utils/plans'
 import { Link } from 'gatsby'
 import { sizes } from '../styles/variables'
+import ActionCard from '../components/ActionCard'
+import Details from '../components/Details'
 
 
 const StyledPricingPage = styled.div`
@@ -111,12 +113,27 @@ const PricingPage: React.SFC<{}> = () => (
                             <Link to="/vendor" className="btn">Vendor</Link>
                         </div>
                     </section>
-
-                    {/* ----- BG ----- */}
-
-                    <Bg url={PricingBg}/>
-
                 </div>
+            </div>
+
+            <div className="row">
+
+                {/* ----- BG ----- */}
+
+                <Bg url={PricingBg}/>
+
+                <ActionCard
+                    title='Any Questions?'
+                    text='We’re happy to answer them. Please, get in touch.'
+                    anchors={[{href: '/contact', text: 'Contact'}]}
+                />
+
+                <Details
+                    title="Explore Gitpod"
+                    text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
+                    anchors={[{href: '/blog', text: 'See Blog'}, {href: '/features', text: 'See Features'}]}
+                />
+
             </div>
         </StyledPricingPage>
     </IndexLayout>
