@@ -13,10 +13,8 @@ import PrefixImage from '../resources/prefix-image.png'
 import { projects } from '../utils/projects'
 import Project from '../components/Project'
 import AntDesignWorkspace from '../resources/ant-design-workspace.png'
-import AppliToolsLogo from '../resources/aplitools.svg'
-import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
-import CodeInstituteLogo from '../resources/code.png'
 import Details from '../components/Details'
+import TrustedBy from '../components/TrustedBy'
 
 const StyledIndexPage = styled.div`
     /* ------------------------------------------- */
@@ -250,23 +248,6 @@ const StyledIndexPage = styled.div`
         }
     }
 
-    /* ------------------------------------------- */
-    /* ----- Section Trusted By ----- */
-    /* ------------------------------------------- */
-
-    .trusted {
-
-        &__logos {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        &__logo {
-            height: 8rem;
-            width: 16rem;
-        }
-    }
-
 `
 
 const IndexPage: React.SFC<{}> = () => (
@@ -417,17 +398,7 @@ const IndexPage: React.SFC<{}> = () => (
 
             {/* ----- Section Trusted By ----- */}
 
-            <section className="trusted row">
-                <h2>Trusted by</h2>
-                <div className="trusted__logos">
-                    <img alt="Aplitools Image" src={AppliToolsLogo} className="trusted__logo" />
-                    <img alt="4 Geeks Academy" src={FourGeeksAcademyLogo} className="trusted__logo" />
-                    <img alt="Aplitools Image" src={AppliToolsLogo} className="trusted__logo" />
-                    <img alt="Code Institute" src={CodeInstituteLogo} className="trusted__logo" />
-                    <img alt="4 Geeks Academy" src={FourGeeksAcademyLogo} className="trusted__logo" />
-                    <img alt="Code Institute" src={CodeInstituteLogo} className="trusted__logo" />
-                </div>
-            </section>
+            <TrustedBy />
 
             {/* ----- Section Explore Gitpod ----- */}
 

@@ -21,6 +21,7 @@ const StyledBanner = styled.header`
 
     .para {
         margin-top: 3rem;
+        max-width: 70rem;
     }
 
 
