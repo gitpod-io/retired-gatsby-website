@@ -124,7 +124,7 @@ const Footer: React.SFC<{}> = () => (
             </div>
             <div className="info">
                 <p>Copyright TypeFox All Right Reserved</p>
-                <div><Link to="/imprint">Imprint</Link>&nbsp;|&nbsp;<Link to="/terms">Terms of Service</Link>&nbsp;|&nbsp;<Link to="/privacy">Privacy Policy</Link>&nbsp;<Link to="/privacy">Privacy Policy</Link></div>
+                <div><Link to="/imprint">Imprint</Link>&nbsp;|&nbsp;<Link to="/terms">Terms of Service</Link>&nbsp;|&nbsp;<Link to="/privacy">Privacy Policy</Link></div>
             </div>
         </div>
     </StyledFooter>
