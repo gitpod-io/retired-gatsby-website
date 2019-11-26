@@ -15,6 +15,10 @@ import Project from '../components/Project'
 import AntDesignWorkspace from '../resources/ant-design-workspace.png'
 import Details from '../components/Details'
 import TrustedBy from '../components/TrustedBy'
+import AppliToolsLogo from '../resources/aplitools.svg'
+import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
+import CodeInstituteLogo from '../resources/code.png'
+import TheiaIDELogo from '../resources/theia-grey.svg'
 
 const StyledIndexPage = styled.div`
     /* ------------------------------------------- */
@@ -288,6 +292,28 @@ const IndexPage: React.SFC<{}> = () => (
                 </div>
             </section>
 
+             {/* ----- Section Trusted By ----- */}
+
+            <TrustedBy
+                brands={[{
+                    alt: 'Aplitools Logo',
+                    url: 'https://applitools.com/',
+                    svg: AppliToolsLogo
+                }, {
+                    alt: '4 Geeks Academy',
+                    url: 'https://www.4geeksacademy.co/',
+                    svg: FourGeeksAcademyLogo
+                }, {
+                    alt: 'Theia Ide Logo',
+                    url: 'https://theia-ide.org',
+                    svg: TheiaIDELogo
+                },{
+                    alt: 'Code Institute',
+                    url: 'https://codeinstitute.net/',
+                    svg: CodeInstituteLogo
+                }]}
+            />
+
             {/* ----- Section Why Gitpod? ----- */}
 
             <section className="why-gitpod row">
@@ -398,7 +424,25 @@ const IndexPage: React.SFC<{}> = () => (
 
             {/* ----- Section Trusted By ----- */}
 
-            <TrustedBy />
+            <TrustedBy
+                brands={[{
+                    alt: 'Aplitools Logo',
+                    url: 'https://applitools.com/',
+                    svg: AppliToolsLogo
+                }, {
+                    alt: '4 Geeks Academy',
+                    url: 'https://www.4geeksacademy.co/',
+                    svg: FourGeeksAcademyLogo
+                }, {
+                    alt: 'Theia Ide Logo',
+                    url: 'https://theia-ide.org',
+                    svg: TheiaIDELogo
+                },{
+                    alt: 'Code Institute',
+                    url: 'https://codeinstitute.net/',
+                    svg: CodeInstituteLogo
+                }]}
+            />
 
             {/* ----- Section Explore Gitpod ----- */}
 

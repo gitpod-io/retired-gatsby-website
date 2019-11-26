@@ -1,10 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import AppliToolsLogo from '../resources/aplitools.svg'
-import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
-import CodeInstituteLogo from '../resources/code.png'
-
+import { sizes } from '../styles/variables'
 
 const StyledTrustedBy = styled.section`
     /* ------------------------------------------- */
@@ -14,6 +11,12 @@ const StyledTrustedBy = styled.section`
     .logos {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     img {
@@ -22,17 +25,24 @@ const StyledTrustedBy = styled.section`
     }
 `
 
-const TrustedBy: React.SFC<{}> = () => (
+interface Brand {
+    alt: string
+    url: string
+    svg: string
+}
+
+interface TrustedByProps {
+    brands: Brand[]
+}
+
+const TrustedBy: React.SFC<TrustedByProps> = ({brands}) => (
     <StyledTrustedBy>
         <div className="row">
             <h2>Trusted by</h2>
             <div className="logos">
-                <img alt="Aplitools Image" src={AppliToolsLogo}/>
-                <img alt="4 Geeks Academy" src={FourGeeksAcademyLogo}/>
-                <img alt="Aplitools Image" src={AppliToolsLogo}/>
-                <img alt="Code Institute" src={CodeInstituteLogo}/>
-                <img alt="4 Geeks Academy" src={FourGeeksAcademyLogo}/>
-                <img alt="Code Institute" src={CodeInstituteLogo}/>
+                { brands.map(b => <a href={b.url} target="_blank">
+                    <img src={b.svg} alt={b.alt} />
+                </a>) }
             </div>
         </div>
     </StyledTrustedBy>
