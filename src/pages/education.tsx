@@ -94,7 +94,7 @@ const EducationPage: React.SFC<{}> = () => (
         {/* ----- Pricing Table ----- */}
 
         <PricingTable
-            title="Pricing Gitpod Vendor"
+            title="Pricing Gitpod Education"
             paragraph="You have the choice to either host Gitpod yourself or to use our cloud infrastructure."
         >
             <tr className="header">

@@ -67,6 +67,8 @@ const VendorPage: React.SFC<{}> = () => (
 
         <Bg url={VendorBG} />
 
+        {/* ----- Pricing Table ----- */}
+
         <PricingTable
             title="Pricing Gitpod Vendor"
             paragraph="You have the choice to either host Gitpod yourself or to use our cloud infrastructure."
