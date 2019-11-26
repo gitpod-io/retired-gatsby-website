@@ -104,6 +104,10 @@ export default `
             font-size: 2.6rem;
             margin-bottom: 4rem;
         }
+
+        & + p {
+            margin: -3rem 0 5rem;
+        }
     }
 
     h3 {

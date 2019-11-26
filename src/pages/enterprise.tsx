@@ -11,6 +11,12 @@ import ActionCard from '../components/ActionCard'
 import Details from '../components/Details'
 import TrustedBy from '../components/TrustedBy'
 import EnterpriseBg from '../resources/enterprise-bg.png'
+import PricingTable from '../components/PricingTable'
+import Circle from '../components/Circle'
+import Layer from '../resources/layer.svg'
+import Github from '../resources/octicons-mark-github.svg'
+import Gitlab from '../resources/gitlab.svg'
+import { Link } from 'gatsby'
 
 const EnterprisePage: React.SFC<{}> = () => (
     <IndexLayout canonical='/enterprise/'>
@@ -71,6 +77,132 @@ const EnterprisePage: React.SFC<{}> = () => (
         {/* ----- BG ----- */}
 
         <Bg url={EnterpriseBg} />
+
+        <PricingTable
+            title="Pricing Gitpod Enterprise"
+            paragraph="You have the choice to either host Gitpod yourself or to use our cloud infrastructure."
+        >
+            <tr className="header">
+                <th style={{border: 'none', background: 'none'}}>&nbsp;</th>
+                <th>Gitpod.io
+                    <span><span>FREE</span> Trail</span>
+                </th>
+                <th>Gitpod Cloud
+                    <span><span>FREE</span> Trail</span>
+                </th>
+                <th>Gitpod Self Hosted
+                    <span><span>FREE</span> Trail</span>
+                </th>
+            </tr>
+            <tr>
+                <th>Pricing</th>
+                <td>x</td>
+                <td>3000$ per month</td>
+                <td>$20 per user</td>
+            </tr>
+            <tr>
+                <th>Domain</th>
+                <td>Gitpod.io</td>
+                <td>Custom</td>
+                <td>Custom</td>
+            </tr>
+            <tr>
+                <th>Managed By</th>
+                <td>Typefox</td>
+                <td>Typefox</td>
+                <td>You</td>
+            </tr>
+            <tr>
+                <th>Infrastructure</th>
+                <td>Globally distributed</td>
+                <td>> 1 geographical regions</td>
+                <td>On-prem or private cloud</td>
+            </tr>
+            <tr>
+                <th>SLA</th>
+                <td>optional</td>
+                <td>optional</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th><strong>Support</strong></th>
+                <td><Circle /></td>
+                <td><Circle /></td>
+                <td><Circle /></td>
+            </tr>
+            <tr>
+                <th><strong>White Labeling</strong></th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>&emsp;&emsp;Theia</th>
+                <td></td>
+                <td><Circle /></td>
+                <td><Circle /></td>
+            </tr>
+            <tr>
+                <th>&emsp;&emsp;Gitpod</th>
+                <td></td>
+                <td><Circle /></td>
+                <td><Circle /></td>
+            </tr>
+            <tr>
+                <th>Features</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Git Integeration</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th><img src={Github} alt="Github Logo"/> github.com</th>
+                <td><Circle /></td>
+                <td><Circle /></td>
+                <td><Circle /></td>
+            </tr>
+            <tr>
+                <th><img src={Github} alt="Github Logo"/> Github Enterprise</th>
+                <td>public only</td>
+                <td><Circle /></td>
+                <td><Circle /></td>
+            </tr>
+            <tr>
+                <th><img src={Gitlab} alt="Gitlab Logo"/> gitlab.com</th>
+                <td><Circle /></td>
+                <td><Circle /></td>
+                <td><Circle /></td>
+            </tr>
+            <tr>
+                <th><img src={Gitlab} alt="Gitlab Logo"/> Gitlab self-hosted</th>
+                <td>public only</td>
+                <td><Circle /></td>
+                <td><Circle /></td>
+            </tr>
+            <tr>
+                <th><img src={Layer} alt="Layer Logo"/> Bitbucket</th>
+                <td>Soon</td>
+                <td>Soon</td>
+                <td>Soon</td>
+            </tr>
+            <tr>
+                <th>Custom Authorization</th>
+                <td>OAuth2</td>
+                <td>OAuth2</td>
+                <td>OAuth2</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><Link to="#" className="btn btn--cta">Start for Free</Link></td>
+                <td><Link to="#" className="btn btn--cta">Contact Sales</Link></td>
+                <td><Link to="#" className="btn">Host Yourself</Link></td>
+            </tr>
+        </PricingTable>
 
         {/* ----- Didn't find ----- */}
 
