@@ -171,11 +171,6 @@ export default `
         }
 
         & + & {
-            margin-left: 2.5rem;
-
-            @media(max-width: 327px) {
-                margin-left: 0;
-            }
 
             @media(max-width: ${sizes.breakpoints.sm}) {
                 &:not(:first-child) {
@@ -192,6 +187,11 @@ export default `
         color: ${colors.white};
         background: ${colors.offWhite2};
         border: none;
+
+        @media(max-width: 500px) {
+            font-size: 1.4rem;
+            padding: .5rem 1rem;
+        }
 
         &--active {
             background: ${colors.link};

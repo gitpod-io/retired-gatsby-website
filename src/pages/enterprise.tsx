@@ -17,10 +17,12 @@ import Layer from '../resources/layer.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
 import { Link } from 'gatsby'
+import DWave from '../resources/dwave.svg'
 import AppliToolsLogo from '../resources/aplitools.svg'
-import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
+import Gatsby from '../resources/gatsby.svg'
+import FreeCodeCamp from '../resources/freecodecamp.svg'
 import CodeInstituteLogo from '../resources/code.png'
-import TheiaIDELogo from '../resources/theia-grey.svg'
+import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
 
 const EnterprisePage: React.SFC<{}> = () => (
     <IndexLayout canonical='/enterprise/'>
@@ -71,23 +73,38 @@ const EnterprisePage: React.SFC<{}> = () => (
         {/* ----- Section Trusted By ----- */}
 
         <TrustedBy
-            brands={[{
-                    alt: 'Aplitools Logo',
-                    url: 'https://applitools.com/',
-                    svg: AppliToolsLogo
-                }, {
-                    alt: '4 Geeks Academy',
-                    url: 'https://www.4geeksacademy.co/',
-                    svg: FourGeeksAcademyLogo
-                }, {
-                    alt: 'Theia Ide Logo',
-                    url: 'https://theia-ide.org',
-                    svg: TheiaIDELogo
-                },{
-                    alt: 'Code Institute',
-                    url: 'https://codeinstitute.net/',
-                    svg: CodeInstituteLogo
-            }]}
+            brands={[
+                    {
+                        alt: 'DWave Logo',
+                        url: 'https://www.dwavesys.com/',
+                        svg: DWave
+                    },
+                    {
+                        alt: 'Aplitools Logo',
+                        url: 'https://applitools.com/',
+                        svg: AppliToolsLogo
+                    },
+                    {
+                        alt: 'Gatsby Logo',
+                        url: 'https://www.gatsbyjs.org/',
+                        svg: Gatsby
+                    },
+                    {
+                        alt: '4 Geeks Academy Logo',
+                        url: 'https://www.4geeksacademy.co/',
+                        svg: FourGeeksAcademyLogo
+                    },
+                    {
+                        alt: 'freeCodeCamp.org',
+                        url: 'https://www.freecodecamp.org/',
+                        svg: FreeCodeCamp
+                    },
+                    {
+                        alt: 'Code Institute',
+                        url: 'https://codeinstitute.net/',
+                        svg: CodeInstituteLogo
+                    }
+                ]}
         />
 
         {/* ----- Quote ----- */}

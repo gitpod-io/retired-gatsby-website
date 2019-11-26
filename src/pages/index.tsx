@@ -8,15 +8,21 @@ import IndexLayout from '../layouts/index'
 import ReflectionScreenshot from '../resources/reflection-screenshot.png'
 import HourGlass from '../resources/hourglass.png'
 import ArrowOnTarget from '../resources/arrow-on-target.png'
-import AutomatedSetup from '../resources/automatedsetup.png'
+import ToolIntegration from '../resources/tool-integration.svg'
+import FullDevEnvironments from '../resources/full-dev-environments.png'
+import ReadyToCodeImg from '../resources/ready-to-code.png'
+import AutomatedSetupGraphicGitpod from '../resources/automatedsetup-graphic-gitpod.png'
+import AutomatedSetupGraphicOrdinary from '../resources/automatedsetup-graphic-ordinary.svg'
 import PrefixImage from '../resources/prefix-image.png'
 import { projects } from '../utils/projects'
 import Project from '../components/Project'
 import AntDesignWorkspace from '../resources/ant-design-workspace.png'
 import Details from '../components/Details'
 import TrustedBy from '../components/TrustedBy'
+import DWave from '../resources/dwave.svg'
 import AppliToolsLogo from '../resources/aplitools.svg'
-import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
+import Gatsby from '../resources/gatsby.svg'
+import FreeCodeCamp from '../resources/freecodecamp.svg'
 import CodeInstituteLogo from '../resources/code.png'
 import TheiaIDELogo from '../resources/theia-grey.svg'
 
@@ -28,23 +34,49 @@ const StyledIndexPage = styled.div`
 
     .banner {
         display: flex;
-        padding-top: 5rem;
+        padding-bottom: 10rem;
+
+        @media(min-width: ${sizes.breakpoints.md}) {
+            padding-top: 5rem;
+        }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            flex-direction: column-reverse;
+        }
 
         &-container {
             background: ${colors.offWhite};
         }
 
         &__text-box {
-            width: 50%;
             margin-top: 15rem;
+
+            @media(min-width: ${sizes.breakpoints.md}) {
+                width: 50%;
+            }
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+               margin-top: -5rem;
+            }
+        }
+
+        .btn:first-of-type {
+            margin-right: 2.5rem;
         }
 
         &__screenshot {
-            height: 70rem;
-            transform: scale(1.3) translate(8rem, 5rem);
 
-            &-container {
-                width: 50%;
+            @media(max-width: ${sizes.breakpoints.md}) {
+                width: 100%;
+            }
+
+            @media(min-width: ${sizes.breakpoints.md}) {
+                height: 70rem;
+                transform: scale(1.3) translate(8rem, 5rem);
+
+                &-container {
+                    width: 50%;
+                }
             }
         }
 
@@ -127,6 +159,10 @@ const StyledIndexPage = styled.div`
             border: ${borders.light};
             box-shadow: ${shadows.light};
 
+            @media(max-width: ${sizes.breakpoints.md}) {
+                flex-direction: column;
+            }
+
             &:not(:last-child) {
                 margin-bottom: 8rem;
             }
@@ -153,9 +189,9 @@ const StyledIndexPage = styled.div`
         &__img {
             height: 100%;
             width: 100%;
-            transform: scale(1.5) translate(2rem, 3rem);
 
             &-container {
+                min-height: 30rem;
                 @media(min-width: ${sizes.breakpoints.md}) {
                     width: 60%;
                 }
@@ -188,17 +224,31 @@ const StyledIndexPage = styled.div`
             box-shadow: ${shadows.light};
             border: ${borders.light};
 
+            @media(max-width: ${sizes.breakpoints.md}) {
+                flex-direction: column;
+            }
 
             &-image {
                 height: 20rem;
+
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    width: 100%;
+                }
 
                 &-container {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     padding: 2rem 0;
-                    width: 65%;
                     background: ${colors.offWhite};
+
+                    @media(min-width: ${sizes.breakpoints.md}) {
+                        width: 65%;
+                    }
+
+                    @media(max-width: ${sizes.breakpoints.md}) {
+                        flex-direction: columns;
+                    }
                 }
 
             }
@@ -207,11 +257,18 @@ const StyledIndexPage = styled.div`
                 margin: 0;
                 font-size: 2.1rem;
 
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    padding: 5rem 2rem;
+                }
+
                 &-container {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 35%;
+
+                    @media(min-width: ${sizes.breakpoints.md}) {
+                        width: 35%;
+                    }
                 }
 
                 span {
@@ -223,11 +280,20 @@ const StyledIndexPage = styled.div`
 
         &__projects {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
 
+            @media(max-width: ${sizes.breakpoints.md}) {
+                flex-direction: column;
+                align-items: center;
+            }
 
             & > .project {
-                width: 18%;
+                margin-bottom: 3rem;
+
+                @media(min-wdith: ${sizes.breakpoints.md}) {
+                    width: 18%;
+                }
             }
         }
     }
@@ -242,6 +308,14 @@ const StyledIndexPage = styled.div`
         &__content {
             display: flex;
             align-items: center;
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                flex-direction: column;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
 
         &__text {
@@ -261,20 +335,22 @@ const IndexPage: React.SFC<{}> = () => (
             {/* ----- Banner ----- */}
 
             <div className="banner-container">
-                <header role="banner" className="banner row">
-                    <div className="banner__text-box">
-                        <h1>
-                            Continuous Dev Environments.
-                            <span>Instantly. Anywhere.</span>
-                        </h1>
-                        <p>Gitpod launches ready-to-code dev environments with a single click.</p>
-                        <a href="#get-started" className="btn btn--normal btn--cta">Start for Free</a>
-                        <Link to="/self-hosted/" className="btn btn--normal">Host Yourself</Link>
-                    </div>
-                    <div className="banner__screenshot-container">
-                        <img alt="Gitpod Screenshot" src={ReflectionScreenshot} className="banner__screenshot"/>
-                    </div>
-                </header>
+                <div className="row">
+                    <header role="banner" className="banner">
+                        <div className="banner__text-box">
+                            <h1>
+                                Continuous Dev Environments.
+                                <span>Instantly. Anywhere.</span>
+                            </h1>
+                            <p>Gitpod launches ready-to-code dev environments with a single click.</p>
+                            <a href="#get-started" className="btn btn--normal btn--cta">Start for Free</a>
+                            <Link to="/self-hosted/" className="btn btn--normal">Host Yourself</Link>
+                        </div>
+                        <div className="banner__screenshot-container">
+                            <img alt="Gitpod Screenshot" src={ReflectionScreenshot} className="banner__screenshot"/>
+                        </div>
+                    </header>
+                </div>
             </div>
 
             {/* ----- Section Intro ----- */}
@@ -295,71 +371,86 @@ const IndexPage: React.SFC<{}> = () => (
              {/* ----- Section Trusted By ----- */}
 
             <TrustedBy
-                brands={[{
-                    alt: 'Aplitools Logo',
-                    url: 'https://applitools.com/',
-                    svg: AppliToolsLogo
-                }, {
-                    alt: '4 Geeks Academy',
-                    url: 'https://www.4geeksacademy.co/',
-                    svg: FourGeeksAcademyLogo
-                }, {
-                    alt: 'Theia Ide Logo',
-                    url: 'https://theia-ide.org',
-                    svg: TheiaIDELogo
-                },{
-                    alt: 'Code Institute',
-                    url: 'https://codeinstitute.net/',
-                    svg: CodeInstituteLogo
-                }]}
+                brands={[
+                    {
+                        alt: 'DWave Logo',
+                        url: 'https://www.dwavesys.com/',
+                        svg: DWave
+                    },
+                    {
+                        alt: 'Aplitools Logo',
+                        url: 'https://applitools.com/',
+                        svg: AppliToolsLogo
+                    },
+                    {
+                        alt: 'Gatsby Logo',
+                        url: 'https://www.gatsbyjs.org/',
+                        svg: Gatsby
+                    },
+                    {
+                        alt: 'Theia Ide Logo',
+                        url: 'https://theia-ide.org',
+                        svg: TheiaIDELogo
+                    },
+                    {
+                        alt: 'freeCodeCamp.org',
+                        url: 'https://www.freecodecamp.org/',
+                        svg: FreeCodeCamp
+                    },
+                    {
+                        alt: 'Code Institute',
+                        url: 'https://codeinstitute.net/',
+                        svg: CodeInstituteLogo
+                    }
+                ]}
             />
 
             {/* ----- Section Why Gitpod? ----- */}
 
-            <section className="why-gitpod row">
-                <h2>Why Gitpod?</h2>
+            <div className="row">
+                <section className="why-gitpod">
+                    <h2>Why Gitpod?</h2>
 
-                <div className="why-gitpod__box-container">
+                    <div className="why-gitpod__box-container">
 
-                    <div className="why-gitpod__box">
-                        <div className="why-gitpod__text">
-                            <h3>Ready-to-Code Dev Environments</h3>
-                            <p>Gitpod prepares ephemeral dev environments for teams, that come entirely prebuilt with your projects, dependencies and tools.</p>
-                            <p>Read more about <a href="#">Continuous Dev Environments.</a></p>
-                            <button className="toggle toggle--active">With Gitpod</button>
-                            <button className="toggle">Ordinary Way</button>
+                        <ReadyToCode />
+
+                        <div className="why-gitpod__box">
+                            <div className="why-gitpod__img-container">
+                                <img
+                                    alt="Full Dev Environments"
+                                    src={FullDevEnvironments}
+                                    style={{transform: 'translate(-2rem)'}}
+                                    className="why-gitpod__img"/>
+                            </div>
+                            <div className="why-gitpod__text">
+                                <h3>Full Dev Environments</h3>
+                                <p>Gitpod is not just another online playground IDE, but a full featured dev environment, just like your local IDE.</p>
+                                <p>It includes comprehensive <strong>Linux terminals</strong>, you can install any <strong>VS Code extensions</strong> and it's all based on <strong>Theia</strong>, the vendor neutral and highly extensible VS Code alternative.</p>
+                                <p>Read more about <a href="#">Full Dev Environments.</a></p>
+                            </div>
                         </div>
-                        <div className="why-gitpod__img-container">
-                            <img alt="Automated Setup" src={AutomatedSetup} className="why-gitpod__img"/>
+
+                        <div className="why-gitpod__box">
+                            <div className="why-gitpod__text">
+                                <h3>Integration with Your Tool Chain</h3>
+                                <p>Gitpod let’s you stay in the flow by blending seamlessly into your existing tools chain.</p>
+                                <p>For instance, it integrates with git based environments like GitHub and GitLab, with external clusters like Kubernetes and continue integration tools like Jenkins, Circle CI and Travis.</p>
+                                <p>Read more about <a href="#">Integration.</a></p>
+                            </div>
+                            <div className="why-gitpod__img-container">
+                                <img
+                                    alt="Tools Integration"
+                                    src={ToolIntegration}
+                                    className="why-gitpod__img"
+                                    style={{transform: 'scale(.8)'}}
+                                />
+                            </div>
                         </div>
+
                     </div>
-
-                     <div className="why-gitpod__box">
-                        <div className="why-gitpod__img-container">
-                            <img alt="Automated Setup" src={AutomatedSetup} className="why-gitpod__img"/>
-                        </div>
-                        <div className="why-gitpod__text">
-                            <h3>Full Dev Environments</h3>
-                            <p>Gitpod is not just another online playground IDE, but a full featured dev environment, just like your local IDE.</p>
-                            <p>It includes comprehensive <strong>Linux terminals</strong>, you can install any <strong>VS Code extensions</strong> and it's all based on <strong>Theia</strong>, the vendor neutral and highly extensible VS Code alternative.</p>
-                            <p>Read more about <a href="#">Full Dev Environments.</a></p>
-                        </div>
-                    </div>
-
-                    <div className="why-gitpod__box">
-                        <div className="why-gitpod__text">
-                            <h3>Integration with Your Tool Chain</h3>
-                            <p>Gitpod let’s you stay in the flow by blending seamlessly into your existing tools chain.</p>
-                            <p>For instance, it integrates with git based environments like GitHub and GitLab, with external clusters like Kubernetes and continue integration tools like Jenkins, Circle CI and Travis.</p>
-                            <p>Read more about <a href="#">Integration.</a></p>
-                        </div>
-                        <div className="why-gitpod__img-container">
-                            <img alt="Automated Setup" src={AutomatedSetup} className="why-gitpod__img"/>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
+                </section>
+            </div>
 
             {/* ----- Section Testimonials ----- */}
 
@@ -371,39 +462,41 @@ const IndexPage: React.SFC<{}> = () => (
 
             {/* ----- Section Getting Started ----- */}
 
-            <section className="get-started row" id="get-started">
-                <h2>Get Started</h2>
+            <div className="row">
+                <section className="get-started" id="get-started">
+                    <h2>Get Started</h2>
 
-                <div className="get-started__prefix">
-                    <div className="get-started__prefix-text-container">
-                        <h3 className="get-started__prefix-text">Prefix any GitHub or GitLab<br aria-hidden={true} />URL with <span>gitpod.io/#</span></h3>
+                    <div className="get-started__prefix">
+                        <div className="get-started__prefix-text-container">
+                            <h3 className="get-started__prefix-text">Prefix any GitHub or GitLab<br aria-hidden={true} />URL with <span>gitpod.io/#</span></h3>
+                        </div>
+                        <div className="get-started__prefix-image-container">
+                            <img
+                                alt="Prefix any GitHub or GitLab URL with gitpod.io/#"
+                                src={PrefixImage}
+                                className="get-started__prefix-image"
+                            />
+                        </div>
                     </div>
-                    <div className="get-started__prefix-image-container">
-                        <img
-                            alt="Prefix any GitHub or GitLab URL with gitpod.io/#"
-                            src={PrefixImage}
-                            className="get-started__prefix-image"
-                        />
+
+                    <h3>Or Select a Project</h3>
+
+                    <div className="get-started__projects">
+                        {
+                            projects.map(
+                                (project, i) =>
+                                    <Project
+                                        key={i}
+                                        image={<img alt={project.alt} src={project.image}/>}
+                                        title={project.title}
+                                        href={project.href}
+                                    />
+                            )
+                        }
                     </div>
-                </div>
 
-                <h3>Or Select a Project</h3>
-
-                <div className="get-started__projects">
-                    {
-                        projects.map(
-                            (project, i) =>
-                                <Project
-                                    key={i}
-                                    image={<img alt={project.alt} src={project.image}/>}
-                                    title={project.title}
-                                    href={project.href}
-                                />
-                        )
-                    }
-                </div>
-
-            </section>
+                </section>
+            </div>
 
             {/* ----- Section Open Source ----- */}
 
@@ -422,28 +515,6 @@ const IndexPage: React.SFC<{}> = () => (
                 </div>
             </section>
 
-            {/* ----- Section Trusted By ----- */}
-
-            <TrustedBy
-                brands={[{
-                    alt: 'Aplitools Logo',
-                    url: 'https://applitools.com/',
-                    svg: AppliToolsLogo
-                }, {
-                    alt: '4 Geeks Academy',
-                    url: 'https://www.4geeksacademy.co/',
-                    svg: FourGeeksAcademyLogo
-                }, {
-                    alt: 'Theia Ide Logo',
-                    url: 'https://theia-ide.org',
-                    svg: TheiaIDELogo
-                },{
-                    alt: 'Code Institute',
-                    url: 'https://codeinstitute.net/',
-                    svg: CodeInstituteLogo
-                }]}
-            />
-
             {/* ----- Section Explore Gitpod ----- */}
 
             <Details
@@ -455,5 +526,57 @@ const IndexPage: React.SFC<{}> = () => (
         </StyledIndexPage>
     </IndexLayout>
 )
+
+class ReadyToCode extends React.Component {
+    state = {
+        isGraphicGitpodRendered: false,
+        isGraphicOridinaryRendered: false
+    }
+
+    handleClick = (val: string) => {
+        if (val === 'gitpod') {
+            this.setState({
+                isGraphicGitpodRendered: true,
+                isGraphicOridinaryRendered: false
+            })
+        }
+        else if (val === 'ordinary') {
+            this.setState({
+                isGraphicGitpodRendered: false,
+                isGraphicOridinaryRendered: true
+            })
+        }
+    }
+
+    render() {
+        const { isGraphicGitpodRendered, isGraphicOridinaryRendered } = this.state
+        return (
+            <div className="why-gitpod__box">
+                <div className="why-gitpod__text">
+                    <h3>Ready-to-Code Dev Environments</h3>
+                    <p>Gitpod prepares ephemeral dev environments for teams, that come entirely prebuilt with your projects, dependencies and tools.</p>
+                    <p>Read more about <a href="#">Continuous Dev Environments.</a></p>
+                    <div><button className="toggle toggle--active" onClick={() => this.handleClick('gitpod')}>With Gitpod</button><button className="toggle" onClick={() => this.handleClick('ordinary')}>Ordinary Way</button></div>
+                </div>
+                <div className="why-gitpod__img-container">
+                    {
+                        isGraphicGitpodRendered ? <img
+                                src={AutomatedSetupGraphicGitpod}
+                                style={{transform: 'scale(.9) translateY(5rem)', width: '100%', height: '100%'}}
+                            /> : isGraphicOridinaryRendered ? <img
+                                src={AutomatedSetupGraphicOrdinary}
+                                style={{transform: 'scale(1.2)', width: '100%', height: '100%'}}
+                            /> : <img
+                            alt="Automated Setup"
+                            src={ReadyToCodeImg}
+                            style={{transform: 'scale(.95) translateY(4rem)'}}
+                            className="why-gitpod__img"
+                        />
+                    }
+                </div>
+            </div>
+        )
+    }
+}
 
 export default IndexPage

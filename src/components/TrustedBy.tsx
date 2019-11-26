@@ -20,8 +20,8 @@ const StyledTrustedBy = styled.section`
     }
 
     img {
-        height: 8rem;
-        width: 16rem;
+        height: 10rem;
+        width: 14rem;
     }
 `
 
@@ -40,7 +40,7 @@ const TrustedBy: React.SFC<TrustedByProps> = ({brands}) => (
         <div className="row">
             <h2>Trusted by</h2>
             <div className="logos">
-                { brands.map(b => <a href={b.url} target="_blank">
+                { brands.map((b, i) => <a href={b.url} target="_blank" key={i}>
                     <img src={b.svg} alt={b.alt} />
                 </a>) }
             </div>

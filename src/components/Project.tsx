@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, borders, shadows } from '../styles/variables'
+import { colors, borders, shadows, sizes } from '../styles/variables'
 
 const StyledProject = styled.div`
     padding: 2rem .5rem;
@@ -11,6 +11,14 @@ const StyledProject = styled.div`
     border: ${borders.light};
     box-shadow: ${shadows.light};
     font-weight: 600;
+
+    @media(max-width: ${sizes.breakpoints.sm}) {
+        min-width: 28rem;
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+    }
 
     img {
         height: 8.5rem;
