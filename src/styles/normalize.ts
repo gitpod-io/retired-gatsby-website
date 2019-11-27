@@ -51,7 +51,6 @@ export default `
         }
 
         @media(max-width: ${sizes.breakpoints.sm}) {
-            width: 95%;
             padding: 0 .5rem;
         }
     }
