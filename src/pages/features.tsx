@@ -159,6 +159,7 @@ const FeaturesPage: React.SFC<{}> = () => (
                                 more={f.more}
                                 strong={f.strong}
                                 img={f.img}
+                                id={f.id}
                             />
                         )
                     }
@@ -168,17 +169,17 @@ const FeaturesPage: React.SFC<{}> = () => (
                             <div className="feature">
                                 <h3>Code Reviews</h3>
                                 <p>Open pull requests in Gitpod to run, navigate, and review the code from within the IDE. Reply to comments and publish code reviews without switching back to GitHub.</p>
-                                <p>Thanks to <Link to="#">Parallel</Link> and <Link to="#">Prebuilt</Link> Workspaces, you can review code within seconds and without stopping your own workspace.</p>
+                                <p>Thanks to <a href="#parallel">Parallel</a> and <Link to="/docs/46_prebuilds/">Prebuilt</Link> Workspaces, you can review code within seconds and without stopping your own workspace.</p>
                                 <img alt="Code Review" src={CodeReview} />
-                                <p>Read more about <Link to="#">Code Reviews.</Link></p>
+                                <p>Read more about <Link to="/blog/when-code-reviews-lgtm/">Code Reviews.</Link></p>
                             </div>
                             <div className="feature">
                                 <h3>Web and Desktop Support</h3>
-                                <p>Read more about <Link to="#">Code Reviews.</Link></p>
+                                <p>Read more about <Link to="#">Web and Desktop Support.</Link></p>
                             </div>
                             <div className="feature">
                                 <h3>Supported Programming Languages</h3>
-                                <p>Gitpod comes with the following language support. If your favorite programming language is missing, just download the related <Link to="#">VS Code Extension</Link> and enjoy all its features.</p>
+                                <p>Gitpod comes with the following language support. If your favorite programming language is missing, just download the related <Link to="/docs/vscode-extensions/">VS Code Extension</Link> and enjoy all its features.</p>
                                 <div className="table-container">
                                     <table>
                                         <tr className="header">

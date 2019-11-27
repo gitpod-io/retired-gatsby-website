@@ -50,12 +50,13 @@ interface FeatureCardProps {
     paragraphs: (string | JSX.Element)[]
     more?: JSX.Element
     strong?: string
-    img: JSX.Element
+    img: JSX.Element,
+    id?: string
 }
 
-const FeatureCard: React.SFC<FeatureCardProps> = ({ title, paragraphs, more, strong, img }) => (
+const FeatureCard: React.SFC<FeatureCardProps> = ({ title, paragraphs, more, strong, img , id }) => (
     <div className="row">
-        <StyledFeatureCard>
+        <StyledFeatureCard id={id}>
             <div className="text-box">
                 <h3>{title}</h3>
                 { paragraphs.map((p, i) => <p key={i}>{p}</p>) }

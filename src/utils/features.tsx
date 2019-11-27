@@ -4,6 +4,11 @@ import Share from '../resources/share.svg'
 import Camera from '../resources/camera.svg'
 import VSCodeExtensions from '../resources/vscode-extensions.png'
 import LinuxTerminal from '../resources/linux-terminal.png'
+import PrebuiltWorkspaces from '../resources/prebuilt-workspaces.png'
+import ParallelWorkspaces from '../resources/parallel-workspaces.png'
+import ShareWorkspaces from '../resources/share-workspace.png'
+import CreateASnapshot from '../resources/create-snapshot.png'
+
 import { Link } from 'gatsby'
 
 export const features = [
@@ -64,21 +69,22 @@ export const featuresCardsData = [
     {
         title: "VS Code Extensions",
         paragraphs: ["Gitpod feels just like your local dev environment, as you can install any VS Code extensions. Install it via drag and drop and enjoy all the features you're used to."],
-        more: <p>Read more about <Link to="#">VS Code Extensions.</Link></p>,
+        more: <p>Read more about <Link to="/docs/vscode-extensions/">VS Code Extensions.</Link></p>,
         img: <img alt="VS Code Extensions" src={VSCodeExtensions}/>
     },
     {
         title: "Prebuilt Workspaces",
         paragraphs: ["Gitpod continuously builds your code and pull requests with all dependencies already downloaded and all code already compiled in the background to save your time."],
-        more: <p>Read more about <Link to="#">VS Code Extensions.</Link></p>,
+        more: <p>Read more about <Link to="/docs/46_prebuilds/">Prebuilt Workspaces.</Link></p>,
         strong: "It's first IDE that builds your project before you even open it.",
-        img: <img alt="VS Code Extensions" src={VSCodeExtensions}/>
+        img: <img alt="Prebuilt Workspaces" src={PrebuiltWorkspaces}/>
     },
     {
         title: "Parallel Workspaces",
         paragraphs: ["Don’t postpone work because your workspaces is occupied with your work on the latest features.", "To sneak in a bugfix on a maintenance branch or a code review - just start more workspaces - in parallel."],
         strong: 'Use clean, fresh workspaces for every task.',
-        img: <img alt="VS Code Extensions" src={VSCodeExtensions}/>
+        img: <img alt="Parallel Workspaces" src={ParallelWorkspaces}/>,
+        id: 'parallel'
     },
     {
         title: "Works on any Device",
@@ -94,13 +100,13 @@ export const featuresCardsData = [
     {
         title: "Share a Running Workspace",
         paragraphs:["Collaborate with your friends and colleagues and hunt down bugs together."],
-        more: <p>Read more about <Link to="#">Sharing a Workspace.</Link></p>,
-        img:<img alt="Linux Terminals" src={LinuxTerminal}/>
+        more: <p>Read more about <Link to="/docs/33_sharing_and_collaboration/">Sharing a Workspace.</Link></p>,
+        img:<img alt="Share a Running Workspace" src={ShareWorkspaces}/>
     },
     {
         title: "Create a Snapshot",
         paragraphs:["Create a snapshot of your work and share it with the world.", "Based on your snapshot new workspaces can be created and edited independently."],
-        more: <p>Read more about <Link to="#">Sharing a Snapshot.</Link></p>,
-        img:<img alt="Linux Terminals" src={LinuxTerminal}/>
+        more: <p>Read more about <Link to="/docs/33_sharing_and_collaboration/#sharing-snapshots">Sharing a Snapshot.</Link></p>,
+        img:<img alt="Creating Snapshot" src={CreateASnapshot}/>
     }
 ]
