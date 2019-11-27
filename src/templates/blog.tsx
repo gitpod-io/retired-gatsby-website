@@ -45,7 +45,7 @@ interface BlogTemplateProps {
 
 const StyledBlogTemplate = styled.div`
     max-width: 80rem;
-    margin: 12rem auto;
+    margin: 8rem auto;
     box-shadow: ${shadows.light};
 
     .contents {
@@ -53,7 +53,7 @@ const StyledBlogTemplate = styled.div`
     }
 
     img {
-        display: inline-block;
+        display: block;
         max-width: 100%;
         max-height: 50rem;
         margin-bottom: 2rem;
@@ -63,32 +63,37 @@ const StyledBlogTemplate = styled.div`
         margin: 6rem 0 2.5rem;
     }
 
-    li + li {
+    h2 + p {
+        margin: 2rem 0;
+    }
+
+    li + li,
+    p + p {
         margin-top: 2rem;
     }
 
-
-  table {
-      font-size: 90%;
-      background-color: ${colors.offWhite};
-      border: 1px solid rgba(0,0,0, .1);
-      border-collapse: collapse;
-      overflow-x: scroll;
-      box-shadow: ${shadows.light};
-      border-radius: 3px;
-  }
-  th {
-    padding: 1rem;
-  }
-  td {
-    text-align: center;
-    border: 1px solid rgba(0,0,0, .1);
-    &:last-child {
-      text-align: left;
-      padding: 3rem;
+    table {
+        font-size: 90%;
+        background-color: ${colors.offWhite};
+        border: 1px solid rgba(0,0,0, .1);
+        border-collapse: collapse;
+        overflow-x: scroll;
+        box-shadow: ${shadows.light};
+        border-radius: 3px;
     }
-  }
 
+    th {
+        padding: 1rem;
+    }
+
+    td {
+        text-align: center;
+        border: 1px solid rgba(0,0,0, .1);
+        &:last-child {
+        text-align: left;
+        padding: 3rem;
+        }
+    }
 `
 
 
