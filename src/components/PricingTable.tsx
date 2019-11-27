@@ -1,36 +1,13 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { borders, colors, sizes } from '../styles/variables'
+import { colors } from '../styles/variables'
 
 const StyledPricingTable = styled.section`
     padding-bottom: 0;
     margin-bottom: 5rem;
 
-    table {
-        border: 1px solid ${borders.light};
-        border-collapse: collapse;
-        letter-spacing: 1px;
-        margin: 0 auto;
-        font-size: 1.5rem;
-        width: 100%;
-        min-width: 60rem;
-        overflow-x: scroll;
-    }
-
-    @media(max-width: ${sizes.breakpoints.md}) {
-        overflow-x: scroll;
-    }
-
-    td, th {
-      border: ${borders.light};
-      padding: 10px 20px;
-    }
-
     th {
-        background: ${colors.offWhite};
-        font-weight: 400;
-        text-align: left;
 
         span {
             display: block;
@@ -63,9 +40,6 @@ const StyledPricingTable = styled.section`
         }
     }
 
-    td {
-        text-align: center;
-    }
 `
 
 interface PricingTableProps {
@@ -78,9 +52,11 @@ const PricingTable: React.SFC<PricingTableProps> = ({ title, paragraph, children
         <StyledPricingTable>
             <h2>{title}</h2>
             <p>{paragraph}</p>
-            <table>
-                {children}
-            </table>
+            <div className="table-container">
+                <table>
+                    {children}
+                </table>
+            </div>
         </StyledPricingTable>
     </div>
 )

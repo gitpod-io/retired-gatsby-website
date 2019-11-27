@@ -1,4 +1,4 @@
-import { sizes, colors, shadows } from "./variables";
+import { sizes, colors, shadows, borders } from "./variables";
 
 export default `
     /* ------------------------------------------- */
@@ -52,6 +52,7 @@ export default `
 
         @media(max-width: ${sizes.breakpoints.sm}) {
             width: 95%;
+            padding: 0 .5rem;
         }
     }
 
@@ -159,6 +160,12 @@ export default `
             padding: 1rem 3rem;
         }
 
+        &--big {
+            padding: 1.5rem 4rem;
+            font-size: ${sizes.font.h4};
+            font-weight: 600;
+        }
+
         &--cta {
             color: ${colors.white};
             background: ${colors.link};
@@ -220,6 +227,40 @@ export default `
 
     img {
         object-fit: contain;
+    }
+
+    /* ------------------------------------------- */
+    /* ----- Tables ----- */
+    /* ------------------------------------------- */
+
+    .table-container {
+        overflow-x: scroll;
+        padding-bottom: 2rem;
+    }
+
+    table {
+        border: 1px solid ${borders.light};
+        border-collapse: collapse;
+        letter-spacing: 1px;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        width: 100%;
+        min-width: 60rem;
+    }
+
+    td, th {
+        border: ${borders.light};
+        padding: 10px 20px;
+    }
+
+    th {
+        background: ${colors.offWhite};
+        font-weight: 400;
+        text-align: left;
+    }
+
+    td {
+        text-align: center;
     }
 
 `

@@ -61,6 +61,7 @@ const StyledPricingPage = styled.div`
 
             .btn {
                 margin-bottom: 2rem;
+                margin-right: 2rem;
             }
 
             @media(min-width: ${sizes.breakpoints.md}) {
