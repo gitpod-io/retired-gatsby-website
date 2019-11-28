@@ -22,6 +22,7 @@ const StyledProject = styled.div`
 
     img {
         height: 8.5rem;
+        width: 14rem;
     }
 
     & > * {
