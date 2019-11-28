@@ -10,7 +10,7 @@ export const projects = [
     {
         image: JS,
         title: 'React Application',
-        href: "",
+        href: "https://github.com/gitpod-io/NextSimpleStarter",
         alt: "JavaScript Logo",
     },
     {
@@ -22,19 +22,19 @@ export const projects = [
     {
         image: GO,
         title: 'Gin Application',
-        href: "",
+        href: "https://github.com/gitpod-io/go-gin-app",
         alt: "Go Logo",
     },
     {
         image: JAVA,
         title: 'Spring Petclinic',
-        href: "",
+        href: "https://github.com/gitpod-io/spring-petclinic",
         alt: "Java Logo",
     },
     {
         image: PY,
         title: 'Hangman',
-        href: "",
+        href: "https://github.com/techwithtim/Hangman",
         alt: "Python Logo",
     },
 ]
