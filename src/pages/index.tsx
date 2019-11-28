@@ -221,6 +221,28 @@ const StyledIndexPage = styled.div`
             }
         }
 
+        img {
+            transition: transform .4s ease-in-out;
+        }
+
+        .toggle {
+            display: inline-block;
+            padding: 1rem 3rem;
+            font-weight: 600;
+            color: ${colors.white};
+            background: ${colors.offWhite2};
+            border: none;
+
+            @media(max-width: 1100px) {
+                font-size: 1.4rem;
+                padding: .5rem 1rem;
+            }
+
+            &--active {
+                background: ${colors.link};
+            }
+        }
+
     }
 
     /* ------------------------------------------- */
@@ -557,26 +579,48 @@ const IndexPage: React.SFC<{}> = () => (
 class ReadyToCode extends React.Component {
     state = {
         isGraphicGitpodRendered: false,
-        isGraphicOridinaryRendered: false
+        isGraphicOridinaryRendered: false,
+        isDefaultRendered: true
     }
 
     handleClick = (val: string) => {
         if (val === 'gitpod') {
             this.setState({
                 isGraphicGitpodRendered: true,
-                isGraphicOridinaryRendered: false
+                isGraphicOridinaryRendered: false,
+                isDefaultRendered: false
             })
         }
         else if (val === 'ordinary') {
             this.setState({
                 isGraphicGitpodRendered: false,
-                isGraphicOridinaryRendered: true
+                isGraphicOridinaryRendered: true,
+                isDefaultRendered: false
             })
         }
     }
 
     render() {
-        const { isGraphicGitpodRendered, isGraphicOridinaryRendered } = this.state
+        const { isDefaultRendered, isGraphicGitpodRendered, isGraphicOridinaryRendered } = this.state
+
+        const graphicGitpodStyles: React.CSSProperties = {
+            transform: isGraphicGitpodRendered ? 'scale(.9) translateY(5rem)' : 'scale(0)',
+            height: isGraphicGitpodRendered ? '100%' : 0,
+            opacity: isGraphicGitpodRendered ? 1 : 0
+        }
+
+        const graphicOridnaryStyles: React.CSSProperties = {
+            transform: isGraphicOridinaryRendered ? 'scale(1.2)' : 'scale(0)',
+            height: isGraphicOridinaryRendered ? '100%' : 0,
+            opacity: isGraphicOridinaryRendered ? 1 : 0
+        }
+
+        const defaultStyles: React.CSSProperties = {
+            transform: isDefaultRendered ? 'scale(.95) translateY(4rem)' : 'scale(0) translateY(4rem)',
+            opacity: isDefaultRendered ? 1 : 0,
+            height: isDefaultRendered ? '100%': 0,
+        }
+
         return (
             <div className="why-gitpod__box why-gitpod__box--1">
                 <div className="why-gitpod__text">
@@ -586,20 +630,22 @@ class ReadyToCode extends React.Component {
                     <div><button className="toggle toggle--active" onClick={() => this.handleClick('gitpod')}>With Gitpod</button><button className="toggle" onClick={() => this.handleClick('ordinary')}>Ordinary Way</button></div>
                 </div>
                 <div className="why-gitpod__img-container">
-                    {
-                        isGraphicGitpodRendered ? <img
-                                src={AutomatedSetupGraphicGitpod}
-                                style={{transform: 'scale(.9) translateY(5rem)', width: '100%', height: '100%'}}
-                            /> : isGraphicOridinaryRendered ? <img
-                                src={AutomatedSetupGraphicOrdinary}
-                                style={{transform: 'scale(1.2)', width: '100%', height: '100%'}}
-                            /> : <img
+                    <img
+                        alt="Automated Setup"
+                        src={AutomatedSetupGraphicGitpod}
+                        style={graphicGitpodStyles}
+                        className="why-gitpod__img"
+                    />
+                    <img
+                        src={AutomatedSetupGraphicOrdinary}
+                        style={graphicOridnaryStyles}
+                    />
+                    <img
                             alt="Automated Setup"
                             src={ReadyToCodeImg}
-                            style={{transform: 'scale(.95) translateY(4rem)'}}
+                            style={defaultStyles}
                             className="why-gitpod__img"
                         />
-                    }
                 </div>
             </div>
         )
