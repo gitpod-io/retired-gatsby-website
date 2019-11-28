@@ -116,10 +116,6 @@ const StyledAboutPage = styled.div`
             }
         }
 
-        h2 {
-            margin-bottom: 2rem;
-        }
-
         p {
             font-size: ${sizes.font.btnNormal};
         }
