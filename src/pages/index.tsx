@@ -214,7 +214,11 @@ const StyledIndexPage = styled.div`
             width: 100%;
 
             &-container {
-                min-height: 30rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                min-height: 36rem;
                 @media(min-width: ${sizes.breakpoints.md}) {
                     width: 60%;
                 }
@@ -608,7 +612,7 @@ class ReadyToCode extends React.Component {
         const { isDefaultRendered, isGraphicGitpodRendered, isGraphicOridinaryRendered } = this.state
 
         const graphicGitpodStyles: React.CSSProperties = {
-            transform: isGraphicGitpodRendered ? 'scale(.9) translateY(5rem)' : 'scale(0)',
+            transform: isGraphicGitpodRendered ? 'scale(.9) translateY(14.5rem)' : 'scale(0)',
             height: isGraphicGitpodRendered ? '100%' : 0,
             opacity: isGraphicGitpodRendered ? 1 : 0
         }
@@ -633,7 +637,7 @@ class ReadyToCode extends React.Component {
                     <p>Read more about <Link to="/blog/continuous-dev-environment-in-devops/">Continuous Dev Environments.</Link></p>
                     <div><button className="toggle toggle--active" onClick={() => this.handleClick('gitpod')}>With Gitpod</button><button className="toggle" onClick={() => this.handleClick('ordinary')}>Ordinary Way</button></div>
                 </div>
-                <div className="why-gitpod__img-container">
+                <div className="why-gitpod__img-container" style={{display: 'block'}}>
                     <img
                         alt="Automated Setup"
                         src={AutomatedSetupGraphicGitpod}
@@ -642,7 +646,7 @@ class ReadyToCode extends React.Component {
                     />
                     <img
                         src={AutomatedSetupGraphicOrdinary}
-                        style={graphicOridnaryStyles}
+                        style={{...graphicOridnaryStyles, width: '100%'}}
                     />
                     <img
                             alt="Automated Setup"
