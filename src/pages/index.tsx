@@ -361,6 +361,10 @@ const StyledIndexPage = styled.div`
                     width: 100%;
                 }
             }
+
+            img {
+                max-width: 85rem;
+            }
         }
 
         &__text {
