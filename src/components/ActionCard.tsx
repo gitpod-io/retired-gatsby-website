@@ -20,6 +20,10 @@ const StyledActionCard = styled.section`
     p {
         margin: -3rem 0 4rem;
     }
+
+    .btn {
+        margin-right: 2rem;
+    }
 `
 
 interface Anchor {
