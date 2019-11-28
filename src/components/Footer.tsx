@@ -82,11 +82,11 @@ const Footer: React.SFC<{}> = () => (
                     <li>Solutions</li>
                     <li><Link to="/education">Education</Link></li>
                     <li><Link to="/vendor">Vendor</Link></li>
-                    <li><Link to="/recruiter">Recruiter</Link></li>
+                    <li><Link to="/recruiting">Recruiter</Link></li>
                 </ul>
                 <ul>
                     <li>Developer</li>
-                    <li><Link to="#">Getting started</Link></li>
+                    <li><Link to="/#get-started">Getting started</Link></li>
                     <li><Link to="/docs">Documentation</Link></li>
                     <li><Link to="#">Report a Bug</Link></li>
                     <li><a href="https://spectrum.chat/gitpod" target="_blank">Community</a></li>
@@ -111,7 +111,7 @@ const Footer: React.SFC<{}> = () => (
                     </li>
                     <br aria-hidden={true} />
                     <li>
-                        <a href="#" target="_blank">
+                        <a href="mailto:contact@gitpod.io" target="_blank">
                             <img alt="Mail Logo" src={Mail} />
                         </a>
                     </li>
