@@ -3,7 +3,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { colors, sizes, shadows } from '../styles/variables'
 
-const StyledFeatureCard = styled.div`
+const StyledFeatureCard = styled.div<{caption: boolean}>`
     display: flex;
     background: ${colors.offWhite};
     border: 3px solid ${colors.offWhite};
@@ -21,8 +21,10 @@ const StyledFeatureCard = styled.div`
     }
 
     .img-box {
+        position: relative;
         display: flex;
         justify-content: center;
+        min-height: ${(props) => props.caption ? '30rem' : null };
         align-items: center;
         background: ${colors.white};
 
@@ -37,7 +39,14 @@ const StyledFeatureCard = styled.div`
             @media(max-width: ${sizes.breakpoints.sm}) {
                 width: 100%;
             }
-         }
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            opacity: .7;
+        }
     }
 
     p:last-of-type {
@@ -51,12 +60,13 @@ interface FeatureCardProps {
     more?: JSX.Element
     strong?: string
     img: JSX.Element,
-    id?: string
+    id?: string,
+    caption?: string
 }
 
-const FeatureCard: React.SFC<FeatureCardProps> = ({ title, paragraphs, more, strong, img , id }) => (
+const FeatureCard: React.SFC<FeatureCardProps> = ({ title, paragraphs, more, strong, img , id, caption }) => (
     <div className="row">
-        <StyledFeatureCard id={id}>
+        <StyledFeatureCard id={id} caption={ caption ? true : false}>
             <div className="text-box">
                 <h3>{title}</h3>
                 { paragraphs.map((p, i) => <p key={i}>{p}</p>) }
@@ -64,7 +74,8 @@ const FeatureCard: React.SFC<FeatureCardProps> = ({ title, paragraphs, more, str
                 { more ? more : null }
             </div>
             <div className="img-box">
-                {img}
+                { img }
+                { caption ? <span className="caption">{caption}</span> : null }
             </div>
         </StyledFeatureCard>
     </div>

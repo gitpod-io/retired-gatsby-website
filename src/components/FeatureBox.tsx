@@ -26,12 +26,15 @@ interface FeatureBoxProps {
     alt: string
     img: string
     text: string
+    path: string
 }
 
-const FeatureBox: React.SFC<FeatureBoxProps> = ({ alt, img, text }) => (
+const FeatureBox: React.SFC<FeatureBoxProps> = ({ alt, img, text, path }) => (
     <StyledFeatureBox>
-        <img alt={alt} src={img}/>
-        <h3>{text}</h3>
+        <a href={`#${path}`}>
+            <img alt={alt} src={img}/>
+            <h3>{text}</h3>
+        </a>
     </StyledFeatureBox>
 )
 
