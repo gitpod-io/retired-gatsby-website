@@ -33,7 +33,7 @@ const EnterprisePage: React.SFC<{}> = () => (
             <Banner
                 subtitle="Gitpod Enterprise"
                 title={<h1>Unleash Developer Productivity</h1>}
-                paragraph="Implementing Gitpod to your development environment means no more tedious setups, easy onboardiing, higher code quality and a greater workflow."
+                paragraph="Implementing Gitpod to your development environment means no more tedious setups, easy onboarding, higher code quality and a greater workflow."
                 linkPath="#"
                 linkText="Choose your Solution"
                 img={<img alt="Planet Earth" src={Planet}/>}
@@ -45,7 +45,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                 <Feature
                     title="Great Teamwork"
                     paragraphs={['With Gitpod code reviews and spotting bugs becomes more convenient than ever. ', 'Your team can collaborate asynchronously with Gitpod Snapshots, as well as synchronously with life shared workspaces', 'Gitpod also enables cross-team people by not having project setup costs.']}
-                    more={<p>Read more about <a href="#">Collaboration</a></p>}
+                     more={<p>Read more about <a href="#">Collaboration</a></p>}
                 />
                 <Feature
                     title="Less Costs for more Machine Power"
@@ -237,7 +237,7 @@ const EnterprisePage: React.SFC<{}> = () => (
             </tr>
             <tr>
                 <th></th>
-                <td><Link to="#" className="btn btn--cta">Start for Free</Link></td>
+                <td><Link to="/#get-started" className="btn btn--cta">Start for Free</Link></td>
                 <td><Link to="#" className="btn btn--cta">Contact Sales</Link></td>
                 <td><Link to="#" className="btn">Host Yourself</Link></td>
             </tr>
