@@ -46,6 +46,7 @@ const StyledDropDown = styled.div`
     img {
         height: .8rem;
         margin-left: 1rem;
+        transition: all .2s ease-in-out;
     }
 
     ul {
@@ -57,9 +58,10 @@ const StyledDropDown = styled.div`
         flex-direction: column;
         width: 120%;
         padding: .5rem .5rem 1rem;
-        background: ${colors.white};
+        background: ${colors.offWhite};
         box-shadow: ${shadows.light};
         z-index: 1000;
+        transition: all .25s ease-in-out;
 
         @media(max-width: 980px) {
             max-width: 15rem;
@@ -70,6 +72,8 @@ const StyledDropDown = styled.div`
     li {
         margin: 1rem 0 0!important;
         font-size: 90%;
+        width: 100%;
+        padding: 0 1.5rem;
     }
 `
 
@@ -104,7 +108,7 @@ class DropDown extends React.Component<DropDownProps, {}> {
                     />
                 </button>
 
-                { isRendered ? <ul>{children}</ul> : null }
+                <ul style={ isRendered ? {opacity: 1, transform: 'scale(1) translate(-50%, 0)', background: colors.white } : {opacity: 0, transform: 'scale(0) translate(-50%, -20rem)'} }>{children}</ul>
             </StyledDropDown>
         )
     }
