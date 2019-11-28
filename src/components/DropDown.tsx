@@ -33,7 +33,6 @@ const StyledDropDown = styled.div`
         }
 
         &:hover {
-            background: none;
             color: ${colors.link};
 
             &::before {

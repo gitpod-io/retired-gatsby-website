@@ -136,6 +136,10 @@ export default `
 
     button {
         font-family: inherit;
+        outline: none;
+        font-size: inherit;
+        background: none;
+        color: ${colors.text};
     }
 
     a {
