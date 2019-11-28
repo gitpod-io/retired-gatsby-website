@@ -6,6 +6,7 @@ import { colors, sizes, shadows, borders } from '../styles/variables'
 
 import IndexLayout from '../layouts/index'
 import ReflectionScreenshot from '../resources/reflection-screenshot.png'
+import IconLine from '../resources/icon-line.png'
 import HourGlass from '../resources/hourglass.png'
 import ArrowOnTarget from '../resources/arrow-on-target.png'
 import ToolIntegration from '../resources/tool-integration.svg'
@@ -147,6 +148,18 @@ const StyledIndexPage = styled.div`
         }
     }
 
+    .line {
+        width: 100vw;
+
+        &-container {
+            padding-bottom: 10rem;
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                padding-bottom: 0;
+            }
+        }
+    }
+
     /* ------------------------------------------- */
     /* ----- Section Why Gitpod? ----- */
     /* ------------------------------------------- */
@@ -171,11 +184,21 @@ const StyledIndexPage = styled.div`
                 display: flex;
                 flex-direction: column;
             }
+
+            &--1 {
+                @media(min-width: ${sizes.breakpoints.md}) {
+                    height: 475px;
+                }
+            }
         }
 
         &__text {
             padding: 6rem 4rem;
             background: ${colors.offWhite};
+
+            @media(max-width: 900px) {
+                padding: 3rem 1rem;
+            }
 
             p:last-of-type {
                 margin-bottom: 5rem;
@@ -368,7 +391,11 @@ const IndexPage: React.SFC<{}> = () => (
                 </div>
             </section>
 
-             {/* ----- Section Trusted By ----- */}
+            <div className="line-container">
+                <img alt="Icon Line" src={IconLine} className="line"/>
+            </div>
+
+            {/* ----- Section Trusted By ----- */}
 
             <TrustedBy
                 brands={[
@@ -551,11 +578,11 @@ class ReadyToCode extends React.Component {
     render() {
         const { isGraphicGitpodRendered, isGraphicOridinaryRendered } = this.state
         return (
-            <div className="why-gitpod__box">
+            <div className="why-gitpod__box why-gitpod__box--1">
                 <div className="why-gitpod__text">
                     <h3>Ready-to-Code Dev Environments</h3>
                     <p>Gitpod prepares ephemeral dev environments for teams, that come entirely prebuilt with your projects, dependencies and tools.</p>
-                    <p>Read more about <a href="#">Continuous Dev Environments.</a></p>
+                    <p>Read more about <Link to="/blog/continuous-dev-environment-in-devops/">Continuous Dev Environments.</Link></p>
                     <div><button className="toggle toggle--active" onClick={() => this.handleClick('gitpod')}>With Gitpod</button><button className="toggle" onClick={() => this.handleClick('ordinary')}>Ordinary Way</button></div>
                 </div>
                 <div className="why-gitpod__img-container">
