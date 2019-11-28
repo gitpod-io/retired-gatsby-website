@@ -2,9 +2,9 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
-
 import GitpodLogoDark from '../resources/gitpod-logo-dark.svg'
 import { colors } from '../styles/variables'
+import DropDown from '../components/DropDown'
 
 
 const StyledNav = styled.nav`
@@ -68,8 +68,20 @@ const Nav: React.SFC<{}> = () => (
                 <li><Link to='/features' className="link">Features</Link></li>
                 <li><Link to='/pricing' className="link">Pricing</Link></li>
                 <li><Link to='/enterprise' className="link">Enterprise</Link></li>
-                <li><Link to='/solutions' className="link">Solutions</Link></li>
-                <li><Link to='/resources' className="link">Resources</Link></li>
+                <li>
+                    <DropDown title="Solutions">
+                        <li><Link to='/education' className="link">Education</Link></li>
+                        <li><Link to='/recruiting' className="link">Recruiting</Link></li>
+                        <li><Link to='/vendor' className="link">Vendor</Link></li>
+                    </DropDown>
+                </li>
+                <li>
+                    <DropDown title="Resources">
+                        <li><Link to='/docs' className="link">Docs</Link></li>
+                        <li><Link to='/blog' className="link">Blog</Link></li>
+                        <li><a href="https://spectrum.chat/gitpod/" target="_blank" className="link">Community</a></li>
+                    </DropDown>
+                </li>
                 <li><Link to="/#get-started" className="btn btn--cta">Start for Free</Link></li>
             </ul>
         </div>
