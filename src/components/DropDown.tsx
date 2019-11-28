@@ -12,6 +12,11 @@ const StyledDropDown = styled.div`
         align-items: center;
         border: none;
         transition: all .2s;
+        max-width: 20rem;
+
+        @media(max-width: 980px) {
+            margin: 0 auto;
+        }
 
         &::before {
             content: "";
@@ -21,6 +26,10 @@ const StyledDropDown = styled.div`
             right: 100%;
             border-bottom: 2px solid ${colors.white};
             transition: all .4s cubic-bezier(0,.5,0, 1);
+
+            @media(max-width: 980px) {
+               display: none;
+            }
         }
 
         &:hover {
@@ -51,6 +60,11 @@ const StyledDropDown = styled.div`
         background: ${colors.white};
         box-shadow: ${shadows.light};
         z-index: 1000;
+
+        @media(max-width: 980px) {
+            max-width: 15rem;
+            max-height: 15rem;
+        }
     }
 
     li {
