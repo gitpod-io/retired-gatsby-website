@@ -45,7 +45,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                 <Feature
                     title="Great Teamwork"
                     paragraphs={['With Gitpod code reviews and spotting bugs becomes more convenient than ever. ', 'Your team can collaborate asynchronously with Gitpod Snapshots, as well as synchronously with life shared workspaces', 'Gitpod also enables cross-team people by not having project setup costs.']}
-                     more={<p>Read more about <a href="#">Collaboration</a></p>}
+                    more={<p>Read more about <Link to="/docs/33_sharing_and_collaboration/">Collaboration</Link></p>}
                 />
                 <Feature
                     title="Less Costs for more Machine Power"
