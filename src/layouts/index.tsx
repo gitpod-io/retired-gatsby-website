@@ -76,11 +76,9 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
                     color: colors.white,
                     boxShadow: '0px 0px 1px #1aa6e4',
                 }}
-                style={{
-                    background: 'rgba(0,0,0, .85)',
-                }}
+                containerClasses="consent"
             >
-                This website uses cookies to enhance the user experience. Read our <Link style={{color: '#35C9FF'}} to="/privacy">privacy policy</Link> for more info.
+                This website uses cookies to<br /> enhance the user experience.<br /> Read our <Link style={{color: '#35C9FF'}} to="/privacy">privacy policy</Link> for more info.
             </CookieConsent>
           {children}
         </LayoutMain>

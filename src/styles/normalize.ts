@@ -266,4 +266,27 @@ export default `
         text-align: center;
     }
 
+    /* ------------------------------------------- */
+    /* ----- Others ----- */
+    /* ------------------------------------------- */
+
+    .consent {
+        @media(max-width: ${sizes.breakpoints.md}) {
+            font-size: 95% !important;
+        }
+
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            font-size: 90% !important;
+        }
+
+        br {
+            display: none;
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                display: initial;
+            }
+
+        }
+    }
+
 `
