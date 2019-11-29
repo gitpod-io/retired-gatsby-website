@@ -30,11 +30,11 @@ const StyledNav = styled.nav`
 
         @media(max-width: 980px) {
             position: absolute;
-            top: 18%;
+            top: 16%;
             left: 0;
             flex-direction: column;
             width: 100vw;
-            height: 85vh;
+            height: 88vh;
             text-align: center;
             justify-content: center;
             align-items: center;
