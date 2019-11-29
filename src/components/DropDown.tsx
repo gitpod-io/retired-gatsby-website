@@ -98,6 +98,8 @@ class DropDown extends React.Component<DropDownProps, {}> {
             <StyledDropDown>
                 <button
                     onClick={this.handleClick}
+                    aria-label={ isRendered ? "Hide Dropdown's Content" : "Show Dropdown's Content"}
+                    aria-live="assertive"
                 >
                     <div>{title}</div>
                     <img
