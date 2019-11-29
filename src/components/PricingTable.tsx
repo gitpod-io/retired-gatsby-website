@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors } from '../styles/variables'
+import { colors, sizes } from '../styles/variables'
 
 const StyledPricingTable = styled.section`
     padding-bottom: 0;
@@ -17,6 +17,16 @@ const StyledPricingTable = styled.section`
             height: 2rem;
             transform: translateY(5px);
             margin-right: 1rem;
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                height: 1.7rem;
+                transform: translateY(3px);
+                margin-right: .5rem;
+            }
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                height: 1.5rem;
+            }
         }
     }
 
@@ -27,9 +37,25 @@ const StyledPricingTable = styled.section`
             font-size: 2rem;
             padding: 3rem;
 
+            @media(max-width: ${sizes.breakpoints.md}) {
+                padding: 2rem;
+            }
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                padding: 1.5rem;
+            }
+
             span {
                 font-size: 1.6rem;
                 font-weight: 400;
+
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    font-size: 1.4rem;
+                }
+
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    font-size: 1.2rem;
+                }
 
                 span {
                     display: inline;

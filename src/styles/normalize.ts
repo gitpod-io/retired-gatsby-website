@@ -232,11 +232,27 @@ export default `
         font-size: 1.5rem;
         width: 100%;
         min-width: 60rem;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            font-size: 1.4rem;
+        }
+
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            font-size: 1.2rem;
+        }
     }
 
     td, th {
         border: ${borders.light};
         padding: 10px 20px;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            padding: 5px 10px;
+        }
+
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            padding: 3px 10px;
+        }
     }
 
     th {
