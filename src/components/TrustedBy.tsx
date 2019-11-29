@@ -40,9 +40,13 @@ const TrustedBy: React.SFC<TrustedByProps> = ({brands}) => (
         <div className="row">
             <h2>Trusted by</h2>
             <div className="logos">
-                { brands.map((b, i) => <a href={b.url} target="_blank" key={i}>
-                    <img src={b.svg} alt={b.alt} />
-                </a>) }
+                {
+                    brands.map((b, i) => (
+                        <a href={b.url} target="_blank" key={i}>
+                            <img src={b.svg} alt={b.alt} />
+                        </a>
+                    ))
+                }
             </div>
         </div>
     </StyledTrustedBy>
