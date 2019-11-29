@@ -39,7 +39,7 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
     const editUrl = data.markdownRemark.fileAbsolutePath.replace(/^.*\/src\/docs\//, 'https://gitpod.io/#https://github.com/gitpod-io/website/blob/master/src/docs/');
     return (
         <>
-            <DocsLayout canonical={data.markdownRemark.frontmatter.url || `${data.markdownRemark.fields.slug.toLowerCase()}`} title={`Gitpod - ${menuCtx.thisEntry!.title || 'Docs'}`}>
+            <DocsLayout canonical={data.markdownRemark.frontmatter.url || `${data.markdownRemark.fields.slug.toLowerCase()}`} title={`${menuCtx.thisEntry!.title || 'Docs'}`}>
                 <div className="article" style={{ position: "relative", flexGrow: 1 }}>
                     <div className="article__container">
                         <h4 style={{ color: colors.textDark, marginBottom: 0, marginTop: 30 }}>Docs</h4>

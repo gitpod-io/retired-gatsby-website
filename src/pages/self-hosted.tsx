@@ -83,7 +83,7 @@ const StyledSelfHostedPage = styled.div`
 `
 
 const SelfHostedPage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/self-hosted/'>
+    <IndexLayout canonical='/self-hosted/' title="Self Hosted">
         <StyledSelfHostedPage>
 
             <div className="grey-container">

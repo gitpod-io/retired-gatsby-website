@@ -187,7 +187,7 @@ const StyledAboutPage = styled.div`
 `
 
 const AboutPage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/about/'>
+    <IndexLayout canonical='/about/' title="About">
         <StyledAboutPage>
             <div className="grey-container">
 

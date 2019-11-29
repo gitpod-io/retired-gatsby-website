@@ -18,7 +18,7 @@ import Gitlab from '../resources/gitlab.svg'
 import { Link } from 'gatsby'
 
 const RecrutingPage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/recruting/'>
+    <IndexLayout canonical='/recruting/' title="Recruiting">
         <div className="grey-container">
 
             {/* ----- Banner ----- */}

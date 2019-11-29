@@ -25,7 +25,7 @@ import CodeInstituteLogo from '../resources/code.png'
 import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
 
 const EnterprisePage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/enterprise/'>
+    <IndexLayout canonical='/enterprise/' title="Enterprise">
         <div className="grey-container">
 
             {/* ----- Banner ----- */}

@@ -72,7 +72,7 @@ const StyledPricingPage = styled.div`
 `
 
 const PricingPage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/pricing/'>
+    <IndexLayout canonical='/pricing/' title="Pricing">
         <StyledPricingPage>
             <div className="grey-container">
                 <div className="row">

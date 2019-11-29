@@ -123,7 +123,7 @@ const StyledFeaturesPage = styled.div`
 `
 
 const FeaturesPage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/features/'>
+    <IndexLayout canonical='/features/' title="Features">
         <StyledFeaturesPage>
             <div className="grey-container">
                 <div className="row">

@@ -37,7 +37,7 @@ const StyledHeading = styled.h2`
 `
 
 const EducationPage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/education/'>
+    <IndexLayout canonical='/education/' title="Education">
         <div className="grey-container">
 
             {/* ----- Banner ----- */}
