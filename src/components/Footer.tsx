@@ -47,6 +47,13 @@ const StyledFooter = styled.footer`
     a {
         color: ${colors.text};
         font-weight: 400;
+        transition: all .2s;
+
+        &:hover,
+        &:focus {
+            color: ${colors.link};
+        }
+
     }
 
     .contact {
