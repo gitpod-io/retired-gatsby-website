@@ -9,11 +9,11 @@ import Hamburger from '../resources/hamburger.svg'
 import Multiply from '../resources/multiply.svg'
 
 const StyledNav = styled.nav`
-    background: ${colors.offWhite};
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 4rem 0;
+    background: ${colors.offWhite};
 
     @media (max-width: 980px) {
         display: block;
@@ -86,9 +86,9 @@ const StyledNav = styled.nav`
     }
 
     .nav__btn {
+        background: ${colors.offWhite};
         border: none;
         z-index: 10000;
-        background: ${colors.offWhite};
 
         &:hover {
             background: ${colors.offWhite};
@@ -144,22 +144,25 @@ class Nav extends React.Component {
 
 
     render() {
+
+        const { isNavRendered } = this.state
+
         return (
             <div className="grey-container">
                 <div className="row">
                     <StyledNav role="navigation" className="nav">
                             <Link to="/"><img alt="Gitpod Logo" src={GitpodLogoDark} /></Link>
-                            <div className="nav__btn-container">
+                            <div className="nav__btn-container" aria-live="assertive">
                                 <button
                                     className="nav__btn"
-                                    aria-label="Navigation Toggle"
+                                    aria-label={ isNavRendered ? "Hide the Navigation Items" : "Show the Navigation Items"}
                                     onClick={this.toggleNavigation}
                                 >
-                                    {this.state.isNavRendered ? <img src={Multiply} alt="close menu icon" /> : <img src={Hamburger} alt="hamburger menu icon" />}
+                                    { isNavRendered ? <img src={Multiply} alt="close menu icon" /> : <img src={Hamburger} alt="hamburger menu icon" /> }
                                 </button>
                             </div>
                             {
-                                this.state.isNavRendered && (
+                                isNavRendered && (
                                 <ul>
                                     <li><Link to='/features' className="link">Features</Link></li>
                                     <li><Link to='/pricing' className="link">Pricing</Link></li>
