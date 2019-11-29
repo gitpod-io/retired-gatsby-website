@@ -279,6 +279,7 @@ const StyledIndexPage = styled.div`
 
             &-image {
                 height: 20rem;
+                width: 100%;
 
                 @media(max-width: ${sizes.breakpoints.md}) {
                     width: 100%;
