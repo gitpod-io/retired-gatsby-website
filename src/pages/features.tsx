@@ -184,123 +184,127 @@ const FeaturesPage: React.SFC<{}> = () => (
                                 <p>Gitpod comes with the following language support. If your favorite programming language is missing, just download the related <Link to="/docs/vscode-extensions/">VS Code Extension</Link> and enjoy all its features.</p>
                                 <div className="table-container">
                                     <table>
-                                        <tr className="header">
-                                            <th style={{border: 'none', background: 'none'}}>&nbsp;</th>
-                                            <th>Syntax Coloring</th>
-                                            <th>Code Completion</th>
-                                            <th>Diagnostics</th>
-                                            <th>Hovers</th>
-                                            <th>Navigation</th>
-                                            <th>Refactorings</th>
-                                        </tr>
-                                        <tr>
-                                            <th>JavaScript/TypeScript</th>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Java</th>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Python</th>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Go</th>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Ruby</th>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Rust</th>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>C/C++</th>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>JSON</th>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Dockefile</th>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>CSS</th>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>HTML</th>
-                                            <td><Circle /></td>
-                                            <td><Circle /></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Clojure, Swift, C#, etc.</th>
-                                            <td><Circle /></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
+                                        <thead>
+                                            <tr className="header">
+                                                <th style={{border: 'none', background: 'none'}}>&nbsp;</th>
+                                                <th>Syntax Coloring</th>
+                                                <th>Code Completion</th>
+                                                <th>Diagnostics</th>
+                                                <th>Hovers</th>
+                                                <th>Navigation</th>
+                                                <th>Refactorings</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>JavaScript/TypeScript</th>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Java</th>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Python</th>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Go</th>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Ruby</th>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Rust</th>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>C/C++</th>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>JSON</th>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Dockefile</th>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>CSS</th>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>HTML</th>
+                                                <td><Circle /></td>
+                                                <td><Circle /></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Clojure, Swift, C#, etc.</th>
+                                                <td><Circle /></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
                                     </table>
                                 </div>
                             </div>
