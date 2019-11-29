@@ -3,6 +3,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import ArrowDown from '../resources/arrow-down.svg'
 import { colors, shadows } from '../styles/variables'
+import { Link } from 'gatsby'
 
 const StyledDropDown = styled.div`
     position: relative;
@@ -32,7 +33,8 @@ const StyledDropDown = styled.div`
             }
         }
 
-        &:hover {
+        &:hover,
+        &:focus {
             color: ${colors.link};
 
             &::before {
@@ -76,8 +78,15 @@ const StyledDropDown = styled.div`
     }
 `
 
+interface Link {
+    text: string
+    to: string
+    target: boolean
+}
+
 interface DropDownProps {
     title: string
+    links: Link[]
 }
 
 class DropDown extends React.Component<DropDownProps, {}> {
@@ -91,7 +100,7 @@ class DropDown extends React.Component<DropDownProps, {}> {
     }
 
     render () {
-        const { title, children } = this.props
+        const { title, links } = this.props
         const { isRendered } = this.state
 
         return (
@@ -109,7 +118,34 @@ class DropDown extends React.Component<DropDownProps, {}> {
                     />
                 </button>
 
-                <ul style={ isRendered ? {opacity: 1, transform: 'scale(1) translate(-50%, 0)', background: colors.white } : {opacity: 0, transform: 'scale(0) translate(-50%, -20rem)'} }>{children}</ul>
+                <ul style={ isRendered ? {opacity: 1, transform: 'scale(1) translate(-50%, 0)', background: colors.white } : {opacity: 0, transform: 'scale(0) translate(-50%, -20rem)'} }>
+                    {
+                        links.map(({text, to, target}) =>
+                            target ?
+                                (
+                                    <a
+                                        href={to}
+                                        tabindex={ isRendered ? 0 : -1 }
+                                        target="_blank"
+                                        className="link" >
+                                        {text}
+                                    </a>
+                                )
+                                    :
+                                (
+                                    <li>
+                                        <Link
+                                            to={to}
+                                            className="link"
+                                            tabindex={ isRendered ? '' : -1 }
+                                        >
+                                            {text}
+                                        </Link>
+                                    </li>
+                                )
+                        )
+                    }
+                </ul>
             </StyledDropDown>
         )
     }

@@ -168,18 +168,45 @@ class Nav extends React.Component {
                                     <li><Link to='/pricing' className="link">Pricing</Link></li>
                                     <li><Link to='/enterprise' className="link">Enterprise</Link></li>
                                     <li>
-                                        <DropDown title="Solutions">
-                                            <li><Link to='/education' className="link">Education</Link></li>
-                                            <li><Link to='/recruiting' className="link">Recruiting</Link></li>
-                                            <li><Link to='/vendor' className="link">Vendor</Link></li>
-                                        </DropDown>
+                                        <DropDown
+                                            title="Solutions"
+                                            links={[
+                                                {
+                                                    text: 'Education',
+                                                    to: '/education'
+                                                },
+                                                {
+                                                    text: 'Recruiting',
+                                                    to: '/recruiting'
+                                                },
+                                                {
+                                                    text: 'Vendor',
+                                                    to: '/vendor'
+                                                }
+                                            ]}
+                                        />
                                     </li>
                                     <li>
-                                        <DropDown title="Resources">
-                                            <li><Link to='/docs' className="link">Docs</Link></li>
-                                            <li><Link to='/blog' className="link">Blog</Link></li>
-                                            <li><a href="https://spectrum.chat/gitpod/" target="_blank" className="link">Community</a></li>
-                                        </DropDown>
+                                        <DropDown
+                                            title="Resources"
+                                            links={[
+                                                {
+                                                    text: 'Docs',
+                                                    to: '/docs'
+                                                },
+                                                {
+                                                    text: 'Blog',
+                                                    to: '/blog'
+                                                },
+                                                {
+                                                    text: 'Community',
+                                                    to: 'https://spectrum.chat/gitpod/',
+                                                    target: true
+                                                }
+                                            ]}
+                                        />
+
+
                                     </li>
                                     <li><Link to="/#get-started" className="btn btn--cta">Start for Free</Link></li>
                                 </ul>
