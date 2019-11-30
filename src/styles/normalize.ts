@@ -156,7 +156,7 @@ export default `
         color: ${colors.textDark};
         border: 1px solid;
         border-radius: 100px;
-        transition: all .2s;
+        transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         white-space: nowrap;
 
         &--normal {
