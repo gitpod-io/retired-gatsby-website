@@ -47,7 +47,11 @@ const StyledDropDown = styled.div`
     img {
         height: .8rem;
         margin-left: 1rem;
-        transition: all .2s ease-in-out;
+        transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+        @media(max-width: 980px) {
+            height: 1rem;
+        }
     }
 
     ul {
@@ -62,7 +66,8 @@ const StyledDropDown = styled.div`
         background: ${colors.offWhite};
         box-shadow: ${shadows.light};
         z-index: 1000;
-        transition: all .25s ease-in-out;
+        transition: all .4s cubic-bezier(0.86, 0, 0.07, 1);
+
 
         @media(max-width: 980px) {
             max-width: 15rem;
@@ -76,17 +81,28 @@ const StyledDropDown = styled.div`
         width: 100%;
         padding: 0 1.5rem;
     }
+
+    .shown {
+        opacity: 1;
+        transform: scale(1) translate(-50%, 0);
+        background: ${colors.white};
+    }
+
+    .hidden {
+        opacity: 0;
+        transform: scale(0) translate(-50%, -20rem);
+    }
 `
 
-interface Link {
+interface Anchor {
     text: string
     to: string
-    target: boolean
+    target?: boolean
 }
 
 interface DropDownProps {
     title: string
-    links: Link[]
+    links: Anchor[]
 }
 
 class DropDown extends React.Component<DropDownProps, {}> {
@@ -118,26 +134,29 @@ class DropDown extends React.Component<DropDownProps, {}> {
                     />
                 </button>
 
-                <ul style={ isRendered ? {opacity: 1, transform: 'scale(1) translate(-50%, 0)', background: colors.white } : {opacity: 0, transform: 'scale(0) translate(-50%, -20rem)'} }>
+                <ul  className={ isRendered ? 'shown' : 'hidden' }>
                     {
-                        links.map(({text, to, target}) =>
+                        links.map(({text, to, target}, i) =>
                             target ?
                                 (
-                                    <a
-                                        href={to}
-                                        tabindex={ isRendered ? 0 : -1 }
-                                        target="_blank"
-                                        className="link" >
-                                        {text}
-                                    </a>
+                                    <li key={i}>
+                                        <a
+                                            href={to}
+                                            tabIndex={ isRendered ? 0 : -1 }
+                                            target="_blank"
+                                            className="link"
+                                        >
+                                            {text}
+                                        </a>
+                                    </li>
                                 )
                                     :
                                 (
-                                    <li>
+                                    <li key={i}>
                                         <Link
                                             to={to}
                                             className="link"
-                                            tabindex={ isRendered ? '' : -1 }
+                                            tabIndex={ isRendered ? 0 : -1 }
                                         >
                                             {text}
                                         </Link>
