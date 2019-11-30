@@ -27,6 +27,7 @@ const StyledNav = styled.nav`
     ul {
         display: flex;
         align-items: center;
+        transition: all .8s cubic-bezier(0.86, 0, 0.07, 1);
 
         @media(max-width: 980px) {
             position: absolute;
@@ -109,6 +110,18 @@ const StyledNav = styled.nav`
         }
     }
 
+    @media(max-width: 980px) {
+        .shown {
+            opacity: 1;
+            transform: scale(1) translateX(0);
+        }
+
+        .hiden {
+            opacity: 0;
+            transform: scale(1.5) translateX(-100vw);
+        }
+    }
+
 `
 
 class Nav extends React.Component {
@@ -161,12 +174,11 @@ class Nav extends React.Component {
                                     { isNavRendered ? <img src={Multiply} alt="close menu icon" /> : <img src={Hamburger} alt="hamburger menu icon" /> }
                                 </button>
                             </div>
-                            {
-                                isNavRendered && (
-                                <ul>
-                                    <li><Link to='/features' className="link">Features</Link></li>
-                                    <li><Link to='/pricing' className="link">Pricing</Link></li>
-                                    <li><Link to='/enterprise' className="link">Enterprise</Link></li>
+
+                             <ul className={ isNavRendered ? 'shown' : 'hiden' }>
+                                    <li><Link tabIndex={ isNavRendered ? 0 : -1 } to='/features' className="link">Features</Link></li>
+                                    <li><Link tabIndex={ isNavRendered ? 0 : -1 } to='/pricing' className="link">Pricing</Link></li>
+                                    <li><Link tabIndex={ isNavRendered ? 0 : -1 } to='/enterprise' className="link">Enterprise</Link></li>
                                     <li>
                                         <DropDown
                                             title="Solutions"
@@ -205,13 +217,9 @@ class Nav extends React.Component {
                                                 }
                                             ]}
                                         />
-
-
                                     </li>
-                                    <li><Link to="/#get-started" className="btn btn--cta">Start for Free</Link></li>
+                                    <li><Link tabIndex={ isNavRendered ? 0 : -1 } to="/#get-started" className="btn btn--cta">Start for Free</Link></li>
                                 </ul>
-                                )
-                            }
                     </StyledNav>
                 </div>
             </div>
