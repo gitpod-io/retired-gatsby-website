@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import { colors, borders, shadows, sizes } from '../styles/variables'
 
 const StyledProject = styled.div`
-    padding: 2rem .5rem;
+    padding: 2rem;
     text-align: center;
     font-size: 90%;
     background: ${colors.offWhite};
