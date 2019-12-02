@@ -1,6 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
+import { Global, css } from '@emotion/core'
 import { Link } from 'gatsby'
 import { colors, sizes, shadows, borders } from '../styles/variables'
 
@@ -390,6 +391,15 @@ const StyledIndexPage = styled.div`
 const IndexPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/'>
         <StyledIndexPage>
+            <Global
+                styles={
+                    css`
+                        html {
+                            scroll-behavior: smooth;
+                        }
+                    `
+                }
+            />
 
             {/* ----- Banner ----- */}
 

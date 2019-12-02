@@ -1,6 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
+import { Global, css } from '@emotion/core'
 import IndexLayout from '../layouts'
 import IceStick from '../resources/ice-stick.png'
 import { features, featuresCardsData } from '../utils/features'
@@ -125,6 +126,15 @@ const StyledFeaturesPage = styled.div`
 const FeaturesPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/features/' title="Features">
         <StyledFeaturesPage>
+            <Global
+                styles={
+                    css`
+                        html {
+                            scroll-behavior: smooth;
+                        }
+                    `
+                }
+            />
             <div className="grey-container">
                 <div className="row">
 
