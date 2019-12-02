@@ -101,7 +101,7 @@ const Footer: React.SFC<{}> = () => (
                 <ul>
                     <li>Company</li>
                     <li><Link to="/about">About</Link></li>
-                    <li><Link to="/career">Career</Link></li>
+                    <li><a href="https://typefox.io/careers" target="_blank">Career</a></li>
                     <li><Link to="#">Media Kit</Link></li>
                 </ul>
                 <ul className="contact">
