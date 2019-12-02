@@ -87,9 +87,13 @@ const StyledNav = styled.nav`
     }
 
     .nav__btn {
+        position: relative;
         background: ${colors.offWhite};
         border: none;
         z-index: 10000;
+        width: 4rem;
+        height: 4rem;
+        transition: all .2s;
 
         &:hover {
             background: ${colors.offWhite};
@@ -97,16 +101,25 @@ const StyledNav = styled.nav`
 
         &-container {
             position: absolute;
-            top: 4rem;
+            top: 3.8rem;
             right: 2rem;
         }
 
         img {
+            position: absolute;
             height: 4rem;
+            transition: all .3s cubic-bezier(.25,.75,.5,1.25);
+            top: 0;
+            left: 0
         }
 
         @media(min-width: 980px) {
             display: none;
+        }
+
+        &:hover,
+        &:focus {
+            transform: scale(1.05);
         }
     }
 
@@ -119,6 +132,18 @@ const StyledNav = styled.nav`
         .hiden {
             opacity: 0;
             transform: scale(1.5) translateX(-100vw);
+        }
+
+        .is-shown {
+            opacity: 1;
+
+            &--multiply {
+                transform: rotate(-90deg);
+            }
+        }
+
+        .is-hidden {
+            opacity: 0;
         }
     }
 
@@ -171,7 +196,18 @@ class Nav extends React.Component {
                                     aria-label={ isNavRendered ? "Hide the Navigation Items" : "Show the Navigation Items"}
                                     onClick={this.toggleNavigation}
                                 >
-                                    { isNavRendered ? <img src={Multiply} alt="close menu icon" /> : <img src={Hamburger} alt="hamburger menu icon" /> }
+                                    <img
+                                        src={Multiply}
+                                        alt="close menu icon"
+                                        className={ isNavRendered ? 'is-shown--multiply' : 'is-hidden' }
+                                        aria-hidden={ isNavRendered ? false : true }
+                                    />
+                                    <img
+                                        src={Hamburger}
+                                        alt="hamburger menu icon"
+                                        className={ isNavRendered ? 'is-hidden' : 'is-shown' }
+                                        aria-hidden={ isNavRendered ? true : false }
+                                    />
                                 </button>
                             </div>
 

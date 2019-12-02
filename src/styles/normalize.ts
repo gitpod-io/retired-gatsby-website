@@ -141,6 +141,10 @@ export default `
         font-size: inherit;
         background: none;
         color: ${colors.text};
+
+        &::-moz-focus-inner {
+            border: 0;
+        }
     }
 
     a {
