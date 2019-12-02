@@ -33,19 +33,18 @@ class ReadyToCode extends React.Component {
         const { isDefaultRendered, isGraphicGitpodRendered, isGraphicOridinaryRendered } = this.state
 
         const graphicGitpodStyles: React.CSSProperties = {
-            transform: isGraphicGitpodRendered ? 'scale(.9) translateY(14.5rem)' : 'scale(0)',
+            transform: isGraphicGitpodRendered ? 'scale(.92) translateY(14rem)' : 'scale(.92) translateY(14rem)',
             height: isGraphicGitpodRendered ? '100%' : 0,
             opacity: isGraphicGitpodRendered ? 1 : 0
         }
 
         const graphicOridnaryStyles: React.CSSProperties = {
-            transform: isGraphicOridinaryRendered ? 'scale(1.2)' : 'scale(0)',
+            transform: isGraphicOridinaryRendered ? 'scale(1.2)' : 'scale(1.2)',
             height: isGraphicOridinaryRendered ? '100%' : 0,
             opacity: isGraphicOridinaryRendered ? 1 : 0
         }
 
         const defaultStyles: React.CSSProperties = {
-            transform: isDefaultRendered ? 'scale(.95) translateY(4rem)' : 'scale(0) translateY(4rem)',
             opacity: isDefaultRendered ? 1 : 0,
             height: isDefaultRendered ? '100%': 0,
         }
@@ -56,7 +55,22 @@ class ReadyToCode extends React.Component {
                     <h3>Ready-to-Code Dev Environments</h3>
                     <p>Gitpod prepares ephemeral dev environments for teams, that come entirely prebuilt with your projects, dependencies and tools.</p>
                     <p>Read more about <Link to="/blog/continuous-dev-environment-in-devops/">Continuous Dev Environments.</Link></p>
-                    <div><button className="toggle toggle--active" onClick={() => this.handleClick('gitpod')}>With Gitpod</button><button className="toggle" onClick={() => this.handleClick('ordinary')}>Ordinary Way</button></div>
+                    <div>
+                        <button
+                            className="toggle toggle--active"
+                            onClick={() => this.handleClick('gitpod')}
+                            onMouseEnter={() => this.handleClick('gitpod')}
+                        >
+                            With Gitpod
+                        </button>
+                        <button
+                            className="toggle"
+                            onClick={() => this.handleClick('ordinary')}
+                            onMouseEnter={() => this.handleClick('ordinary')}
+                        >
+                            Ordinary Way
+                        </button>
+                    </div>
                 </div>
                 <div className="why-gitpod__img-container" style={{display: 'block'}}>
                     <img
