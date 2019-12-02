@@ -115,12 +115,24 @@ class DropDown extends React.Component<DropDownProps, {}> {
         this.setState({isRendered: !this.state.isRendered})
     }
 
+    handleMouseEnter = () => {
+        this.setState({isRendered: true})
+
+    }
+
+    handleMouseLeave = () => {
+        this.setState({isRendered: false})
+    }
+
     render () {
         const { title, links } = this.props
         const { isRendered } = this.state
 
         return (
-            <StyledDropDown>
+            <StyledDropDown
+                onMouseEnter={this.handleMouseEnter}
+                onMouseLeave={this.handleMouseLeave}
+            >
                 <button
                     onClick={this.handleClick}
                     aria-label={ isRendered ? "Hide Dropdown's Content" : "Show Dropdown's Content"}
@@ -169,4 +181,5 @@ class DropDown extends React.Component<DropDownProps, {}> {
         )
     }
 }
+
 export default DropDown
