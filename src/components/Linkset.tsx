@@ -72,7 +72,12 @@ class Linkset extends React.Component<LinkSetProps, {}> {
                         to={path ? `/docs/${path}/` : '/docs/'}
                         onClick={this.handleClick}
                         className="caption"
-                    >{ isRendered ? <img alt=""  src={Arrow}/> : <img alt="" src={DownArrow}/> }{caption}</Link>
+                    >
+                        { isRendered ?
+                            <img alt=""  src={Arrow}/>
+                                :
+                            <img alt="" src={DownArrow}/> } {caption}
+                    </Link>
                 </li>
                 {
                     isRendered ? children : null

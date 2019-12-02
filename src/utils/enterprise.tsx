@@ -7,7 +7,7 @@ export const features = [
         more:<p>Read more about <Link to="/docs/33_sharing_and_collaboration/">Collaboration</Link></p>
     },
     {
-         title: "Less Costs for more Machine Power",
+        title: "Less Costs for more Machine Power",
         paragraphs: ['You can use elastic clouds to satisfy your demand as needed.', 'With Gitpod there is no need for many $3000 laptops, a few good servers are already suffice.', 'Also, server resources are more cost-efficient because they are shared resources.']
     },
     {
