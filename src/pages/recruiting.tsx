@@ -5,6 +5,7 @@ import Banner from '../components/Banner'
 import Cloud from '../resources/cloud.png'
 import Features from '../components/Features'
 import Feature from '../components/Feature'
+import { features } from '../utils/recruiting'
 import Quote from '../components/Quote'
 import RecruitingBG from '../resources/recruiting-bg.png'
 import Bg from '../components/Bg'
@@ -34,26 +35,15 @@ const RecrutingPage: React.SFC<{}> = () => (
             {/* ----- Section Features ----- */}
 
             <Features title="Provide Coding Exercises Within Seconds">
-                <Feature
-                    title="Controlled Environment"
-                    paragraphs={['With Gitpod you eliminate the risk of losing time for code exercises due to broken setup. And it also guarantees that all applicants have the same environment and thereby the same preconditions.', 'Gitpod can guide applicants through exercises without you being involved.']}
-                />
-                <Feature
-                    title="Monitor Action of Applicants"
-                    paragraphs={['TBD']}
-                />
-                <Feature
-                    title="Easy to Integrate"
-                    paragraphs={['Thanks to custom OAuth, Gitpod is easy to integrate.', 'Use API to create or delete workspaces, and to download workspaces.']}
-                />
-                <Feature
-                    title="Cost Effective"
-                    paragraphs={['The costs are based on running workspaces, so that you only need to pay if Gitpod is used.']}
-                />
-                <Feature
-                    title="Interactions During Exercises"
-                    paragraphs={['Via live shared workspaces you are able to interact with applicants during their coding exercise.']}
-                />
+                {
+                    features.map((f, i) => (
+                        <Feature
+                            key={i}
+                            title={f.title}
+                            paragraphs={f.paragraphs}
+                        />
+                    ))
+                }
             </Features>
         </div>
 
