@@ -229,7 +229,7 @@ const StyledIndexPage = styled.div`
         }
 
         img {
-            transition: transform .4s ease-in-out;
+            transition: transform 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53);
         }
 
         .toggle {
@@ -256,7 +256,7 @@ const StyledIndexPage = styled.div`
     /* ----- Section Testimonials ----- */
     /* ------------------------------------------- */
 
-    .testimonials {
+    .teimonials {
         background: ${colors.offWhite};
     }
 
@@ -592,6 +592,5 @@ const IndexPage: React.SFC<{}> = () => (
         </StyledIndexPage>
     </IndexLayout>
 )
-
 
 export default IndexPage
