@@ -3,7 +3,7 @@
 [![Setup Automated](https://img.shields.io/badge/setup-automated-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 [![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-Gitpod is a one-click online IDE that provides ready-to-code dev environments for GitHub and soon GitLab.
+Gitpod provides ready-to-code dev environments in the browser for any of your GitHub and GitLab projects.
 
 This repository contains the website hosted on https://www.gitpod.io .
 
