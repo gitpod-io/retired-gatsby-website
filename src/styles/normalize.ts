@@ -141,16 +141,22 @@ export default `
         font-size: inherit;
         background: none;
         color: ${colors.text};
-
-        &::-moz-focus-inner {
-            border: 0;
-        }
     }
 
     a {
         font-weight: 600;
         color: ${colors.link};
         text-decoration: none;
+    }
+
+    button, a {
+        &::-moz-focus-inner {
+            border: 0;
+        }
+
+        &:focus {
+            outline: none;
+        }
     }
 
     .btn {
