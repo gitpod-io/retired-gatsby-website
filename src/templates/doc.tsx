@@ -48,8 +48,8 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.12 57.65" style={{
                                     height: 25,
                                     fill: 'transparent',
-                                    stroke: colors.text,
-                                    filter: `drop-shadow(0 0 1px ${colors.text})`,
+                                    stroke: colors.textDark,
+                                    filter: `drop-shadow(0 0 2px ${colors.textDark})`,
                                     }}><polyline className="st0" points="3.49,43.76 1.78,54.07 12.39,52.66 52.53,12.48 43.67,3.58 43.67,3.58 3.49,43.76" /><line className="st0" x1="46.05" y1="18.68" x2="37.32" y2="9.95" /></svg>
                             </a>
                         </div>
