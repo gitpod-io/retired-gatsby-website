@@ -173,6 +173,10 @@ const StyledIndexPage = styled.div`
         &-container {
             padding-bottom: 10rem;
 
+            @media(max-width: ${sizes.breakpoints.md}) {
+                display: none;
+            }
+
             @media(max-width: ${sizes.breakpoints.sm}) {
                 padding-bottom: 0;
             }
