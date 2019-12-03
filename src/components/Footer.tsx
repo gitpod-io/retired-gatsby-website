@@ -16,16 +16,27 @@ const StyledFooter = styled.footer`
     .links {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
 
         @media(max-width: 650px) {
-            flex-direction: column;
+            justify-content: space-between;
 
             ul {
                 padding-bottom: 4rem;
                 border-bottom: 1px solid #ddd;
+                width: 48%;
+                text-align: center;
 
                 &:not(:last-child) {
                     margin-bottom: 5rem;
+                }
+
+                &:last-child {
+                    transform: translateX(50%);
+
+                    img {
+                        transform: translateX(1rem);
+                    }
                 }
             }
         }
