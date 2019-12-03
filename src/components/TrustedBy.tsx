@@ -8,6 +8,9 @@ const StyledTrustedBy = styled.section`
     /* ----- Section Trusted By ----- */
     /* ------------------------------------------- */
 
+    padding: 4rem 0 8rem;
+    margin-top: 4rem;
+
     .logos {
         display: flex;
         justify-content: space-between;
@@ -36,20 +39,22 @@ interface TrustedByProps {
 }
 
 const TrustedBy: React.SFC<TrustedByProps> = ({brands}) => (
-    <StyledTrustedBy>
-        <div className="row">
-            <h2>Trusted by</h2>
-            <div className="logos">
-                {
-                    brands.map((b, i) => (
-                        <a href={b.url} target="_blank" key={i}>
-                            <img src={b.svg} alt={b.alt} />
-                        </a>
-                    ))
-                }
-            </div>
-        </div>
-    </StyledTrustedBy>
+    <div className="grey-container">
+        <StyledTrustedBy>
+                <div className="row">
+                    <h2>Trusted by</h2>
+                    <div className="logos">
+                        {
+                            brands.map((b, i) => (
+                                <a href={b.url} target="_blank" key={i}>
+                                    <img src={b.svg} alt={b.alt} />
+                                </a>
+                            ))
+                        }
+                    </div>
+                </div>
+        </StyledTrustedBy>
+    </div>
 )
 
 export default TrustedBy
