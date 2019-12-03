@@ -19,6 +19,11 @@ const StyledBanner = styled.header`
         padding: 5rem 0;
     }
 
+    @media(max-width: ${sizes.breakpoints.md}) {
+        flex-direction: column-reverse;
+        padding: 1rem 0;
+    }
+
     .para {
         margin-top: 3rem;
         max-width: 70rem;
