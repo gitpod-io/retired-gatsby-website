@@ -10,11 +10,13 @@ const StyledFeatureCard = styled.div<{caption: boolean}>`
     box-shadow: ${shadows.light};
 
     @media(max-width: ${sizes.breakpoints.md}) {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .text-box {
+        min-width: 27rem;
         padding: 8rem 3rem;
+
         @media(min-width: ${sizes.breakpoints.md}) {
             width: 34%;
         }
@@ -26,6 +28,8 @@ const StyledFeatureCard = styled.div<{caption: boolean}>`
         justify-content: center;
         min-height: ${(props) => props.caption ? '30rem' : null };
         align-items: center;
+
+
         background: ${colors.white};
 
         @media(min-width: ${sizes.breakpoints.md}) {
