@@ -64,7 +64,6 @@ const StyledIndexPage = styled.div`
             @media(min-width: ${sizes.breakpoints.lg}) {
                 width: 40%;
             }
-
         }
 
         .btn {

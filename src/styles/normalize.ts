@@ -169,8 +169,14 @@ export default `
         color: ${colors.textDark};
         border: 1px solid;
         border-radius: 100px;
-        transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: all .2s;
         white-space: nowrap;
+
+        &:hover,
+        &:focus {
+            color: ${colors.link};
+            border: 1px solid ${colors.link};
+        }
 
         &--normal {
             font-size: ${sizes.font.btnNormal};
@@ -188,8 +194,14 @@ export default `
             background: ${colors.link};
             border-color: ${colors.link};
 
-            &:hover,
+            &:hover {
+                color: ${colors.white};
+                background: ${colors.lightBlue};
+                border: 1px solid ${colors.lightBlue};
+            }
+
             &:focus {
+                color: ${colors.white};
                 box-shadow: ${shadows.btnCta};
             }
         }

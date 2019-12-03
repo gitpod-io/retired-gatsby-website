@@ -3,6 +3,7 @@ export const colors = {
     textLight: '#9F9F9F',
     text: '#4D4D4D',
     link: '#0087BE',
+    lightBlue: '#1AA6E4',
     white: ' #FFFFFF',
     offWhite: '#F7F7F7',
     offWhite2: '#cccccc'
