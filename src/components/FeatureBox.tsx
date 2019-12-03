@@ -25,7 +25,7 @@ const StyledFeatureBox = styled.div`
 interface FeatureBoxProps {
     alt: string
     img: string
-    text: string
+    text: string | JSX.Element
     path: string
 }
 

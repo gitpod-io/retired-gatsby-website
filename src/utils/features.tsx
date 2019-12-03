@@ -46,7 +46,7 @@ export const features = [
     {
         alt: 'Linux Terminals',
         img: Terminal,
-        text: 'Linux Terminals',
+        text: <span>Linux<br/>Terminals</span>,
         path: 'linux'
     },
     {
@@ -58,13 +58,13 @@ export const features = [
     {
         alt: 'Camera',
         img: Camera,
-        text: 'Create a Snapshot',
+        text: <span>Create<br/>a Snapshot</span>,
         path: 'snapshot'
     },
     {
         alt: 'Code Reviews',
         img: IconCodeReview,
-        text: 'Code Reviews',
+        text: <span>Code<br />Reviews</span>,
         path: 'code'
     },
     {
