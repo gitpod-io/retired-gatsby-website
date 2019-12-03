@@ -13,6 +13,16 @@ const StyledBlogPage = styled.div`
     /* ----- Section Posts ----- */
     /* ------------------------------------------- */
 
+    .post {
+        @media(max-width: ${sizes.breakpoints.md}) {
+            padding: 3rem 0;
+        }
+
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            padding: 1rem 0;
+        }
+    }
+
     .page-subtitle {
         margin-top: 5rem;
         color: ${colors.textLight};
