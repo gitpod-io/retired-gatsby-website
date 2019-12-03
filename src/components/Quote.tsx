@@ -8,6 +8,10 @@ const StyledQuote = styled.section`
     padding: 16rem 0;
     margin: 0 auto;
 
+    @media(max-width: ${sizes.breakpoints.md}) {
+        padding: 8rem 0;
+    }
+
     h4 {
         position: relative;
         display: flex;

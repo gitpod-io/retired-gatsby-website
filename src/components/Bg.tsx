@@ -1,6 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
+import { sizes } from '../styles/variables'
 
 const StyledBg = styled.img`
     display: block;
@@ -8,6 +9,10 @@ const StyledBg = styled.img`
     max-height: 40rem;
     max-width: 100rem;
     margin: 10rem auto;
+
+    @media(max-width: ${sizes.breakpoints.md}) {
+        margin: 6rem auto;
+    }
 `
 
 interface BgProps {

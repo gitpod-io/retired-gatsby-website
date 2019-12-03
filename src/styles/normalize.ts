@@ -35,6 +35,10 @@ export default `
 
     section {
         padding: 10rem 0;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            padding: 5rem 0;
+        }
     }
 
     /* ------------------------------------------- */
