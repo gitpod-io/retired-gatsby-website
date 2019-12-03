@@ -123,6 +123,10 @@ export default `
             margin-bottom: 2rem;
         }
 
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            font-size: 1.8rem;
+        }
+
         &.sub {
             font-weight: 400;
             color: ${colors.textLight};
