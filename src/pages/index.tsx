@@ -211,12 +211,24 @@ const StyledIndexPage = styled.div`
                 @media(min-width: ${sizes.breakpoints.md}) {
                     height: 475px;
                 }
+
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    flex-direction: column-reverse;
+                }
             }
+
+            &--3 {
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    flex-direction: column-reverse;
+                }
+            }
+
         }
 
         &__text {
             padding: 6rem 4rem;
             background: ${colors.offWhite};
+            min-width: 28rem;
 
             @media(max-width: 900px) {
                 padding: 3rem 1rem;
@@ -224,6 +236,10 @@ const StyledIndexPage = styled.div`
 
             p:last-of-type {
                 margin-bottom: 5rem;
+
+                @media(max-width: ${sizes.breakpoints.lg}) {
+                    margin-bottom: 2rem;
+                }
             }
 
             @media(min-width: ${sizes.breakpoints.md}) {
@@ -239,8 +255,12 @@ const StyledIndexPage = styled.div`
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
                 min-height: 36rem;
+
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    max-height: 40rem;
+                }
+
                 @media(min-width: ${sizes.breakpoints.md}) {
                     width: 60%;
                 }
@@ -259,7 +279,7 @@ const StyledIndexPage = styled.div`
             background: ${colors.offWhite2};
             border: none;
 
-            @media(max-width: 1100px) {
+            @media(max-width: 1240px) {
                 font-size: 1.4rem;
                 padding: .5rem 1rem;
             }
@@ -508,7 +528,7 @@ const IndexPage: React.SFC<{}> = () => (
 
                         <ReadyToCode />
 
-                        <div className="why-gitpod__box">
+                        <div className="why-gitpod__box why-gitpod__box--2">
                             <div className="why-gitpod__img-container">
                                 <img
                                     alt="Full Dev Environments"
@@ -524,7 +544,7 @@ const IndexPage: React.SFC<{}> = () => (
                             </div>
                         </div>
 
-                        <div className="why-gitpod__box">
+                        <div className="why-gitpod__box why-gitpod__box--3">
                             <div className="why-gitpod__text">
                                 <h3>Integration with Your Tool Chain</h3>
                                 <p>Gitpod let’s you stay in the flow by blending seamlessly into your existing tools chain.</p>
