@@ -12,13 +12,23 @@ const StyledTrustedBy = styled.section`
     margin-top: 4rem;
 
     .logos {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+
+        @media(max-width: ${sizes.breakpoints.lg}) {
+            grid-template-columns: repeat(3, 1fr);
+
+            a {
+                text-align: center;
+            }
+        }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            grid-template-columns: repeat(2, 1fr);
+        }
 
         @media(max-width: ${sizes.breakpoints.sm}) {
-            flex-direction: column;
-            align-items: center;
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 
