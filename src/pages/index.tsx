@@ -36,12 +36,13 @@ const StyledIndexPage = styled.div`
         display: flex;
         padding-bottom: 10rem;
 
-        @media(min-width: ${sizes.breakpoints.md}) {
+        @media(min-width: ${sizes.breakpoints.lg}) {
             padding-top: 5rem;
         }
 
-        @media(max-width: ${sizes.breakpoints.md}) {
-            flex-direction: column-reverse;
+        @media(max-width: ${sizes.breakpoints.lg}) {
+            flex-direction: column;
+            padding-bottom: 5rem;
         }
 
         &-container {
@@ -49,30 +50,44 @@ const StyledIndexPage = styled.div`
         }
 
         &__text-box {
-            margin-top: 15rem;
+            margin-top: 12rem;
 
-            @media(min-width: ${sizes.breakpoints.md}) {
-                width: 50%;
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                text-align: center;
+                margin: 5rem 0 0;
+
+                br {
+                    display: none;
+                }
             }
 
-            @media(max-width: ${sizes.breakpoints.md}) {
-               margin-top: -5rem;
+            @media(min-width: ${sizes.breakpoints.lg}) {
+                width: 40%;
             }
+
         }
 
-        .btn:first-of-type {
-            margin-right: 2.5rem;
+        .btn {
+            margin: 0 2.5rem 2.5rem 0;
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                margin: 2.5rem 2.5rem 0 2.5rem;
+
+                &:first-of-type {
+                    margin-top: 0;
+                }
+            }
         }
 
         &__screenshot {
+            width: 100%;
 
-            @media(max-width: ${sizes.breakpoints.md}) {
+            @media(max-width: ${sizes.breakpoints.lg}) {
                 width: 100%;
             }
 
-            @media(min-width: ${sizes.breakpoints.md}) {
-                height: 70rem;
-                transform: scale(1.3) translate(8rem, 5rem);
+            @media(min-width: ${sizes.breakpoints.lg}) {
+                transform: scale(1.3) translate(6rem, 6rem);
 
                 &-container {
                     width: 50%;
@@ -408,10 +423,10 @@ const IndexPage: React.SFC<{}> = () => (
                     <header role="banner" className="banner">
                         <div className="banner__text-box">
                             <h1>
-                                Continuous Dev Environments.
-                                <span>Instantly. Anywhere.</span>
+                                Are You Ready-To-Code?
+                                <span>Start Instantly. Anywhere.</span>
                             </h1>
-                            <p>Gitpod launches ready-to-code dev environments with a single click.</p>
+                            <p>Gitpod launches ready-to-code dev environments<br />for your Github or Gitlab project with a single click.</p>
                             <a href="#get-started" className="btn btn--normal btn--cta">Start for Free</a>
                             <Link to="/self-hosted/" className="btn btn--normal">Host Yourself</Link>
                         </div>

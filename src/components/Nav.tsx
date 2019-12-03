@@ -3,7 +3,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import GitpodLogoDark from '../resources/gitpod-logo-dark.svg'
-import { colors } from '../styles/variables'
+import { colors, sizes } from '../styles/variables'
 import DropDown from '../components/DropDown'
 import Hamburger from '../resources/hamburger.svg'
 import Multiply from '../resources/multiply.svg'
@@ -15,7 +15,7 @@ const StyledNav = styled.nav`
     padding: 4rem 0;
     background: ${colors.offWhite};
 
-    @media (max-width: 980px) {
+    @media (max-width: ${sizes.breakpoints.lg}) {
         display: block;
         font-size: 120%;
     }
@@ -29,7 +29,7 @@ const StyledNav = styled.nav`
         align-items: center;
         transition: all .8s cubic-bezier(0.86, 0, 0.07, 1);
 
-        @media(max-width: 980px) {
+        @media(max-width: ${sizes.breakpoints.lg}) {
             position: absolute;
             top: 16%;
             left: 0;
@@ -49,7 +49,7 @@ const StyledNav = styled.nav`
             margin-right: 5rem;
         }
 
-        @media(max-width: 980px) {
+        @media(max-width: ${sizes.breakpoints.lg}) {
             width: 100%;
 
             &:not(:last-child) {
@@ -102,7 +102,15 @@ const StyledNav = styled.nav`
         &-container {
             position: absolute;
             top: 3.8rem;
-            right: 2rem;
+            right: 7rem;
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                right: 4rem;
+            }
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                right: 1rem;
+            }
         }
 
         img {
@@ -113,7 +121,7 @@ const StyledNav = styled.nav`
             left: 0
         }
 
-        @media(min-width: 980px) {
+        @media(min-width: ${sizes.breakpoints.lg}) {
             display: none;
         }
 
@@ -123,7 +131,7 @@ const StyledNav = styled.nav`
         }
     }
 
-    @media(max-width: 980px) {
+    @media(max-width: ${sizes.breakpoints.lg}) {
         .shown {
             opacity: 1;
             transform: scale(1) translateX(0);
@@ -156,7 +164,7 @@ class Nav extends React.Component {
     }
 
     handleResize = () => {
-        if (window.innerWidth < 980) {
+        if (window.innerWidth < 1240) {
             this.setState({ isNavRendered: false })
         } else {
             this.setState({ isNavRendered: true })
@@ -168,14 +176,14 @@ class Nav extends React.Component {
     }
 
     event = () => {
-        if (window.innerWidth <= 980) {
+        if (window.innerWidth <= 1240) {
             this.toggleNavigation()
         }
     }
 
     componentDidMount() {
         window.addEventListener('resize', this.handleResize)
-        if (window.innerWidth >= 980) {
+        if (window.innerWidth >= 1240) {
             this.toggleNavigation()
         }
     }

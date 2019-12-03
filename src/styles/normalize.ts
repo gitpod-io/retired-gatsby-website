@@ -47,11 +47,15 @@ export default `
         margin: 0 auto;
 
         @media(max-width: ${sizes.breakpoints.lg}) {
-            padding: 0 2rem;
+            padding: 0 7rem;
+        }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            padding: 0 4rem;
         }
 
         @media(max-width: ${sizes.breakpoints.sm}) {
-            padding: 0 .5rem;
+            padding: 0 1rem;
         }
     }
 

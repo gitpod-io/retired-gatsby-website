@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 import { colors, shadows } from '../styles/variables'
 
 const StyledFeatureBox = styled.div`
+    min-width: 20rem;
     padding: 1.5rem .8rem;
     text-align: center;
     background: ${colors.white};

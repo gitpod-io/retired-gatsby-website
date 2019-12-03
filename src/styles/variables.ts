@@ -10,8 +10,8 @@ export const colors = {
 
 export const sizes = {
     font: {
-        h1: '3.5rem',
-        h2: '3.1rem',
+        h1: '3.3rem',
+        h2: '3rem',
         h3: '2.2rem',
         h4: '2rem',
         text: '1.6rem',
@@ -20,7 +20,7 @@ export const sizes = {
     breakpoints: {
         sm: '400px',
         md: '800px',
-        lg: '1140px',
+        lg: '1240px',
     },
     grid: {
         maxWidth: '114rem',

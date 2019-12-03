@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import ArrowDown from '../resources/arrow-down.svg'
-import { colors, shadows } from '../styles/variables'
+import { colors, shadows, sizes } from '../styles/variables'
 import { Link } from 'gatsby'
 
 const StyledDropDown = styled.div`
@@ -15,7 +15,7 @@ const StyledDropDown = styled.div`
         transition: all .2s;
         max-width: 20rem;
 
-        @media(max-width: 980px) {
+        @media(max-width: ${sizes.breakpoints.lg}) {
             margin: 0 auto;
         }
 
@@ -28,7 +28,7 @@ const StyledDropDown = styled.div`
             border-bottom: 2px solid ${colors.white};
             transition: all .4s cubic-bezier(0,.5,0, 1);
 
-            @media(max-width: 980px) {
+            @media(max-width: ${sizes.breakpoints.lg}) {
                display: none;
             }
         }
@@ -49,7 +49,7 @@ const StyledDropDown = styled.div`
         margin-left: 1rem;
         transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-        @media(max-width: 980px) {
+        @media(max-width: ${sizes.breakpoints.lg}) {
             height: 1rem;
         }
     }
@@ -69,7 +69,7 @@ const StyledDropDown = styled.div`
         transition: all .4s cubic-bezier(0.86, 0, 0.07, 1);
 
 
-        @media(max-width: 980px) {
+        @media(max-width: ${sizes.breakpoints.lg}) {
             max-width: 15rem;
             max-height: 15rem;
         }
@@ -117,7 +117,6 @@ class DropDown extends React.Component<DropDownProps, {}> {
 
     handleMouseEnter = () => {
         this.setState({isRendered: true})
-
     }
 
     handleMouseLeave = () => {
