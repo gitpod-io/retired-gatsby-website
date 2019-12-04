@@ -175,6 +175,7 @@ export default `
         padding: .8rem 2.2rem;
         font-weight: 400;
         color: ${colors.textDark};
+        background: ${colors.white};
         border: 1px solid;
         border-radius: 100px;
         transition: all .2s;
