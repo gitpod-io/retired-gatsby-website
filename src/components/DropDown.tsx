@@ -15,10 +15,6 @@ const StyledDropDown = styled.div`
         transition: all .2s;
         max-width: 20rem;
 
-        @media(max-width: ${sizes.breakpoints.lg}) {
-            margin: 0 auto;
-        }
-
         &::before {
             content: "";
             position: absolute;
@@ -57,22 +53,34 @@ const StyledDropDown = styled.div`
     ul {
         position: absolute;
         top: 3rem;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 7%;
         display: flex;
         flex-direction: column;
-        width: 120%;
         padding: .5rem .5rem 1rem;
         background: ${colors.offWhite};
         box-shadow: ${shadows.light};
         z-index: 1000;
         transition: all .4s cubic-bezier(0.86, 0, 0.07, 1);
+        width: auto !important;
 
+        @media(min-width: ${sizes.breakpoints.lg}) {
+            width: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
         @media(max-width: ${sizes.breakpoints.lg}) {
             max-width: 15rem;
             max-height: 15rem;
         }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            left: 6rem;
+        }
+
+        // @media(max-width: ${sizes.breakpoints.sm}) {
+        //     left: 1rem;
+        // }
     }
 
     li {
@@ -80,6 +88,8 @@ const StyledDropDown = styled.div`
         font-size: 90%;
         width: 100%;
         padding: 0 1.5rem;
+
+        border-bottom: none !important;
     }
 
     .shown {

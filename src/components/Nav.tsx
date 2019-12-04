@@ -3,7 +3,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import GitpodLogoDark from '../resources/gitpod-logo-dark.svg'
-import { colors, sizes } from '../styles/variables'
+import { colors, sizes, borders } from '../styles/variables'
 import DropDown from '../components/DropDown'
 import Hamburger from '../resources/hamburger.svg'
 import Multiply from '../resources/multiply.svg'
@@ -36,7 +36,6 @@ const StyledNav = styled.nav`
             flex-direction: column;
             width: 100vw;
             height: 88vh;
-            text-align: center;
             justify-content: center;
             align-items: center;
             background: ${colors.offWhite};
@@ -45,6 +44,7 @@ const StyledNav = styled.nav`
     }
 
     li {
+
         &:not(:last-child) {
             margin-right: 5rem;
         }
@@ -55,7 +55,14 @@ const StyledNav = styled.nav`
             &:not(:last-child) {
                 margin: 0;
                 margin-bottom: 3rem;
+                border-bottom: ${borders.light1};
             }
+
+
+        }
+
+        &:last-child {
+            margin-left: -1rem;
         }
     }
 
@@ -135,11 +142,26 @@ const StyledNav = styled.nav`
         .shown {
             opacity: 1;
             transform: scale(1) translateX(0);
+            max-width: ${sizes.grid.maxWidth};
         }
 
         .hiden {
             opacity: 0;
             transform: scale(1.5) translateX(-100vw);
+        }
+
+        .container {
+            max-width: ${sizes.grid.maxWidth};
+            width: 100%;
+            margin: 0 auto;
+
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                padding: 0 7rem;
+            }
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                padding: 0 4rem;
+            }
         }
 
         .is-shown {
@@ -160,7 +182,7 @@ const StyledNav = styled.nav`
 class Nav extends React.Component {
 
     state = {
-        isNavRendered: false
+        isNavRendered: false,
     }
 
     handleResize = () => {
@@ -187,7 +209,6 @@ class Nav extends React.Component {
             this.toggleNavigation()
         }
     }
-
 
     render() {
 
@@ -219,7 +240,7 @@ class Nav extends React.Component {
                                 </button>
                             </div>
 
-                             <ul className={ isNavRendered ? 'shown' : 'hiden' }>
+                            <ul className={ isNavRendered ? 'shown container' : 'hiden' }>
                                     <li><Link tabIndex={ isNavRendered ? 0 : -1 } to='/features' className="link">Features</Link></li>
                                     <li><Link tabIndex={ isNavRendered ? 0 : -1 } to='/pricing' className="link">Pricing</Link></li>
                                     <li><Link tabIndex={ isNavRendered ? 0 : -1 } to='/enterprise' className="link">Enterprise</Link></li>
