@@ -13,9 +13,6 @@ import ArrowOnTarget from '../resources/arrow-on-target.png'
 import ToolIntegration from '../resources/tool-integration.svg'
 import FullDevEnvironments from '../resources/full-dev-environments.png'
 import ReadyToCode from '../components/ReadyToCode'
-import PrefixImage from '../resources/prefix-image.png'
-import { projects } from '../utils/projects'
-import Project from '../components/Project'
 import AntDesignWorkspace from '../resources/ant-design-workspace.png'
 import Details from '../components/Details'
 import TrustedBy from '../components/TrustedBy'
@@ -26,6 +23,7 @@ import FreeCodeCamp from '../resources/freecodecamp.svg'
 import CodeInstituteLogo from '../resources/code.png'
 import TheiaIDELogo from '../resources/theia-grey.svg'
 import Testimonials from '../components/Testimonials'
+import GetStarted from '../components/GetStarted'
 
 const StyledIndexPage = styled.div`
     /* ------------------------------------------- */
@@ -292,98 +290,6 @@ const StyledIndexPage = styled.div`
 
     }
 
-    /* ------------------------------------------- */
-    /* ----- Section Get Started ----- */
-    /* ------------------------------------------- */
-
-    .get-started {
-
-        h3 {
-            font-weight: 400;
-        }
-
-        &__prefix {
-            display: flex;
-            margin-bottom: 12rem;
-            box-shadow: ${shadows.light};
-            border: ${borders.light};
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                flex-direction: column;
-            }
-
-            &-image {
-                height: 20rem;
-                width: 100%;
-
-                @media(max-width: ${sizes.breakpoints.md}) {
-                    width: 100%;
-                }
-
-                &-container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 2rem 0;
-                    background: ${colors.offWhite};
-
-                    @media(min-width: ${sizes.breakpoints.md}) {
-                        width: 65%;
-                    }
-
-                    @media(max-width: ${sizes.breakpoints.md}) {
-                        flex-direction: columns;
-                    }
-                }
-
-            }
-
-            &-text {
-                margin: 0;
-                font-size: 2.1rem;
-
-                @media(max-width: ${sizes.breakpoints.md}) {
-                    padding: 5rem 2rem;
-                }
-
-                &-container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    @media(min-width: ${sizes.breakpoints.md}) {
-                        width: 35%;
-                    }
-                }
-
-                span {
-                    color: ${colors.link};
-                    font-weight: 600;
-                }
-            }
-        }
-
-        /* ----- Projects ----- */
-
-        &__projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            & > .project {
-                margin-bottom: 3rem;
-
-                @media(min-wdith: ${sizes.breakpoints.md}) {
-                    width: 18%;
-                }
-            }
-        }
-    }
 
     /* ------------------------------------------- */
     /* ----- Section Open Source ----- */
@@ -574,42 +480,7 @@ const IndexPage: React.SFC<{}> = () => (
 
             {/* ----- Section Getting Started ----- */}
 
-            <div className="row">
-                <section className="get-started" id="get-started">
-                    <h2>Get Started</h2>
-
-                    <div className="get-started__prefix">
-                        <div className="get-started__prefix-text-container">
-                            <h3 className="get-started__prefix-text">Prefix any GitHub or GitLab<br aria-hidden={true} />URL with <span>gitpod.io/#</span></h3>
-                        </div>
-                        <div className="get-started__prefix-image-container">
-                            <img
-                                alt="Prefix any GitHub or GitLab URL with gitpod.io/#"
-                                src={PrefixImage}
-                                className="get-started__prefix-image"
-                            />
-                        </div>
-                    </div>
-
-                    <h3>Or Select a Project</h3>
-
-                    <div className="get-started__projects">
-                        {
-                            projects.map(
-                                (project, i) => (
-                                    <Project
-                                        key={i}
-                                        image={<img alt={project.alt} src={project.image}/>}
-                                        title={project.title}
-                                        href={project.href}
-                                    />
-                                )
-                            )
-                        }
-                    </div>
-
-                </section>
-            </div>
+            <GetStarted />
 
             {/* ----- Section Open Source ----- */}
 
