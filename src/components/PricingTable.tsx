@@ -36,6 +36,7 @@ const StyledPricingTable = styled.section`
             font-weight: 600;
             font-size: 2rem;
             padding: 3rem;
+            width: 25%;
 
             @media(max-width: ${sizes.breakpoints.md}) {
                 padding: 2rem;
