@@ -14,7 +14,7 @@ export default `
     }
 
     html {
-        font-size: 62.5%; // 10 / 16 = 0.625 * 100 = 62.5 = 10px
+        font-size: 59.5%; // 10 / 16 = 0.625 * 100 = 62.5 = 10px
 
         @media(max-width: ${sizes.breakpoints.md}) {
             font-size: 56.5%;
