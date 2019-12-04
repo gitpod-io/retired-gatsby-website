@@ -39,7 +39,7 @@ class ReadyToCode extends React.Component {
         }
 
         const graphicOridnaryStyles: React.CSSProperties = {
-            transform: isGraphicOridinaryRendered ? 'scale(1.2)' : 'scale(1.2)',
+            transform: isGraphicOridinaryRendered ? 'scale(1.3) translateY(-2rem)' : 'scale(1.3) translateY(-2rem)',
             height: isGraphicOridinaryRendered ? '100%' : 0,
             opacity: isGraphicOridinaryRendered ? 1 : 0
         }
