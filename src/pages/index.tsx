@@ -25,6 +25,7 @@ import Gatsby from '../resources/gatsby.svg'
 import FreeCodeCamp from '../resources/freecodecamp.svg'
 import CodeInstituteLogo from '../resources/code.png'
 import TheiaIDELogo from '../resources/theia-grey.svg'
+import Testimonials from '../components/Testimonials'
 
 const StyledIndexPage = styled.div`
     /* ------------------------------------------- */
@@ -289,14 +290,6 @@ const StyledIndexPage = styled.div`
             }
         }
 
-    }
-
-    /* ------------------------------------------- */
-    /* ----- Section Testimonials ----- */
-    /* ------------------------------------------- */
-
-    .teimonials {
-        background: ${colors.offWhite};
     }
 
     /* ------------------------------------------- */
@@ -577,11 +570,7 @@ const IndexPage: React.SFC<{}> = () => (
 
             {/* ----- Section Testimonials ----- */}
 
-            <section className="testimonials">
-                <div className="row">
-                    <h2>Don’t just Take Our Word for It</h2>
-                </div>
-            </section>
+            <Testimonials />
 
             {/* ----- Section Getting Started ----- */}
 
