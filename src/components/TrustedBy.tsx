@@ -8,8 +8,12 @@ const StyledTrustedBy = styled.section`
     /* ----- Section Trusted By ----- */
     /* ------------------------------------------- */
 
-    padding: 4rem 0 8rem;
+    padding: 4rem 0;
     margin-top: 4rem;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
 
     .logos {
         display: grid;
