@@ -27,6 +27,13 @@ class ReadyToCode extends React.Component {
                 isDefaultRendered: false
             })
         }
+        else {
+            this.setState({
+                isGraphicGitpodRendered: false,
+                isGraphicOridinaryRendered: false,
+                isDefaultRendered: true
+            })
+        }
     }
 
     render() {
@@ -39,12 +46,13 @@ class ReadyToCode extends React.Component {
         }
 
         const graphicOridnaryStyles: React.CSSProperties = {
-            transform: isGraphicOridinaryRendered ? 'scale(1.3) translateY(-2rem)' : 'scale(1.3) translateY(-2rem)',
+            transform: isGraphicOridinaryRendered ? 'scale(1.2) translateY(-2rem)' : 'scale(1.2) translateY(-2rem)',
             height: isGraphicOridinaryRendered ? '100%' : 0,
             opacity: isGraphicOridinaryRendered ? 1 : 0
         }
 
         const defaultStyles: React.CSSProperties = {
+            transform: isDefaultRendered ? '' : '',
             opacity: isDefaultRendered ? 1 : 0,
             height: isDefaultRendered ? '100%': 0,
         }
@@ -60,6 +68,7 @@ class ReadyToCode extends React.Component {
                             className="toggle toggle--active"
                             onClick={() => this.handleClick('gitpod')}
                             onMouseEnter={() => this.handleClick('gitpod')}
+                            onMouseLeave={() => this.handleClick('')}
                         >
                             With Gitpod
                         </button>
@@ -67,6 +76,7 @@ class ReadyToCode extends React.Component {
                             className="toggle"
                             onClick={() => this.handleClick('ordinary')}
                             onMouseEnter={() => this.handleClick('ordinary')}
+                            onMouseLeave={() => this.handleClick('')}
                         >
                             Ordinary Way
                         </button>
@@ -88,7 +98,7 @@ class ReadyToCode extends React.Component {
                             src={ReadyToCodeImg}
                             style={defaultStyles}
                             className="why-gitpod__img"
-                        />
+                    />
                 </div>
             </div>
         )
