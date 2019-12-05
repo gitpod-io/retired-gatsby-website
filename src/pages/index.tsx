@@ -262,7 +262,7 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                 </UnstyledButton>
                 <HowItWorks>
                     <div className={this.state.worksMode === 0 ? 'selected' : ''}>
-                        <h3>Prefix any GitHub URL with <strong className="glow">gitpod.io/#</strong></h3>
+                        <h3>Prefix any GitHub or GitLab URL with <strong className="glow">gitpod.io/#</strong></h3>
                         <div style={{ marginBottom: 10 }}>
                             <img src={PrefixScreenshot} alt="Gitpod URL Prefix" />
                         </div>
@@ -338,9 +338,9 @@ export default class IndexPage extends React.Component<{}, IndexPageState> {
                     </div>
                     <GitpodHeader>
                         <h2 style={{ color: colors.fontColor2, marginBottom: 15 }}>Frictionless Coding</h2>
-                        <h1 style={{ fontSize: '2.4em' }}>One-Click Online IDE<br /> for GitHub</h1>
+                        <h1 style={{ fontSize: '2.4em' }}>One-Click Online IDE<br /> for GitHub & GitLab</h1>
                         <UnderLine />
-                        <p>Gitpod launches ready-to-code development environments from any GitHub page.</p>
+                        <p>Gitpod launches ready-to-code development environments from any GitHub or GitLab page.</p>
                     </GitpodHeader>
                     <VideoLaptop>
                         <svg x="0px" y="0px" viewBox="0 0 100 100"
