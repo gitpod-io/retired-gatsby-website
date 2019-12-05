@@ -27,8 +27,7 @@ const StyledNav = styled.nav`
     ul {
         display: flex;
         align-items: center;
-        transition: all .8s cubic-bezier(0.86, 0, 0.07, 1);
-
+        transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
         @media(max-width: ${sizes.breakpoints.lg}) {
             position: absolute;
             top: 16%;
@@ -152,8 +151,8 @@ const StyledNav = styled.nav`
         }
 
         .hiden {
-            opacity: 0;
-            transform: scale(1.5) translateX(-100vw);
+            opacity: .8;
+            transform: scale(1.1) translateX(-100vw);
         }
 
         .container {
