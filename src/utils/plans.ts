@@ -1,18 +1,9 @@
-import HeartLock from '../resources/heart-lock.png'
 import LightBulb from '../resources/light-bulb.svg'
 import Rocket from '../resources/rocket.png'
 import MagicCap from '../resources/magic-cap.png'
 import Earth from '../resources/earth.svg'
 
 export const plans = [
-    {
-        title: 'Open-Source',
-        img: HeartLock,
-        alt: 'HeartLock Image',
-        price: 'Free',
-        duration: '100 hours/month',
-        features: ['Public Repos', 'Non-Commercial Use']
-    },
     {
         title: 'Personal',
         img: LightBulb,
