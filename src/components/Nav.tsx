@@ -57,8 +57,6 @@ const StyledNav = styled.nav`
                 margin-bottom: 3rem;
                 border-bottom: ${borders.light1};
             }
-
-
         }
 
         &:last-child {
@@ -125,7 +123,15 @@ const StyledNav = styled.nav`
             height: 4rem;
             transition: all .3s cubic-bezier(.25,.75,.5,1.25);
             top: 0;
-            left: 0
+            left: 0;
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                transform: scale(.9);
+            }
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                transform: scale(.7);
+            }
         }
 
         @media(min-width: ${sizes.breakpoints.lg}) {
@@ -176,7 +182,6 @@ const StyledNav = styled.nav`
             opacity: 0;
         }
     }
-
 `
 
 class Nav extends React.Component {
