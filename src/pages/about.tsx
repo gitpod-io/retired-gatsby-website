@@ -258,7 +258,7 @@ const AboutPage: React.SFC<{}> = () => (
             <Details
                 title="Explore Gitpod"
                 text="Learn about collaboration, workspace snapshots, supported programming languages, and much   more."
-                anchors={[{href: '/blog', text: 'See Blog'}, {href: '/features', text: 'See Features'}]}
+                anchors={[{href: '/features', text: 'See Features'}, {href: '/blog', text: 'See Blog'}]}
             />
 
         </StyledAboutPage>
