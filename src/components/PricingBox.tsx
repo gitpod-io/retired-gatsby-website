@@ -2,18 +2,26 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
-import { colors, shadows } from '../styles/variables'
+import { colors, shadows, sizes } from '../styles/variables'
 
 const StyledPricingBox = styled.div`
     position: relative;
     margin-bottom: 3rem;
-    padding: 2rem 3rem;
+    padding: 3rem 6rem;
     min-height: 50rem;
     min-width: 22rem;
     width: 25%;
     text-align: center;
     background: ${colors.white};
     box-shadow: ${shadows.light};
+
+    @media(max-width: ${sizes.breakpoints.lg}) {
+        padding: 3rem 4rem;
+    }
+
+    @media(max-width: ${sizes.breakpoints.md}) {
+        padding: 2rem 3rem;
+    }
 
     > * {
         color: inherit;
