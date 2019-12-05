@@ -176,7 +176,7 @@ export default `
         font-weight: 400;
         color: ${colors.textDark};
         background: ${colors.white};
-        border: 1px solid;
+        border: 2px solid ${colors.text};
         border-radius: 100px;
         transition: all .2s;
         white-space: nowrap;
@@ -184,12 +184,12 @@ export default `
         &:hover,
         &:focus {
             color: ${colors.link};
-            border: 1px solid ${colors.link};
+            border: 2px solid ${colors.link};
         }
 
         &--normal {
             font-size: ${sizes.font.btnNormal};
-            padding: 1rem 3rem;
+            padding: 1rem 2.8rem;
         }
 
         &--big {
@@ -206,7 +206,7 @@ export default `
             &:hover {
                 color: ${colors.white};
                 background: ${colors.lightBlue};
-                border: 1px solid ${colors.lightBlue};
+                border: 2px solid ${colors.lightBlue};
             }
 
             &:focus {
