@@ -244,7 +244,8 @@ class Nav extends React.Component {
                                 </button>
                             </div>
 
-                            <ul className={ isNavRendered ? 'shown container' : 'hiden' }>
+                            { isNavRendered ? (
+                                <ul className={ isNavRendered ? 'shown container' : 'hiden' }>
                                     <li><Link tabIndex={ isNavRendered ? 0 : -1 } to='/features' className="link">Features</Link></li>
                                     <li><Link tabIndex={ isNavRendered ? 0 : -1 } to='/pricing' className="link">Pricing</Link></li>
                                     <li><Link tabIndex={ isNavRendered ? 0 : -1 } to='/enterprise' className="link">Enterprise</Link></li>
@@ -289,6 +290,7 @@ class Nav extends React.Component {
                                     </li>
                                     <li><Link tabIndex={ isNavRendered ? 0 : -1 } to="/#get-started" className="btn btn--cta">Start for Free</Link></li>
                                 </ul>
+                            ) : null }
                     </StyledNav>
                 </div>
             </div>
