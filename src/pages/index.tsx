@@ -447,29 +447,7 @@ const IndexPage: React.SFC<{}> = () => (
 
                         <ReadyToCode />
 
-                        <div className="why-gitpod__box why-gitpod__box--2">
-                            <div className="why-gitpod__img-container">
-                                <img
-                                    alt="Full Dev Environments"
-                                    src={FullDevEnvironments}
-                                    style={{transform: 'translate(-2rem)'}}
-                                    className="why-gitpod__img"/>
-                            </div>
-                            <div className="why-gitpod__text">
-                                <h3>Full Dev Environments</h3>
-                                <p>Gitpod is not just another online playground IDE, but a full featured dev environment, just like your local IDE.</p>
-                                <p>It includes comprehensive <strong>Linux terminals</strong>, you can install any <strong>VS Code extensions</strong> and it's all based on <strong>Theia</strong>, the vendor neutral and highly extensible VS Code alternative.</p>
-                                <p>Read more about <a href="#">Full Dev Environments.</a></p>
-                            </div>
-                        </div>
-
                         <div className="why-gitpod__box why-gitpod__box--3">
-                            <div className="why-gitpod__text">
-                                <h3>Integration with Your Tool Chain</h3>
-                                <p>Gitpod let’s you stay in the flow by blending seamlessly into your existing tools chain.</p>
-                                <p>For instance, it integrates with git based environments like GitHub and GitLab, with external clusters like Kubernetes and continue integration tools like Jenkins, Circle CI and Travis.</p>
-                                <p>Read more about <a href="#">Integration.</a></p>
-                            </div>
                             <div className="why-gitpod__img-container">
                                 <img
                                     alt="Tools Integration"
@@ -477,6 +455,27 @@ const IndexPage: React.SFC<{}> = () => (
                                     className="why-gitpod__img"
                                     style={{transform: 'scale(.8)'}}
                                 />
+                            </div>
+                            <div className="why-gitpod__text">
+                                <h3>Seamless GitHub & GitLab Integration</h3>
+                                <p>Gitpod let’s you stay in the flow by blending perfectly into GitHub/GitLab. Start your workflow from there and let Gitpod beam you in a ready-to-code dev environment. Afterwards you can smoothly push your code back to your platform.</p>
+                                <p>Read more about <a href="#">Integration.</a></p>
+                            </div>
+                        </div>
+
+                        <div className="why-gitpod__box why-gitpod__box--2">
+                            <div className="why-gitpod__text">
+                                <h3>Full Dev Environments</h3>
+                                <p>Gitpod is not just another online playground IDE, but a full featured dev environment, just like your local IDE.</p>
+                                <p>It includes comprehensive <strong>Linux terminals</strong>, you can install any <strong>VS Code extensions</strong> and it's all based on <strong>Theia</strong>, the vendor neutral and highly extensible VS Code alternative.</p>
+                                <p>Read more about <a href="#">Full Dev Environments.</a></p>
+                            </div>
+                            <div className="why-gitpod__img-container">
+                                <img
+                                    alt="Full Dev Environments"
+                                    src={FullDevEnvironments}
+                                    style={{transform: 'translate(-2rem)'}}
+                                    className="why-gitpod__img"/>
                             </div>
                         </div>
 
