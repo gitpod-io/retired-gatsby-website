@@ -103,7 +103,17 @@ const StyledIndexPage = styled.div`
         }
 
         p {
-            margin: 2.5rem 0;
+            margin: 2.5rem auto;
+
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                padding: 0 5rem;
+            }
+
+
+
+            @media(max-width: 600px) {
+                padding: 0;
+            }
         }
     }
 
@@ -358,7 +368,7 @@ const IndexPage: React.SFC<{}> = () => (
                                 Are You Ready-To-Code?
                                 <span>Start Instantly. Anywhere.</span>
                             </h1>
-                            <p>Gitpod launches ready-to-code dev environments<br />for your Github or Gitlab project with a single click.</p>
+                            <p>Gitpod launches ready-to-code dev environments<br /> for your Github or Gitlab project with a single click.</p>
                             <a href="#get-started" className="btn btn--normal btn--cta">Start for Free</a>
                             <Link to="/self-hosted/" className="btn btn--normal">Host Yourself</Link>
                         </div>
