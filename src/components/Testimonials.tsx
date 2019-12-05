@@ -2,6 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import TweetEmbed from 'react-tweet-embed'
+import { sizes } from '../styles/variables';
 
 const StyledTestimonials = styled.div`
     /* ------------------------------------------- */
@@ -14,11 +15,30 @@ const StyledTestimonials = styled.div`
 
     .tweets {
         display: flex;
-        padding: 0 3rem;
         align-items: center;
         overflow-x: auto;
         scroll-padding: 0 50%;
         scroll-snap-type: x;
+
+        @media(min-width: ${sizes.breakpoints.md}) {
+            padding-left: calc((100% - ${sizes.grid.maxWidth})/2);
+        }
+
+        & > div {
+            &:first-of-type {
+                @media(max-width: ${sizes.breakpoints.lg}) {
+                    padding-left: 7rem;
+                }
+
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    padding-left: 4rem;
+                }
+
+                @media(max-width: ${sizes.breakpoints.sm}) {
+                    padding-left: 1rem;
+                }
+            }
+        }
     }
 
     .tweet {
