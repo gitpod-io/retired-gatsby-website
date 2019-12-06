@@ -124,7 +124,7 @@ const Footer: React.SFC<{}> = () => (
                     </li>
                     <li>
                         <a href="https://github.com/gitpod-io/" target="_blank">
-                            <img alt="Github Logo" src={Github} />
+                            <img alt="GitHub Logo" src={Github} />
                         </a>
                     </li>
                     <br aria-hidden={true} />

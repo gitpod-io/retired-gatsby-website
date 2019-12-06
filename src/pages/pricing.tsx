@@ -235,13 +235,13 @@ const PricingPage: React.SFC<{}> = () => (
                             <td></td>
                         </tr>
                         <tr>
-                            <th><img src={Github} alt="Github Logo"/> github.com</th>
+                            <th><img src={Github} alt="GitHub Logo"/> github.com</th>
                             <td><Circle /></td>
                             <td><Circle /></td>
                             <td><Circle /></td>
                         </tr>
                         <tr>
-                            <th><img src={Github} alt="Github Logo"/> Github Enterprise</th>
+                            <th><img src={Github} alt="GitHub Logo"/> GitHub Enterprise</th>
                             <td></td>
                             <td><Circle /></td>
                             <td><Circle /></td>
