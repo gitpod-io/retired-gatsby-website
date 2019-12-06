@@ -5,6 +5,7 @@ import { shadows, borders, sizes, colors } from '../styles/variables'
 import { projects } from '../utils/projects'
 import Project from '../components/Project'
 import ArrowIcon from '../resources/arrow-icon.svg'
+import LenseIcon from '../resources/lense-icon.svg'
 
 const StyledGetStarted = styled.div`
     /* ------------------------------------------- */
@@ -53,6 +54,11 @@ const StyledGetStarted = styled.div`
 
                         @media(max-width: 650px) {
                             display: none;
+                        }
+
+                        img {
+                            margin-right: 1rem;
+                            margin-bottom: -.5rem;
                         }
                     }
                 }
@@ -181,7 +187,10 @@ class GetStarted extends React.Component {
                         <label htmlFor="url" className="get-started__prefix-input-container">
                             <div className="get-started__prefix-input">
                                 <div>
-                                    <span>gitpod.io/#</span>
+                                    <span>
+                                        <img alt="Search Icon" src={LenseIcon}/>
+                                        gitpod.io/#
+                                    </span>
                                     <input
                                         id="url"
                                         defaultValue={this.state.val}
