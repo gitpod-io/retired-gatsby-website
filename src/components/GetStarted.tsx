@@ -166,15 +166,34 @@ const StyledGetStarted = styled.div`
 class GetStarted extends React.Component {
 
     state = {
-        val: 'https://github.com/freeCodeCamp/freeCodeCamp'
+        val: 'https://github.com/freeCodeCamp/freeCodeCamp',
+        message: '',
     }
 
     handleChange = (e: any) => {
         const val = e.target.value
+        this.handleValidation(val)
         this.setState({val})
     }
 
+    handleValidation = (val: string) => {
+        try {
+            const url = new URL(val)
+            if ( !(url.host === 'github.com' || url.hostname === 'gitlab.com') ) {
+                this.setState({message: 'Please Enter a valid Github or GitLab repo Url!'})
+            }
+            else {
+                this.setState({message: ''})
+            }
+        }
+        catch(e) {
+            console.log(e.message)
+        }
+    }
+
     render() {
+        const { val, message } = this.state
+
         return (
             <StyledGetStarted className="row">
                 <section className="get-started" id="get-started">
@@ -193,18 +212,18 @@ class GetStarted extends React.Component {
                                     </span>
                                     <input
                                         id="url"
-                                        defaultValue={this.state.val}
+                                        defaultValue={val}
                                         onChange={this.handleChange}
                                     />
                                 </div>
                                 <a
-                                    href={`https://gitpod.io#${this.state.val}`}
+                                    href={`https://gitpod.io#${val}`}
                                     target="_blank"
                                 >
                                     <img alt="Arrow Right" src={ArrowIcon}/>
                                 </a>
                             </div>
-                            <p>Enter your GitHub or GitLab URL</p>
+                            <p>{ message ? <span style={{color: '#FF4136 '}}>{message}</span> : 'Enter your GitHub or GitLab URL' }</p>
                         </label>
                     </div>
 
