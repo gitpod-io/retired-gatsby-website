@@ -41,11 +41,17 @@ const StyledPricingPage = styled.div`
         &__open-source {
             max-width: 60rem;
             margin: 10rem auto 0;
-            padding: 4rem 0;
+            padding: 4rem 1rem;
             text-align: center;
             background: ${colors.white};
             box-shadow: ${shadows.light};
             border-radius: 3px;
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                br {
+                    display: none;
+                }
+            }
 
             img {
                 height: 8rem;
