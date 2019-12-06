@@ -27,7 +27,7 @@ const VendorPage: React.SFC<{}> = () => (
             <Banner
                 subtitle="Gitpod Vendor"
                 title={<h1>Use <strong>Gitpod as a Showroom</strong> for<br /> Your Developer Products</h1>}
-                linkPath="#"
+                linkPath="/vendor/#vendor"
                 linkText="Choose your Solution"
                 img={<img alt="Network" src={Vendor}/>}
             />
@@ -62,6 +62,7 @@ const VendorPage: React.SFC<{}> = () => (
         <PricingTable
             title="Pricing Gitpod Vendor"
             paragraph="You have the choice to either host Gitpod yourself or to use our cloud infrastructure."
+            id="vendor"
         >
             <thead>
                 <tr className="header">

@@ -35,7 +35,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                 subtitle="Gitpod Enterprise"
                 title={<h1>Unleash Developer Productivity</h1>}
                 paragraph="Implementing Gitpod to your development environment means no more tedious setups, easy onboarding, higher code quality and a greater workflow."
-                linkPath="#"
+                linkPath="/enterprise/#enterprise"
                 linkText="Choose your Solution"
                 img={<img alt="Planet Earth" src={Planet}/>}
             />
@@ -107,6 +107,7 @@ const EnterprisePage: React.SFC<{}> = () => (
         <PricingTable
             title="Pricing Gitpod Enterprise"
             paragraph="You have the choice to either host Gitpod yourself or to use our cloud infrastructure."
+            id="enterprise"
         >
             <thead>
                 <tr className="header">

@@ -27,7 +27,7 @@ const RecrutingPage: React.SFC<{}> = () => (
             <Banner
                 subtitle="Gitpod Recruiting"
                 title={<h1>Make Sure You’re <strong>Discovering Your<br />Best Applicants</strong></h1>}
-                linkPath="#"
+                linkPath="/recruiting/#recruiting"
                 linkText="Choose your Solution"
                 img={<img alt="Cloud" src={Cloud}/>}
             />
@@ -62,6 +62,7 @@ const RecrutingPage: React.SFC<{}> = () => (
         <PricingTable
             title="Pricing Gitpod Recruiting"
             paragraph="You have the choice to either host Gitpod yourself or to use our cloud infrastructure."
+            id="recruiting"
         >
             <thead>
                 <tr className="header">

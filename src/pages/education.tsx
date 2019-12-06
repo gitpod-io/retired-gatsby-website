@@ -47,7 +47,7 @@ const EducationPage: React.SFC<{}> = () => (
                 subtitle="Gitpod Education"
                 title={<h1>Let’s <strong>Focus on Teaching Code,</strong><br /> not Tedious Setups!</h1>}
                 paragraph="Gitpod simplifies the onboarding process, makes coding accessible from any device and provides a productive learning environment."
-                linkPath="#"
+                linkPath="/education/#education"
                 linkText="Choose your Solution"
                 img={<img alt="Planet Mars" src={Planet}/>}
             />
@@ -82,6 +82,7 @@ const EducationPage: React.SFC<{}> = () => (
         <PricingTable
             title="Pricing Gitpod Education"
             paragraph="You have the choice to either host Gitpod yourself or to use our cloud infrastructure."
+            id="education"
         >
            <thead>
                 <tr className="header">
