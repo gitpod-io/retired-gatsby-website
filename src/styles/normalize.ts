@@ -230,8 +230,11 @@ export default `
     /* ----- Inputs ----- */
     /* ------------------------------------------- */
 
-    input {
+    input,
+    select,
+    textarea {
         font-family: inherit;
+        font-size: inherit;
     }
 
     /* ------------------------------------------- */
@@ -321,6 +324,19 @@ export default `
             }
 
         }
+    }
+
+    /* --------------------------------------------- */
+    /* ----- Utils ----- */
+    /* --------------------------------------------- */
+
+    .visually-hidden {
+        position: absolute;
+        left: -100000rem;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
     }
 
 `
