@@ -48,11 +48,15 @@ const StyledDropDown = styled.div`
         @media(max-width: ${sizes.breakpoints.lg}) {
             height: 1rem;
         }
+
+        @media(min-width: ${sizes.breakpoints.lg}) {
+            display: none;
+        }
     }
 
     ul {
         position: absolute;
-        top: 3rem;
+        top: 2.5rem;
         left: 7%;
         display: flex;
         flex-direction: column;
@@ -77,10 +81,6 @@ const StyledDropDown = styled.div`
         @media(max-width: ${sizes.breakpoints.md}) {
             left: 6rem;
         }
-
-        // @media(max-width: ${sizes.breakpoints.sm}) {
-        //     left: 1rem;
-        // }
     }
 
     li {
@@ -185,6 +185,7 @@ class DropDown extends React.Component<DropDownProps, {}> {
                                 )
                         )
                     }
+                    <span aria-hidden={true}></span>
                 </ul>
             </StyledDropDown>
         )
