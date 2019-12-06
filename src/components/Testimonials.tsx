@@ -57,6 +57,20 @@ const StyledTestimonials = styled.div`
 
 const twitterOptions = { theme: 'light', dnt: true, cards: 'hidden' };
 
+const tweets = [
+    '1191710936605831169',
+    '1102215129696010240',
+    '1167463499779338243',
+    '1131239314346729482',
+    '1117695539540365312',
+    '1115274432958930946',
+    '1116152894548582402',
+    '1159698330764611584',
+    '1188910483698372608',
+    '1117141675745402881',
+    '1120015913024139265',
+]
+
 const Testimonials: React.SFC<{}> = () => (
     <StyledTestimonials className="grey-container">
         <section className="testimonials">
@@ -64,14 +78,17 @@ const Testimonials: React.SFC<{}> = () => (
                     <h2>Don’t just Take Our Word for It</h2>
                 </div>
                 <div className="tweets">
-                    <TweetEmbed className="tweet" id='1167463499779338243' options={twitterOptions} />
-                    <TweetEmbed className="tweet" id='1131239314346729482' options={twitterOptions} />
-                    <TweetEmbed className="tweet" id='1117695539540365312' options={twitterOptions} />
-                    <TweetEmbed className="tweet" id='1115274432958930946' options={twitterOptions} />
-                    <TweetEmbed className="tweet" id='1191710936605831169' options={twitterOptions} />
-                    <TweetEmbed className="tweet" id='1116152894548582402' options={twitterOptions} />
-                    <TweetEmbed className="tweet" id='1159698330764611584' options={twitterOptions} />
-
+                    {
+                        tweets.map(
+                            (t, i) =>
+                            <TweetEmbed
+                                key={i}
+                                className="tweet"
+                                id={t}
+                                options={twitterOptions}
+                            />
+                        )
+                    }
                 </div>
         </section>
     </StyledTestimonials>
