@@ -67,13 +67,13 @@ const RecrutingPage: React.SFC<{}> = () => (
                 <tr className="header">
                     <th style={{border: 'none', background: 'none'}}>&nbsp;</th>
                     <th>Gitpod.io
-                        <span><span>FREE</span> Trail</span>
+                        <span><span>FREE</span> Trial</span>
                     </th>
                     <th>Gitpod Cloud
-                        <span><span>FREE</span> Trail</span>
+                        <span><span>FREE</span> Trial</span>
                     </th>
                     <th>Gitpod Self Hosted
-                        <span><span>FREE</span> Trail</span>
+                        <span><span>FREE</span> Trial</span>
                     </th>
                 </tr>
             </thead>
