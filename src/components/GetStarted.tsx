@@ -32,6 +32,7 @@ const StyledGetStarted = styled.div`
                 align-items: center;
                 justify-content: center;
                 height: 5rem;
+                background: ${colors.offWhite2};
                 width: 95%;
                 padding: 2rem;
                 border: 2px solid #ccc;
@@ -48,7 +49,7 @@ const StyledGetStarted = styled.div`
                     margin-right: auto;
 
                     span {
-                        color: ${colors.textLight};
+                        color: ${colors.textDark};
 
                         @media(max-width: 650px) {
                             display: none;
@@ -59,19 +60,20 @@ const StyledGetStarted = styled.div`
                 input {
                     display: inline-block;
                     border: none;
-                    background: #555;
-                    color: ${colors.white};
-                    padding: .5rem;
+                    background: ${colors.white};
+                    color: ${colors.text};
+                    padding: .6rem .5rem;
                     font-size: inherit;
                     width: 44rem;
                     border-radius: 2px;
+
 
                     @media(max-width: ${sizes.breakpoints.md}) {
                         width: 44.5rem;
                     }
 
                     @media(max-width: 550px) {
-                            width: auto;
+                        width: auto;
                     }
                 }
 
