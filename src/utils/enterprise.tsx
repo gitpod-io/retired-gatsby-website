@@ -17,7 +17,7 @@ export const features = [
     },
     {
         title: "Smooth Integration",
-        paragraphs: ['All Gitpod needs is a Kubernetes cluster.', 'It enables user authorization and integration via your GitHub Enterprise, Gitlab, or Bitbucket.', 'Please contact TypeFox for further customizations.'],
+        paragraphs: ['All Gitpod needs is a Kubernetes cluster.', 'It enables user authorization and integration via your GitHub Enterprise, GitLab, or Bitbucket.', 'Please contact TypeFox for further customizations.'],
         logos: ['Layer', 'Github', 'Gitlab', 'Git']
     },
     {

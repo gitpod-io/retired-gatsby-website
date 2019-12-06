@@ -157,13 +157,13 @@ const VendorPage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Gitlab} alt="Gitlab Logo"/> gitlab.com</th>
+                    <th><img src={Gitlab} alt="GitLab Logo"/> gitlab.com</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Gitlab} alt="Gitlab Logo"/> Gitlab self-hosted</th>
+                    <th><img src={Gitlab} alt="GitLab Logo"/> GitLab self-hosted</th>
                     <td>public only</td>
                     <td><Circle /></td>
                     <td><Circle /></td>

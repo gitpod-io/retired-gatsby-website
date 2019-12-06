@@ -9,7 +9,7 @@ export const features = [
     },
     {
         title: "Smooth Integration",
-        paragraphs: ['All Gitpod needs is a Kubernetes cluster, a user authorization and an integration via your GitHub Enterprise, Gitlab, or Bitbucket.', 'Gitpod provides your institution a developer environment in which your exercises just work.', 'No need to waste time to provide technical support to your students.']
+        paragraphs: ['All Gitpod needs is a Kubernetes cluster, a user authorization and an integration via your GitHub Enterprise, GitLab, or Bitbucket.', 'Gitpod provides your institution a developer environment in which your exercises just work.', 'No need to waste time to provide technical support to your students.']
     },
     {
         title: "Works on any Device",
