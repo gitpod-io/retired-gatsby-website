@@ -12,6 +12,7 @@ import { Link } from 'gatsby'
 import CodeReview from '../resources/code-review.png'
 import Circle from '../components/Circle'
 import Details from '../components/Details'
+import ScrollToTopButton from '../components/ScrollToTopButton'
 
 const StyledFeaturesPage = styled.div`
     /* ------------------------------------------- */
@@ -138,9 +139,11 @@ const FeaturesPage: React.SFC<{}> = () => (
             <div className="grey-container">
                 <div className="row">
 
+                    <ScrollToTopButton />
+
                     {/* ----- Intro ----- */}
 
-                    <section className="intro">
+                    <section className="intro" id="top">
                         <img alt="Ice Stick" src={IceStick} className="ice-stick"/>
                         <h1>Features</h1>
                         <div className="features">
@@ -342,5 +345,6 @@ const FeaturesPage: React.SFC<{}> = () => (
         </StyledFeaturesPage>
     </IndexLayout>
 )
+
 
 export default FeaturesPage
