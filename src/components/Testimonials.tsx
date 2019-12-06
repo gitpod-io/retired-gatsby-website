@@ -5,6 +5,9 @@ import TweetEmbed from 'react-tweet-embed'
 import { sizes } from '../styles/variables';
 
 const StyledTestimonials = styled.div`
+
+    min-height: 60rem;
+
     /* ------------------------------------------- */
     /* ----- Section Testimonials ----- */
     /* ------------------------------------------- */
