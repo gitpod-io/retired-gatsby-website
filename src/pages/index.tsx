@@ -109,8 +109,6 @@ const StyledIndexPage = styled.div`
                 padding: 0 5rem;
             }
 
-
-
             @media(max-width: 600px) {
                 padding: 0;
             }
@@ -369,8 +367,8 @@ const IndexPage: React.SFC<{}> = () => (
                                 <span>Start Instantly. Anywhere.</span>
                             </h1>
                             <p>Gitpod launches ready-to-code dev environments<br /> for your Github or GitLab project with a single click.</p>
-                            <a href="#get-started" className="btn btn--normal btn--cta">Start for Free</a>
-                            <Link to="/self-hosted/" className="btn btn--normal">Host Yourself</Link>
+                            <a href="#get-started" className="btn btn--cta">Start for Free</a>
+                            <Link to="/self-hosted/" className="btn">Host Yourself</Link>
                         </div>
                         <div className="banner__screenshot-container">
                             <img alt="Gitpod Screenshot" src={ReflectionScreenshot} className="banner__screenshot"/>
