@@ -12,7 +12,7 @@ import Bg from '../components/Bg'
 import ActionCard from '../components/ActionCard'
 import Details from '../components/Details'
 import styled from '@emotion/styled'
-import { colors, shadows } from '../styles/variables'
+import { colors } from '../styles/variables'
 import PricingTable from '../components/PricingTable'
 import Circle from '../components/Circle'
 import Layer from '../resources/layer.svg'
@@ -20,20 +20,20 @@ import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
 import { Link } from 'gatsby'
 
-const StyledHeading = styled.h2`
-    max-width: 40rem;
-    margin: 10rem auto;
+const StyledHeading = styled.h3`
+    max-width: 50rem;
+    margin: 0 auto 5rem;
     padding: 5rem 3rem;
     text-align: center;
-    background: ${colors.offWhite};
-    box-shadow: ${shadows.light};
+    font-weight: 400;
 
     span {
         display: block;
         margin: 2rem auto;
         background: ${colors.link};
-        height: 3px;
-        width: 80px;
+        height: .8rem;
+        width: 10rem;
+        border-radius: 100px;
     }
 `
 
@@ -220,7 +220,10 @@ const EducationPage: React.SFC<{}> = () => (
 
         <div className="row">
             <StyledHeading>
-                Are You a Student? <span aria-hidden="true" /> Tell your Teacher about it!
+                <span aria-hidden="true" />
+                Are You a Student?
+                <br />
+                Tell your Teacher about it!
             </StyledHeading>
         </div>
 
