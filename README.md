@@ -5,7 +5,7 @@
 
 Gitpod is a one-click online IDE that provides ready-to-code dev environments for GitHub and soon GitLab.
 
-<img width="1167" alt="Gitpod Website Preview" src="https://user-images.githubusercontent.com/372735/59349169-4605e100-8d19-11e9-9569-af65ae6b9d58.png">
+<img width="1150" alt="Screenshot 2019-12-09 at 12 33 58" src="https://user-images.githubusercontent.com/372735/70432742-3bd25e80-1a80-11ea-9219-954181fe78b5.png">
 
 This repository contains the website hosted on https://www.gitpod.io .
 
