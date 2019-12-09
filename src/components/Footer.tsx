@@ -106,7 +106,7 @@ const Footer: React.SFC<{}> = () => (
                     <li>Developer</li>
                     <li><Link to="/#get-started">Getting started</Link></li>
                     <li><Link to="/docs">Documentation</Link></li>
-                    <li><Link to="#">Report a Bug</Link></li>
+                    <li><a href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md" target="_blank">Report a Bug</a></li>
                     <li><a href="https://spectrum.chat/gitpod" target="_blank">Community</a></li>
                 </ul>
                 <ul>
