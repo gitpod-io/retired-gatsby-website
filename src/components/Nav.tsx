@@ -7,6 +7,7 @@ import { colors, sizes, borders } from '../styles/variables'
 import DropDown from '../components/DropDown'
 import Hamburger from '../resources/hamburger.svg'
 import Multiply from '../resources/multiply.svg'
+import External from '../resources/external.svg'
 
 const StyledNav = styled.nav`
     display: flex;
@@ -281,7 +282,7 @@ class Nav extends React.Component {
                                                     to: '/blog'
                                                 },
                                                 {
-                                                    text: 'Community',
+                                                    text: <span>Community&nbsp;<img alt="External Link" src={External} style={{height: '1.5rem', transform: 'translate(.5rem, .3rem)'}}/></span>,
                                                     to: 'https://spectrum.chat/gitpod/',
                                                     target: true
                                                 }

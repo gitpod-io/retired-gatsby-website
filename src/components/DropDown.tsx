@@ -40,11 +40,10 @@ const StyledDropDown = styled.div`
         }
     }
 
-    img {
+    .arrow {
         height: .8rem;
-        margin-left: 1rem;
         transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
+        margin-left: 1rem;
         @media(max-width: ${sizes.breakpoints.lg}) {
             height: 1rem;
         }
@@ -60,17 +59,18 @@ const StyledDropDown = styled.div`
         left: 7%;
         display: flex;
         flex-direction: column;
-        padding: .5rem .5rem 1rem;
+        padding: .5rem 0 1rem;
         background: ${colors.offWhite};
         box-shadow: ${shadows.light};
         z-index: 1000;
         transition: all .4s cubic-bezier(0.86, 0, 0.07, 1);
-        width: auto !important;
+        width: auto;
 
         @media(min-width: ${sizes.breakpoints.lg}) {
             width: 120%;
             left: 50%;
             transform: translateX(-50%);
+            min-width: 14rem;
         }
 
         @media(max-width: ${sizes.breakpoints.lg}) {
@@ -88,7 +88,6 @@ const StyledDropDown = styled.div`
         font-size: 90%;
         width: 100%;
         padding: 0 1.5rem;
-
         border-bottom: none !important;
     }
 
@@ -105,7 +104,7 @@ const StyledDropDown = styled.div`
 `
 
 interface Anchor {
-    text: string
+    text: string | JSX.Element
     to: string
     target?: boolean
 }
@@ -150,6 +149,7 @@ class DropDown extends React.Component<DropDownProps, {}> {
                     <div>{title}</div>
                     <img
                         alt="Arrow"
+                        className="arrow"
                         src={ArrowDown}
                         style={ isRendered ? {transform: 'rotate(180deg)'}: {} }
                     />
