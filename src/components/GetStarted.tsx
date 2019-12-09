@@ -178,8 +178,7 @@ class GetStarted extends React.Component {
 
     handleValidation = (val: string) => {
         try {
-            const url = new URL(val)
-            if ( !(url.host === 'github.com' || url.hostname === 'gitlab.com') ) {
+            if ( !( val.includes('github.com') || val.includes('gitlab.com')) ) {
                 this.setState({message: 'Please Enter a valid Github or GitLab repo Url!'})
             }
             else {
