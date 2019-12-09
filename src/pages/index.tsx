@@ -30,7 +30,6 @@ const StyledIndexPage = styled.div`
     /* ----- Banner ----- */
     /* ------------------------------------------- */
 
-
     .banner {
         display: flex;
         padding-bottom: 10rem;
@@ -221,6 +220,15 @@ const StyledIndexPage = styled.div`
 
                 @media(max-width: ${sizes.breakpoints.md}) {
                     flex-direction: column-reverse;
+                }
+
+                .why-gitpod__img-container {
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        bottom: 0;
+                    }
                 }
             }
 

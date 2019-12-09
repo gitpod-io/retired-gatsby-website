@@ -40,19 +40,23 @@ class ReadyToCode extends React.Component {
         const { isDefaultRendered, isGraphicGitpodRendered, isGraphicOridinaryRendered } = this.state
 
         const graphicGitpodStyles: React.CSSProperties = {
-            transform: isGraphicGitpodRendered ? 'scale(.92) translateY(14rem)' : 'scale(.92) translateY(14rem)',
+            transform: 'scale(.9)',
+            bottom: '-11.7rem',
+            left: '2.5rem',
             height: isGraphicGitpodRendered ? '100%' : 0,
             opacity: isGraphicGitpodRendered ? 1 : 0
         }
 
         const graphicOridnaryStyles: React.CSSProperties = {
-            transform: isGraphicOridinaryRendered ? 'scale(1.2) translateY(-2rem)' : 'scale(1.2) translateY(-2rem)',
+            transform: 'scale(1.25)',
+            bottom: '.5rem',
+            left: '2rem',
             height: isGraphicOridinaryRendered ? '100%' : 0,
             opacity: isGraphicOridinaryRendered ? 1 : 0
         }
 
         const defaultStyles: React.CSSProperties = {
-            transform: isDefaultRendered ? '' : '',
+            bottom: '-4rem',
             opacity: isDefaultRendered ? 1 : 0,
             height: isDefaultRendered ? '100%': 0,
         }
@@ -82,7 +86,7 @@ class ReadyToCode extends React.Component {
                         </button>
                     </div>
                 </div>
-                <div className="why-gitpod__img-container" style={{display: 'block'}}>
+                <div className="why-gitpod__img-container">
                     <img
                         alt="Automated Setup"
                         src={AutomatedSetupGraphicGitpod}
@@ -94,10 +98,10 @@ class ReadyToCode extends React.Component {
                         style={{...graphicOridnaryStyles, width: '100%'}}
                     />
                     <img
-                            alt="Automated Setup"
-                            src={ReadyToCodeImg}
-                            style={defaultStyles}
-                            className="why-gitpod__img"
+                        alt="Automated Setup"
+                        src={ReadyToCodeImg}
+                        style={defaultStyles}
+                        className="why-gitpod__img"
                     />
                 </div>
             </div>
