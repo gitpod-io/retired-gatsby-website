@@ -5,7 +5,7 @@ import QuoteIcon from '../resources/quote.png'
 import { colors, sizes } from '../styles/variables'
 
 const StyledQuote = styled.section`
-    padding: 16rem 0;
+    padding: 12rem 0;
     margin: 0 auto;
 
     @media(max-width: ${sizes.breakpoints.md}) {

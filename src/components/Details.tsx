@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 
 const StyledMore = styled.section`
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
 
     p {
         margin: -2rem 0 2rem;

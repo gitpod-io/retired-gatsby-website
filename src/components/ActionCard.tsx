@@ -7,8 +7,8 @@ import { Link } from 'gatsby'
 const StyledActionCard = styled.section`
     display: block;
     max-width: 60rem;
-    margin: 10rem auto;
-    padding: 5rem 3rem;
+    margin: 8rem auto;
+    padding 5rem 3rem;
     text-align: center;
     background: ${colors.offWhite};
     box-shadow: ${shadows.light};
