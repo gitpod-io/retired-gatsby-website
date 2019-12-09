@@ -218,6 +218,8 @@ class GetStarted extends React.Component {
                                 <a
                                     href={`https://gitpod.io#${val}`}
                                     target="_blank"
+                                    style={ message ? {pointerEvents: "none"} : {} }
+                                    tabIndex={ message ? -1 : 0 }
                                 >
                                     <img alt="Arrow Right" src={ArrowIcon}/>
                                 </a>
