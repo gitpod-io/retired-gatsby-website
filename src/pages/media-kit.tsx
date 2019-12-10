@@ -6,6 +6,7 @@ import GitpodLogoDark from '../resources/gitpod-logo-dark.svg'
 import GitpodLogoWhiteFont from '../resources/gitpod-logo-white-font.svg'
 import GitpodLogoWhite from '../resources/gitpod-logo-white.svg'
 import GitpodCube from '../resources/gitpod-cube.svg'
+import DownloadIcon from '../resources/download-icon.svg'
 import { shadows, colors, sizes } from '../styles/variables'
 
 const StyledMediaKitPage = styled.div`
@@ -109,7 +110,9 @@ const MediaKitPage: React.SFC<{}> = () => (
                                         href={r.path}
                                         download={`${r.text}.svg`}
                                         title={`${r.text}.svg`}
-                                    >&rarr;</a>
+                                    >
+                                        <img alt="Icon Download" src={DownloadIcon} />
+                                    </a>
                                 </div>
                             </div>
                         ))
