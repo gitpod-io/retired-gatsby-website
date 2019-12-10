@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import CookieConsent from "react-cookie-consent";
 
-import { colors } from '../styles/variables';
+import { colors, borders } from '../styles/variables';
 import GitpodIcon from '../resources/gitpod.svg';
 import GitpodIcon196 from '../resources/gitpod-196x196.png';
 import GitpodIconApple from '../resources/apple-touch-icon.png';
@@ -66,17 +66,23 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
         <Nav />
         <LayoutMain>
             <CookieConsent buttonClasses="primary"
-                buttonStyle={{
-                    margin: '15px 15px 15px 0px',
-                    padding: '1rem 3rem',
-                    borderRadius: 100,
-                    border: `1px solid ${colors.link}`,
-                    backgroundColor: colors.link,
-                    cursor: 'pointer',
-                    color: colors.white,
-                    boxShadow: '0px 0px 1px #1aa6e4',
-                }}
                 containerClasses="consent"
+                style={{
+                    backgroundColor: colors.white,
+                    color: colors.text,
+                    borderTop: borders.light,
+                }}
+                contentStyle={{
+                    backgroundColor: 'transparent',
+                    margin: '10px 15px'
+                }}
+                buttonStyle={{
+                    backgroundColor: 'transparent',
+                    border: 'solid 1px '+colors.text,
+                    borderRadius: '100px',
+                    padding: '.8rem 2.2rem',
+                    margin: '10px 15px'
+                }}
             >
                 This website uses cookies to<br /> enhance the user experience.<br /> Read our <Link style={{color: '#35C9FF'}} to="/privacy">privacy policy</Link> for more info.
             </CookieConsent>
