@@ -3,17 +3,13 @@ import React from 'react'
 import { navigate } from 'gatsby'
 import { MENU } from '../docs/menu';
 
-
-interface DocTopicChooserProps {
-}
-
 function onSelectTopic(event: React.FormEvent<HTMLSelectElement>) {
     navigate(event.currentTarget.value);
 }
 
-const DocTopicChooser: React.SFC<DocTopicChooserProps> = () => {
+const DocTopicChooser: React.SFC<{}> = () => {
     return (
-        <div>
+        <div style={{marginBottom: '3rem'}}>
             <select className='topic-chooser' onChange={onSelectTopic}>
                 <option value='#' selected={true}>Select A Topic</option>
                 {MENU.map(m => {
