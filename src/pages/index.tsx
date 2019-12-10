@@ -374,7 +374,7 @@ const IndexPage: React.SFC<{}> = () => (
                                 Are You Ready-To-Code?
                                 <span>Start Instantly. Anywhere.</span>
                             </h1>
-                            <p>Gitpod launches ready-to-code dev environments<br /> for your Github or GitLab project with a single click.</p>
+                            <p>Gitpod launches ready-to-code dev environments<br /> for your GitHub or GitLab project with a single click.</p>
                             <a href="#get-started" className="btn btn--cta">Start for Free</a>
                             <Link to="/self-hosted/" className="btn">Host Yourself</Link>
                         </div>
