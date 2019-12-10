@@ -7,6 +7,7 @@ import Twitter from '../resources/twitter.svg'
 import Github from '../resources/github.svg'
 import Mail from '../resources/mail.svg'
 import Spectrum from '../resources/spectrum.svg'
+import External from '../resources/external.svg'
 
 const StyledFooter = styled.footer`
     background: ${colors.offWhite};
@@ -82,6 +83,20 @@ const StyledFooter = styled.footer`
             margin-bottom: 2rem;
         }
     }
+
+    .external {
+        height: 1.5rem;
+        transform: translate(.8rem, .3rem);
+        opacity: 0;
+        transition: all .2s;
+    }
+
+    a:hover,
+    a:active {
+        .external {
+            opacity: 1;
+        }
+    }
 `
 
 const Footer: React.SFC<{}> = () => (
@@ -106,13 +121,28 @@ const Footer: React.SFC<{}> = () => (
                     <li>Developer</li>
                     <li><Link to="/#get-started">Getting started</Link></li>
                     <li><Link to="/docs">Documentation</Link></li>
-                    <li><a href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md" target="_blank">Report a Bug</a></li>
-                    <li><a href="https://spectrum.chat/gitpod" target="_blank">Community</a></li>
+                    <li>
+                        <a href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md" target="_blank">
+                            Report a Bug
+                            <img alt="External Link" src={External} className="external"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://spectrum.chat/gitpod" target="_blank">
+                            Community
+                            <img alt="External Link" src={External} className="external"/>
+                        </a>
+                    </li>
                 </ul>
                 <ul>
                     <li>Company</li>
                     <li><Link to="/about">About</Link></li>
-                    <li><a href="https://typefox.io/careers" target="_blank">Career</a></li>
+                    <li>
+                        <a href="https://typefox.io/careers" target="_blank">
+                            Career
+                            <img alt="External Link" src={External} className="external"/>
+                        </a>
+                    </li>
                     <li><Link to="#">Media Kit</Link></li>
                 </ul>
                 <ul className="contact">
