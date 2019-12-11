@@ -36,7 +36,6 @@ const StyledGetStarted = styled.div`
                 background: ${colors.offWhite2};
                 width: 95%;
                 padding: 2rem;
-                border: 2px solid #ccc;
                 border-radius: 100px;
                 font-size: 1.7rem;
 
@@ -67,7 +66,7 @@ const StyledGetStarted = styled.div`
                     display: inline-block;
                     border: none;
                     background: ${colors.white};
-                    color: ${colors.text};
+                    color: ${colors.textLight};
                     padding: .6rem .5rem;
                     font-size: inherit;
                     width: 44rem;
