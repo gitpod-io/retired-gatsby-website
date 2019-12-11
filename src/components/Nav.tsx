@@ -21,6 +21,10 @@ const StyledNav = styled.nav`
         font-size: 120%;
     }
 
+    @media(max-width: ${sizes.breakpoints.md}) {
+        padding: 2rem 0;
+    }
+
     img {
         height: 4rem;
     }
@@ -106,10 +110,11 @@ const StyledNav = styled.nav`
 
         &-container {
             position: absolute;
-            top: 3.8rem;
+            top: 3.7rem;
             right: 7rem;
 
             @media(max-width: ${sizes.breakpoints.md}) {
+                top: 1.7rem;
                 right: 4rem;
             }
 
