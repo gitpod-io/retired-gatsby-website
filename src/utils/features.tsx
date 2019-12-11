@@ -76,7 +76,7 @@ export const features = [
     {
         alt: 'Language Support',
         img: IconLanguage,
-        text: 'Language Support',
+        text: <span>Language<br/>Support</span>,
         path: 'lang'
     }
 ]
