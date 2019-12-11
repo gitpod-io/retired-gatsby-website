@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 import ArrowDown from '../resources/arrow-down.svg'
 import { colors, shadows, sizes } from '../styles/variables'
 import { Link } from 'gatsby'
+import ExternalLink from '../components/ExternalLink'
 
 const StyledDropDown = styled.div`
     position: relative;
@@ -104,7 +105,7 @@ const StyledDropDown = styled.div`
 `
 
 interface Anchor {
-    text: string | JSX.Element
+    text: string
     to: string
     target?: boolean
 }
@@ -161,14 +162,12 @@ class DropDown extends React.Component<DropDownProps, {}> {
                             target ?
                                 (
                                     <li key={i}>
-                                        <a
+                                        <ExternalLink
                                             href={to}
                                             tabIndex={ isRendered ? 0 : -1 }
-                                            target="_blank"
+                                            text={text}
                                             className="link"
-                                        >
-                                            {text}
-                                        </a>
+                                        />
                                     </li>
                                 )
                                     :
