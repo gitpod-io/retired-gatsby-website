@@ -395,7 +395,7 @@ const IndexPage: React.SFC<{}> = () => (
                     </div>
                     <div className="intro__box">
                         <img className="intro__icon" alt="Arrow on Wooden Target" src={ArrowOnTarget} />
-                        <p className="intro__text"><span>Gitpod eliminates this friction</span> by providing prebuilt, ready-to-code dev environments with just one click.</p>
+                        <p className="intro__text"><span>Gitpod eliminates this friction</span> by providing prebuilt, <br/>ready-to-code dev environments with just one click.</p>
                     </div>
                 </div>
             </section>
