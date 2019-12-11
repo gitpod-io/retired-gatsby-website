@@ -11,7 +11,6 @@ import { sizes, colors, shadows } from '../styles/variables'
 import { Link } from 'gatsby'
 import CodeReview from '../resources/code-review.png'
 import Circle from '../components/Circle'
-import Details from '../components/Details'
 import ScrollToTopButton from '../components/ScrollToTopButton'
 
 const StyledFeaturesPage = styled.div`
@@ -333,14 +332,6 @@ const FeaturesPage: React.SFC<{}> = () => (
                         <h3>Prefix any GitHub or GitLab URL with <span>gitpod.io/#</span></h3>
                     </section>
                 </div>
-
-                {/* ----- Explore Gitpods ----- */}
-
-                <Details
-                    title="Explore Gitpod"
-                    text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-                    anchors={[{href: '/pricing', text: 'See Pricing'}, {href: '/blog', text: 'See Blog'}]}
-                />
 
         </StyledFeaturesPage>
     </IndexLayout>
