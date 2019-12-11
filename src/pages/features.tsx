@@ -133,7 +133,7 @@ const StyledFeaturesPage = styled.div`
 const otherFeatures = [
     {
         title: "Code Reviews",
-        paragraphs:["pen pull requests in Gitpod to run, navigate, and review the code from within the IDE. Reply to comments and publish code reviews without switching back to GitHub.", <span>Thanks to <a href="#parallel">Parallel</a> and <Link to="/docs/46_prebuilds/">Prebuilt</Link> Workspaces, you can review code within seconds and without stopping your own workspace.</span>],
+        paragraphs:["Open pull requests in Gitpod to run, navigate, and review the code from within the IDE. Reply to comments and publish code reviews without switching back to GitHub.", <span>Thanks to <a href="#parallel">Parallel</a> and <Link to="/docs/46_prebuilds/">Prebuilt</Link> Workspaces, you can review code within seconds and without stopping your own workspace.</span>],
         more: <p>Read more about <Link to="/blog/when-code-reviews-lgtm/">Code Reviews.</Link></p>,
         img:<img alt="Code Review" src={CodeReview}/>,
         id: "code",
@@ -141,8 +141,9 @@ const otherFeatures = [
         colorImgBox: colors.offWhite
     },
     {
-        title: "Web und Desktop Support",
+        title: "Web and Desktop Support",
         paragraphs: ["TBD"],
+        img: <img alt="Web and Desktop Support"/>,
         more: <p>Read more about <Link to="/blog/when-code-reviews-lgtm/">Web und Desktop Support.</Link></p>,
     }
 ]
