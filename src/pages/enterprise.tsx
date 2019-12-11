@@ -9,7 +9,6 @@ import { features } from '../utils/enterprise'
 import Quote from '../components/Quote'
 import Bg from '../components/Bg'
 import ActionCard from '../components/ActionCard'
-import Details from '../components/Details'
 import TrustedBy from '../components/TrustedBy'
 import EnterpriseBg from '../resources/enterprise-bg.png'
 import PricingTable from '../components/PricingTable'
@@ -243,11 +242,6 @@ const EnterprisePage: React.SFC<{}> = () => (
             anchors={[{href: '/schedule-call',text: 'Schedule a Call'}, {href: '/contact', text: 'Contact'}]}
         />
 
-        <Details
-            title="Explore Gitpod"
-            text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-            anchors={[{href: '/features', text: 'See Features'}, {href: '/blog', text: 'See Blog'}]}
-        />
     </IndexLayout>
 )
 

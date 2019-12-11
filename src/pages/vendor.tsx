@@ -10,7 +10,6 @@ import Quote from '../components/Quote'
 import VendorBG from '../resources/vendor-bg.png'
 import Bg from '../components/Bg'
 import ActionCard from '../components/ActionCard'
-import Details from '../components/Details'
 import PricingTable from '../components/PricingTable'
 import Circle from '../components/Circle'
 import Layer from '../resources/layer.svg'
@@ -198,11 +197,6 @@ const VendorPage: React.SFC<{}> = () => (
             anchors={[{href: '/schedule-call',text: 'Schedule a Call'}, {href: '/contact', text: 'Contact'}]}
         />
 
-        <Details
-            title="Explore Gitpod"
-            text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-            anchors={[{href: '/features', text: 'See Features'}, {href: '/blog', text: 'See Blog'}]}
-        />
     </IndexLayout>
 )
 
