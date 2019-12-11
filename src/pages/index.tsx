@@ -347,6 +347,10 @@ const StyledIndexPage = styled.div`
                 }
             }
         }
+
+        h2 {
+            margin-bottom: 3rem;
+        }
     }
 
 `

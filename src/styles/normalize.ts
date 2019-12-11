@@ -106,11 +106,11 @@ export default `
 
     h2 {
         font-size: ${sizes.font.h2};
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
             font-size: 2.6rem;
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
         }
 
         & + p {
