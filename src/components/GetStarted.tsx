@@ -139,6 +139,12 @@ const StyledGetStarted = styled.div`
             }
         }
 
+
+        h2 + p {
+            margin: -3rem 0 4rem;
+            font-size: 2rem;
+        }
+
         /* ----- Projects ----- */
 
         &__projects {
@@ -197,6 +203,7 @@ class GetStarted extends React.Component {
             <StyledGetStarted className="row">
                 <section className="get-started" id="get-started">
                     <h2>Get Started</h2>
+                    <p>30 days of free trial and always free for Open Source.</p>
 
                     <div className="get-started__prefix">
                         <div className="get-started__prefix-text-container">
