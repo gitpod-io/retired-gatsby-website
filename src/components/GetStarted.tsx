@@ -140,7 +140,6 @@ const StyledGetStarted = styled.div`
 
 
         h2 + p {
-            margin: -3rem 0 4rem;
             font-size: 2rem;
         }
 
