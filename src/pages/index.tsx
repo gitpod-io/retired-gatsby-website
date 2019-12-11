@@ -197,7 +197,7 @@ const StyledIndexPage = styled.div`
         &__box {
             display: flex;
             border-radius: 3px;
-            border: ${borders.light};
+            border: 3px solid ${colors.offWhite};
             box-shadow: ${shadows.light};
 
             @media(max-width: ${sizes.breakpoints.md}) {
