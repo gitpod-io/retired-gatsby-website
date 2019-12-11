@@ -15,7 +15,6 @@ import ParallelWorkspaces from '../resources/parallel-workspaces.png'
 import ShareWorkspaces from '../resources/share-workspace.png'
 import CreateASnapshot from '../resources/create-snapshot.png'
 import WorksOnAnyDevice from '../resources/works-on-any-device.png'
-
 import { Link } from 'gatsby'
 
 export const features = [
