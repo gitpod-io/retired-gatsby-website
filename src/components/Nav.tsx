@@ -58,7 +58,8 @@ const StyledNav = styled.nav`
 
             &:not(:last-child) {
                 margin: 0;
-                margin-bottom: 3rem;
+                margin-bottom: 2rem;
+                padding-bottom: 2rem;
                 border-bottom: ${borders.light1};
             }
         }
@@ -131,11 +132,11 @@ const StyledNav = styled.nav`
             left: 0;
 
             @media(max-width: ${sizes.breakpoints.md}) {
-                transform: scale(.9);
+                transform: scale(.8);
             }
 
             @media(max-width: ${sizes.breakpoints.sm}) {
-                transform: scale(.7);
+                transform: scale(.6);
             }
         }
 
