@@ -191,14 +191,10 @@ const StyledGetStarted = styled.div`
             justify-content: space-between;
 
             @media(max-width: ${sizes.breakpoints.lg}) {
-                overflow-x: auto;
-                scroll-padding: 0 50%;
-                scroll-snap-type: x;
             }
 
             & > .project {
                 margin-bottom: 3rem;
-                scroll-snap-align: start;
 
                 @media(min-wdith: ${sizes.breakpoints.md}) {
                     width: 18%;
