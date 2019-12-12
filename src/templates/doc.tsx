@@ -41,7 +41,7 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
     return (
         <>
             <DocsLayout
-                canonical={data.markdownRemark.frontmatter.url || `${data.markdownRemark.fields.slug.toLowerCase()}`} title={`${menuCtx.thisEntry!.title || 'Docs'}`}
+                canonical={data.markdownRemark.frontmatter.url || `${data.markdownRemark.fields.slug.toLowerCase()}`} title={`${menuCtx.thisEntry != undefined ? menuCtx.thisEntry!.title || 'Docs' : 'Docs'}`}
                 body={
                     <div className="article">
                         <h4 style={{ color: colors.textLight, marginBottom: 0, marginTop: 30 }}>Docs</h4>

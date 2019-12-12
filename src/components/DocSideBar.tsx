@@ -49,6 +49,14 @@ const DocSideBar: React.SFC<{}> = () => (
             <Linkset isRendered={true} caption="Subscriptions" path="70_subscriptions">
             </Linkset>
 
+            <Linkset isRendered={true} caption="Self-Hosted" path="self-hosted/latest/self-hosted">
+                <li><Link activeClassName='active' to="/docs/self-hosted/latest/install/01_prepare_install/">Prepare Install</Link></li>
+                <li><Link activeClassName='active' to="/docs/self-hosted/latest/install/10_install_on_kubernetes/">Install on Kubernetes</Link></li>
+                <li><Link activeClassName='active' to="/docs/self-hosted/latest/install/11_install_on_gcp_cli">Install on Google Cloud via CLI</Link></li>
+                <li><Link activeClassName='active' to="/docs/self-hosted/latest/install/12_install_on_gcp_script">Install on Google Cloud via Script</Link></li>
+                <li><Link activeClassName='active' to="/docs/self-hosted/latest/admin/admin">Admin Guide</Link></li>
+            </Linkset>
+
             <Linkset isRendered={true} caption="Release Notes" path="80_release_notes">
                 <li><Link activeClassName='active' to="/docs/release-notes/2019-06-17/june-2019">June 2019</Link></li>
                 <li><Link activeClassName='active' to="/docs/release-notes/2019-04-05/april-2019/">April 2019</Link></li>
