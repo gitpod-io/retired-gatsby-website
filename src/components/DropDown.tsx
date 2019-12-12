@@ -31,7 +31,6 @@ const StyledDropDown = styled.div`
 
     .arrow {
         height: .8rem;
-        transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         margin-left: 1rem;
         @media(max-width: ${sizes.breakpoints.lg}) {
             height: 1rem;
@@ -149,7 +148,6 @@ class DropDown extends React.Component<DropDownProps, {}> {
                         alt="Arrow"
                         className="arrow"
                         src={ArrowDown}
-                        style={ isRendered ? {transform: 'rotate(180deg)'}: {} }
                     />
                 </button>
 
