@@ -12,8 +12,11 @@ const StyledProject = styled.div`
     box-shadow: ${shadows.light};
     font-weight: 600;
 
+    @media(max-width: ${sizes.breakpoints.lg}) {
+        max-width: 24rem;
+    }
+
     @media(max-width: ${sizes.breakpoints.sm}) {
-        min-width: 28rem;
 
         &:not(:last-child) {
             margin-bottom: 3rem;
@@ -34,8 +37,8 @@ const StyledProject = styled.div`
 
 interface ProjectProps {
     image: JSX.Element
-    title: string
-    href: string
+    title: string | JSX.Element
+    href?: string
 }
 
 const Project: React.SFC<ProjectProps> = ({ image, title, href }) => (

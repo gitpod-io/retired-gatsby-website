@@ -182,19 +182,24 @@ const StyledGetStarted = styled.div`
 
         &__projects {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
 
-            @media(max-width: ${sizes.breakpoints.md}) {
-                flex-direction: column;
-                align-items: center;
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                overflow-x: auto;
+                scroll-padding: 0 50%;
+                scroll-snap-type: x;
             }
 
             & > .project {
                 margin-bottom: 3rem;
+                scroll-snap-align: start;
 
                 @media(min-wdith: ${sizes.breakpoints.md}) {
                     width: 18%;
+                }
+
+                @media(max-width: ${sizes.breakpoints.lg}) {
+                    margin-right: 5rem;
                 }
             }
         }
