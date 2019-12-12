@@ -44,6 +44,11 @@ const StyledQuote = styled.section`
                 margin-left: 3rem;
             }
 
+            @media(max-width: ${sizes.breakpoints.md}) {
+                height: 5rem;
+                margin: 0 2rem;
+            }
+
             @media(max-width: ${sizes.breakpoints.sm}) {
                 display: none;
             }
