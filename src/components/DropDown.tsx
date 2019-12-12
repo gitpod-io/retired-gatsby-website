@@ -146,7 +146,8 @@ class DropDown extends React.Component<DropDownProps, {}> {
                         alt="Arrow"
                         className="arrow"
                         src={ArrowDown}
-                    />
+                        style={ isRendered ? {transform: 'rotate(180deg)'}: {} }
+                        />
                 </button>
 
                 <ul  className={ isRendered ? 'shown' : 'hidden' }>
