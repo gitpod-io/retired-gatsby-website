@@ -14,8 +14,11 @@ const StyledFeatureCard = styled.div<{caption: boolean}>`
     }
 
     .text-box {
-        min-width: 27rem;
         padding: 8rem 3rem;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            padding: 5rem 3rem;
+        }
 
         @media(min-width: ${sizes.breakpoints.md}) {
             width: 34%;
@@ -34,6 +37,14 @@ const StyledFeatureCard = styled.div<{caption: boolean}>`
 
         @media(min-width: ${sizes.breakpoints.md}) {
             width: 66%;
+        }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            min-height: 35rem;
+        }
+
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            min-height: 25rem;
         }
 
         img {
