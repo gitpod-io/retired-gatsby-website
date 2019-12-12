@@ -42,7 +42,7 @@ class ReadyToCode extends React.Component {
         const graphicGitpodStyles: React.CSSProperties = {
             transform: 'scale(.9)',
             bottom: '-11.7rem',
-            left: '2.5rem',
+            left: '1rem',
             height: isGraphicGitpodRendered ? '100%' : 0,
             opacity: isGraphicGitpodRendered ? 1 : 0
         }
@@ -50,7 +50,7 @@ class ReadyToCode extends React.Component {
         const graphicOridnaryStyles: React.CSSProperties = {
             transform: 'scale(1.25)',
             bottom: '.5rem',
-            left: '2rem',
+            left: '1rem',
             height: isGraphicOridinaryRendered ? '100%' : 0,
             opacity: isGraphicOridinaryRendered ? 1 : 0
         }

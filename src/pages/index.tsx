@@ -234,7 +234,7 @@ const StyledIndexPage = styled.div`
 
             &--3 {
                 @media(max-width: ${sizes.breakpoints.md}) {
-                    flex-direction: column-reverse;
+                    flex-direction: column;
                 }
             }
 
