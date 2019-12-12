@@ -69,6 +69,11 @@ const StyledGetStarted = styled.div`
                     span {
                         color: ${colors.textDark};
 
+                        @media(max-width: 523px) {
+                            display: block;
+                            margin-bottom: .5rem;
+                        }
+
                         img {
                             margin-right: 1rem;
                             margin-bottom: -.5rem;
@@ -108,9 +113,13 @@ const StyledGetStarted = styled.div`
                     }
 
 
-                    @media(max-width: 550px) {
+                    @media(max-width: 423px) {
                         min-width: 26rem;
                         width: auto;
+                    }
+
+                    @media(max-width: 310px) {
+                        min-width: auto;
                     }
                 }
 
@@ -126,9 +135,6 @@ const StyledGetStarted = styled.div`
                             transform: scale(.5);
                         }
 
-                        @media(max-width: 523px) {
-                            transform: scale(.4);
-                        }
                     }
                 }
 
