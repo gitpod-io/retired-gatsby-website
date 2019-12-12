@@ -18,6 +18,7 @@ const StyledTestimonials = styled.div`
 
     .tweets {
         display: flex;
+        overflow-x: scroll;
         align-items: center;
 
         @media(min-width: ${sizes.breakpoints.md}) {
