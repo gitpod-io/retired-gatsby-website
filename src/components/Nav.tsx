@@ -31,7 +31,7 @@ const StyledNav = styled.nav`
     }
 
     @media(max-width: ${sizes.breakpoints.md}) {
-        padding: 2rem 0;
+        padding: .8rem 0;
     }
 
     img {
@@ -120,7 +120,7 @@ const StyledNav = styled.nav`
             right: 7rem;
 
             @media(max-width: ${sizes.breakpoints.md}) {
-                top: 1.7rem;
+                top: 1.1rem;
                 right: 4rem;
             }
 
@@ -131,17 +131,13 @@ const StyledNav = styled.nav`
 
         img {
             position: absolute;
-            height: 4rem;
+            height: 3.5rem;
             transition: all .3s cubic-bezier(.25,.75,.5,1.25);
             top: 0;
             left: 0;
 
             @media(max-width: ${sizes.breakpoints.md}) {
-                transform: scale(.8);
-            }
-
-            @media(max-width: ${sizes.breakpoints.sm}) {
-                transform: scale(.6);
+                transform: scale(.7);
             }
         }
 
