@@ -133,6 +133,20 @@ export const MENU: MenuEntry[] = [
         "70_subscriptions"
     ),
     M(
+        "Gitpod Self-Hosted",
+        "self-hosted/latest/self-hosted",
+        [
+            M(
+                "Install on Kubernetes",
+                "self-hosted/latest/10_install_on_kubernetes"
+            ),
+            M(
+                "Install on Google Cloud Platform (GCP)",
+                "self-hosted/latest/11_install_on_gcp"
+            )
+        ]
+    ),
+    M(
         "Release Notes",
         "80_release_notes",
         [
