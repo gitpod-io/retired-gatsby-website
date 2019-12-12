@@ -191,6 +191,7 @@ const StyledGetStarted = styled.div`
             justify-content: space-between;
 
             @media(max-width: ${sizes.breakpoints.lg}) {
+                overflow-x: scroll;
             }
 
             & > .project {
