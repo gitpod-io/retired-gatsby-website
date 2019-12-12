@@ -232,11 +232,18 @@ const StyledIndexPage = styled.div`
                 }
             }
 
+            &--2 {
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    flex-direction: column-reverse;
+                }
+            }
+
             &--3 {
                 @media(max-width: ${sizes.breakpoints.md}) {
                     flex-direction: column;
                 }
             }
+
 
         }
 
