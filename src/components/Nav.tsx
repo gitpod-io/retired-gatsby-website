@@ -16,9 +16,18 @@ const StyledNav = styled.nav`
     padding: 4rem 0;
     background: ${colors.offWhite};
 
-    @media (max-width: ${sizes.breakpoints.lg}) {
+    @media(max-width: ${sizes.breakpoints.lg}) {
+        font-size: 110%;
         display: block;
-        font-size: 120%;
+    }
+
+    @media(max-width: ${sizes.breakpoints.md}) {
+        font-size: 100%;
+    }
+
+    @media(max-width: ${sizes.breakpoints.sm}) {
+        font-size: 95%;
+        display: block;
     }
 
     @media(max-width: ${sizes.breakpoints.md}) {
@@ -29,37 +38,39 @@ const StyledNav = styled.nav`
         height: 4rem;
     }
 
-    ul {
+    .nav__items {
         display: flex;
         align-items: center;
-        transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
+
         @media(max-width: ${sizes.breakpoints.lg}) {
-            position: absolute;
-            top: 16%;
-            left: 0;
             flex-direction: column;
             width: 100vw;
-            height: 88vh;
+            min-height: 95vh;
             justify-content: center;
             align-items: center;
             background: ${colors.offWhite};
             z-index: 1;
         }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            min-height: 97vh;
+        }
     }
 
-    li {
+    .nav__item {
 
-        &:not(:last-child) {
-            margin-right: 5rem;
+        @media(min-width: ${sizes.breakpoints.lg}) {
+
+            &:not(:last-child) {
+                margin-right: 5rem;
+            }
         }
 
         @media(max-width: ${sizes.breakpoints.lg}) {
             width: 100%;
+            padding: 2rem 0;
 
             &:not(:last-child) {
-                margin: 0;
-                margin-bottom: 2rem;
-                padding-bottom: 2rem;
                 border-bottom: ${borders.light1};
             }
         }
@@ -70,19 +81,13 @@ const StyledNav = styled.nav`
     }
 
     .link {
+        display: inline-block;
         position: relative;
         color: ${colors.text};
-        padding-bottom: .8rem;
         font-weight: 400;
 
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 100%;
-            border-bottom: 2px solid ${colors.white};
-            transition: all .4s cubic-bezier(0,.5,0, 1);
+        @media(max-width: ${sizes.breakpoints.lg}) {
+            width: 100%;
         }
 
         &:hover,
@@ -167,12 +172,8 @@ const StyledNav = styled.nav`
             width: 100%;
             margin: 0 auto;
 
-            @media(max-width: ${sizes.breakpoints.lg}) {
-                padding: 0 7rem;
-            }
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                padding: 0 4rem;
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                padding: 0 1rem;
             }
         }
 
@@ -252,11 +253,11 @@ class Nav extends React.Component {
                             </div>
 
                             { isNavRendered ? (
-                                <ul className={ isNavRendered ? 'shown container' : 'hiden' }>
-                                    <li><Link tabIndex={ isNavRendered ? 0 : -1 } to='/features' className="link">Features</Link></li>
-                                    <li><Link tabIndex={ isNavRendered ? 0 : -1 } to='/pricing' className="link">Pricing</Link></li>
-                                    <li><Link tabIndex={ isNavRendered ? 0 : -1 } to='/enterprise' className="link">Enterprise</Link></li>
-                                    <li>
+                                <ul className={ isNavRendered ? 'shown container nav__items' : 'hiden' }>
+                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/features' className="link">Features</Link></li>
+                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/pricing' className="link">Pricing</Link></li>
+                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/enterprise' className="link">Enterprise</Link></li>
+                                    <li className="nav__item">
                                         <DropDown
                                             title="Solutions"
                                             links={[
@@ -275,7 +276,7 @@ class Nav extends React.Component {
                                             ]}
                                         />
                                     </li>
-                                    <li>
+                                    <li className="nav__item">
                                         <DropDown
                                             title="Resources"
                                             links={[
@@ -295,7 +296,7 @@ class Nav extends React.Component {
                                             ]}
                                         />
                                     </li>
-                                    <li><Link tabIndex={ isNavRendered ? 0 : -1 } to="/#get-started" className="btn btn--cta">Start for Free</Link></li>
+                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to="/#get-started" className="btn btn--cta">Start for Free</Link></li>
                                 </ul>
                             ) : null }
                     </StyledNav>

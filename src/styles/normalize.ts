@@ -225,6 +225,10 @@ export default `
         }
     }
 
+    .active {
+        color: ${colors.link} !important;
+    }
+
 
     /* ------------------------------------------- */
     /* ----- Inputs ----- */
