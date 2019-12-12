@@ -70,8 +70,6 @@ const StyledDropDown = styled.div`
         }
 
         @media(max-width: ${sizes.breakpoints.lg}) {
-            opacity: .8;
-
             &:not(:last-child) {
                 margin-top: 1rem;
             }
