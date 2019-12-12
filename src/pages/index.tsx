@@ -312,13 +312,17 @@ const StyledIndexPage = styled.div`
     /* ------------------------------------------- */
 
     .open-source {
-        background: ${colors.offWhite};
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            background: ${colors.white};
+            box-shadow: ${shadows.light};
+        }
 
         &__content {
             display: flex;
             align-items: center;
 
-            @media(max-width: ${sizes.breakpoints.md}) {
+            @media(max-width: ${sizes.breakpoints.lg}) {
                 flex-direction: column;
 
                 img {
@@ -329,19 +333,26 @@ const StyledIndexPage = styled.div`
             img {
                 max-width: 85rem;
 
-                @media(max-width: ${sizes.breakpoints.sm}) {
-                    transform: scale(1.07) translateY(-1rem);
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    transform: scale(1.08) translateY(-1rem);
                 }
             }
         }
 
         &__text {
             padding: 8rem 2rem;
-            background: ${colors.white};
-            box-shadow: ${shadows.light};
             transform: translateY(-1rem);
 
-            @media(max-width: ${sizes.breakpoints.md}) {
+            @media(max-wdith: ${sizes.breakpoints.lg}) {
+                padding: 2rem 3rem;
+            }
+
+            @media(min-width: ${sizes.breakpoints.md}) {
+                background: ${colors.white};
+                box-shadow: ${shadows.light};
+            }
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
                 br {
                     display: none;
                 }
@@ -499,20 +510,25 @@ const IndexPage: React.SFC<{}> = () => (
 
             {/* ----- Section Open Source ----- */}
 
-            <section className="open-source">
+            <div className="grey-container">
                 <div className="row">
-                    <h2>Free for Open-Source</h2>
-                    <div className="open-source__content">
-                            <img alt="Ant Design Workspace" src={AntDesignWorkspace} />
-                            <div className="open-source__text">
-                                <h3>Giving Back to <br/>Open-Source!</h3>
-                                <p>Gitpod is built on open-source and wouldn’t exist without it.</p>
-                                <p>Did you know that you can see all contributor-friendly open-source projects at one glance?</p>
-                                <p>Find your next project on <a href="https://contribute.dev" target="_blank">contribute.dev!</a></p>
+                    <section>
+                            <h2>Free for Open-Source</h2>
+                            <div className="open-source">
+                                <div className="open-source__content">
+                                        <img alt="Ant Design Workspace" src={AntDesignWorkspace} />
+                                        <div className="open-source__text">
+                                            <h3>Giving Back to <br/>Open-Source!</h3>
+                                            <p>Gitpod is built on open-source and wouldn’t exist without it.</p>
+                                            <p>Did you know that you can see all contributor-friendly open-source projects at one glance?</p>
+                                            <p>Find your next project on <a href="https://contribute.dev" target="_blank">contribute.dev!</a></p>
+                                        </div>
+                                </div>
                             </div>
-                    </div>
+                    </section>
                 </div>
-            </section>
+            </div>
+
 
             {/* ----- Section Explore Gitpod ----- */}
 
