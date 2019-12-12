@@ -359,7 +359,7 @@ const StyledIndexPage = styled.div`
                 box-shadow: ${shadows.light};
             }
 
-            @media(max-width: ${sizes.breakpoints.sm}) {
+            @media(max-width: ${sizes.breakpoints.lg}) {
                 br {
                     display: none;
                 }
