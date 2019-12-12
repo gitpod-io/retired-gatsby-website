@@ -40,25 +40,46 @@ const StyledGetStarted = styled.div`
                 border-radius: 100px;
                 font-size: 1.7rem;
 
-                @media(max-width: 660px) {
-                    font-size: 1.5rem;
+                @media(max-width: 690px) {
+                    font-size: 1.4rem;
                     width: 99%;
                     padding: .5rem 2rem;
                 }
 
+                @media(max-width: 600px) {
+                    font-size: 1.3rem;
+                }
+
+                @media(max-width: 523px) {
+                    padding: 4rem 1rem 4rem;
+                }
+
+
                 & > div {
                     margin-right: auto;
+
+                    @media(max-width: 523px) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 2rem 0;
+                        transform: translateY(-1rem);
+                    }
 
                     span {
                         color: ${colors.textDark};
 
-                        @media(max-width: 650px) {
-                            display: none;
-                        }
-
                         img {
                             margin-right: 1rem;
                             margin-bottom: -.5rem;
+
+                            @media(max-width: 600px) {
+                                transform: scale(.5);
+                            }
+
+                            @media(max-width: 600px) {
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -73,12 +94,22 @@ const StyledGetStarted = styled.div`
                     width: 44rem;
                     border-radius: 2px;
 
-
                     @media(max-width: ${sizes.breakpoints.md}) {
                         width: 44.5rem;
                     }
 
+                    @media(max-width: 690px) {
+                       width: 38rem;
+                    }
+
+                    @media(max-width: 600px) {
+                       width: 34rem;
+                       padding: .6rem .2rem;
+                    }
+
+
                     @media(max-width: 550px) {
+                        min-width: 26rem;
                         width: auto;
                     }
                 }
@@ -86,9 +117,17 @@ const StyledGetStarted = styled.div`
                 a {
                     transform: translateY(.3rem);
 
-                    @media(max-width: 660px) {
-                        img {
+                    img {
+                        @media(max-width: 660px) {
                             transform: scale(.7);
+                        }
+
+                        @media(max-width: 600px) {
+                            transform: scale(.5);
+                        }
+
+                        @media(max-width: 523px) {
+                            transform: scale(.4);
                         }
                     }
                 }
