@@ -6,12 +6,13 @@ import NotFoundImage from '../resources/icon-404.png'
 import { sizes } from '../styles/variables'
 
 const StyledNotFoundPage = styled.div`
-    height: 65vh;
+    height: 75vh;
     display: flex;
     align-items: center;
 
     h1 {
         text-align: center;
+        margin: 0 auto;
     }
 
     img {

@@ -7,7 +7,6 @@ import { colors, sizes, borders } from '../styles/variables'
 import DropDown from '../components/DropDown'
 import Hamburger from '../resources/hamburger.svg'
 import Multiply from '../resources/multiply.svg'
-import External from '../resources/external.svg'
 
 const StyledNav = styled.nav`
     display: flex;
@@ -61,33 +60,6 @@ const StyledNav = styled.nav`
 
         &:last-child {
             margin-left: -1rem;
-        }
-    }
-
-    .link {
-        position: relative;
-        color: ${colors.text};
-        padding-bottom: .8rem;
-        font-weight: 400;
-
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 100%;
-            border-bottom: 2px solid ${colors.white};
-            transition: all .4s cubic-bezier(0,.5,0, 1);
-        }
-
-        &:hover,
-        &:focus {
-            color: ${colors.link};
-
-            &::after {
-                right: 0;
-                border-color: ${colors.link};
-            }
         }
     }
 
@@ -282,7 +254,7 @@ class Nav extends React.Component {
                                                     to: '/blog'
                                                 },
                                                 {
-                                                    text: <span>Community&nbsp;<img alt="External Link" src={External} style={{height: '1.5rem', transform: 'translate(.5rem, .3rem)'}}/></span>,
+                                                    text: 'Community',
                                                     to: 'https://spectrum.chat/gitpod/',
                                                     target: true
                                                 }

@@ -7,6 +7,7 @@ import Twitter from '../resources/twitter.svg'
 import Github from '../resources/github.svg'
 import Mail from '../resources/mail.svg'
 import Spectrum from '../resources/spectrum.svg'
+import ExternalLink from './ExternalLink'
 
 const StyledFooter = styled.footer`
     background: ${colors.offWhite};
@@ -82,6 +83,7 @@ const StyledFooter = styled.footer`
             margin-bottom: 2rem;
         }
     }
+
 `
 
 const Footer: React.SFC<{}> = () => (
@@ -106,13 +108,28 @@ const Footer: React.SFC<{}> = () => (
                     <li>Developer</li>
                     <li><Link to="/#get-started">Getting started</Link></li>
                     <li><Link to="/docs">Documentation</Link></li>
-                    <li><a href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md" target="_blank">Report a Bug</a></li>
-                    <li><a href="https://spectrum.chat/gitpod" target="_blank">Community</a></li>
+                    <li>
+                        <ExternalLink
+                            href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
+                            text="Report a Bug"
+                        />
+                    </li>
+                    <li>
+                        <ExternalLink
+                            href="https://spectrum.chat/gitpod"
+                            text="Community"
+                        />
+                    </li>
                 </ul>
                 <ul>
                     <li>Company</li>
                     <li><Link to="/about">About</Link></li>
-                    <li><a href="https://typefox.io/careers" target="_blank">Career</a></li>
+                    <li>
+                        <ExternalLink
+                            href="https://typefox.io/careers"
+                            text="Career"
+                        />
+                    </li>
                     <li><Link to="/media-kit">Media Kit</Link></li>
                 </ul>
                 <ul className="contact">

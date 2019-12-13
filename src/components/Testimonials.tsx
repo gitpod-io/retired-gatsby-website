@@ -13,7 +13,7 @@ const StyledTestimonials = styled.div`
     /* ------------------------------------------- */
 
     h2 {
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
 
     .tweets {
@@ -58,8 +58,8 @@ const StyledTestimonials = styled.div`
 const twitterOptions = { theme: 'light', dnt: true, cards: 'hidden' };
 
 const tweets = [
-    '1191710936605831169',
     '1102215129696010240',
+    '1191710936605831169',
     '1167463499779338243',
     '1131239314346729482',
     '1117695539540365312',
