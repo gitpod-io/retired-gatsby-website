@@ -5,8 +5,7 @@ import { Link } from 'gatsby'
 import GitpodLogoDark from '../resources/gitpod-logo-dark.svg'
 import { colors, sizes, borders } from '../styles/variables'
 import DropDown from '../components/DropDown'
-import Hamburger from '../resources/hamburger.svg'
-import Multiply from '../resources/multiply.svg'
+import External from '../resources/external.svg'
 
 const StyledNav = styled.nav`
     display: flex;
@@ -15,45 +14,61 @@ const StyledNav = styled.nav`
     padding: 4rem 0;
     background: ${colors.offWhite};
 
-    @media (max-width: ${sizes.breakpoints.lg}) {
+    @media(max-width: ${sizes.breakpoints.lg}) {
+        font-size: 110%;
         display: block;
-        font-size: 120%;
+    }
+
+    @media(max-width: ${sizes.breakpoints.md}) {
+        font-size: 100%;
+    }
+
+    @media(max-width: ${sizes.breakpoints.sm}) {
+        font-size: 95%;
+        display: block;
+    }
+
+    @media(max-width: ${sizes.breakpoints.md}) {
+        padding: .8rem 0;
     }
 
     img {
         height: 4rem;
     }
 
-    ul {
+    .nav__items {
         display: flex;
         align-items: center;
-        transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
+
         @media(max-width: ${sizes.breakpoints.lg}) {
-            position: absolute;
-            top: 16%;
-            left: 0;
             flex-direction: column;
             width: 100vw;
-            height: 88vh;
+            min-height: 95vh;
             justify-content: center;
             align-items: center;
             background: ${colors.offWhite};
             z-index: 1;
         }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            min-height: 97vh;
+        }
     }
 
-    li {
+    .nav__item {
 
-        &:not(:last-child) {
-            margin-right: 5rem;
+        @media(min-width: ${sizes.breakpoints.lg}) {
+
+            &:not(:last-child) {
+                margin-right: 5rem;
+            }
         }
 
         @media(max-width: ${sizes.breakpoints.lg}) {
             width: 100%;
+            padding: 2rem 0;
 
             &:not(:last-child) {
-                margin: 0;
-                margin-bottom: 3rem;
                 border-bottom: ${borders.light1};
             }
         }
@@ -74,14 +89,20 @@ const StyledNav = styled.nav`
 
         &:hover {
             background: ${colors.offWhite};
+
+            svg {
+                stroke: ${colors.link};
+                fill: ${colors.link};
+            }
         }
 
         &-container {
             position: absolute;
-            top: 3.8rem;
+            top: 3.7rem;
             right: 7rem;
 
             @media(max-width: ${sizes.breakpoints.md}) {
+                top: 1.1rem;
                 right: 4rem;
             }
 
@@ -90,18 +111,27 @@ const StyledNav = styled.nav`
             }
         }
 
-        img {
+        svg {
             position: absolute;
-            height: 4rem;
+            height: 3.5rem;
             transition: all .3s cubic-bezier(.25,.75,.5,1.25);
             top: 0;
             left: 0;
+            fill: ${colors.text};
+            stroke: ${colors.text};
 
-            @media(max-width: ${sizes.breakpoints.md}) {
-                transform: scale(.9);
+            &#hamburger {
+
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    transform: scale(0.55) translateX(-1.3rem);
+                }
+
+                @media(min-width: ${sizes.breakpoints.md}) {
+                    transform: scale(.8) translateX(-1rem);
+                }
             }
 
-            @media(max-width: ${sizes.breakpoints.sm}) {
+            @media(max-width: ${sizes.breakpoints.md}) {
                 transform: scale(.7);
             }
         }
@@ -133,12 +163,8 @@ const StyledNav = styled.nav`
             width: 100%;
             margin: 0 auto;
 
-            @media(max-width: ${sizes.breakpoints.lg}) {
-                padding: 0 7rem;
-            }
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                padding: 0 4rem;
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                padding: 0 1rem;
             }
         }
 
@@ -202,27 +228,33 @@ class Nav extends React.Component {
                                     aria-label={ isNavRendered ? "Hide the Navigation Items" : "Show the Navigation Items"}
                                     onClick={this.toggleNavigation}
                                 >
-                                    <img
-                                        src={Multiply}
-                                        alt="close menu icon"
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.112 31.112"
                                         className={ isNavRendered ? 'is-shown--multiply' : 'is-hidden' }
                                         aria-hidden={ isNavRendered ? false : true }
-                                    />
-                                    <img
-                                        src={Hamburger}
-                                        alt="hamburger menu icon"
+                                    >
+                                        <title>close menu icon</title>
+                                        <path d="M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z"/>
+                                    </svg>
+                                    <svg
                                         className={ isNavRendered ? 'is-hidden' : 'is-shown' }
                                         aria-hidden={ isNavRendered ? true : false }
-                                    />
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 26 18"
+                                        id="hamburger"
+                                    >
+                                        <title>hamburger menu icon</title>
+                                        <g transform="translate(-647.5 -86.5)" strokeWidth="2"><line x2="24" transform="translate(648.5 87.5)"/><line x2="24" transform="translate(648.5 95.5)"/><line x2="24" transform="translate(648.5 103.5)"/></g>
+                                    </svg>
                                 </button>
                             </div>
 
                             { isNavRendered ? (
-                                <ul className={ isNavRendered ? 'shown container' : 'hiden' }>
-                                    <li><Link tabIndex={ isNavRendered ? 0 : -1 } to='/features' className="link">Features</Link></li>
-                                    <li><Link tabIndex={ isNavRendered ? 0 : -1 } to='/pricing' className="link">Pricing</Link></li>
-                                    <li><Link tabIndex={ isNavRendered ? 0 : -1 } to='/enterprise' className="link">Enterprise</Link></li>
-                                    <li>
+                                <ul className={ isNavRendered ? 'shown container nav__items' : 'hiden' }>
+                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/features' className="link">Features</Link></li>
+                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/pricing' className="link">Pricing</Link></li>
+                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/enterprise' className="link">Enterprise</Link></li>
+                                    <li className="nav__item">
                                         <DropDown
                                             title="Solutions"
                                             links={[
@@ -241,7 +273,7 @@ class Nav extends React.Component {
                                             ]}
                                         />
                                     </li>
-                                    <li>
+                                    <li className="nav__item">
                                         <DropDown
                                             title="Resources"
                                             links={[
@@ -261,7 +293,7 @@ class Nav extends React.Component {
                                             ]}
                                         />
                                     </li>
-                                    <li><Link tabIndex={ isNavRendered ? 0 : -1 } to="/#get-started" className="btn btn--cta">Start for Free</Link></li>
+                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to="/#get-started" className="btn btn--cta">Start for Free</Link></li>
                                 </ul>
                             ) : null }
                     </StyledNav>

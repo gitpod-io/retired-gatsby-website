@@ -225,6 +225,10 @@ export default `
         }
     }
 
+    .active {
+        color: ${colors.link} !important;
+    }
+
     .link {
         position: relative;
         color: ${colors.text};
