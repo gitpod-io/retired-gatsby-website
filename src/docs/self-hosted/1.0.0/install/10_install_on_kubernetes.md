@@ -26,20 +26,21 @@ Once you know your IP address, configure your three domain names to resolve to t
 
 ### OAuth integration
 Gitpod delegates authentication to a configurable [OAuth provider](../01_prepare_install/#user-authorization-and-git-integration).
-See [here](/30_oauth.md) how to set up GitHub or Gitlab to act as OAuth provider.
+Follow [these steps](../30_oauth) to set up GitHub or Gitlab to act as OAuth provider.
 
 ### HTTPS certificates or external Docker registry
 Gitpod builds docker images on demand and runs them in Kubernetes pods as workspaces.
 Since Kubernetes by default only pulls images from secure Docker registries,
-you will either need to have [HTTPS certificates](34_https_certs.md) configured if you want to use the internal docker registry,
-or use an [external docker registry](35_docker_registry.md).
+you will either need to have [HTTPS certificates](../34_https_certs) configured if you want to use the internal docker registry,
+or use an [external docker registry](../35_docker_registry).
 
 ## Recommended Configuration
 
 Highly recommended for production use.
 
-* **Docker Registry**: [HTTPS certificates](34_https_certs.md)
-* **Database**: Gitpod stores information about users, workspaces etc. in a MySQL database. [Configure your own](36_database.md).
+* [**Docker Registry**](../35_docker_registry): Use your own Docker registry instead of the unreliable builtin one.
+* [**Docker Registry**](../34_https_certs): Configure HTTPS certificates for secure access to Gitpod.
+* [**Database**](../36_database): Use your own MySQL database instead of the unrelibale builtin one.
 
 ## Optional Configuration
 
@@ -57,6 +58,6 @@ Launch a workpace. Launching the first workspace can take significantly longer (
 
 ## Customization
 
-* **Storage**: Gitpod creates a backup of workspaces when they're shut down. [Configure where the backup is stored](32_storage.md).
-* **Kubernetes Nodes**: Configure file system layout and the workspace's node associativity. [link](33_nodes.md).
-* **Workspaces**: [workspace sizing and cloud density](docs/21_workspaces.md).
+* [**Storage**](../32_storage): Configure where Gitpod stores the contents of stopped workspaces.
+* [**Kubernetes Nodes**:](../33_nodes): Configure file system layout and the workspace's node associativity.
+* [**Workspaces**](31_workspaces): Configure workspace sizing.
