@@ -106,11 +106,11 @@ export default `
 
     h2 {
         font-size: ${sizes.font.h2};
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
             font-size: 2.6rem;
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
         }
 
         & + p {
@@ -227,6 +227,37 @@ export default `
 
     .active {
         color: ${colors.link} !important;
+    }
+
+    .link {
+        position: relative;
+        color: ${colors.text};
+        padding-bottom: .8rem;
+        font-weight: 400;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 100%;
+            border-bottom: 2px solid ${colors.white};
+            transition: all .4s cubic-bezier(0,.5,0, 1);
+        }
+
+        &:hover,
+        &:focus {
+            color: ${colors.link};
+
+            svg {
+                fill: ${colors.link};
+            }
+
+            &::after {
+                right: 0;
+                border-color: ${colors.link};
+            }
+        }
     }
 
 

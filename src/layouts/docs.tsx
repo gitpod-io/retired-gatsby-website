@@ -9,27 +9,91 @@ import DocTopicChooser from '../components/DocTopicChooser'
 
 const StyledDocsLayout = styled.div`
 
+    .grey-container {
+        padding-top: 10rem;
+
+        @media(max-width: ${sizes.breakpoints.lg}) {
+            padding-top: 5rem;
+        }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            padding-top: 2rem;
+        }
+    }
+
     .content {
         display: flex;
-        justify-content: space-between;
-        padding-bottom: 10rem;
+        box-shadow: ${shadows.light};
 
-        @media (max-width: ${sizes.breakpoints.md}) {
+        @media (max-width: ${sizes.breakpoints.lg}) {
             flex-direction: column;
+        }
+
+    }
+
+    .article {
+        position: relative;
+        background: ${colors.white};
+        min-height: 100%;
+        padding: 3rem 1rem;
+        position: relative;
+
+        @media(min-width: ${sizes.breakpoints.lg}) {
+            width: 70%;
+        }
+
+        @media(min-width: ${sizes.breakpoints.md}) {
+            padding: 5rem;
+        }
+
+        h1 {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            margin: 6rem 0 5rem;
+        }
+
+        h3 {
+            margin: 5rem 0 1rem;
+        }
+
+        h4 {
+            margin: 3rem 0 1rem;
+        }
+
+        ul, ol {
+            margin: 3rem 0;
+        }
+
+        li {
+            font-weight: 300;
+
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                list-style-position: inside;
+            }
+        }
+
+        li + li {
+            margin-top: 2rem;
+        }
+
+        pre {
+            margin: 1.5rem 0;
         }
     }
 
     .sidebar {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        width: 32rem;
-        margin-top: 10rem;
         padding: 3rem 1rem;
         background: ${colors.offWhite};
-        box-shadow: ${shadows.light};
 
-        @media(max-width: ${sizes.breakpoints.md}) {
+        @media(min-width: ${sizes.breakpoints.lg}) {
+            width: 30%;
+        }
+
+        @media(max-width: ${sizes.breakpoints.lg}) {
             display: none;
         }
     }
@@ -54,60 +118,20 @@ const StyledDocsLayout = styled.div`
         background-repeat: no-repeat, repeat;
         background-position: right 1.7em top 50%, 0 0;
         background-size: 1.65em auto, 100%;
-        @media(min-width: ${sizes.breakpoints.md}) {
+        @media(min-width: ${sizes.breakpoints.lg}) {
             display: none;
         }
     }
 
-    .article {
-        max-width: 80rem;
-
-
-        &__container {
-            background: ${colors.white};
-            box-shadow: ${shadows.light};
-            padding: 3rem 1rem;
-            position: relative;
-            margin-top: 10rem;
-
-            @media(min-width: ${sizes.breakpoints.md}) {
-                padding: 5rem;
-            }
-        }
-
-        h1 {
-            margin-bottom: 3rem;
-        }
-
-        h2 {
-            margin: 6rem 0 3rem;
-        }
-
-        ul, ol {
-            margin: 3rem 0;
-        }
-
-        li {
-            font-weight: 300;
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                list-style-position: inside;
-            }
-        }
-
-        li + li {
-            margin-top: 2rem;
-        }
-
-        pre {
-            margin: 1.5rem 0;
-        }
-
+    .pen-container {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
     }
 
     .arrows {
         text-align: center;
-        margin: 10rem 0;
+        padding: 10rem 0;
     }
 
     .prev,
@@ -131,18 +155,21 @@ const StyledDocsLayout = styled.div`
 interface DocsLayoutProps {
     canonical: string
     title: string
+    body: JSX.Element
+    arrows: JSX.Element
 }
 
-const DocsLayout: React.SFC<DocsLayoutProps> = ({ children, canonical, title}) => (
+const DocsLayout: React.SFC<DocsLayoutProps> = ({canonical, title, body , arrows}) => (
     <IndexLayout canonical={canonical} title={title}>
         <StyledDocsLayout>
             <div className="grey-container">
-                <div className="content row">
-                    <div>
-                        <DocSideBar />
-                        <DocTopicChooser />
-                    </div>
-                    {children}
+                    <div className="row">
+                        <div className="content">
+                                <DocSideBar />
+                                <DocTopicChooser />
+                                {body}
+                        </div>
+                    {arrows}
                 </div>
             </div>
         </StyledDocsLayout>

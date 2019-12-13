@@ -78,27 +78,6 @@ const StyledNav = styled.nav`
         }
     }
 
-    .link {
-        display: inline-block;
-        position: relative;
-        color: ${colors.text};
-        font-weight: 400;
-
-        @media(max-width: ${sizes.breakpoints.lg}) {
-            width: 100%;
-        }
-
-        &:hover,
-        &:focus {
-            color: ${colors.link};
-
-            &::after {
-                right: 0;
-                border-color: ${colors.link};
-            }
-        }
-    }
-
     .nav__btn {
         position: relative;
         background: ${colors.offWhite};
@@ -307,7 +286,7 @@ class Nav extends React.Component {
                                                     to: '/blog'
                                                 },
                                                 {
-                                                    text: <span>Community&nbsp;<img alt="External Link" src={External} style={{height: '1.5rem', transform: 'translate(.5rem, .3rem)'}}/></span>,
+                                                    text: 'Community',
                                                     to: 'https://spectrum.chat/gitpod/',
                                                     target: true
                                                 }

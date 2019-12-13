@@ -15,7 +15,6 @@ import ParallelWorkspaces from '../resources/parallel-workspaces.png'
 import ShareWorkspaces from '../resources/share-workspace.png'
 import CreateASnapshot from '../resources/create-snapshot.png'
 import WorksOnAnyDevice from '../resources/works-on-any-device.png'
-
 import { Link } from 'gatsby'
 
 export const features = [
@@ -76,7 +75,7 @@ export const features = [
     {
         alt: 'Language Support',
         img: IconLanguage,
-        text: 'Language Support',
+        text: <span>Language<br/>Support</span>,
         path: 'lang'
     }
 ]
@@ -123,7 +122,7 @@ export const featuresCardsData = [
         title: "Share a Running Workspace",
         paragraphs:["Collaborate with your friends and colleagues and hunt down bugs together."],
         more: <p>Read more about <Link to="/docs/33_sharing_and_collaboration/">Sharing a Workspace.</Link></p>,
-        img:<img alt="Share a Running Workspace" src={ShareWorkspaces}/>,
+        img:<img alt="Share a Running Workspace" style={{transform: 'translateY(2rem)'}} src={ShareWorkspaces}/>,
         id: 'share'
     },
     {

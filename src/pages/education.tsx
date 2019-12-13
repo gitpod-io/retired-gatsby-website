@@ -10,7 +10,6 @@ import Quote from '../components/Quote'
 import CollegeStudents from '../resources/college-students.png'
 import Bg from '../components/Bg'
 import ActionCard from '../components/ActionCard'
-import Details from '../components/Details'
 import styled from '@emotion/styled'
 import { colors } from '../styles/variables'
 import PricingTable from '../components/PricingTable'
@@ -227,11 +226,6 @@ const EducationPage: React.SFC<{}> = () => (
             </StyledHeading>
         </div>
 
-        <Details
-            title="Explore Gitpod"
-            text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-            anchors={[{href: '/features', text: 'Features'}, {href: '/blog', text: 'See Blog'}]}
-        />
     </IndexLayout>
 )
 
