@@ -19,7 +19,11 @@ In the following we describe the supported contexts and what they do:
 Creating a Gitpod workspace from the project's base URL does not carry a lot of context.
 Gitpod will check out the `master` branch and open the `Readme.md` if it exists.
 
-An example for this context is `https://github.com/arunoda/learnnextjs-demo`.
+An example for this context is:
+
+```
+https://github.com/arunoda/learnnextjs-demo
+```
 
 ## GitHub File Context
 
@@ -43,7 +47,12 @@ https://github.com/arunoda/learnnextjs-demo/tree/create-dynamic-pages/pages
 When starting a workspace from a GitHub issue, a local branch named `GH-{issue-number}` will be
 created, based on the remote's default branch. In most cases that will be `origin/master`.
 
-In addition, the commit message is preconfigured with `fixes #{organization}/{repo}#{issue-number}`.
+In addition, the commit message is preconfigured with:
+
+```
+fixes #{organization}/{repo}#{issue-number}
+```
+
 This will automatically close the GitHub issue once such a commit is merged into the default branch.
 
 As soon as changes have been committed locally, the `Pull Request` view on the right can be used to
