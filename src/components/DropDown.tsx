@@ -13,10 +13,11 @@ const StyledDropDown = styled.div`
     }
 
     button {
+        cursor: pointer;
         display: flex;
         align-items: center;
         border: none;
-        transition: all .2s;
+        transition: all .1s;
         max-width: 20rem;
 
         &:hover,
@@ -57,7 +58,7 @@ const StyledDropDown = styled.div`
             padding: .5rem 0 1rem;
             background: ${colors.offWhite};
             box-shadow: ${shadows.light};
-            transition: all .4s cubic-bezier(0.86, 0, 0.07, 1);
+            transition: all .1s cubic-bezier(0.86, 0, 0.07, 1);
         }
     }
 
