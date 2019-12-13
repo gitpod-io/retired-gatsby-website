@@ -26,6 +26,7 @@ Once you know your IP address, configure your three domain names to resolve to t
 
 ### OAuth integration
 Gitpod delegates authentication to a configurable [OAuth provider](../01_prepare_install/#user-authorization-and-git-integration).
+
 Follow [these steps](../30_oauth) to set up GitHub or Gitlab to act as OAuth provider.
 
 ### HTTPS certificates or external Docker registry
@@ -36,15 +37,12 @@ or use an [external docker registry](../35_docker_registry).
 
 ## Recommended Configuration
 
-Highly recommended for production use.
+To get Gitpod running quickly, you may skip this chapter.
+For production scenarios, however, we highly recomend this configuration.
 
 * [**Docker Registry**](../35_docker_registry): Use your own Docker registry instead of the unreliable builtin one.
-* [**Docker Registry**](../34_https_certs): Configure HTTPS certificates for secure access to Gitpod.
+* [**HTTPS certificates**](../34_https_certs): Configure HTTPS certificates for secure access to Gitpod.
 * [**Database**](../36_database): Use your own MySQL database instead of the unrelibale builtin one.
-
-## Optional Configuration
-
-Optimize Gitpod for your use.
 
 ## Installation
 ```
@@ -53,11 +51,11 @@ helm dep update
 helm upgrade --install $(for i in $(cat configuration.txt); do echo -e "-f $i"; done) gitpod .
 ```
 
-Visit `https://<your-domain.com>/workspaces` and check that you can login and start workspaces just like on gitpod.io.
+Visit `https://<your-domain.com>/` and check that you can login and start workspaces just like on gitpod.io.
 Launch a workpace. Launching the first workspace can take significantly longer (up to 15min), because docker images are pulled.
 
 ## Customization
 
-* [**Storage**](../32_storage): Configure where Gitpod stores the contents of stopped workspaces.
+* [**Storage**](../32_storage): Configure where Gitpod stores stopped workspaces.
 * [**Kubernetes Nodes**:](../33_nodes): Configure file system layout and the workspace's node associativity.
 * [**Workspaces**](31_workspaces): Configure workspace sizing.

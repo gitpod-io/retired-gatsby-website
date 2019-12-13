@@ -137,6 +137,9 @@ export const MENU: MenuEntry[] = [
         "self-hosted/latest/self-hosted",
         [
             M(
+                "Prepare Install",
+                "self-hosted/latest/install/01_prepare_install/"
+            ),M(
                 "Install on Kubernetes",
                 "self-hosted/latest/install/10_install_on_kubernetes/"
             ),
