@@ -5,37 +5,24 @@
  * [Changes Are Saved](#changes-are-saved)
 
 Gitpod makes creating fresh workspaces as easy as clicking a button on a GitHub page.
-In most cases it is easier to create fresh workspaces rather than going back to older ones.
-See the [dashboard documentation](/docs/60_dashboard/) on where to find your workspace history
-and how to restart the older workspaces.
+Gitpod's continuous dev environments encourages you to create fresh workspaces rather than restarting older ones.
+This ensures that you are starting from a clean slate with proper configuration.
 
 ## Timeouts
-Any running workspace will automatically stop after 30 minutes of inactivity. Activity is triggered
-by any action in the IDE; moving the mouse is enough. If the IDE is still open, but the
-corresponding workspace has stopped, a dialog will pop up that lets you start the workspace
-again.
+Any running workspace will automatically stop after some time of inactivity. Normally, this timeout is 30 minutes but is extended to __60 minutes if you have the _Unlimited plan__.
+Furthermore, _Unlimited_ users can manually boost the timeout of a workspace to 180 minutes. This comes in handy, e.g. in case you want to go out for a longer lunch or meeting and don't like restarting your workspace when coming back.
 
-For convenience, closing the browser window/tab containing the IDE reduces the timeout to 5 minutes.
+The timeout will always bet reset to the full 30 mins (or whatever is enabled) by any action in the IDE; moving the mouse is enough.
+If the IDE is still open, but the corresponding workspace has stopped, a dialog will pop up that lets you start the workspace
+again. You can alternatively jsut reload the browser, or go to your dashboard and start the workspace again.
 
-## Stop and Archive
-If you want more control over your Gitpod hours, you can stop your workspace explicitly. To
-do so, click on the avatar in the top right and choose the `Stop Workspace` command (also available
-through the command palette). The dialog will ask if you want to archive the workspace. By default,
-archived workspaces are not shown in the workspace list of the dashboard and will not be considered
-when starting a fresh workspace for the same context URL.
+For convenience, closing the browser window/tab containing the IDE reduces the timeout to 3 minutes.
 
-Workspaces can also be stopped, started, archived, and unarchived from the
-[dashboard](/docs/60_dashboard/).
+## Garbage Collection
+
+Old unused workspaces are automatically deleted after 30 days of inactivity. To prevent a workspace from being deleted, you can
+manually star it in the [dashboard](https://gitpod.io/workspaces).
 
 ## Changes are Saved
-Gitpod continuously backs up the current state of the workspace's repository in the cloud, so that
-you can revisit it later. Files in other locations will not be saved. Gitpod never deletes a
-workspace. See [dashboard](/docs/60_dashboard/) for details.
-
-## Starting: Initial and Restart
-Gitpod workspaces have two start modes, for which you can configure dedicated tasks on startup:
- - initial
- - restart
-
-Read more about how to configure tasks in [configuring start tasks](/docs/44_config_start_tasks/).
-
+Gitpod backs up the state of the `/workspace/` folder between workspace starts, so that
+you can revisit them later. Files in other locations will not be saved!
