@@ -39,25 +39,50 @@ const StyledGetStarted = styled.div`
                 border-radius: 100px;
                 font-size: 1.7rem;
 
-                @media(max-width: 660px) {
-                    font-size: 1.5rem;
+                @media(max-width: 690px) {
+                    font-size: 1.4rem;
                     width: 99%;
                     padding: .5rem 2rem;
+                }
+
+                @media(max-width: 600px) {
+                    font-size: 1.3rem;
+                }
+
+                @media(max-width: 523px) {
+                    padding: 4rem 1rem 4rem;
                 }
 
                 & > div {
                     margin-right: auto;
 
+                    @media(max-width: 523px) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 2rem 0;
+                        transform: translateY(-1rem);
+                    }
+
                     span {
                         color: ${colors.textDark};
 
-                        @media(max-width: 650px) {
-                            display: none;
+                        @media(max-width: 523px) {
+                            display: block;
+                            margin-bottom: .5rem;
                         }
 
                         img {
                             margin-right: 1rem;
                             margin-bottom: -.5rem;
+
+                            @media(max-width: 600px) {
+                                transform: scale(.5);
+                            }
+
+                            @media(max-width: 600px) {
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -72,23 +97,42 @@ const StyledGetStarted = styled.div`
                     width: 44rem;
                     border-radius: 2px;
 
-
                     @media(max-width: ${sizes.breakpoints.md}) {
                         width: 44.5rem;
                     }
 
-                    @media(max-width: 550px) {
+                    @media(max-width: 690px) {
+                       width: 38rem;
+                    }
+
+                    @media(max-width: 600px) {
+                       width: 34rem;
+                       padding: .6rem .2rem;
+                    }
+
+
+                    @media(max-width: 423px) {
+                        min-width: 26rem;
                         width: auto;
+                    }
+
+                    @media(max-width: 310px) {
+                        min-width: auto;
                     }
                 }
 
                 a {
                     transform: translateY(.3rem);
 
-                    @media(max-width: 660px) {
-                        img {
+                    img {
+                        @media(max-width: 660px) {
                             transform: scale(.7);
                         }
+
+                        @media(max-width: 600px) {
+                            transform: scale(.5);
+                        }
+
                     }
                 }
 
@@ -99,6 +143,14 @@ const StyledGetStarted = styled.div`
                     align-items: center;
                     padding: 8rem 0;
                     transform: translateY(1.5rem);
+
+                    @media(max-width: 523px) {
+                        padding: 8rem 1rem;
+                    }
+
+                    @media(max-width: ${sizes.breakpoints.sm}) {
+                        padding: 8rem .5rem;
+                    }
 
                     p {
                         margin-top: 1rem;
@@ -147,12 +199,10 @@ const StyledGetStarted = styled.div`
 
         &__projects {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
 
-            @media(max-width: ${sizes.breakpoints.md}) {
-                flex-direction: column;
-                align-items: center;
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                overflow-x: scroll;
             }
 
             & > .project {
@@ -160,6 +210,10 @@ const StyledGetStarted = styled.div`
 
                 @media(min-wdith: ${sizes.breakpoints.md}) {
                     width: 18%;
+                }
+
+                @media(max-width: ${sizes.breakpoints.lg}) {
+                    margin-right: 5rem;
                 }
             }
         }

@@ -15,7 +15,7 @@ export const projects = [
     },
     {
         image: TS,
-        title: 'TypeScript Application',
+        title: <span>TypeScript&nbsp;Application</span>,
         href: "",
         alt: "TypeScript Logo",
     },
