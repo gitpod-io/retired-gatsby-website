@@ -5,7 +5,6 @@ import { Link } from 'gatsby'
 import GitpodLogoDark from '../resources/gitpod-logo-dark.svg'
 import { colors, sizes, borders } from '../styles/variables'
 import DropDown from '../components/DropDown'
-import External from '../resources/external.svg'
 
 const StyledNav = styled.nav`
     display: flex;
@@ -56,6 +55,7 @@ const StyledNav = styled.nav`
     }
 
     .nav__item {
+        cursor: pointer;
 
         @media(min-width: ${sizes.breakpoints.lg}) {
 
@@ -79,6 +79,7 @@ const StyledNav = styled.nav`
     }
 
     .nav__btn {
+        cursor: pointer;
         position: relative;
         background: ${colors.offWhite};
         border: none;
