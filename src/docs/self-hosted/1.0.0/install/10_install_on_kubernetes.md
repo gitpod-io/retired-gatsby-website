@@ -2,13 +2,13 @@
 
 While the instructions you're looking at are generic and should work for most cases,
 you have more opimized setups and installation routines for the following cloud providers:
-* [Google Cloud Platform via CLI](../install/11_install_on_gcp_cli): Install Gitpod optimised for GCP and GKE via Command Line Interface.
-* [Google Cloud Platform via Script](../install/12_install_on_gcp_script): Install Gitpod optimised for GCP and GKE via an automated script.
+* [Google Cloud Platform via CLI](../11_install_on_gcp_manual): Install Gitpod optimised for GCP and GKE via Command Line Interface.
+* [Google Cloud Platform via Script](../12_install_on_gcp_script): Install Gitpod optimised for GCP and GKE via an automated script.
 
 ## Prerequisites
 - You should have completed the [Prepare Install](../01_prepare_install) chapter.
 - `kubectl` with access to that cluster.
-- `helm`. We recommend version 3.x. A version >= 2.11 will also work, but requires you to have [tiller configured]((90_helm_2.x.md)).
+- `helm`. We recommend version 3.x. A version >= 2.11 will also work, but requires you to have [tiller configured](../90_helm_2x).
 
 ## Required Configuration
 
@@ -58,4 +58,4 @@ Launch a workpace. Launching the first workspace can take significantly longer (
 
 * [**Storage**](../32_storage): Configure where Gitpod stores stopped workspaces.
 * [**Kubernetes Nodes**:](../33_nodes): Configure file system layout and the workspace's node associativity.
-* [**Workspaces**](31_workspaces): Configure workspace sizing.
+* [**Workspaces**](../31_workspaces): Configure workspace sizing.

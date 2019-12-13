@@ -38,7 +38,7 @@ Gitpod supports the following authentication providers:
 * Bitbucket — coming soon
 * Custom Auth Provider – Inquiry TypeFox for a quote
 
-## HTTPS certificates (optional)
+## HTTPS certificates (Optional)
 While we highly recommend operating Gitpod behind secure HTTPS, Gitpod is rechncially able to run on insecure HTTP.
 However, there is one exception: If you plan to use Gitpod's builtin Docker Registry,
 you'll either need HTTPS or configure your cluster to pull from an insecure (HTTP) registry.
@@ -54,7 +54,7 @@ Proving ownership by runnign a webserver on a domain and serving a secert file d
 See [here](../34_https_certs) for more details.
 
 
-# MySQL Database (Optional)
+## MySQL Database (Optional)
 Gitpod uses a MySQL database to store user data. You may use the MySQL database integrated in Gitpod or disable the integrated database and connect Gitpod to your own MySQL database.
 
 * Integrated database: If not disabled, this MySQL database is installed in a Kubernetes pod as a part of Gitpod’s Helm chart.
@@ -62,7 +62,7 @@ The database uses a Kubernetes PersistentVolume. We do not recommend using this 
 
 * Own MySQL database: Gitpod requires MySQL in version 5.7 or newer.
 
-# Docker Registry (Optional)
+## Docker Registry (Optional)
 Since Gitpod can build Docker images from Dockerfiles on-demand to be used as workspace containers, it needs a Docker registry to store them in.
 
 You may use the docker registry that is integrated in Gitpod or disable the integrated registry and connect Gitpod to your own docker registry.
@@ -71,10 +71,10 @@ You may use the docker registry that is integrated in Gitpod or disable the inte
   The docker registry requires a Kubernetes PersistentVolume. This registry is not recommended to be used for production.
 * Own docker registry: Gitpod can connect to your own docker registry.  
 
-# Storage Buckets (Optional)
+## Storage Buckets (Optional)
 Gitpod uses storage buckets to persist the contents of workspaces. Each workspace is packaged into a single archive file which is then uploaded to the bucket.
 You may use MinIO that is integrated in Gitpod or disable integrated MinIO and connect Gitpod to your own bucket storage.
 
 * Integrated MinIO: If not disabled, Gitpod installs MinIO in Kubernetes as a dependency of Gitpod’s helm charts.
   MinIO can be configured to store data to Kubernetes PersistentVolumes, or NFS, or one of many other supported backends.
-* Own storage buckets: Gitpod can be configured to connect to your own installation of MinIO or Google Cloud Storage compatible storage solution. 
+* Own storage buckets: Gitpod can be configured to connect to your own installation of MinIO or Google Cloud Storage compatible storage solution.

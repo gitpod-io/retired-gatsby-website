@@ -9,8 +9,8 @@ For more users, please click HERE to download a trail license or contact TypeFox
 ## Installation
 * [Prepare Install](../install/01_prepare_install): Understand your choices and prerequisites.
 * [generic Kubernetes](../install/10_install_on_kubernetes): All you need is a domain and a Kubernetes cluster.
-* [Google Cloud Platform via CLI](../install/11_install_on_gcp_cli): Install Gitpod optimised for GCP and GKE via Command Line Interface.
-* [Google Cloud Platform via Script](../install/12_install_on_gcp_script): Install Gitpod optimised for GCP and GKE via an automated script.
+* [Google Cloud Platform (manual)](../install/11_install_on_gcp_manual): Install Gitpod optimised for GCP and GKE via Command Line Interface.
+* [Google Cloud Platform (script)](../install/12_install_on_gcp_script): Install Gitpod optimised for GCP and GKE via an automated script.
 
 ## Administraction
 
