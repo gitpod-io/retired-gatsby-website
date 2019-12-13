@@ -2,10 +2,23 @@ import React from 'react'
 
 import { Link } from 'gatsby'
 import Linkset from './Linkset'
+import styled from '@emotion/styled';
+
+const StyledInput = styled.input`
+    padding: 3px;
+    margin: 10px;
+    &:focus {
+        outline-width: 1px;
+    }
+`;
+
 
 const DocSideBar: React.SFC<{}> = () => (
     <div className="sidebar">
         <ul className="links">
+
+            <StyledInput type="text" id="doc-search" placeholder="search"/>
+
             <Linkset isRendered={true} caption="Welcome" path="">
                 <li><Link activeClassName='active' to="/docs/">Introduction</Link></li>
                 <li><Link activeClassName='active' to="/docs/10_getting_started/">Getting Started</Link></li>

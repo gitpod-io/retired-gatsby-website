@@ -108,6 +108,15 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-plugin-algolia-docsearch`,
+            options: {
+                apiKey: '1a880f3060e9ff81ff84087fc90878fc',
+                indexName: 'gitpod',
+                inputSelector: '#doc-search',
+                debug: false // Set debug to true if you want to inspect the dropdown
+            }
+        },
+        {
             resolve: `gatsby-plugin-feed`,
             options: {
                 query: `
