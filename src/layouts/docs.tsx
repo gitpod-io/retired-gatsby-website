@@ -81,6 +81,10 @@ const StyledDocsLayout = styled.div`
         pre {
             margin: 1.5rem 0;
         }
+
+        img {
+            max-width: 100%;
+        }
     }
 
     .sidebar {
