@@ -18,10 +18,8 @@ const StyledTestimonials = styled.div`
 
     .tweets {
         display: flex;
+        overflow-x: scroll;
         align-items: center;
-        overflow-x: auto;
-        scroll-padding: 0 50%;
-        scroll-snap-type: x;
 
         @media(min-width: ${sizes.breakpoints.md}) {
             padding-left: calc((100% - ${sizes.grid.maxWidth})/2);
@@ -45,7 +43,6 @@ const StyledTestimonials = styled.div`
     }
 
     .tweet {
-        scroll-snap-align: center;
         max-width: 100%;
 
         &:not(:last-of-type) {
