@@ -21,43 +21,43 @@ export const features = [
     {
         alt: 'Visual Studio Code',
         img: VSCGrey,
-        text: 'VS Code Extensions',
+        text: <span>VS Code<br />Extensions</span>,
         path: 'vs'
     },
     {
         alt: 'Prebuilt Workspaces',
         img: IconPrebuilt,
-        text: 'Prebuilt Workspaces',
+        text: <span>Prebuilt<br />Workspaces</span>,
         path: 'prebuilt'
     },
     {
         alt: 'Parallel Workspaces',
         img: IconParallel,
-        text: 'Parallel Workspaces',
+        text: <span>Parallel<br />Workspaces</span>,
         path: 'parallel'
     },
     {
         alt: 'Phone',
         img: IconWorksOnAnyDevice,
-        text: 'Works on any Device',
+        text: <span>Works on any<br />Device</span>,
         path: 'works'
     },
     {
         alt: 'Linux Terminals',
         img: Terminal,
-        text: <span>Linux<br/>Terminals</span>,
+        text: <span>Linux<br />Terminals</span>,
         path: 'linux'
     },
     {
         alt: 'Share',
         img: Share,
-        text: 'Share Running Workspace',
+        text: <span>Share Running<br />Workspace</span>,
         path: 'share'
     },
     {
         alt: 'Camera',
         img: Camera,
-        text: <span>Create<br/>a Snapshot</span>,
+        text: <span>Create<br />a Snapshot</span>,
         path: 'snapshot'
     },
     {
@@ -69,13 +69,13 @@ export const features = [
     {
         alt: 'Web & Desktop Support',
         img: IconDesktop,
-        text: 'Web & Desktop Support',
+        text: <span>Web & Desktop<br />Support</span>,
         path: 'web'
     },
     {
         alt: 'Language Support',
         img: IconLanguage,
-        text: <span>Language<br/>Support</span>,
+        text: <span>Language<br />Support</span>,
         path: 'lang'
     }
 ]

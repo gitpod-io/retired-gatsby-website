@@ -31,18 +31,30 @@ const StyledFeaturesPage = styled.div`
         }
 
         .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            display: grid;
+            grid-gap: 3rem;
+            grid-template-columns: repeat(5, 1fr);
+            justify-items: center;
+            align-items: center;
             margin-top: 6rem;
 
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            @media(max-width: 960px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
             @media(max-width: ${sizes.breakpoints.md}) {
-               justify-content: center;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media(max-width: 490px) {
+                grid-template-columns: repeat(1, 1fr);
             }
 
             & > div {
-                margin-bottom: 3rem;
-
                 @media(min-width: ${sizes.breakpoints.md}) {
                     width: 18%;
                 }
