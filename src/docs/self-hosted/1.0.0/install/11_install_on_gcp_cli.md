@@ -1,4 +1,4 @@
-# Install Gitpod on Google Cloud Platform
+# Install Gitpod on Google Cloud Platform via CLI
 
 At its core setting up Gitpod on GCP does not differ much from installing it on any other Kubernetes platform.
 However, Gitpod sports a range of integrations with the Google Cloud Platform that increase performance and reliability.
