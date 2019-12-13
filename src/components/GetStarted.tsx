@@ -54,7 +54,6 @@ const StyledGetStarted = styled.div`
                     padding: 4rem 1rem 4rem;
                 }
 
-
                 & > div {
                     margin-right: auto;
 
@@ -145,6 +144,14 @@ const StyledGetStarted = styled.div`
                     align-items: center;
                     padding: 8rem 0;
                     transform: translateY(1.5rem);
+
+                    @media(max-width: 523px) {
+                        padding: 8rem 1rem;
+                    }
+
+                    @media(max-width: ${sizes.breakpoints.sm}) {
+                        padding: 8rem .5rem;
+                    }
 
                     p {
                         margin-top: 1rem;
