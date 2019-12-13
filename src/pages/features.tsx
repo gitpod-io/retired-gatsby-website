@@ -1,7 +1,6 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { Global, css } from '@emotion/core'
 import IndexLayout from '../layouts'
 import IceStick from '../resources/ice-stick.png'
 import { features, featuresCardsData } from '../utils/features'
@@ -9,10 +8,9 @@ import FeatureBox from '../components/FeatureBox'
 import FeatureCard from '../components/FeatureCard'
 import { sizes, colors, shadows } from '../styles/variables'
 import { Link } from 'gatsby'
-import CodeReview from '../resources/code-review.png'
 import Circle from '../components/Circle'
-import Details from '../components/Details'
 import ScrollToTopButton from '../components/ScrollToTopButton'
+import CodeReview from '../resources/code-review.png'
 
 const StyledFeaturesPage = styled.div`
     /* ------------------------------------------- */
@@ -115,6 +113,12 @@ const StyledFeaturesPage = styled.div`
         }
     }
 
+    .other-features {
+        & > div {
+            margin-bottom: 10rem;
+        }
+    }
+
     /* ------------------------------------------- */
     /* ----- Get Started ----- */
     /* ------------------------------------------- */
@@ -136,18 +140,27 @@ const StyledFeaturesPage = styled.div`
 
 `
 
+const otherFeatures = [
+    {
+        title: "Code Reviews",
+        paragraphs:["Open pull requests in Gitpod to run, navigate, and review the code from within the IDE. Reply to comments and publish code reviews without switching back to GitHub.", <span>Thanks to <a href="#parallel">Parallel</a> and <Link to="/docs/46_prebuilds/">Prebuilt</Link> Workspaces, you can review code within seconds and without stopping your own workspace.</span>],
+        more: <p>Read more about <Link to="/blog/when-code-reviews-lgtm/">Code Reviews.</Link></p>,
+        img:<img alt="Code Review" src={CodeReview}/>,
+        id: "code",
+        colorTextBox: colors.white,
+        colorImgBox: colors.offWhite
+    },
+    {
+        title: "Web and Desktop Support",
+        paragraphs: ["TBD"],
+        img: <img alt="Web and Desktop Support"/>,
+        more: <p>Read more about <Link to="/blog/when-code-reviews-lgtm/">Web und Desktop Support.</Link></p>,
+    }
+]
+
 const FeaturesPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/features/' title="Features">
         <StyledFeaturesPage>
-            <Global
-                styles={
-                    css`
-                        html {
-                            scroll-behavior: smooth;
-                        }
-                    `
-                }
-            />
             <div className="grey-container">
                 <div className="row">
 
@@ -193,16 +206,21 @@ const FeaturesPage: React.SFC<{}> = () => (
 
                     <div className="grey-container">
                         <div className="row">
-                            <div className="feature" id="code">
-                                <h3>Code Reviews</h3>
-                                <p>Open pull requests in Gitpod to run, navigate, and review the code from within the IDE. Reply to comments and publish code reviews without switching back to GitHub.</p>
-                                <p>Thanks to <a href="#parallel">Parallel</a> and <Link to="/docs/46_prebuilds/">Prebuilt</Link> Workspaces, you can review code within seconds and without stopping your own workspace.</p>
-                                <img alt="Code Review" src={CodeReview} />
-                                <p>Read more about <Link to="/blog/when-code-reviews-lgtm/">Code Reviews.</Link></p>
-                            </div>
-                            <div className="feature" id="web">
-                                <h3>Web and Desktop Support</h3>
-                                <p>Read more about <Link to="#">Web and Desktop Support.</Link></p>
+                            <div className="other-features">
+                                {
+                                    otherFeatures.map((f, i) =>
+                                        <FeatureCard
+                                            key={i}
+                                            title={f.title}
+                                            paragraphs={f.paragraphs}
+                                            more={f.more}
+                                            img={f.img}
+                                            id={f.id}
+                                            colorTextBox={f.colorTextBox}
+                                            colorImgBox={f.colorImgBox}
+                                        />
+                                    )
+                                }
                             </div>
                             <div className="feature" id="lang">
                                 <h3>Supported Programming Languages</h3>
@@ -345,14 +363,6 @@ const FeaturesPage: React.SFC<{}> = () => (
                         <h3>Prefix any GitHub or GitLab URL with <span>gitpod.io/#</span></h3>
                     </section>
                 </div>
-
-                {/* ----- Explore Gitpods ----- */}
-
-                <Details
-                    title="Explore Gitpod"
-                    text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-                    anchors={[{href: '/pricing', text: 'See Pricing'}, {href: '/blog', text: 'See Blog'}]}
-                />
 
         </StyledFeaturesPage>
     </IndexLayout>

@@ -1,14 +1,13 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, borders, shadows, sizes } from '../styles/variables'
+import { colors, shadows, sizes } from '../styles/variables'
 
 const StyledProject = styled.div`
     padding: 2rem;
     text-align: center;
     font-size: 90%;
     background: ${colors.offWhite};
-    border: ${borders.light};
     box-shadow: ${shadows.light};
     font-weight: 600;
 

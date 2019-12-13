@@ -36,7 +36,6 @@ const StyledGetStarted = styled.div`
                 background: ${colors.offWhite2};
                 width: 95%;
                 padding: 2rem;
-                border: 2px solid #ccc;
                 border-radius: 100px;
                 font-size: 1.7rem;
 
@@ -67,7 +66,7 @@ const StyledGetStarted = styled.div`
                     display: inline-block;
                     border: none;
                     background: ${colors.white};
-                    color: ${colors.text};
+                    color: ${colors.textLight};
                     padding: .6rem .5rem;
                     font-size: inherit;
                     width: 44rem;
@@ -139,6 +138,11 @@ const StyledGetStarted = styled.div`
             }
         }
 
+
+        h2 + p {
+            font-size: 2rem;
+        }
+
         /* ----- Projects ----- */
 
         &__projects {
@@ -197,6 +201,7 @@ class GetStarted extends React.Component {
             <StyledGetStarted className="row">
                 <section className="get-started" id="get-started">
                     <h2>Get Started</h2>
+                    <p>30 days of free trial and always free for Open Source.</p>
 
                     <div className="get-started__prefix">
                         <div className="get-started__prefix-text-container">

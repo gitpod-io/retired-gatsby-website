@@ -4,9 +4,13 @@ import styled from '@emotion/styled'
 import ArrowDown from '../resources/arrow-down.svg'
 import { colors, shadows, sizes } from '../styles/variables'
 import { Link } from 'gatsby'
+import ExternalLink from '../components/ExternalLink'
 
 const StyledDropDown = styled.div`
-    position: relative;
+
+    @media(min-width: ${sizes.breakpoints.lg}) {
+        position: relative;
+    }
 
     button {
         display: flex;
@@ -14,20 +18,6 @@ const StyledDropDown = styled.div`
         border: none;
         transition: all .2s;
         max-width: 20rem;
-
-        &::before {
-            content: "";
-            position: absolute;
-            bottom: -1rem;
-            left: 0;
-            right: 100%;
-            border-bottom: 2px solid ${colors.white};
-            transition: all .4s cubic-bezier(0,.5,0, 1);
-
-            @media(max-width: ${sizes.breakpoints.lg}) {
-               display: none;
-            }
-        }
 
         &:hover,
         &:focus {
@@ -42,7 +32,6 @@ const StyledDropDown = styled.div`
 
     .arrow {
         height: .8rem;
-        transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         margin-left: 1rem;
         @media(max-width: ${sizes.breakpoints.lg}) {
             height: 1rem;
@@ -54,57 +43,64 @@ const StyledDropDown = styled.div`
     }
 
     ul {
-        position: absolute;
-        top: 2.5rem;
-        left: 7%;
         display: flex;
         flex-direction: column;
-        padding: .5rem 0 1rem;
-        background: ${colors.offWhite};
-        box-shadow: ${shadows.light};
-        z-index: 1000;
-        transition: all .4s cubic-bezier(0.86, 0, 0.07, 1);
-        width: auto;
 
         @media(min-width: ${sizes.breakpoints.lg}) {
+            position: absolute;
+            top: 2.5rem;
+            left: 7%;
             width: 120%;
             left: 50%;
             transform: translateX(-50%);
             min-width: 14rem;
-        }
-
-        @media(max-width: ${sizes.breakpoints.lg}) {
-            max-width: 15rem;
-            max-height: 15rem;
-        }
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            left: 6rem;
+            padding: .5rem 0 1rem;
+            background: ${colors.offWhite};
+            box-shadow: ${shadows.light};
+            transition: all .4s cubic-bezier(0.86, 0, 0.07, 1);
         }
     }
 
     li {
-        margin: 1rem 0 0!important;
-        font-size: 90%;
-        width: 100%;
-        padding: 0 1.5rem;
-        border-bottom: none !important;
+        @media(min-width: ${sizes.breakpoints.lg}) {
+            margin: 1rem 0 0;
+            padding: 0 1.5rem;
+            font-size: 90%;
+            width: 100%;
+            border-bottom: none;
+        }
+
+        @media(max-width: ${sizes.breakpoints.lg}) {
+            &:not(:last-child) {
+                margin-top: 1rem;
+            }
+        }
     }
 
     .shown {
         opacity: 1;
-        transform: scale(1) translate(-50%, 0);
-        background: ${colors.white};
+
+        @media(min-width: ${sizes.breakpoints.lg}) {
+            background: ${colors.white};
+            transform: scale(1) translate(-50%, 0);
+        }
     }
 
     .hidden {
         opacity: 0;
-        transform: scale(0) translate(-50%, -20rem);
+
+        @media(max-width: ${sizes.breakpoints.lg}) {
+            display: none;
+        }
+
+        @media(min-width: ${sizes.breakpoints.lg}) {
+            transform: scale(0) translate(-50%, -20rem);
+        }
     }
 `
 
 interface Anchor {
-    text: string | JSX.Element
+    text: string
     to: string
     target?: boolean
 }
@@ -152,7 +148,7 @@ class DropDown extends React.Component<DropDownProps, {}> {
                         className="arrow"
                         src={ArrowDown}
                         style={ isRendered ? {transform: 'rotate(180deg)'}: {} }
-                    />
+                        />
                 </button>
 
                 <ul  className={ isRendered ? 'shown' : 'hidden' }>
@@ -161,14 +157,12 @@ class DropDown extends React.Component<DropDownProps, {}> {
                             target ?
                                 (
                                     <li key={i}>
-                                        <a
+                                        <ExternalLink
                                             href={to}
                                             tabIndex={ isRendered ? 0 : -1 }
-                                            target="_blank"
+                                            text={text}
                                             className="link"
-                                        >
-                                            {text}
-                                        </a>
+                                        />
                                     </li>
                                 )
                                     :
@@ -178,6 +172,7 @@ class DropDown extends React.Component<DropDownProps, {}> {
                                             to={to}
                                             className="link"
                                             tabIndex={ isRendered ? 0 : -1 }
+                                            activeClassName="active"
                                         >
                                             {text}
                                         </Link>
