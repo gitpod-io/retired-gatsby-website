@@ -10,7 +10,6 @@ import Quote from '../components/Quote'
 import RecruitingBG from '../resources/recruiting-bg.png'
 import Bg from '../components/Bg'
 import ActionCard from '../components/ActionCard'
-import Details from '../components/Details'
 import PricingTable from '../components/PricingTable'
 import Circle from '../components/Circle'
 import Layer from '../resources/layer.svg'
@@ -203,13 +202,6 @@ const RecrutingPage: React.SFC<{}> = () => (
             text='Please, get in touch. We’re happy to answer your questions.'
             anchors={[{href: '/schedule-call',text: 'Schedule a Call'}, {href: '/contact', text: 'Contact'}]}
         />
-
-        <Details
-            title="Explore Gitpod"
-            text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-            anchors={[{href: '/features', text: 'See Features'}, {href: '/blog', text: 'See Blog'}]}
-        />
-
 
     </IndexLayout>
 )

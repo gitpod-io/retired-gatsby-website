@@ -15,50 +15,49 @@ import ParallelWorkspaces from '../resources/parallel-workspaces.png'
 import ShareWorkspaces from '../resources/share-workspace.png'
 import CreateASnapshot from '../resources/create-snapshot.png'
 import WorksOnAnyDevice from '../resources/works-on-any-device.png'
-
 import { Link } from 'gatsby'
 
 export const features = [
     {
         alt: 'Visual Studio Code',
         img: VSCGrey,
-        text: 'VS Code Extensions',
+        text: <span>VS Code<br />Extensions</span>,
         path: 'vs'
     },
     {
         alt: 'Prebuilt Workspaces',
         img: IconPrebuilt,
-        text: 'Prebuilt Workspaces',
+        text: <span>Prebuilt<br />Workspaces</span>,
         path: 'prebuilt'
     },
     {
         alt: 'Parallel Workspaces',
         img: IconParallel,
-        text: 'Parallel Workspaces',
+        text: <span>Parallel<br />Workspaces</span>,
         path: 'parallel'
     },
     {
         alt: 'Phone',
         img: IconWorksOnAnyDevice,
-        text: 'Works on any Device',
+        text: <span>Works on any<br />Device</span>,
         path: 'works'
     },
     {
         alt: 'Linux Terminals',
         img: Terminal,
-        text: <span>Linux<br/>Terminals</span>,
+        text: <span>Linux<br />Terminals</span>,
         path: 'linux'
     },
     {
         alt: 'Share',
         img: Share,
-        text: 'Share Running Workspace',
+        text: <span>Share Running<br />Workspace</span>,
         path: 'share'
     },
     {
         alt: 'Camera',
         img: Camera,
-        text: <span>Create<br/>a Snapshot</span>,
+        text: <span>Create<br />a Snapshot</span>,
         path: 'snapshot'
     },
     {
@@ -70,13 +69,13 @@ export const features = [
     {
         alt: 'Web & Desktop Support',
         img: IconDesktop,
-        text: 'Web & Desktop Support',
+        text: <span>Web & Desktop<br />Support</span>,
         path: 'web'
     },
     {
         alt: 'Language Support',
         img: IconLanguage,
-        text: 'Language Support',
+        text: <span>Language<br />Support</span>,
         path: 'lang'
     }
 ]
@@ -123,7 +122,7 @@ export const featuresCardsData = [
         title: "Share a Running Workspace",
         paragraphs:["Collaborate with your friends and colleagues and hunt down bugs together."],
         more: <p>Read more about <Link to="/docs/33_sharing_and_collaboration/">Sharing a Workspace.</Link></p>,
-        img:<img alt="Share a Running Workspace" src={ShareWorkspaces}/>,
+        img:<img alt="Share a Running Workspace" style={{transform: 'translateY(2rem)'}} src={ShareWorkspaces}/>,
         id: 'share'
     },
     {

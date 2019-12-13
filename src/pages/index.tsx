@@ -197,7 +197,7 @@ const StyledIndexPage = styled.div`
         &__box {
             display: flex;
             border-radius: 3px;
-            border: ${borders.light};
+            border: 3px solid ${colors.offWhite};
             box-shadow: ${shadows.light};
 
             @media(max-width: ${sizes.breakpoints.md}) {
@@ -349,6 +349,7 @@ const StyledIndexPage = styled.div`
         &__text {
             padding: 8rem 2rem;
             transform: translateY(-1rem);
+            border-radius: 3px;
 
             @media(max-wdith: ${sizes.breakpoints.lg}) {
                 padding: 2rem 3rem;
@@ -364,6 +365,10 @@ const StyledIndexPage = styled.div`
                     display: none;
                 }
             }
+        }
+
+        h2 {
+            margin-bottom: 3rem;
         }
     }
 
@@ -413,7 +418,7 @@ const IndexPage: React.SFC<{}> = () => (
                     </div>
                     <div className="intro__box">
                         <img className="intro__icon" alt="Arrow on Wooden Target" src={ArrowOnTarget} />
-                        <p className="intro__text"><span>Gitpod eliminates this friction</span> by providing prebuilt, ready-to-code dev environments with just one click.</p>
+                        <p className="intro__text"><span>Gitpod eliminates this friction</span> by providing prebuilt, <br/>ready-to-code dev environments with just one click.</p>
                     </div>
                 </div>
             </section>

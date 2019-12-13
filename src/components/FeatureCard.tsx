@@ -14,8 +14,11 @@ const StyledFeatureCard = styled.div<{caption: boolean}>`
     }
 
     .text-box {
-        min-width: 27rem;
         padding: 8rem 3rem;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            padding: 5rem 3rem;
+        }
 
         @media(min-width: ${sizes.breakpoints.md}) {
             width: 34%;
@@ -28,12 +31,18 @@ const StyledFeatureCard = styled.div<{caption: boolean}>`
         justify-content: center;
         min-height: ${(props) => props.caption ? '30rem' : null };
         align-items: center;
-
-
         background: ${colors.white};
 
         @media(min-width: ${sizes.breakpoints.md}) {
             width: 66%;
+        }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            min-height: 35rem;
+        }
+
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            min-height: 25rem;
         }
 
         img {
@@ -65,19 +74,21 @@ interface FeatureCardProps {
     strong?: string
     img: JSX.Element,
     id?: string,
-    caption?: string
+    caption?: string,
+    colorTextBox?: string
+    colorImgBox?: string
 }
 
-const FeatureCard: React.SFC<FeatureCardProps> = ({ title, paragraphs, more, strong, img , id, caption }) => (
+const FeatureCard: React.SFC<FeatureCardProps> = ({ title, paragraphs, more, strong, img , id, caption, colorTextBox, colorImgBox }) => (
     <div className="row">
         <StyledFeatureCard id={id} caption={ caption ? true : false}>
-            <div className="text-box">
+            <div className="text-box" style={ colorTextBox ? { background: colorTextBox } : {} }>
                 <h3>{title}</h3>
                 { paragraphs.map((p, i) => <p key={i}>{p}</p>) }
                 { strong ? <p><strong>{strong}</strong></p> : null }
                 { more ? more : null }
             </div>
-            <div className="img-box">
+            <div className="img-box" style={ colorImgBox ? { background: colorImgBox } : {} }>
                 { img }
                 { caption ? <span className="caption">{caption}</span> : null }
             </div>
