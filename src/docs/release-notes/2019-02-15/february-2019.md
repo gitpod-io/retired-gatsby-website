@@ -45,11 +45,15 @@ In addition we have introduced multiple lifecycle phases for the tasks, such as 
 
 Check the table below for an overview of the different starting scenarios.
 
+<div class="table-container">
+
 | Start Mode | Execution |
 | ---------  | -------   |
 | Fresh Workspace | `before && init && command` |
 | Restart Workspace | `before && command` |
 | Snapshot | `before && command` |
+
+</div>
 
 ### Ports
 

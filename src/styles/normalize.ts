@@ -293,6 +293,7 @@ export default `
     /* ------------------------------------------- */
 
     .table-container {
+        max-width: 100%;
         overflow-x: scroll;
         padding-bottom: 2rem;
     }
