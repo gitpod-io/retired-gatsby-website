@@ -32,7 +32,7 @@ const StyledPricingPage = styled.div`
                 flex-wrap: wrap;
             }
 
-            @media(max-width: 500px) {
+            @media(max-width: 650px) {
                 flex-direction: column;
                 align-items: center;
             }
@@ -41,7 +41,7 @@ const StyledPricingPage = styled.div`
         &__tagline {
             transform: translateY(-3rem);
 
-            @media(max-width: 990px) {
+            @media(max-width: 1096px) {
                 display: none;
             }
 

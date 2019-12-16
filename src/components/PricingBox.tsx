@@ -9,19 +9,27 @@ const StyledPricingBox = styled.div<{transform?: string}>`
     margin-bottom: 3rem;
     padding: 3rem 6rem;
     min-height: 48rem;
-    min-width: 22rem;
+    min-width: 25rem;
     width: 24%;
     text-align: center;
     background: ${colors.white};
     box-shadow: ${shadows.light};
 
-    @media(min-width: 990px) {
+    @media(min-width: 1096px) {
         transform: ${({transform}) => transform ? transform : null };
         z-index: ${({transform}) => transform ? '1' : null };
 
         &:last-of-type {
             margin-left: auto;
         }
+    }
+
+    @media(max-width: 1096px) {
+        transform: scale(1.04);
+        margin-bottom: 5rem;
+    }
+
+    @media(max-width: ${sizes.breakpoints.sm}) {
     }
 
     @media(max-width: ${sizes.breakpoints.lg}) {
