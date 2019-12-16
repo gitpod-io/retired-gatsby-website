@@ -72,7 +72,7 @@ const StyledPricingTable = styled.section`
 interface PricingTableProps {
     title: string
     paragraph: JSX.Element | string
-    id: string
+    id?: string
 }
 
 const PricingTable: React.SFC<PricingTableProps> = ({ title, paragraph, children, id }) => (
