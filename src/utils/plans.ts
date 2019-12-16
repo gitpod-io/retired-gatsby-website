@@ -18,7 +18,8 @@ export const plans = [
         alt: 'Rocket',
         price: '$24',
         duration: 'unlimited hours',
-        features: ['Private & Public Repos', '8 Parallel Workspaces', 'Team Manageable']
+        features: ['Private & Public Repos', '8 Parallel Workspaces', 'Team Manageable'],
+        transform: 'scale(1.08)',
     },
     {
         title: 'Unlimited',
