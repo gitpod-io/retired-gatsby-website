@@ -8,7 +8,6 @@ import PricingBg from '../resources/pricing-bg.png'
 import { plans } from '../utils/plans'
 import { Link } from 'gatsby'
 import { sizes, colors, shadows } from '../styles/variables'
-import HeartLock from '../resources/heart-lock.png'
 import ActionCard from '../components/ActionCard'
 import Details from '../components/Details'
 import PricingTable from '../components/PricingTable'
@@ -51,26 +50,6 @@ const StyledPricingPage = styled.div`
                 font-weight: 600;
                 text-align: center;
                 box-shadow: ${shadows.light};
-            }
-        }
-
-        &__open-source {
-            max-width: 60rem;
-            margin: 10rem auto 0;
-            padding: 4rem 1rem;
-            text-align: center;
-            background: ${colors.white};
-            box-shadow: ${shadows.light};
-            border-radius: 3px;
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                br {
-                    display: none;
-                }
-            }
-
-            img {
-                height: 8rem;
             }
         }
     }
@@ -140,11 +119,6 @@ const PricingPage: React.SFC<{}> = () => (
                         </div>
                         <div className="pricing__tagline">
                             <p>Gitpod Is Always Free for Open Source.</p>
-                        </div>
-                        <div className="pricing__open-source">
-                            <img alt="Heart Lock" src={HeartLock} />
-                            <h3>Gitpod Is Always Free for Open Source.</h3>
-                            <p>Use Gitpod for free up to 50 hours/month for public<br />repositories. If this shouldn’t be enough, please apply here<br/>for an <a href="#">Unlimited-Open-Source-Plan.</a></p>
                         </div>
                     </section>
 
