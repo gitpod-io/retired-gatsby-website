@@ -9,8 +9,8 @@ export const plans = [
         img: LightBulb,
         alt: 'Light Bulb',
         price: '$9',
-        duration: '100 hours/month',
-        features: ['Private & Public Repos', '< 4 parallel workspaces']
+        duration: '100 hours / month',
+        features: ['Private & Public Repos', '4 Parallel Workspaces']
     },
     {
         title: 'Professional',
@@ -18,7 +18,7 @@ export const plans = [
         alt: 'Rocket',
         price: '$24',
         duration: 'unlimited hours',
-        features: ['Private & Public Repos', '< 8 Workspaces', 'Team manageable']
+        features: ['Private & Public Repos', '8 Parallel Workspaces', 'Team Manageable']
     },
     {
         title: 'Unlimited',
@@ -26,7 +26,7 @@ export const plans = [
         alt: 'Magic Cap',
         price: '$24',
         duration: 'unlimited hours',
-        features: ['Private & Public Repos', '< 16 Workspaces', 'Team manageable', 'Extended Workspace Duration']
+        features: ['Private & Public Repos', '16 Parallel Workspaces', 'Team Manageable', 'Extended Workspace Timeout']
     },
     {
         title: 'Enterprise',
