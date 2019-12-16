@@ -1,18 +1,8 @@
-# Install Gitpod on Google Cloud Platform via gcloud cli
+# Manually Install Gitpod on Google Cloud Platform
 
-At its core setting up Gitpod on GCP does not differ much from installing it on any other Kubernetes platform.
-However, Gitpod sports a range of integrations with the Google Cloud Platform that increase performance and reliability.
+  > **TODO** This document is a stub only.
 
-This section describes the neccesary steps to prepare a new GCP project for a Gitpod installation.
-
-  > We have automated this process. If you want to get up and running as quickly as possible, that's the way to go.
-    See the [automated setup](#automated-setup) section for details.
-
-At the end of this document your GCP setup will be ready. You will also need to complete the [OAuth](30_oauth) setup before installing Gitpod.
-
-## Step-by-step
-
-### Before you begin
+## Before you begin
  - install [gcloud cli](https://cloud.google.com/sdk/docs/#install_the_latest_cloud_tools_version_cloudsdk_current_version)
    - `gcloud components install beta`
  - setup Google cloud project
@@ -31,7 +21,7 @@ PROJECT_ID=<gcloud-project-id>
 REGION=<gcloud-region>
 ```
 
-#### IP
+### IP
 
 ```
 gcloud compute addresses create gitpod-inbound-ip --region=$REGION
@@ -45,14 +35,14 @@ Now that you have a reserved IP address, you will have to set up the following D
   - `*.ws.your-base-domain`
 
 
-#### VPC Network
+### VPC Network
 
 ```
 gcloud compute networks create gitpod-vpc --bgp-routing-mode=regional --subnet-mode=auto
 ```
 
 
-#### Cluster
+### Cluster
 
 ```
 gcloud iam service-accounts create gitpod-nodes-meta
@@ -124,9 +114,9 @@ gcloud beta container node-pools create workspace-pool-1 \
         --local-ssd-count=1
 ```
 
-### Optional
+## Optional
 
-#### GCP Managed DB
+### GCP Managed DB
 
 ```
 DB_PW=$(openssl rand -base64 20)
@@ -155,7 +145,7 @@ gcloud iam service-accounts keys create gitpod-cloudsql-client-key.json --iam-ac
 ```
 
 
-##### Initialize DB
+#### Initialize DB
 
  1. [Get `cloud_sql_proxy` binary](https://cloud.google.com/sql/docs/mysql/sql-proxy#install)
     ```
@@ -188,7 +178,7 @@ gcloud iam service-accounts keys create gitpod-cloudsql-client-key.json --iam-ac
     ```
 
 
-#### GCP Buckets for workspace backups
+### GCP Buckets for workspace backups
 
 ```
 gcloud iam service-accounts create gitpod-workspace-syncer
@@ -198,7 +188,7 @@ gcloud iam service-accounts keys create gitpod-workspace-syncer-key.json --iam-a
 ```
 
 
-#### GCP Registry
+### GCP Registry
 
 Push and Pull access to the registry
 ```
@@ -207,7 +197,7 @@ gcloud projects add-iam-policy-binding $PROJECT_ID --member="serviceAccount:gitp
 gcloud iam service-accounts keys create gitpod-registry-full-key.json --iam-account=gitpod-registry-full@$PROJECT_ID.iam.gserviceaccount.com
 ```
 
-### Install
+## Install
 
 cluster init:
 ```
