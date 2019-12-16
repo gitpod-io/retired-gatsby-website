@@ -30,3 +30,7 @@ Within the main area, the drag-and-drop functionality allows for splitting freel
 widgets can be moved to the side or bottom panels.
 
 ![](./images/workbench-shell.jpg)
+
+## Theia vs VSCode
+
+While Theia may look a lot like VSCode, it isn't VSCode, rather a different IDE following the same design scheme.
