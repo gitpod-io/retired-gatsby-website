@@ -4,16 +4,25 @@ import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import { colors, shadows, sizes } from '../styles/variables'
 
-const StyledPricingBox = styled.div`
+const StyledPricingBox = styled.div<{transform?: string}>`
     position: relative;
     margin-bottom: 3rem;
     padding: 3rem 6rem;
     min-height: 50rem;
     min-width: 22rem;
-    width: 25%;
+    width: 24%;
     text-align: center;
     background: ${colors.white};
     box-shadow: ${shadows.light};
+
+    @media(min-width: 990px) {
+        transform: ${({transform}) => transform ? transform : null };
+        z-index: ${({transform}) => transform ? '1' : null };
+
+            &:last-of-type {
+                margin-left: auto;
+            }
+    }
 
     @media(max-width: ${sizes.breakpoints.lg}) {
         padding: 3rem 4rem;
@@ -71,11 +80,12 @@ interface PricingBoxProps {
     duration?: string
     feature?: string
     features?: string[]
-    btnText?: string
+    btnText?: string,
+    transform?: string
 }
 
-const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, feature, features, btnText }) => (
-    <StyledPricingBox>
+const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, feature, features, btnText,transform }) => (
+    <StyledPricingBox transform={transform}>
         <h4>{title}</h4>
         {img}
         {price ? <div className="price">{price}</div> : null }

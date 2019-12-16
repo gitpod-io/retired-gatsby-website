@@ -17,7 +17,6 @@ import Layer from '../resources/layer.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
 
-
 const StyledPricingPage = styled.div`
     /* ------------------------------------------- */
     /* ----- Section Pricing ----- */
@@ -35,6 +34,23 @@ const StyledPricingPage = styled.div`
             @media(max-width: 500px) {
                 flex-direction: column;
                 align-items: center;
+            }
+        }
+
+        &__tagline {
+            transform: translateY(-3rem);
+
+            @media(max-width: 990px) {
+                display: none;
+            }
+
+            p {
+                padding: 4rem 0 3rem;
+                width: 72%;
+                font-size: 110%;
+                font-weight: 600;
+                text-align: center;
+                box-shadow: ${shadows.light};
             }
         }
 
@@ -118,8 +134,12 @@ const PricingPage: React.SFC<{}> = () => (
                                     duration={plan.duration}
                                     feature={plan.feature}
                                     features={plan.features}
+                                    transform={plan.transform}
                                 />
                             )}
+                        </div>
+                        <div className="pricing__tagline">
+                            <p>Gitpod Is Always Free for Open Source.</p>
                         </div>
                         <div className="pricing__open-source">
                             <img alt="Heart Lock" src={HeartLock} />
