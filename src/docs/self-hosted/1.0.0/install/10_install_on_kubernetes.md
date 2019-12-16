@@ -1,21 +1,29 @@
 # Install Gitpod Self-Hosted on Kubernetes
-
-While the instructions you're looking at are generic and should work for most cases,
-you have more opimized setups and installation routines for the following cloud providers:
-* [Google Cloud Platform via CLI](../11_install_on_gcp_manual): Install Gitpod optimised for GCP and GKE via Command Line Interface.
-* [Google Cloud Platform via Script](../12_install_on_gcp_script): Install Gitpod optimised for GCP and GKE via an automated script.
+This section describes how to install Gitpod on a vanilla Kubernetes cluster.
+Gitpod also provides more optimized installations offering better performance for particular cloud providers:
+* *Google Cloud Platform*: Install Gitpod in a blank GCP project, either [using a script that automates the procedure](../11_install_on_gcp_script) or [manually step-by-step](../12_install_on_gcp_manual).
 
 ## Prerequisites
-- You should have completed the [Prepare Install](../01_prepare_install) chapter.
+- Ensure you have the [general installation prerequisites](../01_prepare_installation) avilable.
 - `kubectl` with access to that cluster.
-- `helm`. We recommend version 3.x. A version >= 2.11 will also work, but requires you to have [tiller configured](../90_helm_2x).
+- `helm`. We recommend version 3.x. Any version >= 2.11 will also work, but requires you to have [tiller configured](../90_helm_2x).
 
-## Required Configuration
+## Configuration
 
-Please clone the repository `https://github.com/gitpod-io/gitpod-self-hosted`. In there you will find the configuration files this guide is refering to.
+The [Gitpod self-hosted repository](https://github.com/gitpod-io/gitpod-self-hosted) contains the configuration files this guide is refering to.
+Throughout this guide you will be modifying the files found in this repo.
+We recommend you fork this repository so that you can easily rebase your changes on the latest version.
+
+```
+git clone https://github.com/gitpod-io/gitpod-self-hosted
+cd gitpod-self-hosted
+git remote rename origin upstream
+```
+
+For the rest of this guide we will assume that you are located in the root of a working copy of this repository.
 
 ### Domain name and IP address
-Gitpod requires a domain name which resolves to the IP of your Kubernetes cluster. In this readme we'll use `your-domain.com` as example. Set your real domain in the `values.yaml` under `gitpod.hostname`.
+Gitpod requires a domain name which resolves to the IP of your Kubernetes cluster. In this document we'll use `your-domain.com` as example. Set your real domain in the `values.yaml` under `gitpod.hostname`.
 By default Gitpod deploys a [`LoadBalancer` service](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) as means of ingress.
 If you have a fixed IP address that you want to use, set the `gitpod.components.proxy.loadBalancerIP` field to the external IP of your cluster/load balancer.
 If this field is not set, Kubernetes will assign you a load balancer IP during deployment.
@@ -25,9 +33,9 @@ Once you know your IP address, configure your three domain names to resolve to t
  - `*.ws.your-domain.com`
 
 ### OAuth integration
-Gitpod delegates authentication to a configurable [OAuth provider](../01_prepare_install/#user-authorization-and-git-integration).
+Gitpod delegates authentication to a configurable [OAuth provider](../01_prepare_installation/#user-authorization-and-git-integration).
 
-Follow [these steps](../30_oauth) to set up GitHub or Gitlab to act as OAuth provider.
+Follow [the steps](../30_oauth) to set up GitHub or Gitlab as OAuth provider.
 
 ### HTTPS certificates or external Docker registry
 Gitpod builds docker images on demand and runs them in Kubernetes pods as workspaces.
@@ -40,9 +48,9 @@ or use an [external docker registry](../35_docker_registry).
 To get Gitpod running quickly, you may skip this chapter.
 For production scenarios, however, we highly recomend this configuration.
 
-* [**Docker Registry**](../35_docker_registry): Use your own Docker registry instead of the unreliable builtin one.
+* [**Docker Registry**](../35_docker_registry): Use your own Docker registry instead of the built-in one.
 * [**HTTPS certificates**](../34_https_certs): Configure HTTPS certificates for secure access to Gitpod.
-* [**Database**](../36_database): Use your own MySQL database instead of the unrelibale builtin one.
+* [**Database**](../36_database): Use your own MySQL database instead of the built-in one.
 
 ## Installation
 ```

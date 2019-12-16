@@ -62,12 +62,18 @@ const StyledDocsLayout = styled.div`
             margin: 3rem 0 1rem;
         }
 
+        h2 + p {
+            margin-block-end: 0em;
+        }
+
         ul, ol {
-            margin: 3rem 0;
+            margin: 2rem 0;
+            list-style: inherit;
         }
 
         li {
             font-weight: 300;
+            margin-left: 2em;
 
             @media(max-width: ${sizes.breakpoints.lg}) {
                 list-style-position: inside;
@@ -75,7 +81,7 @@ const StyledDocsLayout = styled.div`
         }
 
         li + li {
-            margin-top: 2rem;
+            margin-top: 0.5rem;
         }
 
         pre {
@@ -84,6 +90,12 @@ const StyledDocsLayout = styled.div`
 
         img {
             max-width: 100%;
+        }
+
+        blockquote {
+            padding: 1em;
+            margin: 0.5em 0;
+            background-color: #fdf6e3;
         }
     }
 

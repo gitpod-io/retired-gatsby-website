@@ -74,7 +74,7 @@ class Linkset extends React.Component<LinkSetProps, {}> {
                         onClick={this.handleClick}
                         className="caption"
                     >
-                        {caption}
+                        <img alt="" src={DownArrow} style={{opacity: React.Children.count(children) > 0 ? 1 : 0}} /> {caption}
                     </Link>
                 </li>
                 {

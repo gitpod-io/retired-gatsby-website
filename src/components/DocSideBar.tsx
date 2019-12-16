@@ -63,11 +63,10 @@ const DocSideBar: React.SFC<{}> = () => (
             </Linkset>
 
             <Linkset isRendered={true} caption="Self-Hosted" path="self-hosted/latest/self-hosted">
-                <li><Link activeClassName='active' to="/docs/self-hosted/latest/install/01_prepare_install/">Prepare Install</Link></li>
-                <li><Link activeClassName='active' to="/docs/self-hosted/latest/install/10_install_on_kubernetes/">Install on Kubernetes</Link></li>
-                <li><Link activeClassName='active' to="/docs/self-hosted/latest/install/11_install_on_gcp_manual">Install on Google Cloud (manual)</Link></li>
-                <li><Link activeClassName='active' to="/docs/self-hosted/latest/install/12_install_on_gcp_script">Install on Google Cloud (script)</Link></li>
-                <li><Link activeClassName='active' to="/docs/self-hosted/latest/admin/admin">Admin Guide</Link></li>
+                <li><Link activeClassName='active' to="/docs/self-hosted/latest/install/01_prepare_installation/">Prerequisites</Link></li>
+                <li><Link activeClassName='active' to="/docs/self-hosted/latest/install/10_install_on_kubernetes/">Install on Vanilla Kubernetes</Link></li>
+                <li><Link activeClassName='active' to="/docs/self-hosted/latest/install/11_install_on_gcp_script">Install on Google Cloud Platform</Link></li>
+                {/* <li><Link activeClassName='active' to="/docs/self-hosted/latest/admin/admin">Admin Guide</Link></li> */}
             </Linkset>
 
             <Linkset isRendered={true} caption="Release Notes" path="80_release_notes">
