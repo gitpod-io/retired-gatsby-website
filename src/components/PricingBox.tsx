@@ -8,7 +8,7 @@ const StyledPricingBox = styled.div<{transform?: string}>`
     position: relative;
     margin-bottom: 3rem;
     padding: 3rem 6rem;
-    min-height: 50rem;
+    min-height: 48rem;
     min-width: 22rem;
     width: 24%;
     text-align: center;
