@@ -74,7 +74,7 @@ class Linkset extends React.Component<LinkSetProps, {}> {
                         onClick={this.handleClick}
                         className="caption"
                     >
-                        <img alt="" src={DownArrow}/> {caption}
+                        {caption}
                     </Link>
                 </li>
                 {
