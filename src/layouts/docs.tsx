@@ -65,6 +65,9 @@ const StyledDocsLayout = styled.div`
         h2 + p {
             margin-block-end: 0em;
         }
+        h2 + ul {
+            margin-block-end: 0em;
+        }
 
         ul, ol {
             margin: 2rem 0;

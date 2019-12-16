@@ -10,12 +10,12 @@ Gitpod also provides more optimized installations offering better performance fo
 
 ## Configuration
 
-The [Gitpod self-hosted repository](https://github.com/gitpod-io/gitpod-self-hosted) contains the configuration files this guide is refering to.
+The [Gitpod self-hosted repository](https://github.com/gitpod-io/self-hosted) contains the configuration files this guide is refering to.
 Throughout this guide you will be modifying the files found in this repo.
 We recommend you fork this repository so that you can easily rebase your changes on the latest version.
 
 ```
-git clone https://github.com/gitpod-io/gitpod-self-hosted
+git clone https://github.com/gitpod-io/self-hosted
 cd gitpod-self-hosted
 git remote rename origin upstream
 ```
