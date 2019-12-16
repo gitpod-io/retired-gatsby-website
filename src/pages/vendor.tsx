@@ -180,7 +180,7 @@ const VendorPage: React.SFC<{}> = () => (
                     <td>OAuth2</td>
                     <td>OAuth2</td>
                 </tr>
-                <tr>
+                <tr className="buttons">
                     <th></th>
                     <td><Link to="#" className="btn btn--cta">Start for Free</Link></td>
                     <td><Link to="#" className="btn btn--cta">Contact Sales</Link></td>

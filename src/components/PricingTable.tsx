@@ -67,6 +67,17 @@ const StyledPricingTable = styled.section`
         }
     }
 
+    .buttons {
+        th, td {
+            background: none;
+            border: none;
+        }
+
+        .btn {
+            margin-top: 2rem;
+        }
+    }
+
 `
 
 interface PricingTableProps {

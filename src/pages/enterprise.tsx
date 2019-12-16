@@ -185,7 +185,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
-                <tr>
+                <tr className="buttons">
                     <th></th>
                     <td><Link to="#" className="btn btn--cta">Contact Sales</Link></td>
                     <td><Link to="/self-hosted" className="btn">Host Yourself</Link></td>
