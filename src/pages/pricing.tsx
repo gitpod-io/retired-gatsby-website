@@ -45,10 +45,9 @@ const StyledPricingPage = styled.div`
                 display: none;
             }
 
-            p {
+            h4 {
                 padding: 4rem 0 3rem;
                 width: 72%;
-                font-size: 110%;
                 font-weight: 600;
                 text-align: center;
                 box-shadow: ${shadows.light};
@@ -157,7 +156,7 @@ const PricingPage: React.SFC<{}> = () => (
                             )}
                         </div>
                         <div className="pricing__tagline">
-                            <p>Gitpod Is Always Free for Open Source.</p>
+                            <h4>Gitpod Is Always Free for Open Source.</h4>
                         </div>
                     </section>
 
