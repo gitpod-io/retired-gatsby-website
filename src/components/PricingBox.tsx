@@ -19,9 +19,9 @@ const StyledPricingBox = styled.div<{transform?: string}>`
         transform: ${({transform}) => transform ? transform : null };
         z-index: ${({transform}) => transform ? '1' : null };
 
-            &:last-of-type {
-                margin-left: auto;
-            }
+        &:last-of-type {
+            margin-left: auto;
+        }
     }
 
     @media(max-width: ${sizes.breakpoints.lg}) {
@@ -63,6 +63,11 @@ const StyledPricingBox = styled.div<{transform?: string}>`
     li {
         font-size: 1.5rem;
         text-align: left;
+        font-size: 85%;
+
+        &:not(:last-child) {
+            margin-bottom: .8rem;
+        }
     }
 
     .btn {
