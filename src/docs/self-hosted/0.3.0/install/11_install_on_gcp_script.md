@@ -14,7 +14,7 @@ Once all GCP setup is complete, you will only have to manually set up [OAuth](30
 
 You can install Gitpod self-hosted in your GCP project from within Gitpod. This way you don't have to install the Google Cloud SDK or other required tools.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/gitpod-self-hosted)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/self-hosted)
 
 ## Prerequisites
 - Ensure you have the [general installation prerequisites](../01_prepare_installation) avilable.
@@ -24,16 +24,16 @@ You can install Gitpod self-hosted in your GCP project from within Gitpod. This 
 
 ## Configuration
 
-The [Gitpod self-hosted repository](https://github.com/gitpod-io/gitpod-self-hosted) contains the configuration files this guide is refering to.
+The [Gitpod self-hosted repository](https://github.com/gitpod-io/self-hosted) contains the configuration files this guide is refering to.
 The installation script will modify the configuration files found in that repository.
 We recommend you fork this repository so that you can easily rebase your changes on the latest version.
 
 ```
-git clone https://github.com/gitpod-io/gitpod-self-hosted
+git clone https://github.com/gitpod-io/self-hosted
 cd gitpod-self-hosted
 git remote rename origin upstream
 ```
 
 ## Installation
-To start the automated setup, run [`./utils/create-gcp-resources.go`](https://github.com/gitpod-io/gitpod-self-hosted/blob/master/utils/create-gcp-resources.go) from the root of the self-hosted repo.
+To start the automated setup, run [`./utils/create-gcp-resources.go`](https://github.com/gitpod-io/self-hosted/blob/master/utils/create-gcp-resources.go) from the root of the self-hosted repo.
 The script will guide you through the process. We will ask for confirmation before doing any modifications or enabling anything that costs money.
