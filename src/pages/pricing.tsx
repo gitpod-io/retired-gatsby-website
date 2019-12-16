@@ -22,6 +22,8 @@ const StyledPricingPage = styled.div`
     /* ------------------------------------------- */
 
     .pricing {
+        padding-bottom: 5rem;
+
         &__boxes {
             display: flex;
 
@@ -61,6 +63,7 @@ const StyledPricingPage = styled.div`
     .links {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 1rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
             flex-direction: column;
@@ -76,6 +79,10 @@ const StyledPricingPage = styled.div`
                 margin-bottom: 3rem;
             }
 
+            h2 + p {
+                margin: 0;
+            }
+
             p:last-of-type {
                 margin-bottom: 3rem;
             }
@@ -86,10 +93,42 @@ const StyledPricingPage = styled.div`
             }
 
             @media(min-width: ${sizes.breakpoints.md}) {
-                width: 40%;
+                &:first-of-type {
+                    width: 45%;
+                }
+
+                &:last-of-type {
+                    width: 40%;
+                }
             }
         }
     }
+
+    /* ------------------------------------------- */
+    /* ----- Business ----- */
+    /* ------------------------------------------- */
+
+    .business {
+        text-align: center;
+
+        h2 {
+            &::before {
+                content: '';
+                display: block;
+                height: 1rem;
+                width: 12rem;
+                margin: 0 auto 3rem;
+                background: ${colors.link};
+                border-radius: 10px;
+            }
+        }
+
+        .btn {
+            margin: 1rem;
+            transform: translateY(-4rem);
+        }
+    }
+
 `
 
 const PricingPage: React.SFC<{}> = () => (
@@ -126,23 +165,30 @@ const PricingPage: React.SFC<{}> = () => (
 
                     <section className="links">
                         <div>
+                            <h2>Open Source</h2>
+                            <p>Gitpod is free for up to 50 hours/month on any public repository.</p>
+                            <p>If you are a professional open-source developer and think you need more, let us know, by applying for unlimited hours. Your GitHub / GitLab track record should clearly show your regular open-source contributions.</p>
+                            <a href="#" className="btn">Apply Now</a>
+                        </div>
+                        <div>
                             <h2>For Students</h2>
                             <p>Students get the unlimited subscription for $9.</p>
                             <p>Make sure your student email is set as your primary email on GitHub. And please let us know if your educational institution is not correctly recognized.</p>
-                            <a href="#" className="btn">I’m a Student</a>
-                        </div>
-                        <div>
-                            <h2>Business Solutions</h2>
-                            <p>Here you can find further information for your business solution including its pricing.</p>
-                            <Link to="/education" className="btn">Education</Link>
-                            <Link to="/recruiting" className="btn">Recruiting</Link>
-                            <Link to="/vendor" className="btn">Vendor</Link>
+                            <a href="#" className="btn">I'm a Student</a>
                         </div>
                     </section>
                 </div>
             </div>
 
             <div className="row">
+
+                <section className="business">
+                    <h2>Business Solutions</h2>
+                    <p>Here you can find further information for your business solution including its pricing.</p>
+                    <Link to="/education" className="btn">Education</Link>
+                    <Link to="/recruiting" className="btn">Recruiting</Link>
+                    <Link to="/vendor" className="btn">Vendor</Link>
+                </section>
 
                 {/* ----- BG ----- */}
 
