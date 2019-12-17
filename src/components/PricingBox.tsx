@@ -89,23 +89,24 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean}>`
     }
 `
 
-interface PricingBoxProps {
+export interface PricingBoxProps {
     title: string
     img: JSX.Element
     price?: string
     duration?: string
     feature?: string
     features?: string[]
-    btnText?: string
     transform?: string
     background?: boolean
+    btnText?: string
+    link?: string
 }
 
-const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, feature, features, btnText, transform, background }) => (
+const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, feature, features, btnText, transform, background, link }) => (
     <StyledPricingBox transform={transform} background={background}>
         <h4>{title}</h4>
-        {img}
-        {price ? <div className="price">{price}</div> : null }
+        { img }
+        { price ? <div className="price">{price}</div> : null }
         { duration ? <div className="duration">{duration}</div> : null }
         { feature ? <div className="feature">{feature}</div> : null }
         { features && features.length ?
@@ -113,7 +114,7 @@ const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, f
                 { features.map((f, i) => <li key={i}>{f}</li>) }
             </ul>
         : null }
-        <Link to="#" className="btn" style={ background ? {color: colors.textDark} : {} }>{btnText ? btnText : 'Start for Free'}</Link>
+        <Link to={link || '/#get-started'} className="btn" style={ background ? {color: colors.textDark} : {} }>{btnText ? btnText : 'Start for Free'}</Link>
     </StyledPricingBox>
 )
 
