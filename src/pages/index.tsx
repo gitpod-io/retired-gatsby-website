@@ -3,7 +3,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { Global, css } from '@emotion/core'
 import { Link } from 'gatsby'
-import { colors, sizes, shadows, borders } from '../styles/variables'
+import { colors, sizes, shadows } from '../styles/variables'
 
 import IndexLayout from '../layouts/index'
 import ReflectionScreenshot from '../resources/reflection-screenshot.png'
@@ -119,6 +119,8 @@ const StyledIndexPage = styled.div`
     /* ------------------------------------------- */
 
     .intro {
+        padding-bottom: 0rem;
+
         &__box {
             display: flex;
 
