@@ -95,21 +95,24 @@ export const featuresCardsData = [
         more: <p>Read more about <Link to="/docs/46_prebuilds/">Prebuilt Workspaces.</Link></p>,
         strong: "It's first IDE that builds your project before you even open it.",
         img: <img alt="Prebuilt Workspaces" src={PrebuiltWorkspaces}/>,
-        id: 'prebuilt'
+        id: 'prebuilt',
+        isIllustration: true
     },
     {
         title: "Parallel Workspaces",
         paragraphs: ["Don’t postpone work because your workspaces is occupied with your work on the latest features.", "To sneak in a bugfix on a maintenance branch or a code review - just start more workspaces - in parallel."],
         strong: 'Use clean, fresh workspaces for every task.',
         img: <img alt="Parallel Workspaces" src={ParallelWorkspaces}/>,
-        id: 'parallel'
+        id: 'parallel',
+        isIllustration: true
     },
     {
         title: "Works on any Device",
         paragraphs: ["No more need for high-end notebooks, with Gitpod coding gets accessible for everyone.", "It works just as smoothly on a Chromebook as on a high-end notebook or a tablet."],
         img: <img alt="Works On Any Device" src={WorksOnAnyDevice}/>,
         caption: '*comprehensive tablet support is coming soon',
-        id: 'works'
+        id: 'works',
+        isIllustration: true
     },
     {
         title: "Linux Terminals",
@@ -122,14 +125,15 @@ export const featuresCardsData = [
         title: "Share a Running Workspace",
         paragraphs:["Collaborate with your friends and colleagues and hunt down bugs together."],
         more: <p>Read more about <Link to="/docs/33_sharing_and_collaboration/">Sharing a Workspace.</Link></p>,
-        img:<img alt="Share a Running Workspace" style={{transform: 'translateY(2rem)'}} src={ShareWorkspaces}/>,
-        id: 'share'
+        img:<img alt="Share a Running Workspace" style={{transform: 'translateY(2rem) scale(.9)'}} src={ShareWorkspaces}/>,
+        id: 'share',
     },
     {
         title: "Create a Snapshot",
         paragraphs:["Create a snapshot of your work and share it with the world.", "Based on your snapshot new workspaces can be created and edited independently."],
         more: <p>Read more about <Link to="/docs/33_sharing_and_collaboration/#sharing-snapshots">Sharing a Snapshot.</Link></p>,
         img:<img alt="Creating Snapshot" src={CreateASnapshot}/>,
-        id: 'snapshot'
+        id: 'snapshot',
+        isIllustration: true
     }
 ]
