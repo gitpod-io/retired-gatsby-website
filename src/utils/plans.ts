@@ -34,5 +34,6 @@ export const plans = [
         img: Earth,
         alt: 'Earth',
         feature: 'Unleash Developer Productivity',
+        background: true
     }
 ]
