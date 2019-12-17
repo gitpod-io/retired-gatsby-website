@@ -169,6 +169,8 @@ const otherFeatures = [
         paragraphs: ["TBD"],
         img: <img alt="Web and Desktop Support"/>,
         more: <p>Read more about <Link to="/blog/when-code-reviews-lgtm/">Web und Desktop Support.</Link></p>,
+        colorTextBox: colors.white,
+        colorImgBox: colors.offWhite
     }
 ]
 
