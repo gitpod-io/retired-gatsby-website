@@ -10,31 +10,12 @@ import Quote from '../components/Quote'
 import CollegeStudents from '../resources/college-students.png'
 import Bg from '../components/Bg'
 import ActionCard from '../components/ActionCard'
-import styled from '@emotion/styled'
-import { colors } from '../styles/variables'
 import PricingTable from '../components/PricingTable'
 import Circle from '../components/Circle'
 import Layer from '../resources/layer.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
 import { Link } from 'gatsby'
-
-const StyledHeading = styled.h3`
-    max-width: 50rem;
-    margin: 0 auto 5rem;
-    padding: 5rem 3rem;
-    text-align: center;
-    font-weight: 400;
-
-    span {
-        display: block;
-        margin: 2rem auto;
-        background: ${colors.link};
-        height: .8rem;
-        width: 10rem;
-        border-radius: 100px;
-    }
-`
 
 const EducationPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/education/' title="Education">
@@ -216,15 +197,6 @@ const EducationPage: React.SFC<{}> = () => (
             text='Please, get in touch. We’re happy to answer your questions.'
             anchors={[{href: '/schedule-call',text: 'Schedule a Call'}, {href: '/contact', text: 'Contact'}]}
         />
-
-        <div className="row">
-            <StyledHeading>
-                <span aria-hidden="true" />
-                Are You a Student?
-                <br />
-                Tell your Teacher about it!
-            </StyledHeading>
-        </div>
 
     </IndexLayout>
 )
