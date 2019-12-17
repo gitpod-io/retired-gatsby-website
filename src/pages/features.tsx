@@ -200,6 +200,7 @@ const FeaturesPage: React.SFC<{}> = () => (
                                 img={f.img}
                                 id={f.id}
                                 caption={f.caption}
+                                isIllustration={f.isIllustration}
                             />
                         )
                     }

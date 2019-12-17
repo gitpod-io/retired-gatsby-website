@@ -3,7 +3,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { colors, sizes, shadows } from '../styles/variables'
 
-const StyledFeatureCard = styled.div<{caption: boolean}>`
+const StyledFeatureCard = styled.div<{caption: boolean, isIllustration?: boolean}>`
     display: flex;
     background: ${colors.offWhite};
     border: 3px solid ${colors.offWhite};
@@ -46,8 +46,10 @@ const StyledFeatureCard = styled.div<{caption: boolean}>`
         }
 
         img {
-            width: 90%;
+            display: inline-block;
+            width: 85%;
             height: 95%;
+            transform: ${({isIllustration}) => isIllustration ? 'scale(.9)' : null };
 
             @media(max-width: ${sizes.breakpoints.sm}) {
                 width: 100%;
@@ -77,11 +79,12 @@ interface FeatureCardProps {
     caption?: string,
     colorTextBox?: string
     colorImgBox?: string
+    isIllustration?: boolean
 }
 
-const FeatureCard: React.SFC<FeatureCardProps> = ({ title, paragraphs, more, strong, img , id, caption, colorTextBox, colorImgBox }) => (
+const FeatureCard: React.SFC<FeatureCardProps> = ({ title, paragraphs, more, strong, img , id, caption, colorTextBox, colorImgBox, isIllustration }) => (
     <div className="row">
-        <StyledFeatureCard id={id} caption={ caption ? true : false}>
+        <StyledFeatureCard id={id} caption={ caption ? true : false} isIllustration={isIllustration}>
             <div className="text-box" style={ colorTextBox ? { background: colorTextBox } : {} }>
                 <h3>{title}</h3>
                 { paragraphs.map((p, i) => <p key={i}>{p}</p>) }
