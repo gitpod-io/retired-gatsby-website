@@ -67,5 +67,5 @@ Hint: If the install command fails with `Error: UPGRADE FAILED: "gitpod" has no 
 ## Customization
 
 * [**Storage**](../32_storage): Configure where Gitpod stores stopped workspaces.
-* [**Kubernetes Nodes**:](../33_nodes): Configure file system layout and the workspace's node associativity.
+* [**Kubernetes Nodes**](../33_nodes): Configure file system layout and the workspace's node associativity.
 * [**Workspaces**](../31_workspaces): Configure workspace sizing.
