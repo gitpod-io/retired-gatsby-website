@@ -3,8 +3,6 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { colors } from '../styles/variables'
 import { Link } from 'gatsby'
-// import Arrow from '../resources/arrow.svg'
-import DownArrow from '../resources/arrow-down.svg'
 
 const StyledLinkSet = styled.div`
 
@@ -74,7 +72,7 @@ class Linkset extends React.Component<LinkSetProps, {}> {
                         onClick={this.handleClick}
                         className="caption"
                     >
-                        <img alt="" src={DownArrow} style={{opacity: React.Children.count(children) > 0 ? 1 : 0}} /> {caption}
+                        {caption}
                     </Link>
                 </li>
                 {

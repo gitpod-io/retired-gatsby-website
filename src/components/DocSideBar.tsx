@@ -3,12 +3,21 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Linkset from './Linkset'
 import styled from '@emotion/styled';
+import { colors } from '../styles/variables';
+import MagGlass from '../resources/mag-glass.svg';
 
 const StyledInput = styled.input`
-    padding: 3px;
+    padding: 7px 18px 7px 38px;
     margin: 10px;
+    border-radius: 100px;
+    border: solid 1px ${colors.white};
+    box-shadow: 1px 3px 8px ${colors.offWhite2};
+
+    background: url(${MagGlass}) no-repeat 10px ${colors.white};
+    background-size: 20px 20px;
     &:focus {
-        outline-width: 1px;
+        border: solid 1px ${colors.link};
+        outline: none;
     }
 `;
 
