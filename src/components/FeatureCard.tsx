@@ -97,7 +97,7 @@ interface FeatureCardProps {
 
 const FeatureCard: React.SFC<FeatureCardProps> = ({ title, paragraphs, more, strong, img , id, caption, colorTextBox, colorImgBox, isIllustration }) => (
     <div className="row">
-        <StyledFeatureCard id={id} caption={ caption ? true : false} isIllustration={isIllustration}>
+        <StyledFeatureCard id={id} caption={ caption ? true : false} isIllustration={isIllustration} style={ colorTextBox ? { borderColor: colorTextBox } : {} }>
             <div className="text-box" style={ colorTextBox ? { background: colorTextBox } : {} }>
                 <h3>{title}</h3>
                 { paragraphs.map((p, i) => <p key={i}>{p}</p>) }
