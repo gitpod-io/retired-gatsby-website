@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import { colors, shadows, sizes } from '../styles/variables'
 
-const StyledPricingBox = styled.div<{transform?: string}>`
+const StyledPricingBox = styled.div<{transform?: string, background?: boolean}>`
     position: relative;
     margin-bottom: 3rem;
     padding: 3rem 6rem;
@@ -12,7 +12,10 @@ const StyledPricingBox = styled.div<{transform?: string}>`
     min-width: 25rem;
     width: 24%;
     text-align: center;
-    background: ${colors.white};
+    color: ${({ background }) => background ? colors.white : null };
+    background: ${({ background }) => background ? 'url("/galaxy.jpg")' : colors.white };
+    background-size: ${({ background }) => background ? 'cover' : null };
+    background-position: ${({ background }) => background ? 'left' : null };
     box-shadow: ${shadows.light};
 
     @media(min-width: 1096px) {
@@ -93,12 +96,13 @@ interface PricingBoxProps {
     duration?: string
     feature?: string
     features?: string[]
-    btnText?: string,
+    btnText?: string
     transform?: string
+    background?: boolean
 }
 
-const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, feature, features, btnText,transform }) => (
-    <StyledPricingBox transform={transform}>
+const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, feature, features, btnText, transform, background }) => (
+    <StyledPricingBox transform={transform} background={background}>
         <h4>{title}</h4>
         {img}
         {price ? <div className="price">{price}</div> : null }
@@ -109,7 +113,7 @@ const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, f
                 { features.map((f, i) => <li key={i}>{f}</li>) }
             </ul>
         : null }
-        <Link to="#" className="btn">{btnText ? btnText : 'Start for Free'}</Link>
+        <Link to="#" className="btn" style={ background ? {color: colors.textDark} : {} }>{btnText ? btnText : 'Start for Free'}</Link>
     </StyledPricingBox>
 )
 
