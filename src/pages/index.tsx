@@ -6,9 +6,9 @@ import { colors, sizes, shadows } from '../styles/variables'
 
 import IndexLayout from '../layouts/index'
 import ReflectionScreenshot from '../resources/reflection-screenshot.png'
-import IconLine from '../resources/icon-line.png'
-import HourGlass from '../resources/hourglass.png'
-import ArrowOnTarget from '../resources/arrow-on-target.png'
+import IconLine from '../resources/zick-zack-line.svg'
+import HourGlass from '../resources/hourglass.svg'
+import ArrowOnTarget from '../resources/arrow-on-target.svg'
 import ToolIntegration from '../resources/tool-integration.svg'
 import FullDevEnvironments from '../resources/full-dev-environments.png'
 import ReadyToCode from '../components/ReadyToCode'
@@ -298,7 +298,7 @@ const StyledIndexPage = styled.div`
             display: inline-block;
             padding: 1rem 3rem;
             font-weight: 600;
-            color: ${colors.white};
+            color: ${colors.textLight};
             background: ${colors.offWhite2};
             border: none;
 
@@ -308,7 +308,8 @@ const StyledIndexPage = styled.div`
             }
 
             &--active {
-                background: ${colors.link};
+                color: ${colors.white};
+                background: url("/galaxy.jpg") no-repeat 50% 50%;
             }
         }
 
@@ -405,11 +406,11 @@ const IndexPage: React.SFC<{}> = () => (
             <section className="intro">
                 <div className="intro__box-container row">
                     <div className="intro__box">
-                        <img className="intro__icon" alt="Hour Glass" src={HourGlass} />
+                        <object className="intro__icon" data={HourGlass} />
                         <p className="intro__text">Every day <span>developers waste millions of hours</span> waiting for builds to finish.</p>
                     </div>
                     <div className="intro__box">
-                        <img className="intro__icon" alt="Arrow on Wooden Target" src={ArrowOnTarget} />
+                        <object className="intro__icon"  data={ArrowOnTarget} />
                         <p className="intro__text"><span>Gitpod eliminates this friction</span> by providing prebuilt, <br/>ready-to-code dev environments with just one click.</p>
                     </div>
                 </div>
