@@ -62,6 +62,8 @@ helm upgrade --install $(for i in $(cat configuration.txt); do echo -e "-f $i"; 
 Visit `https://<your-domain.com>/` and check that you can login and start workspaces just like on gitpod.io.
 Launch a workpace. Launching the first workspace can take significantly longer (up to 15min), because docker images are pulled.
 
+Hint: If the install command fails with `Error: UPGRADE FAILED: "gitpod" has no deployed releases`, simply delete the existing installation with `helm delete gitpod` and try again.
+
 ## Customization
 
 * [**Storage**](../32_storage): Configure where Gitpod stores stopped workspaces.
