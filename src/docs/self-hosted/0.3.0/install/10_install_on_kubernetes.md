@@ -16,7 +16,7 @@ We recommend you fork this repository so that you can easily rebase your changes
 
 ```
 git clone https://github.com/gitpod-io/self-hosted
-cd gitpod-self-hosted
+cd self-hosted
 git remote rename origin upstream
 ```
 
@@ -35,7 +35,7 @@ Once you know your IP address, configure your three domain names to resolve to t
 ### OAuth integration
 Gitpod delegates authentication to a configurable [OAuth provider](../01_prepare_installation/#user-authorization-and-git-integration).
 
-Follow [the steps](../30_oauth) to set up GitHub or Gitlab as OAuth provider.
+Follow [the steps](../30_oauth) to set up GitHub or GitLab as OAuth provider.
 
 ### HTTPS certificates or external Docker registry
 Gitpod builds docker images on demand and runs them in Kubernetes pods as workspaces.

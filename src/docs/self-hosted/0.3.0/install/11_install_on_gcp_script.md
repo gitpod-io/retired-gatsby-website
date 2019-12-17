@@ -30,7 +30,7 @@ We recommend you fork this repository so that you can easily rebase your changes
 
 ```
 git clone https://github.com/gitpod-io/self-hosted
-cd gitpod-self-hosted
+cd self-hosted
 git remote rename origin upstream
 ```
 
