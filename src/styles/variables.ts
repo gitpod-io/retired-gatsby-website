@@ -1,6 +1,6 @@
 export const colors = {
     textDark: '#292929',
-    textLight: '#9F9F9F',
+    textLight: '#8F8F8F',
     text: '#4D4D4D',
     link: '#0087BE',
     lightBlue: '#1AA6E4',
