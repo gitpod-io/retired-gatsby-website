@@ -7,7 +7,7 @@ import Bg from '../components/Bg'
 import PricingBg from '../resources/pricing-bg.png'
 import { plans } from '../utils/plans'
 import { Link } from 'gatsby'
-import { sizes, colors, shadows } from '../styles/variables'
+import { sizes, shadows } from '../styles/variables'
 import ActionCard from '../components/ActionCard'
 import Details from '../components/Details'
 import PricingTable from '../components/PricingTable'
@@ -117,7 +117,9 @@ const StyledPricingPage = styled.div`
                 height: 1rem;
                 width: 12rem;
                 margin: 0 auto 3rem;
-                background: ${colors.link};
+                background: url("/galaxy.jpg");
+                background-size: cover;
+                background-position: bottom right;
                 border-radius: 10px;
             }
         }
@@ -152,6 +154,7 @@ const PricingPage: React.SFC<{}> = () => (
                                     feature={plan.feature}
                                     features={plan.features}
                                     transform={plan.transform}
+                                    background={plan.background}
                                 />
                             )}
                         </div>
