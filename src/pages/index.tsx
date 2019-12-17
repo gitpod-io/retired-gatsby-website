@@ -16,7 +16,6 @@ import ReadyToCode from '../components/ReadyToCode'
 import AntDesignWorkspace from '../resources/ant-design-workspace.png'
 import Details from '../components/Details'
 import TrustedBy from '../components/TrustedBy'
-import DWave from '../resources/dwave.svg'
 import AppliToolsLogo from '../resources/aplitools.svg'
 import Gatsby from '../resources/gatsby.svg'
 import FreeCodeCamp from '../resources/freecodecamp.svg'
@@ -435,11 +434,6 @@ const IndexPage: React.SFC<{}> = () => (
 
             <TrustedBy
                 brands={[
-                    {
-                        alt: 'DWave Logo',
-                        url: 'https://www.dwavesys.com/',
-                        svg: DWave
-                    },
                     {
                         alt: 'Aplitools Logo',
                         url: 'https://applitools.com/',

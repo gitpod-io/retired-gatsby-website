@@ -17,7 +17,6 @@ import Layer from '../resources/layer.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
 import { Link } from 'gatsby'
-import DWave from '../resources/dwave.svg'
 import AppliToolsLogo from '../resources/aplitools.svg'
 import Gatsby from '../resources/gatsby.svg'
 import FreeCodeCamp from '../resources/freecodecamp.svg'
@@ -60,11 +59,6 @@ const EnterprisePage: React.SFC<{}> = () => (
 
         <TrustedBy
             brands={[
-                    {
-                        alt: 'DWave Logo',
-                        url: 'https://www.dwavesys.com/',
-                        svg: DWave
-                    },
                     {
                         alt: 'Aplitools Logo',
                         url: 'https://applitools.com/',
