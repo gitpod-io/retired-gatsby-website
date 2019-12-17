@@ -23,15 +23,15 @@ Installing Gitpod on a subdomain works as well. For example:
 
 ## User Authorization and Git Integration
 Gitpod does not implement user authentication itself, but integrates with other auth provider using [OAuth2](https://oauth.net/2/).
-Usually your Git hosting solution (e.g. GitHub or Gitlab) acts as OAuth auth provider. This way we control access to Gitpod while at
+Usually your Git hosting solution (e.g. GitHub or GitLab) acts as OAuth auth provider. This way we control access to Gitpod while at
 the same time making sure every user has proper access to their Git repository.
 
 Gitpod supports the following authentication providers:
 * github.com
 * GitHub Enterprise in version 2.16.x and higher
 * gitlab.com
-* Gitlab Community Edition in version 11.7.x and higher
-* Gitlab Enterprise Edition in version 11.7.x and higher
+* GitLab Community Edition in version 11.7.x and higher
+* GitLab Enterprise Edition in version 11.7.x and higher
 * Bitbucket — coming soon
 * Custom Auth Provider – Inquiry TypeFox for a quote
 
