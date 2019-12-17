@@ -69,7 +69,7 @@ const VendorPage: React.SFC<{}> = () => (
                     <th>Gitpod.io
                         <span><span>FREE</span> Trial</span>
                     </th>
-                    <th>Gitpod Cloud
+                    <th>Gitpod Managed
                         <span><span>FREE</span> Trial</span>
                     </th>
                     <th>Gitpod Self Hosted
