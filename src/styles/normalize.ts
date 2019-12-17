@@ -158,6 +158,11 @@ export default `
         font-weight: 600;
         color: ${colors.link};
         text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: ${colors.lightBlue};
+        }
     }
 
     button, a {
@@ -173,7 +178,7 @@ export default `
     .btn {
         display: inline-block;
         padding: .8rem 2.2rem;
-        font-weight: 400;
+        font-weight: 600;
         color: ${colors.textDark};
         background: ${colors.white};
         border: 2px solid ${colors.text};
@@ -247,15 +252,14 @@ export default `
 
         &:hover,
         &:focus {
-            color: ${colors.link};
 
             svg {
-                fill: ${colors.link};
+                fill: ${colors.lightBlue};
             }
 
             &::after {
                 right: 0;
-                border-color: ${colors.link};
+                border-color: ${colors.lightBlue};
             }
         }
     }

@@ -17,16 +17,15 @@ const StyledDropDown = styled.div`
         display: flex;
         align-items: center;
         border: none;
-        transition: all .1s;
         max-width: 20rem;
 
         &:hover,
         &:focus {
-            color: ${colors.link};
+            color: ${colors.lightBlue};
 
             &::before {
                 right: 0;
-                border-color: ${colors.link};
+                border-color: ${colors.lightBlue};
             }
         }
     }
@@ -58,7 +57,16 @@ const StyledDropDown = styled.div`
             padding: .5rem 0 1rem;
             background: ${colors.offWhite};
             box-shadow: ${shadows.light};
-            transition: all .1s cubic-bezier(0.86, 0, 0.07, 1);
+
+            &::before {
+                position: absolute;
+                top: 0;
+                content: "";
+                display: block;
+                height: 130%;
+                width: 100%;
+                margin-top: -3rem;
+            }
         }
     }
 
