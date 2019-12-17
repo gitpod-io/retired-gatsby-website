@@ -169,6 +169,16 @@ const StyledDocsLayout = styled.div`
         transform: rotate(-90deg);
     }
 
+    svg {
+        fill: #bcbcbc;
+        transition: all .2s;
+
+        &:hover,
+        &:focus {
+            fill: ${colors.lightBlue};
+        }
+    }
+
 `
 
 interface DocsLayoutProps {
