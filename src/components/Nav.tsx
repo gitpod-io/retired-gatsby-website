@@ -92,8 +92,8 @@ const StyledNav = styled.nav`
             background: ${colors.offWhite};
 
             svg {
-                stroke: ${colors.link};
-                fill: ${colors.link};
+                stroke: ${colors.lightBlue};
+                fill: ${colors.lightBlue};
             }
         }
 

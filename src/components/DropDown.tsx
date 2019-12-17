@@ -21,11 +21,11 @@ const StyledDropDown = styled.div`
 
         &:hover,
         &:focus {
-            color: ${colors.link};
+            color: ${colors.lightBlue};
 
             &::before {
                 right: 0;
-                border-color: ${colors.link};
+                border-color: ${colors.lightBlue};
             }
         }
     }
