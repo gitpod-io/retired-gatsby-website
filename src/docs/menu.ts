@@ -137,23 +137,15 @@ export const MENU: MenuEntry[] = [
         "self-hosted/latest/self-hosted",
         [
             M(
-                "Prepare Install",
-                "self-hosted/latest/install/01_prepare_install/"
+                "Prerequisites",
+                "self-hosted/latest/install/01_prepare_installation/"
             ),M(
-                "Install on Kubernetes",
+                "Install on Vanilla Kubernetes",
                 "self-hosted/latest/install/10_install_on_kubernetes/"
             ),
             M(
-                "Install on Google Cloud (manual)",
-                "self-hosted/latest/install/11_install_on_gcp_manual/"
-            ),
-            M(
-                "Install on Google Cloud (script)",
-                "self-hosted/latest/install/12_install_on_gcp_script/"
-            ),
-            M(
-                "Admin Guide",
-                "self-hosted/latest/admin/admin/"
+                "Install on Google Cloud Platform",
+                "self-hosted/latest/install/11_install_on_gcp_script/"
             )
         ]
     ),
