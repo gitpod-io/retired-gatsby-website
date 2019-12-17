@@ -107,6 +107,20 @@ const StyledFeaturesPage = styled.div`
                 max-width: 80rem;
             }
 
+            h3 {
+                font-weight: 400;
+
+                font-size: 2.6rem;
+
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    font-size: 2rem;
+                }
+
+                @media(max-width: ${sizes.breakpoints.sm}) {
+                    font-size: 1.8rem;
+                }
+            }
+
             .table-container {
                 margin: 6rem 0;
             }
