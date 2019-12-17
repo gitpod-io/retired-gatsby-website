@@ -168,7 +168,7 @@ const PricingPage: React.SFC<{}> = () => (
                             <th>Gitpod Managed
                                 <span><span>FREE</span> Trial</span>
                             </th>
-                            <th>Gitpod Self Hosted
+                            <th>Gitpod Self-Hosted
                                 <span><span>FREE</span> Trial</span>
                             </th>
                         </tr>

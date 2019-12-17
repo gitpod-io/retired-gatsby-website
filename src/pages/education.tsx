@@ -70,10 +70,10 @@ const EducationPage: React.SFC<{}> = () => (
                     <th>Gitpod.io
                         <span><span>FREE</span> Trial</span>
                     </th>
-                    <th>Gitpod Cloud
+                    <th>Gitpod Managed
                         <span><span>FREE</span> Trial</span>
                     </th>
-                    <th>Gitpod Self Hosted
+                    <th>Gitpod Self-Hosted
                         <span><span>FREE</span> Trial</span>
                     </th>
                 </tr>
