@@ -18,7 +18,7 @@ const StyledLinkSet = styled.div`
             margin-bottom: .4rem;
             border: none;
             font-weight: 400;
-            font-size: 1.9rem;
+            font-size: 1.7rem;
 
             img {
                 display: inline-block;
@@ -27,7 +27,11 @@ const StyledLinkSet = styled.div`
         }
 
         &:not(.caption) {
-            padding-left: 3rem;
+            padding-left: 1.8rem;
+        }
+
+        &:hover {
+            color: ${colors.lightBlue};
         }
     }
 
@@ -45,39 +49,27 @@ const StyledLinkSet = styled.div`
 
 interface LinkSetProps {
     caption: string
-    path?: string
-    isRendered?: boolean
+    path: string
 }
 
 class Linkset extends React.Component<LinkSetProps, {}> {
 
-    state = {
-        isRendered: this.props.isRendered || false
-    }
-
-    handleClick = () => {
-        this.setState({isRendered: !this.state.isRendered})
-    }
-
     render() {
 
-        const { isRendered } = this.state
         const { caption, path, children } = this.props
 
         return (
             <StyledLinkSet>
                 <li>
                     <Link
-                        to={path ? `/docs/${path}/` : '/docs/'}
-                        onClick={this.handleClick}
+                        to={path}
                         className="caption"
+                        activeClassName='active'
                     >
                         {caption}
                     </Link>
                 </li>
-                {
-                    isRendered ? children : null
-                }
+                {children}
             </StyledLinkSet>
         )
     }
