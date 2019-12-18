@@ -8,17 +8,31 @@ image: /globe.png
 teaserImage: /globe.png
 ---
 
-**It's been about 18 months since we launched** the first public beta of Gitpod, and we are thrilled and thankful for how many people use it daily. We learned a lot during these one-and-a-half years: About how to launch workspaces on Kubernetes as quickly as possible. About the degrees of freedom and power projects and developer need. And about robustness and availability. We iteratively improved gitpod.io, and while we still have a plethora of ideas of what we could improve even further, we are quite happy with the degree of robustness and reliability we have reached so far.
+Eighteen months ago we launched the public beta of Gitpod.
+That date marked the beginning of an amazing journey with plenty of feedback, fixes and improvements.
+It is exciting to see how far we have come and where that simple idea of instant, ready-to-code workspaces has taken us.
 
-Many people reached out to us, and we reached out to many as well. We listened a lot and could not wish for the more positive feedback. **However, some developers told us they could not use Gitpod.io**. They told us their source code must not leave the company network. They told us they need to access docker, npm, and maven registries that are only accessible inside the company network. Some even said to us that they would like to use Gitpod on a network that has no access to the internet at all. We hear you, and well, we have an announcement to make.
+None of this would have been possible if it weren't for the troves of developers, hackers, coders and other purveyors of Open-Source who provide ample feedback and use Gitpod as their IDE of choice.
+If the technical side of Gitpod is fun, the user side of Gitpod is truly amazing. We are blown away every day because of the quantity and quality of what you guys do with Gitpod.
 
-**Starting today, Gitpod is available as a self-hosted version.** All you need is a Domain, Git-Repositories, and a Kubernetes cluster to run Gitpod, just as you know it from gitpod.io, on your infrastructure. It may be a public cloud provider or some Kubernetes distribution on your hardware. It may be on the public internet, behind a firewall on your corporate network, or on a network without internet access.
+However, until now Gitpod has not truly been available for everyone.
+There are many situations, especially in the enterprise, where giving a third-party cloud service access to your code and repositories is out of question.
+Maybe the codebase you work on is living on a GitLab instance somewhere locked down in your company's network.
+Maybe your budgetary requirements do not permit paying for a SaaS product, but only allow for on-premise licenses.
 
-We ship Gitpod as a **Helm chart that you can install on Kubernetes**. Also, we offer a git-repository with a default configuration that you can clone and adjust to your needs. You'll need to configure OAuth via GitHub Enterprise, github.com, or gitlab.com or GitLab CE/EE. OAuth solves two use cases at once: First, users can log into Gitpod without the need to create new accounts. Second, when they open git repositories, they are already authenticated for git-pull and push. Optionally, but recommended for robustness, you can hook up your own MySQL database, Docker Registry for images built by Gitpod and MinIO or Google Storage for storing stopped workspaces. If you want to run Gitpod on Google Cloud Platform with GKE, you'll be happy to hear that this is where gitpod.io runs and has proven itself. Also, we have a script that automates the installation on GCP and sets up a managed MySQL Database, Google Container Registry, and Google Storage.
+Starting today we enter the public beta of Gitpod Self-Hosted.
+Much like eighteen months ago, this marks the starting point of a new section of our journey.
+We are very excited to enable more people to focus on what they're good at, with Gitpod becoming a part of their enterprise tooling landscape.
 
-We offer Gitpod Self-Hosted for free for up to three users per installation. For unlimited users, you can download a one-month evaluation license in your gitpod.io account. You can obtain multiple evaluation licenses, but only one per domain.
+Other than running on your infrastructure, Gitpod Self-Hosted also works with self-hosted GitLab installations.
+If you are running your own GitLab installation already, adding Gitpod to the mix turns this into a power-house of on-prem tooling.
 
-To get started, [git-clone gitpod-io/self-hosted](https://github.com/gitpod-io/self-hosted) and follow the installation instructions.
-We answer questions on [community.gitpod.io][https://community.gitpod.io/] and please report bugs and feature-requestes [here](https://github.com/gitpod-io/self-hosted/issues/new).
+Gitpod Self-Hosted is free for up to three users. If you're a small shop that will get you up and running.
+If you need more, there is a [free one-month unlimited license](https://gitpod.io/selfhosted-trail) available.
+And just in case, if you need support running your PoC in-house please [reach out](mailto:contact@gitpod.io) and we'll be happy to help.
+Our remodeled [community](https://community.gitpod.io/) will also fill with helpful tips and tricks regarding Gitpod Self-Hosted.
 
-For more details on pricing, custom evaluation periods, support and installation assistance, please don't hesitate to contact us here.
+To get started, head over to the [Self-Hosted documentation](https://gitpod-staging.netlify.com/docs/self-hosted/latest/self-hosted/).
+There you can find everything about the requirements, supported environments and steps involved.
+
+We are absolutely thrilled to see how Gitpod and its community grows. Self-Hosted will enable even more people to spend time coding, not setting up their machine.
