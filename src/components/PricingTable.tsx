@@ -78,6 +78,23 @@ const StyledPricingTable = styled.section`
         }
     }
 
+    .description {
+        display: inline-block;
+        transform: translateY(-.5rem);
+
+        &__text {
+            position: absolute;
+            top: 0;
+            left: 3rem;
+            width: 25rem;
+            min-width: 15rem;
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                width: 18rem;
+            }
+        }
+    }
+
 `
 
 interface PricingTableProps {
