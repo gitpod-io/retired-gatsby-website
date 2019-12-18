@@ -4,8 +4,7 @@ import styled from '@emotion/styled'
 import { shadows, borders, sizes, colors } from '../styles/variables'
 import { projects } from '../utils/projects'
 import Project from '../components/Project'
-import ArrowIcon from '../resources/arrow-icon.svg'
-import LenseIcon from '../resources/lense-icon.svg'
+import GitpodGrey from '../resources/gitpod-logo-grey.svg'
 
 const StyledGetStarted = styled.div`
     /* ------------------------------------------- */
@@ -32,12 +31,13 @@ const StyledGetStarted = styled.div`
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                height: 5rem;
-                background: ${colors.offWhite2};
                 width: 95%;
                 padding: 2rem;
-                border-radius: 100px;
+                height: 5rem;
                 font-size: 1.7rem;
+                background: ${colors.offWhite2};
+                box-shadow: ${shadows.light};
+                border-radius: 100px;
 
                 @media(max-width: 690px) {
                     font-size: 1.4rem;
@@ -49,14 +49,14 @@ const StyledGetStarted = styled.div`
                     font-size: 1.3rem;
                 }
 
-                @media(max-width: 523px) {
+                @media(max-width: 540px) {
                     padding: 4rem 1rem 4rem;
                 }
 
                 & > div {
                     margin-right: auto;
 
-                    @media(max-width: 523px) {
+                    @media(max-width: 540px) {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -75,13 +75,11 @@ const StyledGetStarted = styled.div`
                         img {
                             margin-right: 1rem;
                             margin-bottom: -.5rem;
+                            height: 2.5rem;
+                            transform: translateY(.2rem);
 
-                            @media(max-width: 600px) {
-                                transform: scale(.5);
-                            }
-
-                            @media(max-width: 600px) {
-                                display: none;
+                            @media(max-width: 560px) {
+                                transform: scale(.8);
                             }
                         }
                     }
@@ -89,15 +87,14 @@ const StyledGetStarted = styled.div`
 
                 input {
                     display: inline-block;
-                    border: none;
+                    width: 49rem;
                     background: ${colors.white};
-                    color: ${colors.textLight};
-                    padding: .6rem .5rem;
+                    color: ${colors.text};
+                    padding: .1rem .3rem;
                     font-size: inherit;
-                    width: 44rem;
-                    border-radius: 2px;
+                    border: 2px solid ${colors.lightBlue};
 
-                    @media(max-width: ${sizes.breakpoints.md}) {
+                    @media(max-width: 900px) {
                         width: 44.5rem;
                     }
 
@@ -107,11 +104,11 @@ const StyledGetStarted = styled.div`
 
                     @media(max-width: 600px) {
                        width: 34rem;
-                       padding: .6rem .2rem;
+                       padding: .1rem .2rem;
                     }
 
 
-                    @media(max-width: 423px) {
+                    @media(max-width: 450px) {
                         min-width: 26rem;
                         width: auto;
                     }
@@ -124,15 +121,27 @@ const StyledGetStarted = styled.div`
                 a {
                     transform: translateY(.3rem);
 
-                    img {
+                    @media(max-width: 523px ) {
+                        transform: translateY(.7rem);
+                    }
+
+                    &:hover,
+                    &:focus {
+                        svg {
+                            stroke: ${colors.lightBlue};
+                        }
+                    }
+
+                    svg {
+                        transition: all .2s;
+
                         @media(max-width: 660px) {
-                            transform: scale(.7);
+                            transform: scale(.9);
                         }
 
                         @media(max-width: 600px) {
-                            transform: scale(.5);
+                            transform: scale(.7);
                         }
-
                     }
                 }
 
@@ -265,13 +274,14 @@ class GetStarted extends React.Component {
                             <div className="get-started__prefix-input">
                                 <div>
                                     <span>
-                                        <img alt="Search Icon" src={LenseIcon}/>
+                                        <img alt="Gitpod Logo" src={GitpodGrey}/>
                                         gitpod.io/#
                                     </span>
                                     <input
                                         id="url"
                                         defaultValue={val}
                                         onChange={this.handleChange}
+
                                     />
                                 </div>
                                 <a
@@ -280,7 +290,7 @@ class GetStarted extends React.Component {
                                     style={ message ? {pointerEvents: "none"} : {} }
                                     tabIndex={ message ? -1 : 0 }
                                 >
-                                    <img alt="Arrow Right" src={ArrowIcon}/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" stroke="#4D4D4D" width="29.524" height="20.157"><g data-name="Gruppe 615" transform="translate(1.5 2.117)"><path data-name="Linie 99" fill="none" stroke-linecap="round" stroke-width="2" d="M0 7.684h25.253"/><path data-name="Pfad 35" d="M18.984 0l7.038 7.972-7.038 7.951" fill="none" stroke-linecap="round" stroke-width="2"/></g></svg>
                                 </a>
                             </div>
                             <p>{ message ? <span style={{color: '#FF4136 '}}>{message}</span> : 'Enter your GitHub or GitLab URL' }</p>
