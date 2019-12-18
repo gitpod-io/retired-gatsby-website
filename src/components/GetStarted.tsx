@@ -92,7 +92,7 @@ const StyledGetStarted = styled.div`
                     color: ${colors.text};
                     padding: .1rem .3rem;
                     font-size: inherit;
-                    border: 2px solid ${colors.lightBlue};
+                    border: 2px solid ${colors.link};
 
                     @media(max-width: 900px) {
                         width: 44.5rem;
@@ -174,7 +174,7 @@ const StyledGetStarted = styled.div`
 
             &-text {
                 margin: 0;
-                font-size: 2.1rem;
+                font-size: 2.4rem;
 
                 @media(max-width: ${sizes.breakpoints.lg}) {
                     padding: 5rem 2rem;
@@ -193,12 +193,14 @@ const StyledGetStarted = styled.div`
                 }
 
                 span {
-                    color: ${colors.link};
+                    color: transparent;
                     font-weight: 600;
+                    background: url('/galaxy.jpg');
+                    background-position: center right;
+                    background-clip: text;
                 }
             }
         }
-
 
         h2 + p {
             font-size: 2rem;
@@ -289,6 +291,7 @@ class GetStarted extends React.Component {
                                         defaultValue={val}
                                         onChange={this.handleChange}
                                         onKeyPress={this.handleKeyPress}
+                                        autoFocus
                                     />
                                 </div>
                                 <a
