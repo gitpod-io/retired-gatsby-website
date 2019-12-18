@@ -17,6 +17,7 @@ import ShareWorkspaces from '../resources/share-workspace.png'
 import CreateASnapshot from '../resources/create-snapshot.png'
 import WorksOnAnyDevice from '../resources/works-on-any-device.png'
 import CodeReview from '../resources/code-review.png'
+import SupportedLanguages from '../resources/supported-languages.svg'
 import { Link } from 'gatsby'
 
 export const featuresCardsData = [
@@ -37,12 +38,48 @@ export const featuresCardsData = [
         icon: IconPrebuilt,
         iconTitle: <span>Prebuilt<br />Workspaces</span>,
         paragraphs: <React.Fragment>
-            <p>Gitpod continuously builds your code and pull requests like a CI server to have ready-to-code workspaces available for you. In each prebuilt workspace, all dependencies are already downloaded and all code is already compiled.</p>
+            <p>Gitpod continuously builds your git branches like a CI server to provide ready-to-code workspaces when you need them.</p>
+            <p>This means no more waiting for dependencies to be downloaded and builds to finish. Just coding.</p>
+            <p>Gitpod is the first IDE that builds your project before you even open it.</p>
         </React.Fragment>,
         more: <p>Read more about <Link to="/docs/46_prebuilds/">Prebuilt Workspaces.</Link></p>,
-        strong: "It's first IDE that builds your project before you even open it.",
         img: <img alt="Prebuilt Workspaces" src={PrebuiltWorkspaces}/>,
         isIllustration: true
+    },
+    {
+        id: "programming-languages",
+        title: "Supports All Programming Languages",
+        icon: IconLanguage,
+        iconText: <span>Language<br />Support</span>,
+        paragraphs: <React.Fragment>
+            <p>Gitpod comes with built-in language support for most popular languages: Java, JavaScript, Python, Go, Rust and C/C++, are supported out of the box and come with auto completion, diagostics, formatting and many more.</p>
+            <p>It's easy to get the same qulity of language support for any other language by installing the needed <Link to="/docs/42_config_docker/">tools via docker</Link> and adding useful <Link to="/docs/vscode-extensions/">VS Code Extensions</Link>.</p>
+                    </React.Fragment>,
+        img: <img alt="Supported Languages" src={SupportedLanguages} />,
+    },
+    {
+        id: 'linux',
+        title: "Linux Terminals",
+        icon: Terminal,
+        iconText: <span>Linux<br />Terminals</span>,
+        paragraphs: <React.Fragment>
+            <p>Gitpod instantly starts a machine in the cloud based on a Docker image. Tools that are required for your project or popular are readily installed and configured.</p>
+            <p>And still, if you like to do configurations yourself, you can adjust everything to your satisfaction by bringing your own Docker image or Dockerfile.</p>
+        </React.Fragment>,
+        more: <p>Read more about <Link to="/docs/42_config_docker/">Terminals.</Link></p>,
+        img: <img alt="Linux Terminals" src={LinuxTerminal}/>,
+    },
+    {
+        id: "code-review",
+        title: "Code Reviews",
+        icon: IconCodeReview,
+        iconText: <span>Code<br />Reviews</span>,
+        paragraphs: <React.Fragment>
+            <p>Open pull requests in Gitpod to run, navigate, and review the code from within the IDE. Reply to comments and publish code reviews without switching back to GitHub.</p>
+            <p>Thanks to <a href="#parallel">Parallel</a> and <Link to="/docs/46_prebuilds/">Prebuilt</Link> Workspaces, you can review code within seconds and without interfering with other ongoing work.</p>
+            </React.Fragment>,
+        more: <p>Read more about <Link to="/blog/when-code-reviews-lgtm/">Code Reviews.</Link></p>,
+        img: <img alt="Code Review" src={CodeReview} />,
     },
     {
         id: 'parallel',
@@ -58,46 +95,10 @@ export const featuresCardsData = [
         isIllustration: true
     },
     {
-        id: 'works',
-        title: "Works on any Device",
-        icon: IconWorksOnAnyDevice,
-        iconText: <span>Works on any<br />Device</span>,
-        paragraphs: <React.Fragment>
-            <p>No more need for expensive notebooks, with Gitpod coding becomes accessible anywhere and for everyone.</p>
-            <p>It works just as smoothly on a Chromebook as on a high-end notebook or a tablet.</p>
-        </React.Fragment>,
-        img: <img alt="Works On Any Device" src={WorksOnAnyDevice}/>,
-        caption: '*comprehensive tablet support is coming soon',
-        isIllustration: true
-    },
-    {
-        id: 'linux',
-        title: "Linux Terminals",
-        icon: Terminal,
-        iconText: <span>Linux<br />Terminals</span>,
-        paragraphs: <React.Fragment>
-            <p>Gitpod instantly starts a machine in the cloud based on a Docker image. Tools that are required for your project or popular are readily installed and configured.</p>
-            <p>And still, if you like to do configurations yourself, you can adjust everything to your satisfaction by bringing your own Docker image or Dockerfile.</p>
-        </React.Fragment>,
-        more: <p>Read more about <Link to="/docs/42_config_docker/">Terminals.</Link></p>,
-        img: <img alt="Linux Terminals" src={LinuxTerminal}/>,
-    },
-    {
-        id: 'share',
-        title: "Share a Running Workspace",
-        icon: Share,
-        iconText: <span>Share Running<br />Workspace</span>,
-        paragraphs:<React.Fragment>
-            <p>Collaborate with your friends and colleagues and hunt down bugs together.</p>
-        </React.Fragment>,
-        more: <p>Read more about <Link to="/docs/33_sharing_and_collaboration/">Sharing a Workspace.</Link></p>,
-        img:<img alt="Share a Running Workspace" style={{transform: 'translateY(2rem) scale(.9)'}} src={ShareWorkspaces}/>,
-    },
-    {
         id: 'snapshot',
-        title: "Create a Snapshot",
+        title: "Create Snapshots",
         icon: Camera,
-        iconText: <span>Create<br />a Snapshot</span>,
+        iconText: <span>Create<br />Snapshots</span>,
         paragraphs:<React.Fragment>
             <p>Create a snapshot of your work and share it with the world. Based on your snapshot new workspaces can be created and edited independently.</p>
         </React.Fragment>,
@@ -106,26 +107,27 @@ export const featuresCardsData = [
         isIllustration: true
     },
     {
-        id: "code-review",
-        title: "Code Reviews",
-        icon: IconCodeReview,
-        iconText: <span>Code<br />Reviews</span>,
+        id: 'works',
+        title: "Works on any Device",
+        icon: IconWorksOnAnyDevice,
+        iconText: <span>Works on<br />Any Device</span>,
         paragraphs: <React.Fragment>
-            <p>Open pull requests in Gitpod to run, navigate, and review the code from within the IDE. Reply to comments and publish code reviews without switching back to GitHub.</p>
-            <p>Thanks to <a href="#parallel">Parallel</a> and <Link to="/docs/46_prebuilds/">Prebuilt</Link> Workspaces, you can review code within seconds and without interfering with your other work.</p>
-            </React.Fragment>,
-        more: <p>Read more about <Link to="/blog/when-code-reviews-lgtm/">Code Reviews.</Link></p>,
-        img: <img alt="Code Review" src={CodeReview} />,
+            <p>No more need for expensive notebooks, with Gitpod <strong>coding becomes accessible anywhere and for everyone</strong>.</p>
+            <p>It works just as smoothly on a Chromebook as on a high-end notebook or any other computer.</p>
+        </React.Fragment>,
+        img: <img alt="Works On Any Device" src={WorksOnAnyDevice}/>,
+        caption: '*comprehensive tablet support is coming soon',
+        isIllustration: true
     },
     {
-        id: "programming-languages",
-        title: "Support for All Programming Languages",
-        icon: IconLanguage,
-        iconText: <span>Language<br />Support</span>,
-        paragraphs: <React.Fragment>
-            <p>Gitpod comes with built-in language support for most popular languages: Java, JavaScript, Python, Go, Rust and C/C++, are supported out of the box and come with auto completion, diagostics, formatting and many more.</p>
-            <p>It's easy to get the same qulity of language support for any other language by installing the needed <Link to="/docs/42_config_docker/">tools via docker</Link> and adding useful <Link to="/docs/vscode-extensions/">VS Code Extensions</Link>.</p>
-                    </React.Fragment>,
-        img: <img alt="Code Review" src={CodeReview} />,
+        id: 'share',
+        title: "Share Running Workspaces",
+        icon: Share,
+        iconText: <span>Share Running<br />Workspaces</span>,
+        paragraphs:<React.Fragment>
+            <p>Collaborate with your friends and colleagues and hunt down bugs together.</p>
+        </React.Fragment>,
+        more: <p>Read more about <Link to="/docs/33_sharing_and_collaboration/">Sharing a Workspace.</Link></p>,
+        img:<img alt="Share a Running Workspace" style={{transform: 'translateY(2rem) scale(.9)'}} src={ShareWorkspaces}/>,
     }
 ]
