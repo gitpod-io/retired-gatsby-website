@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, shadows, borders, sizes } from '../styles/variables'
+import { colors, sizes } from '../styles/variables'
 
 const StyledDescripion = styled.span`
     position: relative;
@@ -17,13 +17,10 @@ const StyledDescripion = styled.span`
     }
 
     .description__text {
-        display: block;
         padding: .2rem .5rem;
         font-size: 1.2rem;
         color: ${colors.textDark};
-        background: ${colors.offWhite1};
-        box-shadow: ${shadows.light};
-        border: ${borders.light};
+        background: ${colors.offWhite2};
         z-index: 1000 !important;
 
         @media(min-width: ${sizes.breakpoints.lg}) {
@@ -59,6 +56,7 @@ class Description extends React.Component<{description: string}, {}> {
 
         return (
             <StyledDescripion
+                className="description"
                 onMouseEnter={this.handleMouseEnter}
                 onMouseLeave={this.handleMouseLeave}
             >
