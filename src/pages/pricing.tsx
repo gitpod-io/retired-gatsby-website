@@ -6,7 +6,7 @@ import PricingBox from '../components/PricingBox'
 import Bg from '../components/Bg'
 import PricingBg from '../resources/pricing-bg.png'
 import { Link } from 'gatsby'
-import { sizes, shadows } from '../styles/variables'
+import { sizes, shadows, colors } from '../styles/variables'
 import ActionCard from '../components/ActionCard'
 import Details from '../components/Details'
 
@@ -20,6 +20,7 @@ import Rocket from '../resources/rocket.png'
 import MagicCap from '../resources/magic-cap.png'
 import Earth from '../resources/earth.svg'
 import { PricingBoxProps } from '../components/PricingBox'
+import Description from '../components/Description'
 
 const plans: PricingBoxProps[] = [
     {
@@ -27,14 +28,14 @@ const plans: PricingBoxProps[] = [
         img: <img alt='LightBulb' src={LightBulb}/>,
         price: isEurope() ? '€8' : '$9',
         duration: '100 hours / month',
-        features: ['Private & Public Repos', '4 Parallel Workspaces'],
+        features: ['Private & Public Repos', <span>4 Parallel Workspaces <Description description="The number of workspaces running at the same time."/></span>, '30min Workspace Timeout'],
     },
     {
         title: 'Professional',
         img: <img alt='Rocket' src={Rocket}/>,
         price: isEurope() ? '€23' : '$25',
         duration: 'unlimited hours',
-        features: ['Private & Public Repos', '8 Parallel Workspaces', 'Team Manageable'],
+        features: ['Private & Public Repos', <span>8 Parallel Workspaces <Description description="The number of workspaces running at the same time."/></span>, <span>Team Manageable&nbsp;<Description description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>, '30min Workspace Timeout'],
         transform: 'scale(1.05)',
     },
     {
@@ -42,12 +43,12 @@ const plans: PricingBoxProps[] = [
         img: <img alt='MagicCap' src={MagicCap}/>,
         price: isEurope() ? '€35' : '$39',
         duration: 'unlimited hours',
-        features: ['Private & Public Repos', '16 Parallel Workspaces', 'Team Manageable', 'Extended Workspace Timeout'],
+        features: ['Private & Public Repos', <span>8 Parallel Workspaces <Description description="The number of workspaces running at the same time."/></span>, <span>Team Manageable&nbsp;<Description description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>, '1h Workspace Timeout (+ 3h Boost)'],
     },
     {
         title: 'Enterprise',
         img: <img alt='Earth' src={Earth}/>,
-        feature: 'Unleash Developer Productivity',
+        feature: <span style={{fontWeight: 600}}>Unleash Developer Productivity</span>,
         background: true,
         btnText: 'Learn More',
         link: '/enterprise/#enterprise'
@@ -80,7 +81,7 @@ const StyledPricingPage = styled.div`
         &__tagline {
             transform: translateY(-3rem);
 
-            @media(max-width: 1096px) {
+            @media(max-width: ${sizes.breakpoints.lg}) {
                 display: none;
             }
 
@@ -88,6 +89,7 @@ const StyledPricingPage = styled.div`
                 padding: 4rem 0 3rem;
                 width: 72%;
                 font-weight: 600;
+                color: ${colors.text};
                 text-align: center;
                 box-shadow: ${shadows.light};
             }
