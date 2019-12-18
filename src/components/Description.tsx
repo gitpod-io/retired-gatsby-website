@@ -14,6 +14,11 @@ const StyledDescripion = styled.span`
         color: ${colors.white};
         background: ${colors.offWhite1};
         border-radius: 50%;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            transform: scale(1.5);
+            margin-left: 1rem;
+        }
     }
 
     .description__text {
@@ -28,6 +33,10 @@ const StyledDescripion = styled.span`
             top: 0;
             left: 3rem;
             min-width: 19rem;
+        }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            margin-top: 1rem;
         }
     }
 `
