@@ -17,6 +17,11 @@ export const features = [
         //more: <p className="read-more">Read more about <Link to="#">Full Integration.</Link></p>
     },
     {
+        title: "Smooth Integration",
+        paragraphs: ['All Gitpod needs is a Kubernetes cluster.', 'It enables user authorization and integration via your GitHub Enterprise, GitLab, or Bitbucket.', 'Please contact TypeFox for further customizations.'],
+        logos: ['Github', 'Gitlab', 'Git']
+    },
+    {
         title: "Easy Setup and Administraction",
         paragraphs: [
             'With Gitpod, no additional User Management is needed.',

@@ -8,9 +8,6 @@ import { Link } from 'gatsby'
 import Kubernetes from '../resources/kubernetes.svg'
 import Details from '../components/Details'
 import Banner from '../components/Banner'
-import Features from '../components/Features'
-import Feature from '../components/Feature'
-import { features } from '../utils/self-hosted'
 import ActionCard from '../components/ActionCard'
 
 const StyledSelfHostedPage = styled.div`
@@ -83,6 +80,18 @@ const StyledSelfHostedPage = styled.div`
 
 `
 
+const Terminal = styled.p`
+    background-color: ${colors.text};
+    padding: 10px;
+    border-radius: 5px;
+    color: ${colors.white};
+    font-family: monospace;
+    font-size: 18px;
+`;
+const StepP = styled.p`
+    font-size: 18px;
+`;
+
 const SelfHostedPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/self-hosted/' title="Self-Hosted">
         <StyledSelfHostedPage>
@@ -98,50 +107,39 @@ const SelfHostedPage: React.SFC<{}> = () => (
                             <br />
                             Hosted on <strong>Your Own Infrastructure.</strong>
                     </h1>}
-                    linkPath="#"
+                    linkPath="/self-hosted/#install"
                     linkText="View Install Instructions"
                     img={<img alt="Cloud" src={Cloud}/>}
                     children={<p>1 Month for <span>Free.</span></p>}
                 />
-
-                {/* ----- Section Features ----- */}
-
-                <div className="row">
-                    <Features>
-                        {
-                            features.map((f, i) => (
-                                <Feature
-                                    key={i}
-                                    title={f.title}
-                                    paragraphs={f.paragraphs}
-                                    more={f.more}
-                                />
-                            ))
-                        }
-                    </Features>
-                </div>
             </div>
 
             {/* ----- Section Install ----- */}
 
-            <div className="row">
+            <div className="row" id="install">
                 <section className="install">
                     <div className="install__steps-container">
                         <h2>Install Self-Hosted Gitpod</h2>
                         <ol className="install__steps">
                             <li className="install__step">
-                                <span>1. </span>Git clone <a href="https://github.com/gitpod-io/self-hosted" target="_blank">https://github.com/gitpod-io/self-hosted</a><br />
-                                in your terminal.
+                                <span>1.</span>
+                                <StepP>In your terminal run:</StepP>
+                                <Terminal>
+                                    git clone <a href="https://github.com/gitpod-io/self-hosted" target="_blank">https://github.com/gitpod-io/self-hosted</a>
+                                </Terminal>
                             </li>
                             <li className="install__step">
-                                <span>2.</span>Adjust the confuguration from the repository to your needs.
+                                <span>2.</span><StepP>Adjust the configuration from the repository to your needs.</StepP>
                             </li>
                             <li className="install__step">
-                                <span>3.</span>Run <pre>helm install -f ... gitpod</pre>
+                                <span>3.</span><StepP>Run</StepP>
+                                <Terminal>
+                                    helm install -f ... gitpod
+                                </Terminal>
                             </li>
                         </ol>
-                        <p>Enjoy!</p>
-                        <p>For more details see the <Link to="/docs/self-hosted/latest/self-hosted/">Installation Instructions.</Link></p>
+                        <StepP>Enjoy!</StepP>
+                        <StepP>For more details see the <Link to="/docs/self-hosted/latest/self-hosted/">Installation Instructions.</Link></StepP>
                     </div>
                     <div className="install__kubernetes">
                         <h3>Runs on Kubernetes</h3>
@@ -157,8 +155,11 @@ const SelfHostedPage: React.SFC<{}> = () => (
             {/* ----- Section Customizations ----- */}
 
             <ActionCard
-                title="Do You Need Customizations?"
-                text="We’re happy to adjust Gitpod to your needs. Please, get in touch for details."
+                title="Need Any Customizations?"
+                text={
+                    <React.Fragment>
+                        <p>We’re happy to adjust Gitpod to your needs.<br/>Please, get in touch for details.</p>
+                    </React.Fragment>}
                 anchors={[{href: '/contact', text: 'Contact'}]}
             />
 
@@ -167,7 +168,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
             <Details
                 title="More About Self-Hosting"
                 text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-                anchors={[{href: '/pricing', text: 'Pricing'}, {href: '/docs', text: 'Documentation'}]}
+                anchors={[{href: '/enterprise/#enterprise', text: 'Pricing'}, {href: '/docs/self-hosted/latest/self-hosted/', text: 'Documentation'}]}
             />
 
         </StyledSelfHostedPage>

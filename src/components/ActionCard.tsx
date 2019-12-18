@@ -3,7 +3,6 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { colors, shadows } from '../styles/variables'
 import { Link } from 'gatsby'
-import { string } from 'prop-types'
 
 const StyledActionCard = styled.section`
     display: block;
@@ -34,14 +33,14 @@ interface Anchor {
 
 interface ActionCardProps {
     title: string
-    text: string
+    text: string | JSX.Element
     anchors: Anchor[]
 }
 
 const ActionCard: React.SFC<ActionCardProps> = ({title, text, anchors }) => (
     <StyledActionCard>
         <h2>{title}</h2>
-        <p>{text}</p>
+        { typeof text === 'string' ?  <p>{text}</p> : text }
         {link(anchors[0].href,anchors[0].text)}
         { anchors[1] ? link(anchors[1].href,anchors[1].text) : null }
     </StyledActionCard>
