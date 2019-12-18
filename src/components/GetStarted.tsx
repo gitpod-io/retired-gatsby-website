@@ -257,6 +257,13 @@ class GetStarted extends React.Component {
         }
     }
 
+    handleKeyPress = (e: any) => {
+        if (e.key === "Enter") {
+            this.handleValidation(e.target.value)
+            if (!this.state.message) window.open(`https://gitpod.io#${this.state.val}`, '_blank')
+        }
+    }
+
     render() {
         const { val, message } = this.state
 
@@ -281,7 +288,7 @@ class GetStarted extends React.Component {
                                         id="url"
                                         defaultValue={val}
                                         onChange={this.handleChange}
-
+                                        onKeyPress={this.handleKeyPress}
                                     />
                                 </div>
                                 <a
