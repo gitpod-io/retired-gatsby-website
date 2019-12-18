@@ -1,12 +1,12 @@
 # Install Gitpod Self-Hosted on Kubernetes
 This section describes how to install Gitpod on a vanilla Kubernetes cluster.
 Gitpod also provides more optimized installations offering better performance for particular cloud providers:
-* *Google Cloud Platform*: Install Gitpod in a blank GCP project, either [using a script that automates the procedure](../11_install_on_gcp_script) or [manually step-by-step](../12_install_on_gcp_manual).
+* *Google Cloud Platform*: Install Gitpod in a blank GCP project, either [using a script that automates the procedure](../11_install_on_gcp_script/) or [manually step-by-step](../12_install_on_gcp_manual/).
 
 ## Prerequisites
-- Ensure you have the [general installation prerequisites](../01_prepare_installation) avilable.
+- Ensure you have the [general installation prerequisites](../01_prepare_installation/) avilable.
 - `kubectl` with access to that cluster.
-- `helm`. We recommend version 3.x. Any version >= 2.11 will also work, but requires you to have [tiller configured](../90_helm_2x).
+- `helm`. We recommend version 3.x. Any version >= 2.11 will also work, but requires you to have [tiller configured](../90_helm_2x/).
 
 ## Configuration
 
@@ -35,22 +35,22 @@ Once you know your IP address, configure your three domain names to resolve to t
 ### OAuth integration
 Gitpod delegates authentication to a configurable [OAuth provider](../01_prepare_installation/#user-authorization-and-git-integration).
 
-Follow [the steps](../30_oauth) to set up GitHub or GitLab as OAuth provider.
+Follow [the steps](../30_oauth/) to set up GitHub or GitLab as OAuth provider.
 
 ### HTTPS certificates or external Docker registry
 Gitpod builds docker images on demand and runs them in Kubernetes pods as workspaces.
 Since Kubernetes by default only pulls images from secure Docker registries,
-you will either need to have [HTTPS certificates](../34_https_certs) configured if you want to use the internal docker registry,
-or use an [external docker registry](../35_docker_registry).
+you will either need to have [HTTPS certificates](../34_https_certs/) configured if you want to use the internal docker registry,
+or use an [external docker registry](../35_docker_registry/).
 
 ## Recommended Configuration
 
 To get Gitpod running quickly, you may skip this chapter.
 For production scenarios, however, we highly recomend this configuration.
 
-* [**Docker Registry**](../35_docker_registry): Use your own Docker registry instead of the built-in one.
-* [**HTTPS certificates**](../34_https_certs): Configure HTTPS certificates for secure access to Gitpod.
-* [**Database**](../36_database): Use your own MySQL database instead of the built-in one.
+* [**Docker Registry**](../35_docker_registry/): Use your own Docker registry instead of the built-in one.
+* [**HTTPS certificates**](../34_https_certs/): Configure HTTPS certificates for secure access to Gitpod.
+* [**Database**](../36_database/): Use your own MySQL database instead of the built-in one.
 
 ## Installation
 ```
@@ -64,6 +64,6 @@ Launch a workpace. Launching the first workspace can take significantly longer (
 
 ## Customization
 
-* [**Storage**](../32_storage): Configure where Gitpod stores stopped workspaces.
-* [**Kubernetes Nodes**:](../33_nodes): Configure file system layout and the workspace's node associativity.
-* [**Workspaces**](../31_workspaces): Configure workspace sizing.
+* [**Storage**](../32_storage/): Configure where Gitpod stores stopped workspaces.
+* [**Kubernetes Nodes**:](../33_nodes/): Configure file system layout and the workspace's node associativity.
+* [**Workspaces**](../31_workspaces/): Configure workspace sizing.
