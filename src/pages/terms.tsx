@@ -4,7 +4,7 @@ import IndexLayout from '../layouts'
 import TextBox from '../components/TextBox'
 
 const TermsPage: React.SFC<{}> = () => (
-    <IndexLayout canonical="terms" title="Terms">
+    <IndexLayout canonical="/terms/" title="Terms">
         <div className="grey-container">
             <TextBox>
                     <h1>

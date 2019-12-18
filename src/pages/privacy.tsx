@@ -3,7 +3,7 @@ import IndexLayout from '../layouts'
 import TextBox from '../components/TextBox'
 
 const PrivacyPage: React.SFC<{}> = () => (
-    <IndexLayout canonical="privacy" title="Privacy">
+    <IndexLayout canonical="/privacy/" title="Privacy">
         <div className="grey-container">
             <TextBox>
                <h1>Privacy Policy</h1>

@@ -252,24 +252,24 @@ class Nav extends React.Component {
 
                             { isNavRendered ? (
                                 <ul className={ isNavRendered ? 'shown container nav__items' : 'hiden' }>
-                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/features' className="link">Features</Link></li>
-                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/pricing' className="link">Pricing</Link></li>
-                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/enterprise' className="link">Enterprise</Link></li>
+                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/features/' className="link">Features</Link></li>
+                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/pricing/' className="link">Pricing</Link></li>
+                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/enterprise/' className="link">Enterprise</Link></li>
                                     <li className="nav__item">
                                         <DropDown
                                             title="Solutions"
                                             links={[
                                                 {
                                                     text: 'Education',
-                                                    to: '/education'
+                                                    to: '/education/'
                                                 },
                                                 {
                                                     text: 'Recruiting',
-                                                    to: '/recruiting'
+                                                    to: '/recruiting/'
                                                 },
                                                 {
                                                     text: 'Vendor',
-                                                    to: '/vendor'
+                                                    to: '/vendor/'
                                                 }
                                             ]}
                                         />
@@ -280,11 +280,11 @@ class Nav extends React.Component {
                                             links={[
                                                 {
                                                     text: 'Docs',
-                                                    to: '/docs'
+                                                    to: '/docs/'
                                                 },
                                                 {
                                                     text: 'Blog',
-                                                    to: '/blog'
+                                                    to: '/blog/'
                                                 },
                                                 {
                                                     text: 'Community',

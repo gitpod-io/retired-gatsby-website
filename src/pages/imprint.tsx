@@ -3,7 +3,7 @@ import IndexLayout from '../layouts'
 import TextBox from '../components/TextBox'
 
 const ImprintPage: React.SFC<{}> = () => (
-    <IndexLayout canonical="imprint" title="Imprint">
+    <IndexLayout canonical="/imprint/" title="Imprint">
         <div className="grey-container">
             <TextBox>
                 <h1>Imprint</h1>

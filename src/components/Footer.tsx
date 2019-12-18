@@ -92,22 +92,22 @@ const Footer: React.SFC<{}> = () => (
             <div className="links">
                 <ul>
                     <li>Gitpod</li>
-                    <li><Link to="/features">Features</Link></li>
-                    <li><Link to="/pricing">Pricing</Link></li>
-                    <li><Link to="/blog">Blog</Link></li>
-                    <li><Link to="/enterprise">Enterprise</Link></li>
+                    <li><Link to="/features/">Features</Link></li>
+                    <li><Link to="/pricing/">Pricing</Link></li>
+                    <li><Link to="/blog/">Blog</Link></li>
+                    <li><Link to="/enterprise/">Enterprise</Link></li>
                     <li><Link to="https://gitpod.io/login" style={{color: colors.link, fontWeight: 600}}>Login</Link></li>
                 </ul>
                 <ul>
                     <li>Solutions</li>
-                    <li><Link to="/education">Education</Link></li>
-                    <li><Link to="/vendor">Vendor</Link></li>
-                    <li><Link to="/recruiting">Recruiter</Link></li>
+                    <li><Link to="/education/">Education</Link></li>
+                    <li><Link to="/recruiting/">Recruiting</Link></li>
+                    <li><Link to="/vendor/">Vendor</Link></li>
                 </ul>
                 <ul>
                     <li>Developer</li>
                     <li><Link to="/#get-started">Getting started</Link></li>
-                    <li><Link to="/docs">Documentation</Link></li>
+                    <li><Link to="/docs/">Documentation</Link></li>
                     <li>
                         <ExternalLink
                             href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
@@ -123,14 +123,14 @@ const Footer: React.SFC<{}> = () => (
                 </ul>
                 <ul>
                     <li>Company</li>
-                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/about/">About</Link></li>
                     <li>
                         <ExternalLink
-                            href="https://typefox.io/careers"
+                            href="https://www.typefox.io/careers/"
                             text="Career"
                         />
                     </li>
-                    <li><Link to="/media-kit">Media Kit</Link></li>
+                    <li><Link to="/media-kit/">Media Kit</Link></li>
                 </ul>
                 <ul className="contact">
                     <li>Contact</li>
@@ -159,7 +159,7 @@ const Footer: React.SFC<{}> = () => (
             </div>
             <div className="info">
                 <p>Copyright TypeFox All Right Reserved</p>
-                <div><Link to="/imprint">Imprint</Link>&nbsp;|&nbsp;<Link to="/terms">Terms of Service</Link>&nbsp;|&nbsp;<Link to="/privacy">Privacy Policy</Link></div>
+                <div><Link to="/imprint/">Imprint</Link>&nbsp;|&nbsp;<Link to="/terms/">Terms of Service</Link>&nbsp;|&nbsp;<Link to="/privacy/">Privacy Policy</Link></div>
             </div>
         </div>
     </StyledFooter>

@@ -59,7 +59,7 @@ Gitpod gives developers full featured terminals to run any processes such as com
 
 ## **Open Source**
 
-The IDE in Gitpod is based on [Theia](http://theia-ide.org), an open-source project that we ([TypeFox](http://typefox.io)) have started together with our friends from Ericsson in early 2017. You can think of it as **the online version of VS Code**. We love VS Code, but needed some additional properties, like a more extensible architecture and the ability to run in browsers connected to a remote backend. Theia is a true open-source project, hosted at the Eclipse Foundation and developed by a diverse crowd of engineers backed by TypeFox, Ericsson, Red Hat, Arm and others.
+The IDE in Gitpod is based on [Theia](http://theia-ide.org), an open-source project that we ([TypeFox](https://www.typefox.io/)) have started together with our friends from Ericsson in early 2017. You can think of it as **the online version of VS Code**. We love VS Code, but needed some additional properties, like a more extensible architecture and the ability to run in browsers connected to a remote backend. Theia is a true open-source project, hosted at the Eclipse Foundation and developed by a diverse crowd of engineers backed by TypeFox, Ericsson, Red Hat, Arm and others.
 
 ![Language Tooling In Action](https://cdn-images-1.medium.com/max/6796/1*5DnbR6-FbyVQ8ILgFHJXOw.png)*Language Tooling In Action*
 

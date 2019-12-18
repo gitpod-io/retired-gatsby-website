@@ -226,9 +226,9 @@ const PricingPage: React.SFC<{}> = () => (
                 <section className="business">
                     <h2>Business Solutions</h2>
                     <p>Here you can find further information for your business solution including its pricing.</p>
-                    <Link to="/education" className="btn">Education</Link>
-                    <Link to="/recruiting" className="btn">Recruiting</Link>
-                    <Link to="/vendor" className="btn">Vendor</Link>
+                    <Link to="/education/" className="btn">Education</Link>
+                    <Link to="/recruiting/" className="btn">Recruiting</Link>
+                    <Link to="/vendor/" className="btn">Vendor</Link>
                 </section>
 
                 {/* ----- BG ----- */}

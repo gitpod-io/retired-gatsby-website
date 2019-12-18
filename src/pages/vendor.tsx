@@ -183,8 +183,8 @@ const VendorPage: React.SFC<{}> = () => (
                 <tr className="buttons">
                     <th></th>
                     <td><Link to="#" className="btn btn--cta">Start for Free</Link></td>
-                    <td><Link to="#" className="btn btn--cta">Contact Sales</Link></td>
-                    <td><Link to="/self-hosted" className="btn">Host Yourself</Link></td>
+                    <td><Link to="/contact/" className="btn btn--cta">Contact Sales</Link></td>
+                    <td><Link to="/self-hosted/" className="btn">Host Yourself</Link></td>
                 </tr>
             </tbody>
         </PricingTable>

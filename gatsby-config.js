@@ -7,7 +7,7 @@ module.exports = {
         siteUrl: 'https://www.gitpod.io',
         author: {
             name: 'TypeFox',
-            url: 'https://typefox.io',
+            url: 'https://www.typefox.io',
             email: 'contact@gitpod.io'
         }
     },

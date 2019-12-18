@@ -18,7 +18,7 @@ import Gitlab from '../resources/gitlab.svg'
 import { Link } from 'gatsby'
 
 const RecrutingPage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/recruting/' title="Recruiting">
+    <IndexLayout canonical='/recruiting/' title="Recruiting">
         <div className="grey-container">
 
             {/* ----- Banner ----- */}
@@ -189,8 +189,8 @@ const RecrutingPage: React.SFC<{}> = () => (
                 <tr className="buttons">
                     <th></th>
                     <td><Link to="#" className="btn btn--cta">Start for Free</Link></td>
-                    <td><Link to="/contact" className="btn btn--cta">Contact Sales</Link></td>
-                    <td><Link to="/self-hosted" className="btn">Host Yourself</Link></td>
+                    <td><Link to="/contact/" className="btn btn--cta">Contact Sales</Link></td>
+                    <td><Link to="/self-hosted/" className="btn">Host Yourself</Link></td>
                 </tr>
             </tbody>
         </PricingTable>

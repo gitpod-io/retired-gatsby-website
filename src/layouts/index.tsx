@@ -84,7 +84,7 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
                     margin: '10px 15px'
                 }}
             >
-                This website uses cookies to<br /> enhance the user experience.<br /> Read our <Link style={{color: '#35C9FF'}} to="/privacy">privacy policy</Link> for more info.
+                This website uses cookies to<br /> enhance the user experience.<br /> Read our <Link style={{color: '#35C9FF'}} to="/privacy/">privacy policy</Link> for more info.
             </CookieConsent>
           {children}
         </LayoutMain>

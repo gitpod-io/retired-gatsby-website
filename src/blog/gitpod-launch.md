@@ -96,4 +96,4 @@ I want to take the opportunity to thank all the people who have helped to make G
 
 Furthermore, I want to thank Michael Bernstein from [Reify](https://www.reifyworks.com/) for clarifying our messaging with us and Kelly Fitzpatrick and the rest of the [Redmonk](https://redmonk.com/) team for their guidance and helpful feedback.
 
-Finally, of course, I want to send a big shout out to my friends at [TypeFox](http://typefox.io/about). You are absolutely awesome and being able to work with you on such a great product is everything I want.
+Finally, of course, I want to send a big shout out to my friends at [TypeFox](https://www.typefox.io/about/). You are absolutely awesome and being able to work with you on such a great product is everything I want.
