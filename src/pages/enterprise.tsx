@@ -133,7 +133,7 @@ const EnterprisePage: React.SFC<{}> = () => (
         <Bg url={EnterpriseBg} />
 
         <PricingTable
-            title="Pricing Gitpod Enterprise"
+            title="Gitpod Enterprise Pricing"
             paragraph="You have the choice to either host Gitpod yourself or to use our cloud infrastructure."
             id="enterprise"
         >
@@ -151,7 +151,7 @@ const EnterprisePage: React.SFC<{}> = () => (
             <tbody>
                 <tr>
                     <th>Pricing</th>
-                    <td>3000$ per month</td>
+                    <td>$3000 per month</td>
                     <td>$20 per user</td>
                 </tr>
                 <tr>
@@ -226,7 +226,7 @@ const EnterprisePage: React.SFC<{}> = () => (
 
         <ActionCard
             title='Didn’t find what you’re looking for?'
-            text='Please, get in touch. We’re happy to answer your questions.'
+            text='Please get in touch. We’re happy to answer your questions.'
             anchors={[{ href: 'https://calendly.com/gitpod/sales', text: 'Schedule a Call' }, { href: '/contact', text: 'Contact' }]}
         />
 
