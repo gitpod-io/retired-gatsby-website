@@ -1,15 +1,26 @@
 import React from 'react'
 
+import VSCGreyHover from '../resources/vsc-grey-hover.svg'
 import VSCGrey from '../resources/vsc-grey.svg'
+import TerminalHover from '../resources/terminal-hover.svg'
 import Terminal from '../resources/terminal.svg'
+import ShareHover from '../resources/share-hover.svg'
 import Share from '../resources/share.svg'
+import CameraHover from '../resources/camera-hover.svg'
 import Camera from '../resources/camera.svg'
+import IconPrebuiltHover from '../resources/icon-prebuilt-hover.svg'
 import IconPrebuilt from '../resources/icon-prebuilt.svg'
+import IconParallelHover from '../resources/icon-parallel-hover.svg'
 import IconParallel from '../resources/icon-parallel.svg'
+import IconWorksOnAnyDeviceHover from '../resources/icon-phone-hover.svg'
 import IconWorksOnAnyDevice from '../resources/icon-phone.svg'
+import IconCodeReviewHover from '../resources/icon-code-review-hover.svg'
 import IconCodeReview from '../resources/icon-code-review.svg'
+import IconLanguageHover from '../resources/icon-language-hover.svg'
 import IconLanguage from '../resources/icon-language.svg'
 import VSCodeExtensions from '../resources/vscode-extensions.png'
+import IconDesktopHover from '../resources/icon-desktop-hover.svg'
+import IconDesktop from '../resources/icon-desktop.svg'
 import LinuxTerminal from '../resources/linux-terminal.png'
 import PrebuiltWorkspaces from '../resources/prebuilt-workspaces.png'
 import ParallelWorkspaces from '../resources/parallel-workspaces.png'
@@ -19,6 +30,7 @@ import WorksOnAnyDevice from '../resources/works-on-any-device.png'
 import CodeReview from '../resources/code-review.png'
 import SupportedLanguages from '../resources/supported-languages.svg'
 import { Link } from 'gatsby'
+
 
 export const featuresCardsData = [
     {
@@ -30,7 +42,7 @@ export const featuresCardsData = [
             <p>Gitpod feels just like your local dev environment, as you can install any VS Code extensions. Install it via drag and drop and enjoy all the features you're used to.</p>
         </React.Fragment>,
         more: <p>Read more about <Link to="/docs/vscode-extensions/">VS Code Extensions.</Link></p>,
-        img: <img alt="VS Code Extensions" src={VSCodeExtensions}/>,
+        img: <img alt="VS Code Extensions" src={VSCodeExtensions}/>
     },
     {
         id: 'prebuilt',
