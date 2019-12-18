@@ -47,6 +47,7 @@ const StyledBlogTemplate = styled.div`
     max-width: 80rem;
     margin: 8rem auto;
     box-shadow: ${shadows.light};
+    background-color: ${colors.white};
 
     .contents {
         padding: 5rem 3rem;
@@ -90,9 +91,17 @@ const StyledBlogTemplate = styled.div`
         text-align: center;
         border: 1px solid rgba(0,0,0, .1);
         &:last-child {
-        text-align: left;
-        padding: 3rem;
+            text-align: left;
+            padding: 3rem;
         }
+    }
+
+    blockquote {
+        border-left: solid 2px rgba(0,0,0, .1);
+        padding-left: 2rem;
+        font-style: italic;
+        margin: 2.5rem 0;
+        font-size: 110%;
     }
 `
 

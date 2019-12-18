@@ -54,5 +54,23 @@ export const authors: { [idx: string]: Author } = {
             linkedin: 'jankeromnes'
         },
         description: "Jan is the creator of Janitor, and he has been automating development environments for almost a decade. He is passionate about making software development saner, easier, and more accessible for all humans."
+    },
+    'nisarhassan12': {
+        name: "Nisar Hassan",
+        socialProfiles: {
+            github: 'nisarhassan12',
+            twitter: 'nisarhassan',
+            linkedin: 'nisar-hassan-naqvi-413466199'
+        },
+        description: 'Nisar is a web developer who creates UX rich performant websites and web applications.'
+    },
+    'anudeepreddy': {
+        name: 'Anudeep Reddy',
+        socialProfiles: {
+            github: 'anudeepreddy',
+            twitter: '',
+            linkedin: ''
+        },
+        description: 'Anudeep is a developer advocate at Gitpod.'
     }
 }

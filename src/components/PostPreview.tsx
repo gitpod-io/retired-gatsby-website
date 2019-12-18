@@ -3,12 +3,17 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import { colors, shadows } from '../styles/variables'
+import { authors } from '../utils/authors'
 
 const StyledPostPreview = styled.div`
     background: ${colors.white};
     box-shadow: ${shadows.light};
     max-width: 35rem;
+    min-height: 60rem;
     margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .background {
         height: 26rem;
@@ -25,18 +30,16 @@ const StyledPostPreview = styled.div`
 
     .content {
         padding: 2rem;
+        flex-grow: 2;
     }
 
     .info {
         display: flex;
         justify-content: space-between;
-        padding: 2rem 1rem 2.5rem;
+        padding: 2rem;
         color: ${colors.text};
         font-weight: 400;
-
-        a {
-
-        }
+        flex-wrap: wrap;
     }
 `
 
@@ -65,11 +68,22 @@ interface PostPreviewProps {
 }
 
 const PostPreview: React.SFC<PostPreviewProps> = (props) => {
-     const b = props.post.node;
-        const date = new Date(Date.parse(b.frontmatter.date));
+    const b = props.post.node;
+    const date = new Date(Date.parse(b.frontmatter.date));
+    let author = authors[props.post.node.frontmatter.author];
+    if (!author) {
+        author = {
+            description: "",
+            name: props.post.node.frontmatter.author,
+            socialProfiles: {
+                github: props.post.node.frontmatter.author,
+                twitter: props.post.node.frontmatter.author
+            }
+        }
+    }
     return (
-        <StyledPostPreview>
-            <Link to={b.fields.slug}>
+        <Link to={b.fields.slug}>
+            <StyledPostPreview>
                 <div
                     aria-hidden={true}
                     style={{
@@ -83,15 +97,15 @@ const PostPreview: React.SFC<PostPreviewProps> = (props) => {
                 </div>
                 <div className="info">
                     <span>
-                        {date.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' })}
+                        {date.toLocaleDateString()}
                     </span>
                     <span>
-                        By&nbsp;
-                        <a href={`https://github.com/${b.frontmatter.author}`} target="_blank">{b.frontmatter.author}</a>
+                        by&nbsp;
+                        <a href={`https://github.com/${author.socialProfiles.github}`} target="_blank">{author.name}</a>
                     </span>
                 </div>
-            </Link>
-        </StyledPostPreview>
+            </StyledPostPreview>
+        </Link>
     )
 }
 
