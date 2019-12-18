@@ -6,7 +6,8 @@ export const colors = {
     lightBlue: '#1AA6E4',
     white: ' #FFFFFF',
     offWhite: '#F7F7F7',
-    offWhite2: '#e5e5e5'
+    offWhite1: '#BCBCBC',
+    offWhite2: '#e5e5e5',
 }
 
 export const sizes = {
