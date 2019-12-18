@@ -205,12 +205,12 @@ const EnterprisePage: React.SFC<{}> = () => (
                     <td>Soon</td>
                 </tr>
                 <tr>
-                    <th>Custom Authorization</th>
+                    <th>Custom Authentication</th>
                     <td>OAuth2</td>
                     <td>OAuth2</td>
                 </tr>
                 <tr>
-                    <th>Rebranding</th>
+                    <th>Branding</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
