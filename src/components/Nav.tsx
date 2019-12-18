@@ -288,7 +288,7 @@ class Nav extends React.Component {
                                                 },
                                                 {
                                                     text: 'Community',
-                                                    to: 'https://spectrum.chat/gitpod/',
+                                                    to: 'https://community.gitpod.io/',
                                                     target: true
                                                 }
                                             ]}

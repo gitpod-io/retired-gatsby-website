@@ -203,4 +203,4 @@ So far, we’ve only had a look at a simple Node.js application. In case you won
 
 Gitpod provides the complete Node.js development experience right from a browser. It enables you to automate your development setup, quickly onboard developers, streamline code review and testing processes on GitHub, help each other in real time, showcase your applications and setups. Also, it is entirely free for open source development!
 
-If you have any questions, [join Gitpod Community on Spectrum](https://spectrum.chat/gitpod)! We are listening intensely to all feedback.
+If you have any questions, [join the Gitpod Community](https://community.gitpod.io/)! We are listening intensely to all feedback.
