@@ -15,7 +15,39 @@ To use the HTTPS certificates for your domain
   |- privkey.pem
 ```
 
-Generate the [dhparams.pem](https://security.stackexchange.com/questions/94390/whats-the-purpose-of-dh-parameters) file using 
+Generate the [dhparams.pem](https://security.stackexchange.com/questions/94390/whats-the-purpose-of-dh-parameters) file using
 ```
 openssl dhparam -out secrets/https-certificates/dhparams.pem 2048
+```
+
+#### Using Let's Encrypt
+If you do not have HTTPS certificates for your domain already, you can generate some using [Let's Encrypt](https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7).
+Asuming you have `certbot` installed, the following script will generate and configure the required certificates (notice the placeholders):
+```bash
+export DOMAIN=your-domain.cm
+export EMAIL=your@email.here
+export WORKDIR=/workspace/letsencrypt
+
+certbot certonly \
+    --config-dir $WORKDIR/config \
+    --work-dir $WORKDIR/work \
+    --logs-dir $WORKDIR/logs \
+    --manual \
+    --preferred-challenges=dns \
+    --email $EMAIL \
+    --server https://acme-v02.api.letsencrypt.org/directory \
+    --agree-tos \
+    -d *.ws.$DOMAIN \
+    -d *.$DOMAIN \
+    -d $DOMAIN
+
+# move them into place
+mkdir secrets/https-certificates
+find $WORKDIR/config/live -name "*.pem" -exec cp {} secrets/https-certificates \;
+
+# Generate dhparams
+openssl dhparam -out secrets/https-certificates/dhparams.pem 2048
+
+# Enable HTTPS
+echo values/https.yaml >> configuration.txt
 ```
