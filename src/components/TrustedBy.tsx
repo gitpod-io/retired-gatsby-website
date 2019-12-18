@@ -17,7 +17,7 @@ const StyledTrustedBy = styled.section`
 
     .logos {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: 1.4fr repeat(5, 0.9fr);
 
         @media(max-width: ${sizes.breakpoints.lg}) {
             grid-template-columns: repeat(3, 1fr);
@@ -46,6 +46,7 @@ interface Brand {
     alt: string
     url: string
     svg: string
+    transform?: string
 }
 
 interface TrustedByProps {
@@ -61,7 +62,7 @@ const TrustedBy: React.SFC<TrustedByProps> = ({brands}) => (
                         {
                             brands.map((b, i) => (
                                 <a href={b.url} target="_blank" key={i}>
-                                    <img src={b.svg} alt={b.alt} />
+                                    <img src={b.svg} alt={b.alt} style={{ transform: b.transform ? b.transform : "none" }}/>
                                 </a>
                             ))
                         }
