@@ -25,7 +25,7 @@ builds upon mature technologies such as TypeScript, VS Code, Webpack, and Node.j
 
 This site provides all the details on how to use Gitpod and Theia. If you have questions
 or want discuss something, please join the
-<a href="https://spectrum.chat/gitpod" target="_blank">Gitpod community on Spectrum</a>.
+<a href="https://community.gitpod.io/" target="_blank">Gitpod community</a>.
 ## Architecture
 
 Gitpod.io runs in multiple Kubernetes clusters hosted on Google Cloud infrastructure in three different regions:

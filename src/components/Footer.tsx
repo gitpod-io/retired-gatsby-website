@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 import Twitter from '../resources/twitter.svg'
 import Github from '../resources/github.svg'
 import Mail from '../resources/mail.svg'
-import Spectrum from '../resources/spectrum.svg'
+import Discourse from '../resources/discourse.svg'
 import ExternalLink from './ExternalLink'
 
 const StyledFooter = styled.footer`
@@ -116,7 +116,7 @@ const Footer: React.SFC<{}> = () => (
                     </li>
                     <li>
                         <ExternalLink
-                            href="https://spectrum.chat/gitpod"
+                            href="https://community.gitpod.io/"
                             text="Community"
                         />
                     </li>
@@ -151,8 +151,8 @@ const Footer: React.SFC<{}> = () => (
                         </a>
                     </li>
                     <li>
-                        <a href="https://spectrum.chat/gitpod/" target="_blank">
-                            <img alt="Spectrum Logo" src={Spectrum} />
+                        <a href="https://community.gitpod.io/" target="_blank">
+                            <img alt="Discourse Logo" src={Discourse} />
                         </a>
                     </li>
                 </ul>
