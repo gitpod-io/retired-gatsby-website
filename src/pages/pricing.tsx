@@ -9,11 +9,6 @@ import { Link } from 'gatsby'
 import { sizes, shadows } from '../styles/variables'
 import ActionCard from '../components/ActionCard'
 import Details from '../components/Details'
-import PricingTable from '../components/PricingTable'
-import Circle from '../components/Circle'
-import Layer from '../resources/layer.svg'
-import Github from '../resources/octicons-mark-github.svg'
-import Gitlab from '../resources/gitlab.svg'
 
 function isEurope() {
     const offset = new Date().getTimezoneOffset();
@@ -40,7 +35,7 @@ const plans: PricingBoxProps[] = [
         price: isEurope() ? '€23' : '$25',
         duration: 'unlimited hours',
         features: ['Private & Public Repos', '8 Parallel Workspaces', 'Team Manageable'],
-        transform: 'scale(1.08)',
+        transform: 'scale(1.05)',
     },
     {
         title: 'Unlimited',
@@ -205,7 +200,7 @@ const PricingPage: React.SFC<{}> = () => (
                             )}
                         </div>
                         <div className="pricing__tagline">
-                            <h4>Gitpod Is Always Free for Open Source.</h4>
+                            <h4>Gitpod Is Free for Open Source.</h4>
                         </div>
                     </section>
 
@@ -214,15 +209,13 @@ const PricingPage: React.SFC<{}> = () => (
                     <section className="links">
                         <div>
                             <h2>Open Source</h2>
-                            <p>Gitpod is free for up to 50 hours/month on any public repository.</p>
-                            <p>If you are a professional open-source developer and think you need more, let us know, by applying for unlimited hours. Your GitHub / GitLab track record should clearly show your regular open-source contributions.</p>
-                            <a href="#" className="btn">Apply Now</a>
+                            <p>Gitpod is free for up to 50 hours/month on any public repository. Professional open-source developers can apply for a <strong>free unlimited open source plan</strong>.</p>
+                            <a href="/contact" className="btn">Apply Here</a>
                         </div>
                         <div>
                             <h2>For Students</h2>
-                            <p>Students get the unlimited subscription for $9.</p>
-                            <p>Make sure your student email is set as your primary email on GitHub. And please let us know if your educational institution is not correctly recognized.</p>
-                            <a href="#" className="btn">I'm a Student</a>
+                            <p>Students get the <strong>professional subscription for $9</strong>. Make sure your student email is set as your primary email on GitHub.</p>
+                            <a href="/contact" className="btn">Doesn't Work?</a>
                         </div>
                     </section>
                 </div>
