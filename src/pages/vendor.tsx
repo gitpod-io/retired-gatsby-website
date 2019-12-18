@@ -11,6 +11,7 @@ import VendorBG from '../resources/vendor-bg.png'
 import Bg from '../components/Bg'
 import ActionCard from '../components/ActionCard'
 import PricingTable from '../components/PricingTable'
+import Description from '../components/Description'
 import Circle from '../components/Circle'
 import Layer from '../resources/layer.svg'
 import Github from '../resources/octicons-mark-github.svg'
@@ -103,7 +104,7 @@ const VendorPage: React.SFC<{}> = () => (
                     <td>On-prem or private cloud</td>
                 </tr>
                 <tr>
-                    <th>SLA</th>
+                    <th>SLA <Description description="Custom Service Level Agreement"/></th>
                     <td>optional</td>
                     <td>optional</td>
                     <td></td>
@@ -115,7 +116,7 @@ const VendorPage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><strong>White Labeling</strong></th>
+                    <th><strong>White Labeling</strong> <Description description="Possibility to rebrand"/></th>
                     <td></td>
                     <td></td>
                     <td></td>
