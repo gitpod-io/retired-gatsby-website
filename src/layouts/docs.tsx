@@ -10,7 +10,7 @@ import DocTopicChooser from '../components/DocTopicChooser'
 const StyledDocsLayout = styled.div`
 
     .grey-container {
-        padding-top: 10rem;
+        padding-top: 5rem;
 
         @media(max-width: ${sizes.breakpoints.lg}) {
             padding-top: 5rem;

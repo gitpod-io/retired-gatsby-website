@@ -84,7 +84,7 @@ const StyledFeatureCard = styled.div<{caption: boolean, isIllustration?: boolean
 
 interface FeatureCardProps {
     title: string
-    paragraphs: (string | JSX.Element)[]
+    paragraphs: JSX.Element
     more?: JSX.Element
     strong?: string
     img: JSX.Element,
@@ -100,7 +100,7 @@ const FeatureCard: React.SFC<FeatureCardProps> = ({ title, paragraphs, more, str
         <StyledFeatureCard id={id} caption={ caption ? true : false} isIllustration={isIllustration} style={ colorTextBox ? { borderColor: colorTextBox } : {} }>
             <div className="text-box" style={ colorTextBox ? { background: colorTextBox } : {} }>
                 <h3>{title}</h3>
-                { paragraphs.map((p, i) => <p key={i}>{p}</p>) }
+                { paragraphs }
                 { strong ? <p><strong>{strong}</strong></p> : null }
                 { more ? more : null }
             </div>

@@ -7,6 +7,7 @@ import { Link } from 'gatsby'
 import ExternalLink from '../components/ExternalLink'
 
 const StyledDropDown = styled.div`
+    z-index: 900;
 
     @media(min-width: ${sizes.breakpoints.lg}) {
         position: relative;

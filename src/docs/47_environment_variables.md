@@ -65,7 +65,7 @@ Subsequently `*/*` makes that variable available everywhere.
 In addition to user-specific env variables, Gitpod also allows passing in variables through the `gitpod.io/#` URL.
 The syntax for that is
 ```
-    https://gitpod.io/#var=value,var2=value2/https://github.com/my-org/repo-to-work-on
+https://gitpod.io/#var=value,var2=value2/https://github.com/my-org/repo-to-work-on
 ```
 
 The values are <a href="https://www.w3schools.com/tags/ref_urlencode.asp" target="_blank">URL encoded</a> to allow any non-ascii characters in values.
