@@ -129,20 +129,26 @@ const SelfHostedPage: React.SFC<{}> = () => (
                     <div className="install__steps-container">
                         <h2>Install Self-Hosted Gitpod</h2>
                         <ol className="install__steps">
-                            <li className="install__step"><span>1. </span>Git clone
-                                <a href="https://github.com/gitpod-io/self-hosted" target="_blank">https://github.com/gitpod-io/self-hosted</a>
-                            <br />in your terminal.</li>
-                            <li className="install__step"><span>2.</span>Follow readme.</li>
-                            <li className="install__step"><span>3.</span>Enjoy!</li>
+                            <li className="install__step">
+                                <span>1. </span>Git clone <a href="https://github.com/gitpod-io/self-hosted" target="_blank">https://github.com/gitpod-io/self-hosted</a><br />
+                                in your terminal.
+                            </li>
+                            <li className="install__step">
+                                <span>2.</span>Adjust the confuguration from the repository to your needs.
+                            </li>
+                            <li className="install__step">
+                                <span>3.</span>Run <pre>helm install -f ... gitpod</pre>
+                            </li>
                         </ol>
-                        <p>For more details see <Link to="/">Installing Instructions.</Link></p>
+                        <p>Enjoy!</p>
+                        <p>For more details see the <Link to="/docs/self-hosted/latest/self-hosted/">Installation Instructions.</Link></p>
                     </div>
                     <div className="install__kubernetes">
                         <h3>Runs on Kubernetes</h3>
                         <div><img alt="Kubernetes Logo" src={Kubernetes} /></div>
-                        <p>Gitpod is integeratable with Google Kubernetes Engine(GKE), Amazon Elastic Kuberenetes Service(EKS)*, Azure Kubernetes Service(AKS)*, Openshift *, Vanilla Kuberenetes *.</p>
-                        <p>And is easy to install via Helm Chart from Helm Hub</p>
-                        <p className="install__more-details">For more details see <a href="">Kubernetes Cluster.</a></p>
+                        <p>Gitpod can run on vanilla Kubernetes and there is a setup opimized for Google Kubernetes Engine(GKE).</p>
+                        <p>Optimized support for Amazon Elastic Kuberenetes Service(EKS), Azure Kubernetes Service(AKS), and Openshift is coming soon.</p>
+                        <p className="install__more-details">See <a href="/docs/self-hosted/latest/install/11_install_on_gcp_script">Install on GKE</a></p>
                     </div>
                 </section>
 
