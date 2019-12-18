@@ -22,22 +22,18 @@ const Logos: any = {
 }
 
 const StyledFeature = styled.div`
-    width: 32%;
-    max-width: 38rem;
-    min-width: 28rem;
+    width: 24%;
     padding: 3rem;
     margin-bottom: 3rem;
     background: ${colors.white};
     box-shadow: ${shadows.light};
 
     @media(min-width: ${sizes.breakpoints.md}) {
-        width: 32%;
+        width: 24%;
     }
 
-    @media(max-width: ${sizes.breakpoints.md}) {
-        &:not(:last-child) {
-            margin-bottom: 5rem;
-        }
+    @media(max-width: ${sizes.breakpoints.lg}) {
+        width: 49%;
     }
 
     .title {

@@ -5,7 +5,6 @@ import Banner from '../components/Banner'
 import Planet from '../resources/planet.png'
 import Features from '../components/Features'
 import Feature from '../components/Feature'
-import { features } from '../utils/enterprise'
 import Quote from '../components/Quote'
 import Bg from '../components/Bg'
 import ActionCard from '../components/ActionCard'
@@ -16,13 +15,42 @@ import Circle from '../components/Circle'
 import Layer from '../resources/layer.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
-import { Link } from 'gatsby'
 import AppliToolsLogo from '../resources/aplitools.svg'
 import Gatsby from '../resources/gatsby.svg'
 import FreeCodeCamp from '../resources/freecodecamp.svg'
 import CodeInstituteLogo from '../resources/code.png'
 import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
 import TheiaIDELogo from '../resources/theia-grey.svg'
+
+import { Link } from 'gatsby'
+
+export const features = [
+    {
+        title: 'Better Teamwork',
+        paragraphs: ['With Gitpod code reviews and spotting bugs becomes more convenient than ever. ', 'Your team can collaborate asynchronously with Gitpod Snapshots, as well as synchronously with life shared workspaces', 'Gitpod also allows non-developers to open a workspace easily.'],
+        // more:<p>Read more about <Link to="/docs/33_sharing_and_collaboration/">Collaboration</Link></p>
+    },
+    {
+        title: "Less Costs for more Machine Power",
+        paragraphs: ['You can use elastic clouds to satisfy your demand as needed.', 'With Gitpod there is no need for many $3000 laptops, a few good servers are already suffice.', 'Also, server resources are more cost-efficient because they are shared resources.']
+    },
+    {
+        title: "More Secure",
+        paragraphs: ['Host Gitpod yourself and your source code will never be on the developers laptop or workstations.', 'With Gitpod you can roll out new runtimes, libs and frameworks faster, as they only need to be on the server and not on the developers machines.', 'Self-Hosted Gitpod can run in your corporate network, keep your data on your infrastructure, and does not require and internet connection.'],
+        // more: <p>Read more about <a href="#">Security</a></p>
+    },
+    {
+        title: "Smooth Integration",
+        paragraphs: ['All Gitpod needs is a Kubernetes cluster.', 'It enables user authorization and integration via your GitHub Enterprise, GitLab, or Bitbucket.', 'Please contact TypeFox for further customizations.'],
+        logos: ['Layer', 'Github', 'Gitlab', 'Git']
+    },
+    // {
+    //     title: "Full Compatibility",
+    //     paragraphs: ['With Gitpod you can program in any language thanks to LSP. It is based on your runtime, your frameworks, and all the original binaries.', 'Also, it’s fully compatibly with your Docker containers, your VS Code extensions and your Theia extensions. Your workspaces are powerful enough to run a database easily.', 'Thanks to the similar UX to VS Code, Gitpod is a very familiar dev environment.'],
+    //     // more: <p>Read more about <a href="#">Compatibility</a></p>,
+    //     logos: ['VSC', 'Theia', 'Docker']
+    // }
+]
 
 const EnterprisePage: React.SFC<{}> = () => (
     <IndexLayout canonical='/enterprise/' title="Enterprise">
@@ -33,22 +61,22 @@ const EnterprisePage: React.SFC<{}> = () => (
             <Banner
                 subtitle="Gitpod Enterprise"
                 title={<h1>Unleash Developer Productivity</h1>}
-                paragraph="Implementing Gitpod to your development environment means no more tedious setups, easy onboarding, higher code quality and a greater workflow."
+                paragraph="Adding Gitpod to your development toolchain means less waiting, no tedious setups, easy onboarding, higher code quality and a smoother workflow."
                 linkPath="/enterprise/#enterprise"
                 linkText="Choose your Solution"
-                img={<img alt="Planet Earth" src={Planet}/>}
+                img={<img alt="Planet Earth" src={Planet} />}
             />
 
             {/* ----- Section Features ----- */}
 
-            <Features title="Stay in the Flow and Upscale Your Productivity">
+            <Features title="Stay in the Flow and Scale Up Your Productivity">
                 {
                     features.map((f, i) => (
                         <Feature
                             key={i}
                             title={f.title}
                             paragraphs={f.paragraphs}
-                            more={f.more}
+                            // more={f.more}
                             logos={f.logos}
                         />
                     ))
@@ -58,41 +86,41 @@ const EnterprisePage: React.SFC<{}> = () => (
 
         {/* ----- Section Trusted By ----- */}
 
-                    <TrustedBy
-                brands={[
-                    {
-                        alt: 'freeCodeCamp.org',
-                        url: 'https://www.freecodecamp.org/',
-                        svg: FreeCodeCamp,
-                        transform: 'scale(1.6) translate(22px,2px)'
-                    },
-                    {
-                        alt: 'Gatsby Logo',
-                        url: 'https://www.gatsbyjs.org/',
-                        svg: Gatsby
-                    },
-                    {
-                        alt: 'Theia Ide Logo',
-                        url: 'https://theia-ide.org',
-                        svg: TheiaIDELogo
-                    },
-                    {
-                        alt: 'Code Institute',
-                        url: 'https://codeinstitute.net/',
-                        svg: CodeInstituteLogo
-                    },
-                    {
-                        alt: 'Aplitools Logo',
-                        url: 'https://applitools.com/',
-                        svg: AppliToolsLogo
-                    },
-                    {
-                        alt: '4 Geeks Academy Logo',
-                        url: 'https://www.4geeksacademy.co/',
-                        svg: FourGeeksAcademyLogo
-                    },
-                ]}
-            />
+        <TrustedBy
+            brands={[
+                {
+                    alt: 'freeCodeCamp.org',
+                    url: 'https://www.freecodecamp.org/',
+                    svg: FreeCodeCamp,
+                    transform: 'scale(1.6) translate(22px,2px)'
+                },
+                {
+                    alt: 'Gatsby Logo',
+                    url: 'https://www.gatsbyjs.org/',
+                    svg: Gatsby
+                },
+                {
+                    alt: 'Theia Ide Logo',
+                    url: 'https://theia-ide.org',
+                    svg: TheiaIDELogo
+                },
+                {
+                    alt: 'Code Institute',
+                    url: 'https://codeinstitute.net/',
+                    svg: CodeInstituteLogo
+                },
+                {
+                    alt: 'Aplitools Logo',
+                    url: 'https://applitools.com/',
+                    svg: AppliToolsLogo
+                },
+                {
+                    alt: '4 Geeks Academy Logo',
+                    url: 'https://www.4geeksacademy.co/',
+                    svg: FourGeeksAcademyLogo
+                },
+            ]}
+        />
 
         {/* ----- Quote ----- */}
 
@@ -111,9 +139,9 @@ const EnterprisePage: React.SFC<{}> = () => (
         >
             <thead>
                 <tr className="header">
-                    <th style={{border: 'none', background: 'none'}}>&nbsp;</th>
+                    <th style={{ border: 'none', background: 'none' }}>&nbsp;</th>
                     <th>Gitpod Managed
-                        <span><span>FREE</span> Trial</span>
+                        <span>&nbsp;</span>
                     </th>
                     <th>Gitpod Self-Hosted
                         <span><span>FREE</span> Trial</span>
@@ -152,27 +180,27 @@ const EnterprisePage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Github} alt="GitHub Logo"/> github.com</th>
+                    <th><img src={Github} alt="GitHub Logo" /> github.com</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Github} alt="GitHub Logo"/> GitHub Enterprise</th>
+                    <th><img src={Github} alt="GitHub Logo" /> GitHub Enterprise</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Gitlab} alt="GitLab Logo"/> gitlab.com</th>
+                    <th><img src={Gitlab} alt="GitLab Logo" /> gitlab.com</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Gitlab} alt="GitLab Logo"/> GitLab self-hosted</th>
+                    <th><img src={Gitlab} alt="GitLab Logo" /> GitLab self-hosted</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Layer} alt="Layer Logo"/> Bitbucket</th>
+                    <th><img src={Layer} alt="Layer Logo" /> Bitbucket</th>
                     <td>Soon</td>
                     <td>Soon</td>
                 </tr>
@@ -188,7 +216,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                 </tr>
                 <tr className="buttons">
                     <th></th>
-                    <td><Link to="#" className="btn btn--cta">Contact Sales</Link></td>
+                    <td><Link to="/contact" className="btn btn--cta">Contact Sales</Link></td>
                     <td><Link to="/self-hosted" className="btn">Host Yourself</Link></td>
                 </tr>
             </tbody>
@@ -199,7 +227,7 @@ const EnterprisePage: React.SFC<{}> = () => (
         <ActionCard
             title='Didn’t find what you’re looking for?'
             text='Please, get in touch. We’re happy to answer your questions.'
-            anchors={[{href: '/schedule-call',text: 'Schedule a Call'}, {href: '/contact', text: 'Contact'}]}
+            anchors={[{ href: 'https://calendly.com/gitpod/sales', text: 'Schedule a Call' }, { href: '/contact', text: 'Contact' }]}
         />
 
     </IndexLayout>

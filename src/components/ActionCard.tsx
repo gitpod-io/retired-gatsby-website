@@ -3,6 +3,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { colors, shadows } from '../styles/variables'
 import { Link } from 'gatsby'
+import { string } from 'prop-types'
 
 const StyledActionCard = styled.section`
     display: block;
@@ -41,9 +42,17 @@ const ActionCard: React.SFC<ActionCardProps> = ({title, text, anchors }) => (
     <StyledActionCard>
         <h2>{title}</h2>
         <p>{text}</p>
-        <Link to={anchors[0].href} className="btn btn--cta btn--normal">{anchors[0].text}</Link>
-        { anchors[1] ? <Link to={anchors[1].href} className="btn btn--normal">{anchors[1].text}</Link> : null }
+        {link(anchors[0].href,anchors[0].text)}
+        { anchors[1] ? link(anchors[1].href,anchors[1].text) : null }
     </StyledActionCard>
 )
+
+function link(href: string, text: string, primary: boolean = false) {
+    if (href.indexOf('://') !== -1) {
+        return <a className={"btn btn--normal" + (primary ? " btn--cta" : "")} href={href} target="_blank">{text}</a>
+    } else {
+        return <Link to={href} className="btn btn--cta btn--normal">{text}</Link>
+    }
+}
 
 export default ActionCard
