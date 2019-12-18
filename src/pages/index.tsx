@@ -379,15 +379,6 @@ const StyledIndexPage = styled.div`
 const IndexPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/'>
         <StyledIndexPage>
-            <Global
-                styles={
-                    css`
-                        html {
-                            scroll-behavior: smooth;
-                        }
-                    `
-                }
-            />
 
             {/* ----- Banner ----- */}
 
@@ -500,7 +491,7 @@ const IndexPage: React.SFC<{}> = () => (
                             <div className="why-gitpod__text">
                                 <h3>Not Just a Playground</h3>
                                 <p>Gitpod is not just another online playground, but a full featured dev environment, just like your local IDE.</p>
-                                <p>It includes fully functional <strong>Linux terminals</strong>, you can install any <strong>VS Code extensions</strong> and provides all the other good features provided by <a href="https://theia-ide.org">Theia</a>, the vendor neutral and highly extensible VS Code alternative, we have developed.</p>
+                                <p>It includes fully functional <strong>Linux terminals</strong>, you can install any <strong>VS Code extensions</strong> and provides all the other good features provided by <strong>Theia</strong>, the vendor neutral and highly extensible VS Code alternative, we have developed.</p>
                                 <p>Read more about <a href="/docs/50_ide/">Theia</a></p>
                             </div>
                             <div className="why-gitpod__img-container">

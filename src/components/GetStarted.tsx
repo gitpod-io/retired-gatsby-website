@@ -271,7 +271,7 @@ class GetStarted extends React.Component {
             <StyledGetStarted className="row">
                 <section className="get-started" id="get-started">
                     <h2>Get Started</h2>
-                    <p>30 days of free trial and always free for Open Source.</p>
+                    <p>Free for Open Source and 30 days free trial for private repositories.</p>
 
                     <div className="get-started__prefix">
                         <div className="get-started__prefix-text-container">
