@@ -11,7 +11,7 @@ import ActionCard from '../components/ActionCard'
 import TrustedBy from '../components/TrustedBy'
 import EnterpriseBg from '../resources/enterprise-bg.png'
 import PricingTable from '../components/PricingTable'
-import Description from '../components/Description'
+import PopOver from '../components/PopOver'
 import Circle from '../components/Circle'
 import Layer from '../resources/layer.svg'
 import Github from '../resources/octicons-mark-github.svg'
@@ -171,7 +171,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                     <td>On-prem or private cloud</td>
                 </tr>
                 <tr>
-                    <th>SLA <Description description="Custom Service Level Agreement"/></th>
+                    <th>SLA <PopOver description="Custom Service Level Agreement"/></th>
                     <td>optional</td>
                     <td></td>
                 </tr>

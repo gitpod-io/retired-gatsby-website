@@ -16,7 +16,7 @@ import Layer from '../resources/layer.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
 import { Link } from 'gatsby'
-import Description from '../components/Description'
+import PopOver from '../components/PopOver'
 
 const EducationPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/education/' title="Education">
@@ -105,7 +105,7 @@ const EducationPage: React.SFC<{}> = () => (
                     <td>On-prem or private cloud</td>
                 </tr>
                 <tr>
-                    <th>SLA <Description description="Custom Service Level Agreement"/></th>
+                    <th>SLA <PopOver description="Custom Service Level Agreement"/></th>
                     <td>optional</td>
                     <td>optional</td>
                     <td></td>
@@ -117,7 +117,7 @@ const EducationPage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><strong>White Labeling</strong> <Description description="Possibility to rebrand"/></th>
+                    <th><strong>White Labeling</strong> <PopOver description="Possibility to rebrand"/></th>
                     <td></td>
                     <td></td>
                     <td></td>
