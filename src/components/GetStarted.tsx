@@ -315,7 +315,7 @@ class GetStarted extends React.Component {
                                 (project, i) => (
                                     <Project
                                         key={i}
-                                        image={<img alt={project.alt} src={project.image}/>}
+                                        image={<object data={project.image}/>}
                                         title={project.title}
                                         href={project.href}
                                     />

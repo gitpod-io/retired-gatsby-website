@@ -10,7 +10,7 @@ import IconLine from '../resources/zick-zack-line.svg'
 import HourGlass from '../resources/hourglass.svg'
 import ArrowOnTarget from '../resources/arrow-on-target.svg'
 import ToolIntegration from '../resources/tool-integration.svg'
-import FullDevEnvironments from '../resources/full-dev-environments.png'
+import FullDevEnvironments from '../resources/full-dev-environments.svg'
 import ReadyToCode from '../components/ReadyToCode'
 import AntDesignWorkspace from '../resources/ant-design-workspace.png'
 import Details from '../components/Details'
@@ -275,10 +275,10 @@ const StyledIndexPage = styled.div`
             width: 100%;
 
             &-container {
+                min-height: 36rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                min-height: 36rem;
 
                 @media(max-width: ${sizes.breakpoints.md}) {
                     max-height: 40rem;
@@ -309,7 +309,7 @@ const StyledIndexPage = styled.div`
 
             &--active {
                 color: ${colors.white};
-                background: url("/galaxy.jpg") no-repeat 50% 50%;
+                background: url("https://user-images.githubusercontent.com/46004116/70911894-9fd2c500-2034-11ea-98ae-828306d5a181.jpg") no-repeat 50% 50%;
             }
         }
 
@@ -395,7 +395,7 @@ const IndexPage: React.SFC<{}> = () => (
                             <Link to="/self-hosted/" className="btn">Host Yourself</Link>
                         </div>
                         <div className="banner__screenshot-container">
-                            <img alt="Gitpod Screenshot" src={ReflectionScreenshot} className="banner__screenshot"/>
+                            <img alt="Gitpod Screenshot" src={ReflectionScreenshot} className="banner__screenshot" />
                         </div>
                     </header>
                 </div>
@@ -410,8 +410,8 @@ const IndexPage: React.SFC<{}> = () => (
                         <p className="intro__text">Every day <span>developers waste millions of hours</span> waiting for builds to finish.</p>
                     </div>
                     <div className="intro__box">
-                        <object className="intro__icon"  data={ArrowOnTarget} />
-                        <p className="intro__text"><span>Gitpod eliminates this friction</span> by providing prebuilt, <br/>ready-to-code dev environments with just one click.</p>
+                        <object className="intro__icon" data={ArrowOnTarget} />
+                        <p className="intro__text"><span>Gitpod eliminates this friction</span> by providing prebuilt, <br />ready-to-code dev environments with just one click.</p>
                     </div>
                 </div>
             </section>
@@ -419,7 +419,7 @@ const IndexPage: React.SFC<{}> = () => (
             {/* ----- Line ----- */}
 
             <div className="line-container">
-                <img alt="Icon Line" src={IconLine} className="line"/>
+                <object className="line" data={IconLine} />
             </div>
 
             {/* ----- Section Trusted By ----- */}
@@ -476,7 +476,7 @@ const IndexPage: React.SFC<{}> = () => (
                                     alt="Tools Integration"
                                     src={ToolIntegration}
                                     className="why-gitpod__img"
-                                    style={{transform: 'scale(.8)'}}
+                                    style={{ transform: 'scale(.8)' }}
                                 />
                             </div>
                             <div className="why-gitpod__text">
@@ -495,11 +495,10 @@ const IndexPage: React.SFC<{}> = () => (
                                 <p>Read more about <a href="/docs/50_ide/">Theia</a></p>
                             </div>
                             <div className="why-gitpod__img-container">
-                                <img
-                                    alt="Full Dev Environments"
-                                    src={FullDevEnvironments}
-                                    style={{transform: 'translate(-2rem)'}}
-                                    className="why-gitpod__img"/>
+                                <object
+                                    data={FullDevEnvironments}
+                                    style={{ transform: 'translate(-2rem)' }}
+                                    className="why-gitpod__img" />
                             </div>
                         </div>
 
@@ -520,18 +519,18 @@ const IndexPage: React.SFC<{}> = () => (
             <div className="grey-container">
                 <div className="row">
                     <section>
-                            <h2>Free for Open-Source</h2>
-                            <div className="open-source">
-                                <div className="open-source__content">
-                                        <img alt="Ant Design Workspace" src={AntDesignWorkspace} />
-                                        <div className="open-source__text">
-                                            <h3>Giving Back to <br/>Open-Source!</h3>
-                                            <p>Gitpod is built on open-source and wouldn’t exist without it.</p>
-                                            <p>Did you know that you can see all contributor-friendly open-source projects at one glance?</p>
-                                            <p>Find your next project on <a href="https://contribute.dev" target="_blank">contribute.dev!</a></p>
-                                        </div>
+                        <h2>Free for Open-Source</h2>
+                        <div className="open-source">
+                            <div className="open-source__content">
+                                <img alt="Ant Design Workspace" src={AntDesignWorkspace} />
+                                <div className="open-source__text">
+                                    <h3>Giving Back to <br />Open-Source!</h3>
+                                    <p>Gitpod is built on open-source and wouldn’t exist without it.</p>
+                                    <p>Did you know that you can see all contributor-friendly open-source projects at one glance?</p>
+                                    <p>Find your next project on <a href="https://contribute.dev" target="_blank">contribute.dev!</a></p>
                                 </div>
                             </div>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -542,7 +541,7 @@ const IndexPage: React.SFC<{}> = () => (
             <Details
                 title="Explore Gitpod"
                 text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-                anchors={[{href: '/features/', text: 'See Features'}, {href: '/blog/', text: 'See Blog'}]}
+                anchors={[{ href: '/features', text: 'See Features' }, { href: '/blog', text: 'See Blog' }]}
             />
 
         </StyledIndexPage>

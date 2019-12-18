@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import IndexLayout from '../layouts'
-import IceStick from '../resources/ice-stick.png'
+import IceStick from '../resources/ice-stick.svg'
 import { featuresCardsData } from '../utils/features'
 import FeatureBox from '../components/FeatureBox'
 import FeatureCard from '../components/FeatureCard'
@@ -164,7 +164,7 @@ const FeaturesPage: React.SFC<{}> = () => (
                     {/* ----- Intro ----- */}
 
                     <section className="intro" id="top">
-                        <img alt="Ice Stick" src={IceStick} className="ice-stick" />
+                        <object data={IceStick} className="ice-stick" />
                         <h1>Features</h1>
                         <div className="features">
                             {
@@ -173,6 +173,7 @@ const FeaturesPage: React.SFC<{}> = () => (
                                         key={i}
                                         alt={f.title}
                                         img={f.icon}
+                                        hover={f.hover}
                                         text={f.iconText || f.iconTitle}
                                         path={f.id}
                                     />

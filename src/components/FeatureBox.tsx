@@ -10,6 +10,7 @@ const StyledFeatureBox = styled.div`
     background: ${colors.white};
     box-shadow: ${shadows.light};
     border-radius: 2rem;
+    height: 150px;
 
     h3 {
         font-weight: 400;
@@ -26,17 +27,32 @@ const StyledFeatureBox = styled.div`
 interface FeatureBoxProps {
     alt: string
     img: string
+    hover: string
     text: string | JSX.Element
     path: string
 }
 
-const FeatureBox: React.SFC<FeatureBoxProps> = ({ alt, img, text, path }) => (
-    <StyledFeatureBox>
-        <a href={`#${path}`}>
-            <img alt={alt} src={img}/>
-            <h3>{text}</h3>
-        </a>
-    </StyledFeatureBox>
-)
+class FeatureBox extends React.Component<FeatureBoxProps, { isHovered: boolean }> {
+    constructor(props: FeatureBoxProps) {
+        super(props);
+        this.state = {
+            isHovered: false
+        }
+    }
+
+    handleHover = (val: boolean) => {
+        this.setState({ isHovered: val });
+    }
+
+    render() {
+        const { img, hover, text, path } = this.props;
+        return <StyledFeatureBox>
+            <a href={`#${path}`} onMouseOver={() => this.handleHover(true)} onMouseOut={() => this.handleHover(false)}>
+                <object data={this.state.isHovered ? hover : img} />
+                <h3>{text}</h3>
+            </a>
+        </StyledFeatureBox>
+    }
+}
 
 export default FeatureBox

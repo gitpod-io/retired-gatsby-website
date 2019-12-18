@@ -1,9 +1,9 @@
 import React from 'react'
 
 import { Link } from 'gatsby'
-import ReadyToCodeImg from '../resources/ready-to-code.png'
-import AutomatedSetupGraphicGitpod from '../resources/automatedsetup-graphic-gitpod.png'
-import AutomatedSetupGraphicOrdinary from '../resources/automatedsetup-graphic-ordinary.svg'
+import ReadyToCodeImg from '../resources/icon-automated-setup-default.svg'
+import AutomatedSetupGraphicGitpod from '../resources/icon-automated-setup-gitpod.svg'
+import AutomatedSetupGraphicOrdinary from '../resources/icon-automated-setup-no-gitpod.svg'
 
 class ReadyToCode extends React.Component {
     state = {
@@ -40,25 +40,20 @@ class ReadyToCode extends React.Component {
         const { isDefaultRendered, isGraphicGitpodRendered, isGraphicOridinaryRendered } = this.state
 
         const graphicGitpodStyles: React.CSSProperties = {
-            transform: 'scale(.9)',
-            bottom: '-11.7rem',
-            left: '1rem',
-            height: isGraphicGitpodRendered ? '100%' : 0,
-            opacity: isGraphicGitpodRendered ? 1 : 0
+            transform: 'scale(.95)',
+            height:'61px',
+            display: isGraphicGitpodRendered ? 'block' : 'none'
         }
 
         const graphicOridnaryStyles: React.CSSProperties = {
-            transform: 'scale(1.25)',
-            bottom: '.5rem',
-            left: '1rem',
-            height: isGraphicOridinaryRendered ? '100%' : 0,
-            opacity: isGraphicOridinaryRendered ? 1 : 0
+            transform: 'scale(.944)',
+            display: isGraphicOridinaryRendered ? 'block' : 'none'
         }
 
         const defaultStyles: React.CSSProperties = {
-            bottom: '-4rem',
-            opacity: isDefaultRendered ? 1 : 0,
-            height: isDefaultRendered ? '100%': 0,
+            position: 'relative',
+            display: isDefaultRendered ? 'block' : 'none',
+            width: '95%'
         }
 
         return (
@@ -87,22 +82,23 @@ class ReadyToCode extends React.Component {
                     </div>
                 </div>
                 <div className="why-gitpod__img-container">
-                    <img
-                        alt="Automated Setup"
-                        src={AutomatedSetupGraphicGitpod}
-                        style={graphicGitpodStyles}
-                        className="why-gitpod__img"
-                    />
-                    <img
-                        src={AutomatedSetupGraphicOrdinary}
-                        style={{...graphicOridnaryStyles, width: '100%'}}
-                    />
-                    <img
-                        alt="Automated Setup"
-                        src={ReadyToCodeImg}
-                        style={defaultStyles}
-                        className="why-gitpod__img"
-                    />
+                    <div style={{ display: 'flex', width: '100%', height: '100%', justifyContent: 'center' }}>
+                        <object
+                            data={AutomatedSetupGraphicGitpod}
+                            style={graphicGitpodStyles}
+                            className="why-gitpod__img"
+                        />
+                        <object
+                            data={AutomatedSetupGraphicOrdinary}
+                            style={{ ...graphicOridnaryStyles, width: '100%' }}
+                            className="why-gitpod__img"
+                        />
+                        <object
+                            data={ReadyToCodeImg}
+                            style={defaultStyles}
+                            className="why-gitpod__img"
+                        />
+                    </div>
                 </div>
             </div>
         )
