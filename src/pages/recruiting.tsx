@@ -92,8 +92,8 @@ const RecrutingPage: React.SFC<{}> = () => (
                 </tr>
                 <tr>
                     <th>Managed By</th>
-                    <td>Typefox</td>
-                    <td>Typefox</td>
+                    <td>TypeFox</td>
+                    <td>TypeFox</td>
                     <td>You</td>
                 </tr>
                 <tr>
@@ -181,7 +181,7 @@ const RecrutingPage: React.SFC<{}> = () => (
                     <td>Soon</td>
                 </tr>
                 <tr>
-                    <th>Custom Authorization</th>
+                    <th>Custom Authentication</th>
                     <td>OAuth2</td>
                     <td>OAuth2</td>
                     <td>OAuth2</td>
@@ -189,7 +189,7 @@ const RecrutingPage: React.SFC<{}> = () => (
                 <tr className="buttons">
                     <th></th>
                     <td><Link to="#" className="btn btn--cta">Start for Free</Link></td>
-                    <td><Link to="#" className="btn btn--cta">Contact Sales</Link></td>
+                    <td><Link to="/contact" className="btn btn--cta">Contact Sales</Link></td>
                     <td><Link to="/self-hosted" className="btn">Host Yourself</Link></td>
                 </tr>
             </tbody>
@@ -199,8 +199,8 @@ const RecrutingPage: React.SFC<{}> = () => (
 
         <ActionCard
             title='Didn’t find what you’re looking for?'
-            text='Please, get in touch. We’re happy to answer your questions.'
-            anchors={[{href: '/schedule-call',text: 'Schedule a Call'}, {href: '/contact', text: 'Contact'}]}
+            text='Please get in touch. We’re happy to answer your questions.'
+            anchors={[{href: 'https://calendly.com/gitpod/sales',text: 'Schedule a Call'}, {href: '/contact', text: 'Contact'}]}
         />
 
     </IndexLayout>
