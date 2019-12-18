@@ -20,6 +20,7 @@ const StyledPostBanner = styled.header`
         display: inline;
         background: ${colors.white};
         box-shadow: ${shadows.light1};
+        padding: 1rem 2rem;
     }
 
     .c1 {
