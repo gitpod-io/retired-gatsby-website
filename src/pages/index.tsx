@@ -20,6 +20,7 @@ import AppliToolsLogo from '../resources/aplitools.svg'
 import Gatsby from '../resources/gatsby.svg'
 import FreeCodeCamp from '../resources/freecodecamp.svg'
 import CodeInstituteLogo from '../resources/code.png'
+import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
 import TheiaIDELogo from '../resources/theia-grey.svg'
 import Testimonials from '../components/Testimonials'
 import GetStarted from '../components/GetStarted'
@@ -435,9 +436,10 @@ const IndexPage: React.SFC<{}> = () => (
             <TrustedBy
                 brands={[
                     {
-                        alt: 'Aplitools Logo',
-                        url: 'https://applitools.com/',
-                        svg: AppliToolsLogo
+                        alt: 'freeCodeCamp.org',
+                        url: 'https://www.freecodecamp.org/',
+                        svg: FreeCodeCamp,
+                        transform: 'scale(1.6) translate(22px,2px)'
                     },
                     {
                         alt: 'Gatsby Logo',
@@ -450,15 +452,20 @@ const IndexPage: React.SFC<{}> = () => (
                         svg: TheiaIDELogo
                     },
                     {
-                        alt: 'freeCodeCamp.org',
-                        url: 'https://www.freecodecamp.org/',
-                        svg: FreeCodeCamp
-                    },
-                    {
                         alt: 'Code Institute',
                         url: 'https://codeinstitute.net/',
                         svg: CodeInstituteLogo
-                    }
+                    },
+                    {
+                        alt: 'Aplitools Logo',
+                        url: 'https://applitools.com/',
+                        svg: AppliToolsLogo
+                    },
+                    {
+                        alt: '4 Geeks Academy Logo',
+                        url: 'https://www.4geeksacademy.co/',
+                        svg: FourGeeksAcademyLogo
+                    },
                 ]}
             />
 

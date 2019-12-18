@@ -22,6 +22,7 @@ import Gatsby from '../resources/gatsby.svg'
 import FreeCodeCamp from '../resources/freecodecamp.svg'
 import CodeInstituteLogo from '../resources/code.png'
 import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
+import TheiaIDELogo from '../resources/theia-grey.svg'
 
 const EnterprisePage: React.SFC<{}> = () => (
     <IndexLayout canonical='/enterprise/' title="Enterprise">
@@ -57,12 +58,13 @@ const EnterprisePage: React.SFC<{}> = () => (
 
         {/* ----- Section Trusted By ----- */}
 
-        <TrustedBy
-            brands={[
+                    <TrustedBy
+                brands={[
                     {
-                        alt: 'Aplitools Logo',
-                        url: 'https://applitools.com/',
-                        svg: AppliToolsLogo
+                        alt: 'freeCodeCamp.org',
+                        url: 'https://www.freecodecamp.org/',
+                        svg: FreeCodeCamp,
+                        transform: 'scale(1.6) translate(22px,2px)'
                     },
                     {
                         alt: 'Gatsby Logo',
@@ -70,22 +72,27 @@ const EnterprisePage: React.SFC<{}> = () => (
                         svg: Gatsby
                     },
                     {
-                        alt: '4 Geeks Academy Logo',
-                        url: 'https://www.4geeksacademy.co/',
-                        svg: FourGeeksAcademyLogo
-                    },
-                    {
-                        alt: 'freeCodeCamp.org',
-                        url: 'https://www.freecodecamp.org/',
-                        svg: FreeCodeCamp
+                        alt: 'Theia Ide Logo',
+                        url: 'https://theia-ide.org',
+                        svg: TheiaIDELogo
                     },
                     {
                         alt: 'Code Institute',
                         url: 'https://codeinstitute.net/',
                         svg: CodeInstituteLogo
-                    }
+                    },
+                    {
+                        alt: 'Aplitools Logo',
+                        url: 'https://applitools.com/',
+                        svg: AppliToolsLogo
+                    },
+                    {
+                        alt: '4 Geeks Academy Logo',
+                        url: 'https://www.4geeksacademy.co/',
+                        svg: FourGeeksAcademyLogo
+                    },
                 ]}
-        />
+            />
 
         {/* ----- Quote ----- */}
 
