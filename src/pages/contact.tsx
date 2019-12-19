@@ -23,11 +23,7 @@ const StyledContactPage = styled.div`
             padding: 1rem 2rem;
             border: ${borders.light1};
             border-radius: 3px;
-            box-shadow: 0 0 .1rem .2rem rgba(0,0,0, .05);
 
-            &::placeholder {
-                color: black;
-            }
 
             &:not(:last-child) {
                 margin-bottom: 2rem;
@@ -50,7 +46,7 @@ const StyledContactPage = styled.div`
             height: 22rem;
             border: ${borders.light1};
             border-radius: 3px;
-            box-shadow: 0 0 .2rem .4rem rgba(0,0,0, .05);
+
         }
     }
 
@@ -101,12 +97,14 @@ export default function ContactPage() {
         e.preventDefault()
         if (state.consent !== true) {
             setState({
+                ...state,
                 errorMessage: 'Please agree to the consent so we are allowed to store your provided information.'
             });
             return;
         }
         if (!state.eMail) {
             setState({
+                ...state,
                 errorMessage: 'Please provide a valid e-mail so we can reach out to you.'
             });
             return;

@@ -152,7 +152,7 @@ const EnterprisePage: React.SFC<{}> = () => (
             <tbody>
                 <tr>
                     <th>Pricing</th>
-                    <td>$3000 per month</td>
+                    <td>Starting at $3000 per month</td>
                     <td>$20 per user</td>
                 </tr>
                 <tr>
