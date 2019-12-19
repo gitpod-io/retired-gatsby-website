@@ -7,8 +7,8 @@ import { colors, shadows, sizes } from '../styles/variables'
 const StyledPricingBox = styled.div<{transform?: string, background?: boolean}>`
     position: relative;
     margin-bottom: 3rem;
-    padding: 3rem 5rem;
-    min-height: 49rem;
+    padding: 3rem 4rem;
+    min-height: 50rem;
     min-width: 25rem;
     width: 24%;
     text-align: center;
@@ -79,6 +79,13 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean}>`
 
         &:not(:last-child) {
             margin-bottom: .8rem;
+        }
+    }
+
+    @media(min-width: ${sizes.breakpoints.lg}) {
+        span {
+            display: flex;
+            justify-content: space-between;
         }
     }
 
