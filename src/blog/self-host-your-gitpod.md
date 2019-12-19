@@ -56,7 +56,7 @@ For Google Cloud Platform we provide an [automated installation script](/docs/se
 ## Pricing
 
 Gitpod Self-Hosted is free for up to three users. If you're a small shop that will get you up and running.
-If you need more, there is a [free one-month unlimited license](https://gitpod.io/selfhosted-trail) available.
+If you need more, there is a [free one-month unlimited license](https://gitpod.io/selfhosted-trial) available.
 In case you need support running your PoC in-house please [reach out](mailto:contact@gitpod.io) and we'll be happy to help.
 Our remodeled [community](https://community.gitpod.io/) will also fill with helpful tips and tricks regarding Gitpod Self-Hosted.
 
