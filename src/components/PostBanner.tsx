@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, shadows } from '../styles/variables'
+import { colors, shadows, sizes } from '../styles/variables'
 
 const StyledPostBanner = styled.header`
     position: relative;
@@ -14,19 +14,24 @@ const StyledPostBanner = styled.header`
         position: absolute;
         bottom: 0rem;
         left: 2rem;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            left: 0;
+        }
     }
 
     h1, h3 {
-        display: inline;
-        background: ${colors.white};
+        display: inline-block;
         box-shadow: ${shadows.light1};
         padding: 1rem 2rem;
         background: ${colors.white};
+        margin: 0;
     }
 
     h3 {
         color: ${colors.text};
         font-weight: 200;
+        margin-bottom: 2rem;
     }
 
     .c1 {
@@ -54,8 +59,6 @@ const PostBanner: React.SFC<PostBannerProps> = ({ title, subtitle, teaserImage, 
     <StyledPostBanner style={{backgroundImage: `url(${teaserImage})`}}>
         <div className="contents">
             <h3>{subtitle}</h3>
-            <br />
-            <br />
             <h1>{title}</h1>
             <br />
             <div className="c1">{date}</div>
