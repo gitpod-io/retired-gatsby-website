@@ -16,10 +16,17 @@ const StyledPostBanner = styled.header`
         left: 2rem;
     }
 
-    h1 {
-        display: inline-block;
+    h1, h3 {
+        display: inline;
+        background: ${colors.white};
+        box-shadow: ${shadows.light1};
         padding: 1rem 2rem;
         background: ${colors.white};
+    }
+
+    h3 {
+        color: ${colors.text};
+        font-weight: 200;
     }
 
     .c1 {
@@ -38,13 +45,17 @@ const StyledPostBanner = styled.header`
 interface PostBannerProps {
     teaserImage?: string
     title: string
+    subtitle: string
     date: JSX.Element
     author: JSX.Element
 }
 
-const PostBanner: React.SFC<PostBannerProps> = ({ title, teaserImage, date, author }) => (
+const PostBanner: React.SFC<PostBannerProps> = ({ title, subtitle, teaserImage, date, author }) => (
     <StyledPostBanner style={{backgroundImage: `url(${teaserImage})`}}>
         <div className="contents">
+            <h3>{subtitle}</h3>
+            <br />
+            <br />
             <h1>{title}</h1>
             <br />
             <div className="c1">{date}</div>

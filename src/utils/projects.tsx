@@ -1,9 +1,8 @@
-import JS from '../resources/js.png'
-import TS from '../resources/ts.png'
-import GO from '../resources/go.png'
-import JAVA from '../resources/java.png'
-import PY from '../resources/py.png'
-
+import JS from '../resources/js.svg'
+import TS from '../resources/ts.svg'
+import GO from '../resources/go.svg'
+import JAVA from '../resources/java.svg'
+import PY from '../resources/py.svg'
 
 
 export const projects = [

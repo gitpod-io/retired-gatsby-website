@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="713" height="418" viewBox="0 0 713 418">
+<style>
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Montserrat-Semibold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gnD_vx3rCs.woff2) format('woff2');
+}
+</style>
+  <defs>
+    <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" width="713" height="418" viewBox="0 280 580 340">
+        <image xlink:href="https://www.gitpod.io/galaxy.jpg" y="-10" width="928" />
+    </pattern>
+  </defs>
+  <g id="Gruppe_590" data-name="Gruppe 590" transform="translate(-210 -3105)">
+    <text id="_" data-name="…" transform="translate(295.506 3489.891)" fill="#4d4d4d" font-size="13" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">…</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 210, 3105)">
+      <rect id="andy-holmes-rCbdp8VCYhQ-unsplash-2" data-name="andy-holmes-rCbdp8VCYhQ-unsplash" width="651" height="400" rx="3" transform="translate(53 6)" fill="url(#pattern)"/>
+    </g>
+    <rect id="andy-holmes-rCbdp8VCYhQ-unsplash-3" data-name="andy-holmes-rCbdp8VCYhQ-unsplash" width="134" height="355" rx="3" transform="translate(271 3148)" fill="#fff"/>
+    <rect id="Rechteck_423" data-name="Rechteck 423" width="307" height="229" rx="3" transform="translate(412 3148)" fill="#e6e6e6"/>
+    <rect id="andy-holmes-rCbdp8VCYhQ-unsplash-4" data-name="andy-holmes-rCbdp8VCYhQ-unsplash" width="495" height="119" rx="3" transform="translate(412 3384)" fill="#fff"/>
+    <text id="Linux_Terminals" data-name="Linux Terminals" transform="translate(497.48 3413.781)" fill="#292929" font-size="18" font-family="Montserrat-Regular, Montserrat"><tspan x="-70.875" y="0">Linux Terminals</tspan></text>
+    <path id="Pfad_449" data-name="Pfad 449" d="M237.44,53h0Z" transform="translate(210 3172.248)" fill="#0087be"/>
+    <text id="Theia_-_VS_Code_based_online_IDE" data-name="Theia - VS Code based online IDE" transform="translate(280.542 3119.7)" fill="#fff" font-size="18" font-family="Montserrat-SemiBold, Montserrat" font-weight="600"><tspan x="0" y="17">Theia - VS Code based online IDE</tspan></text>
+    <text id="Your_VS_Code_Extensions" data-name="Your
+VS Code
+Extensions" transform="translate(280.743 3178.34)" fill="#292929" font-size="18" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Your </tspan><tspan x="0" y="22">VS Code </tspan><tspan x="0" y="44">Extensions</tspan></text>
+    <rect id="Rechteck_425" data-name="Rechteck 425" width="181" height="109" rx="3" transform="translate(726 3148)" fill="#e6e6e6"/>
+    <text id="Editor" transform="translate(453.002 3178.34)" fill="#292929" font-size="18" font-family="Montserrat-Regular, Montserrat"><tspan x="-27.207" y="0">Editor</tspan></text>
+    <text id="Preview" transform="translate(775.84 3171.881)" fill="#292929" font-size="18" font-family="Montserrat-Regular, Montserrat"><tspan x="-35.649" y="0">Preview</tspan></text>
+    <rect id="Rechteck_426" data-name="Rechteck 426" width="181" height="113" rx="3" transform="translate(726 3264)" fill="#e6e6e6"/>
+    <text id="Git_Integration" data-name="Git Integration" transform="translate(806.756 3294.38)" fill="#292929" font-size="18" font-family="Montserrat-Regular, Montserrat"><tspan x="-65.943" y="0">Git Integration</tspan></text>
+    <rect id="Rechteck_430" data-name="Rechteck 430" width="114" height="29" rx="3" transform="translate(281 3235)" fill="#e6e6e6"/>
+    <text id="Go_Lang" data-name="Go Lang" transform="translate(314.512 3253.823)" fill="#292929" font-size="13" font-family="Montserrat-Regular, Montserrat"><tspan x="-27.352" y="0">Go Lang</tspan></text>
+    <rect id="Rechteck_431" data-name="Rechteck 431" width="114" height="28" rx="3" transform="translate(281 3269)" fill="#e6e6e6"/>
+    <text id="Java" transform="translate(287.202 3287.432)" fill="#292929" font-size="13" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Java</tspan></text>
+    <rect id="Rechteck_432" data-name="Rechteck 432" width="114" height="30" rx="3" transform="translate(281 3302)" fill="#e6e6e6"/>
+    <text id="_2" data-name="…" transform="translate(287.202 3321.041)" fill="#292929" font-size="13" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">…</tspan></text>
+    <rect id="Rechteck_433" data-name="Rechteck 433" width="114" height="29" rx="3" transform="translate(281 3336)" fill="#e6e6e6"/>
+    <text id="Your_Extension" data-name="Your Extension" transform="translate(335.438 3355.121)" fill="#292929" font-size="13" font-family="Montserrat-Regular, Montserrat"><tspan x="-48.464" y="0">Your Extension</tspan></text>
+  </g>
+</svg>

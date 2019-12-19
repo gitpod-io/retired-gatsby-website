@@ -11,6 +11,7 @@ import ActionCard from '../components/ActionCard'
 import TrustedBy from '../components/TrustedBy'
 import EnterpriseBg from '../resources/enterprise-bg.png'
 import PricingTable from '../components/PricingTable'
+import PopOver from '../components/PopOver'
 import Circle from '../components/Circle'
 import Layer from '../resources/layer.svg'
 import Github from '../resources/octicons-mark-github.svg'
@@ -151,7 +152,7 @@ const EnterprisePage: React.SFC<{}> = () => (
             <tbody>
                 <tr>
                     <th>Pricing</th>
-                    <td>$3000 per month</td>
+                    <td>Starting at $3000 per month</td>
                     <td>$20 per user</td>
                 </tr>
                 <tr>
@@ -170,8 +171,8 @@ const EnterprisePage: React.SFC<{}> = () => (
                     <td>On-prem or private cloud</td>
                 </tr>
                 <tr>
-                    <th>SLA</th>
-                    <td>optional</td>
+                    <th>SLA <PopOver description="Custom Service Level Agreement"/></th>
+                    <td>Optional</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -195,7 +196,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Gitlab} alt="GitLab Logo" /> GitLab self-hosted</th>
+                    <th><img src={Gitlab} alt="GitLab Logo" /> GitLab Self-Managed</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
@@ -210,7 +211,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                     <td>OAuth2</td>
                 </tr>
                 <tr>
-                    <th>Branding</th>
+                    <th>Custom Branding</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
@@ -227,7 +228,7 @@ const EnterprisePage: React.SFC<{}> = () => (
         <ActionCard
             title='Didn’t find what you’re looking for?'
             text='Please get in touch. We’re happy to answer your questions.'
-            anchors={[{ href: 'https://calendly.com/gitpod/sales', text: 'Schedule a Call' }, { href: '/contact', text: 'Contact' }]}
+            anchors={[{ href: 'https://calendly.com/gitpod/sales', text: 'Schedule a Call' }, { href: '/contact/', text: 'Contact' }]}
         />
 
     </IndexLayout>

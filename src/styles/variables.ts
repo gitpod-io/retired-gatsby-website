@@ -1,12 +1,13 @@
 export const colors = {
     textDark: '#292929',
-    textLight: '#9F9F9F',
+    textLight: '#8F8F8F',
     text: '#4D4D4D',
     link: '#0087BE',
     lightBlue: '#1AA6E4',
     white: ' #FFFFFF',
     offWhite: '#F7F7F7',
-    offWhite2: '#e5e5e5'
+    offWhite1: '#BCBCBC',
+    offWhite2: '#e5e5e5',
 }
 
 export const sizes = {

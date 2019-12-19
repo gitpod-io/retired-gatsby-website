@@ -1,19 +1,17 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { Global, css } from '@emotion/core'
 import { Link } from 'gatsby'
 import { colors, sizes, shadows } from '../styles/variables'
 
 import IndexLayout from '../layouts/index'
 import ReflectionScreenshot from '../resources/reflection-screenshot.png'
-import IconLine from '../resources/icon-line.png'
-import HourGlass from '../resources/hourglass.png'
-import ArrowOnTarget from '../resources/arrow-on-target.png'
+import IconLine from '../resources/zick-zack-line.svg'
+import HourGlass from '../resources/hourglass.svg'
+import ArrowOnTarget from '../resources/arrow-on-target.svg'
 import ToolIntegration from '../resources/tool-integration.svg'
-import FullDevEnvironments from '../resources/full-dev-environments.png'
+import FullDevEnvironments from '../resources/full-dev-environments.svg'
 import ReadyToCode from '../components/ReadyToCode'
-import AntDesignWorkspace from '../resources/ant-design-workspace.png'
 import Details from '../components/Details'
 import TrustedBy from '../components/TrustedBy'
 import AppliToolsLogo from '../resources/aplitools.svg'
@@ -24,6 +22,7 @@ import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
 import TheiaIDELogo from '../resources/theia-grey.svg'
 import Testimonials from '../components/Testimonials'
 import GetStarted from '../components/GetStarted'
+import OpenSource from '../resources/open-source.jpg';
 
 const StyledIndexPage = styled.div`
     /* ------------------------------------------- */
@@ -276,10 +275,10 @@ const StyledIndexPage = styled.div`
             width: 100%;
 
             &-container {
+                min-height: 36rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                min-height: 36rem;
 
                 @media(max-width: ${sizes.breakpoints.md}) {
                     max-height: 40rem;
@@ -299,7 +298,7 @@ const StyledIndexPage = styled.div`
             display: inline-block;
             padding: 1rem 3rem;
             font-weight: 600;
-            color: ${colors.white};
+            color: ${colors.textLight};
             background: ${colors.offWhite2};
             border: none;
 
@@ -309,7 +308,8 @@ const StyledIndexPage = styled.div`
             }
 
             &--active {
-                background: ${colors.link};
+                color: ${colors.white};
+                background: url("https://www.gitpod.io/galaxy.jpg") no-repeat 50% 50%;
             }
         }
 
@@ -322,18 +322,21 @@ const StyledIndexPage = styled.div`
 
     .open-source {
 
-        @media(max-width: ${sizes.breakpoints.md}) {
-            background: ${colors.white};
-            box-shadow: ${shadows.light};
-        }
-
         &__content {
             display: flex;
             align-items: center;
+            background: url(${OpenSource}) #4d4d4d;
+            background-blend-mode: hard-light;
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover;
+            border-radius: 300px;
+            width: 110%;
+            transform: translateX(-5%);
 
-            @media(max-width: ${sizes.breakpoints.lg}) {
+            @media(max-width: ${sizes.breakpoints.md}) {
                 flex-direction: column;
-
+                border-radius: unset;
                 img {
                     width: 100%;
                 }
@@ -346,20 +349,25 @@ const StyledIndexPage = styled.div`
                     transform: scale(1.08) translateY(-1rem);
                 }
             }
+
+            a {
+                color: ${colors.white};
+            }
+
+            a.btn {
+                color: ${colors.textDark};
+            }
         }
 
         &__text {
-            padding: 8rem 2rem;
-            transform: translateY(-1rem);
-            border-radius: 3px;
+            padding: 18rem 0;
+            transform: translate(40%, -10rem);
+            color: ${colors.white};
+            width: 58%;
+            font-size: 110%;
 
-            @media(max-wdith: ${sizes.breakpoints.lg}) {
-                padding: 2rem 3rem;
-            }
-
-            @media(min-width: ${sizes.breakpoints.md}) {
-                background: ${colors.white};
-                box-shadow: ${shadows.light};
+            p {
+                margin-bottom: 3rem;
             }
 
             @media(max-width: ${sizes.breakpoints.lg}) {
@@ -367,10 +375,24 @@ const StyledIndexPage = styled.div`
                     display: none;
                 }
             }
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                flex-direction: column;
+                border-radius: unset;
+                width: 90%;
+                transform: translate(5%, -13rem);
+                img {
+                    width: 100%;
+                }
+            }
+
         }
 
         h2 {
-            margin-bottom: 3rem;
+            color: ${colors.white};
+            margin-bottom: 6rem;
+            font-size: 200%;
+            font-weight: 600;
         }
     }
 
@@ -395,7 +417,7 @@ const IndexPage: React.SFC<{}> = () => (
                             <Link to="/self-hosted/" className="btn">Host Yourself</Link>
                         </div>
                         <div className="banner__screenshot-container">
-                            <img alt="Gitpod Screenshot" src={ReflectionScreenshot} className="banner__screenshot"/>
+                            <img alt="Gitpod Screenshot" src={ReflectionScreenshot} className="banner__screenshot" />
                         </div>
                     </header>
                 </div>
@@ -406,12 +428,12 @@ const IndexPage: React.SFC<{}> = () => (
             <section className="intro">
                 <div className="intro__box-container row">
                     <div className="intro__box">
-                        <img className="intro__icon" alt="Hour Glass" src={HourGlass} />
+                        <object className="intro__icon" data={HourGlass} />
                         <p className="intro__text">Every day <span>developers waste millions of hours</span> waiting for builds to finish.</p>
                     </div>
                     <div className="intro__box">
-                        <img className="intro__icon" alt="Arrow on Wooden Target" src={ArrowOnTarget} />
-                        <p className="intro__text"><span>Gitpod eliminates this friction</span> by providing prebuilt, <br/>ready-to-code dev environments with just one click.</p>
+                        <object className="intro__icon" data={ArrowOnTarget} />
+                        <p className="intro__text"><span>Gitpod eliminates this friction</span> by providing prebuilt, <br />ready-to-code dev environments with just one click.</p>
                     </div>
                 </div>
             </section>
@@ -419,7 +441,7 @@ const IndexPage: React.SFC<{}> = () => (
             {/* ----- Line ----- */}
 
             <div className="line-container">
-                <img alt="Icon Line" src={IconLine} className="line"/>
+                <object className="line" data={IconLine} />
             </div>
 
             {/* ----- Section Trusted By ----- */}
@@ -476,7 +498,7 @@ const IndexPage: React.SFC<{}> = () => (
                                     alt="Tools Integration"
                                     src={ToolIntegration}
                                     className="why-gitpod__img"
-                                    style={{transform: 'scale(.8)'}}
+                                    style={{ transform: 'scale(.8)' }}
                                 />
                             </div>
                             <div className="why-gitpod__text">
@@ -495,11 +517,10 @@ const IndexPage: React.SFC<{}> = () => (
                                 <p>Read more about <a href="/docs/50_ide/">Theia</a></p>
                             </div>
                             <div className="why-gitpod__img-container">
-                                <img
-                                    alt="Full Dev Environments"
-                                    src={FullDevEnvironments}
-                                    style={{transform: 'translate(-2rem)'}}
-                                    className="why-gitpod__img"/>
+                                <object
+                                    data={FullDevEnvironments}
+                                    style={{ transform: 'translate(-2rem)' }}
+                                    className="why-gitpod__img" />
                             </div>
                         </div>
 
@@ -511,30 +532,35 @@ const IndexPage: React.SFC<{}> = () => (
 
             <Testimonials />
 
-            {/* ----- Section Getting Started ----- */}
-
-            <GetStarted />
-
             {/* ----- Section Open Source ----- */}
 
             <div className="grey-container">
                 <div className="row">
                     <section>
-                            <h2>Free for Open-Source</h2>
-                            <div className="open-source">
-                                <div className="open-source__content">
-                                        <img alt="Ant Design Workspace" src={AntDesignWorkspace} />
-                                        <div className="open-source__text">
-                                            <h3>Giving Back to <br/>Open-Source!</h3>
-                                            <p>Gitpod is built on open-source and wouldn’t exist without it.</p>
-                                            <p>Did you know that you can see all contributor-friendly open-source projects at one glance?</p>
-                                            <p>Find your next project on <a href="https://contribute.dev" target="_blank">contribute.dev!</a></p>
-                                        </div>
+                        <div className="open-source">
+                            <div className="open-source__content">
+                                <div className="open-source__text">
+                                    <h2>Free for Open Source!</h2>
+                                    <p>
+                                        We develop huge parts of Gitpod in <a href="https://theia-ide.org" target="_blank" rel="noopener">open source</a>, well aware of how important a frictionless onboarding for contributors is.
+                                    </p>
+                                    <p>
+                                        Therefore, Gitpod is <strong>free for open source</strong> and we have created <a href="https://contribute.dev" target="_blank" rel="noopener">contribute.dev</a>, which lists ready-to-code open source projects.
+                                    </p>
+                                    <p>
+                                        Start contributing now!
+                                            </p>
+                                    <a href="https://contribute.dev"  className="btn" target="_blank" rel="noopener">contribute.dev</a>
                                 </div>
                             </div>
+                        </div>
                     </section>
                 </div>
             </div>
+
+            {/* ----- Section Getting Started ----- */}
+
+            <GetStarted />
 
 
             {/* ----- Section Explore Gitpod ----- */}
@@ -542,7 +568,7 @@ const IndexPage: React.SFC<{}> = () => (
             <Details
                 title="Explore Gitpod"
                 text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-                anchors={[{href: '/features', text: 'See Features'}, {href: '/blog', text: 'See Blog'}]}
+                anchors={[{ href: '/features', text: 'See Features' }, { href: '/blog', text: 'See Blog' }]}
             />
 
         </StyledIndexPage>

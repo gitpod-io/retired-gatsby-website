@@ -135,24 +135,24 @@ const Footer: React.SFC<{}> = () => (
                 <ul className="contact">
                     <li>Contact</li>
                     <li>
-                        <a href="https://twitter.com/gitpod" target="_blank" rel="noopener">
-                            <img alt="Twitter Logo" src={Twitter} />
-                        </a>
+                        <Link to="/contact"  title="Contact">
+                            <img alt="Mail Logo" src={Mail} />
+                        </Link>
                     </li>
                     <li>
-                        <a href="https://github.com/gitpod-io/" target="_blank" rel="noopener">
-                            <img alt="GitHub Logo" src={Github} />
+                        <a href="https://community.gitpod.io/" target="_blank" rel="noopener" title="Community">
+                            <img alt="Discourse Logo" src={Discourse} style={{width: 25}}/>
                         </a>
                     </li>
                     <br aria-hidden={true} />
                     <li>
-                        <a href="mailto:contact@gitpod.io" target="_blank" rel="noopener">
-                            <img alt="Mail Logo" src={Mail} />
+                        <a href="https://twitter.com/gitpod" target="_blank" rel="noopener" title="Twitter">
+                            <img alt="Twitter Logo" src={Twitter} />
                         </a>
                     </li>
                     <li>
-                        <a href="https://community.gitpod.io/" target="_blank" rel="noopener">
-                            <img alt="Discourse Logo" src={Discourse} />
+                        <a href="https://github.com/gitpod-io/" target="_blank" rel="noopener"  title="GitHub">
+                            <img alt="GitHub Logo" src={Github} />
                         </a>
                     </li>
                 </ul>

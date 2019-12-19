@@ -6,7 +6,7 @@ import PricingBox from '../components/PricingBox'
 import Bg from '../components/Bg'
 import PricingBg from '../resources/pricing-bg.png'
 import { Link } from 'gatsby'
-import { sizes, shadows } from '../styles/variables'
+import { sizes, shadows, colors } from '../styles/variables'
 import ActionCard from '../components/ActionCard'
 import Details from '../components/Details'
 
@@ -17,37 +17,38 @@ function isEurope() {
 
 import LightBulb from '../resources/light-bulb.svg'
 import Rocket from '../resources/rocket.png'
-import MagicCap from '../resources/magic-cap.png'
+import MagicCap from '../resources/magic-cap.svg'
 import Earth from '../resources/earth.svg'
 import { PricingBoxProps } from '../components/PricingBox'
+import PopOver from '../components/PopOver'
 
 const plans: PricingBoxProps[] = [
     {
         title: 'Personal',
-        img: <img alt='LightBulb' src={LightBulb}/>,
+        img: <object data={LightBulb}/>,
         price: isEurope() ? '€8' : '$9',
         duration: '100 hours / month',
-        features: ['Private & Public Repos', '4 Parallel Workspaces'],
+        features: ['Private & Public Repos', <span>4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span>30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
     },
     {
         title: 'Professional',
         img: <img alt='Rocket' src={Rocket}/>,
         price: isEurope() ? '€23' : '$25',
         duration: 'unlimited hours',
-        features: ['Private & Public Repos', '8 Parallel Workspaces', 'Team Manageable'],
+        features: ['Private & Public Repos', <span>8 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span>Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>, <span>30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
         transform: 'scale(1.05)',
     },
     {
         title: 'Unlimited',
-        img: <img alt='MagicCap' src={MagicCap}/>,
+        img: <object data={MagicCap}/>,
         price: isEurope() ? '€35' : '$39',
         duration: 'unlimited hours',
-        features: ['Private & Public Repos', '16 Parallel Workspaces', 'Team Manageable', 'Extended Workspace Timeout'],
+        features: ['Private & Public Repos', <span>8 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span>Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>,  <span>60min Timeout <PopOver description="Workspaces without user activity are stopped after 60 minutes."/></span>, <span>3h Timeout Boost <PopOver description="You can manually boost the timeout to 3h within a running workspace."/></span>],
     },
     {
         title: 'Enterprise',
         img: <img alt='Earth' src={Earth}/>,
-        feature: 'Unleash Developer Productivity',
+        feature: <span style={{fontWeight: 600}}>Unleash Developer Productivity</span>,
         background: true,
         btnText: 'Learn More',
         link: '/enterprise/#enterprise'
@@ -80,7 +81,7 @@ const StyledPricingPage = styled.div`
         &__tagline {
             transform: translateY(-3rem);
 
-            @media(max-width: 1096px) {
+            @media(max-width: ${sizes.breakpoints.lg}) {
                 display: none;
             }
 
@@ -88,6 +89,7 @@ const StyledPricingPage = styled.div`
                 padding: 4rem 0 3rem;
                 width: 72%;
                 font-weight: 600;
+                color: ${colors.text};
                 text-align: center;
                 box-shadow: ${shadows.light};
             }
@@ -156,7 +158,7 @@ const StyledPricingPage = styled.div`
                 height: 1rem;
                 width: 12rem;
                 margin: 0 auto 3rem;
-                background: url("/galaxy.jpg");
+                background: url("https://www.gitpod.io/galaxy.jpg");
                 background-size: cover;
                 background-position: bottom right;
                 border-radius: 10px;
@@ -210,12 +212,12 @@ const PricingPage: React.SFC<{}> = () => (
                         <div>
                             <h2>Open Source</h2>
                             <p>Gitpod is free for up to 50 hours/month on any public repository. Professional open-source developers can apply for a <strong>free unlimited open source plan</strong>.</p>
-                            <a href="/contact" className="btn">Apply Here</a>
+                            <a href="/contact/" className="btn">Apply Here</a>
                         </div>
                         <div>
                             <h2>For Students</h2>
-                            <p>Students get the <strong>professional subscription for $9</strong>. Make sure your student email is set as your primary email on GitHub.</p>
-                            <a href="/contact" className="btn">Doesn't Work?</a>
+                            <p>Students get the <strong>professional subscription for $9</strong> per month. Make sure your student email is set as your primary email on GitHub.</p>
+                            <a href="/contact/" className="btn">Doesn't Work?</a>
                         </div>
                     </section>
                 </div>
@@ -237,14 +239,14 @@ const PricingPage: React.SFC<{}> = () => (
 
                 <ActionCard
                     title='Any Questions?'
-                    text='We’re happy to answer them. Please, get in touch.'
+                    text='We’re happy to answer them. Please get in touch.'
                     anchors={[{href: '/contact', text: 'Contact'}]}
                 />
 
                 <Details
                     title="Explore Gitpod"
                     text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-                    anchors={[{href: '/features', text: 'See Features'}, {href: '/blog', text: 'See Blog'}]}
+                    anchors={[{href: '/features/', text: 'See Features'}, {href: '/blog/', text: 'See Blog'}]}
                 />
 
             </div>

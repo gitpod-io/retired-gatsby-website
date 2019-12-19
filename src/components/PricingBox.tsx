@@ -7,18 +7,18 @@ import { colors, shadows, sizes } from '../styles/variables'
 const StyledPricingBox = styled.div<{transform?: string, background?: boolean}>`
     position: relative;
     margin-bottom: 3rem;
-    padding: 3rem 6rem;
-    min-height: 48rem;
+    padding: 3rem 4rem;
+    min-height: 50rem;
     min-width: 25rem;
     width: 24%;
     text-align: center;
     color: ${({ background }) => background ? colors.white : null };
-    background: ${({ background }) => background ? 'url("/galaxy.jpg")' : colors.white };
+    background: ${({ background }) => background ? 'url("https://www.gitpod.io/galaxy.jpg")' : colors.white };
     background-size: ${({ background }) => background ? 'cover' : null };
     background-position: ${({ background }) => background ? 'left' : null };
     box-shadow: ${shadows.light};
 
-    @media(min-width: 1096px) {
+    @media(min-width: ${sizes.breakpoints.lg}) {
         transform: ${({transform}) => transform ? transform : null };
         z-index: ${({transform}) => transform ? '1' : null };
 
@@ -27,8 +27,9 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean}>`
         }
     }
 
-    @media(max-width: 1096px) {
+    @media(max-width: ${sizes.breakpoints.lg}) {
         transform: scale(1.04);
+        min-height: 54rem;
         margin-bottom: 5rem;
     }
 
@@ -69,6 +70,8 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean}>`
 
     ul {
         list-style: initial;
+        margin-left: 10px;
+        margin-right: -8px;
     }
 
     li {
@@ -78,6 +81,13 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean}>`
 
         &:not(:last-child) {
             margin-bottom: .8rem;
+        }
+    }
+
+    @media(min-width: ${sizes.breakpoints.lg}) {
+        span {
+            display: flex;
+            justify-content: space-between;
         }
     }
 
@@ -94,8 +104,8 @@ export interface PricingBoxProps {
     img: JSX.Element
     price?: string
     duration?: string
-    feature?: string
-    features?: string[]
+    feature?: string | JSX.Element
+    features?: (string | JSX.Element)[]
     transform?: string
     background?: boolean
     btnText?: string

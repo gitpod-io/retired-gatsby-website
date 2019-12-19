@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="176.518" height="61.874" viewBox="0 0 176.518 61.874">
+  <defs>
+    <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" width="176.518" height="61.874" viewBox="0 0 176.518 61.874">
+        <image xlink:href="https://www.gitpod.io/galaxy.jpg" height="100" width="370" />
+    </pattern>
+  </defs>
+  <g id="Komponente_94" data-name="Komponente 94" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)">
+      <rect id="andy-holmes-rCbdp8VCYhQ-unsplash-2" data-name="andy-holmes-rCbdp8VCYhQ-unsplash" width="158.518" height="43.874" rx="3" transform="translate(9 6)" fill="url(#pattern)"/>
+    </g>
+  </g>
+</svg>

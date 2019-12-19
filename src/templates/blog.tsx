@@ -103,6 +103,10 @@ const StyledBlogTemplate = styled.div`
         margin: 2.5rem 0;
         font-size: 110%;
     }
+
+    ol, ul {
+        margin: 3rem 0 3rem 5rem;
+    }
 `
 
 
@@ -145,6 +149,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
             <PostBanner
                 teaserImage={data.markdownRemark.frontmatter.teaserImage ? data.markdownRemark.frontmatter.teaserImage : data.markdownRemark.frontmatter.image}
                 title={data.markdownRemark.frontmatter.title}
+                subtitle={data.markdownRemark.frontmatter.subtitle}
                 date={<span>{new Date(Date.parse(data.markdownRemark.frontmatter.date)).toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>}
                 author={<span>By <a href={`https://github.com/${author.socialProfiles.github}`} target="_blank">{author.name}</a></span>}
             />

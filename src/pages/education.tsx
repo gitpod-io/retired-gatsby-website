@@ -16,6 +16,7 @@ import Layer from '../resources/layer.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
 import { Link } from 'gatsby'
+import PopOver from '../components/PopOver'
 
 const EducationPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/education/' title="Education">
@@ -82,19 +83,19 @@ const EducationPage: React.SFC<{}> = () => (
                 <tr>
                     <th>Pricing</th>
                     <td>$9 per month</td>
-                    <td>please enquire</td>
+                    <td>Please enquire</td>
                     <td>$1 per user</td>
                 </tr>
                 <tr>
                     <th>Domain</th>
-                    <td>Gitpod.io</td>
+                    <td>gitpod.io</td>
                     <td>Custom</td>
                     <td>Custom</td>
                 </tr>
                 <tr>
                     <th>Managed By</th>
-                    <td>TypeFox</td>
-                    <td>TypeFox</td>
+                    <td>Gitpod</td>
+                    <td>Gitpod</td>
                     <td>You</td>
                 </tr>
                 <tr>
@@ -104,46 +105,16 @@ const EducationPage: React.SFC<{}> = () => (
                     <td>On-prem or private cloud</td>
                 </tr>
                 <tr>
-                    <th>SLA</th>
-                    <td>optional</td>
-                    <td>optional</td>
+                    <th>SLA <PopOver description="Custom Service Level Agreement"/></th>
+                    <td>Optional</td>
+                    <td>Optional</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <th><strong>Support</strong></th>
+                    <th>Support</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
                     <td><Circle /></td>
-                </tr>
-                <tr>
-                    <th><strong>White Labeling</strong></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>&emsp;&emsp;Theia</th>
-                    <td></td>
-                    <td><Circle /></td>
-                    <td><Circle /></td>
-                </tr>
-                <tr>
-                    <th>&emsp;&emsp;Gitpod</th>
-                    <td></td>
-                    <td><Circle /></td>
-                    <td><Circle /></td>
-                </tr>
-                <tr>
-                    <th>Features</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>Git Integeration</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <th><img src={Github} alt="GitHub Logo"/> github.com</th>
@@ -153,7 +124,7 @@ const EducationPage: React.SFC<{}> = () => (
                 </tr>
                 <tr>
                     <th><img src={Github} alt="GitHub Logo"/> GitHub Enterprise</th>
-                    <td>public only</td>
+                    <td>Public only</td>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
@@ -164,8 +135,8 @@ const EducationPage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Gitlab} alt="GitLab Logo"/> GitLab self-hosted</th>
-                    <td>public only</td>
+                    <th><img src={Gitlab} alt="GitLab Logo"/> GitLab Self-Managed</th>
+                    <td>Public only</td>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
@@ -176,14 +147,20 @@ const EducationPage: React.SFC<{}> = () => (
                     <td>Soon</td>
                 </tr>
                 <tr>
-                    <th>Custom Authorization</th>
-                    <td>OAuth2</td>
+                    <th>Custom Authentication</th>
+                    <td></td>
                     <td>OAuth2</td>
                     <td>OAuth2</td>
                 </tr>
+                <tr>
+                    <th>Custom Branding</th>
+                    <td></td>
+                    <td><Circle /></td>
+                    <td><Circle /></td>
+                </tr>
                 <tr className="buttons">
                     <th></th>
-                    <td><Link to="#" className="btn btn--cta">Start for Free</Link></td>
+                    <td><Link to="/#get-started" className="btn btn--cta">Start for Free</Link></td>
                     <td><Link to="/contact/" className="btn btn--cta">Contact Sales</Link></td>
                     <td><Link to="/self-hosted/" className="btn">Host Yourself</Link></td>
                 </tr>
@@ -194,8 +171,8 @@ const EducationPage: React.SFC<{}> = () => (
 
         <ActionCard
             title='Didn’t find what you’re looking for?'
-            text='Please, get in touch. We’re happy to answer your questions.'
-            anchors={[{href: '/schedule-call',text: 'Schedule a Call'}, {href: '/contact', text: 'Contact'}]}
+            text='Please get in touch. We’re happy to answer your questions.'
+            anchors={[{href: 'https://calendly.com/gitpod/sales',text: 'Schedule a Call'}, {href: '/contact/', text: 'Contact'}]}
         />
 
     </IndexLayout>

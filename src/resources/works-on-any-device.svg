@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="707.725" height="312.796" viewBox="0 0 707.725 312.796">
+<style>
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gnD_vx3rCs.woff2) format('woff2');
+}
+</style>
+  <defs>
+    <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" y="-410" width="707.725" height="312.796" viewBox="0 0 707.725 312.796">
+        <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="928" />
+    </pattern>
+  </defs>
+  <g id="Gruppe_692" data-name="Gruppe 692" transform="translate(-860.375 -3168.204)">
+    <text id="Tablet" transform="translate(915 3380)" fill="#4d4d4d" font-size="20" font-family="Montserrat-Regular, Montserrat"><tspan x="-30.92" y="0">Tablet</tspan></text>
+    <text id="Chromebook" transform="translate(1172 3380)" fill="#4d4d4d" font-size="20" font-family="Montserrat-Regular, Montserrat"><tspan x="-66.11" y="0">Chromebook</tspan></text>
+    <text id="Computer" transform="translate(1461 3380)" fill="#4d4d4d" font-size="20" font-family="Montserrat-Regular, Montserrat"><tspan x="-51.27" y="0">Computer</tspan></text>
+
+    <text id="_" data-name="*" transform="translate(949 3361)" fill="#4d4d4d" font-size="14" font-family="OpenSans, Open Sans" opacity="0.504"><tspan x="0" y="15">*</tspan></text>
+    <g id="Gruppe_76" data-name="Gruppe 76" transform="translate(965 3177.927) rotate(90)">
+      <g id="iconfinder_ipad_107212" transform="translate(0 95.625) rotate(-90)">
+        <g id="Gruppe_75" data-name="Gruppe 75" transform="translate(0)">
+          <g transform="matrix(1, 0, 0, 1, -9, -9.72)">
+            <path id="andy-holmes-rCbdp8VCYhQ-unsplash-2" data-name="andy-holmes-rCbdp8VCYhQ-unsplash" d="M95.622,142.778c0,6.346-4.14,11.539-9.194,11.539H9.194C4.137,154.317,0,149.124,0,142.778V11.539C0,5.192,4.137,0,9.194,0H86.432c5.053,0,9.194,5.192,9.194,11.539V142.778Z" transform="translate(9 9.72)" fill="url(#pattern)"/>
+          </g>
+        </g>
+        <circle id="Ellipse_6" data-name="Ellipse 6" cx="0.56" cy="0.56" r="0.56" transform="translate(47.37 6.11)" fill="#fff"/>
+        <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="5.048" cy="5.077" rx="5.048" ry="5.077" transform="translate(42.475 141.17)" fill="#fff"/>
+      </g>
+      <path id="Schnittmenge_55" data-name="Schnittmenge 55" d="M0,87.573V0H121V87.573Z" transform="translate(14.268 3.988)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 860.37, 3168.2)">
+      <path id="Vereinigungsmenge_38-2" data-name="Vereinigungsmenge 38" d="M1535.278-2272.356c-4.553,0-8.277-4.759-8.277-9.312v-2.07c0-2.276,1.862-3.1,4.138-3.1H1738.07c2.276,0,4.139.827,4.139,3.1v2.07c0,4.552-3.725,9.312-8.277,9.312Zm4.138-14.485v-112.778c0-6.829,5.587-11.382,12.415-11.382h165.546c6.828,0,12.416,4.552,12.416,11.382v112.778Z" transform="translate(-1325.37 2420.8)" fill="url(#pattern)"/>
+    </g>
+    <rect id="Rechteck_447" data-name="Rechteck 447" width="173" height="104" transform="translate(1083 3187)" fill="#fff"/>
+    <g id="Gruppe_36-2" data-name="Gruppe 36" transform="translate(1359.667 3174.704)">
+      <g id="Gruppe_34-2" data-name="Gruppe 34" transform="translate(0 0)">
+        <g transform="matrix(1, 0, 0, 1, -499.29, -6.5)">
+          <path id="Vereinigungsmenge_39-3" data-name="Vereinigungsmenge 39" d="M1295.167-2277.908a1,1,0,0,1-1-1,1,1,0,0,1,1-1h8.26c.885-2.557,5.746-16.572,7.978-22.42h-91.57a2.5,2.5,0,0,1-2.5-2.5V-2436.2a2.5,2.5,0,0,1,2.5-2.5h194.933a2.5,2.5,0,0,1,2.5,2.5v131.376a2.5,2.5,0,0,1-2.5,2.5h-92.019l2.01,6,5.5,16.417h8.909a1,1,0,0,1,1,1,1,1,0,0,1-1,1Z" transform="translate(-718.54 2444.7)" fill="url(#pattern)"/>
+        </g>
+        <path id="Pfad_79-2" data-name="Pfad 79" d="M0,.508H45.559" transform="translate(75.772 161.192)" fill="none"/>
+      </g>
+    </g>
+    <path id="Schnittmenge_59-2" data-name="Schnittmenge 59" d="M1228.333-2315.6v-104.983h181.743V-2315.6Z" transform="translate(139.889 5602.69)" fill="#fff"/>
+  </g>
+</svg>
