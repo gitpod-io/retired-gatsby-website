@@ -31,7 +31,7 @@ const StyledIndexPage = styled.div`
 
     .banner {
         display: flex;
-        padding-bottom: 10rem;
+        padding-bottom: 20rem;
 
         @media(min-width: ${sizes.breakpoints.lg}) {
             padding-top: 5rem;
