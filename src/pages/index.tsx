@@ -12,7 +12,6 @@ import ArrowOnTarget from '../resources/arrow-on-target.svg'
 import ToolIntegration from '../resources/tool-integration.svg'
 import FullDevEnvironments from '../resources/full-dev-environments.svg'
 import ReadyToCode from '../components/ReadyToCode'
-import AntDesignWorkspace from '../resources/ant-design-workspace.png'
 import Details from '../components/Details'
 import TrustedBy from '../components/TrustedBy'
 import AppliToolsLogo from '../resources/aplitools.svg'
@@ -23,6 +22,7 @@ import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
 import TheiaIDELogo from '../resources/theia-grey.svg'
 import Testimonials from '../components/Testimonials'
 import GetStarted from '../components/GetStarted'
+import OpenSource from '../resources/open-source.jpg';
 
 const StyledIndexPage = styled.div`
     /* ------------------------------------------- */
@@ -322,18 +322,22 @@ const StyledIndexPage = styled.div`
 
     .open-source {
 
-        @media(max-width: ${sizes.breakpoints.md}) {
-            background: ${colors.white};
-            box-shadow: ${shadows.light};
-        }
-
         &__content {
             display: flex;
             align-items: center;
+            background: url(${OpenSource}) #4d4d4d;
+            background-blend-mode: hard-light;
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover;
+            background-position: 0 0px;
+            border-radius: 300px;
+            width: 110%;
+            transform: translateX(-5%);
 
-            @media(max-width: ${sizes.breakpoints.lg}) {
+            @media(max-width: ${sizes.breakpoints.md}) {
                 flex-direction: column;
-
+                border-radius: unset;
                 img {
                     width: 100%;
                 }
@@ -346,20 +350,25 @@ const StyledIndexPage = styled.div`
                     transform: scale(1.08) translateY(-1rem);
                 }
             }
+
+            a {
+                color: ${colors.white};
+            }
+
+            a.btn {
+                color: ${colors.textDark};
+            }
         }
 
         &__text {
-            padding: 8rem 2rem;
-            transform: translateY(-1rem);
-            border-radius: 3px;
+            padding: 18rem 0;
+            transform: translate(40%, -10rem);
+            color: ${colors.white};
+            width: 58%;
+            font-size: 110%;
 
-            @media(max-wdith: ${sizes.breakpoints.lg}) {
-                padding: 2rem 3rem;
-            }
-
-            @media(min-width: ${sizes.breakpoints.md}) {
-                background: ${colors.white};
-                box-shadow: ${shadows.light};
+            p {
+                margin-bottom: 3rem;
             }
 
             @media(max-width: ${sizes.breakpoints.lg}) {
@@ -367,10 +376,23 @@ const StyledIndexPage = styled.div`
                     display: none;
                 }
             }
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                flex-direction: column;
+                border-radius: unset;
+                width: 90%;
+                transform: translate(5%, -13rem);
+                img {
+                    width: 100%;
+                }
+            }
+
         }
 
         h2 {
-            margin-bottom: 3rem;
+            color: ${colors.white};
+            margin-bottom: 6rem;
+            font-weight: 600;
         }
     }
 
@@ -510,30 +532,35 @@ const IndexPage: React.SFC<{}> = () => (
 
             <Testimonials />
 
-            {/* ----- Section Getting Started ----- */}
-
-            <GetStarted />
-
             {/* ----- Section Open Source ----- */}
 
             <div className="grey-container">
                 <div className="row">
                     <section>
-                        <h2>Free for Open-Source</h2>
                         <div className="open-source">
                             <div className="open-source__content">
-                                <img alt="Ant Design Workspace" src={AntDesignWorkspace} />
                                 <div className="open-source__text">
-                                    <h3>Giving Back to <br />Open-Source!</h3>
-                                    <p>Gitpod is built on open-source and wouldn’t exist without it.</p>
-                                    <p>Did you know that you can see all contributor-friendly open-source projects at one glance?</p>
-                                    <p>Find your next project on <a href="https://contribute.dev" target="_blank">contribute.dev!</a></p>
+                                    <h2>Free for Open Source!</h2>
+                                    <p>
+                                        We develop huge parts of Gitpod in <a href="https://theia-ide.org" target="_blank" rel="noopener">open source</a>, well aware of how important a frictionless onboarding for contributors is.
+                                    </p>
+                                    <p>
+                                        Therefore, Gitpod is <strong>free for open source</strong> and we have created <a href="https://contribute.dev" target="_blank" rel="noopener">contribute.dev</a>, which lists ready-to-code open source projects.
+                                    </p>
+                                    <p>
+                                        Start contributing now!
+                                            </p>
+                                    <a href="https://contribute.dev"  className="btn" target="_blank" rel="noopener">contribute.dev</a>
                                 </div>
                             </div>
                         </div>
                     </section>
                 </div>
             </div>
+
+            {/* ----- Section Getting Started ----- */}
+
+            <GetStarted />
 
 
             {/* ----- Section Explore Gitpod ----- */}
