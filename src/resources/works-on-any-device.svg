@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="707.725" height="312.796" viewBox="0 0 707.725 312.796">
   <defs>
-    <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" y="-40" width="600" height="400" viewBox="0 0 600 400">
-        <image xlink:href="https://user-images.githubusercontent.com/46004116/70911894-9fd2c500-2034-11ea-98ae-828306d5a181.jpg" width="600" height="400" />
+    <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" y="-410" width="707.725" height="312.796" viewBox="0 0 707.725 312.796">
+        <image xlink:href="https://user-images.githubusercontent.com/46004116/70911894-9fd2c500-2034-11ea-98ae-828306d5a181.jpg" width="928" />
     </pattern>
   </defs>
   <g id="Gruppe_692" data-name="Gruppe 692" transform="translate(-860.375 -3168.204)">
@@ -21,15 +21,6 @@
         <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="5.048" cy="5.077" rx="5.048" ry="5.077" transform="translate(42.475 141.17)" fill="#fff"/>
       </g>
       <path id="Schnittmenge_55" data-name="Schnittmenge 55" d="M0,87.573V0H121V87.573Z" transform="translate(14.268 3.988)" fill="#fff"/>
-    </g>
-    <g id="Komponente_3_1" data-name="Komponente 3 – 1">
-      <g id="Gruppe_36" data-name="Gruppe 36" transform="translate(11 8)">
-        <g id="Gruppe_34" data-name="Gruppe 34" transform="translate(0 0)">
-          <path id="Vereinigungsmenge_39-2" data-name="Vereinigungsmenge 39" d="M1295.167-2277.908a1,1,0,0,1-1-1,1,1,0,0,1,1-1h8.26c.885-2.557,5.746-16.572,7.978-22.42h-91.57a2.5,2.5,0,0,1-2.5-2.5V-2436.2a2.5,2.5,0,0,1,2.5-2.5h194.933a2.5,2.5,0,0,1,2.5,2.5v131.376a2.5,2.5,0,0,1-2.5,2.5h-92.019l2.01,6,5.5,16.417h8.909a1,1,0,0,1,1,1,1,1,0,0,1-1,1Z" transform="translate(-1217.833 2438.204)" fill="url(#pattern)"/>
-          <path id="Pfad_79" data-name="Pfad 79" d="M0,.508H45.559" transform="translate(75.772 161.192)" fill="none"/>
-        </g>
-      </g>
-      <path id="Schnittmenge_59" data-name="Schnittmenge 59" d="M1228.333-2315.6v-104.983h181.743V-2315.6Z" transform="translate(-1208.777 2435.986)" fill="#fff"/>
     </g>
     <g transform="matrix(1, 0, 0, 1, 860.37, 3168.2)">
       <path id="Vereinigungsmenge_38-2" data-name="Vereinigungsmenge 38" d="M1535.278-2272.356c-4.553,0-8.277-4.759-8.277-9.312v-2.07c0-2.276,1.862-3.1,4.138-3.1H1738.07c2.276,0,4.139.827,4.139,3.1v2.07c0,4.552-3.725,9.312-8.277,9.312Zm4.138-14.485v-112.778c0-6.829,5.587-11.382,12.415-11.382h165.546c6.828,0,12.416,4.552,12.416,11.382v112.778Z" transform="translate(-1325.37 2420.8)" fill="url(#pattern)"/>
