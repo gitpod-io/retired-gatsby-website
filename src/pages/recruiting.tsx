@@ -60,7 +60,7 @@ const RecrutingPage: React.SFC<{}> = () => (
         {/* ----- Pricing Table ----- */}
 
         <PricingTable
-            title="Pricing Gitpod Recruiting"
+            title="Gitpod Recruiting Pricing"
             paragraph="You have the choice to either host Gitpod yourself or to use our cloud infrastructure."
             id="recruiting"
         >
@@ -81,20 +81,20 @@ const RecrutingPage: React.SFC<{}> = () => (
             <tbody>
                 <tr>
                     <th>Pricing</th>
-                    <td>please enquire</td>
-                    <td>please enquire</td>
-                    <td>please enquire</td>
+                    <td>Please enquire</td>
+                    <td>Please enquire</td>
+                    <td>Please enquire</td>
                 </tr>
                 <tr>
                     <th>Domain</th>
-                    <td>Gitpod.io</td>
+                    <td>gitpod.io</td>
                     <td>Custom</td>
                     <td>Custom</td>
                 </tr>
                 <tr>
                     <th>Managed By</th>
-                    <td>TypeFox</td>
-                    <td>TypeFox</td>
+                    <td>Gitpod</td>
+                    <td>Gitpod</td>
                     <td>You</td>
                 </tr>
                 <tr>
@@ -105,51 +105,21 @@ const RecrutingPage: React.SFC<{}> = () => (
                 </tr>
                 <tr>
                     <th>SLA <PopOver description="Custom Service Level Agreement"/></th>
-                    <td>optional</td>
-                    <td>optional</td>
+                    <td>Optional</td>
+                    <td>Optional</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <th><strong>Support</strong></th>
+                    <th>Support</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
                     <td><Circle /></td>
-                </tr>
-                <tr>
-                    <th><strong>White Labeling</strong> <PopOver description="Possibility to rebrand"/></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>&emsp;&emsp;Theia</th>
-                    <td></td>
-                    <td><Circle /></td>
-                    <td><Circle /></td>
-                </tr>
-                <tr>
-                    <th>&emsp;&emsp;Gitpod</th>
-                    <td></td>
-                    <td><Circle /></td>
-                    <td><Circle /></td>
-                </tr>
-                <tr>
-                    <th><strong>Features</strong></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <th>&emsp;&emsp;Analytics</th>
                     <td></td>
                     <td><Circle /></td>
                     <td><Circle /></td>
-                </tr>
-                <tr>
-                    <th>Git Integeration</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <th><img src={Github} alt="GitHub Logo"/> github.com</th>
@@ -159,7 +129,7 @@ const RecrutingPage: React.SFC<{}> = () => (
                 </tr>
                 <tr>
                     <th><img src={Github} alt="GitHub Logo"/> GitHub Enterprise</th>
-                    <td>public only</td>
+                    <td>Public only</td>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
@@ -170,8 +140,8 @@ const RecrutingPage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Gitlab} alt="GitLab Logo"/> Gitlab self-hosted</th>
-                    <td>public only</td>
+                    <th><img src={Gitlab} alt="GitLab Logo"/> Gitlab Self-Managed</th>
+                    <td>Public only</td>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
@@ -186,6 +156,12 @@ const RecrutingPage: React.SFC<{}> = () => (
                     <td>OAuth2</td>
                     <td>OAuth2</td>
                     <td>OAuth2</td>
+                </tr>
+                <tr>
+                    <th>Custom Branding</th>
+                    <td></td>
+                    <td><Circle /></td>
+                    <td><Circle /></td>
                 </tr>
                 <tr className="buttons">
                     <th></th>

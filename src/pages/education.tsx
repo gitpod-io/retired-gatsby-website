@@ -88,7 +88,7 @@ const EducationPage: React.SFC<{}> = () => (
                 </tr>
                 <tr>
                     <th>Domain</th>
-                    <td>Gitpod.io</td>
+                    <td>gitpod.io</td>
                     <td>Custom</td>
                     <td>Custom</td>
                 </tr>
@@ -117,18 +117,6 @@ const EducationPage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th>Custom Branding</th>
-                    <td></td>
-                    <td><Circle /></td>
-                    <td><Circle /></td>
-                </tr>
-                <tr>
-                    <th>Custom Authentication</th>
-                    <td></td>
-                    <td>OAuth2</td>
-                    <td>OAuth2</td>
-                </tr>
-                <tr>
                     <th><img src={Github} alt="GitHub Logo"/> github.com</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
@@ -136,7 +124,7 @@ const EducationPage: React.SFC<{}> = () => (
                 </tr>
                 <tr>
                     <th><img src={Github} alt="GitHub Logo"/> GitHub Enterprise</th>
-                    <td>public only</td>
+                    <td>Public only</td>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
@@ -147,8 +135,8 @@ const EducationPage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Gitlab} alt="GitLab Logo"/> GitLab self-hosted</th>
-                    <td>public only</td>
+                    <th><img src={Gitlab} alt="GitLab Logo"/> GitLab Self-Managed</th>
+                    <td>Public only</td>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
@@ -157,6 +145,18 @@ const EducationPage: React.SFC<{}> = () => (
                     <td>Soon</td>
                     <td>Soon</td>
                     <td>Soon</td>
+                </tr>
+                <tr>
+                    <th>Custom Authentication</th>
+                    <td></td>
+                    <td>OAuth2</td>
+                    <td>OAuth2</td>
+                </tr>
+                <tr>
+                    <th>Custom Branding</th>
+                    <td></td>
+                    <td><Circle /></td>
+                    <td><Circle /></td>
                 </tr>
                 <tr className="buttons">
                     <th></th>

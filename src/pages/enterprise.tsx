@@ -181,16 +181,6 @@ const EnterprisePage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th>Custom Branding</th>
-                    <td><Circle /></td>
-                    <td><Circle /></td>
-                </tr>
-                <tr>
-                    <th>Custom Authentication</th>
-                    <td>OAuth2</td>
-                    <td>OAuth2</td>
-                </tr>
-                <tr>
                     <th><img src={Github} alt="GitHub Logo" /> github.com</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
@@ -206,7 +196,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Gitlab} alt="GitLab Logo" /> GitLab self-hosted</th>
+                    <th><img src={Gitlab} alt="GitLab Logo" /> GitLab Self-Managed</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
@@ -214,6 +204,16 @@ const EnterprisePage: React.SFC<{}> = () => (
                     <th><img src={Layer} alt="Layer Logo" /> Bitbucket</th>
                     <td>Soon</td>
                     <td>Soon</td>
+                </tr>
+                <tr>
+                    <th>Custom Authentication</th>
+                    <td>OAuth2</td>
+                    <td>OAuth2</td>
+                </tr>
+                <tr>
+                    <th>Custom Branding</th>
+                    <td><Circle /></td>
+                    <td><Circle /></td>
                 </tr>
                 <tr className="buttons">
                     <th></th>
