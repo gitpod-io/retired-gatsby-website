@@ -70,6 +70,8 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean}>`
 
     ul {
         list-style: initial;
+        margin-left: 10px;
+        margin-right: -8px;
     }
 
     li {
