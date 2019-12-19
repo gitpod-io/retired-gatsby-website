@@ -11,16 +11,25 @@ const StyledFeatureBox = styled.div`
     box-shadow: ${shadows.light};
     border-radius: 2rem;
     height: 150px;
+    position:relative;
 
     h3 {
         font-weight: 400;
         font-size: 2rem;
     }
 
-    img {
+    object {
         height: 4rem;
         display: block;
         margin: 1rem auto;
+    }
+
+    .hoverOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 `
 
@@ -41,19 +50,20 @@ class FeatureBox extends React.Component<FeatureBoxProps, { isHovered: boolean }
     }
 
     handleHover = (val: boolean) => {
-        // this.setState({ isHovered: val });
+        this.setState({ isHovered: val });
     }
 
     render() {
         const { img, hover, text, path } = this.props;
         return <StyledFeatureBox>
-            <a href={`#${path}`} onMouseOver={() => this.handleHover(true)} onMouseOut={() => this.handleHover(false)}>
+            <a href={`#${path}`}>
                 <div>
                     <object data={this.state.isHovered ? hover : img} />
                 </div>
                 <div>
                     <h3>{text}</h3>
                 </div>
+                <div className="hoverOverlay" onMouseOver={() => this.handleHover(true)} onMouseOut={() => this.handleHover(false)}></div>
             </a>
         </StyledFeatureBox>
     }
