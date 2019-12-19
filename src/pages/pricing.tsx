@@ -212,12 +212,12 @@ const PricingPage: React.SFC<{}> = () => (
                         <div>
                             <h2>Open Source</h2>
                             <p>Gitpod is free for up to 50 hours/month on any public repository. Professional open-source developers can apply for a <strong>free unlimited open source plan</strong>.</p>
-                            <a href="/contact" className="btn">Apply Here</a>
+                            <a href="/contact/" className="btn">Apply Here</a>
                         </div>
                         <div>
                             <h2>For Students</h2>
-                            <p>Students get the <strong>professional subscription for $9</strong>. Make sure your student email is set as your primary email on GitHub.</p>
-                            <a href="/contact" className="btn">Doesn't Work?</a>
+                            <p>Students get the <strong>professional subscription for $9</strong> per month. Make sure your student email is set as your primary email on GitHub.</p>
+                            <a href="/contact/" className="btn">Doesn't Work?</a>
                         </div>
                     </section>
                 </div>
@@ -239,7 +239,7 @@ const PricingPage: React.SFC<{}> = () => (
 
                 <ActionCard
                     title='Any Questions?'
-                    text='We’re happy to answer them. Please, get in touch.'
+                    text='We’re happy to answer them. Please get in touch.'
                     anchors={[{href: '/contact', text: 'Contact'}]}
                 />
 

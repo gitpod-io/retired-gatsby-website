@@ -183,7 +183,7 @@ const VendorPage: React.SFC<{}> = () => (
                 </tr>
                 <tr className="buttons">
                     <th></th>
-                    <td><Link to="#" className="btn btn--cta">Start for Free</Link></td>
+                    <td><Link to="/#get-started" className="btn btn--cta">Start for Free</Link></td>
                     <td><Link to="/contact/" className="btn btn--cta">Contact Sales</Link></td>
                     <td><Link to="/self-hosted/" className="btn">Host Yourself</Link></td>
                 </tr>
@@ -194,8 +194,8 @@ const VendorPage: React.SFC<{}> = () => (
 
         <ActionCard
             title='Didn’t find what you’re looking for?'
-            text='Please, get in touch. We’re happy to answer your questions.'
-            anchors={[{href: '/schedule-call',text: 'Schedule a Call'}, {href: '/contact', text: 'Contact'}]}
+            text='Please get in touch. We’re happy to answer your questions.'
+            anchors={[{href: 'https://calendly.com/gitpod/sales',text: 'Schedule a Call'}, {href: '/contact/', text: 'Contact'}]}
         />
 
     </IndexLayout>

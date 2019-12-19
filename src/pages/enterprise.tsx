@@ -228,7 +228,7 @@ const EnterprisePage: React.SFC<{}> = () => (
         <ActionCard
             title='Didn’t find what you’re looking for?'
             text='Please get in touch. We’re happy to answer your questions.'
-            anchors={[{ href: 'https://calendly.com/gitpod/sales', text: 'Schedule a Call' }, { href: '/contact', text: 'Contact' }]}
+            anchors={[{ href: 'https://calendly.com/gitpod/sales', text: 'Schedule a Call' }, { href: '/contact/', text: 'Contact' }]}
         />
 
     </IndexLayout>
