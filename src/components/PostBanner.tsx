@@ -17,10 +17,9 @@ const StyledPostBanner = styled.header`
     }
 
     h1 {
-        display: inline;
-        background: ${colors.white};
-        box-shadow: ${shadows.light1};
+        display: inline-block;
         padding: 1rem 2rem;
+        background: ${colors.white};
     }
 
     .c1 {
