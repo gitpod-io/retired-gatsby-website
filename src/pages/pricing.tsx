@@ -43,7 +43,7 @@ const plans: PricingBoxProps[] = [
         img: <object data={MagicCap}/>,
         price: isEurope() ? '€35' : '$39',
         duration: 'unlimited hours',
-        features: ['Private & Public Repos', <span>8 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span>Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>,  <span>60min Timeout <PopOver description="Workspaces without user activity are stopped after 60 minutes."/></span>, <span>3h Timeout Boost <PopOver description="You can manually boost the timeout to 3h within a running workspace."/></span>],
+        features: ['Private & Public Repos', <span>16 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span>Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>,  <span>60min Timeout <PopOver description="Workspaces without user activity are stopped after 60 minutes."/></span>, <span>3h Timeout Boost <PopOver description="You can manually boost the timeout to 3h within a running workspace."/></span>],
     },
     {
         title: 'Enterprise',
