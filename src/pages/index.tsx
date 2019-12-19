@@ -1,7 +1,6 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { Global, css } from '@emotion/core'
 import { Link } from 'gatsby'
 import { colors, sizes, shadows } from '../styles/variables'
 
@@ -542,7 +541,7 @@ const IndexPage: React.SFC<{}> = () => (
             <Details
                 title="Explore Gitpod"
                 text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-                anchors={[{href: '/features', text: 'See Features'}, {href: '/blog', text: 'See Blog'}]}
+                anchors={[{href: '/features/', text: 'See Features'}, {href: '/blog/', text: 'See Blog'}]}
             />
 
         </StyledIndexPage>

@@ -246,7 +246,7 @@ const PricingPage: React.SFC<{}> = () => (
                 <Details
                     title="Explore Gitpod"
                     text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-                    anchors={[{href: '/features', text: 'See Features'}, {href: '/blog', text: 'See Blog'}]}
+                    anchors={[{href: '/features/', text: 'See Features'}, {href: '/blog/', text: 'See Blog'}]}
                 />
 
             </div>

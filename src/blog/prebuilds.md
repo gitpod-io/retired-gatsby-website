@@ -9,7 +9,7 @@ image: /compiling-xkcd.png
 
 Once your development environment is freed from manual setup procedures it can do work even while you are not. We call this continuous development.
 
-A while ago Sven described the idea of [development environment as code](/blog/dev-env-as-code). His main point: instead of using outdated README files that describe how to set up our development environment we should have executable, replicable and version-controlled descriptions thereof. In such a dev-environment as code world, on-boarding new team members/contributors is dead easy, going back to an old branch becomes a breeze (that old setup you had a year ago is now easy to restore) and playing with a new project becomes a joy. All those situations are very much *direct use* scenarios; you set up a dev-environment using code which you as a developer use straight away.
+A while ago Sven described the idea of [development environment as code](/blog/dev-env-as-code/). His main point: instead of using outdated README files that describe how to set up our development environment we should have executable, replicable and version-controlled descriptions thereof. In such a dev-environment as code world, on-boarding new team members/contributors is dead easy, going back to an old branch becomes a breeze (that old setup you had a year ago is now easy to restore) and playing with a new project becomes a joy. All those situations are very much *direct use* scenarios; you set up a dev-environment using code which you as a developer use straight away.
 
 However, a machine-reproducible version of your development setup enables another powerful capability: your dev-environment can already checkout the latest code, download dependencies and build everything. Once you actually open your IDE, everything’s ready for you. No more siting there and watching ~~paint dry~~ yarn download the internet.
 
@@ -30,7 +30,7 @@ The result of *continuous development* is a ready-to-code workspace. The second 
 
 To build a continuous development system we need three things:
 
-1. A dev-environment-as-code, e.g. based on Docker — there are [various ways](/blog/dev-env-as-code#dev-environment-as-code) of how this can be achieved.
+1. A dev-environment-as-code, e.g. based on Docker — there are [various ways](/blog/dev-env-as-code#dev-environment-as-code/) of how this can be achieved.
 
 1. Means to trigger an action when our code changes. The obvious candidates are [webhooks](https://developer.github.com/webhooks/), [GitHub actions](https://github.com/features/actions), or something tied in to your CI system.
 

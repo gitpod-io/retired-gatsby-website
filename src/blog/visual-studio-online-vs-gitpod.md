@@ -24,7 +24,7 @@ Long story short, from the user’s perspective the IDE itself is a common good 
 
 # Continuous Dev Environments
 
-[Continuous Dev Environments](/blog/continuous-dev-environment-in-devops) are at the core of Gitpod.
+[Continuous Dev Environments](/blog/continuous-dev-environment-in-devops/) are at the core of Gitpod.
 
 > We believe that the way to go are short-lived dev environments that are easy and fast to create from any Git branch.
 
@@ -32,7 +32,7 @@ For that we eliminated any ‘create environment’-wizards and dashboards stand
 
 In the launch post for VSO disposable dev environments are mentioned, which is an important part of our vision, but unfortunately VSO doesn’t embrace it in the actual product. After getting through the account creation of VSO, you land on a dashboard and create a dev environment through a form based configuration dialog. Due to the lack of prebuilds, creating fresh dev environments all the time is tedious, as you need to wait for the build, downloading dependencies and running tests. This dashboard-centric approach encourages people to reuse their workspaces instead of relying on a well-working, automated setup continuously.
 
-Gitpod, on the other hand, builds your branches similar to a CI build *before* you open a dev environment. This way you are really ready-to-code whenever you open a workspace. Disposable dev environments really need such a feature as you’d otherwise waste your time on [watching your build](/blog/prebuilds).
+Gitpod, on the other hand, builds your branches similar to a CI build *before* you open a dev environment. This way you are really ready-to-code whenever you open a workspace. Disposable dev environments really need such a feature as you’d otherwise waste your time on [watching your build](/blog/prebuilds/).
 
 # Self Hosting
 
