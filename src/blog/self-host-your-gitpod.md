@@ -47,9 +47,9 @@ All it needs to get it running on your infrastructure is to have a domain name a
 
 1. In your terminal, run: `git clone https://github.com/gitpod-io/self-hosted`
 
-2. Adjust the configuration from the repository to your needs.
+2. Adjust configuration files like `values.yaml` to your needs
 
-3. Run `helm install -f ... gitpod`
+3. Run `helm install -f values.yaml gitpod .`
 
 [The setup for vanilla Kubernetes](/docs/self-hosted/latest/install/10_install_on_kubernetes/) will work most Kubernetes clusters.
 For Google Cloud Platform (GCP) we offer a [script that automates the install](/docs/self-hosted/latest/install/11_install_on_gcp_script/).

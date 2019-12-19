@@ -123,18 +123,18 @@ const SelfHostedPage: React.SFC<{}> = () => (
                         <ol className="install__steps">
                             <li className="install__step">
                                 <span>1.</span>
-                                <StepP>In your terminal run:</StepP>
+                                <StepP>In your terminal, run:</StepP>
                                 <Terminal>
                                     git clone <a href="https://github.com/gitpod-io/self-hosted" target="_blank">https://github.com/gitpod-io/self-hosted</a>
                                 </Terminal>
                             </li>
                             <li className="install__step">
-                                <span>2.</span><StepP>Adjust the configuration from the repository to your needs.</StepP>
+                                <span>2.</span><StepP>Adjust configuration files like `values.yaml` to your needs</StepP>
                             </li>
                             <li className="install__step">
                                 <span>3.</span><StepP>Run</StepP>
                                 <Terminal>
-                                    helm install -f ... gitpod
+                                    helm install -f values.yaml gitpod .
                                 </Terminal>
                             </li>
                         </ol>
