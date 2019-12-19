@@ -7,9 +7,10 @@ const StyledDescripion = styled.span`
     position: relative;
 
     button {
-        height: 2rem;
-        width: 2rem;
+        height: 1.8rem;
+        width: 1.8rem;
         font-weight: 600;
+        font-size: 1.2rem;
         border: none;
         color: ${colors.white};
         background: ${colors.offWhite1};
