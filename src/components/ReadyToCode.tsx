@@ -40,20 +40,15 @@ class ReadyToCode extends React.Component {
         const { isDefaultRendered, isGraphicGitpodRendered, isGraphicOridinaryRendered } = this.state
 
         const graphicGitpodStyles: React.CSSProperties = {
-            transform: 'scale(.95)',
-            height:'61px',
             display: isGraphicGitpodRendered ? 'block' : 'none'
         }
 
         const graphicOridnaryStyles: React.CSSProperties = {
-            transform: 'scale(.944)',
             display: isGraphicOridinaryRendered ? 'block' : 'none'
         }
 
         const defaultStyles: React.CSSProperties = {
-            position: 'relative',
-            display: isDefaultRendered ? 'block' : 'none',
-            width: '95%'
+            display: isDefaultRendered ? 'block' : 'none'
         }
 
         return (
@@ -82,7 +77,7 @@ class ReadyToCode extends React.Component {
                     </div>
                 </div>
                 <div className="why-gitpod__img-container">
-                    <div style={{ display: 'flex', width: '100%', height: '100%', justifyContent: 'center' }}>
+                    <div style={{ display: 'flex', width: '90%', height: '100%', justifyContent: 'center' }}>
                         <object
                             data={AutomatedSetupGraphicGitpod}
                             style={graphicGitpodStyles}
