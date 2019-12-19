@@ -83,7 +83,7 @@ const EducationPage: React.SFC<{}> = () => (
                 <tr>
                     <th>Pricing</th>
                     <td>$9 per month</td>
-                    <td>please enquire</td>
+                    <td>Please enquire</td>
                     <td>$1 per user</td>
                 </tr>
                 <tr>
@@ -94,8 +94,8 @@ const EducationPage: React.SFC<{}> = () => (
                 </tr>
                 <tr>
                     <th>Managed By</th>
-                    <td>TypeFox</td>
-                    <td>TypeFox</td>
+                    <td>Gitpod</td>
+                    <td>Gitpod</td>
                     <td>You</td>
                 </tr>
                 <tr>
@@ -106,45 +106,27 @@ const EducationPage: React.SFC<{}> = () => (
                 </tr>
                 <tr>
                     <th>SLA <PopOver description="Custom Service Level Agreement"/></th>
-                    <td>optional</td>
-                    <td>optional</td>
+                    <td>Optional</td>
+                    <td>Optional</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <th><strong>Support</strong></th>
+                    <th>Support</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><strong>White Labeling</strong> <PopOver description="Possibility to rebrand"/></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>&emsp;&emsp;Theia</th>
+                    <th>Custom Branding</th>
                     <td></td>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th>&emsp;&emsp;Gitpod</th>
+                    <th>Custom Authentication</th>
                     <td></td>
-                    <td><Circle /></td>
-                    <td><Circle /></td>
-                </tr>
-                <tr>
-                    <th>Features</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>Git Integeration</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>OAuth2</td>
+                    <td>OAuth2</td>
                 </tr>
                 <tr>
                     <th><img src={Github} alt="GitHub Logo"/> github.com</th>
@@ -175,12 +157,6 @@ const EducationPage: React.SFC<{}> = () => (
                     <td>Soon</td>
                     <td>Soon</td>
                     <td>Soon</td>
-                </tr>
-                <tr>
-                    <th>Custom Authorization</th>
-                    <td>OAuth2</td>
-                    <td>OAuth2</td>
-                    <td>OAuth2</td>
                 </tr>
                 <tr className="buttons">
                     <th></th>

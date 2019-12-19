@@ -172,13 +172,23 @@ const EnterprisePage: React.SFC<{}> = () => (
                 </tr>
                 <tr>
                     <th>SLA <PopOver description="Custom Service Level Agreement"/></th>
-                    <td>optional</td>
+                    <td>Optional</td>
                     <td></td>
                 </tr>
                 <tr>
                     <th>Support</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
+                </tr>
+                <tr>
+                    <th>Custom Branding</th>
+                    <td><Circle /></td>
+                    <td><Circle /></td>
+                </tr>
+                <tr>
+                    <th>Custom Authentication</th>
+                    <td>OAuth2</td>
+                    <td>OAuth2</td>
                 </tr>
                 <tr>
                     <th><img src={Github} alt="GitHub Logo" /> github.com</th>
@@ -204,16 +214,6 @@ const EnterprisePage: React.SFC<{}> = () => (
                     <th><img src={Layer} alt="Layer Logo" /> Bitbucket</th>
                     <td>Soon</td>
                     <td>Soon</td>
-                </tr>
-                <tr>
-                    <th>Custom Authentication</th>
-                    <td>OAuth2</td>
-                    <td>OAuth2</td>
-                </tr>
-                <tr>
-                    <th>Branding</th>
-                    <td><Circle /></td>
-                    <td><Circle /></td>
                 </tr>
                 <tr className="buttons">
                     <th></th>
