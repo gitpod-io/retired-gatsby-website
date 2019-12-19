@@ -20,6 +20,15 @@ export const authors: { [idx: string]: Author } = {
         },
         description: "Sven loves finding sweet spots in product development. Always keeping an eye on pragmatism and the real benefit for the end user, he has proven to be a creative source for many sucessful technologies. He is a co-founder of TypeFox, co-lead of Eclipse Theia and product manager of Gitpod."
     },
+    'meysholdt': {
+        name: "Moritz Eysholdt",
+        socialProfiles: {
+            github: 'meysholdt',
+            twitter: 'meysholdt',
+            linkedin: 'moritzeysholdt'
+        },
+        description: "Moritz loves to make things works. He is a co-founder of TypeFox and Gitpod."
+    },
     'akosyakov': {
         name: "Anton Kosyakov",
         socialProfiles: {
