@@ -41,15 +41,19 @@ class FeatureBox extends React.Component<FeatureBoxProps, { isHovered: boolean }
     }
 
     handleHover = (val: boolean) => {
-        this.setState({ isHovered: val });
+        // this.setState({ isHovered: val });
     }
 
     render() {
         const { img, hover, text, path } = this.props;
         return <StyledFeatureBox>
             <a href={`#${path}`} onMouseOver={() => this.handleHover(true)} onMouseOut={() => this.handleHover(false)}>
-                <object data={this.state.isHovered ? hover : img} />
-                <h3>{text}</h3>
+                <div>
+                    <object data={this.state.isHovered ? hover : img} />
+                </div>
+                <div>
+                    <h3>{text}</h3>
+                </div>
             </a>
         </StyledFeatureBox>
     }
