@@ -38,7 +38,7 @@ Gitpod supports the following authentication providers:
 ## HTTPS certificates (Optional)
 While we highly recommend operating Gitpod using HTTPS, Gitpod is able to run on insecure HTTP.
 The caveat of using HTTP is that the builtin Docker registry will not function as Docker/containerd do not pull from insecure registries by default.
-You can either resort to using an [external registry](#docker-registry-optional) or use HTTPS. For running Gitpod on insecure HTTP, no HTTPS certificates are needed and you can skip this paragraph.
+You can either resort to using an [external registry](#docker-registry-optional) or use HTTPS. For running Gitpod on insecure HTTP, no HTTPS certificates are needed and you can skip this section.
 
 The most accessible means of obtaining HTTPS certificates is using [Let's Encrypt](https://letsencrypt.org/) which provides free certificats to anybody who can prove ownership of a domain.
 Gitpod requires [wildcard certificates](https://en.wikipedia.org/wiki/Wildcard_certificate) (e.g. `*.ws.your-domain.com`) which [can be obtained via Let's Encrypt](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) but require [proof of ownership via DNS](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge).
@@ -48,7 +48,7 @@ Things get considerably easier when your domain is registered with a service for
 See [here](../34_https_certs/) for more details on how the certificates are used during installation.
 
 ## MySQL Database (Optional)
-Gitpod uses a MySQL database to store user data. By default Gitpod ships with a MySQL database built-in. If you operate your own MySQL database (which we'd recommend in a production setting) you can use that one:
+Gitpod uses a MySQL database to store user data. By default Gitpod ships with a MySQL database built-in. If you operate your own MySQL database (which we'd recommend in a production setting) you can use that one. You have the following options:
 
 * Integrated database: If not disabled, this MySQL database is installed in a Kubernetes pod as a part of Gitpod’s Helm chart.
 The database uses a Kubernetes PersistentVolume. We do not recommend using this option fo a production setting.
@@ -59,7 +59,7 @@ The database uses a Kubernetes PersistentVolume. We do not recommend using this 
 Gitpod builds Docker images during workspace startup. This enables custom Dockerfiles as part of your workspace config, but is also required for Gitpod itself to function.
 To this end, Gitpod requires a container registry where it can push the images it builds.
 
-By default Gitpod ships with a Docker registry built-in. If you operate your own Docker registry (which we'd recommend in a production setting) you can use that one:
+By default Gitpod ships with a built-in Docker registry. If you operate your own Docker registry (which we'd recommend in a production setting) you can use that one. You have the following options:
 
 * Integrated docker registry: If not disabled, this docker registry is installed in a Kubernetes Pod as a dependency of Gitpod’s Helm chart.
   The docker registry requires a Kubernetes PersistentVolume. This registry is not recommended to be used for production.
@@ -68,7 +68,7 @@ By default Gitpod ships with a Docker registry built-in. If you operate your own
 ## Bucket Storage (Optional)
 Gitpod uses bucket storage to persist the contents of workspaces. Each workspace tarballed into a single archive file which is then uploaded to the bucket.
 
-By default Gitpod ships with [MinIO](https://min.io/) as built-in bucket storage. If you operate your own MinIO instance, or have access to Google Cloud Bucket storage you can use that one:
+By default Gitpod ships with [MinIO](https://min.io/) as built-in bucket storage. If you operate your own MinIO instance, or have access to Google Cloud Bucket storage you can use that one. You have the following options:
 
 * Integrated MinIO: If not disabled, Gitpod installs MinIO in Kubernetes as a dependency of Gitpod’s helm charts.
   MinIO itself can serve as [gateway](https://github.com/minio/minio/tree/master/docs/gateway) to other storage providers.

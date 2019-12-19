@@ -4,7 +4,7 @@ Gitpod also provides more optimized installations offering better performance fo
 * *Google Cloud Platform*: Install Gitpod in a blank GCP project, either [using a script that automates the procedure](../11_install_on_gcp_script/) or [manually step-by-step](../12_install_on_gcp_manual/).
 
 ## Prerequisites
-- Ensure you have the [general installation prerequisites](../01_prepare_installation/) avilable.
+- Ensure you have the [general installation prerequisites](../01_prepare_installation/) available.
 - `kubectl` with access to that cluster.
 - `helm`. We recommend version 3.x. Any version >= 2.11 will also work, but requires you to have [tiller configured](../90_helm_2x/).
 
