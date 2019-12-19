@@ -40,7 +40,7 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
       <LayoutRoot>
         <Helmet>
           <html lang="en" />
-          <title>{title && `Gitpod - ${title}` || data.site.siteMetadata.title}</title>
+          <title>{title && `${title} - Gitpod` || data.site.siteMetadata.title}</title>
           <meta name="description" content={data.site.siteMetadata.description} />
           <meta name="keywords" content="cloud ide, github, javascript, online ide, web ide, code review" />
           {
