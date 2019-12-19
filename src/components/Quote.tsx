@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import QuoteIcon from '../resources/quote.png'
+import QuoteIcon from '../resources/quote.svg'
 import { colors, sizes } from '../styles/variables'
 
 const StyledQuote = styled.section`
@@ -32,15 +32,15 @@ const StyledQuote = styled.section`
             }
         }
 
-        img {
+        object {
             height: 7rem;
 
             &:first-of-type {
+                transform: rotate(-180deg);
                 margin-right: 3rem;
             }
 
             &:last-of-type {
-                transform: rotate(-180deg);
                 margin-left: 3rem;
             }
 
@@ -63,9 +63,9 @@ interface QuoteProps {
 const Quote: React.SFC<QuoteProps> = ({title}) => (
         <StyledQuote className="quote row">
             <h4 className="quote__text">
-                <img src={QuoteIcon} alt="Left Quotation"/>
+                <object data={QuoteIcon}/>
                 <span>{title}</span>
-                <img src={QuoteIcon} alt="Right Quotation"/>
+                <object data={QuoteIcon}/>
             </h4>
         </StyledQuote>
 )

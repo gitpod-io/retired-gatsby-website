@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124" height="113.75" viewBox="0 0 124 113.75">
+  <defs>
+    <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" width="370" height="113.75" viewBox="100 100 370 113.75">
+        <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="370" />
+    </pattern>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="andy-holmes-rCbdp8VCYhQ-unsplash-2" data-name="andy-holmes-rCbdp8VCYhQ-unsplash" d="M46,223.5H68L32.75,175.75l35.25-48H46l-36,48Zm48,0h22L96.273,196.777,80.75,175.75l35.25-48H94l-36,48,26.3,34.887Z" transform="translate(-1 -121.75)" fill="url(#pattern)"/>
+  </g>
+</svg>
