@@ -70,7 +70,7 @@ const RecrutingPage: React.SFC<{}> = () => (
                         <span><span>FREE</span> Trial</span>
                     </th>
                     <th>Gitpod Managed
-                        <span><span>FREE</span> Trial</span>
+                        <span>&nbsp;</span>
                     </th>
                     <th>Gitpod Self-Hosted
                         <span><span>FREE</span> Trial</span>
@@ -81,8 +81,8 @@ const RecrutingPage: React.SFC<{}> = () => (
                 <tr>
                     <th>Pricing</th>
                     <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
+                    <td>$3000 per month</td>
+                    <td>$20 per user</td>
                 </tr>
                 <tr>
                     <th>Domain</th>
