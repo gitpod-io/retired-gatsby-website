@@ -13,6 +13,11 @@ export default `
         box-sizing: inherit;
     }
 
+    *::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: ${colors.textLight};
+        opacity: 1; /* Firefox */
+    }
+
     html {
         font-size: 59.5%; // 10 / 16 = 0.625 * 100 = 62.5 = 10px
 
