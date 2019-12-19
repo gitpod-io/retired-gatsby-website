@@ -2,7 +2,7 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
-import Cloud from '../resources/cloud.png'
+import Cloud from '../resources/cloud.svg'
 import Features from '../components/Features'
 import Feature from '../components/Feature'
 import { features } from '../utils/recruiting'
@@ -29,7 +29,7 @@ const RecrutingPage: React.SFC<{}> = () => (
                 title={<h1>Make Sure You’re <strong>Discovering Your<br />Best Applicants</strong></h1>}
                 linkPath="/recruiting/#recruiting"
                 linkText="Choose your Solution"
-                img={<img alt="Cloud" src={Cloud}/>}
+                img={<object data={Cloud}/>}
             />
 
             {/* ----- Section Features ----- */}

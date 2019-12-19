@@ -2,7 +2,7 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
-import Vendor from '../resources/vendor.png'
+import Vendor from '../resources/vendor.svg'
 import Features from '../components/Features'
 import Feature from '../components/Feature'
 import { features } from '../utils/vendor'
@@ -29,7 +29,7 @@ const VendorPage: React.SFC<{}> = () => (
                 title={<h1>Use <strong>Gitpod as a Showroom</strong> for<br /> Your Developer Products</h1>}
                 linkPath="/vendor/#vendor"
                 linkText="Choose your Solution"
-                img={<img alt="Network" src={Vendor}/>}
+                img={<object data={Vendor}/>}
             />
 
             {/* ----- Section Features ----- */}
