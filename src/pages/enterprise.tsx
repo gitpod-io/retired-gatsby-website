@@ -27,21 +27,21 @@ import { Link } from 'gatsby'
 export const features = [
     {
         title: 'Better Teamwork',
-        paragraphs: ['With Gitpod, reviewing code and finding bugs becomes more convenient than ever. ', 'Your team can collaborate asynchronously with Gitpod Snapshots, as well as synchronously with live-shared workspaces', 'Gitpod also makes it easy for non-developers to open a workspace.'],
+        paragraphs: ['With Gitpod, reviewing code and finding bugs becomes more convenient than ever. ', 'Your team can collaborate asynchronously with Gitpod Snapshots, and synchronously with live-shared workspaces', 'Gitpod also makes it easy for non-developers to open a workspace.'],
         // more:<p>Read more about <Link to="/docs/33_sharing_and_collaboration/">Collaboration</Link></p>
     },
     {
-        title: "Less Costs for more Machine Power",
+        title: "Less Costs for More Machine Power",
         paragraphs: ['You can use elastic clouds to satisfy your demand as needed.', 'With Gitpod there is no need for many $3000 laptops, a few good servers are already enough.', 'Servers are also more cost-effective because they are shared resources.']
     },
     {
         title: "More Secure",
-        paragraphs: ['Host Gitpod yourself and your source code will never leave your corporate infrastructure.', 'With Gitpod you can roll out new runtimes, libraries and frameworks faster, as they only need to be on the server and not on developer laptops or workstations.', 'Self-Hosted Gitpod runs on your corporate network, keeps your data on your infrastructure, and does not require an internet connection.'],
+        paragraphs: ['Host Gitpod yourself and your source code will never leave your corporate infrastructure.', 'With Gitpod you can roll out new runtimes, libraries and frameworks faster, as they only need to be on the server and not on developer laptops and workstations.', 'Self-Hosted Gitpod runs on your corporate network, keeps your data in your infrastructure, and does not require an internet connection.'],
         // more: <p>Read more about <a href="#">Security</a></p>
     },
     {
         title: "Smooth Integration",
-        paragraphs: ['All Gitpod needs is a Kubernetes cluster.', 'It enables user authorization and integration via your GitHub Enterprise, GitLab, or Bitbucket.', 'Please contact TypeFox for further customizations.'],
+        paragraphs: ['All Gitpod needs is a Kubernetes cluster.', 'It enables user authentication and integration with your GitHub Enterprise, GitLab, or Bitbucket.', 'Please contact TypeFox for further customizations.'],
         logos: ['Layer', 'Github', 'Gitlab', 'Git']
     },
     // {
