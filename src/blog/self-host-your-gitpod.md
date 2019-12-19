@@ -54,7 +54,7 @@ All it needs to get it running on your infrastructure is to have a domain name a
 [The setup for vanilla Kubernetes](/docs/self-hosted/latest/install/10_install_on_kubernetes/) will work most Kubernetes clusters.
 For Google Cloud Platform (GCP) we offer a [script that automates the install](/docs/self-hosted/latest/install/11_install_on_gcp_script/).
 
-## Is It Free?
+## Pricing
 
 Gitpod Self-Hosted is free for up to three users. If you're a small shop that will get you up and running.
 If you need more, there is a [free one-month unlimited license](https://gitpod.io/selfhosted-trail) available.

@@ -330,7 +330,6 @@ const StyledIndexPage = styled.div`
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Do not repeat the image */
             background-size: cover;
-            background-position: 0 0px;
             border-radius: 300px;
             width: 110%;
             transform: translateX(-5%);
@@ -392,6 +391,7 @@ const StyledIndexPage = styled.div`
         h2 {
             color: ${colors.white};
             margin-bottom: 6rem;
+            font-size: 200%;
             font-weight: 600;
         }
     }
