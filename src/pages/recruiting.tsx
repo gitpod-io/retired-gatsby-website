@@ -153,7 +153,7 @@ const RecrutingPage: React.SFC<{}> = () => (
                 </tr>
                 <tr>
                     <th>Custom Authentication</th>
-                    <td>OAuth2</td>
+                    <td></td>
                     <td>OAuth2</td>
                     <td>OAuth2</td>
                 </tr>
