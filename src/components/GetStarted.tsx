@@ -300,7 +300,7 @@ class GetStarted extends React.Component {
                                     style={ message ? {pointerEvents: "none"} : {} }
                                     tabIndex={ message ? -1 : 0 }
                                 >
-                                    <svg xmlns="http://www.w3.org/2000/svg" stroke="#4D4D4D" width="29.524" height="20.157"><g data-name="Gruppe 615" transform="translate(1.5 2.117)"><path data-name="Linie 99" fill="none" stroke-linecap="round" stroke-width="2" d="M0 7.684h25.253"/><path data-name="Pfad 35" d="M18.984 0l7.038 7.972-7.038 7.951" fill="none" stroke-linecap="round" stroke-width="2"/></g></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" stroke="#4D4D4D" width="29.524" height="20.157"><g data-name="Gruppe 615" transform="translate(1.5 2.117)"><path data-name="Linie 99" fill="none" strokeLinecap="round" strokeWidth="2" d="M0 7.684h25.253"/><path data-name="Pfad 35" d="M18.984 0l7.038 7.972-7.038 7.951" fill="none" strokeLinecap="round" strokeWidth="2"/></g></svg>
                                 </a>
                             </div>
                             <p>{ message ? <span style={{color: '#FF4136 '}}>{message}</span> : 'Enter your GitHub or GitLab URL' }</p>
