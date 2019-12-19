@@ -17,7 +17,7 @@ function isEurope() {
 
 import LightBulb from '../resources/light-bulb.svg'
 import Rocket from '../resources/rocket.png'
-import MagicCap from '../resources/magic-cap.png'
+import MagicCap from '../resources/magic-cap.svg'
 import Earth from '../resources/earth.svg'
 import { PricingBoxProps } from '../components/PricingBox'
 import PopOver from '../components/PopOver'
@@ -25,7 +25,7 @@ import PopOver from '../components/PopOver'
 const plans: PricingBoxProps[] = [
     {
         title: 'Personal',
-        img: <img alt='LightBulb' src={LightBulb}/>,
+        img: <object data={LightBulb}/>,
         price: isEurope() ? '€8' : '$9',
         duration: '100 hours / month',
         features: ['Private & Public Repos', <span>4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span>30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
@@ -40,7 +40,7 @@ const plans: PricingBoxProps[] = [
     },
     {
         title: 'Unlimited',
-        img: <img alt='MagicCap' src={MagicCap}/>,
+        img: <object data={MagicCap}/>,
         price: isEurope() ? '€35' : '$39',
         duration: 'unlimited hours',
         features: ['Private & Public Repos', <span>8 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span>Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>,  <span>60min Timeout <PopOver description="Workspaces without user activity are stopped after 60 minutes."/></span>, <span>3h Timeout Boost <PopOver description="You can manually boost the timeout to 3h within a running workspace."/></span>],
@@ -158,7 +158,7 @@ const StyledPricingPage = styled.div`
                 height: 1rem;
                 width: 12rem;
                 margin: 0 auto 3rem;
-                background: url("/galaxy.jpg");
+                background: url("https://user-images.githubusercontent.com/46004116/70911894-9fd2c500-2034-11ea-98ae-828306d5a181.jpg");
                 background-size: cover;
                 background-position: bottom right;
                 border-radius: 10px;
