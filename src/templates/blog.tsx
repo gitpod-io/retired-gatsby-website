@@ -156,17 +156,17 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
             <div className="contents">
                 <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
                     <div style={{ display: 'flex', marginTop: 60 }}>
-                    <a title="Share on Twitter" href={'https://twitter.com/intent/tweet?text=' + encodeURIComponent(`${data.markdownRemark.frontmatter.title} by @${author.socialProfiles} ${data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug}`)} target="_blank">
-                        <img alt="Share on Twitter" src={twitter} style={{ margin: 8, height: 56, padding: 6 }}/>
+                    <a title="Share on Twitter" href={'https://twitter.com/intent/tweet?text=' + encodeURIComponent(`${data.markdownRemark.frontmatter.title} by @${author.socialProfiles.twitter} ${data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug}`)} target="_blank">
+                        <img alt="Share on Twitter" src={twitter} style={{ margin: 8, height: 30, padding: 6 }}/>
                     </a>
                     <a title="Share on Reddit" href={`http://www.reddit.com/submit?url=${encodeURIComponent(data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug)}&title=${encodeURIComponent(data.markdownRemark.frontmatter.title)}`} target="_blank">
-                        <img alt="Share on Reddit" src={reddit} style={{ margin: 8, height: 56, padding: 2 }}/>
+                        <img alt="Share on Reddit" src={reddit} style={{ margin: 8, height: 30, padding: 2 }}/>
                     </a>
                 </div>
             </div>
       </StyledBlogTemplate>
       </div>
-      <NewsletterForm />
+      {/* <NewsletterForm /> */}
   </IndexLayout>
     );
 }
