@@ -80,9 +80,9 @@ const VendorPage: React.SFC<{}> = () => (
             <tbody>
                 <tr>
                     <th>Pricing</th>
-                    <td>x</td>
-                    <td>$3000 per month</td>
-                    <td>$20 per user</td>
+                    <td>please enquire</td>
+                    <td>please enquire</td>
+                    <td>please enquire</td>
                 </tr>
                 <tr>
                     <th>Domain</th>
