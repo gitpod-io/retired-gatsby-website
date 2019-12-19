@@ -1,4 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="742.217" height="441.525" viewBox="0 45 742.217 441.525">
+<style>
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gnD_vx3rCs.woff2) format('woff2');
+}
+</style>
     <defs>
         <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" width="742.217" height="194.137" viewBox="0 0 742.217 441.525">
             <image xlink:href="https://user-images.githubusercontent.com/46004116/70911894-9fd2c500-2034-11ea-98ae-828306d5a181.jpg" width="742.217" />
@@ -12,10 +28,10 @@
         <path id="Pfad_1002" data-name="Pfad 1002" d="M807,338.3c0,1.487-.018,2.974-.053,4.452l-57.337.37c.053-1.6.08-3.211.08-4.821a160.662,160.662,0,0,0-3.141-31.725,158.889,158.889,0,0,0-23.974-57.257,161.091,161.091,0,0,0-43.278-43.285c-3.219-2.164-6.518-4.224-9.888-6.141l40.312-42.459c.537.352,1.065.713,1.592,1.065a216.9,216.9,0,0,1,78.644,95.448,214.52,214.52,0,0,1,12.757,41.236A217.248,217.248,0,0,1,807,338.3Z" transform="translate(-59.922 -4.894)" fill="#e6e6e6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" />
         <path id="Pfad_1003" data-name="Pfad 1003" d="M807.693,368.074a216.033,216.033,0,0,1-63.415,148.773c-.343.342-.687.677-1.029,1.021-.713.7-1.425,1.4-2.147,2.094-1.073,1.029-2.148,2.04-3.238,3.044,0,0-6.071,6.941-21.608,16.347l-40.612-40.6c1.488-.924,2.948-1.882,4.4-2.859a159.664,159.664,0,0,0,57.882-70.242,157.749,157.749,0,0,0,12.431-57.2Z" transform="translate(-60.672 -30.215)" fill="#e6e6e6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" />
         <path id="Pfad_1004" data-name="Pfad 1004" d="M469.156,540.861v57.309l80.166.076c68.168-1.17,130.192-33.06,142.112-41.038l-40.612-40.6C589.112,552.9,564.536,541.195,469.156,540.861Z" transform="translate(-35.85 -48.07)" fill="#e6e6e6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" />
-        <text id="Start_Coding" data-name="Start Coding" transform="translate(727.163 508.542)" fill="#fff" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600">
+        <text id="Start_Coding" data-name="Start Coding" transform="translate(727.163 508.542)" fill="#fff" font-size="18" font-family="Montserrat" font-weight="600">
             <tspan x="0" y="19">Start Coding</tspan>
         </text>
-        <text id="Choose_Project" data-name="Choose Project" transform="translate(201.664 508.262)" fill="#fff" font-size="18" font-family="OpenSans-Semibold, Open Sans" font-weight="600">
+        <text id="Choose_Project" data-name="Choose Project" transform="translate(201.664 508.262)" fill="#fff" font-size="18" font-family="Montserrat" font-weight="600">
             <tspan x="0" y="19">Choose Project</tspan>
         </text>
         <g id="Gruppe_631" data-name="Gruppe 631" transform="translate(346.721 392.894)">
