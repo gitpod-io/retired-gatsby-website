@@ -292,7 +292,6 @@ class GetStarted extends React.Component {
                                         defaultValue={val}
                                         onChange={this.handleChange}
                                         onKeyPress={this.handleKeyPress}
-                                        autoFocus
                                     />
                                 </div>
                                 <a
