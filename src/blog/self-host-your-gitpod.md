@@ -35,7 +35,7 @@ To create Gitpod Self-Hosted, we took our codebase from gitpod.io and made it dr
 As a result, you'll find all the features you know from gitpod.io in Gitpod Self-Hosted.
 
 Gitpod Self-Hosted runs on Kubernetes and integrates via OAuth with GitHub Enterprise, GitLab CE and GitLab EE.
-his way no additional user management is required and users get easy access to Git repositories based on the permissions already present in GitLab/GitHub.
+This way no additional user management is required and users get easy access to Git repositories based on the permissions already present in GitLab/GitHub.
 
 We operate gitpod.io on GCP, hence running Gitpod Self-Hosted on Google Cloud Platform (GCP) is a battle-tested solution.
 We consider running Gitpod Self-Hosted on vanilla Kubernetes in beta.
