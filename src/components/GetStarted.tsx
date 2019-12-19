@@ -198,6 +198,7 @@ const StyledGetStarted = styled.div`
                     background: url('/galaxy.jpg');
                     background-position: center right;
                     background-clip: text;
+                    -webkit-background-clip: text;
                 }
             }
         }
