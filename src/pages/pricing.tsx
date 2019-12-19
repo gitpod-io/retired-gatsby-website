@@ -158,7 +158,7 @@ const StyledPricingPage = styled.div`
                 height: 1rem;
                 width: 12rem;
                 margin: 0 auto 3rem;
-                background: url("https://user-images.githubusercontent.com/46004116/70911894-9fd2c500-2034-11ea-98ae-828306d5a181.jpg");
+                background: url("https://www.gitpod.io/galaxy.jpg");
                 background-size: cover;
                 background-position: bottom right;
                 border-radius: 10px;

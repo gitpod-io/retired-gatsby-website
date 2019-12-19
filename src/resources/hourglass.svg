@@ -3,7 +3,7 @@
 <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="80.489" height="96.067" viewBox="0 0 80.489 96.067">
     <defs>
         <pattern id="img1" patternUnits="userSpaceOnUse" width="600" height="70">
-            <image xlink:href="https://user-images.githubusercontent.com/46004116/70911894-9fd2c500-2034-11ea-98ae-828306d5a181.jpg" x="100" y="-130" width="1000" height="500" />
+            <image xlink:href="https://www.gitpod.io/galaxy.jpg" x="100" y="-130" width="1000" height="500" />
         </pattern>
     </defs>
     <g>

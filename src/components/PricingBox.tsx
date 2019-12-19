@@ -13,7 +13,7 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean}>`
     width: 24%;
     text-align: center;
     color: ${({ background }) => background ? colors.white : null };
-    background: ${({ background }) => background ? 'url("https://user-images.githubusercontent.com/46004116/70911894-9fd2c500-2034-11ea-98ae-828306d5a181.jpg")' : colors.white };
+    background: ${({ background }) => background ? 'url("https://www.gitpod.io/galaxy.jpg")' : colors.white };
     background-size: ${({ background }) => background ? 'cover' : null };
     background-position: ${({ background }) => background ? 'left' : null };
     box-shadow: ${shadows.light};

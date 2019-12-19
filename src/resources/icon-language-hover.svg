@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49.287" height="48.99" viewBox="0 0 49.287 48.99">
     <defs>
     <pattern id="img1" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" width="82.373" height="82.373" viewBox="140 0 52.373 52.373">
-        <image xlink:href="https://user-images.githubusercontent.com/46004116/70911894-9fd2c500-2034-11ea-98ae-828306d5a181.jpg" y="-30" width="370" height="100" />
+        <image xlink:href="https://www.gitpod.io/galaxy.jpg" y="-30" width="370" height="100" />
     </pattern>
     </defs>
     <path d="M23.358,48.866,1.312,43.018A1.935,1.935,0,0,1,0,41.324V37.716l22.92,6.668a5.545,5.545,0,0,0,1.7.219,5.549,5.549,0,0,0,1.7-.219l22.975-6.668v3.607a1.821,1.821,0,0,1-1.313,1.695L25.928,48.866a6.748,6.748,0,0,1-2.57,0ZM0,35.42V9.293H49.232V35.42l-25.71,6.832ZM0,7.106V1.311A1.33,1.33,0,0,1,1.312,0H47.919a1.331,1.331,0,0,1,1.313,1.311V7.106Z" fill="url(#img1)" /></svg>

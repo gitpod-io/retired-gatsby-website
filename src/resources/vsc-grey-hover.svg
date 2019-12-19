@@ -5,7 +5,7 @@
     xmlns:ev="http://www.w3.org/2001/xml-events" width="52.373" height="52.373" viewBox="0 0 52.373 52.373">
   <defs>
     <pattern id="img1" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" width="82.373" height="82.373" viewBox="140 0 52.373 52.373">
-        <image xlink:href="https://user-images.githubusercontent.com/46004116/70911894-9fd2c500-2034-11ea-98ae-828306d5a181.jpg" y="-30" width="370" height="100" />
+        <image xlink:href="https://www.gitpod.io/galaxy.jpg" y="-30" width="370" height="100" />
     </pattern>
   </defs>
     <path fill="url(#img1)" class="a" d="M39.772-.006V44.975L.5,39.142,39.772,52.367,52.865,46.92V6.253l0,0,0-.009v-.8Z" transform="translate(-0.496 0.006)"/>

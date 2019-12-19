@@ -17,7 +17,7 @@
 </style>
     <defs>
         <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" width="680" height="60.297" viewBox="0 0 464 310">
-            <image xlink:href="https://user-images.githubusercontent.com/46004116/70911894-9fd2c500-2034-11ea-98ae-828306d5a181.jpg" y="-200" width="464" height="310" />
+            <image xlink:href="https://www.gitpod.io/galaxy.jpg" y="-200" width="464" height="310" />
         </pattern>
     </defs>
     <g transform="translate(-219.129 -519.483)"><path d="M654.281,54.3v-.7h-413.8c.01-.525.939-52.365,0-52.667h413.8V0l.926.926h.28v.28l25.944,25.942-25.944,25.94v.506h-.505l-.7.7Zm-413.8-.7H0V.926l1.711,0C34.927.883,118.569.79,177.709.79c41.371,0,62.49.046,62.772.137Z" transform="translate(222.129 522.483)" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" fill="url(#pattern)"/>

@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="20 0 1900 150">
   <defs>
     <pattern id="img1" patternUnits="userSpaceOnUse" width="2200" height="350" viewBox="140 0 1900 350">
-        <image xlink:href="https://user-images.githubusercontent.com/46004116/70911894-9fd2c500-2034-11ea-98ae-828306d5a181.jpg" y="-900" width="2000" />
+        <image xlink:href="https://www.gitpod.io/galaxy.jpg" y="-900" width="2000" />
     </pattern>
   </defs>
   <g id="Gruppe_667" data-name="Gruppe 667" transform="translate(46.694 -309.281)">

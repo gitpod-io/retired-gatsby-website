@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82.428" height="95.313" viewBox="0 0 82.428 95.313">
   <defs>
     <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" width="94.137" height="94.137" viewBox="150 0 94.137 94.137">
-        <image xlink:href="https://user-images.githubusercontent.com/46004116/70911894-9fd2c500-2034-11ea-98ae-828306d5a181.jpg" y="-135" x="-20" width="370" />
+        <image xlink:href="https://www.gitpod.io/galaxy.jpg" y="-135" x="-20" width="370" />
     </pattern>
   </defs>
   <g transform="matrix(1, 0, 0, 1, 0, 0)">
