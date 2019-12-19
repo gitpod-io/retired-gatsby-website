@@ -116,7 +116,7 @@ const RecrutingPage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th>&emsp;&emsp;Analytics</th>
+                    <th>Analytics</th>
                     <td></td>
                     <td><Circle /></td>
                     <td><Circle /></td>

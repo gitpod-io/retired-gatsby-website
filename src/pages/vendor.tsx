@@ -60,7 +60,7 @@ const VendorPage: React.SFC<{}> = () => (
         {/* ----- Pricing Table ----- */}
 
         <PricingTable
-            title="Pricing Gitpod Vendor"
+            title="Gitpod Vendor Pricing"
             paragraph="You have the choice to either host Gitpod yourself or to use our cloud infrastructure."
             id="vendor"
         >
@@ -81,20 +81,20 @@ const VendorPage: React.SFC<{}> = () => (
             <tbody>
                 <tr>
                     <th>Pricing</th>
-                    <td>please enquire</td>
-                    <td>please enquire</td>
-                    <td>please enquire</td>
+                    <td>Please enquire</td>
+                    <td>Please enquire</td>
+                    <td>Please enquire</td>
                 </tr>
                 <tr>
                     <th>Domain</th>
-                    <td>Gitpod.io</td>
+                    <td>gitpod.io</td>
                     <td>Custom</td>
                     <td>Custom</td>
                 </tr>
                 <tr>
                     <th>Managed By</th>
-                    <td>TypeFox</td>
-                    <td>TypeFox</td>
+                    <td>Gitpod</td>
+                    <td>Gitpod</td>
                     <td>You</td>
                 </tr>
                 <tr>
@@ -105,45 +105,15 @@ const VendorPage: React.SFC<{}> = () => (
                 </tr>
                 <tr>
                     <th>SLA <PopOver description="Custom Service Level Agreement"/></th>
-                    <td>optional</td>
-                    <td>optional</td>
+                    <td>Optional</td>
+                    <td>Optional</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <th><strong>Support</strong></th>
+                    <th>Support</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
                     <td><Circle /></td>
-                </tr>
-                <tr>
-                    <th><strong>White Labeling</strong> <PopOver description="Possibility to rebrand"/></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>&emsp;&emsp;Theia</th>
-                    <td></td>
-                    <td><Circle /></td>
-                    <td><Circle /></td>
-                </tr>
-                <tr>
-                    <th>&emsp;&emsp;Gitpod</th>
-                    <td></td>
-                    <td><Circle /></td>
-                    <td><Circle /></td>
-                </tr>
-                <tr>
-                    <th>Features</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>Git Integeration</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <th><img src={Github} alt="GitHub Logo"/> github.com</th>
@@ -153,7 +123,7 @@ const VendorPage: React.SFC<{}> = () => (
                 </tr>
                 <tr>
                     <th><img src={Github} alt="GitHub Logo"/> GitHub Enterprise</th>
-                    <td>public only</td>
+                    <td>Public only</td>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
@@ -164,8 +134,8 @@ const VendorPage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Gitlab} alt="GitLab Logo"/> GitLab self-hosted</th>
-                    <td>public only</td>
+                    <th><img src={Gitlab} alt="GitLab Logo"/> GitLab Self-Managed</th>
+                    <td>Public only</td>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
@@ -176,10 +146,16 @@ const VendorPage: React.SFC<{}> = () => (
                     <td>Soon</td>
                 </tr>
                 <tr>
-                    <th>Custom Authorization</th>
+                    <th>Custom Authentication</th>
                     <td>OAuth2</td>
                     <td>OAuth2</td>
                     <td>OAuth2</td>
+                </tr>
+                <tr>
+                    <th>Custom Branding</th>
+                    <td></td>
+                    <td><Circle /></td>
+                    <td><Circle /></td>
                 </tr>
                 <tr className="buttons">
                     <th></th>
