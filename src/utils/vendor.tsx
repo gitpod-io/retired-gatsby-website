@@ -1,22 +1,22 @@
 export const features = [
     {
         title: "Create a Showroom",
-        paragraphs: ['With Gitpod you can offer hands-on experience with your developer products within seconds. It allows to run, modify and test your code and is highly customisable as you can adjust it to your API, library, framework, demos and examples.', 'Gitpod guarantees an excellent user experience by eliminating the risk of a wrong setup.']
+        paragraphs: ['With Gitpod you can launch hands-on experiences for your developer products within seconds. It allows running, modifying and testing your code, and is highly customisable with your own APIs, libraries, frameworks, demos and examples.', 'Gitpod guarantees an excellent user experience by eliminating the risk of a broken setup.']
     },
     {
         title: "Show Your Products to Everyone",
-        paragraphs: ['All workspaces are well sandboxed so that …….. Gitpod prevents abuse like spammers, miners, etc..', 'A GitHub account is not required as your backend can be integrated via OAuth.']
+        paragraphs: ['A GitHub account is not required as Gitpod can be integrated with your own authentication system.', 'All workspaces are also sandboxed and hardened against abuses like spammers, miners, etc.']
     },
     {
         title: "Familiar Environment",
-        paragraphs: ['Original VS Code extensions and Theia, the VS Code alike online IDE, make users feel at home immediately. Also, no modifications are required for your developer product, neither are runtimes required.']
+        paragraphs: ['Original VS Code extensions and Theia, the VS-Code-like online IDE, will make your customers feel at home immediately.']
     },
     {
         title: "Guide Your Users",
-        paragraphs: ['Let Gitpod show your users what to try next. You can also integrate your own help system.']
+        paragraphs: ['Let Gitpod show users what to try next with an integrated helper. You can also integrate your own help system easily.']
     },
     {
         title: "Your Developer-Oriented Marketing Tool",
-        paragraphs: ['With Gitpod you can obtain analytics on how your products are experienced. Finally you can fill in the missing block in your marketing funnel.']
+        paragraphs: ['With Gitpod, you can gain insights on how your products are experienced. Finally you can add that missing puzzle piece into your marketing funnel.']
     }
 ]
