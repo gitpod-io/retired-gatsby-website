@@ -17,6 +17,7 @@ import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
 import { Link } from 'gatsby'
 import PopOver from '../components/PopOver'
+import { isEurope } from './pricing'
 
 const EducationPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/education/' title="Education">
@@ -82,9 +83,9 @@ const EducationPage: React.SFC<{}> = () => (
             <tbody>
                 <tr>
                     <th>Pricing</th>
-                    <td>$9 per month</td>
+                    <td>{isEurope() ? '€8' : '$9'} per user per month</td>
                     <td>Please enquire</td>
-                    <td>$1 per user</td>
+                    <td>{isEurope() ? '€0.9' : '$1'} per user per month</td>
                 </tr>
                 <tr>
                     <th>Domain</th>

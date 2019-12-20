@@ -10,7 +10,7 @@ import { sizes, shadows, colors } from '../styles/variables'
 import ActionCard from '../components/ActionCard'
 import Details from '../components/Details'
 
-function isEurope() {
+export function isEurope() {
     const offset = new Date().getTimezoneOffset();
     return  offset <= 0 && offset >= -180;
 }
