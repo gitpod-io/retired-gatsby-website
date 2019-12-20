@@ -325,8 +325,8 @@ const StyledIndexPage = styled.div`
         &__content {
             display: flex;
             align-items: center;
-            background: url(${OpenSource}) #4d4d4d;
-            background-blend-mode: hard-light;
+            background: url(${OpenSource}) #fafafa;
+            background-blend-mode: color-burn;
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Do not repeat the image */
             background-size: cover;
@@ -351,7 +351,7 @@ const StyledIndexPage = styled.div`
             }
 
             a {
-                color: ${colors.white};
+                color: ${colors.textDark};
             }
 
             a.btn {
@@ -362,7 +362,7 @@ const StyledIndexPage = styled.div`
         &__text {
             padding: 18rem 0;
             transform: translate(40%, -10rem);
-            color: ${colors.white};
+            color: ${colors.textDark};
             width: 58%;
             font-size: 110%;
 
@@ -389,7 +389,7 @@ const StyledIndexPage = styled.div`
         }
 
         h2 {
-            color: ${colors.white};
+            color: ${colors.textDark};
             margin-bottom: 6rem;
             font-size: 200%;
             font-weight: 600;
