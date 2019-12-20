@@ -1,11 +1,11 @@
 export const features = [
     {
         title: "Controlled Environment",
-        paragraphs: ['With Gitpod you eliminate the risk of losing valuable interview time due to a broken setup. Gitpod also guarantees that all candidates get the same tools and environment, thus the same preconditions.', 'Gitpod can also guide candidates through exercises without you being involved.']
+        paragraphs: ['With Gitpod you eliminate the risk of losing valuable interview time due to a broken setup.', 'Gitpod guarantees that all candidates get the same tools and environment, thus the same preconditions.']
     },
     {
         title: "Follow the Progress",
-        paragraphs: ['Track the progress of your candidates in real time as they work on your coding excercises.']
+        paragraphs: ['Track the progress of your candidates in real time as they work on your coding excercises.', 'Using workspace live-sharing, you can interact with candidates during their coding sessions if needed.']
     },
     {
         title: "Easy to Integrate",
@@ -14,9 +14,5 @@ export const features = [
     {
         title: "Cost-Effective",
         paragraphs: ['With billing based on actual workspace runtimes, you only need to pay for Gitpod when it is being used.']
-    },
-    {
-        title: "Interactions During Exercises",
-        paragraphs: ['Using workspace live-sharing, you can interact with candidates during their coding sessions if needed.']
     }
 ]
