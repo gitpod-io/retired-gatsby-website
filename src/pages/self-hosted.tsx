@@ -3,7 +3,7 @@ import React from 'react'
 import IndexLayout from '../layouts'
 import styled from '@emotion/styled'
 import { colors, sizes, borders } from '../styles/variables'
-import Cloud from '../resources/cloud.png'
+import Cloud from '../resources/cloud.svg'
 import { Link } from 'gatsby'
 import Kubernetes from '../resources/kubernetes.svg'
 import Details from '../components/Details'
@@ -151,7 +151,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
                     </h1>}
                     linkPath="/self-hosted/#install"
                     linkText="View Install Instructions"
-                    img={<img alt="Cloud" src={Cloud}/>}
+                    img={<object data={Cloud}/>}
                     children={<p>1 Month for <span>Free.</span></p>}
                 />
             </div>
