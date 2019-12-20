@@ -19,7 +19,7 @@ const StyledSelfHostedPage = styled.div`
         display: flex;
         justify-content: space-between;
 
-        @media(max-width: ${sizes.breakpoints.md}) {
+        @media(max-width: ${sizes.breakpoints.lg}) {
             flex-direction: column;
             align-items: center;
         }
@@ -31,7 +31,7 @@ const StyledSelfHostedPage = styled.div`
                 margin-top: 6rem;
 
                 @media(max-width: ${sizes.breakpoints.md}) {
-                    margin-bottom: 6rem;
+                    margin: 3rem 0 3rem;
                 }
             }
         }
@@ -41,6 +41,11 @@ const StyledSelfHostedPage = styled.div`
             margin-bottom: 5rem;
             transform: translateX(5rem);
 
+            @media(max-width: ${sizes.breakpoints.md}) {
+                margin-bottom: 3rem;
+                transform: translateX(4rem);
+            }
+
             span {
                 position: absolute;
                 top: -2.5rem;
@@ -48,6 +53,18 @@ const StyledSelfHostedPage = styled.div`
                 font-size: 4.5rem;
                 font-weight: 600;
                 color: ${colors.textDark};
+
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    top: -1.5rem;
+                    left: -4rem;
+                    font-size: 3.5rem;
+                }
+
+                @media(max-width: 523px) {
+                    font-size: 2.5rem;
+                    top: -1rem;
+                    left: -3rem;
+                }
             }
 
             a {
@@ -59,6 +76,10 @@ const StyledSelfHostedPage = styled.div`
             max-width: 32rem;
             padding: 3rem 2rem;
             border: ${borders.light1};
+
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                margin 5rem 0 0;
+            }
 
             h3, div {
                 text-align: center;
@@ -74,22 +95,43 @@ const StyledSelfHostedPage = styled.div`
         }
 
         &__more-details {
-                margin-top: 5rem;
+            margin-top: 5rem;
         }
     }
 
 `
 
-const Terminal = styled.p`
-    background-color: ${colors.text};
-    padding: 10px;
-    border-radius: 5px;
+const Terminal = styled.code`
+    display: block;
+    margin-top: 2rem;
+    padding: 1rem;
     color: ${colors.white};
     font-family: monospace;
-    font-size: 18px;
+    font-size: 1.8rem;
+    background-color: ${colors.text};
+    border-radius: 5px;
+
+    @media(max-width: ${sizes.breakpoints.md}) {
+        font-size: 1.5rem;
+        padding: .7rem;
+    }
+
+    @media(max-width: 530px) {
+        transform: translateX(-4rem);
+    }
 `;
 const StepP = styled.p`
-    font-size: 18px;
+    font-size: 1.8rem;
+
+    @media(max-width: ${sizes.breakpoints.md}) {
+        font-size: 1.6rem;
+    }
+
+    @media(min-width: ${sizes.breakpoints.sm}) {
+        br {
+            display: none;
+        }
+    }
 `;
 
 const SelfHostedPage: React.SFC<{}> = () => (
@@ -129,7 +171,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
                                 </Terminal>
                             </li>
                             <li className="install__step">
-                                <span>2.</span><StepP>Adjust the configuration from the repository to your needs.</StepP>
+                                <span>2.</span><StepP>Adjust the configuration from <br />the repository to your needs.</StepP>
                             </li>
                             <li className="install__step">
                                 <span>3.</span><StepP>Run</StepP>
