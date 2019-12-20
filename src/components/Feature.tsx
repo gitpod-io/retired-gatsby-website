@@ -34,6 +34,15 @@ const StyledFeature = styled.div`
 
     @media(max-width: ${sizes.breakpoints.lg}) {
         width: 49%;
+        max-width: 44rem;
+    }
+
+    @media(max-width: ${sizes.breakpoints.md}) {
+        min-width: 32rem;
+    }
+
+    @media(max-width: ${sizes.breakpoints.sm}) {
+        min-width: 28rem;
     }
 
     .title {
