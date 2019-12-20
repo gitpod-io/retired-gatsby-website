@@ -38,6 +38,7 @@ const StyledFeature = styled.div`
 
     .title {
         text-align: center;
+        min-height: 5rem;
     }
 
     .read-more {
