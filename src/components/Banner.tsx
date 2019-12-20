@@ -21,14 +21,13 @@ const StyledBanner = styled.header`
 
     @media(max-width: ${sizes.breakpoints.md}) {
         flex-direction: column-reverse;
-        padding: 1rem 0;
+        padding: 1rem 0 5rem;
     }
 
     .para {
         margin-top: 3rem;
         max-width: 70rem;
     }
-
 
     .btn + p {
         display: inline-block;
@@ -40,14 +39,14 @@ const StyledBanner = styled.header`
     }
 
     .btn {
-        margin: 5rem 2rem 0 0;
+        margin: 5rem 2rem 2rem 0;
 
-        @media(max-width: ${sizes.breakpoints.sm}) {
-            margin: 3rem 0 2rem;
+        @media(max-width: ${sizes.breakpoints.md}) {
+            margin-top: 3rem;
         }
     }
 
-    object {
+    object, img {
         display: block;
         height: 35rem;
 
