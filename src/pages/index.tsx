@@ -452,7 +452,7 @@ const IndexPage: React.SFC<{}> = () => (
                         alt: 'freeCodeCamp.org',
                         url: 'https://www.freecodecamp.org/',
                         svg: FreeCodeCamp,
-                        transform: 'scale(1.6) translate(22px,2px)'
+                        transform: 'scaleY(1.3)'
                     },
                     {
                         alt: 'Gatsby Logo',
