@@ -17,7 +17,7 @@ const StyledTrustedBy = styled.section`
 
     .logos {
         display: grid;
-        grid-template-columns: 1.4fr repeat(5, 0.9fr);
+        grid-template-columns: repeat(6, 1fr);
 
         @media(max-width: ${sizes.breakpoints.lg}) {
             grid-template-columns: repeat(3, 1fr);
@@ -35,10 +35,14 @@ const StyledTrustedBy = styled.section`
             grid-template-columns: repeat(1, 1fr);
         }
     }
+`
 
-    img {
-        height: 10rem;
-        width: 14rem;
+const StyledBrandImage = styled.img<{transform?: string}>`
+    height: 10rem;
+    width: 14rem;
+
+    @media(min-width: ${sizes.breakpoints.lg}) {
+        transform: ${ ({transform}) => transform ? transform : 'none' };
     }
 `
 
@@ -62,7 +66,7 @@ const TrustedBy: React.SFC<TrustedByProps> = ({brands}) => (
                         {
                             brands.map((b, i) => (
                                 <a href={b.url} target="_blank" key={i}>
-                                    <img src={b.svg} alt={b.alt} style={{ transform: b.transform ? b.transform : "none" }}/>
+                                    <StyledBrandImage src={b.svg} alt={b.alt} transform={b.transform}/>
                                 </a>
                             ))
                         }
