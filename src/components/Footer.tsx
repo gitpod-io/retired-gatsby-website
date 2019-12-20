@@ -96,7 +96,7 @@ const Footer: React.SFC<{}> = () => (
                     <li><Link to="/pricing/">Pricing</Link></li>
                     <li><Link to="/blog/">Blog</Link></li>
                     <li><Link to="/enterprise/">Enterprise</Link></li>
-                    <li><Link to="https://gitpod.io/login" style={{color: colors.link, fontWeight: 600}}>Login</Link></li>
+                    <li><a href="https://gitpod.io/login" style={{color: colors.link, fontWeight: 600}}>Login</a></li>
                 </ul>
                 <ul>
                     <li>Solutions</li>
