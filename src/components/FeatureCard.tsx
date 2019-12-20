@@ -45,7 +45,7 @@ const StyledFeatureCard = styled.div<{caption: boolean, isIllustration?: boolean
             min-height: 26rem;
         }
 
-        img {
+        img, object {
             display: inline-block;
             width: 85%;
             height: 95%;
