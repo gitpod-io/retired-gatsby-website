@@ -47,7 +47,7 @@ const StyledBanner = styled.header`
         }
     }
 
-    img {
+    object {
         display: block;
         height: 35rem;
 

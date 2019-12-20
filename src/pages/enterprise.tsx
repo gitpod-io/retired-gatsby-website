@@ -2,7 +2,7 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
-import Planet from '../resources/planet.png'
+import Planet from '../resources/planet.svg'
 import Features from '../components/Features'
 import Feature from '../components/Feature'
 import Quote from '../components/Quote'
@@ -65,7 +65,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                 paragraph="Adding Gitpod to your development tools means less waiting, no tedious setups, faster onboarding, higher code quality and a smoother workflow."
                 linkPath="/enterprise/#enterprise"
                 linkText="Choose your Solution"
-                img={<img alt="Planet Earth" src={Planet} />}
+                img={<object data={Planet} />}
             />
 
             {/* ----- Section Features ----- */}

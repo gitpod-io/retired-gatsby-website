@@ -2,7 +2,7 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
-import Planet from '../resources/planet.png'
+import Planet from '../resources/planet.svg'
 import Features from '../components/Features'
 import Feature from '../components/Feature'
 import { features } from '../utils/education'
@@ -31,7 +31,7 @@ const EducationPage: React.SFC<{}> = () => (
                 paragraph="Gitpod simplifies the onboarding process, makes coding accessible from any device and provides a productive learning environment."
                 linkPath="/education/#education"
                 linkText="Choose your Solution"
-                img={<img alt="Planet Mars" src={Planet}/>}
+                img={<object style={{transform:"scale(0.8)"}} data={Planet}/>}
             />
 
             {/* ----- Section Features ----- */}

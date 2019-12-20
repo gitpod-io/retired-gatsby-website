@@ -5,19 +5,18 @@ However, Gitpod sports a range of integrations with the Google Cloud Platform th
 This section describes the neccesary steps to prepare a new GCP project for a Gitpod installation.
 
   > We have automated this process. If you want to get up and running as quickly as possible, that's the way to go.
-  > See the [automated setup](#automated-setup) section for details.
 
-You can perform the set up of the GCP resources yourself. See the [manual GCP setup](12_install_on_gcp_manual) section for more details.
+You can perform the set up of the GCP resources yourself. See the [manual GCP setup](../12_install_on_gcp_manual/) section for more details.
 
 This installation script configures your GCP project and produces the required Helm configuration for installing Gitpod in that project.
-Once all GCP setup is complete, you will only have to manually set up [OAuth](30_oauth) and optionally [HTTPS](34_https_certs).
+Once all GCP setup is complete, you will only have to manually set up [OAuth](../30_oauth/) and optionally [HTTPS](../34_https_certs/).
 
 You can install Gitpod self-hosted in your GCP project from within Gitpod. This way you don't have to install the Google Cloud SDK or other required tools.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/self-hosted)
 
 ## Prerequisites
-- Ensure you have the [general installation prerequisites](../01_prepare_installation/) avilable.
+- Ensure you have the [general installation prerequisites](../01_prepare_installation/) available.
 - [Google Could SDK](https://cloud.google.com/sdk/install)
 - [Go (at least 1.12)](https://golang.org/doc/install)
 - mysql client
@@ -26,13 +25,15 @@ You can install Gitpod self-hosted in your GCP project from within Gitpod. This 
 
 The [Gitpod self-hosted repository](https://github.com/gitpod-io/self-hosted) contains the configuration files this guide is refering to.
 The installation script will modify the configuration files found in that repository.
-We recommend you fork this repository so that you can easily rebase your changes on the latest version.
+We recommend you to fork this repository so that you can easily rebase your changes on the latest version.
 
 ```
 git clone https://github.com/gitpod-io/self-hosted
 cd self-hosted
 git remote rename origin upstream
 ```
+
+Configure at least your `values.yaml`. Set your domain and the [OAuth](../30_oauth/) section.
 
 ## Installation
 To start the automated setup, run [`./utils/create-gcp-resources.go`](https://github.com/gitpod-io/self-hosted/blob/master/utils/create-gcp-resources.go) from the root of the self-hosted repo.
