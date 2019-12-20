@@ -38,11 +38,11 @@ const StyledFeatureCard = styled.div<{caption: boolean, isIllustration?: boolean
         }
 
         @media(max-width: ${sizes.breakpoints.md}) {
-            min-height: 35rem;
+            min-height: 38rem;
         }
 
-        @media(max-width: ${sizes.breakpoints.sm}) {
-            min-height: 25rem;
+        @media(max-width: 600px) {
+            min-height: 26rem;
         }
 
         img {
@@ -51,7 +51,7 @@ const StyledFeatureCard = styled.div<{caption: boolean, isIllustration?: boolean
             height: 95%;
             transform: ${({isIllustration}) => isIllustration ? 'scale(.9)' : null };
 
-            @media(max-width: ${sizes.breakpoints.sm}) {
+            @media(max-width: 600px) {
                 width: 100%;
             }
         }
