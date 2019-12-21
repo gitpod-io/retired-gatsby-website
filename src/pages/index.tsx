@@ -334,8 +334,7 @@ const StyledIndexPage = styled.div`
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Do not repeat the image */
             background-size: cover;
-            border-radius: 300px;
-            transform: translateX(-5%);
+            border-radius: 250px;
 
             @media(max-width: ${sizes.breakpoints.md}) {
                 flex-direction: column;
