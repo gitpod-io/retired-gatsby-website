@@ -322,24 +322,25 @@ const StyledIndexPage = styled.div`
 
     .open-source {
 
+        padding-top: 0;
+
         &__content {
             display: flex;
             align-items: center;
-            background: url(${OpenSource}) #fafafa;
-            background-blend-mode: color-burn;
+            background: url(${OpenSource}) #fafafadd;
+            background-blend-mode: color;
+            -webkit-filter: grayscale(100%);
+            filter: gray;
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Do not repeat the image */
             background-size: cover;
             border-radius: 300px;
-            width: 110%;
             transform: translateX(-5%);
 
             @media(max-width: ${sizes.breakpoints.md}) {
                 flex-direction: column;
                 border-radius: unset;
-                img {
-                    width: 100%;
-                }
+                background: none;
             }
 
             img {
@@ -360,8 +361,8 @@ const StyledIndexPage = styled.div`
         }
 
         &__text {
-            padding: 18rem 0;
-            transform: translate(40%, -10rem);
+            padding: 10rem 0;
+            transform: translate(40%, 0rem);
             color: ${colors.textDark};
             width: 58%;
             font-size: 110%;
