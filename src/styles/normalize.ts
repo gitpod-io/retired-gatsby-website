@@ -236,7 +236,7 @@ export default `
     }
 
     .active {
-        color: ${colors.link} !important;
+        color: ${colors.link};
     }
 
     .link {
