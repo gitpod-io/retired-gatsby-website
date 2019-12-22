@@ -16,8 +16,8 @@
 }
 </style>
   <defs>
-    <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" width="713" height="418" viewBox="0 280 580 340">
-        <image xlink:href="https://www.gitpod.io/galaxy.jpg" y="-10" width="928" />
+    <pattern id="pattern" patternUnits="userSpaceOnUse" width="928" height="619" >
+        <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="928" height="619"/>
     </pattern>
   </defs>
   <g id="Gruppe_590" data-name="Gruppe 590" transform="translate(-210 -3105)">

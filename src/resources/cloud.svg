@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="434" height="376.222" viewBox="0 0 434 376.222">
-  <defs>
-    <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" width="434" height="376.222" viewBox="80 10 434 376">
-        <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="600" />
-    </pattern>
-  </defs>
+    <defs>
+        <pattern id="img1" x="0" y="0" width="2000" height="2000" patternUnits="userSpaceOnUse">
+            <image width="2000" height="2000" xlink:href="https://www.gitpod.io/galaxy.jpg" />
+        </pattern>
+    </defs>
   <g id="Page-1" transform="translate(6 1)">
     <g id="icon-129-cloud-download" transform="translate(3 5)">
       <g transform="matrix(1, 0, 0, 1, -9, -6)">

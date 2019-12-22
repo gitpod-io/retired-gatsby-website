@@ -42,7 +42,7 @@ const IndexLayout: React.SFC<{ title?: string, canonical?: string }> = ({ title,
           <html lang="en" />
           <title>{title && `${title} - Gitpod` || data.site.siteMetadata.title}</title>
           <meta name="description" content={data.site.siteMetadata.description} />
-          <meta name="keywords" content="cloud ide, github, javascript, online ide, web ide, code review" />
+          <meta name="keywords" content="cloud ide, github ide, gitlab ide, javascript, online ide, web ide, code review" />
           {
             canonical ? <link rel="canonical" href={`${data.site.siteMetadata.siteUrl}${canonical}`} /> : null
           }
