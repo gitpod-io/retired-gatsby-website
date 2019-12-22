@@ -31,6 +31,10 @@ const StyledFeatureBox = styled.div`
         width: 100%;
         height: 100%;
     }
+
+    &:hover {
+        background-color: ${colors.offWhite};
+    }
 `
 
 interface FeatureBoxProps {
@@ -54,11 +58,11 @@ class FeatureBox extends React.Component<FeatureBoxProps, { isHovered: boolean }
     }
 
     render() {
-        const { img, hover, text, path } = this.props;
+        const { hover, text, path } = this.props;
         return <StyledFeatureBox>
             <a href={`#${path}`}>
                 <div>
-                    <object data={this.state.isHovered ? hover : img} />
+                    <object data={hover} />
                 </div>
                 <div>
                     <h3>{text}</h3>

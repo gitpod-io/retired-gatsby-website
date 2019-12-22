@@ -17,10 +17,10 @@
 </style>
     <defs>
         <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" y="760" x="330" width="800" height="420" viewBox="0 0 930 620">
-            <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="930" />
+            <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="930" height="620"/>
         </pattern>
         <pattern id="pattern-2" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" y="760" x="330" width="800" height="420" viewBox="0 0 930 620">
-            <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="930" />
+            <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="930" height="620"/>
         </pattern>
     </defs>
     <g id="Gruppe_696" data-name="Gruppe 696" transform="translate(-883.208 -4960.185)">
