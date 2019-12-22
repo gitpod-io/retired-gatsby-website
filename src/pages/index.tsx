@@ -160,7 +160,7 @@ const StyledIndexPage = styled.div`
             font-weight: 400;
 
             @media(min-width: ${sizes.breakpoints.md}) {
-                width: 25ch;
+                width: 26ch;
             }
 
             span {
@@ -433,7 +433,7 @@ const IndexPage: React.SFC<{}> = () => (
                     </div>
                     <div className="intro__box">
                         <object className="intro__icon" data={ArrowOnTarget} />
-                        <p className="intro__text"><span>Gitpod eliminates this friction</span> by providing prebuilt, <br />ready-to-code dev environments with just one click.</p>
+                        <p className="intro__text">Gitpod eliminates this friction by providing <span>prebuilt, ready-to-code dev environments</span> with a single click.</p>
                     </div>
                 </div>
             </section>
