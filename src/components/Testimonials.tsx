@@ -43,7 +43,7 @@ const StyledTestimonials = styled.div`
     }
 
     .tweet {
-        max-width: 100%;
+        min-width: 400px;
 
         &:not(:last-of-type) {
             margin-right: 3rem;
