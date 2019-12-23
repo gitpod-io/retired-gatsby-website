@@ -9,7 +9,7 @@ import twitter from '../resources/twitter.svg'
 import { Helmet } from 'react-helmet'
 import { authors } from '../utils/authors'
 import { colors, shadows } from '../styles/variables'
-import NewsletterForm from '../components/NewsletterForm'
+// import NewsletterForm from '../components/NewsletterForm'
 
 interface BlogTemplateProps {
   data: {
@@ -62,6 +62,10 @@ const StyledBlogTemplate = styled.div`
 
     h2, h1 {
         margin: 6rem 0 2.5rem;
+    }
+
+    h3, h4 {
+        margin: 3.5rem 0 1.5rem;
     }
 
     h2 + p {
