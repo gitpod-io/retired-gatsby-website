@@ -25,7 +25,7 @@ import PopOver from '../components/PopOver'
 const plans: PricingBoxProps[] = [
     {
         title: 'Personal',
-        img: <object data={LightBulb}/>,
+        img: <object tabIndex={-1} data={LightBulb}/>,
         price: isEurope() ? '€8' : '$9',
         duration: '100 hours / month',
         features: ['Private & Public Repos', <span>4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span>30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
@@ -40,7 +40,7 @@ const plans: PricingBoxProps[] = [
     },
     {
         title: 'Unlimited',
-        img: <object data={MagicCap}/>,
+        img: <object tabIndex={-1}  data={MagicCap}/>,
         price: isEurope() ? '€35' : '$39',
         duration: 'unlimited hours',
         features: ['Private & Public Repos', <span>16 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span>Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>,  <span>60min Timeout <PopOver description="Workspaces without user activity are stopped after 60 minutes."/></span>, <span>3h Timeout Boost <PopOver description="You can manually boost the timeout to 3h within a running workspace."/></span>],

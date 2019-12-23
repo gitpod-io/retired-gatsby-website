@@ -63,9 +63,9 @@ interface QuoteProps {
 const Quote: React.SFC<QuoteProps> = ({title}) => (
         <StyledQuote className="quote row">
             <h4 className="quote__text">
-                <object data={QuoteIcon}/>
+                <object tabIndex={-1} data={QuoteIcon}/>
                 <span>{title}</span>
-                <object data={QuoteIcon}/>
+                <object tabIndex={-1} data={QuoteIcon}/>
             </h4>
         </StyledQuote>
 )

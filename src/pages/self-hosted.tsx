@@ -151,7 +151,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
                     </h1>}
                     linkPath="/self-hosted/#install"
                     linkText="View Install Instructions"
-                    img={<object data={Cloud}/>}
+                    img={<object tabIndex={-1} data={Cloud}/>}
                     children={<p>1 Month for <span>Free.</span></p>}
                 />
             </div>

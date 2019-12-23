@@ -29,7 +29,7 @@ const RecrutingPage: React.SFC<{}> = () => (
                 title={<h1>Make Sure You’re <strong>Discovering Your<br />Best Applicants</strong></h1>}
                 linkPath="/recruiting/#recruiting"
                 linkText="Choose your Solution"
-                img={<object data={Cloud}/>}
+                img={<object tabIndex={-1} data={Cloud}/>}
             />
 
             {/* ----- Section Features ----- */}

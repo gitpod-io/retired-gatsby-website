@@ -428,11 +428,11 @@ const IndexPage: React.SFC<{}> = () => (
             <section className="intro">
                 <div className="intro__box-container row">
                     <div className="intro__box">
-                        <object className="intro__icon" data={HourGlass} />
+                        <object tabIndex={-1} className="intro__icon" data={HourGlass} />
                         <p className="intro__text">Every day <span>developers waste millions of hours</span> waiting for builds to finish.</p>
                     </div>
                     <div className="intro__box">
-                        <object className="intro__icon" data={ArrowOnTarget} />
+                        <object tabIndex={-1} className="intro__icon" data={ArrowOnTarget} />
                         <p className="intro__text">Gitpod eliminates this friction by providing <span>prebuilt, ready-to-code dev environments</span> with a single click.</p>
                     </div>
                 </div>
@@ -441,7 +441,7 @@ const IndexPage: React.SFC<{}> = () => (
             {/* ----- Line ----- */}
 
             <div className="line-container">
-                <object className="line" data={IconLine} />
+                <object tabIndex={-1} className="line" data={IconLine} />
             </div>
 
             {/* ----- Section Trusted By ----- */}
@@ -517,7 +517,7 @@ const IndexPage: React.SFC<{}> = () => (
                                 <p>Read more about <a href="/docs/50_ide/">Theia</a></p>
                             </div>
                             <div className="why-gitpod__img-container">
-                                <object
+                                <object tabIndex={-1} 
                                     data={FullDevEnvironments}
                                     style={{ transform: 'translate(-2rem)' }}
                                     className="why-gitpod__img" />

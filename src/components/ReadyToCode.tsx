@@ -79,17 +79,17 @@ class ReadyToCode extends React.Component {
                 </div>
                 <div className="why-gitpod__img-container">
                     <div style={{ display: 'flex', width: '90%', height: '100%', justifyContent: 'center' }}>
-                        <object
+                        <object tabIndex={-1}             
                             data={AutomatedSetupGraphicOrdinary}
                             style={{ ...graphicOridnaryStyles, width: '100%' }}
                             className="why-gitpod__img"
                         />
-                        <object
+                        <object tabIndex={-1}
                             data={ReadyToCodeImg}
                             style={defaultStyles}
                             className="why-gitpod__img"
                         />
-                        <object
+                        <object tabIndex={-1}
                             data={AutomatedSetupGraphicGitpod}
                             style={graphicGitpodStyles}
                             className="why-gitpod__img"

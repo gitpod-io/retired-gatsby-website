@@ -62,7 +62,7 @@ class FeatureBox extends React.Component<FeatureBoxProps, { isHovered: boolean }
         return <StyledFeatureBox>
             <a href={`#${path}`}>
                 <div>
-                    <object data={hover} />
+                    <object tabIndex={-1} data={hover} />
                 </div>
                 <div>
                     <h3>{text}</h3>
