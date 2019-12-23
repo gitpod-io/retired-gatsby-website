@@ -1,5 +1,4 @@
 ---
-url: https://medium.com/gitpod/github-flows-better-with-gitpod-e455d17990f9
 date: Thu Dec 23 2019 11:49:24 GMT+0000 (UTC)
 author: svenefftinge
 subtitle: A Last, Big Update in 2019
