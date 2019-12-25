@@ -46,11 +46,11 @@ const StyledFeaturesPage = styled.div`
             }
 
             @media(max-width: ${sizes.breakpoints.md}) {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1fr);               
             }
 
-            @media(max-width: 490px) {
-                grid-template-columns: repeat(1, 1fr);
+            @media(max-width: 500px) {
+                display: none;
             }
 
             & > div {
