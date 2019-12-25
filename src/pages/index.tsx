@@ -292,6 +292,14 @@ const StyledIndexPage = styled.div`
                     width: 60%;
                 }
             }
+
+            &--full-dev-env {
+                transform: translate(-2rem);
+
+                @media(max-width: 530px) {
+                    transform: translate(-1.3rem);
+                }
+            }
         }
 
         img {
@@ -523,8 +531,7 @@ const IndexPage: React.SFC<{}> = () => (
                             <div className="why-gitpod__img-container">
                                 <object
                                     data={FullDevEnvironments}
-                                    style={{ transform: 'translate(-2rem)' }}
-                                    className="why-gitpod__img" />
+                                    className="why-gitpod__img why-gitpod__img--full-dev-env" />
                             </div>
                         </div>
 
