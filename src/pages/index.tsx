@@ -274,8 +274,12 @@ const StyledIndexPage = styled.div`
             height: 100%;
             width: 100%;
 
+            @media(max-width: ${sizes.breakpoints.md}) {
+                max-height: 38rem;
+            }
+
             &-container {
-                min-height: 36rem;
+                min-height: 24rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
