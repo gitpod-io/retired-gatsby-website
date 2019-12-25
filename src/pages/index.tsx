@@ -413,7 +413,7 @@ const IndexPage: React.SFC<{}> = () => (
                                 <span>Start Instantly. Anywhere.</span>
                             </h1>
                             <p>Gitpod launches ready-to-code dev environments<br /> for your GitHub or GitLab project with a single click.</p>
-                            <a href="https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic" className="btn btn--cta">I'm Feeling Lucky!</a>
+                            <a href="https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic" className="btn btn--cta">Let's Try It!</a>
                             <Link to="/self-hosted/" className="btn">Host Yourself</Link>
                         </div>
                         <div className="banner__screenshot-container">

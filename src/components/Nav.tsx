@@ -294,7 +294,7 @@ class Nav extends React.Component {
                                             ]}
                                         />
                                     </li>
-                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to="/#get-started" className="btn btn--cta">Start for Free</Link></li>
+                                    <li className="nav__item"><a href="https://gitpod.io/workspaces" tabIndex={ isNavRendered ? 0 : -1 } rel="noopener" className="btn">Go to App</a></li>
                                 </ul>
                             ) : null }
                     </StyledNav>
