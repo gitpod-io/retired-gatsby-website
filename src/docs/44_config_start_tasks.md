@@ -10,7 +10,8 @@ For instance, the start script for the Gitpod documentation repository is define
 
 ```yaml
 tasks:
-- command: mdbook serve --hostname 0.0.0.0
+- init: yarn && yarn build
+  command: yarn dev --host 0.0.0.0
 ```
 
 You can have multiple tasks, which are opened on separated terminals.
@@ -32,6 +33,14 @@ The script below will start a development-time web server in many npm projects:
 tasks:
   - command: npm run dev
 ```
+Task properties will control when a command is executed. Check the table below for an overview of the different starting scenarios.
+
+| Start Mode | Execution |
+| ---------  | -------   |
+| Fresh Workspace | `before && init && command` |
+| Restart Workspace | `before && command` |
+| Snapshot | `before && command` |
+| Prebuild | `before && init && prebuild` |
 
 ### `init` command
 
@@ -58,14 +67,6 @@ tasks:
     init: npm install
     command: npm run dev
 ```
-
-Check the table below for an overview of the different starting scenarios.
-
-| Start Mode | Execution |
-| ---------  | -------   |
-| Fresh Workspace | `before && init && command` |
-| Restart Workspace | `before && command` |
-| Snapshot | `before && command` |
 
 ### `prebuild` command
 The optional `prebuild` command will be executed during [prebuilds](./46_Prebuilds.md). It is meant to run additional
