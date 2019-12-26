@@ -1,8 +1,3 @@
-
-
-
-
-
 import React from 'react'
 
 import styled from '@emotion/styled'
@@ -18,8 +13,6 @@ const StyledMore = styled.section`
     p {
         margin: -2rem 0 2rem;
     }
-
-
 `
 
 interface Anchor {
