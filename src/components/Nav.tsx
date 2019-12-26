@@ -78,9 +78,14 @@ const StyledNav = styled.nav`
         }
     }
 
+    .nav__burger-container {
+       display: flex;
+       justify-content: space-between;
+    }
+
     .nav__btn {
-        cursor: pointer;
         position: relative;
+        cursor: pointer;
         background: ${colors.offWhite};
         border: none;
         z-index: 10000;
@@ -97,38 +102,32 @@ const StyledNav = styled.nav`
             }
         }
 
-        &-container {
-            position: absolute;
-            top: 3.7rem;
-            right: 7rem;
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                top: 1.1rem;
-                right: 4rem;
-            }
-
-            @media(max-width: ${sizes.breakpoints.sm}) {
-                right: 1rem;
-            }
-        }
-
         svg {
             position: absolute;
-            height: 3.5rem;
-            transition: all .3s cubic-bezier(.25,.75,.5,1.25);
             top: 0;
-            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            transition: all .3s cubic-bezier(.25,.75,.5,1.25);
             fill: ${colors.text};
             stroke: ${colors.text};
 
             &#hamburger {
 
                 @media(max-width: ${sizes.breakpoints.md}) {
-                    transform: scale(0.55) translateX(-1.3rem);
+                    transform: scale(.7);
                 }
 
                 @media(min-width: ${sizes.breakpoints.md}) {
-                    transform: scale(.8) translateX(-1rem);
+                    transform: scale(.8);
+                }
+            }
+
+            &#multiply {
+                transform: scale(.7);
+
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    transform: scale(.65);
                 }
             }
 
@@ -222,32 +221,35 @@ class Nav extends React.Component {
             <div className="grey-container">
                 <div className="row">
                     <StyledNav role="navigation" className="nav">
-                            <Link to="/"><img alt="Gitpod Logo" src={GitpodLogoDark} /></Link>
-                            <div className="nav__btn-container" aria-live="assertive">
-                                <button
-                                    className="nav__btn"
-                                    aria-label={ isNavRendered ? "Hide the Navigation Items" : "Show the Navigation Items"}
-                                    onClick={this.toggleNavigation}
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.112 31.112"
-                                        className={ isNavRendered ? 'is-shown--multiply' : 'is-hidden' }
-                                        aria-hidden={ isNavRendered ? false : true }
+                            <div className="nav__burger-container">
+                                <Link to="/"><img alt="Gitpod Logo" src={GitpodLogoDark} /></Link>
+                                <div className="nav__btn-container" aria-live="assertive">
+                                    <button
+                                        className="nav__btn"
+                                        aria-label={ isNavRendered ? "Hide the Navigation Items" : "Show the Navigation Items"}
+                                        onClick={this.toggleNavigation}
                                     >
-                                        <title>close menu icon</title>
-                                        <path d="M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z"/>
-                                    </svg>
-                                    <svg
-                                        className={ isNavRendered ? 'is-hidden' : 'is-shown' }
-                                        aria-hidden={ isNavRendered ? true : false }
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 26 18"
-                                        id="hamburger"
-                                    >
-                                        <title>hamburger menu icon</title>
-                                        <g transform="translate(-647.5 -86.5)" strokeWidth="2"><line x2="24" transform="translate(648.5 87.5)"/><line x2="24" transform="translate(648.5 95.5)"/><line x2="24" transform="translate(648.5 103.5)"/></g>
-                                    </svg>
-                                </button>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.112 31.112"
+                                            className={ isNavRendered ? 'is-shown--multiply' : 'is-hidden' }
+                                            aria-hidden={ isNavRendered ? false : true }
+                                            id="multiply"
+                                        >
+                                            <title>close menu icon</title>
+                                            <path d="M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z"/>
+                                        </svg>
+                                        <svg
+                                            className={ isNavRendered ? 'is-hidden' : 'is-shown' }
+                                            aria-hidden={ isNavRendered ? true : false }
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 26 18"
+                                            id="hamburger"
+                                        >
+                                            <title>hamburger menu icon</title>
+                                            <g transform="translate(-647.5 -86.5)" strokeWidth="2"><line x2="24" transform="translate(648.5 87.5)"/><line x2="24" transform="translate(648.5 95.5)"/><line x2="24" transform="translate(648.5 103.5)"/></g>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
 
                             { isNavRendered ? (
