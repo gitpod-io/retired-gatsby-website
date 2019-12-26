@@ -152,7 +152,19 @@ const StyledIndexPage = styled.div`
         &__icon {
             display: flex;
             height: 9rem;
-            margin-right: 3rem;
+            
+            @media(max-width: ${sizes.breakpoints.md}) {
+                width: 7rem;
+            }
+            
+            @media(min-width: ${sizes.breakpoints.sm}) {
+                margin-right: 3rem;
+            }
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                display: inline-block;
+                margin: 0 auto;
+            }
         }
 
         &__text {
