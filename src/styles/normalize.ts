@@ -233,6 +233,27 @@ export default `
                 }
             }
         }
+
+        &-wrapper {
+            .btn {
+                &:first-of-type {
+                    margin-right: 2.5rem;
+
+                    @media(max-width: 360px) {
+                        margin-right: 0;
+                        margin-bottom: 2rem;
+                    }
+                } 
+            }
+
+            br {
+                display: none;
+
+                @media(max-width: 360px) {
+                    display: block !important;
+                }
+            }
+        }
     }
 
     .active {
