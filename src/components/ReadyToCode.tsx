@@ -58,7 +58,7 @@ class ReadyToCode extends React.Component {
                     <p>Gitpod is to your traditional local dev environment what Netflix is to a dusty shelf of DVDs.</p>
                     <p>Skip the friction and get beamed into a fully <strong>setup, compiled and tested dev environment</strong> with one click.</p>
                     <p>Read more about <Link to="/blog/continuous-dev-environment-in-devops/">Continuous Dev Environments.</Link></p>
-                    <div>
+                    <div className="buttons">
                         <button
                             className="toggle toggle--active"
                             onClick={() => this.handleClick('gitpod')}

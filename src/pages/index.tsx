@@ -63,17 +63,6 @@ const StyledIndexPage = styled.div`
             }
         }
 
-        .btn {
-            margin: 0 2.5rem 2.5rem 0;
-
-            @media(max-width: ${sizes.breakpoints.sm}) {
-                margin: 2.5rem 2.5rem 0 2.5rem;
-
-                &:first-of-type {
-                    margin-top: 0;
-                }
-            }
-        }
 
         &__screenshot {
             width: 100%;
@@ -233,6 +222,12 @@ const StyledIndexPage = styled.div`
 
                 @media(max-width: ${sizes.breakpoints.md}) {
                     flex-direction: column-reverse;
+                }
+
+                @media(max-width: ${sizes.breakpoints.sm}) {
+                    .buttons {
+                        text-align: center;
+                    }
                 }
 
                 .why-gitpod__img-container {
@@ -437,8 +432,11 @@ const IndexPage: React.SFC<{}> = () => (
                                 <span>Start Instantly. Anywhere.</span>
                             </h1>
                             <p>Gitpod launches ready-to-code dev environments<br /> for your GitHub or GitLab project with a single click.</p>
-                            <a href="https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic" className="btn btn--cta">Let's Try It!</a>
-                            <Link to="/self-hosted/" className="btn">Host Yourself</Link>
+                            <div className="btn-wrapper">
+                                <a href="https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic" className="btn btn--cta">Let's Try It!</a>
+                                <br aria-hidden={true}/>
+                                <Link to="/self-hosted/" className="btn">Host Yourself</Link>
+                            </div>
                         </div>
                         <div className="banner__screenshot-container">
                             <img alt="Gitpod Screenshot" src={ReflectionScreenshot} className="banner__screenshot" />
@@ -572,8 +570,8 @@ const IndexPage: React.SFC<{}> = () => (
                                     </p>
                                     <p>
                                         Start contributing now!
-                                            </p>
-                                    <a href="https://contribute.dev"  className="btn" target="_blank" rel="noopener">contribute.dev</a>
+                                    </p>
+                                    <a href="https://contribute.dev" className="btn" target="_blank" rel="noopener">contribute.dev</a>
                                 </div>
                             </div>
                         </div>
