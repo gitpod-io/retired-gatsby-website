@@ -1,3 +1,8 @@
+
+
+
+
+
 import React from 'react'
 
 import styled from '@emotion/styled'
@@ -6,13 +11,14 @@ import { Link } from 'gatsby'
 const StyledMore = styled.section`
     margin-bottom: 8rem;
 
+    @media(max-width: 360px) {
+        text-align: center;
+    }
+
     p {
         margin: -2rem 0 2rem;
     }
 
-    .btn:first-of-type {
-            margin-right: 2.5rem;
-    }
 
 `
 
@@ -32,8 +38,11 @@ const More: React.SFC<MoreProps> = ({title, text, anchors}) => (
         <StyledMore>
             <h2>{title}</h2>
             <p>{text}</p>
-            <Link to={anchors[0].href} className="btn btn--cta">{anchors[0].text}</Link>
-            <Link to={anchors[1].href} className="btn">{anchors[1].text}</Link>
+            <div className="btn-wrapper">
+                <Link to={anchors[0].href} className="btn btn--cta">{anchors[0].text}</Link>
+                <br aria-hidden={true}/>
+                <Link to={anchors[1].href} className="btn">{anchors[1].text}</Link>
+            </div>
         </StyledMore>
     </div>
 )
