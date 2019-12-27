@@ -92,7 +92,7 @@ class ReadyToCode extends React.Component {
                         <object
                             data={AutomatedSetupGraphicGitpod}
                             style={graphicGitpodStyles}
-                            className="why-gitpod__img"
+                            className="why-gitpod__img why-gitpod__img--3"
                         />
                     </div>
                 </div>

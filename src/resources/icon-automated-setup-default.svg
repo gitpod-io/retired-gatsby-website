@@ -14,13 +14,30 @@
   font-display: swap;
   src: local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3gnD_vx3rCs.woff2) format('woff2');
 }
+
+[data-name="Gruppe 643"] {
+    transform: translate(-168.688px, -113.724px);
+}
+
+@media(max-width: 800px) {
+    [data-name="Gruppe 643"] {
+        transform: translate(-168.688px, -60.724px) scale(.95);
+    }
+}
+
+@media(max-width: 500px) {
+    [data-name="Gruppe 643"] {
+        transform: translate(-168.688px, -70.724px);
+    }
+}
+
 </style>
     <defs>
         <pattern id="pattern" patternUnits="userSpaceOnUse" width="928" height="619" x="370" y="134">
             <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="928" height="619"/>
         </pattern>
     </defs>
-    <g id="Gruppe_643" data-name="Gruppe 643" transform="translate(-168.688 -113.724)">
+    <g id="Gruppe_643" data-name="Gruppe 643">
         <path id="Vereinigungsmenge_55" data-name="Vereinigungsmenge 55" d="M-1650.889-8058.818h-351.486c37.549-10.68,59.946-28.12,72.172-40.962,8.956-9.406,12.457-16.346,12.457-16.346h266.857v-2.036l1.724,2.036h1.355v1.6l22.959,27.111-22.959,27.111v1.486h-1.258l-1.82,2.149Zm-710.179,0v-57.308s260.635-.338,261.676,0,0,57.308,0,57.308Z" transform="translate(2532.756 8608.918)" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" fill="url(#pattern)" />
         <path id="Pfad_999" data-name="Pfad 999" d="M549.937,524.094H403.126c-1.082-1-2.164-2.024-3.228-3.044s-2.129-2.068-3.176-3.114a215.488,215.488,0,0,1-63.117-140.811h57.424a159.468,159.468,0,0,0,96.883,134.45,157.2,157.2,0,0,0,30.3,9.369A160,160,0,0,0,549.937,524.094Z" transform="translate(-19.555 -31.303)" fill="#e6e6e6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" />
         <path id="Pfad_1000" data-name="Pfad 1000" d="M455.812,211.17a161.114,161.114,0,0,0-38.183,39.7,158.888,158.888,0,0,0-23.974,57.257,160.068,160.068,0,0,0-3.14,31.725q0,6.257.465,12.414H333.557q-.355-6.175-.351-12.414a217.9,217.9,0,0,1,4.275-43.118,217.4,217.4,0,0,1,77.457-126.435Z" transform="translate(-19.507 -6.44)" fill="#e6e6e6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" />
