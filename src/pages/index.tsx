@@ -232,6 +232,11 @@ const StyledIndexPage = styled.div`
 
                 .why-gitpod__img-container {
                     position: relative;
+                    min-height: 250px;
+
+                    @media(max-width: ${sizes.breakpoints.sm}) {
+                        min-height: 200px;
+                    }
 
                     img {
                         position: absolute;
@@ -307,6 +312,24 @@ const StyledIndexPage = styled.div`
                     transform: translate(-1.3rem);
                 }
             }
+
+            &--3 {
+                @media(min-width: ${sizes.breakpoints.lg}) {
+                    transform: translateY(13.5rem) scale(.93) translateX(-2rem);
+                }
+
+                @media(min-width: ${sizes.breakpoints.md}) {
+                    transform: translateY(13.5rem) scale(0.93) translateX(-2rem);
+                }
+
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    transform: translateY(10rem);
+                }
+
+                @media(max-width: ${sizes.breakpoints.sm}) {
+                    transform: translateY(6rem);
+                }
+            }
         }
 
         img {
@@ -331,9 +354,7 @@ const StyledIndexPage = styled.div`
                 background: url("https://www.gitpod.io/galaxy.jpg") no-repeat 50% 50%;
             }
         }
-
     }
-
 
     /* ------------------------------------------- */
     /* ----- Section Open Source ----- */
