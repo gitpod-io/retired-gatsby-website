@@ -17,6 +17,10 @@ const StyledTestimonials = styled.div`
 
     h2 {
         margin-bottom: 1rem;
+
+        @media(min-width: ${sizes.breakpoints.sm}) {
+            display: none;
+        }
     }
 
     .tweets {
@@ -75,7 +79,7 @@ const Testimonials: React.SFC<{}> = () => (
     <StyledTestimonials className="grey-container">
         <section className="testimonials">
                 <div className="row">
-                    <h2>Don’t just Take Our Word for It</h2>
+                    <h2>Don’t just Take Our<br />Word for It</h2>
                 </div>
                 <div className="tweets">
                     {
