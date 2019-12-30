@@ -126,6 +126,7 @@ const StyledIndexPage = styled.div`
 
             @media(max-width: ${sizes.breakpoints.sm}) {
                 flex-direction: column;
+                text-align: center;
             }
 
             &-container {
