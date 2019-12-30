@@ -5,8 +5,11 @@ import TweetEmbed from 'react-tweet-embed'
 import { sizes } from '../styles/variables';
 
 const StyledTestimonials = styled.div`
-
     min-height: 60rem;
+
+    @media(max-width: ${sizes.breakpoints.sm}) {
+        text-align: center;
+    }
 
     /* ------------------------------------------- */
     /* ----- Section Testimonials ----- */
