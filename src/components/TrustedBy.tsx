@@ -11,6 +11,10 @@ const StyledTrustedBy = styled.section`
     padding: 4rem 0;
     margin-top: 4rem;
 
+    @media(max-width: ${sizes.breakpoints.sm}) {
+        text-align: center;
+    }
+
     h2 {
         margin-bottom: 2rem;
     }
