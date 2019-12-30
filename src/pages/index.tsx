@@ -366,8 +366,11 @@ const StyledIndexPage = styled.div`
     /* ------------------------------------------- */
 
     .open-source {
-
         padding-top: 0;
+
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            text-align: center;
+        }
 
         &__content {
             display: flex;
@@ -436,8 +439,11 @@ const StyledIndexPage = styled.div`
         h2 {
             color: ${colors.textDark};
             margin-bottom: 6rem;
-            font-size: 200%;
             font-weight: 600;
+
+            @media(min-width: ${sizes.breakpoints.md}) {
+                font-size: 200%;
+            }
         }
     }
 
