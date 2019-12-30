@@ -1,5 +1,4 @@
 ---
-url: https://medium.com/gitpod/github-flows-better-with-gitpod-e455d17990f9
 date: Thu Dec 19 2019 11:49:24 GMT+0000 (UTC)
 author: meysholdt
 subtitle: Gitpod on Your Infrastructure
