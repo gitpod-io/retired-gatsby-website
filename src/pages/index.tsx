@@ -197,6 +197,10 @@ const StyledIndexPage = styled.div`
 
     .why-gitpod {
 
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            text-align: center;
+        }
+
         &__box {
             display: flex;
             border-radius: 3px;
