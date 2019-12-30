@@ -2,11 +2,12 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
+import { sizes } from '../styles/variables'
 
 const StyledMore = styled.section`
     margin-bottom: 8rem;
 
-    @media(max-width: 360px) {
+    @media(max-width: ${sizes.breakpoints.sm}) {
         text-align: center;
     }
 
