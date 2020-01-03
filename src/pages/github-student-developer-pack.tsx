@@ -96,7 +96,7 @@ const offers: PricingBoxProps[] = [
     {
         title: 'Professional Student',
         img: <object data={BriefCase} />,
-        price: <span><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€35' : '$39')}</span> $9</span>,
+        price: <span><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€35' : '$39')}</span> {(isEurope() ? '€8' : '$9')}</span>,
         duration: 'Unlimited hours / month',
         hideButton: true,
         features: ['Unlimited workspaces', 'Public & Private', 'Non-commercial use only']
