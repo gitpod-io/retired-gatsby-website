@@ -10,6 +10,10 @@ import BriefCase from '../resources/briefcase.svg'
 import HandShake from '../resources/handshake.svg'
 import { isEurope } from './pricing'
 import Quote from '../components/Quote'
+import { Link } from 'gatsby'
+import Twitter from '../resources/twitter.svg'
+import Mail from '../resources/mail.svg'
+import Discourse from '../resources/discourse.svg'
 
 const StyledGithubStudentPackPage = styled.div`
     /* --------------------------------------- */
@@ -25,6 +29,45 @@ const StyledGithubStudentPackPage = styled.div`
         margin: 5rem 0;
         text-align: center;
     }
+
+    /* --------------------------------------- */
+    /* ----- Info ----- */
+    /* --------------------------------------- */
+
+    .info {
+        @media(min-width: 830px) {
+            flex: 0 0 44%;
+
+            &:last-of-type {
+                margin-left: auto;
+            }
+        }
+
+        @media(max-width: 830px) {
+            &:not(:last-of-type) {
+                margin-bottom: 5rem;
+            }
+        }
+
+        &-container {
+            display: flex;
+
+            @media(max-width: 830px) {
+                flex-direction: column;
+            }
+        }
+
+        p:last-of-type {
+            margin-bottom: 2rem;
+        }
+
+        a {
+            &:not(:last-of-type) {
+                margin-right: 2rem;
+            }
+        }
+    }
+
 `
 
 const offers: PricingBoxProps[] = [
@@ -58,6 +101,9 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
     <IndexLayout canonical="/github-student-developer-pack/" title="GitHub Student Developer Pack">
         <StyledGithubStudentPackPage>
             <div className="grey-container">
+
+                {/* ----- Banner ----- */}  
+
                 <Banner 
                     subtitle="GitHub Student Developer Pack"
                     title={<h1>Make Your Life Easier with Gitpod</h1>}
@@ -99,10 +145,39 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
                     </div>
                 </section>
             </div>
+
             <div className="row">
+
+                {/* ----- Quote ----- */}                            
+
                 <Quote 
                     title="Stop wasting time with tedious setups, learn amazing programming skills instead!"
                 />
+
+                {/* ----- Info ----- */}  
+
+                <section className="info-container">
+                    <div className="info">
+                        <h3>Getting Started with Gitpod</h3>
+                        <p>You can simply start coding in Gitpod by prefixing any GitHub URL with gitpod.io/#</p>
+                        <p>If you'd like to have a detailed description about Gitpod and it's IDE, Theia, please have a look at our documentation.</p>
+                        <Link to="/docs/" className="btn">Gitpod Docs</Link>
+                    </div>
+                    <div className="info">
+                        <h3>Do You Need Help?</h3>
+                        <p>If you have any questions, issues or feedback, please get in touch. We love to hear your feedback and help you out.</p>
+                        <Link to="/contact"  title="Contact">
+                            <img alt="Mail Logo" src={Mail} />
+                        </Link>
+                        <a href="https://community.gitpod.io/" target="_blank" rel="noopener" title="Community">
+                            <img alt="Discourse Logo" src={Discourse} style={{width: 25}}/>
+                        </a>
+                        <a href="https://twitter.com/gitpod" target="_blank" rel="noopener" title="Twitter">
+                            <img alt="Twitter Logo" src={Twitter} />
+                        </a>
+                    </div>
+                </section>
+
             </div>
         </StyledGithubStudentPackPage>
     </IndexLayout>
