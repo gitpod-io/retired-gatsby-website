@@ -4,11 +4,11 @@ import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import { colors, shadows, sizes } from '../styles/variables'
 
-const StyledPricingBox = styled.div<{transform?: string, background?: boolean}>`
+const StyledPricingBox = styled.div<{transform?: string, background?: boolean, hideButton?: boolean}>`
     position: relative;
     margin-bottom: 3rem;
     padding: 3rem 4rem;
-    min-height: 50rem;
+    min-height: ${({hideButton}) => hideButton ? 'auto' : '50rem'};
     min-width: 25rem;
     width: 24%;
     text-align: center;
@@ -21,10 +21,6 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean}>`
     @media(min-width: ${sizes.breakpoints.lg}) {
         transform: ${({transform}) => transform ? transform : null };
         z-index: ${({transform}) => transform ? '1' : null };
-
-        &:last-of-type {
-            margin-left: auto;
-        }
     }
 
     @media(max-width: ${sizes.breakpoints.lg}) {
@@ -48,10 +44,11 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean}>`
         color: inherit;
     }
 
-    img {
+    img, object {
         display: inline-block;
         margin: 3rem 0 1rem;
         height: 8rem;
+        width: 8rem;
     }
 
     .price {
@@ -85,13 +82,14 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean}>`
     }
 
     @media(min-width: ${sizes.breakpoints.lg}) {
-        span {
+        .span {
             display: flex;
             justify-content: space-between;
         }
     }
 
     .btn {
+        display: ${({hideButton}) => hideButton ? 'none': '' };
         position: absolute;
         bottom: 2rem;
         left: 50%;
@@ -102,7 +100,7 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean}>`
 export interface PricingBoxProps {
     title: string
     img: JSX.Element
-    price?: string
+    price?: string | JSX.Element
     duration?: string
     feature?: string | JSX.Element
     features?: (string | JSX.Element)[]
@@ -110,10 +108,11 @@ export interface PricingBoxProps {
     background?: boolean
     btnText?: string
     link?: string
+    hideButton?: true 
 }
 
-const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, feature, features, btnText, transform, background, link }) => (
-    <StyledPricingBox transform={transform} background={background}>
+const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, feature, features, btnText, transform, background, link, hideButton }) => (
+    <StyledPricingBox transform={transform} background={background} hideButton={hideButton}>
         <h4>{title}</h4>
         { img }
         { price ? <div className="price">{price}</div> : null }
@@ -124,7 +123,7 @@ const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, f
                 { features.map((f, i) => <li key={i}>{f}</li>) }
             </ul>
         : null }
-        <Link to={link || '/#get-started'} className="btn" style={ background ? {color: colors.textDark} : {} }>{btnText ? btnText : 'Start for Free'}</Link>
+        <Link to={link || '/#get-started'} className="btn" style={background ? {color: colors.textDark} : {}}>{btnText ? btnText : 'Start for Free'}</Link>
     </StyledPricingBox>
 )
 

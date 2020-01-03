@@ -28,14 +28,14 @@ const plans: PricingBoxProps[] = [
         img: <object data={LightBulb}/>,
         price: isEurope() ? '€8' : '$9',
         duration: '100 hours / month',
-        features: ['Private & Public Repos', <span>4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span>30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
+        features: ['Private & Public Repos', <span className="span">4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
     },
     {
         title: 'Professional',
         img: <img alt='Rocket' src={Rocket}/>,
         price: isEurope() ? '€23' : '$25',
         duration: 'unlimited hours',
-        features: ['Private & Public Repos', <span>8 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span>Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>, <span>30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
+        features: ['Private & Public Repos', <span className="span">8 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
         transform: 'scale(1.05)',
     },
     {
@@ -43,7 +43,7 @@ const plans: PricingBoxProps[] = [
         img: <object data={MagicCap}/>,
         price: isEurope() ? '€35' : '$39',
         duration: 'unlimited hours',
-        features: ['Private & Public Repos', <span>16 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span>Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>,  <span>60min Timeout <PopOver description="Workspaces without user activity are stopped after 60 minutes."/></span>, <span>3h Timeout Boost <PopOver description="You can manually boost the timeout to 3h within a running workspace."/></span>],
+        features: ['Private & Public Repos', <span className="span">16 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>,  <span className="span">60min Timeout <PopOver description="Workspaces without user activity are stopped after 60 minutes."/></span>, <span className="span">3h Timeout Boost <PopOver description="You can manually boost the timeout to 3h within a running workspace."/></span>],
     },
     {
         title: 'Enterprise',
@@ -75,6 +75,12 @@ const StyledPricingPage = styled.div`
             @media(max-width: 650px) {
                 flex-direction: column;
                 align-items: center;
+            }
+
+            & > * {
+                &:last-of-type {
+                    margin-left: auto;
+                }
             }
         }
 
