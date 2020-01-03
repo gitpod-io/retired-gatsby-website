@@ -78,15 +78,15 @@ const StyledGithubStudentPackPage = styled.div`
 
 const offers: PricingBoxProps[] = [
     {
-        title: 'Open-source',
+        title: 'Open Source',
         img: <object data={HandShake} />,
         price: <span>Free</span>,
-        duration: '100 hours / month',
+        duration: '50 hours / month',
         hideButton: true,
         features: ['Unlimited workspaces', 'Public repositories'],
     },
     {
-        title: 'Students',
+        title: 'Student',
         img: <object data={StudyTable} />,
         price: <span><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€8' : '$9')}</span> Free</span>,
         duration: '100 hours / month',
@@ -94,7 +94,7 @@ const offers: PricingBoxProps[] = [
         features: ['Unlimited workspaces', 'Public & Private', 'Non-commercial use only']
     },
     {
-        title: 'Students Unlimited',
+        title: 'Professional Student',
         img: <object data={BriefCase} />,
         price: <span><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€35' : '$39')}</span> $9</span>,
         duration: 'Unlimited hours / month',
@@ -122,7 +122,7 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
                 <section>
                     <div className="row">
                         <h2>GitHub Student Offer</h2>
-                        <p>With the <a href="https://education.github.com/pack" target="_blank" rel="noopener">GitHub Student Developer Pack</a>, you get the same features as with our usual subscription but at a much better price. We’re happy to be able to empower student developers participating in it.</p>
+                        <p>With the <a href="https://education.github.com/pack" target="_blank" rel="noopener">GitHub Student Developer Pack</a>, you get the same features as with our usual plans but at a much better price. We’re happy to be able to empower student developers participating in it.</p>
                         <div className="offers">
                             {
                                 offers.map(
@@ -165,13 +165,13 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
                 <section className="info-container">
                     <div className="info">
                         <h3>Getting Started with Gitpod</h3>
-                        <p>You can simply start coding in Gitpod by prefixing any GitHub URL with gitpod.io/#</p>
-                        <p>If you'd like to have a detailed description about Gitpod and it's IDE, Theia, please have a look at our documentation.</p>
+                        <p>You can simply start coding in Gitpod by prefixing any GitHub URL with <code>gitpod.io/#</code></p>
+                        <p>For a more detailed description of Gitpod and its IDE, Theia, please have a look at our documentation.</p>
                         <Link to="/docs/" className="btn">Gitpod Docs</Link>
                     </div>
                     <div className="info">
                         <h3>Do You Need Help?</h3>
-                        <p>If you have any questions, issues or feedback, please get in touch. We love to hear your feedback and help you out.</p>
+                        <p>If you have any question, issue or feedback, please get in touch. We love to hear your feedback and help you out.</p>
                         <Link to="/contact"  title="Contact">
                             <img alt="Mail Logo" src={Mail} />
                         </Link>
