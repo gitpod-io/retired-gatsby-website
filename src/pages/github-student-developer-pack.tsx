@@ -9,6 +9,7 @@ import StudyTable from '../resources/study-table.svg'
 import BriefCase from '../resources/briefcase.svg'
 import HandShake from '../resources/handshake.svg'
 import { isEurope } from './pricing'
+import Quote from '../components/Quote'
 
 const StyledGithubStudentPackPage = styled.div`
     /* --------------------------------------- */
@@ -97,6 +98,11 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
                         </div>
                     </div>
                 </section>
+            </div>
+            <div className="row">
+                <Quote 
+                    title="Stop wasting time with tedious setups, learn amazing programming skills instead!"
+                />
             </div>
         </StyledGithubStudentPackPage>
     </IndexLayout>

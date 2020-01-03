@@ -27,6 +27,7 @@ const StyledQuote = styled.section`
         }
 
         span {
+            max-width: 80rem;
             @media(max-width: ${sizes.breakpoints.sm}) {
                 width: 100%;
             }
