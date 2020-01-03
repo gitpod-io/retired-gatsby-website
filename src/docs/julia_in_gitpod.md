@@ -8,4 +8,4 @@ A great example for a ready-to-code Julia dev environment is: [JesterOrNot/Gitpo
 
 Here is a real project with an automated Gitpod setup!
 
-[![JesterOrNot/DifferentialEquations.jl](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.
+[![JesterOrNot/DifferentialEquations.jl](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/DifferentialEquations.jl)
