@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { Link } from 'gatsby'
 import styled from '@emotion/styled'
-import { sizes, colors } from '../styles/variables'
+import { sizes } from '../styles/variables'
+import link from '../utils/link'
 
 const StyledBanner = styled.header`
     /* ------------------------------------------- */
@@ -29,15 +29,6 @@ const StyledBanner = styled.header`
         max-width: 70rem;
     }
 
-    .btn + p {
-        display: inline-block;
-
-        span {
-            color: ${colors.link};
-            font-weight: 600;
-        }
-    }
-
     .btn {
         margin: 5rem 2rem 2rem 0;
 
@@ -45,6 +36,11 @@ const StyledBanner = styled.header`
             margin-top: 3rem;
         }
     }
+
+    p + .btn {
+        margin-top: 3rem;
+    }
+
 
     object, img {
         display: block;
@@ -61,7 +57,7 @@ const StyledBanner = styled.header`
 interface BannerProps {
     subtitle: string
     title: JSX.Element
-    paragraph?: string
+    paragraph?: string | JSX.Element
     linkPath: string
     linkText: string
     img: JSX.Element
@@ -74,7 +70,7 @@ const Banner: React.SFC<BannerProps> = ({subtitle, title, paragraph, linkPath, l
                 <h3 className="sub">{subtitle}</h3>
                 {title}
                 { paragraph ? <p className="para">{paragraph}</p> : null }
-                <Link to={linkPath} className="btn btn--cta">{linkText}</Link>
+                {link(linkPath, linkText, true, false)}
                 {children}
             </div>
             {img}
