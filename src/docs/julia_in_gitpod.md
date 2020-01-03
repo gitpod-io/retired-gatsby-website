@@ -1,11 +1,11 @@
 # Julia
 
-> 🚧 Please help improve this guide by [editing it](https://gitpod.io/#https://github.com/gitpod-io/website/blob/master/src/docs/julia_in_gitpod.md).
+It's relatively easy to set up your Julia project in Gitpod.
 
-While Gitpod doesn't currently support Julia out-of-the-box, it's easy to set up your Julia project in Gitpod.
+## Workspace Configuration
 
-A great example for a ready-to-code Julia dev environment is: [JesterOrNot/Gitpod-Julia](https://github.com/JesterOrNot/Gitpod-Julia).
+A great minimal example of a ready-to-code Julia development environment is [JesterOrNot/Gitpod-Julia](https://github.com/JesterOrNot/Gitpod-Julia).
 
-Here is a real project with an automated Gitpod setup!
+To showcase a real-world Julia project in Gitpod we gitpodified the Julia Programming Language in Gitpod. Try it here:
 
-[![JesterOrNot/DifferentialEquations.jl](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/DifferentialEquations.jl)
+[![JesterOrNot/Julia](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Julia)
