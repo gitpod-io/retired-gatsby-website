@@ -25,11 +25,8 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
 
     @media(max-width: ${sizes.breakpoints.lg}) {
         transform: scale(1.04);
-        min-height: 54rem;
+        min-height:  ${({hideButton}) => hideButton ? 'auto' : '54rem'};
         margin-bottom: 5rem;
-    }
-
-    @media(max-width: ${sizes.breakpoints.sm}) {
     }
 
     @media(max-width: ${sizes.breakpoints.lg}) {
