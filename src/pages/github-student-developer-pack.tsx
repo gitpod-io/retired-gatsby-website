@@ -14,6 +14,7 @@ import { Link } from 'gatsby'
 import Twitter from '../resources/twitter.svg'
 import Mail from '../resources/mail.svg'
 import Discourse from '../resources/discourse.svg'
+import { sizes } from '../styles/variables'
 
 const StyledGithubStudentPackPage = styled.div`
     /* --------------------------------------- */
@@ -23,6 +24,11 @@ const StyledGithubStudentPackPage = styled.div`
     .offers {
         display: flex;
         justify-content: space-between;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     .btn-container {
