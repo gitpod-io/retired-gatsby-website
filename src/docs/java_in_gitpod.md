@@ -1,17 +1,17 @@
 # Java
 
-Gitpod comes with great support for Java builtin. Still depending on your particular project you might want to further optimize the experience.
+Gitpod comes with great support for Java builtin. Still, depending on your particular project you might want to further optimize the experience.
 
-A great example for a ready-to-code Java dev environment is our [Spring Petclinic Example](https://github.com/gitpod-io/spring-petclinic).
+A great example of a ready-to-code Java dev environment is our [Spring Petclinic Example](https://github.com/gitpod-io/spring-petclinic).
 
 ## Ready-to-code Dev Environments for Java
 
-In order to setup your project, you should run `gp init` in the terminal first. This will create the two configuration files needed to explain Gitpod what your project needs.
-A dev environment is based on a Docker image. But don't fear you don't need to understand Docker in order to get started. In most cases the default docker image is enough.
+To set up your project, you should run `gp init` in the terminal first. This will create the two configuration files needed to explain Gitpod what your project needs.
+A dev environment is based on a Docker image. But don't fear you don't need to understand Docker to get started. In most cases, the default docker image is enough.
 
 ### SDKMAN
 
-For Java it comes ready equipped with [SDKMAN!](https://sdkman.io/), which is a version manager that takes care of managing and installing not only different Java versions, but also different version of other JVM langauges such as Scala or Kotlin (both suppoeted in Gitpod, too).
+For Java, it comes readily equipped with [SDKMAN!](https://sdkman.io/), which is a version manager that takes care of managing and installing not only different Java versions but also a different version of other JVM languages such as Scala or Kotlin (both supported in Gitpod, too).
 
 It also installs Maven and Gradle in case you don't use the [wrapper version](https://docs.gradle.org/current/userguide/gradle_wrapper.html) that is often recommended.
 
@@ -19,7 +19,7 @@ Check out the [documentation of SDKMAN!](https://sdkman.io/usage) to see how to 
 
 #### SDKMAN in Docker
 
-Although you can use sdk in your terminal, you should put the tools and versions into your Dockerfile, so you and your team get the very same configuration everytime.
+Although you can use sdk in your terminal, you should put the tools and versions into your Dockerfile, so you and your team get the very same configuration every time.
 To do that you need to alter the generated `.gitpod.Dockerfile`. Here's an example that will install Java 12 with the J9 VM from "Adopt a JDK".
 
 ```Dockerfile
@@ -29,7 +29,7 @@ RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
              && sdk install java 12.0.1.j9-adpt"
 ```
 
-> Note that you always need to run the `sdkman-init.sh` in a bash before you can use sdk.
+> Note that you always need to run the `sdkman-init.sh` in bash before you can use SDK.
 
 You can add additional tools and versions like this:
 
@@ -47,7 +47,7 @@ Gitpod provides disposable dev environments, which means you are getting fresh d
 
 In the generated `.gitpod.yml` you will find the following section:
 ```yml
-# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/44_config_start_tasks/
+# List the startup tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/44_config_start_tasks/
 tasks:
 - init: echo 'init script' # runs during prebuild
   command: echo 'start script'
@@ -55,11 +55,11 @@ tasks:
 
 You can have as many tasks as you which, each will result in an opened terminal when you start a dev environment.
 
-Each task supports multiple phases, most importantly `before`, `init`, `command`. In order to be ready to code a dev environment should not only be in sync with the git repo, but also needs to have the currently checked out state built.
-For instance in the [Spring Petclinic demo](https://github.com/gitpod-io/spring-petclinic) the command section looks like this:
+Each task supports multiple phases, most importantly `before`, `init`, `command`. To be ready to code a dev environment should not only be in sync with the git repo but also needs to have the currently checked out state built.
+For instance, in the [Spring Petclinic demo](https://github.com/gitpod-io/spring-petclinic) the command section looks like this:
 
 ```yml
-# start up tasks
+# startup tasks
 tasks:
 - init: ./mvnw package -DskipTests
   command: java -jar target/*.jar
@@ -67,11 +67,11 @@ tasks:
 
 Since we have installed the [Gitpod app](https://github.com/apps/gitpod-io) on that GitHub repository, Gitpod will prebuild any branch as soon as it starts. During a prebuild it will
  1) start a container based on the docker image,
- 2) clone the repository and checkout the respective branch,
+ 2) clone the repository and check out the respective branch,
  3) run the `before` and `init` parts of every task,
  4) capture the result and store it
 
-Once you or your team mates start a dev environment, you will get the prebuild state. The log output from `init` is still presented in the terminal but it will have two additional lines, e.g.:
+Once you or your teammates start a dev environment, you will get the prebuild state. The log output from `init` is still presented in the terminal but it will have two additional lines, e.g.:
 
 ```sh
 🍌 This task ran as part of a workspace prebuild.
@@ -92,4 +92,4 @@ Gitpod comes equipped with the following VS Code extensions:
 
 You can [install additional extensions](/docs/vscode_extensions/) for your project if you want.
 
-Most of the information you find in the [Java for VS Code](https://code.visualstudio.com/docs/languages/java) documentation apply to Gitpod as well.
+Most of the information you find in the [Java for VS Code](https://code.visualstudio.com/docs/languages/java) documentation applies to Gitpod as well.
