@@ -28,7 +28,7 @@ We've pre-installed `brew` for all Gitpod workspaces (using [workspace-full](htt
 
 ![Homebrew in Gitpod screenshot](./brew/homebrew-in-gitpod.png)
 
-Here are a couple details to be aware of though:
+Here are a couple details to be aware of:
 
 - Packages installed with `brew` have a low priority in the `$PATH`. This means that if you `brew install` a package that already exists in Gitpod, you'll just continue using the old package. If you don't like that, simply `apt-get remove` the old package in your [.gitpod.Dockerfile](https://www.gitpod.io/docs/42_config_docker/).
 
