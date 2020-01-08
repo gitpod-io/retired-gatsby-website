@@ -2,7 +2,7 @@
 author: jankeromnes
 date: Wed Jan 8 2020 09:00:00 GMT+0000 (UTC)
 image: /teaser-brew.png
-subtitle: brew install anything in Gitpod
+subtitle: "'brew install anything' in Gitpod"
 teaserImage: /teaser-brew.png
 title: Gitpod ❤️ Homebrew
 ---
