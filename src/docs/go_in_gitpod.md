@@ -38,7 +38,7 @@ vscode:
 ```
 
 ### Using the deps dependency manager in Gitpod
-If your project uses the deps dependency manager then you need to add a [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/42_config_docker/) to your project a basic example that extends the default workspace image might be something like
+If your project uses the [`dep`](https://golang.github.io/dep/) dependency manager then you need to add a [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/42_config_docker/) to your project a basic example that extends the default workspace image might be something like
 ```Dockerfile
 FROM gitpod/workspace-full
 
