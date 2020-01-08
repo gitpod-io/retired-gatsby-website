@@ -2,14 +2,14 @@
 author: jankeromnes
 date: Wed Jan 8 2020 09:00:00 GMT+0000 (UTC)
 image: /teaser-brew.png
-subtitle: '`brew install anything` in Gitpod'
+subtitle: brew install anything in Gitpod
 teaserImage: /teaser-brew.png
 title: Gitpod ❤️ Homebrew
 ---
 
-Are you tired of `apt-get`? Can't use `sudo` right now? …
+Are you tired of **apt-get**? Can't use **sudo** right now? …
 
-## You can now `brew install <anything>` in Gitpod! 🎉
+## You can now **brew install anything** in Gitpod! 🎉
 
 - ✓ Easily install any Linux tool or package with one command
 - ✓ Doesn't require `sudo` permission
