@@ -5,3 +5,6 @@ tasks:
   command: yarn dev --host 0.0.0.0
 - init: cd plugins/gatsby-remark-gitpod && npm install
   openMode: split-right
+vscode:
+  extensions:
+    - esbenp.prettier-vscode@3.18.0:SpDMXXww8cAUOXaBCNECgQ==
