@@ -93,7 +93,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                     alt: 'freeCodeCamp.org',
                     url: 'https://www.freecodecamp.org/',
                     svg: FreeCodeCamp,
-                    transform: 'scaleY(1.3)'
+                    className: 'fcc'
                 },
                 {
                     alt: 'Gatsby Logo',
