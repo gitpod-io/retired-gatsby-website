@@ -9,7 +9,7 @@ title: Gitpod ❤️ Homebrew
 
 Are you tired of **apt-get**? Can't use **sudo** right now? …
 
-## You can now **brew install anything** in Gitpod! 🎉
+## You can now '**brew install anything**' in Gitpod! 🎉
 
 - ✓ Easily install any Linux tool or package with one command
 - ✓ Doesn't require `sudo` permission
