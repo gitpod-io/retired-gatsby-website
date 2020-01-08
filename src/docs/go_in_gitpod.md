@@ -18,7 +18,7 @@ Before we start, here are some already gitpodified repositories to give you an i
 ### VSCode Extensions
 | Name    | Description |
 |---------|----------------------|
-| [Go Test Explorer](https://marketplace.visualstudio.com/items?itemName=premparihar.gotestexplorer) | Provides Test Explorer for Go which enables to run your tests at the click of a button!
+| [Go Test Explorer](https://marketplace.visualstudio.com/items?itemName=premparihar.gotestexplorer) | Provides Test Explorer for Go which enables to run your tests at the click of a button! |
 ### Pre-builds
 Modern development is powered by OSS (Open Source Software) and as such external dependencies are a fact of life luckily in go it does not take long to gather these dependencies, so here is how to have them automatically fetched before you open your Gitpod workspace!
 ```yaml
