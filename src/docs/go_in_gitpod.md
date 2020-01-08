@@ -44,7 +44,7 @@ FROM gitpod/workspace-full
 
 USER gitpod
 
-RUN brew update && brew install dep
+RUN brew install dep
 ```
 Also, don't forget to reference the above Dockerfile in your `.gitpod.yml` configuration file, like so:
 ```yaml
