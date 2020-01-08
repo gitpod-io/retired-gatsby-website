@@ -39,6 +39,14 @@ const StyledTrustedBy = styled.section`
             grid-template-columns: repeat(1, 1fr);
         }
     }
+
+    .fcc {
+        transform: scale(1.05);
+
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            transform: scale(1.3);
+        }
+    }
 `
 
 const StyledBrandImage = styled.img<{transform?: string}>`
@@ -54,7 +62,8 @@ interface Brand {
     alt: string
     url: string
     svg: string
-    transform?: string
+    transform?: string,
+    className?: string 
 }
 
 interface TrustedByProps {
@@ -70,7 +79,12 @@ const TrustedBy: React.SFC<TrustedByProps> = ({brands}) => (
                         {
                             brands.map((b, i) => (
                                 <a href={b.url} target="_blank" key={i}>
-                                    <StyledBrandImage src={b.svg} alt={b.alt} transform={b.transform}/>
+                                    <StyledBrandImage 
+                                        src={b.svg} 
+                                        alt={b.alt} 
+                                        transform={b.transform}
+                                        className={b.className}
+                                    />
                                 </a>
                             ))
                         }
