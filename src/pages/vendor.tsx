@@ -29,7 +29,7 @@ const VendorPage: React.SFC<{}> = () => (
                 title={<h1>Use <strong>Gitpod as a Showroom</strong> for<br /> Your Developer Products</h1>}
                 linkPath="/vendor/#vendor"
                 linkText="Choose your Solution"
-                img={<object data={Vendor}/>}
+                img={<object tabIndex={-1} data={Vendor}/>}
             />
 
             {/* ----- Section Features ----- */}

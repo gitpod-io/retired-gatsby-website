@@ -65,7 +65,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                 paragraph="Adding Gitpod to your development tools means less waiting, no tedious setups, faster onboarding, higher code quality and a smoother workflow."
                 linkPath="/enterprise/#enterprise"
                 linkText="Choose your Solution"
-                img={<object data={Planet} />}
+                img={<object tabIndex={-1} data={Planet} />}
             />
 
             {/* ----- Section Features ----- */}

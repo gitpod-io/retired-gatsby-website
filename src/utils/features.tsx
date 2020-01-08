@@ -55,7 +55,7 @@ export const featuresCardsData = [
             <p>Gitpod is the first IDE that builds your project before you even open it.</p>
         </React.Fragment>,
         more: <p>Read more about <Link to="/docs/46_prebuilds/">Prebuilt Workspaces.</Link></p>,
-        img: <object data={PrebuiltWorkspaces}/>,
+        img: <object tabIndex={-1} data={PrebuiltWorkspaces}/>,
         isIllustration: true
     },
     {
@@ -107,7 +107,7 @@ export const featuresCardsData = [
             <p>To sneak in a bugfix on a maintenance branch or a code review - just start more workspaces - in parallel.</p>
         </React.Fragment>,
         strong: 'Use clean, fresh workspaces for every task.',
-        img: <object data={ParallelWorkspaces}/>,
+        img: <object tabIndex={-1}  data={ParallelWorkspaces}/>,
         isIllustration: true
     },
     {
@@ -120,7 +120,7 @@ export const featuresCardsData = [
             <p>Create a snapshot of your work and share it with the world. Based on your snapshot new workspaces can be created and edited independently.</p>
         </React.Fragment>,
         more: <p>Read more about <Link to="/docs/33_sharing_and_collaboration/#sharing-snapshots">Sharing a Snapshot.</Link></p>,
-        img:<object data={CreateASnapshot}/>,
+        img:<object tabIndex={-1}  data={CreateASnapshot}/>,
         isIllustration: true
     },
     {
@@ -133,7 +133,7 @@ export const featuresCardsData = [
             <p>No more need for expensive notebooks, with Gitpod <strong>coding becomes accessible anywhere and for everyone</strong>.</p>
             <p>It works just as smoothly on a Chromebook as on a high-end notebook or any other computer.</p>
         </React.Fragment>,
-        img: <object data={WorksOnAnyDevice}/>,
+        img: <object tabIndex={-1}  data={WorksOnAnyDevice}/>,
         caption: '*comprehensive tablet support is coming soon',
         isIllustration: true
     },
@@ -147,6 +147,6 @@ export const featuresCardsData = [
             <p>Collaborate with your friends and colleagues and hunt down bugs together.</p>
         </React.Fragment>,
         more: <p>Read more about <Link to="/docs/33_sharing_and_collaboration/">Sharing a Workspace.</Link></p>,
-        img:<object data={ShareWorkspaces} style={{transform: 'translateY(2rem) scale(.9)'}}/>,
+        img:<object tabIndex={-1}  data={ShareWorkspaces} style={{transform: 'translateY(2rem) scale(.9)'}}/>,
     }
 ]
