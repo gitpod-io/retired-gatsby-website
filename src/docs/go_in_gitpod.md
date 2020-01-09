@@ -31,7 +31,7 @@ vscode:
 
 ### **[Pre-builds](https://www.gitpod.io/docs/46_prebuilds/)**
 
-Modern development is powered by OSS (Open Source Software) and as such external dependencies are a fact of life luckily in go it does not take long to gather these dependencies, so here is how to have them automatically fetched before you open your Gitpod workspace!
+Here is how to have them automatically fetched before you open your Gitpod workspace!
 
 ```yaml
 tasks:
