@@ -21,7 +21,7 @@ Before we start, here are some already gitpodified repositories to give you an i
 | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | [Go Test Explorer](https://marketplace.visualstudio.com/items?itemName=premparihar.gotestexplorer) | Provides Test Explorer for Go which enables to run your tests at the click of a button! |
 
-To add this to your Gitpod add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/)
+To install Go Test Explorer for your repository, add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/)
 
 ```YAML
 vscode:
