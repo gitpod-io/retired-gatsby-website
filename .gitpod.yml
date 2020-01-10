@@ -8,3 +8,7 @@ tasks:
 vscode:
   extensions:
     - esbenp.prettier-vscode@3.18.0:SpDMXXww8cAUOXaBCNECgQ==
+github:
+  prebuilds:
+     branches: true
+     pullRequestsFromForks: true
