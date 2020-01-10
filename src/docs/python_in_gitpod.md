@@ -2,9 +2,18 @@
 
 Gitpod comes with great support for Python builtin. Still, depending on your particular project, you might want to further optimize the experience.
 
-## GUI Applications with wxPython
+## Examples
 
-Have a super cool GUI application you are building with wxPython? Want to run it in Gitpod? Please take a look at [gitpod-io/Gitpod-PythonGUI-Example](https://github.com/gitpod-io/Gitpod-PythonGUI-Example)
+Before we get started, Here are some examples of already Gitpodified workspace setups!
+
+| Name                                                                                                |                                                                                                              Open In Gitpod Button |
+| --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------: |
+| [gitpod-io/django-locallibrary-tutorial](https://github.com/gitpod-io/django-locallibrary-tutorial) |        [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#gitpod-io/django-locallibrary-tutorial) |
+| [JesterOrNot/Gitpod-PyQt](https://github.com/JesterOrNot/Gitpod-PyQt)                               |    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-PyQt) |
+| [gitpod-io/wxPython-example](https://github.com/gitpod-io/wxPython-example)                         | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/wxPython-example) |
+| [techwithtim/Hangman](https://github.com/techwithtim/Hangman)                                       |        [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/techwithtim/Hangman) |
+
+## GUI Applications with wxPython
 
 To install wxPython to your repository please add the following to your [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/42_config_docker/) if you don't have one please run `gp init` and commit the two generated files.
 
@@ -55,14 +64,3 @@ ports:
 tasks:
   - command: python3 app.py
 ```
-
-## Examples
-
-Here are some examples of already Gitpodified workspace setups!
-
-| Name                                                                                                |                                                                                                              Open In Gitpod Button |
-| --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------: |
-| [gitpod-io/django-locallibrary-tutorial](https://github.com/gitpod-io/django-locallibrary-tutorial) |        [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#gitpod-io/django-locallibrary-tutorial) |
-| [JesterOrNot/Gitpod-PyQt](https://github.com/JesterOrNot/Gitpod-PyQt)                               |    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-PyQt) |
-| [gitpod-io/wxPython-example](https://github.com/gitpod-io/wxPython-example)                         | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/wxPython-example) |
-| [techwithtim/Hangman](https://github.com/techwithtim/Hangman)                                       |        [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/techwithtim/Hangman) |
