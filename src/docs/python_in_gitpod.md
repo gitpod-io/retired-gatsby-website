@@ -42,6 +42,7 @@ Here is an example `.gitpod.yml`:
 image:
   file: .gitpod.Dockerfile
 
+# This will expose all necessary ports needed for your VNC image
 ports:
   - port: 6080
     onOpen: open-preview
@@ -50,6 +51,7 @@ ports:
   - port: 35900
     onOpen: ignore
 
+# This will make it so that on workspace start it will run a file called `app.py`
 tasks:
   - command: python3 app.py
 ```
