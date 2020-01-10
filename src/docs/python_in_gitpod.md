@@ -6,12 +6,12 @@ Gitpod comes with great support for Python builtin. Still, depending on your par
 
 Before we get started, Here are some examples of already Gitpodified workspace setups!
 
-| Name                                                                                                |                                                                                                              Open In Gitpod Button |
-| --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------: |
-| [gitpod-io/django-locallibrary-tutorial](https://github.com/gitpod-io/django-locallibrary-tutorial) |        [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#gitpod-io/django-locallibrary-tutorial) |
-| [JesterOrNot/Gitpod-PyQt](https://github.com/JesterOrNot/Gitpod-PyQt)                               |    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-PyQt) |
-| [gitpod-io/wxPython-example](https://github.com/gitpod-io/wxPython-example)                         | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/wxPython-example) |
-| [techwithtim/Hangman](https://github.com/techwithtim/Hangman)                                       |        [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/techwithtim/Hangman) |
+| Name                                                                                                |                                                                                                              Open In Gitpod Button |                                        Descripton |
+| --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------: | ------------------------------------------------: |
+| [gitpod-io/django-locallibrary-tutorial](https://github.com/gitpod-io/django-locallibrary-tutorial) |        [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#gitpod-io/django-locallibrary-tutorial) |       An example website written in Django by MDN |
+| [JesterOrNot/Gitpod-PyQt](https://github.com/JesterOrNot/Gitpod-PyQt)                               |    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-PyQt) |                         A PyQt example for Gitpod |
+| [gitpod-io/wxPython-example](https://github.com/gitpod-io/wxPython-example)                         | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/wxPython-example) |                     A wxPython example for Gitpod |
+| [techwithtim/Hangman](https://github.com/techwithtim/Hangman)                                       |        [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/techwithtim/Hangman) | A simple hangman game made with Python and PyGame |
 
 ## GUI Applications with wxPython
 
