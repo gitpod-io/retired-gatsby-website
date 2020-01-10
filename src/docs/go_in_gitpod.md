@@ -31,7 +31,7 @@ vscode:
 
 ### **[Start-up tasks](https://www.gitpod.io/docs/44_config_start_tasks/)**
 
-Here is how to have them automatically fetched before you open your Gitpod workspace!
+Here is how to have your dependencies automatically fetched before you open your Gitpod workspace!
 
 ```yaml
 tasks:
