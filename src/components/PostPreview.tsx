@@ -97,7 +97,7 @@ const PostPreview: React.SFC<PostPreviewProps> = (props) => {
                 </div>
                 <div className="info">
                     <span>
-                        {date.toLocaleDateString()}
+                        {date.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' })}
                     </span>
                     <span>
                         by&nbsp;
