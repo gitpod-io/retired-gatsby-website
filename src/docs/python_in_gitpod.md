@@ -6,7 +6,7 @@ Gitpod comes with great support for Python builtin. Still, depending on your par
 
 Before we get started, Here are some examples of already Gitpodified workspace setups!
 
-| Name                                                                                                |                                                                                                              Open In Gitpod Button |                                        Descripton |
+| Name                                                                                                |                                                                                                              Try it |                                        Descripton |
 | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------: | ------------------------------------------------: |
 | [gitpod-io/django-locallibrary-tutorial](https://github.com/gitpod-io/django-locallibrary-tutorial) |        [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#gitpod-io/django-locallibrary-tutorial) |       An example website written in Django by MDN |
 | [JesterOrNot/Gitpod-PyQt](https://github.com/JesterOrNot/Gitpod-PyQt)                               |    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-PyQt) |                         A PyQt example for Gitpod |
