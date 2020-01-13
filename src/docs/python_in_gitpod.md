@@ -4,7 +4,7 @@ Gitpod comes with great support for Python builtin. Still, depending on your par
 
 ## Examples
 
-Before we get started, Here are some examples of already Gitpodified workspace setups!
+Before we get started, here are some examples of already-[gitpodified](https://www.gitpod.io/blog/gitpodify/) repositories!
 
 | Name                                                                                                |                                                                                                              Try it |                                        Descripton |
 | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------: | ------------------------------------------------: |
