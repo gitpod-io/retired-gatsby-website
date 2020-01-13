@@ -64,3 +64,8 @@ ports:
 tasks:
   - command: python3 app.py
 ```
+## VSCode Extensions
+While most popular Python VSCode extensions are builtin to Gitpod here are a few "Nice to have" extensions that you can use
+
+### ARepl for Python
+![](./images/AReplExample.gif)
