@@ -60,7 +60,7 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Exposing Ports",
-                "43_config_ports"
+                "43-config-ports"
             ),
             M(
                 "Start Tasks",

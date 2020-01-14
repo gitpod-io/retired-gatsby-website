@@ -41,7 +41,7 @@ For instance:
 gp preview $(gp url 3000)my/path/index.html
 ```
 
-If you put this into the `.gitpod.yml` to open the a certain page on startup, don't forget to [ignore the default action](/docs/43_config_ports/) when the port opens.
+If you put this into the `.gitpod.yml` to open the a certain page on startup, don't forget to [ignore the default action](/docs/43-config-ports/) when the port opens.
 
 ## Forward Port
 In Gitpod services/servers running on a port need to be _exposed_ before they become accessible from the internet. This process only works with services listening on `0.0.0.0` and not just `localhost`.
