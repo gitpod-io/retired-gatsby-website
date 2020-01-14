@@ -50,7 +50,7 @@ For production scenarios, however, we highly recomend this configuration.
 
 * [**Docker Registry**](../35-docker-registry/): Use your own Docker registry instead of the built-in one.
 * [**HTTPS certificates**](../34-https-certs/): Configure HTTPS certificates for secure access to Gitpod.
-* [**Database**](../36_database/): Use your own MySQL database instead of the built-in one.
+* [**Database**](../36-database/): Use your own MySQL database instead of the built-in one.
 
 ## Installation
 ```
