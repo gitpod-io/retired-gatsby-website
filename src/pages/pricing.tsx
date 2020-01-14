@@ -61,6 +61,10 @@ const StyledPricingPage = styled.div`
     /* ----- Section Pricing ----- */
     /* ------------------------------------------- */
 
+    h1 {
+        margin-bottom: 3rem;
+    }
+
     .pricing {
         padding-bottom: 5rem;
 
@@ -189,7 +193,7 @@ const PricingPage: React.SFC<{}> = () => (
 
                     <section className="pricing">
                         <h3 className="sub">Pricing</h3>
-                        <h2>Choose Your Plan</h2>
+                        <h1>Choose Your Plan</h1>
                         <div className="pricing__boxes">
                             { plans.map(
                                 (plan, i) => <PricingBox
