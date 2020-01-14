@@ -12,7 +12,7 @@ workspace and the IDE loads in the browser.
 
 ![](images/cr-gitpod-started.png)
 
-The initialization task in the repository's [.gitpod.yml file](40_Configuration.md) builds and starts
+The initialization task in the repository's [.gitpod.yml file](40-Configuration.md) builds and starts
 the app automatically such that you can test the changes right within Gitpod's `Preview`.
 
 ![](images/cr-preview.png)

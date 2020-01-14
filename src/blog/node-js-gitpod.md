@@ -20,7 +20,7 @@ Start a new workspace for the example GitHub repository: [https://gitpod.io/#htt
 
 ![](https://cdn-images-1.medium.com/max/2992/0*WySkgfqLHyOkQq_c)
 
-A new Gitpod workspace will be opened. Required dependencies are installed automatically since the repository is configured with [a .gitpod.yml file](https://docs.gitpod.io/40_Configuration.html). You can see it in the terminal, opened in the bottom area.
+A new Gitpod workspace will be opened. Required dependencies are installed automatically since the repository is configured with [a .gitpod.yml file](https://docs.gitpod.io/40-Configuration.html). You can see it in the terminal, opened in the bottom area.
 
 ## Step 1: Start debugging
 
