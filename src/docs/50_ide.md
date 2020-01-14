@@ -15,7 +15,7 @@ emphasizes diversity.
 
 When you open Theia for the first time, a welcome screen is shown to quickly get you started. After
 closing it you will see the workbench shell. Depending on the
-[context URL](31_Context_Urls.md), different views might be opened.
+[context URL](31-Context-Urls.md), different views might be opened.
 
 Let us have a look at the primary elements of the workbench shell.
 
