@@ -138,7 +138,7 @@ export const MENU: MenuEntry[] = [
     ),
     M(
         "Subscriptions",
-        "70_subscriptions"
+        "70-subscriptions"
     ),
     M(
         "Gitpod Self-Hosted",
