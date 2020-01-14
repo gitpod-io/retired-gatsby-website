@@ -4,7 +4,7 @@ Gitpod also provides more optimized installations offering better performance fo
 * *Google Cloud Platform*: Install Gitpod in a blank GCP project, either [using a script that automates the procedure](../11_install_on_gcp_script/) or [manually step-by-step](../12_install_on_gcp_manual/).
 
 ## Prerequisites
-- Ensure you have the [general installation prerequisites](../01_prepare_installation/) available.
+- Ensure you have the [general installation prerequisites](../01-prepare-installation/) available.
 - `kubectl` with access to that cluster.
 - `helm`. We recommend version 3.x. Any version >= 2.11 will also work, but requires you to have [tiller configured](../90_helm_2x/).
 
@@ -33,7 +33,7 @@ Once you know your IP address, configure your three domain names to resolve to t
  - `*.ws.your-domain.com`
 
 ### OAuth integration
-Gitpod delegates authentication to a configurable [OAuth provider](../01_prepare_installation/#user-authorization-and-git-integration).
+Gitpod delegates authentication to a configurable [OAuth provider](../01-prepare-installation/#user-authorization-and-git-integration).
 
 Follow [the steps](../30_oauth/) to set up GitHub or GitLab as OAuth provider.
 

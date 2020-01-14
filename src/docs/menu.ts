@@ -86,7 +86,7 @@ export const MENU: MenuEntry[] = [
     ),
     M(
         "Theia – Gitpod's IDE",
-        "50_ide",
+        "50-ide",
         [
             M(
                 "Tips & Tricks",
@@ -146,7 +146,7 @@ export const MENU: MenuEntry[] = [
         [
             M(
                 "Prerequisites",
-                "self-hosted/latest/install/01_prepare_installation/"
+                "self-hosted/latest/install/01-prepare-installation/"
             ),M(
                 "Install on Vanilla Kubernetes",
                 "self-hosted/latest/install/10_install_on_kubernetes/"
