@@ -80,7 +80,7 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Environment Variables",
-                "47_environment_variables"
+                "47-environment-variables"
             )
         ]
     ),

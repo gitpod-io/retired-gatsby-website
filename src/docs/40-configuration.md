@@ -9,4 +9,4 @@ Gitpod workspaces are started with a single click. In order to make sure they co
   * [VS Code Extensions](/docs/vscode-extensions/)
   * [Workspace Location](/docs/45-checkout-location/)
   * [Prebuilt Workspaces](/docs/46-prebuilds/)
-  * [Environment Variables](/docs/47_environment_variables/)
+  * [Environment Variables](/docs/47-environment-variables/)
