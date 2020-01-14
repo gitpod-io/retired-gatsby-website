@@ -94,11 +94,11 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Git Integration",
-                "54_git"
+                "54-git"
             ),
             M(
                 "Search",
-                "56_search"
+                "56-search"
             ),
             M(
                 "Pull Requests",

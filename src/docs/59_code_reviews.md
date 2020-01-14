@@ -20,7 +20,7 @@ the app automatically such that you can test the changes right within Gitpod's `
 Gitpod has opened the `Diff` view and the first change in an editor. Using the arrow keys, you can
 easily browse through the changes and examine them in their context. Applying further changes is
 easy, as you have a full IDE at your fingertips. You can commit them to the PRs branch as described
-in the section on [Git](54_Git.md).
+in the section on [Git](54-Git.md).
 
 ![](images/cr-diff.png)
 
