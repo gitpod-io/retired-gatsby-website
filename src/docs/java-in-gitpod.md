@@ -80,7 +80,7 @@ Once you or your teammates start a dev environment, you will get the prebuild st
 
 ## IDE features
 
-> 🚧 Please help improve this section by [editing it](https://gitpod.io/#https://github.com/gitpod-io/website/blob/master/src/docs/java_in_gitpod.md).
+> 🚧 Please help improve this section by [editing it](https://gitpod.io/#https://github.com/gitpod-io/website/blob/master/src/docs/java-in-gitpod.md).
 > * Explain what the extensions do, and how to use them
 > * Explain how to set up a Java project for debugging
 
