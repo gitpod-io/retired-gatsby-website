@@ -22,7 +22,7 @@ export const MENU: MenuEntry[] = [
     ),
     M(
         "Browser Extension",
-        "20_browser_extension"
+        "20-browser-extension"
     ),
     M(
         "Workspaces",

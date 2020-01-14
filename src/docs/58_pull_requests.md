@@ -10,7 +10,7 @@ the task, defect, or feature, and log all discussions and related commits.
 
 To start a Gitpod workspace for an issue, either prefix the issue's URL in the address bar with
 `https://gitpod.io/#` or click on the `Gitpod` button that comes with the [Gitpod browser
-extension](20_Browser_Extension.md). Gitpod will start your cloud workspace in a new browser tab.
+extension](20-Browser-Extension.md). Gitpod will start your cloud workspace in a new browser tab.
 
 ![](images/pr-gitpod-started.png)
 
