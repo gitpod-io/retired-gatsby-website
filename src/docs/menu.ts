@@ -124,7 +124,7 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Julia",
-                "julia_in_gitpod"
+                "julia-in-gitpod"
             ),
             M(
                 "Go",
