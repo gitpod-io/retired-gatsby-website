@@ -8,7 +8,7 @@ emphasizes diversity.
   * [Tips & Tricks](52-Tips-and-Tricks.md)
   * [Git Integration](54-Git.md)
   * [Search](56-Search.md)
-  * [Pull Requests](58_Pull_Requests.md)
+  * [Pull Requests](58-Pull-Requests.md)
   * [Code Reviews](59_Code_Reviews.md)
 
 ## Overview
