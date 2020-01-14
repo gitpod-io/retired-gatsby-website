@@ -72,7 +72,7 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Workspace Location",
-                "45_checkout_location"
+                "45-checkout-location"
             ),
             M(
                 "Prebuilt Workspaces",
