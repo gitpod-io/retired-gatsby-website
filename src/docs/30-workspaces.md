@@ -10,6 +10,6 @@ In Gitpod workspaces usually have a very short life. Gitpod creates one when you
 There is no reason to go back and do any maintenance. Because everything is driven by configuration, you can always create a fresh one when you need it.
 
   * [Context URLs](/docs/31-context-urls/)
-  * [Life of a Workspace](/docs/32_life_of_workspace/)
+  * [Life of a Workspace](/docs/32-life-of-workspace/)
   * [Shared Workspaces](/docs/33_sharing_and_collaboration/)
   * [Command Line Interface](/docs/34_command_line_interface/)
