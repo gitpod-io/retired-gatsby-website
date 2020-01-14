@@ -42,7 +42,7 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Command Line Interface",
-                "34_command_line_interface"
+                "34-command-line-interface"
             )
         ]
     ),
