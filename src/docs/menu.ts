@@ -112,7 +112,7 @@ export const MENU: MenuEntry[] = [
     ),
     M(
         "Languages & Frameworks",
-        "languages_and_frameworks",
+        "languages-and-frameworks",
         [
             M(
                 "Java",
