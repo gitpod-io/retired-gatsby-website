@@ -6,7 +6,7 @@ emphasizes diversity.
 
   * [Overview](#overview)
   * [Tips & Tricks](52-Tips-and-Tricks.md)
-  * [Git Integration](54_Git.md)
+  * [Git Integration](54-Git.md)
   * [Search](56_Search.md)
   * [Pull Requests](58_Pull_Requests.md)
   * [Code Reviews](59_Code_Reviews.md)
