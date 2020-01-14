@@ -52,7 +52,7 @@ export const MENU: MenuEntry[] = [
         [
             M(
                 ".gitpod.yml",
-                "41_config_gitpod_file"
+                "41-config-gitpod-file"
             ),
             M(
                 "Docker Image",
