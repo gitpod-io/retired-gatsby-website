@@ -18,7 +18,7 @@ export const MENU: MenuEntry[] = [
     ),
     M(
         "Getting Started",
-        "10_getting_started"
+        "10-getting-started"
     ),
     M(
         "Browser Extension",
