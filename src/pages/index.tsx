@@ -568,7 +568,7 @@ const IndexPage: React.SFC<{}> = () => (
                                 <h3>Not Just a Playground</h3>
                                 <p>Gitpod is not just another online playground, but a full featured dev environment, just like your local IDE.</p>
                                 <p>It includes fully functional <strong>Linux terminals</strong>, you can install any <strong>VS Code extensions</strong> and provides all the other good features provided by <strong>Theia</strong>, the vendor neutral and highly extensible VS Code alternative, we have developed.</p>
-                                <p>Read more about <a href="/docs/50_ide/">Theia</a></p>
+                                <p>Read more about <a href="/docs/50-ide/">Theia</a></p>
                             </div>
                             <div className="why-gitpod__img-container">
                                 <object tabIndex={-1} 
