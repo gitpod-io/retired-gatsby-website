@@ -99,7 +99,7 @@ tasks:
     command: npm run client
 ```
 
-To learn more about configuring Terminals, please visit [the docs](https://www.gitpod.io/docs/44_config_start_tasks/).
+To learn more about configuring Terminals, please visit [the docs](https://www.gitpod.io/docs/44-config-start-tasks/).
 
 ## Accelerating startup with prebuilt workspaces
 

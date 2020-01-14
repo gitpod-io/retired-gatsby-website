@@ -29,7 +29,7 @@ vscode:
     - premparihar.gotestexplorer@0.1.10:jvUM8akrQ67vQxfjaxCgCg==
 ```
 
-### **[Start-up tasks](https://www.gitpod.io/docs/44_config_start_tasks/)**
+### **[Start-up tasks](https://www.gitpod.io/docs/44-config-start-tasks/)**
 
 Here is how to have your dependencies automatically fetched before you open your Gitpod workspace!
 

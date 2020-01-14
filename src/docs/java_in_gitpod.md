@@ -47,7 +47,7 @@ Gitpod provides disposable dev environments, which means you are getting fresh d
 
 In the generated `.gitpod.yml` you will find the following section:
 ```yml
-# List the startup tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/44_config_start_tasks/
+# List the startup tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/44-config-start-tasks/
 tasks:
 - init: echo 'init script' # runs during prebuild
   command: echo 'start script'

@@ -64,7 +64,7 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Start Tasks",
-                "44_config_start_tasks"
+                "44-config-start-tasks"
             ),
             M(
                 "VS Code Extensions",
