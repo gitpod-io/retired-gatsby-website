@@ -13,6 +13,10 @@ const StyledBlogPage = styled.div`
     /* ----- Section Posts ----- */
     /* ------------------------------------------- */
 
+    h1 {
+        margin-bottom: 3rem;
+    }
+
     .post {
         @media(max-width: ${sizes.breakpoints.md}) {
             padding: 3rem 0;
@@ -115,7 +119,7 @@ const BlogPage: React.SFC<BlogPageProps> = (props) => {
                 <section className="post grey-container">
                     <div className="row">
                         <h3 className="page-subtitle">Blog Posts</h3>
-                        <h2>Discover Articles and Tutorials about Gitpod</h2>
+                        <h1>Discover Articles and Tutorials about Gitpod</h1>
                         <div className="posts">
                             {posts.map(
                                 post => <PostPreview
