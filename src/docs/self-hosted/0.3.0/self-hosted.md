@@ -10,5 +10,5 @@ This infrastructure may be a cloud provider or self-managed Kubernetes. It may b
 
 Regardless of your target environment, you will need to ensure that the [installation prerequisites](../install/01-prepare-installation/) are available.
 Gitpod can be installed in the following environments:
-* [Vanilla Kubernetes](../install/10_install_on_kubernetes/): All you need is a domain and a Kubernetes cluster.
+* [Vanilla Kubernetes](../install/10-install-on_kubernetes/): All you need is a domain and a Kubernetes cluster.
 * [Google Cloud Platform](../install/11_install_on_gcp_script/): Install Gitpod optimised for Google Cloud Platform.
