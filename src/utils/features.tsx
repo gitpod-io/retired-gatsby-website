@@ -54,7 +54,7 @@ export const featuresCardsData = [
             <p>This means no more waiting for dependencies to be downloaded and builds to finish. Just coding.</p>
             <p>Gitpod is the first IDE that builds your project before you even open it.</p>
         </React.Fragment>,
-        more: <p>Read more about <Link to="/docs/46_prebuilds/">Prebuilt Workspaces.</Link></p>,
+        more: <p>Read more about <Link to="/docs/46-prebuilds/">Prebuilt Workspaces.</Link></p>,
         img: <object tabIndex={-1} data={PrebuiltWorkspaces}/>,
         isIllustration: true
     },
@@ -91,7 +91,7 @@ export const featuresCardsData = [
         iconText: <span>Code<br />Reviews</span>,
         paragraphs: <React.Fragment>
             <p>Open pull requests in Gitpod to run, navigate, and review the code from within the IDE. Reply to comments and publish code reviews without switching back to GitHub.</p>
-            <p>Thanks to <a href="#parallel">Parallel</a> and <Link to="/docs/46_prebuilds/">Prebuilt</Link> Workspaces, you can review code within seconds and without interfering with other ongoing work.</p>
+            <p>Thanks to <a href="#parallel">Parallel</a> and <Link to="/docs/46-prebuilds/">Prebuilt</Link> Workspaces, you can review code within seconds and without interfering with other ongoing work.</p>
             </React.Fragment>,
         more: <p>Read more about <Link to="/blog/when-code-reviews-lgtm/">Code Reviews.</Link></p>,
         img: <img alt="Code Review" src={CodeReview} />,
