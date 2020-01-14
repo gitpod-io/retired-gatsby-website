@@ -90,7 +90,7 @@ export const MENU: MenuEntry[] = [
         [
             M(
                 "Tips & Tricks",
-                "52_tips_and_tricks"
+                "52-tips-and-tricks"
             ),
             M(
                 "Git Integration",
