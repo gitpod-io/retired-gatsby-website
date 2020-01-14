@@ -1,7 +1,7 @@
 # Install Gitpod Self-Hosted on Kubernetes
 This section describes how to install Gitpod on a vanilla Kubernetes cluster.
 Gitpod also provides more optimized installations offering better performance for particular cloud providers:
-* *Google Cloud Platform*: Install Gitpod in a blank GCP project, either [using a script that automates the procedure](../11_install_on_gcp_script/) or [manually step-by-step](../12_install_on_gcp_manual/).
+* *Google Cloud Platform*: Install Gitpod in a blank GCP project, either [using a script that automates the procedure](../11-install-on-gcp-script/) or [manually step-by-step](../12_install_on_gcp_manual/).
 
 ## Prerequisites
 - Ensure you have the [general installation prerequisites](../01-prepare-installation/) available.

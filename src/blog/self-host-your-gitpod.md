@@ -50,7 +50,7 @@ Installing Gitpod Self-Hosted on your own infrastructure works much like any oth
 3. Install using [helm](https://helm.sh/): `helm install ... gitpod`
 
 The [vanilla Kubernetes setup](/docs/self-hosted/latest/install/10-install-on-kubernetes/) will work most Kubernetes clusters.
-For Google Cloud Platform we provide an [automated installation script](/docs/self-hosted/latest/install/11_install_on_gcp_script/).
+For Google Cloud Platform we provide an [automated installation script](/docs/self-hosted/latest/install/11-install-on-gcp_script/).
 
 ## Pricing
 

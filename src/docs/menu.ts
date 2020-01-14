@@ -153,7 +153,7 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Install on Google Cloud Platform",
-                "self-hosted/latest/install/11_install_on_gcp_script/"
+                "self-hosted/latest/install/11-install-on-gcp-script/"
             )
         ]
     ),
