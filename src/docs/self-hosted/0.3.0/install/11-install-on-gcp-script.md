@@ -9,7 +9,7 @@ This section describes the neccesary steps to prepare a new GCP project for a Gi
 You can perform the set up of the GCP resources yourself. See the [manual GCP setup](../12-install-on-gcp_manual/) section for more details.
 
 This installation script configures your GCP project and produces the required Helm configuration for installing Gitpod in that project.
-Once all GCP setup is complete, you will only have to manually set up [OAuth](../30-oauth/) and optionally [HTTPS](../34_https_certs/).
+Once all GCP setup is complete, you will only have to manually set up [OAuth](../30-oauth/) and optionally [HTTPS](../34-https-certs/).
 
 You can install Gitpod self-hosted in your GCP project from within Gitpod. This way you don't have to install the Google Cloud SDK or other required tools.
 

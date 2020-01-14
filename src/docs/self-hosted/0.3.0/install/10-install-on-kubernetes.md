@@ -40,7 +40,7 @@ Follow [the steps](../30-oauth/) to set up GitHub or GitLab as OAuth provider.
 ### HTTPS certificates or external Docker registry
 Gitpod builds docker images on demand and runs them in Kubernetes pods as workspaces.
 Since Kubernetes by default only pulls images from secure Docker registries,
-you will either need to have [HTTPS certificates](../34_https_certs/) configured if you want to use the internal docker registry,
+you will either need to have [HTTPS certificates](../34-https-certs/) configured if you want to use the internal docker registry,
 or use an [external docker registry](../35_docker_registry/).
 
 ## Recommended Configuration
@@ -49,7 +49,7 @@ To get Gitpod running quickly, you may skip this chapter.
 For production scenarios, however, we highly recomend this configuration.
 
 * [**Docker Registry**](../35_docker_registry/): Use your own Docker registry instead of the built-in one.
-* [**HTTPS certificates**](../34_https_certs/): Configure HTTPS certificates for secure access to Gitpod.
+* [**HTTPS certificates**](../34-https-certs/): Configure HTTPS certificates for secure access to Gitpod.
 * [**Database**](../36_database/): Use your own MySQL database instead of the built-in one.
 
 ## Installation
