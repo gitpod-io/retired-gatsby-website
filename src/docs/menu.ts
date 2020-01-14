@@ -106,7 +106,7 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Code Reviews",
-                "59_code_reviews"
+                "59-code-reviews"
             )
         ]
     ),

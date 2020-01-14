@@ -9,7 +9,7 @@ emphasizes diversity.
   * [Git Integration](54-Git.md)
   * [Search](56-Search.md)
   * [Pull Requests](58-Pull-Requests.md)
-  * [Code Reviews](59_Code_Reviews.md)
+  * [Code Reviews](59-Code-Reviews.md)
 
 ## Overview
 
