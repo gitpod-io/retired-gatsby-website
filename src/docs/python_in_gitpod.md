@@ -1,6 +1,6 @@
 # Python
 
-Gitpod comes with great support for Python builtin. Still, depending on your particular project, you might want to further optimize the experience.
+Gitpod comes with great support for Python builtin. Still, depending on your project, you might want to further optimize the experience.
 
 ## Examples
 
