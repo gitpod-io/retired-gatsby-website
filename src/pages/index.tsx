@@ -559,7 +559,7 @@ const IndexPage: React.SFC<{}> = () => (
                                 <h3>Seamless GitHub & GitLab Integration</h3>
                                 <p>Gitpod let’s you stay in the flow by blending perfectly into GitHub and GitLab. Start your workflow from there and let Gitpod beam you in a ready-to-code dev environment.</p>
                                 <p>No matter you want to fix a bug, add a feature or do a code review, Gitpod get's you started immediately.</p>
-                                <p>Read more about <a href="/docs/31-context-urls/">Integration.</a></p>
+                                <p>Read more about <a href="/docs/context-urls/">Integration.</a></p>
                             </div>
                         </div>
 

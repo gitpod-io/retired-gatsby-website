@@ -9,7 +9,7 @@ Very soon Gitpod will support additional platforms and integrate with GitLab, Bi
 In Gitpod workspaces usually have a very short life. Gitpod creates one when you need it and forgets about it when you are done.
 There is no reason to go back and do any maintenance. Because everything is driven by configuration, you can always create a fresh one when you need it.
 
-  * [Context URLs](/docs/31-context-urls/)
+  * [Context URLs](/docs/context-urls/)
   * [Life of a Workspace](/docs/32-life-of-workspace/)
   * [Shared Workspaces](/docs/33-sharing-and-collaboration/)
   * [Command Line Interface](/docs/34-command-line-interface/)

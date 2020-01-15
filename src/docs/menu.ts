@@ -30,7 +30,7 @@ export const MENU: MenuEntry[] = [
         [
             M(
                 "Context URLs",
-                "31-context-urls"
+                "context-urls"
             ),
             M(
                 "Life of a Workspace",
