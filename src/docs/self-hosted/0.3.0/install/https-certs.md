@@ -1,6 +1,6 @@
 ### HTTPS certificates
 
-Gitpod needs HTTPS certificates, your own Docker registry, or both to function properly. If you don't have certificates, but a Docker registry available, jump to the [next step](../35-docker-registry/).
+Gitpod needs HTTPS certificates, your own Docker registry, or both to function properly. If you don't have certificates, but a Docker registry available, jump to the [next step](../docker-registry/).
 
 > Important: The HTTPS certificates for your domain must include `your-domain.com`, `*.your-domain.com` and `*.ws.your-domain.com`. Beware that wildcard certificates are valid for one level only (i.e. `*.a.com` is not valid for `c.b.a.com`).
 
