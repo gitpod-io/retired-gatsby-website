@@ -5,7 +5,7 @@ and developed under the umbrella of the Eclipse Foundation, which ensures vendor
 emphasizes diversity.
 
   * [Overview](#overview)
-  * [Tips & Tricks](52-Tips-and-Tricks.md)
+  * [Tips & Tricks](tips-and-tricks.md)
   * [Git Integration](54-Git.md)
   * [Search](56-Search.md)
   * [Pull Requests](58-Pull-Requests.md)
