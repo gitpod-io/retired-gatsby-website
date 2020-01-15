@@ -25,7 +25,7 @@ FROM gitpod/workspace-full-vnc
 USER gitpod
 
 # Install wxPython dependencies
-RUN sudo apt-get -q update \
+RUN sudo apt-get -q update && \
     && sudo DEBIAN_FRONTEND=noninteractive apt-get install -yq \
     freeglut3-dev \
     python3.7-dev \
