@@ -72,9 +72,9 @@ Here are some other examples of Python GUI applications in Gitpod:
 
 | Name             | Framework | Try it |
 |------------------|----------------|-----------|
-| Tic-Tac-Toe-GUI  | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Tic-Tac-Toe-GUI) | Kivy |
-| Pong             | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Pong) | Kivy |
-| Gitpod-PyQt | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Pong) | PyQt |
+| Tic-Tac-Toe-GUI  | Kivy | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Tic-Tac-Toe-GUI) |
+| Pong             | Kivy | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Pong) |
+| Gitpod-PyQt | PyQt | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Pong) |
 <br>
 
 ## VSCode Extensions
