@@ -48,7 +48,7 @@ export const MENU: MenuEntry[] = [
     ),
     M(
         "Configure Your Repository",
-        "40-configuration",
+        "configuration",
         [
             M(
                 ".gitpod.yml",

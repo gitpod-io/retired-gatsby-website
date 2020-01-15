@@ -96,7 +96,7 @@ Use the arrow keys to navigate: ↓ ↑ → ←
     docker file
 ```
 
-More information about writing `.gitpod.yml` configurations can be found in [the docs](https://docs.gitpod.io/40-Configuration.html).
+More information about writing `.gitpod.yml` configurations can be found in [the docs](https://www.gitpod.io/docs/configuration/).
 
 ### gp url
 

@@ -20,7 +20,7 @@ We’ve just released a bunch of exciting new features and I'm not talking about
 ## 🔓 Private Project Trial
 Users can now try Gitpod on their private GitHub and GitLab projects for one month for free without providing payment information or automatic subscription start afterward. 
 
-To get started, simply prefix your private repository’s GitHub or GitLab URL with __gitpod.io/#__ and go through the OAuth flow. To fully get the hang of Gitpod, you need to configure your project accordingly. You can either [schedule a call](https://calendly.com/gitpod/onboarding) with an engineer, study the [documentation](/docs/40-configuration/), or use the new and shiny setup assistant.
+To get started, simply prefix your private repository’s GitHub or GitLab URL with __gitpod.io/#__ and go through the OAuth flow. To fully get the hang of Gitpod, you need to configure your project accordingly. You can either [schedule a call](https://calendly.com/gitpod/onboarding) with an engineer, study the [documentation](/docs/configuration/), or use the new and shiny setup assistant.
 
 ## 🛠 Setup Assistant
 Although setting up a project for Gitpod is usually a one-off effort, it can be a little involving depending on the complexity of the project's structure. With the arrival of a new setup assistant configuring Gitpod has become a whole lot easier now.
