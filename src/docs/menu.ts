@@ -102,7 +102,7 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Pull Requests",
-                "58-pull-requests"
+                "pull-requests"
             ),
             M(
                 "Code Reviews",

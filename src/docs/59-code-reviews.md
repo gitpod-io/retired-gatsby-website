@@ -1,7 +1,7 @@
 # Code Reviews
 
 Let us have a look how we can perform a code review on GitHub with Gitpod. We continue the example
-from the [previous chapter](58-Pull-Requests.md), where we created a pull request (PR). In the role
+from the [previous chapter](pull-requests.md), where we created a pull request (PR). In the role
 of a reviewer you open this PR on GitHub. Once again, Gitpod allows you to follow the GitHub flow.
 
 ![](images/cr-GitHub-pr.png)
