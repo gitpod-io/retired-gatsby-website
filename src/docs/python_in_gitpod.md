@@ -84,7 +84,7 @@ While the most popular Python VSCode extensions are built-in to Gitpod, here are
 
 ### ARepl for Python
 ![](./images/AReplExample.gif)
-It's helpful for constantly checking your code and debugging.
+ARepl for Python is helpful for constantly checking your code and debugging.
 To install this extension for your repository, add the following to your `.gitpod.yml`:
 ```yaml
 vscode:
@@ -93,7 +93,7 @@ vscode:
 ```
 ### Python Test Explorer
 ![](./images/python_Test_In_Gitpod.png)
-Easily test your python extensions.
+Easily test your python extensions with the Python Test Explorer.
 To add this to your repository add the following to your `.gitpod.yml`
 ```yaml
 vscode:
