@@ -7,7 +7,7 @@ of a reviewer you open this PR on GitHub. Once again, Gitpod allows you to follo
 ![](images/cr-GitHub-pr.png)
 
 Just like the creator of the PR, you can start a Gitpod workspace by prefixing the URL or using the
-`Gitpod` button provided by the [Gitpod browser extension](20-Browser-Extension.md). Gitpod spawns a
+`Gitpod` button provided by the [Gitpod browser extension](Browser-Extension.md). Gitpod spawns a
 workspace and the IDE loads in the browser.
 
 ![](images/cr-gitpod-started.png)

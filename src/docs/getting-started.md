@@ -7,7 +7,7 @@ The following example shows how to use Gitpod with a GitHub repository.
     <a href="https://github.com/arunoda/learnnextjs-demo" target="_blank">https://github.com/arunoda/learnnextjs-demo</a>
 2. Either prefix the URL in the address bar of your browser with `https://gitpod.io/#` (e.g.
    https://gitpod.io/#https://github.com/arunoda/learnnextjs-demo) or push the _Gitpod_ button if you
-   have installed the [Gitpod extension](/docs/20-browser-extension/).
+   have installed the [Gitpod extension](/docs/browser-extension/).
 
    ![prefix github URL](./images/prefix-screenshot.png)
 
