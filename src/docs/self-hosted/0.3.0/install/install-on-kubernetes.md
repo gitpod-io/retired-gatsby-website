@@ -6,7 +6,7 @@ Gitpod also provides more optimized installations offering better performance fo
 ## Prerequisites
 - Ensure you have the [general installation prerequisites](../01-prepare-installation/) available.
 - `kubectl` with access to that cluster.
-- `helm`. We recommend version 3.x. Any version >= 2.11 will also work, but requires you to have [tiller configured](../90-helm-2x/).
+- `helm`. We recommend version 3.x. Any version >= 2.11 will also work, but requires you to have [tiller configured](../helm-2x/).
 
 ## Configuration
 
