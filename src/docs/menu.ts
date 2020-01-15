@@ -159,7 +159,7 @@ export const MENU: MenuEntry[] = [
     ),
     M(
         "Release Notes",
-        "80-release-notes",
+        "release-notes",
         [
             M(
                 "June 2019",
