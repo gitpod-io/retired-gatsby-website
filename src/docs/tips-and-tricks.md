@@ -45,7 +45,7 @@ It will let you search, find, and open any file by name.
 To search for or to replace string occurrences in all files of your workspace, press:
   - <kbd>Ctrl+Shift+F</kbd> (<kbd>⌘+Shift+F</kbd> on macOS)
 
-It opens the search view, which is described in more detail ikdddearch.md).
+It opens the search view, which is described in more detail ikdearch.md).
 
 ## Symbols and References
 
