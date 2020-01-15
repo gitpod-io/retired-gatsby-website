@@ -70,7 +70,7 @@ In addition to one of the best code editors, Gitpod environments provide full fe
 
 ## Collaboration
 Gitpod comes with two major features supporting collaboration.
- - [Sharing running dev environments](/docs/33-sharing-and-collaboration/) with other users comes in handy if you want to look at code with a colleague to hunt down a bug together or do some pair programming. Collaborators will see the same code you see and even the terminals are synced and shared.
+ - [Sharing running dev environments](/docs/sharing-and-collaboration/) with other users comes in handy if you want to look at code with a colleague to hunt down a bug together or do some pair programming. Collaborators will see the same code you see and even the terminals are synced and shared.
 
  - [Snapshots](/blog/workspace-snapshots/) are useful in many ways. In a nutshell, they allow taking an immutable copy of your dev environment at any point in time. You can share the provided link wherever you want. Users opening such a snapshot link will get an exact clone of the environment including all state and even UI layout. This feature is great for sharing reproducibles in issues, but also good for blog posts or solutions on Stack Overflow.
 

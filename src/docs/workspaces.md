@@ -11,5 +11,5 @@ There is no reason to go back and do any maintenance. Because everything is driv
 
   * [Context URLs](/docs/context-urls/)
   * [Life of a Workspace](/docs/life-of-workspace/)
-  * [Shared Workspaces](/docs/33-sharing-and-collaboration/)
+  * [Shared Workspaces](/docs/sharing-and-collaboration/)
   * [Command Line Interface](/docs/34-command-line-interface/)

@@ -119,7 +119,7 @@ export const featuresCardsData = [
         paragraphs:<React.Fragment>
             <p>Create a snapshot of your work and share it with the world. Based on your snapshot new workspaces can be created and edited independently.</p>
         </React.Fragment>,
-        more: <p>Read more about <Link to="/docs/33-sharing-and-collaboration/#sharing-snapshots">Sharing a Snapshot.</Link></p>,
+        more: <p>Read more about <Link to="/docs/sharing-and-collaboration/#sharing-snapshots">Sharing a Snapshot.</Link></p>,
         img:<object tabIndex={-1}  data={CreateASnapshot}/>,
         isIllustration: true
     },
@@ -146,7 +146,7 @@ export const featuresCardsData = [
         paragraphs:<React.Fragment>
             <p>Collaborate with your friends and colleagues and hunt down bugs together.</p>
         </React.Fragment>,
-        more: <p>Read more about <Link to="/docs/33-sharing-and-collaboration/">Sharing a Workspace.</Link></p>,
+        more: <p>Read more about <Link to="/docs/sharing-and-collaboration/">Sharing a Workspace.</Link></p>,
         img:<object tabIndex={-1}  data={ShareWorkspaces} style={{transform: 'translateY(2rem) scale(.9)'}}/>,
     }
 ]

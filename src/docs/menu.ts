@@ -38,7 +38,7 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Collaboration & Sharing",
-                "33-sharing-and-collaboration"
+                "sharing-and-collaboration"
             ),
             M(
                 "Command Line Interface",
