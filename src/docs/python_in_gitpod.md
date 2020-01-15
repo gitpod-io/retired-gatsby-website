@@ -70,7 +70,7 @@ We also support other GUI frameworks such as
 <br>
 Here are some other examples of Python GUI applications in Gitpod:
 
-| Name             | Open in Gitpod | Framework |
+| Name             | Framework | Try it |
 |------------------|----------------|-----------|
 | Tic-Tac-Toe-GUI  | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Tic-Tac-Toe-GUI) | Kivy |
 | Pong             | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Pong) | Kivy |
