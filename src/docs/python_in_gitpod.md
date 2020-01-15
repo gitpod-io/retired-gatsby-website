@@ -46,7 +46,7 @@ RUN sudo apt-get -q update && \
 RUN pip3 install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-18.04/ wxPython
 ```
 
-Here is an example `.gitpod.yml`:
+Here is a corresponding `.gitpod.yml` example:
 
 ```yaml
 image:
