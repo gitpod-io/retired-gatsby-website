@@ -66,7 +66,7 @@ tasks:
   - command: python3 app.py
 ```
 <br>
-We also support other GUI frameworks such as
+We also support other GUI frameworks such as Kivy and PyQt
 <br>
 Here are some exmaples of other applications in Gitpod
 
