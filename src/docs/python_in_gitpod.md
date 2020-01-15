@@ -80,7 +80,7 @@ And here is an example of PyQT running
 <br>
 
 ## VSCode Extensions
-While most popular Python VSCode extensions are builtin to Gitpod here are a few "Nice to have" extensions that you can use
+While the most popular Python VSCode extensions are built-in to Gitpod, here are a few "Nice to have" extensions that you can use as well.
 
 ### ARepl for Python
 ![](./images/AReplExample.gif)
