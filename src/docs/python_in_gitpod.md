@@ -76,8 +76,6 @@ Here are some exmaples of other applications in Gitpod
 | Pong             | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Pong) | Kivy |
 | Gitpod-PyQt | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Pong) | PyQt |
 <br>
-And here is an example of PyQT running
-<br>
 
 ## VSCode Extensions
 While the most popular Python VSCode extensions are built-in to Gitpod, here are a few "Nice to have" extensions that you can use as well.
