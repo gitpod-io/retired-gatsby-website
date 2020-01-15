@@ -64,6 +64,20 @@ ports:
 tasks:
   - command: python3 app.py
 ```
+<br>
+We also support other GUI frameworks such as
+<br>
+Here are some exmaples of other applications in Gitpod
+
+| Name             | Open in Gitpod | Framework |
+|------------------|----------------|-----------|
+| Tic-Tac-Toe-GUI  | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Tic-Tac-Toe-GUI) | Kivy |
+| Pong             | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Pong) | Kivy |
+| Gitpod-PyQt | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Pong) | PyQt |
+<br>
+And here is an example of PyQT running
+<br>
+
 ## VSCode Extensions
 While most popular Python VSCode extensions are builtin to Gitpod here are a few "Nice to have" extensions that you can use
 
