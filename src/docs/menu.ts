@@ -98,7 +98,7 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Search",
-                "56-search"
+                "search"
             ),
             M(
                 "Pull Requests",
