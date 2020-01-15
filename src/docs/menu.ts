@@ -60,11 +60,11 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Exposing Ports",
-                "43-config-ports"
+                "config-ports"
             ),
             M(
                 "Start Tasks",
-                "44-config-start-tasks"
+                "config-start-tasks"
             ),
             M(
                 "VS Code Extensions",
@@ -72,7 +72,7 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Workspace Location",
-                "45-checkout-location"
+                "checkout-location"
             ),
             M(
                 "Prebuilt Workspaces",

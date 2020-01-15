@@ -5,7 +5,7 @@
 
 [[redirects]]
   from = "/docs/45_Config_Go"
-  to = "/docs/45-checkout-location/"
+  to = "/docs/checkout-location/"
   status = 301
 
 [[redirects]]

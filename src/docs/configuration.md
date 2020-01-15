@@ -4,9 +4,9 @@ Gitpod workspaces are started with a single click. In order to make sure they co
 
   * [.gitpod.yml](/docs/config-gitpod-file/)
   * [Docker Image](/docs/config-docker/)
-  * [Exposing Ports](/docs/43-config-ports/)
-  * [Start Script](/docs/44-config-start-tasks/)
+  * [Exposing Ports](/docs/config-ports/)
+  * [Start Script](/docs/config-start-tasks/)
   * [VS Code Extensions](/docs/vscode-extensions/)
-  * [Workspace Location](/docs/45-checkout-location/)
+  * [Workspace Location](/docs/checkout-location/)
   * [Prebuilt Workspaces](/docs/46-prebuilds/)
   * [Environment Variables](/docs/47-environment-variables/)

@@ -24,7 +24,7 @@ There are three parts to configuring prebuilds:
 3. how you will be notified by the `gitpod-io` GitHub app.
 
 All three parts are configured in the `.gitpod.yml`.
-What tasks to be executed during the prebuilt is configured using [start tasks](./44-Config-Start-Tasks.md).
+What tasks to be executed during the prebuilt is configured using [start tasks](./config-start-tasks.md).
 It is similar to regular workspace starts with the difference that the `command` phase is not executed and that there is a `prebuild` phase that you can use to execute additional long running tasks, e.g. run unit tests.
 
 The rest is configured using the `github` section.

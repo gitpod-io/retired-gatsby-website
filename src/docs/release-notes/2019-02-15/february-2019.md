@@ -41,7 +41,7 @@ tasks:
 
 ### Lifecycles
 
-In addition we have introduced multiple lifecycle phases for the tasks, such as [init](https://docs.gitpod.io/44-Config-Start-Tasks.html#init-command) and [before](https://docs.gitpod.io/44-Config-Start-Tasks.html#before-command). The main purpose is to avoid rerunning unnecessary commands such as full builds, when restarting workspaces or opening snapshots.
+In addition we have introduced multiple lifecycle phases for the tasks, such as [init](https://www.gitpod.io/docs/config-start-tasks/#init-command) and [before](https://www.gitpod.io/docs/config-start-tasks/#before-command). The main purpose is to avoid rerunning unnecessary commands such as full builds, when restarting workspaces or opening snapshots.
 
 Check the table below for an overview of the different starting scenarios.
 
@@ -67,7 +67,7 @@ ports:
    onOpen: open-preview
 ```
 
-Check out [the docs](https://docs.gitpod.io/44-Config-Start-Tasks.html) to learn more about pre-configuring things in Gitpod.
+Check out [the docs](https://www.gitpod.io/docs/config-start-tasks/) to learn more about pre-configuring things in Gitpod.
 
 ## YAML Support
 
