@@ -34,7 +34,7 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Life of a Workspace",
-                "32-life-of-workspace"
+                "life-of-workspace"
             ),
             M(
                 "Collaboration & Sharing",
