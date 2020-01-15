@@ -69,7 +69,7 @@ tasks:
 ```
 
 ### `prebuild` command
-The optional `prebuild` command will be executed during [prebuilds](./46-Prebuilds.md). It is meant to run additional
+The optional `prebuild` command will be executed during [prebuilds](./prebuilds.md). It is meant to run additional
 long running processes that could be useful, e.g. running test suites.
 
 ### Configuring the Terminal
