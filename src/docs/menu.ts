@@ -86,7 +86,7 @@ export const MENU: MenuEntry[] = [
     ),
     M(
         "Theia – Gitpod's IDE",
-        "50-ide",
+        "ide",
         [
             M(
                 "Tips & Tricks",

@@ -20,7 +20,7 @@ Also, Gitpod workspaces are meant to be disposable. That is, you do not need to 
 They are created when you need them, and you can forget about them when you are done. Simply go to
 GitHub and create a fresh workspace whenever you need one.
 
-The IDE is open-source and based on [Eclipse Theia](50-IDE.md). Theia is highly extensible and
+The IDE is open-source and based on [Eclipse Theia](ide.md). Theia is highly extensible and
 builds upon mature technologies such as TypeScript, VS Code, Webpack, and Node.js.
 
 This site provides all the details on how to use Gitpod and Theia. If you have questions
