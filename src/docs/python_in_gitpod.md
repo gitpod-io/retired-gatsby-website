@@ -40,13 +40,13 @@ RUN sudo apt-get -q update && \
     libwebkit2gtk-4.0-dev \
     libxtst-dev \
     libgtk2.0-dev \
-    && sudo rm -rf /var/lib/apt/lists/*
+    sudo rm -rf /var/lib/apt/lists/*
 
 # Install wxPython
 RUN pip3 install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-18.04/ wxPython
 ```
 
-Here is an example `.gitpod.yml`:
+Here is a corresponding `.gitpod.yml` example:
 
 ```yaml
 image:
@@ -68,9 +68,9 @@ tasks:
 <br>
 We also support other GUI frameworks such as Kivy and PyQt
 <br>
-Here are some exmaples of other applications in Gitpod
+Here are some other examples of Python GUI applications in Gitpod:
 
-| Name             | Open in Gitpod | Framework |
+| Name             | Framework | Try it |
 |------------------|----------------|-----------|
 | Tic-Tac-Toe-GUI  | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Tic-Tac-Toe-GUI) | Kivy |
 | Pong             | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Pong) | Kivy |
