@@ -188,7 +188,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
                         <div><img alt="Kubernetes Logo" src={Kubernetes} /></div>
                         <p>Gitpod can run on vanilla Kubernetes and there is a setup opimized for Google Kubernetes Engine(GKE).</p>
                         <p>Optimized support for Amazon Elastic Kuberenetes Service(EKS), Azure Kubernetes Service(AKS), and Openshift is coming soon.</p>
-                        <p className="install__more-details">See <a href="/docs/self-hosted/latest/install/11-install-on-gcp-script">Install on GKE</a></p>
+                        <p className="install__more-details">See <a href="/docs/self-hosted/latest/install/install-on-gcp-script">Install on GKE</a></p>
                     </div>
                 </section>
 
