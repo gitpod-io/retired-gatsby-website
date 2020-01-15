@@ -3,7 +3,7 @@
 Gitpod workspaces are started with a single click. In order to make sure they come with the tools you need and work correctly you can provide configuration.
 
   * [.gitpod.yml](/docs/config-gitpod-file/)
-  * [Docker Image](/docs/42-config-docker/)
+  * [Docker Image](/docs/config-docker/)
   * [Exposing Ports](/docs/43-config-ports/)
   * [Start Script](/docs/44-config-start-tasks/)
   * [VS Code Extensions](/docs/vscode-extensions/)

@@ -56,7 +56,7 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Docker Image",
-                "42-config-docker"
+                "config-docker"
             ),
             M(
                 "Exposing Ports",
