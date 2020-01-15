@@ -12,3 +12,150 @@
   from = "/privacy/terms.html"
   to = "/terms/"
   status = 301
+
+[[redirects]]
+  from = "/docs/20_browser_extension"
+  to = "/docs/browser-extension/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/45_checkout_location"
+  to = "/docs/checkout-location/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/59_code_review"
+  to = "/docs/code-review/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/34_command_line_interface"
+  to = "/docs/command-line-interface/"
+  status = 301
+
+ [[redirects]]
+  from = "/docs/42_config_docker"
+  to = "/docs/confi-docker/"
+  status = 301 
+
+[[redirects]]
+  from = "/docs/41_config_gitpod_file"
+  to = "/docs/config-gitpod-file/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/43_config_ports"
+  to = "/docs/config-ports/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/44_config_start_tasks"
+  to = "/docs/config-start-tasks/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/40_configuration"
+  to = "/docs/configuration/"
+  status = 301
+
+ [[redirects]]
+  from = "/docs/31_context_urls"
+  to = "/docs/context-urls/"
+  status = 301 
+
+ [[redirects]]
+  from = "/docs/60_dashboard"
+  to = "/docs/dashboard/"
+  status = 301 
+
+[[redirects]]
+  from = "/docs/47_environment_variables"
+  to = "/docs/environment-variables/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/10_getting_started"
+  to = "/docs/getting-started/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/54_git"
+  to = "/docs/git/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/go_in_gitpod"
+  to = "/docs/go-in-gitpod/"
+  status = 301
+
+ [[redirects]]
+  from = "/docs/50_ide"
+  to = "/docs/ide/"
+  status = 301 
+
+
+[[redirects]]
+  from = "/docs/java_in_gitpod"
+  to = "/docs/java-in-gitpod/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/julia_in_gitpod"
+  to = "/docs/julia-in-gitpod/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/languages_and_frameworks"
+  to = "/docs/languages-and-frameworks/"
+  status = 301
+
+ [[redirects]]
+  from = "/docs/32_life_of_workspaces"
+  to = "/docs/life-of-workspaces/"
+  status = 301 
+
+ [[redirects]]
+  from = "/docs/46_prebuilds"
+  to = "/docs/prebuilds/"
+  status = 301 
+
+[[redirects]]
+  from = "/docs/58_pull_requests"
+  to = "/docs/pull-requestss/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/python_in_gitpod"
+  to = "/docs/python_in_gitpod/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/80_release_notes"
+  to = "/docs/release-notes/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/56_search"
+  to = "/docs/search/"
+  status = 301
+
+ [[redirects]]
+  from = "/docs/33_sharing_and_collaboration"
+  to = "/docs/sharing-and-collaboration/"
+  status = 301 
+
+
+ [[redirects]]
+  from = "/docs/70_subscription"
+  to = "/docs/subscription/"
+  status = 301 
+
+[[redirects]]
+  from = "/docs/52_tips_and_tricks"
+  to = "/docs/tips-and-tricks/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/30_workspaces"
+  to = "/docs/workspaces/"
+  status = 301
