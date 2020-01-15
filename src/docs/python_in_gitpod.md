@@ -68,7 +68,7 @@ tasks:
 <br>
 We also support other GUI frameworks such as
 <br>
-Here are some exmaples of other applications in Gitpod
+Here are some other examples of Python GUI applications in Gitpod:
 
 | Name             | Open in Gitpod | Framework |
 |------------------|----------------|-----------|
