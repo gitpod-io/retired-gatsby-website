@@ -18,15 +18,15 @@ export const MENU: MenuEntry[] = [
     ),
     M(
         "Getting Started",
-        "getting-started"
+        "10-getting-started"
     ),
     M(
         "Browser Extension",
-        "browser-extension"
+        "20-browser-extension"
     ),
     M(
         "Workspaces",
-        "30-workspaces",
+        "workspaces",
         [
             M(
                 "Context URLs",
