@@ -65,5 +65,5 @@ Launch a workpace. Launching the first workspace can take significantly longer (
 ## Customization
 
 * [**Storage**](../storage/): Configure where Gitpod stores stopped workspaces.
-* [**Kubernetes Nodes**:](../33-nodes/): Configure file system layout and the workspace's node associativity.
+* [**Kubernetes Nodes**:](../nodes/): Configure file system layout and the workspace's node associativity.
 * [**Workspaces**](../workspaces/): Configure workspace sizing.
