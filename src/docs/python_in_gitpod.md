@@ -16,7 +16,7 @@ Before we get started, here are some examples of already-[gitpodified](https://w
 
 ## GUI Applications with wxPython
 
-To install wxPython to your repository please add the following to your [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/42_config_docker/) if you don't have one please run `gp init` and commit the two generated files.
+To install wxPython to your repository please add the following to your [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/42_config_docker/). If you don't have one, simply run `gp init` and commit the two generated files.
 
 ```dockerfile
 # This will pull the official Gitpod `vnc` image
