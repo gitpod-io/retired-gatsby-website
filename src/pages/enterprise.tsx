@@ -205,7 +205,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Layer} alt="Layer Logo" /> Bitbucket</th>
+                    <th><img src={Layer} alt="Bitbucket Logo" /> Bitbucket</th>
                     <td>Soon</td>
                     <td>Soon</td>
                 </tr>
