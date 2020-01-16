@@ -228,6 +228,7 @@ class Nav extends React.Component {
                                         className="nav__btn"
                                         aria-label={ isNavRendered ? "Hide the Navigation Items" : "Show the Navigation Items"}
                                         onClick={this.toggleNavigation}
+                                        onFocus={this.toggleNavigation}
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.112 31.112"
@@ -296,7 +297,7 @@ class Nav extends React.Component {
                                             ]}
                                         />
                                     </li>
-                                    <li className="nav__item"><a href="https://gitpod.io/workspaces" tabIndex={ isNavRendered ? 0 : -1 } rel="noopener" className="btn">Go to App</a></li>
+                                    <li className="nav__item"><a href="https://gitpod.io/workspaces" onBlur={this.toggleNavigation} tabIndex={ isNavRendered ? 0 : -1 } rel="noopener" className="btn">Go to App</a></li>
                                 </ul>
                             ) : null }
                     </StyledNav>
