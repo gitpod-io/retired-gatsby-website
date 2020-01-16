@@ -146,6 +146,7 @@ class DropDown extends React.Component<DropDownProps, {}> {
             <StyledDropDown
                 onMouseEnter={this.handleMouseEnter}
                 onMouseLeave={this.handleMouseLeave}
+                onFocus={this.handleMouseEnter}
             >
                 <button
                     onClick={this.handleClick}
@@ -172,20 +173,34 @@ class DropDown extends React.Component<DropDownProps, {}> {
                                             tabIndex={ isRendered ? 0 : -1 }
                                             text={text}
                                             className="link"
+                                            onBlur={i == links.length - 1 && this.handleMouseLeave}
                                         />
                                     </li>
                                 )
                                     :
                                 (
                                     <li key={i}>
-                                        <Link
-                                            to={to}
-                                            className="link"
-                                            tabIndex={ isRendered ? 0 : -1 }
-                                            activeClassName="active"
-                                        >
-                                            {text}
-                                        </Link>
+                                        {
+                                            i == links.length - 1 ? 
+                                                <Link
+                                                    to={to}
+                                                    className="link"
+                                                    tabIndex={ isRendered ? 0 : -1 }
+                                                    activeClassName="active"
+                                                    onBlur={this.handleMouseLeave}
+                                                >
+                                                    {text}
+                                                </Link>
+                                            :
+                                                <Link
+                                                        to={to}
+                                                        className="link"
+                                                        tabIndex={ isRendered ? 0 : -1 }
+                                                        activeClassName="active"
+                                                >
+                                                        {text}
+                                                </Link>
+                                        }
                                     </li>
                                 )
                         )
