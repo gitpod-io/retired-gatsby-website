@@ -38,7 +38,7 @@ export const featuresCardsData = [
         hover: VSCGreyHover,
         iconTitle: <span>VS Code<br />Extensions</span>,
         paragraphs: <React.Fragment>
-            <p>Gitpod feels just like your local dev environment, as you can install any VS Code extensions. Install it via drag and drop and enjoy all the features you're used to.</p>
+            <p>Gitpod feels just like your local dev environment, as you can <strong> install any <br></br>VS Code extensions</strong>. Install it via drag and drop and enjoy all the features you're used to.</p>
         </React.Fragment>,
         more: <p>Read more about <Link to="/docs/vscode-extensions/">VS Code Extensions.</Link></p>,
         img: <img alt="VS Code Extensions" src={VSCodeExtensions}/>
@@ -65,8 +65,8 @@ export const featuresCardsData = [
         hover: IconLanguageHover,
         iconText: <span>Language<br />Support</span>,
         paragraphs: <React.Fragment>
-            <p>Gitpod comes with built-in language support for most popular languages: Java, JavaScript, Python, Go, Rust and C/C++, are supported out of the box and come with auto completion, diagostics, formatting and many more.</p>
-            <p>It's easy to get the same qulity of language support for any other language by installing the needed <Link to="/docs/42_config_docker/">tools via docker</Link> and adding useful <Link to="/docs/vscode-extensions/">VS Code Extensions</Link>.</p>
+            <p>Gitpod comes with built-in language support for most popular languages: <strong>Java, JavaScript, Python, Go, Rust and C/C++</strong>, are supported out of the box and come with auto completion, diagostics, formatting and many more.</p>
+            <p>It's easy to get the same quality of language support for any other language by installing the needed <Link to="/docs/42_config_docker/">Tools via Docker</Link> and adding useful <Link to="/docs/vscode-extensions/">VS Code Extensions</Link>.</p>
                     </React.Fragment>,
         img: <img alt="Supported Programming Languages" src={SupportedLanguages} />,
     },
