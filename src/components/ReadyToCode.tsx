@@ -71,7 +71,7 @@ class ReadyToCode extends React.Component {
         return (
             <div className="why-gitpod__box why-gitpod__box--1">
                 <div className="why-gitpod__text">
-                    <h3>Are You Ready-to-Code?</h3>
+                    <h3>Automated Dev Environments</h3>
                     <p>Gitpod is to your traditional local dev environment what Netflix is to a dusty shelf of DVDs.</p>
                     <p>Skip the friction and get beamed into a fully <strong>setup, compiled and tested dev environment</strong> with one click.</p>
                     <p>Read more about <Link to="/blog/continuous-dev-environment-in-devops/">Continuous Dev Environments.</Link></p>

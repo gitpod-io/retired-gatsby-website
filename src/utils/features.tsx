@@ -28,10 +28,10 @@ export const featuresCardsData = [
         icon: VSCGrey,
         iconTitle: <span>VS Code<br />Extensions</span>,
         paragraphs: <React.Fragment>
-            <p>Gitpod feels just like your local dev environment, as you can install any VS Code extensions. Install it via drag and drop and enjoy all the features you're used to.</p>
+            <p>Gitpod feels just like your local dev environment, as you can <strong> install any <br></br>VS Code extensions</strong>. Install it via drag and drop and enjoy all the features you're used to.</p>
         </React.Fragment>,
         more: <p>Read more about <Link to="/docs/vscode-extensions/">VS Code Extensions.</Link></p>,
-        img: <img alt="VS Code Extensions" src={VSCodeExtensions}/>
+        img: <img alt="VS Code Extensions" src={VSCodeExtensions} />
     },
     {
         id: 'prebuilt',
@@ -44,7 +44,7 @@ export const featuresCardsData = [
             <p>Gitpod is the first IDE that builds your project before you even open it.</p>
         </React.Fragment>,
         more: <p>Read more about <Link to="/docs/prebuilds/">Prebuilt Workspaces.</Link></p>,
-        img: <object tabIndex={-1} data={PrebuiltWorkspaces}/>,
+        img: <object tabIndex={-1} data={PrebuiltWorkspaces} />,
         isIllustration: true
     },
     {
@@ -53,9 +53,9 @@ export const featuresCardsData = [
         icon: IconLanguage,
         iconText: <span>Language<br />Support</span>,
         paragraphs: <React.Fragment>
-            <p>Gitpod comes with built-in language support for most popular languages: Java, JavaScript, Python, Go, Rust and C/C++, are supported out of the box and come with auto completion, diagostics, formatting and many more.</p>
-            <p>It's easy to get the same quality of language support for any other language by installing the needed <Link to="/docs/config-docker/">tools via docker</Link> and adding useful <Link to="/docs/vscode-extensions/">VS Code Extensions</Link>.</p>
-                    </React.Fragment>,
+            <p>Gitpod comes with built-in language support for most popular languages: <strong>Java, JavaScript, Python, Go, Rust and C/C++</strong>, are supported out of the box and come with auto completion, diagostics, formatting and many more.</p>
+            <p>It's easy to get the same quality of language support for any other language by installing the needed <Link to="/docs/config-docker/">Tools via Docker</Link> and adding useful <Link to="/docs/vscode-extensions/">VS Code Extensions</Link>.</p>
+        </React.Fragment>,
         img: <img alt="Supported Programming Languages" src={SupportedLanguages} />,
     },
     {
@@ -68,7 +68,7 @@ export const featuresCardsData = [
             <p>And still, if you like to do configurations yourself, you can adjust everything to your satisfaction by bringing your own Docker image or Dockerfile.</p>
         </React.Fragment>,
         more: <p>Read more about <Link to="/docs/config-docker/">Terminals.</Link></p>,
-        img: <img alt="Linux Terminals" src={LinuxTerminal}/>,
+        img: <img alt="Linux Terminals" src={LinuxTerminal} />,
     },
     {
         id: "code-review",
@@ -78,7 +78,7 @@ export const featuresCardsData = [
         paragraphs: <React.Fragment>
             <p>Open pull requests in Gitpod to run, navigate, and review the code from within the IDE. Reply to comments and publish code reviews without switching back to GitHub.</p>
             <p>Thanks to <a href="#parallel">Parallel</a> and <Link to="/docs/prebuilds/">Prebuilt</Link> Workspaces, you can review code within seconds and without interfering with other ongoing work.</p>
-            </React.Fragment>,
+        </React.Fragment>,
         more: <p>Read more about <Link to="/blog/when-code-reviews-lgtm/">Code Reviews.</Link></p>,
         img: <img alt="Code Review" src={CodeReview} />,
     },
@@ -92,7 +92,7 @@ export const featuresCardsData = [
             <p>To sneak in a bugfix on a maintenance branch or a code review - just start more workspaces - in parallel.</p>
         </React.Fragment>,
         strong: 'Use clean, fresh workspaces for every task.',
-        img: <object tabIndex={-1}  data={ParallelWorkspaces}/>,
+        img: <object tabIndex={-1} data={ParallelWorkspaces} />,
         isIllustration: true
     },
     {
@@ -100,11 +100,11 @@ export const featuresCardsData = [
         title: "Create Snapshots",
         icon: Camera,
         iconText: <span>Create<br />Snapshots</span>,
-        paragraphs:<React.Fragment>
+        paragraphs: <React.Fragment>
             <p>Create a snapshot of your work and share it with the world. Based on your snapshot new workspaces can be created and edited independently.</p>
         </React.Fragment>,
         more: <p>Read more about <Link to="/docs/sharing-and-collaboration/#sharing-snapshots">Sharing a Snapshot.</Link></p>,
-        img:<object tabIndex={-1}  data={CreateASnapshot}/>,
+        img: <object tabIndex={-1} data={CreateASnapshot} />,
         isIllustration: true
     },
     {
@@ -116,7 +116,7 @@ export const featuresCardsData = [
             <p>No more need for expensive notebooks, with Gitpod <strong>coding becomes accessible anywhere and for everyone</strong>.</p>
             <p>It works just as smoothly on a Chromebook as on a high-end notebook or any other computer.</p>
         </React.Fragment>,
-        img: <object tabIndex={-1}  data={WorksOnAnyDevice}/>,
+        img: <object tabIndex={-1} data={WorksOnAnyDevice} />,
         caption: '*comprehensive tablet support is coming soon',
         isIllustration: true
     },
@@ -125,10 +125,10 @@ export const featuresCardsData = [
         title: "Share Running Workspaces",
         icon: Share,
         iconText: <span>Share Running<br />Workspaces</span>,
-        paragraphs:<React.Fragment>
+        paragraphs: <React.Fragment>
             <p>Collaborate with your friends and colleagues and hunt down bugs together.</p>
         </React.Fragment>,
         more: <p>Read more about <Link to="/docs/sharing-and-collaboration/">Sharing a Workspace.</Link></p>,
-        img:<object tabIndex={-1}  data={ShareWorkspaces} style={{transform: 'translateY(2rem) scale(.9)'}}/>,
+        img: <object tabIndex={-1} data={ShareWorkspaces} style={{ transform: 'translateY(2rem) scale(.9)' }} />,
     }
 ]
