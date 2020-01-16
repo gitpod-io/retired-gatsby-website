@@ -151,6 +151,10 @@ export default `
     /* ----- Links & Buttons ----- */
     /* ------------------------------------------- */
 
+    :focus {
+        outline: 2px solid #9ED3FF;
+    }
+
     button {
         font-family: inherit;
         outline: none;
@@ -164,8 +168,7 @@ export default `
         color: ${colors.link};
         text-decoration: none;
 
-        &:hover,
-        &:focus {
+        &:hover {
             color: ${colors.lightBlue};
         }
     }
@@ -173,10 +176,6 @@ export default `
     button, a {
         &::-moz-focus-inner {
             border: 0;
-        }
-
-        &:focus {
-            outline: none;
         }
     }
 
@@ -221,7 +220,6 @@ export default `
 
             &:focus {
                 color: ${colors.white};
-                box-shadow: ${shadows.btnCta};
             }
         }
 
@@ -276,8 +274,7 @@ export default `
             transition: all .4s cubic-bezier(0,.5,0, 1);
         }
 
-        &:hover,
-        &:focus {
+        &:hover {
 
             svg {
                 fill: ${colors.lightBlue};
