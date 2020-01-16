@@ -2,8 +2,8 @@
 
 module.exports = {
     siteMetadata: {
-        title: 'Gitpod - Online IDE for GitHub',
-        description: 'One-click ready-to-code development environments for GitHub.',
+        title: 'Gitpod - Online IDE for GitHub and GitLab',
+        description: 'Gitpod launches ready-to-code dev environments for your GitHub or GitLab project with a single click.',
         siteUrl: 'https://www.gitpod.io',
         author: {
             name: 'TypeFox',
