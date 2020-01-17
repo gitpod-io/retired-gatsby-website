@@ -1,18 +1,18 @@
 # Code Reviews
 
 Let us have a look how we can perform a code review on GitHub with Gitpod. We continue the example
-from the [previous chapter](pull-requests.md), where we created a pull request (PR). In the role
+from the [previous chapter](/docs/pull-requests/), where we created a pull request (PR). In the role
 of a reviewer you open this PR on GitHub. Once again, Gitpod allows you to follow the GitHub flow.
 
 ![](images/cr-GitHub-pr.png)
 
 Just like the creator of the PR, you can start a Gitpod workspace by prefixing the URL or using the
-`Gitpod` button provided by the [Gitpod browser extension](Browser-Extension.md). Gitpod spawns a
+`Gitpod` button provided by the [Gitpod browser extension](/docs/browser-extension/). Gitpod spawns a
 workspace and the IDE loads in the browser.
 
 ![](images/cr-gitpod-started.png)
 
-The initialization task in the repository's [.gitpod.yml file](configuration.md) builds and starts
+The initialization task in the repository's [.gitpod.yml file](/docs/configuration/) builds and starts
 the app automatically such that you can test the changes right within Gitpod's `Preview`.
 
 ![](images/cr-preview.png)
@@ -20,7 +20,7 @@ the app automatically such that you can test the changes right within Gitpod's `
 Gitpod has opened the `Diff` view and the first change in an editor. Using the arrow keys, you can
 easily browse through the changes and examine them in their context. Applying further changes is
 easy, as you have a full IDE at your fingertips. You can commit them to the PRs branch as described
-in the section on [Git](git.md).
+in the section on [Git](/docs/git/).
 
 ![](images/cr-diff.png)
 

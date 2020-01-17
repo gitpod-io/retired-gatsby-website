@@ -93,7 +93,6 @@
   to = "/docs/ide/"
   status = 301 
 
-
 [[redirects]]
   from = "/docs/java_in_gitpod"
   to = "/docs/java-in-gitpod/"
@@ -110,8 +109,8 @@
   status = 301
 
  [[redirects]]
-  from = "/docs/32_life_of_workspaces"
-  to = "/docs/life-of-workspaces/"
+  from = "/docs/32_life_of_workspace"
+  to = "/docs/life-of-workspace/"
   status = 301 
 
  [[redirects]]
@@ -121,12 +120,12 @@
 
 [[redirects]]
   from = "/docs/58_pull_requests"
-  to = "/docs/pull-requestss/"
+  to = "/docs/pull-requests/"
   status = 301
 
 [[redirects]]
   from = "/docs/python_in_gitpod"
-  to = "/docs/python_in_gitpod/"
+  to = "/docs/python-in-gitpod/"
   status = 301
 
 [[redirects]]
@@ -143,7 +142,6 @@
   from = "/docs/33_sharing_and_collaboration"
   to = "/docs/sharing-and-collaboration/"
   status = 301 
-
 
  [[redirects]]
   from = "/docs/70_subscription"
