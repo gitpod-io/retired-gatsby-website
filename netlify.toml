@@ -35,7 +35,7 @@
 
  [[redirects]]
   from = "/docs/42_config_docker"
-  to = "/docs/confi-docker/"
+  to = "/docs/config-docker/"
   status = 301 
 
 [[redirects]]
