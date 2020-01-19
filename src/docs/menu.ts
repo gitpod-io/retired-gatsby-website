@@ -115,12 +115,16 @@ export const MENU: MenuEntry[] = [
         "languages-and-frameworks",
         [
             M(
+                "Python",
+                "python-in-gitpod"
+            ),
+            M(
                 "Java",
                 "java-in-gitpod"
             ),
             M(
-                "Python",
-                "python-in-gitpod"
+                "C++",
+                "cpp-in-gitpod"
             ),
             M(
                 "Go",
