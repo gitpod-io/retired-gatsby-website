@@ -116,6 +116,7 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
             padding: .8rem 0;
             color: #EAA42F;
             font-size: 90%;
+            font-weight: 600;
         }
     }
 `
