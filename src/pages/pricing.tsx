@@ -82,8 +82,10 @@ const StyledPricingPage = styled.div`
             }
 
             & > * {
-                &:last-of-type {
-                    margin-left: auto;
+                @media(min-width: 650px) {
+                    &:last-of-type {
+                        margin-left: auto;
+                    }
                 }
             }
         }
