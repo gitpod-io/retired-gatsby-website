@@ -14,7 +14,7 @@ import { Link } from 'gatsby'
 import Twitter from '../resources/twitter.svg'
 import Mail from '../resources/mail.svg'
 import Discourse from '../resources/discourse.svg'
-import { sizes } from '../styles/variables'
+import { sizes, colors } from '../styles/variables'
 
 const StyledGithubStudentPackPage = styled.div`
     /* --------------------------------------- */
@@ -23,7 +23,7 @@ const StyledGithubStudentPackPage = styled.div`
 
     .offers {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
 
         @media(max-width: ${sizes.breakpoints.md}) {
             flex-direction: column;
@@ -84,6 +84,7 @@ const offers: PricingBoxProps[] = [
         duration: '50 hours / month',
         hideButton: true,
         features: ['Unlimited workspaces', 'Public repositories'],
+        text: 'Free for everyone'
     },
     {
         title: 'Student',
@@ -91,7 +92,16 @@ const offers: PricingBoxProps[] = [
         price: <span><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€8' : '$9')}</span> Free</span>,
         duration: '100 hours / month',
         hideButton: true,
-        features: ['Unlimited workspaces', 'Public & Private', 'Non-commercial use only']
+        features: ['Unlimited workspaces', 'Public & Private', 'Non-commercial use only'],
+        transform: 'scale(1.05)',
+        btn: <a 
+                href="https://gitpod.io/subscription/" 
+                target="_blank" 
+                className="btn btn--cta"
+                style={{color: colors.white}}
+             >
+                Claim Offer
+             </a>
     },
     {
         title: 'Professional Student',
@@ -99,7 +109,8 @@ const offers: PricingBoxProps[] = [
         price: <span><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€35' : '$39')}</span> {(isEurope() ? '€8' : '$9')}</span>,
         duration: 'Unlimited hours / month',
         hideButton: true,
-        features: ['Unlimited workspaces', 'Public & Private', 'Non-commercial use only']
+        features: ['Unlimited workspaces', 'Public & Private', 'Non-commercial use only'],
+        text: 'Always free for students'
     }
 ]
 
@@ -140,13 +151,15 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
                                         link={offer.link}
                                         background={offer.background}
                                         hideButton={offer.hideButton}
+                                        btn={offer.btn}
+                                        text={offer.text}
                                     />
                                     )
                                 )
                             }
                         </div>
                         <div className="btn-container">
-                            <a href="https://gitpod.io/subscription/" target="_blank" className="btn btn--cta btn--big">Claim Offer</a>
+                            
                         </div>
                     </div>
                 </section>

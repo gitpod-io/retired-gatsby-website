@@ -8,7 +8,7 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
     position: relative;
     margin-bottom: 3rem;
     padding: 3rem 4rem;
-    min-height: ${({hideButton}) => hideButton ? 'auto' : '50rem'};
+    min-height: 50rem;
     min-width: 25rem;
     width: 24%;
     text-align: center;
@@ -25,7 +25,7 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
 
     @media(max-width: ${sizes.breakpoints.lg}) {
         transform: scale(1.04);
-        min-height:  ${({hideButton}) => hideButton ? 'auto' : '54rem'};
+        min-height: 54rem;
         margin-bottom: 5rem;
     }
 
@@ -90,12 +90,20 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
         }
     }
 
-    .btn {
-        display: ${({hideButton}) => hideButton ? 'none': '' };
+    .btn, .text {
         position: absolute;
         bottom: 2rem;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .text {
+        width: 100%;
+        opacity: .7;
+    }
+
+    .is-hidden {
+        display: ${({hideButton}) => hideButton ? 'none': '' };
     }
 `
 
@@ -111,9 +119,11 @@ export interface PricingBoxProps {
     btnText?: string
     link?: string
     hideButton?: true 
+    btn?: JSX.Element
+    text?: string
 }
 
-const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, feature, features, btnText, transform, background, link, hideButton }) => (
+const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, feature, features, btnText, transform, background, link, hideButton, btn, text }) => (
     <StyledPricingBox transform={transform} background={background} hideButton={hideButton}>
         <h4>{title}</h4>
         { img }
@@ -125,7 +135,9 @@ const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, f
                 { features.map((f, i) => <li key={i}>{f}</li>) }
             </ul>
         : null }
-        <Link to={link || '/#get-started'} className="btn" style={background ? {color: colors.textDark} : {}}>{btnText ? btnText : 'Start for Free'}</Link>
+        <Link to={link || '/#get-started'} className="btn is-hidden" style={background ? {color: colors.textDark} : {}}>{btnText ? btnText : 'Start for Free'}</Link>
+        { btn ? btn : null }
+        { text ? <p className="text">{text}</p> : null }
     </StyledPricingBox>
 )
 
