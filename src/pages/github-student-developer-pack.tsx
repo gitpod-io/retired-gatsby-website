@@ -136,7 +136,9 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
                 <section>
                     <div className="row">
                         <h2>GitHub Student Offer</h2>
-                        <p>With the <a href="https://education.github.com/pack" target="_blank" rel="noopener">GitHub Student Developer Pack</a>, you get the same features as with our usual plans but at a much better price. We’re happy to be able to empower student developers participating in it.</p>
+                        <p>With the <a href="https://education.github.com/pack" target="_blank" rel="noopener">GitHub Student Developer Pack</a>, you get the same features as with our usual plans but at a much better price. 
+                        <br />
+                        We’re happy to be able to empower student developers participating in it.</p>
                         <div className="offers">
                             {
                                 offers.map(
