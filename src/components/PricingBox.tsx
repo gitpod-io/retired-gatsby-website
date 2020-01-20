@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import { colors, shadows, sizes } from '../styles/variables'
 
-const StyledPricingBox = styled.div<{transform?: string, background?: boolean, hideButton?: boolean}>`
+const StyledPricingBox = styled.div<{transform?: string, background?: boolean, hideButton?: boolean, banner?: string}>`
     position: relative;
     margin-bottom: 3rem;
     padding: 3rem 4rem;
@@ -35,6 +35,8 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
 
     @media(max-width: ${sizes.breakpoints.md}) {
         padding: 2rem 3rem;
+
+        margin-top: ${({banner}) => banner ? '7rem': ''};
     }
 
     > * {
@@ -105,6 +107,22 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
     .is-hidden {
         display: ${({hideButton}) => hideButton ? 'none': '' };
     }
+
+    .banner {
+        position: absolute;
+        left: 0;
+        bottom: 100%;
+        width: 100%;
+        box-shadow: ${shadows.light};
+
+        p {
+            width: 20ch;
+            margin: 0 auto;
+            padding: .8rem 0;
+            color: #EAA42F;
+            font-size: 90%;
+        }
+    }
 `
 
 export interface PricingBoxProps {
@@ -121,10 +139,11 @@ export interface PricingBoxProps {
     hideButton?: true 
     btn?: JSX.Element
     text?: string
+    banner?: string
 }
 
-const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, feature, features, btnText, transform, background, link, hideButton, btn, text }) => (
-    <StyledPricingBox transform={transform} background={background} hideButton={hideButton}>
+const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, feature, features, btnText, transform, background, link, hideButton, btn, text, banner }) => (
+    <StyledPricingBox transform={transform} background={background} hideButton={hideButton} banner={banner}>
         <h4>{title}</h4>
         { img }
         { price ? <div className="price">{price}</div> : null }
@@ -138,6 +157,7 @@ const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, f
         <Link to={link || '/#get-started'} className="btn is-hidden" style={background ? {color: colors.textDark} : {}}>{btnText ? btnText : 'Start for Free'}</Link>
         { btn ? btn : null }
         { text ? <p className="text">{text}</p> : null }
+        { banner ? <div className="banner"><p>{banner}</p></div> : null }
     </StyledPricingBox>
 )
 
