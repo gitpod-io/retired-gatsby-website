@@ -5,9 +5,6 @@ import Banner from '../components/Banner'
 import BackPack from '../resources/backpack.svg'
 import PricingBox, { PricingBoxProps } from '../components/PricingBox'
 import styled from '@emotion/styled'
-import StudyTable from '../resources/study-table.svg'
-import BriefCase from '../resources/briefcase.svg'
-import HandShake from '../resources/handshake.svg'
 import { isEurope } from './pricing'
 import Quote from '../components/Quote'
 import { Link } from 'gatsby'
@@ -79,7 +76,7 @@ const StyledGithubStudentPackPage = styled.div`
 const offers: PricingBoxProps[] = [
     {
         title: 'Open Source',
-        img: <object data={HandShake} />,
+        img: <object />,
         price: <span>Free</span>,
         duration: '50 hours / month',
         hideButton: true,
@@ -87,7 +84,7 @@ const offers: PricingBoxProps[] = [
     },
     {
         title: 'Student',
-        img: <object data={StudyTable} />,
+        img: <object />,
         price: <span><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€8' : '$9')}</span> Free</span>,
         duration: '100 hours / month',
         hideButton: true,
@@ -95,7 +92,7 @@ const offers: PricingBoxProps[] = [
     },
     {
         title: 'Professional Student',
-        img: <object data={BriefCase} />,
+        img: <object />,
         price: <span><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€35' : '$39')}</span> {(isEurope() ? '€8' : '$9')}</span>,
         duration: 'Unlimited hours / month',
         hideButton: true,
