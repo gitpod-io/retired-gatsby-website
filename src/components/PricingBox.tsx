@@ -51,6 +51,11 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
     .price {
         font-size: 2.1rem;
         font-weight: 600;
+
+        span {
+            font-size: 80%;
+            font-weight: 400;
+        }
     }
 
     .duration {
