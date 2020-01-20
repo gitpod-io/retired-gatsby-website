@@ -81,7 +81,7 @@ const StyledGithubStudentPackPage = styled.div`
 const offers: PricingBoxProps[] = [
     {
         title: 'Open Source',
-        img: <object data={HeartLock}/>,
+        img: <object tabIndex={-1} data={HeartLock}/>,
         price: <span>Free</span>,
         duration: '50 hours / month',
         hideButton: true,
@@ -90,7 +90,7 @@ const offers: PricingBoxProps[] = [
     },
     {
         title: 'Student',
-        img: <object data={Bag}/>,
+        img: <object tabIndex={-1} data={Bag}/>,
         price: <span><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€8' : '$9')}</span> Free</span>,
         duration: '100 hours / month',
         hideButton: true,
@@ -108,7 +108,7 @@ const offers: PricingBoxProps[] = [
     },
     {
         title: 'Professional Student',
-        img: <object data={Rocket}/>,
+        img: <object tabIndex={-1} data={Rocket}/>,
         price: <span><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€35' : '$39')}</span> {(isEurope() ? '€8' : '$9')}</span>,
         duration: 'Unlimited hours / month',
         hideButton: true,
