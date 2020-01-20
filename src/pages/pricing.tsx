@@ -26,14 +26,14 @@ const plans: PricingBoxProps[] = [
     {
         title: 'Personal',
         img: <object tabIndex={-1} data={LightBulb}/>,
-        price: <>{isEurope() ? '€8' : '$9'}<span>/month</span></>,
+        price: <>{isEurope() ? '€8' : '$9'}<span> / month</span></>,
         duration: '100 hours / month',
         features: ['Private & Public Repos', <span className="span">4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
     },
     {
         title: 'Professional',
         img: <img alt='Rocket' src={Rocket}/>,
-        price: <>{isEurope() ? '€23' : '$25'}<span>/month</span></>,
+        price: <>{isEurope() ? '€23' : '$25'}<span> / month</span></>,
         duration: 'unlimited hours',
         features: ['Private & Public Repos', <span className="span">8 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
         transform: 'scale(1.05)',
@@ -41,7 +41,7 @@ const plans: PricingBoxProps[] = [
     {
         title: 'Unlimited',
         img: <object tabIndex={-1}  data={MagicCap}/>,
-        price: <>{isEurope() ? '€35' : '$39'}<span>/month</span></>,
+        price: <>{isEurope() ? '€35' : '$39'}<span> / month</span></>,
         duration: 'unlimited hours',
         features: ['Private & Public Repos', <span className="span">16 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>,  <span className="span">60min Timeout <PopOver description="Workspaces without user activity are stopped after 60 minutes."/></span>, <span className="span">3h Timeout Boost <PopOver description="You can manually boost the timeout to 3h within a running workspace."/></span>],
     },
