@@ -14,6 +14,7 @@ import { Link } from 'gatsby'
 import Twitter from '../resources/twitter.svg'
 import Mail from '../resources/mail.svg'
 import Discourse from '../resources/discourse.svg'
+import PopOver from '../components/PopOver'
 import { sizes, colors } from '../styles/variables'
 
 const StyledGithubStudentPackPage = styled.div`
@@ -84,7 +85,7 @@ const offers: PricingBoxProps[] = [
         price: <span>Free</span>,
         duration: '50 hours / month',
         hideButton: true,
-        features: ['Unlimited workspaces', 'Public repositories'],
+        features: ['Private & Public Repos', <span className="span"> &lt; 4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>],        
         text: 'Free for everyone'
     },
     {
@@ -93,7 +94,7 @@ const offers: PricingBoxProps[] = [
         price: <span><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€8' : '$9')}</span> Free</span>,
         duration: '100 hours / month',
         hideButton: true,
-        features: ['Unlimited workspaces', 'Public & Private', 'Non-commercial use only'],
+        features: ['Private & Public Repos', <span className="span">4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>, 'Limited to 6 months'],
         transform: 'scale(1.05)',
         btn: <a 
                 href="https://gitpod.io/subscription/" 
@@ -111,7 +112,7 @@ const offers: PricingBoxProps[] = [
         price: <span><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€35' : '$39')}</span> {(isEurope() ? '€8' : '$9')}</span>,
         duration: 'Unlimited hours / month',
         hideButton: true,
-        features: ['Unlimited workspaces', 'Public & Private', 'Non-commercial use only'],
+        features: ['Private & Public Repos', <span className="span">8 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
         text: 'Always free for students'
     }
 ]
