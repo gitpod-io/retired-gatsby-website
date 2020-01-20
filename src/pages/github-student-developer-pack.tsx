@@ -24,6 +24,7 @@ const StyledGithubStudentPackPage = styled.div`
     .offers {
         display: flex;
         justify-content: center;
+        margin-top: 15rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
             flex-direction: column;
@@ -101,7 +102,8 @@ const offers: PricingBoxProps[] = [
                 style={{color: colors.white}}
              >
                 Claim Offer
-             </a>
+             </a>,
+        banner: 'Exclusive Offer for the GitHub Student Pack'
     },
     {
         title: 'Professional Student',
@@ -153,6 +155,7 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
                                         hideButton={offer.hideButton}
                                         btn={offer.btn}
                                         text={offer.text}
+                                        banner={offer.banner}
                                     />
                                     )
                                 )
