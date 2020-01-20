@@ -146,10 +146,10 @@ export const MENU: MenuEntry[] = [
         [
             M(
                 "Prerequisites",
-                "self-hosted/latest/install/01-prepare-installation/"
+                "self-hosted/latest/install/prepare-installation/"
             ),M(
                 "Install on Vanilla Kubernetes",
-                "self-hosted/latest/install/10-install-on-kubernetes/"
+                "self-hosted/latest/install/install-on-kubernetes/"
             ),
             M(
                 "Install on Google Cloud Platform",
