@@ -72,6 +72,15 @@ export default `
         background: ${colors.offWhite};
     }
 
+    .text-with-galaxy-bg {
+        color: transparent;
+        font-weight: 600;
+        background: url('/galaxy.jpg');
+        background-position: center right;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
     /* ------------------------------------------- */
     /* ----- Headings & Paragraphs----- */
     /* ------------------------------------------- */
