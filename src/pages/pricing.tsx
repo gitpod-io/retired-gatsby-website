@@ -230,7 +230,7 @@ const PricingPage: React.SFC<{}> = () => (
                             <p>
                                 If you're a professional open-source developer and think you need more, let us know, by applying for unlimited hours. Your GitHub / GitLab track record should clearly show your regular open-source contributions.
                             </p>
-                            <a href="/contact/" className="btn">Apply Here</a>
+                            <a href="/contact/" className="btn">Apply Now</a>
                         </div>
                         <div>
                             <h2>For Students</h2>
