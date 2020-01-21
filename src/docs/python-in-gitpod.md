@@ -1,4 +1,4 @@
-# Python
+# Python in Gitpod
 
 Gitpod comes with great support for Python builtin. Still, depending on your project, you might want to further optimize the experience.
 
@@ -16,7 +16,7 @@ Before we get started, here are some examples of already-[gitpodified](https://w
 
 ## GUI Applications with wxPython
 
-To install wxPython to your repository please add the following to your [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/42_config_docker/). If you don't have one, simply run [`gp init`](https://www.gitpod.io/docs/34_command_line_interface/) and commit the two generated files.
+To install wxPython to your repository please add the following to your [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/config-docker/). If you don't have one, simply run [`gp init`](https://www.gitpod.io/docs/command-line-interface/) and commit the two generated files.
 
 ```dockerfile
 # This will pull the official Gitpod `vnc` image
@@ -34,7 +34,7 @@ RUN sudo apt-get -q update && \
 RUN pip3 install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-18.04/ wxPython
 ```
 
-Here is a corresponding [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/) example:
+Here is a corresponding [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/) example:
 
 ```yaml
 image:

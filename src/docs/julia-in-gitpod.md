@@ -1,4 +1,4 @@
-# Julia
+# Julia in Gitpod
 
 It's relatively easy to set up your Julia project in Gitpod.
 
