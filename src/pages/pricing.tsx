@@ -232,8 +232,11 @@ const PricingPage: React.SFC<{}> = () => (
                         </div>
                         <div>
                             <h2>For Students</h2>
-                            <p>Students get the <strong>Unlimited plan for {isEurope() ? '€8' : '$9'}</strong> per month. Make sure your student email is set as your primary email on GitHub.</p>
-                            <a href="/contact/" className="btn">Doesn't Work?</a>
+                            <p>
+                                Students get the <strong>Unlimited plan for {isEurope() ? '€8' : '$9'}</strong> per month.
+                            </p>
+                            <p>Make sure your student email is set as your primary email on GitHub. And please let us know if your educational institution is not correctly recognized.</p>
+                            <a href="/contact/" className="btn">I'm a Student</a>
                         </div>
                     </section>
                 </div>
