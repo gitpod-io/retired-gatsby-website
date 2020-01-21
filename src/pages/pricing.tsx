@@ -90,18 +90,18 @@ const StyledPricingPage = styled.div`
 
         &__tagline {
             transform: translateY(-3rem);
-
+            box-shadow: ${shadows.light};
+            text-align: center;
+            color: ${colors.text};
+            padding: 4rem 0 3rem;
+            width: 72%;
+            
             @media(max-width: ${sizes.breakpoints.lg}) {
                 display: none;
             }
 
             h4 {
-                padding: 4rem 0 3rem;
-                width: 72%;
                 font-weight: 600;
-                color: ${colors.text};
-                text-align: center;
-                box-shadow: ${shadows.light};
             }
         }
     }
@@ -213,6 +213,7 @@ const PricingPage: React.SFC<{}> = () => (
                         </div>
                         <div className="pricing__tagline">
                             <h4>Gitpod Is Free for Open Source.</h4>
+                            <p>Just prefix any public GitHub or GitLab URL with <span className="text-with-galaxy-bg">gitpod.io/#</span></p>
                         </div>
                     </section>
 

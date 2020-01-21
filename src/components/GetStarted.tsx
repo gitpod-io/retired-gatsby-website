@@ -191,15 +191,6 @@ const StyledGetStarted = styled.div`
                         width: 35%;
                     }
                 }
-
-                span {
-                    color: transparent;
-                    font-weight: 600;
-                    background: url('/galaxy.jpg');
-                    background-position: center right;
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                }
             }
         }
 
@@ -278,7 +269,7 @@ class GetStarted extends React.Component {
 
                     <div className="get-started__prefix">
                         <div className="get-started__prefix-text-container">
-                            <h3 className="get-started__prefix-text">Prefix any GitHub or GitLab<br aria-hidden={true} />URL with <span>gitpod.io/#</span></h3>
+                            <h3 className="get-started__prefix-text">Prefix any GitHub or GitLab<br aria-hidden={true} />URL with <span className="text-with-galaxy-bg">gitpod.io/#</span></h3>
                         </div>
                         <label htmlFor="url" className="get-started__prefix-input-container">
                             <div className="get-started__prefix-input">
