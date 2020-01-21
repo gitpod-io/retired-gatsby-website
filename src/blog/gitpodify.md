@@ -99,7 +99,7 @@ tasks:
     command: npm run client
 ```
 
-To learn more about configuring Terminals, please visit [the docs](https://www.gitpod.io/docs/44_config_start_tasks/).
+To learn more about configuring Terminals, please visit [the docs](https://www.gitpod.io/docs/config-start-tasks/).
 
 ## Accelerating startup with prebuilt workspaces
 
@@ -124,7 +124,7 @@ github:
     addComment: false
 ```
 
-To see all configuration options for the Gitpod app, please visit [the docs](https://www.gitpod.io/docs/46_prebuilds/).
+To see all configuration options for the Gitpod app, please visit [the docs](https://www.gitpod.io/docs/prebuilds/).
 
 ## Installing missing packages
 
@@ -482,7 +482,7 @@ https://gitpod.io/#TOKEN=value/https://github.com/gitpod-io/website
 
 (But please don't use this for security-sensitive data like passwords and private keys, because URLs can easily be intercepted. Also, note that values should be URL-encoded.)
 
-Finally, users can also manage env variables for all their workspaces by visiting [gitpod.io/environment-variables](https://gitpod.io/environment-variables). You can learn more about managing Gitpod env variables in [the docs](https://www.gitpod.io/docs/47_environment_variables/).
+Finally, users can also manage env variables for all their workspaces by visiting [gitpod.io/environment-variables](https://gitpod.io/environment-variables). You can learn more about managing Gitpod env variables in [the docs](https://www.gitpod.io/docs/environment-variables/).
 
 For a complete example of a project that requires env variables (saved in `.yml` config files), please see the [dev.to](https://dev.to/) project's [.gitpod.yml](https://github.com/thepracticaldev/dev.to/blob/master/.gitpod.yml).
 

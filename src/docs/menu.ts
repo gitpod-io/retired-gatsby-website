@@ -18,53 +18,53 @@ export const MENU: MenuEntry[] = [
     ),
     M(
         "Getting Started",
-        "10_getting_started"
+        "getting-started"
     ),
     M(
         "Browser Extension",
-        "20_browser_extension"
+        "browser-extension"
     ),
     M(
         "Workspaces",
-        "30_workspaces",
+        "workspaces",
         [
             M(
                 "Context URLs",
-                "31_context_urls"
+                "context-urls"
             ),
             M(
                 "Life of a Workspace",
-                "32_life_of_workspace"
+                "life-of-workspace"
             ),
             M(
                 "Collaboration & Sharing",
-                "33_sharing_and_collaboration"
+                "sharing-and-collaboration"
             ),
             M(
                 "Command Line Interface",
-                "34_command_line_interface"
+                "command-line-interface"
             )
         ]
     ),
     M(
         "Configure Your Repository",
-        "40_configuration",
+        "configuration",
         [
             M(
                 ".gitpod.yml",
-                "41_config_gitpod_file"
+                "config-gitpod-file"
             ),
             M(
                 "Docker Image",
-                "42_config_docker"
+                "config-docker"
             ),
             M(
                 "Exposing Ports",
-                "43_config_ports"
+                "config-ports"
             ),
             M(
                 "Start Tasks",
-                "44_config_start_tasks"
+                "config-start-tasks"
             ),
             M(
                 "VS Code Extensions",
@@ -72,73 +72,73 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Workspace Location",
-                "45_checkout_location"
+                "checkout-location"
             ),
             M(
                 "Prebuilt Workspaces",
-                "46_prebuilds"
+                "prebuilds"
             ),
             M(
                 "Environment Variables",
-                "47_environment_variables"
+                "environment-variables"
             )
         ]
     ),
     M(
         "Theia – Gitpod's IDE",
-        "50_ide",
+        "ide",
         [
             M(
                 "Tips & Tricks",
-                "52_tips_and_tricks"
+                "tips-and-tricks"
             ),
             M(
                 "Git Integration",
-                "54_git"
+                "git"
             ),
             M(
                 "Search",
-                "56_search"
+                "search"
             ),
             M(
                 "Pull Requests",
-                "58_pull_requests"
+                "pull-requests"
             ),
             M(
                 "Code Reviews",
-                "59_code_reviews"
+                "code-reviews"
             )
         ]
     ),
     M(
         "Languages & Frameworks",
-        "languages_and_frameworks",
+        "languages-and-frameworks",
         [
             M(
                 "Java",
-                "java_in_gitpod"
+                "java-in-gitpod"
             ),
             M(
                 "Python",
-                "python_in_gitpod"
+                "python-in-gitpod"
             ),
             M(
                 "Julia",
-                "julia_in_gitpod"
+                "julia-in-gitpod"
             ),
             M(
                 "Go",
-                "go_in_gitpod"
+                "go-in-gitpod"
             )
         ]
     ),
     M(
         "Dashboard",
-        "60_dashboard"
+        "dashboard"
     ),
     M(
         "Subscriptions",
-        "70_subscriptions"
+        "subscriptions"
     ),
     M(
         "Gitpod Self-Hosted",
@@ -146,20 +146,20 @@ export const MENU: MenuEntry[] = [
         [
             M(
                 "Prerequisites",
-                "self-hosted/latest/install/01_prepare_installation/"
+                "self-hosted/latest/install/prepare-installation/"
             ),M(
                 "Install on Vanilla Kubernetes",
-                "self-hosted/latest/install/10_install_on_kubernetes/"
+                "self-hosted/latest/install/install-on-kubernetes/"
             ),
             M(
                 "Install on Google Cloud Platform",
-                "self-hosted/latest/install/11_install_on_gcp_script/"
+                "self-hosted/latest/install/install-on-gcp-script/"
             )
         ]
     ),
     M(
         "Release Notes",
-        "80_release_notes",
+        "release-notes",
         [
             M(
                 "June 2019",

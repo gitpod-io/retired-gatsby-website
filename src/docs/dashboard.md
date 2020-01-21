@@ -25,7 +25,7 @@ _Stopping_, _Last run_).
 Workspaces can be started, opened, or stopped using the respective buttons.
 
 You can also enable/disable sharing of a workspace by clicking the lock icon. See the section on
-[collaboration](33_Sharing_and_Collaboration.md) for details about sharing workspaces.
+[collaboration](/docs/sharing-and-collaboration/) for details about sharing workspaces.
 
 ### Archived Workspaces
 

@@ -47,7 +47,7 @@ Gitpod provides disposable dev environments, which means you are getting fresh d
 
 In the generated `.gitpod.yml` you will find the following section:
 ```yml
-# List the startup tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/44_config_start_tasks/
+# List the startup tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
 - init: echo 'init script' # runs during prebuild
   command: echo 'start script'
@@ -80,7 +80,7 @@ Once you or your teammates start a dev environment, you will get the prebuild st
 
 ## IDE features
 
-> 🚧 Please help improve this section by [editing it](https://gitpod.io/#https://github.com/gitpod-io/website/blob/master/src/docs/java_in_gitpod.md).
+> 🚧 Please help improve this section by [editing it](https://gitpod.io/#https://github.com/gitpod-io/website/blob/master/src/docs/java-in-gitpod.md).
 > * Explain what the extensions do, and how to use them
 > * Explain how to set up a Java project for debugging
 

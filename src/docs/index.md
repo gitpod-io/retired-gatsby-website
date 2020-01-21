@@ -20,7 +20,7 @@ Also, Gitpod workspaces are meant to be disposable. That is, you do not need to 
 They are created when you need them, and you can forget about them when you are done. Simply go to
 GitHub and create a fresh workspace whenever you need one.
 
-The IDE is open-source and based on [Eclipse Theia](50_IDE.md). Theia is highly extensible and
+The IDE is open-source and based on [Eclipse Theia](/docs/ide/). Theia is highly extensible and
 builds upon mature technologies such as TypeScript, VS Code, Webpack, and Node.js.
 
 This site provides all the details on how to use Gitpod and Theia. If you have questions
@@ -36,4 +36,4 @@ When starting a workspace, Gitpod will automatically pick the cluster that is cl
 start a Kubernetes pod in it. The requested git repository gets cloned and the branch you need is checked out.
 Furthermore, Gitpod runs any scripts that are configured for that git repository state.
 
-Learn more about how to configure your GitHub repository [here](40_Configuration.md).
+Learn more about how to configure your GitHub repository [here](/docs/configuration/).

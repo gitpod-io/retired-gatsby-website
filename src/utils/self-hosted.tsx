@@ -27,6 +27,6 @@ export const features = [
             'With Gitpod, no additional User Management is needed.',
             'Gitpod supports "login via GitHub/Gitlab" to automatically create user accounts and manage access to git repositories.'
         ],
-        more: <p className="read-more">Read more about <Link to="/docs/self-hosted/latest/install/01_prepare_installation/#user-authorization-and-git-integration">GitHub and Gitlab integration</Link>.</p>
+        more: <p className="read-more">Read more about <Link to="/docs/self-hosted/latest/install/prepare-installation/#user-authorization-and-git-integration">GitHub and Gitlab integration</Link>.</p>
     }
 ]

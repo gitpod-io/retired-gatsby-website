@@ -5,17 +5,17 @@ and developed under the umbrella of the Eclipse Foundation, which ensures vendor
 emphasizes diversity.
 
   * [Overview](#overview)
-  * [Tips & Tricks](52_Tips_and_Tricks.md)
-  * [Git Integration](54_Git.md)
-  * [Search](56_Search.md)
-  * [Pull Requests](58_Pull_Requests.md)
-  * [Code Reviews](59_Code_Reviews.md)
+  * [Tips & Tricks](/docs/tips-and-tricks/)
+  * [Git Integration](/docs/git/)
+  * [Search](/docs/search/)
+  * [Pull Requests](/docs/pull-requests/)
+  * [Code Reviews](/docs/code-reviews/)
 
 ## Overview
 
 When you open Theia for the first time, a welcome screen is shown to quickly get you started. After
 closing it you will see the workbench shell. Depending on the
-[context URL](31_Context_Urls.md), different views might be opened.
+[context URL](/docs/context-urls/), different views might be opened.
 
 Let us have a look at the primary elements of the workbench shell.
 

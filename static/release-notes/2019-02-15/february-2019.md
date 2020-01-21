@@ -18,7 +18,7 @@ In addition to live sharing a running Gitpod workspace, you can now take a snaps
 
 This is super handy for providing reproducibles in GitHub issues and StackOverflow posts. They are also great to prepare trainigs, tutorials, or just to showcase stuff you have thrown together.
 
-Please see this [blog post](https://medium.com/gitpod/code-never-lies-creating-reproducibles-for-any-programming-language-7946021a68f2) as well as the [documentation](https://docs.gitpod.io/33_Sharing_and_Collaboration.html#sharing-snapshots) for more details.
+Please see this [blog post](https://medium.com/gitpod/code-never-lies-creating-reproducibles-for-any-programming-language-7946021a68f2) as well as the [documentation](https://www.gitpod.io/docs/sharing-and-collaboration/#sharing-snapshots) for more details.
 
 ![Snapshot](img/snapshots.png)
 
@@ -41,7 +41,7 @@ tasks:
 
 ### Lifecycles
 
-In addition we have introduced multiple lifecycle phases for the tasks, such as [init](https://docs.gitpod.io/44_Config_Start_Tasks.html#init-command) and [before](https://docs.gitpod.io/44_Config_Start_Tasks.html#before-command). The main purpose is to avoid rerunning unnecessary commands such as full builds, when restarting workspaces or opening snapshots.
+In addition we have introduced multiple lifecycle phases for the tasks, such as [init](https://www.gitpod.io/docs/config-start-tasks/#init-command) and [before](https://www.gitpod.io/docs/config-start-tasks/#before-command). The main purpose is to avoid rerunning unnecessary commands such as full builds, when restarting workspaces or opening snapshots.
 
 Check the table below for an overview of the different starting scenarios.
 
@@ -67,7 +67,7 @@ ports:
    onOpen: open-preview
 ```
 
-Check out [the docs](https://docs.gitpod.io/44_Config_Start_Tasks.html) to learn more about pre-configuring things in Gitpod.
+Check out [the docs](https://www.gitpod.io/docs/config-start-tasks/) to learn more about pre-configuring things in Gitpod.
 
 ## YAML Support
 
@@ -96,7 +96,7 @@ Use the arrow keys to navigate: ↓ ↑ → ←
     docker file
 ```
 
-More information about writing `.gitpod.yml` configurations can be found in [the docs](https://docs.gitpod.io/40_Configuration.html).
+More information about writing `.gitpod.yml` configurations can be found in [the docs](https://www.gitpod.io/docs/configuration/).
 
 ### gp url
 

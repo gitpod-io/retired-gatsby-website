@@ -559,7 +559,7 @@ const IndexPage: React.SFC<{}> = () => (
                                 <h3>Seamless GitHub & GitLab Integration</h3>
                                 <p>Gitpod let’s you stay in the flow by blending perfectly into GitHub and GitLab. Start your workflow from there and let Gitpod beam you in a ready-to-code dev environment.</p>
                                 <p>No matter you want to fix a bug, add a feature or do a code review, Gitpod get's you started immediately.</p>
-                                <p>Read more about <a href="/docs/31_context_urls/">Integration.</a></p>
+                                <p>Read more about <a href="/docs/context-urls/">Integration.</a></p>
                             </div>
                         </div>
 
@@ -568,7 +568,7 @@ const IndexPage: React.SFC<{}> = () => (
                                 <h3>Not Just a Playground</h3>
                                 <p>Gitpod is not just another online playground, but a full featured dev environment, just like your local IDE.</p>
                                 <p>It includes fully functional <strong>Linux terminals</strong>, you can install any <strong>VS Code extensions</strong> and provides all the other good features provided by <strong>Theia</strong>, the vendor neutral and highly extensible VS Code alternative, we have developed.</p>
-                                <p>Read more about <a href="/docs/50_ide/">Theia</a></p>
+                                <p>Read more about <a href="/docs/ide/">Theia</a></p>
                             </div>
                             <div className="why-gitpod__img-container">
                                 <object tabIndex={-1} 

@@ -54,7 +54,7 @@ export const featuresCardsData = [
             <p>This means no more waiting for dependencies to be downloaded and builds to finish. Just coding.</p>
             <p>Gitpod is the first IDE that builds your project before you even open it.</p>
         </React.Fragment>,
-        more: <p>Read more about <Link to="/docs/46_prebuilds/">Prebuilt Workspaces.</Link></p>,
+        more: <p>Read more about <Link to="/docs/prebuilds/">Prebuilt Workspaces.</Link></p>,
         img: <object tabIndex={-1} data={PrebuiltWorkspaces}/>,
         isIllustration: true
     },
@@ -66,7 +66,7 @@ export const featuresCardsData = [
         iconText: <span>Language<br />Support</span>,
         paragraphs: <React.Fragment>
             <p>Gitpod comes with built-in language support for most popular languages: Java, JavaScript, Python, Go, Rust and C/C++, are supported out of the box and come with auto completion, diagostics, formatting and many more.</p>
-            <p>It's easy to get the same quality of language support for any other language by installing the needed <Link to="/docs/42_config_docker/">tools via docker</Link> and adding useful <Link to="/docs/vscode-extensions/">VS Code Extensions</Link>.</p>
+            <p>It's easy to get the same quality of language support for any other language by installing the needed <Link to="/docs/config-docker/">tools via docker</Link> and adding useful <Link to="/docs/vscode-extensions/">VS Code Extensions</Link>.</p>
                     </React.Fragment>,
         img: <img alt="Supported Languages" src={SupportedLanguages} />,
     },
@@ -80,7 +80,7 @@ export const featuresCardsData = [
             <p>Gitpod instantly starts a machine in the cloud based on a Docker image. Tools that are required for your project or popular are readily installed and configured.</p>
             <p>And still, if you like to do configurations yourself, you can adjust everything to your satisfaction by bringing your own Docker image or Dockerfile.</p>
         </React.Fragment>,
-        more: <p>Read more about <Link to="/docs/42_config_docker/">Terminals.</Link></p>,
+        more: <p>Read more about <Link to="/docs/config-docker/">Terminals.</Link></p>,
         img: <img alt="Linux Terminals" src={LinuxTerminal}/>,
     },
     {
@@ -91,7 +91,7 @@ export const featuresCardsData = [
         iconText: <span>Code<br />Reviews</span>,
         paragraphs: <React.Fragment>
             <p>Open pull requests in Gitpod to run, navigate, and review the code from within the IDE. Reply to comments and publish code reviews without switching back to GitHub.</p>
-            <p>Thanks to <a href="#parallel">Parallel</a> and <Link to="/docs/46_prebuilds/">Prebuilt</Link> Workspaces, you can review code within seconds and without interfering with other ongoing work.</p>
+            <p>Thanks to <a href="#parallel">Parallel</a> and <Link to="/docs/prebuilds/">Prebuilt</Link> Workspaces, you can review code within seconds and without interfering with other ongoing work.</p>
             </React.Fragment>,
         more: <p>Read more about <Link to="/blog/when-code-reviews-lgtm/">Code Reviews.</Link></p>,
         img: <img alt="Code Review" src={CodeReview} />,
@@ -119,7 +119,7 @@ export const featuresCardsData = [
         paragraphs:<React.Fragment>
             <p>Create a snapshot of your work and share it with the world. Based on your snapshot new workspaces can be created and edited independently.</p>
         </React.Fragment>,
-        more: <p>Read more about <Link to="/docs/33_sharing_and_collaboration/#sharing-snapshots">Sharing a Snapshot.</Link></p>,
+        more: <p>Read more about <Link to="/docs/sharing-and-collaboration/#sharing-snapshots">Sharing a Snapshot.</Link></p>,
         img:<object tabIndex={-1}  data={CreateASnapshot}/>,
         isIllustration: true
     },
@@ -146,7 +146,7 @@ export const featuresCardsData = [
         paragraphs:<React.Fragment>
             <p>Collaborate with your friends and colleagues and hunt down bugs together.</p>
         </React.Fragment>,
-        more: <p>Read more about <Link to="/docs/33_sharing_and_collaboration/">Sharing a Workspace.</Link></p>,
+        more: <p>Read more about <Link to="/docs/sharing-and-collaboration/">Sharing a Workspace.</Link></p>,
         img:<object tabIndex={-1}  data={ShareWorkspaces} style={{transform: 'translateY(2rem) scale(.9)'}}/>,
     }
 ]

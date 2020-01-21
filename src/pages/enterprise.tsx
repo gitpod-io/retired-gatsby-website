@@ -29,7 +29,7 @@ export const features = [
     {
         title: 'Better Teamwork',
         paragraphs: ['With Gitpod, reviewing code and finding bugs becomes more convenient than ever. ', 'Your team can collaborate asynchronously with Gitpod Snapshots, and synchronously with live-shared workspaces', 'Gitpod also makes it easy for non-developers to open a workspace.'],
-        // more:<p>Read more about <Link to="/docs/33_sharing_and_collaboration/">Collaboration</Link></p>
+        // more:<p>Read more about <Link to="/docs/sharing-and-collaboration/">Collaboration</Link></p>
     },
     {
         title: "Less Costs for More Machine Power",

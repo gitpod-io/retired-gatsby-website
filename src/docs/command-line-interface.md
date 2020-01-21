@@ -22,7 +22,7 @@ Use "gp [command] --help" for more information about a command.
 ```
 
 ## Init
-Gitpod workspaces can be configured - see [Configuring Workspaces](/docs/40_configuration/) for more details. `gp init` helps creating this configuration by guiding through this process and producing a `gitpod.yml` in the end (think `npm init`).
+Gitpod workspaces can be configured - see [Configuring Workspaces](/docs/configuration/) for more details. `gp init` helps creating this configuration by guiding through this process and producing a `gitpod.yml` in the end (think `npm init`).
 
 ## Open
 Modern editors/IDE's sport command line tooling to open a file (e.g. VS Code `code foo.txt`). In Gitpod this can be done using `gp open <filename>`.
@@ -41,7 +41,7 @@ For instance:
 gp preview $(gp url 3000)my/path/index.html
 ```
 
-If you put this into the `.gitpod.yml` to open the a certain page on startup, don't forget to [ignore the default action](/docs/43_config_ports/) when the port opens.
+If you put this into the `.gitpod.yml` to open the a certain page on startup, don't forget to [ignore the default action](/docs/config-ports/) when the port opens.
 
 ## Forward Port
 In Gitpod services/servers running on a port need to be _exposed_ before they become accessible from the internet. This process only works with services listening on `0.0.0.0` and not just `localhost`.
