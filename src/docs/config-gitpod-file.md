@@ -1,8 +1,8 @@
 # .gitpod.yml
 
- * [Checked-in Gitpod Config File](#checked-in-gitpod-file)
+ * [Checked-in Gitpod Config File](#checked-in-gitpod-config-file)
  * [definitely-gp Repository](#definitely-gp-repository)
- * [Inferred Gitpod Config File](#inferred-gitpod-file)
+ * [Inferred Gitpod Config File](#inferred-gitpod-config-file)
 
 A workspace gets configured through a `.gitpod.yml` file written in YAML syntax. Here's an example:
 
@@ -28,7 +28,7 @@ version your workspace configuration together with your code. If, for example, y
 an old branch that required a different Docker image, it will start with the correct image, since that
 bit of configuration is part of your codebase.
 
-## <a href="https://github.com/gitpod-io/definitely-gp" target="_blank">definitely-gp</a> Repository
+## [definitely-gp](https://github.com/gitpod-io/definitely-gp) Repository
 
 Sometimes you can't check in a `.gitpod.yml` file, for instance because you do not have sufficient
 access rights. However, you can still provide a `.gitpod.yml` file through the central
@@ -41,9 +41,11 @@ simply raise a PR.
 If the first two locations do not have a `.gitpod.yml` file for your project, Gitpod will compute one by
 analyzing your project and using good common defaults.
 
-# Creating a Gitpod Config File
+<br><br>
 
-Gitpod comes with a cli, that walks you through the initial creation of a `.gitpod.yml` file.
+# Generating Your Gitpod Config File
+
+Gitpod comes with a CLI that walks you through the initial creation of a `.gitpod.yml` file.
 Open a terminal and type
 ```sh
 gp init
