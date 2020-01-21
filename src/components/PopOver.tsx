@@ -69,6 +69,8 @@ class Description extends React.Component<{description: string}, {}> {
                 className="description"
                 onMouseEnter={this.handleMouseEnter}
                 onMouseLeave={this.handleMouseLeave}
+                onFocus={this.handleMouseEnter}
+                onBlur={this.handleMouseLeave}
             >
                 <button onClick={this.handleClick}>?</button>
                 { isRendered ? <div className="description__text">{ description }</div> : null }
