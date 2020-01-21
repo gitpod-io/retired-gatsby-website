@@ -131,6 +131,10 @@ export const MENU: MenuEntry[] = [
                 "go-in-gitpod"
             ),
             M(
+                "Bash",
+                "bash-in-gitpod"
+            ),
+            M(
                 "Ruby",
                 "ruby-in-gitpod"
             ),
