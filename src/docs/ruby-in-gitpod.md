@@ -8,7 +8,7 @@ Gitpod comes with Ruby 2.5 and 2.6 pre-installed by default (2.6 is the default)
 To change the default Ruby version, you can simply run `rvm use 2.5 --default` in Gitpod's Terminal. You can also install other versions, e.g. by running `rvm install 2.7`.
 
 ## Examples
-Before we begin, here are some examples Ruby projects automated with Gitpod:
+Before we begin, here are some example Ruby projects that are automated with Gitpod:
 
 Repository | Description | Try it
 ---------|----------|---------
