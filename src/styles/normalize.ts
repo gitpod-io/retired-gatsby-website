@@ -76,7 +76,7 @@ export default `
         color: transparent;
         font-weight: 600;
         background: url('/galaxy.jpg');
-        background-position: center right;
+        background-position: bottom;
         background-clip: text;
         -webkit-background-clip: text;
     }
