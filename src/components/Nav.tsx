@@ -297,7 +297,7 @@ class Nav extends React.Component {
                                             ]}
                                         />
                                     </li>
-                                    <li className="nav__item"><a href="https://gitpod.io/workspaces" tabIndex={ isNavRendered ? 0 : -1 } rel="noopener" className="btn">Go to App</a></li>
+                                    <li className="nav__item"><a href="https://gitpod.io/workspaces/" tabIndex={ isNavRendered ? 0 : -1 } rel="noopener" className="btn">Log In</a></li>
                                 </ul>
                             ) : null }
                     </StyledNav>
