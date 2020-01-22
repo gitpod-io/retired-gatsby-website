@@ -31,6 +31,7 @@ The Rust Test Explorer makes it easy to run Rust tests. To install this extensio
 ```yaml
 vscode:
   extensions:
+    - hbenl.vscode-test-explorer@2.15.0:koqDUMWDPJzELp/hdS/lWw==
     - Swellaby.vscode-rust-test-adapter@0.11.0:Xg+YeZZQiVpVUsIkH+uiiw==
 ```
 #### Crates
