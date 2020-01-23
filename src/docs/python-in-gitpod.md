@@ -86,3 +86,12 @@ vscode:
   extensions:
     - littlefoxteam.vscode-python-test-adapter@0.3.16:tZ/6xOSSdKUaq6JCUVkD+A==
 ```
+
+## Debugging
+To start debugging your python application in Gitpod please add a new directory `.theia` and inside add another file  `launch.json` here is a quick clip on how to configure debugging for Python!
+
+![](images/PythonDebug.gif)
+
+To see a basic repository with debugging please try:
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-Python-Debug)
