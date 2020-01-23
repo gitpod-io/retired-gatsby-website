@@ -13,6 +13,27 @@ Before we get started, here are some examples of already-[gitpodified](https://w
 | [gitpod-io/wxPython-example](https://github.com/gitpod-io/wxPython-example)                      | A wxPython example for Gitpod    | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/wxPython-example) |
 | [techwithtim/Hangman](https://github.com/techwithtim/Hangman)                                       |   A wxPython example for Gitpod  |     [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/techwithtim/Hangman) |
 
+## VSCode Extensions
+While the most popular Python VSCode extensions are built-in to Gitpod, here are a few "Nice to have" extensions that you can use as well.
+
+### ARepl for Python
+![](./images/AReplExample.gif)
+ARepl for Python is helpful for constantly checking your code and debugging.
+To install this extension for your repository, add the following to your `.gitpod.yml`:
+```yaml
+vscode:
+  extensions:
+    - almenon.arepl@1.0.20:Uu7lIOwyLgmNWpTwCl/iqQ==
+```
+### Python Test Explorer
+![](./images/python_Test_In_Gitpod.png)
+Easily test your python extensions with the Python Test Explorer.
+To add this to your repository add the following to your `.gitpod.yml`
+```yaml
+vscode:
+  extensions:
+    - littlefoxteam.vscode-python-test-adapter@0.3.16:tZ/6xOSSdKUaq6JCUVkD+A==
+```
 
 ## GUI Applications with wxPython
 
@@ -65,24 +86,45 @@ Here are some other examples of Python GUI applications in Gitpod:
 | Gitpod-PyQt | PyQt | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-PyQt) |
 <br>
 
-## VSCode Extensions
-While the most popular Python VSCode extensions are built-in to Gitpod, here are a few "Nice to have" extensions that you can use as well.
+## Debugging
+Here is a quick clip on how to automatically configure debugging for Python!
 
-### ARepl for Python
-![](./images/AReplExample.gif)
-ARepl for Python is helpful for constantly checking your code and debugging.
-To install this extension for your repository, add the following to your `.gitpod.yml`:
-```yaml
-vscode:
-  extensions:
-    - almenon.arepl@1.0.20:Uu7lIOwyLgmNWpTwCl/iqQ==
+![](images/PythonDebug.gif)
+
+So basically in this video we:
+1. First, open the Python file that we want to debug
+2. Then, go to the debug menu and select "Add Configuration..."
+3. Next, in the dropdown choose "Python"
+4. Next, choose "Python File" as the debug configuration
+5. Finally, start debugging your Python program!
+
+You can also create the Python debug configuration file manually
+
+To start debugging your Python application in Gitpod, please add a new directory called `.theia/`, and inside add a file called `launch.json`, and add the following to it:
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "internalConsole"
+        }
+    ]
+}
 ```
-### Python Test Explorer
-![](./images/python_Test_In_Gitpod.png)
-Easily test your python extensions with the Python Test Explorer.
-To add this to your repository add the following to your `.gitpod.yml`
-```yaml
-vscode:
-  extensions:
-    - littlefoxteam.vscode-python-test-adapter@0.3.16:tZ/6xOSSdKUaq6JCUVkD+A==
-```
+Then, simply open the Python file you want to debug, then open the Debug panel (in the left vertical toolbar, click the icon with the crossed-out-spider), and click the green "Run" button.
+
+<br>
+
+
+To see a basic repository with Python debugging enabled, please check out [JesterOrNot/Gitpod-Python-Debug](https://github.com/JesterOrNot/Gitpod-Python-Debug):
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-Python-Debug)
+
+<br>
+
+## Resources
+* ***[VSCode documentation for Python debugging](https://code.visualstudio.com/docs/python/debugging)*** All the information here should apply to Gitpod as well
