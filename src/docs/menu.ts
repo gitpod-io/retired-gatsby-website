@@ -123,10 +123,6 @@ export const MENU: MenuEntry[] = [
                 "python-in-gitpod"
             ),
             M(
-                "Julia",
-                "julia-in-gitpod"
-            ),
-            M(
                 "Go",
                 "go-in-gitpod"
             ),
@@ -137,6 +133,10 @@ export const MENU: MenuEntry[] = [
             M(
                 "Rust",
                 "rust-in-gitpod"
+            ),
+            M(
+                "Julia",
+                "julia-in-gitpod"
             )
         ]
     ),
