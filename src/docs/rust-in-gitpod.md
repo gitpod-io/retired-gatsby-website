@@ -35,6 +35,9 @@ vscode:
     - Swellaby.vscode-rust-test-adapter@0.11.0:Xg+YeZZQiVpVUsIkH+uiiw==
 ```
 #### Crates
+> ***Note: If you don't like emojis don't use this Extension!***
+<br>
+
 ![](images/cratesDemo.gif)
 The VSCode extension Crates makes it easier to manage your Cargo dependency versions. To install this extension to your repository add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/)
 
@@ -45,11 +48,21 @@ vscode:
 ```
 #### <p>Search Crates.io</p>
 ![](images/searchCratesio.gif)
+
 Do you have an idea of a library you want to use but don't know the version well just type in the name of the library and Search Crates.io will get the version. To install this extension to your repository add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/)
 ```yaml
 vscode:
   extensions:
     - belfz.search-crates-io@1.2.1:kSLnyrOhXtYPjQpKnMr4eQ==
+```
+
+#### Better TOML
+![](images/feature_syntax_highlight.png)
+Better TOML adds symtax highlighting to your `Cargo.toml`. To install Better TOML to your repository add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/)
+```yaml
+vscode:
+  extensions:
+    - bungcip.better-toml@0.3.2:3QfgGxxYtGHfJKQU7H0nEw==
 ```
 
 ## Resources
