@@ -75,6 +75,9 @@ const StyledIndexPage = styled.div`
             }
         }
 
+        .btn-wrapper {
+            margin-bottom: 3rem;
+        }
 
         &__screenshot {
             display: block;
