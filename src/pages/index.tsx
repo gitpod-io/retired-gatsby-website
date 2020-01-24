@@ -438,10 +438,11 @@ const StyledIndexPage = styled.div`
             }
 
             @media(max-width: ${sizes.breakpoints.md}) {
+                padding: 5rem 0;
                 flex-direction: column;
                 border-radius: unset;
-                width: 90%;
-                transform: translate(5%, -13rem);
+                width: 100%;
+                transform: none;
                 img {
                     width: 100%;
                 }
