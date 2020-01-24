@@ -124,6 +124,15 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
             font-weight: 600;
         }
     }
+
+    .blue-on-hover {
+        color: ${colors.text};
+        
+        &:hover {
+            background: ${colors.link};
+            color: ${colors.white};
+        }
+    }
 `
 
 export interface PricingBoxProps {
@@ -155,7 +164,7 @@ const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, f
                 { features.map((f, i) => <li key={i}>{f}</li>) }
             </ul>
         : null }
-        <Link to={link || '/#get-started'} className="btn is-hidden" style={background ? {color: colors.textDark} : {}}>{btnText ? btnText : 'Start for Free'}</Link>
+        <Link to={link || '/#get-started'} className={`btn is-hidden ${background ? 'blue-on-hover' : ''}`}>{btnText ? btnText : 'Start for Free'}</Link>
         { btn ? btn : null }
         { text ? <p className="text">{text}</p> : null }
         { banner ? <div className="banner"><p>{banner}</p></div> : null }
