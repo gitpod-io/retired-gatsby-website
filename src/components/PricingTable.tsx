@@ -101,14 +101,15 @@ interface PricingTableProps {
     title: string
     paragraph: JSX.Element | string
     id?: string
+    rows?: number
 }
 
-const PricingTable: React.SFC<PricingTableProps> = ({ title, paragraph, children, id }) => (
+const PricingTable: React.SFC<PricingTableProps> = ({ title, paragraph, children, id, rows }) => (
     <div className="row" id={id}>
         <StyledPricingTable>
             <h2>{title}</h2>
             <p>{paragraph}</p>
-            <div className="table-container">
+            <div className={`table-container ${rows == 3 ? 'rows-3': ''}`}>
                 <table>
                     {children}
                 </table>
