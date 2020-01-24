@@ -373,21 +373,31 @@ const StyledIndexPage = styled.div`
         }
 
         &__content {
+            position: relative;
             display: flex;
             align-items: center;
-            background: url(${OpenSource}) #fafafadd;
-            background-blend-mode: color;
-            -webkit-filter: grayscale(100%);
-            filter: gray;
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Do not repeat the image */
-            background-size: cover;
-            border-radius: 250px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border-radius: 250px;
+                background: url(${OpenSource}) #fafafadd;
+                background-blend-mode: color;
+                -webkit-filter: grayscale(100%);
+                filter: gray;
+                background-position: center; /* Center the image */
+                background-repeat: no-repeat; /* Do not repeat the image */
+                background-size: cover;
+
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    display: none;
+                }
+            }
 
             @media(max-width: ${sizes.breakpoints.md}) {
                 flex-direction: column;
-                border-radius: unset;
-                background: none;
             }
 
             img {
