@@ -141,10 +141,6 @@ export const MENU: MenuEntry[] = [
         ]
     ),
     M(
-        "Dashboard",
-        "dashboard"
-    ),
-    M(
         "Subscriptions",
         "subscriptions"
     ),
