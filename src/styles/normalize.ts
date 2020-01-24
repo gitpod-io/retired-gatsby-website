@@ -342,8 +342,19 @@ export default `
 
     .table-container {
         max-width: 100%;
-        overflow-x: scroll;
         padding-bottom: 2rem;
+
+        @media(max-width: 687px) {
+            overflow-x: scroll;
+        }
+    }
+
+    .rows-3 {
+        overflow-x: initial;
+        
+        @media(max-width: 604px) {
+            overflow-x: scroll;
+        }
     }
 
     table {

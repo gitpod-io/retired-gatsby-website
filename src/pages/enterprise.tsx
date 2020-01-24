@@ -137,6 +137,7 @@ const EnterprisePage: React.SFC<{}> = () => (
             title="Gitpod Enterprise Pricing"
             paragraph="You have the choice to either host Gitpod yourself or to use our cloud infrastructure."
             id="enterprise"
+            rows={3}
         >
             <thead>
                 <tr className="header">
