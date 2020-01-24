@@ -59,6 +59,12 @@ You can enable prebuilds also for all branches and for pull requests from forks.
 ### GitHub integration
 Once the GitHub app is installed Gitpod can add helpful annotations to your pull requests.
 
+### Manual execution of prebuild
+Alternatively and independantly from configuration above it is possible to trigger the prebuild using
+```
+https://gitpod.io/#prebuild/https://github.com/ORG/REPO
+```
+
 #### Checks
 By default Gitpod registers itself as a check to pull requests - much like a continuous integration system would do.
 You can disable this behaviour in the `.gitpod.yml` file in your default/master branch:
