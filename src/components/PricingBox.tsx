@@ -34,9 +34,14 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
     }
 
     @media(max-width: ${sizes.breakpoints.md}) {
+        min-width: 30rem;
         padding: 2rem 3rem;
 
         margin-top: ${({banner}) => banner ? '7rem': ''};
+    }
+
+    @media(max-width: 320px) {
+        min-width: 25rem;
     }
 
     > * {
@@ -73,6 +78,14 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
         list-style: initial;
         margin-left: 10px;
         margin-right: -8px;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            padding: 0 2rem;
+        }
+
+        @media(max-width: 320px) {
+            padding: 0;
+        }
     }
 
     li {
