@@ -19,6 +19,7 @@ You can start building your project when or even [before](https://www.gitpod.io/
 ```yaml
 tasks:
   - init: pip3 install -r requirements.txt
+    command: python3 main.py
 ```
 
 ## VSCode Extensions
