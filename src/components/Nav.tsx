@@ -28,7 +28,7 @@ const StyledNav = styled.nav`
     }
 
     @media(max-width: ${sizes.breakpoints.md}) {
-        padding: 1rem 2rem;
+        padding: 1rem;
     }
 
     img {
