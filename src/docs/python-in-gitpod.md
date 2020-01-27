@@ -13,6 +13,15 @@ Before we get started, here are some examples of already-[gitpodified](https://w
 | [gitpod-io/wxPython-example](https://github.com/gitpod-io/wxPython-example)                      | A wxPython example for Gitpod    | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/wxPython-example) |
 | [techwithtim/Hangman](https://github.com/techwithtim/Hangman)                                       |   A wxPython example for Gitpod  |     [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/techwithtim/Hangman) |
 
+## [Start tasks](https://www.gitpod.io/docs/config-start-tasks/)
+
+You can start building your project when or even [before](https://www.gitpod.io/docs/prebuilds/) you start your Gitpod workspace. Are you using a `requirements.txt` file to manage dependencies? If so, add this to your [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/) to automatically pre-install all dependencies when starting a workspace:
+```yaml
+tasks:
+  - init: pip3 install -r requirements.txt
+    command: python3 main.py
+```
+
 ## VSCode Extensions
 While the most popular Python VSCode extensions are built-in to Gitpod, here are a few "Nice to have" extensions that you can use as well.
 
@@ -125,6 +134,7 @@ To see a basic repository with Python debugging enabled, please check out [Jeste
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-Python-Debug)
 
 <br>
+
 
 ## Resources
 * ***[VSCode documentation for Python debugging](https://code.visualstudio.com/docs/python/debugging)*** All the information here should apply to Gitpod as well
