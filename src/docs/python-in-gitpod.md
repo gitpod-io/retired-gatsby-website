@@ -2,11 +2,11 @@
 
 Gitpod comes with great support for Python builtin. Still, depending on your project, you might want to further optimize the experience.
 
-## Examples
+## Python Project Examples
 
 Before we get started, here are some examples of already-[gitpodified](https://www.gitpod.io/blog/gitpodify/) repositories!
 
-| Name                                                                                                |                                                                                                              Description |                                        Try it |
+| Repository                                                                                                |                                                                                                              Description |                                        Try it |
 -----------|-----------------------------------------------------------|----------------------------------------------------
 | [gitpod-io/django-locallibrary-tutorial](https://github.com/gitpod-io/django-locallibrary-tutorial) | An example website written in Django by MDN |        [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#gitpod-io/django-locallibrary-tutorial) |
 | [JesterOrNot/Gitpod-PyQt](https://github.com/JesterOrNot/Gitpod-PyQt)                               |    A PyQt example for Gitpod | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-PyQt) |
@@ -28,7 +28,7 @@ While the most popular Python VSCode extensions are built-in to Gitpod, here are
 ### ARepl for Python
 ![](./images/AReplExample.gif)
 ARepl for Python is helpful for constantly checking your code and debugging.
-To install this extension for your repository, add the following to your `.gitpod.yml`:
+To install this extension for your repository, add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/):
 ```yaml
 vscode:
   extensions:
@@ -37,7 +37,7 @@ vscode:
 ### Python Test Explorer
 ![](./images/python_Test_In_Gitpod.png)
 Easily test your python extensions with the Python Test Explorer.
-To add this to your repository add the following to your `.gitpod.yml`
+To add this to your repository add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/)
 ```yaml
 vscode:
   extensions:
@@ -84,7 +84,7 @@ tasks:
   - command: python3 app.py
 ```
 <br>
-We also support other GUI frameworks such as Kivy and PyQt
+We also support other GUI frameworks such as `Kivy` and `PyQt`
 <br>
 Here are some other examples of Python GUI applications in Gitpod:
 
@@ -137,4 +137,5 @@ To see a basic repository with Python debugging enabled, please check out [Jeste
 
 
 ## Resources
-* ***[VSCode documentation for Python debugging](https://code.visualstudio.com/docs/python/debugging)*** All the information here should apply to Gitpod as well
+* ***[VSCode documentation for Python debugging](https://code.visualstudio.com/docs/python/debugging)*** All the information here should also apply to Gitpod as well 
+* ***[Troubleshooting-Python-GUI](https://github.com/gitpod-io/gitpod/issues/795)*** Here is how to troubleshoot Matplotlib/TK issues for Python GUI applications
