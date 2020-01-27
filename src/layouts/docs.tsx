@@ -23,7 +23,10 @@ const StyledDocsLayout = styled.div`
 
     .content {
         display: flex;
-        box-shadow: ${shadows.light};
+
+        @media(min-width: ${sizes.breakpoints.md}) {
+            box-shadow: ${shadows.light};
+        }
 
         @media (max-width: ${sizes.breakpoints.lg}) {
             flex-direction: column;
@@ -33,7 +36,6 @@ const StyledDocsLayout = styled.div`
 
     .article {
         position: relative;
-        background: ${colors.white};
         min-height: 100%;
         padding: 3rem 1rem;
         position: relative;
@@ -44,6 +46,11 @@ const StyledDocsLayout = styled.div`
 
         @media(min-width: ${sizes.breakpoints.md}) {
             padding: 5rem;
+            background: ${colors.white};
+        }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            padding: 5rem 2rem;
         }
 
         h1 {
