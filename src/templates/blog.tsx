@@ -8,7 +8,7 @@ import reddit from '../resources/reddit.svg'
 import twitter from '../resources/twitter.svg'
 import { Helmet } from 'react-helmet'
 import { authors } from '../utils/authors'
-import { colors, shadows } from '../styles/variables'
+import { colors, shadows, sizes } from '../styles/variables'
 // import NewsletterForm from '../components/NewsletterForm'
 
 interface BlogTemplateProps {
@@ -51,6 +51,10 @@ const StyledBlogTemplate = styled.div`
 
     .contents {
         padding: 5rem 3rem;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            padding: 5rem 2rem;
+        }
     }
 
     img {
