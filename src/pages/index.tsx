@@ -6,6 +6,8 @@ import { colors, sizes, shadows } from '../styles/variables'
 
 import IndexLayout from '../layouts/index'
 import ReflectionScreenshot from '../resources/reflection-screenshot.png'
+import ReflectionScreenshotPrespectiveLess from '../resources/reflection-screenshot--1.png'
+
 import IconLine from '../resources/zick-zack-line.svg'
 import HourGlass from '../resources/hourglass.svg'
 import ArrowOnTarget from '../resources/arrow-on-target.svg'
@@ -65,6 +67,7 @@ const StyledIndexPage = styled.div`
 
 
         &__screenshot {
+            display: block;
             width: 100%;
 
             @media(max-width: ${sizes.breakpoints.lg}) {
@@ -72,10 +75,42 @@ const StyledIndexPage = styled.div`
             }
 
             @media(min-width: ${sizes.breakpoints.lg}) {
-                transform: scale(1.3) translate(6rem, 6rem);
 
                 &-container {
                     width: 50%;
+                }
+            }
+
+            &--1 {
+                transform: scale(1.3) translate(6rem, 6rem);
+
+                @media(max-width: ${sizes.breakpoints.lg}) {
+                    display: none;
+                }
+            }
+
+            &--2 {
+                margin-top: 10rem;
+                transform: scale(1.3) translateX(1.5rem);
+
+                @media(max-width: 740px) {
+                    transform: scale(1.3) translateX(1.2rem);                    
+                }
+
+                @media(max-width: 580px) {
+                    transform: scale(1.3) translateX(1rem);                    
+                }
+
+                @media(max-width: 480px) {
+                    transform: scale(1.3) translateX(.9rem);                    
+                }
+
+                @media(max-width: 440px) {
+                    transform: scale(1.3) translateX(.8rem);                    
+                }
+
+                @media(min-width: ${sizes.breakpoints.lg}) {
+                    display: none;
                 }
             }
         }
@@ -481,7 +516,8 @@ const IndexPage: React.SFC<{}> = () => (
                             </div>
                         </div>
                         <div className="banner__screenshot-container">
-                            <img alt="Gitpod Screenshot" src={ReflectionScreenshot} className="banner__screenshot" />
+                            <img alt="Gitpod Screenshot" src={ReflectionScreenshot} className="banner__screenshot banner__screenshot--1" />
+                            <img alt="Gitpod Screenshot" src={ReflectionScreenshotPrespectiveLess} className="banner__screenshot banner__screenshot--2" />
                         </div>
                     </header>
                 </div>
