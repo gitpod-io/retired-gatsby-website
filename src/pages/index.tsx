@@ -49,6 +49,16 @@ const StyledIndexPage = styled.div`
         &__text-box {
             margin-top: 12rem;
 
+            h1 {
+                br {
+                    display: block;
+                    
+                    @media(min-width: 360px) {
+                        display: none;
+                    }
+                }
+            }
+
             @media(max-width: ${sizes.breakpoints.lg}) {
                 text-align: center;
                 margin: 5rem 0 0;
@@ -470,7 +480,7 @@ const IndexPage: React.SFC<{}> = () => (
                     <header role="banner" className="banner">
                         <div className="banner__text-box">
                             <h1>
-                                Are You Ready-To-Code?
+                                Are You <br/>Ready-To-Code?
                                 <span>Start Instantly. Anywhere.</span>
                             </h1>
                             <p>Gitpod launches ready-to-code dev environments<br /> for your GitHub or GitLab project with a single click.</p>
