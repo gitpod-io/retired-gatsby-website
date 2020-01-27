@@ -137,8 +137,14 @@ const StyledDocsLayout = styled.div`
         background-repeat: no-repeat, repeat;
         background-position: right 1.7em top 50%, 0 0;
         background-size: 1.65em auto, 100%;
+
         @media(min-width: ${sizes.breakpoints.lg}) {
             display: none;
+        }
+
+        @media(max-width: 320px) {
+            padding: 1rem 1.5rem;
+            width: 100%;
         }
     }
 
