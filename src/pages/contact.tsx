@@ -220,9 +220,9 @@ export default function ContactPage() {
                                 id="eMail" 
                                 onChange={handleChange} 
                             />
-                            <label className="visually-hidden" htmlFor="message">What’s on your mind?</label>
+                            <label className="visually-hidden" htmlFor="message">What'd you like to discuss?</label>
                             <textarea name="message" className="form__textarea"
-                                placeholder='What’s on your mind?'
+                                placeholder='What’d you like to discuss?'
                                 id="message"
                                 onChange={handleChangeTextArea}
                                 value={state.message}
