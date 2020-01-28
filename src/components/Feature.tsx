@@ -69,7 +69,7 @@ const StyledFeature = styled.div`
 
 interface FeatureProps {
     title: string
-    paragraphs: string[]
+    paragraphs: (string | JSX.Element)[]
     more?: JSX.Element
     logos?: string[]
 }
