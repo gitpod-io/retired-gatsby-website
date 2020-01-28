@@ -1,8 +1,9 @@
 ports:
 - port: 8000
+
 tasks:
 - init: yarn && yarn build
-  command: gatsby telemetry --disable && yarn dev --host 0.0.0.0
+  command: yarn dev --host 0.0.0.0
 - init: cd plugins/gatsby-remark-gitpod && npm install
   openMode: split-right
 
