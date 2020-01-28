@@ -228,7 +228,7 @@ const PricingPage: React.SFC<{}> = () => (
                                 Gitpod is free for up to 50 hours/month on any public repository. 
                             </p>
                             <p>
-                                If you're a professional open-source developer and need more, let us know, by applying for a <strong> free Unlimited Open Source Plan</strong>. Your GitHub / GitLab track record should clearly show your regular open-source contributions.
+                                If you're a professional open-source developer and need more hours, let us know, by applying for a <strong> free Unlimited Open Source Plan</strong>. Your GitHub / GitLab track record should clearly show your regular open-source contributions.
                             </p>
                             <a href="/contact/" className="btn">Apply Now</a>
                         </div>
