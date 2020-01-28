@@ -4,7 +4,6 @@ import styled from '@emotion/styled'
 import IndexLayout from '../layouts'
 import DoubleArrows from '../resources/double-arrows.png'
 import { colors, sizes, shadows } from '../styles/variables'
-import { Link } from 'gatsby'
 import Kiel from '../resources/kiel.png'
 import Team from '../resources/team.png'
 import Fox from '../resources/fox.png'
@@ -239,7 +238,7 @@ const AboutPage: React.SFC<{}> = () => (
                             <div className="about__box">
                                 <img alt="TypeFox Team" src={Team} />
                                 <h3>About the Team</h3>
-                                <p>We're a small tech-driven team with collectively over 50 years of experience in language design, IDEs and tool development and with strong values around openness, honesty, and effective pragmatism. If you're interested in joining us, please have a look at our <Link to="/careers">Job Openings</Link>.</p>
+                                <p>We're a small tech-driven team with collectively over 50 years of experience in language design, IDEs and tool development and with strong values around openness, honesty, and effective pragmatism. If you're interested in joining us, please have a look at our <a href="https://typefox.io/careers">Job Openings</a>.</p>
                             </div>
                         </div>
                     </section>
