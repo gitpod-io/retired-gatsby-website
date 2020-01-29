@@ -192,6 +192,10 @@ const StyledDocsLayout = styled.div`
         }
     }
 
+    .table-container {
+        margin: 2rem 0;
+    }
+
 `
 
 interface DocsLayoutProps {
