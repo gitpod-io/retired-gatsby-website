@@ -14,11 +14,16 @@ By default Rust `v1.39.0 stable` is installed in Gitpod, but you can change to t
 
 Here are some examples of Rust projects running in Gitpod:
 
+<div class="table-container">
+
 | Repository    | Try it    |
 |---------|------------|
 |[MathLang](https://github.com/JesterOrNot/mathlang) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/MathLang) |
 |[NuShell](https://github.com/nushell/nushell/) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nushell/nushell) |
 |[Servo](https://github.com/jankeromnes/servo) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://https://github.com/jankeromnes/servo)
+
+</div>
+
 ## Workspace Configuration
 
 ### VSCode Extensions
