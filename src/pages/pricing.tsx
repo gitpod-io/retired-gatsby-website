@@ -241,7 +241,7 @@ const PricingPage: React.SFC<{}> = () => (
                                 Make sure your student email is set as your primary email on GitHub/GitLab. Please let us know if your educational institution is not correctly recognized.
                             </p> 
                             <p>
-                                <a href="/contact/" className="btn">Register Institution</a>
+                                <a href="mailto:contact@gitpod.io?subject=Student Unlimited" className="btn">Register Institution</a>
                              </p>
                             
                         </div>
