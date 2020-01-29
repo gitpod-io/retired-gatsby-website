@@ -35,12 +35,16 @@ tasks:
 ```
 Task properties will control when a command is executed. Check the table below for an overview of the different starting scenarios.
 
+<div class="table-container">
+
 | Start Mode | Execution |
 | ---------  | -------   |
 | Fresh Workspace | `before && init && command` |
 | Restart Workspace | `before && command` |
 | Snapshot | `before && command` |
 | Prebuild | `before && init && prebuild` |
+
+</div>
 
 ### `init` command
 
