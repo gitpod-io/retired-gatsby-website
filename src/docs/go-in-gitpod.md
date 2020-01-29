@@ -6,6 +6,8 @@ Gitpod supports Go right out of the box, but there are still ways to optimize yo
 
 Before we start, here are some already gitpodified repositories to give you an idea of what to expect!
 
+<div class="table-container">
+
 | Name                                                              |                                                                                                         Open In Gitpod Button |
 | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------: |
 | [go-swagger/go-swagger](https://github.com/go-swagger/go-swagger) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/go-swagger/go-swagger) |
@@ -13,13 +15,19 @@ Before we start, here are some already gitpodified repositories to give you an i
 | [gosh-terminal/gosh](https://github.com/gosh-terminal/gosh)       |    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gosh-terminal/gosh) |
 | [gitpod-io/self-hosted](https://github.com/gitpod-io/self-hosted) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/self-hosted) |
 
+</div>
+
 ## Workspace Configuration
 
 ### VSCode Extensions
 
+<div class="table-container"> 
+
 | Name                                                                                               | Description                                                                             |
 | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | [Go Test Explorer](https://marketplace.visualstudio.com/items?itemName=premparihar.gotestexplorer) | Provides Test Explorer for Go which enables to run your tests at the click of a button! |
+
+</div>
 
 To install Go Test Explorer for your repository, add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/)
 
