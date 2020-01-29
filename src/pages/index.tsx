@@ -554,43 +554,9 @@ const IndexPage: React.SFC<{}> = () => (
                 <object tabIndex={-1} className="line" data={IconLine} />
             </div>
 
-            {/* ----- Section Trusted By ----- */}
+            {/* ----- Section Testimonials ----- */}
 
-            <TrustedBy
-                brands={[
-                    {
-                        alt: 'freeCodeCamp.org',
-                        url: 'https://www.freecodecamp.org/',
-                        svg: FreeCodeCamp,
-                        className: 'fcc'
-                    },
-                    {
-                        alt: 'Gatsby Logo',
-                        url: 'https://www.gatsbyjs.org/',
-                        svg: Gatsby
-                    },
-                    {
-                        alt: 'Theia Ide Logo',
-                        url: 'https://theia-ide.org',
-                        svg: TheiaIDELogo
-                    },
-                    {
-                        alt: 'Code Institute',
-                        url: 'https://codeinstitute.net/',
-                        svg: CodeInstituteLogo
-                    },
-                    {
-                        alt: 'Aplitools Logo',
-                        url: 'https://applitools.com/',
-                        svg: AppliToolsLogo
-                    },
-                    {
-                        alt: '4 Geeks Academy Logo',
-                        url: 'https://www.4geeksacademy.co/',
-                        svg: FourGeeksAcademyLogo
-                    },
-                ]}
-            />
+            <Testimonials />
 
             {/* ----- Section Why Gitpod? ----- */}
 
@@ -637,9 +603,43 @@ const IndexPage: React.SFC<{}> = () => (
                 </section>
             </div>
 
-            {/* ----- Section Testimonials ----- */}
+            {/* ----- Section Trusted By ----- */}
 
-            <Testimonials />
+            <TrustedBy
+                brands={[
+                    {
+                        alt: 'freeCodeCamp.org',
+                        url: 'https://www.freecodecamp.org/',
+                        svg: FreeCodeCamp,
+                        className: 'fcc'
+                    },
+                    {
+                        alt: 'Gatsby Logo',
+                        url: 'https://www.gatsbyjs.org/',
+                        svg: Gatsby
+                    },
+                    {
+                        alt: 'Theia Ide Logo',
+                        url: 'https://theia-ide.org',
+                        svg: TheiaIDELogo
+                    },
+                    {
+                        alt: 'Code Institute',
+                        url: 'https://codeinstitute.net/',
+                        svg: CodeInstituteLogo
+                    },
+                    {
+                        alt: 'Aplitools Logo',
+                        url: 'https://applitools.com/',
+                        svg: AppliToolsLogo
+                    },
+                    {
+                        alt: '4 Geeks Academy Logo',
+                        url: 'https://www.4geeksacademy.co/',
+                        svg: FourGeeksAcademyLogo
+                    },
+                ]}
+            />
 
             {/* ----- Section Open Source ----- */}
 
