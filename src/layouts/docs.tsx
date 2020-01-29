@@ -83,11 +83,20 @@ const StyledDocsLayout = styled.div`
 
         li {
             font-weight: 300;
-            margin-left: 2em;
+            margin-left: 3rem;
 
             @media(max-width: ${sizes.breakpoints.lg}) {
                 list-style-position: inside;
             }
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                margin-left: 1.2rem;
+            }
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                margin-left: .7rem;
+            }
+
         }
 
         li + li {
