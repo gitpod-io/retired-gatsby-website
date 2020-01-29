@@ -65,6 +65,7 @@ vscode:
 
 #### Better TOML
 ![](images/feature_syntax_highlight.png)
+
 Better TOML adds syntax highlighting to your `Cargo.toml`. To install Better TOML to your repository, add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/) file:
 ```yaml
 vscode:
