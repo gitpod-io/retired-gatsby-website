@@ -172,8 +172,8 @@ const EnterprisePage: React.SFC<{}> = () => (
                     <td>On-prem or private cloud</td>
                 </tr>
                 <tr>
-                    <th>SLA <PopOver description="Custom Service Level Agreement"/></th>
-                    <td>Optional</td>
+                    <th>SLA</th>
+                    <td><Circle /></td>
                     <td></td>
                 </tr>
                 <tr>
