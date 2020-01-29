@@ -235,7 +235,7 @@ const PricingPage: React.SFC<{}> = () => (
                         <div>
                             <h2>For Students</h2>
                             <p>
-                                Get the <strong> <a href="https://gitpod.io/subscription/"> Student Unlimited Plan </a>for {isEurope() ? '€8' : '$9'}</strong> per month.
+                                Get the <strong><a href="https://gitpod.io/subscription/" target="_blank">Student Unlimited</a> plan for {isEurope() ? '€8' : '$9'}</strong> per month.
                             </p>
                             <p>
                                 Make sure your student email is set as your primary email on GitHub/GitLab. Please let us know if your educational institution is not correctly recognized.
