@@ -77,7 +77,6 @@ const tweets = [
     '1207006360874831872',
     '1221093493214310400',
     '1215700809104740354',
-    '1215707492740739072'
 ]
 
 const Testimonials: React.SFC<{}> = () => (
@@ -98,6 +97,11 @@ const Testimonials: React.SFC<{}> = () => (
                             />
                         )
                     }
+                    <TweetEmbed
+                        className="tweet"
+                        id="1215707492740739072"
+                        options={{...twitterOptions, conversation: "none"}}
+                    />
                 </div>
         </section>
     </StyledTestimonials>
