@@ -220,7 +220,7 @@ export default function ContactPage() {
                                 id="eMail" 
                                 onChange={handleChange} 
                             />
-                            <label className="visually-hidden" htmlFor="message">Please Enter Your Message</label>
+                            <label className="visually-hidden" htmlFor="message">Please type your message</label>
                             <textarea name="message" className="form__textarea"
                                 placeholder='Please Enter Your Message'
                                 id="message"
