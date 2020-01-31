@@ -223,22 +223,27 @@ const PricingPage: React.SFC<{}> = () => (
 
                     <section className="links">
                         <div>
-                            <h2>Open Source</h2>
+                            <h2>Unlimited Open Source</h2>
                             <p>
-                                Gitpod is free for up to 50 hours/month on any public repository. Just prefix any public GitHub or GitLab URL with <span className="text-with-galaxy-bg">gitpod.io/#</span> and start coding.
+                                Gitpod is free for up to 50 hours/month on any public repository. 
                             </p>
                             <p>
-                                If you're a professional open-source developer and think you need more, let us know, by applying for <strong>a free unlimited open source plan</strong>. Your GitHub / GitLab track record should clearly show your regular open-source contributions.
+                                If you're a professional open-source developer and need more hours, you can apply to our free <strong>Unlimited Open Source</strong> plan.
                             </p>
                             <a href="/contact/" className="btn">Apply Now</a>
                         </div>
                         <div>
                             <h2>For Students</h2>
                             <p>
-                                Students get the <strong>Unlimited plan for {isEurope() ? '€8' : '$9'}</strong> per month.
+                                Get the <strong><a href="https://gitpod.io/subscription/" target="_blank">Student Unlimited</a> plan for {isEurope() ? '€8' : '$9'}</strong> per month.
                             </p>
-                            <p>Make sure your student email is set as your primary email on GitHub. And please let us know if your educational institution is not correctly recognized.</p>
-                            <a href="/contact/" className="btn">I'm a Student</a>
+                            <p>
+                                Make sure your student email is set as your primary email on GitHub/GitLab. Please let us know if your educational institution is not correctly recognized.
+                            </p> 
+                            <p>
+                                <a href="mailto:contact@gitpod.io?subject=Student Unlimited" className="btn">Get Verified as Student</a>
+                             </p>
+                            
                         </div>
                     </section>
                 </div>
