@@ -8,7 +8,7 @@ Rust is a first-class language in Gitpod, and we believe that Gitpod is a great 
 * The blazing-fast workspace search is powered by [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ## Rust Version
-By default Rust `v1.39.0 stable` is installed in Gitpod, but you can change to the nightly version of rust with `rustup default nightly`.
+By default Rust `v1.39.0 stable` is installed in Gitpod, but you can change to the nightly version of Rust with `rustup default nightly`.
 
 ## Examples
 
@@ -16,11 +16,11 @@ Here are some examples of Rust projects running in Gitpod:
 
 <div class="table-container">
 
-| Repository    | Try it    |
-|---------|------------|
-|[MathLang](https://github.com/JesterOrNot/mathlang) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/MathLang) |
-|[NuShell](https://github.com/nushell/nushell/) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nushell/nushell) |
-|[Servo](https://github.com/jankeromnes/servo) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://https://github.com/jankeromnes/servo)
+| Repository  | Description  | Try it    |
+|---------|------------|-----|
+|[MathLang](https://github.com/JesterOrNot/mathlang) | Basic maths language in Rust | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/MathLang) |
+|[NuShell](https://github.com/nushell/nushell/) | A next gen shell for the GitHub era | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nushell/nushell) |
+|[Servo](https://github.com/jankeromnes/servo) | The Servo Browser Engine | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://https://github.com/jankeromnes/servo)
 
 </div>
 
