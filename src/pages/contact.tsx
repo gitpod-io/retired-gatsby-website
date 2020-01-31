@@ -222,7 +222,7 @@ export default function ContactPage() {
                             />
                             <label className="visually-hidden" htmlFor="message">Please type your message</label>
                             <textarea name="message" className="form__textarea"
-                                placeholder='Please Enter Your Message'
+                                placeholder='Please type your message'
                                 id="message"
                                 onChange={handleChangeTextArea}
                                 value={state.message}
