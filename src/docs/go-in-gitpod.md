@@ -12,7 +12,7 @@ Before we start, here are some already gitpodified repositories to give you an i
 | ----------------------------------------------------------------- | ------------------------------|-------------------------------------------------------------------------------------------------: |
 | [go-swagger/go-swagger](https://github.com/go-swagger/go-swagger) | A simple yet powerful representation of your RESTful API | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/go-swagger/go-swagger) |
 | [gitpod-io/go-gin-app](https://github.com/gitpod-io/go-gin-app)  | Gin example running in Gitpod |  [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/go-gin-app) |
-| [gosh-terminal/gosh](https://github.com/gosh-terminal/gosh)   | Do everything from the terminal  |    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gosh-terminal/gosh) |
+| [gosh-terminal/gosh](https://github.com/gosh-terminal/gosh)   | A terminal implemented in Go where you can do anything  |    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gosh-terminal/gosh) |
 | [gitpod-io/self-hosted](https://github.com/gitpod-io/self-hosted) | Self-Host your Gitpod | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/self-hosted) |
 
 </div>
