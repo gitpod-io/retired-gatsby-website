@@ -1,6 +1,6 @@
 # Python in Gitpod
 
-Gitpod comes with great support for Python builtin. Still, depending on your project, you might want to further optimize the experience.
+Gitpod comes with great support for Python built in. Still, depending on your project, you might want to further optimize the experience.
 
 ## Python Project Examples
 
@@ -19,7 +19,7 @@ Before we get started, here are some examples of already-[gitpodified](https://w
 
 ## [Start tasks](https://www.gitpod.io/docs/config-start-tasks/)
 
-You can start building your project when or even [before](https://www.gitpod.io/docs/prebuilds/) you start your Gitpod workspace. Are you using a `requirements.txt` file to manage dependencies? If so, add this to your [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/) to automatically pre-install all dependencies when starting a workspace:
+You can start building your project when, or even [before](https://www.gitpod.io/docs/prebuilds/) you start your Gitpod workspace. Are you using a `requirements.txt` file to manage dependencies? If so, add this to your [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/) to automatically pre-install all dependencies when starting a workspace:
 ```yaml
 tasks:
   - init: pip3 install -r requirements.txt
@@ -27,7 +27,7 @@ tasks:
 ```
 
 ## VSCode Extensions
-While the most popular Python VSCode extensions are built-in to Gitpod, here are a few "Nice to have" extensions that you can use as well.
+While the most popular Python VSCode extensions are built in to Gitpod, here are a few "Nice to have" extensions that you can use as well.
 
 ### ARepl for Python
 ![](./images/AReplExample.gif)
@@ -118,7 +118,7 @@ So basically in this video we:
 
 You can also create the Python debug configuration file manually
 
-To start debugging your Python application in Gitpod, please add a new directory called `.theia/`, and inside add a file called `launch.json`, and add the following to it:
+To start debugging your Python application in Gitpod, please create a new directory called `.theia/`, and inside add a file called `launch.json`, finally add the following to it:
 ```json
 {
     "version": "0.2.0",
@@ -133,7 +133,7 @@ To start debugging your Python application in Gitpod, please add a new directory
     ]
 }
 ```
-Then, simply open the Python file you want to debug, then open the Debug panel (in the left vertical toolbar, click the icon with the crossed-out-spider), and click the green "Run" button.
+Then, simply open the Python file you want to debug, open the Debug panel (in the left vertical toolbar, click the icon with the crossed-out-spider), and click the green "Run" button.
 
 <br>
 
@@ -146,5 +146,5 @@ To see a basic repository with Python debugging enabled, please check out [Jeste
 
 
 ## Resources
-* ***[VSCode documentation for Python debugging](https://code.visualstudio.com/docs/python/debugging)*** All the information here should also apply to Gitpod as well 
-* ***[Troubleshooting-Python-GUI](https://github.com/gitpod-io/gitpod/issues/795)*** Here is how to troubleshoot Matplotlib/TK issues for Python GUI applications
+* ***[VSCode documentation for Python debugging](https://code.visualstudio.com/docs/python/debugging)*** All the information there should also apply to Gitpod as well.
+* ***[Troubleshooting Matplotlib/TK](https://github.com/gitpod-io/gitpod/issues/795)*** Here is how to troubleshoot Matplotlib/TK issues for Python GUI applications.
