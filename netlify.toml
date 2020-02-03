@@ -19,8 +19,18 @@
   status = 301
 
 [[redirects]]
+  from = "/docs/20_Browser_Extension"
+  to = "/docs/browser-extension/"
+  status = 301
+
+[[redirects]]
   from = "/docs/20_browser_extension"
   to = "/docs/browser-extension/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/45_Checkout_Location"
+  to = "/docs/checkout-location/"
   status = 301
 
 [[redirects]]
@@ -59,6 +69,11 @@
   status = 301
 
 [[redirects]]
+  from = "/docs/40_Configuration"
+  to = "/docs/configuration/"
+  status = 301
+
+[[redirects]]
   from = "/docs/40_configuration"
   to = "/docs/configuration/"
   status = 301
@@ -71,7 +86,12 @@
  [[redirects]]
   from = "/docs/60_dashboard"
   to = "/docs/dashboard/"
-  status = 301 
+  status = 301
+
+[[redirects]]
+  from = "/docs/47_Environment_Variables"
+  to = "/docs/environment-variables/"
+  status = 301
 
 [[redirects]]
   from = "/docs/47_environment_variables"
@@ -119,9 +139,14 @@
   status = 301
 
  [[redirects]]
+  from = "/docs/32_Life_of_Workspace"
+  to = "/docs/life-of-workspace/"
+  status = 301
+
+ [[redirects]]
   from = "/docs/32_life_of_workspace"
   to = "/docs/life-of-workspace/"
-  status = 301 
+  status = 301
 
  [[redirects]]
   from = "/docs/46_prebuilds"
@@ -130,6 +155,11 @@
 
 [[redirects]]
   from = "/docs/58_pull_requests"
+  to = "/docs/pull-requests/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/58_Pull_Requests"
   to = "/docs/pull-requests/"
   status = 301
 
@@ -149,9 +179,14 @@
   status = 301
 
  [[redirects]]
+  from = "/docs/33_Sharing_and_Collaboration"
+  to = "/docs/sharing-and-collaboration/"
+  status = 301
+
+ [[redirects]]
   from = "/docs/33_sharing_and_collaboration"
   to = "/docs/sharing-and-collaboration/"
-  status = 301 
+  status = 301
 
  [[redirects]]
   from = "/docs/70_subscription"
