@@ -79,6 +79,11 @@
   status = 301
 
 [[redirects]]
+  from = "/docs/10_Getting_Started"
+  to = "/docs/getting-started/"
+  status = 301
+
+[[redirects]]
   from = "/docs/10_getting_started"
   to = "/docs/getting-started/"
   status = 301
