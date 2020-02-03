@@ -140,9 +140,11 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
 
     .blue-on-hover {
         color: ${colors.text};
+        border: 2px solid #fff;
         
         &:hover {
             color: ${colors.white};
+            border: 2px solid ${colors.lightBlue};
         }
     }
 `
