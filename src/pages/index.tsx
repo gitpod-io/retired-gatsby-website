@@ -455,14 +455,6 @@ const StyledIndexPage = styled.div`
                     transform: scale(1.08) translateY(-1rem);
                 }
             }
-
-            a {
-                color: ${colors.textDark};
-            }
-
-            a.btn {
-                color: ${colors.textDark};
-            }
         }
 
         &__text {
