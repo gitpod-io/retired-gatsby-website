@@ -213,8 +213,9 @@ export default `
 
         &:hover,
         &:focus {
-            color: ${colors.link};
-            border: 2px solid ${colors.link};
+            color: ${colors.white};
+            background: ${colors.lightBlue};
+            border: 2px solid ${colors.lightBlue};
         }
 
         &--normal {
