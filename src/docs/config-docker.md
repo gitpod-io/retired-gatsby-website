@@ -17,43 +17,40 @@ There are two ways to configure a custom Docker image in your `.gitpod.yml` file
 
     ```yaml
     image:
-      file: .gitpod.dockerfile
+      file: .gitpod.Dockerfile
     ```
-    The Docker image is rebuilt automatically whenever the Dockerfile changes.
+    Once committed and pushed, Gitpod will automatically build this Dockerfile when (or <a href="/docs/prebuilds/" target="_blank">before</a>) new workspaces are created.
 
 ## Creating Docker Images for Gitpod
 
-A good starting point for creating custom Docker Images is the
+A good starting point for creating a custom `.gitpod.Dockerfile` is the
 <a href="https://hub.docker.com/r/gitpod/workspace-full/" target="_blank">gitpod/workspace-full</a> image. It already contains all the tools necessary to work with all languages Gitpod supports.
-You can find the source code in <a href="https://github.com/gitpod-io/workspace-images" target="_blank">this GitHub repository</a>.
+You can find the source code in <a href="https://github.com/gitpod-io/workspace-images/" target="_blank">this GitHub repository</a>.
 
 ```Dockerfile
 FROM gitpod/workspace-full
 
-# install custom tools, runtime, etc.
+# Install custom tools, runtime, etc.
+RUN brew install fzf
 ```
 
-When you are launching the Gitpod IDE, the local console will use the `gitpod` user, so all local settings, config file, etc. should apply to `/home/gitpod` or be run using `USER gitpod`.
+When you are launching the Gitpod IDE, the local console will use the `gitpod` user, so all local settings, config file, etc. should apply to `/home/gitpod` or be run using `USER gitpod` (we no longer recommend using `USER root`).
 
-Switching users in the Dockerfile to `gitpod` requires switching back to `USER root` at the end of the Dockerfile, so that the IDE can start. The following example shows a typical Dockerfile inheriting from `gitpod/workspace-full`:
+You can however use `sudo` in your Dockerfile. The following example shows a typical `.gitpod.Dockerfile` inheriting from `gitpod/workspace-full`:
 ```Dockerfile
-FROM gitpod/workspace-full:latest
+FROM gitpod/workspace-full
 
-USER root
 # Install custom tools, runtime, etc.
-RUN apt-get update && apt-get install -y \
+RUN sudo apt-get update \
+    && sudo apt-get install -y \
         ... \
-    && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
+    && rm -rf /var/lib/apt/lists/*
 
-USER gitpod
 # Apply user-specific settings
 ENV ...
-
-# Give back control
-USER root
 ```
 
-See also [Gero's blog post](/blog/docker-in-gitpod) running through an example.
+See also [Gero's blog post](/blog/docker-in-gitpod/) running through an example.
 
 ## Trying out changes to your Dockerfile
 
@@ -63,4 +60,3 @@ On start of the second workspace the docker build will start and show the output
 you can force push changes to your config using your first, still running workspace and simply start a fresh workspace again to try them out.
 
 We are working on allowing dockerbuilds directly from within workspaces, but until then this approach has been proven to be the most productive.
-
