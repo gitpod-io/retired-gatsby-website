@@ -8,7 +8,19 @@ Rust is a first-class language in Gitpod, and we believe that Gitpod is a great 
 * The blazing-fast workspace search is powered by [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ## Rust Version
-By default Rust `v1.39.0 stable` is installed in Gitpod, but you can change to the nightly version of Rust with `rustup default nightly`.
+Both Rust `v1.39.0 stable` and `nightly` are pre-installed in Gitpod. Stable is the default, but you can switch to the nightly version of Rust by running `rustup default nightly` in a terminal.
+
+Note: If you try to use `rustup` in your Dockerfile, you might get the following error:
+
+```
+/bin/sh: rustup command not found
+```
+
+To fix this you'll need to wrap the `rustup` command in a login shell, like so:
+
+```Dockerfile
+RUN bash -cl "rustup toolchain install nightly"
+```
 
 ## Examples
 
