@@ -1,4 +1,4 @@
-# Go
+# Go in Gitpod
 
 Gitpod supports Go right out of the box, but there are still ways to optimize your Go experience within Gitpod.
 
