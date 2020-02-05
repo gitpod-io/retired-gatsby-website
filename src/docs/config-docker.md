@@ -23,6 +23,8 @@ There are two ways to configure a custom Docker image in your `.gitpod.yml` file
 
 ## Creating Docker Images for Gitpod
 
+> Note: Currently, Gitpod only supports Debian/Ubuntu or Alpine based images.
+
 A good starting point for creating a custom `.gitpod.Dockerfile` is the
 <a href="https://hub.docker.com/r/gitpod/workspace-full/" target="_blank">gitpod/workspace-full</a> image. It already contains all the tools necessary to work with all languages Gitpod supports.
 You can find the source code in <a href="https://github.com/gitpod-io/workspace-images/" target="_blank">this GitHub repository</a>.
