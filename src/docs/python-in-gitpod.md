@@ -109,7 +109,7 @@ Here is a quick clip on how to automatically configure debugging for Python!
 
 ![](images/PythonDebug.gif)
 
-So basically in this video we:
+So, basically in this video we:
 1. First, open the Python file that we want to debug
 2. Then, go to the debug menu and select "Add Configuration..."
 3. Next, in the dropdown choose "Python"
