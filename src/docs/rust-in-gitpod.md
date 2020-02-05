@@ -42,7 +42,7 @@ vscode:
     - Swellaby.vscode-rust-test-adapter@0.11.0:Xg+YeZZQiVpVUsIkH+uiiw==
 ```
 #### Crates
-> ***Note: Don't use this extension if you don't like emojis!***
+> ***Note: This extension outputs emojis by default if the crate version is set on latest. You can disable this by using `crates.upToDateDecorator` option in your preferences***
 <br>
 
 ![](images/cratesDemo.gif)
