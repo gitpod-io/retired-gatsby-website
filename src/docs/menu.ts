@@ -154,7 +154,13 @@ export const MENU: MenuEntry[] = [
     ),
     M(
         "Subscriptions",
-        "subscriptions"
+        "subscriptions",
+        [
+            M(
+                "Unlimited Open Source",
+                "unlimited-open-source"
+            )
+        ]
     ),
     M(
         "Gitpod Self-Hosted",
