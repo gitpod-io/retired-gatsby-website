@@ -9,7 +9,7 @@ No more hour restrictions, use Gitpod for unlimited hours on any public GitHub o
 
 ##Who is eligible? 
 
-You should fulfill at least one of the following criteria:
+You should meet at least one of the following requirements:
 1. You are a maintainer, or core contributor, of a well-established open source project
 2. A significant part of your revenue comes from open source work (e.g. via Liberapay, Open Collective, GitHub Sponsors, Patreon, etc)
 3. You regularly contribute to open source in other ways (e.g. producing content like blog posts, videos, live streams, or organizing conferences, meet-ups, hackathons)
@@ -17,4 +17,3 @@ You should fulfill at least one of the following criteria:
 Is at least one criterion applying to your work? Please, [get in contact](/contact/) and send us a link to your projects. We'd love to see what you're working on. 
 
 Feel free to reach out if you have any questions. 
-
