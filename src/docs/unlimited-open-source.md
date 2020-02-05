@@ -1,6 +1,6 @@
 # Unlimited Open Source
 
-It'd not have been possible for us to create Gitpod without all the amazing open-source work, it's built upon. And still, we're developing huge parts of Gitpod in open source. 
+It wouldn't have been possible for us to create Gitpod without all the amazing open-source work, it's built upon. And still, we're developing huge parts of Gitpod in open source. 
 
 Deeply devoted to the open source community, we are happy to provide professional open-source contributors a free **Unlimited Open Source** plan. 
 
