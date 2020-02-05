@@ -14,6 +14,6 @@ You should meet at least one of the following requirements:
 2. A significant part of your revenue comes from open source work (e.g. via Liberapay, Open Collective, GitHub Sponsors, Patreon, etc)
 3. You regularly contribute to open source in other ways (e.g. producing content like blog posts, videos, live streams, or organizing conferences, meet-ups, hackathons)
 
-Is at least one criterion applying to your work? Please, [get in contact](/contact/) and send us a link to your projects. We'd love to see what you're working on. 
+Does at least one of the above apply to your work? Then please [get in touch](/contact/) and provide links to your projects. We'd love to see what you're working on. 
 
 Feel free to reach out if you have any questions. 
