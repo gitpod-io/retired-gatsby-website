@@ -128,3 +128,4 @@ To see a basic repository with Go debugging enabled, please check out [JesterOrN
 ## External Resources
 
 - [VSCode/Go Documentation](https://code.visualstudio.com/docs/languages/go) The stuff here also applies to Gitpod!
+- [VSCode/Go debugging](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code) VSCode's Documentation on Go debugging
