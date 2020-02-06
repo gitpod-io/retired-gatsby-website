@@ -107,13 +107,12 @@ const offers: PricingBoxProps[] = [
         banner: 'Exclusive Offer for the GitHub Student Pack'
     },
     {
-        title: 'Professional Student',
+        title: 'Student Unlimited',
         img: <object tabIndex={-1} data={Rocket}/>,
         price: <span><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€35' : '$39')}</span> {(isEurope() ? '€8' : '$9')}</span>,
         duration: 'Unlimited hours / month',
         hideButton: true,
-        features: ['Private & Public Repos', <span className="span">8 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
-        text: 'Always free for students'
+        features: ['Private & Public Repos', <span className="span">16 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>, <span className="span">1h Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
     }
 ]
 
