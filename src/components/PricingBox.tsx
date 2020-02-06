@@ -18,13 +18,12 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
     background-position: ${({ background }) => background ? 'left' : null };
     box-shadow: ${shadows.light};
 
-    @media(min-width: ${sizes.breakpoints.lg}) {
-        transform: ${({transform}) => transform ? transform : null };
+    @media(min-width: ${sizes.breakpoints.md}) {
+        transform: ${({ transform }) => transform ? transform : null};
         z-index: ${({transform}) => transform ? '1' : null };
     }
 
     @media(max-width: ${sizes.breakpoints.lg}) {
-        transform: scale(1.04);
         min-height: 54rem;
         margin-bottom: 5rem;
     }
