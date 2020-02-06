@@ -85,6 +85,46 @@ vscode:
     - premparihar.gotestexplorer@0.1.10:jvUM8akrQ67vQxfjaxCgCg==
 ```
 
+## Debugging
+
+Here is a quick clip on how to automatically configure debugging for Go!
+
+![](images/GoDebug.gif)
+
+So, basically in this video we:
+1. First, open the Go file that we want to debug
+2. Then, go to the debug menu and select "Add Configuration..."
+3. Next, in the dropdown choose "Go launch file"
+5. Finally, start debugging your Go program!
+
+You can also create the Go debug configuration file manually
+
+To start debugging your Go application in Gitpod, please create a new directory called `.theia/`, and inside add a file called `launch.json`, finally add the following to it:
+```json
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  "version": "0.2.0",
+  "configurations": [
+  {
+      "name": "Launch file",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "program": "${file}"
+  }
+  ]
+}
+```
+Then, simply open the Go file you want to debug, open the Debug panel (in the left vertical toolbar, click the icon with the crossed-out-spider), and click the green "Run" button.
+
+<br>
+
+
+To see a basic repository with Go debugging enabled, please check out [JesterOrNot/Gitpod-Go-Debug](https://github.com/JesterOrNot/Gitpod-Go-Debug):
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-Go-Debug)
+
 ## External Resources
 
 - [VSCode/Go Documentation](https://code.visualstudio.com/docs/languages/go) The stuff here also applies to Gitpod!
