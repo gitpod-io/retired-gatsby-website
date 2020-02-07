@@ -1,5 +1,5 @@
 # Contributing
-This file is made as a set of guidelines for contributors to ensure that the contributions provided are up to standard.
+This file is made as a set of suggestions for contributors to ensure that the contributions provided are up to standard.
 
 ### Commit messages
 Commit messages are expected to have following prefixes in square brackets followed by short summary of the change in the commit:
