@@ -19,11 +19,11 @@ Before we get started, here are some examples of already-[gitpodified](https://w
 
 ## Python Versions
 
-Gitpod workspaces come with Python versions: `3.7.6`, `2.7.16`, `2.7.17`, and `3.7.3` pre-installed by default.
+Gitpod workspaces come with Python versions: `2.7.17`, and `3.7.3` pre-installed by default.
 
 The easiest way to install a new Python version is to use `pyenv install <VERSION>`. For example, suppose you wanted to install Python `3.6.4`, you would run `pyenv install 3.6.4`.
 
-You can switch between Python versions using `pyenv global <VERSION>`. For example, if you wanted to switch to Python version `2.7.17` you would run `pyenv global 2.7.17`.
+You can switch between Python versions using `pyenv local <VERSION>`. For example, if you wanted to switch to Python version `2.7.17` you would run `pyenv local 2.7.17`, however when running it in a Dockerfile you will want to replace local with global.
 
 ## [Start tasks](https://www.gitpod.io/docs/config-start-tasks/)
 
