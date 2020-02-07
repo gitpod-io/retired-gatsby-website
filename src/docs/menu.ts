@@ -85,32 +85,6 @@ export const MENU: MenuEntry[] = [
         ]
     ),
     M(
-        "Theia – Gitpod's IDE",
-        "ide",
-        [
-            M(
-                "Tips & Tricks",
-                "tips-and-tricks"
-            ),
-            M(
-                "Git Integration",
-                "git"
-            ),
-            M(
-                "Search",
-                "search"
-            ),
-            M(
-                "Pull Requests",
-                "pull-requests"
-            ),
-            M(
-                "Code Reviews",
-                "code-reviews"
-            )
-        ]
-    ),
-    M(
         "Languages & Frameworks",
         "languages-and-frameworks",
         [
@@ -145,6 +119,32 @@ export const MENU: MenuEntry[] = [
             M(
                 "Julia",
                 "julia-in-gitpod"
+            )
+        ]
+    ),
+    M(
+        "Theia – Gitpod's IDE",
+        "ide",
+        [
+            M(
+                "Tips & Tricks",
+                "tips-and-tricks"
+            ),
+            M(
+                "Git Integration",
+                "git"
+            ),
+            M(
+                "Search",
+                "search"
+            ),
+            M(
+                "Pull Requests",
+                "pull-requests"
+            ),
+            M(
+                "Code Reviews",
+                "code-reviews"
             )
         ]
     ),
