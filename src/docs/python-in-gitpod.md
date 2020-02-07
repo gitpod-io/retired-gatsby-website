@@ -17,6 +17,10 @@ Before we get started, here are some examples of already-[gitpodified](https://w
 
 </div>
 
+## Python version
+
+By default Python Versions: `3.7.6`, `2.7.16`, `2.7.17`, and `3.7.3` are installed in Gitpod, the easiest way to install a new Python version is to use `pyenv install <VERSION>` for an example suppose you wanted to install Python `3.6.4` you would run `pyenv install 3.6.4`. You can switch between Python versions using `pyenv global <VERSION>` for example if you wanted to switch to Python version `2.7.17` you would run `pyenv global 2.7.17`
+
 ## [Start tasks](https://www.gitpod.io/docs/config-start-tasks/)
 
 You can start building your project when, or even [before](https://www.gitpod.io/docs/prebuilds/) you start your Gitpod workspace. Are you using a `requirements.txt` file to manage dependencies? If so, add this to your [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/) to automatically pre-install all dependencies when starting a workspace:
