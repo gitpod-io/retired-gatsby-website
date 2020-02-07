@@ -49,6 +49,6 @@ vscode:
     - felixfbecker.php-debug@1.13.0:WX8Y3EpQk3zgahy41yJtNQ==
 ```
 
-Finally, here is an [example repository](https://github.com/JesterOrNot/Gitpod-PHP-Debug) that contains a full PHP debugging configuration for Gitpod as described above. You can try it by clicking here:
+Finally, here is a full [example repository](https://github.com/JesterOrNot/Gitpod-PHP-Debug) containing the complete Gitpod PHP debug configuration described above. You can try it by clicking here:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-PHP-Debug)
