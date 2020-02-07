@@ -45,11 +45,11 @@ Flags:
   -u, --unset    deletes/unsets persisted environment variables
 ```
 
-### Using the dashboard
+### Using the account settings
 
-You can also configure and view the persistent environment variables in [your dashboard](https://gitpod.io/environment-variables/).
+You can also configure and view the persistent environment variables in [your account settings](https://gitpod.io/environment-variables/).
 
-![Environment Vriables in Dashboard](./images/env-var-dashboard.png)
+![Environment Variables in Account Settings](./images/env-var-dashboard.png)
 
 You can add as many environment variables as you wish.
 
