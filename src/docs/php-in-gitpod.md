@@ -35,7 +35,7 @@ RUN wget http://xdebug.org/files/xdebug-2.9.1.tgz \
     && sudo bash -c "echo -e '\nzend_extension = /usr/lib/php/20170718/xdebug.so\n[XDebug]\nxdebug.remote_enable = 1\nxdebug.remote_autostart = 1\n' >> /etc/php/7.2/cli/php.ini"
 ```
 
-Second, reference the above Dockerfile in a [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/) file, then also install the extension, like so:
+Second, reference the above Dockerfile in a [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/) file, and then also install the extension, like so:
 
 ```yaml
 image:
