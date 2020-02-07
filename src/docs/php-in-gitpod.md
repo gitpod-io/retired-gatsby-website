@@ -14,7 +14,7 @@ Gitpod supports PHP right out of the box, but more advanced features such as deb
 ![](images/phpDebug.gif)
 The PHP Debug extension allows debugging PHP applications from within Gitpod.
 
-To add this extension to your repository, you must do two things:
+To get this extension for your project, you must do two things:
 
 First you must create a [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/config-docker/):
 
