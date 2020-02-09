@@ -32,7 +32,7 @@ However, if you're missing some additional tools, you can simply run `brew insta
 
 <br/>
 
-![](images/cppTools.png)
+![C++ Tools Extension example](images/cppTools.png)
 The C/C++ VSCode extension gives enhanced intellisense support for C++! To install it to your repository add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/):
 
 ```yaml
