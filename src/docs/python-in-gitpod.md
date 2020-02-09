@@ -38,7 +38,7 @@ tasks:
 While the most popular Python VSCode extensions are built in to Gitpod, here are a few "Nice to have" extensions that you can use as well.
 
 ### ARepl for Python
-![](./images/AReplExample.gif)
+![ARepl extension example](./images/AReplExample.gif)
 ARepl for Python is helpful for constantly checking your code and debugging.
 To install this extension for your repository, add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/):
 ```yaml
@@ -47,7 +47,7 @@ vscode:
     - almenon.arepl@1.0.20:Uu7lIOwyLgmNWpTwCl/iqQ==
 ```
 ### Python Test Explorer
-![](./images/python_Test_In_Gitpod.png)
+![Python test explorer example](./images/python_Test_In_Gitpod.png)
 Easily test your python extensions with the Python Test Explorer.
 To add this to your repository add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/)
 ```yaml
@@ -115,7 +115,7 @@ Here are some other examples of Python GUI applications in Gitpod:
 ## Debugging
 Here is a quick clip on how to automatically configure debugging for Python!
 
-![](images/PythonDebug.gif)
+![Python debugging example](images/PythonDebug.gif)
 
 So, basically in this video we:
 1. First, open the Python file that we want to debug

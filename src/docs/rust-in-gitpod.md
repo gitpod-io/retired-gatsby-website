@@ -43,7 +43,7 @@ Here are some examples of Rust projects running in Gitpod:
 The most popular Rust VSCode extensions come prebuilt in Gitpod but here are some "nice to have" extensions:
 
 #### Rust Test Explorer
-![](images/rustTest.png)
+![Rust test explorer example](images/rustTest.png)
 <br>
 <br>
 The Rust Test Explorer makes it easy to run Rust tests. To install this extension to your repository, add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/):
@@ -57,7 +57,7 @@ vscode:
 > ***Note: This extension outputs emojis by default if the crate version is set on latest. You can disable this by using `crates.upToDateDecorator` option in your preferences***
 <br>
 
-![](images/cratesDemo.gif)
+![A crates extension demo](images/cratesDemo.gif)
 The VSCode extension Crates makes it easier to manage your Cargo dependency versions. To install this extension to your repository add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/)
 
 ```yaml
@@ -66,7 +66,7 @@ vscode:
     - serayuzgur.crates@0.4.7:HMkoguLcXp9M3ud7ac3eIw==
 ```
 #### <p>Search Crates.io</p>
-![](images/searchCratesio.gif)
+![An example of search crates.io extension](images/searchCratesio.gif)
 
 Do you have an idea of a library you want to use but don't know the version well just type in the name of the library and Search Crates.io will get the version. To install this extension to your repository add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/)
 ```yaml
@@ -76,7 +76,7 @@ vscode:
 ```
 
 #### Better TOML
-![](images/feature_syntax_highlight.png)
+![TOML Syntax highlighting example](images/feature_syntax_highlight.png)
 
 Better TOML adds syntax highlighting to your `Cargo.toml`. To install Better TOML to your repository, add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/) file:
 ```yaml
