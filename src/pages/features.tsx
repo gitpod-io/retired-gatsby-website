@@ -10,7 +10,6 @@ import { sizes, colors, shadows } from '../styles/variables'
 import { Link } from 'gatsby'
 import ScrollToTopButton from '../components/ScrollToTopButton'
 
-
 const StyledFeaturesPage = styled.div`
     /* ------------------------------------------- */
     /* ----- Intro ----- */
@@ -36,6 +35,7 @@ const StyledFeaturesPage = styled.div`
             justify-items: center;
             align-items: center;
             margin-top: 6rem;
+            position: relative;
 
             @media(max-width: ${sizes.breakpoints.lg}) {
                 grid-template-columns: repeat(4, 1fr);
@@ -61,6 +61,12 @@ const StyledFeaturesPage = styled.div`
                 @media(max-width: ${sizes.breakpoints.md}) {
                     min-width: 22rem;
                     max-width: 22rem;
+                }
+ 
+                @media(min-width: ${sizes.breakpoints.lg}) {
+                    &:nth-child(n + 6) {
+                       transform: translateX(50%);
+                    }
                 }
             }
         }
