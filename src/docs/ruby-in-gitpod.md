@@ -14,8 +14,9 @@ Here are some example Ruby projects that are automated with Gitpod:
 
 Repository | Description | Try it
 ---------|----------|---------
- [dev.to](https://github.com/thepracticaldev/dev.to) | A platform where software developers write articles | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/thepracticaldev/dev.to)
- [home-assistant.io](https://github.com/home-assistant/home-assistant.io) | Open source home automation | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/home-assistant/home-assistant.io)
+[rails_sample_app](https://github.com/gitpod-io/rails_sample_app) | Ruby on Rails tutorial sample application | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/rails_sample_app)
+[home-assistant.io](https://github.com/home-assistant/home-assistant.io) | Open source home automation | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/home-assistant/home-assistant.io)
+[dev.to](https://github.com/thepracticaldev/dev.to) | A platform where software developers write articles | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/thepracticaldev/dev.to)
 
  </div>
 
