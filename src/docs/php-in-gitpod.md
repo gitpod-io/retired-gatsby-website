@@ -53,3 +53,10 @@ vscode:
 Finally, here is a full [example repository](https://github.com/JesterOrNot/Gitpod-PHP-Debug) containing the complete Gitpod PHP debug configuration described above. You can try it by clicking here:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-PHP-Debug)
+
+## PECL package manager in Gitpod
+The default workspace image also ships with the PECL package manager installed to install packages with it you must add these instructions to your [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/config-docker/)
+```Dockerfile
+RUN sudo pecl channel-update pecl.php.net && sudo pecl install <PACKAGE>
+``` 
+where package equals the thing you want to install.
