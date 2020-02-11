@@ -203,8 +203,8 @@ const FeaturesPage: React.SFC<{}> = () => (
                             id={f.id}
                             caption={f.caption}
                             isIllustration={f.isIllustration}
-                            colorTextBox={isGreyish ? colors.offWhite2 : colors.offWhite}
-                            colorImgBox={isGreyish ? colors.offWhite : colors.white}
+                            colorTextBox={colors.offWhite}
+                            colorImgBox={colors.white}
                         />
                         return isGreyish ?
                             <div key={f.id} className="grey-container">
