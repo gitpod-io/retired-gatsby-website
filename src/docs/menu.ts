@@ -157,8 +157,8 @@ export const MENU: MenuEntry[] = [
         "subscriptions",
         [
             M(
-                "Unlimited Open Source",
-                "unlimited-open-source"
+                "Professional Open Source",
+                "professional-open-source"
             )
         ]
     ),
