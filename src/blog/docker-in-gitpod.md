@@ -55,13 +55,13 @@ I went to [gitpod-io/definitely-gp](https://github.com/gitpod-io/definitely-gp/)
 image:
   file: Dockerfile
 tasks:
-  - command: >
-      echo DATABASE_URL=$DATABASE_URL >> .env &&
-      echo ROCKET_ADDRESS=$ROCKET_ADDRESS >> .env &&
-      echo ROCKET_PORT=$ROCKET_PORT >> .env &&
-      pg_start.sh &&
-      diesel setup &&
-      cargo build &&
+  - command: |
+      echo DATABASE_URL=$DATABASE_URL >> .env
+      echo ROCKET_ADDRESS=$ROCKET_ADDRESS >> .env
+      echo ROCKET_PORT=$ROCKET_PORT >> .env
+      pg_start.sh
+      diesel setup
+      cargo build
       cargo run
 ports:
  - port: 8000

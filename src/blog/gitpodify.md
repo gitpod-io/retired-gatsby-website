@@ -90,9 +90,9 @@ In order to make a Terminal wait for another Terminal to finish some task (e.g. 
 
 ```yml
 tasks:
-  - init: >
-      touch /tmp/.npm-lock &&
-      npm install &&
+  - init: |
+      touch /tmp/.npm-lock
+      npm install
       rm /tmp/.npm-lock
     command: npm run server
   - init: sleep 1 && while [ -f /tmp/.npm-lock ]; do sleep 1; done
