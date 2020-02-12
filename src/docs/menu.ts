@@ -113,6 +113,10 @@ export const MENU: MenuEntry[] = [
                 "ruby-in-gitpod"
             ),
             M(
+                "PHP",
+                "php-in-gitpod"
+            ),
+            M(
                 "Rust",
                 "rust-in-gitpod"
             ),

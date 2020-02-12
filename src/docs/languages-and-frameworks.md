@@ -8,5 +8,6 @@ Below is a list of language and framework specific tips & tricks.
   * [Go](/docs/go-in-gitpod/)
   * [Bash](/docs/bash-in-gitpod/)
   * [Ruby](/docs/ruby-in-gitpod)
+  * [PHP](/docs/php-in-gitpod)
   * [Rust](/docs/rust-in-gitpod/)
   * [Julia](/docs/julia-in-gitpod/)
