@@ -57,6 +57,9 @@ Finally, here is a full [example repository](https://github.com/JesterOrNot/Gitp
 ## PECL Package Manager
 Gitpod's default workspace image also comes with the [PECL](https://pecl.php.net/) package manager pre-installed. To install packages with it, you must use `sudo pecl install <PACKAGE>` in your repository's [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/config-docker/), e.g. like so:
 ```Dockerfile
-RUN sudo pecl channel-update pecl.php.net && sudo pecl install <PACKAGE>
+FROM gitpod/workspace-full
+
+RUN sudo pecl channel-update pecl.php.net && \
+    sudo pecl install <PACKAGE>
 ``` 
 where package equals the thing you want to install.
