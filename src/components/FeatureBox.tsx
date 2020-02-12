@@ -18,7 +18,7 @@ const StyledFeatureBox = styled.div`
         font-size: 2rem;
     }
 
-    object {
+    img {
         height: 4rem;
         display: block;
         margin: 1rem auto;
@@ -36,31 +36,17 @@ interface FeatureBoxProps {
     path: string
 }
 
-class FeatureBox extends React.Component<FeatureBoxProps, { isHovered: boolean }> {
-    constructor(props: FeatureBoxProps) {
-        super(props);
-        this.state = {
-            isHovered: false
-        }
-    }
-
-    handleHover = (val: boolean) => {
-        this.setState({ isHovered: val });
-    }
-
-    render() {
-        const { img, text, path } = this.props;
-        return <StyledFeatureBox>
-            <a href={`#${path}`}>
-                <div>
-                    <object tabIndex={-1} data={img} />
-                </div>
-                <div>
-                    <h3>{text}</h3>
-                </div>
-            </a>
-        </StyledFeatureBox>
-    }
-}
+const FeatureBox: React.SFC<FeatureBoxProps> = ({ img, text, path, alt }) => (
+    <StyledFeatureBox>
+                <a href={`#${path}`}>
+                    <div>
+                        <img src={img} alt={alt}/>
+                    </div>
+                    <div>
+                        <h3>{text}</h3>
+                    </div>
+                </a>
+    </StyledFeatureBox>
+)
 
 export default FeatureBox
