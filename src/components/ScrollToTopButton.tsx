@@ -19,7 +19,12 @@ const StyledScrollToTopButton = styled.a`
     box-shadow: ${shadows.light1};
     border-radius: 50%;
     z-index: 100;
-    transition: all .3s ease-in-out;
+    transition: transform .3s, opacity .2s, background-color .2s  ease-in-out;
+
+    &:hover,
+    &:focus {
+        background: ${colors.lightBlue};
+    }
 
     img {
         height: 1.5rem;
