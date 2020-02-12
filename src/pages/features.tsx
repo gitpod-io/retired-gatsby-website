@@ -179,7 +179,6 @@ const FeaturesPage: React.SFC<{}> = () => (
                                         key={i}
                                         alt={f.title}
                                         img={f.icon}
-                                        hover={f.hover}
                                         text={f.iconText || f.iconTitle}
                                         path={f.id}
                                     />
