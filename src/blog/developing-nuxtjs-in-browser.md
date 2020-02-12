@@ -73,8 +73,8 @@ Here’s the contents:
       - port: 3000
         protocol: "http"
     tasks:
-      - command: >
-            yarn install &&
+      - command: |
+            yarn install
             yarn dev
 
 ## Dive deeper into Nuxt.js
