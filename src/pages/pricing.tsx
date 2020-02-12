@@ -223,12 +223,12 @@ const PricingPage: React.SFC<{}> = () => (
 
                     <section className="links">
                         <div>
-                            <h2>Unlimited Open Source</h2>
+                            <h2>Professional Open Source</h2>
                             <p>
                                 Gitpod is free for up to 50 hours/month on any public repository. 
                             </p>
                             <p>
-                                If you're a professional open-source developer and need more hours, you can apply to our free <a href="/docs/unlimited-open-source/" target="_blank"><strong>Unlimited Open Source</strong></a> plan.
+                                If you're a professional open-source developer and need more hours, you can apply to our free <a href="/docs/professional-open-source/" target="_blank"><strong>Professional Open Source</strong></a> plan.
                             </p>
                             <a href="/contact/" className="btn">Apply Now</a>
                         </div>
