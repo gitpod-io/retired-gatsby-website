@@ -55,7 +55,7 @@ Finally, here is a full [example repository](https://github.com/JesterOrNot/Gitp
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-PHP-Debug)
 
 ## PECL Package Manager
-The default workspace image also ships with the PECL package manager installed to install packages with it you must add these instructions to your [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/config-docker/)
+Gitpod's default workspace image also comes with the [PECL](https://pecl.php.net/) package manager pre-installed. To install packages with it, you must use `sudo pecl install <PACKAGE>` in your repository's [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/config-docker/), e.g. like so:
 ```Dockerfile
 RUN sudo pecl channel-update pecl.php.net && sudo pecl install <PACKAGE>
 ``` 
