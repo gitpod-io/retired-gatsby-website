@@ -54,6 +54,16 @@ const StyledNav = styled.nav`
         }
     }
 
+    @media(max-width: ${sizes.breakpoints.lg}) {
+        .navIsRendered {
+            display: flex;
+        }
+
+        .navIsNotRendered {
+            display: none;
+        }
+    }
+
     .nav__item {
         cursor: pointer;
 
@@ -146,6 +156,7 @@ const StyledNav = styled.nav`
         }
     }
 
+
     @media(max-width: ${sizes.breakpoints.lg}) {
         .shown {
             opacity: 1;
@@ -188,30 +199,10 @@ class Nav extends React.Component {
         isNavRendered: false,
     }
 
-    handleResize = () => {
-        if (window.innerWidth < 1240) {
-            this.setState({ isNavRendered: false })
-        } else {
-            this.setState({ isNavRendered: true })
-        }
-    }
-
     toggleNavigation = () => {
         this.setState({ isNavRendered: !this.state.isNavRendered })
     }
 
-    event = () => {
-        if (window.innerWidth <= 1240) {
-            this.toggleNavigation()
-        }
-    }
-
-    componentDidMount() {
-        window.addEventListener('resize', this.handleResize)
-        if (window.innerWidth >= 1240) {
-            this.toggleNavigation()
-        }
-    }
 
     render() {
 
@@ -253,53 +244,53 @@ class Nav extends React.Component {
                                 </div>
                             </div>
 
-                            { isNavRendered ? (
-                                <ul className={ isNavRendered ? 'shown container nav__items' : 'hiden' }>
-                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/features/' className="link">Features</Link></li>
-                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/pricing/' className="link">Pricing</Link></li>
-                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/enterprise/' className="link">Enterprise</Link></li>
-                                    <li className="nav__item">
-                                        <DropDown
-                                            title="Solutions"
-                                            links={[
-                                                {
-                                                    text: 'Education',
-                                                    to: '/education/'
-                                                },
-                                                {
-                                                    text: 'Recruiting',
-                                                    to: '/recruiting/'
-                                                },
-                                                {
-                                                    text: 'Vendor',
-                                                    to: '/vendor/'
-                                                }
-                                            ]}
-                                        />
-                                    </li>
-                                    <li className="nav__item">
-                                        <DropDown
-                                            title="Resources"
-                                            links={[
-                                                {
-                                                    text: 'Docs',
-                                                    to: '/docs/'
-                                                },
-                                                {
-                                                    text: 'Blog',
-                                                    to: '/blog/'
-                                                },
-                                                {
-                                                    text: 'Community',
-                                                    to: 'https://community.gitpod.io/',
-                                                    target: true
-                                                }
-                                            ]}
-                                        />
-                                    </li>
-                                    <li className="nav__item"><a href="https://gitpod.io/login/" tabIndex={ isNavRendered ? 0 : -1 } rel="noopener" className="btn">Log In</a></li>
-                                </ul>
-                            ) : null }
+                        
+                            <ul className={`nav__items ${isNavRendered ? 'navIsRendered' : 'navIsNotRendered'}`} >
+                                <li className="nav__item"><Link activeClassName="active" to='/features/' className="link">Features</Link></li>
+                                <li className="nav__item"><Link activeClassName="active" to='/pricing/' className="link">Pricing</Link></li>
+                                <li className="nav__item"><Link activeClassName="active" to='/enterprise/' className="link">Enterprise</Link></li>
+                                <li className="nav__item">
+                                    <DropDown
+                                        title="Solutions"
+                                        links={[
+                                            {
+                                                text: 'Education',
+                                                to: '/education/'
+                                            },
+                                            {
+                                                text: 'Recruiting',
+                                                to: '/recruiting/'
+                                            },
+                                            {
+                                                text: 'Vendor',
+                                                to: '/vendor/'
+                                            }
+                                        ]}
+                                    />
+                                </li>
+                                <li className="nav__item">
+                                    <DropDown
+                                        title="Resources"
+                                        links={[
+                                            {
+                                                text: 'Docs',
+                                                to: '/docs/'
+                                            },
+                                            {
+                                                text: 'Blog',
+                                                to: '/blog/'
+                                            },
+                                            {
+                                                text: 'Community',
+                                                to: 'https://community.gitpod.io/',
+                                                target: true
+                                            }
+                                        ]}
+                                    />
+                                </li>
+                                <li className="nav__item"><a href="https://gitpod.io/login/" rel="noopener" className="btn">Log In</a></li>
+                            </ul>
+                          
                     </StyledNav>
                 </div>
             </div>
