@@ -8,7 +8,7 @@ const StyledActionCard = styled.section`
     display: block;
     max-width: 60rem;
     margin: 8rem auto;
-    padding 5rem 3rem;
+    padding: 5rem 3rem;
     text-align: center;
     background: ${colors.offWhite};
     box-shadow: ${shadows.light};
