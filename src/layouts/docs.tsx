@@ -2,7 +2,6 @@ import React from 'react'
 
 import IndexLayout from './index'
 import styled from '@emotion/styled'
-import DownArrow from '../resources/arrow-down.svg'
 import { colors, shadows, sizes } from '../styles/variables'
 import DocSideBar from '../components/DocSideBar'
 import DocTopicChooser from '../components/DocTopicChooser'
@@ -138,21 +137,9 @@ const StyledDocsLayout = styled.div`
     }
 
     .topic-chooser {
-        display: block;
         margin: 0 auto;
-        font: inherit;
-        color: inherit;
         padding: 1rem 2.5rem;
-        background: #fff;
-        border: 1px solid #ddd;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        background-image: url(${DownArrow}),
-        linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
-        background-repeat: no-repeat, repeat;
         background-position: right 1.7em top 50%, 0 0;
-        background-size: 1.65em auto, 100%;
 
         @media(min-width: ${sizes.breakpoints.lg}) {
             display: none;

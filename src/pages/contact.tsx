@@ -52,6 +52,20 @@ const StyledContactPage = styled.div`
         }
     }
 
+    select {
+        margin-bottom: 2rem;
+        border-radius: 3px;
+        border: ${borders.light1};
+        color: inherit;
+    }
+
+    .subject {
+        label {
+            display: block;
+            margin-bottom: 1rem;
+        }
+    }
+
     .sucess {
         min-height: 80vh;
         display: flex;
@@ -100,16 +114,18 @@ function encode(data: { [k: string]: string | number | boolean | null | undefine
         .join('&')
 }
 
-export default function ContactPage() {
+const subjects: string[] = ['Applying for a free unlimited open source plan', 'I have a question regarding pricing', 'I have a question regarding Gitpod Enterprise', "I'm interested in Gitpod Enterprise Managed"]
+
+export default function ContactPage(props: any) {
     const [state, setState] = React.useState<{
-        firstName?: string,
-        lastName?: string,
+        name?: string,
         consent?: boolean,
         eMail?: string,
+        subject?: string,
         message?: string,
         messageSent?: boolean,
         errorMessage?: string
-    }>({})
+    }>({subject: props && (props.location && props.location.state) && props.location.state.subject})
     if (typeof window !== 'undefined' && window.location.hash && state.message === undefined) {
         setState({
             ...state,
@@ -127,6 +143,15 @@ export default function ContactPage() {
 
     const handleChangeTextArea = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
         setState({ ...state, [e.target.name]: e.target.value })
+    }
+
+    const handleChangeSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        console.log(e.target.name)
+        setState({
+            ...state,
+            errorMessage: undefined,
+            [e.target.name]: e.target.value
+        })
     }
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -167,7 +192,6 @@ export default function ContactPage() {
             }))
             .catch((error) => alert(error))
     }
-
     return (
         <IndexLayout canonical="/contact/">
             <StyledContactPage className="grey-container">
@@ -194,32 +218,42 @@ export default function ContactPage() {
                         <h1 style={{marginBottom: '2rem'}}>Contact</h1>
 
                         <div className="form__container">
-                            <label className="visually-hidden" htmlFor="firstName">First Name</label>
+                            <label className="visually-hidden" htmlFor="Name"> Name</label>
                             <input 
                                 autoFocus 
-                                name="firstName" 
+                                name="name" 
                                 className="form__input form__input--half" 
-                                type="text" placeholder="First Name" 
-                                id="firstName" 
-                                onChange={handleChange} 
-                            />
-                            <label className="visually-hidden" htmlFor="lastName">Last Name</label>
-                            <input 
-                                name="lastName" 
-                                className="form__input form__input--half" 
-                                type="text" placeholder="Last Name" 
-                                id="lastName" 
+                                type="text" placeholder="Name" 
+                                id="Name" 
                                 onChange={handleChange} 
                             />
                             <label className="visually-hidden" htmlFor="eMail">E-Mail</label>
                             <input 
                                 name="eMail" 
-                                className="form__input" 
+                                className="form__input form__input--half" 
                                 type="email" 
                                 placeholder="E-mail" 
                                 id="eMail" 
                                 onChange={handleChange} 
                             />
+                            <div className="subject">
+                                <label htmlFor="subject">Please choose a subject</label>
+                                <select 
+                                    value={state.subject}
+                                    onChange={handleChangeSelect}
+                                    name="subject"
+                                    id="subject" 
+                                >
+                                    <option>{state.subject ? state.subject : '-- Subject --'}</option>
+                                    { 
+                                        subjects.filter(subject => subject !== state.subject).map((subject, i) => (
+                                            <option key={i} value={subject}>
+                                                {subject}
+                                            </option>
+                                        ))
+                                    }
+                                </select>
+                            </div>
                             <label className="visually-hidden" htmlFor="message">Please type your message</label>
                             <textarea name="message" className="form__textarea"
                                 placeholder='Please type your message'

@@ -230,7 +230,7 @@ const PricingPage: React.SFC<{}> = () => (
                             <p>
                                 If you're a professional open-source developer and need more hours, you can apply to our free <a href="/docs/professional-open-source/" target="_blank"><strong>Professional Open Source</strong></a> plan.
                             </p>
-                            <a href="/contact/" className="btn">Apply Now</a>
+                            <Link to="/contact" state={{ subject: "Applying for a free unlimited open source plan" }} className="btn">Apply Now</Link>
                         </div>
                         <div>
                             <h2>For Students</h2>
