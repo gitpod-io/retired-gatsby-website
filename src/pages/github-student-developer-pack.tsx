@@ -190,7 +190,7 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
                     <div className="info">
                         <h3>Do You Need Help?</h3>
                         <p>If you have any question, issue or feedback, please get in touch. We love to hear your feedback and help you out.</p>
-                        <Link to="/contact"  title="Contact">
+                        <Link to="/contact/"  title="Contact">
                             <img alt="Mail Logo" src={Mail} />
                         </Link>
                         <a href="https://community.gitpod.io/" target="_blank" rel="noopener" title="Community">

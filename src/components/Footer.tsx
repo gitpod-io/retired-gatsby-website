@@ -135,7 +135,7 @@ const Footer: React.SFC<{}> = () => (
                 <ul className="contact">
                     <li>Contact</li>
                     <li>
-                        <Link to="/contact"  title="Contact">
+                        <Link to="/contact/"  title="Contact">
                             <img alt="Mail Logo" src={Mail} />
                         </Link>
                     </li>

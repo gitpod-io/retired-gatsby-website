@@ -230,7 +230,7 @@ const PricingPage: React.SFC<{}> = () => (
                             <p>
                                 If you're a professional open-source developer and need more hours, you can apply to our free <a href="/docs/professional-open-source/" target="_blank"><strong>Professional Open Source</strong></a> plan.
                             </p>
-                            <Link to="/contact" state={{ subject: "Applying for Professional Open Source" }} className="btn">Apply Now</Link>
+                            <Link to="/contact/" state={{ subject: "Applying for Professional Open Source" }} className="btn">Apply Now</Link>
                         </div>
                         <div>
                             <h2>For Students</h2>
@@ -266,7 +266,7 @@ const PricingPage: React.SFC<{}> = () => (
                 <ActionCard
                     title='Any Questions?'
                     text='We’re happy to answer them. Please get in touch.'
-                    anchors={[{href: '/contact', subject: "I have a question regarding Pricing", text: 'Contact'}]}
+                    anchors={[{href: '/contact/', subject: "I have a question regarding Pricing", text: 'Contact'}]}
                 />
 
                 <Details
