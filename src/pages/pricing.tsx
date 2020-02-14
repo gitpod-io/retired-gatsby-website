@@ -37,6 +37,7 @@ const plans: PricingBoxProps[] = [
         duration: 'unlimited hours',
         features: ['Private & Public Repos', <span className="span">8 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
         transform: 'scale(1.05)',
+        banner: 'Recomended'
     },
     {
         title: 'Unlimited',
@@ -62,7 +63,7 @@ const StyledPricingPage = styled.div`
     /* ------------------------------------------- */
 
     h1 {
-        margin-bottom: 3rem;
+        margin-bottom: 8rem;
     }
 
     .pricing {
@@ -87,23 +88,6 @@ const StyledPricingPage = styled.div`
                         margin-left: auto;
                     }
                 }
-            }
-        }
-
-        &__tagline {
-            transform: translateY(-3rem);
-            box-shadow: ${shadows.light};
-            text-align: center;
-            color: ${colors.text};
-            padding: 4rem 0 3rem;
-            width: 72%;
-            
-            @media(max-width: ${sizes.breakpoints.lg}) {
-                display: none;
-            }
-
-            h4 {
-                font-weight: 600;
             }
         }
     }
@@ -210,12 +194,9 @@ const PricingPage: React.SFC<{}> = () => (
                                     btnText={plan.btnText}
                                     link={plan.link}
                                     background={plan.background}
+                                    banner={plan.banner}
                                 />
                             )}
-                        </div>
-                        <div className="pricing__tagline">
-                            <h4>Gitpod Is Free for Open Source.</h4>
-                            <p>Just prefix any public GitHub or GitLab URL with <span className="text-with-galaxy-bg">gitpod.io/#</span></p>
                         </div>
                     </section>
 

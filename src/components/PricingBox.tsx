@@ -4,7 +4,15 @@ import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import { colors, shadows, sizes } from '../styles/variables'
 
-const StyledPricingBox = styled.div<{transform?: string, background?: boolean, hideButton?: boolean, banner?: string}>`
+interface StyledPricingBoxProps {
+    transform?: string, 
+    background?: boolean, 
+    hideButton?: boolean, 
+    banner?: string,
+    bannerColor?: string  
+}
+
+const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     position: relative;
     margin-bottom: 3rem;
     padding: 3rem 4rem;
@@ -35,7 +43,6 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
     @media(max-width: ${sizes.breakpoints.md}) {
         min-width: 30rem;
         padding: 2rem 3rem;
-
         margin-top: ${({banner}) => banner ? '7rem': ''};
     }
 
@@ -126,12 +133,13 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
         bottom: 100%;
         width: 100%;
         box-shadow: ${shadows.light};
+        background: ${colors.offWhite2};
 
         p {
             width: 20ch;
             margin: 0 auto;
             padding: .8rem 0;
-            color: #EAA42F;
+            color: ${({bannerColor}) => bannerColor ? bannerColor : ''};
             font-size: 90%;
             font-weight: 600;
         }
@@ -162,11 +170,34 @@ export interface PricingBoxProps {
     hideButton?: true 
     btn?: JSX.Element
     text?: string
-    banner?: string
+    banner?: string,
+    bannerColor?: string 
 }
 
-const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, feature, features, btnText, transform, background, link, hideButton, btn, text, banner }) => (
-    <StyledPricingBox transform={transform} background={background} hideButton={hideButton} banner={banner}>
+const PricingBox: React.SFC<PricingBoxProps> = ({
+    title, 
+    img, 
+    price, 
+    duration, 
+    feature, 
+    features, 
+    btnText, 
+    transform, 
+    background, 
+    link, 
+    hideButton,
+    btn,
+    text,
+    banner,
+    bannerColor 
+}) => (
+    <StyledPricingBox 
+        transform={transform} 
+        background={background} 
+        hideButton={hideButton} 
+        banner={banner}
+        bannerColor={bannerColor}
+    >
         <h4>{title}</h4>
         { img }
         { price ? <div className="price">{price}</div> : null }
