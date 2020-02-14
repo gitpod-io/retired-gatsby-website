@@ -115,7 +115,13 @@ function encode(data: { [k: string]: string | number | boolean | null | undefine
         .join('&')
 }
 
-const subjects: string[] = ["I'm interested in Gitpod Enterprise", "I'm interested in Gitpod Education", "I have a question regarding self-hosted Gitpod", "Applying for Professional Open Source", "I want to get the Student Unlimited plan", "Other"]
+const subjects: string[] = [
+    "I'm interested in Gitpod Enterprise", 
+    "I'm interested in Gitpod Education",
+    "I have a question regarding self-hosted Gitpod", 
+    "Applying for Professional Open Source",
+    "I want to get the Student Unlimited plan", "Other"
+]
 
 export default function ContactPage(props: any) {
     const [state, setState] = React.useState<{
