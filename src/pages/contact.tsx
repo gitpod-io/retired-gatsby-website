@@ -118,7 +118,7 @@ function encode(data: { [k: string]: string | number | boolean | null | undefine
 const subjects: string[] = [
     "I'm interested in Gitpod Enterprise", 
     "I'm interested in Gitpod Education",
-    "I have a question regarding self-hosted Gitpod", 
+    "I have a question regarding self-hosting Gitpod", 
     "Applying for Professional Open Source",
     "I'd like to get the Student Unlimited plan", 
     "Other"
