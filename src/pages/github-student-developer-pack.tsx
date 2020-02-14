@@ -104,7 +104,8 @@ const offers: PricingBoxProps[] = [
              >
                 Claim Offer
              </a>,
-        banner: 'Exclusive Offer for the GitHub Student Pack'
+        banner: 'Exclusive Offer for the GitHub Student Pack',
+        bannerColor: '#EAA42F'
     },
     {
         title: 'Student Unlimited',
@@ -158,6 +159,7 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
                                         btn={offer.btn}
                                         text={offer.text}
                                         banner={offer.banner}
+                                        bannerColor={offer.bannerColor}
                                     />
                                     )
                                 )
