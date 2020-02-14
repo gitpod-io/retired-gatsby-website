@@ -57,6 +57,7 @@ const StyledContactPage = styled.div`
         border-radius: 3px;
         border: ${borders.light1};
         color: inherit;
+        background-size: 1.2em auto, 100%;
     }
 
     .subject {
@@ -114,7 +115,7 @@ function encode(data: { [k: string]: string | number | boolean | null | undefine
         .join('&')
 }
 
-const subjects: string[] = ['Applying for a free unlimited open source plan', 'I have a question regarding pricing', 'I have a question regarding Gitpod Enterprise', "I'm interested in Gitpod Enterprise Managed"]
+const subjects: string[] = ["I'm interested in Gitpod Enterprise", "I'm interested in Gitpod Education", "I have a question regarding self-hosted Gitpod", "Applying for Professional Open Source", "I want to get the Student Unlimited plan", "Other"]
 
 export default function ContactPage(props: any) {
     const [state, setState] = React.useState<{
