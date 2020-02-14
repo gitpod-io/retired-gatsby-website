@@ -3,32 +3,41 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import { colors, shadows, sizes } from '../styles/variables'
+import IconTick from '../resources/icon-tick.svg'
 
 interface StyledPricingBoxProps {
-    transform?: string, 
-    background?: boolean, 
-    hideButton?: boolean, 
-    banner?: string,
+    transform?: string 
+    background?: boolean 
+    hideButton?: boolean 
+    banner?: string
     bannerColor?: string  
+    backgroundColor?: string
+    btnBackground?: boolean 
 }
 
 const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     position: relative;
     margin-bottom: 3rem;
-    padding: 3rem 4rem;
+    padding: 3rem 3rem;
+    font-size: 95%;
     min-height: 50rem;
-    min-width: 25rem;
-    width: 24%;
+    min-width: 20rem;
+    max-width: 22.5rem;
+    width: 20%;
     text-align: center;
     color: ${({ background }) => background ? colors.white : null };
     background: ${({ background }) => background ? 'url("https://www.gitpod.io/galaxy.jpg")' : colors.white };
     background-size: ${({ background }) => background ? 'cover' : null };
     background-position: ${({ background }) => background ? 'left' : null };
     box-shadow: ${shadows.light};
+    background-color: ${({ backgroundColor }) => backgroundColor ? backgroundColor : null };
 
     @media(min-width: ${sizes.breakpoints.md}) {
-        transform: ${({ transform }) => transform ? transform : null};
         z-index: ${({transform}) => transform ? '1' : null };
+    }
+
+    @media(min-width: ${sizes.breakpoints.lg}) {
+        transform: ${({ transform }) => transform ? transform : null};
     }
 
     @media(max-width: ${sizes.breakpoints.lg}) {
@@ -43,7 +52,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     @media(max-width: ${sizes.breakpoints.md}) {
         min-width: 30rem;
         padding: 2rem 3rem;
-        margin-top: ${({banner}) => banner ? '7rem': ''};
+        margin-top: ${({banner}) => banner ? '4rem': ''};
     }
 
     @media(max-width: 320px) {
@@ -82,6 +91,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
 
     ul {
         list-style: initial;
+        list-style-image: url(${IconTick});
         margin-left: 10px;
         margin-right: -8px;
 
@@ -154,6 +164,23 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
             border: 2px solid ${colors.lightBlue};
         }
     }
+
+    .btn {
+        background: ${({btnBackground}) => btnBackground ? colors.link : ''};
+        color: ${({btnBackground}) => btnBackground ? colors.white : ''};
+        border-color: ${({btnBackground}) => btnBackground ? colors.link : ''};
+
+        &:hover {
+            background: ${({btnBackground}) => btnBackground ? colors.lightBlue : ''};
+            border-color: ${({btnBackground}) => btnBackground ? colors.lightBlue : ''};
+        }
+    }   
+
+    &:first-of-type {
+        @media(max-width: 1097px) {
+            order: 5;
+        }
+    }
 `
 
 export interface PricingBoxProps {
@@ -166,12 +193,14 @@ export interface PricingBoxProps {
     transform?: string
     background?: boolean
     btnText?: string
+    btnBackground?: boolean 
     link?: string
     hideButton?: true 
     btn?: JSX.Element
     text?: string
     banner?: string,
-    bannerColor?: string 
+    bannerColor?: string,
+    backgroundColor?: string 
 }
 
 const PricingBox: React.SFC<PricingBoxProps> = ({
@@ -182,6 +211,7 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
     feature, 
     features, 
     btnText, 
+    btnBackground,
     transform, 
     background, 
     link, 
@@ -189,7 +219,8 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
     btn,
     text,
     banner,
-    bannerColor 
+    bannerColor,
+    backgroundColor
 }) => (
     <StyledPricingBox 
         transform={transform} 
@@ -197,6 +228,8 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
         hideButton={hideButton} 
         banner={banner}
         bannerColor={bannerColor}
+        backgroundColor={backgroundColor}
+        btnBackground={btnBackground}
     >
         <h4>{title}</h4>
         { img }
