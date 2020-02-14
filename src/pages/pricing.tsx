@@ -266,7 +266,7 @@ const PricingPage: React.SFC<{}> = () => (
                 <ActionCard
                     title='Any Questions?'
                     text='We’re happy to answer them. Please get in touch.'
-                    anchors={[{href: '/contact/', subject: "I have a question regarding Pricing", text: 'Contact'}]}
+                    anchors={[{href: '/contact/', subject: "I have a question regarding pricing", text: 'Contact'}]}
                 />
 
                 <Details

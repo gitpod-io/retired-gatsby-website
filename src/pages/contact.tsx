@@ -120,7 +120,8 @@ const subjects: string[] = [
     "I'm interested in Gitpod Education",
     "I have a question regarding self-hosted Gitpod", 
     "Applying for Professional Open Source",
-    "I want to get the Student Unlimited plan", "Other"
+    "I'd like to get the Student Unlimited plan", 
+    "Other"
 ]
 
 export default function ContactPage(props: any) {
