@@ -4,11 +4,16 @@ Gitpod supports PHP right out of the box, but more advanced features such as deb
 
 ## Example Repositories
 
+<div class="table-container">
+
 | Repository | Description | Try it |
 |------------|-------------|--------|
 | magento2gitpod | Magento 2 optimized setup for Gitpod: Nginx, MySQL, PHP 7.2, PHP-FPM and more | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nemke82/magento2gitpod) |
 | koel | A personal music streaming server that works | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/phanan/koel) |
 | symfony-demo | Symfony Demo Application |[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/symfony-demo)
+
+</div>
+
 ## VSCode Extensions
 ### PHP Debug
 
