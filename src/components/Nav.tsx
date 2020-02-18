@@ -12,6 +12,8 @@ const StyledNav = styled.nav`
     align-items: center;
     padding: 4rem 0;
     background: ${colors.offWhite};
+    position: relative;
+    z-index: 1000;
 
     @media(max-width: ${sizes.breakpoints.lg}) {
         font-size: 110%;
