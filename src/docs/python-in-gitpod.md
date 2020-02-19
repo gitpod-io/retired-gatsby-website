@@ -1,6 +1,6 @@
 # Python in Gitpod
 
-Gitpod comes with great support for Python built in. Still, depending on your project, you might want to further optimize the experience.
+Gitpod comes with great support for Python built-in. Still, depending on your project, you might want to further optimize the experience.
 
 ## Python Project Examples
 
@@ -23,7 +23,7 @@ Gitpod workspaces come with Python versions: `2.7.17`, and `3.7.3` pre-installed
 
 The easiest way to install a new Python version is to use `pyenv install <VERSION>`. For example, suppose you wanted to install Python `3.6.4`, you would run `pyenv install 3.6.4`.
 
-You can switch between Python versions using `pyenv local <VERSION>`. For example, if you wanted to switch to Python version `2.7.17` you would run `pyenv local 2.7.17`. This will create a `.python-version` file that controls which Python version is the default in your project. (Note: When running it in a Dockerfile, replace `local` with `global` in order to change the system default.)
+You can switch between Python versions using `pyenv local <VERSION>`. For example, if you wanted to switch to Python version `2.7.17` you would run `pyenv local 2.7.17`. This will create a `.python-version` file that controls which Python version is the default in your project. (Note: When running it in a Dockerfile, replace `local` with `global` to change the system default.)
 
 ## [Start tasks](https://www.gitpod.io/docs/config-start-tasks/)
 
@@ -35,7 +35,7 @@ tasks:
 ```
 
 ## VSCode Extensions
-While the most popular Python VSCode extensions are built in to Gitpod, here are a few "Nice to have" extensions that you can use as well.
+While the most popular Python VSCode extensions are built into Gitpod, here are a few "nice to have" extensions that you can use as well.
 
 ### ARepl for Python
 ![ARepl extension example](./images/AReplExample.gif)
