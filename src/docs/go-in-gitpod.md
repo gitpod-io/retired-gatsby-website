@@ -25,7 +25,7 @@ Before we start, here are some already gitpodified repositories to give you an i
 
 | Name                                                                                               | Description                                                                             |
 | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| [Go Test Explorer](https://marketplace.visualstudio.com/items?itemName=premparihar.gotestexplorer) | Provides Test Explorer for Go which enables to run your tests at the click of a button! |
+| [Go Test Explorer](https://marketplace.visualstudio.com/items?itemName=premparihar.gotestexplorer) | Provides Test Explorer for Go which allows you to run your tests at the click of a button! |
 
 </div>
 
