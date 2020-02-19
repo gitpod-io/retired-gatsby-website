@@ -22,7 +22,7 @@ The PHP Debug extension allows debugging PHP applications from within Gitpod.
 
 To get this extension for your project, you must do two things:
 
-First you must create a [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/config-docker/) for your repository:
+First, you must create a [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/config-docker/) for your repository:
 
 ```Dockerfile
 FROM gitpod/workspace-full

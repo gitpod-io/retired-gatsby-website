@@ -31,7 +31,7 @@ Here are some examples of Rust projects running in Gitpod:
 | Repository  | Description  | Try it    |
 |---------|------------|-----|
 |[MathLang](https://github.com/JesterOrNot/mathlang) | Basic maths language in Rust | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/MathLang) |
-|[NuShell](https://github.com/nushell/nushell/) | A next gen shell for the GitHub era | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nushell/nushell) |
+|[NuShell](https://github.com/nushell/nushell/) | A next-gen shell for the GitHub era | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nushell/nushell) |
 |[Servo](https://github.com/servo/servo) | The Servo Browser Engine | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/servo/servo)
 
 </div>
@@ -54,7 +54,7 @@ vscode:
     - Swellaby.vscode-rust-test-adapter@0.11.0:Xg+YeZZQiVpVUsIkH+uiiw==
 ```
 #### Crates
-> ***Note: This extension outputs emojis by default if the crate version is set on latest. You can disable this by using `crates.upToDateDecorator` option in your preferences***
+> ***Note: This extension outputs emojis by default if the crate version is set at the latest. You can disable this by using `crates.upToDateDecorator` option in your preferences***
 <br>
 
 ![A crates extension demo](images/cratesDemo.gif)

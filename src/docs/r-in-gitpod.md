@@ -1,10 +1,10 @@
 # R in Gitpod
 
-In order to work with R in Gitpod, you will need to properly configure your repository. Here is how to do it.
+To work with R in Gitpod, you will need to properly configure your repository. Here is how to do it.
 
 ## Installing R
 
-First you'll probably want to install R itself. To do this, add a new file to your repository called [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/config-docker/), and add the following content to it:
+First, you'll probably want to install R itself. To do this, add a new file to your repository called [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/config-docker/), and add the following content to it:
 
 ```Dockerfile
 FROM gitpod/workspace-full
