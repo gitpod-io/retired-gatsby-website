@@ -25,7 +25,7 @@ Before we start, here are some already gitpodified repositories to give you an i
 
 | Name                                                                                               | Description                                                                             |
 | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| [Go Test Explorer](https://marketplace.visualstudio.com/items?itemName=premparihar.gotestexplorer) | Provides Test Explorer for Go which enables you to run your tests at the click of a button! |
+| [Go Test Explorer](https://marketplace.visualstudio.com/items?itemName=premparihar.gotestexplorer) | Provides Test Explorer for Go which allows you to run your tests at the click of a button! |
 
 </div>
 
@@ -129,4 +129,3 @@ To see a basic repository with Go debugging enabled, please check out [JesterOrN
 
 - [VSCode/Go Documentation](https://code.visualstudio.com/docs/languages/go) The stuff here also applies to Gitpod!
 - [VSCode/Go debugging](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code) VSCode's Documentation on Go debugging
-
