@@ -96,7 +96,7 @@ const Footer: React.SFC<{}> = () => (
                     <li><Link to="/pricing/">Pricing</Link></li>
                     <li><Link to="/blog/">Blog</Link></li>
                     <li><Link to="/enterprise/">Enterprise</Link></li>
-                    <li><a href="https://gitpod.io/login" style={{color: colors.link, fontWeight: 600}}>Login</a></li>
+                    <li><a href="https://gitpod.io/login/" style={{color: colors.link, fontWeight: 600}}>Log In</a></li>
                 </ul>
                 <ul>
                     <li>Solutions</li>
@@ -135,7 +135,7 @@ const Footer: React.SFC<{}> = () => (
                 <ul className="contact">
                     <li>Contact</li>
                     <li>
-                        <Link to="/contact"  title="Contact">
+                        <Link to="/contact/"  title="Contact">
                             <img alt="Mail Logo" src={Mail} />
                         </Link>
                     </li>
@@ -151,14 +151,14 @@ const Footer: React.SFC<{}> = () => (
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/gitpod-io/" target="_blank" rel="noopener"  title="GitHub">
+                        <a href="https://github.com/gitpod-io/" target="_blank" rel="noopener" title="GitHub">
                             <img alt="GitHub Logo" src={Github} />
                         </a>
                     </li>
                 </ul>
             </div>
             <div className="info">
-                <p>Copyright TypeFox All Right Reserved</p>
+                <p>Copyright © <a href="https://www.typefox.io/" target="_blank" rel="noopener" title="TypeFox">TypeFox</a></p>
                 <div><Link to="/imprint/">Imprint</Link>&nbsp;|&nbsp;<Link to="/terms/">Terms of Service</Link>&nbsp;|&nbsp;<Link to="/privacy/">Privacy Policy</Link></div>
             </div>
         </div>
