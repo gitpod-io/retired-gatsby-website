@@ -44,8 +44,8 @@ const StyledNav = styled.nav`
         @media(max-width: ${sizes.breakpoints.lg}) {
             flex-direction: column;
             width: 100%;
+            padding-top: 8rem;
             min-height: 95vh;
-            justify-content: center;
             align-items: center;
             background: ${colors.offWhite};
             z-index: 1;
