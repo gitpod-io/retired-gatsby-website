@@ -176,7 +176,6 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         left: 0;
         bottom: 100%;
         width: 100%;
-        box-shadow: ${shadows.light};
         background: ${colors.offWhite2};
 
         p {
