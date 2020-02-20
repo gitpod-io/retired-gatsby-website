@@ -100,6 +100,7 @@ const StyledNav = styled.nav`
 
         a {
             margin-right: 1rem;
+            transform: translateY(-1px);
 
             @media(min-width: ${sizes.breakpoints.md}) {
                 margin-right: 2rem;
