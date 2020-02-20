@@ -147,13 +147,18 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     .btn, .text {
         @media(min-width: ${sizes.breakpoints.sm}) {
             position: absolute;
-            bottom: 2rem;
             left: 50%;
+            bottom: 2rem;
             transform: translateX(-50%);
+
         }
 
         @media(max-width: ${sizes.breakpoints.sm}) {
             margin: 3rem 0 1rem;
+        }
+
+        @media(min-width: ${sizes.breakpoints.lg}) {
+            bottom: ${({transform}) => transform ? '3rem' : '2rem'};
         }
     }
 
