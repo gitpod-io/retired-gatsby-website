@@ -240,7 +240,6 @@ class Nav extends React.Component {
                                             className="nav__btn"
                                             aria-label={ isNavRendered ? "Hide the Navigation Items" : "Show the Navigation Items"}
                                             onClick={this.toggleNavigation}
-                                            onFocus={this.toggleNavigation}
                                         >
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.112 31.112"
