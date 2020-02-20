@@ -63,6 +63,10 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         color: inherit;
     }
 
+    h4 {
+        font-size: 1.8rem;
+    }
+
     img, object {
         display: inline-block;
         margin: 3rem 0 1rem;
