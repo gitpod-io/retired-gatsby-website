@@ -18,9 +18,9 @@ interface StyledPricingBoxProps {
 const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     position: relative;
     margin-bottom: 3rem;
-    padding: 3rem 3rem;
+    padding: 3rem 2.8rem;
     font-size: 95%;
-    min-height: 50rem;
+    min-height: 48rem;
     min-width: 20rem;
     max-width: 22.5rem;
     width: 20%;
@@ -41,18 +41,25 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     }
 
     @media(max-width: ${sizes.breakpoints.lg}) {
-        min-height: 54rem;
+        min-height: 50rem;
+        padding: 3rem 2rem;
         margin-bottom: 5rem;
     }
 
-    @media(max-width: ${sizes.breakpoints.lg}) {
-        padding: 3rem 4rem;
+    @media(max-width: 907px) {
+        min-width: 25rem;
     }
 
     @media(max-width: ${sizes.breakpoints.md}) {
+        min-height: 45rem;
         min-width: 30rem;
         padding: 2rem 3rem;
         margin-top: ${({banner}) => banner ? '4rem': ''};
+    }
+
+    @media(max-width: ${sizes.breakpoints.sm}) {
+        min-width: 25rem;
+        min-height: auto;
     }
 
     @media(max-width: 320px) {
@@ -72,6 +79,10 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         margin: 3rem 0 1rem;
         height: 8rem;
         width: 8rem;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            margin: 1.5rem 0 1rem;
+        }
     }
 
     .price {
@@ -100,12 +111,19 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         margin-left: 10px;
         margin-right: -8px;
 
-        @media(max-width: ${sizes.breakpoints.md}) {
-            padding: 0 2rem;
+        @media(max-width: 907px) {
+            margin-left: 30px;
+            margin-right: 10px;
         }
 
-        @media(max-width: 320px) {
-            padding: 0;
+        @media(max-width: ${sizes.breakpoints.md}) {
+            padding: 0 2rem;
+            margin: 0 1rem;
+        }
+
+         @media(max-width: ${sizes.breakpoints.sm}) {
+            padding: 0 1rem;
+            margin: 0;
         }
     }
 
@@ -127,10 +145,16 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     }
 
     .btn, .text {
-        position: absolute;
-        bottom: 2rem;
-        left: 50%;
-        transform: translateX(-50%);
+        @media(min-width: ${sizes.breakpoints.sm}) {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            margin: 3rem 0 1rem;
+        }
     }
 
     .text {
