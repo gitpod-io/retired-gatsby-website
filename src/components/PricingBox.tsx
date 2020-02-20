@@ -81,7 +81,8 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     }
 
     .duration {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 600;
         margin: .8rem 0 1.5rem;
     }
 
