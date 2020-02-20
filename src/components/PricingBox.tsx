@@ -210,8 +210,12 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     }   
 
     &:first-of-type {
-        @media(max-width: 1097px) {
+        @media(max-width: 907px) {
             order: 5;
+        }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            order: 0;
         }
     }
 `
