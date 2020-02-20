@@ -29,6 +29,7 @@ const plans: PricingBoxProps[] = [
         img: <object tabIndex={-1} data={IconOpenSource}/>,
         price: 'Free',
         duration: '50 hours / month',
+        features: ['Public Repos'],
         backgroundColor: '#f7f7f7' 
     },
     {
