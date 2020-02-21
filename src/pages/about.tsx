@@ -238,7 +238,7 @@ const AboutPage: React.SFC<{}> = () => (
                             <div className="about__box">
                                 <img alt="TypeFox Team" src={Team} />
                                 <h3>About the Team</h3>
-                                <p>We're a small tech-driven team with collectively over 50 years of experience in language design, IDEs and tool development and with strong values around openness, honesty, and effective pragmatism. If you're interested in joining us, please have a look at our <a href="https://typefox.io/careers">Job Openings</a>.</p>
+                                <p>We're a small tech-driven team with collectively over 50 years of experience in language design, IDEs and tool development and with strong values around openness, honesty, and effective pragmatism. If you're interested in joining us, please have a look at our <a href="https://www.typefox.io/careers/" target="_blank" rel="noopener">Job Openings</a>.</p>
                             </div>
                         </div>
                     </section>

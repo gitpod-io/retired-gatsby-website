@@ -127,7 +127,7 @@ const Footer: React.SFC<{}> = () => (
                     <li>
                         <ExternalLink
                             href="https://www.typefox.io/careers/"
-                            text="Career"
+                            text="Careers"
                         />
                     </li>
                     <li><Link to="/media-kit/">Media Kit</Link></li>
