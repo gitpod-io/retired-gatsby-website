@@ -13,7 +13,6 @@ const StyledNav = styled.nav`
     padding: 4rem 0;
     background: ${colors.offWhite};
     position: relative;
-    z-index: 1000;
 
     @media(max-width: ${sizes.breakpoints.lg}) {
         font-size: 110%;
@@ -229,7 +228,7 @@ class Nav extends React.Component {
         const { isNavRendered } = this.state
 
         return (
-            <div className="grey-container">
+            <div className="grey-container" style={{zIndex: '9999'}}>
                 <div className="row">
                     <StyledNav role="navigation" className="nav">
                             <div className="nav__burger-container">
