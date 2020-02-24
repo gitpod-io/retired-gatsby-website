@@ -1,7 +1,7 @@
 # Life of a Workspace
 
  * [Timeouts](#timeouts)
- * [Stop and Archive](#stop-and-archive)
+ * [Garbage Collection](#garbage-collection)
  * [Changes Are Saved](#changes-are-saved)
 
 Gitpod makes creating fresh workspaces as easy as clicking a button on a GitHub page.
@@ -19,8 +19,7 @@ again. Alternatively, you can just reload the browser or go to your [workspaces]
 For convenience, closing the browser window/tab containing the IDE reduces the timeout to 3 minutes.
 
 ## Garbage Collection
-Old unused workspaces are automatically deleted after 30 days of inactivity. To prevent a workspace from being deleted you can pin it on your [list of workspaces](https://gitpod.io/workspaces).
-Restarting a workspace resets the 30 day timeout.
+Old, unused workspaces are automatically deleted. To prevent a workspace from being deleted, you can pin it in your [list of workspaces](https://gitpod.io/workspaces/). Pinned workspaces are kept forever. A message at the top of the workspaces list indicates after how many days unused and unpinned workspaces will get collected (the exact number of days may change in the future). Restarting a workspace resets the day counter for this particular workspace. Workspaces that are about to be deleted are shown with a corresponding status message in the workspaces list.
 
 ## Changes are Saved
 Gitpod backs up the state of the `/workspace/` folder between workspace starts, so that
