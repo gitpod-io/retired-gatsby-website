@@ -47,7 +47,7 @@ const plans: PricingBoxProps[] = [
         duration: 'unlimited hours',
         features: ['Private & Public Repos', <span className="span">8 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
         transform: 'scale(1.05)',
-        banner: 'Recomended',
+        banner: 'Recommended',
         btnText: 'Free 30-Day Trial',
         btnBackground: true
     },
