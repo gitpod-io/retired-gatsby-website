@@ -89,22 +89,15 @@ const StyledPricingPage = styled.div`
                 flex-wrap: wrap;
             }
 
+            @media(max-width: 1096px) {
+                justify-content: space-evenly;
+            }
+
             @media(max-width: 650px) {
                 flex-direction: column;
                 align-items: center;
             }
 
-            & > * {
-                @media(min-width: 650px) {
-                    &:first-of-type {
-                        margin-right: auto;
-                    }
-
-                    &:last-of-type {
-                        margin-left: auto;
-                    }
-                }
-            }
         }
     }
 
