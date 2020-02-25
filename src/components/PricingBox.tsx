@@ -46,7 +46,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         margin-bottom: 5rem;
     }
 
-    @media(max-width: 907px) {
+    @media(max-width: 1096px) {
         min-width: 25rem;
     }
 
@@ -111,7 +111,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         margin-left: 10px;
         margin-right: -8px;
 
-        @media(max-width: 907px) {
+        @media(max-width: 1096px) {
             margin-left: 30px;
             margin-right: 10px;
         }
@@ -206,16 +206,6 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         &:hover {
             background: ${({btnBackground}) => btnBackground ? colors.lightBlue : ''};
             border-color: ${({btnBackground}) => btnBackground ? colors.lightBlue : ''};
-        }
-    }   
-
-    &:first-of-type {
-        @media(max-width: 907px) {
-            order: 5;
-        }
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            order: 0;
         }
     }
 `
