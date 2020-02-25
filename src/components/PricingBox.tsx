@@ -106,28 +106,14 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     }
 
     ul {
+        display: inline-block;
         list-style: initial;
         list-style-image: url(${IconTick});
-        margin-left: 10px;
-        margin-right: -8px;
-
-        @media(max-width: 1096px) {
-            margin-left: 30px;
-            margin-right: 10px;
-        }
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            padding: 0 2rem;
-            margin: 0 1rem;
-        }
-
-         @media(max-width: ${sizes.breakpoints.sm}) {
-            padding: 0 1rem;
-            margin: 0;
-        }
+        list-style-position: inside;
     }
 
     li {
+        display: block;
         font-size: 1.5rem;
         text-align: left;
         font-size: 85%;
@@ -268,7 +254,12 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
                 { features.map((f, i) => <li key={i}>{f}</li>) }
             </ul>
         : null }
-        <Link to={link || '/#get-started'} className={`btn is-hidden ${background ? 'blue-on-hover' : ''}`}>{btnText ? btnText : 'Start for Free'}</Link>
+        <Link 
+            to={link || '/#get-started'} 
+            className={`btn is-hidden ${background ? 'blue-on-hover' : ''}`}
+        >
+            {btnText ? btnText : 'Start for Free'}
+        </Link>
         { btn ? btn : null }
         { text ? <p className="text">{text}</p> : null }
         { banner ? <div className="banner"><p>{banner}</p></div> : null }

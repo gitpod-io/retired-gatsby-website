@@ -7,8 +7,9 @@ const StyledDescripion = styled.span`
     position: relative;
 
     button {
-        height: 1.5rem;
-        width: 1.5rem;
+        display: inline-block;
+        height: 1.4rem;
+        width: 1.4rem;
         font-weight: 600;
         font-size: 1rem;
         border: none;
@@ -19,6 +20,10 @@ const StyledDescripion = styled.span`
         @media(max-width: ${sizes.breakpoints.md}) {
             transform: scale(1.3);
             margin-left: 1rem;
+        }
+
+        @media(min-width: ${sizes.breakpoints.lg}) {
+            transform: translateX(1rem);
         }
     }
 
