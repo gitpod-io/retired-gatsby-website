@@ -50,11 +50,14 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         min-width: 25rem;
     }
 
+    @media(max-width: 860px) {
+        margin-top: ${({banner}) => banner ? '4rem': ''};
+    }
+
     @media(max-width: ${sizes.breakpoints.md}) {
         min-height: 45rem;
         min-width: 30rem;
         padding: 2rem 3rem;
-        margin-top: ${({banner}) => banner ? '4rem': ''};
     }
 
     @media(max-width: ${sizes.breakpoints.sm}) {
