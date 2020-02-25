@@ -110,16 +110,22 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
 
     ul {
         display: inline-block;
-        list-style: initial;
-        list-style-image: url(${IconTick});
-        list-style-position: inside;
     }
 
     li {
+        position: relative;
         display: block;
         font-size: 1.5rem;
         text-align: left;
         font-size: 85%;
+        
+        &::before {
+            content: url(${IconTick});
+            position: absolute;
+            left: -2rem;
+
+
+        }
 
         &:not(:last-child) {
             margin-bottom: .8rem;
