@@ -117,6 +117,10 @@ export const MENU: MenuEntry[] = [
                 "php-in-gitpod"
             ),
             M(
+                "Vue.js",
+                "vue-in-gitpod"
+            ),
+            M(
                 "Rust",
                 "rust-in-gitpod"
             ),
