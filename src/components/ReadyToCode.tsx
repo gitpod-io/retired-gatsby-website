@@ -36,6 +36,23 @@ class ReadyToCode extends React.Component {
         }
     }
 
+    componentDidMount() {
+        window.addEventListener('resize', () => {
+            const el = document.querySelector('.rtc_default');
+            if(el){
+                const svg: SVGSVGElement | null = el.querySelector('svg');
+                if (svg) {
+                    if(window.innerWidth < 800) {
+                        svg.setAttribute('viewBox', '0 75 736 440'); 
+                    } else {
+                        svg.setAttribute('viewBox', '0 45 736 440'); 
+                    }
+                }
+            }
+        })
+
+    }
+
     render() {
         const { isDefaultRendered, isGraphicGitpodRendered, isGraphicOridinaryRendered } = this.state
 
@@ -79,20 +96,20 @@ class ReadyToCode extends React.Component {
                 </div>
                 <div className="why-gitpod__img-container">
                     <div style={{ display: 'flex', width: '90%', height: '100%', justifyContent: 'center' }}>
-                        <object tabIndex={-1}             
+                        <object
                             data={AutomatedSetupGraphicOrdinary}
                             style={{ ...graphicOridnaryStyles, width: '100%' }}
-                            className="why-gitpod__img"
+                            className="why-gitpod__img rtc_ordinary"
                         />
-                        <object tabIndex={-1}
+                        <object
                             data={ReadyToCodeImg}
                             style={defaultStyles}
-                            className="why-gitpod__img"
+                            className="why-gitpod__img rtc_default"
                         />
-                        <object tabIndex={-1}
+                        <object
                             data={AutomatedSetupGraphicGitpod}
                             style={graphicGitpodStyles}
-                            className="why-gitpod__img why-gitpod__img--3"
+                            className="why-gitpod__img rtc_gitpod"
                         />
                     </div>
                 </div>
