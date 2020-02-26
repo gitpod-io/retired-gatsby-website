@@ -28,7 +28,7 @@ USER gitpod
 RUN brew install shellcheck
 ```
 
-You should also install the shellcheck VS Code extension in Gitpod, by adding a [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/) configuration file to your repository that looks like this (notice the `vscode` extensions section):
+You should also install the shellcheck VS Code extension in Gitpod, by adding a [.gitpod.yml](https://www.gitpod.io/docs/41_config_gitpod_file/) configuration file to your repository that looks like this (notice the `vscode` extensions section):
 
 ```yaml
 image:
@@ -49,14 +49,14 @@ Not sure about ShellCheck? Try it in Gitpod!
 <br/>
 Just to name a few things Bash IDE adds: Code completion, hovers, and diagnostic reporting.
 
-To install Bash IDE to your repository add the following to your [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/config-docker/)
+To install Bash IDE to your repository add the following to your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/)
 
 ```dockerfile
 RUN npm i -g bash-language-server
 ```
 
 Also the following in your
-[`.gitpod.yml`](https://www.gitpod.io/docs/41-config-gitpod-file/)
+[.gitpod.yml](https://www.gitpod.io/docs/41-config-gitpod-file/)
 
 ```yaml
 vscode:

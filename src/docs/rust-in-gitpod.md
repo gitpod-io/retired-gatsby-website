@@ -46,7 +46,7 @@ The most popular Rust VSCode extensions come prebuilt in Gitpod but here are som
 ![Rust test explorer example](images/rustTest.png)
 <br>
 <br>
-The Rust Test Explorer makes it easy to run Rust tests. To install this extension to your repository, add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/):
+The Rust Test Explorer makes it easy to run Rust tests. To install this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/41_config_gitpod_file/):
 ```yaml
 vscode:
   extensions:
@@ -58,7 +58,7 @@ vscode:
 <br>
 
 ![A crates extension demo](images/cratesDemo.gif)
-The VSCode extension Crates makes it easier to manage your Cargo dependency versions. To install this extension to your repository add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/)
+The VSCode extension Crates makes it easier to manage your Cargo dependency versions. To install this extension to your repository add the following to your [.gitpod.yml](https://www.gitpod.io/docs/41_config_gitpod_file/)
 
 ```yaml
 vscode:
@@ -68,7 +68,7 @@ vscode:
 #### <p>Search Crates.io</p>
 ![An example of search crates.io extension](images/searchCratesio.gif)
 
-Do you have an idea of a library you want to use but don't know the version well just type in the name of the library and Search Crates.io will get the version. To install this extension to your repository add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/)
+Do you have an idea of a library you want to use but don't know the version well just type in the name of the library and Search Crates.io will get the version. To install this extension to your repository add the following to your [.gitpod.yml](https://www.gitpod.io/docs/41_config_gitpod_file/)
 ```yaml
 vscode:
   extensions:
@@ -78,7 +78,7 @@ vscode:
 #### Better TOML
 ![TOML Syntax highlighting example](images/feature_syntax_highlight.png)
 
-Better TOML adds syntax highlighting to your `Cargo.toml`. To install Better TOML to your repository, add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/41_config_gitpod_file/) file:
+Better TOML adds syntax highlighting to your `Cargo.toml`. To install Better TOML to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/41_config_gitpod_file/) file:
 ```yaml
 vscode:
   extensions:

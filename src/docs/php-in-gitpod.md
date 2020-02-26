@@ -22,7 +22,7 @@ The PHP Debug extension allows debugging PHP applications from within Gitpod.
 
 To get this extension for your project, you must do two things:
 
-First, you must create a [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/config-docker/) for your repository:
+First, you must create a [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/) for your repository:
 
 ```Dockerfile
 FROM gitpod/workspace-full
@@ -41,7 +41,7 @@ RUN wget http://xdebug.org/files/xdebug-2.9.1.tgz \
     && sudo bash -c "echo -e '\nzend_extension = /usr/lib/php/20170718/xdebug.so\n[XDebug]\nxdebug.remote_enable = 1\nxdebug.remote_autostart = 1\n' >> /etc/php/7.2/cli/php.ini"
 ```
 
-Second, reference the above Dockerfile in a [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/) file, and then also install the extension, like so:
+Second, reference the above Dockerfile in a [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file, and then also install the extension, like so:
 
 ```yaml
 image:
@@ -60,7 +60,7 @@ Finally, here is a full [example repository](https://github.com/JesterOrNot/Gitp
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-PHP-Debug)
 
 ## PECL Package Manager
-Gitpod's default workspace image also comes with the [PECL](https://pecl.php.net/) package manager pre-installed. To install packages with it, you must use `sudo pecl install <EXTENSION>` in your repository's [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/config-docker/), e.g. like so:
+Gitpod's default workspace image also comes with the [PECL](https://pecl.php.net/) package manager pre-installed. To install packages with it, you must use `sudo pecl install <EXTENSION>` in your repository's [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/), e.g. like so:
 ```Dockerfile
 FROM gitpod/workspace-full
 
