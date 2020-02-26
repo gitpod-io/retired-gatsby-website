@@ -118,17 +118,16 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         font-size: 1.5rem;
         text-align: left;
         font-size: 85%;
-        
+        padding-left: 1rem;
+
         &::before {
             content: url(${IconTick});
             position: absolute;
-            left: -2rem;
-
-
+            left: -.5rem;
         }
 
         &:not(:last-child) {
-            margin-bottom: .8rem;
+            margin-bottom: .7rem;
         }
     }
 
