@@ -3,6 +3,7 @@
 Below is a list of language and framework specific tips & tricks.
 
   * [Python](/docs/python-in-gitpod/)
+  * [HTML](/docs/html-in-gitpod/)
   * [Java](/docs/java-in-gitpod/)
   * [C++](/docs/cpp-in-gitpod/)
   * [Go](/docs/go-in-gitpod/)

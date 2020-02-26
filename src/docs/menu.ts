@@ -93,6 +93,10 @@ export const MENU: MenuEntry[] = [
                 "python-in-gitpod"
             ),
             M(
+                "HTML/CSS",
+                "html-in-gitpod"
+            ),
+            M(
                 "Java",
                 "java-in-gitpod"
             ),
