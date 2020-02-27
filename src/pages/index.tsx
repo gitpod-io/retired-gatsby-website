@@ -340,8 +340,27 @@ const StyledIndexPage = styled.div`
             width: 100%;
 
             @media(max-width: ${sizes.breakpoints.md}) {
-                max-height: 38rem;
+                max-height: 42rem;
+
+                &--1 {
+                    max-height: initial;
+                }
             }
+
+            &--1 {
+                @media(max-width: 560px) {
+                    height: 32rem;
+                }
+
+                @media(max-height: 500px) {
+                    height: 29rem;
+                }
+
+                @media(max-width: ${sizes.breakpoints.sm}) {
+                    height: 25rem;
+                }
+            }
+
 
             &-container {
                 min-height: 24rem;
@@ -352,6 +371,29 @@ const StyledIndexPage = styled.div`
 
                 @media(max-width: ${sizes.breakpoints.md}) {
                     max-height: 40rem;
+
+                    &--1 {
+                        max-height: initial;
+                        height: 50rem;
+                        transform: translateY(-4rem)
+                    }
+                }
+
+                &--1 {
+                    @media(max-width: 560px) {
+                        height: 34rem;
+                        transform: translateY(-3rem)
+                    }
+
+                    @media(max-width: 560px) {
+                        height: 32rem;
+                        transform: translateY(-1.5rem)
+                    }
+
+                    @media(max-width: ${sizes.breakpoints.sm}) {
+                        height: 30rem;
+                        transform: none;
+                    }
                 }
 
                 @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
