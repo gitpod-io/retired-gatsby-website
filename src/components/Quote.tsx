@@ -50,7 +50,7 @@ const StyledQuote = styled.section`
                 margin: 0 2rem;
             }
 
-            @media(max-width: ${sizes.breakpoints.sm}) {
+            @media(max-width: 580px) {
                 display: none;
             }
         }
