@@ -330,7 +330,7 @@ const StyledIndexPage = styled.div`
                 }
             }
 
-            @media(min-width: ${sizes.breakpoints.md}) {
+            @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
                 width: 40%;
             }
         }
@@ -348,12 +348,13 @@ const StyledIndexPage = styled.div`
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                width: 100%;
 
                 @media(max-width: ${sizes.breakpoints.md}) {
                     max-height: 40rem;
                 }
 
-                @media(min-width: ${sizes.breakpoints.md}) {
+                @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
                     width: 60%;
                 }
             }
