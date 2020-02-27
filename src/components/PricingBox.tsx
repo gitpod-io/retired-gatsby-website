@@ -159,6 +159,8 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     .text {
         width: 100%;
         opacity: .7;
+        font-size: 90%;
+        padding: 0 1.5rem;
     }
 
     .is-hidden {
