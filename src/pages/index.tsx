@@ -154,17 +154,17 @@ const StyledIndexPage = styled.div`
     /* ------------------------------------------- */
 
     .intro {
-        padding-bottom: 0rem;
 
         &__box {
             display: flex;
+            align-items: center;
 
             @media(min-width: ${sizes.breakpoints.md}) {
                 width: 50%;
             }
 
             @media(max-width: ${sizes.breakpoints.md}) {
-                max-width: 50rem;
+                max-width: 53rem;
 
                 &:not(:last-child) {
                     margin-bottom: 5rem;
@@ -188,10 +188,10 @@ const StyledIndexPage = styled.div`
 
         &__icon {
             display: flex;
-            height: 9rem;
+            height: 12rem;
             
             @media(max-width: ${sizes.breakpoints.md}) {
-                width: 7rem;
+                width: 8rem;
             }
             
             @media(min-width: ${sizes.breakpoints.sm}) {
@@ -210,6 +210,10 @@ const StyledIndexPage = styled.div`
 
             @media(min-width: ${sizes.breakpoints.md}) {
                 width: 26ch;
+
+                &--2 {
+                    width: 28.5ch;
+                }
             }
 
             span {
@@ -565,7 +569,7 @@ const IndexPage: React.SFC<{}> = () => (
                     </div>
                     <div className="intro__box">
                         <object tabIndex={-1} className="intro__icon" data={ArrowOnTarget} />
-                        <p className="intro__text">Gitpod eliminates this friction by providing <span>prebuilt, ready-to-code dev environments</span> with a single click.</p>
+                        <p className="intro__text intro__text--2">Gitpod eliminates this friction by providing <span>prebuilt, ready-to-code dev environments</span> with a single click.</p>
                     </div>
                 </div>
             </section>
