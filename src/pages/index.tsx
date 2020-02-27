@@ -8,7 +8,6 @@ import IndexLayout from '../layouts/index'
 import ReflectionScreenshot from '../resources/reflection-screenshot.png'
 import ReflectionScreenshotPrespectiveLess from '../resources/reflection-screenshot--1.png'
 
-import IconLine from '../resources/zick-zack-line.svg'
 import HourGlass from '../resources/hourglass.svg'
 import ArrowOnTarget from '../resources/arrow-on-target.svg'
 import ToolIntegration from '../resources/tool-integration.svg'
@@ -215,26 +214,6 @@ const StyledIndexPage = styled.div`
 
             span {
                 font-weight: 600;
-            }
-        }
-    }
-
-    /* ------------------------------------------- */
-    /* ----- Line ----- */
-    /* ------------------------------------------- */
-
-    .line {
-        width: 100vw;
-
-        &-container {
-            padding-bottom: 10rem;
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                display: none;
-            }
-
-            @media(max-width: ${sizes.breakpoints.sm}) {
-                padding-bottom: 0;
             }
         }
     }
@@ -590,12 +569,6 @@ const IndexPage: React.SFC<{}> = () => (
                     </div>
                 </div>
             </section>
-
-            {/* ----- Line ----- */}
-
-            <div className="line-container">
-                <object tabIndex={-1} className="line" data={IconLine} />
-            </div>
 
             {/* ----- Section Testimonials ----- */}
 
