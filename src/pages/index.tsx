@@ -318,7 +318,11 @@ const StyledIndexPage = styled.div`
             background: ${colors.offWhite};
             min-width: 28rem;
 
-            @media(max-width: 900px) {
+            @media(max-width: 960px) {
+                padding: 4rem 2rem;
+            }
+
+            @media(max-width: ${sizes.breakpoints.md}) {
                 padding: 3rem 1rem;
             }
 
