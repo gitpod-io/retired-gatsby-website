@@ -1,7 +1,6 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { sizes } from '../styles/variables'
 import link from '../utils/link'
 
 const StyledBanner = styled.header`
@@ -14,25 +13,28 @@ const StyledBanner = styled.header`
     align-items: center;
     padding: 14rem 0 10rem;
 
-    @media(max-width: ${sizes.breakpoints.md}) {
+    @media(max-width: 940px) {
         flex-direction: column-reverse;
         padding: 5rem 0;
     }
 
-    @media(max-width: ${sizes.breakpoints.md}) {
+    @media(max-width: 940px) {
         flex-direction: column-reverse;
         padding: 1rem 0 5rem;
     }
 
     .para {
         margin-top: 3rem;
-        max-width: 70rem;
+        
+        @media(min-width: 940px) {
+            max-width: 50rem;
+        }
     }
 
     .btn {
         margin: 5rem 2rem 2rem 0;
 
-        @media(max-width: ${sizes.breakpoints.md}) {
+        @media(max-width: 940px) {
             margin-top: 3rem;
         }
     }
@@ -46,7 +48,7 @@ const StyledBanner = styled.header`
         display: block;
         height: 35rem;
 
-        @media(max-width: ${sizes.breakpoints.md}) {
+        @media(max-width: 940px) {
             height: 20rem;
             margin-bottom: 5rem;
         }
