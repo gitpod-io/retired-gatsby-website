@@ -94,22 +94,22 @@ class ReadyToCode extends React.Component {
                         </button>
                     </div>
                 </div>
-                <div className="why-gitpod__img-container">
+                <div className="why-gitpod__img-container why-gitpod__img-container--1">
                     <div style={{ display: 'flex', width: '90%', height: '100%', justifyContent: 'center' }}>
                         <object
                             data={AutomatedSetupGraphicOrdinary}
                             style={{ ...graphicOridnaryStyles, width: '100%' }}
-                            className="why-gitpod__img rtc_ordinary"
+                            className="why-gitpod__img why-gitpod__img--1 rtc_ordinary"
                         />
                         <object
                             data={ReadyToCodeImg}
                             style={defaultStyles}
-                            className="why-gitpod__img rtc_default"
+                            className="why-gitpod__img why-gitpod__img--1 rtc_default"
                         />
                         <object
                             data={AutomatedSetupGraphicGitpod}
                             style={graphicGitpodStyles}
-                            className="why-gitpod__img rtc_gitpod"
+                            className="why-gitpod__img why-gitpod__img--1 rtc_gitpod"
                         />
                     </div>
                 </div>
