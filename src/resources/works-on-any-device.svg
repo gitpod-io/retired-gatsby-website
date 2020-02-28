@@ -16,7 +16,7 @@
 }
 </style>
   <defs>
-    <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" y="-1100" width="907.725" height="712.796" viewBox="0 0 707.725 312.796">
+    <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" y="-1100" width="550" height="700" viewBox="0 0 707.725 312.796">
         <image xlink:href="https://www.gitpod.io/galaxy-big.jpg" width="928"  height="650"/>
     </pattern>
   </defs>
