@@ -434,7 +434,9 @@ const StyledIndexPage = styled.div`
 
             &--active {
                 color: ${colors.white};
-                background: url("https://www.gitpod.io/galaxy.jpg") no-repeat 50% 50%;
+                background: url("https://www.gitpod.io/galaxy.jpg");
+                background-size: cover;
+                background-position: top;
             }
         }
     }
