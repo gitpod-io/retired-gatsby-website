@@ -3,39 +3,17 @@ import React from 'react'
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
 import BackPack from '../resources/backpack.svg'
-import PricingBox, { PricingBoxProps } from '../components/PricingBox'
-import styled from '@emotion/styled'
+import { PricingBoxProps } from '../components/PricingBox'
 import { isEurope } from './pricing'
 import Quote from '../components/Quote'
 import HeartLock from '../resources/icon-heart.svg'
 import Bag from '../resources/icon-backpack.svg'
 import Rocket from '../resources/icon-rocket.svg'
 import PopOver from '../components/PopOver'
-import { sizes, colors } from '../styles/variables'
+import { colors } from '../styles/variables'
 import InfoCard from '../components/InfoCard'
+import Offers from '../components/Offers'
 
-const StyledGithubStudentPackPage = styled.div`
-    /* --------------------------------------- */
-    /* ----- Offers ----- */
-    /* --------------------------------------- */
-
-    .offers {
-        display: flex;
-        justify-content: center;
-        margin-top: 15rem;
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-
-    .btn-container {
-        margin: 5rem 0;
-        text-align: center;
-    }
-
-`
 
 const offers: PricingBoxProps[] = [
     {
@@ -78,7 +56,6 @@ const offers: PricingBoxProps[] = [
 
 const GithubStudentPackPage: React.SFC<{}> = () => (
     <IndexLayout canonical="/github-student-developer-pack/" title="GitHub Student Developer Pack">
-        <StyledGithubStudentPackPage>
             <div className="grey-container">
 
                 {/* ----- Banner ----- */}  
@@ -86,46 +63,21 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
                 <Banner 
                     subtitle="GitHub Student Developer Pack"
                     title={<h1>Make Your Life Easier with Gitpod</h1>}
-                    paragraph={<span>With Gitpod you have no more tedious setups, you save hours of compiling<br />code, and you can start coding from any device, immediately.</span>}
+                    paragraph={<span>With Gitpod you have no more tedious setups, you save hours of compiling code, and you can start coding from any device, immediately.</span>}
                     linkPath="https://gitpod.io/subscription/"
                     linkText="Claim Offer"
                     img={<img src={BackPack} alt="GitHub Backpack" />}
                 />
 
-                <section>
-                    <div className="row">
-                        <h2>GitHub Student Offer</h2>
-                        <p>With the <a href="https://education.github.com/pack" target="_blank" rel="noopener">GitHub Student Developer Pack</a>, you get the same features as with our usual plans but at a much better price. 
-                        <br />
-                        We’re happy to be able to empower student developers participating in it.</p>
-                        <div className="offers">
-                            {
-                                offers.map(
-                                    (offer, i) => (
-                                        <PricingBox 
-                                            key={i}
-                                            title={offer.title}
-                                            img={offer.img}
-                                            price={offer.price}
-                                            duration={offer.duration}
-                                            feature={offer.feature}
-                                            features={offer.features}
-                                            transform={offer.transform}
-                                            btnText={offer.btnText}
-                                            link={offer.link}
-                                            background={offer.background}
-                                            hideButton={offer.hideButton}
-                                            btn={offer.btn}
-                                            text={offer.text}
-                                            banner={offer.banner}
-                                            bannerColor={offer.bannerColor}
-                                        />
-                                    )
-                                )
-                            }
-                        </div>
-                    </div>
-                </section>
+                {/* ***** Offers ***** */}
+
+                <Offers
+                    title="GitHub Student Offer"
+                    para={<p>With the <a href="https://education.github.com/pack" target="_blank" rel="noopener">GitHub Student Developer Pack</a>, you get the same features as with our usual plans but at a much better price. 
+                    <br />
+                    We’re happy to be able to empower student developers participating in it.</p>}
+                    offers={offers}
+                />
             </div>
 
             <div className="row">
@@ -141,7 +93,6 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
                 <InfoCard />
 
             </div>
-        </StyledGithubStudentPackPage>
     </IndexLayout>
 )
 
