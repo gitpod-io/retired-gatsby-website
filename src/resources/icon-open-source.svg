@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109.661" height="80.151" viewBox="0 0 109.661 80.151">
     <defs>
-        <pattern id="pattern" patternUnits="userSpaceOnUse" width="928" height="519" x="0" y="200" >
+        <pattern id="pattern" patternUnits="userSpaceOnUse" width="200" height="200" x="150" y="-50" >
             <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="928" height="619"/>
         </pattern>
     </defs>
