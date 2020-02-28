@@ -45,7 +45,7 @@ const TermsPage: React.SFC<{}> = () => (
                     </p>
                     <p>
                         You offer to conclude this Agreement when you (i) accept these Terms of Service by checking the box at the Website, (ii)
-                        provide the data, which is managed in accordance with our <a href="/privacy">privacy policy</a>,
+                        provide the data, which is managed in accordance with our <a href="/privacy/">privacy policy</a>,
                     required for opening a Gitpod account in our Existing Account page as described throughout this Agreement; and (iii)
                     declare your intention to create, and create, an account by clicking on the respective button in the Existing Account
                         page. By clicking on the button <strong>"Create my free account"</strong> the Customer submits an offer on the conclusion
@@ -218,7 +218,7 @@ const TermsPage: React.SFC<{}> = () => (
                             <strong>Backups:</strong> We do a regular backup of your data in the Service due to our legal obligations. However,
                             you shall conduct regular backups of your data integrated in the Service via copying of all your data outside of your
                             Gitpod account. Upon termination of the Service, we will delete your data according to these Terms of Service and our
-                            <a href="/privacy">privacy policy</a>.
+                            <a href="/privacy/">privacy policy</a>.
                         </li>
                     </ol>
 
@@ -327,7 +327,7 @@ const TermsPage: React.SFC<{}> = () => (
                         We will inform the Customer of such blocking measures set forth above without hesitation.
                     </p>
                     <p>
-                        We may also disclose your personal data vis-&agrave;-vis authorities as set forth in the <a href="/privacy">privacy
+                        We may also disclose your personal data vis-&agrave;-vis authorities as set forth in the <a href="/privacy/">privacy
                             policy
                         </a>.
                     </p>
@@ -434,7 +434,7 @@ const TermsPage: React.SFC<{}> = () => (
                     </h2>
                     <p>
                         We will process your data according to the German and European data protection laws. For details please refer to our <a
-                            href="/privacy">privacy policy
+                            href="/privacy/">privacy policy
                         </a>.
                     </p>
 

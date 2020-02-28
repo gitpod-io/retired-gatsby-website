@@ -3,40 +3,66 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import { colors, shadows, sizes } from '../styles/variables'
+import IconTick from '../resources/icon-tick.svg'
 
-const StyledPricingBox = styled.div<{transform?: string, background?: boolean, hideButton?: boolean, banner?: string}>`
+interface StyledPricingBoxProps {
+    transform?: string 
+    background?: boolean 
+    hideButton?: boolean 
+    banner?: string
+    bannerColor?: string  
+    backgroundColor?: string
+    btnBackground?: boolean 
+}
+
+const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     position: relative;
     margin-bottom: 3rem;
-    padding: 3rem 4rem;
-    min-height: 50rem;
-    min-width: 25rem;
-    width: 24%;
+    padding: 3rem 2.8rem;
+    font-size: 95%;
+    min-height: 48rem;
+    min-width: 20rem;
+    max-width: 23rem;
+    width: 20%;
     text-align: center;
     color: ${({ background }) => background ? colors.white : null };
     background: ${({ background }) => background ? 'url("https://www.gitpod.io/galaxy.jpg")' : colors.white };
     background-size: ${({ background }) => background ? 'cover' : null };
     background-position: ${({ background }) => background ? 'left' : null };
     box-shadow: ${shadows.light};
+    background-color: ${({ backgroundColor }) => backgroundColor ? backgroundColor : null };
 
     @media(min-width: ${sizes.breakpoints.md}) {
-        transform: ${({ transform }) => transform ? transform : null};
         z-index: ${({transform}) => transform ? '1' : null };
     }
 
+    @media(min-width: ${sizes.breakpoints.lg}) {
+        transform: ${({ transform }) => transform ? transform : null};
+    }
+
     @media(max-width: ${sizes.breakpoints.lg}) {
-        min-height: 54rem;
+        min-height: 50rem;
+        padding: 3rem 2rem;
         margin-bottom: 5rem;
     }
 
-    @media(max-width: ${sizes.breakpoints.lg}) {
-        padding: 3rem 4rem;
+    @media(max-width: 1096px) {
+        min-width: 25rem;
+    }
+
+    @media(max-width: 860px) {
+        margin-top: ${({banner}) => banner ? '4rem': ''};
     }
 
     @media(max-width: ${sizes.breakpoints.md}) {
+        min-height: 45rem;
         min-width: 30rem;
         padding: 2rem 3rem;
+    }
 
-        margin-top: ${({banner}) => banner ? '7rem': ''};
+    @media(max-width: ${sizes.breakpoints.sm}) {
+        min-width: 25rem;
+        min-height: auto;
     }
 
     @media(max-width: 320px) {
@@ -47,11 +73,19 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
         color: inherit;
     }
 
+    h4 {
+        font-size: 1.8rem;
+    }
+
     img, object {
         display: inline-block;
         margin: 3rem 0 1rem;
         height: 8rem;
         width: 8rem;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            margin: 1.5rem 0 1rem;
+        }
     }
 
     .price {
@@ -65,7 +99,8 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
     }
 
     .duration {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 600;
         margin: .8rem 0 1.5rem;
     }
 
@@ -74,26 +109,25 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
     }
 
     ul {
-        list-style: initial;
-        margin-left: 10px;
-        margin-right: -8px;
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            padding: 0 2rem;
-        }
-
-        @media(max-width: 320px) {
-            padding: 0;
-        }
+        display: inline-block;
     }
 
     li {
+        position: relative;
+        display: block;
         font-size: 1.5rem;
         text-align: left;
         font-size: 85%;
+        padding-left: 1rem;
+
+        &::before {
+            content: url(${IconTick});
+            position: absolute;
+            left: -.5rem;
+        }
 
         &:not(:last-child) {
-            margin-bottom: .8rem;
+            margin-bottom: .7rem;
         }
     }
 
@@ -105,10 +139,21 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
     }
 
     .btn, .text {
-        position: absolute;
-        bottom: 2rem;
-        left: 50%;
-        transform: translateX(-50%);
+        @media(min-width: ${sizes.breakpoints.sm}) {
+            position: absolute;
+            left: 50%;
+            bottom: 2rem;
+            transform: translateX(-50%);
+
+        }
+
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            margin: 3rem 0 1rem;
+        }
+
+        @media(min-width: ${sizes.breakpoints.lg}) {
+            bottom: ${({transform}) => transform ? '3rem' : '2rem'};
+        }
     }
 
     .text {
@@ -125,13 +170,13 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
         left: 0;
         bottom: 100%;
         width: 100%;
-        box-shadow: ${shadows.light};
+        background: ${colors.offWhite2};
 
         p {
             width: 20ch;
             margin: 0 auto;
             padding: .8rem 0;
-            color: #EAA42F;
+            color: ${({bannerColor}) => bannerColor ? bannerColor : ''};
             font-size: 90%;
             font-weight: 600;
         }
@@ -146,6 +191,17 @@ const StyledPricingBox = styled.div<{transform?: string, background?: boolean, h
             border: 2px solid ${colors.lightBlue};
         }
     }
+
+    .btn {
+        background: ${({btnBackground}) => btnBackground ? colors.link : ''};
+        color: ${({btnBackground}) => btnBackground ? colors.white : ''};
+        border-color: ${({btnBackground}) => btnBackground ? colors.link : ''};
+
+        &:hover {
+            background: ${({btnBackground}) => btnBackground ? colors.lightBlue : ''};
+            border-color: ${({btnBackground}) => btnBackground ? colors.lightBlue : ''};
+        }
+    }
 `
 
 export interface PricingBoxProps {
@@ -158,15 +214,44 @@ export interface PricingBoxProps {
     transform?: string
     background?: boolean
     btnText?: string
+    btnBackground?: boolean 
     link?: string
     hideButton?: true 
     btn?: JSX.Element
     text?: string
-    banner?: string
+    banner?: string,
+    bannerColor?: string,
+    backgroundColor?: string 
 }
 
-const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, feature, features, btnText, transform, background, link, hideButton, btn, text, banner }) => (
-    <StyledPricingBox transform={transform} background={background} hideButton={hideButton} banner={banner}>
+const PricingBox: React.SFC<PricingBoxProps> = ({
+    title, 
+    img, 
+    price, 
+    duration, 
+    feature, 
+    features, 
+    btnText, 
+    btnBackground,
+    transform, 
+    background, 
+    link, 
+    hideButton,
+    btn,
+    text,
+    banner,
+    bannerColor,
+    backgroundColor
+}) => (
+    <StyledPricingBox 
+        transform={transform} 
+        background={background} 
+        hideButton={hideButton} 
+        banner={banner}
+        bannerColor={bannerColor}
+        backgroundColor={backgroundColor}
+        btnBackground={btnBackground}
+    >
         <h4>{title}</h4>
         { img }
         { price ? <div className="price">{price}</div> : null }
@@ -177,7 +262,12 @@ const PricingBox: React.SFC<PricingBoxProps> = ({ title, img, price, duration, f
                 { features.map((f, i) => <li key={i}>{f}</li>) }
             </ul>
         : null }
-        <Link to={link || '/#get-started'} className={`btn is-hidden ${background ? 'blue-on-hover' : ''}`}>{btnText ? btnText : 'Start for Free'}</Link>
+        <Link 
+            to={link || '/#get-started'} 
+            className={`btn is-hidden ${background ? 'blue-on-hover' : ''}`}
+        >
+            {btnText ? btnText : 'Start for Free'}
+        </Link>
         { btn ? btn : null }
         { text ? <p className="text">{text}</p> : null }
         { banner ? <div className="banner"><p>{banner}</p></div> : null }

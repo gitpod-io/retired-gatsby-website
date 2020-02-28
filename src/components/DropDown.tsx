@@ -146,7 +146,6 @@ class DropDown extends React.Component<DropDownProps, {}> {
             <StyledDropDown
                 onMouseEnter={this.handleMouseEnter}
                 onMouseLeave={this.handleMouseLeave}
-                onFocus={this.handleMouseEnter}
             >
                 <button
                     onClick={this.handleClick}

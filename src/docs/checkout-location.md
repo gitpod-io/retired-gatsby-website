@@ -13,10 +13,10 @@ how we do that for the example
 checkoutLocation: "go/src/github.com/demo-apps/go-gin-app"
 workspaceLocation: "."
 tasks:
-  - command: >
-      cd /workspace/go/src/github.com/demo-apps/go-gin-app &&
-      go get -v ./... &&
-      go build -o app &&
+  - command: |
+      cd /workspace/go/src/github.com/demo-apps/go-gin-app
+      go get -v ./...
+      go build -o app
       ./app
 ```
 

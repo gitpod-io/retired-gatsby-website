@@ -12,6 +12,7 @@ const StyledNav = styled.nav`
     align-items: center;
     padding: 4rem 0;
     background: ${colors.offWhite};
+    position: relative;
 
     @media(max-width: ${sizes.breakpoints.lg}) {
         font-size: 110%;
@@ -41,9 +42,9 @@ const StyledNav = styled.nav`
 
         @media(max-width: ${sizes.breakpoints.lg}) {
             flex-direction: column;
-            width: 100vw;
+            width: 100%;
+            padding-top: 8rem;
             min-height: 95vh;
-            justify-content: center;
             align-items: center;
             background: ${colors.offWhite};
             z-index: 1;
@@ -51,6 +52,16 @@ const StyledNav = styled.nav`
 
         @media(max-width: ${sizes.breakpoints.md}) {
             min-height: 97vh;
+        }
+    }
+
+    @media(max-width: ${sizes.breakpoints.lg}) {
+        .navIsRendered {
+            display: flex;
+        }
+
+        .navIsNotRendered {
+            display: none;
         }
     }
 
@@ -75,6 +86,24 @@ const StyledNav = styled.nav`
 
         &:last-child {
             margin-left: -1rem;
+        }
+    }
+
+    .btns {
+        display: flex;
+        align-items: center;
+
+        @media(min-width: ${sizes.breakpoints.lg}) {
+            display: none;
+        }
+
+        a {
+            margin-right: 1rem;
+            transform: translateY(-1px);
+
+            @media(min-width: ${sizes.breakpoints.md}) {
+                margin-right: 2rem;
+            }
         }
     }
 
@@ -146,6 +175,7 @@ const StyledNav = styled.nav`
         }
     }
 
+
     @media(max-width: ${sizes.breakpoints.lg}) {
         .shown {
             opacity: 1;
@@ -188,118 +218,100 @@ class Nav extends React.Component {
         isNavRendered: false,
     }
 
-    handleResize = () => {
-        if (window.innerWidth < 1240) {
-            this.setState({ isNavRendered: false })
-        } else {
-            this.setState({ isNavRendered: true })
-        }
-    }
-
     toggleNavigation = () => {
         this.setState({ isNavRendered: !this.state.isNavRendered })
     }
 
-    event = () => {
-        if (window.innerWidth <= 1240) {
-            this.toggleNavigation()
-        }
-    }
-
-    componentDidMount() {
-        window.addEventListener('resize', this.handleResize)
-        if (window.innerWidth >= 1240) {
-            this.toggleNavigation()
-        }
-    }
 
     render() {
 
         const { isNavRendered } = this.state
 
         return (
-            <div className="grey-container">
+            <div className="grey-container" style={{zIndex: 9999}}>
                 <div className="row">
                     <StyledNav role="navigation" className="nav">
                             <div className="nav__burger-container">
                                 <Link to="/"><img alt="Gitpod Logo" src={GitpodLogoDark} /></Link>
-                                <div className="nav__btn-container" aria-live="assertive">
-                                    <button
-                                        className="nav__btn"
-                                        aria-label={ isNavRendered ? "Hide the Navigation Items" : "Show the Navigation Items"}
-                                        onClick={this.toggleNavigation}
-                                        onFocus={this.toggleNavigation}
-                                    >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.112 31.112"
-                                            className={ isNavRendered ? 'is-shown--multiply' : 'is-hidden' }
-                                            aria-hidden={ isNavRendered ? false : true }
-                                            id="multiply"
+                                <div className="btns">
+                                    <a href="https://gitpod.io/login/" rel="noopener" style={{display: isNavRendered ? 'none': ''}}>Log In</a>
+                                    <div className="nav__btn-container" aria-live="assertive">
+                                        <button
+                                            className="nav__btn"
+                                            aria-label={ isNavRendered ? "Hide the Navigation Items" : "Show the Navigation Items"}
+                                            onClick={this.toggleNavigation}
                                         >
-                                            <title>close menu icon</title>
-                                            <path d="M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z"/>
-                                        </svg>
-                                        <svg
-                                            className={ isNavRendered ? 'is-hidden' : 'is-shown' }
-                                            aria-hidden={ isNavRendered ? true : false }
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 26 18"
-                                            id="hamburger"
-                                        >
-                                            <title>hamburger menu icon</title>
-                                            <g transform="translate(-647.5 -86.5)" strokeWidth="2"><line x2="24" transform="translate(648.5 87.5)"/><line x2="24" transform="translate(648.5 95.5)"/><line x2="24" transform="translate(648.5 103.5)"/></g>
-                                        </svg>
-                                    </button>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.112 31.112"
+                                                className={ isNavRendered ? 'is-shown--multiply' : 'is-hidden' }
+                                                aria-hidden={ isNavRendered ? false : true }
+                                                id="multiply"
+                                            >
+                                                <title>close menu icon</title>
+                                                <path d="M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z"/>
+                                            </svg>
+                                            <svg
+                                                className={ isNavRendered ? 'is-hidden' : 'is-shown' }
+                                                aria-hidden={ isNavRendered ? true : false }
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 26 18"
+                                                id="hamburger"
+                                            >
+                                                <title>hamburger menu icon</title>
+                                                <g transform="translate(-647.5 -86.5)" strokeWidth="2"><line x2="24" transform="translate(648.5 87.5)"/><line x2="24" transform="translate(648.5 95.5)"/><line x2="24" transform="translate(648.5 103.5)"/></g>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
 
-                            { isNavRendered ? (
-                                <ul className={ isNavRendered ? 'shown container nav__items' : 'hiden' }>
-                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/features/' className="link">Features</Link></li>
-                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/pricing/' className="link">Pricing</Link></li>
-                                    <li className="nav__item"><Link activeClassName="active" tabIndex={ isNavRendered ? 0 : -1 } to='/enterprise/' className="link">Enterprise</Link></li>
-                                    <li className="nav__item">
-                                        <DropDown
-                                            title="Solutions"
-                                            links={[
-                                                {
-                                                    text: 'Education',
-                                                    to: '/education/'
-                                                },
-                                                {
-                                                    text: 'Recruiting',
-                                                    to: '/recruiting/'
-                                                },
-                                                {
-                                                    text: 'Vendor',
-                                                    to: '/vendor/'
-                                                }
-                                            ]}
-                                        />
-                                    </li>
-                                    <li className="nav__item">
-                                        <DropDown
-                                            title="Resources"
-                                            links={[
-                                                {
-                                                    text: 'Docs',
-                                                    to: '/docs/'
-                                                },
-                                                {
-                                                    text: 'Blog',
-                                                    to: '/blog/'
-                                                },
-                                                {
-                                                    text: 'Community',
-                                                    to: 'https://community.gitpod.io/',
-                                                    target: true
-                                                }
-                                            ]}
-                                        />
-                                    </li>
-                                    <li className="nav__item"><a href="https://gitpod.io/login/" tabIndex={ isNavRendered ? 0 : -1 } rel="noopener" className="btn">Log In</a></li>
-                                </ul>
-                            ) : null }
+                        
+                            <ul className={`nav__items ${isNavRendered ? 'navIsRendered' : 'navIsNotRendered'}`} >
+                                <li className="nav__item"><Link activeClassName="active" to='/features/' className="link">Features</Link></li>
+                                <li className="nav__item"><Link activeClassName="active" to='/pricing/' className="link">Pricing</Link></li>
+                                <li className="nav__item"><Link activeClassName="active" to='/enterprise/' className="link">Enterprise</Link></li>
+                                <li className="nav__item">
+                                    <DropDown
+                                        title="Solutions"
+                                        links={[
+                                            {
+                                                text: 'Education',
+                                                to: '/education/'
+                                            },
+                                            {
+                                                text: 'Recruiting',
+                                                to: '/recruiting/'
+                                            },
+                                            {
+                                                text: 'Vendor',
+                                                to: '/vendor/'
+                                            }
+                                        ]}
+                                    />
+                                </li>
+                                <li className="nav__item">
+                                    <DropDown
+                                        title="Resources"
+                                        links={[
+                                            {
+                                                text: 'Docs',
+                                                to: '/docs/'
+                                            },
+                                            {
+                                                text: 'Blog',
+                                                to: '/blog/'
+                                            },
+                                            {
+                                                text: 'Community',
+                                                to: 'https://community.gitpod.io/',
+                                                target: true
+                                            }
+                                        ]}
+                                    />
+                                </li>
+                                <li className="nav__item"><a href="https://gitpod.io/login/" rel="noopener" className="btn">Log In</a></li>
+                            </ul>
+                          
                     </StyledNav>
                 </div>
             </div>

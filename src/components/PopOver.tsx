@@ -7,18 +7,23 @@ const StyledDescripion = styled.span`
     position: relative;
 
     button {
-        height: 1.8rem;
-        width: 1.8rem;
+        display: inline-block;
+        height: 1.4rem;
+        width: 1.4rem;
         font-weight: 600;
-        font-size: 1.2rem;
+        font-size: 1rem;
         border: none;
         color: ${colors.white};
         background: ${colors.offWhite1};
         border-radius: 50%;
 
         @media(max-width: ${sizes.breakpoints.md}) {
-            transform: scale(1.5);
+            transform: scale(1.3);
             margin-left: 1rem;
+        }
+
+        @media(min-width: ${sizes.breakpoints.lg}) {
+            transform: translateX(1rem);
         }
     }
 
@@ -29,15 +34,19 @@ const StyledDescripion = styled.span`
         background: ${colors.offWhite2};
         z-index: 1000 !important;
 
-        @media(min-width: ${sizes.breakpoints.lg}) {
+        @media(max-width: 907px) {
+            position: absolute;
+            right: -5rem;
+            top: 2.4rem;
+            min-width: 18rem;
+            z-index: 1999999999;
+        }
+
+         @media(min-width: 907px) {
             position: absolute;
             top: 0;
             left: 3rem;
             min-width: 19rem;
-        }
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            margin-top: 1rem;
         }
     }
 `

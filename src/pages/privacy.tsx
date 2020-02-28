@@ -18,7 +18,7 @@ const PrivacyPage: React.SFC<{}> = () => (
                     the local court (Amtsgericht) Kiel under HRB 17385, represented by the managing directors Sven Efftinge, Moritz Eysholdt,
 				    Dr. Jan K&ouml;hnlein (<strong>"we/us/our"</strong> or <strong>"Gitpod"</strong>). We offer services to our users and
 				    visitors (the <strong>"User/you/your"</strong>) on our website <a href="/">https://gitpod.io</a>
-                    (<strong>"Website"</strong>) as well as related services including the use of our service according to our <a href="/terms">terms of service</a>
+                    (<strong>"Website"</strong>) as well as related services including the use of our service according to our <a href="/terms/">terms of service</a>
                     (jointly the <strong>"Service"</strong>).
                 </p>
                 <p>
@@ -399,13 +399,13 @@ const PrivacyPage: React.SFC<{}> = () => (
 			        </h3>
                 <p>
                     For the further use of the Gitpod Service on the Website you submit more data depending on the way of use of our services
-				according to our <a href="/terms">terms of service</a>.
+				according to our <a href="/terms/">terms of service</a>.
 			        </p>
 
                 <p>
                     We use the information and data collected in the Service, including your personal data, in order to fulfill our contractual
                     obligations for you/our customers based on the legal basis of Art. 6 (1) b. GDPR or TMG and as further set forth in this
-				privacy policy or our <a href="/terms">terms of service</a>. This also includes sending
+				privacy policy or our <a href="/terms/">terms of service</a>. This also includes sending
                                       you emails and notifications necessary for the Service.
 			        </p>
 
@@ -682,7 +682,7 @@ further information please refer to <a href="#details-V">section V.</a>.
                     Access and Changes to this Privacy Policy
 			</h3>
                 <p>
-                    This privacy policy is accessible via our Website under <a href="/privacy">https://gitpod.io/privacy</a>
+                    This privacy policy is accessible via our Website under <a href="/privacy/">https://gitpod.io/privacy/</a>
                     and may be downloaded and printed anytime.
 			</p>
 
@@ -696,7 +696,7 @@ further information please refer to <a href="#details-V">section V.</a>.
 			</h3>
                 <p>
                     For any inquiries and additional questions about processing personal data please contact <a href="mailto:data@typefox.io">data@typefox.io</a>.
-				Further details may be found here: <a href="/imprint">https://gitpod.io/imprint</a>
+				Further details may be found here: <a href="/imprint/">https://gitpod.io/imprint/</a>
                 </p>
             </TextBox>
         </div>

@@ -93,6 +93,10 @@ export const MENU: MenuEntry[] = [
                 "python-in-gitpod"
             ),
             M(
+                "HTML/CSS",
+                "html-in-gitpod"
+            ),
+            M(
                 "Java",
                 "java-in-gitpod"
             ),
@@ -117,12 +121,20 @@ export const MENU: MenuEntry[] = [
                 "php-in-gitpod"
             ),
             M(
+                "Vue.js",
+                "vue-in-gitpod"
+            ),
+            M(
                 "Rust",
                 "rust-in-gitpod"
             ),
             M(
                 "Julia",
                 "julia-in-gitpod"
+            ),
+            M(
+                "R",
+                "r-in-gitpod"
             )
         ]
     ),
@@ -179,24 +191,24 @@ export const MENU: MenuEntry[] = [
             )
         ]
     ),
-    M(
-        "Release Notes",
-        "release-notes",
-        [
-            M(
-                "June 2019",
-                "release-notes/2019-06-17/june-2019"
-            ),
-            M(
-                "April 2019",
-                "release-notes/2019-04-05/april-2019"
-            ),
-            M(
-                "February 2019",
-                "release-notes/2019-02-15/february-2019"
-            )
-        ]
-    )
+    // M(
+    //     "Release Notes",
+    //     "release-notes",
+    //     [
+    //         M(
+    //             "June 2019",
+    //             "release-notes/2019-06-17/june-2019"
+    //         ),
+    //         M(
+    //             "April 2019",
+    //             "release-notes/2019-04-05/april-2019"
+    //         ),
+    //         M(
+    //             "February 2019",
+    //             "release-notes/2019-02-15/february-2019"
+    //         )
+    //     ]
+    // )
 ];
 
 interface MenuContext {

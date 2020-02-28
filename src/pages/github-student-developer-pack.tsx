@@ -82,7 +82,7 @@ const offers: PricingBoxProps[] = [
     {
         title: 'Open Source',
         img: <object tabIndex={-1} data={HeartLock}/>,
-        price: <span>Free</span>,
+        price: 'Free',
         duration: '50 hours / month',
         hideButton: true,
         features: ['Private & Public Repos', <span className="span"> &lt; 4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>],        
@@ -91,7 +91,7 @@ const offers: PricingBoxProps[] = [
     {
         title: 'Student',
         img: <object tabIndex={-1} data={Bag}/>,
-        price: <span><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€8' : '$9')}</span> Free</span>,
+        price: <><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€8' : '$9')}</span> Free</>,
         duration: '100 hours / month',
         hideButton: true,
         features: ['Private & Public Repos', <span className="span">4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>, 'Limited to 6 months'],
@@ -104,12 +104,13 @@ const offers: PricingBoxProps[] = [
              >
                 Claim Offer
              </a>,
-        banner: 'Exclusive Offer for the GitHub Student Pack'
+        banner: 'Exclusive Offer for the GitHub Student Pack',
+        bannerColor: '#EAA42F'
     },
     {
         title: 'Student Unlimited',
         img: <object tabIndex={-1} data={Rocket}/>,
-        price: <span><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€35' : '$39')}</span> {(isEurope() ? '€8' : '$9')}</span>,
+        price: <><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€35' : '$39')}</span> {(isEurope() ? '€8' : '$9')}</>,
         duration: 'Unlimited hours / month',
         hideButton: true,
         features: ['Private & Public Repos', <span className="span">16 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>, <span className="span">1h Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
@@ -142,29 +143,27 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
                             {
                                 offers.map(
                                     (offer, i) => (
-                                    <PricingBox 
-                                        key={i}
-                                        title={offer.title}
-                                        img={offer.img}
-                                        price={offer.price}
-                                        duration={offer.duration}
-                                        feature={offer.feature}
-                                        features={offer.features}
-                                        transform={offer.transform}
-                                        btnText={offer.btnText}
-                                        link={offer.link}
-                                        background={offer.background}
-                                        hideButton={offer.hideButton}
-                                        btn={offer.btn}
-                                        text={offer.text}
-                                        banner={offer.banner}
-                                    />
+                                        <PricingBox 
+                                            key={i}
+                                            title={offer.title}
+                                            img={offer.img}
+                                            price={offer.price}
+                                            duration={offer.duration}
+                                            feature={offer.feature}
+                                            features={offer.features}
+                                            transform={offer.transform}
+                                            btnText={offer.btnText}
+                                            link={offer.link}
+                                            background={offer.background}
+                                            hideButton={offer.hideButton}
+                                            btn={offer.btn}
+                                            text={offer.text}
+                                            banner={offer.banner}
+                                            bannerColor={offer.bannerColor}
+                                        />
                                     )
                                 )
                             }
-                        </div>
-                        <div className="btn-container">
-                            
                         </div>
                     </div>
                 </section>
