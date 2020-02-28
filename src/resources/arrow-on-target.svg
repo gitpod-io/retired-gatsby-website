@@ -2,8 +2,8 @@
 
 <svg width="89.206" height="96.033" viewBox="0 0 89.206 96.033"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
     <defs>
-        <pattern id="img1" x="600" y="-1200" width="1856" height="1238" patternUnits="userSpaceOnUse">
-            <image width="1856" height="1238" xlink:href="https://www.gitpod.io/galaxy-big.jpg" />
+        <pattern id="img1" x="60" y="-40" width="200" height="200" patternUnits="userSpaceOnUse">
+            <image width="1856" height="1238" xlink:href="https://www.gitpod.io/galaxy.jpg" />
         </pattern>
     </defs>
     
