@@ -87,7 +87,7 @@ const GithubTeacherToolBoxPage: React.SFC<{}> = () => (
 
                 {/* ----- Onboarding ---- */}
 
-                <OnBoarding />
+                <OnBoarding link="https://calendly.com/gitpod/onboarding?back=1&month=2020-02" />
 
                 {/* ----- Quote ----- */}                            
 

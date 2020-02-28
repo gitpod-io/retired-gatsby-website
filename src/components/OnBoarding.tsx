@@ -6,10 +6,10 @@ const StyledOnBoarding = styled.section`
     text-align: center;
 `
 
-const OnBoarding: React.SFC<{}> = () => (
+const OnBoarding: React.SFC<{link: string}> = ({ link }) => (
     <StyledOnBoarding>
         <h2>Would You Like to Have an Onboarding Session?</h2>
-        <a href="" className="btn btn--cta" target="_blank">Schedule a Call</a>
+        <a href={link} className="btn btn--cta" target="_blank">Schedule a Call</a>
     </StyledOnBoarding>
 )
 
