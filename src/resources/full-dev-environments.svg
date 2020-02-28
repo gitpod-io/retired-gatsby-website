@@ -17,7 +17,7 @@
 </style>
   <defs>
     <pattern id="pattern" patternUnits="userSpaceOnUse" width="928" height="619" >
-        <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="928" height="619"/>
+        <image xlink:href="https://www.gitpod.io/galaxy-big.jpg" width="928" height="619"/>
     </pattern>
   </defs>
   <g id="Gruppe_590" data-name="Gruppe 590" transform="translate(-210 -3105)">
