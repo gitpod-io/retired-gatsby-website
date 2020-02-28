@@ -5,8 +5,8 @@ import Banner from '../components/Banner'
 import BackPack from '../resources/backpack.svg'
 import { PricingBoxProps } from '../components/PricingBox'
 import { isEurope } from './pricing'
+import IconOpenSource from '../resources/icon-open-source.svg'
 import Quote from '../components/Quote'
-import HeartLock from '../resources/icon-heart.svg'
 import Bag from '../resources/icon-backpack.svg'
 import Rocket from '../resources/icon-rocket.svg'
 import PopOver from '../components/PopOver'
@@ -18,7 +18,7 @@ import Offers from '../components/Offers'
 const offers: PricingBoxProps[] = [
     {
         title: 'Open Source',
-        img: <object tabIndex={-1} data={HeartLock}/>,
+        img: <object tabIndex={-1} data={IconOpenSource}/>,
         price: 'Free',
         duration: '50 hours / month',
         hideButton: true,
