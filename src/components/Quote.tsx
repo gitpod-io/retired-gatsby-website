@@ -54,6 +54,12 @@ const StyledQuote = styled.section`
                 display: none;
             }
         }
+
+        i {
+            @media(min-width: 581px) {
+                display: none;
+            }
+        }
     }
 `
 
@@ -65,7 +71,7 @@ const Quote: React.SFC<QuoteProps> = ({title}) => (
         <StyledQuote className="quote row">
             <h4 className="quote__text">
                 <object tabIndex={-1} data={QuoteIcon}/>
-                <span>{title}</span>
+                <span><i>&ldquo;</i> {title}<i>&rdquo;</i></span>
                 <object tabIndex={-1} data={QuoteIcon}/>
             </h4>
         </StyledQuote>
