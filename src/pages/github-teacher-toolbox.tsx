@@ -6,7 +6,7 @@ import TeacherBox from '../resources/teacher-box.png'
 import { isEurope } from './pricing'
 import Quote from '../components/Quote'
 import { PricingBoxProps } from '../components/PricingBox'
-import HeartLock from '../resources/icon-heart.svg'
+import IconOpenSource from '../resources/icon-open-source.svg'
 import Owl from '../resources/owl-icon.svg'
 import Saturn from '../resources/saturn-icon.svg'
 import { Link } from 'gatsby'
@@ -20,7 +20,7 @@ import Offers from '../components/Offers'
 const offers: PricingBoxProps[] = [
     {
         title: 'Open Source',
-        img: <object tabIndex={-1} data={HeartLock}/>,
+        img: <object tabIndex={-1} data={IconOpenSource}/>,
         price: 'Free',
         duration: '50 hours / month',
         hideButton: true,
