@@ -16,20 +16,20 @@
 }
 
 [data-name="Gruppe 643"] {
-    transform: translate(-168.688px, -113.724px);
+    transform: translate(-168.688px, -35px);
 }
 
-@media(max-width: 800px) {
+<!-- @media(max-width: 355px) {
     [data-name="Gruppe 643"] {
         transform: translate(-168.688px, -60.724px) scale(.95);
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 200px) {
     [data-name="Gruppe 643"] {
         transform: translate(-168.688px, -70.724px);
     }
-}
+} -->
 
 </style>
     <defs>

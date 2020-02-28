@@ -20,35 +20,39 @@
             <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="928" height="619"/>
         </pattern>
     </defs>
-    <g data-name="g" transform="translate(-219.129 -519.483) scale(0.989 1.01)">
+    <g data-name="g" transform="translate(-219.129 -446.759) scale(0.999 1.01)">
         <path d="M654.281,54.3v-.7h-413.8c.01-.525.939-52.365,0-52.667h413.8V0l.926.926h.28v.28l24.944,25.942-10.944,10.94v.506h-.505l-.7.7Zm-413.8-.7H0V.926l1.711,0C34.927.883,118.569.79,177.709.79c41.371,0,62.49.046,62.772.137Z" 
             transform="translate(222.129 522.483)" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" 
             stroke-width="6" fill="url(#pattern)"/>
-        <text transform="translate(735.612 537.886) scale(0.93)" fill="#fff" font-size="18" font-family="Montserrat" font-weight="600">
+        <text transform="translate(735.612 537.528) scale(0.93)" fill="#fff" font-size="18" font-family="Montserrat" font-weight="600">
             <tspan x="0" y="19">
                 Start Coding
             </tspan>
         </text>
-        <text transform="translate(249.677 537.128) scale(0.925)" fill="#fff" font-size="18" font-family="Montserrat" font-weight="600">
+        <text transform="translate(249.677 537.528) scale(0.925)" fill="#fff" font-size="18" font-family="Montserrat" font-weight="600">
             <tspan x="0" y="19">
                 Choose Project
             </tspan>
         </text>
     </g>
-    <script>
+    <!-- <script>
     <![CDATA[
         const svg = document.querySelector('svg')
         const g = document.querySelector('[data-name="g"]')
         svg.setAttribute('viewBox', '0 -1 680 60')
         window.addEventListener('resize', () => {
-            if (window.innerWidth < 800) {
+            console.log('blatest resize', window.innerWidth);
+            if (window.innerWidth < 355) {
+                console.log('blatest kleiner');
                 svg.setAttribute('viewBox', '0 -1 680 60')
                 g.style.transform = 'translate(-219.129px, -519.483px) scale(0.989, 1.01)'
             } else {
+                console.log('blatest groesser');
                 svg.setAttribute('viewBox', '0 -126 680 60')              
             }
         })
     
     ]]>
-    </script>
+    </script> -->
 </svg>
+

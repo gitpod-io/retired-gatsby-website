@@ -301,7 +301,11 @@ const StyledIndexPage = styled.div`
             background: ${colors.offWhite};
             min-width: 28rem;
 
-            @media(max-width: 900px) {
+            @media(max-width: 960px) {
+                padding: 4rem 2rem;
+            }
+
+            @media(max-width: ${sizes.breakpoints.md}) {
                 padding: 3rem 1rem;
             }
 
@@ -313,7 +317,7 @@ const StyledIndexPage = styled.div`
                 }
             }
 
-            @media(min-width: ${sizes.breakpoints.md}) {
+            @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
                 width: 40%;
             }
         }
@@ -323,20 +327,63 @@ const StyledIndexPage = styled.div`
             width: 100%;
 
             @media(max-width: ${sizes.breakpoints.md}) {
-                max-height: 38rem;
+                max-height: 42rem;
+
+                &--1 {
+                    max-height: initial;
+                }
             }
+
+            &--1 {
+                @media(max-width: 560px) {
+                    height: 32rem;
+                }
+
+                @media(max-height: 500px) {
+                    height: 29rem;
+                }
+
+                @media(max-width: ${sizes.breakpoints.sm}) {
+                    height: 25rem;
+                }
+            }
+
 
             &-container {
                 min-height: 24rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                width: 100%;
 
                 @media(max-width: ${sizes.breakpoints.md}) {
                     max-height: 40rem;
+
+                    &--1 {
+                        max-height: initial;
+                        height: 50rem;
+                        transform: translateY(-4rem)
+                    }
                 }
 
-                @media(min-width: ${sizes.breakpoints.md}) {
+                &--1 {
+                    @media(max-width: 560px) {
+                        height: 34rem;
+                        transform: translateY(-3rem)
+                    }
+
+                    @media(max-width: 560px) {
+                        height: 32rem;
+                        transform: translateY(-1.5rem)
+                    }
+
+                    @media(max-width: ${sizes.breakpoints.sm}) {
+                        height: 30rem;
+                        transform: none;
+                    }
+                }
+
+                @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
                     width: 60%;
                 }
             }
@@ -382,7 +429,7 @@ const StyledIndexPage = styled.div`
 
             @media(max-width: 1240px) {
                 font-size: 1.4rem;
-                padding: .5rem 1rem;
+                padding: .8rem 1rem;
             }
 
             &--active {

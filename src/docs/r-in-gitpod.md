@@ -4,7 +4,7 @@ To work with R in Gitpod, you will need to properly configure your repository. H
 
 ## Installing R
 
-First, you'll probably want to install R itself. To do this, add a new file to your repository called [`.gitpod.Dockerfile`](https://www.gitpod.io/docs/config-docker/), and add the following content to it:
+First, you'll probably want to install R itself. To do this, add a new file to your repository called [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/), and add the following content to it:
 
 ```Dockerfile
 FROM gitpod/workspace-full
@@ -12,7 +12,7 @@ FROM gitpod/workspace-full
 RUN brew install R
 ```
 
-Next, create a Gitpod configuration file called `.gitpod.yml` (you can also simply run `gp init` and Gitpod will generate the file), and reference the above Dockerfile in it like so:
+Next, create a Gitpod configuration file called [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) (you can also simply run `gp init` and Gitpod will generate the file), and reference the above Dockerfile in it like so:
 
 ```yml
 image:
@@ -26,7 +26,7 @@ Then commit and push both files to your repository. After that, every new Gitpod
 ### R Extension
 
 ![Picture of R extension](images/RGitpod.png)
-To install the R extension to your repository, add the following to your [`.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file/) file:
+To install the R extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file:
 
 ```yaml
 vscode:
