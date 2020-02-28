@@ -1,9 +1,14 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
+import { sizes } from '../styles/variables'
 
 const StyledOnBoarding = styled.section`
     text-align: center;
+
+    @media(max-width: ${sizes.breakpoints.md}) {
+            padding: 7rem 0;
+    }
 `
 
 const OnBoarding: React.SFC<{link: string}> = ({ link }) => (
@@ -14,5 +19,3 @@ const OnBoarding: React.SFC<{link: string}> = ({ link }) => (
 )
 
 export default OnBoarding
-
-

@@ -5,6 +5,7 @@ import Mail from '../resources/mail.svg'
 import Discourse from '../resources/discourse.svg'
 import { Link } from 'gatsby'
 import styled from '@emotion/styled'
+import { sizes } from '../styles/variables'
 
 const StyledInfoCard = styled.section`
     /* --------------------------------------- */
@@ -45,6 +46,12 @@ const StyledInfoCard = styled.section`
         a {
             &:not(:last-of-type) {
                 margin-right: 2rem;
+            }
+        }
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            &:not(:last-child) {
+                margin-bottom: 8rem;
             }
         }
     }
