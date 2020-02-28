@@ -13,12 +13,12 @@ const StyledBanner = styled.header`
     align-items: center;
     padding: 14rem 0 10rem;
 
-    @media(max-width: 940px) {
+    @media(max-width: 960px) {
         flex-direction: column-reverse;
         padding: 5rem 0;
     }
 
-    @media(max-width: 940px) {
+    @media(max-width: 960px) {
         flex-direction: column-reverse;
         padding: 1rem 0 5rem;
     }
@@ -26,7 +26,7 @@ const StyledBanner = styled.header`
     .para {
         margin-top: 3rem;
         
-        @media(min-width: 940px) {
+        @media(min-width: 960px) {
             max-width: 50rem;
         }
     }
@@ -34,7 +34,7 @@ const StyledBanner = styled.header`
     .btn {
         margin: 5rem 2rem 2rem 0;
 
-        @media(max-width: 940px) {
+        @media(max-width: 960px) {
             margin-top: 3rem;
         }
     }
@@ -47,10 +47,14 @@ const StyledBanner = styled.header`
     object, img {
         display: block;
         height: 35rem;
+        
+        @media(min-width: 961px) {
+            margin-left: 3rem;
+        }
 
-        @media(max-width: 940px) {
+        @media(max-width: 960px) {
             height: 20rem;
-            margin-bottom: 5rem;
+            margin: 5rem 0;
         }
     }
 
