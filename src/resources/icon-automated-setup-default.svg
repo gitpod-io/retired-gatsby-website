@@ -33,7 +33,7 @@
 
 </style>
     <defs>
-        <pattern id="pattern" patternUnits="userSpaceOnUse" width="600" height="200" x="300" y="150">
+        <pattern id="pattern" patternUnits="userSpaceOnUse" width="800" height="200" x="-400" y="150">
             <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="928" height="619"/>
         </pattern>
     </defs>
