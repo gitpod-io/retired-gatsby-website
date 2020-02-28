@@ -160,7 +160,10 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         width: 100%;
         opacity: .7;
         font-size: 90%;
-        padding: 0 1.5rem;
+        
+        @media(min-width: ${sizes.breakpoints.sm}) {
+            padding: 0 1.5rem;
+        }
     }
 
     .is-hidden {
