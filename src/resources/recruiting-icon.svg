@@ -7,7 +7,7 @@
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <pattern id="pattern" patternUnits="userSpaceOnUse" width="928" height="619" x="400" y="0" >
+    <pattern id="pattern" patternUnits="userSpaceOnUse" width="500" height="500" x="200" y="80" >
         <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="928" height="619"/>
     </pattern>
   </defs>
