@@ -66,7 +66,7 @@ const GithubTeacherToolBoxPage: React.SFC<{}> = () => (
                 <Banner 
                     subtitle="GitHub Teacher Toolbox"
                     title={<h1>Let’s Focus on Teaching Code, not Tedious Setups!</h1>}
-                    paragraph={<span>With Gitpod you can create exams and exercises easily, help out your students via live tutoring and benefit from a simple onbaoarding from any device. <Link to="">Learn more</Link></span>}
+                    paragraph={<span>With Gitpod you can create exams and exercises easily, help out your students via live tutoring and benefit from a simple onbaoarding from any device. <Link to="/education">Learn more</Link></span>}
                     linkPath="https://gitpod.io/subscription/"
                     linkText="Claim Offer"
                     img={<img src={TeacherBox} alt="GitHub Teacher Toolbox" />}
