@@ -78,7 +78,7 @@ const StyledSelfHostedPage = styled.div`
             border: ${borders.light1};
 
             @media(max-width: ${sizes.breakpoints.lg}) {
-                margin 5rem 0 0;
+                margin: 5rem 0 0;
             }
 
             h3, div {
@@ -202,7 +202,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
                     <React.Fragment>
                         <p>We’re happy to adjust Gitpod to your needs.<br/>Please get in touch for details.</p>
                     </React.Fragment>}
-                anchors={[{href: '/contact/', text: 'Contact'}]}
+                anchors={[{href: '/contact/', subject: 'Self Hosted: I need Customizations', text: 'Contact'}]}
             />
 
             {/* ----- Section More About Self Hosting ----- */}

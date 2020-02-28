@@ -222,7 +222,7 @@ const PricingPage: React.SFC<{}> = () => (
                             <p>
                                 If you're a professional open-source developer and need more hours, you can apply to our free <a href="/docs/professional-open-source/" target="_blank"><strong>Professional Open Source</strong></a> plan.
                             </p>
-                            <a href="/contact/" className="btn">Apply Now</a>
+                            <Link to="/contact/" state={{ subject: "Applying for Professional Open Source" }} className="btn">Apply Now</Link>
                         </div>
                         <div>
                             <h2>For Students</h2>
@@ -233,7 +233,7 @@ const PricingPage: React.SFC<{}> = () => (
                                 Make sure your student email is set as your primary email on GitHub/GitLab. Please let us know if your educational institution is not correctly recognized.
                             </p> 
                             <p>
-                                <a href="mailto:contact@gitpod.io?subject=Student Unlimited" className="btn">Get Verified as Student</a>
+                                <Link to="/contact/" state={{ subject: "Student Unlimited: Get Verified as a Student"}} className="btn">Get Verified as Student</Link>
                              </p>
                             
                         </div>
@@ -258,7 +258,7 @@ const PricingPage: React.SFC<{}> = () => (
                 <ActionCard
                     title='Any Questions?'
                     text='We’re happy to answer them. Please get in touch.'
-                    anchors={[{href: '/contact/', text: 'Contact'}]}
+                    anchors={[{href: '/contact/', subject: "I have a question regarding pricing", text: 'Contact'}]}
                 />
 
                 <Details

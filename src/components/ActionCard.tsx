@@ -8,7 +8,7 @@ const StyledActionCard = styled.section`
     display: block;
     max-width: 60rem;
     margin: 8rem auto;
-    padding 5rem 3rem;
+    padding: 5rem 3rem;
     text-align: center;
     background: ${colors.offWhite};
     box-shadow: ${shadows.light};
@@ -29,6 +29,7 @@ const StyledActionCard = styled.section`
 interface Anchor {
     text: string
     href: string
+    subject?: string 
 }
 
 interface ActionCardProps {
@@ -36,13 +37,14 @@ interface ActionCardProps {
     text: string | JSX.Element
     anchors: Anchor[]
 }
+    
 
 const ActionCard: React.SFC<ActionCardProps> = ({title, text, anchors }) => (
     <StyledActionCard>
         <h2>{title}</h2>
         { typeof text === 'string' ?  <p>{text}</p> : text }
-        {link(anchors[0].href,anchors[0].text)}
-        { anchors[1] ? link(anchors[1].href,anchors[1].text) : null }
+        {link(anchors[0].href,anchors[0].text, anchors[0].subject)}
+        { anchors[1] ? link(anchors[1].href,anchors[1].text, anchors[1].subject) : null }
     </StyledActionCard>
 )
 

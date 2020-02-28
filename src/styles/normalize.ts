@@ -1,4 +1,5 @@
 import { sizes, colors, borders } from "./variables";
+import DownArrow from '../resources/arrow-down.svg';
 
 export default `
     /* ------------------------------------------- */
@@ -319,6 +320,21 @@ export default `
     textarea {
         font-family: inherit;
         font-size: inherit;
+    }
+
+    select {
+        display: block;
+        padding: 1rem 6rem 1rem 2rem;
+        background: #fff;
+        border: 1px solid #ddd;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: url(${DownArrow}),
+        linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+        background-repeat: no-repeat, repeat;
+        background-position: right 1em top 50%, 0 0;
+        background-size: 1.65em auto, 100%;
     }
 
     /* ------------------------------------------- */
