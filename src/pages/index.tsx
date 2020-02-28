@@ -438,15 +438,11 @@ const StyledIndexPage = styled.div`
 
         .toggle {
             display: inline-block;
-            padding: 1.1rem 3rem;
+            padding: 1rem 3rem;
             font-weight: 600;
             color: ${colors.textLight};
             background: ${colors.offWhite2};
             border: none;
-            
-            @media(min-width: ${sizes.breakpoints.sm}) {
-                transform: translateY(-.6rem);
-            }
 
             @media(max-width: 1240px) {
                 font-size: 1.4rem;
