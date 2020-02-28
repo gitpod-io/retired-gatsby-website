@@ -75,7 +75,7 @@ const GithubTeacherToolBoxPage: React.SFC<{}> = () => (
                 <Offers 
                     title="GitHub Teacher Toolbox"
                     para={
-                        <p>With the <a href="https://education.github.com/students" target="_blank">GitHub Teacher Toolbox</a>, you get the same free plan as your students with the <a href="https://education.github.com/teachers" target="blank">GitHub Student Developer Pack</a>.
+                        <p>With the <a href="https://education.github.com/teachers" target="_blank">GitHub Teacher Toolbox</a>, you get the same free plan as your students with the <a href="https://education.github.com/students" target="blank">GitHub Student Developer Pack</a>.
                         <br />
                         We’re happy to support educators teaching frictionless coding.</p>
                     }
