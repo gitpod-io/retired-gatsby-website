@@ -53,7 +53,7 @@ export const features = [
 ]
 
 const EnterprisePage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/enterprise/' title="Enterprise">
+    <IndexLayout canonical='/enterprise/' title="Enterprise" description="Adding Gitpod to your development tools means less waiting, no tedious setups, faster onboarding, higher code quality and a smoother workflow.">
         <div className="grey-container">
 
             {/* ----- Banner ----- */}
