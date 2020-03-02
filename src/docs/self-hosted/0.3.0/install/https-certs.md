@@ -1,3 +1,7 @@
+---
+url: https://www.gitpod.io/docs/self-hosted/0.3.0/install/https-certs/
+---
+
 ### HTTPS certificates
 
 Gitpod needs HTTPS certificates, your own Docker registry, or both to function properly. If you don't have certificates, but a Docker registry available, jump to the [next step](../docker-registry/).

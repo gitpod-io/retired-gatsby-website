@@ -1,3 +1,7 @@
+---
+url: https://www.gitpod.io/docs/self-hosted/0.3.0/install/nodes/
+---
+
 # Kubernetes Nodes
 
 Configure the nodes (computers or virtual machines) that Kuberntes runs Gitpod's workspace pods on.

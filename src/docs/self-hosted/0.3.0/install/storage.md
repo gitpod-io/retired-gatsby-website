@@ -1,3 +1,7 @@
+---
+url: https://www.gitpod.io/docs/self-hosted/0.3.0/install/storage/
+---
+
 # Workspace Storage
 
 Gitpod creates a backup of workspaces when they're shut down. 
