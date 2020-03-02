@@ -1,3 +1,7 @@
+---
+url: https://www.gitpod.io/docs/self-hosted/0.3.0/install/prepare-installation/
+---
+
 # Prerequisites
 This document describes the prerequisites for a Gitpod installation. Upon completing the steps described herein,
 you will have everything in place to successfully finish the installation.
