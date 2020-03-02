@@ -1,3 +1,4 @@
+// This file is used to define entries in the side menu
 
 export interface MenuEntry {
     title: string;
@@ -65,6 +66,10 @@ export const MENU: MenuEntry[] = [
             M(
                 "Start Tasks",
                 "config-start-tasks"
+            ),
+            M(
+                "Theia configuration",
+                "config-theia"
             ),
             M(
                 "VS Code Extensions",
