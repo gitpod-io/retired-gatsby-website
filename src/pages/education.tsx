@@ -20,7 +20,7 @@ import PopOver from '../components/PopOver'
 import { isEurope } from './pricing'
 
 const EducationPage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/education/' title="Education">
+    <IndexLayout canonical='/education/' title="Education" description="Gitpod simplifies the onboarding process, makes coding accessible from any device and provides a productive learning environment.">
         <div className="grey-container">
 
             {/* ----- Banner ----- */}
