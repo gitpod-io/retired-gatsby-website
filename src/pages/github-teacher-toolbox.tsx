@@ -58,7 +58,7 @@ const offers: PricingBoxProps[] = [
 ]
 
 const GithubTeacherToolBoxPage: React.SFC<{}> = () => (
-    <IndexLayout canonical="/github-teacher-toolbox/" title="GitHub Teacher Toolbox">
+    <IndexLayout canonical="/github-teacher-toolbox/" title="GitHub Teacher Toolbox" description="With Gitpod you can create exams and exercises easily, help out your students via live tutoring and benefit from a simple onbaoarding from any device.">
             <div className="grey-container">
 
                 {/* ----- Banner ----- */}  
