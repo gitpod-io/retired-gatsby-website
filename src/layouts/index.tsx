@@ -23,7 +23,7 @@ type StaticQueryProps = {
   }
 }
 
-class IndexLayout extends React.Component<{ title?: string, canonical?: string }, {}> {
+class IndexLayout extends React.Component<{ title?: string, canonical?: string, description?: string }, {}> {
 
     handleFirstTab = (e :any) => {
         if (e.keyCode === 9) { // the "I am a keyboard user" key
@@ -46,18 +46,18 @@ class IndexLayout extends React.Component<{ title?: string, canonical?: string }
     }
 
     render() {
-        const { title, canonical, children } = this.props
+        const { title, canonical, description, children } = this.props
 
         return (
             <StaticQuery
                 query={graphql`
                 query IndexLayoutQuery {
                     site {
-                    siteMetadata {
-                        title
-                        description
-                        siteUrl
-                    }
+                        siteMetadata {
+                            title
+                            description
+                            siteUrl
+                        }
                     }
                 }
                 `}
@@ -66,7 +66,7 @@ class IndexLayout extends React.Component<{ title?: string, canonical?: string }
                     <Helmet>
                     <html lang="en" />
                     <title>{title && `${title} - Gitpod` || data.site.siteMetadata.title}</title>
-                    <meta name="description" content={data.site.siteMetadata.description} />
+                    <meta name="description" content={description || data.site.siteMetadata.description} />
                     <meta name="keywords" content="cloud ide, github ide, gitlab ide, javascript, online ide, web ide, code review" />
                     {
                         canonical ? <link rel="canonical" href={`${data.site.siteMetadata.siteUrl}${canonical}`} /> : null
@@ -83,7 +83,7 @@ class IndexLayout extends React.Component<{ title?: string, canonical?: string }
 
                     <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
                     <meta property="og:title" content={title || data.site.siteMetadata.title} />
-                    <meta property="og:description" content={data.site.siteMetadata.description} />
+                    <meta property="og:description" content={description || data.site.siteMetadata.description} />
                     <meta property="og:image" content="https://www.gitpod.io/media-image.jpg" />
 
                     <meta name="google-site-verification" content="NBio3hCkfn2FKJpqZritJpXuyKo54noPGZzWsjDIp-M" />
