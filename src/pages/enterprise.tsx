@@ -53,7 +53,11 @@ export const features = [
 ]
 
 const EnterprisePage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/enterprise/' title="Enterprise" description="Adding Gitpod to your development tools means less waiting, no tedious setups, faster onboarding, higher code quality and a smoother workflow.">
+    <IndexLayout 
+        canonical='/enterprise/' 
+        title="Enterprise" 
+        description="Adding Gitpod to your development tools means less waiting, faster onboarding, faster development cycles, higher code quality, and a smooth consistent workflow."
+    >
         <div className="grey-container">
 
             {/* ----- Banner ----- */}
@@ -61,7 +65,7 @@ const EnterprisePage: React.SFC<{}> = () => (
             <Banner
                 subtitle="Gitpod Enterprise"
                 title={<h1>Unleash Developer Productivity</h1>}
-                paragraph="Adding Gitpod to your development tools means less waiting, no tedious setups, faster onboarding, higher code quality and a smoother workflow."
+                paragraph="Adding Gitpod to your development tools means less waiting, faster onboarding, faster development cycles, higher code quality, and a smooth consistent workflow."
                 linkPath="/enterprise/#enterprise"
                 linkText="Choose your Solution"
                 img={<object tabIndex={-1} data={Planet} />}

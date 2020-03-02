@@ -179,7 +179,7 @@ const StyledPricingPage = styled.div`
 `
 
 const PricingPage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/pricing/' title="Pricing" description="Whether you would like to use Gitpod for open-source contribution or professionally for your self or in a team, here you can find your subscription.">
+    <IndexLayout canonical='/pricing/' title="Pricing" description="Gitpod is free for Open Source, and offers advanced features for yourself, your team or your business at reasonable prices.">
         <StyledPricingPage>
             <div className="grey-container">
                 <div className="row">
