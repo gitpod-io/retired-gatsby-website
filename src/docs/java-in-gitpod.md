@@ -80,9 +80,47 @@ Once you or your teammates start a dev environment, you will get the prebuild st
 
 ## IDE features
 
-> 🚧 Please help improve this section by [editing it](https://gitpod.io/#https://github.com/gitpod-io/website/blob/master/src/docs/java-in-gitpod.md).
-> * Explain what the extensions do, and how to use them
-> * Explain how to set up a Java project for debugging
+### Debugging
+
+Here is a quick clip on how to automatically configure debugging for Java!
+
+![Java debugging example](images/JavaDebug.gif)
+
+So, basically in this video we:
+1. First, open the Java file that we want to debug
+2. Then, go to the debug menu and select "Add Configuration..."
+3. Next, in the dropdown choose "Java: Launch Program in Current File"
+5. Finally, start debugging your Java program!
+
+You can also create the Java debug configuration file manually
+
+To start debugging your Java application in Gitpod, please create a new directory called `.theia/`, and inside add a file called `launch.json`, finally add the following to it:
+```json
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "type": "java",
+          "name": "Debug (Launch) - Current File",
+          "request": "launch",
+          "mainClass": "${file}"
+      }
+  ]
+}
+```
+Then, simply open the Java file you want to debug, open the Debug panel (in the left vertical toolbar, click the icon with the crossed-out-spider), and click the green "Run" button.
+
+<br>
+
+To see a basic repository with Java debugging enabled, please check out [gitpod-io/Gitpod-Java-Debugging](https://github.com/gitpod-io/Gitpod-Java-Debugging):
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](gitpod.io/#tps://github.com/gitpod-io/Gitpod-Java-Debugging)
+
+For more please see [VSCode's docs](https://code.visualstudio.com/docs/java/java-debugging)
+
+### VSCode extensions
 
 Gitpod comes equipped with the following VS Code extensions:
 
