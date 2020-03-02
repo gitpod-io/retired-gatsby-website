@@ -160,7 +160,7 @@ const StyledFeaturesPage = styled.div`
 `
 
 const FeaturesPage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/features/' title="Features">
+    <IndexLayout canonical='/features/' title="Features" description="Learn about Gitpod's collaboration tools, workspace snapshots, supported programming languages, and much more.">
         <StyledFeaturesPage>
             <div className="grey-container">
                 <div className="row">
