@@ -12,8 +12,11 @@ File `settings.json` follows json syntax as follows:
 
 ```json
 {
+  // Comment
   "component.configuration": "value",
-  "component.configuration": "value"
+  "[language]": {
+       "component.configuration": "value"
+  }
 }
 ```
 
@@ -21,11 +24,11 @@ Example of this configuration:
 
 ```json
 {
-  // Enable WordWrap
-  "editor.wordWrap": "on",
   // To show invisibles
   "editor.renderWhitespace": "all",
-  // Rustlang - build on save
-  "rust.build_on_save": true,
+  // Enable wordWrap for markdown files
+  "[markdown]": {
+       "editor.wordWrap": "on"
+   }
 }
 ```

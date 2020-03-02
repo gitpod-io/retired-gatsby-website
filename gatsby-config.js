@@ -33,6 +33,11 @@ module.exports = {
             },
         },
         {
+            // Exclude pages from the page build -- https://www.gatsbyjs.org/packages/gatsby-plugin-exclude/
+            resolve: 'gatsby-plugin-exclude',
+            options: { paths: ['/docs/README'] },
+        },
+        {
             resolve: 'gatsby-transformer-remark',
             options: {
                 plugins: [
@@ -88,7 +93,7 @@ module.exports = {
                 // Setting this parameter is also optional
                 respectDNT: true,
                 // Avoids sending pageview hits from custom paths
-                // exclude: ["/preview/**", "/do-not-track/me/too/"],
+                exclude: ["/docs/README"],
                 // Enables Google Optimize using your container Id
                 // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
                 // Enables Google Optimize Experiment ID
