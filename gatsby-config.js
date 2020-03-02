@@ -104,7 +104,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-sitemap',
             options: {
-                exclude: ['/education'],
+                exclude: ['/github-teacher-toolbox'],
             },
         },
         {
