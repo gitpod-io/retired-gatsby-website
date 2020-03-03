@@ -28,7 +28,7 @@ export const featuresCardsData = [
         icon: VSCGrey,
         iconTitle: <span>VS Code<br />Extensions</span>,
         paragraphs: <React.Fragment>
-            <p>Gitpod feels just like your local dev environment, as you can <strong> install any <br></br>VS Code extensions</strong>. Install it via drag and drop and enjoy all the features you're used to.</p>
+            <p>Gitpod feels just like your local dev environment, as you can <strong> install any VS Code extensions</strong>. Install it via drag and drop and enjoy all the features you're used to.</p>
         </React.Fragment>,
         more: <p>Read more about <Link to="/docs/vscode-extensions/">VS Code Extensions.</Link></p>,
         img: <img alt="VS Code Extensions" src={VSCodeExtensions} />
