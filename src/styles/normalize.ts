@@ -248,7 +248,7 @@ export default `
 
         & + & {
 
-            @media(max-width: ${sizes.breakpoints.sm}) {
+            @media(max-width: 414px) {
                 &:not(:first-child) {
                     margin-top: 2.5rem;
                 }
@@ -260,7 +260,7 @@ export default `
                 &:first-of-type {
                     margin-right: 2.5rem;
 
-                    @media(max-width: 360px) {
+                    @media(max-width: 414px) {
                         margin-right: 0;
                         margin-bottom: 2rem;
                     }
@@ -270,7 +270,7 @@ export default `
             br {
                 display: none;
 
-                @media(max-width: 360px) {
+                @media(max-width: 414px) {
                     display: block !important;
                 }
             }
