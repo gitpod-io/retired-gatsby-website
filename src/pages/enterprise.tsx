@@ -41,7 +41,7 @@ export const features = [
     },
     {
         title: "Smooth Integration",
-        paragraphs: ['All Gitpod needs is a Kubernetes cluster.', 'It enables user authentication and integration with your GitHub Enterprise, GitLab, or Bitbucket.', <>Please <Link to="/contact/"  state={{ subject: 'Gitpod Enterprise: Request for Customizations' }}>contact us</Link> for further customizations.</>],
+        paragraphs: ['All Gitpod needs is a Kubernetes cluster.', 'It enables user authentication and integration with your GitHub Enterprise, GitLab, or Bitbucket.', <>Please <Link to="/contact/"  state={{ subject: 'I have a question regarding Gitpod Enterprise' }}>contact us</Link> for further customizations.</>],
         logos: ['Layer', 'Github', 'Gitlab', 'Git']
     },
     // {
@@ -221,7 +221,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                 </tr>
                 <tr className="buttons">
                     <th></th>
-                    <td><Link to="/contact/" state={{ subject: "I'm interested in Gitpod Enterprise" }} className="btn btn--cta">Contact Sales</Link></td>
+                    <td><Link to="/contact/" state={{ subject: "I have a question regarding Gitpod Enterprise" }} className="btn btn--cta">Contact Sales</Link></td>
                     <td><Link to="/self-hosted/" className="btn">Host Yourself</Link></td>
                 </tr>
             </tbody>

@@ -202,7 +202,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
                     <React.Fragment>
                         <p>We’re happy to adjust Gitpod to your needs.<br/>Please get in touch for details.</p>
                     </React.Fragment>}
-                anchors={[{href: '/contact/', subject: 'Self Hosted: I need Customizations', text: 'Contact'}]}
+                anchors={[{href: '/contact/', subject: 'I have a question regarding Self-Hosted Gitpod', text: 'Contact'}]}
             />
 
             {/* ----- Section More About Self Hosting ----- */}

@@ -116,11 +116,11 @@ function encode(data: { [k: string]: string | number | boolean | null | undefine
 }
 
 const subjects: string[] = [
-    "I'm interested in Gitpod Enterprise", 
-    "I'm interested in Gitpod Education",
-    "I have a question regarding self-hosting Gitpod", 
+    "Student Unlimited: Get Verified as a Student",
+    "I have a question regarding Gitpod Education",
+    "I have a question regarding Gitpod Enterprise",
+    "I have a question regarding Self-Hosted Gitpod",
     "Applying for Professional Open Source",
-    "I'd like to get the Student Unlimited plan", 
     "Other"
 ]
 
@@ -167,21 +167,21 @@ export default function ContactPage(props: any) {
         if (!state.eMail) {
             setState({
                 ...state,
-                errorMessage: 'Please provide a valid e-mail so we can reach out to you.'
+                errorMessage: 'Please provide a valid email address so that we can reply to you.'
             });
             return;
         }
         if(!state.message) {
             setState({
                 ...state,
-                errorMessage: "Sorry! message can't be empty please type a message."
+                errorMessage: "Sorry! The message can't be empty, please type a message."
             })
             return;
         }
         if (state.consent !== true) {
             setState({
                 ...state,
-                errorMessage: 'Please agree to the consent so we are allowed to store your provided information.'
+                errorMessage: 'Please agree to us storing your provided information so that we can reply to you.'
             });
             return;
         }
@@ -273,7 +273,7 @@ export default function ContactPage(props: any) {
                             <div style={ { display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', margin: '0px 0px 20px 0px' }}>
                                 <input name="consent" id="consent" type="checkbox" onChange={handleChange} style={{margin: '0px 10px', transform: 'translateY(.5rem)'}}/>
                                 <label htmlFor="consent">
-                                    I consent to having this website store my submitted information so they can respond to my inquiry.
+                                    I consent to having this website store my submitted information so that a support staff can respond to my inquiry.
                                 </label>
                             </div>
                              { state.errorMessage ? <p className="error">{state.errorMessage}</p> : null }
