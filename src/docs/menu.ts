@@ -68,10 +68,6 @@ export const MENU: MenuEntry[] = [
                 "config-start-tasks"
             ),
             M(
-                "Theia configuration",
-                "config-theia"
-            ),
-            M(
                 "VS Code Extensions",
                 "vscode-extensions"
             ),
@@ -86,7 +82,11 @@ export const MENU: MenuEntry[] = [
             M(
                 "Environment Variables",
                 "environment-variables"
-            )
+            ),
+            M(
+                "Editor Configuration",
+                "config-editor"
+            ),
         ]
     ),
     M(
@@ -186,7 +186,8 @@ export const MENU: MenuEntry[] = [
             M(
                 "Prerequisites",
                 "self-hosted/latest/install/prepare-installation/"
-            ),M(
+            ), 
+            M(
                 "Install on Vanilla Kubernetes",
                 "self-hosted/latest/install/install-on-kubernetes/"
             ),
@@ -217,27 +218,27 @@ export const MENU: MenuEntry[] = [
 ];
 
 interface MenuContext {
-  prev?: MenuEntry;
-  thisEntry?: MenuEntry;
-  next?: MenuEntry;
+    prev?: MenuEntry;
+    thisEntry?: MenuEntry;
+    next?: MenuEntry;
 }
 
 export function getMenuContext(slug: string, menu: MenuEntry[] = MENU, context: MenuContext = {}): MenuContext {
-  for (const e of menu) {
-    if (context.next) {
-      return context;
+    for (const e of menu) {
+        if (context.next) {
+            return context;
+        }
+        if (context.thisEntry) {
+            context.next = e;
+            return context;
+        } else if (e.path === slug) {
+            context.thisEntry = e;
+        } else {
+            context.prev = e;
+        }
+        if (e.subMenu) {
+            getMenuContext(slug, e.subMenu, context);
+        }
     }
-    if (context.thisEntry) {
-      context.next = e;
-      return context;
-    } else if (e.path === slug) {
-      context.thisEntry = e;
-    } else {
-      context.prev = e;
-    }
-    if (e.subMenu) {
-      getMenuContext(slug, e.subMenu, context);
-    }
-  }
-  return context;
+    return context;
 }
