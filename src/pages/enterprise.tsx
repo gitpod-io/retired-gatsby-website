@@ -150,7 +150,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                 <tr>
                     <th>Pricing</th>
                     <td>Starting at $3000 per month</td>
-                    <td>$20 per user</td>
+                    <td>$20 per user per month</td>
                 </tr>
                 <tr>
                     <th>Domain</th>
