@@ -31,7 +31,7 @@ const EducationPage: React.SFC<{}> = () => (
                 paragraph="Gitpod simplifies the onboarding process, makes coding accessible from any device and provides a productive learning environment."
                 linkPath="/education/#education"
                 linkText="Choose your Solution"
-                img={<object tabIndex={-1} style={{transform:"scale(0.8)"}} data={Saturn}/>}
+                img={<object role="presentation" tabIndex={-1} style={{transform:"scale(0.8)"}} data={Saturn}/>}
             />
 
             {/* ----- Section Features ----- */}

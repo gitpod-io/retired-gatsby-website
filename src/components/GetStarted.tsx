@@ -306,7 +306,7 @@ class GetStarted extends React.Component {
                                 (project, i) => (
                                     <Project
                                         key={i}
-                                        image={<object tabIndex={-1} data={project.image}/>}
+                                        image={<object role="presentation" tabIndex={-1} data={project.image}/>}
                                         title={project.title}
                                         href={project.href}
                                     />

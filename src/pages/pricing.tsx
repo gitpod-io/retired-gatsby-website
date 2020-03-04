@@ -26,14 +26,14 @@ import PopOver from '../components/PopOver'
 const plans: PricingBoxProps[] = [
     {
         title: 'Open-Source',
-        img: <object tabIndex={-1} data={IconOpenSource}/>,
+        img: <object role="presentation" tabIndex={-1} data={IconOpenSource}/>,
         price: 'Free',
         duration: '50 hours / month',
         features: ['Public Repos']
     },
     {
         title: 'Personal',
-        img: <object tabIndex={-1} data={LightBulb}/>,
+        img: <object role="presentation" tabIndex={-1} data={LightBulb}/>,
         price: <>{isEurope() ? '€8' : '$9'}<span> / month</span></>,
         duration: '100 hours / month',
         features: ['Private & Public Repos', <span className="span">4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes."/></span>],
@@ -52,7 +52,7 @@ const plans: PricingBoxProps[] = [
     },
     {
         title: 'Unlimited',
-        img: <object tabIndex={-1}  data={MagicCap}/>,
+        img: <object role="presentation" tabIndex={-1}  data={MagicCap}/>,
         price: <>{isEurope() ? '€35' : '$39'}<span> / month</span></>,
         duration: 'unlimited hours',
         features: ['Private & Public Repos', <span className="span">16 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>, <span className="span">Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card."/></span>,  <span className="span">1h Timeout <PopOver description="Workspaces without user activity are stopped after 1 hour."/></span>, <span className="span">3h Timeout Boost <PopOver description="You can manually boost the timeout to 3 hours within a running workspace."/></span>],
