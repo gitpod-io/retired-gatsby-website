@@ -70,9 +70,9 @@ interface QuoteProps {
 const Quote: React.SFC<QuoteProps> = ({title}) => (
         <StyledQuote className="quote row">
             <h4 className="quote__text">
-                <object tabIndex={-1} data={QuoteIcon}/>
+                <object aria-label="Left Quotation Mark" tabIndex={-1} data={QuoteIcon}/>
                 <span><i>&ldquo;</i> {title}<i>&rdquo;</i></span>
-                <object tabIndex={-1} data={QuoteIcon}/>
+                <object aria-label="Right Quotation Mark" tabIndex={-1} data={QuoteIcon}/>
             </h4>
         </StyledQuote>
 )

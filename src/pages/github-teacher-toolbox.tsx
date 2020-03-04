@@ -20,7 +20,7 @@ import Offers from '../components/Offers'
 const offers: PricingBoxProps[] = [
     {
         title: 'Open Source',
-        img: <object tabIndex={-1} data={IconOpenSource}/>,
+        img: <object role="presentation" tabIndex={-1} data={IconOpenSource}/>,
         price: 'Free',
         duration: '50 hours / month',
         hideButton: true,
@@ -29,7 +29,7 @@ const offers: PricingBoxProps[] = [
     },
     {
         title: 'Teacher',
-        img: <object tabIndex={-1} data={Owl}/>,
+        img: <object role="presentation" tabIndex={-1} data={Owl}/>,
         price: <><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€8' : '$9')}</span> Free</>,
         duration: '100 hours / month',
         hideButton: true,
@@ -48,7 +48,7 @@ const offers: PricingBoxProps[] = [
     },
     {
         title: 'Gitpod Education',
-        img: <object tabIndex={-1} data={Saturn}/>,
+        img: <object role="presentation" tabIndex={-1} data={Saturn}/>,
         price: <>From {(isEurope() ? '€0.8' : '$0.9')}</>,
         duration: 'Per user/month',
         feature: <Link to="/education/">Learn More</Link>,

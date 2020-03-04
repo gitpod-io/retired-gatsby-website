@@ -18,7 +18,7 @@ import Offers from '../components/Offers'
 const offers: PricingBoxProps[] = [
     {
         title: 'Open Source',
-        img: <object tabIndex={-1} data={IconOpenSource}/>,
+        img: <object role="presentation" tabIndex={-1} data={IconOpenSource}/>,
         price: 'Free',
         duration: '50 hours / month',
         hideButton: true,
@@ -27,7 +27,7 @@ const offers: PricingBoxProps[] = [
     },
     {
         title: 'Student',
-        img: <object tabIndex={-1} data={Bag}/>,
+        img: <object role="presentation" tabIndex={-1} data={Bag}/>,
         price: <><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€8' : '$9')}</span> Free</>,
         duration: '100 hours / month',
         hideButton: true,
@@ -46,7 +46,7 @@ const offers: PricingBoxProps[] = [
     },
     {
         title: 'Student Unlimited',
-        img: <object tabIndex={-1} data={Rocket}/>,
+        img: <object role="presentation" tabIndex={-1} data={Rocket}/>,
         price: <><span style={{textDecoration: 'line-through', opacity: .8}}>{(isEurope() ? '€35' : '$39')}</span> {(isEurope() ? '€8' : '$9')}</>,
         duration: 'Unlimited hours / month',
         hideButton: true,

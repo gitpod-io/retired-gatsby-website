@@ -170,7 +170,7 @@ const FeaturesPage: React.SFC<{}> = () => (
                     {/* ----- Intro ----- */}
 
                     <section className="intro" id="top">
-                        <object tabIndex={-1} data={IceStick} className="ice-stick" />
+                        <object role="presentation" tabIndex={-1} data={IceStick} className="ice-stick" />
                         <h1>Features</h1>
                         <div className="features">
                             {
