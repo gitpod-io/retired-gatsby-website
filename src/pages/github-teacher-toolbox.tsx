@@ -19,12 +19,12 @@ import Offers from '../components/Offers'
 
 const offers: PricingBoxProps[] = [
     {
-        title: 'Open Source',
+        title: 'Open-Source',
         img: <object role="presentation" tabIndex={-1} data={IconOpenSource}/>,
         price: 'Free',
         duration: '50 hours / month',
         hideButton: true,
-        features: ['Private & Public Repos', <span className="span"> &lt; 4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>],        
+        features: ['Public Repos', <span className="span"> &lt; 4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>],        
         text: 'Free for everyone'
     },
     {
@@ -92,7 +92,7 @@ const GithubTeacherToolBoxPage: React.SFC<{}> = () => (
                 {/* ----- Quote ----- */}                            
 
                 <Quote 
-                    title="Stop wasting time with tedious setups, learn amazing programming skills instead!"
+                    title="Stop wasting time with tedious setups, learn amazing programming skills instead!"                    
                 />
 
                 {/* ----- Info ----- */}  
