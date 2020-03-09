@@ -129,6 +129,10 @@ export const MENU: MenuEntry[] = [
                 "rust-in-gitpod"
             ),
             M(
+                ".NET",
+                "dotnet-in-gitpod"
+            ),
+            M(
                 "Julia",
                 "julia-in-gitpod"
             ),
