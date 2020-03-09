@@ -12,6 +12,7 @@ However, before we begin here are a few example repositories to help give you an
 |------------|-------------|--------|
 |[vuepress](https://github.com/vuejs/vuepress)|Minimalistic Vue-powered static site generator| [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vuejs/vuepress)|
 |[postwoman](https://github.com/liyasthomas/postwoman)|A free, fast and beautiful API request builder (web alternative to Postman)|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/liyasthomas/postwoman)|
+|[nuxtjs.org](https://github.com/nuxt/nuxtjs.org)|Nuxt.js Documentation Website (Universal Vue.js Application built with Nuxt.js)|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nuxt/nuxtjs.org)|
 
 </div>
 
