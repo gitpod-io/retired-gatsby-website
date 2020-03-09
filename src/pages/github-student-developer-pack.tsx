@@ -22,7 +22,7 @@ const offers: PricingBoxProps[] = [
         price: 'Free',
         duration: '50 hours / month',
         hideButton: true,
-        features: ['Public Repos', <span className="span"> &lt; 4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time."/></span>],        
+        features: ['Public Repos'],        
         text: 'Free for everyone'
     },
     {
