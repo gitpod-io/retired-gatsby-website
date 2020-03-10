@@ -16,9 +16,9 @@
 }
 </style>
     <defs>
-        <pattern id="pattern" patternUnits="userSpaceOnUse" width="700" height="200" x="0" y="150" >
-            <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="928" height="619"/>
-        </pattern>
+            <pattern id="pattern" patternUnits="userSpaceOnUse" width="700" height="200" x="0" y="-85" >
+                <image xlink:href="https://www.gitpod.io/galaxy-big.jpg" width="700" height="619"/>
+            </pattern>
     </defs>
     <g data-name="g" transform="translate(-219.129 -446.759) scale(0.999 1.01)">
         <path d="M654.281,54.3v-.7h-413.8c.01-.525.939-52.365,0-52.667h413.8V0l.926.926h.28v.28l24.944,25.942-10.944,10.94v.506h-.505l-.7.7Zm-413.8-.7H0V.926l1.711,0C34.927.883,118.569.79,177.709.79c41.371,0,62.49.046,62.772.137Z" 
