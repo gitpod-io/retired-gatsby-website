@@ -25,15 +25,13 @@ If your project requires a GUI or Virtual Desktop, please use this image instead
 ```YAML
 image: gitpod/workspace-dotnet-vnc
 ```
-This will give you a full GUI Virtual Desktop for your .NET application!
+This will give you a full GUI Virtual Desktop for your .NET application! The Virtual Desktop will be running on port `6080`.
 
-## Compiling C# Code in Gitpod
+## Compiling .NET Code in Gitpod
 
-To compile your C# Code in Gitpod run `mono-csc <FILE>`  where `<FILE>` is the path to the C# program you want to compile
+To compile your **C#** Code in Gitpod, run `mono-csc <FILE>`,  where `<FILE>` is the path to the C# program you want to compile.
 
-## Compiling F# Code in Gitpod
-
-To compile your F# Code in Gitpod run `fsharpc <FILE>`  where `<FILE>` is the path to the F# program you want to compile
+To compile your **F#** Code in Gitpod, run `fsharpc <FILE>`,  where `<FILE>` is the path to the F# program you want to compile.
 
 
 ## Running *.EXE files in Gitpod
