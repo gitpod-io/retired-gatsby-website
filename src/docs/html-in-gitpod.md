@@ -2,8 +2,9 @@
 
  Gitpod has great HTML and CSS support. In fact, Gitpod was made with web development in mind. And, depending on your needs, you may want to customize this experience further!
 
-## Examples
-Here are a few great HTML/CSS example projects that are automated with Gitpod:
+## Example Repositories
+
+Here are a few HTML/CSS example projects that are already automated with Gitpod:
 
 Repository | Description | Try it
 ---|---|---

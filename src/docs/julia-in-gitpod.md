@@ -1,6 +1,8 @@
 # Julia in Gitpod
 
-## Examples
+## Example Repositories
+
+Here are a few Julia example projects that are already automated with Gitpod:
 
 A minimal example of a ready-to-code Julia development environment is [JesterOrNot/Gitpod-Julia](https://github.com/JesterOrNot/Gitpod-Julia). Feel free to take a look.
 

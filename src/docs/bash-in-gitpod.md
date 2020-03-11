@@ -2,7 +2,9 @@
 
 Bash is the default shell for Gitpod. However, if you're developing a Bash script yourself, you may want to configure additional language support.
 
-## Bash Examples
+## Example Repositories
+
+Here are a few Bash example projects that are already automated with Gitpod:
 
 <div class="table-container">
 

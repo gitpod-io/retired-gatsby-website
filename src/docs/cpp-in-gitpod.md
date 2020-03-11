@@ -2,9 +2,9 @@
 
 Gitpod supports C++ right out of the box, but there are still ways to enhance your C++ experience within Gitpod.
 
-## Example Projects
+## Example Repositories
 
-Here are some examples of [already-gitpodified](https://www.gitpod.io/blog/gitpodify/) C++ projects running in Gitpod:
+Here are a few C++ example projects that are already automated with Gitpod:
 
 <br>
 

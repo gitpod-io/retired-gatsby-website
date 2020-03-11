@@ -2,9 +2,9 @@
 
 Gitpod supports Go right out of the box, but there are still ways to optimize your Go experience within Gitpod.
 
-## Examples
+## Example Repositories
 
-Before we start, here are some already gitpodified repositories to give you an idea of what to expect!
+Here are a few Go example projects that are already automated with Gitpod:
 
 <div class="table-container">
 
