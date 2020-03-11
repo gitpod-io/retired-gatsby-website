@@ -16,8 +16,8 @@
 }
 </style>
   <defs>
-    <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" y="-1100" width="550" height="700" viewBox="0 0 707.725 312.796">
-        <image xlink:href="https://www.gitpod.io/galaxy-big.jpg" width="928"  height="650"/>
+    <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" y="-10" width="500" height="700" viewBox="0 0 707.725 312.796">
+        <image xlink:href="https://www.gitpod.io/galaxy-big.jpg" width="850"  height="300"/>
     </pattern>
   </defs>
   <g id="Gruppe_692" data-name="Gruppe 692" transform="translate(-860.375 -3168.204)">
