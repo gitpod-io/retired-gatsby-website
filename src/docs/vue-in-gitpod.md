@@ -2,9 +2,9 @@
 
 In order to work with Vue.js in Gitpod, you will need to properly configure your repository. Here is how to do it.
 
-## Examples
+## Example Repositories
 
-However, before we begin here are a few example repositories to help give you an idea of what to expect
+Here are a few Vue.js example projects that are already automated with Gitpod:
 
 <div class="table-container">
 

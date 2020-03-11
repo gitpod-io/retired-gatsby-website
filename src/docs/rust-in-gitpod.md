@@ -22,9 +22,9 @@ To fix this you'll need to wrap the `rustup` command in a login shell, like so:
 RUN bash -cl "rustup toolchain install nightly"
 ```
 
-## Examples
+## Example Repositories
 
-Here are some examples of Rust projects running in Gitpod:
+Here are a few Rust example projects that are already automated with Gitpod:
 
 <div class="table-container">
 
