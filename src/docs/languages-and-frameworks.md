@@ -14,3 +14,4 @@ Below is a list of language and framework specific tips & tricks.
   * [Rust](/docs/rust-in-gitpod/)
   * [Julia](/docs/julia-in-gitpod/)
   * [R](/docs/r-in-gitpod/)
+  * [Elm](/docs/elm-in-gitpod/)
