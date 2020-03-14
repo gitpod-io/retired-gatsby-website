@@ -22,6 +22,12 @@ To fix this you'll need to wrap the `rustup` command in a login shell, like so:
 RUN bash -cl "rustup toolchain install nightly"
 ```
 
+You can override this default by commiting a `rustup-toolchain` file in the root of your repository. Say for example you need the nightly compiler for March 4th 2020, you would create a `rustup-toolchain` file and add the following 
+```text
+nightly-2020-03-04
+```
+which will set the required Rust verion and if you commit the file into source control it will set the default nightly version across all workspaces.
+
 ## Example Repositories
 
 Here are a few Rust example projects that are already automated with Gitpod:
