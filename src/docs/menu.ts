@@ -95,55 +95,55 @@ export const MENU: MenuEntry[] = [
         [
             M(
                 "Python",
-                "python-in-gitpod"
+                "languages/python"
             ),
             M(
                 "HTML/CSS",
-                "html-in-gitpod"
+                "languages/html"
             ),
             M(
                 "Java",
-                "java-in-gitpod"
+                "languages/java"
             ),
             M(
                 "C++",
-                "cpp-in-gitpod"
+                "languages/cpp"
             ),
             M(
                 "Go",
-                "go-in-gitpod"
+                "languages/go"
             ),
             M(
                 "Bash",
-                "bash-in-gitpod"
+                "languages/bash"
             ),
             M(
                 "Ruby",
-                "ruby-in-gitpod"
+                "languages/ruby"
             ),
             M(
                 "PHP",
-                "php-in-gitpod"
+                "languages/php"
             ),
             M(
-                "Vue.js",
-                "vue-in-gitpod"
+                "Vue",
+                "languages/vue"
             ),
             M(
                 "Rust",
-                "rust-in-gitpod"
+                "languages/rust"
             ),
             M(
                 ".NET",
-                "dotnet-in-gitpod"
+                "languages/dotnet"
             ),
             M(
                 "Julia",
-                "julia-in-gitpod"
+                "languages/julia"
             ),
             M(
                 "R",
-                "r-in-gitpod"
+                "languages/r"
             )
         ]
     ),
