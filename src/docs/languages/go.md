@@ -89,7 +89,7 @@ vscode:
 
 Here is a quick clip on how to automatically configure debugging for Go!
 
-![Go debugging example](images/GoDebug.gif)
+![Go debugging example](../images/GoDebug.gif)
 
 So, basically in this video we:
 1. First, open the Go file that we want to debug
