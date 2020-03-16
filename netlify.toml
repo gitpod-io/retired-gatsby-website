@@ -323,3 +323,67 @@
   to = "/docs/self-hosted/latest/install/workspaces/"
   status = 301 
 
+[[redirects]]
+  from = "/docs/bash-in-gitpod"
+  to = "/docs/languages/bash/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/cpp-in-gitpod"
+  to = "/docs/languages/cpp/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/dotnet-in-gitpod"
+  to = "/docs/languages/dotnet/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/go-in-gitpod"
+  to = "/docs/languages/go/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/html-in-gitpod"
+  to = "/docs/languages/html/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/java-in-gitpod"
+  to = "/docs/languages/java/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/julia-in-gitpod"
+  to = "/docs/languages/julia/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/php-in-gitpod"
+  to = "/docs/languages/php/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/python-in-gitpod"
+  to = "/docs/languages/python/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/r-in-gitpod"
+  to = "/docs/languages/r/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/ruby-in-gitpod"
+  to = "/docs/languages/ruby/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/rust-in-gitpod"
+  to = "/docs/languages/rust/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/vue-in-gitpod"
+  to = "/docs/languages/vue/"
+  status = 301
