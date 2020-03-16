@@ -63,7 +63,7 @@ vscode:
 > ***Note: This extension outputs emojis by default if the crate version is set at the latest. You can disable this by using `crates.upToDateDecorator` option in your preferences***
 <br>
 
-![A crates extension demo](images/cratesDemo.gif)
+![A crates extension demo](../images/cratesDemo.gif)
 The VSCode extension Crates makes it easier to manage your Cargo dependency versions. To install this extension to your repository add the following to your [.gitpod.yml](https://www.gitpod.io/docs/41_config_gitpod_file/)
 
 ```yaml
