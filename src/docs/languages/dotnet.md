@@ -41,7 +41,7 @@ To run your code after it has been compiled run `mono <FILE>` where `<FILE>` is 
 
 ### <p>The C# Extension</p>
 
-![C# Demo Extension](images/CSharpDemo.png)
+![C# Demo Extension](../images/CSharpDemo.png)
 
 This extension brings code completion, snippets, auto-formatting, peek definiton, refactoring, and hover documentation for C#! To install this extension for your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file:
 
@@ -53,7 +53,7 @@ vscode:
 
 ### Ionide-fsharp
 
-![Ionide-fsharp](images/Iondine_Example.png)
+![Ionide-fsharp](../images/Iondine_Example.png)
 
 Ionide-fsharp gives F# developers the following features:
 

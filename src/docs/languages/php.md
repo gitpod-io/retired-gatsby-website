@@ -17,7 +17,7 @@ Gitpod supports PHP right out of the box, but more advanced features such as deb
 ## VSCode Extensions
 ### PHP Debug
 
-![](images/phpDebug.gif)
+![](../images/phpDebug.gif)
 The PHP Debug extension allows debugging PHP applications from within Gitpod.
 
 To get this extension for your project, you must do two things:

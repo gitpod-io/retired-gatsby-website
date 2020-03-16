@@ -84,7 +84,7 @@ Once you or your teammates start a dev environment, you will get the prebuild st
 
 Here is a quick clip on how to automatically configure debugging for Java!
 
-![Java debugging example](images/JavaDebug.gif)
+![Java debugging example](../images/JavaDebug.gif)
 
 So, basically in this video we:
 1. First, open the Java file that we want to debug
