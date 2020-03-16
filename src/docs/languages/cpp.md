@@ -6,8 +6,6 @@ Gitpod supports C++ right out of the box, but there are still ways to enhance yo
 
 Here are a few C++ example projects that are already automated with Gitpod:
 
-<br>
-
 <div class="table-container">
 
 | Repository | Description | Try it |
@@ -15,8 +13,6 @@ Here are a few C++ example projects that are already automated with Gitpod:
 |[Component Editor](https://github.com/Circuito-io/ComponentEditor) | circuito.io Component Editor | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Circuito-io/ComponentEditor)| |
 | [tinyraycaster](https://github.com/ssloy/tinyraycaster) | old-school FPS in a weekend | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ssloy/tinyraycaster)|
 </div>
-
-<br>
 
 ## Environment
 
