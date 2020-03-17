@@ -1,7 +1,7 @@
 export const features = [
     {
         title: "Create a Showroom",
-        paragraphs: ['With Gitpod you can launch hands-on experiences for your developer products within seconds. It allows running, modifying and testing your code, and is highly customisable with your own APIs, libraries, frameworks, demos and examples.']
+        paragraphs: ['With Gitpod you can launch hands-on experiences for your developer products within seconds. It allows running, modifying and testing your code, and is highly customizable with your own APIs, libraries, frameworks, demos and examples.']
     },
     {
         title: "Your Developer-Oriented Marketing Tool",
