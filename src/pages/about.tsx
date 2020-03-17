@@ -213,7 +213,7 @@ const AboutPage: React.SFC<{}> = () => (
                 <section className="developers">
                     <div className="developers__text-box">
                         <h2>By Developers For Developers</h2>
-                        <p>With Gitpod, we set out to streamline how software is written today. We democratize software development by minimizing onboarding effort and context switches through instant, automated, ready-to-code development environments.</p>
+                        <p>With Gitpod, we set out to streamline how software is written today. We democratize software development by minimizing onboarding effort and context switches through instant, automated and ready-to-code development environments.</p>
                     </div>
                     <div className="developer__img-container">
                         <img alt="2 Right Arrows" src={DoubleArrows} className="banner__img" style={{transform: 'rotate(180deg)'}}/>
