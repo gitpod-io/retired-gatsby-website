@@ -9,7 +9,7 @@ export const features = [
     },
     {
         title: "Live Tutoring",
-        paragraphs: ['Gitpod helps teachers collaborate with students.', "Teachers can easily join a student's development session.", "There teachers observe and help a student."]
+        paragraphs: ['Gitpod helps teachers collaborate with students.', "Teachers can easily join a student's development session.", "There teachers can observe and help the student."]
     },
     {
         title: "Any Device",
