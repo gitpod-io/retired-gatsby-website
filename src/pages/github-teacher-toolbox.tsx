@@ -61,8 +61,6 @@ const GithubTeacherToolBoxPage: React.SFC<{}> = () => (
     <IndexLayout canonical="/github-teacher-toolbox/" title="GitHub Teacher Toolbox" description="With Gitpod you can create coding exams and exercises easily, help out your students via live tutoring, and benefit from a simple onboarding with any device.">
         <div className="grey-container">
 
-            {/* ----- Banner ----- */}
-
             <Banner
                 subtitle="GitHub Teacher Toolbox"
                 title={<h1>Let’s Focus on Teaching Code, not Tedious Setups!</h1>}
@@ -85,17 +83,11 @@ const GithubTeacherToolBoxPage: React.SFC<{}> = () => (
 
         <div className="row">
 
-            {/* ----- Onboarding ---- */}
-
             <OnBoarding link="https://calendly.com/gitpod/onboarding?back=1&month=2020-02" />
-
-            {/* ----- Quote ----- */}
 
             <Quote
                 title="Stop wasting time with tedious setups, teach amazing programming skills instead!"
             />
-
-            {/* ----- Info ----- */}
 
             <InfoCard />
 

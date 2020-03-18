@@ -6,7 +6,7 @@ const PrivacyPage: React.SFC<{}> = () => (
     <IndexLayout canonical="/privacy/" title="Privacy">
         <div className="grey-container">
             <TextBox>
-               <h1>Privacy Policy</h1>
+                <h1>Privacy Policy</h1>
 
                 <p>
                     Below we provide you with an overview of what data we collect for what purpose and how we ensure the protection of
@@ -58,7 +58,7 @@ const PrivacyPage: React.SFC<{}> = () => (
                                 Council of 27 April 2016, repealing the directive 95/46/EC, on the protection of individuals with regard to the processing
                                 of personal data, on the free movement of such data ("General Data Protection Regulation", GDPR) as well as in the
 							Federal Data Protection Act <em>(Bundesdatenschutzgesetz, BDSG)</em> and the German Telemedia Act <em>(Telemediengesetz,
-                                                      TMG)
+                                                          TMG)
 							</em>.</p>
                             <p>We as well as our external service partners receive your data for processing those for the purpose of providing
                                 our Service. You provide data if this is necessary for the aforementioned purposes. In the event you refrain from
@@ -249,13 +249,13 @@ const PrivacyPage: React.SFC<{}> = () => (
                 <p>
                     We use Google Analytics a web analytics tool offered by Google (inter alia Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland
             and Google LLC, Mountain View, CA, USA (<strong>"Google"</strong>).
-                      This analysis service uses so-called "cookies". For analysis, text files will be stored on your device. The information
-                      stored in the corresponding files about the use of this website are generally transmitted and stored in Google server
-                      in the USA. As the IP anonymization is active on this Website, your IP address will be shortened by Google within the
-                      member states of the European Union (EU). This information will be used to evaluate your use of the services offered
-                      here and enable the operator of this website to analyze your website activity and provide other services associated with
-                      the website service. The IP address transmitted from your browser, as part of Google Analytics will not be merged with
-                      other data from Google.
+                              This analysis service uses so-called "cookies". For analysis, text files will be stored on your device. The information
+                              stored in the corresponding files about the use of this website are generally transmitted and stored in Google server
+                              in the USA. As the IP anonymization is active on this Website, your IP address will be shortened by Google within the
+                              member states of the European Union (EU). This information will be used to evaluate your use of the services offered
+                              here and enable the operator of this website to analyze your website activity and provide other services associated with
+                              the website service. The IP address transmitted from your browser, as part of Google Analytics will not be merged with
+                              other data from Google.
 			        </p>
 
                 <p>
@@ -406,7 +406,7 @@ const PrivacyPage: React.SFC<{}> = () => (
                     We use the information and data collected in the Service, including your personal data, in order to fulfill our contractual
                     obligations for you/our customers based on the legal basis of Art. 6 (1) b. GDPR or TMG and as further set forth in this
 				privacy policy or our <a href="/terms/">terms of service</a>. This also includes sending
-                                      you emails and notifications necessary for the Service.
+                                          you emails and notifications necessary for the Service.
 			        </p>
 
                 <p>

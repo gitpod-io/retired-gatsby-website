@@ -205,16 +205,16 @@ interface DocsLayoutProps {
     arrows: JSX.Element
 }
 
-const DocsLayout: React.SFC<DocsLayoutProps> = ({canonical, title, body , arrows}) => (
+const DocsLayout: React.SFC<DocsLayoutProps> = ({ canonical, title, body, arrows }) => (
     <IndexLayout canonical={canonical} title={title} description="The documentation site of Gitpod, the online IDE for GitHub and GitLab.">
         <StyledDocsLayout>
             <div className="grey-container">
-                    <div className="row">
-                        <div className="content">
-                                <DocSideBar />
-                                <DocTopicChooser />
-                                {body}
-                        </div>
+                <div className="row">
+                    <div className="content">
+                        <DocSideBar />
+                        <DocTopicChooser />
+                        {body}
+                    </div>
                     {arrows}
                 </div>
             </div>

@@ -107,8 +107,8 @@ interface BlogData {
 
 const BlogPage: React.SFC<BlogPageProps> = (props) => {
 
-    const posts = props.data.allMarkdownRemark.edges.sort((a,b) =>
-            Date.parse(b.node.frontmatter.date) - Date.parse(a.node.frontmatter.date));
+    const posts = props.data.allMarkdownRemark.edges.sort((a, b) =>
+        Date.parse(b.node.frontmatter.date) - Date.parse(a.node.frontmatter.date));
 
     return (
         <IndexLayout canonical="/blog/" title="Blog" description="Discover articles and tutorials about Gitpod.">
@@ -123,9 +123,9 @@ const BlogPage: React.SFC<BlogPageProps> = (props) => {
                         <div className="posts">
                             {posts.map(
                                 post => <PostPreview
-                                        key={post.node.fields.slug}
-                                        post={post}
-                                    />
+                                    key={post.node.fields.slug}
+                                    post={post}
+                                />
                             )}
                         </div>
                     </div>
