@@ -20,7 +20,7 @@ Gitpod comes with [emmet](http://emmet.io/) support right out of the box giving 
 ## Live Preview
 
 ![image of preview](../images/live_preview.png)
-With Gitpod you can open a preview for Markdown and HTML files while you are coding in the upper right hand corner ![preview icon](../images/preview.png) click it see the result in real time!
+With Gitpod you can open a preview for Markdown and HTML files while you are coding in the upper right-hand corner ![preview icon](../images/preview.png) click it see the result in real-time!
 
 ## Try It!
 

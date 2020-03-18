@@ -2,7 +2,7 @@
 
 Welcome, Rustacean!
 
-Rust is a first-class language in Gitpod, and we believe that Gitpod is a great tool for Rust projects. In fact, some of Gitpod's core developers frequently work with Rust code (in Gitpod), and several key components of Gitpod are written in Rust:
+Rust is a first-class language in Gitpod, and we believe that Gitpod is a great tool for Rust projects. Some of Gitpod's core developers frequently work with Rust code (in Gitpod), and several key components of Gitpod are written in Rust:
 
 * The fantastic language support is provided by the [rls](https://github.com/rust-lang/rls)
 * The blazing-fast workspace search is powered by [ripgrep](https://github.com/BurntSushi/ripgrep)
@@ -22,11 +22,11 @@ To fix this you'll need to wrap the `rustup` command in a login shell, like so:
 RUN bash -cl "rustup toolchain install nightly"
 ```
 
-You can override this default by commiting a `rustup-toolchain` file in the root of your repository. Say for example you need the nightly compiler for March 4th 2020, you would create a `rustup-toolchain` file and add the following 
+You can override this default by committing a `rustup-toolchain` file in the root of your repository. Say for example you need the nightly compiler for March 4th, 2020, you would create a `rustup-toolchain` file and add the following 
 ```text
 nightly-2020-03-04
 ```
-which will set the required Rust verion and if you commit the file into source control it will set the default nightly version across all workspaces.
+which will set the required Rust version and if you commit the file into source control it will set the default nightly version across all workspaces.
 
 ## Example Repositories
 

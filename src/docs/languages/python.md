@@ -126,7 +126,7 @@ So, basically in this video we:
 
 You can also create the Python debug configuration file manually
 
-To start debugging your Python application in Gitpod, please create a new directory called `.theia/`, and inside add a file called `launch.json`, finally add the following to it:
+To start debugging your Python application in Gitpod, please create a new directory called `.theia/`, and inside add a file called `launch.json`, finally, add the following to it:
 ```json
 {
     "version": "0.2.0",
