@@ -7,7 +7,6 @@ import { colors } from '../../styles/variables'
 const Styled = styled.div`
     .start {
         text-align: center;
-        padding-top: 0;
 
         h3 {
             font-weight: 400;
