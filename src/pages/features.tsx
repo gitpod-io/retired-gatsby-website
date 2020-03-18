@@ -7,8 +7,8 @@ import { featuresCardsData } from '../utils/features'
 import FeatureBox from '../components/FeatureBox'
 import FeatureCard from '../components/FeatureCard'
 import { sizes, colors, shadows } from '../styles/variables'
-import { Link } from 'gatsby'
 import ScrollToTopButton from '../components/ScrollToTopButton'
+import StartForFree from '../components/features/StartForFree'
 
 const StyledFeaturesPage = styled.div`
     /* ------------------------------------------- */
@@ -138,25 +138,6 @@ const StyledFeaturesPage = styled.div`
         }
     }
 
-    /* ------------------------------------------- */
-    /* ----- Get Started ----- */
-    /* ------------------------------------------- */
-
-    .start {
-        text-align: center;
-        padding-top: 0;
-
-        h3 {
-            font-weight: 400;
-            margin: 3rem 0;
-
-            span {
-                font-weight: 600;
-                color: ${colors.link};
-            }
-        }
-    }
-
 `
 
 const FeaturesPage: React.SFC<{}> = () => (
@@ -220,14 +201,7 @@ const FeaturesPage: React.SFC<{}> = () => (
                 }
             </section>
 
-            {/* ----- Start for free ----- */}
-
-            <div className="row">
-                <section className="start">
-                    <Link to="/#get-started" className="btn btn--cta btn--big">Start for Free</Link>
-                    <h3>Prefix any GitHub or GitLab URL with <span>gitpod.io/#</span></h3>
-                </section>
-            </div>
+            <StartForFree />
 
         </StyledFeaturesPage>
     </IndexLayout>
