@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, shadows } from '../styles/variables'
+import { colors, shadows } from '../../styles/variables'
 
 const StyledFeatureBox = styled.div`
     min-width: 20rem;
@@ -38,14 +38,14 @@ interface FeatureBoxProps {
 
 const FeatureBox: React.SFC<FeatureBoxProps> = ({ img, text, path, alt }) => (
     <StyledFeatureBox>
-                <a href={`#${path}`}>
-                    <div>
-                        <img src={img} alt={alt}/>
-                    </div>
-                    <div>
-                        <h3>{text}</h3>
-                    </div>
-                </a>
+        <a href={`#${path}`}>
+            <div>
+                <img src={img} alt={alt} />
+            </div>
+            <div>
+                <h3>{text}</h3>
+            </div>
+        </a>
     </StyledFeatureBox>
 )
 

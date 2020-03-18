@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, sizes, shadows } from '../styles/variables'
+import { colors, sizes, shadows } from '../../styles/variables'
 
 const StyledFeatureCard = styled.div<{caption: boolean, isIllustration?: boolean}>`
     display: flex;
