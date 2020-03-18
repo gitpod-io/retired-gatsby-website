@@ -2,7 +2,7 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import ScrollToTopButton from '../components/ScrollToTopButton'
-import StartForFree from '../components/features/StartForFree'
+import StartFree from '../components/features/StartFree'
 import Intro from '../components/features/Intro'
 import FeaturesList from '../components/features/FeaturesList'
 
@@ -23,7 +23,7 @@ const FeaturesPage: React.SFC<{}> = () => (
                 </div>
             </div>
 
-            <StartForFree />
+            <StartFree />
     </IndexLayout>
 )
 

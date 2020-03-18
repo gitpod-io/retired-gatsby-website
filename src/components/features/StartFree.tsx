@@ -20,7 +20,7 @@ const Styled = styled.div`
     }
 `
 
-const StartForFree = () => (
+const StartFree = () => (
     <Styled>
         <div className="row">
             <section className="start">
@@ -31,4 +31,4 @@ const StartForFree = () => (
     </Styled>
 )
 
-export default StartForFree
+export default StartFree
