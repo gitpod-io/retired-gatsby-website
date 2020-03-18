@@ -5,8 +5,7 @@ import { colors, sizes, shadows } from '../styles/variables'
 
 import IndexLayout from '../layouts/index'
 import Banner from '../components/index/Banner'
-import HourGlass from '../resources/hourglass.svg'
-import ArrowOnTarget from '../resources/arrow-on-target.svg'
+import Intro from '../components/index/Intro'
 import ToolIntegration from '../resources/tool-integration.svg'
 import FullDevEnvironments from '../resources/full-dev-environments.svg'
 import ReadyToCode from '../components/ReadyToCode'
@@ -23,79 +22,6 @@ import GetStarted from '../components/GetStarted'
 import OpenSource from '../resources/open-source.jpg';
 
 const StyledIndexPage = styled.div`
-    /* ------------------------------------------- */
-    /* ----- Section Intro ----- */
-    /* ------------------------------------------- */
-
-    .intro {
-
-        &__box {
-            display: flex;
-            align-items: center;
-
-            @media(min-width: ${sizes.breakpoints.md}) {
-                width: 50%;
-            }
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                max-width: 53rem;
-
-                &:not(:last-child) {
-                    margin-bottom: 5rem;
-                }
-            }
-
-            @media(max-width: ${sizes.breakpoints.sm}) {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            &-container {
-                display: flex;
-
-                @media(max-width: ${sizes.breakpoints.md}) {
-                    flex-direction: column;
-                    align-items: center;
-                }
-            }
-        }
-
-        &__icon {
-            display: flex;
-            height: 12rem;
-            
-            @media(max-width: ${sizes.breakpoints.md}) {
-                width: 8rem;
-            }
-            
-            @media(min-width: ${sizes.breakpoints.sm}) {
-                margin-right: 3rem;
-            }
-
-            @media(max-width: ${sizes.breakpoints.sm}) {
-                display: inline-block;
-                margin: 0 auto;
-            }
-        }
-
-        &__text {
-            font-size: 2.2rem;
-            font-weight: 400;
-
-            @media(min-width: ${sizes.breakpoints.md}) {
-                width: 26ch;
-
-                &--2 {
-                    width: 28.5ch;
-                }
-            }
-
-            span {
-                font-weight: 600;
-            }
-        }
-    }
-
     /* ------------------------------------------- */
     /* ----- Section Why Gitpod? ----- */
     /* ------------------------------------------- */
@@ -411,24 +337,7 @@ const IndexPage: React.SFC<{}> = () => (
         <StyledIndexPage>
 
             <Banner />
-
-            {/* ----- Section Intro ----- */}
-
-            <section className="intro">
-                <div className="intro__box-container row">
-                    <div className="intro__box">
-                        <object role="presentation" tabIndex={-1} className="intro__icon" data={HourGlass} />
-                        <p className="intro__text">Every day <span>developers waste millions of hours</span> waiting for builds to finish.</p>
-                    </div>
-                    <div className="intro__box">
-                        <object role="presentation" tabIndex={-1} className="intro__icon" data={ArrowOnTarget} />
-                        <p className="intro__text intro__text--2">Gitpod eliminates this friction by providing <span>prebuilt, ready-to-code dev environments</span> with a single click.</p>
-                    </div>
-                </div>
-            </section>
-
-            {/* ----- Section Testimonials ----- */}
-
+            <Intro />
             <Testimonials />
 
             {/* ----- Section Why Gitpod? ----- */}
