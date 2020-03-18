@@ -22,8 +22,6 @@ const VendorPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/vendor/' title="Vendor">
         <div className="grey-container">
 
-            {/* ----- Banner ----- */}
-
             <Banner
                 subtitle="Gitpod Vendor"
                 title={<h1>Use <strong>Gitpod as a Showroom</strong> for<br /> Your Developer Products</h1>}
@@ -31,8 +29,6 @@ const VendorPage: React.SFC<{}> = () => (
                 linkText="Choose your Solution"
                 img={<object role="presentation" tabIndex={-1} data={Vendor}/>}
             />
-
-            {/* ----- Section Features ----- */}
 
             <Features title="Highlight Your Developer Products">
                 {
@@ -47,17 +43,11 @@ const VendorPage: React.SFC<{}> = () => (
             </Features>
         </div>
 
-        {/* ----- Quote ----- */}
-
         <Quote
             title="We’ll make your developer products shine."
         />
 
-        {/* ----- BG ----- */}
-
         <Bg url={VendorBG} />
-
-        {/* ----- Pricing Table ----- */}
 
         <PricingTable
             title="Gitpod Vendor Pricing"
@@ -165,8 +155,6 @@ const VendorPage: React.SFC<{}> = () => (
                 </tr>
             </tbody>
         </PricingTable>
-
-        {/* ----- Didn't find ----- */}
 
         <ActionCard
             title='Didn’t find what you’re looking for?'
