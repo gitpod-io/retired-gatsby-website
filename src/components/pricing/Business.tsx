@@ -28,7 +28,7 @@ const Styled = styled.div`
     }
 `
 
-const Bussiness = () => (
+const Business = () => (
     <Styled>
         <section className="business">
             <h2>Business Solutions</h2>
@@ -40,4 +40,4 @@ const Bussiness = () => (
     </Styled>
 )
 
-export default Bussiness
+export default Business

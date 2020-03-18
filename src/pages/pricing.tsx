@@ -7,7 +7,7 @@ import ActionCard from '../components/ActionCard'
 import Details from '../components/Details'
 import PricingBoxes from '../components/pricing/PricingBoxes'
 import Plans from '../components/pricing/Plans'
-import Bussiness from '../components/pricing/Bussiness'
+import Business from '../components/pricing/Business'
 
 
 const PricingPage: React.SFC<{}> = () => (
@@ -28,7 +28,7 @@ const PricingPage: React.SFC<{}> = () => (
 
             <div className="row">
 
-                <Bussiness />
+                <Business />
 
                 <Bg url={PricingBg}/>
 
