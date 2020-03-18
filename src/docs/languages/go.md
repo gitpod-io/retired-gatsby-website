@@ -99,7 +99,7 @@ So, basically in this video we:
 
 You can also create the Go debug configuration file manually
 
-To start debugging your Go application in Gitpod, please create a new directory called `.theia/`, and inside add a file called `launch.json`, finally add the following to it:
+To start debugging your Go application in Gitpod, please create a new directory called `.theia/`, and inside add a file called `launch.json`, finally, add the following to it:
 ```json
 {
   // Use IntelliSense to learn about possible attributes.

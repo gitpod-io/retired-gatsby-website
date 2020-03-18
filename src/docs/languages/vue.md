@@ -1,6 +1,6 @@
 # Vue.js in Gitpod
 
-In order to work with Vue.js in Gitpod, you will need to properly configure your repository. Here is how to do it.
+To work with Vue.js in Gitpod, you will need to properly configure your repository. Here is how to do it.
 
 ## Example Repositories
 
@@ -18,7 +18,7 @@ Here are a few Vue.js example projects that are already automated with Gitpod:
 
 ## Vue-CLI
 
-To install the Vue.js command line interface in your current workspace run the following
+To install the Vue.js command-line interface in your current workspace run the following
 ```bash
 npm i -g vue-cli
 ```
@@ -35,7 +35,7 @@ RUN npm i -g vue-cli
 
 ![Vetur extension](../images/Vetur.png)
 
-Vetur provides syntax highlighting, snippets, Emmet support, linting/error checking, auto formatting, and auto-complete for Vue files.
+Vetur provides syntax highlighting, snippets, Emmet support, linting/error checking, auto-formatting, and auto-complete for Vue files.
 
 To add this extension to your repository add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) 
 
@@ -45,4 +45,4 @@ vscode:
     - octref.vetur@0.23.0:TEzauMObB6f3i2JqlvrOpA==
 ```
 
-For projects that already have a [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) you can skip the first part and just add the provided snippet.
+For projects that already have a [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/), you can skip the first part and just add the provided snippet.

@@ -16,7 +16,7 @@
 
 ## Installing the .NET Tools
 
-To get the all the .NET tools that you need pre-installed in your Gitpod workspaces, use the following base image in your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
+To get all the .NET tools that you need pre-installed in your Gitpod workspaces, use the following base image in your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
 ```YAML
 image: gitpod/workspace-dotnet
 ```
@@ -35,7 +35,7 @@ To compile your **F#** Code in Gitpod, run `fsharpc <FILE>`,  where `<FILE>` is 
 
 
 ## Running *.EXE files in Gitpod
-To run your code after it has been compiled run `mono <FILE>` where `<FILE>` is the path to the .EXE file you want to run
+To run your code after it has been compiled run `mono <FILE>` where `<FILE>` is the path to the EXE file you want to run
 
 ## Useful VSCode Extensions
 
@@ -43,7 +43,7 @@ To run your code after it has been compiled run `mono <FILE>` where `<FILE>` is 
 
 ![C# Demo Extension](../images/CSharpDemo.png)
 
-This extension brings code completion, snippets, auto-formatting, peek definiton, refactoring, and hover documentation for C#! To install this extension for your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file:
+This extension brings code completion, snippets, auto-formatting, peek definition, refactoring, and hover documentation for C#! To install this extension for your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file:
 
 ```yaml
 vscode:
@@ -61,8 +61,8 @@ Ionide-fsharp gives F# developers the following features:
 * Auto completion
 * Shows errors inline
 * Quickfix
-* Goto definiton
-* Peek definiton
+* Goto definition
+* Peek definition
 
 To add this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
 
