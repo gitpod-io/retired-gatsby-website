@@ -60,8 +60,6 @@ const EnterprisePage: React.SFC<{}> = () => (
     >
         <div className="grey-container">
 
-            {/* ----- Banner ----- */}
-
             <Banner
                 subtitle="Gitpod Enterprise"
                 title={<h1>Unleash Developer Productivity</h1>}
@@ -71,8 +69,6 @@ const EnterprisePage: React.SFC<{}> = () => (
                 img={<object role="presentation" tabIndex={-1} data={Planet} />}
             />
 
-            {/* ----- Section Features ----- */}
-
             <Features title="Stay in the Flow and Scale Up Your Productivity">
                 {
                     features.map((f, i) => (
@@ -80,15 +76,12 @@ const EnterprisePage: React.SFC<{}> = () => (
                             key={i}
                             title={f.title}
                             paragraphs={f.paragraphs}
-                            // more={f.more}
                             logos={f.logos}
                         />
                     ))
                 }
             </Features>
         </div>
-
-        {/* ----- Section Trusted By ----- */}
 
         <TrustedBy
             brands={[
@@ -226,8 +219,6 @@ const EnterprisePage: React.SFC<{}> = () => (
                 </tr>
             </tbody>
         </PricingTable>
-
-        {/* ----- Didn't find ----- */}
 
         <ActionCard
             title='Didn’t find what you’re looking for?'
