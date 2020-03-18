@@ -20,10 +20,12 @@ import PopOver from '../components/PopOver'
 import { isEurope } from '../utils/helpers'
 
 const EducationPage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/education/' title="Education" description="Gitpod simplifies the onboarding process, makes coding accessible from any device and provides a productive learning environment.">
+    <IndexLayout 
+        canonical='/education/' 
+        title="Education" 
+        description="Gitpod simplifies the onboarding process, makes coding accessible from any device and provides a productive learning environment."
+    >
         <div className="grey-container">
-
-            {/* ----- Banner ----- */}
 
             <Banner
                 subtitle="Gitpod Education"
@@ -33,8 +35,6 @@ const EducationPage: React.SFC<{}> = () => (
                 linkText="Choose your Solution"
                 img={<object role="presentation" tabIndex={-1} style={{transform:"scale(0.8)"}} data={Saturn}/>}
             />
-
-            {/* ----- Section Features ----- */}
 
             <Features title="For Schools, Universities, Coding Bootcamps, etc.">
                 {
@@ -49,17 +49,11 @@ const EducationPage: React.SFC<{}> = () => (
             </Features>
         </div>
 
-        {/* ----- Quote ----- */}
-
         <Quote
             title="We eliminate tedious workflows."
         />
 
-        {/* ----- BG ----- */}
-
         <Bg url={CollegeStudents} />
-
-        {/* ----- Pricing Table ----- */}
 
         <PricingTable
             title="Gitpod Education Pricing"
@@ -167,8 +161,6 @@ const EducationPage: React.SFC<{}> = () => (
                 </tr>
             </tbody>
         </PricingTable>
-
-        {/* ----- Didn't find ----- */}
 
         <ActionCard
             title='Didn’t find what you’re looking for?'
