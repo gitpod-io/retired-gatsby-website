@@ -17,7 +17,7 @@ import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
 import { Link } from 'gatsby'
 import PopOver from '../components/PopOver'
-import { isEurope } from './pricing'
+import { isEurope } from '../utils/helpers'
 
 const EducationPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/education/' title="Education" description="Gitpod simplifies the onboarding process, makes coding accessible from any device and provides a productive learning environment.">
