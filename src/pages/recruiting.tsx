@@ -22,8 +22,6 @@ const RecrutingPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/recruiting/' title="Recruiting">
         <div className="grey-container">
 
-            {/* ----- Banner ----- */}
-
             <Banner
                 subtitle="Gitpod Recruiting"
                 title={<h1>Make Sure You’re <strong>Discovering Your<br />Best Applicants</strong></h1>}
@@ -31,8 +29,6 @@ const RecrutingPage: React.SFC<{}> = () => (
                 linkText="Choose your Solution"
                 img={<object role="presentation" tabIndex={-1} data={Recruiting}/>}
             />
-
-            {/* ----- Section Features ----- */}
 
             <Features title="Provide Coding Exercises Within Seconds">
                 {
@@ -47,17 +43,11 @@ const RecrutingPage: React.SFC<{}> = () => (
             </Features>
         </div>
 
-        {/* ----- Quote ----- */}
-
         <Quote
             title="We create the most convenient dev environments."
         />
 
-        {/* ----- BG ----- */}
-
         <Bg url={RecruitingBG} />
-
-        {/* ----- Pricing Table ----- */}
 
         <PricingTable
             title="Gitpod Recruiting Pricing"
@@ -171,8 +161,6 @@ const RecrutingPage: React.SFC<{}> = () => (
                 </tr>
             </tbody>
         </PricingTable>
-
-        {/* ----- Didn't find ----- */}
 
         <ActionCard
             title='Didn’t find what you’re looking for?'
