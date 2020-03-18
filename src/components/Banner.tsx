@@ -76,7 +76,7 @@ const Banner: React.SFC<BannerProps> = ({subtitle, title, paragraph, linkPath, l
                 <h3 className="sub">{subtitle}</h3>
                 {title}
                 { paragraph ? <p className="para">{paragraph}</p> : null }
-                {link(linkPath, linkText, true, false)}
+                {link(linkPath, linkText,'', true, false)}
                 {children}
             </div>
             {img}
