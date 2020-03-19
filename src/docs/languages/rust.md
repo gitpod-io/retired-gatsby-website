@@ -2,7 +2,7 @@
 
 Welcome, Rustacean!
 
-Rust is a first-class language in Gitpod, and we believe that Gitpod is a great tool for Rust projects. Some of Gitpod's core developers frequently work with Rust code (in Gitpod), and several key components of Gitpod are written in Rust:
+Rust is a first-class language in Gitpod, and we believe that Gitpod is a great tool for Rust projects. In fact, some of Gitpod's core developers frequently work with Rust code (in Gitpod), and several key components of Gitpod are written in Rust:
 
 * The fantastic language support is provided by the [rls](https://github.com/rust-lang/rls)
 * The blazing-fast workspace search is powered by [ripgrep](https://github.com/BurntSushi/ripgrep)
