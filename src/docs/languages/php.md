@@ -14,10 +14,10 @@ Gitpod supports PHP right out of the box, but more advanced features such as deb
 
 </div>
 
-## VSCode Extensions
-### PHP Debug
+## Debugging PHP in Gitpod
 
 ![](../images/phpDebug.gif)
+
 The PHP Debug extension allows debugging PHP applications from within Gitpod.
 
 To get this extension for your project, you must do two things:
@@ -54,6 +54,27 @@ vscode:
   extensions:
     - felixfbecker.php-debug@1.13.0:WX8Y3EpQk3zgahy41yJtNQ==
 ```
+
+Next create a new directory called `.theia` and in that directory add a file called `launch.json` and add the following content.
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "php",
+      "name": "Launch",
+      "request": "launch",
+      "stopOnEntry": true,
+      "program": "${file}",
+      "cwd": "/workspace/Gitpod-PHP-Debug",
+      "externalConsole": false
+    }
+  ]
+}
+```
+
+Then have fun debugging PHP
 
 Finally, here is a full [example repository](https://github.com/JesterOrNot/Gitpod-PHP-Debug) containing the complete Gitpod PHP debug configuration described above. You can try it by clicking here:
 
