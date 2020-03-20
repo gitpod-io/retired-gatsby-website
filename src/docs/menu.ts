@@ -130,6 +130,10 @@ export const MENU: MenuEntry[] = [
                 "languages/vue"
             ),
             M(
+                "Scala",
+                "languages/scala"
+            ),
+            M(
                 "Rust",
                 "languages/rust"
             ),

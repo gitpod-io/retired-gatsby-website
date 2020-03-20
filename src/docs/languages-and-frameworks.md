@@ -11,6 +11,7 @@ Below is a list of language and framework specific tips & tricks.
 - [Ruby](/docs/languages/ruby/)
 - [PHP](/docs/languages/php/)
 - [Vue](/docs/languages/vue/)
+- [Scala](/docs/languages/scala/)
 - [Rust](/docs/languages/rust/)
 - [.NET](/docs/languages/dotnet/)
 - [Julia](/docs/languages/julia/)
