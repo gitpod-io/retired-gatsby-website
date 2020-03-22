@@ -9,5 +9,4 @@ prefixing for you. Nothing more.
 
 We provide the extension for
   - [Chrome](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki)
-    and
   - [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/gitpod/).
