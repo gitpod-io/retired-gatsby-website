@@ -9,7 +9,7 @@ Besides a complete relaunch of the website and app, we have added some very exci
 
 ## GitHub App / Prebuilt Workspaces 🚀
 
-We have been busy developing a <a href="https://github.com/marketplace/gitpod-io" target="_blank">new GitHub app</a>, that once installed on your repository will prebuild your project on every push.
+We have been busy developing a <a href="https://github.com/apps/gitpod-io" target="_blank">new GitHub app</a>, that once installed on your repository will prebuild your project on every push.
 On GitHub pull requests this is communicated through a status check.
 
 ![Prebuilt Check on PR](./img/prebuilt-check.png)
