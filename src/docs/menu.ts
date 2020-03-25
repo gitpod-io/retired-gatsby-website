@@ -48,7 +48,7 @@ export const MENU: MenuEntry[] = [
         ]
     ),
     M(
-        "Configure Your Repository",
+        "Configure Your Project",
         "configuration",
         [
             M(
@@ -56,12 +56,8 @@ export const MENU: MenuEntry[] = [
                 "config-gitpod-file"
             ),
             M(
-                "Docker Image",
+                "Docker Configuration",
                 "config-docker"
-            ),
-            M(
-                "Exposing Ports",
-                "config-ports"
             ),
             M(
                 "Start Tasks",
@@ -72,8 +68,8 @@ export const MENU: MenuEntry[] = [
                 "vscode-extensions"
             ),
             M(
-                "Workspace Location",
-                "checkout-location"
+                "Exposing Ports",
+                "config-ports"
             ),
             M(
                 "Prebuilt Workspaces",
@@ -82,6 +78,10 @@ export const MENU: MenuEntry[] = [
             M(
                 "Environment Variables",
                 "environment-variables"
+            ),
+            M(
+                "Workspace Location",
+                "checkout-location"
             ),
             M(
                 "Editor Configuration",
