@@ -15,6 +15,7 @@ import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
 import TheiaIDELogo from '../resources/theia-grey.svg'
 import Testimonials from '../components/Testimonials'
 import GetStarted from '../components/GetStarted'
+import OpenSource from '../components/index/OpenSource'
 
 
 const IndexPage: React.SFC<{}> = () => (
@@ -63,10 +64,11 @@ const IndexPage: React.SFC<{}> = () => (
             ]}
         />
 
+        <OpenSource />
+
         {/* ----- Section Getting Started ----- */}
 
         <GetStarted />
-
 
         {/* ----- Section Explore Gitpod ----- */}
 
