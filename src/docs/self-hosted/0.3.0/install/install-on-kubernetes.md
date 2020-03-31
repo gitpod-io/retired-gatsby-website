@@ -1,9 +1,11 @@
 # Install Gitpod Self-Hosted on Kubernetes
+
 This section describes how to install Gitpod on a vanilla Kubernetes cluster.
 Gitpod also provides more optimized installations offering better performance for particular cloud providers:
 * *Google Cloud Platform*: Install Gitpod in a blank GCP project, either [using a script that automates the procedure](../install-on-gcp-script/) or [manually step-by-step](../install-on-gcp-manual/).
 
 ## Prerequisites
+
 - Ensure you have the [general installation prerequisites](../prepare-installation/) available.
 - `kubectl` with access to that cluster.
 - `helm`. We recommend version 3.x. Any version >= 2.11 will also work, but requires you to have [tiller configured](../helm-2x/).
@@ -14,7 +16,7 @@ The [Gitpod self-hosted repository](https://github.com/gitpod-io/self-hosted) co
 Throughout this guide you will be modifying the files found in this repo.
 We recommend you fork this repository so that you can easily rebase your changes on the latest version.
 
-```
+```bash
 git clone https://github.com/gitpod-io/self-hosted
 cd self-hosted
 git remote rename origin upstream
@@ -53,17 +55,18 @@ For production scenarios, however, we highly recomend this configuration.
 * [**Database**](../database/): Use your own MySQL database instead of the built-in one.
 
 ## Installation
-```
+
+```bash
 helm repo add charts.gitpod.io https://charts.gitpod.io
 helm dep update
 helm upgrade --install $(for i in $(cat configuration.txt); do echo -e "-f $i"; done) gitpod .
 ```
 
 Visit `https://<your-domain.com>/` and check that you can login and start workspaces just like on gitpod.io.
-Launch a workpace. Launching the first workspace can take significantly longer (up to 15min), because docker images are pulled.
+Launch a workpace. Launching the first workspace can take significantly longer (up to 15min), this is because Docker images are being pulled.
 
 ## Customization
 
 * [**Storage**](../storage/): Configure where Gitpod stores stopped workspaces.
-* [**Kubernetes Nodes**:](../nodes/): Configure file system layout and the workspace's node associativity.
+* [**Kubernetes Nodes**](../nodes/): Configure file system layout and the workspace's node associativity.
 * [**Workspaces**](../workspaces/): Configure workspace sizing.
