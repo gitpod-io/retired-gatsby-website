@@ -267,12 +267,12 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
                 { features.map((f, i) => <li key={i}>{f}</li>) }
             </ul>
         : null }
-        <Link 
-            to={link || '/#get-started'} 
+        <a
+            href={link || '/#get-started'}
             className={`btn is-hidden ${background ? 'blue-on-hover' : ''}`}
         >
             {btnText ? btnText : 'Start for Free'}
-        </Link>
+        </a>
         { btn ? btn : null }
         { text ? <p className="text">{text}</p> : null }
         { banner ? <div className="banner"><p>{banner}</p></div> : null }
