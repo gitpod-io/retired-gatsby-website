@@ -30,7 +30,7 @@ USER gitpod
 RUN brew install shellcheck
 ```
 
-You should also install the shellcheck VS Code extension in Gitpod, by adding a [.gitpod.yml](https://www.gitpod.io/docs/41_config_gitpod_file/) configuration file to your repository that looks like this (notice the `vscode` extensions section):
+You should also install the shellcheck VS Code extension in Gitpod, by adding a [.gitpod.yml](/docs/config-gitpod-file/) configuration file to your repository that looks like this (notice the `vscode` extensions section):
 
 ```yaml
 image:
@@ -43,22 +43,22 @@ vscode:
 
 Not sure about ShellCheck? Try it in Gitpod!
 
-[![JesterOrNot/Gitpod-ShellCheck](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-ShellCheck)
+[![gitpod-io/Gitpod-ShellCheck](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-ShellCheck)
 
 ### Bash IDE
 
 ![A Bash IDE demonstration](../images/bashIDE.png)
-<br/>
+
 Just to name a few things Bash IDE adds: Code completion, hovers, and diagnostic reporting.
 
-To install Bash IDE to your repository add the following to your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/)
+To install Bash IDE to your repository add the following to your [.gitpod.Dockerfile](/docs/config-docker/)
 
 ```dockerfile
 RUN npm i -g bash-language-server
 ```
 
 Also the following in your
-[.gitpod.yml](https://www.gitpod.io/docs/41-config-gitpod-file/)
+[.gitpod.yml](/docs/config-gitpod-file/)
 
 ```yaml
 vscode:
@@ -68,8 +68,8 @@ vscode:
 
 Not sure about Bash IDE? Try it in Gitpod
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-BashIDE)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-BashIDE)
 
 ## External Resources
 
-- For more on ShellCheck see https://shellcheck.net
+- For more information about ShellCheck please see [shellcheck.net](https://shellcheck.net)

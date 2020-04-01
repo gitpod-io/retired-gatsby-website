@@ -11,7 +11,7 @@ Before we get started, here are some examples of already-[gitpodified](https://w
 | Repository                                                                                                |                                                                                                              Description |                                        Try it |
 -----------|-----------------------------------------------------------|----------------------------------------------------
 | [gitpod-io/django-locallibrary-tutorial](https://github.com/gitpod-io/django-locallibrary-tutorial) | An example website written in Django by MDN |        [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#gitpod-io/django-locallibrary-tutorial) |
-| [JesterOrNot/Gitpod-PyQt](https://github.com/JesterOrNot/Gitpod-PyQt)                               |    A PyQt example for Gitpod | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-PyQt) |
+| [gitpod-io/Gitpod-PyQt](https://github.com/gitpod-io/Gitpod-PyQt)                               |    A PyQt example for Gitpod | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-PyQt) |
 | [gitpod-io/wxPython-example](https://github.com/gitpod-io/wxPython-example)                      | A wxPython example for Gitpod    | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/wxPython-example) |
 | [techwithtim/Hangman](https://github.com/techwithtim/Hangman)                                       |   A wxPython example for Gitpod  |     [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/techwithtim/Hangman) |
 
@@ -146,9 +146,9 @@ Then, simply open the Python file you want to debug, open the Debug panel (in th
 <br>
 
 
-To see a basic repository with Python debugging enabled, please check out [JesterOrNot/Gitpod-Python-Debug](https://github.com/JesterOrNot/Gitpod-Python-Debug):
+To see a basic repository with Python debugging enabled, please check out [gitpod-io/Gitpod-Python-Debug](https://github.com/gitpod-io/Gitpod-Python-Debug):
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-Python-Debug)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-Python-Debug)
 
 <br>
 

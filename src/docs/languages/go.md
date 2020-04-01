@@ -121,9 +121,9 @@ Then, simply open the Go file you want to debug, open the Debug panel (in the le
 <br>
 
 
-To see a basic repository with Go debugging enabled, please check out [JesterOrNot/Gitpod-Go-Debug](https://github.com/JesterOrNot/Gitpod-Go-Debug):
+To see a basic repository with Go debugging enabled, please check out [gitpod-io/Gitpod-Go-Debug](https://github.com/gitpod-io/Gitpod-Go-Debug):
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-Go-Debug)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-Go-Debug)
 
 ## External Resources
 
