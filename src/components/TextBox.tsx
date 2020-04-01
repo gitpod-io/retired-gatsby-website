@@ -16,19 +16,10 @@ const StyledTextBox = styled.div`
 
     h1 {
         margin-bottom: 6rem;
-
-        &::after {
-            content: '';
-            display: block;
-            height: 2px;
-            width: 10rem;
-            margin: 2rem 0;
-            background: ${colors.text};
-        }
     }
 
     h2 {
-        margin: 6rem 0 4rem;
+        margin: 6rem 0 5rem;
     }
 
     h3 {

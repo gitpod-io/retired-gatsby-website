@@ -169,6 +169,10 @@ const StyledAboutPage = styled.div`
         text-align: center;
         padding: 10rem 0;
 
+        &::after {
+            display: none;
+        }
+
 
         &__fox {
             height: 7rem;
