@@ -146,6 +146,10 @@ export const MENU: MenuEntry[] = [
                 "languages/julia"
             ),
             M(
+                "LaTeX",
+                "languages/latex"
+            ),
+            M(
                 "R",
                 "languages/r"
             ),
