@@ -12,8 +12,6 @@ For instance, the start script for the Gitpod documentation repository is define
 tasks:
   - init: yarn && yarn build
     command: yarn dev --host 0.0.0.0
-  - init: cd plugins/gatsby-remark-gitpod && npm install
-    openMode: split-right
 ```
 
 You can have multiple tasks, which are opened on separated terminals.
