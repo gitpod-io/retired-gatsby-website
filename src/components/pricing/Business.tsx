@@ -19,6 +19,10 @@ const Styled = styled.div`
                 background-position: bottom right;
                 border-radius: 10px;
             }
+
+            &::after {
+                display: none;
+            }
         }
 
         .btn {
