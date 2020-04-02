@@ -69,7 +69,30 @@ class ReadyToCode extends React.Component {
         }
 
         return (
-            <div className="why-gitpod__box why-gitpod__box--1">
+            <div className="why-gitpod__box why-gitpod__box--1 row">
+                <div className="why-gitpod__img-container why-gitpod__img-container--1">
+                    <div style={{ display: 'flex', width: '90%', height: '100%', justifyContent: 'center' }}>
+                        <object
+                            role="presentation"
+                            data={AutomatedSetupGraphicOrdinary}
+                            style={{ ...graphicOridnaryStyles, width: '100%' }}
+                            className="why-gitpod__img why-gitpod__img--1 rtc_ordinary"
+                        />
+                        <object
+                            role="presentation"
+                            data={ReadyToCodeImg}
+                            style={defaultStyles}
+                            className="why-gitpod__img why-gitpod__img--1 rtc_default"
+                        />
+                        <object
+                            role="presentation"
+                            data={AutomatedSetupGraphicGitpod}
+                            style={graphicGitpodStyles}
+                            className="why-gitpod__img why-gitpod__img--1 rtc_gitpod"
+                        />
+                    </div>
+                </div>
+
                 <div className="why-gitpod__text">
                     <h3>Automated Dev Environments</h3>
                     <p>Gitpod is to your traditional local dev environment what Netflix is to a dusty shelf of DVDs.</p>
@@ -92,28 +115,6 @@ class ReadyToCode extends React.Component {
                         >
                             Ordinary Way
                         </button>
-                    </div>
-                </div>
-                <div className="why-gitpod__img-container why-gitpod__img-container--1">
-                    <div style={{ display: 'flex', width: '90%', height: '100%', justifyContent: 'center' }}>
-                        <object
-                            role="presentation"
-                            data={AutomatedSetupGraphicOrdinary}
-                            style={{ ...graphicOridnaryStyles, width: '100%' }}
-                            className="why-gitpod__img why-gitpod__img--1 rtc_ordinary"
-                        />
-                        <object
-                            role="presentation"
-                            data={ReadyToCodeImg}
-                            style={defaultStyles}
-                            className="why-gitpod__img why-gitpod__img--1 rtc_default"
-                        />
-                        <object
-                            role="presentation"
-                            data={AutomatedSetupGraphicGitpod}
-                            style={graphicGitpodStyles}
-                            className="why-gitpod__img why-gitpod__img--1 rtc_gitpod"
-                        />
                     </div>
                 </div>
             </div>

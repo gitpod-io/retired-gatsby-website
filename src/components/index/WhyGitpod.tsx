@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, sizes, shadows } from '../../styles/variables'
+import { colors, sizes } from '../../styles/variables'
 import ToolIntegration from '../../resources/tool-integration.svg'
 import FullDevEnvironments from '../../resources/full-dev-environments.svg'
 import ReadyToCode from '../ReadyToCode'
@@ -19,11 +19,8 @@ const Styled = styled.div`
 
         &__box {
             display: flex;
-            border-radius: 3px;
-            border: 3px solid ${colors.offWhite};
-            box-shadow: ${shadows.light};
 
-            @media(max-width: ${sizes.breakpoints.md}) {
+            @media(max-width: 880px) {
                 flex-direction: column;
             }
 
@@ -34,15 +31,27 @@ const Styled = styled.div`
             &-container {
                 display: flex;
                 flex-direction: column;
+
+                & > div {
+                    padding: 12rem 0;
+
+                    @media(max-width: ${sizes.breakpoints.md}) {
+                        padding: 6rem 0;
+                    }
+
+                    &:nth-child(2) {
+                        background: ${colors.offWhite};
+                    }
+                }
             }
 
             &--1 {
-                @media(min-width: ${sizes.breakpoints.md}) {
-                    height: 475px;
-                }
+                @media(min-width: 880px) {
+                    height: 400px;
 
-                @media(max-width: ${sizes.breakpoints.md}) {
-                    flex-direction: column-reverse;
+                    object {
+                        transform: translateY(-5.8rem);
+                    }
                 }
 
                 @media(max-width: ${sizes.breakpoints.sm}) {
@@ -64,46 +73,32 @@ const Styled = styled.div`
                         bottom: 0;
                     }
                 }
-            }
 
-            &--2 {
-                @media(max-width: ${sizes.breakpoints.md}) {
-                    flex-direction: column-reverse;
+                p:last-of-type {
+                    margin-bottom: 3rem;
                 }
             }
-
-            &--3 {
-                @media(max-width: ${sizes.breakpoints.md}) {
-                    flex-direction: column;
-                }
-            }
-
 
         }
 
         &__text {
-            padding: 6rem 4rem;
-            background: ${colors.offWhite};
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 0rem 0 6rem;
             min-width: 28rem;
 
-            @media(max-width: 960px) {
-                padding: 4rem 2rem;
+            @media(min-width:  881px) {
+                width: 45%;
+                border-left: 4px solid ${colors.offWhite3};
             }
 
-            @media(max-width: ${sizes.breakpoints.md}) {
-                padding: 3rem 1rem;
+            @media(max-width: 1150px) {
+                padding: 0 4rem;
             }
 
-            p:last-of-type {
-                margin-bottom: 5rem;
-
-                @media(max-width: ${sizes.breakpoints.lg}) {
-                    margin-bottom: 2rem;
-                }
-            }
-
-            @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
-                width: 40%;
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                padding: 0 1rem;
             }
         }
 
@@ -120,6 +115,27 @@ const Styled = styled.div`
             }
 
             &--1 {
+
+                @media(max-width: 880px) {
+                    transform: translateY(-5rem);
+                }
+
+                @media(min-width: 880px) {
+                    height: auto;
+                }
+
+                @media(max-width: 800px) {
+                    transform: none;
+                }
+                
+                @media(min-width: 800px) {
+                    height: 440px;
+                }
+
+                @media(max-width: 700px) {
+                    height: 350px;
+                }
+
                 @media(max-width: 560px) {
                     height: 32rem;
                 }
@@ -168,7 +184,7 @@ const Styled = styled.div`
                     }
                 }
 
-                @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
+                @media(min-width: 881px) {
                     width: 60%;
                 }
             }
@@ -229,15 +245,19 @@ const Styled = styled.div`
 
 const WhyGitpod = () => (
     <Styled>
-        <div className="row">
-            <section className="why-gitpod">
+        <section className="why-gitpod">
+            <div className="row">
                 <h2>Why Gitpod?</h2>
+            </div>
 
-                <div className="why-gitpod__box-container">
+            <div className="why-gitpod__box-container">
 
+                <div>
                     <ReadyToCode />
+                </div>
 
-                    <div className="why-gitpod__box why-gitpod__box--3">
+                <div>
+                    <div className="why-gitpod__box why-gitpod__box--3 row">
                         <div className="why-gitpod__img-container">
                             <img
                                 alt="Tools Integration"
@@ -253,25 +273,27 @@ const WhyGitpod = () => (
                             <p>Read more about <a href="/docs/context-urls/">Integration.</a></p>
                         </div>
                     </div>
+                </div>
 
-                    <div className="why-gitpod__box why-gitpod__box--2">
-                        <div className="why-gitpod__text">
-                            <h3>Based on the Online IDE Theia </h3>
-                            <p>Gitpod is not just another online playground, but a full-featured dev environment, just like your local IDE.</p>
-                            <p>It includes fully-functional <strong>Linux terminals</strong>, you can install any <strong>VS Code extensions</strong> and provides all the other good features provided by <strong>Theia</strong>, the vendor neutral and highly extensible VS Code alternative, we have developed.</p>
-                            <p>Read more about <a href="/docs/ide/">Theia</a>.</p>
-                        </div>
+                <div>
+                    <div className="why-gitpod__box why-gitpod__box--2 row">
                         <div className="why-gitpod__img-container">
                             <object tabIndex={-1}
                                 aria-label="Theia - VS Code based online IDE"
                                 data={FullDevEnvironments}
                                 className="why-gitpod__img why-gitpod__img--full-dev-env" />
                         </div>
+                        <div className="why-gitpod__text">
+                            <h3>Based on the Online IDE Theia </h3>
+                            <p>Gitpod is not just another online playground, but a full-featured dev environment, just like your local IDE.</p>
+                            <p>It includes fully-functional <strong>Linux terminals</strong>, you can install any <strong>VS Code extensions</strong> and provides all the other good features provided by <strong>Theia</strong>, the vendor neutral and highly extensible VS Code alternative, we have developed.</p>
+                            <p>Read more about <a href="/docs/ide/">Theia</a>.</p>
+                        </div>
                     </div>
-
                 </div>
-            </section>
-        </div>
+
+            </div>
+        </section>
     </Styled>
 )
 
