@@ -26,4 +26,4 @@ With Gitpod you can open a preview for Markdown and HTML files while you are cod
 
 Want to try it out? And see a minimal example in action? Great, then you can open this in Gitpod:
 
-[![JesterOrNot/Gitpod-Web-Development-Example](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-Web-Development-Example)
+[![gitpod-io/Gitpod-Web-Development-Example](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-Web-Development-Example)
