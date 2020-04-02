@@ -11,6 +11,13 @@ const Styled = styled.div`
     /* ----- Section Why Gitpod? ----- */
     /* ------------------------------------------- */
 
+    @media(max-width: ${sizes.breakpoints.sm}) {
+        h2::after {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
     .why-gitpod {
 
         @media(max-width: ${sizes.breakpoints.sm}) {
