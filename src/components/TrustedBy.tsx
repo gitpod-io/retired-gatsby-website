@@ -41,11 +41,16 @@ const StyledTrustedBy = styled.section`
     }
 
     .fcc {
+        filter: brightness(90%);
         transform: scale(1.05);
 
         @media(max-width: ${sizes.breakpoints.sm}) {
             transform: scale(1.3);
         }
+    }
+
+    .greyed-out {
+        filter: grayscale(100%) contrast(0%) brightness(127%);
     }
 `
 
