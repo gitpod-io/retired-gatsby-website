@@ -11,7 +11,7 @@ Before we get started, here are some examples of already-[gitpodified](https://w
 | Repository                                                                                                |                                                                                                              Description |                                        Try it |
 -----------|-----------------------------------------------------------|----------------------------------------------------
 | [gitpod-io/django-locallibrary-tutorial](https://github.com/gitpod-io/django-locallibrary-tutorial) | An example website written in Django by MDN |        [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#gitpod-io/django-locallibrary-tutorial) |
-| [gitpod-io/Gitpod-PyQt](https://github.com/gitpod-io/Gitpod-PyQt)                               |    A PyQt example for Gitpod | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-PyQt) |
+| [gitpod-io/Gitpod-PyQt](https://github.com/gitpod-io/Gitpod-PyQt)                               |    A PyQt example for Gitpod | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-PyQt) |
 | [gitpod-io/wxPython-example](https://github.com/gitpod-io/wxPython-example)                      | A wxPython example for Gitpod    | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/wxPython-example) |
 | [techwithtim/Hangman](https://github.com/techwithtim/Hangman)                                       |   A wxPython example for Gitpod  |     [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/techwithtim/Hangman) |
 
@@ -106,7 +106,7 @@ Here are some other examples of Python GUI applications in Gitpod:
 |------------------|----------------|-----------|
 | Tic-Tac-Toe-GUI  | Kivy | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Tic-Tac-Toe-GUI) |
 | Pong             | Kivy | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Pong) |
-| Gitpod-PyQt | PyQt | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Gitpod-PyQt) |
+| Gitpod-PyQt | PyQt | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-PyQt) |
 
 </div>
 
