@@ -50,7 +50,7 @@ const StyledTrustedBy = styled.section`
     }
 
     .greyed-out {
-        filter: grayscale(100%) contrast(0%) brightness(127%);
+        filter: grayscale(100%) contrast(0%) brightness(128%);
     }
 `
 
