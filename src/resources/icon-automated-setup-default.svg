@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="740" height="440" viewBox="0 45 736 440">
-<style>
-@font-face {
+    <style>
+        @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -18,8 +18,7 @@
 [data-name="Gruppe 643"] {
     transform: translate(-168.688px, -35px);
 }
-
-<!-- @media(max-width: 355px) {
+        <!-- @media(max-width: 355px) {
     [data-name="Gruppe 643"] {
         transform: translate(-168.688px, -60.724px) scale(.95);
     }
@@ -31,7 +30,7 @@
     }
 } -->
 
-</style>
+    </style>
     <defs>
         <pattern id="pattern" patternUnits="userSpaceOnUse" width="800" height="200" x="-400" y="150">
             <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="928" height="619"/>

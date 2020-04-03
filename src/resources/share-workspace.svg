@@ -16,11 +16,11 @@
 }
 </style>
   <defs>
-    <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" y="-50" x="-280" width="830" height="470" viewBox="-240 0 830 470">
-        <image xlink:href="https://www.gitpod.io/galaxy.jpg" y="0" width="730" height="550" />
+    <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" y="0" x="0" width="830" height="470" viewBox="-240 0 830 470">
+        <image xlink:href="https://www.gitpod.io/galaxy-big.jpg" y="0" width="300" height="550" />
     </pattern>
-    <pattern id="pattern-2" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" y="-70" x="-300" width="830" height="470" viewBox="210 20 830 470">
-        <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="730" height="550" />
+    <pattern id="pattern-2" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" y="150" x="-420" width="830" height="470" viewBox="210 20 830 470">
+        <image xlink:href="https://www.gitpod.io/galaxy-big.jpg" width="500" height="400" />
     </pattern>
   </defs>
   <g id="Gruppe_695" data-name="Gruppe 695" transform="translate(-847.588 -4358.483)">
