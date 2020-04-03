@@ -349,8 +349,7 @@ export default `
     /* ----- Images ----- */
     /* ------------------------------------------- */
 
-    img, 
-    object {
+    img {
         object-fit: contain;
     }
 

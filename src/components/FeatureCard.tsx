@@ -59,16 +59,8 @@ const StyledFeatureCard = styled.div<{caption: boolean, isIllustration?: boolean
         .caption {
             position: absolute;
             bottom: 2rem;
-            width: 100%;
-            text-align: right;
+            right: 2rem;
             opacity: .7;
-            padding: 0 2rem;
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                padding: 0;
-                font-size: 95%;
-                text-align: center;
-            }
         }
     }
 
