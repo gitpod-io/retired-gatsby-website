@@ -2,6 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { sizes } from '../styles/variables'
+import IconArrow from '../resources/icon-arrow-grey.svg'
 
 const StyledTrustedBy = styled.section`
     /* ------------------------------------------- */
@@ -25,23 +26,27 @@ const StyledTrustedBy = styled.section`
     }
 
     .logos {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        display: flex;
+        transition: all .3s;
 
-        @media(max-width: ${sizes.breakpoints.lg}) {
-            grid-template-columns: repeat(3, 1fr);
+        &-container {
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
 
-            a {
-                text-align: center;
+        a {
+            display: block;
+            min-width: 130px;
+            text-align: center;
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                min-width: 100px;
             }
-        }
 
-        @media(max-width: ${sizes.breakpoints.md}) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @media(max-width: ${sizes.breakpoints.sm}) {
-            grid-template-columns: repeat(1, 1fr);
+            &:not(:last-of-type) {
+                margin-right: 3rem;
+            }
         }
     }
 
@@ -50,21 +55,46 @@ const StyledTrustedBy = styled.section`
         transform: scale(1.05);
 
         @media(max-width: ${sizes.breakpoints.sm}) {
-            transform: scale(1.3);
+            transform: scale(1.3) translateX(5px);
         }
     }
 
     .greyed-out {
         filter: grayscale(100%) contrast(0%) brightness(128%);
     }
+
+    .arrow {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        height: 40px;
+        width: 40px;
+        border: none;
+        background: #fff;
+        cursor: pointer;
+        transform: translateY(-50%);
+        
+        img {
+            height: 1.5rem;
+            transform: rotate(90deg);
+            transition: all .5s;
+        }
+    }
 `
 
-const StyledBrandImage = styled.img<{transform?: string}>`
+const StyledBrandImage = styled.img<{ transform?: string }>`
     height: 10rem;
-    width: 14rem;
+    width: 12rem;
+
+
+    @media(max-width: ${sizes.breakpoints.md}) {
+        height: 8rem;
+        width: 10rem;
+    }
 
     @media(min-width: ${sizes.breakpoints.lg}) {
-        transform: ${ ({transform}) => transform ? transform : 'none' };
+        transform: ${ ({ transform }) => transform ? transform : 'none'};
     }
 `
 
@@ -73,33 +103,74 @@ interface Brand {
     url: string
     svg: string
     transform?: string,
-    className?: string 
+    className?: string
 }
 
 interface TrustedByProps {
     brands: Brand[]
 }
 
-const TrustedBy: React.SFC<TrustedByProps> = ({brands}) => (
-    <StyledTrustedBy>
-            <div className="row">
-                <h2>Trusted by</h2>
-                <div className="logos">
-                    {
-                        brands.map((b, i) => (
-                            <a href={b.url} target="_blank" key={i}>
-                                <StyledBrandImage 
-                                    src={b.svg} 
-                                    alt={b.alt} 
-                                    transform={b.transform}
-                                    className={b.className}
-                                />
-                            </a>
-                        ))
-                    }
+interface TrustedByState {
+    translateX: number
+}
+
+class TrustedBy extends React.Component<TrustedByProps, TrustedByState> {
+
+    state = {
+        translateX: 200,
+    }
+
+    slideTheLogos = () => {
+        const logos: any = document.querySelector('.logos')
+        logos.style.transform = `translateX(-${this.state.translateX}px)`
+        console.log(logos.style.transform)
+    }
+
+    handleButtonClick = () => {
+        if(this.state.translateX <= 1000) {
+            this.setState(() => ({
+                translateX: this.state.translateX + 200
+            }))
+        } 
+        else {
+            this.setState(() => ({
+                translateX: 0
+            }))
+        }  
+        this.slideTheLogos()
+    }
+
+    render() {
+        const { brands } = this.props
+        return (
+            <StyledTrustedBy>
+                <div className="row">
+                    <div className="logos-container">
+                        <div className="logos">
+                            {
+                                brands.map((b, i) => (
+                                    <a href={b.url} target="_blank" key={i}>
+                                        <StyledBrandImage
+                                            src={b.svg}
+                                            alt={b.alt}
+                                            transform={b.transform}
+                                            className={b.className}
+                                        />
+                                    </a>
+                                ))
+                            }
+                        </div>
+                        <button 
+                            className="arrow" 
+                            onClick={this.handleButtonClick}
+                        >
+                            <img alt="Arrow" src={IconArrow} />
+                        </button>
+                    </div>
                 </div>
-            </div>
-    </StyledTrustedBy>
-)
+            </StyledTrustedBy>
+        )
+    }
+}
 
 export default TrustedBy
