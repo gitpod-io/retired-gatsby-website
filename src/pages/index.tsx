@@ -28,12 +28,6 @@ const IndexPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/'>
         <Banner />
 
-        <Intro />
-
-        <Testimonials />
-
-        <WhyGitpod />
-
         <TrustedBy
             brands={[
                 {
@@ -72,7 +66,8 @@ const IndexPage: React.SFC<{}> = () => (
                     alt: 'Google Logo',
                     url: 'https://about.google/',
                     svg: GoogleLogo,
-                    className: 'greyed-out'
+                    className: 'greyed-out',
+                    transform: 'scale(.8) translateX(-1rem)'
                 },
                 {
                     alt: 'Mozilla Logo',
@@ -106,13 +101,15 @@ const IndexPage: React.SFC<{}> = () => (
             ]}
         />
 
-        <OpenSource />
+        <Intro />
 
-        {/* ----- Section Getting Started ----- */}
+        <WhyGitpod />
+        
+        <Testimonials />
 
         <GetStarted />
 
-        {/* ----- Section Explore Gitpod ----- */}
+        <OpenSource />
 
         <Details
             title="Explore Gitpod"
