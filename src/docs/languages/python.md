@@ -106,7 +106,7 @@ Here are some other examples of Python GUI applications in Gitpod:
 |------------------|----------------|-----------|
 | [Tic-Tac-Toe-GUI](https://github.com/JesterOrNot/Tic-Tac-Toe-GUI)  | Kivy | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Tic-Tac-Toe-GUI) |
 | [Pong](https://github.com/JesterOrNot/Pong) | Kivy | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Pong) |
-| [Gitpod-PyQt](https://github.com/gitpod-io/Gitpod-PyQt)) | PyQt | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-PyQt) |
+| [Gitpod-PyQt](https://github.com/gitpod-io/Gitpod-PyQt) | PyQt | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-PyQt) |
 
 </div>
 
