@@ -140,11 +140,11 @@ const Styled = styled.div`
                 }
 
                 @media(max-width: 700px) {
-                    height: 350px;
+                    height: 500px;
                 }
 
                 @media(max-width: 560px) {
-                    height: 32rem;
+                    height: 33rem;
                 }
 
                 @media(max-height: 500px) {
