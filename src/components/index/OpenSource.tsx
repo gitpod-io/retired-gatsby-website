@@ -24,8 +24,13 @@ const Styled = styled.div`
 
             @media(max-width: 1040px) {
                 margin-bottom: 4rem;
+                margin-left: -1.5rem;
             }
             
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                margin-left: 0;
+            }
+
             &-container {
                 display: flex;
                 align-items: center;
@@ -40,10 +45,6 @@ const Styled = styled.div`
                 align-items: center;
                 flex: 1;
                 max-width: 60rem;
-                
-                @media(min-width: ${sizes.breakpoints.sm}) {
-                    padding: 0 4rem;
-                }
 
                 @media(min-width: 1040px) {
                     padding: 0 0 0 6rem; 
