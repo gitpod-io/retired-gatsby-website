@@ -97,7 +97,7 @@ const FeaturesList = () => (
                         </div>
                         :
                         <div key={f.id}>
-                            {featureCard};
+                            {featureCard}
                             </div>
 
                 })
