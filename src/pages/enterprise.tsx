@@ -18,7 +18,7 @@ import Gitlab from '../resources/gitlab.svg'
 import AppliToolsLogo from '../resources/aplitools.svg'
 import Gatsby from '../resources/gatsby.svg'
 import FreeCodeCamp from '../resources/freecodecamp.svg'
-import CodeInstituteLogo from '../resources/code.png'
+import CodeInstituteLogo from '../resources/code.svg'
 import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
 import TheiaIDELogo from '../resources/theia-grey.svg'
 
