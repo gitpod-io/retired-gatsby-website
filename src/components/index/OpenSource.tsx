@@ -26,7 +26,7 @@ const Styled = styled.div`
                 margin-bottom: 4rem;
                 margin-left: -1.5rem;
             }
-            
+
             @media(max-width: ${sizes.breakpoints.sm}) {
                 margin-left: 0;
             }
