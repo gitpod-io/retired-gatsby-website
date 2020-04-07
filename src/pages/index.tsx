@@ -16,9 +16,12 @@ import MozillaLogo from '../resources/mozilla.svg'
 import OpenAILogo from '../resources/openai.svg'
 import SauceLabsLogo from '../resources/sauce-labs.svg'
 import FacebookLogo from '../resources/facebook.svg'
-import CodeInstituteLogo from '../resources/code.png'
+import CodeInstituteLogo from '../resources/code.svg'
 import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
 import TheiaIDELogo from '../resources/theia-grey.svg'
+import VueLogo from '../resources/vuejs.svg'
+import UberLogo from '../resources/uber.svg'
+
 import Testimonials from '../components/Testimonials'
 import GetStarted from '../components/GetStarted'
 import OpenSource from '../components/index/OpenSource'
@@ -44,8 +47,7 @@ const IndexPage: React.SFC<{}> = () => (
                 {
                     alt: 'D-Wave Logo',
                     url: 'https://www.dwavesys.com/',
-                    svg: DWaveLogo,
-                    className: 'greyed-out'
+                    svg: DWaveLogo
                 },
                 {
                     alt: 'Code Institute Logo',
@@ -66,37 +68,42 @@ const IndexPage: React.SFC<{}> = () => (
                     alt: 'Google Logo',
                     url: 'https://about.google/',
                     svg: GoogleLogo,
-                    className: 'greyed-out',
                     transform: 'scale(.8) translateX(-1rem)'
                 },
                 {
                     alt: 'Mozilla Logo',
                     url: 'https://www.mozilla.org/',
-                    svg: MozillaLogo,
-                    className: 'greyed-out'
+                    svg: MozillaLogo
                 },
                 {
                     alt: 'Facebook Logo',
                     url: 'https://about.fb.com/',
-                    svg: FacebookLogo,
-                    className: 'greyed-out'
+                    svg: FacebookLogo
                 },
                 {
                     alt: 'OpenAI Logo',
                     url: 'https://openai.com/',
-                    svg: OpenAILogo,
-                    className: 'greyed-out'
+                    svg: OpenAILogo
                 },
                 {
                     alt: 'Sauce Labs Logo',
                     url: 'https://saucelabs.com/',
-                    svg: SauceLabsLogo,
-                    className: 'greyed-out'
+                    svg: SauceLabsLogo
                 },
                 {
                     alt: 'Gatsby Logo',
                     url: 'https://www.gatsbyjs.org/',
                     svg: Gatsby
+                },
+                {
+                    alt: 'Vue Logo',
+                    url: 'https://vuejs.org/',
+                    svg: VueLogo
+                },
+                {
+                    alt: 'Uber Logo',
+                    url: 'https://www.uber.com',
+                    svg: UberLogo
                 },
             ]}
         />
