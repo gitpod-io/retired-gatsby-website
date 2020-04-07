@@ -83,7 +83,7 @@ const Testimonials: React.SFC<{}> = () => (
     <StyledTestimonials className="grey-container">
         <section className="testimonials">
                 <div className="row">
-                    <h2>Don’t just Take Our<br />Word for It</h2>
+                    <h2>Trusted by more than 100K Developer</h2>
                 </div>
                 <div className="tweets">
                     {
