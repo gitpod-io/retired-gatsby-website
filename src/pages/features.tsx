@@ -16,7 +16,7 @@ const FeaturesPage: React.SFC<{}> = () => (
             <div className="grey-container">
                 <div className="row">
                     <ScrollToTopButton />
-
+                    
                     <Intro />
 
                     <FeaturesList />

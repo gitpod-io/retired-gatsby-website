@@ -8,7 +8,7 @@ import { sizes } from '../../styles/variables'
 
 const Styled = styled.div`
     .intro {
-        padding-top: 5rem;
+        padding-top: 3rem;
 
         .ice-stick {
             display: block;
@@ -22,40 +22,47 @@ const Styled = styled.div`
 
         .features {
             display: grid;
-            grid-gap: 3rem;
+            grid-row-gap: 3rem;
+            grid-column-gap: 2rem;
             grid-template-columns: repeat(5, 1fr);
             justify-items: center;
             align-items: center;
-            margin-top: 6rem;
+            margin-top: 4rem;
             position: relative;
 
             @media(max-width: ${sizes.breakpoints.lg}) {
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(5, 1fr);
             }
 
             @media(max-width: 960px) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            @media(max-width: 600px) {
                 grid-template-columns: repeat(3, 1fr);
             }
 
-            @media(max-width: ${sizes.breakpoints.md}) {
-                grid-template-columns: repeat(2, 1fr);               
-            }
 
             @media(max-width: 500px) {
                 display: none;
             }
 
             & > div {
-                @media(min-width: ${sizes.breakpoints.md}) {
-                    width: 18%;
+
+                @media(min-width: 961px) {
+                    min-width: 17rem;
                 }
 
-                @media(max-width: ${sizes.breakpoints.md}) {
-                    min-width: 22rem;
-                    max-width: 22rem;
+                @media(max-width: 960px) {
+                    min-width: 13rem;
+                    max-width: 18rem;
+                }
+
+                @media(min-width: ${sizes.breakpoints.lg}) {
+                    min-width: 19rem;
                 }
  
-                @media(min-width: ${sizes.breakpoints.lg}) {
+                @media(min-width: 961px) {
                     &:nth-child(n + 6) {
                        transform: translateX(50%);
                     }
