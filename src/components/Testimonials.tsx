@@ -17,10 +17,6 @@ const StyledTestimonials = styled.div`
 
     h2 {
         margin-bottom: 1rem;
-
-        @media(min-width: ${sizes.breakpoints.sm}) {
-            display: none;
-        }
     }
 
     .tweets {
