@@ -92,7 +92,7 @@ export const featuresCardsData = [
             <p>To sneak in a bugfix on a maintenance branch or a code review - just start more workspaces - in parallel.</p>
         </React.Fragment>,
         strong: 'Use clean, fresh workspaces for every task.',
-        img: <object role="presentation" tabIndex={-1} data={ParallelWorkspaces} />,
+        img: <img alt="Parallel Workspaces" src={ParallelWorkspaces} />,
         isIllustration: true
     },
     {
