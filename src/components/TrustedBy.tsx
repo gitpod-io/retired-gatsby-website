@@ -160,6 +160,7 @@ class TrustedBy extends React.Component<TrustedByProps, TrustedByState> {
                         <button 
                             className="arrow" 
                             onClick={this.handleButtonClick}
+                            tabIndex={-1}
                         >
                             <img alt="Arrow" src={IconArrow} />
                         </button>
