@@ -27,7 +27,9 @@ const StyledTrustedBy = styled.section`
 
     .logos {
         display: flex;
-        transition: all .3s;
+        filter: grayscale(1) opacity(0.6);
+        -webkit-filter: grayscale(1) opacity(0.6);
+        transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 
         &-container {
             display: flex;
@@ -51,7 +53,6 @@ const StyledTrustedBy = styled.section`
     }
 
     .fcc {
-        filter: brightness(90%);
         transform: scale(1.05);
 
         @media(max-width: ${sizes.breakpoints.sm}) {
@@ -59,16 +60,12 @@ const StyledTrustedBy = styled.section`
         }
     }
 
-    .greyed-out {
-        filter: grayscale(100%) contrast(0%) brightness(128%);
-    }
-
     .arrow {
         display: block;
         position: absolute;
         top: 50%;
         right: -10px;
-        height: 40px;
+        height: 100%;
         width: 40px;
         border: none;
         background: #fff;
@@ -117,7 +114,7 @@ interface TrustedByState {
 class TrustedBy extends React.Component<TrustedByProps, TrustedByState> {
 
     state = {
-        translateX: 200,
+        translateX: 250,
     }
 
     slideTheLogos = () => {
@@ -127,9 +124,9 @@ class TrustedBy extends React.Component<TrustedByProps, TrustedByState> {
     }
 
     handleButtonClick = () => {
-        if(this.state.translateX <= 1000) {
+        if(this.state.translateX <= 1250) {
             this.setState(() => ({
-                translateX: this.state.translateX + 200
+                translateX: this.state.translateX + 250
             }))
         } 
         else {
