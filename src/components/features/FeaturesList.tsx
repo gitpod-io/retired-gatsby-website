@@ -16,10 +16,6 @@ const Styled = styled.div`
             }
         }
 
-        .grey-container {
-            padding: 10rem 0;
-        }
-
         .feature {
             padding: 5rem 7rem;
             background: ${colors.white};
@@ -75,9 +71,8 @@ const FeaturesList = () => (
     <Styled>
         <section className="features-list">
             {
-                featuresCardsData.map((f, i) => {
-                    const isGreyish = (i + 1) % 3 === 0;
-                    const featureCard = <FeatureCard
+                featuresCardsData.map(f => <FeatureCard
+                        key={f.id}
                         title={f.title}
                         paragraphs={f.paragraphs}
                         more={f.more}
@@ -89,18 +84,7 @@ const FeaturesList = () => (
                         colorTextBox={colors.offWhite}
                         colorImgBox={colors.white}
                     />
-                    return isGreyish ?
-                        <div key={f.id} className="grey-container">
-                            <div className="other-features">
-                                {featureCard}
-                            </div>
-                        </div>
-                        :
-                        <div key={f.id}>
-                            {featureCard}
-                            </div>
-
-                })
+                )
             }
         </section>
     </Styled>
