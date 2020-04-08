@@ -1,8 +1,7 @@
 # Create a Team
 If you create a team account, you can manage the subscriptions for your entire team with one billing contact. 
 
-##Invite Your Team
-The professional plan, as well as the unlimited plan allow you to create a team. On https://gitpod.io/teams/ you can select a subscription and add members to it. If you don’t have a Gitpod account yet, you’ll be asked to create one first. 
+The professional plan, as well as the unlimited plan allow you to invite your team. On https://gitpod.io/teams/ you can select a subscription and add members to it. If you don’t have a Gitpod account yet, you’ll be asked to create one first. 
 <br><br>
 ![team-subscription-add-member](./images/team-subscription-add-member.png)
 <br><br>
