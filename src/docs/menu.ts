@@ -188,6 +188,10 @@ export const MENU: MenuEntry[] = [
         ]
     ),
     M(
+        "Changelog",
+        "changelog",
+    ),
+    M(
         "Gitpod Self-Hosted",
         "self-hosted/latest/self-hosted",
         [
