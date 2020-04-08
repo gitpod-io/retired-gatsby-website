@@ -186,7 +186,7 @@ export const MENU: MenuEntry[] = [
                 "professional-open-source"
             ),
             M(
-                "Teams",
+                "Create a Team",
                 "teams"
             )
         ]
