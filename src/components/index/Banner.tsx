@@ -9,7 +9,7 @@ const Styled = styled.div`
 
     .banner {
         display: flex;
-        padding-bottom: 20rem;
+        padding-bottom: 16rem;
 
         @media(min-width: ${sizes.breakpoints.lg}) {
             padding-top: 5rem;
