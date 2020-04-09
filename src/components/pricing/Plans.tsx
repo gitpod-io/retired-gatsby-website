@@ -55,7 +55,7 @@ const Plans = () => (
     <Styled>
         <section className="links">
             <div>
-                <h2>Professional Open Source</h2>
+                <h3>Professional Open Source</h3>
                 <p>
                     Gitpod is free for up to 50 hours/month on any public repository.
                 </p>
@@ -65,7 +65,7 @@ const Plans = () => (
                 <Link to="/contact/" state={{ subject: "Applying for Professional Open Source" }} className="btn">Apply Now</Link>
             </div>
             <div>
-                <h2>For Students</h2>
+                <h3>For Students</h3>
                 <p>
                     Get the <strong><a href="https://gitpod.io/subscription/" target="_blank">Student Unlimited</a> plan for {isEurope() ? '€8' : '$9'}</strong> per month.
                 </p>
