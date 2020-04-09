@@ -13,11 +13,6 @@ const StyledTrustedBy = styled.section`
 
     @media(max-width: ${sizes.breakpoints.sm}) {
         text-align: center;
-
-        h2::after {
-            margin-left: auto;
-            margin-right: auto;
-        }
     }
 
     h2 {

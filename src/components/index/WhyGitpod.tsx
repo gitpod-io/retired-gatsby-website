@@ -13,13 +13,6 @@ const Styled = styled.div`
 
     h2 {
         margin-bottom: 0;
-
-        &::after {
-            @media(max-width: ${sizes.breakpoints.sm}) {
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
     }
 
     .why-gitpod {

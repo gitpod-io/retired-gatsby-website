@@ -124,16 +124,6 @@ export default `
         font-size: ${sizes.font.h2};
         margin-bottom: 4rem;
 
-        &::after {
-            content: "";
-            display: block;
-            margin-top: 1.1rem;
-            width: 12rem;
-            height: 7px;
-            border-radius: 3px;
-            background: ${colors.offWhite3};
-        }
-
         @media(max-width: ${sizes.breakpoints.md}) {
             font-size: 2.6rem;
             margin-bottom: 3rem;
@@ -141,13 +131,6 @@ export default `
 
         & + p {
             margin: -3rem 0 5rem;
-        }
-    }
-
-    .centered-underline {
-        &::after {
-            margin-left: auto;
-            margin-right: auto;
         }
     }
 
