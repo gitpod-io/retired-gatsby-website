@@ -51,7 +51,12 @@
  [[redirects]]
   from = "/docs/42_config_docker"
   to = "/docs/config-docker/"
-  status = 301 
+  status = 301
+
+[[redirects]]
+  from = "/docs/41_Config_Gitpod_File"
+  to = "/docs/config-gitpod-file/"
+  status = 301
 
 [[redirects]]
   from = "/docs/41_config_gitpod_file"
