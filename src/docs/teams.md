@@ -6,7 +6,7 @@ If you don’t have a Gitpod account yet, you’ll be asked to create one first.
 ![team-subscription-add-member](./images/team-subscription-add-member.png)
 <br><br>
 Afterwards you can choose how many seats you wish to purchase, and in which currency you would like to be billed. 
-You have then two options for adding your team members. 
+Then you have two options for adding your team members. 
 
 You can either directly assign a seat by entering your team member's GitHub username, or use the `Invite Team` button and get a shareable link. Send the link to your team, and they can claim a seat.  
 <br><br>
