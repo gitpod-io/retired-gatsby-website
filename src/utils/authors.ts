@@ -10,7 +10,7 @@ export interface Author {
     description: string
 }
 
-export const authors: { [idx: string]: Author } = {
+export const allAuthors: { [idx: string]: Author } = {
     'svenefftinge': {
         name: "Sven Efftinge",
         socialProfiles: {
@@ -81,5 +81,32 @@ export const authors: { [idx: string]: Author } = {
             linkedin: ''
         },
         description: 'Anudeep is a developer advocate at Gitpod.'
+    },
+    'spoenemann': {
+        name: "Miro Spönemann",
+        socialProfiles: {
+            github: 'spoenemann',
+            twitter: 'sponemann',
+            linkedin: 'mirospoenemann'
+        },
+        description: "Miro is thrilled about innovation on programming languages, DSLs, graphical modeling and web technologies."
     }
+}
+
+export function parseAuthors(input: string): Author[] {
+    const authorNames = input.split(/\s*,\s*/);
+    const authorArray = authorNames.map(name => allAuthors[name]);
+    for (let i = 0; i < authorArray.length; i++) {
+        if (!authorArray[i]) {
+            authorArray[i] = {
+                name: authorNames[i],
+                socialProfiles: {
+                    github: authorNames[i],
+                    twitter: authorNames[i]
+                },
+                description: ""
+            }
+        }
+    }
+    return authorArray;
 }
