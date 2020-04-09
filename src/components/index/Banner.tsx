@@ -65,7 +65,7 @@ const Styled = styled.div`
             }
 
             @media(min-width: ${sizes.breakpoints.lg}) {
-                transform: scale(1.18) translate(7rem, 6rem);
+                transform: scale(1.15) translate(6rem, 6rem);
 
                 &-container {
                     width: 50%;
