@@ -148,6 +148,10 @@ export const MENU: MenuEntry[] = [
             M(
                 "R",
                 "languages/r"
+            ),
+            M(
+                "Pandas",
+                "frameworks/pandas"
             )
         ]
     ),
