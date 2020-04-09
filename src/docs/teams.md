@@ -1,5 +1,5 @@
 # Create a Team
-From [gitpod.io/teams/](https://gitpod.io/teams/), you can purchase and manage Gitpod subscriptions for your entire team with one centrailized billing. 
+From [gitpod.io/teams/](https://gitpod.io/teams/), you can purchase and manage Gitpod subscriptions for your entire team with one centralized billing. 
 
 If you don’t have a Gitpod account yet, you’ll be asked to create one first. You can then choose between the Team Professional or Team Unlimited plan and add members to it.  
 <br><br>
