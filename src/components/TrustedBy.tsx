@@ -1,8 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { sizes } from '../styles/variables'
-import IconArrow from '../resources/icon-arrow-grey.svg'
+import { sizes, colors } from '../styles/variables'
 
 const StyledTrustedBy = styled.section`
     /* ------------------------------------------- */
@@ -84,11 +83,26 @@ const StyledTrustedBy = styled.section`
             transform: translateY(-53%);
         }
         
-        img {
+        svg {
             display: block;
             height: 1.3rem;
+            stroke: ${colors.offWhite3};
             transform: rotate(90deg);
-            transition: all .5s;
+            transition: all .3s;
+        }
+
+        &:hover {
+            svg {
+                stroke: ${colors.lightBlue};
+                transform: scale(1.1) rotate(90deg);
+            }
+        }
+
+        &:active {
+            svg {
+                stroke: ${colors.lightBlue};
+                transform: scale(.9) rotate(90deg);
+            }
         }
     }
 `
@@ -185,7 +199,7 @@ class TrustedBy extends React.Component<TrustedByProps, TrustedByState> {
                             onClick={this.handleButtonClick}
                             tabIndex={-1}
                         >
-                            <img alt="Arrow" src={IconArrow} />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32.869" height="15.88" viewBox="0 0 32.869 15.88"><path data-name="Pfad 35" d="M7669.29,2749.414l10.769,14.1-10.769,14.066" transform="matrix(0.035, -0.999, 0.999, 0.035, 2.175, 12.722) translate(-7669.29 -2749.414)" fill="none" stroke-linecap="round" stroke-width="3"/></svg>
                         </button>
                     </div>
                 </div>
