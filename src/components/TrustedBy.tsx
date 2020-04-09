@@ -3,7 +3,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { sizes, colors } from '../styles/variables'
 
-const StyledTrustedBy = styled.section`
+const StyledTrustedBy = styled.section<{dontDisplayTheArrow?: boolean}>`
     /* ------------------------------------------- */
     /* ----- Section Trusted By ----- */
     /* ------------------------------------------- */
@@ -74,6 +74,10 @@ const StyledTrustedBy = styled.section`
         cursor: pointer;
         transform: translateY(-51%);
 
+        @media(min-width: 1040px) {
+            display: ${({dontDisplayTheArrow}) => dontDisplayTheArrow ? 'none' : 'initial'};
+        }
+
         @media(max-width: ${sizes.breakpoints.sm}) {
             transform: translateY(-53%);
         }
@@ -136,6 +140,7 @@ interface Brand {
 }
 
 interface TrustedByProps {
+    dontDisplayTheArrow?: boolean
     brands: Brand[]
 }
 
@@ -172,7 +177,7 @@ class TrustedBy extends React.Component<TrustedByProps, TrustedByState> {
     render() {
         const { brands } = this.props
         return (
-            <StyledTrustedBy>
+            <StyledTrustedBy dontDisplayTheArrow={this.props.dontDisplayTheArrow}>
                 <div className="row">
                     <div className="logos-container">
                         <div className="logos">
