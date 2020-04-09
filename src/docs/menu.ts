@@ -184,6 +184,10 @@ export const MENU: MenuEntry[] = [
             M(
                 "Professional Open Source",
                 "professional-open-source"
+            ),
+            M(
+                "Create a Team",
+                "teams"
             )
         ]
     ),
