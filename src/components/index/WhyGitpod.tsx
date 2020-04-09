@@ -11,14 +11,21 @@ const Styled = styled.div`
     /* ----- Section Why Gitpod? ----- */
     /* ------------------------------------------- */
 
-    @media(max-width: ${sizes.breakpoints.sm}) {
-        h2::after {
-            margin-left: auto;
-            margin-right: auto;
+    h2 {
+        margin-bottom: 0;
+
+        &::after {
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
     }
 
     .why-gitpod {
+
+        padding-bottom: 5rem;
+
 
         @media(max-width: ${sizes.breakpoints.sm}) {
             text-align: center;
@@ -38,6 +45,7 @@ const Styled = styled.div`
             &-container {
                 display: flex;
                 flex-direction: column;
+                transform: translateY(-5rem);
 
                 & > div {
                     padding: 12rem 0;
@@ -102,6 +110,10 @@ const Styled = styled.div`
 
             @media(max-width: 1150px) {
                 padding: 0 4rem;
+            }
+
+            @media(max-width: ${sizes.breakpoints.md}) {
+                padding: 0 2rem;
             }
 
             @media(max-width: ${sizes.breakpoints.sm}) {
