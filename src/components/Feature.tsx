@@ -54,7 +54,7 @@ const StyledFeature = styled.div`
         margin-top: 6rem;
     }
 
-    .logos {
+    .brands {
         margin-top: 3rem;
     }
 
@@ -79,7 +79,7 @@ const Feature: React.SFC<FeatureProps> = ({title, paragraphs, more, logos}) => (
         <h3 className="title">{title}</h3>
         { paragraphs.map((p, i) => <p key={i}>{p}</p>) }
         { more ? more : null }
-        {logos && logos.length ? <div className="logos">
+        {logos && logos.length ? <div className="brands">
             {logos.map((logo, i) => <img key={i} src={Logos[logo]} alt={`${logo} Logo.`}/>)}
         </div> : null}
     </StyledFeature>

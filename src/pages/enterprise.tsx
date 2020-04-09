@@ -84,6 +84,7 @@ const EnterprisePage: React.SFC<{}> = () => (
         </div>
 
         <TrustedBy
+            dontDisplayTheArrow={true}
             brands={[
                 {
                     alt: 'freeCodeCamp.org',
