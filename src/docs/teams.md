@@ -13,6 +13,6 @@ You can either directly assign a seat by entering your team member's GitHub user
 ![team-subscription](./images/team-subscription.png)
 
 ##Good to know
-* You don’t need to have a subscription yourself to manage seats for your team. 
+* You don’t need to have a subscription yourself in order to manage seats for your team. You can simply sign in to https://gitpod.io/teams/ for free.
 * If you’d like to add more seats, delete seats or reassign existing seats, you can do these changes at any time. 
 <br><br>
