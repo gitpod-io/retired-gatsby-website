@@ -42,8 +42,16 @@ const StyledTrustedBy = styled.section`
             min-width: 130px;
             text-align: center;
 
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                min-width: 120px;
+            }
+
             @media(max-width: ${sizes.breakpoints.md}) {
                 min-width: 100px;
+            }
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                min-width: 90px;
             }
 
             &:not(:last-of-type) {
@@ -70,10 +78,15 @@ const StyledTrustedBy = styled.section`
         border: none;
         background: #fff;
         cursor: pointer;
-        transform: translateY(-50%);
+        transform: translateY(-51%);
+
+        @media(max-width: ${sizes.breakpoints.sm}) {
+            transform: translateY(-53%);
+        }
         
         img {
-            height: 1.5rem;
+            display: block;
+            height: 1.3rem;
             transform: rotate(90deg);
             transition: all .5s;
         }
@@ -84,10 +97,20 @@ const StyledBrandImage = styled.img<{ transform?: string }>`
     height: 10rem;
     width: 12rem;
 
+    @media(max-width: ${sizes.breakpoints.lg}) {
+        height: 9rem;
+        width: 11rem;   
+    }
+
 
     @media(max-width: ${sizes.breakpoints.md}) {
         height: 8rem;
         width: 10rem;
+    }
+
+    @media(max-width: ${sizes.breakpoints.sm}) {
+        height: 6rem;
+        width: 8rem;
     }
 
     @media(min-width: ${sizes.breakpoints.lg}) {
