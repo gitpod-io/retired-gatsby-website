@@ -8,7 +8,7 @@ const StyledTrustedBy = styled.section`
     /* ----- Section Trusted By ----- */
     /* ------------------------------------------- */
 
-    padding: 4rem 0;
+    padding: 1rem 0;
     margin-top: 2rem;
 
     @media(max-width: ${sizes.breakpoints.sm}) {
