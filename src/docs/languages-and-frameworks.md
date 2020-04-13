@@ -16,3 +16,4 @@ Below is a list of language and framework specific tips & tricks.
 - [.NET](/docs/languages/dotnet/)
 - [Julia](/docs/languages/julia/)
 - [R](/docs/languages/r/)
+- [Pandas](/docs/frameworks/pandas)
