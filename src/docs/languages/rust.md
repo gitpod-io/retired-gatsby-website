@@ -91,5 +91,6 @@ vscode:
     - bungcip.better-toml@0.3.2:3QfgGxxYtGHfJKQU7H0nEw==
 ```
 
-## Resources
+## Further Reading
+
 * ***[Rocket-Example](https://www.gitpod.io/blog/docker-in-gitpod/)*** For an example of how to setup a project for the [`Rocket`](https://rocket.rs/) web-development framework
