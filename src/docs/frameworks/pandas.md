@@ -4,7 +4,7 @@ Welcome data scientists! This guide will show you how to configure Gitpod for Pa
 
 ## Start Tasks
 
-Setting up [start tasks](/docs/config-start-tasks) for Pandas isn't very diffrent from other Python frameworks, here is an example of how to configure you start tasks:
+Setting up [start tasks](/docs/config-start-tasks/) for Pandas isn't very different from other Python frameworks, here is an example of how to configure you start tasks:
 
 ```yaml
 tasks:
