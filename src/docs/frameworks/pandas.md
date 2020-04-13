@@ -1,6 +1,6 @@
 # Pandas in Gitpod
 
-Welcome data scientists! This guide will show you how to configure Gitpod for Pandas development!
+Welcome data scientists! This guide will show you how to configure Gitpod for Pandas development.
 
 ## Start Tasks
 
