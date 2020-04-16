@@ -52,7 +52,7 @@ const Styled = styled.div`
             }
 
             p {
-                margin-bottom: 3rem;
+                margin-bottom: 2rem;
             }
 
             @media(max-width: ${sizes.breakpoints.lg}) {
@@ -87,7 +87,7 @@ const OpenSource = () => (
                             <div className="open-source__text">
                                 <h3>Giving Back to Open-Source!</h3>
                                 <p>Gitpod is built on open-source and wouldn’t exist without it.</p> 
-                                <p>Did you know that you can see all contributor-friendly open-source projects at one glance?</p> 
+                                <p>Therefore, Gitpod is free for open source, and we have created contribute.dev, which lists ready-to-code open source projects. Start contributing now!</p> 
                                 <p>Find your next project!</p>
                             <a href="https://contribute.dev" className="btn btn--cta" target="_blank" rel="noopener">Contribute.dev</a>
                             </div>
