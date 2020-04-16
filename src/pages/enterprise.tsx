@@ -116,7 +116,8 @@ const EnterprisePage: React.SFC<{}> = () => (
                 {
                     alt: '4 Geeks Academy Logo',
                     url: 'https://www.4geeksacademy.co/',
-                    svg: FourGeeksAcademyLogo
+                    svg: FourGeeksAcademyLogo,
+                    className: 'four-geeks'
                 },
             ]}
         />
