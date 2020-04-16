@@ -19,7 +19,6 @@ const Styled = styled.div`
 
         padding-bottom: 5rem;
 
-
         @media(max-width: ${sizes.breakpoints.sm}) {
             text-align: center;
         }
