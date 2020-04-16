@@ -55,11 +55,15 @@ const StyledTrustedBy = styled.section<{dontDisplayTheArrow?: boolean}>`
     }
 
     .fcc {
-        transform: scale(1.05);
+        transform: scale(1.2);
 
         @media(max-width: ${sizes.breakpoints.sm}) {
             transform: scale(1.3) translateX(5px);
         }
+    }
+
+    .four-geeks {
+        transform: scale(.9);
     }
 
     .arrow {

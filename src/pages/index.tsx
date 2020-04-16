@@ -62,7 +62,8 @@ const IndexPage: React.SFC<{}> = () => (
                 {
                     alt: '4Geeks Academy Logo',
                     url: 'https://www.4geeksacademy.co/',
-                    svg: FourGeeksAcademyLogo
+                    svg: FourGeeksAcademyLogo,
+                    className: 'four-geeks'
                 },
                 {
                     alt: 'Google Logo',
