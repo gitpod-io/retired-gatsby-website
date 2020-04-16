@@ -85,6 +85,7 @@ const EnterprisePage: React.SFC<{}> = () => (
 
         <TrustedBy
             dontDisplayTheArrow={true}
+            slideTotal={250}
             brands={[
                 {
                     alt: 'freeCodeCamp.org',

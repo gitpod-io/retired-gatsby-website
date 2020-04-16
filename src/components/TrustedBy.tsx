@@ -141,7 +141,8 @@ interface Brand {
 
 interface TrustedByProps {
     dontDisplayTheArrow?: boolean
-    brands: Brand[]
+    brands: Brand[],
+    slideTotal?: number
 }
 
 interface TrustedByState {
@@ -161,7 +162,8 @@ class TrustedBy extends React.Component<TrustedByProps, TrustedByState> {
     }
 
     handleButtonClick = () => {
-        if(this.state.translateX <= 1250) {
+        const limit = this.props.slideTotal ? this.props.slideTotal : 1250
+        if(this.state.translateX <= limit) {
             this.setState(() => ({
                 translateX: this.state.translateX + 250
             }))
