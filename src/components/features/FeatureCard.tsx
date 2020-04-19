@@ -64,19 +64,6 @@ const StyledFeatureCard = styled.div<{caption: boolean, isIllustration?: boolean
         }
     }
 
-    h3 {
-        font-weight: 400;
-        font-size: 2.6rem;
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            font-size: 2rem;
-        }
-
-        @media(max-width: ${sizes.breakpoints.sm}) {
-            font-size: 1.8rem;
-        }
-    }
-
     p:last-of-type {
         margin-top: 5rem;
     }
