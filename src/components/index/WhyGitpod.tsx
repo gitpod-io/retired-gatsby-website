@@ -53,14 +53,6 @@ const Styled = styled.div`
             }
 
             &--1 {
-                @media(min-width: 880px) {
-                    height: 400px;
-
-                    object {
-                        transform: translateY(-5.8rem);
-                    }
-                }
-
                 @media(max-width: ${sizes.breakpoints.sm}) {
                     .buttons {
                         text-align: center;
@@ -73,11 +65,6 @@ const Styled = styled.div`
 
                     @media(max-width: ${sizes.breakpoints.sm}) {
                         min-height: 200px;
-                    }
-
-                    img {
-                        position: absolute;
-                        bottom: 0;
                     }
                 }
 
@@ -116,7 +103,7 @@ const Styled = styled.div`
         &__img {
             height: 100%;
             width: 100%;
-
+        
             @media(max-width: ${sizes.breakpoints.md}) {
                 max-height: 42rem;
 
@@ -127,9 +114,7 @@ const Styled = styled.div`
 
             &--1 {
 
-                @media(max-width: 880px) {
-                    transform: translateY(-5rem);
-                }
+                transform: translateY(-.8rem);
 
                 @media(min-width: 880px) {
                     height: auto;
@@ -137,6 +122,7 @@ const Styled = styled.div`
 
                 @media(max-width: 800px) {
                     transform: none;
+                    margin-bottom: 3rem;
                 }
                 
                 @media(min-width: 800px) {
@@ -145,10 +131,12 @@ const Styled = styled.div`
 
                 @media(max-width: 700px) {
                     height: 500px;
+                    margin-bottom: -7rem;
                 }
 
                 @media(max-width: 560px) {
                     height: 33rem;
+                    margin-bottom: 0;
                 }
 
                 @media(max-height: 500px) {
@@ -161,39 +149,13 @@ const Styled = styled.div`
             }
 
 
+
             &-container {
                 min-height: 24rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-
-                @media(max-width: ${sizes.breakpoints.md}) {
-                    max-height: 40rem;
-
-                    &--1 {
-                        max-height: initial;
-                        height: 50rem;
-                        transform: translateY(-4rem)
-                    }
-                }
-
-                &--1 {
-                    @media(max-width: 560px) {
-                        height: 34rem;
-                        transform: translateY(-3rem)
-                    }
-
-                    @media(max-width: 560px) {
-                        height: 32rem;
-                        transform: translateY(-1.5rem)
-                    }
-
-                    @media(max-width: ${sizes.breakpoints.sm}) {
-                        height: 30rem;
-                        transform: none;
-                    }
-                }
 
                 @media(min-width: 881px) {
                     width: 60%;
