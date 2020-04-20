@@ -55,6 +55,7 @@ class ReadyToCode extends React.Component {
             <div className="why-gitpod__box why-gitpod__box--1 row">
                 <div className="why-gitpod__img-container why-gitpod__img-container--1">
                     <div style={{ display: 'flex', width: '90%', height: '100%', justifyContent: 'center' }}>
+
                         <img
                             src={AutomatedSetupGraphicOrdinary}
                             alt="Ordinary setup wihtout Gitpod."
