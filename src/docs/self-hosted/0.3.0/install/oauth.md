@@ -1,5 +1,5 @@
 ---
-url: https://www.gitpod.io/docs/self-hosted/0.3.0/install/oauth/
+url: /docs/self-hosted/0.3.0/install/oauth/
 ---
 
 # How To integrate Gitpod with OAuth providers

@@ -1,5 +1,5 @@
 ---
-url: https://www.gitpod.io/docs/self-hosted/0.3.0/install/install-on-kubernetes/
+url: /docs/self-hosted/0.3.0/install/install-on-kubernetes/
 ---
 
 # Install Gitpod Self-Hosted on Kubernetes

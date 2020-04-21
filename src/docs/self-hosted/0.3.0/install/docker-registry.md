@@ -1,5 +1,5 @@
 ---
-url: https://www.gitpod.io/docs/self-hosted/0.3.0/install/docker-registry/
+url: /docs/self-hosted/0.3.0/install/docker-registry/
 ---
 
 # Docker Registry
