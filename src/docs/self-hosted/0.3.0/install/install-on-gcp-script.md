@@ -1,5 +1,5 @@
 ---
-url: https://www.gitpod.io/docs/self-hosted/0.3.0/install/install-on-gcp-script/
+url: /docs/self-hosted/0.3.0/install/install-on-gcp-script/
 ---
 
 # Install Gitpod on Google Cloud Platform

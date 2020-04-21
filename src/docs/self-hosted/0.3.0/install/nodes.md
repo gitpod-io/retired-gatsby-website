@@ -1,5 +1,5 @@
 ---
-url: https://www.gitpod.io/docs/self-hosted/0.3.0/install/nodes/
+url: /docs/self-hosted/0.3.0/install/nodes/
 ---
 
 # Kubernetes Nodes
