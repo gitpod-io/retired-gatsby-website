@@ -56,7 +56,7 @@ const plans: PricingBoxProps[] = [
         price: <>{isEurope() ? '€8' : '$9'}<span> / month</span></>,
         duration: '100 hours / month',
         features: ['Private & Public Repos', <span className="span">4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time." /></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes." /></span>],
-        btnText: 'Get Started',
+        btnText: 'Buy Now',
         link: 'https://gitpod.io/subscription/'
     },
     {
@@ -64,21 +64,23 @@ const plans: PricingBoxProps[] = [
         img: <img alt='Rocket' src={Rocket} />,
         price: <>{isEurope() ? '€23' : '$25'}<span> / month</span></>,
         duration: 'unlimited hours',
-        features: ['Private & Public Repos', <span className="span">8 Parallel Workspaces <PopOver description="The number of workspaces running at the same time." /></span>, <span className="span">Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card." /></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes." /></span>],
+        features: ['Private & Public Repos', <span className="span">8 Parallel Workspaces <PopOver description="The number of workspaces running at the same time." /></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes." /></span>],
         transform: 'scale(1.05)',
         banner: 'Recommended',
-        btnText: 'Get Started',
+        btnText: 'Buy Now',
         btnBackground: true,
-        link: 'https://gitpod.io/subscription/'
+        link: 'https://gitpod.io/subscription/',
+        renderCreateTeamLink: true
     },
     {
         title: 'Unlimited',
         img: <object role="presentation" tabIndex={-1} data={MagicCap} />,
         price: <>{isEurope() ? '€35' : '$39'}<span> / month</span></>,
         duration: 'unlimited hours',
-        features: ['Private & Public Repos', <span className="span">16 Parallel Workspaces <PopOver description="The number of workspaces running at the same time." /></span>, <span className="span">Team Manageable&nbsp;<PopOver description="Setup Gitpod for an entire team with a single invoice and credit card." /></span>, <span className="span">1h Timeout <PopOver description="Workspaces without user activity are stopped after 1 hour." /></span>, <span className="span">3h Timeout Boost <PopOver description="You can manually boost the timeout to 3 hours within a running workspace." /></span>],
-        btnText: 'Get Started',
-        link: 'https://gitpod.io/subscription/'
+        features: ['Private & Public Repos', <span className="span">16 Parallel Workspaces <PopOver description="The number of workspaces running at the same time." /></span>, <span className="span">1h Timeout <PopOver description="Workspaces without user activity are stopped after 1 hour." /></span>, <span className="span">3h Timeout Boost <PopOver description="You can manually boost the timeout to 3 hours within a running workspace." /></span>],
+        btnText: 'Buy Now',
+        link: 'https://gitpod.io/subscription/',
+        renderCreateTeamLink: true
     },
     {
         title: 'Enterprise',
@@ -101,19 +103,7 @@ const PricingBoxes = () => (
                 {plans.map(
                     (plan, i) => <PricingBox
                         key={i}
-                        title={plan.title}
-                        img={plan.img}
-                        price={plan.price}
-                        duration={plan.duration}
-                        feature={plan.feature}
-                        features={plan.features}
-                        transform={plan.transform}
-                        btnText={plan.btnText}
-                        btnBackground={plan.btnBackground}
-                        link={plan.link}
-                        background={plan.background}
-                        banner={plan.banner}
-                        backgroundColor={plan.backgroundColor}
+                        {...plan}
                     />
                 )}
             </div>
