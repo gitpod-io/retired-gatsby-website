@@ -222,11 +222,6 @@ export default `
             border: 2px solid ${colors.lightBlue};
         }
 
-        &--normal {
-            font-size: ${sizes.font.btnNormal};
-            padding: 1rem 2.8rem;
-        }
-
         &--big {
             padding: 1.5rem 4rem;
             font-size: ${sizes.font.h4};

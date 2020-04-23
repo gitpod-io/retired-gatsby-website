@@ -280,7 +280,7 @@ export default function ContactPage(props: any) {
                             <div>
                                 <button 
                                     type="submit" 
-                                    className="btn btn--normal btn--cta" 
+                                    className="btn btn--cta" 
                                     style={{ cursor: 'pointer' }}
                                 >
                                     Send
