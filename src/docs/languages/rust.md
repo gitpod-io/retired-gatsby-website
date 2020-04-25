@@ -98,7 +98,7 @@ In this section we will show you how to configure your project for debugging in 
 
 First, before we get to that we need to get some prerequisites set-up first we'll add the needed extension
 
-If you havn't added extensions to your repoository already add the following snippet to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file:
+If you haven't added extensions to your repository already add the following snippet to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file:
 
 ```yaml
 vscode:
