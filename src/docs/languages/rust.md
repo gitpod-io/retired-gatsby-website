@@ -84,12 +84,144 @@ vscode:
 #### Better TOML
 ![TOML Syntax highlighting example](../images/feature_syntax_highlight.png)
 
-Better TOML adds syntax highlighting to your `Cargo.toml`. To install Better TOML to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/41_config_gitpod_file/) file:
+Better TOML adds syntax highlighting to your `Cargo.toml`. To install Better TOML to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file:
+
 ```yaml
 vscode:
   extensions:
     - bungcip.better-toml@0.3.2:3QfgGxxYtGHfJKQU7H0nEw==
 ```
+
+## Debugging
+
+In this section we will show you how to configure your project for debugging in Gitpod.
+
+First, before we get to that we need to get some prerequisites set-up first we'll add the needed extension
+
+If you haven't added extensions to your repository already add the following snippet to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file:
+
+```yaml
+vscode:
+  extensions:
+    - webfreak.debug@0.24.0:1zVcRsAhewYEX3/A9xjMNw==
+```
+
+If you already added a extension just add the following below your other extensions.
+
+```yaml
+    - webfreak.debug@0.24.0:1zVcRsAhewYEX3/A9xjMNw==
+```
+
+The last prerequisite is a docker configuration.
+
+If you already have a [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/) just add the following:
+
+```Dockerfile
+RUN sudo apt-get -q update \
+    && sudo apt-get install -yq \
+        libpython3.6 \
+        rust-lldb \
+    && sudo rm -rf /var/lib/apt/lists/*
+
+ENV RUST_LLDB=/usr/bin/lldb-8
+```
+
+If not there are two steps first create a file called `.gitpod.Dockerfile` with the following content:
+
+```Dockerfile
+FROM gitpod/workspace-full
+
+USER gitpod
+
+RUN sudo apt-get -q update \
+    && sudo apt-get install -yq \
+        libpython3.6 \
+        rust-lldb \
+    && sudo rm -rf /var/lib/apt/lists/*
+
+ENV RUST_LLDB=/usr/bin/lldb-8
+```
+
+Next add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file:
+
+```yaml
+image:
+  file: .gitpod.Dockerfile
+```
+
+Now that thats out of the way, here is a video on how to configure the debug configuration
+
+![Rust debugging example](../images/RustDebug.gif)
+
+So, basically in this video we:
+1. Go to the debug menu and select "Add Configuration..."
+2. Next, in the dropdown choose "GDB: Launch Program"
+3. Go to the `Cargo.toml` file and find the name of the program.
+4. Modify the target field and change it to `${workspaceFolder}/target/debug/<PROGRAM_NAME>` where `<PROGRAM_NAME>` is the name of the program under the name field in the `Cargo.toml` file.
+5. Add another property to the created file called `preLaunchTask` and set it to "cargo"
+6. Go to the terminal menu and click configure tasks
+7. Select cargo build from the menu that pops up
+8. change the tag `type` to `command`
+9. change the tag `subcommand` to `args` and the value to `["build"]`
+10. Next remove the `problemMatcher` field.
+11. Add a field called `type` and set it to `process`
+12. Add a field called `label` and set it to `cargo`
+13. Go to the Rust file you want to debug
+14. Add a breakpoint or two
+15. Go back to the debug menu that has the crossed out spider
+16. Click the green run button.
+17. Finally, start debugging your Rust program!
+
+You can also create the Rust debug configuration file manually
+
+To start debugging your Rust application in Gitpod, please create a new directory called `.theia/`, and inside add a file called `launch.json`, add the following to it:
+
+```json
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "type": "gdb",
+          "request": "launch",
+          "name": "Debug Rust Code",
+          "preLaunchTask": "cargo",
+          "target": "${workspaceFolder}/target/debug/rust_debug",
+          "cwd": "${workspaceFolder}",
+          "valuesFormatting": "parseText"
+      }
+  ]
+}
+```
+
+Next create another file in the same `.theia/` directory called `tasks.json` with the following content:
+
+```json
+{
+    "tasks": [
+        {
+            "command": "cargo",
+            "args": [
+                "build"
+            ],
+            "type": "process",
+            "label": "cargo",
+        }
+    ],
+}
+```
+
+Then, simply open the Rust file you want to debug, add some breakpoints, and open the Debug panel (in the left vertical toolbar, click the icon with the crossed-out-spider), and click the green "Run" button.
+
+<br>
+
+
+To see a basic repository with Rust debugging configured, please check out [gitpod-io/Gitpod-Rust-Debug](https://github.com/gitpod-io/Gitpod-Rust-Debug):
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-Rust-Debug)
+
+<br>
 
 ## Resources
 * ***[Rocket-Example](https://www.gitpod.io/blog/docker-in-gitpod/)*** For an example of how to setup a project for the [`Rocket`](https://rocket.rs/) web-development framework
