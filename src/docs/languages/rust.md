@@ -154,7 +154,7 @@ Now that thats out of the way, here is a video on how to configure the debug con
 ![Rust debugging example](../images/RustDebug.gif)
 
 So, basically in this video we:
-1. Then, go to the debug menu and select "Add Configuration..."
+1. Go to the debug menu and select "Add Configuration..."
 2. Next, in the dropdown choose "GDB: Launch Program"
 3. Go to the `Cargo.toml` file and find the name of the program.
 4. Modify the target field and change it to `${workspaceFolder}/target/debug/<PROGRAM_NAME>` where `<PROGRAM_NAME>` is the name of the program under the name field in the `Cargo.toml` file.
