@@ -34,77 +34,90 @@ const IndexPage: React.SFC<{}> = () => (
         <TrustedBy
             brands={[
                 {
-                    alt: 'freeCodeCamp.org Logo',
+                    alt: 'freeCodeCamp',
                     url: 'https://www.freecodecamp.org/',
                     svg: FreeCodeCamp,
                     className: 'fcc'
                 },
                 {
-                    alt: 'Theia IDE Logo',
-                    url: 'https://theia-ide.org',
-                    svg: TheiaIDELogo
-                },
-                {
-                    alt: 'D-Wave Logo',
+                    alt: 'D-Wave',
                     url: 'https://www.dwavesys.com/',
-                    svg: DWaveLogo
+                    svg: DWaveLogo,
+                    className: 'dwave-logo'
                 },
                 {
-                    alt: 'Code Institute Logo',
-                    url: 'https://codeinstitute.net/',
-                    svg: CodeInstituteLogo
-                },
-                {
-                    alt: 'Aplitools Logo',
-                    url: 'https://applitools.com/',
-                    svg: AppliToolsLogo
-                },
-                {
-                    alt: '4Geeks Academy Logo',
-                    url: 'https://www.4geeksacademy.co/',
-                    svg: FourGeeksAcademyLogo,
-                    className: 'four-geeks'
-                },
-                {
-                    alt: 'Google Logo',
+                    alt: 'Google',
                     url: 'https://about.google/',
                     svg: GoogleLogo,
-                    transform: 'scale(.8) translateX(-1rem)'
+                    transform: 'scale(0.95)',
+                    className: 'grey-logo'
                 },
                 {
-                    alt: 'Mozilla Logo',
+                    alt: 'Mozilla',
                     url: 'https://www.mozilla.org/',
-                    svg: MozillaLogo
+                    svg: MozillaLogo,
+                    className: 'grey-logo'
                 },
                 {
-                    alt: 'Facebook Logo',
+                    alt: 'Facebook',
                     url: 'https://about.fb.com/',
-                    svg: FacebookLogo
+                    svg: FacebookLogo,
+                    className: 'grey-logo'
                 },
                 {
-                    alt: 'OpenAI Logo',
-                    url: 'https://openai.com/',
-                    svg: OpenAILogo
-                },
-                {
-                    alt: 'Sauce Labs Logo',
-                    url: 'https://saucelabs.com/',
-                    svg: SauceLabsLogo
-                },
-                {
-                    alt: 'Gatsby Logo',
-                    url: 'https://www.gatsbyjs.org/',
-                    svg: Gatsby
-                },
-                {
-                    alt: 'Vue Logo',
-                    url: 'https://vuejs.org/',
-                    svg: VueLogo
-                },
-                {
-                    alt: 'Uber Logo',
+                    alt: 'Uber',
                     url: 'https://www.uber.com',
-                    svg: UberLogo
+                    svg: UberLogo,
+                    transform: 'scale(0.95) translateX(5px)',
+                    className: 'grey-logo'
+                },
+                {
+                    alt: 'OpenAI',
+                    url: 'https://openai.com/',
+                    svg: OpenAILogo,
+                    className: 'grey-logo'
+                },
+                {
+                    alt: 'Sauce Labs',
+                    url: 'https://saucelabs.com/',
+                    svg: SauceLabsLogo,
+                    className: 'grey-logo'
+                },
+                {
+                    alt: 'Eclipse Theia',
+                    url: 'https://theia-ide.org',
+                    svg: TheiaIDELogo,
+                    className: 'grey-logo'
+                },
+                {
+                    alt: 'Code Institute',
+                    url: 'https://codeinstitute.net/',
+                    svg: CodeInstituteLogo,
+                    className: 'grey-logo'
+                },
+                {
+                    alt: 'Applitools',
+                    url: 'https://applitools.com/',
+                    svg: AppliToolsLogo,
+                    className: 'grey-logo'
+                },
+                {
+                    alt: '4Geeks Academy',
+                    url: 'https://www.4geeksacademy.co/',
+                    svg: FourGeeksAcademyLogo,
+                    className: 'four-geeks grey-logo'
+                },
+                {
+                    alt: 'Gatsby',
+                    url: 'https://www.gatsbyjs.org/',
+                    svg: Gatsby,
+                    className: 'gatsby-logo'
+                },
+                {
+                    alt: 'Vue.js',
+                    url: 'https://vuejs.org/',
+                    svg: VueLogo,
+                    className: 'vue-logo'
                 },
             ]}
         />
