@@ -63,7 +63,7 @@ const StyledTrustedBy = styled.section<{dontDisplayTheArrow?: boolean}>`
         -webkit-filter: grayscale(100%) contrast(0%);
 
         @media(max-width: ${sizes.breakpoints.sm}) {
-            transform: scale(170%) translateX(5px);
+            transform: scale(200%) translateX(5px);
         }
     }
 
