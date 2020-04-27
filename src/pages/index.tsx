@@ -49,7 +49,7 @@ const IndexPage: React.SFC<{}> = () => (
                     alt: 'Google',
                     url: 'https://about.google/',
                     svg: GoogleLogo,
-                    transform: 'scale(0.95)',
+                    transform: 'scale(0.9)',
                     className: 'grey-logo'
                 },
                 {
@@ -68,7 +68,7 @@ const IndexPage: React.SFC<{}> = () => (
                     alt: 'Uber',
                     url: 'https://www.uber.com',
                     svg: UberLogo,
-                    transform: 'scale(0.95) translateX(5px)',
+                    transform: 'scale(0.9) translateX(5px)',
                     className: 'grey-logo'
                 },
                 {
