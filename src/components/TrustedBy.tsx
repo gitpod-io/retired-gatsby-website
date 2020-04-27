@@ -21,8 +21,6 @@ const StyledTrustedBy = styled.section<{dontDisplayTheArrow?: boolean}>`
 
     .logos {
         display: flex;
-        filter: grayscale(1) opacity(0.6);
-        -webkit-filter: grayscale(1) opacity(0.6);
         transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 
         &-container {
@@ -54,16 +52,39 @@ const StyledTrustedBy = styled.section<{dontDisplayTheArrow?: boolean}>`
         }
     }
 
+    .grey-logo {
+        filter: grayscale(100%) contrast(0%) brightness(116%);
+        -webkit-filter: grayscale(100%) contrast(0%) brightness(116%);
+    }
+
     .fcc {
-        transform: scale(1.2);
+        transform: scale(150%);
+        filter: grayscale(100%) contrast(0%);
+        -webkit-filter: grayscale(100%) contrast(0%);
 
         @media(max-width: ${sizes.breakpoints.sm}) {
-            transform: scale(1.3) translateX(5px);
+            transform: scale(170) translateX(5px);
         }
+    }
+
+    .dwave-logo {
+        transform: scale(120%);
+        filter: grayscale(100%) contrast(0%) brightness(112%);
+        -webkit-filter: grayscale(100%) contrast(0%) brightness(112%);
     }
 
     .four-geeks {
         transform: scale(.9);
+    }
+
+    .gatsby-logo {
+        filter: grayscale(100%) opacity(47%);
+        -webkit-filter: grayscale(100%) opacity(47%);
+    }
+
+    .vue-logo {
+        filter: grayscale(100%) opacity(62%);
+        -webkit-filter: grayscale(100%) opacity(62%);
     }
 
     .arrow {
@@ -145,8 +166,7 @@ interface Brand {
 
 interface TrustedByProps {
     dontDisplayTheArrow?: boolean
-    brands: Brand[],
-    slideTotal?: number
+    brands: Brand[]
 }
 
 interface TrustedByState {
@@ -166,13 +186,12 @@ class TrustedBy extends React.Component<TrustedByProps, TrustedByState> {
     }
 
     handleButtonClick = () => {
-        const limit = this.props.slideTotal ? this.props.slideTotal : 1250
-        if(this.state.translateX <= limit) {
+        const limit = (this.props.brands.length - 6) * 150;
+        if (this.state.translateX <= limit) {
             this.setState(() => ({
                 translateX: this.state.translateX + 250
             }))
-        } 
-        else {
+        } else {
             this.setState(() => ({
                 translateX: 0
             }))
