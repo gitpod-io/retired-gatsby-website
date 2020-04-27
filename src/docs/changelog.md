@@ -2,6 +2,36 @@
 
 A curated, chronologically ordered list of notable changes in [gitpod.io](https://www.gitpod.io/).
 
+## 2020-04-21
+
+- Upgrade Pyenv's Python from 3.7.7 → 3.8.2 https://github.com/gitpod-io/workspace-images/pull/212
+- Drop support of .NET 2.2 in `gitpod/workspace-dotnet*`, because it reached End-Of-Life on 2019-12-23 https://dotnet.microsoft.com/platform/support/policy/dotnet-core
+
+## 2020-04-22
+
+- [theia] Upgrade Theia v0.17.0 → v1.1.0: https://github.com/eclipse-theia/theia/blob/master/CHANGELOG.md#v110
+- [theia] Upgrade monaco-languageclient and monaco-editor-core
+- [theia] Get all built-in VS Code extensions from Open VSX: https://open-vsx.org
+- [backend] Better handle excessive resource usage in workspaces (CPU, network, disk) and implement a fair use policy
+- [backend] Implement garbage collection for prebuilt workspace snapshots that are unused for more than 7 days
+- Overhaul and improve GitHub/GitLab login code
+
+## 2020-04-17
+
+- Fix `gitpod/workspace-postgres` image and pin to PostgreSQL version 12 https://github.com/gitpod-io/workspace-images/pull/209
+- Upgrade Rust 1.41.1 → 1.42.0 https://github.com/gitpod-io/workspace-images/pull/207
+- Fix `gitpod/workspace-mysql` image by updating `mysql.cnf` for MySQL 8, fixes https://github.com/gitpod-io/gitpod/issues/1399
+
+## 2020-04-15
+
+- Upgrade from Ubuntu 19.04 → Ubuntu 20.04 LTS, because 19.04 reached end-of-life and all its apt packages got deleted https://github.com/gitpod-io/gitpod/issues/1398
+- Upgrade Java 11.0.5.fx-zulu → 11.0.6.fx-zulu
+
+## 2020-04-09
+
+- [backend] Merge the 'asia-east1' cluster with the 'us-west1' cluster
+- [backend] Increase workspace garbage collection courtesy retention from 7 days → 21 days
+
 ## 2020-04-08
 
 - [backend] Rebuild workspace base image when it's missing, fixes https://github.com/gitpod-io/gitpod/issues/1329
