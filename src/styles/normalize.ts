@@ -178,6 +178,11 @@ export default `
         outline: none;
     }
 
+    body.user-is-tabbing .trustedBy:focus {
+        border: 2px solid #9ED3FF;
+        outline: none;
+    }
+
     button {
         font-family: inherit;
         outline: none;
