@@ -58,17 +58,17 @@ const StyledTrustedBy = styled.section<{dontDisplayTheArrow?: boolean}>`
     }
 
     .fcc {
-        transform: scale(150%);
+        transform: scale(1.5);
         filter: grayscale(100%) contrast(0%);
         -webkit-filter: grayscale(100%) contrast(0%);
 
         @media(max-width: ${sizes.breakpoints.sm}) {
-            transform: scale(200%) translateX(5px);
+            transform: scale(2) translateX(5px);
         }
     }
 
     .dwave-logo {
-        transform: scale(120%);
+        transform: scale(1.2);
         filter: grayscale(100%) contrast(0%) brightness(112%);
         -webkit-filter: grayscale(100%) contrast(0%) brightness(112%);
     }
