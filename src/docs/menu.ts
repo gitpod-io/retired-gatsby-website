@@ -214,7 +214,43 @@ export const MENU: MenuEntry[] = [
             M(
                 "Install on Google Cloud Platform",
                 "self-hosted/latest/install/install-on-gcp-script/"
-            )
+            ),
+            M(
+                "OAuth",
+                "self-hosted/latest/install/oauth/"
+            ),
+            M(
+                "HTTPS Certificates",
+                "self-hosted/latest/install/https-certs/"
+            ),
+            M(
+                "Databases",
+                "self-hosted/latest/install/database/"
+            ),
+            M(
+                "Docker Registry",
+                "self-hosted/latest/install/docker-registry/"
+            ),
+            M(
+                "Storage",
+                "self-hosted/latest/install/storage/"
+            ),
+            M(
+                "Nodes",
+                "self-hosted/latest/install/nodes/"
+            ),
+            M(
+                "Workspaces",
+                "self-hosted/latest/install/workspaces/"
+            ),
+            M(
+                "Helm 2.x",
+                "self-hosted/latest/install/helm-2x/"
+            ),
+            M(
+                "Administrating",
+                "self-hosted/latest/admin/admin/"
+            ),
         ]
     ),
     // M(
