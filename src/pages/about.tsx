@@ -9,7 +9,6 @@ import Team from '../resources/team.png'
 import Fox from '../resources/fox.png'
 import TypeFox from '../resources/typefox.png'
 import Details from '../components/Details'
-import Quote from '../components/Quote'
 
 const StyledAboutPage = styled.div`
     /* ------------------------------------------- */
@@ -231,7 +230,7 @@ const AboutPage: React.SFC<{}> = () => (
                             <div className="about__box">
                                 <img alt="Kiel Harbour" src={Kiel} />
                                 <h3>About TypeFox</h3>
-                                <p>TypeFox was founded in 2016 by Sven Efftinge, Moritz Eysholdt and Dr. Jan Koehnlein, with the mission to build smart tools for smart people. The headquarters are located in Kiel, Germany.</p>
+                                <p>TypeFox was founded in 2016 by Sven Efftinge, Moritz Eysholdt and Dr. Jan Koehnlein, with the mission to build smart tools for smart people. The headquarters is in Kiel, Germany.</p>
                                 <p>We are a driving force behind the language server protocol and the initiators of Eclipse Theia, the next generation IDE that powers Gitpod.</p>
                             </div>
                             <div className="about__box">
