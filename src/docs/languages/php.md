@@ -37,8 +37,8 @@ RUN wget http://xdebug.org/files/xdebug-2.9.1.tgz \
     && phpize \
     && ./configure \
     && make \
-    && sudo cp modules/xdebug.so /usr/lib/php/20170718 \
-    && sudo bash -c "echo -e '\nzend_extension = /usr/lib/php/20170718/xdebug.so\n[XDebug]\nxdebug.remote_enable = 1\nxdebug.remote_autostart = 1\n' >> /etc/php/7.2/cli/php.ini"
+    && sudo cp modules/xdebug.so /usr/lib/php/20190902 \
+    && sudo bash -c "echo -e '\nzend_extension = /usr/lib/php/20190902/xdebug.so\n[XDebug]\nxdebug.remote_enable = 1\nxdebug.remote_autostart = 1\n' >> /etc/php/7.4/cli/php.ini"
 ```
 
 Second, reference the above Dockerfile in a [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file, and then also install the extension, like so:
@@ -67,7 +67,7 @@ Next create a new directory called `.theia` and in that directory add a file cal
       "request": "launch",
       "stopOnEntry": true,
       "program": "${file}",
-      "cwd": "/workspace/Gitpod-PHP-Debug",
+      "cwd": "${workspaceRoot}",
       "externalConsole": false
     }
   ]
