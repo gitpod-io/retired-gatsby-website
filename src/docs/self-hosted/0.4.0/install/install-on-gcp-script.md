@@ -20,10 +20,12 @@ You can install Gitpod self-hosted in your GCP project from within Gitpod. This 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/self-hosted)
 
 ## Prerequisites
-- Ensure you have the [general installation prerequisites](../prepare-installation/) available.
+- A Google Cloud project
+- [Domain](../domain)
 - [Google Cloud SDK](https://cloud.google.com/sdk/install)
 - [Go (at least 1.12)](https://golang.org/doc/install)
-- mysql client
+- MySQL client
+- Optional: [HTTPS Certificates](../https-certs)
 
 ## Configuration
 

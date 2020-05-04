@@ -10,9 +10,14 @@ Gitpod also provides more optimized installations offering better performance fo
 
 ## Prerequisites
 
-- Ensure you have the [general installation prerequisites](../prepare-installation/) available.
+- A Kubernetes Cluster in Version 1.13 or newer.
+- [Domain](../domain)
+- [HTTPS Certificates](../https-certs): Optional, if you use an external docker registry.
 - `kubectl` with access to that cluster.
 - `helm`. We recommend version 3.x. Any version >= 2.11 will also work, but requires you to have [tiller configured](../helm-2x/).
+- Optional: A MySQL Database
+- Optional: A Docker Registry
+- Optional: Buckets Storage, e.g. Minio
 
 ## Configuration
 
@@ -29,17 +34,16 @@ git remote rename origin upstream
 For the rest of this guide we will assume that you are located in the root of a working copy of this repository.
 
 ### Domain name and IP address
-Gitpod requires a domain name which resolves to the IP of your Kubernetes cluster. In this document we'll use `your-domain.com` as example. Set your real domain in the `values.yaml` under `gitpod.hostname`.
+Gitpod requires [domain names](../domain/) which resolve to the IP of your Kubernetes cluster. 
+Set your domain in the `values.yaml` under `gitpod.hostname`.
+
 By default Gitpod deploys a [`LoadBalancer` service](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) as means of ingress.
 If you have a fixed IP address that you want to use, set the `gitpod.components.proxy.loadBalancerIP` field to the external IP of your cluster/load balancer.
 If this field is not set, Kubernetes will assign you a load balancer IP during deployment.
-Once you know your IP address, configure your three domain names to resolve to that IP address:
- - `your-domain.com`
- - `*.your-domain.com`
- - `*.ws.your-domain.com`
+Once you know your IP address, configure your three domain names to resolve to that IP address.
 
 ### OAuth integration
-Gitpod delegates authentication to a configurable [OAuth provider](../prepare-installation/#user-authorization-and-git-integration).
+Gitpod delegates authentication to a configurable OAuth provider.
 
 Follow [the steps](../oauth/) to set up GitHub or GitLab as OAuth provider.
 

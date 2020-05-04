@@ -2,9 +2,13 @@
 url: /docs/self-hosted/0.4.0/install/https-certs/
 ---
 
+
 ### HTTPS certificates
 
-Gitpod needs HTTPS certificates, your own Docker registry, or both to function properly. If you don't have certificates, but a Docker registry available, jump to the [next step](../docker-registry/).
+
+While we highly recommend operating Gitpod using HTTPS, Gitpod is able to run on insecure HTTP.
+If you use Gitpod's inernal docker registry, the downside of not using HTTPS is that Kubernetes won't be able to pull images from the registry because it considers the registry insecure.
+You can either resort to using an [external registry](#docker-registry-optional) or use HTTPS. For running Gitpod on insecure HTTP, no HTTPS certificates are needed and you can skip this section.
 
 > Important: The HTTPS certificates for your domain must include `your-domain.com`, `*.your-domain.com` and `*.ws.your-domain.com`. Beware that wildcard certificates are valid for one level only (i.e. `*.a.com` is not valid for `c.b.a.com`).
 
@@ -25,7 +29,12 @@ openssl dhparam -out secrets/https-certificates/dhparams.pem 2048
 ```
 
 #### Using Let's Encrypt
-If you do not have HTTPS certificates for your domain already, you can generate some using [Let's Encrypt](https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7).
+
+The most accessible means of obtaining HTTPS certificates is using [Let's Encrypt](https://letsencrypt.org/) which provides free certificats to anybody who can prove ownership of a domain.
+Gitpod requires [wildcard certificates](https://en.wikipedia.org/wiki/Wildcard_certificate) (e.g. `*.ws.your-domain.com`) which [can be obtained via Let's Encrypt](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) but require [proof of ownership via DNS](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge).
+There is a [plethora of tutorials](https://www.google.com/search?q=letsencrypt+wildcard) how to [generate wildcard certificates](https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7) using Let's Encrypt.
+Things get considerably easier when your domain is registered with a service for which a [Certbot DNS plugin exists](https://certbot.eff.org/docs/using.html#dns-plugins).
+
 Asuming you have `certbot` installed, the following script will generate and configure the required certificates (notice the placeholders):
 ```bash
 export DOMAIN=your-domain.cm
