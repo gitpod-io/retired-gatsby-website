@@ -23,7 +23,7 @@ There are three ways you can provide this file:
 
 ## Checked-in Gitpod Config File
 
-The simplest and preferred option is to check in a `.gitpod.yml` file into your repository. This way you
+The simplest and preferred option is to check in a `.gitpod.yml` file into the root of your repository. This way you can
 version your workspace configuration together with your code. If, for example, you need to go back to
 an old branch that required a different Docker image, it will start with the correct image, since that
 bit of configuration is part of your codebase.
