@@ -4,7 +4,18 @@ url: /docs/self-hosted/0.4.0/install/oauth/
 
 # How To integrate Gitpod with OAuth providers
 
-Currently Gitpod supports GitHub, GitHub Enterprise and GitLab.
+Gitpod does not implement user authentication itself, but integrates with other auth provider using [OAuth2](https://oauth.net/2/).
+Usually your Git hosting solution (e.g. GitHub or GitLab) acts as the OAuth auth provider. This way we control access to Gitpod while at
+the same time making sure every user has proper access to their Git repository.
+
+Gitpod supports the following authentication providers:
+* github.com
+* GitHub Enterprise in version 2.16.x and higher
+* gitlab.com
+* GitLab Community Edition in version 11.7.x and higher
+* GitLab Enterprise Edition in version 11.7.x and higher
+* Bitbucket — coming soon
+* Custom Auth Provider – Inquiry TypeFox for a quote
 
 ## GitHub
 To authenticate your users with GitHub you need to create a [GitHub OAuth App](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/).

@@ -204,10 +204,6 @@ export const MENU: MenuEntry[] = [
         "self-hosted/latest/self-hosted",
         [
             M(
-                "Prerequisites",
-                "self-hosted/latest/install/prepare-installation/"
-            ), 
-            M(
                 "Install on Vanilla Kubernetes",
                 "self-hosted/latest/install/install-on-kubernetes/"
             ),
@@ -218,6 +214,10 @@ export const MENU: MenuEntry[] = [
             M(
                 "OAuth",
                 "self-hosted/latest/install/oauth/"
+            ),
+            M(
+                "Domain",
+                "self-hosted/latest/install/domain/"
             ),
             M(
                 "HTTPS Certificates",
