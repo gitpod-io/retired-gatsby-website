@@ -5,7 +5,7 @@
 Whether you just want to hack, have code to review or feel like trying something new on
 GitHub, Gitpod launches a ready-to-code dev environment with a single click.
 
-Because Gitpod is based on OSS tech like VS Code, Docker and Kubernetes, it is familiar,
+Because Gitpod is based on OSS tech like VS Code, Docker, and Kubernetes, it is familiar,
 comprehensive, extensible, and easy to use. With deep GitHub integration, tools for
 sharing, and a focus on usability, Gitpod contains your entire dev workflow in a
 browser tab.
@@ -13,8 +13,8 @@ browser tab.
 ![](./images/gitpod-prefix.png)
 
 Unlike traditional cloud and desktop IDEs, Gitpod understands the context and prepares the
-IDE automatically. For instance, if you are creating a Gitpod workspace from a GitHub pull request,
-the IDE will open in code-review mode.
+IDE automatically. For instance, if you're creating a Gitpod workspace from a pull request,
+Gitpod will open in code-review mode.
 
 Also, Gitpod workspaces are meant to be disposable. That is, you do not need to maintain anything.
 They are created when you need them, and you can forget about them when you are done. Simply go to
