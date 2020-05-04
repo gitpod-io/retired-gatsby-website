@@ -243,14 +243,6 @@ export const MENU: MenuEntry[] = [
                 "Workspaces",
                 "self-hosted/latest/install/workspaces/"
             ),
-            M(
-                "Helm 2.x",
-                "self-hosted/latest/install/helm-2x/"
-            ),
-            M(
-                "Administrating",
-                "self-hosted/latest/admin/admin/"
-            ),
         ]
     ),
     // M(
