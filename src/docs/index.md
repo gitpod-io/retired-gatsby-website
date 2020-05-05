@@ -13,7 +13,7 @@ browser tab.
 ![](./images/gitpod-prefix.png)
 
 Unlike traditional cloud and desktop IDEs, Gitpod understands the context and prepares the
-IDE automatically. For instance, if you're creating a Gitpod workspace from a pull request,
+IDE automatically. For example, if you create a Gitpod workspace from a Pull Request,
 Gitpod will open in code-review mode.
 
 Also, Gitpod workspaces are meant to be disposable. That is, you do not need to maintain anything.
