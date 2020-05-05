@@ -22,8 +22,8 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     font-size: 95%;
     min-height: 48rem;
     min-width: 20rem;
-    max-width: 23rem;
-    width: 20%;
+    max-width: 26rem;
+    width: 25%;
     text-align: center;
     color: ${({ background }) => background ? colors.white : null};
     background: ${({ background }) => background ? 'url("https://www.gitpod.io/galaxy.jpg")' : colors.white};
