@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, sizes } from '../../styles/variables'
+import { colors, sizes, borders } from '../../styles/variables'
 import ToolIntegration from '../../resources/tool-integration.svg'
 import FullDevEnvironments from '../../resources/full-dev-environments.svg'
 import ReadyToCode from '../ReadyToCode'
@@ -84,7 +84,7 @@ const Styled = styled.div`
 
             @media(min-width:  881px) {
                 width: 45%;
-                border-left: 4px solid ${colors.offWhite3};
+                border-left: ${borders.bold};
             }
 
             @media(max-width: 1150px) {
