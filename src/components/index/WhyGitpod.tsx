@@ -259,7 +259,7 @@ const WhyGitpod = () => (
                         <div className="why-gitpod__text">
                             <h3>Based on the Online IDE Theia </h3>
                             <p>Gitpod isn't just an online playground, but a full-featured dev environment, just like your local IDE and Terminal.</p>
-                            <p>It includes fully-functional <strong>Linux terminals</strong>, you can install any <strong>VS Code extensions</strong> and provides all the other good features provided by <strong>Theia</strong>, the vendor neutral and highly extensible VS Code alternative, we have developed.</p>
+                            <p>It includes fully-functional Linux-based <strong>Terminals</strong>, and you can install any <strong>VS Code extensions</strong> or enjoy many other great features from <strong>Theia</strong>, the vendor neutral and highly extensible IDE framework we have developed.</p>
                             <p>Read more about <a href="/docs/ide/">Theia</a>.</p>
                         </div>
                     </div>
