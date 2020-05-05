@@ -204,43 +204,43 @@ export const MENU: MenuEntry[] = [
         "self-hosted/latest/self-hosted",
         [
             M(
-                "Install on Vanilla Kubernetes",
-                "self-hosted/latest/install/install-on-kubernetes/"
-            ),
-            M(
                 "Install on Google Cloud Platform",
                 "self-hosted/latest/install/install-on-gcp-script/"
             ),
             M(
-                "OAuth",
+                "Install on self-managed Kubernetes",
+                "self-hosted/latest/install/install-on-kubernetes/"
+            ),
+            M(
+                "Configure OAuth",
                 "self-hosted/latest/install/oauth/"
             ),
             M(
-                "Domain",
+                "Configure a Domain",
                 "self-hosted/latest/install/domain/"
             ),
             M(
-                "HTTPS Certificates",
+                "Configure HTTPS Certificates",
                 "self-hosted/latest/install/https-certs/"
             ),
             M(
-                "Databases",
+                "Configure a Database",
                 "self-hosted/latest/install/database/"
             ),
             M(
-                "Docker Registry",
+                "Configure a Docker Registry",
                 "self-hosted/latest/install/docker-registry/"
             ),
             M(
-                "Storage",
+                "Configure Storage",
                 "self-hosted/latest/install/storage/"
             ),
             M(
-                "Nodes",
+                "Configure Nodes",
                 "self-hosted/latest/install/nodes/"
             ),
             M(
-                "Workspaces",
+                "Configure Workspaces",
                 "self-hosted/latest/install/workspaces/"
             ),
         ]
