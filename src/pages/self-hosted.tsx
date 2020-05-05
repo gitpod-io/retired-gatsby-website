@@ -1,7 +1,6 @@
 import React from 'react'
 
 import IndexLayout from '../layouts'
-import styled from '@emotion/styled'
 import Cloud from '../resources/cloud.svg'
 import Details from '../components/Details'
 import Banner from '../components/Banner'
@@ -14,9 +13,6 @@ import GithubGitlab from '../resources/github-gitlab.svg'
 import Adminstration from '../resources/administration.svg'
 import Install from '../components/self-hosted/Install'
 
-const StyledSelfHostedPage = styled.div`
-
-`
 const features: FeatureProps[] = [
     {
         title: 'Full Data Control',
@@ -42,8 +38,7 @@ const features: FeatureProps[] = [
 
 const SelfHostedPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/self-hosted/' title="Self-Hosted">
-        <StyledSelfHostedPage>
-
+        <>
             <div className="grey-container">
 
                 {/* ----- Banner ----- */}
@@ -58,7 +53,6 @@ const SelfHostedPage: React.SFC<{}> = () => (
                     linkPath="/self-hosted/#install"
                     linkText="Install Now"
                     img={<object role="presentation" tabIndex={-1} data={Cloud} />}
-                    children={<span style={{ fontWeight: 600 }}>And Start Your 30-day Free Trial.</span>}
                 />
             </div>
 
@@ -88,8 +82,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
                 text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
                 anchors={[{ href: '/enterprise/#enterprise', text: 'Pricing' }, { href: '/docs/self-hosted/latest/self-hosted/', text: 'Documentation' }]}
             />
-
-        </StyledSelfHostedPage>
+        </>
     </IndexLayout>
 )
 
