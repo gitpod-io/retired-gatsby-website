@@ -5,7 +5,6 @@ import { sizes } from '../../styles/variables'
 import LightBulb from '../../resources/light-bulb.svg'
 import Rocket from '../../resources/rocket.png'
 import MagicCap from '../../resources/magic-cap.svg'
-import Earth from '../../resources/earth.svg'
 import IconOpenSource from '../../resources/icon-open-source.svg'
 import { PricingBoxProps } from '../PricingBox'
 import PopOver from '../PopOver'
@@ -23,9 +22,9 @@ const Styled = styled.div`
 
         &__boxes {
             display: flex;
+            justify-content: space-between;
 
             @media(max-width: ${sizes.breakpoints.lg}) {
-                justify-content: space-between;
                 flex-wrap: wrap;
             }
 
@@ -81,14 +80,6 @@ const plans: PricingBoxProps[] = [
         btnText: 'Buy Now',
         link: 'https://gitpod.io/subscription/',
         renderCreateTeamLink: true
-    },
-    {
-        title: 'Enterprise',
-        img: <img alt='Earth' src={Earth} />,
-        feature: <span style={{ fontWeight: 600 }}>Unleash Developer Productivity</span>,
-        background: true,
-        btnText: 'Learn More',
-        link: '/enterprise/#enterprise'
     }
 ]
 
