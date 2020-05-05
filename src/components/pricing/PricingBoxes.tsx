@@ -69,7 +69,7 @@ const plans: PricingBoxProps[] = [
         btnText: 'Buy Now',
         btnBackground: true,
         link: 'https://gitpod.io/subscription/',
-        renderCreateTeamLink: true
+        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Charge your Company <PopOver textPosition="bottom" description="TDB" /></a> 
     },
     {
         title: 'Unlimited',
@@ -79,7 +79,7 @@ const plans: PricingBoxProps[] = [
         features: ['Private & Public Repos', <span className="span">16 Parallel Workspaces <PopOver description="The number of workspaces running at the same time." /></span>, <span className="span">1h Timeout <PopOver description="Workspaces without user activity are stopped after 1 hour." /></span>, <span className="span">3h Timeout Boost <PopOver description="You can manually boost the timeout to 3 hours within a running workspace." /></span>],
         btnText: 'Buy Now',
         link: 'https://gitpod.io/subscription/',
-        renderCreateTeamLink: true
+        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Charge your Company <PopOver textPosition="bottom" description="TDB" /></a> 
     }
 ]
 
