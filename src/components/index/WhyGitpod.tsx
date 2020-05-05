@@ -243,7 +243,7 @@ const WhyGitpod = () => (
                             <h3>Seamless GitHub & GitLab Integration</h3>
                             <p>Gitpod lets you stay in the flow by blending perfectly into GitHub and GitLab. Start your workflow from there and let Gitpod beam you in a ready-to-code dev environment.</p>
                             <p>Whether you want to fix a bug, add a feature or do a code review, Gitpod gets you started immediately.</p>
-                            <p>Read more about <a href="/docs/context-urls/">integration.</a></p>
+                            <p>Read more about supported <a href="/docs/context-urls/">context URLs</a>.</p>
                         </div>
                     </div>
                 </div>
