@@ -38,5 +38,6 @@ export const shadows = {
 
 export const borders = {
     light: '1px solid rgba(0,0,0, .08)',
-    light1: '1px solid rgba(0,0,0, .2)'
+    light1: '1px solid rgba(0,0,0, .2)',
+    bold: `4px solid ${colors.offWhite3}`
 }

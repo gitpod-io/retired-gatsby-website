@@ -9,6 +9,12 @@ import Kubernetes from '../resources/kubernetes.svg'
 import Details from '../components/Details'
 import Banner from '../components/Banner'
 import ActionCard from '../components/ActionCard'
+import { FeatureProps } from '../components/self-hosted/Feature'
+import Features from '../components/self-hosted/Features'
+import Control from '../resources/control.svg'
+import Support from '../resources/support.svg'
+import GithubGitlab from '../resources/github-gitlab.svg'
+import Adminstration from '../resources/administration.svg'
 
 const StyledSelfHostedPage = styled.div`
     /* ------------------------------------------- */
@@ -134,6 +140,29 @@ const StepP = styled.p`
     }
 `;
 
+const features: FeatureProps[] = [
+    {
+        title: 'Full Data Control',
+        text: 'All data remains on your infrastructure, as Gitpod will run on air-gapped networks, disconnected from the internet.',
+        img: Control
+    },
+    {
+        title: 'GitLab & GitHub Integration',
+        text: 'Highly compatibility with Git Hosting solutions like GitHub Enterprise, GitLab Community Edition or Enterprise Edition. BitBucket integration is coming soon.',
+        img: GithubGitlab
+    },
+    {
+        title: 'Professional Support',
+        text: 'Schedule a call with our dedicated engineers whenever you need help.',
+        img: Support
+    },
+    {
+        title: 'Easy Administration',
+        text: 'No need for additional User Management. Simply use OAuth from Git Hosting and enjoy its the privileges.',
+        img: Adminstration
+    }
+]
+
 const SelfHostedPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/self-hosted/' title="Self-Hosted">
         <StyledSelfHostedPage>
@@ -145,16 +174,20 @@ const SelfHostedPage: React.SFC<{}> = () => (
                 <Banner
                     subtitle="Self-hosted Gitpod"
                     title={<h1>
-                            Make Gitpod Available In-House,
+                            Keep Your Data on Your Network and
                             <br />
-                            Hosted on <strong>Your Own Infrastructure.</strong>
+                            Host it on <strong>Your Own Infrastructure.</strong>
                     </h1>}
                     linkPath="/self-hosted/#install"
-                    linkText="View Install Instructions"
+                    linkText="Install Now"
                     img={<object role="presentation" tabIndex={-1} data={Cloud}/>}
-                    children={<p>1 Month for <span>Free.</span></p>}
+                    children={<span style={{fontWeight: 600}}>And Start Your 30-day Free Trial.</span>}
                 />
             </div>
+            
+            {/* ----- Section Features ----- */}
+
+            <Features features={features} />
 
             {/* ----- Section Install ----- */}
 
