@@ -12,7 +12,7 @@ browser tab.
 
 ![](./images/gitpod-prefix.png)
 
-Unlike traditional cloud and desktop IDEs, Gitpod understands the context and prepares the
+Unlike traditional cloud and desktop IDEs, Gitpod understands the context and adjusts the
 IDE automatically. For example, if you create a Gitpod workspace from a Pull Request,
 Gitpod will open in code-review mode.
 
