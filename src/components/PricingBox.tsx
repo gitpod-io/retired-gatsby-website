@@ -1,7 +1,6 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import PopOver from './PopOver'
 import { colors, shadows, sizes } from '../styles/variables'
 import IconTick from '../resources/icon-tick.svg'
 
@@ -214,7 +213,8 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         }
     }
 
-    .create-team {
+    .sub-action {
+        font-size: 90%;
         margin-top: .5rem;
         padding-bottom: 0;
     }
@@ -242,7 +242,7 @@ export interface PricingBoxProps {
     banner?: string,
     bannerColor?: string,
     backgroundColor?: string,
-    renderCreateTeamLink?: boolean
+    subAction?: JSX.Element
 }
 
 const PricingBox: React.SFC<PricingBoxProps> = ({
@@ -263,7 +263,7 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
     banner,
     bannerColor,
     backgroundColor,
-    renderCreateTeamLink
+    subAction
 }) => (
         <StyledPricingBox
             transform={transform}
@@ -294,7 +294,7 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
                 <br />
                 {text ? <p className="text">{text}</p> : null}
                 {btn ? btn : null}
-                {renderCreateTeamLink ? <a href="https://gitpod.io/teams/" target="_blank" className="create-team">Create Team <PopOver textPosition="bottom" description="Setup Gitpod for an entire team with a single invoice and credit card." /></a> : <div aria-hidden="true" className="spacer"></div>}
+                {subAction ? subAction : <div aria-hidden="true" className="spacer"></div>}
             </div>
             {banner ? <div className="banner"><p>{banner}</p></div> : null}
         </StyledPricingBox>
