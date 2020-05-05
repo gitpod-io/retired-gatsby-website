@@ -20,14 +20,14 @@ const installs: InstallProps[] = [
         img: Kubernetes,
         alt: "Kubernetes",
         text: "All you need is a domain and a Kubernetes cluster.",
-        linkPath: '' // Todo add link path here
+        linkPath: 'install-on-kubernetes' 
     },
     {
         title: "Google Cloud Platform",
         img: GoogleCloudLogo,
         alt: "Google Cloud",
         text: " Install Gitpod optimised for Google Cloud Platform.",
-        linkPath: '' // Todo add link path here
+        linkPath: 'install-on-gcp-script' 
     }
 ]
 
@@ -78,9 +78,7 @@ const StyledSection = styled.section`
                 margin: 0 auto;
            }
         }
-
     }
-
 `
 
 const Install = () => (
@@ -89,14 +87,14 @@ const Install = () => (
             <h2>Install Self-Hosted Gitpod</h2>
             <div className="install">
                 {
-                    installs.map(({ title, text, img, alt }: InstallProps, i) => (
+                    installs.map(({ title, text, img, alt, linkPath }: InstallProps, i) => (
                         <div key={`${i}+${title}`}className="install__box">
                             <img src={img} alt={alt} />
                             <h3>{title}</h3>
                             <p>
                                 {text}
                             </p>
-                            <Link to="/docs/" className="btn">Install Now</Link>
+                            <Link to={`/docs/self-hosted/latest/install/${linkPath}/`} className="btn">Install Now</Link>
                         </div>
                     ))
                 }
