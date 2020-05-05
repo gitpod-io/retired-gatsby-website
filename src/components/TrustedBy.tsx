@@ -17,10 +17,9 @@ const StyledTrustedBy = styled.section<{ dontDisplayTheArrow?: boolean }>`
 
     .logos {
         display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden;
         transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
         padding: 1rem 0 1rem;
+        overflow-x: scroll;
 
         a {
             display: flex;
@@ -40,7 +39,7 @@ const StyledTrustedBy = styled.section<{ dontDisplayTheArrow?: boolean }>`
     .fcc {
         filter: grayscale(100%) contrast(0%);
         -webkit-filter: grayscale(100%) contrast(0%);
-        width: 16rem;
+        width: 14rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
             width: 13rem;
@@ -73,7 +72,7 @@ const StyledTrustedBy = styled.section<{ dontDisplayTheArrow?: boolean }>`
 `
 
 const StyledBrandImage = styled.img<{ transform?: string }>`
-    width: 12rem;
+    width: 11.6rem;
 
     @media(max-width: ${sizes.breakpoints.lg}) {
         width: 11rem;   
