@@ -5,7 +5,7 @@ subtitle: A Milestone for Automated Development Environments
 title: GitHub Codespaces, Welcome to the Party!
 image: /gh-cs-bg.jpg
 ---
-Today, GitHub announced the private beta of GitHub Codespaces, which provide container-based dev environments for GitHub projects. At Gitpod, we are building a similar solution, and while GitHub’s Codespaces don’t fully implement everything we do, they truly embrace the notion of dev environments as code. 
+Today, GitHub announced the private beta of [GitHub Codespaces](https://github.com/features/codespaces), which provide container-based dev environments for GitHub projects. At Gitpod, we are building a similar solution, and while GitHub’s Codespaces don’t fully implement everything we do, they truly embrace the notion of dev environments as code. 
 
 This is great news, because it really helps to explain why this is going to change professional software development entirely.
 
