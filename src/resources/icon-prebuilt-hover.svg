@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67" height="35" viewBox="0 0 67 35">
-      <defs>
-    <pattern id="img1" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" width="82.373" height="102.373" viewBox="140 0 52.373 52.373">
-        <image xlink:href="https://www.gitpod.io/galaxy.jpg" y="-30" width="370" height="100" />
-    </pattern>
-  </defs>
-    <g transform="translate(0.001)">
-        <rect width="32" height="16" rx="2" transform="translate(-0.001 19)" fill="url(#img1)" />
-        <rect width="32" height="16" rx="2" transform="translate(34.999 19)" fill="url(#img1)" />
-        <rect width="32" height="16" rx="2" transform="translate(16.999)" fill="url(#img1)" /></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67" height="35" viewBox="0 0 67 35"><defs><pattern id="img1" width="82.373" height="102.373" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" viewBox="140 0 52.373 52.373"><image width="370" height="100" y="-30" xlink:href="https://www.gitpod.io/galaxy.jpg"/></pattern></defs><g transform="translate(0.001)"><rect width="32" height="16" fill="url(#img1)" rx="2" transform="translate(-0.001 19)"/><rect width="32" height="16" fill="url(#img1)" rx="2" transform="translate(34.999 19)"/><rect width="32" height="16" fill="url(#img1)" rx="2" transform="translate(16.999)"/></g></svg>
