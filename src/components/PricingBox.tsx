@@ -275,7 +275,7 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
             btnBackground={btnBackground}
         >
             <h4>{title}</h4>
-            {img}
+            {img ? img : null}
             {price ? <div className="price">{price}</div> : null}
             {duration ? <div className="duration">{duration}</div> : null}
             {feature ? <div className="feature">{feature}</div> : null}

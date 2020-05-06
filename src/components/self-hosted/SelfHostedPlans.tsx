@@ -1,0 +1,82 @@
+import React from 'react'
+
+import styled from '@emotion/styled'
+import { Link } from 'gatsby'
+import { colors, borders, sizes } from '../../styles/variables'
+import SelfHostedPlan, { SelfHostedPlanProps } from './SelfHostedPlan'
+import Cloud from '../../resources/cloud.svg'
+
+const StyledSelfHostedPlans = styled.section`
+    background: ${colors.white};
+
+    h3 {
+        margin-bottom: 2rem;
+    }
+
+    .plans {
+        position: relative;
+        padding: 4rem 0;
+        max-width: 800px;
+        text-align: center;
+        background: ${colors.offWhite};
+        border: ${borders.light};
+        z-index: 10000;
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 78rem;
+            margin: 0 auto;
+            padding: 4rem 8rem 2rem;
+        }
+    }
+
+    object {
+        position: absolute;
+        top: -10rem;
+        right: -35rem;
+        z-index: -1;
+
+        @media(max-width: ${sizes.breakpoints.lg}) {
+            display: none;
+        }
+    }
+`
+
+const plans: SelfHostedPlanProps[] = [
+    {
+        title: 'Free',
+        subtitle: 'For up to 5 users',
+        features: ['Unlimited Hours', 'Private & Public Repos', 'Admin dashboard'],
+        btnText: 'Contact Sales',
+        href: '' // Todo add the href value
+    },
+    {
+        title: <>$20 <span>/month</span></>,
+        subtitle: 'per user',
+        features: ['Unlimited Hours', 'Private & Public Repos', 'Admin dashboard', '30-day free trial'],
+        btnText: 'Contact Sales',
+        href: '' // Todo add the href value
+    }
+]
+
+const SelfHostedPlans = () => (
+    <StyledSelfHostedPlans>
+        <div className="row">
+            <div className="plans">
+                <h3>Self-Host Gitpod</h3>
+                <p>Host Gitpod on your own infrastructure. Learn More.</p>
+                <div className="plans__container">
+                    {
+                        plans.map((plan: SelfHostedPlanProps, i) => <SelfHostedPlan key={`${i}+${plan.title}`} {...plan} /> )
+                    }
+                </div>
+                <Link to="/docs/self-hosted/latest/self-hosted/" className="btn btn--cta">View Install Instructions</Link>
+                <object role="presentation" tabIndex={-1} data={Cloud} />
+            </div>
+        </div>
+    </StyledSelfHostedPlans>
+)
+
+export default SelfHostedPlans
