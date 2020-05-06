@@ -49,15 +49,15 @@ const plans: SelfHostedPlanProps[] = [
         title: 'Free',
         subtitle: 'For up to 5 users',
         features: ['Unlimited Hours', 'Private & Public Repos', 'Admin dashboard'],
-        btnText: 'Contact Sales',
-        href: '' // Todo add the href value
+        btnText: 'Install Now',
+        href: '/docs/self-hosted/latest/self-hosted/'
     },
     {
         title: <>$20 <span>/month</span></>,
         subtitle: 'per user',
         features: ['Unlimited Hours', 'Private & Public Repos', 'Admin dashboard', '30-day free trial'],
         btnText: 'Contact Sales',
-        href: '' // Todo add the href value
+        href: '/contact/'
     }
 ]
 
@@ -66,13 +66,12 @@ const SelfHostedPlans = () => (
         <div className="row">
             <div className="plans">
                 <h3>Self-Host Gitpod</h3>
-                <p>Host Gitpod on your own infrastructure. Learn More.</p>
+                <p>Host Gitpod on your own infrastructure. <Link to="/docs/self-hosted/latest/self-hosted/">Learn More</Link>.</p>
                 <div className="plans__container">
                     {
                         plans.map((plan: SelfHostedPlanProps, i) => <SelfHostedPlan key={`${i}+${plan.title}`} {...plan} /> )
                     }
                 </div>
-                <Link to="/docs/self-hosted/latest/self-hosted/" className="btn btn--cta">View Install Instructions</Link>
                 <object role="presentation" tabIndex={-1} data={Cloud} />
             </div>
         </div>
