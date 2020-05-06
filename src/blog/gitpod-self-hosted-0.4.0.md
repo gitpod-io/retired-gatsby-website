@@ -1,5 +1,5 @@
 ---
-date: Wed May 06 2020 16:49:24 GMT+0000 (UTC)
+date: Wed May 06 2020 14:49:24 GMT+0000 (UTC)
 author: meysholdt
 subtitle: Features, Fixes, Fixes, and Fixes
 title: Gitpod Self-Hosted 0.4.0
