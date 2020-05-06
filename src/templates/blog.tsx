@@ -76,6 +76,10 @@ const StyledBlogTemplate = styled.div`
         margin: 2rem 0;
     }
 
+    li {
+        list-style: disc;
+    }
+
     li + li,
     p + p {
         margin-top: 2rem;
