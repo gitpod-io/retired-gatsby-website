@@ -78,7 +78,7 @@ const plans: PricingBoxProps[] = [
         img: <object role="presentation" tabIndex={-1} data={LightBulb} />,
         price: <>{isEurope() ? '€8' : '$9'}<span> / month</span></>,
         duration: '100 hours / month',
-        features: ['Private & Public Repos', <span className="span">4 Parallel Workspaces <PopOver description="The number of workspaces running at the same time." /></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes." /></span>],
+        features: ['Private & Public Repos', <span className="span">4 Parallel Workspaces <PopOver description="The number of workspaces a user can run at the same time." /></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes." /></span>],
         btnText: 'Buy Now',
         link: 'https://gitpod.io/subscription/'
     },
@@ -87,7 +87,7 @@ const plans: PricingBoxProps[] = [
         img: <img alt='Rocket' src={Rocket} />,
         price: <>{isEurope() ? '€23' : '$25'}<span> / month</span></>,
         duration: 'Unlimited hours',
-        features: ['Private & Public Repos', <span className="span">8 Parallel Workspaces <PopOver description="The number of workspaces running at the same time." /></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes." /></span>],
+        features: ['Private & Public Repos', <span className="span">8 Parallel Workspaces <PopOver description="The number of workspaces a user can run at the same time." /></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes." /></span>],
         btnText: 'Buy Now',
         btnBackground: true,
         link: 'https://gitpod.io/subscription/',
