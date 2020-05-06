@@ -19,7 +19,7 @@ const Styled = styled.div`
     }
 
     .pricing {
-        padding-bottom: 5rem;
+        padding: 0;
 
         &__boxes {
             display: flex;
@@ -38,7 +38,14 @@ const Styled = styled.div`
                 flex-direction: column;
                 align-items: center;
             }
+        }
+    }
 
+    .container--1 {
+        padding: 10rem 0 0;
+
+        @media(max-width: ${sizes.breakpoints.md}) {
+            padding: 5rem 0 0;
         }
     }
 `
@@ -91,7 +98,7 @@ const plans: PricingBoxProps[] = [
         btnText: 'Buy Now',
         btnBackground: true,
         link: 'https://gitpod.io/subscription/',
-        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Create Team<PopOver textPosition="bottom" description="Get your entire team onto Gitpod with a single invoice"/></a>
+        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Create Team<PopOver textPosition="bottom" description="Get your entire team onto Gitpod with a single invoice" /></a>
     },
     {
         title: 'Unlimited',
@@ -101,20 +108,31 @@ const plans: PricingBoxProps[] = [
         features: ['Private & Public Repos', <span className="span">16 Parallel Workspaces <PopOver description="The maximum number of workspaces a user can run at the same time" /></span>, <span className="span">1h Timeout <PopOver description="Workspaces without user activity are stopped after 1 hour" /></span>, <span className="span">3h Timeout Boost <PopOver description="You can manually boost the timeout to 3 hours within a running workspace" /></span>],
         btnText: 'Buy Now',
         link: 'https://gitpod.io/subscription/',
-        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Create Team<PopOver textPosition="bottom" description="Get your entire team onto Gitpod with a single invoice"/></a>
+        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Create Team<PopOver textPosition="bottom" description="Get your entire team onto Gitpod with a single invoice" /></a>
     }
 ]
 
 const PricingContainer = styled.div`
     background-color: ${colors.white};
-    padding: 3rem;
-    margin: 0 -500px;
+    padding: 3rem 0;
     justify-content: flex-start;
     border: 1px solid ${colors.offWhite2};
+    border-left: none;
+    border-right: none;
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: flex;
+        flex-wrap: wrap;
+    }
 `;
 
 const Tab = styled.button`
-    padding: 1rem 2rem;
+    display: block;
+    padding: 1.3rem 2rem;
     font-size: 18px;
     color: ${colors.textLight};
     min-width: 15rem;
@@ -148,42 +166,46 @@ const PricingBoxes = () => {
     const [selfHosted, setSelfHosted] = useState(isSelfHosted());
     return <Styled>
         <section className="pricing">
-            <h1 className="sub">Plans &amp; Pricing</h1>
-            <div style={{
-                display: 'flex',
-                justifyContent: 'center'
-            }}>
-                <Tab style={{
-                    backgroundColor: selfHosted ? colors.offWhite2 : colors.white,
-                }}
-                    onClick={()=>setSelfHosted(false)}
-                >Cloud</Tab>
-                <Tab style={{
-                    backgroundColor: selfHosted ? colors.white : colors.offWhite2,
-                }}
-                    onClick={()=> setSelfHosted(true)}
-                >Self-Hosted</Tab>
+            <div className="grey-container container--1">
+                <div className="row">
+                    <h1 className="sub">Plans &amp; Pricing</h1>
+                    <div style={{
+                        display: 'flex',
+                        justifyContent: 'center'
+                    }}>
+                        <Tab style={{
+                            backgroundColor: selfHosted ? colors.offWhite2 : colors.white,
+                        }}
+                            onClick={() => setSelfHosted(false)}
+                        >Cloud</Tab>
+                        <Tab style={{
+                            backgroundColor: selfHosted ? colors.white : colors.offWhite2,
+                        }}
+                            onClick={() => setSelfHosted(true)}
+                        >Self-Hosted</Tab>
+                    </div>
+                </div>
             </div>
             <PricingContainer>
-                <div className="pricing__boxes" style={{
-                    display: selfHosted ? 'none' : 'flex'
-                }}>
+                <div
+                    className={`pricing__boxes ${selfHosted ? 'hide' : 'show'}`}
+                >
                     {plans.map(
                         (plan, i) => <PricingBox
-                        key={i}
-                        {...plan}
+                            key={i}
+                            {...plan}
                         />
-                        )}
+                    )}
                 </div>
-                <div className="pricing__boxes" style={{
-                    display: selfHosted ? 'flex' : 'none'
-                }}>
+                <div
+                    className={`pricing__boxes ${selfHosted ? 'show' : 'hide'}`}
+                >
                     {selfHostedPlans.map(
                         (plan, i) => <PricingBox
-                        key={i}
-                        {...plan}
+                            key={i}
+                            {...plan}
                         />
-                        )}
+                    )}
                 </div>
             </PricingContainer>
         </section>
