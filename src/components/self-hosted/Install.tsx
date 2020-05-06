@@ -84,7 +84,7 @@ const StyledSection = styled.section`
 const Install = () => (
     <StyledSection className="install__section">
         <div className="row" id="install">
-            <h2>Install Self-Hosted Gitpod</h2>
+            <h2>Install Gitpod Self-Hosted</h2>
             <div className="install">
                 {
                     installs.map(({ title, text, img, alt, linkPath }: InstallProps, i) => (
@@ -99,7 +99,7 @@ const Install = () => (
                     ))
                 }
             </div>
-            <p>Enhanced support for AWS, Azure, and Openshift is coming soon.</p>
+            <p>Enhanced support for AWS, Azure, and OpenShift is coming soon.</p>
         </div>
     </StyledSection>
 )
