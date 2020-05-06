@@ -48,6 +48,7 @@ const StyledBlogTemplate = styled.div`
     margin: 8rem auto;
     box-shadow: ${shadows.light};
     background-color: ${colors.white};
+    overflow: hidden;
 
     .contents {
         padding: 5rem 3rem;
@@ -119,6 +120,26 @@ const StyledBlogTemplate = styled.div`
     ol, ul {
         margin: 3rem 0 3rem 5rem;
     }
+
+    .scale {
+        transform: scale(1.3);
+        margin-top: 14rem;
+
+        @media(max-width: 680px) {
+            transform: scale(1.2);
+            margin-top: 9rem;
+        }
+
+        @media(max-width: 610px) {
+            transform: scale(1.1);
+            margin: 8rem 0;
+        }
+
+        @media(max-width: 610px) {
+            transform: scale(1);
+            margin: 4rem 0;
+        }
+    } 
 `
 
 

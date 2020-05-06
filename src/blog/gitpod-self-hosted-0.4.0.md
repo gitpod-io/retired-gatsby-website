@@ -27,7 +27,9 @@ This release ships with a new web UI for administrative tasks. The UI is particu
 It allows for easy listing and searching of users and worksapces.
 When selecting a user, the UI will show the user's details and workspaces, as you can in the following screenshot:
 
-![Gitpod Admin UI](./self-hosted-0.4.0/sh-userdetails2.png)
+<div class="scale">
+    <img src="./self-hosted-0.4.0/sh-userdetails2.png" alt="Gitpod Admin UI">
+</div>
 
 To try the new admin interface in Gitpod Self-Hosted, you'll need to assign the "admin" privilege to your user and open /admin in your browser.
 
