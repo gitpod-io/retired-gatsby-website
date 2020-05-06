@@ -16,7 +16,7 @@ interface StyledPricingBoxProps {
 
 const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     position: relative;
-    margin-bottom: 3rem;
+    margin: 2rem 1rem;
     padding: 3rem 2.8rem;
     font-size: 95%;
     min-height: 48rem;
@@ -28,7 +28,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     background: ${({ background }) => background ? 'url("https://www.gitpod.io/galaxy.jpg")' : colors.white};
     background-size: ${({ background }) => background ? 'cover' : null};
     background-position: ${({ background }) => background ? 'left' : null};
-    box-shadow: ${shadows.light};
+    border: 1px solid ${colors.offWhite2};
     background-color: ${({ backgroundColor }) => backgroundColor ? backgroundColor : null};
 
     @media(min-width: ${sizes.breakpoints.md}) {

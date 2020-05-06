@@ -8,7 +8,6 @@ import Details from '../components/Details'
 import PricingBoxes from '../components/pricing/PricingBoxes'
 import Plans from '../components/pricing/Plans'
 import Business from '../components/pricing/Business'
-import SelfHostedPlans from '../components/self-hosted/SelfHostedPlans'
 
 
 const PricingPage: React.SFC<{}> = () => (
@@ -21,8 +20,6 @@ const PricingPage: React.SFC<{}> = () => (
                 <div className="row">
                     <PricingBoxes />
                 </div>
-
-                    <SelfHostedPlans />
                     
                 <div className="row">
                     <Plans />

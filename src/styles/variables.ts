@@ -5,6 +5,7 @@ export const colors = {
     link: '#0087BE',
     lightBlue: '#1AA6E4',
     white: ' #FFFFFF',
+    offWhite0: '#fcfcfc',
     offWhite: '#F7F7F7',
     offWhite1: '#BCBCBC',
     offWhite2: '#e5e5e5',
