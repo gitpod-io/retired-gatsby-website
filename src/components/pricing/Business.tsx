@@ -25,9 +25,9 @@ const Styled = styled.div`
             }
         }
 
-        .btn {
-            margin: 1rem;
-            transform: translateY(-4rem);
+        p {
+            max-width: 70rem;
+            margin: -1rem auto 3rem;
         }
     }
 `
@@ -35,11 +35,9 @@ const Styled = styled.div`
 const Business = () => (
     <Styled>
         <section className="business">
-            <h2>Business Solutions</h2>
-            <p>Here you can find further information for your business solution including its pricing.</p>
-            <Link to="/education/" className="btn">Education</Link>
-            <Link to="/recruiting/" className="btn">Recruiting</Link>
-            <Link to="/vendor/" className="btn">Vendor</Link>
+            <h2>Gitpod Enterprise</h2>
+            <p>Unleash Developer Productivity. Use Gitpod as your dev environment and enjoy automated setups, better collaboration, higher code quality and a greater workflow.</p>
+            <Link to="/enterprise/" className="btn">Enterprise Solutions</Link>
         </section>
     </Styled>
 )
