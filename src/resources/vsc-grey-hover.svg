@@ -1,14 +1,1 @@
-<svg
-    baseProfile="full"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:ev="http://www.w3.org/2001/xml-events" width="52.373" height="52.373" viewBox="0 0 52.373 52.373">
-  <defs>
-    <pattern id="img1" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" width="82.373" height="82.373" viewBox="140 0 52.373 52.373">
-        <image xlink:href="https://www.gitpod.io/galaxy.jpg" y="-30" width="370" height="100" />
-    </pattern>
-  </defs>
-    <path fill="url(#img1)" class="a" d="M39.772-.006V44.975L.5,39.142,39.772,52.367,52.865,46.92V6.253l0,0,0-.009v-.8Z" transform="translate(-0.496 0.006)"/>
-    <path fill="url(#img1)" class="a" d="M39.005,38.037,26.976,49.928l-7.243-5.454-2.985,1,7.368,7.284-7.368,7.284,2.985,1,7.243-5.455h0L39.005,67.471l7.2-3.061V41.1Zm0,8.485V58.986l-8.276-6.232Z" transform="translate(-13.474 -30.374)"/>
-</svg>
-
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" width="52.373" height="52.373" baseProfile="full" viewBox="0 0 52.373 52.373"><defs><pattern id="img1" width="82.373" height="82.373" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" viewBox="140 0 52.373 52.373"><image width="370" height="100" y="-30" xlink:href="https://www.gitpod.io/galaxy.jpg"/></pattern></defs><path fill="url(#img1)" d="M39.772-.006V44.975L.5,39.142,39.772,52.367,52.865,46.92V6.253l0,0,0-.009v-.8Z" class="a" transform="translate(-0.496 0.006)"/><path fill="url(#img1)" d="M39.005,38.037,26.976,49.928l-7.243-5.454-2.985,1,7.368,7.284-7.368,7.284,2.985,1,7.243-5.455h0L39.005,67.471l7.2-3.061V41.1Zm0,8.485V58.986l-8.276-6.232Z" class="a" transform="translate(-13.474 -30.374)"/></svg>
