@@ -113,7 +113,7 @@ const PricingContainer = styled.div`
     border: 1px solid ${colors.offWhite2};
 `;
 
-const Tab = styled.div`
+const Tab = styled.button`
     padding: 1rem 2rem;
     font-size: 18px;
     color: ${colors.textLight};
@@ -121,9 +121,22 @@ const Tab = styled.div`
     text-align: center;
     background-color: ${colors.white};
     border: 1px solid ${colors.offWhite2};
-    border-bottom: none;
+    border-bottom-color: transparent;
     margin-bottom: -1px;
     cursor: pointer;
+
+    &:first-of-type {
+       border-right: none;
+    }
+
+    &:last-of-type {
+        border-left: none;
+    }
+
+    body.user-is-tabbing &:focus {
+        outline: none;
+        border: 1px solid #1AA6E4;;
+    }
 `;
 
 function isSelfHosted() {
@@ -142,13 +155,11 @@ const PricingBoxes = () => {
             }}>
                 <Tab style={{
                     backgroundColor: selfHosted ? colors.offWhite2 : colors.white,
-                    borderRight: 'none'
                 }}
                     onClick={()=>setSelfHosted(false)}
                 >Cloud</Tab>
                 <Tab style={{
                     backgroundColor: selfHosted ? colors.white : colors.offWhite2,
-                    borderLeft: 'none'
                 }}
                     onClick={()=> setSelfHosted(true)}
                 >Self-Hosted</Tab>

@@ -19,12 +19,8 @@ const PricingPage: React.SFC<{}> = () => (
             <div className="grey-container">
                 <div className="row">
                     <PricingBoxes />
-                </div>
-                    
-                <div className="row">
                     <Plans />
                 </div>
-
             </div>
 
             <div className="row">
