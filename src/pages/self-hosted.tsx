@@ -50,7 +50,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
                     </h1>}
                     linkPath="/self-hosted/#install"
                     linkText="Install Now"
-                    paragraph="Free for up to 5 users."
+                    paragraph="Free for up to 5 Users."
                     img={<object role="presentation" tabIndex={-1} data={Cloud} />}
                 />
             </div>
@@ -77,9 +77,9 @@ const SelfHostedPage: React.SFC<{}> = () => (
             {/* ----- Section More About Self Hosting ----- */}
 
             <Details
-                title="More About Gitpod"
-                text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-                anchors={[{ href: '/pricing/#self-hosted', text: 'Pricing' }, { href: '/docs/self-hosted/latest/self-hosted/', text: 'Documentation' }]}
+                title="More About Gitpod Self-Hosted"
+                text="Learn about its requirements, installation steps, and pricing model."
+                anchors={[{ href: '/docs/self-hosted/latest/self-hosted/', text: 'Documentation' }, { href: '/pricing/#self-hosted', text: 'Pricing' }]}
             />
         </>
     </IndexLayout>
