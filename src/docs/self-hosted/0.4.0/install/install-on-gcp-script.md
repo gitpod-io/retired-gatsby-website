@@ -4,43 +4,33 @@ url: /docs/self-hosted/0.4.0/install/install-on-gcp-script/
 
 # Install Gitpod on Google Cloud Platform
 
-At its core setting up Gitpod on GCP does not differ much from installing it on any other Kubernetes platform.
-However, Gitpod sports a range of integrations with the Google Cloud Platform that increase performance and reliability.
-This section describes the neccesary steps to prepare a new GCP project for a Gitpod installation.
+Gitpod runs best on GCP, because that's also where [gitpod.io](https://gitpod.io) is deployed and operated at scale.
 
-  > We have automated this process. If you want to get up and running as quickly as possible, that's the way to go.
+The easiest way to install Gitpod on GCP is by using our automated installation script. You can find it in this repository:
 
-You can perform the set up of the GCP resources yourself. See the [manual GCP setup](../install-on-gcp-manual/) section for more details.
-
-This installation script configures your GCP project and produces the required Helm configuration for installing Gitpod in that project.
-Once all GCP setup is complete, you will only have to manually set up [OAuth](../oauth/) and optionally [HTTPS](../https-certs/).
-
-You can install Gitpod self-hosted in your GCP project from within Gitpod. This way you don't have to install the Google Cloud SDK or other required tools.
+  > https://github.com/gitpod-io/self-hosted/
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/self-hosted)
 
+This script will configure your GCP project, and produce the required Helm configuration to install Gitpod in that project.
+Once the setup is complete, you will simply need to set up [OAuth](../oauth/) and [HTTPS](../https-certs/).
+
+Alternatively, you can set up the GCP resources manually yourself. See the [manual GCP setup](../install-on-gcp-manual/) section for more details.
+
 ## Prerequisites
-- A Google Cloud project
-- [Domain](../domain)
-- [Google Cloud SDK](https://cloud.google.com/sdk/install)
-- [Go (at least 1.12)](https://golang.org/doc/install)
-- MySQL client
+
+- A [Google Cloud](https://cloud.google.com/) project
+- A [Domain](../domain)
 - Optional: [HTTPS Certificates](../https-certs)
 
 ## Configuration
 
-The [Gitpod self-hosted repository](https://github.com/gitpod-io/self-hosted) contains the configuration files this guide is refering to.
-The installation script will modify the configuration files found in that repository.
-We recommend you to fork this repository so that you can easily rebase your changes on the latest version.
+The [Gitpod self-hosted repository](https://github.com/gitpod-io/self-hosted) contains all the base configuration files.
 
-```
-git clone https://github.com/gitpod-io/self-hosted
-cd self-hosted
-git remote rename origin upstream
-```
-
-Configure at least your `values.yaml`. Set your domain and the [OAuth](../oauth/) section.
+In particular, you will want to configure your `values.yaml`, by setting up your domain and the [OAuth](../oauth/) section.
 
 ## Installation
-To start the automated setup, run [`./utils/create-gcp-resources.go`](https://github.com/gitpod-io/self-hosted/blob/master/utils/create-gcp-resources.go) from the root of the self-hosted repo.
-The script will guide you through the process. We will ask for confirmation before doing any modifications or enabling anything that costs money.
+
+To start the automated setup, simply run [`./utils/create-gcp-resources.go`](https://github.com/gitpod-io/self-hosted/blob/master/utils/create-gcp-resources.go) from the root of the `self-hosted` repository.
+
+The script will guide you through the process, and modify the relevant configuration files when needed. It will also ask for your confirmation before performing any changes or starting any service in GCP.
