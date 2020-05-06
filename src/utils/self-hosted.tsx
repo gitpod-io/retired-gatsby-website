@@ -11,7 +11,7 @@ export const features = [
     {
         title: "Full Integration",
         paragraphs: [
-            'Gitpod integrates smoothly with GitHub Enterprise or Gitlab CE/EE. BitBucket support will be available soon.',
+            'Gitpod integrates smoothly with GitHub Enterprise or Gitlab CE/EE. Bitbucket support will be available soon.',
             'Gitpod also connects seamlessly to self-hosted services such as npm, docker or maven registries, databases or Kubernetes clusters.'
         ],
         //more: <p className="read-more">Read more about <Link to="#">Full Integration.</Link></p>

@@ -21,7 +21,7 @@ const features: FeatureProps[] = [
     },
     {
         title: 'GitLab & GitHub Integration',
-        text: 'Works in tandem with your Git hosting solution like GitHub Enterprise, GitLab Community Edition or Enterprise Edition. BitBucket support is coming soon.',
+        text: 'Integrates seamlessly with your Git hosting solution like GitHub Enterprise, GitLab Community Edition or Enterprise Edition. Bitbucket support is coming soon.',
         img: GithubGitlab
     },
     {
@@ -44,14 +44,13 @@ const SelfHostedPage: React.SFC<{}> = () => (
                 {/* ----- Banner ----- */}
 
                 <Banner
-                    subtitle="Self-hosted Gitpod"
+                    subtitle="Take Control of Your Source Code"
                     title={<h1>
-                        Keep your data on your network,
-                            <br />
-                        Host Gitpod on <strong>your own infrastructure</strong>.
+                        Self-host Gitpod <br/> on Your Own Infrastructure.
                     </h1>}
                     linkPath="/self-hosted/#install"
                     linkText="Install Now"
+                    paragraph="Free for up to 5 users."
                     img={<object role="presentation" tabIndex={-1} data={Cloud} />}
                 />
             </div>
@@ -67,10 +66,10 @@ const SelfHostedPage: React.SFC<{}> = () => (
             {/* ----- Section Customizations ----- */}
 
             <ActionCard
-                title="Need Any Customizations?"
+                title="Need Help Or Have Questions?"
                 text={
                     <React.Fragment>
-                        <p>We’re happy to adjust Gitpod to your needs.<br />Please get in touch for details.</p>
+                        <p>Please reach out. We’re happy to help getting <br />the perfect Gitpod setup for your team.</p>
                     </React.Fragment>}
                 anchors={[{ href: '/contact/', subject: 'I have a question regarding Gitpod Self-Hosted', text: 'Contact' }]}
             />
@@ -80,7 +79,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
             <Details
                 title="More About Gitpod"
                 text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-                anchors={[{ href: '/enterprise/#enterprise', text: 'Pricing' }, { href: '/docs/self-hosted/latest/self-hosted/', text: 'Documentation' }]}
+                anchors={[{ href: '/pricing/#self-hosted', text: 'Pricing' }, { href: '/docs/self-hosted/latest/self-hosted/', text: 'Documentation' }]}
             />
         </>
     </IndexLayout>

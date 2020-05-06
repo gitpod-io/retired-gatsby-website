@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import styled from '@emotion/styled'
-import { sizes } from '../../styles/variables'
+import { sizes, colors } from '../../styles/variables'
 import LightBulb from '../../resources/light-bulb.svg'
 import Rocket from '../../resources/rocket.png'
 import MagicCap from '../../resources/magic-cap.svg'
@@ -10,6 +10,7 @@ import { PricingBoxProps } from '../PricingBox'
 import PopOver from '../PopOver'
 import PricingBox from '../PricingBox'
 import { isEurope } from '../../utils/helpers'
+import Cloud from '../../resources/cloud.svg'
 
 const Styled = styled.div`
 
@@ -22,14 +23,15 @@ const Styled = styled.div`
 
         &__boxes {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
 
             @media(max-width: ${sizes.breakpoints.lg}) {
                 flex-wrap: wrap;
             }
 
             @media(max-width: 1096px) {
-                justify-content: space-evenly;
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
             @media(max-width: 650px) {
@@ -41,9 +43,31 @@ const Styled = styled.div`
     }
 `
 
+const selfHostedPlans: PricingBoxProps[] = [
+    {
+        title: 'Small Teams',
+        duration: 'For up to 5 users',
+        img: <object role="presentation" tabIndex={-1} data={Cloud} />,
+        features: ['Unlimited Use', 'Private & Public Repos', 'Admin dashboard'],
+        price: 'Free',
+        btnText: 'Install Now',
+        btnBackground: true,
+        link: '/self-hosted/#install'
+    },
+    {
+        title: 'Professional Teams',
+        img: <img alt='Rocket' src={Rocket} />,
+        features: ['Unlimited Use', 'Private & Public Repos', 'Admin dashboard', '30-day free trial'],
+        price: '20$',
+        duration: 'Per user & month',
+        btnText: 'Contact Sales',
+        link: '/contact/'
+    }
+];
+
 const plans: PricingBoxProps[] = [
     {
-        title: 'Open-Source',
+        title: 'Free',
         img: <object role="presentation" tabIndex={-1} data={IconOpenSource} />,
         price: 'Free',
         duration: '50 hours / month',
@@ -64,12 +88,10 @@ const plans: PricingBoxProps[] = [
         price: <>{isEurope() ? '€23' : '$25'}<span> / month</span></>,
         duration: 'Unlimited hours',
         features: ['Private & Public Repos', <span className="span">8 Parallel Workspaces <PopOver description="The number of workspaces running at the same time." /></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes." /></span>],
-        transform: 'scale(1.05)',
-        banner: 'Recommended',
         btnText: 'Buy Now',
         btnBackground: true,
         link: 'https://gitpod.io/subscription/',
-        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Charge your Company <PopOver textPosition="bottom" description="TDB" /></a> 
+        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Create Team</a> 
     },
     {
         title: 'Unlimited',
@@ -79,27 +101,82 @@ const plans: PricingBoxProps[] = [
         features: ['Private & Public Repos', <span className="span">16 Parallel Workspaces <PopOver description="The number of workspaces running at the same time." /></span>, <span className="span">1h Timeout <PopOver description="Workspaces without user activity are stopped after 1 hour." /></span>, <span className="span">3h Timeout Boost <PopOver description="You can manually boost the timeout to 3 hours within a running workspace." /></span>],
         btnText: 'Buy Now',
         link: 'https://gitpod.io/subscription/',
-        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Charge your Company <PopOver textPosition="bottom" description="TDB" /></a> 
+        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Create Team</a> 
     }
 ]
 
+const PricingContainer = styled.div`
+    background-color: ${colors.white};
+    padding: 3rem;
+    margin: 0 -500px;
+    justify-content: flex-start;
+    border: 1px solid ${colors.offWhite2};
+`;
 
+const Tab = styled.div`
+    padding: 1rem 2rem;
+    font-size: 18px;
+    color: ${colors.textLight};
+    min-width: 15rem;
+    text-align: center;
+    background-color: ${colors.white};
+    border: 1px solid ${colors.offWhite2};
+    border-bottom: none;
+    margin-bottom: -1px;
+    cursor: pointer;
+`;
 
-const PricingBoxes = () => (
-    <Styled>
+function isSelfHosted() {
+    return typeof window !== `undefined` && window.location.hash === '#self-hosted';
+}
+
+const PricingBoxes = () => {
+    // Declare a new state variable, which we'll call "count"
+    const [selfHosted, setSelfHosted] = useState(isSelfHosted());
+    return <Styled>
         <section className="pricing">
-            <h3 className="sub">Pricing</h3>
-            <h1>Choose Your Plan</h1>
-            <div className="pricing__boxes">
-                {plans.map(
-                    (plan, i) => <PricingBox
+            <h1 className="sub">Plans &amp; Pricing</h1>
+            <div style={{
+                display: 'flex',
+                justifyContent: 'center'
+            }}>
+                <Tab style={{
+                    backgroundColor: selfHosted ? colors.offWhite2 : colors.white,
+                    borderRight: 'none'
+                }}
+                    onClick={()=>setSelfHosted(false)}
+                >Cloud</Tab>
+                <Tab style={{
+                    backgroundColor: selfHosted ? colors.white : colors.offWhite2,
+                    borderLeft: 'none'
+                }}
+                    onClick={()=> setSelfHosted(true)}
+                >Self-Hosted</Tab>
+            </div>
+            <PricingContainer>
+                <div className="pricing__boxes" style={{
+                    display: selfHosted ? 'none' : 'flex'
+                }}>
+                    {plans.map(
+                        (plan, i) => <PricingBox
                         key={i}
                         {...plan}
-                    />
-                )}
-            </div>
+                        />
+                        )}
+                </div>
+                <div className="pricing__boxes" style={{
+                    display: selfHosted ? 'flex' : 'none'
+                }}>
+                    {selfHostedPlans.map(
+                        (plan, i) => <PricingBox
+                        key={i}
+                        {...plan}
+                        />
+                        )}
+                </div>
+            </PricingContainer>
         </section>
-    </Styled>
-)
+    </Styled>;
+}
 
 export default PricingBoxes

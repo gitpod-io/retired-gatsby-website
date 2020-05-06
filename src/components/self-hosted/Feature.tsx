@@ -9,7 +9,8 @@ const StyledFeature = styled.div`
     flex: 0 0 45%;
     max-width: 60rem;
     margin: 0 auto;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 
     @media(max-width: 520px) {
         flex-direction: column;

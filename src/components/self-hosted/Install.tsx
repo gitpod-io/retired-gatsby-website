@@ -16,18 +16,18 @@ interface InstallProps {
 
 const installs: InstallProps[] = [
     {
-        title: "Vanilla Kubernetes",
-        img: Kubernetes,
-        alt: "Kubernetes",
-        text: "All you need is a domain and a Kubernetes cluster.",
-        linkPath: 'install-on-kubernetes' 
-    },
-    {
         title: "Google Cloud Platform",
         img: GoogleCloudLogo,
         alt: "Google Cloud",
         text: " Install Gitpod optimised for Google Cloud Platform.",
         linkPath: 'install-on-gcp-script' 
+    },
+    {
+        title: "Vanilla Kubernetes",
+        img: Kubernetes,
+        alt: "Kubernetes",
+        text: "All you need is a domain and a Kubernetes cluster.",
+        linkPath: 'install-on-kubernetes' 
     }
 ]
 
@@ -99,7 +99,7 @@ const Install = () => (
                     ))
                 }
             </div>
-            <p>Enhanced support for Amazon Elastic Kuberenetes Service(EKS), Azure Kubernetes Service(AKS), and Openshift is coming soon.</p>
+            <p>Enhanced support for AWS, Azure, and Openshift is coming soon.</p>
         </div>
     </StyledSection>
 )

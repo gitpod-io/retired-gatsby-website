@@ -268,27 +268,8 @@ class Nav extends React.Component {
                         
                             <ul className={`nav__items ${isNavRendered ? 'navIsRendered' : 'navIsNotRendered'}`} >
                                 <li className="nav__item"><Link activeClassName="active" to='/features/' className="link">Features</Link></li>
+                                <li className="nav__item"><Link activeClassName="active" to='/self-hosted/' className="link">Self-Hosted</Link></li>
                                 <li className="nav__item"><Link activeClassName="active" to='/pricing/' className="link">Pricing</Link></li>
-                                <li className="nav__item"><Link activeClassName="active" to='/enterprise/' className="link">Enterprise</Link></li>
-                                <li className="nav__item">
-                                    <DropDown
-                                        title="Solutions"
-                                        links={[
-                                            {
-                                                text: 'Education',
-                                                to: '/education/'
-                                            },
-                                            {
-                                                text: 'Recruiting',
-                                                to: '/recruiting/'
-                                            },
-                                            {
-                                                text: 'Vendor',
-                                                to: '/vendor/'
-                                            }
-                                        ]}
-                                    />
-                                </li>
                                 <li className="nav__item">
                                     <DropDown
                                         title="Resources"
