@@ -7,7 +7,7 @@ image: /gh-cs-bg.jpg
 ---
 Today, GitHub announced the private beta of GitHub Codespaces which provide container-based dev environments for GitHub projects. At Gitpod, we are building a similar solution and while GitHub’s Codespaces don’t fully implement everything we do, they embrace the notion of dev environments as code. 
 
-This is great news, because it really helps to explain how that vision is going to change professional software development entirely.
+This is great news, because it really helps to explain why this is going to change professional software development entirely.
 
 ### Dev Environment As Code
 
@@ -83,5 +83,4 @@ Experience the future of software development now!
         <button style="cursor: pointer; border: none; padding: 1.5rem 3rem; border-radius: 100px; background-color: #0087BE; color: white; font-weight: 600">Get in Touch</button>
     </a>
 </div>
-
 
