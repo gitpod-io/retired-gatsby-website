@@ -35,9 +35,9 @@ const Styled = styled.div`
 const Business = () => (
     <Styled>
         <section className="business">
-            <h2>Gitpod Self-Hosted</h2>
-            <p>Unleash Developer Productivity. Use Gitpod as your dev environment and enjoy automated setups, better collaboration, higher code quality and a greater workflow.</p>
-            <Link to="/self-hosted/" className="btn">Enterprise Solutions</Link>
+            <h2>Self-Host Gitpod</h2>
+            <p>Unleash Developer Productivity. Run your own Gitpod and enjoy automated setups, better collaboration, higher code quality and a more streamlined workflow.</p>
+            <Link to="/self-hosted/" className="btn">Gitpod Self-Hosted</Link>
         </section>
     </Styled>
 )

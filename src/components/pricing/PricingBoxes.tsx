@@ -48,7 +48,7 @@ const selfHostedPlans: PricingBoxProps[] = [
         title: 'Small Teams',
         duration: 'For up to 5 users',
         img: <object role="presentation" tabIndex={-1} data={Cloud} />,
-        features: ['Unlimited Use', 'Private & Public Repos', 'Admin dashboard'],
+        features: ['Unlimited Use', 'Private & Public Repos', 'Admin Dashboard'],
         price: 'Free',
         btnText: 'Install Now',
         btnBackground: true,
@@ -57,9 +57,9 @@ const selfHostedPlans: PricingBoxProps[] = [
     {
         title: 'Professional Teams',
         img: <img alt='Rocket' src={Rocket} />,
-        features: ['Unlimited Use', 'Private & Public Repos', 'Admin dashboard', '30-day free trial'],
-        price: '20$',
-        duration: 'Per user & month',
+        features: ['Unlimited Use', 'Private & Public Repos', 'Admin Dashboard', '30-Day Free Trial'],
+        price: <>20$ <span>/ month</span></>,
+        duration: 'Per additional user',
         btnText: 'Contact Sales',
         link: '/contact/'
     }
@@ -91,7 +91,7 @@ const plans: PricingBoxProps[] = [
         btnText: 'Buy Now',
         btnBackground: true,
         link: 'https://gitpod.io/subscription/',
-        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Create Team <PopOver textPosition="bottom" description="Setup Gitpod for an entire team with a single invoice." /></a>
+        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Create Team<PopOver textPosition="bottom" description="Get your entire team onto Gitpod with a single invoice."/></a>
     },
     {
         title: 'Unlimited',
@@ -101,7 +101,7 @@ const plans: PricingBoxProps[] = [
         features: ['Private & Public Repos', <span className="span">16 Parallel Workspaces <PopOver description="The number of workspaces running at the same time." /></span>, <span className="span">1h Timeout <PopOver description="Workspaces without user activity are stopped after 1 hour." /></span>, <span className="span">3h Timeout Boost <PopOver description="You can manually boost the timeout to 3 hours within a running workspace." /></span>],
         btnText: 'Buy Now',
         link: 'https://gitpod.io/subscription/',
-        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Create Team <PopOver textPosition="bottom" description="Setup Gitpod for an entire team with a single invoice." /></a>
+        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Create Team<PopOver textPosition="bottom" description="Get your entire team onto Gitpod with a single invoice."/></a>
     }
 ]
 

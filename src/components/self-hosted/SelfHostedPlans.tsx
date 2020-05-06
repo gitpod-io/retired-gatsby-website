@@ -48,14 +48,14 @@ const plans: SelfHostedPlanProps[] = [
     {
         title: 'Free',
         subtitle: 'For up to 5 users',
-        features: ['Unlimited Hours', 'Private & Public Repos', 'Admin dashboard'],
+        features: ['Unlimited Hours', 'Private & Public Repos', 'Admin Dashboard'],
         btnText: 'Install Now',
         href: '/docs/self-hosted/latest/self-hosted/'
     },
     {
-        title: <>$20 <span>/month</span></>,
-        subtitle: 'per user',
-        features: ['Unlimited Hours', 'Private & Public Repos', 'Admin dashboard', '30-day free trial'],
+        title: <>$20 <span>/ month</span></>,
+        subtitle: 'Per additional user',
+        features: ['Unlimited Hours', 'Private & Public Repos', 'Admin Dashboard', '30-Day Free Trial'],
         btnText: 'Contact Sales',
         href: '/contact/'
     }

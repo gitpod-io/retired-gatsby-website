@@ -46,7 +46,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
                 <Banner
                     subtitle="Take Control of Your Source Code"
                     title={<h1>
-                        Self-host Gitpod <br/> on Your Own Infrastructure.
+                        Self-Host Gitpod <br/> on Your Own Infrastructure.
                     </h1>}
                     linkPath="/self-hosted/#install"
                     linkText="Install Now"
