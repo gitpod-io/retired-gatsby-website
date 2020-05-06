@@ -12,6 +12,7 @@ interface InstallProps {
     alt: string
     text: string
     linkPath: string
+    btnBackground?: boolean
 }
 
 const installs: InstallProps[] = [
@@ -20,7 +21,8 @@ const installs: InstallProps[] = [
         img: GoogleCloudLogo,
         alt: "Google Cloud",
         text: " Install Gitpod optimised for Google Cloud Platform.",
-        linkPath: 'install-on-gcp-script' 
+        linkPath: 'install-on-gcp-script',
+        btnBackground: true
     },
     {
         title: "Vanilla Kubernetes",
@@ -87,14 +89,14 @@ const Install = () => (
             <h2>Install Gitpod Self-Hosted</h2>
             <div className="install">
                 {
-                    installs.map(({ title, text, img, alt, linkPath }: InstallProps, i) => (
+                    installs.map(({ title, text, img, alt, linkPath, btnBackground }: InstallProps, i) => (
                         <div key={`${i}+${title}`}className="install__box">
                             <img src={img} alt={alt} />
                             <h3>{title}</h3>
                             <p>
                                 {text}
                             </p>
-                            <Link to={`/docs/self-hosted/latest/install/${linkPath}/`} className="btn">Install Now</Link>
+                            <Link to={`/docs/self-hosted/latest/install/${linkPath}/`} className={btnBackground ? 'btn btn--cta' : 'btn'}>Install Now</Link>
                         </div>
                     ))
                 }
