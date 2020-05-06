@@ -58,8 +58,8 @@ const selfHostedPlans: PricingBoxProps[] = [
         title: 'Professional Teams',
         img: <img alt='Rocket' src={Rocket} />,
         features: ['Unlimited Use', 'Private & Public Repos', 'Admin Dashboard', '30-Day Free Trial'],
-        price: <>20$ <span>/ month</span></>,
-        duration: 'Per additional user',
+        price: <>{isEurope() ? '€18' : '$20'} <span>/ month</span></>,
+        duration: 'Per user',
         btnText: 'Contact Sales',
         link: '/contact/'
     }
