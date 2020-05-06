@@ -6,6 +6,8 @@ import styled from '@emotion/styled'
 import { sizes } from '../../styles/variables'
 
 const Styled = styled.div`
+    padding: 5rem 0;
+
     .links {
         display: flex;
         justify-content: space-between;
