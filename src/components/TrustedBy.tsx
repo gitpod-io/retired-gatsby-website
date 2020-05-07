@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import styled from '@emotion/styled'
 import { sizes } from '../styles/variables'
@@ -7,10 +7,7 @@ const StyledTrustedBy = styled.section<{ dontDisplayTheArrow?: boolean }>`
     /* ------------------------------------------- */
     /* ----- Section Trusted By ----- */
     /* ------------------------------------------- */
-
-    padding: 0rem 0 4rem;
-    margin-top: 2rem;
-
+    
     h2 {
         margin-bottom: 2rem;
     }
@@ -19,7 +16,9 @@ const StyledTrustedBy = styled.section<{ dontDisplayTheArrow?: boolean }>`
         display: flex;
         transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
         padding: 1rem 0 1rem;
-        overflow-x: scroll;
+        max-width: 800px;
+        overflow: hidden;
+        margin: 0 auto;
 
         a {
             display: flex;
@@ -101,25 +100,42 @@ interface TrustedByProps {
 
 
 
-const TrustedBy = ({ brands }: TrustedByProps) => (
-    <StyledTrustedBy>
-        <div className="row">
-            <div className="logos">
-                {
-                    brands.map((b, i) => (
-                        <a href={b.url} target="_blank" key={i} className="trustedBy">
-                            <StyledBrandImage
-                                src={b.svg}
-                                alt={b.alt}
-                                transform={b.transform}
-                                className={b.className}
-                            />
-                        </a>
-                    ))
-                }
+
+const TrustedBy = ({ brands }: TrustedByProps) => {
+
+    const [images, setImages] = useState<Brand[]>(brands.slice(0, 5))
+
+    const changeImages = () => {
+        let start = 5
+        let incrementBy = 5
+        
+        setImages(brands.slice(start, incrementBy))
+    }
+
+    useEffect(() => {
+        setTimeout(changeImages, 3000)
+    })
+
+    return (
+        <StyledTrustedBy>
+            <div className="row">
+                <div className="logos">
+                    {
+                        images.map((b: Brand) => (
+                            <a href={b.url} target="_blank" className="trustedBy">
+                                <StyledBrandImage
+                                    src={b.svg}
+                                    alt={b.alt}
+                                    transform={b.transform}
+                                    className={b.className}
+                                />
+                            </a>
+                        ))
+                    }
+                </div>
             </div>
-        </div>
-    </StyledTrustedBy>
-)
+        </StyledTrustedBy>
+    )
+}
 
 export default TrustedBy
