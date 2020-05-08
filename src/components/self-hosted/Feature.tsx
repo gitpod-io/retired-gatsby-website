@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { borders } from '../../styles/variables'
+import { borders, sizes } from '../../styles/variables'
 
 const StyledFeature = styled.div`
     display: flex;
@@ -12,13 +12,13 @@ const StyledFeature = styled.div`
     margin-bottom: 5rem;
     margin-top: 5rem;
 
-    @media(max-width: 520px) {
+    @media(max-width: ${sizes.breakpoints.lg}) {
         flex-direction: column;
         text-align: center;
     }
 
     div {
-        @media(min-width: 520px) {
+        @media(min-width: ${sizes.breakpoints.lg}) {
             border-left: ${borders.bold};
             margin-left: 3rem;
             padding-left: 3rem;
@@ -26,11 +26,15 @@ const StyledFeature = styled.div`
     }
 
     img {
-        flex: 0 0 15%;
         max-width: 10rem;
         max-height: 12rem;
 
-        @media(max-width: 520px) {
+        @media(min-width: ${sizes.breakpoints.lg}) {
+            flex: 0 0 15%;
+        }
+        
+        @media(max-width: ${sizes.breakpoints.lg}) {
+            height: 10rem;
             margin-bottom: 4rem;
         }
     }
