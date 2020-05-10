@@ -54,7 +54,7 @@ This will allow others in your team to review your changes and try out the new a
 
 ### Step 6: Prebuilds
 
-Once the new configuration is merged into the project, you should install (or request to install) the GitHub app so that Gitpod can prebuild dev environments on every change. This can save you everyone else in your team many hours on a daily basis.
+Once the new configuration is merged into the project, you should install (or request to install) the GitHub app so that Gitpod can prebuild dev environments on every change. This can save you and everyone else in your team many hours on a daily basis.
 
 Read more on [Prebuilt Workspaces here](/docs/prebuilds/).
 
