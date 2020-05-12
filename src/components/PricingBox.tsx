@@ -31,6 +31,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     border: 1px solid ${colors.offWhite2};
     background-color: ${colors.offWhite};
     border-radius: 3px;
+    margin-top: ${({ isTitleOutside }) => isTitleOutside ? '6rem' : '2rem'};
 
     @media(min-width: ${sizes.breakpoints.md}) {
         z-index: ${({ transform }) => transform ? '1' : null};
