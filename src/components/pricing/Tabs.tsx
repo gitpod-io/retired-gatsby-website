@@ -31,8 +31,6 @@ const Tab = styled.button`
     }
 `
 
-
-
 const Tabs = ({ isRendered, changeIsRendered }: PricingBoxesProps) => (
     <div style={{
         display: 'flex',
