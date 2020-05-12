@@ -35,6 +35,7 @@ const Styled = styled.div`
             padding: 2rem 4rem;
             background: ${colors.white};
             border: ${borders.light};
+            border-radius: 3px;
         }
 
         img {
