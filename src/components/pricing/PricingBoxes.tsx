@@ -117,7 +117,7 @@ const PricingContainer = styled.div`
     
     .cards {
         justify-content: flex-start;
-        padding: 3rem 0;
+        padding: 0rem 0 3rem;
 
         .hide {
             display: none;
