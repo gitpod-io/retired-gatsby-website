@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, shadows, sizes } from '../styles/variables'
+import { colors, sizes } from '../styles/variables'
 import IconTick from '../resources/icon-tick.svg'
 
 interface StyledPricingBoxProps {
