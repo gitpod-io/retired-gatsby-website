@@ -244,15 +244,6 @@ export default `
             }
         }
 
-        & + & {
-
-            @media(max-width: 414px) {
-                &:not(:first-child) {
-                    margin-top: 2.5rem;
-                }
-            }
-        }
-
         &-wrapper {
             .btn {
                 &:first-of-type {

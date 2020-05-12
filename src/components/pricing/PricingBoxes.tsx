@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import styled from '@emotion/styled'
 import { sizes, colors } from '../../styles/variables'
@@ -11,6 +11,7 @@ import PopOver from '../PopOver'
 import PricingBox from '../PricingBox'
 import { isEurope } from '../../utils/helpers'
 import Cloud from '../../resources/cloud.svg'
+import Tabs from './Tabs'
 
 const Styled = styled.div`
 
@@ -130,65 +131,27 @@ const PricingContainer = styled.div`
     }
 `;
 
-const Tab = styled.button`
-    display: block;
-    padding: 1.3rem 2rem;
-    font-size: 18px;
-    color: ${colors.textLight};
-    min-width: 15rem;
-    text-align: center;
-    background-color: ${colors.white};
-    border: 1px solid ${colors.offWhite2};
-    border-bottom-color: transparent;
-    margin-bottom: -1px;
-    cursor: pointer;
 
-    &:first-of-type {
-       border-right: none;
-    }
-
-    &:last-of-type {
-        border-left: none;
-    }
-
-    body.user-is-tabbing &:focus {
-        outline: none;
-        border: 1px solid #1AA6E4;;
-    }
-`;
-
-function isSelfHosted() {
-    return typeof window !== `undefined` && window.location.hash === '#self-hosted';
+export interface PricingBoxesProps {
+    isRendered: boolean
+    changeIsRendered: (bool: boolean) => void
 }
 
-const PricingBoxes = () => {
-    // Declare a new state variable, which we'll call "count"
-    const [selfHosted, setSelfHosted] = useState(isSelfHosted());
+const PricingBoxes = ({ isRendered, changeIsRendered }: PricingBoxesProps) => {
     return <Styled>
         <section className="pricing">
             <div className="grey-container container--1">
                 <div className="row">
                     <h1 className="sub">Plans &amp; Pricing</h1>
-                    <div style={{
-                        display: 'flex',
-                        justifyContent: 'center'
-                    }}>
-                        <Tab style={{
-                            backgroundColor: selfHosted ? colors.offWhite2 : colors.white,
-                        }}
-                            onClick={() => setSelfHosted(false)}
-                        >Cloud</Tab>
-                        <Tab style={{
-                            backgroundColor: selfHosted ? colors.white : colors.offWhite2,
-                        }}
-                            onClick={() => setSelfHosted(true)}
-                        >Self-Hosted</Tab>
-                    </div>
+                    <Tabs 
+                        isRendered={isRendered}
+                        changeIsRendered={changeIsRendered}
+                    />
                 </div>
             </div>
             <PricingContainer>
                 <div
-                    className={`pricing__boxes ${selfHosted ? 'hide' : 'show'}`}
+                    className={`pricing__boxes ${isRendered ? 'hide' : 'show'}`}
                 >
                     {plans.map(
                         (plan, i) => <PricingBox
@@ -198,7 +161,7 @@ const PricingBoxes = () => {
                     )}
                 </div>
                 <div
-                    className={`pricing__boxes ${selfHosted ? 'show' : 'hide'}`}
+                    className={`pricing__boxes ${isRendered ? 'show' : 'hide'}`}
                 >
                     {selfHostedPlans.map(
                         (plan, i) => <PricingBox
