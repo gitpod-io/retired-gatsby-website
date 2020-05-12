@@ -44,11 +44,7 @@ const Styled = styled.div`
     }
 
     .container--1 {
-        padding: 10rem 0 0;
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            padding: 5rem 0 0;
-        }
+        padding: 5rem 0 0;
     }
 `
 
