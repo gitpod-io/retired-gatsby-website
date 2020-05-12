@@ -117,7 +117,7 @@ const plans: PricingBoxProps[] = [
 const PricingContainer = styled.div`
     background-color: ${colors.white};
     border: 1px solid ${colors.offWhite2};
-    padding: 6rem 0;
+    padding: 3rem 0 6rem;
     
     .cards {
         border-left: none;
