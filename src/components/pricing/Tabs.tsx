@@ -16,18 +16,20 @@ const Tab = styled.button<{ isRendered: boolean }>`
     border-bottom-color: transparent;
     margin-bottom: -1px;
     cursor: pointer;
-    transition: color .1s;
+    transition: all .05s;
 
     &:first-of-type {
        background-color: ${({ isRendered }) => isRendered ? colors.offWhite2 : colors.white};
        font-weight: ${({ isRendered }) => isRendered ? '400' : '600'};
        border-right: none;
+       color: ${({ isRendered }) => isRendered ? colors.textLight : colors.textDark};
     }
 
     &:last-of-type {
         background-color: ${({ isRendered }) => isRendered ? colors.white : colors.offWhite2};
         font-weight: ${({ isRendered }) => isRendered ? '600' : '400'};
         border-left: none;
+        color: ${({ isRendered }) => isRendered ? colors.textDark : colors.textLight};
     }
 
     body.user-is-tabbing &:focus {

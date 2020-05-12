@@ -74,7 +74,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         min-width: 25rem;
     }
 
-    > * {
+    > *:not(h4) {
         color: inherit;
     }
 
