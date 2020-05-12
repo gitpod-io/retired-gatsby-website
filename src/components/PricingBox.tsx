@@ -10,8 +10,8 @@ interface StyledPricingBoxProps {
     hideButton?: boolean
     banner?: string
     bannerColor?: string
-    backgroundColor?: string
     btnBackground?: boolean
+    isTitleOutside?: boolean
 }
 
 const StyledPricingBox = styled.div<StyledPricingBoxProps>`
@@ -19,7 +19,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     margin: 2rem 1rem;
     padding: 3rem 2.8rem;
     font-size: 95%;
-    min-height: 48rem;
+    min-height: ${({ isTitleOutside }) => isTitleOutside ? '35rem' : '48rem'};
     min-width: 20rem;
     max-width: 26rem;
     width: 25%;
@@ -29,7 +29,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     background-size: ${({ background }) => background ? 'cover' : null};
     background-position: ${({ background }) => background ? 'left' : null};
     border: 1px solid ${colors.offWhite2};
-    background-color: ${({ backgroundColor }) => backgroundColor ? backgroundColor : null};
+    background-color: ${colors.offWhite};
 
     @media(min-width: ${sizes.breakpoints.md}) {
         z-index: ${({ transform }) => transform ? '1' : null};
@@ -43,6 +43,11 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         min-height: 50rem;
         padding: 3rem 2rem;
         margin-bottom: 5rem;
+        min-height: ${({ isTitleOutside }) => isTitleOutside ? '38rem' : '50rem'};
+
+        &:not(:last-of-type) {
+            margin-bottom:  ${({ isTitleOutside }) => isTitleOutside ? '8rem' : '5rem'};
+        }
     }
 
     @media(max-width: 1096px) {
@@ -54,7 +59,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     }
 
     @media(max-width: ${sizes.breakpoints.md}) {
-        min-height: 45rem;
+        min-height: ${({ isTitleOutside }) => isTitleOutside ? '35rem' : '45rem'};
         min-width: 30rem;
         padding: 2rem 3rem;
     }
@@ -74,6 +79,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
 
     h4 {
         font-size: 1.8rem;
+        margin: ${({ isTitleOutside }) => isTitleOutside ? '-7rem 0 6rem' : '' }
     }
 
     img, object {
@@ -81,6 +87,8 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         margin: 3rem 0 1rem;
         height: 8rem;
         width: 8rem;
+
+        display: ${({ isTitleOutside }) => isTitleOutside ? 'none' : '' };
 
         @media(max-width: ${sizes.breakpoints.md}) {
             margin: 1.5rem 0 1rem;
@@ -239,10 +247,10 @@ export interface PricingBoxProps {
     hideButton?: true
     btn?: JSX.Element
     text?: string
-    banner?: string,
-    bannerColor?: string,
-    backgroundColor?: string,
+    banner?: string
+    bannerColor?: string
     subAction?: JSX.Element
+    isTitleOutside?: boolean 
 }
 
 const PricingBox: React.SFC<PricingBoxProps> = ({
@@ -262,8 +270,8 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
     text,
     banner,
     bannerColor,
-    backgroundColor,
-    subAction
+    subAction, 
+    isTitleOutside
 }) => (
         <StyledPricingBox
             transform={transform}
@@ -271,8 +279,8 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
             hideButton={hideButton}
             banner={banner}
             bannerColor={bannerColor}
-            backgroundColor={backgroundColor}
             btnBackground={btnBackground}
+            isTitleOutside={isTitleOutside}
         >
             <h4>{title}</h4>
             {img ? img : null}

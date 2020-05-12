@@ -12,6 +12,7 @@ import PricingBox from '../PricingBox'
 import { isEurope } from '../../utils/helpers'
 import Cloud from '../../resources/cloud.svg'
 import Tabs from './Tabs'
+import { Link } from 'gatsby'
 
 const Styled = styled.div`
 
@@ -115,19 +116,28 @@ const plans: PricingBoxProps[] = [
 
 const PricingContainer = styled.div`
     background-color: ${colors.white};
-    padding: 3rem 0;
-    justify-content: flex-start;
     border: 1px solid ${colors.offWhite2};
-    border-left: none;
-    border-right: none;
+    padding: 6rem 0;
+    
+    .cards {
+        border-left: none;
+        border-right: none;
+        justify-content: flex-start;
+        padding: 3rem 0;
 
-    .hide {
-        display: none;
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
-    .show {
-        display: flex;
-        flex-wrap: wrap;
+    p {
+        text-align: center;
+        font-size: 130%;
     }
 `;
 
@@ -143,33 +153,37 @@ const PricingBoxes = ({ isRendered, changeIsRendered }: PricingBoxesProps) => {
             <div className="grey-container container--1">
                 <div className="row">
                     <h1 className="sub">Plans &amp; Pricing</h1>
-                    <Tabs 
+                    <Tabs
                         isRendered={isRendered}
                         changeIsRendered={changeIsRendered}
                     />
                 </div>
             </div>
             <PricingContainer>
-                <div
-                    className={`pricing__boxes ${isRendered ? 'hide' : 'show'}`}
-                >
-                    {plans.map(
-                        (plan, i) => <PricingBox
-                            key={i}
-                            {...plan}
-                        />
-                    )}
+                <div className="cards">
+                    <div
+                        className={`pricing__boxes ${isRendered ? 'hide' : 'show'}`}
+                    >
+                        {plans.map(
+                            (plan, i) => <PricingBox
+                                key={i}
+                                {...plan}
+                            />
+                        )}
+                    </div>
+                    <div
+                        className={`pricing__boxes ${isRendered ? 'show' : 'hide'}`}
+                    >
+                        {selfHostedPlans.map(
+                            (plan, i) => <PricingBox
+                                key={i}
+                                {...plan}
+                                isTitleOutside={true}
+                            />
+                        )}
+                    </div>
                 </div>
-                <div
-                    className={`pricing__boxes ${isRendered ? 'show' : 'hide'}`}
-                >
-                    {selfHostedPlans.map(
-                        (plan, i) => <PricingBox
-                            key={i}
-                            {...plan}
-                        />
-                    )}
-                </div>
+                <p>Do you still have questions? Please, <Link to="/contact/">Get in Touch.</Link></p>
             </PricingContainer>
         </section>
     </Styled>;
