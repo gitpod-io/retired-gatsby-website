@@ -16,15 +16,17 @@ const Tab = styled.button<{ isRendered: boolean }>`
     border-bottom-color: transparent;
     margin-bottom: -1px;
     cursor: pointer;
-    transition: all .1s;
+    transition: color .1s;
 
     &:first-of-type {
-        background-color: ${ ({ isRendered }) => isRendered ? colors.offWhite2 : colors.white };
+       background-color: ${({ isRendered }) => isRendered ? colors.offWhite2 : colors.white};
+       font-weight: ${({ isRendered }) => isRendered ? '400' : '600'};
        border-right: none;
     }
 
     &:last-of-type {
-        background-color: ${ ({ isRendered }) => isRendered ? colors.white : colors.offWhite2 };
+        background-color: ${({ isRendered }) => isRendered ? colors.white : colors.offWhite2};
+        font-weight: ${({ isRendered }) => isRendered ? '600' : '400'};
         border-left: none;
     }
 
