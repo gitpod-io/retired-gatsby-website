@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
@@ -212,20 +212,14 @@ const StyledNav = styled.nav`
     }
 `
 
-class Nav extends React.Component {
+const Nav = () => {
+    const [isNavRendered, setIsNavRendered] = useState<boolean>(false)
 
-    state = {
-        isNavRendered: false,
+    const toggleNavigation = () => {
+        setIsNavRendered(!isNavRendered)
     }
 
-    toggleNavigation = () => {
-        this.setState({ isNavRendered: !this.state.isNavRendered })
-    }
-
-    render() {
-        const { isNavRendered } = this.state
-
-        return (
+    return (
             <div className="grey-container" style={{ zIndex: 9999 }}>
                 <div className="row">
                     <StyledNav role="navigation" className="nav">
@@ -237,7 +231,7 @@ class Nav extends React.Component {
                                     <button
                                         className="nav__btn"
                                         aria-label={isNavRendered ? "Hide the Navigation Items" : "Show the Navigation Items"}
-                                        onClick={this.toggleNavigation}
+                                        onClick={toggleNavigation}
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.112 31.112"
@@ -295,7 +289,6 @@ class Nav extends React.Component {
                 </div>
             </div>
         )
-    }
 }
 
 export default Nav
