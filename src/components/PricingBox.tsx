@@ -30,6 +30,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     background-position: ${({ background }) => background ? 'left' : null};
     border: 1px solid ${colors.offWhite2};
     background-color: ${colors.offWhite};
+    border-radius: 3px;
 
     @media(min-width: ${sizes.breakpoints.md}) {
         z-index: ${({ transform }) => transform ? '1' : null};
