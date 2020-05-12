@@ -222,83 +222,80 @@ class Nav extends React.Component {
         this.setState({ isNavRendered: !this.state.isNavRendered })
     }
 
-
     render() {
-
         const { isNavRendered } = this.state
 
         return (
-            <div className="grey-container" style={{zIndex: 9999}}>
+            <div className="grey-container" style={{ zIndex: 9999 }}>
                 <div className="row">
                     <StyledNav role="navigation" className="nav">
-                            <div className="nav__burger-container">
-                                <Link to="/"><img alt="Gitpod Logo" src={GitpodLogoDark} /></Link>
-                                <div className="btns">
-                                    <a href="https://gitpod.io/login/" rel="noopener" style={{display: isNavRendered ? 'none': ''}}>Log In</a>
-                                    <div className="nav__btn-container" aria-live="assertive">
-                                        <button
-                                            className="nav__btn"
-                                            aria-label={ isNavRendered ? "Hide the Navigation Items" : "Show the Navigation Items"}
-                                            onClick={this.toggleNavigation}
+                        <div className="nav__burger-container">
+                            <Link to="/"><img alt="Gitpod Logo" src={GitpodLogoDark} /></Link>
+                            <div className="btns">
+                                <a href="https://gitpod.io/login/" rel="noopener" style={{ display: isNavRendered ? 'none' : '' }}>Log In</a>
+                                <div className="nav__btn-container" aria-live="assertive">
+                                    <button
+                                        className="nav__btn"
+                                        aria-label={isNavRendered ? "Hide the Navigation Items" : "Show the Navigation Items"}
+                                        onClick={this.toggleNavigation}
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.112 31.112"
+                                            className={isNavRendered ? 'is-shown--multiply' : 'is-hidden'}
+                                            aria-hidden={isNavRendered ? false : true}
+                                            id="multiply"
                                         >
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.112 31.112"
-                                                className={ isNavRendered ? 'is-shown--multiply' : 'is-hidden' }
-                                                aria-hidden={ isNavRendered ? false : true }
-                                                id="multiply"
-                                            >
-                                                <title>close menu icon</title>
-                                                <path d="M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z"/>
-                                            </svg>
-                                            <svg
-                                                className={ isNavRendered ? 'is-hidden' : 'is-shown' }
-                                                aria-hidden={ isNavRendered ? true : false }
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 26 18"
-                                                id="hamburger"
-                                            >
-                                                <title>hamburger menu icon</title>
-                                                <g transform="translate(-647.5 -86.5)" strokeWidth="2"><line x2="24" transform="translate(648.5 87.5)"/><line x2="24" transform="translate(648.5 95.5)"/><line x2="24" transform="translate(648.5 103.5)"/></g>
-                                            </svg>
-                                        </button>
-                                    </div>
+                                            <title>close menu icon</title>
+                                            <path d="M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z" />
+                                        </svg>
+                                        <svg
+                                            className={isNavRendered ? 'is-hidden' : 'is-shown'}
+                                            aria-hidden={isNavRendered ? true : false}
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 26 18"
+                                            id="hamburger"
+                                        >
+                                            <title>hamburger menu icon</title>
+                                            <g transform="translate(-647.5 -86.5)" strokeWidth="2"><line x2="24" transform="translate(648.5 87.5)" /><line x2="24" transform="translate(648.5 95.5)" /><line x2="24" transform="translate(648.5 103.5)" /></g>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
+                        </div>
 
-                        
-                            <ul className={`nav__items ${isNavRendered ? 'navIsRendered' : 'navIsNotRendered'}`} >
-                                <li className="nav__item"><Link activeClassName="active" to='/features/' className="link">Features</Link></li>
-                                <li className="nav__item"><Link activeClassName="active" to='/self-hosted/' className="link">Self-Hosted</Link></li>
-                                <li className="nav__item"><Link activeClassName="active" to='/pricing/' className="link">Pricing</Link></li>
-                                <li className="nav__item">
-                                    <DropDown
-                                        title="Resources"
-                                        links={[
-                                            {
-                                                text: 'Docs',
-                                                to: '/docs/'
-                                            },
-                                            {
-                                                text: 'Blog',
-                                                to: '/blog/'
-                                            },
-                                            {
-                                                text: 'Community',
-                                                to: 'https://community.gitpod.io/',
-                                                target: true
-                                            }
-                                        ]}
-                                    />
-                                </li>
-                                <li className="nav__item"><a href="https://gitpod.io/login/" rel="noopener" className="btn">Log In</a></li>
-                            </ul>
-                          
+
+                        <ul className={`nav__items ${isNavRendered ? 'navIsRendered' : 'navIsNotRendered'}`} >
+                            <li className="nav__item"><Link activeClassName="active" to='/features/' className="link">Features</Link></li>
+                            <li className="nav__item"><Link activeClassName="active" to='/self-hosted/' className="link">Self-Hosted</Link></li>
+                            <li className="nav__item"><Link activeClassName="active" to='/pricing/' className="link">Pricing</Link></li>
+                            <li className="nav__item">
+                                <DropDown
+                                    title="Resources"
+                                    links={[
+                                        {
+                                            text: 'Docs',
+                                            to: '/docs/'
+                                        },
+                                        {
+                                            text: 'Blog',
+                                            to: '/blog/'
+                                        },
+                                        {
+                                            text: 'Community',
+                                            to: 'https://community.gitpod.io/',
+                                            target: true
+                                        }
+                                    ]}
+                                />
+                            </li>
+                            <li className="nav__item"><a href="https://gitpod.io/login/" rel="noopener" className="btn">Log In</a></li>
+                        </ul>
+
                     </StyledNav>
                 </div>
             </div>
         )
     }
 }
-
 
 export default Nav

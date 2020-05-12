@@ -267,10 +267,6 @@ export default `
         }
     }
 
-    .active {
-        color: ${colors.link};
-    }
-
     .link {
         position: relative;
         color: ${colors.text};
@@ -300,6 +296,14 @@ export default `
         }
     }
 
+    .active {
+        color: ${colors.lightBlue};
+
+        &::after {
+            right: 0;
+            border-color: ${colors.lightBlue};
+        }
+    }
 
     /* ------------------------------------------- */
     /* ----- Inputs ----- */
