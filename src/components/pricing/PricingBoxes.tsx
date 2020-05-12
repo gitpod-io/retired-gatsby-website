@@ -183,7 +183,7 @@ const PricingBoxes = ({ isRendered, changeIsRendered }: PricingBoxesProps) => {
                         )}
                     </div>
                 </div>
-                <p>Do you still have questions? Please, <Link to="/contact/">Get in Touch.</Link></p>
+                <p>Do you have any questions? Please, <Link to="/contact/">Get in Touch.</Link></p>
             </PricingContainer>
         </section>
     </Styled>;
