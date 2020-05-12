@@ -152,7 +152,7 @@ const PricingBoxes = ({ isRendered, changeIsRendered }: PricingBoxesProps) => {
         <section className="pricing">
             <div className="grey-container container--1">
                 <div className="row">
-                    <h1 className="sub">Plans &amp; Pricing</h1>
+                    <h1 className="sub">Plans &amp; <strong>Pricing</strong></h1>
                     <Tabs
                         isRendered={isRendered}
                         changeIsRendered={changeIsRendered}
