@@ -92,6 +92,7 @@ export default `
     h4 {
         font-family: 'Montserrat', sans-serif;
         line-height: 1.2;
+        color: ${colors.textDark};
     }
 
     h1,
