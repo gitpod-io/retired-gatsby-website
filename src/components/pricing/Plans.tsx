@@ -16,7 +16,9 @@ const Styled = styled.div`
 
     .links {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        max-width: 900px;
+        margin: 0 auto;
         padding: 5rem 0;
 
         @media(max-width: ${sizes.breakpoints.md}) {
