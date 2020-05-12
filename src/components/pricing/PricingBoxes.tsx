@@ -116,12 +116,10 @@ const plans: PricingBoxProps[] = [
 
 const PricingContainer = styled.div`
     background-color: ${colors.white};
-    border: 1px solid ${colors.offWhite2};
+    border-top: 1px solid ${colors.offWhite2};
     padding: 3rem 0 6rem;
     
     .cards {
-        border-left: none;
-        border-right: none;
         justify-content: flex-start;
         padding: 3rem 0;
 
