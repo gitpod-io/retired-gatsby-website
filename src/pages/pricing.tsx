@@ -30,7 +30,7 @@ const pricingLinksContents = {
               </>,
         links: <>
             <Link to="/features/" className="btn btn--cta">See Features</Link>
-            <Link to="/docs/" className="btn">See Docs</Link>
+            <Link to="/blog/" className="btn">See Blog</Link>
         </>
     }
 }
