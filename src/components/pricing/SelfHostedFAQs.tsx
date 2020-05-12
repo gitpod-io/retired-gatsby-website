@@ -12,6 +12,8 @@ const StyledSelfHostedFAQs = styled.section`
     .faqs {
         display: flex;
         justify-content: space-between;
+        max-width: 900px;
+        margin: 0 auto;
         padding: 5rem 0;
 
         @media(max-width: 1040px) {
@@ -19,7 +21,7 @@ const StyledSelfHostedFAQs = styled.section`
         }
 
         &__container {
-            flex: 0 0 40%;
+            flex: 0 0 45%;
 
             @media(max-width: 1040px) {
                 max-width: 600px;
