@@ -43,7 +43,7 @@ const StyledSelfHostedFAQs = styled.section`
 
 const SelfHostedFAQs = () => (
     <StyledSelfHostedFAQs>
-        <h2>Self-Hosted <strong>Pricing FAQ</strong></h2>
+        <h2>Self-Hosted <strong>FAQ</strong></h2>
         <div className="faqs">
             <div className="faqs__container">
                 <div>
@@ -64,7 +64,10 @@ const SelfHostedFAQs = () => (
                 <div>
                     <h3>What’s the difference between Cloud and Self-Hosted?</h3>
                     <p>
-                        If you choose Gitpod Cloud, we will manage and host Gitpod in the cloud for you. This means minimal setup efforts for you and secure data storage in the cloud. Gitpod Cloud is be the best solution for teams who want to get started immediately and don’t want to spend time on setup efforts.', 'If you choose Gitpod Self-Hosted, you will manage and host Gitpod on your own instances. This means all data remains your infrastructure, as Gitpod can run behind corporate firewalls and on air-gapped networks. Gitpod Self-Hosted is the best solution for teams who want to keep full data control and don’t mind the additional setup efforts.
+                        If you choose <strong>Gitpod Cloud</strong>, we will manage and host Gitpod in the cloud for you. This means minimal setup efforts for you and secure data storage in the cloud. Gitpod Cloud is be the best solution for teams who want to get started immediately and don’t want to spend time on setup efforts.
+                    </p>
+                    <p>    
+                        If you choose <strong>Gitpod Self-Hosted</strong>, you will manage and host Gitpod on your own instances. This means all data remains your infrastructure, as Gitpod can run behind corporate firewalls and on air-gapped networks. <strong>Gitpod Self-Hosted</strong> is the best solution for teams who want to keep full data control and don’t mind the additional setup efforts.
                     </p>
                 </div>
             </div>
@@ -78,13 +81,13 @@ const SelfHostedFAQs = () => (
                 <div>
                     <h3>How can I install Self-Hosted?</h3>
                     <p>
-                        You can either install Gitpod Self-Hosted on Google Cloud Platform or on Vanilla Kubernetes. Enhanced support for AWS, Azure and OpenShift is coming soon. See <Link to="/docs/self-hosted/latest/self-hosted/">Self-Hosted Installation</Link> for more information.
+                        You can either install <strong>Gitpod Self-Hosted</strong> on <strong>Google Cloud Platform</strong> or on <strong>Vanilla Kubernetes</strong>. Enhanced support for <strong>AWS</strong>, <strong>Azure</strong> and <strong>OpenShift</strong> is coming soon. See <Link to="/docs/self-hosted/latest/self-hosted/">Self-Hosted Installation</Link> for more information.
                     </p>
                 </div>
                 <div>
                     <h3>How can I pay?</h3>
                     <p>
-                        Currently, Gitpod Self-Hosted can only be purchased on request. Please <Link to="/contact">Contact Sales</Link> to receive an offer. 
+                        Currently, <strong>Gitpod Self-Hosted</strong> can only be purchased on request. Please <Link to="/contact">Contact Sales</Link> to receive an offer. 
                     </p>
                     <p>
                         All our plans can be paid via Credit Card.
