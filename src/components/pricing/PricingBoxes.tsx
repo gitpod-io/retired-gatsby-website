@@ -130,8 +130,9 @@ const PricingContainer = styled.div`
     }
 
     p {
+        margin-top: 2rem;
         text-align: center;
-        font-size: 130%;
+        font-size: 120%;
     }
 
     .cloud-img {
