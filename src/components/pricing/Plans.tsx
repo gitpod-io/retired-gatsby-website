@@ -9,7 +9,7 @@ import ProfessionalBadge from '../../resources/open-source-badge-grey.svg'
 
 const Styled = styled.div`
     padding: 5rem 0;
-
+    
     h2 {
         text-align: center;
     }
@@ -19,7 +19,7 @@ const Styled = styled.div`
         justify-content: space-around;
         max-width: 900px;
         margin: 0 auto;
-        padding: 5rem 0;
+        padding: 2rem 0 5rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
             flex-direction: column;
@@ -44,14 +44,6 @@ const Styled = styled.div`
             display: block;
             height: 7.5rem;
             margin-bottom: 3rem;        
-        }
-
-        h2 {
-            margin-bottom: 3rem;
-        }
-
-        h2 + p {
-            margin: 0;
         }
 
         p:last-of-type {
