@@ -1,13 +1,17 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { borders } from '../../styles/variables'
+import { borders, sizes } from '../../styles/variables'
 
 const StyledPricingLinks = styled.section`
     max-width: 850px;
     display: flex;
     align-items: center;
     margin: 0 auto;
+    
+    @media(max-width: ${sizes.breakpoints.md}) {
+        padding-bottom: 8rem;
+    }
 
     @media(max-width: 720px) {
         flex-direction: column;
@@ -63,9 +67,9 @@ const PricingLinks = ({ img, title, text, links }: PricingLinksProps) => (
                 <p>
                    {text} 
                 </p>
-            <span className="btn-wrapper">
-                {links}
-            </span>
+                <span className="btn-wrapper">
+                    {links}
+                </span>
             </div>
         </StyledPricingLinks>
     </div>
