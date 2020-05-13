@@ -32,6 +32,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     background-color: ${colors.offWhite};
     border-radius: 3px;
     margin-top: ${({ isTitleOutside }) => isTitleOutside ? '6rem' : '2rem'};
+    z-index: 1000;
 
     @media(min-width: ${sizes.breakpoints.md}) {
         z-index: ${({ transform }) => transform ? '1' : null};
@@ -46,10 +47,6 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         padding: 3rem 2rem;
         margin-bottom: 5rem;
         min-height: ${({ isTitleOutside }) => isTitleOutside ? '38rem' : '50rem'};
-
-        &:not(:last-of-type) {
-            margin-bottom:  ${({ isTitleOutside }) => isTitleOutside ? '8rem' : '5rem'};
-        }
     }
 
     @media(max-width: 1096px) {

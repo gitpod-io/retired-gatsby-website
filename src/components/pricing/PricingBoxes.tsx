@@ -116,7 +116,7 @@ const PricingContainer = styled.div`
     padding: 3rem 0 6rem;
     
     .cards {
-        justify-content: flex-start;
+        position: relative;
         padding: 0rem 0 3rem;
 
         .hide {
@@ -133,8 +133,54 @@ const PricingContainer = styled.div`
         text-align: center;
         font-size: 130%;
     }
-`;
 
+    .cloud-img {
+        position: absolute;
+        height: 20rem;
+
+        @media(max-width: 840px) {
+            display: none;        
+        }
+
+        &--1 {
+            top: 31px;
+            left: 20%;
+
+            @media(max-width: 1100px) {
+                left: 19.5%;
+            }
+
+            @media(max-width: 960px) {
+                left: 16%;
+            }
+
+            @media(max-width: 900px) {
+                left: 14%;
+            }
+        }
+
+        &--2 {
+            bottom: -30px;
+            right: 14.5%;
+
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                bottom: -1px;
+            }
+
+            @media(max-width: 1100px) {
+                right: 11.5%;
+            }
+
+            @media(max-width: 960px) {
+                right: 8.5%;
+            }
+
+            @media(max-width: 960px) {
+                right: 5%;
+            }
+        }
+    }
+`;
 
 export interface PricingBoxesProps {
     isRendered: boolean
@@ -153,8 +199,8 @@ const PricingBoxes = ({ isRendered, changeIsRendered }: PricingBoxesProps) => {
                     />
                 </div>
             </div>
-            <PricingContainer>
-                <div className="cards">
+            <PricingContainer className="">
+                <div className="cards row">
                     <div
                         className={`pricing__boxes ${isRendered ? 'hide' : 'show'}`}
                     >
@@ -168,6 +214,12 @@ const PricingBoxes = ({ isRendered, changeIsRendered }: PricingBoxesProps) => {
                     <div
                         className={`pricing__boxes ${isRendered ? 'show' : 'hide'}`}
                     >
+                        <object 
+                            role="presentation"
+                            tabIndex={-1}
+                            data={Cloud}
+                            className="cloud-img cloud-img--1"
+                        />
                         {selfHostedPlans.map(
                             (plan, i) => <PricingBox
                                 key={i}
@@ -175,6 +227,12 @@ const PricingBoxes = ({ isRendered, changeIsRendered }: PricingBoxesProps) => {
                                 isTitleOutside={true}
                             />
                         )}
+                        <object 
+                            role="presentation"
+                            tabIndex={-1}
+                            data={Cloud}
+                            className="cloud-img cloud-img--2"
+                        />
                     </div>
                 </div>
                 <p>Do you have any questions? Please, <Link to="/contact/">Get in Touch.</Link></p>
