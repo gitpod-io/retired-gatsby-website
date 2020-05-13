@@ -18,7 +18,7 @@ const pricingLinksContents = {
                 Run your own Gitpod and enjoy automated setups, better collaboration, higher code quality and a more streamlined workflow.
               </>,
         links: <>
-            <Link to="/docs/" className="btn btn--cta">See Docs</Link>
+            <Link to="/docs/self-hosted/latest/self-hosted/" className="btn btn--cta">See Docs</Link>
                 <Link to="/enterprise/" className="btn">See Enterprise Solution</Link>
         </>
     },
