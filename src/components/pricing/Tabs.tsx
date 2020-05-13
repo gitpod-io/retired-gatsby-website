@@ -3,8 +3,9 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { colors } from '../../styles/variables'
 import { PricingBoxesProps } from './PricingBoxes'
+import { Link } from 'gatsby'
 
-const Tab = styled.button<{ isRendered: boolean }>`
+const Tab = styled(Link)<{ isRendered: boolean }>`
     display: block;
     padding: 1.3rem 2rem;
     font-size: 18px;
@@ -50,12 +51,14 @@ const Tabs = ({ isRendered, changeIsRendered }: PricingBoxesProps) => (
         <Tab 
             isRendered={isRendered}
             onClick={() => changeIsRendered(false)}
+            to="/pricing/#"
         >
             Cloud
         </Tab>
         <Tab 
             isRendered={isRendered}
             onClick={() => changeIsRendered(true)}
+            to="/pricing/#self-hosted"
         >
             Self-Hosted
         </Tab>
