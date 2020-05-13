@@ -34,7 +34,7 @@ const Styled = styled.div`
             flex-direction: column;
             justify-content: space-between;
             flex: 0 0 45%;
-            padding: 2rem 4rem;
+            padding: 4rem 4rem 2rem;
             background: ${colors.white};
             border: ${borders.light};
             border-radius: 3px;
