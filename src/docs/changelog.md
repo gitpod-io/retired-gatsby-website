@@ -2,10 +2,37 @@
 
 A curated, chronologically ordered list of notable changes in [gitpod.io](https://www.gitpod.io/).
 
-## 2020-04-21
+## 2020-05-14
 
-- Upgrade Pyenv's Python from 3.7.7 → 3.8.2 [gitpod-io/workspace-images#212](https://github.com/gitpod-io/workspace-images/pull/212)
-- Drop support of .NET 2.2 in `gitpod/workspace-dotnet*`, because it reached [End-Of-Life](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) on 2019-12-23
+- Support Amazon Linux based workspace images (thanks @Kreyren!), fixes [gitpod-io/gitpod#1490](https://github.com/gitpod-io/gitpod/issues/1490)
+- [theia] Measure first time connection for IDE websocket
+- [theia] Improve & optimize IDE diff view, remove a `O(n^2)` diff computation
+- [theia] Load IDE faster by defering & batching VSCode extensions initialization: [eclipse-theia/theia#7676](https://github.com/eclipse-theia/theia/pull/7676)
+- [theia] Switch PHP language support from `felixfbecker.php-intellisense` → `bmewburn.vscode-intelephense-client`: Faster & cached indexing, better support for Symfony projects
+- [gitlab] Fix GitLab permission check, fixes [gitpod-io/gitpod#1464](https://github.com/gitpod-io/gitpod/issues/1464)
+- [workspaces-list] UX: Only show search/filter when relevant, make GC message dismissable, start workspaces in a new tab
+- [backend] Monitor Go service metrics with a new dashboard
+- [backend] Optimize Gitpod database with multiple indexes
+- [backend] Increase maximum allowed workspace startup time from 30min → 60 min (for big projects), fixes [community/cannot-open-a-new-workspace-for-libreoffice](https://community.gitpod.io/t/cannot-open-a-new-workspace-for-libreoffice/1237)
+
+## 2020-05-12
+
+- Downgrade Ruby `2.7.1` → `2.6.6` (because Solargraph doesn't support latest Bundler `2.1.4` yet) [gitpod-io/workspace-images/e9281a20](https://github.com/gitpod-io/workspace-images/commit/e9281a207c4c6b4c7df2e91e9ec81f36ed0652ae)
+
+## 2020-05-08
+
+- Upgrade to Rust `1.43.1` [gitpod-io/workspace-images#230](https://github.com/gitpod-io/workspace-images/pull/230)
+- Fix the persistence of Ruby gems in `/workspace/.rvm` with a custom `.rvmrc` [gitpod-io/workspace-images#223](https://github.com/gitpod-io/workspace-images/pull/223)
+- Upgrade RVM's Ruby from `2.5` → `2.5.8` and `2.6` → `2.7.1` [gitpod-io/workspace-images#213](https://github.com/gitpod-io/workspace-images/pull/213)
+
+## 2020-05-02
+
+- Fix Ubuntu 20.04 based `gitpod/workspace-dotnet` and `gitpod/workspace-dotnet-vnc` images by installing .NET Core SDK 3.1 binaries [gitpod-io/workspace-images#218](https://github.com/gitpod-io/workspace-images/pull/218)
+
+## 2020-04-29
+
+- Best practice: Don't stay as `USER root` in `gitpod/workspace-full-vnc` [gitpod-io/workspace-images#215](https://github.com/gitpod-io/workspace-images/pull/215)
+- Add bash auto-completion for `cargo` [gitpod-io/workspace-images#216](https://github.com/gitpod-io/workspace-images/pull/216)
 
 ## 2020-04-22
 
@@ -15,6 +42,11 @@ A curated, chronologically ordered list of notable changes in [gitpod.io](https:
 - [backend] Better handle excessive resource usage in workspaces (CPU, network, disk) and implement a fair use policy
 - [backend] Implement garbage collection for prebuilt workspace snapshots that are unused for more than 7 days
 - Overhaul and improve GitHub/GitLab login code
+
+## 2020-04-21
+
+- Upgrade Pyenv's Python from 3.7.7 → 3.8.2 [gitpod-io/workspace-images#212](https://github.com/gitpod-io/workspace-images/pull/212)
+- Drop support of .NET 2.2 in `gitpod/workspace-dotnet*`, because it reached [End-Of-Life](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) on 2019-12-23
 
 ## 2020-04-17
 
