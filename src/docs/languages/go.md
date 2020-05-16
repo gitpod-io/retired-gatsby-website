@@ -6,7 +6,7 @@ Gitpod supports Go right out of the box, but there are still ways to optimize yo
 
 Here are a few Go example projects that are already automated with Gitpod:
 
-<div class="table-container">
+<div class="language-examples table-container">
 
 | Repository                                                              |                                                                 Description                         |               Try It |
 | ----------------------------------------------------------------- | ------------------------------|-------------------------------------------------------------------------------------------------: |

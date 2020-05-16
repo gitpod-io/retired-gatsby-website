@@ -3,7 +3,7 @@
 ## Example Repositories
 
 
-<div class="table-container">
+<div class="language-examples table-container">
 
 | Repository | Description | Try it |
 |------|----------------|-----------|

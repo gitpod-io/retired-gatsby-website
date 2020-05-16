@@ -6,7 +6,7 @@ Gitpod supports C++ right out of the box, but there are still ways to enhance yo
 
 Here are a few C++ example projects that are already automated with Gitpod:
 
-<div class="table-container">
+<div class="table-container language-examples">
 
 | Repository | Description | Try it |
 |------|----------------|-----------|

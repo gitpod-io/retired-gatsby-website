@@ -32,7 +32,7 @@ which will set the required Rust version and if you commit the file into source 
 
 Here are a few Rust example projects that are already automated with Gitpod:
 
-<div class="table-container">
+<div class="language-examples table-container">
 
 | Repository  | Description  | Try it    |
 |---------|------------|-----|

@@ -11,7 +11,7 @@ To change the default Ruby version, you can simply run `rvm use 2.5 --default` i
 
 Here are a few Ruby example projects that are already automated with Gitpod:
 
-<div class="table-container">
+<div class="language-examples table-container">
 
 Repository | Description | Try it
 ---------|----------|---------

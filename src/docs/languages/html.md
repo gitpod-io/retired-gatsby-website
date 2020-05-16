@@ -6,10 +6,15 @@
 
 Here are a few HTML/CSS example projects that are already automated with Gitpod:
 
-Repository | Description | Try it
----|---|---
-[Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) | The perfect Front-End Checklist for modern websites and meticulous developers | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/thedaviddias/Front-End-Checklist)
-[Devhints](https://github.com/rstacruz/cheatsheets) | TL;DR for developer documentation - a ridiculous collection of cheatsheets | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/rstacruz/cheatsheets)
+
+<div class="language-examples table-container">
+
+|Repository | Description | Try it|
+|---|---|---|
+|[Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) | The perfect Front-End Checklist for modern websites and meticulous developers | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/thedaviddias/Front-End-Checklist)|
+|[Devhints](https://github.com/rstacruz/cheatsheets) | for developer documentation - a ridiculous collection of cheatsheets | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/rstacruz/cheatsheets)|
+
+</div>
 
 ## [emmet](http://emmet.io/) Support
 
