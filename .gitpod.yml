@@ -1,11 +1,14 @@
+image:
+  file: .gitpod.Dockerfile
+
 ports:
-  - port: 8000
+  - port: 9000
     onOpen: open-preview
 
 tasks:
   - init: cd plugins/gatsby-remark-gitpod && npm install
-  - init: yarn && yarn build
-    command: yarn dev --host 0.0.0.0
+  - init: yarn && gatsby build
+    command: gatsby serve
 
 vscode:
   extensions:
