@@ -50,6 +50,8 @@ We usually force-push to the same branch and start workspaces from it until we a
 
 ### Step 5: Create a Pull-Request
 
+WARNING ℹ: Enable access to public repositories for the gitpod app. To actually merge PRs. Please go to https://gitpod.io/access-control to enable access.
+
 This will allow others in your team to review your changes and try out the new automated dev environment. When you are proposing a setup for a project, it is helpful to explain why this is useful to the maintainers as well as the entire community.
 
 ### Step 6: Prebuilds
