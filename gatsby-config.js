@@ -26,7 +26,8 @@ module.exports = {
                 short_name: `Gitpod`,
                 start_url: `/`,
                 background_color: `#f7f0eb`,
-                theme_color: `#a2466c`,
+                theme_color: `#1aa6e4`,
+             
                 display: `standalone`,
                 cache_busting_mode: 'none',
                 icon: `src/resources/gitpod.svg`
