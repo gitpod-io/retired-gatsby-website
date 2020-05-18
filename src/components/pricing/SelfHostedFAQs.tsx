@@ -49,7 +49,7 @@ const SelfHostedFAQs = () => (
                 <div>
                     <h3>Can I try Gitpod for free?</h3>
                     <p>
-                        Of course! You can try the full version on your own infrastructure for 30 days for free. Gitpod Self-Hosted is always free for up to five users. Get started now and <Link to="/docs/self-hosted/latest/self-hosted/">Install Self-Hosted</Link>.
+                        Of course! You can try the full version on your own infrastructure for 30 days for free. Gitpod Self-Hosted is always free for up to five users. Obtain your trial license <Link to="https://gitpod.io/selfhosted-trial/">here</Link> and get started by <Link to="/docs/self-hosted/latest/self-hosted/">installing Gitpod Self-Hosted</Link>.
                 </p>
                     <p>
                         If you like the experience, you can continue using Gitpod by simply updating your existing instance with a purchased license key. Self-hosted Gitpod licenses can currently only be purchased by request. Please <Link to="/contact/">Contact Sales</Link> to receive an offer.
@@ -62,12 +62,12 @@ const SelfHostedFAQs = () => (
                     </p>
                 </div>
                 <div>
-                    <h3>What’s the difference between Cloud and Self-Hosted?</h3>
+                    <h3>What is the difference between Cloud and Self-Hosted?</h3>
                     <p>
-                        If you choose <strong>Gitpod Cloud</strong>, we will manage and host Gitpod in the cloud for you. This means minimal setup efforts for you and secure data storage in the cloud. Gitpod Cloud is be the best solution for teams who want to get started immediately and don’t want to spend time on setup efforts.
+                        If you choose <strong>Gitpod Cloud</strong>, we will manage and host Gitpod in the cloud for you. This means minimal setup efforts for you and secure data storage in the cloud. Gitpod Cloud is be the best solution for teams who want to get started immediately and don’t want to spend time on setup and operations.
                     </p>
                     <p>    
-                        If you choose <strong>Gitpod Self-Hosted</strong>, you will manage and host Gitpod on your own instances. This means all data remains your infrastructure, as Gitpod can run behind corporate firewalls and on air-gapped networks. <strong>Gitpod Self-Hosted</strong> is the best solution for teams who want to keep full data control and don’t mind the additional setup efforts.
+                        If you choose <strong>Gitpod Self-Hosted</strong>, you will manage and host Gitpod on your own instances. This means all data remains your infrastructure, as Gitpod can run behind corporate firewalls and on air-gapped networks. <strong>Gitpod Self-Hosted</strong> is the best solution for teams who want to keep full data control or use Gitpod in private networks.
                     </p>
                 </div>
             </div>
@@ -90,7 +90,7 @@ const SelfHostedFAQs = () => (
                         Currently, <strong>Gitpod Self-Hosted</strong> can only be purchased on request. Please <Link to="/contact">Contact Sales</Link> to receive an offer. 
                     </p>
                     <p>
-                        All our plans can be paid via Credit Card.
+                        All our plans can be paid via invoice.
                     </p>
                 </div>
                 <div>
