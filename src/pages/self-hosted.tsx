@@ -21,7 +21,7 @@ const features: FeatureProps[] = [
     },
     {
         title: 'GitLab & GitHub Integration',
-        text: 'Integrates seamlessly with your Git hosting solution like GitHub Enterprise, GitLab Community Edition or Enterprise Edition. Bitbucket support is coming soon.',
+        text: 'Integrates seamlessly with your Git hosting solution like GitHub Enterprise, GitLab Community Edition, or Enterprise Edition. Bitbucket support is coming soon.',
         img: GithubGitlab
     },
     {
@@ -69,7 +69,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
                 title="Need Help Or Have Questions?"
                 text={
                     <React.Fragment>
-                        <p>Please reach out. We’re happy to help getting <br />the perfect Gitpod setup for your team.</p>
+                        <p>Please reach out. We’re happy to help get <br />your team the perfect Gitpod setup.</p>
                     </React.Fragment>}
                 anchors={[{ href: '/contact/', subject: 'I have a question regarding Gitpod Self-Hosted', text: 'Contact' }]}
             />

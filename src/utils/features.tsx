@@ -53,7 +53,7 @@ export const featuresCardsData = [
         icon: IconLanguage,
         iconText: <span>Language<br />Support</span>,
         paragraphs: <React.Fragment>
-            <p>Gitpod comes with built-in language support for most popular languages: <strong>Java, JavaScript, Python, Go, Rust and C/C++</strong>, are supported out of the box and come with auto completion, diagostics, formatting and many more.</p>
+            <p>Gitpod comes with built-in language support for most popular languages: <strong>Java, JavaScript, Python, Go, Rust, and C/C++</strong>, which are supported out of the box and come with auto-completion, diagnostics, formatting and many more features.</p>
             <p>It's easy to get the same quality of language support for any other language by installing the needed <Link to="/docs/config-docker/">Tools via Docker</Link> and adding useful <Link to="/docs/vscode-extensions/">VS Code Extensions</Link>.</p>
         </React.Fragment>,
         img: <img alt="Supported Programming Languages" src={SupportedLanguages} />,
