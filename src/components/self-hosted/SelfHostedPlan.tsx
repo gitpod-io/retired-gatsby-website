@@ -9,7 +9,7 @@ const StyledSelfHostedPlan = styled.div`
     flex-direction: column;
     justify-content: space-between;
     padding: 3rem 4rem;
-    background: ${colors.white};
+    background: var(--white);
     border: ${borders.light};
     margin-bottom: 3rem;
 

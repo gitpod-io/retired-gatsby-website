@@ -3,7 +3,7 @@ import React from 'react'
 import { isEurope } from '../../utils/helpers'
 import { Link } from 'gatsby'
 import styled from '@emotion/styled'
-import { sizes, colors, borders } from '../../styles/variables'
+import { sizes, borders } from '../../styles/variables'
 import BagGrey from '../../resources/bag-grey.svg'
 import ProfessionalBadge from '../../resources/open-source-badge-grey.svg'
 
@@ -35,7 +35,7 @@ const Styled = styled.div`
             justify-content: space-between;
             flex: 0 0 45%;
             padding: 4rem 4rem 2rem;
-            background: ${colors.white};
+            background: var(--white);
             border: ${borders.light};
             border-radius: 3px;
         }

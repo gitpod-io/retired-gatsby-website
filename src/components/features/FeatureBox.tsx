@@ -7,7 +7,7 @@ const StyledFeatureBox = styled.div`
     position: relative;
     padding: 1rem .6rem;
     text-align: center;
-    background: ${colors.white};
+    background: var(--white);
     box-shadow: ${shadows.light};
     border-radius: 2rem;
     height: 120px;
@@ -40,7 +40,7 @@ const StyledFeatureBox = styled.div`
     }
 
     &:hover {
-        background-color: ${colors.offWhite};
+        background-color: var(--offWhite);
     }
 `
 

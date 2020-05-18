@@ -10,7 +10,7 @@ const StyledTextBox = styled.div`
         max-width: 75rem;
         margin: 10rem auto;
         padding: 8rem 5rem;
-        background: ${colors.white};
+        background: var(--white);
         box-shadow: ${shadows.light};
     }
 

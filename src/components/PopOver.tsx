@@ -13,7 +13,7 @@ const StyledDescripion = styled.span`
         font-weight: 600;
         font-size: 1rem;
         border: none;
-        color: ${colors.white};
+        color: var(--white);
         background: ${colors.offWhite1};
         border-radius: 50%;
 
@@ -30,8 +30,8 @@ const StyledDescripion = styled.span`
     .description__text {
         padding: .2rem .5rem;
         font-size: 1.2rem;
-        color: ${colors.textDark};
-        background: ${colors.offWhite2};
+        color: var(--textDark);
+        background: var(--offWhite2);
         z-index: 1000 !important;
 
         @media(max-width: 1080px) {

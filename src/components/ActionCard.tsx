@@ -10,7 +10,7 @@ const StyledActionCard = styled.section`
     margin: 8rem auto;
     padding: 5rem 3rem;
     text-align: center;
-    background: ${colors.offWhite};
+    background: var(--offWhite);
     box-shadow: ${shadows.light};
 
     h2 {

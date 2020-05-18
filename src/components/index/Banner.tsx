@@ -21,7 +21,7 @@ const Styled = styled.div`
         }
 
         &-container {
-            background: ${colors.offWhite};
+            background: var(--offWhite);
         }
 
         &__text-box {

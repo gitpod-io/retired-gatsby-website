@@ -7,10 +7,10 @@ const StyledInput = styled.input`
     padding: 7px 18px 7px 38px;
     margin: 10px 10px 30px 10px;
     border-radius: 100px;
-    border: solid 1px ${colors.white};
-    box-shadow: 1px 3px 8px ${colors.offWhite2};
+    border: solid 1px var(--white);
+    box-shadow: 1px 3px 8px var(--offWhite2);
 
-    background: url(${MagGlass}) no-repeat 10px ${colors.white};
+    background: url(${MagGlass}) no-repeat 10px var(--white);
     background-size: 20px 20px;
     &:focus {
         border: solid 1px ${colors.link};

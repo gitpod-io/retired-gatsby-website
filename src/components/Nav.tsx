@@ -11,7 +11,7 @@ const StyledNav = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 4rem 0;
-    background: ${colors.offWhite};
+    background: var(--offWhite);
     position: relative;
 
     @media(max-width: ${sizes.breakpoints.lg}) {
@@ -46,7 +46,7 @@ const StyledNav = styled.nav`
             padding-top: 8rem;
             min-height: 95vh;
             align-items: center;
-            background: ${colors.offWhite};
+            background: var(--offWhite);
             z-index: 1;
         }
 
@@ -115,7 +115,7 @@ const StyledNav = styled.nav`
     .nav__btn {
         position: relative;
         cursor: pointer;
-        background: ${colors.offWhite};
+        background: var(--offWhite);
         border: none;
         z-index: 10000;
         width: 4rem;
@@ -123,7 +123,7 @@ const StyledNav = styled.nav`
         transition: all .2s;
 
         &:hover {
-            background: ${colors.offWhite};
+            background: var(--offWhite);
 
             svg {
                 stroke: ${colors.lightBlue};
@@ -138,8 +138,8 @@ const StyledNav = styled.nav`
             width: 100%;
             height: 100%;
             transition: all .3s cubic-bezier(.25,.75,.5,1.25);
-            fill: ${colors.text};
-            stroke: ${colors.text};
+            fill: var(--text);
+            stroke: var(--text);
 
             &#hamburger {
 

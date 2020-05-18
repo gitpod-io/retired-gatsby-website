@@ -3,8 +3,6 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { featuresCardsData } from '../../utils/features'
 import FeatureCard from './FeatureCard'
-import { colors, sizes, shadows } from '../../styles/variables'
-
 
 const Styled = styled.div`
 
@@ -13,35 +11,6 @@ const Styled = styled.div`
         & > div {
             &:not(:last-child) {
                 margin-bottom: 10rem;
-            }
-        }
-
-        .feature {
-            padding: 5rem 7rem;
-            background: ${colors.white};
-            box-shadow: ${shadows.light};
-
-            &:not(:last-child) {
-                margin-bottom: 8rem;
-            }
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                padding: 2rem 1rem;
-            }
-
-            img {
-                display: block;
-                max-width: 90rem;
-                width: 100%;
-                margin: 4rem 0;
-            }
-
-            p {
-                max-width: 80rem;
-            }
-
-            .table-container {
-                margin: 6rem 0;
             }
         }
     }
@@ -67,8 +36,8 @@ const FeaturesList = () => (
                         id={f.id}
                         caption={f.caption}
                         isIllustration={f.isIllustration}
-                        colorTextBox={colors.offWhite}
-                        colorImgBox={colors.white}
+                        colorTextBox={`var(--offWhite)`}
+                        colorImgBox={`var(--white)`}
                     />
                 )
             }

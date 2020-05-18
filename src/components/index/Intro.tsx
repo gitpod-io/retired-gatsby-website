@@ -7,7 +7,7 @@ import ArrowOnTarget from '../../resources/arrow-on-target.svg'
 
 const Styled = styled.div`
     .intro {
-        background: ${colors.offWhite};
+        background: var(--offWhite);
 
         &__box {
             display: flex;

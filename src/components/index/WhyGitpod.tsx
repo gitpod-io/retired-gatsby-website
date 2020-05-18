@@ -47,7 +47,7 @@ const Styled = styled.div`
                     }
 
                     &:nth-child(2) {
-                        background: ${colors.offWhite};
+                        background: var(--offWhite);
                     }
                 }
             }
@@ -197,8 +197,8 @@ const Styled = styled.div`
             display: inline-block;
             padding: 1rem 3rem;
             font-weight: 600;
-            color: ${colors.textLight};
-            background: ${colors.offWhite2};
+            color: var(--textLight);
+            background: var(--offWhite2);
             border: none;
 
             @media(max-width: 1240px) {
@@ -207,7 +207,7 @@ const Styled = styled.div`
             }
 
             &--active {
-                color: ${colors.white};
+                color: var(--white);
                 background: url("https://www.gitpod.io/galaxy.jpg");
                 background-size: cover;
                 background-position: top;

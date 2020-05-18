@@ -24,12 +24,12 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     max-width: 26rem;
     width: 25%;
     text-align: center;
-    color: ${({ background }) => background ? colors.white : null};
-    background: ${({ background }) => background ? 'url("https://www.gitpod.io/galaxy.jpg")' : colors.white};
+    color: ${({ background }) => background ? `var(--white)` : null};
+    background: ${({ background }) => background ? 'url("https://www.gitpod.io/galaxy.jpg")' : `var(--white)`};
     background-size: ${({ background }) => background ? 'cover' : null};
     background-position: ${({ background }) => background ? 'left' : null};
-    border: 1px solid ${colors.offWhite2};
-    background-color: ${colors.offWhite};
+    border: 1px solid var(--offWhite2);
+    background-color: var(--offWhite);
     border-radius: 3px;
     margin-top: ${({ isTitleOutside }) => isTitleOutside ? '6rem' : '2rem'};
     z-index: ${({ isTitleOutside }) => isTitleOutside ? '1000' : 'none'};;
@@ -187,7 +187,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         left: 0;
         bottom: 100%;
         width: 100%;
-        background: ${colors.offWhite2};
+        background: var(--offWhite2);
 
         p {
             width: 20ch;
@@ -200,18 +200,18 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     }
 
     .blue-on-hover {
-        color: ${colors.text};
+        color: var(--text);
         border: 2px solid #fff;
         
         &:hover {
-            color: ${colors.white};
+            color: var(--white);
             border: 2px solid ${colors.lightBlue};
         }
     }
 
     .btn {
         background: ${({ btnBackground }) => btnBackground ? colors.link : ''};
-        color: ${({ btnBackground }) => btnBackground ? colors.white : ''};
+        color: ${({ btnBackground }) => btnBackground ? `var(--white)` : ''};
         border-color: ${({ btnBackground }) => btnBackground ? colors.link : ''};
 
         &:hover {

@@ -6,7 +6,7 @@ import { colors, shadows } from '../styles/variables'
 import { parseAuthors } from '../utils/authors'
 
 const StyledPostPreview = styled.div`
-    background: ${colors.white};
+    background: var(--white);
     box-shadow: ${shadows.light};
     max-width: 35rem;
     min-height: 60rem;
@@ -24,7 +24,7 @@ const StyledPostPreview = styled.div`
     }
 
     p {
-        color: ${colors.text};
+        color: var(--text);
         font-weight: 400;
     }
 
@@ -37,7 +37,7 @@ const StyledPostPreview = styled.div`
         display: flex;
         justify-content: space-between;
         padding: 2rem;
-        color: ${colors.text};
+        color: var(--text);
         font-weight: 400;
         flex-wrap: wrap;
     }

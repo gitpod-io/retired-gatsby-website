@@ -51,7 +51,7 @@ const StyledMediaKitPage = styled.div`
             display: flex;
             justify-content: space-between;
             padding: 3rem 1.5rem;
-            background: ${colors.white};
+            background: var(--white);
         }
     }
 

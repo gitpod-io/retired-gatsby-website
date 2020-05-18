@@ -14,7 +14,7 @@ const StyledLinkSet = styled.div`
         display: inline-block;
         font-size: 1.5rem;
         border-left: solid 1px transparent;
-        color: ${colors.text};
+        color: var(--text);
         font-weight: 400;
 
         &:hover {

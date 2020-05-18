@@ -18,7 +18,7 @@ const StyledQuote = styled.section`
         justify-content: center;
         align-items: center;
         text-align: center;
-        color: ${colors.text};
+        color: var(--text);
         font-size: 2.5rem;
         font-weight: 400;
 

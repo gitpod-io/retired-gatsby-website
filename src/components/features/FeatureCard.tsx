@@ -1,12 +1,12 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, sizes, shadows } from '../../styles/variables'
+import { sizes, shadows } from '../../styles/variables'
 
 const StyledFeatureCard = styled.div<{caption: boolean, isIllustration?: boolean}>`
     display: flex;
-    background: ${colors.offWhite};
-    border: 3px solid ${colors.offWhite};
+    background: var(--offWhite);
+    border: 3px solid var(--offWhite);
     box-shadow: ${shadows.light};
 
     @media(max-width: ${sizes.breakpoints.md}) {
@@ -31,7 +31,7 @@ const StyledFeatureCard = styled.div<{caption: boolean, isIllustration?: boolean
         justify-content: center;
         min-height: ${(props) => props.caption ? '30rem' : null };
         align-items: center;
-        background: ${colors.white};
+        background: var(--white);
 
         @media(min-width: ${sizes.breakpoints.md}) {
             width: 66%;

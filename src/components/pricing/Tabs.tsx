@@ -1,7 +1,6 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors } from '../../styles/variables'
 import { PricingBoxesProps } from './PricingBoxes'
 import { Link } from 'gatsby'
 
@@ -9,10 +8,10 @@ const Tab = styled(Link)<{ isRendered: boolean }>`
     display: block;
     padding: 1.3rem 2rem;
     font-size: 18px;
-    color: ${colors.textLight};
+    color: var(--textLight);
     min-width: 15rem;
     text-align: center;
-    border: 1px solid ${colors.offWhite2};
+    border: 1px solid var(--offWhite2);
     border-radius: 6px 6px 0 0;
     border-bottom-color: transparent;
     margin-bottom: -1px;
@@ -20,17 +19,17 @@ const Tab = styled(Link)<{ isRendered: boolean }>`
     transition: all .05s;
 
     &:first-of-type {
-       background-color: ${({ isRendered }) => isRendered ? colors.offWhite2 : colors.white};
+       background-color: ${({ isRendered }) => isRendered ? `var(--offWhite2)` : `var(--white)`};
        font-weight: ${({ isRendered }) => isRendered ? '400' : '600'};
        border-right: none;
-       color: ${({ isRendered }) => isRendered ? colors.textLight : colors.textDark};
+       color: ${({ isRendered }) => isRendered ? `var(--textLight)` : `var(--textDark)`};
     }
 
     &:last-of-type {
-        background-color: ${({ isRendered }) => isRendered ? colors.white : colors.offWhite2};
+        background-color: ${({ isRendered }) => isRendered ? `var(--white)` : `var(--offWhite2)`};
         font-weight: ${({ isRendered }) => isRendered ? '600' : '400'};
         border-left: none;
-        color: ${({ isRendered }) => isRendered ? colors.textDark : colors.textLight};
+        color: ${({ isRendered }) => isRendered ? `var(--textDark)` : `var(--textLight)`};
     }
 
     body.user-is-tabbing &:focus {
@@ -39,7 +38,7 @@ const Tab = styled(Link)<{ isRendered: boolean }>`
     }
 
     &:hover {
-        color: ${colors.link};
+        color: var(--link);
     }
 `
 

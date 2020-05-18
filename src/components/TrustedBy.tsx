@@ -95,7 +95,7 @@ const StyledTrustedBy = styled.section<{dontDisplayTheArrow?: boolean}>`
         height: 100%;
         width: 40px;
         border: none;
-        background: #fff;
+        background: var(--white);
         cursor: pointer;
         transform: translateY(-51%);
 

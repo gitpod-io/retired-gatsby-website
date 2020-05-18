@@ -45,7 +45,7 @@ const StyledDocsLayout = styled.div`
 
         @media(min-width: ${sizes.breakpoints.md}) {
             padding: 5rem;
-            background: ${colors.white};
+            background: var(--white);
         }
 
         @media(max-width: ${sizes.breakpoints.md}) {
@@ -121,7 +121,7 @@ const StyledDocsLayout = styled.div`
         display: flex;
         flex-direction: column;
         padding: 3rem 1rem;
-        background: ${colors.offWhite};
+        background: var(--offWhite);
 
         @media(min-width: ${sizes.breakpoints.lg}) {
             width: 30%;

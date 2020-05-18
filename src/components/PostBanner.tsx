@@ -21,14 +21,14 @@ const StyledPostBanner = styled.header`
 
     h1, h3 {
         display: inline-block;;
-        background: ${colors.white};
+        background: var(--white);
         box-shadow: ${shadows.light1};
         padding: 1rem 2rem;
         margin: 0 0 2rem 0;
     }
 
     h3 {
-        color: ${colors.text};
+        color: var(--text);
         font-weight: 200;
     }
 
@@ -36,7 +36,7 @@ const StyledPostBanner = styled.header`
         display: inline-block;
         padding: 1rem 2rem;
         margin-bottom: 2rem;
-        background: ${colors.white};
+        background: var(--white);
         box-shadow: ${shadows.light1};
 
         &:not(:last-of-type) {

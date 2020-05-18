@@ -31,7 +31,7 @@ const StyledAboutPage = styled.div`
 
         h3 {
             font-weight: 400;
-            color: ${colors.textLight};
+            color: var(--textLight);
         }
 
         h1 {
@@ -159,7 +159,7 @@ const StyledAboutPage = styled.div`
             }
 
             &:last-of-type {
-                background: ${colors.white};
+                background: var(--white);
             }
         }
 

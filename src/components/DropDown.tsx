@@ -56,7 +56,7 @@ const StyledDropDown = styled.div`
             transform: translateX(-50%);
             min-width: 14rem;
             padding: .5rem 0 1rem;
-            background: ${colors.offWhite};
+            background: var(--offWhite);
             box-shadow: ${shadows.light};
 
             &::before {
@@ -91,7 +91,7 @@ const StyledDropDown = styled.div`
         opacity: 1;
 
         @media(min-width: ${sizes.breakpoints.lg}) {
-            background: ${colors.white};
+            background: var(--white);
             transform: scale(1) translate(-50%, 0);
         }
     }

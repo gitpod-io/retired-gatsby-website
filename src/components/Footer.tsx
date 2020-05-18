@@ -8,9 +8,10 @@ import Github from '../resources/github.svg'
 import Mail from '../resources/mail.svg'
 import Discourse from '../resources/discourse.svg'
 import ExternalLink from './ExternalLink'
+import ThemeToggler from './ThemeToggler'
 
 const StyledFooter = styled.footer`
-    background: ${colors.offWhite};
+    background: var(--offWhite);
     padding: 7rem 0 4rem;
     font-size: 1.4rem;
 
@@ -57,7 +58,7 @@ const StyledFooter = styled.footer`
     }
 
     a {
-        color: ${colors.text};
+        color: var(--text);
         font-weight: 400;
         transition: all .2s;
 
@@ -88,6 +89,7 @@ const StyledFooter = styled.footer`
 
 const Footer: React.SFC<{}> = () => (
     <StyledFooter role="contentinfo">
+        <ThemeToggler />
         <div className="row">
             <div className="links">
                 <ul>

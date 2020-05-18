@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, sizes } from '../../styles/variables'
+import { sizes } from '../../styles/variables'
 import OpenSourceImg from '../../resources/open-source.png'
 
 const Styled = styled.div`
@@ -63,7 +63,7 @@ const Styled = styled.div`
         }
 
         h2 {
-            color: ${colors.textDark};
+            color: var(--textDark);
             margin-bottom: 6rem;
             font-weight: 600;
 

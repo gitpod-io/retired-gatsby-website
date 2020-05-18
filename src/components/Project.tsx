@@ -7,7 +7,7 @@ const StyledProject = styled.div`
     padding: 2rem;
     text-align: center;
     font-size: 90%;
-    background: ${colors.offWhite};
+    background: var(--offWhite);
     box-shadow: ${shadows.light};
     font-weight: 600;
 

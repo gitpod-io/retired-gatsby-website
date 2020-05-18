@@ -29,7 +29,7 @@ const StyledBlogPage = styled.div`
 
     .page-subtitle {
         margin-top: 5rem;
-        color: ${colors.textLight};
+        color: var(--textLight);
         font-weight: 400;
         margin-bottom: 0;
     }

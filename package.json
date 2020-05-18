@@ -33,6 +33,7 @@
     "gatsby-plugin-algolia-docsearch": "^1.0.5",
     "gatsby-plugin-canonical-urls": "2.1.19",
     "gatsby-plugin-catch-links": "2.1.24",
+    "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-emotion": "4.1.21",
     "gatsby-plugin-exclude": "^1.0.2",
     "gatsby-plugin-feed": "^2.3.26",

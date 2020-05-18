@@ -36,7 +36,7 @@ const installs: InstallProps[] = [
 const StyledSection = styled.section`
 
     text-align: center;
-    background: ${colors.offWhite};
+    background: var(--offWhite);
 
     /* ------------------------------------------- */
     /* ----- Section Install ----- */
@@ -57,7 +57,7 @@ const StyledSection = styled.section`
         &__box {
             max-width: 32rem;
             padding: 3rem 2rem;
-            background: ${colors.white};
+            background: var(--white);
             border: ${borders.light};
 
             @media(max-width: ${sizes.breakpoints.lg}) {

@@ -25,7 +25,7 @@ const StyledFeature = styled.div`
     width: 24%;
     padding: 3rem;
     margin-bottom: 3rem;
-    background: ${colors.white};
+    background: var(--white);
     box-shadow: ${shadows.light};
 
     @media(min-width: ${sizes.breakpoints.md}) {

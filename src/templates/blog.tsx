@@ -47,7 +47,7 @@ const StyledBlogTemplate = styled.div`
     max-width: 80rem;
     margin: 8rem auto;
     box-shadow: ${shadows.light};
-    background-color: ${colors.white};
+    background-color: var(--white);
     overflow: hidden;
 
     .contents {
@@ -88,7 +88,7 @@ const StyledBlogTemplate = styled.div`
 
     table {
         font-size: 90%;
-        background-color: ${colors.offWhite};
+        background-color: var(--offWhite);
         border: 1px solid rgba(0,0,0, .1);
         border-collapse: collapse;
         overflow-x: scroll;
