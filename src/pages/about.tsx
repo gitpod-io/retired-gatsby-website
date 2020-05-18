@@ -211,7 +211,7 @@ const AboutPage: React.SFC<{}> = () => (
                 <section className="developers">
                     <div className="developers__text-box">
                         <h2>By Developers For Developers</h2>
-                        <p>With Gitpod, we set out to streamline how software is written today. We democratize software development by minimizing onboarding effort and context switches through instant, automated and ready-to-code development environments.</p>
+                        <p>With Gitpod, we set out to streamline how software is written today. We democratize software development by minimizing onboarding effort and context switches through instant, automated, and ready-to-code development environments.</p>
                     </div>
                     <div className="developer__img-container">
                         <img alt="2 Right Arrows" src={DoubleArrows} className="banner__img" style={{transform: 'rotate(180deg)'}}/>
@@ -230,13 +230,13 @@ const AboutPage: React.SFC<{}> = () => (
                             <div className="about__box">
                                 <img alt="Kiel Harbour" src={Kiel} />
                                 <h3>About TypeFox</h3>
-                                <p>TypeFox was founded in 2016 by Sven Efftinge, Moritz Eysholdt and Dr. Jan Koehnlein, with the mission to build smart tools for smart people. The headquarters is in Kiel, Germany.</p>
+                                <p>TypeFox was founded in 2016 by Sven Efftinge, Moritz Eysholdt, and Dr. Jan Koehnlein, with the mission to build smart tools for smart people. The headquarters is in Kiel, Germany.</p>
                                 <p>We are a driving force behind the language server protocol and the initiators of Eclipse Theia, the next generation IDE that powers Gitpod.</p>
                             </div>
                             <div className="about__box">
                                 <img alt="TypeFox Team" src={Team} />
                                 <h3>About the Team</h3>
-                                <p>We're a small tech-driven team with collectively over 50 years of experience in language design, IDEs and tool development and with strong values around openness, honesty, and effective pragmatism. If you're interested in joining us, please have a look at our <a href="https://www.typefox.io/careers/" target="_blank" rel="noopener">Job Openings</a>.</p>
+                                <p>We're a small tech-driven team with collectively over 50 years of experience in language design, IDEs, and tool development and with strong values around openness, honesty, and effective pragmatism. If you're interested in joining us, please have a look at our <a href="https://www.typefox.io/careers/" target="_blank" rel="noopener">Job Openings</a>.</p>
                             </div>
                         </div>
                     </section>

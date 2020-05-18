@@ -5,7 +5,7 @@ export const features = [
     },
     {
         title: "Follow the Progress",
-        paragraphs: ['Track the progress of your candidates in real time as they work on your coding exercises.', 'By using workspace live-sharing, you can interact with candidates during their coding sessions if needed.']
+        paragraphs: ['Track the progress of your candidates in real-time as they work on your coding exercises.', 'By using workspace live-sharing, you can interact with candidates during their coding sessions if needed.']
     },
     {
         title: "Easy to Integrate",
