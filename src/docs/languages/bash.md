@@ -70,6 +70,6 @@ Not sure about Bash IDE? Try it in Gitpod
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-BashIDE)
 
-## External Resources
+## Further Reading
 
 - For more information about ShellCheck please see [shellcheck.net](https://shellcheck.net)

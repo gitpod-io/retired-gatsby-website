@@ -223,5 +223,6 @@ To see a basic repository with Rust debugging configured, please check out [gitp
 
 <br>
 
-## Resources
+## Further Reading
+
 * ***[Rocket-Example](https://www.gitpod.io/blog/docker-in-gitpod/)*** For an example of how to setup a project for the [`Rocket`](https://rocket.rs/) web-development framework

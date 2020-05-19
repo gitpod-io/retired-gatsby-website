@@ -153,7 +153,8 @@ To see a basic repository with Python debugging enabled, please check out [gitpo
 <br>
 
 
-## Resources
+## Further Reading
+
 * ***[VSCode documentation for Python debugging](https://code.visualstudio.com/docs/python/debugging)*** All the information there should also apply to Gitpod as well.
 * ***[Troubleshooting Matplotlib/TK](https://github.com/gitpod-io/gitpod/issues/795)*** Here is how to troubleshoot Matplotlib/TK issues for Python GUI applications.
 * ***[Debugging Django](https://community.gitpod.io/t/django-debugging/381/6)*** This is how to debug Django applications in Gitpod.

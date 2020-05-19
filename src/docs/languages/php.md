@@ -90,6 +90,6 @@ RUN sudo pecl channel-update pecl.php.net && \
 ``` 
 where `<EXTENSION>` is the PHP extension you want to install, e.g. `xdebug`.
 
-## External Resources
+## Further Reading
 
 - [Gitpodifying a new Laravel Application](https://notes.etin.space/posts/gitpodifying-a-new-laravel-application) by Etin Obaseki

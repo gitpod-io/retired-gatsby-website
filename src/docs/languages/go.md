@@ -125,7 +125,7 @@ To see a basic repository with Go debugging enabled, please check out [gitpod-io
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-Go-Debug)
 
-## External Resources
+## Further Reading
 
 - [VSCode/Go Documentation](https://code.visualstudio.com/docs/languages/go) The stuff here also applies to Gitpod!
 - [VSCode/Go debugging](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code) VSCode's Documentation on Go debugging
