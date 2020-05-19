@@ -55,7 +55,7 @@
 
 [[redirects]]
   from = "/docs/languages/pandas"
-  to = "/docs/languages/python#pandas"
+  to = "/docs/languages/python/#pandas"
   status = 301
 
 [[redirects]]
