@@ -206,11 +206,6 @@ const TermsPage: React.SFC<{}> = () => (
                         in use of the Service.
                     </li>
                     <li>
-                        <strong>Password and Security:</strong> You shall chose a safe password (we recommend at least 8 signs, including a
-                        letter, cypher and special character) for your account and change such password on a regular basis. You shall only pass
-                        such password information to authorized persons.
-                    </li>
-                    <li>
                         <strong>Defects and Bug reporting:</strong> You agree to support Gitpod in removing possible software defects by means
                         such as bugs reporting or providing any information that can help us finding source of errors, if you have any available.
                     </li>
