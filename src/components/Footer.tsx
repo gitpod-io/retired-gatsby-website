@@ -89,7 +89,6 @@ const StyledFooter = styled.footer`
 
 const Footer: React.SFC<{}> = () => (
     <StyledFooter role="contentinfo">
-        <ThemeToggler />
         <div className="row">
             <div className="links">
                 <ul>
@@ -159,6 +158,7 @@ const Footer: React.SFC<{}> = () => (
                     </li>
                 </ul>
             </div>
+            <ThemeToggler />
             <div className="info">
                 <p>Copyright © <a href="https://www.typefox.io/" target="_blank" rel="noopener" title="TypeFox">TypeFox</a></p>
                 <div><Link to="/imprint/">Imprint</Link>&nbsp;|&nbsp;<Link to="/terms/">Terms of Service</Link>&nbsp;|&nbsp;<Link to="/privacy/">Privacy Policy</Link></div>
