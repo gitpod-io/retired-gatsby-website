@@ -168,7 +168,7 @@ tasks:
     command: python3 <PATH TO APP>
 ```
 
-## Try it
+## Try Pandas in Gitpod
 
 To see a minimal project with Pandas installed and configured, please check out [gitpod-io/Gitpod-Pandas](https://github.com/gitpod-io/Gitpod-Pandas):
 
