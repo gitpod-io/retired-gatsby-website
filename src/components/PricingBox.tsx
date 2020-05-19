@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, sizes } from '../styles/variables'
+import { sizes } from '../styles/variables'
 import IconTick from '../resources/icon-tick.svg'
 
 interface StyledPricingBoxProps {
@@ -205,18 +205,18 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         
         &:hover {
             color: var(--white);
-            border: 2px solid ${colors.lightBlue};
+            border: 2px solid var(--lightBlue);
         }
     }
 
     .btn {
-        background: ${({ btnBackground }) => btnBackground ? colors.link : ''};
-        color: ${({ btnBackground }) => btnBackground ? `var(--white)` : ''};
-        border-color: ${({ btnBackground }) => btnBackground ? colors.link : ''};
+        background: ${({ btnBackground }) => btnBackground ? `var(--link)` : ''};
+        color: ${({ btnBackground }) => btnBackground ? `#fff` : ''};
+        border-color: ${({ btnBackground }) => btnBackground ? `var(--link)` : ''};
 
         &:hover {
-            background: ${({ btnBackground }) => btnBackground ? colors.lightBlue : ''};
-            border-color: ${({ btnBackground }) => btnBackground ? colors.lightBlue : ''};
+            background: ${({ btnBackground }) => btnBackground ? 'var(--lightBlue)' : ''};
+            border-color: ${({ btnBackground }) => btnBackground ? 'var(--lightBlue)' : ''};
         }
     }
 
