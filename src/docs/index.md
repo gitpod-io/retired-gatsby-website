@@ -10,7 +10,7 @@ comprehensive, extensible, and easy to use. With deep GitHub integration, tools 
 sharing, and a focus on usability, Gitpod contains your entire dev workflow in a
 browser tab.
 
-![](./images/gitpod-prefix.png)
+![gitpod-prefix](./images/prefix-lense.png)
 
 Unlike traditional cloud and desktop IDEs, Gitpod understands the context and adjusts the
 IDE automatically. For example, if you create a Gitpod workspace from a Pull Request,
