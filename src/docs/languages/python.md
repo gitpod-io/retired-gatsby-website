@@ -156,18 +156,6 @@ To see a basic repository with Python debugging enabled, please check out [gitpo
 
 Welcome data scientists! This part of the guide will show you how to configure Gitpod for Pandas development.
 
-## Start Tasks
-
-Setting up [start tasks](/docs/config-start-tasks/) for Pandas isn't very different from other Python frameworks, here is an example of how to configure you start tasks:
-
-```yaml
-tasks:
-    # Install requirements in this case pandas
-  - init: pip3 install -r requirements.txt
-    # Run your program on workspace start
-    command: python3 <PATH TO APP>
-```
-
 ## Try Pandas in Gitpod
 
 To see a minimal project with Pandas installed and configured, please check out [gitpod-io/Gitpod-Pandas](https://github.com/gitpod-io/Gitpod-Pandas):
