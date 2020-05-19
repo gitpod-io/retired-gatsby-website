@@ -356,6 +356,22 @@ export default `
         background-size: 1.65em auto, 100%;
     }
 
+    body.user-is-tabbing .theme-toggle:focus + span {
+        border: 1px solid ${colors.lightBlue};
+        animation: pulse 1s infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(.9);
+        }
+
+        100% {
+            transform: scale(1.02);
+        }
+    }
+
     /* ------------------------------------------- */
     /* ----- Lists ----- */
     /* ------------------------------------------- */

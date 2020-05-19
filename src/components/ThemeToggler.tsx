@@ -43,22 +43,6 @@ const StyledThemeToggler = styled.div`
     input:checked + span::before {
         transform: translateX(3rem);
     }
-
-    input:focus + span {
-        border: 1px solid ${colors.lightBlue};
-        animation: pulse 1s infinite;
-        animation-direction: alternate;
-    }
-
-    @keyframes pulse {
-        0% {
-            transform: scale(.9);
-        }
-
-        100% {
-            transform: scale(1.02);
-        }
-    }
 `
 
 const ThemeToggler = () => {
@@ -69,7 +53,7 @@ const ThemeToggler = () => {
                     <label>
                         <img src={SunIcon} alt="Sun Icon"/>
                         <input
-                            className="visually-hidden"
+                            className="visually-hidden theme-toggle"
                             type="checkbox"
                             onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
                             checked={theme === 'dark'}
