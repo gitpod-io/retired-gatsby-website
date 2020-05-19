@@ -43,6 +43,7 @@ export default `
         --offWhite1: #BCBCBC;
         --offWhite2: #e5e5e5;
         --offWhite3: #dbdbdb;
+        --outline: #9ED3FF;
     }
 
     body.dark {
@@ -52,6 +53,7 @@ export default `
         --offWhite2: #393939;
         --text: #ccc;
         --white: #222;
+        --outline: #1AA6E4;
     }
 
     body {
@@ -191,7 +193,7 @@ export default `
     select:focus,
     textarea:focus,
     a:focus {
-        outline: 2px solid #9ED3FF;
+        outline: 2px solid var(--outline);
     }
 
     body:not(.user-is-tabbing) button:focus,
