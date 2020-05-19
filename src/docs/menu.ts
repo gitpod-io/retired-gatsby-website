@@ -156,10 +156,6 @@ export const MENU: MenuEntry[] = [
             M(
                 "Kotlin",
                 "languages/kotlin"
-            ),
-            M(
-                "Pandas",
-                "frameworks/pandas"
             )
         ]
     ),

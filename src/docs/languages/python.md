@@ -152,6 +152,15 @@ To see a basic repository with Python debugging enabled, please check out [gitpo
 
 <br>
 
+## Pandas
+
+Welcome data scientists! This part of the guide will show you how to configure Gitpod for Pandas development.
+
+## Try Pandas in Gitpod
+
+To see a minimal project with Pandas installed and configured, please check out [gitpod-io/Gitpod-Pandas](https://github.com/gitpod-io/Gitpod-Pandas):
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-Pandas)
 
 ## Further Reading
 
