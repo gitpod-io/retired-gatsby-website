@@ -54,6 +54,11 @@
   status = 301
 
 [[redirects]]
+  from = "/docs/languages/pandas"
+  to = "/docs/languages/python#pandas"
+  status = 301
+
+[[redirects]]
   from = "/docs/41_Config_Gitpod_File"
   to = "/docs/config-gitpod-file/"
   status = 301
