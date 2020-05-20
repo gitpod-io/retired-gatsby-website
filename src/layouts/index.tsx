@@ -25,6 +25,14 @@ type StaticQueryProps = {
 
 class IndexLayout extends React.Component<{ title?: string, canonical?: string, description?: string }, {}> {
 
+    state = {
+       theme: 'light'
+    }
+
+    setTheme = (color: string) => {
+        this.setState({theme: color})
+    }
+
     handleFirstTab = (e :any) => {
         if (e.keyCode === 9) { // the "I am a keyboard user" key
             document.body.classList.add('user-is-tabbing');
@@ -43,6 +51,11 @@ class IndexLayout extends React.Component<{ title?: string, canonical?: string, 
 
     componentDidMount() {
         window.addEventListener('keydown', this.handleFirstTab);
+        const theme = localStorage.getItem('theme')
+        console.log(theme)
+        if (theme) { 
+            this.setState({theme}) 
+        }
     }
 
     render() {
@@ -88,7 +101,7 @@ class IndexLayout extends React.Component<{ title?: string, canonical?: string, 
 
                     <meta name="google-site-verification" content="NBio3hCkfn2FKJpqZritJpXuyKo54noPGZzWsjDIp-M" />
                     </Helmet>
-                    <Nav />
+                    <Nav theme={this.state.theme}/>
                     <LayoutMain>
                         <CookieConsent buttonClasses="primary"
                             containerClasses="consent"
@@ -114,7 +127,7 @@ class IndexLayout extends React.Component<{ title?: string, canonical?: string, 
                         </CookieConsent>
                     {children}
                     </LayoutMain>
-                    <Footer />
+                    <Footer setTheme={this.setTheme}/>
                 </LayoutRoot>
                 )}
             />

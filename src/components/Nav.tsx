@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
-import GitpodLogoDark from '../resources/gitpod-logo-dark.svg'
 import { colors, sizes, borders } from '../styles/variables'
 import DropDown from '../components/DropDown'
+import GitpodLogo from './GitpodLogo'
 
 const StyledNav = styled.nav`
     display: flex;
@@ -212,7 +212,7 @@ const StyledNav = styled.nav`
     }
 `
 
-const Nav = () => {
+const Nav = ({ theme }: {theme: string}) => {
     const [isNavRendered, setIsNavRendered] = useState<boolean>(false)
 
     const toggleNavigation = () => {
@@ -224,7 +224,9 @@ const Nav = () => {
                 <div className="row">
                     <StyledNav role="navigation" className="nav">
                         <div className="nav__burger-container">
-                            <Link to="/"><img alt="Gitpod Logo" src={GitpodLogoDark} /></Link>
+                            <Link to="/">
+                                <GitpodLogo theme={theme}/>
+                            </Link>
                             <div className="btns">
                                 <a href="https://gitpod.io/login/" rel="noopener" style={{ display: isNavRendered ? 'none' : '' }}>Log In</a>
                                 <div className="nav__btn-container" aria-live="assertive">

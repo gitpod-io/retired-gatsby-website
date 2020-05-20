@@ -45,7 +45,7 @@ const StyledThemeToggler = styled.div`
     }
 `
 
-const ThemeToggler = () => {
+const ThemeToggler = ({setTheme}: {setTheme: (theme: string) => void}) => {
     return (
         <Toggler>
             {({ theme, toggleTheme }: { theme: string, toggleTheme: (checked: 'dark' | 'light') => void }) => (
@@ -55,7 +55,11 @@ const ThemeToggler = () => {
                         <input
                             className="visually-hidden theme-toggle"
                             type="checkbox"
-                            onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+                            onChange={e => {
+                                const theme = e.target.checked ? 'dark' : 'light'
+                                toggleTheme(theme)
+                                setTheme(theme)
+                            }}
                             checked={theme === 'dark'}
                         />{' '}
                         <span aria-hidden={true}></span>
