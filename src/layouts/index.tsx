@@ -14,26 +14,28 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
 type StaticQueryProps = {
-  site: {
-    siteMetadata: {
-      title: string
-      description: string
-      siteUrl: string
+    site: {
+        siteMetadata: {
+            title: string
+            description: string
+            siteUrl: string
+        }
     }
-  }
 }
+
+const ThemeContext = React.createContext('light')
 
 class IndexLayout extends React.Component<{ title?: string, canonical?: string, description?: string }, {}> {
 
     state = {
-       theme: 'light'
+        theme: 'light'
     }
 
     setTheme = (color: string) => {
-        this.setState({theme: color})
+        this.setState({ theme: color })
     }
 
-    handleFirstTab = (e :any) => {
+    handleFirstTab = (e: any) => {
         if (e.keyCode === 9) { // the "I am a keyboard user" key
             document.body.classList.add('user-is-tabbing');
             console.log(document.body.classList)
@@ -44,7 +46,7 @@ class IndexLayout extends React.Component<{ title?: string, canonical?: string, 
 
     handleMouseDownOnce = () => {
         document.body.classList.remove('user-is-tabbing');
-        
+
         window.removeEventListener('mousedown', this.handleMouseDownOnce);
         window.addEventListener('keydown', this.handleFirstTab);
     }
@@ -52,9 +54,8 @@ class IndexLayout extends React.Component<{ title?: string, canonical?: string, 
     componentDidMount() {
         window.addEventListener('keydown', this.handleFirstTab);
         const theme = localStorage.getItem('theme')
-        console.log(theme)
-        if (theme) { 
-            this.setState({theme}) 
+        if (theme) {
+            this.setState({ theme })
         }
     }
 
@@ -75,64 +76,68 @@ class IndexLayout extends React.Component<{ title?: string, canonical?: string, 
                 }
                 `}
                 render={(data: StaticQueryProps) => (
-                <LayoutRoot>
-                    <Helmet>
-                    <html lang="en" />
-                    <title>{title && `${title} - Gitpod` || data.site.siteMetadata.title}</title>
-                    <meta name="description" content={description || data.site.siteMetadata.description} />
-                    <meta name="keywords" content="cloud ide, github ide, gitlab ide, javascript, online ide, web ide, code review" />
-                    {
-                        canonical ? <link rel="canonical" href={`${data.site.siteMetadata.siteUrl}${canonical}`} /> : null
-                    }
-                    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet" />
-                    <meta name="theme-color" content={colors.white} />
-                    <link rel="apple-touch-icon" type="image/png" href={GitpodIconApple} sizes="180x180" />
-                    <link rel="icon" type="image/png" href={GitpodIcon196} sizes="196x196" />
-                    <link rel="icon" type="image/svg+xml" href={GitpodIcon} sizes="any" />
+                    <LayoutRoot>
+                        <Helmet>
+                            <html lang="en" />
+                            <title>{title && `${title} - Gitpod` || data.site.siteMetadata.title}</title>
+                            <meta name="description" content={description || data.site.siteMetadata.description} />
+                            <meta name="keywords" content="cloud ide, github ide, gitlab ide, javascript, online ide, web ide, code review" />
+                            {
+                                canonical ? <link rel="canonical" href={`${data.site.siteMetadata.siteUrl}${canonical}`} /> : null
+                            }
+                            <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet" />
+                            <meta name="theme-color" content={colors.white} />
+                            <link rel="apple-touch-icon" type="image/png" href={GitpodIconApple} sizes="180x180" />
+                            <link rel="icon" type="image/png" href={GitpodIcon196} sizes="196x196" />
+                            <link rel="icon" type="image/svg+xml" href={GitpodIcon} sizes="any" />
 
-                    <meta name="twitter:card" content="summary"></meta>
-                    <meta name="twitter:site" content="@gitpod"></meta>
-                    <meta name="twitter:creator" content="@gitpod"></meta>
+                            <meta name="twitter:card" content="summary"></meta>
+                            <meta name="twitter:site" content="@gitpod"></meta>
+                            <meta name="twitter:creator" content="@gitpod"></meta>
 
-                    <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
-                    <meta property="og:title" content={title || data.site.siteMetadata.title} />
-                    <meta property="og:description" content={description || data.site.siteMetadata.description} />
-                    <meta property="og:image" content="https://www.gitpod.io/media-image.jpg" />
+                            <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
+                            <meta property="og:title" content={title || data.site.siteMetadata.title} />
+                            <meta property="og:description" content={description || data.site.siteMetadata.description} />
+                            <meta property="og:image" content="https://www.gitpod.io/media-image.jpg" />
 
-                    <meta name="google-site-verification" content="NBio3hCkfn2FKJpqZritJpXuyKo54noPGZzWsjDIp-M" />
-                    </Helmet>
-                    <Nav theme={this.state.theme}/>
-                    <LayoutMain>
-                        <CookieConsent buttonClasses="primary"
-                            containerClasses="consent"
-                            style={{
-                                backgroundColor: colors.white,
-                                color: colors.text,
-                                borderTop: borders.light,
-                                zIndex: '1000000000',
-                            }}
-                            contentStyle={{
-                                backgroundColor: 'transparent',
-                                margin: '10px 15px'
-                            }}
-                            buttonStyle={{
-                                backgroundColor: 'transparent',
-                                border: 'solid 1px '+colors.text,
-                                borderRadius: '100px',
-                                padding: '.8rem 2.2rem',
-                                margin: '10px 15px'
-                            }}
-                        >
-                            This website uses cookies to<br /> enhance the user experience.<br /> Read our <Link style={{color: '#35C9FF'}} to="/privacy/">privacy policy</Link> for more info.
+                            <meta name="google-site-verification" content="NBio3hCkfn2FKJpqZritJpXuyKo54noPGZzWsjDIp-M" />
+                        </Helmet>
+                        <ThemeContext.Provider value={this.state.theme}>
+                            <Nav theme={this.state.theme}/>
+                            <LayoutMain>
+                                <CookieConsent buttonClasses="primary"
+                                    containerClasses="consent"
+                                    style={{
+                                        backgroundColor: colors.white,
+                                        color: colors.text,
+                                        borderTop: borders.light,
+                                        zIndex: '1000000000',
+                                    }}
+                                    contentStyle={{
+                                        backgroundColor: 'transparent',
+                                        margin: '10px 15px'
+                                    }}
+                                    buttonStyle={{
+                                        backgroundColor: 'transparent',
+                                        border: 'solid 1px ' + colors.text,
+                                        borderRadius: '100px',
+                                        padding: '.8rem 2.2rem',
+                                        margin: '10px 15px'
+                                    }}
+                                >
+                                    This website uses cookies to<br /> enhance the user experience.<br /> Read our <Link style={{ color: '#35C9FF' }} to="/privacy/">privacy policy</Link> for more info.
                         </CookieConsent>
-                    {children}
-                    </LayoutMain>
-                    <Footer setTheme={this.setTheme}/>
-                </LayoutRoot>
+                                {children}
+                            </LayoutMain>
+                            <Footer setTheme={this.setTheme} />
+                        </ThemeContext.Provider>
+                    </LayoutRoot>
                 )}
             />
         )
     }
- 
+
 }
+
+export const ThemeConsumer = ThemeContext.Consumer
 export default IndexLayout
