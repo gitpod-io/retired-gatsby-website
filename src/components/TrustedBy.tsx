@@ -224,7 +224,7 @@ class TrustedBy extends React.Component<TrustedByProps, TrustedByState> {
                             onClick={this.handleButtonClick}
                             tabIndex={-1}
                         >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32.869" height="15.88" viewBox="0 0 32.869 15.88"><path data-name="Pfad 35" d="M7669.29,2749.414l10.769,14.1-10.769,14.066" transform="matrix(0.035, -0.999, 0.999, 0.035, 2.175, 12.722) translate(-7669.29 -2749.414)" fill="none" stroke-linecap="round" stroke-width="3"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32.869" height="15.88" viewBox="0 0 32.869 15.88"><path data-name="Pfad 35" d="M7669.29,2749.414l10.769,14.1-10.769,14.066" transform="matrix(0.035, -0.999, 0.999, 0.035, 2.175, 12.722) translate(-7669.29 -2749.414)" fill="none" strokeLinecap="round" strokeWidth="3"/></svg>
                         </button>
                     </div>
                 </div>
