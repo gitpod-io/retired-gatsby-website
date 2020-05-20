@@ -14,7 +14,7 @@ const Styled = styled.div`
 
             span {
                 font-weight: 600;
-                color: ${colors.link};
+                color: var(--link);
             }
         }
     }

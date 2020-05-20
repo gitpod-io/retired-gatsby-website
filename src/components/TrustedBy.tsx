@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { sizes, colors } from '../styles/variables'
+import { sizes } from '../styles/variables'
 
 const StyledTrustedBy = styled.section<{dontDisplayTheArrow?: boolean}>`
     /* ------------------------------------------- */
@@ -110,21 +110,21 @@ const StyledTrustedBy = styled.section<{dontDisplayTheArrow?: boolean}>`
         svg {
             display: block;
             height: 1.3rem;
-            stroke: ${colors.offWhite3};
+            stroke: var(--offWhite3);
             transform: rotate(90deg);
             transition: all .3s;
         }
 
         &:hover {
             svg {
-                stroke: ${colors.lightBlue};
+                stroke: var(--lightBlue);
                 transform: scale(1.1) rotate(90deg);
             }
         }
 
         &:active {
             svg {
-                stroke: ${colors.lightBlue};
+                stroke: var(--lightBlue);
                 transform: scale(.9) rotate(90deg);
             }
         }

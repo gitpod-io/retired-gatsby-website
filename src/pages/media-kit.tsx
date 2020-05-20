@@ -6,7 +6,7 @@ import GitpodLogoDark from '../resources/gitpod-logo-dark.svg'
 import GitpodLogoWhiteFont from '../resources/gitpod-logo-white-font.svg'
 import GitpodLogoWhite from '../resources/gitpod-logo-white.svg'
 import GitpodCube from '../resources/gitpod-cube.svg'
-import { shadows, colors, sizes } from '../styles/variables'
+import { shadows, sizes } from '../styles/variables'
 
 const StyledMediaKitPage = styled.div`
     padding: 14rem 0;
@@ -61,7 +61,7 @@ const StyledMediaKitPage = styled.div`
 
     a:hover {
         svg {
-            stroke: ${colors.link};
+            stroke: var(--link);
         }
     }
 `
@@ -107,7 +107,7 @@ const MediaKitPage: React.SFC<{}> = () => (
                             <div
                                 className="resource"
                                 key={i}
-                                style={ r.dark ? { background: colors.text } : {} }
+                                style={ r.dark ? { background: 'var(--text)' } : {} }
                             >
                                 <div className="resource__img-container">
                                     {r.img}

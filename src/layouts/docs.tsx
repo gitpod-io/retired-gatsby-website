@@ -133,7 +133,7 @@ const StyledDocsLayout = styled.div`
     }
 
     .active {
-        color: ${colors.link};
+        color: var(--link);
     }
 
     .topic-chooser {
@@ -184,7 +184,7 @@ const StyledDocsLayout = styled.div`
 
         &:hover,
         &:focus {
-            fill: ${colors.lightBlue};
+            fill: var(--lightBlue);
         }
     }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, sizes } from '../styles/variables'
+import { sizes } from '../styles/variables'
 
 const StyledDescripion = styled.span`
     position: relative;
@@ -14,7 +14,7 @@ const StyledDescripion = styled.span`
         font-size: 1rem;
         border: none;
         color: var(--white);
-        background: ${colors.offWhite1};
+        background: var(--offWhite1);
         border-radius: 50%;
 
         @media(max-width: ${sizes.breakpoints.md}) {

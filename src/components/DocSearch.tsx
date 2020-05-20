@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import styled from '@emotion/styled';
-import { colors } from '../styles/variables';
 import MagGlass from '../resources/mag-glass.svg';
 
 const StyledInput = styled.input`
@@ -13,7 +12,7 @@ const StyledInput = styled.input`
     background: url(${MagGlass}) no-repeat 10px var(--white);
     background-size: 20px 20px;
     &:focus {
-        border: solid 1px ${colors.link};
+        border: solid 1px var(--link);
         outline: none;
     }
 `;

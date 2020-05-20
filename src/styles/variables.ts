@@ -1,16 +1,3 @@
-export const colors = {
-    textDark: '#292929',
-    textLight: '#8F8F8F',
-    text: '#4D4D4D',
-    link: '#0087BE',
-    lightBlue: '#1AA6E4',
-    white: ' #FFFFFF',
-    offWhite0: '#fcfcfc',
-    offWhite: '#F7F7F7',
-    offWhite1: '#BCBCBC',
-    offWhite2: '#e5e5e5',
-    offWhite3: '#dbdbdb',
-}
 
 export const sizes = {
     font: {
@@ -38,7 +25,7 @@ export const shadows = {
 }
 
 export const borders = {
-    light: '1px solid rgba(0,0,0, .08)',
-    light1: '1px solid rgba(0,0,0, .2)',
-    bold: `4px solid ${colors.offWhite3}`
+    light: '1px solid var(--borderLightColor)',
+    light1: '1px solid var(--borderLightOneColor)',
+    bold: `4px solid var(--offWhite3)`,
 }

@@ -20,7 +20,7 @@ const StyledExternalLink = styled.a`
     &:active {
         svg {
             opacity: 1;
-            fill: ${colors.link};
+            fill: var(--link);
         }
     }
 

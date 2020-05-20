@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import CookieConsent from "react-cookie-consent";
 
-import { colors, borders } from '../styles/variables';
+import { borders } from '../styles/variables';
 import GitpodIcon from '../resources/gitpod.svg';
 import GitpodIcon196 from '../resources/gitpod-196x196.png';
 import GitpodIconApple from '../resources/apple-touch-icon.png';
@@ -86,7 +86,7 @@ class IndexLayout extends React.Component<{ title?: string, canonical?: string, 
                                 canonical ? <link rel="canonical" href={`${data.site.siteMetadata.siteUrl}${canonical}`} /> : null
                             }
                             <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet" />
-                            <meta name="theme-color" content={colors.white} />
+                            <meta name="theme-color" content="#fff" />
                             <link rel="apple-touch-icon" type="image/png" href={GitpodIconApple} sizes="180x180" />
                             <link rel="icon" type="image/png" href={GitpodIcon196} sizes="196x196" />
                             <link rel="icon" type="image/svg+xml" href={GitpodIcon} sizes="any" />
@@ -108,8 +108,8 @@ class IndexLayout extends React.Component<{ title?: string, canonical?: string, 
                                 <CookieConsent buttonClasses="primary"
                                     containerClasses="consent"
                                     style={{
-                                        backgroundColor: colors.white,
-                                        color: colors.text,
+                                        backgroundColor: 'var(--white)',
+                                        color: 'var(--text)',
                                         borderTop: borders.light,
                                         zIndex: '1000000000',
                                     }}
@@ -119,7 +119,7 @@ class IndexLayout extends React.Component<{ title?: string, canonical?: string, 
                                     }}
                                     buttonStyle={{
                                         backgroundColor: 'transparent',
-                                        border: 'solid 1px ' + colors.text,
+                                        border: 'solid 1px var(--text)',
                                         borderRadius: '100px',
                                         padding: '.8rem 2.2rem',
                                         margin: '10px 15px'

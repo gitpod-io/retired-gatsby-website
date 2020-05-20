@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import ArrowDown from '../resources/arrow-down.svg'
-import { colors, shadows, sizes } from '../styles/variables'
+import { shadows, sizes } from '../styles/variables'
 import { Link } from 'gatsby'
 import ExternalLink from '../components/ExternalLink'
 
@@ -22,11 +22,11 @@ const StyledDropDown = styled.div`
 
         &:hover,
         &:focus {
-            color: ${colors.lightBlue};
+            color: var(--lightBlue);
 
             &::before {
                 right: 0;
-                border-color: ${colors.lightBlue};
+                border-color: var(--lightBlue);
             }
         }
     }

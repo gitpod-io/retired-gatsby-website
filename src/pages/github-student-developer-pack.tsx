@@ -10,7 +10,6 @@ import Quote from '../components/Quote'
 import Bag from '../resources/icon-backpack.svg'
 import Rocket from '../resources/icon-rocket.svg'
 import PopOver from '../components/PopOver'
-import { colors } from '../styles/variables'
 import InfoCard from '../components/InfoCard'
 import Offers from '../components/Offers'
 
@@ -37,7 +36,7 @@ const offers: PricingBoxProps[] = [
             href="https://gitpod.io/subscription/"
             target="_blank"
             className="btn btn--cta"
-            style={{ color: colors.white }}
+            style={{ color: 'var(--white)' }}
         >
             Claim Offer
              </a>,

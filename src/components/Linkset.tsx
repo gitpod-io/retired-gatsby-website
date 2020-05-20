@@ -18,12 +18,12 @@ const StyledLinkSet = styled.div`
         font-weight: 400;
 
         &:hover {
-            color: ${colors.lightBlue};
+            color: var(--lightBlue);
         }
         
         &.active {
-            color: ${colors.lightBlue};
-            border-left: solid 1px ${colors.lightBlue};
+            color: var(--lightBlue);
+            border-left: solid 1px var(--lightBlue);
         }
 
         &.caption {

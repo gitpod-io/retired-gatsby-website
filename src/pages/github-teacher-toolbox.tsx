@@ -11,7 +11,6 @@ import Owl from '../resources/owl-icon.svg'
 import Saturn from '../resources/saturn-icon.svg'
 import { Link } from 'gatsby'
 import PopOver from '../components/PopOver'
-import { colors } from '../styles/variables'
 import OnBoarding from '../components/OnBoarding'
 import InfoCard from '../components/InfoCard'
 import Offers from '../components/Offers'
@@ -39,7 +38,7 @@ const offers: PricingBoxProps[] = [
             href="https://gitpod.io/subscription/"
             target="_blank"
             className="btn btn--cta"
-            style={{ color: colors.white }}
+            style={{ color: 'var(--white)' }}
         >
             Claim Offer
              </a>,

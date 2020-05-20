@@ -14,7 +14,7 @@ const StyledScrollToTopButton = styled.a`
     align-items: center;
     height: 5.5rem;
     width: 5.5rem;
-    background: ${colors.link};
+    background: var(--link);
     border: ${borders.light};
     box-shadow: ${shadows.light1};
     border-radius: 50%;
@@ -23,7 +23,7 @@ const StyledScrollToTopButton = styled.a`
 
     &:hover,
     &:focus {
-        background: ${colors.lightBlue};
+        background: var(--lightBlue);
     }
 
     img {

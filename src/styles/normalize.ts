@@ -1,4 +1,4 @@
-import { sizes, colors, borders } from "./variables";
+import { sizes, borders } from "./variables";
 import DownArrow from '../resources/arrow-down.svg';
 
 export default `
@@ -44,6 +44,8 @@ export default `
         --offWhite2: #e5e5e5;
         --offWhite3: #dbdbdb;
         --outline: #9ED3FF;
+        --borderLightColor: rgba(0,0,0, .08);
+        --borderLightOneColor: rgba(0,0,0, .2);
     }
 
     body.dark {
@@ -51,9 +53,12 @@ export default `
         --textLight: #ddd;
         --offWhite: #333;
         --offWhite2: #393939;
+        --offWhite3: #444;
         --text: #ccc;
         --white: #222;
         --outline: #1AA6E4;
+        --borderLightColor: #555;
+        --borderLightOneColor: #999;
     }
 
     body {
@@ -117,7 +122,7 @@ export default `
     h4 {
         font-family: 'Montserrat', sans-serif;
         line-height: 1.2;
-        color: ${colors.textDark};
+        color: var(--textDark);
     }
 
     h1,
@@ -214,11 +219,11 @@ export default `
 
     a {
         font-weight: 600;
-        color: ${colors.link};
+        color: var(--link);
         text-decoration: none;
 
         &:hover {
-            color: ${colors.lightBlue};
+            color: var(--lightBlue);
         }
     }
 
@@ -244,8 +249,8 @@ export default `
         &:hover,
         &:focus {
             color: #fff;
-            background: ${colors.lightBlue};
-            border: 2px solid ${colors.lightBlue};
+            background: var(--lightBlue);
+            border: 2px solid var(--lightBlue);
         }
 
         &--big {
@@ -256,13 +261,13 @@ export default `
 
         &--cta {
             color: #fff;
-            background: ${colors.link};
-            border-color: ${colors.link};
+            background: var(--link);
+            border-color: var(--link);
 
             &:hover {
                 color: #fff;
-                background: ${colors.lightBlue};
-                border: 2px solid ${colors.lightBlue};
+                background: var(--lightBlue);
+                border: 2px solid var(--lightBlue);
             }
 
             &:focus {
@@ -311,22 +316,22 @@ export default `
         &:hover {
 
             svg {
-                fill: ${colors.lightBlue};
+                fill: var(--lightBlue);
             }
 
             &::after {
                 right: 0;
-                border-color: ${colors.lightBlue};
+                border-color: var(--lightBlue);
             }
         }
     }
 
     .active {
-        color: ${colors.lightBlue};
+        color: var(--lightBlue);
 
         &::after {
             right: 0;
-            border-color: ${colors.lightBlue};
+            border-color: var(--lightBlue);
         }
     }
 
@@ -357,7 +362,7 @@ export default `
     }
 
     body.user-is-tabbing .theme-toggle:focus + span {
-        border: 1px solid ${colors.lightBlue};
+        border: 1px solid var(--lightBlue);
         animation: pulse 1s infinite;
         animation-direction: alternate;
     }

@@ -35,7 +35,7 @@ const StyledThemeToggler = styled.div`
         left: -.2rem;
         height: 2.8rem;
         width: 2.8rem;
-        background: ${colors.lightBlue};
+        background: var(--lightBlue);
         border-radius: 50%;
         transition: .3s;
     }

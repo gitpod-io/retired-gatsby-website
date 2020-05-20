@@ -1,7 +1,6 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors } from '../styles/variables'
 import { Link } from 'gatsby'
 import Twitter from '../resources/twitter.svg'
 import Github from '../resources/github.svg'
@@ -64,7 +63,7 @@ const StyledFooter = styled.footer`
 
         &:hover,
         &:focus {
-            color: ${colors.link};
+            color: var(--link);
         }
 
     }
@@ -97,7 +96,7 @@ const Footer = ({setTheme}: {setTheme: (theme: string) => void}) => (
                     <li><Link to="/pricing/">Pricing</Link></li>
                     <li><Link to="/blog/">Blog</Link></li>
                     <li><Link to="/self-hosted/">Self-Hosted</Link></li>
-                    <li><a href="https://gitpod.io/login/" style={{color: colors.link, fontWeight: 600}}>Log In</a></li>
+                    <li><a href="https://gitpod.io/login/" style={{color: 'var(--link)', fontWeight: 600}}>Log In</a></li>
                 </ul>
                 <ul>
                     <li>Solutions</li>

@@ -60,7 +60,7 @@ const StyledPricingTable = styled.section`
 
                 span {
                     display: inline;
-                    color: ${colors.link};
+                    color: var(--link);
                     font-weight: 600;
                 }
             }

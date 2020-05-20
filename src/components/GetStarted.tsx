@@ -92,7 +92,7 @@ const StyledGetStarted = styled.div`
                     color: var(--text);
                     padding: .1rem .3rem;
                     font-size: inherit;
-                    border: 2px solid ${colors.link};
+                    border: 2px solid var(--link);
 
                     @media(max-width: 900px) {
                         width: 44.5rem;
@@ -128,7 +128,7 @@ const StyledGetStarted = styled.div`
                     &:hover,
                     &:focus {
                         svg {
-                            stroke: ${colors.lightBlue};
+                            stroke: var(--lightBlue);
                         }
                     }
 
