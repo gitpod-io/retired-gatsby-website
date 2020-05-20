@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, sizes, borders } from '../../styles/variables'
+import { sizes, borders } from '../../styles/variables'
 import ToolIntegration from '../../resources/tool-integration.svg'
 import FullDevEnvironments from '../../resources/full-dev-environments.svg'
 import ReadyToCode from '../ReadyToCode'
