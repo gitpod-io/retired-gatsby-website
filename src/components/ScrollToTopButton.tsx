@@ -56,7 +56,7 @@ class ScrollToTopButton extends React.Component {
                 className="back-to-top"
                 style={ this.state.shouldBeRendered ? {opacity: 1, transform: 'scale(1)'} : {opacity: 0, transform: 'scale(0)'}  }
             >
-                <img alt="Icon Arrow" src={IconArrow} />
+                <img alt="Up Arrow" src={IconArrow} />
             </StyledScrollToTopButton>
        )
     }

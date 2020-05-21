@@ -77,7 +77,6 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
         </div>
 
         <div className="row">
-            s
                 <Quote
                 title="Stop wasting time with tedious setups, learn amazing programming skills instead!"
             />

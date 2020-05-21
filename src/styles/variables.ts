@@ -5,16 +5,18 @@ export const colors = {
     link: '#0087BE',
     lightBlue: '#1AA6E4',
     white: ' #FFFFFF',
+    offWhite0: '#fcfcfc',
     offWhite: '#F7F7F7',
     offWhite1: '#BCBCBC',
     offWhite2: '#e5e5e5',
+    offWhite3: '#dbdbdb',
 }
 
 export const sizes = {
     font: {
-        h1: '3.3rem',
-        h2: '3rem',
-        h3: '2.2rem',
+        h1: '3.5rem',
+        h2: '3.1rem',
+        h3: '2.3rem',
         h4: '2rem',
         text: '1.6rem',
         btnNormal: '1.7rem',
@@ -37,5 +39,6 @@ export const shadows = {
 
 export const borders = {
     light: '1px solid rgba(0,0,0, .08)',
-    light1: '1px solid rgba(0,0,0, .2)'
+    light1: '1px solid rgba(0,0,0, .2)',
+    bold: `4px solid ${colors.offWhite3}`
 }

@@ -1,39 +1,41 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { Link } from 'gatsby'
-import { colors, shadows, sizes } from '../styles/variables'
+import { colors, sizes } from '../styles/variables'
 import IconTick from '../resources/icon-tick.svg'
 
 interface StyledPricingBoxProps {
-    transform?: string 
-    background?: boolean 
-    hideButton?: boolean 
+    transform?: string
+    background?: boolean
+    hideButton?: boolean
     banner?: string
-    bannerColor?: string  
-    backgroundColor?: string
-    btnBackground?: boolean 
+    bannerColor?: string
+    btnBackground?: boolean
+    isTitleOutside?: boolean
 }
 
 const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     position: relative;
-    margin-bottom: 3rem;
+    margin: 2rem 1rem;
     padding: 3rem 2.8rem;
     font-size: 95%;
-    min-height: 48rem;
+    min-height: ${({ isTitleOutside }) => isTitleOutside ? '35rem' : '48rem'};
     min-width: 20rem;
-    max-width: 23rem;
-    width: 20%;
+    max-width: 26rem;
+    width: 25%;
     text-align: center;
-    color: ${({ background }) => background ? colors.white : null };
-    background: ${({ background }) => background ? 'url("https://www.gitpod.io/galaxy.jpg")' : colors.white };
-    background-size: ${({ background }) => background ? 'cover' : null };
-    background-position: ${({ background }) => background ? 'left' : null };
-    box-shadow: ${shadows.light};
-    background-color: ${({ backgroundColor }) => backgroundColor ? backgroundColor : null };
+    color: ${({ background }) => background ? colors.white : null};
+    background: ${({ background }) => background ? 'url("https://www.gitpod.io/galaxy.jpg")' : colors.white};
+    background-size: ${({ background }) => background ? 'cover' : null};
+    background-position: ${({ background }) => background ? 'left' : null};
+    border: 1px solid ${colors.offWhite2};
+    background-color: ${colors.offWhite};
+    border-radius: 3px;
+    margin-top: ${({ isTitleOutside }) => isTitleOutside ? '6rem' : '2rem'};
+    z-index: ${({ isTitleOutside }) => isTitleOutside ? '1000' : 'none'};;
 
     @media(min-width: ${sizes.breakpoints.md}) {
-        z-index: ${({transform}) => transform ? '1' : null };
+        z-index: ${({ transform }) => transform ? '1' : null};
     }
 
     @media(min-width: ${sizes.breakpoints.lg}) {
@@ -44,6 +46,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         min-height: 50rem;
         padding: 3rem 2rem;
         margin-bottom: 5rem;
+        min-height: ${({ isTitleOutside }) => isTitleOutside ? '35rem' : '50rem'};
     }
 
     @media(max-width: 1096px) {
@@ -51,11 +54,11 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     }
 
     @media(max-width: 860px) {
-        margin-top: ${({banner}) => banner ? '4rem': ''};
+        margin-top: ${({ banner }) => banner ? '4rem' : ''};
     }
 
     @media(max-width: ${sizes.breakpoints.md}) {
-        min-height: 45rem;
+        min-height: ${({ isTitleOutside }) => isTitleOutside ? '35rem' : '42rem'};
         min-width: 30rem;
         padding: 2rem 3rem;
     }
@@ -69,12 +72,13 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         min-width: 25rem;
     }
 
-    > * {
+    > *:not(h4) {
         color: inherit;
     }
 
     h4 {
         font-size: 1.8rem;
+        margin: ${({ isTitleOutside }) => isTitleOutside ? '-7rem 0 6rem' : '' }
     }
 
     img, object {
@@ -82,6 +86,8 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         margin: 3rem 0 1rem;
         height: 8rem;
         width: 8rem;
+
+        display: ${({ isTitleOutside }) => isTitleOutside ? 'none' : '' };
 
         @media(max-width: ${sizes.breakpoints.md}) {
             margin: 1.5rem 0 1rem;
@@ -138,13 +144,19 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         }
     }
 
-    .btn, .text {
+    .links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1999999999;
+        
         @media(min-width: ${sizes.breakpoints.sm}) {
             position: absolute;
             left: 50%;
-            bottom: 2rem;
+            width: 100%;
+            bottom: 1rem;
             transform: translateX(-50%);
-
         }
 
         @media(max-width: ${sizes.breakpoints.sm}) {
@@ -152,7 +164,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         }
 
         @media(min-width: ${sizes.breakpoints.lg}) {
-            bottom: ${({transform}) => transform ? '3rem' : '2rem'};
+            bottom: ${({ transform }) => transform ? '2rem' : '1.5rem'};
         }
     }
 
@@ -167,7 +179,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     }
 
     .is-hidden {
-        display: ${({hideButton}) => hideButton ? 'none': '' };
+        display: ${({ hideButton }) => hideButton ? 'none' : ''};
     }
 
     .banner {
@@ -181,7 +193,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
             width: 20ch;
             margin: 0 auto;
             padding: .8rem 0;
-            color: ${({bannerColor}) => bannerColor ? bannerColor : ''};
+            color: ${({ bannerColor }) => bannerColor ? bannerColor : ''};
             font-size: 90%;
             font-weight: 600;
         }
@@ -198,14 +210,24 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     }
 
     .btn {
-        background: ${({btnBackground}) => btnBackground ? colors.link : ''};
-        color: ${({btnBackground}) => btnBackground ? colors.white : ''};
-        border-color: ${({btnBackground}) => btnBackground ? colors.link : ''};
+        background: ${({ btnBackground }) => btnBackground ? colors.link : ''};
+        color: ${({ btnBackground }) => btnBackground ? colors.white : ''};
+        border-color: ${({ btnBackground }) => btnBackground ? colors.link : ''};
 
         &:hover {
-            background: ${({btnBackground}) => btnBackground ? colors.lightBlue : ''};
-            border-color: ${({btnBackground}) => btnBackground ? colors.lightBlue : ''};
+            background: ${({ btnBackground }) => btnBackground ? colors.lightBlue : ''};
+            border-color: ${({ btnBackground }) => btnBackground ? colors.lightBlue : ''};
         }
+    }
+
+    .sub-action {
+        font-size: 90%;
+        margin-top: .5rem;
+        padding-bottom: 0;
+    }
+
+    .spacer {
+        height: 2.5rem;
     }
 `
 
@@ -219,64 +241,70 @@ export interface PricingBoxProps {
     transform?: string
     background?: boolean
     btnText?: string
-    btnBackground?: boolean 
+    btnBackground?: boolean
     link?: string
-    hideButton?: true 
+    hideButton?: true
     btn?: JSX.Element
     text?: string
-    banner?: string,
-    bannerColor?: string,
-    backgroundColor?: string 
+    banner?: string
+    bannerColor?: string
+    subAction?: JSX.Element
+    isTitleOutside?: boolean 
 }
 
 const PricingBox: React.SFC<PricingBoxProps> = ({
-    title, 
-    img, 
-    price, 
-    duration, 
-    feature, 
-    features, 
-    btnText, 
+    title,
+    img,
+    price,
+    duration,
+    feature,
+    features,
+    btnText,
     btnBackground,
-    transform, 
-    background, 
-    link, 
+    transform,
+    background,
+    link,
     hideButton,
     btn,
     text,
     banner,
     bannerColor,
-    backgroundColor
+    subAction, 
+    isTitleOutside
 }) => (
-    <StyledPricingBox 
-        transform={transform} 
-        background={background} 
-        hideButton={hideButton} 
-        banner={banner}
-        bannerColor={bannerColor}
-        backgroundColor={backgroundColor}
-        btnBackground={btnBackground}
-    >
-        <h4>{title}</h4>
-        { img }
-        { price ? <div className="price">{price}</div> : null }
-        { duration ? <div className="duration">{duration}</div> : null }
-        { feature ? <div className="feature">{feature}</div> : null }
-        { features && features.length ?
-            <ul>
-                { features.map((f, i) => <li key={i}>{f}</li>) }
-            </ul>
-        : null }
-        <a
-            href={link || '/#get-started'}
-            className={`btn is-hidden ${background ? 'blue-on-hover' : ''}`}
+        <StyledPricingBox
+            transform={transform}
+            background={background}
+            hideButton={hideButton}
+            banner={banner}
+            bannerColor={bannerColor}
+            btnBackground={btnBackground}
+            isTitleOutside={isTitleOutside}
         >
-            {btnText ? btnText : 'Start for Free'}
-        </a>
-        { btn ? btn : null }
-        { text ? <p className="text">{text}</p> : null }
-        { banner ? <div className="banner"><p>{banner}</p></div> : null }
-    </StyledPricingBox>
-)
+            <h4>{title}</h4>
+            {img ? img : null}
+            {price ? <div className="price">{price}</div> : null}
+            {duration ? <div className="duration">{duration}</div> : null}
+            {feature ? <div className="feature">{feature}</div> : null}
+            {features && features.length ?
+                <ul>
+                    {features.map((f, i) => <li key={i}>{f}</li>)}
+                </ul>
+                : null}
+            <div className="links-container">
+                <a
+                    href={link || '/#get-started'}
+                    className={`btn is-hidden ${background ? 'blue-on-hover' : ''}`}
+                >
+                    {btnText ? btnText : 'Start for Free'}
+                </a>
+                <br />
+                {text ? <p className="text">{text}</p> : null}
+                {btn ? btn : null}
+                {subAction ? subAction : <div aria-hidden="true" className="spacer"></div>}
+            </div>
+            {banner ? <div className="banner"><p>{banner}</p></div> : null}
+        </StyledPricingBox>
+    )
 
 export default PricingBox

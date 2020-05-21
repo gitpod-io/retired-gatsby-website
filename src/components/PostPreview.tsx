@@ -3,7 +3,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import { colors, shadows } from '../styles/variables'
-import { authors } from '../utils/authors'
+import { parseAuthors } from '../utils/authors'
 
 const StyledPostPreview = styled.div`
     background: ${colors.white};
@@ -70,17 +70,7 @@ interface PostPreviewProps {
 const PostPreview: React.SFC<PostPreviewProps> = (props) => {
     const b = props.post.node;
     const date = new Date(Date.parse(b.frontmatter.date));
-    let author = authors[props.post.node.frontmatter.author];
-    if (!author) {
-        author = {
-            description: "",
-            name: props.post.node.frontmatter.author,
-            socialProfiles: {
-                github: props.post.node.frontmatter.author,
-                twitter: props.post.node.frontmatter.author
-            }
-        }
-    }
+    const authors = parseAuthors(props.post.node.frontmatter.author);
     return (
         <Link to={b.fields.slug}>
             <StyledPostPreview>
@@ -100,8 +90,11 @@ const PostPreview: React.SFC<PostPreviewProps> = (props) => {
                         {date.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' })}
                     </span>
                     <span>
-                        by&nbsp;
-                        <a href={`https://github.com/${author.socialProfiles.github}`} target="_blank">{author.name}</a>
+                        by {
+                            authors.map((author, idx) => <React.Fragment>
+                                <a href={`https://github.com/${author.socialProfiles.github}`} target="_blank">{author.name}</a>{idx < authors.length - 1 ? ', ' : ''}
+                            </React.Fragment>)
+                        }
                     </span>
                 </div>
             </StyledPostPreview>

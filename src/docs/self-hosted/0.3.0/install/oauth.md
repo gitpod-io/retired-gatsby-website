@@ -1,3 +1,7 @@
+---
+url: /docs/self-hosted/0.3.0/install/oauth/
+---
+
 # How To integrate Gitpod with OAuth providers
 
 Currently Gitpod supports GitHub, GitHub Enterprise and GitLab.

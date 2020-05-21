@@ -36,7 +36,7 @@ Gitpod, on the other hand, builds your branches similar to a CI build *before* y
 
 # Self Hosting
 
-Gitpod can be installed on any Kubernetes cluster and deeply integrates with your existing tool chain. Whether you use GitHub, GitLab or BitBucket a deep integration is possible, providing a frictionless dev experience. We also support custom OAuth and styling/re-branding so you could even use our technology in the context of your branded service or product.
+Gitpod can be installed on any Kubernetes cluster and deeply integrates with your existing tool chain. Whether you use GitHub, GitLab or Bitbucket a deep integration is possible, providing a frictionless dev experience. We also support custom OAuth and styling/re-branding so you could even use our technology in the context of your branded service or product.
 
 On VSO there is something called ‘self-hosted’ but that doesn’t mean you can self host VSO itself. Instead, you can only point it to hardware running elsewhere and start dev environments there. You are still stuck in Microsoft / Azure land.
 

@@ -7,7 +7,7 @@ import PostBanner from '../components/PostBanner'
 import reddit from '../resources/reddit.svg'
 import twitter from '../resources/twitter.svg'
 import { Helmet } from 'react-helmet'
-import { authors } from '../utils/authors'
+import { parseAuthors } from '../utils/authors'
 import { colors, shadows, sizes } from '../styles/variables'
 // import NewsletterForm from '../components/NewsletterForm'
 
@@ -48,6 +48,7 @@ const StyledBlogTemplate = styled.div`
     margin: 8rem auto;
     box-shadow: ${shadows.light};
     background-color: ${colors.white};
+    overflow: hidden;
 
     .contents {
         padding: 5rem 3rem;
@@ -74,6 +75,10 @@ const StyledBlogTemplate = styled.div`
 
     h2 + p {
         margin: 2rem 0;
+    }
+
+    li {
+        list-style: disc;
     }
 
     li + li,
@@ -115,23 +120,31 @@ const StyledBlogTemplate = styled.div`
     ol, ul {
         margin: 3rem 0 3rem 5rem;
     }
+
+    .scale {
+        transform: scale(1.3);
+        margin-top: 14rem;
+
+        @media(max-width: 680px) {
+            transform: scale(1.2);
+            margin-top: 9rem;
+        }
+
+        @media(max-width: 610px) {
+            transform: scale(1.1);
+            margin: 8rem 0;
+        }
+
+        @media(max-width: 610px) {
+            transform: scale(1);
+            margin: 4rem 0;
+        }
+    } 
 `
 
 
 const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
-  const authorName = data.markdownRemark.frontmatter.author;
-  let author = authors[authorName];
-  if (!author) {
-      author = {
-          description: "",
-          name: authorName,
-          socialProfiles: {
-            github: authorName,
-            twitter: authorName
-          }
-      }
-  }
-
+  const authors = parseAuthors(data.markdownRemark.frontmatter.author);
   return (
   <IndexLayout canonical={data.markdownRemark.frontmatter.url || `${data.markdownRemark.fields.slug.toLowerCase()}`}>
       <Helmet>
@@ -141,7 +154,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
 
         <meta name="twitter:card" content="summary"></meta>
         <meta name="twitter:site" content="@gitpod"></meta>
-        <meta name="twitter:creator" content={'@' + author.socialProfiles.twitter}></meta>
+        {authors.map(author => <meta name="twitter:creator" content={'@' + author.socialProfiles.twitter}></meta>)}
 
         <meta property="og:url" content={data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug} />
         <meta property="og:title" content={data.markdownRemark.frontmatter.title} />
@@ -159,12 +172,18 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
                 title={data.markdownRemark.frontmatter.title}
                 subtitle={data.markdownRemark.frontmatter.subtitle}
                 date={<span>{new Date(Date.parse(data.markdownRemark.frontmatter.date)).toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>}
-                author={<span>By <a href={`https://github.com/${author.socialProfiles.github}`} target="_blank">{author.name}</a></span>}
+                author={
+                    <span>By {
+                        authors.map((author, idx) => <React.Fragment>
+                            <a href={`https://github.com/${author.socialProfiles.github}`} target="_blank">{author.name}</a>{idx < authors.length - 1 ? ', ' : ''}
+                        </React.Fragment>)
+                    }</span>
+                }
             />
             <div className="contents">
                 <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
                     <div style={{ display: 'flex', marginTop: 60 }}>
-                    <a title="Share on Twitter" href={'https://twitter.com/intent/tweet?text=' + encodeURIComponent(`${data.markdownRemark.frontmatter.title} by @${author.socialProfiles.twitter} ${data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug}`)} target="_blank">
+                    <a title="Share on Twitter" href={'https://twitter.com/intent/tweet?text=' + encodeURIComponent(`${data.markdownRemark.frontmatter.title} by ${authors.map(author => '@' + author.socialProfiles.twitter).join(', ')} ${data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug}`)} target="_blank">
                         <img alt="Share on Twitter" src={twitter} style={{ margin: 8, height: 30, padding: 6 }}/>
                     </a>
                     <a title="Share on Reddit" href={`http://www.reddit.com/submit?url=${encodeURIComponent(data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug)}&title=${encodeURIComponent(data.markdownRemark.frontmatter.title)}`} target="_blank">

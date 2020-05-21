@@ -34,24 +34,37 @@ const StyledDescripion = styled.span`
         background: ${colors.offWhite2};
         z-index: 1000 !important;
 
-        @media(max-width: 907px) {
-            position: absolute;
+        @media(max-width: 1080px) {
+            position: absolute;     
             right: -5rem;
             top: 2.4rem;
             min-width: 18rem;
             z-index: 1999999999;
         }
 
-         @media(min-width: 907px) {
-            position: absolute;
+         @media(min-width: 1081px) {
+            position: absolute;     
             top: 0;
             left: 3rem;
             min-width: 19rem;
         }
     }
+
+    .bottom {
+        font-weight: 400;
+        right: -10rem;
+        top: 2.4rem;
+        min-width: 18rem;
+        z-index: 9999999999;
+        transform: translateX(-16.5rem);
+
+        @media(max-width: 1081px) {
+            transform: translateX(-7.5rem);
+        }
+    }
 `
 
-class Description extends React.Component<{description: string}, {}> {
+class Description extends React.Component<{description: string, textPosition?: string}, {}> {
 
     state={
         isRendered: false
@@ -72,7 +85,8 @@ class Description extends React.Component<{description: string}, {}> {
     render() {
         const { isRendered } = this.state
         const { description } = this.props
-
+        const positionBottom = this.props.textPosition === 'bottom'
+        
         return (
             <StyledDescripion
                 className="description"
@@ -82,7 +96,7 @@ class Description extends React.Component<{description: string}, {}> {
                 onBlur={this.handleMouseLeave}
             >
                 <button onClick={this.handleClick}>?</button>
-                { isRendered ? <div className="description__text">{ description }</div> : null }
+                { isRendered ? <div className={`${positionBottom ? 'bottom' : ''} description__text`}>{ description }</div> : null }
             </StyledDescripion>
         )
     }

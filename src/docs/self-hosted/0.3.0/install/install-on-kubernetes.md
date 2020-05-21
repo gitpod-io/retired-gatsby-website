@@ -1,3 +1,7 @@
+---
+url: /docs/self-hosted/0.3.0/install/install-on-kubernetes/
+---
+
 # Install Gitpod Self-Hosted on Kubernetes
 
 This section describes how to install Gitpod on a vanilla Kubernetes cluster.

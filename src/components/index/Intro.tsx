@@ -1,22 +1,23 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { sizes } from '../../styles/variables'
+import { sizes, colors } from '../../styles/variables'
 import HourGlass from '../../resources/hourglass.svg'
 import ArrowOnTarget from '../../resources/arrow-on-target.svg'
 
 const Styled = styled.div`
-.intro {
+    .intro {
+        background: ${colors.offWhite};
 
         &__box {
             display: flex;
             align-items: center;
 
-            @media(min-width: ${sizes.breakpoints.md}) {
+            @media(min-width: 1080px) {
                 width: 50%;
             }
 
-            @media(max-width: ${sizes.breakpoints.md}) {
+            @media(max-width: 1080px) {
                 max-width: 53rem;
 
                 &:not(:last-child) {
@@ -32,7 +33,7 @@ const Styled = styled.div`
             &-container {
                 display: flex;
 
-                @media(max-width: ${sizes.breakpoints.md}) {
+                @media(max-width: 1080px) {
                     flex-direction: column;
                     align-items: center;
                 }
@@ -43,7 +44,7 @@ const Styled = styled.div`
             display: flex;
             height: 12rem;
             
-            @media(max-width: ${sizes.breakpoints.md}) {
+            @media(max-width: 1080px) {
                 width: 8rem;
             }
             
@@ -61,7 +62,7 @@ const Styled = styled.div`
             font-size: 2.2rem;
             font-weight: 400;
 
-            @media(min-width: ${sizes.breakpoints.md}) {
+            @media(min-width: 1080px) {
                 width: 26ch;
 
                 &--2 {

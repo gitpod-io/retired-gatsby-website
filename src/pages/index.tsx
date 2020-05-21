@@ -16,9 +16,12 @@ import MozillaLogo from '../resources/mozilla.svg'
 import OpenAILogo from '../resources/openai.svg'
 import SauceLabsLogo from '../resources/sauce-labs.svg'
 import FacebookLogo from '../resources/facebook.svg'
-import CodeInstituteLogo from '../resources/code.png'
+import CodeInstituteLogo from '../resources/code.svg'
 import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
 import TheiaIDELogo from '../resources/theia-grey.svg'
+import VueLogo from '../resources/vuejs.svg'
+import UberLogo from '../resources/uber.svg'
+
 import Testimonials from '../components/Testimonials'
 import GetStarted from '../components/GetStarted'
 import OpenSource from '../components/index/OpenSource'
@@ -28,91 +31,106 @@ const IndexPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/'>
         <Banner />
 
-        <Intro />
-
-        <Testimonials />
-
-        <WhyGitpod />
-
         <TrustedBy
             brands={[
                 {
-                    alt: 'freeCodeCamp.org Logo',
+                    alt: 'freeCodeCamp',
                     url: 'https://www.freecodecamp.org/',
                     svg: FreeCodeCamp,
                     className: 'fcc'
                 },
                 {
-                    alt: 'Theia IDE Logo',
-                    url: 'https://theia-ide.org',
-                    svg: TheiaIDELogo
-                },
-                {
-                    alt: 'D-Wave Logo',
+                    alt: 'D-Wave',
                     url: 'https://www.dwavesys.com/',
                     svg: DWaveLogo,
-                    className: 'greyed-out'
+                    className: 'dwave-logo'
                 },
                 {
-                    alt: 'Code Institute Logo',
-                    url: 'https://codeinstitute.net/',
-                    svg: CodeInstituteLogo
-                },
-                {
-                    alt: 'Aplitools Logo',
-                    url: 'https://applitools.com/',
-                    svg: AppliToolsLogo
-                },
-                {
-                    alt: '4Geeks Academy Logo',
-                    url: 'https://www.4geeksacademy.co/',
-                    svg: FourGeeksAcademyLogo
-                },
-                {
-                    alt: 'Google Logo',
+                    alt: 'Google',
                     url: 'https://about.google/',
                     svg: GoogleLogo,
-                    className: 'greyed-out'
+                    transform: 'scale(0.9)',
+                    className: 'grey-logo'
                 },
                 {
-                    alt: 'Mozilla Logo',
+                    alt: 'Mozilla',
                     url: 'https://www.mozilla.org/',
                     svg: MozillaLogo,
-                    className: 'greyed-out'
+                    className: 'grey-logo'
                 },
                 {
-                    alt: 'Facebook Logo',
+                    alt: 'Facebook',
                     url: 'https://about.fb.com/',
                     svg: FacebookLogo,
-                    className: 'greyed-out'
+                    className: 'grey-logo'
                 },
                 {
-                    alt: 'OpenAI Logo',
+                    alt: 'Uber',
+                    url: 'https://www.uber.com',
+                    svg: UberLogo,
+                    transform: 'scale(0.9) translateX(5px)',
+                    className: 'grey-logo'
+                },
+                {
+                    alt: 'OpenAI',
                     url: 'https://openai.com/',
                     svg: OpenAILogo,
-                    className: 'greyed-out'
+                    className: 'grey-logo'
                 },
                 {
-                    alt: 'Sauce Labs Logo',
+                    alt: 'Sauce Labs',
                     url: 'https://saucelabs.com/',
                     svg: SauceLabsLogo,
-                    className: 'greyed-out'
+                    className: 'grey-logo'
                 },
                 {
-                    alt: 'Gatsby Logo',
+                    alt: 'Eclipse Theia',
+                    url: 'https://theia-ide.org',
+                    svg: TheiaIDELogo,
+                    className: 'grey-logo'
+                },
+                {
+                    alt: 'Code Institute',
+                    url: 'https://codeinstitute.net/',
+                    svg: CodeInstituteLogo,
+                    className: 'grey-logo'
+                },
+                {
+                    alt: 'Applitools',
+                    url: 'https://applitools.com/',
+                    svg: AppliToolsLogo,
+                    className: 'grey-logo'
+                },
+                {
+                    alt: '4Geeks Academy',
+                    url: 'https://www.4geeksacademy.co/',
+                    svg: FourGeeksAcademyLogo,
+                    className: 'four-geeks grey-logo'
+                },
+                {
+                    alt: 'Gatsby',
                     url: 'https://www.gatsbyjs.org/',
-                    svg: Gatsby
+                    svg: Gatsby,
+                    className: 'gatsby-logo'
+                },
+                {
+                    alt: 'Vue.js',
+                    url: 'https://vuejs.org/',
+                    svg: VueLogo,
+                    className: 'vue-logo'
                 },
             ]}
         />
 
-        <OpenSource />
+        <Intro />
 
-        {/* ----- Section Getting Started ----- */}
+        <WhyGitpod />
+        
+        <Testimonials />
 
         <GetStarted />
 
-        {/* ----- Section Explore Gitpod ----- */}
+        <OpenSource />
 
         <Details
             title="Explore Gitpod"

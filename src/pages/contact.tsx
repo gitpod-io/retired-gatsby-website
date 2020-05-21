@@ -116,10 +116,9 @@ function encode(data: { [k: string]: string | number | boolean | null | undefine
 }
 
 const subjects: string[] = [
-    "Student Unlimited: Get Verified as a Student",
+    "I have a question regarding Gitpod Self-Hosted",
     "I have a question regarding Gitpod Education",
-    "I have a question regarding Gitpod Enterprise",
-    "I have a question regarding Self-Hosted Gitpod",
+    "Student Unlimited: Get Verified as a Student",
     "Applying for Professional Open Source",
     "Other"
 ]
@@ -280,7 +279,7 @@ export default function ContactPage(props: any) {
                             <div>
                                 <button 
                                     type="submit" 
-                                    className="btn btn--normal btn--cta" 
+                                    className="btn btn--cta" 
                                     style={{ cursor: 'pointer' }}
                                 >
                                     Send

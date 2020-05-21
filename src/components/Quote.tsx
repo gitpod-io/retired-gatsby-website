@@ -28,6 +28,11 @@ const StyledQuote = styled.section`
 
         span {
             max-width: 80rem;
+
+            @media(max-width: 560px) {
+                padding: 0 1rem;
+            }
+
             @media(max-width: ${sizes.breakpoints.sm}) {
                 width: 100%;
             }
@@ -64,7 +69,7 @@ const StyledQuote = styled.section`
 `
 
 interface QuoteProps {
-    title: string
+    title: string | JSX.Element
 }
 
 const Quote: React.SFC<QuoteProps> = ({title}) => (

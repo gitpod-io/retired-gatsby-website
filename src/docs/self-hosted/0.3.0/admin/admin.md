@@ -1,3 +1,7 @@
+---
+url: /docs/self-hosted/0.3.0/admin/admin/
+---
+
 # Administrate Gitpod Self-Hosted
 
 While we are working on the administration experience, there is already a lot you can do if you know where to look.

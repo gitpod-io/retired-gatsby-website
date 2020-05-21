@@ -17,10 +17,6 @@ const StyledTestimonials = styled.div`
 
     h2 {
         margin-bottom: 1rem;
-
-        @media(min-width: ${sizes.breakpoints.sm}) {
-            display: none;
-        }
     }
 
     .tweets {
@@ -71,10 +67,8 @@ const tweets = [
     '1117695539540365312',
     '1116152894548582402',
     '1159698330764611584',
-    '1188910483698372608',
     '1117141675745402881',
     '1120015913024139265',
-    '1207006360874831872',
     '1221093493214310400',
     '1215700809104740354',
 ]
@@ -83,7 +77,7 @@ const Testimonials: React.SFC<{}> = () => (
     <StyledTestimonials className="grey-container">
         <section className="testimonials">
                 <div className="row">
-                    <h2>Don’t just Take Our<br />Word for It</h2>
+                    <h2>Trusted by 150,000+ Developers</h2>
                 </div>
                 <div className="tweets">
                     {

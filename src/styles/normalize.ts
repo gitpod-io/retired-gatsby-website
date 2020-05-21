@@ -91,12 +91,14 @@ export default `
     h3,
     h4 {
         font-family: 'Montserrat', sans-serif;
-        line-height: 1.4;
+        line-height: 1.2;
+        color: ${colors.textDark};
     }
 
     h1,
     h2 {
         font-weight: 400;
+        line-height: 1.4;
     }
 
     h3,
@@ -203,8 +205,10 @@ export default `
 
     .btn {
         display: inline-block;
+        min-width: 14.5rem;
         padding: .8rem 2.2rem;
         font-weight: 600;
+        text-align: center;
         color: ${colors.textDark};
         background: ${colors.white};
         border: 2px solid ${colors.text};
@@ -217,11 +221,6 @@ export default `
             color: ${colors.white};
             background: ${colors.lightBlue};
             border: 2px solid ${colors.lightBlue};
-        }
-
-        &--normal {
-            font-size: ${sizes.font.btnNormal};
-            padding: 1rem 2.8rem;
         }
 
         &--big {
@@ -246,15 +245,6 @@ export default `
             }
         }
 
-        & + & {
-
-            @media(max-width: 414px) {
-                &:not(:first-child) {
-                    margin-top: 2.5rem;
-                }
-            }
-        }
-
         &-wrapper {
             .btn {
                 &:first-of-type {
@@ -275,10 +265,6 @@ export default `
                 }
             }
         }
-    }
-
-    .active {
-        color: ${colors.link};
     }
 
     .link {
@@ -310,6 +296,14 @@ export default `
         }
     }
 
+    .active {
+        color: ${colors.lightBlue};
+
+        &::after {
+            right: 0;
+            border-color: ${colors.lightBlue};
+        }
+    }
 
     /* ------------------------------------------- */
     /* ----- Inputs ----- */

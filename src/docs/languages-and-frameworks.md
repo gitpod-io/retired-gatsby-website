@@ -15,5 +15,7 @@ Below is a list of language and framework specific tips & tricks.
 - [Rust](/docs/languages/rust/)
 - [.NET](/docs/languages/dotnet/)
 - [Julia](/docs/languages/julia/)
+- [LaTeX](/docs/languages/latex/)
 - [R](/docs/languages/r/)
-- [Pandas](/docs/frameworks/pandas)
+- [Kotlin](/docs/kotlin-in-gitpod/)
+- [Pandas](/docs/frameworks/pandas/)

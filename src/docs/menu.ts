@@ -146,12 +146,16 @@ export const MENU: MenuEntry[] = [
                 "languages/julia"
             ),
             M(
+                "LaTeX",
+                "languages/latex"
+            ),
+            M(
                 "R",
                 "languages/r"
             ),
             M(
-                "Pandas",
-                "frameworks/pandas"
+                "Kotlin",
+                "languages/kotlin"
             )
         ]
     ),
@@ -204,17 +208,45 @@ export const MENU: MenuEntry[] = [
         "self-hosted/latest/self-hosted",
         [
             M(
-                "Prerequisites",
-                "self-hosted/latest/install/prepare-installation/"
-            ), 
+                "Install on Google Cloud Platform",
+                "self-hosted/latest/install/install-on-gcp-script/"
+            ),
             M(
-                "Install on Vanilla Kubernetes",
+                "Install on self-managed Kubernetes",
                 "self-hosted/latest/install/install-on-kubernetes/"
             ),
             M(
-                "Install on Google Cloud Platform",
-                "self-hosted/latest/install/install-on-gcp-script/"
-            )
+                "Configure OAuth",
+                "self-hosted/latest/install/oauth/"
+            ),
+            M(
+                "Configure a Domain",
+                "self-hosted/latest/install/domain/"
+            ),
+            M(
+                "Configure HTTPS Certificates",
+                "self-hosted/latest/install/https-certs/"
+            ),
+            M(
+                "Configure a Database",
+                "self-hosted/latest/install/database/"
+            ),
+            M(
+                "Configure a Docker Registry",
+                "self-hosted/latest/install/docker-registry/"
+            ),
+            M(
+                "Configure Storage",
+                "self-hosted/latest/install/storage/"
+            ),
+            M(
+                "Configure Nodes",
+                "self-hosted/latest/install/nodes/"
+            ),
+            M(
+                "Configure Workspaces",
+                "self-hosted/latest/install/workspaces/"
+            ),
         ]
     ),
     // M(

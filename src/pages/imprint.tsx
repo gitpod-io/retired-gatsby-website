@@ -52,8 +52,7 @@ const ImprintPage: React.SFC<{}> = () => (
                 </p>
                 <h3>Settlements of Disputes</h3>
                 <p>
-                    The European Commission provides a platform for an online settlement of disputes which can be accessed under
-                    http://ec.europa.eu/consumers/odr/. Gitpod is neither obliged to take part in alternative dispute resolutions before a consumer
+                    The European Commission provides a platform for an online settlement of disputes which can be accessed under <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a>. Gitpod is neither obliged to take part in alternative dispute resolutions before a consumer
                     dispute settlement commission or will do so voluntarily.
                 </p>
             </TextBox>

@@ -168,21 +168,19 @@ const StyledAboutPage = styled.div`
     .statement {
         text-align: center;
         padding: 10rem 0;
-
+        font-weight: 300;
 
         &__fox {
             height: 7rem;
             margin-left: 3rem;
             margin-bottom: -2rem;
         }
-
         &__logo {
             height: 1.5rem;
             margin-left: -4rem;
             margin-bottom: -2rem;
         }
     }
-
 `
 
 const AboutPage: React.SFC<{}> = () => (
@@ -232,7 +230,7 @@ const AboutPage: React.SFC<{}> = () => (
                             <div className="about__box">
                                 <img alt="Kiel Harbour" src={Kiel} />
                                 <h3>About TypeFox</h3>
-                                <p>TypeFox was founded in 2016 by Sven Efftinge, Moritz Eysholdt and Dr. Jan Koehnlein, with the mission to build smart tools for smart people. The headquarters are located in Kiel, Germany.</p>
+                                <p>TypeFox was founded in 2016 by Sven Efftinge, Moritz Eysholdt and Dr. Jan Koehnlein, with the mission to build smart tools for smart people. The headquarters is in Kiel, Germany.</p>
                                 <p>We are a driving force behind the language server protocol and the initiators of Eclipse Theia, the next generation IDE that powers Gitpod.</p>
                             </div>
                             <div className="about__box">

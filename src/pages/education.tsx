@@ -23,14 +23,14 @@ const EducationPage: React.SFC<{}> = () => (
     <IndexLayout 
         canonical='/education/' 
         title="Education" 
-        description="Gitpod simplifies the onboarding process, makes coding accessible from any device and provides a productive learning environment."
+        description="Gitpod simplifies the onboarding process, makes coding accessible from anywhere, and provides a productive learning environment."
     >
         <div className="grey-container">
 
             <Banner
                 subtitle="Gitpod Education"
                 title={<h1>Let’s <strong>Focus on Teaching Code,</strong><br /> not Tedious Setups!</h1>}
-                paragraph="Gitpod simplifies the onboarding process, makes coding accessible from any device and provides a productive learning environment."
+                paragraph="Gitpod simplifies the onboarding process, makes coding accessible from any device, and provides a productive learning environment."
                 linkPath="/education/#education"
                 linkText="Choose your Solution"
                 img={<object role="presentation" tabIndex={-1} style={{transform:"scale(0.8)"}} data={Saturn}/>}

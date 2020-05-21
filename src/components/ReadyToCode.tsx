@@ -1,9 +1,9 @@
 import React from 'react'
 
 import { Link } from 'gatsby'
-import ReadyToCodeImg from '../resources/icon-automated-setup-default.svg'
-import AutomatedSetupGraphicGitpod from '../resources/icon-automated-setup-gitpod.svg'
-import AutomatedSetupGraphicOrdinary from '../resources/icon-automated-setup-no-gitpod.svg'
+import ReadyToCodeImg from '../resources/automated-setup-default.png'
+import AutomatedSetupGraphicGitpod from '../resources/automated-setup-gitpod.png'
+import AutomatedSetupGraphicOrdinary from '../resources/automated-setup-ordinary.png'
 
 class ReadyToCode extends React.Component {
     state = {
@@ -36,23 +36,6 @@ class ReadyToCode extends React.Component {
         }
     }
 
-    componentDidMount() {
-        window.addEventListener('resize', () => {
-            const el = document.querySelector('.rtc_default');
-            if(el){
-                const svg: SVGSVGElement | null = el.querySelector('svg');
-                if (svg) {
-                    if(window.innerWidth < 800) {
-                        svg.setAttribute('viewBox', '0 75 736 440'); 
-                    } else {
-                        svg.setAttribute('viewBox', '0 45 736 440'); 
-                    }
-                }
-            }
-        })
-
-    }
-
     render() {
         const { isDefaultRendered, isGraphicGitpodRendered, isGraphicOridinaryRendered } = this.state
 
@@ -69,7 +52,31 @@ class ReadyToCode extends React.Component {
         }
 
         return (
-            <div className="why-gitpod__box why-gitpod__box--1">
+            <div className="why-gitpod__box why-gitpod__box--1 row">
+                <div className="why-gitpod__img-container why-gitpod__img-container--1">
+                    <div style={{ display: 'flex', width: '90%', height: '100%', justifyContent: 'center' }}>
+
+                        <img
+                            src={AutomatedSetupGraphicOrdinary}
+                            alt="Ordinary setup wihtout Gitpod."
+                            style={{ ...graphicOridnaryStyles, width: '100%' }}
+                            className="why-gitpod__img why-gitpod__img--1 rtc_ordinary"
+                        />
+                        <img
+                            src={ReadyToCodeImg}
+                            alt="Graphic that visualizes setups both with and without Gitpod."
+                            style={defaultStyles}
+                            className="why-gitpod__img why-gitpod__img--1 rtc_default"
+                        />
+                        <img
+                            src={AutomatedSetupGraphicGitpod}
+                            alt="Automated setup with Gitpod."
+                            style={graphicGitpodStyles}
+                            className="why-gitpod__img why-gitpod__img--1 rtc_gitpod"
+                        />
+                    </div>
+                </div>
+
                 <div className="why-gitpod__text">
                     <h3>Automated Dev Environments</h3>
                     <p>Gitpod is to your traditional local dev environment what Netflix is to a dusty shelf of DVDs.</p>
@@ -92,28 +99,6 @@ class ReadyToCode extends React.Component {
                         >
                             Ordinary Way
                         </button>
-                    </div>
-                </div>
-                <div className="why-gitpod__img-container why-gitpod__img-container--1">
-                    <div style={{ display: 'flex', width: '90%', height: '100%', justifyContent: 'center' }}>
-                        <object
-                            role="presentation"
-                            data={AutomatedSetupGraphicOrdinary}
-                            style={{ ...graphicOridnaryStyles, width: '100%' }}
-                            className="why-gitpod__img why-gitpod__img--1 rtc_ordinary"
-                        />
-                        <object
-                            role="presentation"
-                            data={ReadyToCodeImg}
-                            style={defaultStyles}
-                            className="why-gitpod__img why-gitpod__img--1 rtc_default"
-                        />
-                        <object
-                            role="presentation"
-                            data={AutomatedSetupGraphicGitpod}
-                            style={graphicGitpodStyles}
-                            className="why-gitpod__img why-gitpod__img--1 rtc_gitpod"
-                        />
                     </div>
                 </div>
             </div>
