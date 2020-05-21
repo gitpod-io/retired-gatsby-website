@@ -5,7 +5,7 @@ import styled from '@emotion/styled'
 import { colors, sizes } from '../styles/variables'
 import { graphql } from 'gatsby'
 import PostPreview from '../components/PostPreview'
-import NewsletterForm from '../components/NewsletterForm'
+// import NewsletterForm from '../components/NewsletterForm'
 
 const StyledBlogPage = styled.div`
 
@@ -132,8 +132,7 @@ const BlogPage: React.SFC<BlogPageProps> = (props) => {
                 </section>
 
                 {/* ----- Section Newsletter ----- */}
-
-                <NewsletterForm />
+                {/* <NewsletterForm /> */}
             </StyledBlogPage>
         </IndexLayout>
     )
