@@ -19,13 +19,17 @@ const StyledContactPage = styled.div`
             flex-wrap: wrap;
         }
 
+        input,
+        textarea {
+            background: var(--white);
+        }
+
         &__input {
             display: block;
             width: 100%;
             padding: 1rem 2rem;
             border: ${borders.light1};
             border-radius: 3px;
-
 
             &:not(:last-child) {
                 margin-bottom: 2rem;
@@ -48,7 +52,6 @@ const StyledContactPage = styled.div`
             height: 22rem;
             border: ${borders.light1};
             border-radius: 3px;
-
         }
     }
 

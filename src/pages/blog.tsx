@@ -2,7 +2,7 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import styled from '@emotion/styled'
-import { colors, sizes } from '../styles/variables'
+import { sizes } from '../styles/variables'
 import { graphql } from 'gatsby'
 import PostPreview from '../components/PostPreview'
 import NewsletterForm from '../components/NewsletterForm'
