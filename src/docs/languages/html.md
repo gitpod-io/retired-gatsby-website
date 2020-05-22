@@ -14,16 +14,20 @@ Repository | Description | Try it
 [Devhints](https://github.com/rstacruz/cheatsheets) | TL;DR for developer documentation - a ridiculous collection of cheatsheets | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/rstacruz/cheatsheets)
 
 </div>
+
 ## [emmet](http://emmet.io/) Support
 
 ![emmet demo](../images/emmet.png)
 Gitpod comes with [emmet](http://emmet.io/) support right out of the box giving you access to powerful snippets and completions
 
-
 ## Live Preview
 
 ![image of preview](../images/live_preview.png)
-With Gitpod you can open a preview for Markdown and HTML files while you are coding in the upper right-hand corner ![preview icon](../images/preview.png) click it see the result in real-time!
+With Gitpod you can open a preview for Markdown and HTML files while you are coding. 
+
+To open the preview for a file, click the `Open Preview to the Side` icon in the upper right-hand corner:
+
+![preview icon](../images/preview.png) 
 
 ## Try It!
 
