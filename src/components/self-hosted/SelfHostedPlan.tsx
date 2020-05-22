@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import IconTick from '../../resources/icon-tick.svg'
-import { colors, borders } from '../../styles/variables'
+import { borders } from '../../styles/variables'
 
 const StyledSelfHostedPlan = styled.div`
     display: flex;

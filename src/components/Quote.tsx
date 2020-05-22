@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import QuoteIcon from '../resources/quote.svg'
-import { colors, sizes } from '../styles/variables'
+import { sizes } from '../styles/variables'
 
 const StyledQuote = styled.section`
     padding: 12rem 0;

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, sizes } from '../styles/variables'
+import { sizes } from '../styles/variables'
 
 const StyledPricingTable = styled.section`
     padding-bottom: 0;

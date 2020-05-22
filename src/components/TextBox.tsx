@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, shadows, borders } from '../styles/variables'
+import { shadows, borders } from '../styles/variables'
 
 const StyledTextBox = styled.div`
     font-size: 90%;

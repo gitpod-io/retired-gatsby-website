@@ -415,7 +415,6 @@ export default `
     }
 
     table {
-        border: 1px solid ${borders.light};
         border-collapse: collapse;
         letter-spacing: 1px;
         margin: 0 auto;

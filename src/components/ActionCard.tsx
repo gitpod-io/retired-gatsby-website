@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, shadows } from '../styles/variables'
+import { shadows } from '../styles/variables'
 import link from '../utils/link'
 
 const StyledActionCard = styled.section`

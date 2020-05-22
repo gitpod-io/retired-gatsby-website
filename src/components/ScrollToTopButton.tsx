@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { borders, colors, shadows } from '../styles/variables'
+import { borders, shadows } from '../styles/variables'
 
 import IconArrow from '../resources/icon-arrow.svg'
 

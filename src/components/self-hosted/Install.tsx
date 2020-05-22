@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import Kubernetes from '../../resources/kubernetes.svg'
-import { colors, sizes, borders } from '../../styles/variables'
+import { sizes, borders } from '../../styles/variables'
 import GoogleCloudLogo from '../../resources/google-cloud-logo.svg'
 import { Link } from 'gatsby'
 

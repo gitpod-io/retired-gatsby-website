@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
-import { colors, shadows } from '../styles/variables'
+import { shadows } from '../styles/variables'
 import { parseAuthors } from '../utils/authors'
 
 const StyledPostPreview = styled.div`

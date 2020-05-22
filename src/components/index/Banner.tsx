@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Screenshot from '../../resources/screenshot.png'
 import styled from '@emotion/styled'
-import { colors, sizes } from '../../styles/variables'
+import { sizes } from '../../styles/variables'
 
 const Styled = styled.div`
 

@@ -5,7 +5,6 @@ import SunIcon from '../resources/sun-icon.svg'
 import MoonIcon from '../resources/moon-icon.svg'
 // @ts-ignore
 import { ThemeToggler as Toggler } from 'gatsby-plugin-dark-mode'
-import { colors } from '../styles/variables'
 
 const StyledThemeToggler = styled.div`
     display: flex;

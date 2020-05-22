@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { sizes, colors } from '../../styles/variables'
+import { sizes } from '../../styles/variables'
 import HourGlass from '../../resources/hourglass.svg'
 import ArrowOnTarget from '../../resources/arrow-on-target.svg'
 

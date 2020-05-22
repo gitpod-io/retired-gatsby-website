@@ -2,7 +2,7 @@ import React from 'react'
 
 import IndexLayout from './index'
 import styled from '@emotion/styled'
-import { colors, shadows, sizes } from '../styles/variables'
+import { shadows, sizes } from '../styles/variables'
 import DocSideBar from '../components/DocSideBar'
 import DocTopicChooser from '../components/DocTopicChooser'
 

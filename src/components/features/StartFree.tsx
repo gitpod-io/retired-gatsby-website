@@ -2,7 +2,6 @@ import React from 'react'
 
 import { Link } from 'gatsby'
 import styled from '@emotion/styled'
-import { colors } from '../../styles/variables'
 
 const Styled = styled.div`
     .start {

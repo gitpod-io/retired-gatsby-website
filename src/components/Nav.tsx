@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
-import { colors, sizes, borders } from '../styles/variables'
+import { sizes, borders } from '../styles/variables'
 import DropDown from '../components/DropDown'
 import GitpodLogo from './GitpodLogo'
 

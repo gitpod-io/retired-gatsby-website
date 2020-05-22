@@ -1,7 +1,6 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors } from '../styles/variables'
 import { Link } from 'gatsby'
 
 const StyledLinkSet = styled.div`

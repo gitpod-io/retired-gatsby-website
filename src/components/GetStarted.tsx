@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { shadows, borders, sizes, colors } from '../styles/variables'
+import { shadows, borders, sizes } from '../styles/variables'
 import { projects } from '../utils/projects'
 import Project from '../components/Project'
 import GitpodGrey from '../resources/gitpod-logo-grey.svg'

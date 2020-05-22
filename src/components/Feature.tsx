@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, shadows, sizes } from '../styles/variables'
+import { shadows, sizes } from '../styles/variables'
 
 import Layer from '../resources/layer.svg'
 import Github from '../resources/octicons-mark-github.svg'

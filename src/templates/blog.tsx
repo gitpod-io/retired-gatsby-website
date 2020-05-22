@@ -8,7 +8,7 @@ import reddit from '../resources/reddit.svg'
 import twitter from '../resources/twitter.svg'
 import { Helmet } from 'react-helmet'
 import { parseAuthors } from '../utils/authors'
-import { colors, shadows, sizes } from '../styles/variables'
+import { shadows, sizes } from '../styles/variables'
 // import NewsletterForm from '../components/NewsletterForm'
 
 interface BlogTemplateProps {

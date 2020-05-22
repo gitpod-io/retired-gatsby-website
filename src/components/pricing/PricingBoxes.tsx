@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { sizes, colors } from '../../styles/variables'
+import { sizes } from '../../styles/variables'
 import LightBulb from '../../resources/light-bulb.svg'
 import Rocket from '../../resources/rocket.png'
 import MagicCap from '../../resources/magic-cap.svg'
