@@ -10,8 +10,9 @@ tasks:
 vscode:
   extensions:
     - jpoissonnier.vscode-styled-components@0.0.28:Qde/ISuGvFTPjoaMf1FmnQ==
-    - paulmolluzzo.convert-css-in-js@1.1.3:YnjK47pXScU3DMFfQzkkOw==
-    
+    - paulmolluzzo.convert-css-in-js@1.1.3:YnjK47pXScU3DMFfQzkkOw==    
+    - znck.grammarly@0.12.2:Tbs7TRx8olec3FCWN9TjvA==
+
 github:
   prebuilds:
     # enable for the master/default branch (defaults to true)
