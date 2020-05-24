@@ -34,6 +34,19 @@ tasks:
     command: python3 main.py
 ```
 
+## Linting
+
+You can [create a `setup.cfg` or a `pycodestyle.cfg` in the project root](https://github.com/palantir/python-language-server#configuration) and [adjust pycodestyle](http://pycodestyle.pycqa.org/en/latest/intro.html#configuration) rules there like this:
+
+```toml
+[pycodestyle]
+ignore = E226,E302,E41
+max-line-length = 160
+statistics = True
+```
+
+You'll need to refresh the browser in order to update these rule. [Source](https://github.com/gitpod-io/gitpod/issues/640#issuecomment-506622491).
+
 ## VSCode Extensions
 While the most popular Python VSCode extensions are built into Gitpod, here are a few "nice to have" extensions that you can use as well.
 
