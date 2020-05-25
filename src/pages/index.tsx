@@ -21,6 +21,8 @@ import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
 import TheiaIDELogo from '../resources/theia-grey.svg'
 import VueLogo from '../resources/vuejs.svg'
 import UberLogo from '../resources/uber.svg'
+import AmazonLogo from '../resources/amazon.svg'
+import IntelLogo from '../resources/intel.svg'
 
 import Testimonials from '../components/Testimonials'
 import GetStarted from '../components/GetStarted'
@@ -43,6 +45,7 @@ const IndexPage: React.SFC<{}> = () => (
                     alt: 'D-Wave',
                     url: 'https://www.dwavesys.com/',
                     svg: DWaveLogo,
+                    transform: 'scale(1.3)',
                     className: 'dwave-logo'
                 },
                 {
@@ -59,6 +62,13 @@ const IndexPage: React.SFC<{}> = () => (
                     className: 'grey-logo'
                 },
                 {
+                    alt: 'Amazon',
+                    url: 'https://www.aboutamazon.com',
+                    svg: AmazonLogo,
+                    transform: 'scale(0.9) translateY(5px)',
+                    className: 'grey-logo'
+                },
+                {
                     alt: 'Facebook',
                     url: 'https://about.fb.com/',
                     svg: FacebookLogo,
@@ -68,13 +78,13 @@ const IndexPage: React.SFC<{}> = () => (
                     alt: 'Uber',
                     url: 'https://www.uber.com',
                     svg: UberLogo,
-                    transform: 'scale(0.9) translateX(5px)',
                     className: 'grey-logo'
                 },
                 {
                     alt: 'OpenAI',
                     url: 'https://openai.com/',
                     svg: OpenAILogo,
+                    transform: 'scale(1.1)',
                     className: 'grey-logo'
                 },
                 {
@@ -84,9 +94,17 @@ const IndexPage: React.SFC<{}> = () => (
                     className: 'grey-logo'
                 },
                 {
+                    alt: 'Intel',
+                    url: 'https://www.intel.com',
+                    svg: IntelLogo,
+                    transform: 'scale(0.8)',
+                    className: 'grey-logo'
+                },
+                {
                     alt: 'Eclipse Theia',
                     url: 'https://theia-ide.org',
                     svg: TheiaIDELogo,
+                    transform: 'scale(1.1)',
                     className: 'grey-logo'
                 },
                 {
