@@ -12,7 +12,7 @@ Here are a few C++ example projects that are already automated with Gitpod:
 |------|----------------|-----------|
 |[Component Editor](https://github.com/Circuito-io/ComponentEditor) | circuito.io Component Editor | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Circuito-io/ComponentEditor)| |
 | [tinyraycaster](https://github.com/ssloy/tinyraycaster) | old-school FPS in a weekend | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ssloy/tinyraycaster) |
-| [HelloGitPod](https://github.com/Shadouw/HelloGitPod | Example Gitpod C++ configuration with `clang-tidy` linter enabled | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Shadouw/HelloGitPod/blob/master/main.cpp) |
+| [HelloGitPod](https://github.com/Shadouw/HelloGitPod) | Example Gitpod C++ configuration with `clang-tidy` linter enabled | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Shadouw/HelloGitPod/blob/master/main.cpp) |
 </div>
 
 ## Environment
