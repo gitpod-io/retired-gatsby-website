@@ -175,7 +175,7 @@ Since Gitpod workspaces are running in the cloud, we can share them in similar w
 
 ### Helping others with Node.js development
 
-You can share you running workspaces with colleagues to collaborate on exactly the same codebase, development tools, running terminals, and applications. It is particularly useful to assist each other on some tricky configuration, dependency or code problem.
+You can share your running workspaces with colleagues to collaborate on exactly the same codebase, development tools, running terminals, and applications. It is particularly useful to assist each other on some tricky configuration, dependency or code problem.
 
 In order to share a running workspace: click on your account avatar, select Share Running Workspace, enable sharing, copy a link and share the copied link with your colleagues.
 
