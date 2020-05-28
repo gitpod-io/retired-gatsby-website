@@ -37,18 +37,23 @@ RUN brew install fzf
 
 When you are launching the Gitpod IDE, the local console will use the `gitpod` user, so all local settings, config file, etc. should apply to `/home/gitpod` or be run using `USER gitpod` (we no longer recommend using `USER root`).
 
-You can however use `sudo` in your Dockerfile. The following example shows a typical `.gitpod.Dockerfile` inheriting from `gitpod/workspace-full`:
+You can however use root user in your Dockerfile. The following example shows a typical `.gitpod.Dockerfile` inheriting from `gitpod/workspace-full`:
 ```Dockerfile
 FROM gitpod/workspace-full
 
-# Install custom tools, runtime, etc.
-RUN sudo apt-get update \
-    && sudo apt-get install -y \
+# Install custom tools, runtime, etc. on root
+USER root
+RUN true \
+    && apt-get update -q \
+    && apt-get install -qy \
+        some_package \
+        some_package \
         ... \
+    && apt-get autoremove -qy \
     && rm -rf /var/lib/apt/lists/*
 
-# Apply user-specific settings
-ENV ...
+# Apply user-specific settings, using shell variable export
+ENV someVariable="someValue"
 ```
 
 See also [Gero's blog post](/blog/docker-in-gitpod/) running through an example.

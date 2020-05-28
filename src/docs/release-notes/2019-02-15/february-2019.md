@@ -131,11 +131,16 @@ In addition to the `.gitpod.yml` you can provide a `Dockerfile` which is automat
 
 For example, here is a Dockerfile that allows developing native UI applications in Go on Gitpod:
 
-```sh
+```Dockerfile
 FROM gitpod/workspace-full-vnc
-RUN sudo apt-get update && \
-    sudo apt-get install -y libgtk-3-dev && \
-    sudo rm -rf /var/lib/apt/lists/*
+
+USER root
+RUN true \
+    && apt-get update -q && \
+    && apt-get install -qy \
+        libgtk-3-dev \
+    && apt-get autoremove -qy \
+    && rm -rf /var/lib/apt/lists/*
 ```
 
 Since we launched this feature, the performance and logging for docker builds have also been improved significantly.

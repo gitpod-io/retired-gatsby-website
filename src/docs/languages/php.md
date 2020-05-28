@@ -27,9 +27,15 @@ First, you must create a [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-
 ```Dockerfile
 FROM gitpod/workspace-full
 
-RUN sudo apt-get update -q \
-    && sudo apt-get install -y php-dev
+USER root
+RUN true \
+    && apt-get update -q \
+    && apt-get install -qy \
+        php-dev \
+    && apt-get autoremove -qy \
+    && rm -rf /var/lib/apt/lists/*
 
+USER gitpod
 RUN wget http://xdebug.org/files/xdebug-2.9.1.tgz \
     && tar -xvzf xdebug-2.9.1.tgz \
     && cd xdebug-2.9.1 \

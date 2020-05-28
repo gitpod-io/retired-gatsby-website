@@ -117,11 +117,14 @@ The last prerequisite is a docker configuration.
 If you already have a [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/) just add the following:
 
 ```Dockerfile
-RUN sudo apt-get -q update \
-    && sudo apt-get install -yq \
+USER root
+RUN true \
+    && apt-get -q update \
+    && apt-get install -qy \
         libpython3.6 \
         rust-lldb \
-    && sudo rm -rf /var/lib/apt/lists/*
+    && apt-get autoremove -qy \
+    && rm -rf /var/lib/apt/lists/*
 
 ENV RUST_LLDB=/usr/bin/lldb-8
 ```
@@ -131,13 +134,14 @@ If not there are two steps first create a file called `.gitpod.Dockerfile` with 
 ```Dockerfile
 FROM gitpod/workspace-full
 
-USER gitpod
-
-RUN sudo apt-get -q update \
-    && sudo apt-get install -yq \
+USER root
+RUN true \
+    && apt-get -q update \
+    && apt-get install -qy \
         libpython3.6 \
         rust-lldb \
-    && sudo rm -rf /var/lib/apt/lists/*
+    && apt-get autoremove -qy \
+    && rm -rf /var/lib/apt/lists/*
 
 ENV RUST_LLDB=/usr/bin/lldb-8
 ```

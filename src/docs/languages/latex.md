@@ -10,9 +10,12 @@ First, you will probably want to install LaTeX in Gitpod. To do this, add a new 
 FROM gitpod/workspace-full
 
 # Install LaTeX
-RUN sudo apt-get -q update && \
-    sudo apt-get install -yq texlive-full && \
-    sudo rm -rf /var/lib/apt/lists/*
+RUN true \
+    && apt-get -q update \
+    && apt-get install -qy \
+        texlive-full \
+    && apt-get autoremove -qy \
+    && rm -rf /var/lib/apt/lists/*
 ```
 
 Next, create a file called [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) and add the following to it:
