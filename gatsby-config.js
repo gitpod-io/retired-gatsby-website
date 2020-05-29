@@ -20,6 +20,28 @@ module.exports = {
             }
         },
         {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `Gitpod`,
+                short_name: `Gitpod`,
+                start_url: `/`,
+                background_color: `#f7f0eb`,
+                theme_color: `#1aa6e4`,
+             
+                display: `standalone`,
+                cache_busting_mode: 'none',
+                icon: `src/resources/gitpod.svg`
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-offline',
+            options: {
+                workboxConfig: {
+                    globPatterns: ['**/*']
+                }
+            }
+        },
+        {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'blog',
