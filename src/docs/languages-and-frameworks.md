@@ -14,6 +14,7 @@ Below is a list of language and framework specific tips & tricks.
 - [Scala](/docs/languages/scala/)
 - [Rust](/docs/languages/rust/)
 - [.NET](/docs/languages/dotnet/)
+- [Dart](/docs/languages/dart/)
 - [Julia](/docs/languages/julia/)
 - [LaTeX](/docs/languages/latex/)
 - [R](/docs/languages/r/)
