@@ -176,6 +176,10 @@ export const MENU: MenuEntry[] = [
                 "search"
             ),
             M(
+                "Fork a Reposiory",
+                "fork-a-repo"
+            ),
+            M(
                 "Pull Requests",
                 "pull-requests"
             ),
