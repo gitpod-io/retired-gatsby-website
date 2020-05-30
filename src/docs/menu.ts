@@ -140,6 +140,11 @@ export const MENU: MenuEntry[] = [
             M(
                 ".NET",
                 "languages/dotnet"
+
+            ),
+            M(
+                "Dart",
+                "languages/dart"
             ),
             M(
                 "Julia",
