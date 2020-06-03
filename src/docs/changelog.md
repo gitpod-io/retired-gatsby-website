@@ -6,7 +6,7 @@ A curated, chronologically ordered list of notable changes in [gitpod.io](https:
 
 - [theia] Allow adding Gitpod to homescreen on iOS/iPad to get a fullscreen app experience [eclipse-theia/theia#7607](https://github.com/eclipse-theia/theia/issues/7607)
 - [theia] Upgrade Theia IDE to [v1.2.0](https://github.com/eclipse-theia/theia/blob/master/CHANGELOG.md#v120)
-- [theia] Upgrade built-in VS Code extensions for JS, TypeScript, Python, Rust, C++, Go, Java, Ruby, PHP, C#, F#, Swift, Objective-C, Clojure, Lua, PowerShell, SQL, Yaml, XML, EditorConfig, and themes
+- [theia] Upgrade built-in VS Code extensions for JS, TypeScript, Python, Rust, C++, Go, Java, Ruby, PHP, C#, F#, Swift, Objective-C, Clojure, Lua, PowerShell, SQL, Yaml, XML, EditorConfig, and refresh themes
 - [theia] New Preferences UI [eclipse-theia/theia#7105](https://github.com/eclipse-theia/theia/pull/7105)
 - [theia] Improve Git view, add Tree View mode [eclipse-theia/theia#7505](https://github.com/eclipse-theia/theia/pull/7505)
 - [theia] Improve and expand VS Code extension support
