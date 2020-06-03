@@ -2,6 +2,31 @@
 
 A curated, chronologically ordered list of notable changes in [gitpod.io](https://www.gitpod.io/).
 
+## 2020-06-03
+
+- [theia] Allow adding Gitpod to homescreen on iOS/iPad to get a fullscreen app experience [eclipse-theia/theia#7607](https://github.com/eclipse-theia/theia/issues/7607)
+- [theia] Upgrade Theia IDE to [v1.2.0](https://github.com/eclipse-theia/theia/blob/master/CHANGELOG.md#v120)
+- [theia] Upgrade built-in VS Code extensions for JS, TypeScript, Python, Rust, C++, Go, Java, Ruby, PHP, C#, F#, Swift, Objective-C, Clojure, Lua, PowerShell, SQL, Yaml, XML, EditorConfig, and themes
+- [theia] New Preferences UI [eclipse-theia/theia#7105](https://github.com/eclipse-theia/theia/pull/7105)
+- [theia] Improve Git view, add Tree View mode [eclipse-theia/theia#7505](https://github.com/eclipse-theia/theia/pull/7505)
+- [theia] Improve and expand VS Code extension support
+- [theia] Add dedicated 'Workspace' menu in IDE top menu bar
+- [theia] Fix various keybindings and focus handling issues
+- [backend] Harden workspace initialization and backup in out-of-the-ordinary situations
+- [backend] Also garbage-collect expired workspaces in error state
+- [backend] Increase maximum workspace size from 20 GiB → 30 GiB
+- Improve Team Subscriptions: Add dedicated [My Teams](https://gitpod.io/teams/) menu item, fix dialogs and invite links, clarify descriptions
+- Improve IDE Setup Assistant and auto-detect [more tools](https://github.com/gitpod-io/gitpod-yml-inferrer/compare/5710153c...2212efac)
+
+## 2020-06-03
+
+- Bump Node.js version following a [security alert](https://twitter.com/liran_tal/status/1267519052731289600): [gitpod-io/workspace-images#243](https://github.com/gitpod-io/workspace-images/pull/243)
+
+## 2020-06-02
+
+- Upgrade all Go tools to get the latest `gopls`, remove broken `golangci-lint` [gitpod-io/workspace-images#237](https://github.com/gitpod-io/workspace-images/pull/237)
+- Make Python 3 the default `python` version (use `pyenv local 2.7.17` to go back to Python 2) [gitpod-io/workspace-images#214](https://github.com/gitpod-io/workspace-images/pull/214)
+
 ## 2020-05-14
 
 - Support Amazon Linux based workspace images (thanks @Kreyren!), fixes [gitpod-io/gitpod#1490](https://github.com/gitpod-io/gitpod/issues/1490)
