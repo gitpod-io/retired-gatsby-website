@@ -17,9 +17,6 @@ A curated, chronologically ordered list of notable changes in [gitpod.io](https:
 - [backend] Increase maximum workspace size from 20 GiB → 30 GiB
 - Improve Team Subscriptions: Add dedicated [My Teams](https://gitpod.io/teams/) menu item, fix dialogs and invite links, clarify descriptions
 - Improve IDE Setup Assistant and auto-detect [more tools](https://github.com/gitpod-io/gitpod-yml-inferrer/compare/5710153c...2212efac)
-
-## 2020-06-03
-
 - Bump Node.js version following a [security alert](https://twitter.com/liran_tal/status/1267519052731289600): [gitpod-io/workspace-images#243](https://github.com/gitpod-io/workspace-images/pull/243)
 
 ## 2020-06-02
@@ -125,9 +122,6 @@ A curated, chronologically ordered list of notable changes in [gitpod.io](https:
 - [gp-cli] Fix `gp url` without arguments, fixes [gitpod-io/gitpod#1333](https://github.com/gitpod-io/gitpod/issues/1333)
 - Implement SendGrid to allow sending transactional emails (e.g. when your subscription is about to expire)
 - Handle duplicate ports in `.gitpod.yml` more gracefully
-
-## 2020-03-30
-
 - Upgrade Node.js from v10 → v12 LTS (to pin a specific version, see [this workaround](https://github.com/gitpod-io/workspace-images/pull/178#issuecomment-602465333))
 
 <br><br>
