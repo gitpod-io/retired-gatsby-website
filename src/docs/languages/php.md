@@ -30,6 +30,8 @@ FROM gitpod/workspace-full
 RUN sudo apt-get update -q \
     && sudo apt-get install -y php-dev
 
+RUN sudo mkdir /usr/lib/php/20170718
+
 RUN wget http://xdebug.org/files/xdebug-2.9.1.tgz \
     && tar -xvzf xdebug-2.9.1.tgz \
     && cd xdebug-2.9.1 \
@@ -37,7 +39,7 @@ RUN wget http://xdebug.org/files/xdebug-2.9.1.tgz \
     && ./configure \
     && make \
     && sudo cp modules/xdebug.so /usr/lib/php/20170718 \
-    && sudo bash -c "echo -e '\nzend_extension = /usr/lib/php/20170718/xdebug.so\n[XDebug]\nxdebug.remote_enable = 1\nxdebug.remote_autostart = 1\n' >> /etc/php/7.2/cli/php.ini"
+    && sudo bash -c "echo -e '\nzend_extension = /usr/lib/php/20170718/xdebug.so\n[XDebug]\nxdebug.remote_enable = 1\nxdebug.remote_autostart = 1\n' >> /etc/php/7.4/cli/php.ini"
 ```
 
 Second, reference the above Dockerfile in a [.gitpod.yml](/docs/config-gitpod-file/) file, and then also install the extension, like so:
