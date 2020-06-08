@@ -22,6 +22,6 @@ RUN brew install kotlin
 
 ## Try it
 
-To see a basic repository with Kotlin support please see
+Please use the button below to see a basic repository with Kotlin support in Gitpod:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-Kotlin)

@@ -25,7 +25,7 @@ Then commit and push both files to your repository. After that, every new Gitpod
 
 ### R Extension
 
-![Picture of R extension](../images/RGitpod.png)
+![R extension](../images/RGitpod.png)
 To install the R extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file:
 
 ```yaml

@@ -21,16 +21,16 @@ on macOS) key binding.
 The `Git` view consists of three major sections. The top section is for authoring the commit messages.
 It also provides access to a couple of basic Git commands.
 
-![](./images/54_Git/git_commit_message.jpg)
+![Git View section for authoring commit messages](./images/54_Git/git_commit_message.jpg)
 
 Right below is the commit section, which lists the changed files by their name and separates them in two
 groups: the `STAGED CHANGES` and `CHANGED`. The latter shows all unstaged changes.
 
-![](./images/54_Git/git_file_changes.jpg)
+![Git View section that shows the changed files](./images/54_Git/git_file_changes.jpg)
 
 At the bottom of the `Git` view, a small section gives a quick insight into the most recent commit.
 
-![](./images/54_Git/git_last_commit.jpg)
+![Git View section that shows the recent commit](./images/54_Git/git_last_commit.jpg)
 
 In the list of staged and unstaged changes, the file names are followed by the path to their
 parent directory and an indicator describing the type of the change. This can be:
@@ -64,7 +64,7 @@ The dirty indicators are as follows:
   - `+`: You have staged changes in your branch, but no unstaged.
   - `!`: You have conflicting changes in your branch.
 
-![](./images/54_Git/git_status_bar.jpg)
+![Git Status Bar](./images/54_Git/git_status_bar.jpg)
 
 By clicking on the branch name, you can perform a `git checkout`. This operation is equivalent to
 the `Git: Checkout` command from the command palette.
@@ -75,14 +75,14 @@ remote changes to your local repository and then push local commits to the upstr
 
 ## Branches and Tags
 
-![](./images/54_Git/git_checkout_command.jpg)
+![Git Checkout Command](./images/54_Git/git_checkout_command.jpg)
 
 You can create and check out branches directly within Theia through the `Git: Checkout` command in
 the command palette. For creating a new branch, select the first item from the list, `Create new
 branch...`, and specify the desired name of your branch. Theia creates the new branch for you and
 checks it out.
 
-![](./images/54_Git/git_checkout_branches.jpg)
+![Git Checkout Branches List](./images/54_Git/git_checkout_branches.jpg)
 
 ## Gutter Indicators
 
@@ -93,7 +93,7 @@ Theia will add annotations to the gutter and to the overview ruler of the editor
   - A green bar shows the newly added lines.
   - A blue bar indicates modified lines.
 
-![](./images/54_Git/git_gutter.jpg)
+![Git Gutter Indicators](./images/54_Git/git_gutter.jpg)
 
 ## Blame Annotations
 
@@ -102,7 +102,7 @@ context menu or by picking `Git: Show Blame Annotations` from the command palett
 the blame annotations on the left hand-side of the editor. Press <kbd>Esc</kbd> if you want to hide
 the blame annotations.
 
-![](./images/54_Git/git_blame_annotations.jpg)
+![Git Blame Annotations](./images/54_Git/git_blame_annotations.jpg)
 
 ## Merge Conflicts
 
@@ -110,7 +110,7 @@ Theia recognizes merge conflicts. Theia highlights the differences and provides 
 accept either the local or the incoming change. Alternatively, both modifications can be accepted at
 the same time. Once you have resolved the conflicts, stage your changes and commit them.
 
-![](./images/54_Git/git_merge_conflicts.jpg)
+![Git Merge Conflicts](./images/54_Git/git_merge_conflicts.jpg)
 
 ## Viewing Diffs
 
@@ -118,7 +118,7 @@ The Git extension supports diffing within Theia. Selecting any of the modified f
 diff viewer. Its left-hand side is a read-only editor showing the index state, and the right-hand
 side is an editor for the working-tree state.
 
-![](./images/54_Git/git_diff.jpg)
+![Git Diff View](./images/54_Git/git_diff.jpg)
 
 ## Git History
 
@@ -139,4 +139,4 @@ you can see the list of commits with some details such as the committer, the sub
 message, and the relative time of the commit. You can open up the commit in a read-only editor to
 review all the details about the commit.
 
-![](./images/54_Git/git_history.jpg)
+![Git History View](./images/54_Git/git_history.jpg)
