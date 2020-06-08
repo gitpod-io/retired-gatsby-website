@@ -14,7 +14,7 @@ looking up available commands and key bindings. It is available through the foll
 shortcut:
   - <kbd>F1</kbd>
 
-![](./images/command_palette.jpg)
+![Command Palette](./images/command_palette.jpg)
 
 ### Command Palette Context
 
@@ -22,7 +22,7 @@ The command palette lists only those commands that are available in the current 
 example, the `Go To Line...` command shows in the palette only when a code editor is opened and has
 focus.
 
-![](./images/go_to_line_w_editor.jpg)
+![Command Palette Context Example: Go to Line](./images/go_to_line_w_editor.jpg)
 
 ## Color Themes
 

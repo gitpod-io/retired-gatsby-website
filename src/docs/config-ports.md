@@ -45,5 +45,5 @@ It has four possible values:
 
 Any changes to the `.gitpod.yml` will have effect immediately.
 
- ![Ports Notification](./images/ports-onOpen.png)
+ ![.gitpod.yml containing ports configuration](./images/ports-onOpen.png)
 

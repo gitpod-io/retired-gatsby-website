@@ -23,7 +23,7 @@ Click on the user's avatar and choose
 Provide the URL shown in the dialog to
 anyone you want to share your workspace with.
 
-![](./images/share-running-ws.gif)
+![Share Running Workspace Prompt](./images/share-running-ws.gif)
 
 > **Security note:**
 >
@@ -60,7 +60,7 @@ Read more about this feature [here](/blog/workspace-snapshots).
 Creating a snapshot is simple. You can either use the __command palette__ (<kbd>F1</kbd>) or find the action item in
 the avatar menu on the top right.
 
-![](./images/share-snapshot.png)
+![Share Workspace Snapshot Prompt](./images/share-snapshot.png)
 
 Once you execute it, the snapshot is taken and the URL is shown in a dialog.
 
