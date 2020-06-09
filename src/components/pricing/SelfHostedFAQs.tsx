@@ -49,7 +49,7 @@ const SelfHostedFAQs = () => (
                 <div>
                     <h3>Can I try Gitpod for free?</h3>
                     <p>
-                        Of course! You can try the full version on your own infrastructure for 30 days for free. Gitpod Self-Hosted is always free for up to five users. Obtain your trial license <Link to="https://gitpod.io/selfhosted-trial/">here</Link> and get started by <Link to="/docs/self-hosted/latest/self-hosted/">installing Gitpod Self-Hosted</Link>.
+                        Of course! You can try the full version on your own infrastructure for 30 days for free. Gitpod Self-Hosted is always free for up to five users. Obtain your trial license <a href="https://gitpod.io/selfhosted-trial/" target="_blank">here</a> and get started by <Link to="/docs/self-hosted/latest/self-hosted/">installing Gitpod Self-Hosted</Link>.
                 </p>
                     <p>
                         If you like the experience, you can continue using Gitpod by simply updating your existing instance with a purchased license key. Self-hosted Gitpod licenses can currently only be purchased by request. Please <Link to="/contact/">Contact Sales</Link> to receive an offer.
