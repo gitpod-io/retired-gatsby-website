@@ -55,11 +55,11 @@ In the case of this project I added a task to start the failing Java process:
 
 With the **.gitpod.yml **configured and the editors and views laid out as needed, we are ready to take a snapshot. Simply click on the avatar on the top right:
 
-![](https://cdn-images-1.medium.com/max/2212/1*nOXkwor5kPsdJb-o2oHy4w.png)
+![Gitpod menu share workspace snapshot](https://cdn-images-1.medium.com/max/2212/1*nOXkwor5kPsdJb-o2oHy4w.png)
 
 Pick “Share Workspace Snapshot” and copy and share the link or one of the snippets in the opened dialog:
 
-![](https://cdn-images-1.medium.com/max/4348/1*2aDOY4sHSyefz2uepzGskw.png)
+![Gitpod workspace snapshot prompt](https://cdn-images-1.medium.com/max/4348/1*2aDOY4sHSyefz2uepzGskw.png)
 
 Here’s the snapshot link for you to try:
 [https://gitpod.io/#snapshot/f7f5954a-250b-4113-909c-aae88b64321c](https://gitpod.io/#snapshot/f7f5954a-250b-4113-909c-aae88b64321c)

@@ -9,7 +9,7 @@ teaserImage: https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff
 
 Since we released Gitpod into Public Beta it has been incredibly exciting to see people from all over the world use our service. Even more so with feedback like this:
 
-[![Gitpod Tweet](./docker-in-gitpod/tweet.png)](https://twitter.com/gkalpakas/status/1037800090977619973)
+[![George Kalpakas Tweet about Gitpod](./docker-in-gitpod/tweet.png)](https://twitter.com/gkalpakas/status/1037800090977619973)
 
 Of course, there is always room for improvement, especially with a service as new as Gitpod. Luckily, people have started to share their questions and ideas with us on [https://github.com/gitpod-io/gitpod](https://github.com/gitpod-io/gitpod). One of the most often asked questions was:
 

@@ -16,7 +16,7 @@ Today, we are happy to announce the launch of [Gitpod.io](https://gitpod.io), an
 ## One-Click Dev Environments for GitHub
 Here's how Gitpod works: You are on GitHub and want to start working on a project. Instead of going through the manual setups, etc. you simply click a button to start a ready-to-code dev environment in your browser. You can now code, review, or just try out the project. Once you are done you simply close the tab.
 
-![GitHub button](./gitpod-launch/browser-ext.png)
+![Gitpod button added by Gitpod browser extension](./gitpod-launch/browser-ext.png)
 
 Don’t see the button on GitHub yet? You need to [install a small browser extension](/docs/browser-extension/) to get it. Alternatively, you can just prefix any GitHub URL with “[gitpod.io/#](https://gitpod.io/#)”.
 
@@ -33,7 +33,7 @@ As a project owner you should do everything you can to streamline the experience
 
 A great example is [ssloy's tinyraytracer project](https://github.com/ssloy/tinyraytracer/wiki). It's a tutorial for raytracing in C++ and is configured so it runs the build and automatically opens the rendered graphics. The author has even added Gitpod buttons to individual steps in the tutorial to make following along easier.
 
-![Tinyraytracer](./gitpod-launch/tinyrt.png)
+![Tinyraytracer Gitpod workspace](./gitpod-launch/tinyrt.png)
 
 ## Less Waiting
 There is an additional bit of friction that every developer has to go through regularly:
@@ -74,7 +74,7 @@ Gitpod comes with two major features supporting collaboration.
 
  - [Snapshots](/blog/workspace-snapshots/) are useful in many ways. In a nutshell, they allow taking an immutable copy of your dev environment at any point in time. You can share the provided link wherever you want. Users opening such a snapshot link will get an exact clone of the environment including all state and even UI layout. This feature is great for sharing reproducibles in issues, but also good for blog posts or solutions on Stack Overflow.
 
-![Collaboration](/gitpod-launch/collaboration.png)
+![Collaboration: Share Running Workspace or Snapshot](/gitpod-launch/collaboration.png)
 
 ## Pricing
 

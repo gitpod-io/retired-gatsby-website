@@ -9,7 +9,7 @@ image: https://cdn-images-1.medium.com/max/11236/1*YaZqFJXHopwW0puvvmfEew.png
 
 Gitpod is a web-based IDE. As such one would think it only works for web-based projects or anything else that does not require a native UI. However, there’s still a plethora of native UI applications around and many of them are here to stay. In this article we’ll go through how to use Gitpod for developing native desktop UI applications.
 
-![](https://cdn-images-1.medium.com/max/11236/1*YaZqFJXHopwW0puvvmfEew.png)
+![VSCode in Gitpod](https://cdn-images-1.medium.com/max/11236/1*YaZqFJXHopwW0puvvmfEew.png)
 
 A few days ago [Gero introduced Docker builds to Gitpod](/blog/docker-in-gitpod) with which you can bring your own Dockerfile (instead of a pre-built image), and Gitpod will build the image for you. We’ll use that feature to setup a cloud-based development environment for native UI applications.
 
@@ -44,7 +44,7 @@ Using this setup, we can build and [run Visual Studio Code in Gitpod](https://gi
 
 I added this setup to [definitely-gp](https://github.com/gitpod-io/definitely-gp/tree/master/vscode), so that when you open the VS code repository in Gitpod, it will build the application, and start it. To see and interact with the application, open the noVNC session that’s served on port 6080:
 
-![](https://cdn-images-1.medium.com/max/2000/1*-yHSkPGNR6Vs07MjLKQAUA.gif)
+![How to open noVNC served on port 6080](https://cdn-images-1.medium.com/max/2000/1*-yHSkPGNR6Vs07MjLKQAUA.gif)
 
 ## Conclusion
 

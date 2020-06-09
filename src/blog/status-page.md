@@ -23,7 +23,7 @@ Our [documentation](https://github.com/gitpod-io/gitpod-docs) and website are st
 
 Enter [Statusfy](https://statusfy.co/), an Open Source status page system that can render the status page statically or dynamically from Markdown files. It sports a wide range of deployment options, including pushing the statically generated files to a [GCP bucket](https://cloud.google.com/storage/docs/key-terms#buckets).
 
-![](https://cdn-images-1.medium.com/max/7088/1*8yRrsPnasOhAbZ9CbsTTIg.png)
+![gitpod-status repository in Gitpod](https://cdn-images-1.medium.com/max/7088/1*8yRrsPnasOhAbZ9CbsTTIg.png)
 
 Turns out that Gitpod and Statusfy are perfectly complementary. Say we just found an issue and want to update the status page, the steps are as simple as:
 

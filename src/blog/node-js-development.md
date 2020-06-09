@@ -45,11 +45,11 @@ Now, we can open the created project in Gitpod. You can do it by simply prefixin
 
 The first time, you will need to sign in Gitpod with your GitHub account. GitHub will ask you to authorize read access to your email address. Write access to repositories can be granted later on [your access control page](https://gitpod.io/access-control/).
 
-![](https://cdn-images-1.medium.com/max/5692/1*K8cn3G30eQouKmWQb228LQ.png)
+![Github Authorize Gitpod Page](https://cdn-images-1.medium.com/max/5692/1*K8cn3G30eQouKmWQb228LQ.png)
 
 Gitpod starts a new workspace, which is a Linux-based cloud container, and provides access to it via a VS Code powered online IDE. Workspaces are started on demand and automatically shut-down if you don’t use them. They are continuously replicated and never deleted, so you always can restart a workspace later from [your Gitpod dashboard](https://gitpod.io/workspaces/).
 
-![](https://cdn-images-1.medium.com/max/2608/1*mXM-VDzzmpXCvlAVvQIjVw.gif)
+![How to create a new project on GitHub and then open it in Gitpod](https://cdn-images-1.medium.com/max/2608/1*mXM-VDzzmpXCvlAVvQIjVw.gif)
 
 *If you don’t want to create a new project from scratch, click on [a snapshot link](https://gitpod.io/#snapshot/0d82ae08-c328-4cb5-96e5-7233d5de0c11) of my workspace to try Hello World application. I will cover later how one can make a workspace snapshot.*
 
@@ -71,7 +71,7 @@ By default, each workspace is preconfigured with standard tools like Node.js, np
 
 In order to run the application, type node app.js into the terminal.
 
-![](https://cdn-images-1.medium.com/max/2000/0*KzrRQ41oARG7XoQB)
+![How to run a Node.js application in Gitpod](https://cdn-images-1.medium.com/max/2000/0*KzrRQ41oARG7XoQB)
 
 Of course, you can have more than one terminal to your cloud workspace.
 
@@ -87,17 +87,17 @@ Next up, let’s see how we can debug the application:
 
 Our program should run, and when a breakpoint hits you can inspect call stack, variables and even use the debug console to evaluate expressions.
 
-![](https://cdn-images-1.medium.com/max/2612/0*VHUqe81CKwdHq7uK)
+![How to debug a Node.js application in Gitpod](https://cdn-images-1.medium.com/max/2612/0*VHUqe81CKwdHq7uK)
 
 ### Working with Git
 
 Let’s have a look at how we can share our changes through Git. Open the Git view, stage your changes, enter a commit message and click commit. You can also open a diff editor by clicking on changed files and push new commits to GitHub with Git: Push... command.
 
-![](https://cdn-images-1.medium.com/max/2612/0*FqWgZy08qIkj3qVp)
+![How to make a commit in Gitpod](https://cdn-images-1.medium.com/max/2612/0*FqWgZy08qIkj3qVp)
 
 If you have not granted write access to your repositories yet, Gitpod will ask for it. Grant permissions and try to push again.
 
-![](https://cdn-images-1.medium.com/max/3380/1*bHchL7DVfmfdYWqjWsqRaw.png)
+![Gitpod prompt grant write access to your repositories](https://cdn-images-1.medium.com/max/3380/1*bHchL7DVfmfdYWqjWsqRaw.png)
 
 ## Automating Node.js setup
 
@@ -115,7 +115,7 @@ In the terminal type gp init.
 
 1. Now press enter until the tasks section. Type node app.js. The tasks are automatically started whenever a workspace gets started. You can have multiple tasks and use different lifecycles. Each task will be opened in a separate terminal.
 
-![](https://cdn-images-1.medium.com/max/2000/0*yVXQ8QGJEmCnNQ52)
+![How to use "gp init" to generate the Gitpod config files](https://cdn-images-1.medium.com/max/2000/0*yVXQ8QGJEmCnNQ52)
 
 The created files will be automatically opened in the editor. Let’s change the config so that it starts two tasks in separate terminals:
 
@@ -153,7 +153,7 @@ Let’s open a new pull request from Gitpod:
 
 * after that, the Pull Request view will be updated and you can open a new pull request.
 
-![](https://cdn-images-1.medium.com/max/2608/0*vHysVOgVJaH6-j1t)
+![How to make a PR in Gitpod](https://cdn-images-1.medium.com/max/2608/0*vHysVOgVJaH6-j1t)
 
 ### Reviewing a Pull Request
 
@@ -161,13 +161,13 @@ As I’ve mentioned at the beginning Gitpod treats each GitHub repository as a p
 
 Let’s go to the pull request page on GitHub and prefix its URL with gitpod.io/#, just like we did initially:
 
-![Opening a PR with new workspace image can take some time since Gitpod needs to build the image. But it is only rebuilt when changed.](https://cdn-images-1.medium.com/max/2608/0*YXS_V_quV3Lg7Y-X)*Opening a PR with new workspace image can take some time since Gitpod needs to build the image. But it is only rebuilt when changed.*
+![How to open a Gitpod workspace from a PR page on GitHub](https://cdn-images-1.medium.com/max/2608/0*YXS_V_quV3Lg7Y-X)*Opening a PR with new workspace image can take some time since Gitpod needs to build the image. But it is only rebuilt when changed.*
 
 As you can see, Gitpod opens with a branch for your pull request. PR file changes are presented on the left sidebar to review. Our init and command workspace tasks are executed in terminals, Node.js is 10.x now, and Hello World is printed.
 
 While reviewing in Gitpod, you can comment, change the code to address comments, suggest new changes, etc. When you are done, merge your pull request from Gitpod as well.
 
-![](https://cdn-images-1.medium.com/max/2608/0*KIZkXiyQv3aZzsjA)
+![How to review a PR in Gitpod](https://cdn-images-1.medium.com/max/2608/0*KIZkXiyQv3aZzsjA)
 
 ## Working Together
 
@@ -179,7 +179,7 @@ You can share you running workspaces with colleagues to collaborate on exactly t
 
 In order to share a running workspace: click on your account avatar, select Share Running Workspace, enable sharing, copy a link and share the copied link with your colleagues.
 
-![Both users use exactly the same workspace and see the shared output in terminals.](https://cdn-images-1.medium.com/max/2608/0*yp7USviOYhUm_P40)*Both users use exactly the same workspace and see the shared output in terminals.*
+![How to share a running Gitpod workspace](https://cdn-images-1.medium.com/max/2608/0*yp7USviOYhUm_P40)*Both users use exactly the same workspace and see the shared output in terminals.*
 
 ### Showcasing Node.js applications
 
@@ -187,7 +187,7 @@ You can take a complete snapshot (clone) of your workspace, even including your 
 
 In order to share a workspace snapshot: click on your account avatar, select Share Workspace Snapshot, copy a link and share the copied link where you want.
 
-![The [shared workspace snapshot](https://gitpod.io/#snapshot/14dc69f1-0e8c-4a36-b221-0ab16e91326e) preserves not only the development setup but the IDE layout and even selection in the editor.](https://cdn-images-1.medium.com/max/2608/0*-n2I6-4fPuKK70_5)*The [shared workspace snapshot](https://gitpod.io/#snapshot/14dc69f1-0e8c-4a36-b221-0ab16e91326e) preserves not only the development setup but the IDE layout and even selection in the editor.*
+![How to share a Gitpod workspace Snapshot](https://cdn-images-1.medium.com/max/2608/0*-n2I6-4fPuKK70_5)*The [shared workspace snapshot](https://gitpod.io/#snapshot/14dc69f1-0e8c-4a36-b221-0ab16e91326e) preserves not only the development setup but the IDE layout and even selection in the editor.*
 
 ## Developing full-stack Node.js applications
 

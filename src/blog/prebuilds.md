@@ -13,7 +13,7 @@ A while ago Sven described the idea of [development environment as code](/blog/d
 
 However, a machine-reproducible version of your development setup enables another powerful capability: your dev-environment can already checkout the latest code, download dependencies and build everything. Once you actually open your IDE, everything’s ready for you. No more siting there and watching ~~paint dry~~ yarn download the internet.
 
-![[https://xkcd.com/303/](https://xkcd.com/303/) — Compiling](/compiling-xkcd.png)
+![[The number 1 programmer excuse for legitimately slacking off: "My Code is compiling." https://xkcd.com/303/](https://xkcd.com/303/) — Compiling](/compiling-xkcd.png)
 
 ## Paint dries even when you’re not watching
 
@@ -26,7 +26,7 @@ The result of *continuous development* is a ready-to-code workspace. The second 
 
 ## How could we build this?
 
-![Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](./prebuilds/colored-hands.jpg)*Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
+![person hands with green and blue paint. Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](./prebuilds/colored-hands.jpg)*Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
 To build a continuous development system we need three things:
 
