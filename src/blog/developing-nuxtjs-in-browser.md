@@ -15,19 +15,19 @@ Version 2.0 of [Nuxt.js has just been released](https://medium.com/@nuxt_js/nuxt
 
 [Gitpod.io](http://gitpod.io) uses GitHub as its dashboard. That means you start your workspaces from any states of any GitHub project. So new projects are created through GitHub, too:
 
-![](https://cdn-images-1.medium.com/max/2048/0*I9sury8siGTS6GtF)
+![GitHub Dashboard "repositories" tab](https://cdn-images-1.medium.com/max/2048/0*I9sury8siGTS6GtF)
 
 Clicking anywhere on Github’s Octocat logo on the top left will bring you to your dashboard, where you can create a new repository.
 
 Enter any name description, you can later change it.
 
-![](https://cdn-images-1.medium.com/max/3200/0*bY21cCYdJYoj7B48)
+![GitHub "Create a new repository" page](https://cdn-images-1.medium.com/max/3200/0*bY21cCYdJYoj7B48)
 
 ## **Step 2: Start a Gitpod workspace**
 
 From your newly created but still empty project you can now start a Gitpod workspace. To do so prefix the GitHub URL with **gitpod.io/#**:
 
-![](https://cdn-images-1.medium.com/max/2776/0*NjvEmIjiTVwbTIaA)
+![Start a new Gitpod workspace by prefixng the repo URL with gitpod.io#](https://cdn-images-1.medium.com/max/2776/0*NjvEmIjiTVwbTIaA)
 
 ## **Step 3: Run `yarn create nuxt-app`.**
 
@@ -49,7 +49,7 @@ To do so open the package.json file and add the parameter
 
 as shown below:
 
-![](https://cdn-images-1.medium.com/max/2468/0*WrSSKAEkumvfIv6d)
+![package.json allow external access to the dev server](https://cdn-images-1.medium.com/max/2468/0*WrSSKAEkumvfIv6d)
 
 ## Step 5: Start the dev server
 

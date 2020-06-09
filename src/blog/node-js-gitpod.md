@@ -18,13 +18,13 @@ Now, it is available, and I would like to give you a run through the basics of N
 
 Start a new workspace for the example GitHub repository: [https://gitpod.io/#https://github.com/gitpod-io/nodejs-shopping-cart](https://gitpod.io/#https://github.com/gitpod-io/nodejs-shopping-cart)
 
-![](https://cdn-images-1.medium.com/max/2992/0*WySkgfqLHyOkQq_c)
+![Start a new Gitpod workspace for the shopping cart example via prefixing the URL with gitpod.io#](https://cdn-images-1.medium.com/max/2992/0*WySkgfqLHyOkQq_c)
 
 A new Gitpod workspace will be opened. Required dependencies are installed automatically since the repository is configured with [a .gitpod.yml file](https://www.gitpod.io/docs/configuration/). You can see it in the terminal, opened in the bottom area.
 
 ## Step 1: Start debugging
 
-![](https://cdn-images-1.medium.com/max/2000/0*cm6tolHouEztvvuC)
+![Gitpod workspace](https://cdn-images-1.medium.com/max/2000/0*cm6tolHouEztvvuC)
 
 In order to start debugging, you should open the debug view first. You can do it via Viewmain menu or with Ctrl/Cmd+Shift+D.
 
@@ -32,17 +32,17 @@ The debug view allows you to configure launch configurations, start and manage d
 
 Node.js Shopping Cart is an Express.js web-application. The repository already has a pre-configured Launch Program configuration, which starts the web server Node.js process in the debug mode. Let’s run it with F5 or by pressing the run button left to the configuration drop-down.
 
-![](https://cdn-images-1.medium.com/max/3644/1*SUD-Cfy3YC86JJmgo1bLpA.png)
+![Gitpod Debug Tab](https://cdn-images-1.medium.com/max/3644/1*SUD-Cfy3YC86JJmgo1bLpA.png)
 
 ## Step 2: Preview the application
 
 A notification should pop-up suggesting you open an application side-by-side with an editor or externally, in a new browser tab. Let’s open it side-by-side to be able to debug and use our app at the same time.
 
-![](https://cdn-images-1.medium.com/max/4512/1*65SBIeZyvn_31V9biYKNAQ.png)
+![Gitpod Preview Notification](https://cdn-images-1.medium.com/max/4512/1*65SBIeZyvn_31V9biYKNAQ.png)
 
 Take your time and play with the app. You can review items to buy and in your cart, move them into or out of your cart.
 
-![](https://cdn-images-1.medium.com/max/7676/1*M6KN6axYYOW8iqlnqsXpVw.png)
+![Gitpod workspace shopping cart application preview](https://cdn-images-1.medium.com/max/7676/1*M6KN6axYYOW8iqlnqsXpVw.png)
 
 ## Step 3: Pause on a breakpoint
 
@@ -50,15 +50,15 @@ In this step we debug what happens when a user navigates to the homepage.
 
 First, we need to add a breakpoint to the routing logic. It is defined in routes/index.js. You can open that file from the navigator or using the quick file palette (Ctrl/Cmd+P) .
 
-![](https://cdn-images-1.medium.com/max/2500/1*6ni4GKFo9FFJoh_r8lvLVg.png)
+![Gitpod quick file pallete](https://cdn-images-1.medium.com/max/2500/1*6ni4GKFo9FFJoh_r8lvLVg.png)
 
 Next, add a breakpoint in the editor margin against a line which you want to debug. A route callback handling / path looks promising.
 
-![Breakpoints are displayed in the debug view and applied to currently running sessions.](https://cdn-images-1.medium.com/max/2988/1*AaqYqH5LILFw4g0-jNu5Bg.png)*Breakpoints are displayed in the debug view and applied to currently running sessions.*
+![Debugging: Breakpoints](https://cdn-images-1.medium.com/max/2988/1*AaqYqH5LILFw4g0-jNu5Bg.png)*Breakpoints are displayed in the debug view and applied to currently running sessions.*
 
 Now, in the app, try navigating to the homepage. The debug session will pause on the breakpoint. You can traverse the current stack trace, inspect variables and control the execution flow with the debug actions toolbar:
 
-![](https://cdn-images-1.medium.com/max/2000/1*Ru0MXHEcU_RzQEAKX30seA.png)
+![Gitpod Debug Menu](https://cdn-images-1.medium.com/max/2000/1*Ru0MXHEcU_RzQEAKX30seA.png)
 
 ## Step 4: Inspect and modify data
 
@@ -72,7 +72,7 @@ There are several ways to see variables’ values:
 
 You can always double-click on any variable to modify its value.
 
-![](https://cdn-images-1.medium.com/max/7676/1*_zf4PL_AWfzeBZlp2mRjZQ.png)
+![Debug: Inspect and Modify data](https://cdn-images-1.medium.com/max/7676/1*_zf4PL_AWfzeBZlp2mRjZQ.png)
 
 ## Next steps
 

@@ -44,7 +44,7 @@ Unfortunately, the pain doesn’t stop here.
 
 You probably know the famous phrase “It works on my machine”? The situation when a bug only appears on one machine and is hard to reproduce on others? **That feeling when a bad thing happens in production, but you can’t reproduce it locally?** Not very surprising, though, as long you are running the code on a different platform based on a different setup.
 
-![](https://cdn-images-1.medium.com/max/2000/1*I3-fRXyMaZDfesAxyA2eKw.jpeg)
+![But it works... On my machine](https://cdn-images-1.medium.com/max/2000/1*I3-fRXyMaZDfesAxyA2eKw.jpeg)
 
 ## **Going back to fix something on an old branch**
 
@@ -92,6 +92,6 @@ It integrates with code hosting platforms such as GitHub. It eliminates all the 
 
 Applying the lessons learned from DevOps to our development setup can save us so much precious time and energy. [ActiveState’s Developer Survey 2018 ](https://www.activestate.com/developer-survey-2018-open-source-runtime-pains/)underlines this with some numbers:
 
-![](https://cdn-images-1.medium.com/max/3200/1*Vvl3N-1hDANiy15Pc9xeiQ.png)
+![ActiveState’s Developer Survey 2018: How much time do you spent on managing dependencies and development tools](https://cdn-images-1.medium.com/max/3200/1*Vvl3N-1hDANiy15Pc9xeiQ.png)
 
 Do we really need to welcome new colleagues or contributors with a painful on-boarding experience? Let’s skip the prose in the *readme* and write code to have our dev environment setup **automated, reproducible, and versioned.**

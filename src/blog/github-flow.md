@@ -11,7 +11,7 @@ As software developers, we already spend a lot of our time in browsers. Be it fo
 
 However, when it comes to the actual coding and debugging, we have to prepare our local development environments manually. We do this based on often outdated, incomplete or just plain wrong documentation. The transition from an online repository to the actual coding is a barrier that hinders thousands of possible contributions every day. Coding needs to get more accessible.
 
-![(Source: [http://dilbert.com/strip/2017-01-02)](http://dilbert.com/strip/2017-01-02))](https://cdn-images-1.medium.com/max/2048/0*f260tcqJvgvCguFu)*(Source: [http://dilbert.com/strip/2017-01-02)](http://dilbert.com/strip/2017-01-02))*
+![(Programming Environment - Dilbert by Scott Adams. Source: [http://dilbert.com/strip/2017-01-02)](http://dilbert.com/strip/2017-01-02))](https://cdn-images-1.medium.com/max/2048/0*f260tcqJvgvCguFu)*(Source: [http://dilbert.com/strip/2017-01-02)](http://dilbert.com/strip/2017-01-02))*
 
 But that only needs to be done once, right? Unfortunately, no. Coding is a team sport. We are not just adding code, but also do code reviews or fix bugs on maintenance branches which often require a different setup. Moreover, today’s applications are loosely coupled compositions of independent microservices and sub-projects, written in different languages requiring different development setups. Consequently, we have to maintain setups for multiple projects and branches, trying to keep documentation in sync including all the cases for the different platforms. As a result, we are wasting precious time every day. We should spend this time and effort on more fun and productive things.
 

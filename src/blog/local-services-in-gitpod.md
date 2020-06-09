@@ -14,7 +14,7 @@ On top of that, they do incur additional cost if used often.
 
 ## Inlets to the rescue
 
-![Inlets](local-services-in-gitpod/concept.png)
+![Inlets to the Rescue](local-services-in-gitpod/concept.png)
 
 [Inlets](https://github.com/inlets/inlets) is a great piece of kit written by [Alex Ellis](https://twitter.com/alexellisuk) which is basically the Open-Source version of the services mentioned above.
 > Of course you can [contribute to inlets](https://github.com/inlets/inlets#development) itself using Gitpod.
