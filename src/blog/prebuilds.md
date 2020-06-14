@@ -26,7 +26,7 @@ The result of *continuous development* is a ready-to-code workspace. The second 
 
 ## How could we build this?
 
-![person hands with green and blue paint. Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](./prebuilds/colored-hands.jpg)*Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
+![Hands with paint on them. Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](./prebuilds/colored-hands.jpg)*Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
 To build a continuous development system we need three things:
 
