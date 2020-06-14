@@ -15,7 +15,7 @@ Here are a few Vaadin example projects that are already automated with Gitpod:
 
 </div>
 
-## Configuring GitPod for a Vaadin project
+## Configuring Gitpod for a Vaadin project
 
 Start by downloading a [**Vaadin and Spring Boot** project starter](https://vaadin.com/start) if you don't have a Vaadin project from before.
 
