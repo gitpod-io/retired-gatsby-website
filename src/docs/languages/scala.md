@@ -61,10 +61,10 @@ Say your project needs a specific Scala version. You can use [scalaenv](https://
 RUN brew install scalaenv
 ```
 
-Then, say you need Scala version `2.9.3`, you would add the following line as well:
+Then, say you need Scala version `2.12.11`, you would add the following line as well:
 
 ```Dockerfile
-RUN scalaenv install scala-2.9.3 && scalaenv global scala-2.9.3
+RUN scalaenv install scala-2.12.11 && scalaenv global scala-2.12.11
 ```
 
 ## Using coursier, an artifact fetcher for Scala
@@ -104,7 +104,7 @@ RUN sudo env "PATH=$PATH" coursier bootstrap org.scalameta:scalafmt-cli_2.12:2.4
   -r sonatype:snapshots \
   -o /usr/local/bin/scalafmt --standalone --main org.scalafmt.cli.Cli
 
-RUN scalaenv install scala-2.9.3 && scalaenv global scala-2.9.3
+RUN scalaenv install scala-2.12.11 && scalaenv global scala-2.12.11
 ```
 
 You will notice that all the `brew install` commands are on the same line. We recommend grouping similar commands together to minimize the number of [Docker layers](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#minimize-the-number-of-layers).
