@@ -90,6 +90,15 @@ export const allAuthors: { [idx: string]: Author } = {
             linkedin: 'mirospoenemann'
         },
         description: "Miro is thrilled about innovation on programming languages, DSLs, graphical modeling and web technologies."
+    },
+    'JesterOrNot': {
+        name: "Sean Hellum",
+        socialProfiles: {
+            github: "JesterOrNot",
+            twitter: '',
+            linkedin: 'sean-hellum-84ba401a2'
+        },
+        description: "Sean is a developer advocate and rustacean with a passion for Docker, Linux, Bash, Rust, and CLIs"
     }
 }
 
