@@ -68,7 +68,7 @@ If you want to include all files in this search, press <kbd>Ctrl+P</kbd> once ag
 
 ![Open All Files Search](./images/56_Search/open_file_all.jpg)
 
-Selecting a file will open it an an editor.
+Selecting a file will open it in an editor.
 
 ## Open Workspace Symbol
 
