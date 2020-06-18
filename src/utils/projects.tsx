@@ -20,8 +20,8 @@ export const projects = [
     },
     {
         image: PY,
-        title: 'Python & VNC',
-        href: "https://github.com/techwithtim/Hangman",
+        title: 'Python & Flask',
+        href: "https://github.com/breatheco-de/python-flask-api-tutorial",
         alt: "Python Logo",
     },
     {
