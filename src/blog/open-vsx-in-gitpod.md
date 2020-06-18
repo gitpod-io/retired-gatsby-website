@@ -15,7 +15,7 @@ Since [we've announced](/blog/open-vsx/) the Open VSX marketplace a few weeks ag
 
 To seed the registry, we've initially added the most popular open-source extensions ourselves, so that early adopters could immediately find important extensions. We could double down on adding more extensions this way, but it doesn’t seem to be necessary, because today, there are already more than 200 developers publishing their own extensions to Open VSX. 🎉
 
-Adoption from the tool-side is going well, too. We started by supporting Open VSX from within [Theia](https://theia-ide.org). Just a couple of days ago, [VSCodium](https://github.com/VSCodium/vscodium#extensions-and-the-marketplace), the true open-source version of VS Code, shipped a new release that connects directly to Open VSX instead of Microsoft's proprietary marketplace. Today, we're excited to bring you Open VSX support in Gitpod as well.
+Adoption from the tool-side is going well, too. We started by supporting Open VSX from within [Theia](https://theia-ide.org). Just a couple of days ago, [VSCodium](https://github.com/VSCodium/vscodium#extensions-and-the-marketplace), the true open-source version of VS Code, shipped a new release that connects directly to Open VSX instead of Microsoft's proprietary marketplace. Today, we're excited to bring you Open VSX support in [Gitpod](https://gitpod.io) as well.
 
 ## Installing Extensions in Gitpod
 
