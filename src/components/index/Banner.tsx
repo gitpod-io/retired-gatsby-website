@@ -25,7 +25,7 @@ const Styled = styled.div`
         }
 
         &__text-box {
-            margin-top: 12rem;
+            margin-top: 8rem;
 
             h1 {
                 br {
@@ -47,7 +47,7 @@ const Styled = styled.div`
             }
 
             @media(min-width: ${sizes.breakpoints.lg}) {
-                width: 40%;
+                width: 50%;
             }
         }
 
@@ -68,7 +68,7 @@ const Styled = styled.div`
                 transform: scale(1.15) translate(6rem, 6rem);
 
                 &-container {
-                    width: 50%;
+                    width: 40%;
                 }
             }
         }
@@ -105,10 +105,9 @@ const Banner = () => (
                 <header role="banner" className="banner">
                     <div className="banner__text-box">
                         <h1>
-                            Are You <br />Ready-To-Code?
-                            <span>Start Instantly. Anywhere.</span>
+                            Dev Environment as Code <span>for Modern DevOps Teams.</span>
                         </h1>
-                        <p>Gitpod launches ready-to-code dev environments<br /> for your GitHub or GitLab project with a single click.</p>
+                        <p>Describe your dev environment as code and get a fully prebuilt, ready-to-code development environment for any GitLab, GitHub and Bitbucket project.</p>
                         <div className="btn-wrapper">
                             <a href="https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic" className="btn btn--cta">Let's Try It!</a>
                             <br aria-hidden={true} />
