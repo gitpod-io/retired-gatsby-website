@@ -69,7 +69,7 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
 
             <Offers
                 title="GitHub Student Offer"
-                para={<p>With the <a href="https://education.github.com/pack" target="_blank" rel="noopener">GitHub Student Developer Pack</a>, you get the same features as with our usual plans but at a much better price.
+                para={<p>With the <a href="https://education.github.com/pack/?utm_source=github+gitpod" target="_blank" rel="noopener">GitHub Student Developer Pack</a>, you get the same features as with our usual plans but at a much better price.
                     <br />
                     We’re happy to be able to empower student developers participating in it.</p>}
                 offers={offers}
