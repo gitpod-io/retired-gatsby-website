@@ -9,7 +9,7 @@ import ExternalLink from '../components/ExternalLink'
 const StyledDropDown = styled.div`
     z-index: 900;
 
-    @media(min-width: ${sizes.breakpoints.lg}) {
+    @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
         position: relative;
     }
 
@@ -38,7 +38,7 @@ const StyledDropDown = styled.div`
             height: 1rem;
         }
 
-        @media(min-width: ${sizes.breakpoints.lg}) {
+        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             display: none;
         }
     }
@@ -47,7 +47,7 @@ const StyledDropDown = styled.div`
         display: flex;
         flex-direction: column;
 
-        @media(min-width: ${sizes.breakpoints.lg}) {
+        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             position: absolute;
             top: 2.5rem;
             left: 7%;
@@ -72,7 +72,7 @@ const StyledDropDown = styled.div`
     }
 
     li {
-        @media(min-width: ${sizes.breakpoints.lg}) {
+        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             margin: 1rem 0 0;
             padding: 0 1.5rem;
             font-size: 90%;
@@ -90,7 +90,7 @@ const StyledDropDown = styled.div`
     .shown {
         opacity: 1;
 
-        @media(min-width: ${sizes.breakpoints.lg}) {
+        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             background: ${colors.white};
             transform: scale(1) translate(-50%, 0);
         }
@@ -103,7 +103,7 @@ const StyledDropDown = styled.div`
             display: none;
         }
 
-        @media(min-width: ${sizes.breakpoints.lg}) {
+        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             transform: scale(0) translate(-50%, -20rem);
         }
     }

@@ -1,4 +1,4 @@
-export const features = [
+export const textCardsData = [
     /*{
         title: "Better & Faster Security",
         paragraphs: ['Your source code will never be on the developers laptop or workstations, while your new runtimes, libs and frameworks will roll out faster, as they only need to be on the server and not on the developers machines.', 'Self-Hosted Gitpod can run in your corporate network, keep your data on your infrastructure, and does not require and internet connection.']

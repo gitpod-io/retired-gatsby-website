@@ -12,7 +12,6 @@ const StyledNav = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 4rem 0;
-    background: ${colors.offWhite};
     position: relative;
 
     @media(max-width: ${sizes.breakpoints.lg}) {
@@ -34,7 +33,8 @@ const StyledNav = styled.nav`
     }
 
     img {
-        height: 4rem;
+        height: 4.2rem;
+        transform: scale(.97);
     }
 
     .nav__items {
@@ -47,7 +47,6 @@ const StyledNav = styled.nav`
             padding-top: 8rem;
             min-height: 95vh;
             align-items: center;
-            background: ${colors.offWhite};
             z-index: 1;
         }
 
@@ -69,8 +68,7 @@ const StyledNav = styled.nav`
     .nav__item {
         cursor: pointer;
 
-        @media(min-width: ${sizes.breakpoints.lg}) {
-
+        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             &:not(:last-child) {
                 margin-right: 5rem;
             }
@@ -94,7 +92,7 @@ const StyledNav = styled.nav`
         display: flex;
         align-items: center;
 
-        @media(min-width: ${sizes.breakpoints.lg}) {
+        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             display: none;
         }
 
@@ -102,7 +100,7 @@ const StyledNav = styled.nav`
             margin-right: 1rem;
             transform: translateY(-1px);
 
-            @media(min-width: ${sizes.breakpoints.md}) {
+            @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
                 margin-right: 2rem;
             }
         }
@@ -116,7 +114,6 @@ const StyledNav = styled.nav`
     .nav__btn {
         position: relative;
         cursor: pointer;
-        background: ${colors.offWhite};
         border: none;
         z-index: 10000;
         width: 4rem;
@@ -124,8 +121,6 @@ const StyledNav = styled.nav`
         transition: all .2s;
 
         &:hover {
-            background: ${colors.offWhite};
-
             svg {
                 stroke: ${colors.lightBlue};
                 fill: ${colors.lightBlue};
@@ -148,7 +143,7 @@ const StyledNav = styled.nav`
                     transform: scale(.7);
                 }
 
-                @media(min-width: ${sizes.breakpoints.md}) {
+                @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
                     transform: scale(.8);
                 }
             }
@@ -166,7 +161,7 @@ const StyledNav = styled.nav`
             }
         }
 
-        @media(min-width: ${sizes.breakpoints.lg}) {
+        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             display: none;
         }
 
@@ -235,7 +230,7 @@ const Nav = () => {
     }
 
     return (
-        <div className="grey-container" style={{ zIndex: 9999 }}>
+        <div style={{ zIndex: 9999 }} id="top">
             <Global
                 styles={css`
                         html {
@@ -304,7 +299,7 @@ const Nav = () => {
                                 ]}
                             />
                         </li>
-                        <li className="nav__item"><a href="https://gitpod.io/login/" rel="noopener" className="btn">Log In</a></li>
+                        <li className="nav__item"><a href="https://gitpod.io/login/" rel="noopener" className="btn btn--small">Log In</a></li>
                     </ul>
 
                 </StyledNav>

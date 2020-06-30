@@ -2,18 +2,19 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import Cloud from '../resources/cloud.svg'
-import Details from '../components/Details'
+import MoreInfo from '../components/MoreInfo'
 import Banner from '../components/Banner'
 import ActionCard from '../components/ActionCard'
-import { FeatureProps } from '../components/self-hosted/Feature'
-import Features from '../components/self-hosted/Features'
+import { FeatureItemProps } from '../components/FeatureItem'
+import FeaturesSection from '../components/FeaturesSection'
 import Control from '../resources/control.svg'
 import Support from '../resources/support.svg'
 import GithubGitlab from '../resources/github-gitlab.svg'
 import Adminstration from '../resources/administration.svg'
 import Install from '../components/self-hosted/Install'
+import { MoreInfoContents } from '../utils/moreInfoContents'
 
-const features: FeatureProps[] = [
+const features: FeatureItemProps[] = [
     {
         title: 'Full Data Control',
         text: 'All data remains on your infrastructure, as Gitpod can run behind corporate firewalls and on air-gapped networks.',
@@ -39,25 +40,22 @@ const features: FeatureProps[] = [
 const SelfHostedPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/self-hosted/' title="Self-Hosted">
         <>
-            <div className="grey-container">
+            {/* ----- Banner ----- */}
 
-                {/* ----- Banner ----- */}
-
-                <Banner
-                    subtitle="Take Control of Your Source Code"
-                    title={<h1>
-                        Self-Host Gitpod <br/> on Your Own Infrastructure.
-                    </h1>}
-                    linkPath="/self-hosted/#install"
-                    linkText="Install Now"
-                    paragraph="Free for up to 5 Users."
-                    img={<object role="presentation" tabIndex={-1} data={Cloud} />}
+            <Banner
+                subtitle="Take Control of Your Source Code"
+                title={<h1>
+                    Self-Host Gitpod <br/> on Your Own Infrastructure.
+                </h1>}
+                linkPath="/self-hosted/#install"
+                linkText="Install Now"
+                paragraph="Free for up to 5 Users."
+                img={<object role="presentation" tabIndex={-1} data={Cloud} />}
                 />
-            </div>
 
             {/* ----- Section Features ----- */}
 
-            <Features features={features} />
+            <FeaturesSection features={features} />
 
             {/* ----- Section Install ----- */}
 
@@ -74,13 +72,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
                 anchors={[{ href: '/contact/', subject: 'I have a question regarding Gitpod Self-Hosted', text: 'Contact' }]}
             />
 
-            {/* ----- Section More About Self Hosting ----- */}
-
-            <Details
-                title="More About Gitpod Self-Hosted"
-                text="Learn about its requirements, installation steps, and pricing model."
-                anchors={[{ href: '/docs/self-hosted/latest/self-hosted/', text: 'Documentation' }, { href: '/pricing/#self-hosted', text: 'Pricing' }]}
-            />
+            <MoreInfo {...MoreInfoContents.selfHosted}/>
         </>
     </IndexLayout>
 )

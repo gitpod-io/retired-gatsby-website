@@ -56,17 +56,17 @@ const offers: PricingBoxProps[] = [
 
 const GithubStudentPackPage: React.SFC<{}> = () => (
     <IndexLayout canonical="/github-student-developer-pack/" title="GitHub Student Developer Pack">
+
+        <Banner
+            subtitle="GitHub Student Developer Pack"
+            title={<h1>Make Your Life Easier with Gitpod</h1>}
+            paragraph={<span>With Gitpod you have no more tedious setups, you save hours of compiling code, and you can start coding from any device, immediately.</span>}
+            linkPath="https://gitpod.io/subscription/"
+            linkText="Claim Offer"
+            img={<img src={BackPack} alt="GitHub Backpack" />}
+        />
+
         <div className="grey-container">
-
-            <Banner
-                subtitle="GitHub Student Developer Pack"
-                title={<h1>Make Your Life Easier with Gitpod</h1>}
-                paragraph={<span>With Gitpod you have no more tedious setups, you save hours of compiling code, and you can start coding from any device, immediately.</span>}
-                linkPath="https://gitpod.io/subscription/"
-                linkText="Claim Offer"
-                img={<img src={BackPack} alt="GitHub Backpack" />}
-            />
-
             <Offers
                 title="GitHub Student Offer"
                 para={<p>With the <a href="https://education.github.com/pack/?utm_source=github+gitpod" target="_blank" rel="noopener">GitHub Student Developer Pack</a>, you get the same features as with our usual plans but at a much better price.
@@ -77,7 +77,7 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
         </div>
 
         <div className="row">
-                <Quote
+            <Quote
                 title="Stop wasting time with tedious setups, learn amazing programming skills instead!"
             />
 

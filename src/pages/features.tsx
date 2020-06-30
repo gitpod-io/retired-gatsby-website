@@ -1,31 +1,28 @@
 import React from 'react'
 
 import IndexLayout from '../layouts'
-import ScrollToTopButton from '../components/ScrollToTopButton'
-import StartFree from '../components/features/StartFree'
+import BackToTopButton from '../components/BackToTopButton'
 import Intro from '../components/features/Intro'
-import FeaturesList from '../components/features/FeaturesList'
-
+import FeatureCards from '../components/FeatureCards'
+import StartForFree from '../components/features/StarFortFree'
+import { features } from '../utils/features'
 
 const FeaturesPage: React.SFC<{}> = () => (
-    <IndexLayout 
-        canonical='/features/' 
-        title="Features" 
+    <IndexLayout
+        canonical='/features/'
+        title="Features"
         description="Learn about Gitpod's collaboration tools, workspace snapshots, supported programming languages, and much more."
     >
-            <div className="grey-container">
-                <div className="row">
-                    <ScrollToTopButton />
-                    
-                    <Intro />
+        <Intro />
 
-                    <FeaturesList />
-                </div>
-            </div>
+        <FeatureCards 
+            features={features}
+        />
 
-            <StartFree />
+        <StartForFree />
+
+        <BackToTopButton />
     </IndexLayout>
 )
-
 
 export default FeaturesPage

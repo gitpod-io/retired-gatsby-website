@@ -114,7 +114,8 @@ const PricingContainer = styled.div`
     background-color: ${colors.white};
     border-top: 1px solid ${colors.offWhite2};
     padding: 3rem 0 6rem;
-    
+    min-height: 660px;
+
     .cards {
         position: relative;
         padding: 0rem 0 3rem;
@@ -145,7 +146,7 @@ const PricingContainer = styled.div`
 
         &--1 {
             top: 31px;
-            left: 20%;
+            left: 21%;
 
             @media(max-width: 1100px) {
                 left: 19.5%;
@@ -190,8 +191,8 @@ export interface PricingBoxesProps {
 
 const PricingBoxes = ({ isRendered, changeIsRendered }: PricingBoxesProps) => {
     return <Styled>
-        <section className="pricing">
-            <div className="grey-container container--1">
+        <section className="pricing pattern">
+            <div className="container--1">
                 <div className="row">
                     <h1 className="sub">Plans &amp; <strong>Pricing</strong></h1>
                     <Tabs
@@ -200,7 +201,7 @@ const PricingBoxes = ({ isRendered, changeIsRendered }: PricingBoxesProps) => {
                     />
                 </div>
             </div>
-            <PricingContainer className="">
+            <PricingContainer>
                 <div className="cards row">
                     <div
                         className={`pricing__boxes ${isRendered ? 'hide' : 'show'}`}

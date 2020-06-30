@@ -26,9 +26,8 @@ type StaticQueryProps = {
 class IndexLayout extends React.Component<{ title?: string, canonical?: string, description?: string }, {}> {
 
     handleFirstTab = (e :any) => {
-        if (e.keyCode === 9) { // the "I am a keyboard user" key
+        if (e.key === "Tab") { // the "I am a keyboard user" key
             document.body.classList.add('user-is-tabbing');
-            console.log(document.body.classList)
             window.removeEventListener('keydown', this.handleFirstTab);
             window.addEventListener('mousedown', this.handleMouseDownOnce);
         }

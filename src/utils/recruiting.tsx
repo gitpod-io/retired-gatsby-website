@@ -1,4 +1,4 @@
-export const features = [
+export const textCardsData = [
     {
         title: "Controlled Environment",
         paragraphs: ['With Gitpod you eliminate the risk of losing valuable interview time due to a broken setup.', 'Gitpod guarantees that all candidates get the same tools and environment, thus the same preconditions.']

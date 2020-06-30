@@ -59,17 +59,17 @@ const offers: PricingBoxProps[] = [
 
 const GithubTeacherToolBoxPage: React.SFC<{}> = () => (
     <IndexLayout canonical="/github-teacher-toolbox/" title="GitHub Teacher Toolbox" description="With Gitpod you can create coding exams and exercises easily, help out your students via live tutoring, and benefit from a simple onboarding with any device.">
+
+        <Banner
+            subtitle="GitHub Teacher Toolbox"
+            title={<h1>Let’s Focus on Teaching Code, not Tedious Setups!</h1>}
+            paragraph={<span>With Gitpod you can create coding exams and exercises easily, help out your students via live tutoring, and benefit from a simple onboarding with any device. <Link to="/education">Learn more</Link></span>}
+            linkPath="https://gitpod.io/subscription/"
+            linkText="Claim Offer"
+            img={<img src={TeacherBox} alt="GitHub Teacher Toolbox" />}
+        />
+
         <div className="grey-container">
-
-            <Banner
-                subtitle="GitHub Teacher Toolbox"
-                title={<h1>Let’s Focus on Teaching Code, not Tedious Setups!</h1>}
-                paragraph={<span>With Gitpod you can create coding exams and exercises easily, help out your students via live tutoring, and benefit from a simple onboarding with any device. <Link to="/education">Learn more</Link></span>}
-                linkPath="https://gitpod.io/subscription/"
-                linkText="Claim Offer"
-                img={<img src={TeacherBox} alt="GitHub Teacher Toolbox" />}
-            />
-
             <Offers
                 title="GitHub Teacher Toolbox"
                 para={

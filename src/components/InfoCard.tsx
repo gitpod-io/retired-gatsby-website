@@ -17,7 +17,7 @@ const StyledInfoCard = styled.section`
     }
 
     .info {
-        @media(min-width: 830px) {
+        @media(min-width: 831px) {
             flex: 0 0 44%;
 
             &:last-of-type {

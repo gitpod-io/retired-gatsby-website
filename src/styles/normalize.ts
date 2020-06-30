@@ -1,5 +1,6 @@
-import { sizes, colors, borders } from "./variables";
-import DownArrow from '../resources/arrow-down.svg';
+import { sizes, colors, borders } from "./variables"
+import DownArrow from '../resources/arrow-down.svg'
+import Pattern from '../resources/pattern.png'
 
 export default `
     /* ------------------------------------------- */
@@ -40,7 +41,7 @@ export default `
     }
 
     section {
-        padding: 10rem 0;
+        padding: 12rem 0;
 
         @media(max-width: ${sizes.breakpoints.md}) {
             padding: 5rem 0;
@@ -179,6 +180,11 @@ export default `
         outline: none;
     }
 
+    body.user-is-tabbing .trustedBy:focus {
+        border: 2px solid #9ED3FF;
+        outline: none;
+    }
+
     button {
         font-family: inherit;
         outline: none;
@@ -198,6 +204,8 @@ export default `
     }
 
     button, a {
+        cursor: pointer;
+
         &::-moz-focus-inner {
             border: 0;
         }
@@ -207,7 +215,7 @@ export default `
         display: inline-block;
         min-width: 14.5rem;
         padding: .8rem 2.2rem;
-        font-weight: 600;
+        font-weight: 400;
         text-align: center;
         color: ${colors.textDark};
         background: ${colors.white};
@@ -219,14 +227,20 @@ export default `
         &:hover,
         &:focus {
             color: ${colors.white};
-            background: ${colors.lightBlue};
-            border: 2px solid ${colors.lightBlue};
+            background: ${colors.text};
+            border: 2px solid ${colors.text};
         }
 
         &--big {
             padding: 1.5rem 4rem;
             font-size: ${sizes.font.h4};
             font-weight: 600;
+        }
+
+        &--small {
+            padding: .5rem 2rem;
+            font-size: 95%;
+            min-width: auto;
         }
 
         &--cta {
@@ -245,25 +259,37 @@ export default `
             }
         }
 
+        &--grey {
+            color: ${colors.white};
+            background: ${colors.text};
+
+            &:hover,
+            &:focus {
+                color: ${colors.text};
+                background: ${colors.white};
+            }
+        }
+
         &-wrapper {
-            .btn {
-                &:first-of-type {
-                    margin-right: 2.5rem;
+            --gap: 2rem;
 
-                    @media(max-width: 414px) {
-                        margin-right: 0;
-                        margin-bottom: 2rem;
-                    }
-                } 
+            display: flex;
+            flex-wrap: wrap;
+            margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+            width: calc(100% + var(--gap));
+
+            @media(max-width: ${sizes.breakpoints.sm}) {
+                justify-content: center;
             }
 
-            br {
-                display: none;
-
-                @media(max-width: 414px) {
-                    display: block !important;
-                }
+            & > * {
+                margin: var(--gap) 0 0 var(--gap); 
             }
+        }
+
+        &--disabled {
+            opacity: .7;
+            pointer-events: none;
         }
     }
 
@@ -443,6 +469,82 @@ export default `
         width: 1px;
         height: 1px;
         overflow: hidden;
+    }
+
+    .pattern-bg {
+        background: url(${Pattern});
+        background-position: center;
+        background-size: cover;
+    }
+
+    .pattern {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            bottom: 0;
+            top: -15rem;
+            left: -10rem;
+            right: -10rem;
+            height: calc(100% + 15rem);
+            z-index: -100;
+            background: url(${Pattern});
+            background-position: center;
+            background-size: cover;
+
+            @media(min-width: 1340px) {
+                right: -15rem;
+                left: -15rem;
+            }
+
+            @media(min-width: 1420px) {
+                right: -20rem;
+                left: -20rem;
+            }
+
+            @media(min-width: 1520px) {
+                right: -30rem;
+                left: -30rem;
+            }
+
+            @media(min-width: 1720px) {
+                right: -40rem;
+                left: -40rem;
+            }
+
+            @media(min-width: 1890px) {
+                right: -50rem;
+                left: -50rem;
+            }
+
+            @media(min-width: 2000px) {
+                right: -65rem;
+                left: -65rem;
+            }
+
+            @media(min-width: 2100px) {
+                right: -75rem;
+                left: -75rem;
+            }
+
+            @media(min-width: 2300px) {
+                left: -85rem;
+                right: -85rem;
+            }
+
+            @media(min-width: 2400px) {
+                left: -95rem;
+                right: -95rem;
+            }
+        }
+
+        &--full-vp-height {
+            &::after {
+                max-height: 100vh;
+            }
+        }
     }
 
 `

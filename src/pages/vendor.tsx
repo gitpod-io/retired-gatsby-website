@@ -3,9 +3,9 @@ import React from 'react'
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
 import Vendor from '../resources/vendor.svg'
-import Features from '../components/Features'
-import Feature from '../components/Feature'
-import { features } from '../utils/vendor'
+import TextCards from '../components/TextCards'
+import TextCard from '../components/TextCard'
+import { textCardsData } from '../utils/vendor'
 import Quote from '../components/Quote'
 import VendorBG from '../resources/vendor-bg.png'
 import Bg from '../components/Bg'
@@ -13,14 +13,13 @@ import ActionCard from '../components/ActionCard'
 import PricingTable from '../components/PricingTable'
 import PopOver from '../components/PopOver'
 import Circle from '../components/Circle'
-import Layer from '../resources/layer.svg'
+import Bitbucket from '../resources/bitbucket.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
 import { Link } from 'gatsby'
 
 const VendorPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/vendor/' title="Vendor">
-        <div className="grey-container">
 
             <Banner
                 subtitle="Gitpod Vendor"
@@ -29,18 +28,19 @@ const VendorPage: React.SFC<{}> = () => (
                 linkText="Choose your Solution"
                 img={<object role="presentation" tabIndex={-1} data={Vendor}/>}
             />
-
-            <Features title="Highlight Your Developer Products">
+            
+            <div className="grey-container">
+            <TextCards title="Highlight Your Developer Products">
                 {
-                    features.map((f, i) => (
-                        <Feature
+                    textCardsData.map((f, i) => (
+                        <TextCard
                             key={i}
                             title={f.title}
                             paragraphs={f.paragraphs}
                         />
                     ))
                 }
-            </Features>
+            </TextCards>
         </div>
 
         <Quote
@@ -130,7 +130,7 @@ const VendorPage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Layer} alt="Bitbucket Logo"/> Bitbucket</th>
+                    <th><img src={Bitbucket} alt="Bitbucket Logo"/> Bitbucket</th>
                     <td>Soon</td>
                     <td>Soon</td>
                     <td>Soon</td>

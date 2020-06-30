@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, shadows, borders } from '../styles/variables'
+import { colors, borders } from '../styles/variables'
 
 const StyledTextBox = styled.div`
     font-size: 90%;
@@ -11,7 +11,8 @@ const StyledTextBox = styled.div`
         margin: 10rem auto;
         padding: 8rem 5rem;
         background: ${colors.white};
-        box-shadow: ${shadows.light};
+        border-radius: 3px;
+        border: ${borders.light2};
     }
 
     h1 {
@@ -35,13 +36,12 @@ const StyledTextBox = styled.div`
         border: ${borders.light};
         font-size: 95%;
     }
-
 `
 
 const TextBox: React.SFC<{}> = ({ children }) => (
-    <StyledTextBox>
+    <StyledTextBox className="pattern pattern--full-vp-height">
         <div className="box">
-                { children }
+            { children }
         </div>
     </StyledTextBox>
 )

@@ -34,9 +34,7 @@ const installs: InstallProps[] = [
 ]
 
 const StyledSection = styled.section`
-
     text-align: center;
-    background: ${colors.offWhite};
 
     /* ------------------------------------------- */
     /* ----- Section Install ----- */
@@ -59,6 +57,7 @@ const StyledSection = styled.section`
             padding: 3rem 2rem;
             background: ${colors.white};
             border: ${borders.light};
+            border-radius: 3px;
 
             @media(max-width: ${sizes.breakpoints.lg}) {
                 margin: 5rem 0 0;
@@ -84,7 +83,7 @@ const StyledSection = styled.section`
 `
 
 const Install = () => (
-    <StyledSection className="install__section">
+    <StyledSection className="install__section pattern-bg">
         <div className="row" id="install">
             <h2>Install Gitpod Self-Hosted</h2>
             <div className="install">

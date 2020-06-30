@@ -1,14 +1,16 @@
 import React from 'react'
 
-
 import IndexLayout from '../layouts/index'
 import Banner from '../components/index/Banner'
-import Intro from '../components/index/Intro'
-import WhyGitpod from '../components/index/WhyGitpod'
-import Details from '../components/Details'
-import TrustedBy from '../components/TrustedBy'
-import AppliToolsLogo from '../resources/aplitools.svg'
-import Gatsby from '../resources/gatsby.svg'
+import TrustedBy from '../components/index/TrustedBy'
+import SaveHours from '../components/index/SaveHours'
+import FeatureCards from '../components/FeatureCards'
+import Testimonials from '../components/index/Testimonials'
+import GetStarted from '../components/index/GetStarted'
+import OpenSourceImg from '../resources/open-source.png'
+import HighlySecureImg from '../resources/highly-secure.png'
+import MoreInfo from '../components/MoreInfo'
+// import Gatsby from '../resources/gatsby.svg'
 import FreeCodeCamp from '../resources/freecodecamp.svg'
 import DWaveLogo from '../resources/dwave.svg'
 import GoogleLogo from '../resources/google.svg'
@@ -19,15 +21,13 @@ import FacebookLogo from '../resources/facebook.svg'
 import CodeInstituteLogo from '../resources/code.svg'
 import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
 import TheiaIDELogo from '../resources/theia-grey.svg'
-import VueLogo from '../resources/vuejs.svg'
+// import VueLogo from '../resources/vuejs.svg'
 import UberLogo from '../resources/uber.svg'
 import AmazonLogo from '../resources/amazon.svg'
 import IntelLogo from '../resources/intel.svg'
-
-import Testimonials from '../components/Testimonials'
-import GetStarted from '../components/GetStarted'
-import OpenSource from '../components/index/OpenSource'
-
+import { features } from '../utils/index'
+import TextFeature from '../components/index/TextFeature'
+// import ProductivityWithGitpod from '../components/index/ProductivityWithGitpod'
 
 const IndexPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/'>
@@ -114,48 +114,55 @@ const IndexPage: React.SFC<{}> = () => (
                     className: 'grey-logo'
                 },
                 {
-                    alt: 'Applitools',
-                    url: 'https://applitools.com/',
-                    svg: AppliToolsLogo,
-                    className: 'grey-logo'
-                },
-                {
                     alt: '4Geeks Academy',
                     url: 'https://www.4geeksacademy.co/',
                     svg: FourGeeksAcademyLogo,
                     className: 'four-geeks grey-logo'
                 },
-                {
-                    alt: 'Gatsby',
-                    url: 'https://www.gatsbyjs.org/',
-                    svg: Gatsby,
-                    className: 'gatsby-logo'
-                },
-                {
-                    alt: 'Vue.js',
-                    url: 'https://vuejs.org/',
-                    svg: VueLogo,
-                    className: 'vue-logo'
-                },
+                // {
+                //     alt: 'Gatsby',
+                //     url: 'https://www.gatsbyjs.org/',
+                //     svg: Gatsby,
+                //     className: 'gatsby-logo'
+                // },
+                // {
+                //     alt: 'Vue.js',
+                //     url: 'https://vuejs.org/',
+                //     svg: VueLogo,
+                //     className: 'vue-logo'
+                // },
             ]}
         />
 
-        <Intro />
+        {/* <ProductivityWithGitpod /> */}
 
-        <WhyGitpod />
+        <SaveHours />
+
+        <FeatureCards 
+            features={features}
+        />
         
         <Testimonials />
 
-        <GetStarted />
-
-        <OpenSource />
-
-        <Details
-            title="Explore Gitpod"
-            text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-            anchors={[{ href: '/features/', text: 'See Features' }, { href: '/blog/', text: 'See Blog' }]}
+        <TextFeature 
+            path={HighlySecureImg}
+            alt="Secure"
+            title="Secure and Industry-Proven"
+            text={<><p>Designed with modern security principles and strong encryption at every level, Gitpod keeps your code and your data safe no matter what happens.</p><p>Hardened by professional pentesting and thousands of developer hours every single day.</p></>}
         />
 
+        <GetStarted />
+
+        <TextFeature 
+            path={OpenSourceImg}
+            alt="Open Source"
+            title="Free For Open-Source!"
+            text={<><p>Gitpod is built on open-source and wouldn’t exist without it. We’re happy to give something back by being completely <strong>free for open source</strong>.</p>
+            <p>Find your next project on contribute.dev.</p>
+</>}
+        />
+        
+        <MoreInfo />
     </IndexLayout>
 )
 

@@ -34,11 +34,11 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     margin-top: ${({ isTitleOutside }) => isTitleOutside ? '6rem' : '2rem'};
     z-index: ${({ isTitleOutside }) => isTitleOutside ? '1000' : 'none'};;
 
-    @media(min-width: ${sizes.breakpoints.md}) {
+    @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
         z-index: ${({ transform }) => transform ? '1' : null};
     }
 
-    @media(min-width: ${sizes.breakpoints.lg}) {
+    @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
         transform: ${({ transform }) => transform ? transform : null};
     }
 
@@ -46,7 +46,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         min-height: 50rem;
         padding: 3rem 2rem;
         margin-bottom: 5rem;
-        min-height: ${({ isTitleOutside }) => isTitleOutside ? '35rem' : '50rem'};
+        min-height: ${({ isTitleOutside }) => isTitleOutside ? '35rem' : '51rem'};
     }
 
     @media(max-width: 1096px) {
@@ -58,7 +58,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     }
 
     @media(max-width: ${sizes.breakpoints.md}) {
-        min-height: ${({ isTitleOutside }) => isTitleOutside ? '35rem' : '42rem'};
+        min-height: ${({ isTitleOutside }) => isTitleOutside ? '35rem' : '51rem'};
         min-width: 30rem;
         padding: 2rem 3rem;
     }
@@ -137,7 +137,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         }
     }
 
-    @media(min-width: ${sizes.breakpoints.lg}) {
+    @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
         .span {
             display: flex;
             justify-content: space-between;
@@ -151,7 +151,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         align-items: center;
         z-index: 1999999999;
         
-        @media(min-width: ${sizes.breakpoints.sm}) {
+        @media(min-width: calc(${sizes.breakpoints.sm} + 1px)) {
             position: absolute;
             left: 50%;
             width: 100%;
@@ -163,7 +163,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
             margin: 3rem 0 1rem;
         }
 
-        @media(min-width: ${sizes.breakpoints.lg}) {
+        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             bottom: ${({ transform }) => transform ? '2rem' : '1.5rem'};
         }
     }
@@ -173,7 +173,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         opacity: .7;
         font-size: 90%;
         
-        @media(min-width: ${sizes.breakpoints.sm}) {
+        @media(min-width: calc(${sizes.breakpoints.sm} + 1px)) {
             padding: 0 1.5rem;
         }
     }
@@ -188,6 +188,8 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         bottom: 100%;
         width: 100%;
         background: ${colors.offWhite2};
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
 
         p {
             width: 20ch;

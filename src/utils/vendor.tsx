@@ -1,4 +1,4 @@
-export const features = [
+export const textCardsData = [
     {
         title: "Create a Showroom",
         paragraphs: ['With Gitpod you can launch hands-on experiences for your developer products within seconds. It allows running, modifying and testing your code, and is highly customizable with your APIs, libraries, frameworks, demos, and examples.']

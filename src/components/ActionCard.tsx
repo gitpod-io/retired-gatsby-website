@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors, shadows } from '../styles/variables'
+import { colors, borders } from '../styles/variables'
 import link from '../utils/link'
 
 const StyledActionCard = styled.section`
@@ -11,7 +11,8 @@ const StyledActionCard = styled.section`
     padding: 5rem 3rem;
     text-align: center;
     background: ${colors.offWhite};
-    box-shadow: ${shadows.light};
+    border: ${borders.light2};
+    border-radius: 3px;
 
     h2 {
         font-size: 2.8rem;
@@ -21,8 +22,8 @@ const StyledActionCard = styled.section`
         margin: -3rem 0 4rem;
     }
 
-    .btn {
-        margin-right: 2rem;
+    .btn-wrapper {
+        justify-content: center;
     }
 `
 
