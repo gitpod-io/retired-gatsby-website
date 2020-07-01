@@ -79,6 +79,7 @@ const StartWorkspace = ({ repo, shown, setIsShown }: StartWorkspaceProps) => (
                 style={ !shown ? {} : {display: 'none'}}
                 className="btn btn--small"
                 onClick={() => setIsShown(true)}
+                title="Choose your Platform"
             >
                 Start Workspace
             </a>
