@@ -40,17 +40,26 @@ const StyledProject = styled.div`
 interface ProjectProps {
     image: JSX.Element
     title: string | JSX.Element
-    href: string
+    githubUrl?: string
+    gitlabUrl?: string
+    bitbucketUrl?: string
+    git?: string
 }
 
-const Project: React.SFC<ProjectProps> = ({ image, title, href }) => {
+const Project: React.SFC<ProjectProps> = ({ image, title, githubUrl, gitlabUrl, bitbucketUrl }) => {
     const [shown, setIsShown] = useState<boolean>(false)
 
     return (
         <StyledProject className="project">
             {image}
             <p>{ !shown ? title : 'Choose your platform'}</p>
-            <StartWorkspace shown={shown} setIsShown={setIsShown} repo={href} />
+            <StartWorkspace 
+                shown={shown} 
+                setIsShown={setIsShown}
+                githubUrl={githubUrl}
+                gitlabUrl={gitlabUrl}
+                bitbucketUrl={bitbucketUrl}
+            />
         </StyledProject>
     )
 }

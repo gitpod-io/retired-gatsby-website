@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import Github from '../../resources/octicons-mark-github.svg'
+import GitHub from '../../resources/octicons-mark-github.svg'
 import GitLab from '../../resources/gitlab.svg'
 import Bitbucket from '../../resources/bitbucket.svg'
 import { colors, sizes } from '../../styles/variables'
@@ -48,52 +48,48 @@ const StyledStartWorkspace = styled.div`
 `
 
 interface StartWorkspaceProps {
-    repo: string
+    githubUrl?: string
+    gitlabUrl?: string
+    bitbucketUrl?: string
     shown: boolean
     setIsShown: (val: boolean) => void
 }
 
-interface Platform {
-    url: string
-    name: string
-    img: string
-}
-
-const platforms: Platform[] = [{
-    url: `https://github.com`,
-    name: `GitHub`,
-    img: Github
-}, {
-    url: `https://gitlab.com`,
-    name: `GitLab`,
-    img: GitLab
-}, {
-    url: `https://bitbucket.org`,
-    name: `Bitbucket`,
-    img: Bitbucket
-}]
-
-const StartWorkspace = ({ repo, shown, setIsShown }: StartWorkspaceProps) => (
-        <StyledStartWorkspace>
-            <a
-                style={ !shown ? {} : {display: 'none'}}
-                className="btn btn--small"
-                onClick={() => setIsShown(true)}
-                title="Choose your Platform"
-            >
-                Start Workspace
+const StartWorkspace = ({ shown, setIsShown, githubUrl, gitlabUrl, bitbucketUrl }: StartWorkspaceProps) => (
+    <StyledStartWorkspace>
+        <a
+            style={!shown ? {} : { display: 'none' }}
+            className="btn btn--small"
+            onClick={() => setIsShown(true)}
+            title="Choose your Platform"
+        >
+            Start Workspace
             </a>
-            <ul style={ !shown ? { display: 'none' } : {}}>
-                {platforms.map((p: Platform, i) => (
-                    <li key={i + p.name}>
-                        <a className="platform" href={`https://gitpod.io#${p.url}/${repo}`} target="_blank">
-                            <img src={p.img} alt={p.name} />
-                        </a>
-                    </li>
-                ))}
-            </ul>
-        </StyledStartWorkspace>
-    )
+        <ul style={!shown ? { display: 'none' } : {}}>
+            {
+                githubUrl ? <li>
+                    <a className="platform" href={githubUrl} title={"GitHub"} target="_blank">
+                        <img src={GitHub} alt="GitHub" />
+                    </a>
+                </li> : null
+            }
+            {
+                gitlabUrl ? <li>
+                    <a className="platform" href={gitlabUrl} target="_blank">
+                        <img src={GitLab} alt="Gitlab" title={"GitLab"} />
+                    </a>
+                </li> : null
+            }
+            {
+                bitbucketUrl ? <li>
+                    <a className="platform" href={bitbucketUrl} target="_blank">
+                        <img src={Bitbucket} alt="Bitbucket" title={"Bitbucket"} />
+                    </a>
+                </li> : null
+            }
+        </ul>
+    </StyledStartWorkspace>
+)
 
 
 export default StartWorkspace

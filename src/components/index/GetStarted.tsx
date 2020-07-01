@@ -102,9 +102,11 @@ const GetStarted = () => (
                         (project, i) => (
                             <Project
                                 key={i}
-                                image={<object role="presentation" tabIndex={-1} data={project.image} />}
+                                image={<object role="presentation" tabIndex={-1}data={project.image} />}
                                 title={project.title}
-                                href={project.href}
+                                githubUrl={project.githubUrl}
+                                gitlabUrl={project.gitlabUrl}
+                                bitbucketUrl={project.bitbucketUrl}
                             />
                         )
                     )
