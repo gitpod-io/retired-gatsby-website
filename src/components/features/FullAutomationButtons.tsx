@@ -3,7 +3,7 @@ import React from 'react'
 const FullAutomationButtons = ({ setRenderedGraphic }: {setRenderedGraphic: (value: string) => void}) => (
     <div className="buttons btn-wrapper">
         <button
-            className="btn"
+            className="btn btn--cta"
             onClick={() => setRenderedGraphic('gitpod')}
             onMouseEnter={() => setRenderedGraphic('gitpod')}
             onMouseLeave={() => setRenderedGraphic('')}
@@ -14,7 +14,7 @@ const FullAutomationButtons = ({ setRenderedGraphic }: {setRenderedGraphic: (val
             onClick={() => setRenderedGraphic('usual')}
             onMouseEnter={() => setRenderedGraphic('usual')}
             onMouseLeave={() => setRenderedGraphic('')}
-            className="btn btn--grey"
+            className="btn"
         >
             Usual Way
         </button>
