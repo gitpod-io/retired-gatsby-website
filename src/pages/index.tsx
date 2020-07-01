@@ -148,7 +148,7 @@ const IndexPage: React.SFC<{}> = () => (
             path={HighlySecureImg}
             alt="Secure"
             title="Secure and Flight-Proven"
-            text={<><p>Designed with modern security principles and strong encryption at every level, Gitpod keeps your code and your data safe no matter what happens.</p><p>Hardened by professional pentesting and thousands of developer hours every single day.</p></>}
+            text={<><p>Built with modern security principles and strong encryption, Gitpod keeps your code and your data safe no matter what happens.</p><p>Hardened by professional pentesting and thousands of developer hours every single day.</p></>}
         />
 
         <GetStarted />
