@@ -21,7 +21,7 @@ export const features: FeatureCardProps[] = [
     },
     {
         src: StayInFlow,
-        alt: 'GitHub, GitLab and Bitbucket',
+        alt: 'GitHub, GitLab, and Bitbucket',
         title: <>Stay in the Flow -<br /><strong>Integrated with GitLab, GitHub, Bitbucket</strong></>,
         text: (<>
             <p>Start your workflow from your Git hosting platform and let Gitpod beam you in a ready-to-code dev environment.</p>
