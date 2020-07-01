@@ -58,9 +58,6 @@ const Styled = styled.div<{ direction?: string, flexDirectionColumnForImgContain
         flex-direction: column;
         justify-content: center;
         min-width: 28rem;
-        opacity: 0;
-        transform: translateY(1rem);
-        transition: all .35s ease-in;
 
         @media(min-width:  1141px) {
             flex: 0 0 38%;
@@ -76,11 +73,6 @@ const Styled = styled.div<{ direction?: string, flexDirectionColumnForImgContain
 
         @media(max-width: ${sizes.breakpoints.sm}) {
             padding: 0 1rem;
-        }
-
-        &-in-view {
-            opacity: 1;
-            transform: translateY(0);
         }
     }
 
@@ -232,36 +224,7 @@ export interface FeatureCardProps {
 
 const FeatureCard = ({ src, alt, Graphic, title, text, direction, id, featuresList, Buttons }: FeatureCardProps) => {
     const [renderedGraphic, setRenderedGraphic] = useState<string>('')
-    const textContainerRef = useRef<HTMLDivElement>(null)
     
-    const isInView = () => {
-        if (textContainerRef.current) {
-            const rect = textContainerRef.current.getBoundingClientRect()
-            return rect.top >= -100 && rect.bottom <= window.innerHeight + 100
-        }
-        return false
-    }
-
-    const addInViewClass = () => {
-        if(isInView()) {
-            textContainerRef.current?.classList.add('text-in-view')
-        } else {
-            textContainerRef.current?.classList.remove('text-in-view')
-        }
-    }
-
-    const scrollHandler = () => {
-        addInViewClass()
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll', scrollHandler)
-        addInViewClass()
-        return (() => {
-            window.removeEventListener('scroll', scrollHandler)
-        })
-    })
-
     return (
         <Styled className="row" direction={direction} flexDirectionColumnForImgContainer={featuresList && featuresList.length ? true : false}>
             <div
@@ -281,7 +244,7 @@ const FeatureCard = ({ src, alt, Graphic, title, text, direction, id, featuresLi
                     )}
                 </ul>) : null}
             </div>
-            <div className="text" ref={textContainerRef}>
+            <div className="text">
                 <h2>{title}</h2>
                 {text}
                 { Buttons ? <Buttons 
