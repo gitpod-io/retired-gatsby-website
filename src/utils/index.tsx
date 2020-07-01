@@ -25,7 +25,7 @@ export const features: FeatureCardProps[] = [
         title: <>Stay in the Flow<br /><strong>Integrated with GitLab, GitHub, and Bitbucket</strong></>,
         text: (<>
             <p>Start your workflow from your Git hosting platform and let Gitpod beam you in a ready-to-code dev environment.</p>
-            <p>Whether you want to fix a bug, add a feature or do a code review, Gitpod gets you started immediately in a self-contained browser tab.</p>
+            <p>Whether you want to fix a bug, add a feature, or do a code review, Gitpod gets you started immediately in a self-contained browser tab.</p>
             <p>More about <a href="/docs/context-urls/">Context URLs</a>.</p>
         </>)
     },
