@@ -31,7 +31,7 @@ export const features: FeatureCardProps[] = [
     },
     {
         src: IPad,
-        alt: 'Gitpod on an IPad',
+        alt: 'Gitpod on an iPad',
         title: <>Code Anywhere -<br /><strong>Use your Chromebook or Tablet</strong></>,
         text: (<>
             <p>You no longer need an over-powered laptop to work, Gitpod works just as smoothly on a Chromebook.</p>
