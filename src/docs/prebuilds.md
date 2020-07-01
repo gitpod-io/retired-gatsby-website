@@ -1,33 +1,62 @@
 # Prebuilds
 
-Whenever your code changes (e.g. someone pushes to GitHub), Gitpod can prebuild your workspace, i.e. run the commands in your `.gitpod.yml`.
-When you open a workspace on a branch/pull request for which a prebuild exists, this workspace will have all dependencies downloaded
-and your code will already be built.
+Whenever your code changes (e.g. when new commits are pushed to your repository), Gitpod can prebuild workspaces, i.e. run the init commands in your `.gitpod.yml` before you even start a workspace.
+
+Then, when you do create a new workspace on a branch, or Pull/Merge Request, for which a prebuild exists, this workspace will load much faster, because all dependencies will have been already downloaded ahead of time, and your code will be already compiled.
 
 ## Enable Prebuilt Workspaces
-To enable prebuilt workspaces follow these steps:
 
-1. Go to the <a href="https://github.com/apps/gitpod-io" target="_blank">gitpod-io GitHub app</a> and click "Configure"
-2. Choose the organizations/accounts you want to install the Gitpod integration for, and click _install_
-3. You will be forwarded to Gitpod where you need to confirm the installation
+### On GitHub
 
-By default Gitpod prebuilds workspaces for all changes on the default branch (i.e. `master`) and for pull requests coming from the same repository.
+To enable prebuilt workspaces for a GitHub repository, follow these steps:
 
-> **Note**: prebuilds are executed as the user who installed the GitHub app. This means that if you want to use
-> prebuilds on a private repository, the user who installed the GitHub app (e.g. you) need to give access to private
-> repositories.
+1. Go to the <a href="https://github.com/apps/gitpod-io" target="_blank">Gitpod GitHub app</a> and click `Configure`
+2. Choose the organization or account you wish to install the Gitpod app for, then click `Install`
+3. You will be forwarded to Gitpod where you can confirm the installation
+
+### On GitLab and Bitbucket
+
+To enable prebuilt workspaces for a GitLab or Bitbucket repository, follow these steps:
+
+1. Allow Gitpod to install repository webhooks, by granting `allow api calls` (GitLab) or `install webhooks` (Bitbucket) in [Access Control](https://gitpod.io/access-control/)
+2. Trigger a first prebuild manually, by prefixing the repository URL with `gitpod.io/#prebuild/` e.g. like so:
+
+```
+gitpod.io/#prebuild/https://gitlab.com/gitpod/spring-petclinic
+```
+
+This will [trigger a prebuild](#manual-execution-of-prebuild), and also install a webhook that will trigger new Gitpod prebuilds for every new push to your repository. See also [GitLab prebuilds](https://www.gitpod.io/blog/gitlab-support/#prebuilds).
+
+## Manual execution of prebuild
+
+Alternatively, it is also possible to manually trigger a new prebuild for any repository & commit by using the `gitpod.io/#prebuild/` URL prefix:
+
+```
+https://gitpod.io/#prebuild/https://github.com/ORG/REPO
+```
 
 ## Configure prebuilds
+
+By default Gitpod prebuilds workspaces for all changes on the default branch (e.g. `master`) and for Pull/Merge Requests coming from the same repository.
+
+> **Note**: prebuilds are executed as the user who enabled them. This means that if you want to use
+> prebuilds on a private repository, you must to give Gitpod access to private repositories.
+
 There are three parts to configuring prebuilds:
 1. the tasks that will be run during a prebuild,
-2. when a prebuild will be run, and
-3. how you will be notified by the `gitpod-io` GitHub app.
+2. when a prebuild should be triggered, and
+3. how you will be notified by the Gitpod GitHub app (GitHub only)
 
-All three parts are configured in the `.gitpod.yml`.
-What tasks to be executed during the prebuilt is configured using [start tasks](/docs/config-start-tasks/).
-It is similar to regular workspace starts with the difference that the `command` phase is not executed and that there is a `prebuild` phase that you can use to execute additional long running tasks, e.g. run unit tests.
+All three parts are configured in your repository's [`.gitpod.yml` file](/docs/config-gitpod-file/).
 
-The rest is configured using the `github` section.
+What init tasks should be executed during the prebuild is configured using [start tasks](/docs/config-start-tasks/).
+It is similar to non-prebuilt workspace starts, except that the `command` phase is not executed during the prebuild (because it can potentially run forever, e.g. if you start a server). There is also a `prebuild` phase that you can use to execute additional long-running tasks during prebuilds, e.g. unit tests.
+
+## Configure the GitHub app
+
+Once you have installed the [Gitpod GitHub app](https://github.com/apps/gitpod-io), you can configure its behavior in the `github` section of your repository's `.gitpod.yml`.
+
+> **Note:** The Gitpod GitHub app has no equivalent for GitLab or Bitbucket yet, so this entire section is GitHub-specific for now.
 
 See below for an example:
 ```YAML
@@ -58,12 +87,6 @@ You can enable prebuilds also for all branches and for pull requests from forks.
 
 ### GitHub integration
 Once the GitHub app is installed Gitpod can add helpful annotations to your pull requests.
-
-### Manual execution of prebuild
-Alternatively and independantly from configuration above it is possible to trigger the prebuild using
-```
-https://gitpod.io/#prebuild/https://github.com/ORG/REPO
-```
 
 #### Checks
 By default Gitpod registers itself as a check to pull requests - much like a continuous integration system would do.
