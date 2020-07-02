@@ -92,7 +92,7 @@ const features: FeatureItemProps[] = [
     },
     {
         title: "People Who Care",
-        text: "We support each other and grow to new strength together. On regular team events we’re empowering this bond.",
+        text: "We support each other and grow to new strengths together. On regular team events, we’re empowering this bond.",
         img: People,
         alt: 'People connected to each other'
     },
