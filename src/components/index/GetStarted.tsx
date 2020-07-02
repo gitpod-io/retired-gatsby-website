@@ -94,7 +94,7 @@ const GetStarted = () => (
                 <PrefixInput />
             </div>
 
-            <h3>Or Select a Project</h3>
+            <h3>Or Try an Example Project</h3>
 
             <div className="get-started__projects">
                 {
