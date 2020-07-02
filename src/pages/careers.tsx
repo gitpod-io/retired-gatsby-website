@@ -119,7 +119,7 @@ const jobs: ExpandableJobProps[] = [
         lists: [
             {
                 title: 'What you will do:',
-                items: ['Build desktop and cloud-based tools using Go, TypeScript and Java.', 'Create, use and dog-food cutting-edge technology.', 'Work with communities, users and clients.']
+                items: ['Build desktop and cloud-based tools using Go, TypeScript, and Java.', 'Create, use, and dog-food cutting-edge technology.', 'Work with communities, users, and clients.']
             },
             {
                 title: 'What you should bring:',
