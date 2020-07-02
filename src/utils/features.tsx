@@ -19,8 +19,8 @@ export const features: FeatureCardProps[] = [
         alt: 'VS Code Extensions',
         title: <>Use Your Favourite<br /><strong>VS Code Extensions</strong></>,
         text: (<>
-            <p>Install any VS Code extension with one click via the integrated vendor-neutral marketplace of  <a href="https://open-vsx.org/">Open VSX</a>. Enjoy all the features you're used to.</p>
-            <p>More about <a href="/docs/context-urls/">VS Code Extensions</a>.</p>
+            <p>Install any VS Code extension with one click via the integrated vendor-neutral marketplace <a href="https://open-vsx.org/">Open VSX</a>.</p>
+            <p>More about <a href="/docs/vscode-extensions/">VS Code Extensions in Gitpod</a>.</p>
         </>)
     },
     {
@@ -29,7 +29,7 @@ export const features: FeatureCardProps[] = [
         alt: 'Prebuilt Workspaces',
         title: <>Save Time with <strong>Prebuilt Workspaces</strong></>,
         text: (<>
-            <p>Gitpod continuously builds your git branches like a CI server. This means no more waiting for dependencies to be downloaded and builds to finish. Just coding.</p>
+            <p>Gitpod continuously builds your git branches like a CI server. This means no more waiting for dependencies to be downloaded and builds to finish. Just start coding.</p>
             <p><strong>Gitpod is the first IDE that builds your project before you even open it.</strong></p>
             <p>Read more about <Link to="/docs/prebuilds/">Prebuilt Workspaces.</Link></p>
         </>)
@@ -38,41 +38,41 @@ export const features: FeatureCardProps[] = [
         id: 'parallel',
         src: ParallelWorkspaces,
         alt: 'Parallel Workspaces',
-        title: <>Stay Productive, Work<br />on <strong>Parallel Workspaces</strong></>,
+        title: <>Stay Productive, Work<br />in <strong>Parallel Workspaces</strong></>,
         text: (<>
-            <p>Don’t postpone work because your current workspace is occupied with your work on the latest features.</p>
-            <p>To sneak in a bugfix on a maintenance branch or a code review - just start more workspaces - in parallel.</p>
+            <p>Don't postpone time-sensitive tasks because your current workspace is in the middle of a rebase.</p>
+            <p>With Gitpod, you can: implement new features; merge a quick fix to a maintenance branch; troubleshoot someone's code; and do deep code reviews — all in self-contained browser tabs.</p>
         </>)
     },
     {
         id: 'linux',
         src: LinuxTerminal,
         alt: 'Linux Terminals',
-        title: <>Just like Your Local IDE Including <strong>Linux Terminals</strong></>,
+        title: <>Just Like on Your Laptop, Including <strong>Linux Terminals</strong></>,
         text: (<>
-            <p>Gitpod instantly starts a machine in the cloud based on a Docker image. Tools that are required for your project or popular are readily installed and configured.</p>
-            <p>And still, if you like to do configurations yourself, you can adjust everything to your satisfaction.</p>
-            <p>More about <Link to="/docs/config-docker/">Terminals.</Link></p>
+            <p>Gitpod instantly starts a container in the cloud based on your Docker image. Tools that are required for your project are easy to install and configure.</p>
+            <p>With good defaults and full customizability, you can adjust everything to your satisfaction.</p>
+            <p>More about <Link to="/docs/config-docker/">Docker Configuration</Link>.</p>
         </>)
     },
     {
         id: 'share',
         src: SharedWorkspaces,
         alt: 'Share Running Workspaces',
-        title: <>Better Collaboration with <strong>Shared Running Workspaces</strong></>,
+        title: <>Better Collaboration with <strong>Shared Workspaces</strong></>,
         text: (<>
-            <p>Collaborate with your friends, colleagues and clients and hunt down bugs together. </p>
-            <p>More about <Link to="/docs/sharing-and-collaboration/">Sharing a Workspace.</Link></p>
+            <p>Collaborate with your friends, colleagues, and clients and run software or hunt down bugs together. </p>
+            <p>More about <Link to="/docs/sharing-and-collaboration/">Workspace Sharing</Link><div className=""></div></p>
         </>)
     },
     {
         id: 'snapshot',
         src: CreateASnapshot,
         alt: 'Create A Snapshot',
-        title: <>Spread Your Work and <strong>Create a Snapshot</strong></>,
+        title: <>Spread Your Work by <strong>Creating a Snapshot</strong></>,
         text: (<>
-            <p>Whenever you want to share a reproducible example of code or an issue report, simply take Snapshot.</p>
-            <p>Based on your snapshot new workspaces can be created and edited independently.</p>
+            <p>Whenever you want to share a runnable code example, or reproducible bug report, simply take a Snapshot.</p>
+            <p>Based on your Snapshot, new workspaces can be created and edited independently.</p>
             <p>More about <Link to="/docs/sharing-and-collaboration/#sharing-snapshots">Sharing a Snapshot.</Link></p>
         </>)
     },
@@ -80,9 +80,9 @@ export const features: FeatureCardProps[] = [
         id: 'disposable',
         src: Disposable,
         alt: 'Disposable Workspaces',
-        title: <>Start a fresh workspace<br />for every task with<br /> <strong>Disposable Workspaces</strong></>,
+        title: <>Start a Fresh Workspace<br />For Every Task With<br /> <strong>Disposable Workspaces</strong></>,
         text: (<>
-            <p>You can start up to 16 workspaces at the same time, dispose them whenever needed and reproduce them if you need a clean start.</p>
+            <p>Work in up to 16 workspaces at the same time, then push your work and dispose of them when you're done. You can always get a fresh start.</p>
         </>)
     },
     {
@@ -91,7 +91,7 @@ export const features: FeatureCardProps[] = [
         alt: 'Code Review',
         title: <>Do <strong>Code Reviews</strong><br />Within the IDE</>,
         text: (<>
-            <p>Open pull requests in Gitpod to run, navigate, and review the code from within the IDE. Reply to comments and publish code reviews without switching back to GitHub.</p>
+            <p>Open Pull/Merge Requests in Gitpod and run, navigate, and review the code from within the IDE. Reply to comments and publish code reviews without needing to switcch.</p>
             <p>More about <Link to="/blog/when-code-reviews-lgtm/">Code Reviews.</Link></p>
         </>)
     },
