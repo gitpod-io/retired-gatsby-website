@@ -5,7 +5,7 @@ import Close from '../../resources/close.svg'
 import Plus from '../../resources/plus.svg'
 import World from '../../resources/world.svg'
 import ArrowPointer from '../../resources/arrow-pointer.svg'
-import { colors } from '../../styles/variables'
+import { colors, sizes } from '../../styles/variables'
 
 const Styled = styled.label`
     display: flex;
@@ -117,9 +117,10 @@ const Styled = styled.label`
             flex: 1;
             color: ${colors.offWhite0};
             line-height: 1;
-            border: 2px solid #3f638b;
+            border: 1px solid #aaa;
             border-top-left-radius: 10rem;
             border-bottom-left-radius: 10rem;
+            border-right: none;
 
             @media(max-width: 640px) {
                 margin-left: 1rem;
@@ -148,8 +149,20 @@ const Styled = styled.label`
                     margin-top: 2rem;
                 }
 
+                @media(max-width: 829px) {
+                    bottom: -14rem;
+                }
+
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    bottom: -13rem;
+                }
+
+                @media(max-width: 700px) {
+                    bottom: -14rem;
+                }
+
                 @media(max-width: 530px) {
-                    left: -10rem;
+                    left: -12rem;
                 }
 
                 @media(max-width: 410px) {
@@ -186,9 +199,11 @@ const Styled = styled.label`
         input {
             display: block;
             width: 100%;
-            background: none;
-            border: none;
-            color: inherit;
+            max-width: 50rem;
+            padding: .3rem 0;
+            color: ${colors.text};
+            background: ${colors.offWhite0};
+            border: 2px solid ${colors.link};
 
             @media(max-width: 340px) {
                 font-size: 90%;
@@ -290,7 +305,7 @@ const PrefixInput = () => {
                         <div className="message" style={ error ? {color: '#bf4338'} : {}}> 
                             <>
                                 <p>
-                                    { error ? error : 'Enter your GitHub or GitLab URL' }
+                                    { error ? error : 'Enter your GitLab, GitHub, or Bitbucket URL' }
                                 </p>
                                 <a
                                     href={`https://gitpod.io/#${url}`}
