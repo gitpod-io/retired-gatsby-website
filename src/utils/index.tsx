@@ -12,7 +12,7 @@ export const features: FeatureCardProps[] = [
     {
         id: 'automation',
         Graphic: FullAutomationGraphics,
-        title: <>No more Waiting with<br /><strong>Full Automation</strong></>,
+        title: <>Skip the Waiting with<br /><strong>Prebuilt Dev Environments</strong></>,
         text: (<>
             <p>Avoid all the friction and get beamed into a fully set up, compiled, and tested dev environment with one click.</p>
             <p>More about <Link to="/">Continuous Dev Environments.</Link></p>
