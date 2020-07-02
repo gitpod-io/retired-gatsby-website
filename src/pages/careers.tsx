@@ -135,7 +135,7 @@ const jobs: ExpandableJobProps[] = [
     {
         title: 'UX Developer',
         intro: 'Gitpod provides ready-to-code development environments for professional software engineering teams. We set out to change how developers work by eliminating tedious and repetitive configuration of local machines and replacing it with a fully integrated, cloud-based solution. Gitpod is the missing piece in a modern DevOps toolchain.',
-        paragraphs: `As a UX Developer, you will take care of the UI/UX design and development of Gitpod. You will become an essential part of a cross-functional team and directly work together with product management, development and marketing.`,
+        paragraphs: `As a UX Developer, you will take care of the UI/UX design and development of Gitpod. You will become an essential part of a cross-functional team and directly work together with product management, development, and marketing.`,
         lists: [
             {
                 title: 'What you will do:',
