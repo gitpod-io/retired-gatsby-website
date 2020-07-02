@@ -57,7 +57,7 @@ const SaveHours = () => (
             <div className="text">
                 <h2>
                     <strong>
-                        Save millions of hours of watching your code build.
+                        Save countless of hours of watching your code build.
                 </strong>
                 </h2>
                 <p>With Gitpod you can automate and prebuild your dev enviroments so that you and your team can start coding with a single click.</p>
