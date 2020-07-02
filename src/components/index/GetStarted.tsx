@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { borders, sizes, colors } from '../../styles/variables'
+import { sizes } from '../../styles/variables'
 import { projects } from '../../utils/projects'
 import Project from './Project'
 import PrefixInput from './PrefixInput'
@@ -22,33 +22,6 @@ const StyledGetStarted = styled.div`
             display: flex;
             margin-bottom: 12rem;
             text-align: left;
-
-            @media(max-width: ${sizes.breakpoints.lg}) {
-                flex-direction: column;
-            }
-
-            &-text {
-                margin: 0;
-                font-size: 2.4rem;
-
-                @media(max-width: ${sizes.breakpoints.lg}) {
-                    padding: 5rem 2rem;
-                    text-align: center;
-                }
-
-                &-container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background: ${colors.offWhite};
-                    border: ${borders.light2};
-                    border-radius: 3px;
-
-                    @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
-                        width: 35%;
-                    }
-                }
-            }
         }
 
         h2 + p {
@@ -88,9 +61,6 @@ const GetStarted = () => (
             <p>Prefix any GitLab, GitHub, or Bitbucket URL with <strong>gitpod.io/#</strong></p>
 
             <div className="get-started__prefix">
-                <div className="get-started__prefix-text-container">
-                    <h3 className="get-started__prefix-text">Prefix any GitHub or GitLab<br aria-hidden={true} />URL with <strong>gitpod.io/#</strong></h3>
-                </div>
                 <PrefixInput />
             </div>
 
