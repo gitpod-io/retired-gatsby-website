@@ -147,7 +147,7 @@ const jobs: ExpandableJobProps[] = [
             },
             {
                 title: 'Your benefits:',
-                items: ['Space for creativity - feel free to create the non-existing.', 'Collaborate with a highly motivated team with a strong technical background', 'Flexible working hours.', 'Work remotely from Germany or France, or from the office in Kiel (Germany).']
+                items: ['Space for creativity - feel free to create the non-existing.', 'Collaborate with a highly motivated team with a strong technical background', 'Flexible working hours.', 'Work remotely from Germany or France, or the office in Kiel (Germany).']
             }
         ],
         textAfterTheLists: 'We celebrate diversity, and we are committed to an equal and inclusive employment environment.',
