@@ -139,7 +139,7 @@ const jobs: ExpandableJobProps[] = [
         lists: [
             {
                 title: 'What you will do:',
-                items: ['Design, prototype, and iterate on the UX of new features and refresh existing UX.', 'Communicate design solutions through wireframes, mockups, and interactive prototypes.', 'Implement mockups using HTML and TypeScript/JavaScript.', 'Work closely with engineering and be the "go to" person when user interface designs require clarification or change.']
+                items: ['Design, prototype, and iterate on the UX of new features and refresh existing UX.', 'Communicate design solutions through wireframes, mockups, and interactive prototypes.', 'Implement mockups using HTML and TypeScript/JavaScript.', 'Work closely with engineering and be the "go-to" person when user interface designs require clarification or change.']
             },
             {
                 title: 'What we are looking for:',
