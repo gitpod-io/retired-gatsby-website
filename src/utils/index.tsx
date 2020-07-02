@@ -14,7 +14,7 @@ export const features: FeatureCardProps[] = [
         Graphic: FullAutomationGraphics,
         title: <>No more Waiting with<br /><strong>Full Automation</strong></>,
         text: (<>
-            <p>Skip the friction and get beamed into a fully setup, compiled and tested dev environment with one click.</p>
+            <p>Avoid all the friction and get beamed into a fully set up, compiled, and tested dev environment with one click.</p>
             <p>More about <Link to="/">Continuous Dev Environments.</Link></p>
         </>),
         Buttons: FullAutomationButtons
