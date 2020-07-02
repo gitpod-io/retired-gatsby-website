@@ -48,6 +48,10 @@ Starting workspaces from a Pull Request or Merge Request will clone the respecti
 changes of the PR/MR in a view on the left. The first change is opened in the diff editor.
 Also the `Pull Request` view on the right is configured to reflect the PR/MR information.
 
+```
+gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/-/merge_requests/1
+```
+
 This context is meant for code reviews, or to take action on feedback you got from a reviewer.
 
 ## Issue Context
