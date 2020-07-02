@@ -32,7 +32,7 @@ const StyledContactPage = styled.div`
             }
 
             &--half {
-                @media(min-width: ${sizes.breakpoints.md}) {
+                @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
                     width: 48%;
                     &:first-of-type {
                         margin-right: 4%;
@@ -153,7 +153,6 @@ export default function ContactPage(props: any) {
     }
 
     const handleChangeSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        console.log(e.target.name)
         setState({
             ...state,
             errorMessage: undefined,
@@ -201,9 +200,8 @@ export default function ContactPage(props: any) {
     }
     return (
         <IndexLayout canonical="/contact/">
-            <StyledContactPage className="grey-container">
+            <StyledContactPage className="pattern">
                 <div className="row">
-                     
                     { state.messageSent ?
                         <div className="sucess">
                             <img src={tick} alt="Tick"/>

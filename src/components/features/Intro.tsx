@@ -3,16 +3,16 @@ import React from 'react'
 import styled from '@emotion/styled'
 import FeatureBox from './FeatureBox'
 import { featuresCardsData } from '../../utils/features'
-import IceStick from '../../resources/ice-stick.svg'
 import { sizes } from '../../styles/variables'
+import IceStick from '../../resources/ice-stick.svg'
 
 const Styled = styled.div`
     .intro {
-        padding-top: 3rem;
+        padding: 8rem 0 12rem;
 
         .ice-stick {
             display: block;
-            width: 12rem;
+            width: 10rem;
             margin: 0 auto;
         }
 
@@ -22,23 +22,24 @@ const Styled = styled.div`
 
         .features {
             display: grid;
-            grid-row-gap: 3rem;
-            grid-column-gap: 2rem;
+            grid-gap: 2rem;
             grid-template-columns: repeat(5, 1fr);
             justify-items: center;
             align-items: center;
             margin-top: 4rem;
             position: relative;
+            max-width: 900px;
+            margin: 6rem auto 0; 
 
             @media(max-width: ${sizes.breakpoints.lg}) {
                 grid-template-columns: repeat(5, 1fr);
             }
 
-            @media(max-width: 960px) {
+            @media(max-width: 1000px) {
                 grid-template-columns: repeat(4, 1fr);
             }
 
-            @media(max-width: 600px) {
+            @media(max-width: 620px) {
                 grid-template-columns: repeat(3, 1fr);
             }
 
@@ -48,21 +49,11 @@ const Styled = styled.div`
             }
 
             & > div {
+                min-width: 14rem;
 
-                @media(min-width: 961px) {
+                @media(min-width: 1001px) {
                     min-width: 17rem;
-                }
 
-                @media(max-width: 960px) {
-                    min-width: 13rem;
-                    max-width: 18rem;
-                }
-
-                @media(min-width: ${sizes.breakpoints.lg}) {
-                    min-width: 19rem;
-                }
- 
-                @media(min-width: 961px) {
                     &:nth-child(n + 6) {
                        transform: translateX(50%);
                     }
@@ -73,25 +64,27 @@ const Styled = styled.div`
 `
 
 const Intro = () => (
-   <Styled>
-        <section className="intro" id="top">
-        <object role="presentation" tabIndex={-1} data={IceStick} className="ice-stick" />
-        <h1>Features</h1>
-        <div className="features">
-            {
-                featuresCardsData.map((f, i) =>
-                    <FeatureBox
-                        key={i}
-                        alt={f.title}
-                        img={f.icon}
-                        text={f.iconText || f.iconTitle}
-                        path={f.id}
-                    />
-                )
-            }
-        </div>
-    </section>
-   </Styled>
+    <div className="row">
+        <Styled>
+            <section className="intro pattern">
+                <object role="presentation" tabIndex={-1} data={IceStick} className="ice-stick" />
+                <h1>Features</h1>
+                <div className="features">
+                    {
+                        featuresCardsData.map((f, i) =>
+                            <FeatureBox
+                                key={i}
+                                alt={f.title}
+                                img={f.icon}
+                                text={f.iconText || f.iconTitle}
+                                path={f.id}
+                            />
+                        )
+                    }
+                </div>
+            </section>
+        </Styled>
+    </div>
 )
 
 export default Intro

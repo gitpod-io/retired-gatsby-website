@@ -22,7 +22,7 @@ const StyledDescripion = styled.span`
             margin-left: 1rem;
         }
 
-        @media(min-width: ${sizes.breakpoints.lg}) {
+        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             transform: translateX(1rem);
         }
     }

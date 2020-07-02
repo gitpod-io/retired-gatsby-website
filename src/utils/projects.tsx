@@ -9,31 +9,33 @@ export const projects = [
     {
         image: JAVA,
         title: 'Java & Spring',
-        href: "https://github.com/gitpod-io/spring-petclinic",
+        githubUrl: "https://github.com/gitpod-io/spring-petclinic",
+        gitlabUrl: "https://gitlab.com/gitpod/spring-petclinic",
+        bitbucketUrl: "https://bitbucket.org/gitpod/spring-petclinic",
         alt: "Java Logo",
     },
     {
         image: JS,
         title: 'React & Next.js',
-        href: "https://github.com/gitpod-io/NextSimpleStarter",
+        githubUrl: "https://github.com/gitpod-io/NextSimpleStarter",
         alt: "JavaScript Logo",
     },
     {
         image: PY,
         title: 'Python & Flask',
-        href: "https://github.com/breatheco-de/python-flask-api-tutorial",
+        githubUrl: "https://github.com/breatheco-de/python-flask-api-tutorial",
         alt: "Python Logo",
     },
     {
         image: TS,
         title: <span>Gatsby & TypeScript</span>,
-        href: "https://github.com/gitpod-io/website",
+        githubUrl: "https://github.com/gitpod-io/website",
         alt: "TypeScript Logo",
     },
     {
         image: GO,
         title: 'Go & Gin',
-        href: "https://github.com/gitpod-io/go-gin-app",
+        githubUrl: "https://github.com/gitpod-io/go-gin-app",
         alt: "Go Logo",
     }
 ]

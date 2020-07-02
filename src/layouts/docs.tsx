@@ -2,35 +2,23 @@ import React from 'react'
 
 import IndexLayout from './index'
 import styled from '@emotion/styled'
-import { colors, shadows, sizes } from '../styles/variables'
-import DocSideBar from '../components/DocSideBar'
-import DocTopicChooser from '../components/DocTopicChooser'
+import { colors, sizes } from '../styles/variables'
+import DocSideBar from '../components/docs/DocSideBar'
+import DocTopicChooser from '../components/docs/DocTopicChooser'
+import BackToTopButton from '../components/BackToTopButton'
 
 const StyledDocsLayout = styled.div`
-
-    .grey-container {
-        padding-top: 5rem;
-
-        @media(max-width: ${sizes.breakpoints.lg}) {
-            padding-top: 5rem;
-        }
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            padding-top: 2rem;
-        }
-    }
-
     .content {
         display: flex;
-
-        @media(min-width: ${sizes.breakpoints.md}) {
-            box-shadow: ${shadows.light};
-        }
+        padding-top: 5rem;
 
         @media (max-width: ${sizes.breakpoints.lg}) {
             flex-direction: column;
         }
 
+        @media(max-width: ${sizes.breakpoints.md}) {
+            padding-top: 2rem;
+        }
     }
 
     .article {
@@ -39,11 +27,11 @@ const StyledDocsLayout = styled.div`
         padding: 3rem 1rem;
         position: relative;
 
-        @media(min-width: ${sizes.breakpoints.lg}) {
+        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             width: 70%;
         }
 
-        @media(min-width: ${sizes.breakpoints.md}) {
+        @media(min-width: calc(${sizes.breakpoints.md}) + 1px) {
             padding: 5rem;
             background: ${colors.white};
         }
@@ -117,75 +105,8 @@ const StyledDocsLayout = styled.div`
         }
     }
 
-    .sidebar {
-        display: flex;
-        flex-direction: column;
-        padding: 3rem 1rem;
-        background: ${colors.offWhite};
-
-        @media(min-width: ${sizes.breakpoints.lg}) {
-            width: 30%;
-        }
-
-        @media(max-width: ${sizes.breakpoints.lg}) {
-            display: none;
-        }
-    }
-
     .active {
         color: ${colors.link};
-    }
-
-    .topic-chooser {
-        margin: 0 auto;
-        padding: 1rem 2.5rem;
-        background-position: right 1.7em top 50%, 0 0;
-
-        @media(min-width: ${sizes.breakpoints.lg}) {
-            display: none;
-        }
-
-        @media(max-width: 320px) {
-            padding: 1rem 1.5rem;
-            width: 100%;
-        }
-    }
-
-    .pen-container {
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-    }
-
-    .arrows {
-        text-align: center;
-        padding: 10rem 0;
-    }
-
-    .prev,
-    .next  {
-        display: inline-block;
-        height: 2rem;
-        opacity: .7;
-    }
-
-    .prev {
-        transform: rotate(90deg);
-        margin-right: 4rem;
-    }
-
-    .next {
-        transform: rotate(-90deg);
-    }
-
-    svg {
-        fill: #bcbcbc;
-        transition: all .2s;
-
-        &:hover,
-        &:focus {
-            fill: ${colors.lightBlue};
-        }
     }
 
     .table-container {
@@ -195,29 +116,26 @@ const StyledDocsLayout = styled.div`
     p > img {
         margin: 1rem 0;
     }
-
 `
 
 interface DocsLayoutProps {
     canonical: string
     title: string
     body: JSX.Element
-    arrows: JSX.Element
 }
 
-const DocsLayout: React.SFC<DocsLayoutProps> = ({ canonical, title, body, arrows }) => (
+const DocsLayout: React.SFC<DocsLayoutProps> = ({ canonical, title, body}) => (
     <IndexLayout canonical={canonical} title={title} description="The documentation site of Gitpod, the online IDE for GitHub and GitLab.">
         <StyledDocsLayout>
-            <div className="grey-container">
                 <div className="row">
                     <div className="content">
                         <DocSideBar />
                         <DocTopicChooser />
                         {body}
                     </div>
-                    {arrows}
                 </div>
-            </div>
+            <BackToTopButton />
+
         </StyledDocsLayout>
     </IndexLayout>
 )

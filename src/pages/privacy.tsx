@@ -4,7 +4,6 @@ import TextBox from '../components/TextBox'
 
 const PrivacyPage: React.SFC<{}> = () => (
     <IndexLayout canonical="/privacy/" title="Privacy">
-        <div className="grey-container">
             <TextBox>
                 <h1>Privacy Policy</h1>
 
@@ -699,7 +698,6 @@ further information please refer to <a href="#details-V">section V.</a>.
 				Further details may be found here: <a href="/imprint/">https://gitpod.io/imprint/</a>
                 </p>
             </TextBox>
-        </div>
     </IndexLayout>
 )
 

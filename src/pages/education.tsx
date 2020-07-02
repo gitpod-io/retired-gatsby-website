@@ -3,16 +3,16 @@ import React from 'react'
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
 import Saturn from '../resources/saturn-icon.svg'
-import Features from '../components/Features'
-import Feature from '../components/Feature'
-import { features } from '../utils/education'
+import TextCards from '../components/TextCards'
+import TextCard from '../components/TextCard'
+import { textCardsData } from '../utils/education'
 import Quote from '../components/Quote'
 import CollegeStudents from '../resources/college-students.png'
 import Bg from '../components/Bg'
 import ActionCard from '../components/ActionCard'
 import PricingTable from '../components/PricingTable'
 import Circle from '../components/Circle'
-import Layer from '../resources/layer.svg'
+import Bitbucket from '../resources/bitbucket.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
 import { Link } from 'gatsby'
@@ -25,8 +25,6 @@ const EducationPage: React.SFC<{}> = () => (
         title="Education" 
         description="Gitpod simplifies the onboarding process, makes coding accessible from anywhere, and provides a productive learning environment."
     >
-        <div className="grey-container">
-
             <Banner
                 subtitle="Gitpod Education"
                 title={<h1>Let’s <strong>Focus on Teaching Code,</strong><br /> not Tedious Setups!</h1>}
@@ -36,17 +34,18 @@ const EducationPage: React.SFC<{}> = () => (
                 img={<object role="presentation" tabIndex={-1} style={{transform:"scale(0.8)"}} data={Saturn}/>}
             />
 
-            <Features title="For Schools, Universities, Coding Bootcamps, etc.">
+        <div className="grey-container">
+            <TextCards title="For Schools, Universities, Coding Bootcamps, etc.">
                 {
-                    features.map((f, i) => (
-                        <Feature
+                    textCardsData.map((f, i) => (
+                        <TextCard
                             key={i}
                             title={f.title}
                             paragraphs={f.paragraphs}
                         />
                     ))
                 }
-            </Features>
+            </TextCards>
         </div>
 
         <Quote
@@ -136,7 +135,7 @@ const EducationPage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Layer} alt="Bitbucket Logo"/> Bitbucket</th>
+                    <th><img src={Bitbucket} alt="Bitbucket Logo"/> Bitbucket</th>
                     <td>Soon</td>
                     <td>Soon</td>
                     <td>Soon</td>

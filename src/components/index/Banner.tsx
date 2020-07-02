@@ -1,27 +1,19 @@
 import React from 'react'
 
-import { Link } from 'gatsby'
 import Screenshot from '../../resources/screenshot.png'
 import styled from '@emotion/styled'
-import { colors, sizes } from '../../styles/variables'
+import { sizes } from '../../styles/variables'
 
 const Styled = styled.div`
-
     .banner {
         display: flex;
-        padding-bottom: 16rem;
+        padding: 2rem 0 14rem;
+        position: relative;
 
-        @media(min-width: ${sizes.breakpoints.lg}) {
-            padding-top: 5rem;
-        }
 
         @media(max-width: ${sizes.breakpoints.lg}) {
             flex-direction: column;
             padding-bottom: 5rem;
-        }
-
-        &-container {
-            background: ${colors.offWhite};
         }
 
         &__text-box {
@@ -40,19 +32,19 @@ const Styled = styled.div`
             @media(max-width: ${sizes.breakpoints.lg}) {
                 text-align: center;
                 margin: 5rem 0 0;
-
-                br {
-                    display: none;
-                }
             }
 
-            @media(min-width: ${sizes.breakpoints.lg}) {
-                width: 50%;
+            @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
+                width: 40%;
             }
         }
 
         .btn-wrapper {
             margin-bottom: 3rem;
+
+            @media(max-width: ${sizes.breakpoints.lg}) {
+                justify-content: center;
+            }
         }
 
         &__screenshot {
@@ -64,8 +56,8 @@ const Styled = styled.div`
                 width: 100%;
             }
 
-            @media(min-width: ${sizes.breakpoints.lg}) {
-                transform: scale(1.15) translate(6rem, 6rem);
+            @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
+                transform: translate(18.9rem,7rem) scale(1.21);
 
                 &-container {
                     width: 40%;
@@ -84,8 +76,9 @@ const Styled = styled.div`
 
         p {
             margin: 2.5rem auto;
-
+            
             @media(max-width: ${sizes.breakpoints.lg}) {
+                max-width: 700px;
                 padding: 0 5rem;
             }
 
@@ -100,18 +93,15 @@ const Styled = styled.div`
 
 const Banner = () => (
     <Styled>
-        <div className="banner-container">
             <div className="row">
-                <header role="banner" className="banner">
+                <header role="banner" className="banner pattern">
                     <div className="banner__text-box">
-                        <h1>
-                            Dev Environment as Code <span>for Modern DevOps Teams.</span>
+                         <h1>
+                            Dev Environment as Code <span>for modern DevOps teams.</span>
                         </h1>
-                        <p>Describe your dev environment as code and get a fully prebuilt, ready-to-code development environment for any GitLab, GitHub and Bitbucket project.</p>
+                        <p>Describe your dev environment as code and get a fully prebuilt, ready-to-code development environment for any GitLab, GitHub, and Bitbucket project.</p>
                         <div className="btn-wrapper">
-                            <a href="https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic" className="btn btn--cta">Let's Try It!</a>
-                            <br aria-hidden={true} />
-                            <Link to="/self-hosted/" className="btn">Host Yourself</Link>
+                            <a href="https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic" className="btn btn--cta">Try Now</a>
                         </div>
                     </div>
                     <div className="banner__screenshot-container">
@@ -119,7 +109,6 @@ const Banner = () => (
                     </div>
                 </header>
             </div>
-        </div>
     </Styled>
 )
 

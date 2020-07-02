@@ -4,17 +4,17 @@ import styled from '@emotion/styled'
 import IndexLayout from '../layouts'
 import DoubleArrows from '../resources/double-arrows.png'
 import { colors, sizes, shadows } from '../styles/variables'
-import Kiel from '../resources/kiel.png'
-import Team from '../resources/team.png'
+import Kiel from '../resources/kiel.jpg'
+import Team from '../resources/team.jpg'
 import Fox from '../resources/fox.png'
 import TypeFox from '../resources/typefox.png'
-import Details from '../components/Details'
+import MoreInfo from '../components/MoreInfo'
+import { Link } from 'gatsby'
 
 const StyledAboutPage = styled.div`
     /* ------------------------------------------- */
     /* ----- Banner ----- */
     /* ------------------------------------------- */
-
 
     .banner {
         display: flex;
@@ -104,7 +104,7 @@ const StyledAboutPage = styled.div`
         }
 
         &__text-box {
-            @media(min-width: ${sizes.breakpoints.md}) {
+            @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
                 width: 60%;
             }
         }
@@ -127,10 +127,16 @@ const StyledAboutPage = styled.div`
 
     .about {
 
+        h2 {
+            @media(max-width: 910px) {
+                text-align: center;
+            }
+        }
+
         &__container {
             display: flex;
 
-            @media(max-width: ${sizes.breakpoints.md}) {
+            @media(max-width: 910px) {
                 flex-direction: column;
                 align-items: center;
             }
@@ -141,8 +147,9 @@ const StyledAboutPage = styled.div`
             width: 50%;
             min-width: 40rem;
             box-shadow: ${shadows.light};
+            border-radius: 3px;
 
-            @media(max-width: ${sizes.breakpoints.md}) {
+            @media(max-width: 910px) {
                 &:not(:last-child) {
                     margin-bottom: 3rem;
                 }
@@ -156,6 +163,7 @@ const StyledAboutPage = styled.div`
                 display: block;
                 width: 100%;
                 margin-bottom: 3rem;
+                border-radius: 3px;
             }
 
             &:last-of-type {
@@ -186,23 +194,19 @@ const StyledAboutPage = styled.div`
 const AboutPage: React.SFC<{}> = () => (
     <IndexLayout canonical='/about/' title="About">
         <StyledAboutPage>
-            <div className="grey-container">
+            {/* ----- Banner ----- */}
 
-                {/* ----- Banner ----- */}
-
-                <div className="row">
-                    <header role="banner" className="banner">
-                        <div className="banner__img-container">
-                            <img alt="2 Right Arrows" src={DoubleArrows} className="banner__img"/>
-                        </div>
-                        <div className="banner__text-box">
-                            <h3>About</h3>
-                            <h1>Type<strong>Fox</strong></h1>
-                            <p>Gitpod is developed by TypeFox, a team<br />of developer tool specialists and longtime<br />open-source contributors.</p>
-                        </div>
-                    </header>
-                </div>
-
+            <div className="row pattern">
+                <header role="banner" className="banner">
+                    <div className="banner__img-container">
+                        <img alt="2 Right Arrows" src={DoubleArrows} className="banner__img"/>
+                    </div>
+                    <div className="banner__text-box">
+                        <h3>About</h3>
+                        <h1>Type<strong>Fox</strong></h1>
+                        <p>Gitpod is developed by TypeFox, a team<br />of developer tool specialists and longtime<br />open-source contributors.</p>
+                    </div>
+                </header>
             </div>
 
             {/* ----- By Developers for Developers ----- */}
@@ -236,7 +240,7 @@ const AboutPage: React.SFC<{}> = () => (
                             <div className="about__box">
                                 <img alt="TypeFox Team" src={Team} />
                                 <h3>About the Team</h3>
-                                <p>We're a small tech-driven team with collectively over 50 years of experience in language design, IDEs, and tool development and with strong values around openness, honesty, and effective pragmatism. If you're interested in joining us, please have a look at our <a href="https://www.typefox.io/careers/" target="_blank" rel="noopener">Job Openings</a>.</p>
+                                <p>We're a small tech-driven team with collectively over 50 years of experience in language design, IDEs, and tool development and with strong values around openness, honesty, and effective pragmatism. If you're interested in joining us, please have a look at our <Link to="/careers">Job Openings</Link>.</p>
                             </div>
                         </div>
                     </section>
@@ -250,13 +254,7 @@ const AboutPage: React.SFC<{}> = () => (
                 </div>
             </div>
 
-            {/* ----- Section Details ----- */}
-
-            <Details
-                title="Explore Gitpod"
-                text="Learn about collaboration, workspace snapshots, supported programming languages, and much more."
-                anchors={[{href: '/features/', text: 'See Features'}, {href: '/blog/', text: 'See Blog'}]}
-            />
+            <MoreInfo />
 
         </StyledAboutPage>
     </IndexLayout>

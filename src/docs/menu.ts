@@ -278,7 +278,7 @@ export const MENU: MenuEntry[] = [
     // )
 ];
 
-interface MenuContext {
+export interface MenuContext {
     prev?: MenuEntry;
     thisEntry?: MenuEntry;
     next?: MenuEntry;

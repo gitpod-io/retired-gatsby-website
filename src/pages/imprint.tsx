@@ -1,10 +1,10 @@
 import React from 'react'
+
 import IndexLayout from '../layouts'
 import TextBox from '../components/TextBox'
 
 const ImprintPage: React.SFC<{}> = () => (
     <IndexLayout canonical="/imprint/" title="Imprint">
-        <div className="grey-container">
             <TextBox>
                 <h1>Imprint</h1>
                 <p>TypeFox&nbsp;GmbH
@@ -56,7 +56,6 @@ const ImprintPage: React.SFC<{}> = () => (
                     dispute settlement commission or will do so voluntarily.
                 </p>
             </TextBox>
-        </div>
     </IndexLayout>
 )
 
