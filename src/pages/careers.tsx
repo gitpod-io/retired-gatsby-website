@@ -143,7 +143,7 @@ const jobs: ExpandableJobProps[] = [
             },
             {
                 title: 'What we are looking for:',
-                items: ['3+ years experience designing UI / UX and web development (preferably in a B2B SaaS space).', 'Solid knowledge of developer workflows and tools.', 'A team player who can also work independently.', 'A curious mindset with a drive to learn and grow new skills.']
+                items: ['3+ years of experience designing UI / UX and web development (preferably in a B2B SaaS space).', 'Solid knowledge of developer workflows and tools.', 'A team player who can also work independently.', 'A curious mindset with a drive to learn and grow new skills.']
             },
             {
                 title: 'Your benefits:',
