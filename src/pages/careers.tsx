@@ -104,7 +104,7 @@ const features: FeatureItemProps[] = [
     },
     {
         title: "Worthy Mission",
-        text: "Together we want to make developers life easier by providing the best software tools.",
+        text: "Together we want to make developers' lives easier by providing the best software tools.",
         img: Mission,
         alt: 'Two Mountains: One with a flag on it.'
     },
