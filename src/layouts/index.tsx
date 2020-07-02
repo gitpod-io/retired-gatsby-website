@@ -66,7 +66,7 @@ class IndexLayout extends React.Component<{ title?: string, canonical?: string, 
                     <html lang="en" />
                     <title>{title && `${title} - Gitpod` || data.site.siteMetadata.title}</title>
                     <meta name="description" content={description || data.site.siteMetadata.description} />
-                    <meta name="keywords" content="cloud ide, github ide, gitlab ide, javascript, online ide, web ide, code review" />
+                    <meta name="keywords" content="dev environment, development environment, devops, cloud ide, github ide, gitlab ide, javascript, online ide, web ide, code review" />
                     {
                         canonical ? <link rel="canonical" href={`${data.site.siteMetadata.siteUrl}${canonical}`} /> : null
                     }

@@ -231,7 +231,7 @@ const Styled = styled.label`
 const errorMessage = 'Please Enter a valid Github or GitLab repo Url!'
 
 const PrefixInput = () => {
-    const [url, setUrl] = useState<string>(`https://github.com/freeCodeCamp/freeCodeCamp`)
+    const [url, setUrl] = useState<string>(`https://github.com/gitpod-io/spring-petclinic`)
     const [error, setError] = useState<string>('')
 
     const validateUrl = (url: string) => {

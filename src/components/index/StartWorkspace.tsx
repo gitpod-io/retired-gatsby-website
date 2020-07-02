@@ -55,39 +55,57 @@ interface StartWorkspaceProps {
     setIsShown: (val: boolean) => void
 }
 
+function prefix(url: string) {
+    return 'https://gitpod.io/#' + url;
+}
+
 const StartWorkspace = ({ shown, setIsShown, githubUrl, gitlabUrl, bitbucketUrl }: StartWorkspaceProps) => (
     <StyledStartWorkspace>
-        <a
-            style={!shown ? {} : { display: 'none' }}
-            className="btn btn--small"
-            onClick={() => setIsShown(true)}
-            title="Choose your Platform"
-        >
-            Start Workspace
+        {
+            !gitlabUrl && !bitbucketUrl ?
+                <a
+                    style={!shown ? {} : { display: 'none' }}
+                    className="btn btn--small"
+                    title="Choose your Platform"
+                    target="_blank"
+                    href={prefix(githubUrl!)}
+                >
+                    Start Workspace
             </a>
-        <ul style={!shown ? { display: 'none' } : {}}>
-            {
-                githubUrl ? <li>
-                    <a className="platform" href={githubUrl} title={"GitHub"} target="_blank">
-                        <img src={GitHub} alt="GitHub" />
-                    </a>
-                </li> : null
-            }
-            {
-                gitlabUrl ? <li>
-                    <a className="platform" href={gitlabUrl} target="_blank">
-                        <img src={GitLab} alt="Gitlab" title={"GitLab"} />
-                    </a>
-                </li> : null
-            }
-            {
-                bitbucketUrl ? <li>
-                    <a className="platform" href={bitbucketUrl} target="_blank">
-                        <img src={Bitbucket} alt="Bitbucket" title={"Bitbucket"} />
-                    </a>
-                </li> : null
-            }
-        </ul>
+                :
+                <><a
+                    style={!shown ? {} : { display: 'none' }}
+                    className="btn btn--small"
+                    onClick={() => setIsShown(true)}
+                    title="Choose your Platform"
+                >
+                    Start Workspace
+            </a>
+                    <ul style={!shown ? { display: 'none' } : {}}>
+                        {
+                            githubUrl ? <li>
+                                <a className="platform" href={prefix(githubUrl)} title={"GitHub"} target="_blank">
+                                    <img src={GitHub} alt="GitHub" />
+                                </a>
+                            </li> : null
+                        }
+                        {
+                            gitlabUrl ? <li>
+                                <a className="platform" href={prefix(gitlabUrl)} target="_blank">
+                                    <img src={GitLab} alt="Gitlab" title={"GitLab"} />
+                                </a>
+                            </li> : null
+                        }
+                        {
+                            bitbucketUrl ? <li>
+                                <a className="platform" href={prefix(bitbucketUrl)} target="_blank">
+                                    <img src={Bitbucket} alt="Bitbucket" title={"Bitbucket"} />
+                                </a>
+                            </li> : null
+                        }
+                    </ul></>
+        }
+
     </StyledStartWorkspace>
 )
 
