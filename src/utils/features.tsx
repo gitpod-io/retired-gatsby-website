@@ -91,7 +91,7 @@ export const features: FeatureCardProps[] = [
         alt: 'Code Review',
         title: <>Do <strong>Code Reviews</strong><br />Within the IDE</>,
         text: (<>
-            <p>Open Pull/Merge Requests in Gitpod and run, navigate, and review the code from within the IDE. Reply to comments and publish code reviews without needing to switcch.</p>
+            <p>Open Pull/Merge Requests in Gitpod and run, navigate, or review the code from within the IDE. Reply to comments and publish code reviews without needing to switch tabs.</p>
             <p>More about <Link to="/blog/when-code-reviews-lgtm/">Code Reviews.</Link></p>
         </>)
     },
@@ -101,7 +101,7 @@ export const features: FeatureCardProps[] = [
         alt: 'Supported Programming Languages',
         title: <>Industry-Leading<br /><strong>Code Intelligence</strong></>,
         text: (<>
-            <p>Gitpod supports 15+ programming languages out of the box and  is continuously extending. </p> <p>If your favourite language is missing: simply install your VS Code language extension via the integrated vendor-neutral marketplace of <a href="https://open-vsx.org/" target="_blank">Open VSX</a>. </p>
+            <p>Gitpod supports all major programming languages out of the box and is continuously expanding. </p> <p>If your favourite language is missing, simply install the right VS Code language extension from within the IDE.</p>
         </>),
         featuresList: ['Syntax Highlighting', 'Smart Completions', 'Linting & Quick Fixes', 'Code Navigation', 'Debugging', 'Refactoring', 'Security Vulnerability Detection', 'Suggested Optimizations']
     }
