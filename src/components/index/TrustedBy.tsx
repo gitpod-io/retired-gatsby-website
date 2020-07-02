@@ -7,108 +7,21 @@ const StyledTrustedBy = styled.section`
     padding: 3rem 0;
 
     .logos {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        grid-row-gap: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 
-        @media(max-width: ${sizes.breakpoints.lg}) {
+        @media(max-width: 540px) {
+            display: grid;
             grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         }
 
         a {
+            flex-basis: calc(14% - 2.2rem);
             display: flex;
             border: 2px solid transparent;
             justify-content: center;
-            
-            @media(min-width: 974px) {
-                &:nth-child(n + 9) {
-                    transform: translateX(150%);
-                }
-            }
-                        
-            @media(min-width: 1241px) {
-                &:nth-child(n + 8) {
-                    transform: translateX(50%);
-                }
-            }
-
-            @media(max-width: 1093px) {
-                &:nth-child(n + 8) {
-                    transform: translateX(50%);
-                }
-            }               
-
-            @media(max-width: 973px) {
-                &:nth-child(n + 8) {
-                    transform: none;
-                }
-
-                &:last-child {
-                    transform: translateX(250%);
-                }
-            }
-
-            @media(max-width: 853px) {
-                &:nth-child(n + 11) {
-                    transform: translateX(100%);
-                }
-            }
-
-            @media(max-width: 800px) {
-                &:nth-child(n + 8) {
-                    transform: none;
-                }
-
-                &:last-child {
-                    transform: translateX(250%);
-                }
-            }
-
-            @media(max-width: 789px) {
-                &:last-child {
-                    transform: none;
-                }
-
-                &:nth-child(n + 11) {
-                    transform: translateX(100%);
-                }
-            }
-
-            @media(max-width: 669px) {
-                &:nth-child(n + 11) {
-                    transform: none;
-                }
-
-                &:last-child {
-                    transform: translateX(150%);
-                }
-            }
-            
-            @media(max-width: 549px) {
-                &:last-child {
-                    transform: translateX(100%);
-                }
-            }
-
-            @media(max-width: 429px) {
-                &:last-child {
-                    transform: translateX(0);
-                }
-            }
-
-            @media(max-width: 400px) {
-                &:last-child {
-                    transform: translateX(100%);
-                }
-            }
-
-            @media(max-width: 377px) {
-                &:last-child {
-                    transform: translateX(0);
-                }
-            }
+            margin: 1.2rem;
         }
     }
 
