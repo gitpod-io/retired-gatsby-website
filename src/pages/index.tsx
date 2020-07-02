@@ -158,7 +158,7 @@ const IndexPage: React.SFC<{}> = () => (
             alt="Open Source"
             title="Free For Open-Source!"
             text={<><p>Gitpod is built on open-source and wouldn’t exist without it. We’re happy to give something back by being completely <strong>free for open source</strong>.</p>
-            <p>Find your next project on contribute.dev.</p>
+            <p>Find your next project on <a href="https://contribute.dev" target="_blank">contribute.dev</a>.</p>
 </>}
         />
         
