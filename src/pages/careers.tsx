@@ -114,7 +114,7 @@ const jobs: ExpandableJobProps[] = [
     {
         title: 'Developer Tools Engineer',
         intro: 'If you were ever frustrated with a development tool you used and decided to build a better one yourself, this offer is for you.',
-        paragraphs: `We at TypeFox specialize in building tools and we are looking to expand our team. Our mission is to make software development fun and remove all tedious friction. We are a highly motivated team, organized in a flat hierarchy, and led by technical founders. We love open source, have started and lead many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.
+        paragraphs: `We at TypeFox specialize in building tools and we are looking to expand our team. Our mission is to make software development fun and remove all tedious friction. We are a highly motivated team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.
         What is exciting about tools is that your expertise benefits software developers as well as experts in many other fields. This includes electrical engineering, data science, mechanical engineering, healthcare, aerospace, insurance, finance, and many more. TypeFox helps customers from all over the world.`,
         lists: [
             {
