@@ -8,7 +8,7 @@ export const MoreInfoContents = {
         title: <>Gitpod <strong>Self-Hosted</strong></>,
         text: <>
                 <h3>Unleash Developer Productivity.</h3>
-                Run your own Gitpod and enjoy automated setups, better collaboration, higher code quality and a more streamlined workflow.
+                Run your own Gitpod and enjoy automated setups, better collaboration, higher code quality, and a more streamlined workflow.
               </>,
         links: <>
             <Link to="/docs/self-hosted/latest/self-hosted/" className="btn btn--cta">See Docs</Link>
