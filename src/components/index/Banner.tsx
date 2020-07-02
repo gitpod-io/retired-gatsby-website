@@ -35,7 +35,7 @@ const Styled = styled.div`
             }
 
             @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
-                width: 40%;
+                width: 41%;
             }
         }
 
@@ -97,11 +97,11 @@ const Banner = () => (
                 <header role="banner" className="banner pattern">
                     <div className="banner__text-box">
                          <h1>
-                            Dev Environment as Code <span>for modern DevOps teams.</span>
+                            Dev Environments as Code <span>for modern DevOps teams.</span>
                         </h1>
-                        <p>Describe your dev environment as code and get a fully prebuilt, ready-to-code development environment for any GitLab, GitHub, and Bitbucket project.</p>
+                        <p>Describe your dev environment as code and get fully prebuilt, ready-to-code development environments for any GitLab, GitHub, and Bitbucket project.</p>
                         <div className="btn-wrapper">
-                            <a href="https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic" className="btn btn--cta">Try Now</a>
+                            <a href="#get-started" className="btn btn--cta">Try Now</a>
                         </div>
                     </div>
                     <div className="banner__screenshot-container">
