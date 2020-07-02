@@ -3,7 +3,8 @@ date: Thu, 02 Jul 2020 12:00:00 UTC
 author: jankeromnes
 subtitle: Instant dev environments for all Bitbucket projects
 title: Gitpod for Bitbucket 🚀
-image: /teaser-gitlab-cover.png
+image: /bitbucket-integration.jpg
+teaserImage: /bitbucket-post-header.jpg
 ---
 
 We're pretty excited to bring you instant development environments for all Bitbucket projects.

@@ -2,7 +2,7 @@
 author: JesterOrNot, svenefftinge
 date: Thu June 18 2020
 teaserImage: /open-vsx-blog-post-img.jpg
-image: /open-vsx-blog-post.jpg
+image: /open-vsx-blog-post-img.jpg
 title: Search & Install Extensions in Your Gitpod Workspace
 subtitle: Open VSX is now integrated in Gitpod
 ---
