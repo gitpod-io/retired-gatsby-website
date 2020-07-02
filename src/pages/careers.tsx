@@ -86,7 +86,7 @@ const StyledCareersPage = styled.div`
 const features: FeatureItemProps[] = [
     {
         title: "Flat Hierarchy",
-        text: "We don’t like hierarchies. At Gitpod everyones opinion counts.",
+        text: "We don’t like hierarchies. At Gitpod everyone's opinion counts.",
         img: Line,
         alt: 'Line'
     },
