@@ -97,7 +97,7 @@ const Banner = () => (
                 <header role="banner" className="banner pattern">
                     <div className="banner__text-box">
                          <h1>
-                            Dev Environment as Code <span>for Modern DevOps Teams.</span>
+                            Dev Environment as Code <span>for modern DevOps teams.</span>
                         </h1>
                         <p>Describe your dev environment as code and get a fully prebuilt, ready-to-code development environment for any GitLab, GitHub, and Bitbucket project.</p>
                         <div className="btn-wrapper">
