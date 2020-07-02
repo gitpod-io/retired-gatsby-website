@@ -85,7 +85,7 @@ const GetStarted = () => (
     <StyledGetStarted className="row">
         <section className="get-started" id="get-started">
             <h2><strong>Get Started</strong></h2>
-            <p>Free for Open Source, and free for 30 days with private repositories.</p>
+            <p>Prefix any GitLab, GitHub, or Bitbucket URL with <strong>gitpod.io/#</strong></p>
 
             <div className="get-started__prefix">
                 <div className="get-started__prefix-text-container">
