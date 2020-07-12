@@ -16,4 +16,4 @@ Installing Gitpod on a subdomain works as well. For example:
 
     gitpod.your-domain.com
     *.gitpod.your-domain.com
-    *.gitpod.ws.your-domain.com
+    *.ws.gitpod.your-domain.com
