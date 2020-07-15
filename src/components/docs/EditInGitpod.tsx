@@ -11,14 +11,16 @@ const StyledEditInGitpod = styled.div`
     .pen {
         fill: ${colors.white};
         transition: all .2s;
+        height: 2.5rem;
+        width: 2.5rem;
     }
 
     a {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 5.5rem;
-        width: 5.5rem;
+        height: 4.5rem;
+        width: 4.5rem;
         background: ${colors.offWhite1};
         border-radius: 50%;
         transition: all .2s;
