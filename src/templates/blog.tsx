@@ -48,8 +48,7 @@ const StyledBlogTemplate = styled.div`
     max-width: 80rem;
     margin: 8rem auto;
     overflow: hidden;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-radius: 3px;
     background-color: ${colors.white};
     border: ${borders.light2};
 
