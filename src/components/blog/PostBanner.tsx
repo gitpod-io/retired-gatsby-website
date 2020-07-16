@@ -6,13 +6,16 @@ import { colors } from '../../styles/variables'
 const StyledPostBanner = styled.header`
     position: relative;
     overflow-x: hidden;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 
     .bg {
+        display: block;
         background-size: cover;
         background-position: center;
         height: 40rem;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
     }
 
     .contents {
