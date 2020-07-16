@@ -228,7 +228,7 @@ const Styled = styled.label`
     }
 `
 
-const errorMessage = 'Please Enter a valid GitLab, GitHub, or Bitbucket repo URL'
+const errorMessage = 'Please enter a valid GitLab, GitHub, or Bitbucket repository URL'
 
 const PrefixInput = () => {
     const [url, setUrl] = useState<string>(`https://github.com/gitpod-io/spring-petclinic`)
