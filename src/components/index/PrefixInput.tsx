@@ -228,7 +228,7 @@ const Styled = styled.label`
     }
 `
 
-const errorMessage = 'Please Enter a valid Github or GitLab repo Url!'
+const errorMessage = 'Please Enter a valid GitLab, GitHub, or Bitbucket repo URL'
 
 const PrefixInput = () => {
     const [url, setUrl] = useState<string>(`https://github.com/gitpod-io/spring-petclinic`)
@@ -236,12 +236,16 @@ const PrefixInput = () => {
 
     const validateUrl = (url: string) => {
         const lowerCaseUrl = url.toLowerCase()
-        if(!(lowerCaseUrl.includes('github.com') || lowerCaseUrl.includes
-        ('gitlab.com'))) {
-            return false
-        } else {
-            return true
+        if (lowerCaseUrl.includes('github.com')) {
+            return true;
         }
+        if (lowerCaseUrl.includes('gitlab.com')) {
+            return true;
+        }
+        if (lowerCaseUrl.includes('bitbucket.org')) {
+            return true;
+        }
+        return false;
     }
 
     const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
@@ -258,7 +262,7 @@ const PrefixInput = () => {
         if(e.key === 'Enter') {
             const el = e.target as HTMLInputElement
             if(validateUrl(el.value)) {
-                window.open(`https://gitpod.io#${el.value}`, '_blank')
+                window.open(`https://gitpod.io/#${el.value}`, '_blank')
                 setError('')
             } else {
               setError(errorMessage)  
