@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import FeatureBox from './FeatureBox'
 import { featuresCardsData } from '../../utils/features'
 import { sizes } from '../../styles/variables'
-import IceStick from '../../resources/ice-stick.svg'
+import IceStick from '../../resources/ice-cream-small.png'
 
 const Styled = styled.div`
     .intro {
@@ -67,7 +67,7 @@ const Intro = () => (
     <div className="row">
         <Styled>
             <section className="intro pattern">
-                <object role="presentation" tabIndex={-1} data={IceStick} className="ice-stick" />
+                <img alt="Ice Cream" src={IceStick} className="ice-stick" />
                 <h1>Features</h1>
                 <div className="features">
                     {
