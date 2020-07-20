@@ -9,7 +9,7 @@ First, you'll probably want to install Scala. To do this, add a new file to your
 ```Dockerfile
 FROM gitpod/workspace-full
 
-RUN brew install scala
+RUN brew update && brew install scala
 ```
 
 Additionally create a file called [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) and add the following:
@@ -25,7 +25,7 @@ Now commit both files into source control.
 
 Let's break this down. First, in `.gitpod.Dockerfile`, we declare `FROM gitpod/workspace-full` to have your project use Gitpod's default workspace image (recommended). You can use other images too, but some Gitpod features might not work as well with untested images.
 
-Next, we declare `RUN brew install scala`. This simply installs Scala into the workspace image via HomeBrew.
+Next, we declare `RUN brew update && brew install scala`. This simply installs Scala into the workspace image via HomeBrew.
 
 Then, we register our custom Dockerfile in Gitpod's configuration file `.gitpod.yml`, so that Gitpod knows it should pick it up and build it on-the-fly when booting up new workspaces.
 
@@ -48,7 +48,7 @@ Then commit the changes and push to your repository. Finally, when you open a ne
 To use [sbt](https://www.scala-sbt.org/) (simple build tool) in Gitpod, you can add the following to that [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/) we created:
 
 ```Dockerfile
-RUN brew install sbt
+RUN brew update && brew install sbt
 ```
 
 As usual, commit and push the changes, and `sbt` will be installed in all future workspaces.
@@ -58,7 +58,7 @@ As usual, commit and push the changes, and `sbt` will be installed in all future
 Say your project needs a specific Scala version. You can use [scalaenv](https://github.com/scalaenv/scalaenv), a version manager for Scala, to switch between different Scala versions. But first, we must install `scalaenv`. As usual, we need to change our [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/), by adding this to it:
 
 ```Dockerfile
-RUN brew install scalaenv
+RUN brew update && brew install scalaenv
 ```
 
 Then, say you need Scala version `2.12.11`, you would add the following line as well:
@@ -72,7 +72,7 @@ RUN scalaenv install scala-2.12.11 && scalaenv global scala-2.12.11
 [coursier](https://get-coursier.io/) is useful for building certain Scala projects and installing different tools.
 
 ```Dockerfile
-RUN brew install coursier/formulas/coursier
+RUN brew update && brew install coursier/formulas/coursier
 ```
 
 (Don't forget to commit and push this change!)
@@ -98,7 +98,7 @@ FROM gitpod/workspace-full
 
 RUN sudo sh -c '(echo "#!/usr/bin/env sh" && curl -L https://github.com/lihaoyi/Ammonite/releases/download/2.0.4/2.13-2.0.4) > /usr/local/bin/amm && chmod +x /usr/local/bin/amm'
 
-RUN brew install scala coursier/formulas/coursier sbt scalaenv
+RUN brew update && brew install scala coursier/formulas/coursier sbt scalaenv
 
 RUN sudo env "PATH=$PATH" coursier bootstrap org.scalameta:scalafmt-cli_2.12:2.4.2 \
   -r sonatype:snapshots \

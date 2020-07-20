@@ -9,7 +9,7 @@ First, you'll probably want to install R itself. To do this, add a new file to y
 ```Dockerfile
 FROM gitpod/workspace-full
 
-RUN brew install R
+RUN brew update && brew install R
 ```
 
 Next, create a Gitpod configuration file called [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) (you can also simply run `gp init` and Gitpod will generate the file), and reference the above Dockerfile in it like so:

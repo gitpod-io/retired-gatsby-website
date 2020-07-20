@@ -32,7 +32,7 @@ You can find the source code in <a href="https://github.com/gitpod-io/workspace-
 FROM gitpod/workspace-full
 
 # Install custom tools, runtime, etc.
-RUN brew install fzf
+RUN brew update && brew install fzf
 ```
 
 When you are launching the Gitpod IDE, the local console will use the `gitpod` user, so all local settings, config file, etc. should apply to `/home/gitpod` or be run using `USER gitpod` (we no longer recommend using `USER root`).

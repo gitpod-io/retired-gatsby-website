@@ -7,7 +7,7 @@ To work with Kotlin in Gitpod, you will need to properly configure your reposito
 To install Kotlin in Gitpod add the following to your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/)
 
 ```Dockerfile
-RUN brew install kotlin
+RUN brew update && brew install kotlin
 ```
 
 A full example could look like
@@ -17,7 +17,7 @@ FROM gitpod/workspace-full
 
 USER gitpod
 
-RUN brew install kotlin
+RUN brew update && brew install kotlin
 ```
 
 ## Try it

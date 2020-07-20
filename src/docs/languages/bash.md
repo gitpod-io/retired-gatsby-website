@@ -27,7 +27,7 @@ FROM gitpod/workspace-full
 
 USER gitpod
 
-RUN brew install shellcheck
+RUN brew update && brew install shellcheck
 ```
 
 You should also install the shellcheck VS Code extension in Gitpod, by adding a [.gitpod.yml](/docs/config-gitpod-file/) configuration file to your repository that looks like this (notice the `vscode` extensions section):
