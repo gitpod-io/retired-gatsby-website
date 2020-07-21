@@ -3,7 +3,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import { colors, borders } from '../../styles/variables'
-import { parseAuthors } from '../../utils/authors'
+import { parseAuthors } from '../../contents/authors'
 
 const StyledPostPreview = styled.div`
     background: ${colors.white};

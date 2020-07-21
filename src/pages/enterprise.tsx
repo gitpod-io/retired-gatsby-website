@@ -15,7 +15,7 @@ import Bitbucket from '../resources/bitbucket.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
 import { Link } from 'gatsby'
-import { textCardsData } from '../utils/enterprise'
+import { textCardsData } from '../contents/enterprise'
 
 const EnterprisePage: React.SFC<{}> = () => (
     <IndexLayout

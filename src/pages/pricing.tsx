@@ -5,7 +5,7 @@ import PricingBoxes from '../components/pricing/PricingBoxes'
 import Plans from '../components/pricing/Plans'
 import SelfHostedFAQs from '../components/pricing/SelfHostedFAQs'
 import MoreInfo from '../components/MoreInfo'
-import { MoreInfoContents } from '../utils/moreInfoContents'
+import { MoreInfoContents } from '../contents/moreInfoContents'
 
 function isSelfHostedRendered() {
     return typeof window !== `undefined` && window.location.hash === '#self-hosted';

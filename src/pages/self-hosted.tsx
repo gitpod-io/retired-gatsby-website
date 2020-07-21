@@ -12,7 +12,7 @@ import Support from '../resources/support.svg'
 import GithubGitlab from '../resources/github-gitlab.svg'
 import Adminstration from '../resources/administration.svg'
 import Install from '../components/self-hosted/Install'
-import { MoreInfoContents } from '../utils/moreInfoContents'
+import { MoreInfoContents } from '../contents/moreInfoContents'
 
 const features: FeatureItemProps[] = [
     {

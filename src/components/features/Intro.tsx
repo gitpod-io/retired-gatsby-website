@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import FeatureBox from './FeatureBox'
-import { featuresCardsData } from '../../utils/features'
+import { featuresCardsData } from '../../contents/features'
 import { sizes } from '../../styles/variables'
 import IceStick from '../../resources/ice-stick.svg'
 
