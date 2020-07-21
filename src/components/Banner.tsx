@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import link from '../utils/link'
+import link from './Link'
 
 const StyledBanner = styled.header`
     /* ------------------------------------------- */

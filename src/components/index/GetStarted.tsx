@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { sizes } from '../../styles/variables'
-import { projects } from '../../utils/projects'
+import { projects } from '../../contents/projects'
 import Project from './Project'
 import PrefixInput from './PrefixInput'
 

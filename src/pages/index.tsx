@@ -25,7 +25,7 @@ import TheiaIDELogo from '../resources/theia-grey.svg'
 import UberLogo from '../resources/uber.svg'
 import AmazonLogo from '../resources/amazon.svg'
 import IntelLogo from '../resources/intel.svg'
-import { features } from '../utils/index'
+import { features } from '../contents/index'
 import TextFeature from '../components/index/TextFeature'
 // import ProductivityWithGitpod from '../components/index/ProductivityWithGitpod'
 

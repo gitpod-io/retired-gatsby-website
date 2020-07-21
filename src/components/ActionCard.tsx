@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { colors, borders } from '../styles/variables'
-import link from '../utils/link'
+import link from './Link'
 
 const StyledActionCard = styled.section`
     display: block;

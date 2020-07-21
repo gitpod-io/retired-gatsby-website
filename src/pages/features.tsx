@@ -5,7 +5,7 @@ import BackToTopButton from '../components/BackToTopButton'
 import Intro from '../components/features/Intro'
 import FeatureCards from '../components/FeatureCards'
 import StartForFree from '../components/features/StarFortFree'
-import { features } from '../utils/features'
+import { features } from '../contents/features'
 
 const FeaturesPage: React.SFC<{}> = () => (
     <IndexLayout
