@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import FeatureBox from './FeatureBox'
 import { featuresCardsData } from '../../utils/features'
 import { sizes } from '../../styles/variables'
-import IceStick from '../../resources/ice-cream-small.png'
+import Img from 'gatsby-image'
 
 const Styled = styled.div`
     .intro {
@@ -63,11 +63,11 @@ const Styled = styled.div`
     }
 `
 
-const Intro = () => (
+const Intro = ({iceStick}: any) =>  (
     <div className="row">
         <Styled>
             <section className="intro pattern">
-                <img alt="Ice Cream" src={IceStick} className="ice-stick" />
+                <Img fluid={iceStick} alt="Ice Stick" className="ice-stick"/>
                 <h1>Features</h1>
                 <div className="features">
                     {

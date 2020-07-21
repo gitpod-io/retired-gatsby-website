@@ -33,6 +33,15 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: 'images',
+                path: './src/resources'
+            }
+        },
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
+        {
             // Exclude pages from the page build -- https://www.gatsbyjs.org/packages/gatsby-plugin-exclude/
             resolve: 'gatsby-plugin-exclude',
             options: { paths: ['/docs/README'] },
