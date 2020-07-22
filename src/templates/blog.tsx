@@ -146,25 +146,28 @@ const StyledBlogTemplate = styled.div`
 
 
 const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
-    const authors = parseAuthors(data.markdownRemark.frontmatter.author);
-    return (
-        <IndexLayout canonical={data.markdownRemark.frontmatter.url || `${data.markdownRemark.fields.slug.toLowerCase()}`}>
-            <Helmet>
-                <title>{data.markdownRemark.frontmatter.title}</title>
-                <meta name="description" content={data.markdownRemark.frontmatter.subtitle} />
-                <meta name="keywords" content="cloud ide, github, javascript, online ide, web ide, code review" />
+  const authors = parseAuthors(data.markdownRemark.frontmatter.author);
+  const metaPreview = `https://www.gitpod.io${data.markdownRemark.frontmatter.teaserImage ? data.markdownRemark.frontmatter.teaserImage : data.markdownRemark.frontmatter.image}`
+  return (
+  <IndexLayout canonical={data.markdownRemark.frontmatter.url || `${data.markdownRemark.fields.slug.toLowerCase()}`}>
+      <Helmet>
+        <title>{data.markdownRemark.frontmatter.title}</title>
+        <meta name="description" content={data.markdownRemark.frontmatter.subtitle} />
+        <meta name="keywords" content="cloud ide, github, javascript, online ide, web ide, code review" />
 
-                <meta name="twitter:card" content="summary"></meta>
-                <meta name="twitter:site" content="@gitpod"></meta>
-                {authors.map(author => <meta name="twitter:creator" content={'@' + author.socialProfiles.twitter}></meta>)}
+        <meta name="twitter:card" content="summary"></meta>
+        <meta name="twitter:site" content="@gitpod"></meta>
+        {authors.map(author => <meta name="twitter:creator" content={'@' + author.socialProfiles.twitter}></meta>)}
 
-                <meta property="og:url" content={data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug} />
-                <meta property="og:title" content={data.markdownRemark.frontmatter.title} />
-                <meta property="og:description" content={data.markdownRemark.excerpt} />
-                <meta property="og:image" content={data.markdownRemark.frontmatter.image} />
-                {
-                    data.markdownRemark.frontmatter.url ? <link rel="canonical" href={data.markdownRemark.frontmatter.url} /> : null
-                }
+        <meta property="og:url" content={data.site.siteMetadata.siteUrl + data.markdownRemark.fields.slug} />
+        <meta property="og:title" content={data.markdownRemark.frontmatter.title} />
+        <meta property="og:description" content={data.markdownRemark.excerpt} />
+        <meta property="og:image" content={metaPreview} />
+        {
+          data.markdownRemark.frontmatter.url ? <link rel="canonical" href={data.markdownRemark.frontmatter.url} /> : null
+        }
+        <meta name="twitter:image" content={metaPreview} />
+                
 
             </Helmet>
             <div className="pattern pattern--full-vp-height" style={{marginBottom: '10rem'}}>
