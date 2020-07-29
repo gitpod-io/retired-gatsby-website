@@ -28,38 +28,27 @@ const StyledDescripion = styled.span`
     }
 
     .description__text {
+        position: absolute;
         padding: .2rem .5rem;
         font-size: 1.2rem;
         color: ${colors.textDark};
         background: ${colors.offWhite2};
-        z-index: 1000 !important;
-
-        @media(max-width: 1080px) {
-            position: absolute;     
-            right: -5rem;
-            top: 2.4rem;
-            min-width: 18rem;
-            z-index: 1999999999;
-        }
-
-         @media(min-width: 1081px) {
-            position: absolute;     
-            top: 0;
-            left: 3rem;
-            min-width: 19rem;
-        }
-    }
-
-    .bottom {
-        font-weight: 400;
-        right: -10rem;
+        left: 4rem;
         top: 2.4rem;
         min-width: 18rem;
         z-index: 9999999999;
         transform: translateX(-16.5rem);
+    }
 
+    .bottom {
+        font-weight: 400;
+        top: 2.4rem;
+        min-width: 18rem;
+        z-index: 9999999999;
+        transform: translateX(-16.5rem);
         @media(max-width: 1081px) {
-            transform: translateX(-7.5rem);
+            transform: translateX(-4.5rem);
+            left: -8rem;
         }
     }
 `

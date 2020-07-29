@@ -19,7 +19,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     margin: 2rem 1rem;
     padding: 3rem 2.8rem;
     font-size: 95%;
-    min-height: ${({ isTitleOutside }) => isTitleOutside ? '35rem' : '48rem'};
+    min-height: ${({ isTitleOutside }) => isTitleOutside ? '35rem' : '54rem'};
     min-width: 20rem;
     max-width: 26rem;
     width: 25%;
@@ -46,7 +46,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         min-height: 50rem;
         padding: 3rem 2rem;
         margin-bottom: 5rem;
-        min-height: ${({ isTitleOutside }) => isTitleOutside ? '35rem' : '51rem'};
+        min-height: ${({ isTitleOutside }) => isTitleOutside ? '36rem' : '51rem'};
     }
 
     @media(max-width: 1096px) {
@@ -58,14 +58,13 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     }
 
     @media(max-width: ${sizes.breakpoints.md}) {
-        min-height: ${({ isTitleOutside }) => isTitleOutside ? '35rem' : '51rem'};
+        min-height: ${({ isTitleOutside }) => isTitleOutside ? '40rem' : '48rem'};
         min-width: 30rem;
         padding: 2rem 3rem;
     }
 
     @media(max-width: ${sizes.breakpoints.sm}) {
         min-width: 25rem;
-        min-height: auto;
     }
 
     @media(max-width: 320px) {
