@@ -99,7 +99,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         font-weight: 600;
 
         span {
-            font-size: 80%;
+            font-size: 70%;
             font-weight: 400;
         }
     }
@@ -231,6 +231,10 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     .spacer {
         height: 2.5rem;
     }
+
+    .user-month {
+        font-size: 95%;
+    }
 `
 
 export interface PricingBoxProps {
@@ -251,7 +255,8 @@ export interface PricingBoxProps {
     banner?: string
     bannerColor?: string
     subAction?: JSX.Element
-    isTitleOutside?: boolean 
+    isTitleOutside?: boolean
+    renderUserSlashMonth?: boolean
 }
 
 const PricingBox: React.SFC<PricingBoxProps> = ({
@@ -272,7 +277,8 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
     banner,
     bannerColor,
     subAction, 
-    isTitleOutside
+    isTitleOutside,
+    renderUserSlashMonth
 }) => (
         <StyledPricingBox
             transform={transform}
@@ -286,10 +292,11 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
             <h4>{title}</h4>
             {img ? img : null}
             {price ? <div className="price">{price}</div> : null}
+            { renderUserSlashMonth ? <div className="user-month">/ user / month</div> : null }
             {duration ? <div className="duration">{duration}</div> : null}
             {feature ? <div className="feature">{feature}</div> : null}
             {features && features.length ?
-                <ul>
+                <ul style={!duration ? { margin: " 1rem 0 1.5rem" } : {}}>
                     {features.map((f, i) => <li key={i}>{f}</li>)}
                 </ul>
                 : null}

@@ -63,7 +63,7 @@ const selfHostedPlans: PricingBoxProps[] = [
         title: 'Professional Teams',
         img: <img alt='Rocket' src={Rocket} />,
         features: ['Unlimited Use', 'Private & Public Repos', 'Admin Dashboard', '30-Day Free Trial'],
-        price: <>{isEurope() ? '€18' : '$20'} <span>/ month</span></>,
+        price: <>{isEurope() ? '€18' : '$20'}</>,
         duration: 'Per user',
         btnText: 'Contact Sales',
         link: '/contact/'
@@ -74,39 +74,39 @@ const plans: PricingBoxProps[] = [
     {
         title: 'Free',
         img: <object role="presentation" tabIndex={-1} data={IconOpenSource} />,
-        price: 'Free',
-        duration: '50 hours / month',
-        features: ['Public Repos', 'Private Repos (30-Day Trial)']
+        price: <>{isEurope() ? '€0' : '$0'}</>,
+        features: [<strong>50 hours / month</strong>,'Public Repos (Free Forever)', 'Private Repos (30-Day Trial)'],
+        renderUserSlashMonth: true
     },
     {
         title: 'Personal',
         img: <object role="presentation" tabIndex={-1} data={LightBulb} />,
-        price: <>{isEurope() ? '€8' : '$9'}<span> / month</span></>,
-        duration: '100 hours / month',
-        features: ['Private & Public Repos', <span className="span">4 Parallel Workspaces <PopOver description="The maximum number of workspaces a user can run at the same time" /></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes." /></span>],
+        price: `${isEurope() ? '€8' : '$9'}`,
+        features: [<strong>100 hours / month</strong>,'Private & Public Repos', <span className="span">4 Parallel Workspaces <PopOver description="The maximum number of workspaces a user can run at the same time" /></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes." /></span>],
         btnText: 'Buy Now',
-        link: 'https://gitpod.io/subscription/'
+        link: 'https://gitpod.io/subscription/',
+        renderUserSlashMonth: true
     },
     {
         title: 'Professional',
         img: <img alt='Rocket' src={Rocket} />,
-        price: <>{isEurope() ? '€23' : '$25'}<span> / month</span></>,
-        duration: 'Unlimited hours',
-        features: ['Private & Public Repos', <span className="span">8 Parallel Workspaces <PopOver description="The maximum number of workspaces a user can run at the same time" /></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes" /></span>],
+        price: `${isEurope() ? '€23' : '$25'}`,
+        features: [<strong>Unlimited hours</strong>, 'Private & Public Repos', <span className="span">8 Parallel Workspaces <PopOver description="The maximum number of workspaces a user can run at the same time" /></span>, <span className="span">30min Timeout <PopOver description="Workspaces without user activity are stopped after 30 minutes" /></span>],
         btnText: 'Buy Now',
         btnBackground: true,
         link: 'https://gitpod.io/subscription/',
-        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Create Team <PopOver textPosition="bottom" description="Get your entire team onto Gitpod with a single invoice" /></a>
+        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Create Team <PopOver textPosition="bottom" description="Get your entire team onto Gitpod with a single invoice" /></a>,
+        renderUserSlashMonth: true
     },
     {
         title: 'Unlimited',
         img: <object role="presentation" tabIndex={-1} data={MagicCap} />,
-        price: <>{isEurope() ? '€35' : '$39'}<span> / month</span></>,
-        duration: 'Unlimited hours',
-        features: ['Private & Public Repos', <span className="span">16 Parallel Workspaces <PopOver description="The maximum number of workspaces a user can run at the same time" /></span>, <span className="span">1h Timeout <PopOver description="Workspaces without user activity are stopped after 1 hour" /></span>, <span className="span">3h Timeout Boost <PopOver description="You can manually boost the timeout to 3 hours within a running workspace" /></span>],
+        price: `${isEurope() ? '€35' : '$39'}`,
+        features: [<strong>Unlimited hours</strong>, 'Private & Public Repos', <span className="span">16 Parallel Workspaces <PopOver description="The maximum number of workspaces a user can run at the same time" /></span>, <span className="span">1h Timeout <PopOver description="Workspaces without user activity are stopped after 1 hour" /></span>, <span className="span">3h Timeout Boost <PopOver description="You can manually boost the timeout to 3 hours within a running workspace" /></span>],
         btnText: 'Buy Now',
         link: 'https://gitpod.io/subscription/',
-        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Create Team <PopOver textPosition="bottom" description="Get your entire team onto Gitpod with a single invoice" /></a>
+        subAction: <a href="https://gitpod.io/teams/" target="_blank" className="sub-action">Create Team <PopOver textPosition="bottom" description="Get your entire team onto Gitpod with a single invoice" /></a>,
+        renderUserSlashMonth: true
     }
 ]
 
