@@ -20,7 +20,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format && npm test"
+      "pre-commit": "npm test"
     }
   },
   "engines": {
