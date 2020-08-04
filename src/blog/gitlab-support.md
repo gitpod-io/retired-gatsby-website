@@ -15,21 +15,25 @@ We are happy to announce that you can finally enjoy Gitpod's frictionless ready-
 Starting a dev environment for a GitLab project works just as with GitHub, i.e. you prefix any GitLab project URL with `gitpod.io/#`.
 
 You can try it out with the Spring PetClinic example:
- https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic
+https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic
 
 Besides the standard project URL, Gitpod supports
- - opening file URLs
 
-   <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/blob/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://gitlab.com/gitpod/spring-petclinic/.../petclinic/PetClinicApplication.java</a></p>
- - opening branches
+- opening file URLs
 
-   <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/tree/my-branch" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://gitlab.com/gitpod/spring-petclinic/tree/my-branch</a></p>
- - opening issues
+  <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/blob/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://gitlab.com/gitpod/spring-petclinic/.../petclinic/PetClinicApplication.java</a></p>
 
-   <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/issues/1" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://gitlab.com/gitpod/spring-petclinic/issues/1</a></p>
- - opening merge requests
+- opening branches
 
-   <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/merge_requests/1" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://gitlab.com/gitpod/spring-petclinic/merge_requests/1</a></p>
+  <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/tree/my-branch" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://gitlab.com/gitpod/spring-petclinic/tree/my-branch</a></p>
+
+- opening issues
+
+  <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/issues/1" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://gitlab.com/gitpod/spring-petclinic/issues/1</a></p>
+
+- opening merge requests
+
+  <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/merge_requests/1" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://gitlab.com/gitpod/spring-petclinic/merge_requests/1</a></p>
 
 Depending on the context, your dev environment will be initialized differently.
 
@@ -53,7 +57,8 @@ There is much more you can do to make sure every team member gets a ready-to-cod
 Gitpod’s [prebuilt workspaces](/docs/prebuilds/) are key to providing ephemeral, ready-to-code dev environments for your branches and projects. You can configure Gitpod to run your project's build asynchronously every time someone pushes new commits or branches to your repository. So when a developer wants to start coding, she can, because everything is already prepared.
 
 Enabling prebuilds on your GitLab project is done by configuring a Webhook. But don't fear, you don't have to do that manually, just run a prebuild on your project and it will be configured automatically. To do that, use the prefix `https://gitpod.io/#prebuild/`, as in
-> __https://gitpod.io/#prebuild/__`https://gitlab.com/<myuser>/<myrepo>`
+
+> **https://gitpod.io/#prebuild/**`https://gitlab.com/<myuser>/<myrepo>`
 
 ## We Need Your Feedback
 

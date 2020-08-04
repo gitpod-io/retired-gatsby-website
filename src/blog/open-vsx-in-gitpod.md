@@ -21,7 +21,7 @@ Adoption from the tool-side is going well, too. We started by supporting Open VS
 
 As you may already know, Gitpod lets you describe your dev environment as code. This means that you write configuration and code that makes Gitpod automatically generate ready-to-code dev environments for your project.
 
-An important part of such a configuration is the set of IDE extensions you need. In Gitpod you have two choices, you can either 
+An important part of such a configuration is the set of IDE extensions you need. In Gitpod you have two choices, you can either
 
 **[1] Install an extension for your project's dev environment, or**
 
@@ -37,8 +37,8 @@ Some extensions however are a matter of personal taste, such as themes and keybi
 
 While more and more extensions land in Open VSX on a daily basis, there still might be cases where you are missing a certain extension that exists in the MS marketplace. There are three things you can do:
 
- - Ideally, you go to the extension's repository itself and kindly ask the developer to publish it to Open VSX. Publishing is a one-liner (`npx ovsx publish`), so it's really low effort.
- - Download the extension's `.vsix` file (e.g. from the extension's GitHub Releases) and drag and drop it into the IDE's Extensions view. That will install and activate it automatically.
- - Create a PR over at https://github.com/open-vsx/publish-extensions — that's where we seed the Open VSX registry by automatically publishing popular open-source extensions.
+- Ideally, you go to the extension's repository itself and kindly ask the developer to publish it to Open VSX. Publishing is a one-liner (`npx ovsx publish`), so it's really low effort.
+- Download the extension's `.vsix` file (e.g. from the extension's GitHub Releases) and drag and drop it into the IDE's Extensions view. That will install and activate it automatically.
+- Create a PR over at https://github.com/open-vsx/publish-extensions — that's where we seed the Open VSX registry by automatically publishing popular open-source extensions.
 
- You can find more information in our [docs](/docs/vscode-extensions/).
+You can find more information in our [docs](/docs/vscode-extensions/).

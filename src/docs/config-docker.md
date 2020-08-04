@@ -6,19 +6,22 @@ If the [standard Docker image](https://github.com/gitpod-io/workspace-images/blo
 
 There are two ways to configure a custom Docker image in your `.gitpod.yml` file:
 
-* Reference a publicly available image:
+- Reference a publicly available image:
 
-    ```yaml
-    image: node:alpine
-    ```
-    The official Gitpod Docker images are hosted on <a href="https://hub.docker.com/u/gitpod/" target="_blank">Docker Hub</a>.
-* Reference a Dockerfile next to your `.gitpod.yml` file:
+  ```yaml
+  image: node:alpine
+  ```
 
-    ```yaml
-    image:
-      file: .gitpod.Dockerfile
-    ```
-    Once committed and pushed, Gitpod will automatically build this Dockerfile when (or <a href="/docs/prebuilds/" target="_blank">before</a>) new workspaces are created.
+  The official Gitpod Docker images are hosted on <a href="https://hub.docker.com/u/gitpod/" target="_blank">Docker Hub</a>.
+
+- Reference a Dockerfile next to your `.gitpod.yml` file:
+
+  ```yaml
+  image:
+    file: .gitpod.Dockerfile
+  ```
+
+  Once committed and pushed, Gitpod will automatically build this Dockerfile when (or <a href="/docs/prebuilds/" target="_blank">before</a>) new workspaces are created.
 
 ## Using a Dockerfile
 
@@ -38,6 +41,7 @@ RUN brew install fzf
 When you are launching the Gitpod IDE, the local console will use the `gitpod` user, so all local settings, config file, etc. should apply to `/home/gitpod` or be run using `USER gitpod` (we no longer recommend using `USER root`).
 
 You can however use `sudo` in your Dockerfile. The following example shows a typical `.gitpod.Dockerfile` inheriting from `gitpod/workspace-full`:
+
 ```Dockerfile
 FROM gitpod/workspace-full
 

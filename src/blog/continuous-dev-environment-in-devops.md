@@ -18,6 +18,7 @@ Getting our dev environments into a ready-to-code state is usually still done ma
 **Continuous dev environments** are a crucial part in a fully optimized DevOps toolchain, that allow to instantaneously spin up a ready-to-code development environment from any git state. Continuous dev environments reduce friction in onboarding and task switching and improves reproducibility across the project.
 
 ## Automated Dev Environments
+
 Automating dev environments is not new and usually focusses on the initial setup, but that doesn't quite cut it. Of course, we all have felt the pain of being on-boarded in a new project, spending the first week figuring out what tools to install and how to configure them correctly. Manually setting up a dev environment is a waste of energy. Surprising that we still do such things, given that we developers are usually busy automating everything else in the world.
 
 ![disposable dev environments](./continuous-dev-environment-in-devops/gears.jpg)
@@ -67,15 +68,17 @@ The Theia IDE open-source project is fully configured with continuously prebuilt
 ![Theia in Gitpod](./continuous-dev-environment-in-devops/theia.png)
 
 ## But my environment is different than those from my teammates!
+
 Yes, of course, there are personal preferences like themes, keybindings, or even one or the other tool. Some developers heavily use command-line tools and have very advanced configurations. Others use particular VS Code extensions that improve their workflow significantly.
 
 ![Individual](./continuous-dev-environment-in-devops/share.jpg)
 
 > Why don't we share all that goodness within the team?
 
-While [Gitpod](/) lets you have user-specific settings, we see an opportunity in sharing the wisdom within the team to ***build a perfect, friction-free setup for everyone***. This way, you can share your impressive terminal skills and configuration with your team, and you might learn a new thing or two as well.
+While [Gitpod](/) lets you have user-specific settings, we see an opportunity in sharing the wisdom within the team to **_build a perfect, friction-free setup for everyone_**. This way, you can share your impressive terminal skills and configuration with your team, and you might learn a new thing or two as well.
 
 ## The missing piece in DevOps
+
 I'm pretty sure, automated ready-to-code dev environments will become mainstream. The advantages and implications are just too good to be ignored. Everyone who has understood and experienced the benefits of a proper DevOps toolchain should understand how providing dev environments on-demand completes that experience. Ironing out that last area of non-reproducible and very annoying yak-shaving should be high on our todo list as it will improve developer productivity drastically.
 
 Gitpod is available [to open-source projects for free and affordable for commercial projects](/pricing), through the Saas offering (Gitpod.io). [Gitpod Enterprise](/pricing#enterprise) will soon be released, allows self-hosting Gitpod on any Kubernetes cluster, and integrates with GitHub Enterprise, GitLab, Jenkins, JIRA and other tools in your DevOps toolchain.

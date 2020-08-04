@@ -32,7 +32,7 @@ For that we eliminated any ‘create environment’-wizards and dashboards stand
 
 In the launch post for VSO disposable dev environments are mentioned, which is an important part of our vision, but unfortunately VSO doesn’t embrace it in the actual product. After getting through the account creation of VSO, you land on a dashboard and create a dev environment through a form based configuration dialog. Due to the lack of prebuilds, creating fresh dev environments all the time is tedious, as you need to wait for the build, downloading dependencies and running tests. This dashboard-centric approach encourages people to reuse their workspaces instead of relying on a well-working, automated setup continuously.
 
-Gitpod, on the other hand, builds your branches similar to a CI build *before* you open a dev environment. This way you are really ready-to-code whenever you open a workspace. Disposable dev environments really need such a feature as you’d otherwise waste your time on [watching your build](/blog/prebuilds/).
+Gitpod, on the other hand, builds your branches similar to a CI build _before_ you open a dev environment. This way you are really ready-to-code whenever you open a workspace. Disposable dev environments really need such a feature as you’d otherwise waste your time on [watching your build](/blog/prebuilds/).
 
 # Self Hosting
 
@@ -47,6 +47,7 @@ A list of checkboxes doesn’t make a good product, although in terms of feature
 That said, VSO is still in beta and they have features on their agenda that are also not yet supported on Gitpod, such as starting Windows VMs.
 
 Anyhow, the Gitpod team is not striving for an ever growing feature list. Instead,
+
 > we are focussing on a coherent developer experience (DX) that doesn’t get into your way, but lets you focus on coding.
 
 # Microsoft Monopoly?
@@ -58,10 +59,10 @@ For GitHub, GitLab seems to be the only real competitor and Azure DevOps is tryi
 # Conclusion
 
 In this post I covered the most important differences between Gitpod and Visual Studio Online. In a nutshell:
-on the IDE feature level there are not many differences, __but__
- - regarding how dev environments are provisioned, Gitpod’s approach is clearly leading the pack.
- - Self-hosting is not really supported by VSO and
- - Microsoft is growing a little too dominant in the developer world these days.
+on the IDE feature level there are not many differences, **but**
 
- Please reach out if you have further questions.
+- regarding how dev environments are provisioned, Gitpod’s approach is clearly leading the pack.
+- Self-hosting is not really supported by VSO and
+- Microsoft is growing a little too dominant in the developer world these days.
 
+Please reach out if you have further questions.

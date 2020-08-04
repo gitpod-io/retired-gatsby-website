@@ -43,6 +43,7 @@ By default Gitpod prebuilds workspaces for all changes on the default branch (e.
 > prebuilds on a private repository, you must to give Gitpod access to private repositories.
 
 There are three parts to configuring prebuilds:
+
 1. the tasks that will be run during a prebuild,
 2. when a prebuild should be triggered, and
 3. how you will be notified by the Gitpod GitHub app (GitHub only)
@@ -59,6 +60,7 @@ Once you have installed the [Gitpod GitHub app](https://github.com/apps/gitpod-i
 > **Note:** The Gitpod GitHub app has no equivalent for GitLab or Bitbucket yet, so this entire section is GitHub-specific for now.
 
 See below for an example:
+
 ```YAML
 github:
   prebuilds:
@@ -81,16 +83,20 @@ github:
 ```
 
 ### When a prebuild is run
+
 The `prebuilds` section in the `.gitpod.yml` file configures when prebuilds are run.
 By default prebuilds are run on push to master and for each pull request coming from the same repository.
 You can enable prebuilds also for all branches and for pull requests from forks.
 
 ### GitHub integration
+
 Once the GitHub app is installed Gitpod can add helpful annotations to your pull requests.
 
 #### Checks
+
 By default Gitpod registers itself as a check to pull requests - much like a continuous integration system would do.
 You can disable this behaviour in the `.gitpod.yml` file in your default/master branch:
+
 ```YAML
 github:
   prebuilds:
@@ -98,20 +104,22 @@ github:
 ```
 
 #### Comment
+
 Gitpod can add a comment with a "Review in Gitpod" button to your pull requests. The color of the button
 shows the state of the prebuild:
 
 <div class="table-container">
 
-| <div style="width:140px">Button color</div> | Prebuild state |
-| ---  | --- |
+| <div style="width:140px">Button color</div>                            | Prebuild state                                                                                                                                            |
+| ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![Review in Gitpod (prebuild building)](./images/prebuild-ongoing.svg) | the prebuild is currently running. Opening a workspace now will show the log output of the prebuild. Once the prebuild is done, your workspace will open. |
-| ![Review in Gitpod (prebuild done)](./images/prebuild-done.svg) | the prebuild is done. A new workspace on this branch/PR will make use of this prebuild. |
-| ![Review in Gitpos (prebuild failed)](./images/prebuild-failed.svg) | the prebuild failed or timed out. A new workspace on this branch/PR will open the prebuild and show you the log output. |
+| ![Review in Gitpod (prebuild done)](./images/prebuild-done.svg)        | the prebuild is done. A new workspace on this branch/PR will make use of this prebuild.                                                                   |
+| ![Review in Gitpos (prebuild failed)](./images/prebuild-failed.svg)    | the prebuild failed or timed out. A new workspace on this branch/PR will open the prebuild and show you the log output.                                   |
 
 </div>
 
 You can enable this behaviour in the `.gitpod.yml` file in your default/master branch:
+
 ```YAML
 github:
   prebuilds:
@@ -119,10 +127,12 @@ github:
 ```
 
 #### Badge
+
 Instead of adding a comment, Gitpod can also modify the description of a pull request to add the "Review in Gitpod" button.
 This approach produces fewer GitHub notifications, but can also create a concurrent editing conflict when the bot and a user try to edit the description of a pull request at the same time.
 
 You can enable this behaviour in the `.gitpod.yml` file in your default/master branch:
+
 ```YAML
 github:
   prebuilds:
@@ -133,10 +143,12 @@ The `addComment` and `addBadge` behaviours are not mutually exclusive (i.e. enab
 If you don't want the comments to be added, disable them using `addComment: false`.
 
 #### Label
+
 Gitpod can also add a label to your pull requests once the prebuild is done. If someone pushes to the source branch of the PR, Gitpod will remove the label until the new prebuild is ready.
 This is handy if you only want to review PRs for which a prebuild exists, saving you the time waiting for stuff to build.
 
 You can enable this behaviour in the `.gitpod.yml` file in your default/master branch:
+
 ```YAML
 github:
   prebuilds:

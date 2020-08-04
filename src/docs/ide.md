@@ -4,12 +4,12 @@ The IDE in Gitpod is based on the open-source project [Theia](https://theia-ide.
 and developed under the umbrella of the Eclipse Foundation, which ensures vendor neutrality and
 emphasizes diversity.
 
-  * [Overview](#overview)
-  * [Tips & Tricks](/docs/tips-and-tricks/)
-  * [Git Integration](/docs/git/)
-  * [Search](/docs/search/)
-  * [Pull Requests](/docs/pull-requests/)
-  * [Code Reviews](/docs/code-reviews/)
+- [Overview](#overview)
+- [Tips & Tricks](/docs/tips-and-tricks/)
+- [Git Integration](/docs/git/)
+- [Search](/docs/search/)
+- [Pull Requests](/docs/pull-requests/)
+- [Code Reviews](/docs/code-reviews/)
 
 ## Overview
 

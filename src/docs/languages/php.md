@@ -6,11 +6,11 @@ Gitpod supports PHP right out of the box, but more advanced features such as deb
 
 <div class="table-container">
 
-| Repository | Description | Try it |
-|------------|-------------|--------|
+| Repository                                                  | Description                                                                   | Try it                                                                                                                         |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | [magento2gitpod](https://github.com/nemke82/magento2gitpod) | Magento 2 optimized setup for Gitpod: Nginx, MySQL, PHP 7.2, PHP-FPM and more | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nemke82/magento2gitpod) |
-| [koel](https://github.com/phanan/koel) | A personal music streaming server that works | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/phanan/koel) |
-| [symfony-demo](https://github.com/gitpod-io/symfony-demo) | Symfony Demo Application |[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/symfony-demo)
+| [koel](https://github.com/phanan/koel)                      | A personal music streaming server that works                                  | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/phanan/koel)            |
+| [symfony-demo](https://github.com/gitpod-io/symfony-demo)   | Symfony Demo Application                                                      | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/symfony-demo) |
 
 </div>
 
@@ -83,12 +83,14 @@ Finally, here is a full [example repository](https://github.com/JesterOrNot/Gitp
 ## PECL Package Manager
 
 Gitpod's default workspace image also comes with the [PECL](https://pecl.php.net/) package manager pre-installed. To install packages with it, you must use `sudo pecl install <EXTENSION>` in your repository's [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/), e.g. like so:
+
 ```Dockerfile
 FROM gitpod/workspace-full
 
 RUN sudo pecl channel-update pecl.php.net && \
     sudo pecl install <EXTENSION>
-``` 
+```
+
 where `<EXTENSION>` is the PHP extension you want to install, e.g. `xdebug`.
 
 ## Further Reading

@@ -19,7 +19,7 @@ While all the projects above support VS Code extensions, only Microsoft products
 
 Gitpod employs a workaround where users can upload .vsix files to install extensions. This causes unnecessary friction as users have to download those files directly from GitHub, just to re-upload them to Gitpod. Downloading from the Microsoft Marketplace for any use other than in Microsoft products is prohibited, too.
 
-Most extensions are developed by the community and published under permissive Open Source Licenses. Having to distribute and access these community-owned extensions in a system with such restrictive terms of services does not seem right.  We want to fix this and host an open-source extension registry at the vendor-neutral [Eclipse Foundation](https://www.eclipse.org/org/foundation/).
+Most extensions are developed by the community and published under permissive Open Source Licenses. Having to distribute and access these community-owned extensions in a system with such restrictive terms of services does not seem right. We want to fix this and host an open-source extension registry at the vendor-neutral [Eclipse Foundation](https://www.eclipse.org/org/foundation/).
 
 ## You Can Host Your Own Registry
 

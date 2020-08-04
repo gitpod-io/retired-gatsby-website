@@ -3,7 +3,7 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { sizes } from '../styles/variables'
 
-const StyledTextCards  = styled.section`
+const StyledTextCards = styled.section`
     .text-cards {
         display: flex;
         flex-wrap: wrap;
@@ -20,18 +20,16 @@ const StyledTextCards  = styled.section`
 `
 
 interface TextCardsProps {
-    title?: string
+  title?: string
 }
 
 const TextCards: React.SFC<TextCardsProps> = ({ title, children }) => (
-    <div className="row">
-        <StyledTextCards>
-            { title ? <h2>{title}</h2> : null }
-            <div className="text-cards">
-                {children}
-            </div>
-        </StyledTextCards>
-    </div>
+  <div className="row">
+    <StyledTextCards>
+      {title ? <h2>{title}</h2> : null}
+      <div className="text-cards">{children}</div>
+    </StyledTextCards>
+  </div>
 )
 
 export default TextCards

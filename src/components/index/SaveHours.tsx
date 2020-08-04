@@ -49,21 +49,21 @@ const StyledSaveHours = styled.section`
 `
 
 const SaveHours = () => (
-    <div className="row">
-        <StyledSaveHours>
-            <div className="img-container">
-                <img src={RocketLaunch} alt="Rocket Launch" />
-            </div>
-            <div className="text">
-                <h2>
-                    <strong>
-                        Save countless of hours of watching your code build.
-                </strong>
-                </h2>
-                <p>With Gitpod you can automate and prebuild your dev enviroments so that you and your team can start coding with a single click.</p>
-            </div>
-        </StyledSaveHours>
-    </div>
+  <div className="row">
+    <StyledSaveHours>
+      <div className="img-container">
+        <img src={RocketLaunch} alt="Rocket Launch" />
+      </div>
+      <div className="text">
+        <h2>
+          <strong>Save countless of hours of watching your code build.</strong>
+        </h2>
+        <p>
+          With Gitpod you can automate and prebuild your dev enviroments so that you and your team can start coding with a single click.
+        </p>
+      </div>
+    </StyledSaveHours>
+  </div>
 )
 
 export default SaveHours

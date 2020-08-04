@@ -119,25 +119,24 @@ const StyledDocsLayout = styled.div`
 `
 
 interface DocsLayoutProps {
-    canonical: string
-    title: string
-    body: JSX.Element
+  canonical: string
+  title: string
+  body: JSX.Element
 }
 
-const DocsLayout: React.SFC<DocsLayoutProps> = ({ canonical, title, body}) => (
-    <IndexLayout canonical={canonical} title={title} description="Documentation site for Gitpod.">
-        <StyledDocsLayout>
-                <div className="row">
-                    <div className="content">
-                        <DocSideBar />
-                        <DocTopicChooser />
-                        {body}
-                    </div>
-                </div>
-            <BackToTopButton />
-
-        </StyledDocsLayout>
-    </IndexLayout>
+const DocsLayout: React.SFC<DocsLayoutProps> = ({ canonical, title, body }) => (
+  <IndexLayout canonical={canonical} title={title} description="Documentation site for Gitpod.">
+    <StyledDocsLayout>
+      <div className="row">
+        <div className="content">
+          <DocSideBar />
+          <DocTopicChooser />
+          {body}
+        </div>
+      </div>
+      <BackToTopButton />
+    </StyledDocsLayout>
+  </IndexLayout>
 )
 
 export default DocsLayout

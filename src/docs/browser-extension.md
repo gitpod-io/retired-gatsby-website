@@ -8,5 +8,6 @@ prefixing for you. Nothing more.
 ![Browser Extension](images/browser-extension-lense.png)
 
 We provide the extension for
-  - [Chrome](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki)
-  - [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/gitpod/).
+
+- [Chrome](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki)
+- [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/gitpod/).

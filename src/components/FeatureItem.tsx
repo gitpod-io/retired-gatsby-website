@@ -45,20 +45,20 @@ const StyledFeatureItem = styled.div`
 `
 
 export interface FeatureItemProps {
-    title: string
-    text: string
-    img: string
-    alt?: string
+  title: string
+  text: string
+  img: string
+  alt?: string
 }
 
 const FeatureItem = ({ title, text, img, alt }: FeatureItemProps) => (
-    <StyledFeatureItem>
-        <img src={img} alt={alt ? alt : title}/>
-        <div>
-            <h3>{title}</h3>
-            <p>{text}</p>
-        </div>
-    </StyledFeatureItem>
+  <StyledFeatureItem>
+    <img src={img} alt={alt ? alt : title} />
+    <div>
+      <h3>{title}</h3>
+      <p>{text}</p>
+    </div>
+  </StyledFeatureItem>
 )
 
 export default FeatureItem

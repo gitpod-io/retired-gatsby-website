@@ -107,187 +107,203 @@ const StyledContactPage = styled.div`
 `
 
 function encode(data: { [k: string]: string | number | boolean | null | undefined }) {
-    return Object.keys(data)
-        .map((key) => {
-            const value = data[key];
-            return encodeURIComponent(key) + '=' + (value === null || value === undefined ? 'null' : encodeURIComponent(value))
-        })
-        .join('&')
+  return Object.keys(data)
+    .map((key) => {
+      const value = data[key]
+      return `${encodeURIComponent(key)}=${value === null || value === undefined ? 'null' : encodeURIComponent(value)}`
+    })
+    .join('&')
 }
 
 const subjects: string[] = [
-    "I have a question regarding Gitpod Self-Hosted",
-    "I have a question regarding Gitpod Education",
-    "Student Unlimited: Get Verified as a Student",
-    "Applying for Professional Open Source",
-    "Other"
+  'I have a question regarding Gitpod Self-Hosted',
+  'I have a question regarding Gitpod Education',
+  'Student Unlimited: Get Verified as a Student',
+  'Applying for Professional Open Source',
+  'Other'
 ]
 
-export default function ContactPage(props: any) {
-    const [state, setState] = React.useState<{
-        name?: string,
-        consent?: boolean,
-        eMail?: string,
-        subject?: string,
-        message?: string,
-        messageSent?: boolean,
-        errorMessage?: string
-    }>({subject: props && (props.location && props.location.state) && props.location.state.subject})
-    if (typeof window !== 'undefined' && window.location.hash && state.message === undefined) {
+export const ContactPage = (props: any) => {
+  const [state, setState] = React.useState<{
+    name?: string
+    consent?: boolean
+    eMail?: string
+    subject?: string
+    message?: string
+    messageSent?: boolean
+    errorMessage?: string
+  }>({ subject: props && props.location && props.location.state && props.location.state.subject })
+  if (typeof window !== 'undefined' && window.location.hash && state.message === undefined) {
+    setState({
+      ...state,
+      message: decodeURIComponent(window.location.hash.substr(1))
+    })
+  }
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setState({
+      ...state,
+      errorMessage: undefined,
+      [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value
+    })
+  }
+
+  const handleChangeTextArea = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+  const handleChangeSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setState({
+      ...state,
+      errorMessage: undefined,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    if (!state.eMail) {
+      setState({
+        ...state,
+        errorMessage: 'Please provide a valid email address so that we can reply to you.'
+      })
+      return
+    }
+    if (!state.message) {
+      setState({
+        ...state,
+        errorMessage: "Sorry! The message can't be empty, please type a message."
+      })
+      return
+    }
+    if (state.consent !== true) {
+      setState({
+        ...state,
+        errorMessage: 'Please agree to us storing your provided information so that we can reply to you.'
+      })
+      return
+    }
+    const form = e.target as HTMLFormElement
+    fetch('/contact/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...state
+      })
+    })
+      .then(() =>
         setState({
-            ...state,
-            message: decodeURIComponent(window.location.hash.substr(1))
-        });
-    }
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setState({
-            ...state,
-            errorMessage: undefined,
-            [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value
+          ...state,
+          messageSent: true
         })
-    }
+      )
+      .catch((error) => alert(error))
+  }
+  return (
+    <IndexLayout canonical="/contact/">
+      <StyledContactPage className="pattern">
+        <div className="row">
+          {state.messageSent ? (
+            <div className="sucess">
+              <img src={tick} alt="Tick" />
+              <h1>
+                <span>Thanks for Your Mail,</span>
+                <br /> We'll Get Back to you soon!
+              </h1>
+            </div>
+          ) : (
+            <form
+              className="form"
+              method="POST"
+              name="Contact"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <div style={{ visibility: 'hidden' }}>
+                <label>
+                  Don’t fill this out if you're human: <input name="bot-field" />
+                </label>
+              </div>
 
-    const handleChangeTextArea = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-        setState({ ...state, [e.target.name]: e.target.value })
-    }
+              <h1 style={{ marginBottom: '2rem' }}>Contact</h1>
 
-    const handleChangeSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        setState({
-            ...state,
-            errorMessage: undefined,
-            [e.target.name]: e.target.value
-        })
-    }
-
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
-        if (!state.eMail) {
-            setState({
-                ...state,
-                errorMessage: 'Please provide a valid email address so that we can reply to you.'
-            });
-            return;
-        }
-        if(!state.message) {
-            setState({
-                ...state,
-                errorMessage: "Sorry! The message can't be empty, please type a message."
-            })
-            return;
-        }
-        if (state.consent !== true) {
-            setState({
-                ...state,
-                errorMessage: 'Please agree to us storing your provided information so that we can reply to you.'
-            });
-            return;
-        }
-        const form = e.target as HTMLFormElement;
-        fetch('/contact/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: encode({
-                'form-name': form.getAttribute('name'),
-                ...state,
-            }),
-        })
-            .then(() => setState({
-                ...state,
-                messageSent: true
-            }))
-            .catch((error) => alert(error))
-    }
-    return (
-        <IndexLayout canonical="/contact/">
-            <StyledContactPage className="pattern">
-                <div className="row">
-                    { state.messageSent ?
-                        <div className="sucess">
-                            <img src={tick} alt="Tick"/>
-                            <h1><span>Thanks for Your Mail,</span><br/> We'll Get Back to you soon!</h1>
-                        </div>
-                    :
-                    <form className="form"
-                        method="POST"
-                        name="Contact"
-                        data-netlify="true"
-                        data-netlify-honeypot="bot-field"
-                        onSubmit={handleSubmit}>
-                        <input type="hidden" name="form-name" value="contact" 
-                    />
-                        <div style={{ visibility: "hidden" }}>
-                            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                        </div>
-
-                        <h1 style={{marginBottom: '2rem'}}>Contact</h1>
-
-                        <div className="form__container">
-                            <label className="visually-hidden" htmlFor="Name"> Name</label>
-                            <input 
-                                autoFocus 
-                                name="name" 
-                                className="form__input form__input--half" 
-                                type="text" placeholder="Name" 
-                                id="Name" 
-                                onChange={handleChange} 
-                            />
-                            <label className="visually-hidden" htmlFor="eMail">E-Mail</label>
-                            <input 
-                                name="eMail" 
-                                className="form__input form__input--half" 
-                                type="email" 
-                                placeholder="E-mail" 
-                                id="eMail" 
-                                onChange={handleChange} 
-                            />
-                            <div className="subject">
-                                <label htmlFor="subject">Please choose a subject</label>
-                                <select 
-                                    value={state.subject}
-                                    onChange={handleChangeSelect}
-                                    name="subject"
-                                    id="subject" 
-                                >
-                                    <option>{state.subject ? state.subject : '-- Subject --'}</option>
-                                    { 
-                                        subjects.filter(subject => subject !== state.subject).map((subject, i) => (
-                                            <option key={i} value={subject}>
-                                                {subject}
-                                            </option>
-                                        ))
-                                    }
-                                </select>
-                            </div>
-                            <label className="visually-hidden" htmlFor="message">Please type your message</label>
-                            <textarea name="message" className="form__textarea"
-                                placeholder='Please type your message'
-                                id="message"
-                                onChange={handleChangeTextArea}
-                                value={state.message}
-                            >
-                            </textarea>
-                            <div style={ { display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', margin: '0px 0px 20px 0px' }}>
-                                <input name="consent" id="consent" type="checkbox" onChange={handleChange} style={{margin: '0px 10px', transform: 'translateY(.5rem)'}}/>
-                                <label htmlFor="consent">
-                                    I consent to having this website store my submitted information so that a support staff can respond to my inquiry.
-                                </label>
-                            </div>
-                             { state.errorMessage ? <p className="error">{state.errorMessage}</p> : null }
-                            <div>
-                                <button 
-                                    type="submit" 
-                                    className="btn btn--cta" 
-                                    style={{ cursor: 'pointer' }}
-                                >
-                                    Send
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                    }
+              <div className="form__container">
+                <label className="visually-hidden" htmlFor="Name">
+                  {' '}
+                  Name
+                </label>
+                <input
+                  autoFocus
+                  name="name"
+                  className="form__input form__input--half"
+                  type="text"
+                  placeholder="Name"
+                  id="Name"
+                  onChange={handleChange}
+                />
+                <label className="visually-hidden" htmlFor="eMail">
+                  E-Mail
+                </label>
+                <input
+                  name="eMail"
+                  className="form__input form__input--half"
+                  type="email"
+                  placeholder="E-mail"
+                  id="eMail"
+                  onChange={handleChange}
+                />
+                <div className="subject">
+                  <label htmlFor="subject">Please choose a subject</label>
+                  <select value={state.subject} onChange={handleChangeSelect} name="subject" id="subject">
+                    <option>{state.subject ? state.subject : '-- Subject --'}</option>
+                    {subjects
+                      .filter((subject) => subject !== state.subject)
+                      .map((subject, i) => (
+                        <option key={i} value={subject}>
+                          {subject}
+                        </option>
+                      ))}
+                  </select>
                 </div>
-            </StyledContactPage>
-        </IndexLayout>
-    )
+                <label className="visually-hidden" htmlFor="message">
+                  Please type your message
+                </label>
+                <textarea
+                  name="message"
+                  className="form__textarea"
+                  placeholder="Please type your message"
+                  id="message"
+                  onChange={handleChangeTextArea}
+                  value={state.message}
+                />
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', margin: '0px 0px 20px 0px' }}>
+                  <input
+                    name="consent"
+                    id="consent"
+                    type="checkbox"
+                    onChange={handleChange}
+                    style={{ margin: '0px 10px', transform: 'translateY(.5rem)' }}
+                  />
+                  <label htmlFor="consent">
+                    I consent to having this website store my submitted information so that a support staff can respond to my inquiry.
+                  </label>
+                </div>
+                {state.errorMessage ? <p className="error">{state.errorMessage}</p> : null}
+                <div>
+                  <button type="submit" className="btn btn--cta" style={{ cursor: 'pointer' }}>
+                    Send
+                  </button>
+                </div>
+              </div>
+            </form>
+          )}
+        </div>
+      </StyledContactPage>
+    </IndexLayout>
+  )
 }
+
+export default ContactPage

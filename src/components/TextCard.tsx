@@ -12,13 +12,13 @@ import Theia from '../resources/theia-ide.svg'
 import Docker from '../resources/docker.svg'
 
 const Logos: any = {
-    Bitbucket: Bitbucket,
-    Github: Github,
-    Gitlab: Gitlab,
-    Git: Git,
-    VSC: VSC,
-    Theia: Theia,
-    Docker: Docker
+  Bitbucket,
+  Github,
+  Gitlab,
+  Git,
+  VSC,
+  Theia,
+  Docker
 }
 
 const StyledTextCard = styled.div`
@@ -69,21 +69,27 @@ const StyledTextCard = styled.div`
 `
 
 interface TextCardProps {
-    title: string
-    paragraphs: (string | JSX.Element)[]
-    more?: JSX.Element
-    logos?: string[]
+  title: string
+  paragraphs: (string | JSX.Element)[]
+  more?: JSX.Element
+  logos?: string[]
 }
 
-const TextCard: React.SFC<TextCardProps> = ({title, paragraphs, more, logos}) => (
-    <StyledTextCard className="text-card">
-        <h3 className="title">{title}</h3>
-        { paragraphs.map((p, i) => <p key={i+title}>{p}</p>) }
-        { more ? more : null }
-        {logos && logos.length ? <div className="brands">
-            {logos.map((logo, i) => <img key={i+title} src={Logos[logo]} alt={`${logo} Logo.`}/>)}
-        </div> : null}
-    </StyledTextCard>
+const TextCard: React.SFC<TextCardProps> = ({ title, paragraphs, more, logos }) => (
+  <StyledTextCard className="text-card">
+    <h3 className="title">{title}</h3>
+    {paragraphs.map((p, i) => (
+      <p key={i + title}>{p}</p>
+    ))}
+    {more ? more : null}
+    {logos && logos.length ? (
+      <div className="brands">
+        {logos.map((logo, i) => (
+          <img key={i + title} src={Logos[logo]} alt={`${logo} Logo.`} />
+        ))}
+      </div>
+    ) : null}
+  </StyledTextCard>
 )
 
 export default TextCard

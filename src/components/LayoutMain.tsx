@@ -14,7 +14,9 @@ interface LayoutMainProps {
 }
 
 const LayoutMain: React.SFC<LayoutMainProps> = ({ children, className }) => (
-  <StyledLayoutMain className={className} role="main">{children}</StyledLayoutMain>
+  <StyledLayoutMain className={className} role="main">
+    {children}
+  </StyledLayoutMain>
 )
 
 export default LayoutMain

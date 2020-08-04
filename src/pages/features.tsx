@@ -8,21 +8,19 @@ import StartForFree from '../components/features/StarFortFree'
 import { features } from '../utils/features'
 
 const FeaturesPage: React.SFC<{}> = () => (
-    <IndexLayout
-        canonical='/features/'
-        title="Features"
-        description="Learn about Gitpod's collaboration tools, workspace snapshots, supported programming languages, and much more."
-    >
-        <Intro />
+  <IndexLayout
+    canonical="/features/"
+    title="Features"
+    description="Learn about Gitpod's collaboration tools, workspace snapshots, supported programming languages, and much more."
+  >
+    <Intro />
 
-        <FeatureCards 
-            features={features}
-        />
+    <FeatureCards features={features} />
 
-        <StartForFree />
+    <StartForFree />
 
-        <BackToTopButton />
-    </IndexLayout>
+    <BackToTopButton />
+  </IndexLayout>
 )
 
 export default FeaturesPage

@@ -8,9 +8,9 @@ Here are a few Bash example projects that are already automated with Gitpod:
 
 <div class="table-container">
 
-| Repository | Description | Try It |
-|------------|--------------|--------|
-|[inlets/inlets](https://github.com/inlets/inlets) | Reverse proxy and service tunnel | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/inlets/inlets) 
+| Repository                                        | Description                      | Try It                                                                                                                |
+| ------------------------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| [inlets/inlets](https://github.com/inlets/inlets) | Reverse proxy and service tunnel | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/inlets/inlets) |
 
 </div>
 
@@ -74,10 +74,10 @@ Not sure about Bash IDE? Try it in Gitpod
 
 - For more information about ShellCheck please see [shellcheck.net](https://shellcheck.net)
 
-
 ## Known issues
 
 ### The shellcheck program was not found
+
 [It has been reported](https://github.com/gitpod-io/gitpod/issues/1461#issuecomment-621232166) that shellcheck extension fails to detect shellcheck from homebrew which results in:
 ![image](https://user-images.githubusercontent.com/11302521/80605581-91110b80-8a33-11ea-9247-44cb33134cc9.png)
 

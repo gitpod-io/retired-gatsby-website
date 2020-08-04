@@ -46,11 +46,12 @@ RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
 Gitpod provides disposable dev environments, which means you are getting fresh development environments for every task. So configuring them to be ready-to-code is crucial to get the most out of Gitpod.
 
 In the generated `.gitpod.yml` you will find the following section:
+
 ```yml
 # List the startup tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-- init: echo 'init script' # runs during prebuild
-  command: echo 'start script'
+  - init: echo 'init script' # runs during prebuild
+    command: echo 'start script'
 ```
 
 You can have as many tasks as you which, each will result in an opened terminal when you start a dev environment.
@@ -61,15 +62,16 @@ For instance, in the [Spring Petclinic demo](https://github.com/gitpod-io/spring
 ```yml
 # startup tasks
 tasks:
-- init: ./mvnw package -DskipTests
-  command: java -jar target/*.jar
+  - init: ./mvnw package -DskipTests
+    command: java -jar target/*.jar
 ```
 
 Since we have installed the [Gitpod app](https://github.com/apps/gitpod-io) on that GitHub repository, Gitpod will prebuild any branch as soon as it starts. During a prebuild it will
- 1) start a container based on the docker image,
- 2) clone the repository and check out the respective branch,
- 3) run the `before` and `init` parts of every task,
- 4) capture the result and store it
+
+1.  start a container based on the docker image,
+2.  clone the repository and check out the respective branch,
+3.  run the `before` and `init` parts of every task,
+4.  capture the result and store it
 
 Once you or your teammates start a dev environment, you will get the prebuild state. The log output from `init` is still presented in the terminal but it will have two additional lines, e.g.:
 
@@ -87,29 +89,32 @@ Here is a quick clip on how to automatically configure debugging for Java!
 ![Java debugging example](../images/JavaDebug.gif)
 
 So, basically in this video we:
+
 1. First, open the Java file that we want to debug
 2. Then, go to the debug menu and select "Add Configuration..."
 3. Next, in the dropdown choose "Java: Launch Program in Current File"
-5. Finally, start debugging your Java program!
+4. Finally, start debugging your Java program!
 
 You can also create the Java debug configuration file manually
 
 To start debugging your Java application in Gitpod, please create a new directory called `.theia/`, and inside add a file called `launch.json`, finally add the following to it:
+
 ```json
 {
   // Use IntelliSense to learn about possible attributes.
   // Hover to view descriptions of existing attributes.
   "version": "0.2.0",
   "configurations": [
-      {
-          "type": "java",
-          "name": "Debug (Launch) - Current File",
-          "request": "launch",
-          "mainClass": "${file}"
-      }
+    {
+      "type": "java",
+      "name": "Debug (Launch) - Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    }
   ]
 }
 ```
+
 Then, simply open the Java file you want to debug, open the Debug panel (in the left vertical toolbar, click the icon with the crossed-out-spider), and click the green "Run" button.
 
 <br>
@@ -124,9 +129,9 @@ For more please see [VSCode's docs](https://code.visualstudio.com/docs/java/java
 
 Gitpod comes equipped with the following VS Code extensions:
 
- - [Language Support for Java(TM)](https://marketplace.visualstudio.com/items?itemName=redhat.java)
- - [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
- - [Java Dependency Viewer](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-dependency)
+- [Language Support for Java(TM)](https://marketplace.visualstudio.com/items?itemName=redhat.java)
+- [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
+- [Java Dependency Viewer](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-dependency)
 
 You can [install additional extensions](/docs/vscode_extensions/) for your project if you want.
 
