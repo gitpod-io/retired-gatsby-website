@@ -1,7 +1,8 @@
 {
-   "typescript.tsdk": "node_modules/typescript/lib",
-   "editor.autoSave": "on",
-   "[markdown]": {
-       "editor.wordWrap": "on"
-   }
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.autoSave": "on",
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  },
+  "editor.formatOnSave": true
 }

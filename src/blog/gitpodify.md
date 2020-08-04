@@ -17,11 +17,11 @@ What if there was a better way to do this? Maybe one day we can all just forget 
 
 <br>
 
-| <div style="width:120px">&nbsp;</div> | The idea in brief |
-| ---  | --- |
-| &nbsp;&nbsp;<strong>The problem</strong> | Figuring out which dependencies, tools, and language versions to install to properly configure a dev environment takes a lot of time and energy, and has to be repeated from scratch every time you use a different computer, and for every new project. |
-| &nbsp;&nbsp;<strong>The cause</strong> | Most setup instructions are written in a format that is not executable or reproducible, like plain text in markdown files. |
-| &nbsp;&nbsp;<strong>The solution</strong> | To solve this problem for every developer of your project, setup instructions should be written in a format that is executable, like scripts and Dockerfiles, and ideally versioned and shipped with your code. Gitpod was invented to make this easy. |
+| <div style="width:120px">&nbsp;</div>     | The idea in brief                                                                                                                                                                                                                                        |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| &nbsp;&nbsp;<strong>The problem</strong>  | Figuring out which dependencies, tools, and language versions to install to properly configure a dev environment takes a lot of time and energy, and has to be repeated from scratch every time you use a different computer, and for every new project. |
+| &nbsp;&nbsp;<strong>The cause</strong>    | Most setup instructions are written in a format that is not executable or reproducible, like plain text in markdown files.                                                                                                                               |
+| &nbsp;&nbsp;<strong>The solution</strong> | To solve this problem for every developer of your project, setup instructions should be written in a format that is executable, like scripts and Dockerfiles, and ideally versioned and shipped with your code. Gitpod was invented to make this easy.   |
 
 ## Introducing Gitpod
 
@@ -34,6 +34,7 @@ The first thing you'll probably want to do is try opening your repository in Git
 ```bash
 gitpod.io/#https://github.com/gitpod-io/website
 ```
+
 <br>
 
 When you see the IDE and Terminal, just try building and running your project as usual. Maybe it will just work out of the box, but maybe you'll notice that something is missing or broken, and you can iterate on your Gitpod setup to fix it (see table of contents below).
@@ -43,6 +44,7 @@ Once you're happy with your automated setup, a cool way to guide your contributo
 ```markdown
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/...)
 ```
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/website)
 
 Happy with your onboarding experience? Great! You're all set. 🎉
@@ -80,6 +82,7 @@ tasks:
     command: npm run server
   - command: npm run client
 ```
+
 <br>
 
 But this example probably won't work, because `npm run client` likely also needs dependencies from `npm install`, so you might get an error like this in your second Terminal:
@@ -144,6 +147,7 @@ The solution is to write a small Dockerfile for your project. If a particular `t
 image:
   file: .gitpod.dockerfile
 ```
+
 <br>
 
 Then add a new file called `.gitpod.dockerfile` at the root of your repository, containing:
@@ -156,6 +160,7 @@ RUN sudo apt-get update \
     tool \
  && sudo rm -rf /var/lib/apt/lists/*
 ```
+
 <br>
 
 From now on, every new Gitpod workspace that will be opened for your repository will come with `tool` pre-installed. Cool right?
@@ -173,6 +178,7 @@ Simply base your `.gitpod.dockerfile` on:
 ```Dockerfile
 FROM gitpod/workspace-postgres
 ```
+
 <br>
 
 This will give you an auto-starting PostgreSQL server (it should auto-start every time you open a new Terminal), plus a few utility scripts that you can run in a Terminal or in a [`.gitpod.yml`](#running-init-scripts) command:
@@ -198,6 +204,7 @@ If your project needs MySQL to work, we also have a dedicated [MySQL image](http
 ```Dockerfile
 FROM gitpod/workspace-mysql
 ```
+
 <br>
 
 Then you'll get an auto-starting MySQL server, and you can use the `mysql` CLI like so:
@@ -219,6 +226,7 @@ RUN sudo apt-get update \
   redis-server \
  && sudo rm -rf /var/lib/apt/lists/*
 ```
+
 <br>
 
 Then, you'll be able to start the Redis server by running this in a Terminal or in a `.gitpod.yml` command:
@@ -236,6 +244,7 @@ Simply base your `.gitpod.dockerfile` on:
 ```Dockerfile
 FROM gitpod/workspace-mongodb
 ```
+
 <br>
 
 Then start the MongoDB server by running this in a Terminal or in a `.gitpod.yml` command:
@@ -261,6 +270,7 @@ Simply base your `.gitpod.dockerfile` on:
 ```Dockerfile
 FROM gitpod/workspace-full-vnc
 ```
+
 <br>
 
 This will give you a virtual X server and a Remote Desktop client running on port `6080`:
@@ -280,6 +290,7 @@ RUN sudo apt-get update \
   libnss3-dev \
  && sudo rm -rf /var/lib/apt/lists/*
 ```
+
 <br>
 
 To learn more, please see our dedicated post on [Developing native UI applications in Gitpod](/blog/native-ui-with-vnc/).
@@ -301,6 +312,7 @@ ports:
   - port: 9000-9999
     onOpen: ignore
 ```
+
 <br>
 
 Another way to open web previews is to run `gp preview <url>` in a Terminal or in your [`.gitpod.yml`](#running-init-scripts) commands. This can be used in combination with `gp url <port>` to open a web preview for a given port, like so:
@@ -310,6 +322,7 @@ tasks:
   - command: python3 -m http.server 8080
   - command: gp preview $(gp url 8080)
 ```
+
 <br>
 
 However, if the preview opens too soon, you might see an error like this:
@@ -324,6 +337,7 @@ tasks:
     command: npm run server 3000
   - command: gp await-port 3000 && gp preview $(gp url 3000)
 ```
+
 <br>
 
 If the `Port X didn't respond` error persists, please double-check in the Terminal output that your server is actually running on that port, then refresh the Preview pane. (Or, if it's a Browser tab, please close it and re-open it from the IDE's "Open Ports" view — refresh isn't currently supported for Browser preview tabs).
@@ -356,6 +370,7 @@ devServer: {
   disableHostCheck: true,
 },
 ```
+
 <br>
 
 Alternatively, if you don't want to use `disableHostCheck`, you can also add `'.gitpod.io'` to your `allowedHosts`, like so:
@@ -366,6 +381,7 @@ devServer: {
   allowedHosts: ['localhost', '.gitpod.io'],
 },
 ```
+
 <br>
 
 See all `webpack-dev-server` configuration options [here](https://webpack.js.org/configuration/dev-server/).
@@ -424,6 +440,7 @@ And then point `ng serve` to that file using the `--proxy-config` parameter:
 ```bash
 ng serve --proxy-config proxy.config.json --host 0.0.0.0 --disable-host-check --port 3000
 ```
+
 <br>
 
 For a complete example using PostgreSQL, Angular CLI, disableHostCheck, and a backend proxy, please check out the [PeerTube](https://joinpeertube.org/) project ([.gitpod.yml](https://github.com/Chocobozzz/PeerTube/blob/develop/.gitpod.yml), [Dockerfile](https://github.com/Chocobozzz/PeerTube/blob/develop/support/docker/gitpod/Dockerfile), [proxy.config.json](https://github.com/Chocobozzz/PeerTube/blob/develop/client/proxy.config.json), [ng serve command](https://github.com/Chocobozzz/PeerTube/blob/master/scripts/watch/client.sh)).
@@ -442,7 +459,7 @@ More and more projects are using headless Chrome as a dependency (e.g. via [Pupp
 In this case, you'll want to use Chrome's `--no-sandbox` and/or `--disable-setuid-sandbox` flags. With Puppeteer, it may look like this:
 
 ```js
-const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
+const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] })
 ```
 
 ## Setting env variables

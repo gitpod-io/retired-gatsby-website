@@ -17,19 +17,19 @@ Of course, there is always room for improvement, especially with a service as ne
 
 And indeed that hasn’t been straight forward. You had to:
 
-* create a Dockerfile on your machine
+- create a Dockerfile on your machine
 
-* build that Dockerfile on your machine
+- build that Dockerfile on your machine
 
-* push it to hub.docker.com (no account? Create one first!)
+- push it to hub.docker.com (no account? Create one first!)
 
-* create a branch in your project with a customized .gitpod.yml file which references that specific image
+- create a branch in your project with a customized .gitpod.yml file which references that specific image
 
-* visit *gitpod.io/#<your-repos-branch-url>*
+- visit _gitpod.io/#<your-repos-branch-url>_
 
-* get no feedback except ‘Build has status FAILURE’…
+- get no feedback except ‘Build has status FAILURE’…
 
-* rinse and repeat from step 2
+- rinse and repeat from step 2
 
 That was way too tedious for everyone to start playing around.
 
@@ -64,18 +64,18 @@ tasks:
       cargo build
       cargo run
 ports:
- - port: 8000
+  - port: 8000
 ```
 
 It references the Dockerfile next to it, says that the resulting app should be accessible on port 8000 and contains the command executed on workspace startup: set config, start postgres, build and run app (I basically copied those from the repo’s .md file).
 
 The Dockerfile itself inherits from our default image [gitpod/workspace-full](https://hub.docker.com/r/gitpod/workspace-full/)¹ and contains:
 
-* PostgreSQL (+ some configuration for the gitpod user)
+- PostgreSQL (+ some configuration for the gitpod user)
 
-* specific Rust toolchain
+- specific Rust toolchain
 
-* some project specific setup
+- some project specific setup
 
 Here it is:
 
@@ -122,13 +122,13 @@ Now whenever anyone accesses the repository through Gitpod, be it a branch, a pa
 
 Once the service has build and is running, we just follow the tutorial:
 
-* Open /people: Click Open on the appearing messagebox² and change the path in the integrated browser to http://8000-<your-workspace-url>/people , click Reload : The query results in an empty []
+- Open /people: Click Open on the appearing messagebox² and change the path in the integrated browser to http://8000-<your-workspace-url>/people , click Reload : The query results in an empty []
 
-* Hit F1 -> "Open new Terminal" and paste:
+- Hit F1 -> "Open new Terminal" and paste:
 
-    curl -XPOST [http://localhost:8000/people](http://localhost:8000/people) -H "Content-Type: application/json" --data '{"id": 123, "first_name": "Jon", "last_name": "Doe", "age": 64, "profession": "Engineer", "salary": 1024}'
+  curl -XPOST [http://localhost:8000/people](http://localhost:8000/people) -H "Content-Type: application/json" --data '{"id": 123, "first_name": "Jon", "last_name": "Doe", "age": 64, "profession": "Engineer", "salary": 1024}'
 
-* Hit Reload again to see Jon Doe’s people entry
+- Hit Reload again to see Jon Doe’s people entry
 
 ## Try it yourself
 

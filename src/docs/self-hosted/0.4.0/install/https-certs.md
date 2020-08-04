@@ -2,9 +2,7 @@
 url: /docs/self-hosted/0.4.0/install/https-certs/
 ---
 
-
 ### HTTPS certificates
-
 
 While we highly recommend operating Gitpod using HTTPS, Gitpod is able to run on insecure HTTP.
 If you use Gitpod's inernal docker registry, the downside of not using HTTPS is that Kubernetes won't be able to pull images from the registry because it considers the registry insecure.
@@ -13,8 +11,10 @@ You can either resort to using an [external registry](#docker-registry-optional)
 > Important: The HTTPS certificates for your domain must include `your-domain.com`, `*.your-domain.com` and `*.ws.your-domain.com`. Beware that wildcard certificates are valid for one level only (i.e. `*.a.com` is not valid for `c.b.a.com`).
 
 To use the HTTPS certificates for your domain
- - `echo values/https.yaml >> configuration.txt`
- - place your certificates in `secrets/https-certificates/` like so:
+
+- `echo values/https.yaml >> configuration.txt`
+- place your certificates in `secrets/https-certificates/` like so:
+
 ```
  secrets/https-certificates:
   |- cert.pem
@@ -24,6 +24,7 @@ To use the HTTPS certificates for your domain
 ```
 
 Generate the [dhparams.pem](https://security.stackexchange.com/questions/94390/whats-the-purpose-of-dh-parameters) file using
+
 ```
 openssl dhparam -out secrets/https-certificates/dhparams.pem 2048
 ```
@@ -36,6 +37,7 @@ There is a [plethora of tutorials](https://www.google.com/search?q=letsencrypt+w
 Things get considerably easier when your domain is registered with a service for which a [Certbot DNS plugin exists](https://certbot.eff.org/docs/using.html#dns-plugins).
 
 Asuming you have `certbot` installed, the following script will generate and configure the required certificates (notice the placeholders):
+
 ```bash
 export DOMAIN=your-domain.cm
 export EMAIL=your@email.here

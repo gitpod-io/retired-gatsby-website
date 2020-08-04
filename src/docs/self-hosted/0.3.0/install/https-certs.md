@@ -9,8 +9,10 @@ Gitpod needs HTTPS certificates, your own Docker registry, or both to function p
 > Important: The HTTPS certificates for your domain must include `your-domain.com`, `*.your-domain.com` and `*.ws.your-domain.com`. Beware that wildcard certificates are valid for one level only (i.e. `*.a.com` is not valid for `c.b.a.com`).
 
 To use the HTTPS certificates for your domain
- - `echo values/https.yaml >> configuration.txt`
- - place your certificates in `secrets/https-certificates/` like so:
+
+- `echo values/https.yaml >> configuration.txt`
+- place your certificates in `secrets/https-certificates/` like so:
+
 ```
  secrets/https-certificates:
   |- cert.pem
@@ -20,13 +22,16 @@ To use the HTTPS certificates for your domain
 ```
 
 Generate the [dhparams.pem](https://security.stackexchange.com/questions/94390/whats-the-purpose-of-dh-parameters) file using
+
 ```
 openssl dhparam -out secrets/https-certificates/dhparams.pem 2048
 ```
 
 #### Using Let's Encrypt
+
 If you do not have HTTPS certificates for your domain already, you can generate some using [Let's Encrypt](https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7).
 Asuming you have `certbot` installed, the following script will generate and configure the required certificates (notice the placeholders):
+
 ```bash
 export DOMAIN=your-domain.cm
 export EMAIL=your@email.here

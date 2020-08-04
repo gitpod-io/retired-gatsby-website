@@ -192,72 +192,90 @@ const StyledAboutPage = styled.div`
 `
 
 const AboutPage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/about/' title="About">
-        <StyledAboutPage>
-            {/* ----- Banner ----- */}
+  <IndexLayout canonical="/about/" title="About">
+    <StyledAboutPage>
+      {/* ----- Banner ----- */}
 
-            <div className="row pattern">
-                <header role="banner" className="banner">
-                    <div className="banner__img-container">
-                        <img alt="2 Right Arrows" src={DoubleArrows} className="banner__img"/>
-                    </div>
-                    <div className="banner__text-box">
-                        <h3>About</h3>
-                        <h1>Type<strong>Fox</strong></h1>
-                        <p>Gitpod is developed by TypeFox, a team<br />of developer tool specialists and longtime<br />open-source contributors.</p>
-                    </div>
-                </header>
+      <div className="row pattern">
+        <header role="banner" className="banner">
+          <div className="banner__img-container">
+            <img alt="2 Right Arrows" src={DoubleArrows} className="banner__img" />
+          </div>
+          <div className="banner__text-box">
+            <h3>About</h3>
+            <h1>
+              Type<strong>Fox</strong>
+            </h1>
+            <p>
+              Gitpod is developed by TypeFox, a team
+              <br />
+              of developer tool specialists and longtime
+              <br />
+              open-source contributors.
+            </p>
+          </div>
+        </header>
+      </div>
+
+      {/* ----- By Developers for Developers ----- */}
+
+      <div className="row">
+        <section className="developers">
+          <div className="developers__text-box">
+            <h2>By Developers For Developers</h2>
+            <p>
+              With Gitpod, we set out to streamline how software is written today. We democratize software development by minimizing
+              onboarding effort and context switches through instant, automated, and ready-to-code development environments.
+            </p>
+          </div>
+          <div className="developer__img-container">
+            <img alt="2 Right Arrows" src={DoubleArrows} className="banner__img" style={{ transform: 'rotate(180deg)' }} />
+          </div>
+        </section>
+      </div>
+
+      <div className="grey-container">
+        {/* ----- Section That's Us ----- */}
+
+        <div className="row">
+          <section className="about">
+            <h2>That’s Us</h2>
+            <div className="about__container">
+              <div className="about__box">
+                <img alt="Kiel Harbour" src={Kiel} />
+                <h3>About TypeFox</h3>
+                <p>
+                  TypeFox was founded in 2016 by Sven Efftinge, Moritz Eysholdt, and Dr. Jan Koehnlein, with the mission to build smart
+                  tools for smart people. The headquarters is in Kiel, Germany.
+                </p>
+                <p>
+                  We are a driving force behind the language server protocol and the initiators of Eclipse Theia, the next generation IDE
+                  that powers Gitpod.
+                </p>
+              </div>
+              <div className="about__box">
+                <img alt="TypeFox Team" src={Team} />
+                <h3>About the Team</h3>
+                <p>
+                  We're a small tech-driven team with collectively over 50 years of experience in language design, IDEs, and tool
+                  development and with strong values around openness, honesty, and effective pragmatism. If you're interested in joining us,
+                  please have a look at our <Link to="/careers">Job Openings</Link>.
+                </p>
+              </div>
             </div>
+          </section>
 
-            {/* ----- By Developers for Developers ----- */}
+          <h2 className="statement">
+            It's our mission to make developers' life easier!
+            <img alt="TypeFox Logo" src={Fox} className="statement__fox" />
+            <img alt="TypeFox Logo" src={TypeFox} className="statement__logo" />
+          </h2>
+        </div>
+      </div>
 
-            <div className="row">
-                <section className="developers">
-                    <div className="developers__text-box">
-                        <h2>By Developers For Developers</h2>
-                        <p>With Gitpod, we set out to streamline how software is written today. We democratize software development by minimizing onboarding effort and context switches through instant, automated, and ready-to-code development environments.</p>
-                    </div>
-                    <div className="developer__img-container">
-                        <img alt="2 Right Arrows" src={DoubleArrows} className="banner__img" style={{transform: 'rotate(180deg)'}}/>
-                    </div>
-                </section>
-            </div>
-
-            <div className="grey-container">
-
-                {/* ----- Section That's Us ----- */}
-
-                <div className="row">
-                    <section className="about">
-                        <h2>That’s Us</h2>
-                        <div className="about__container">
-                            <div className="about__box">
-                                <img alt="Kiel Harbour" src={Kiel} />
-                                <h3>About TypeFox</h3>
-                                <p>TypeFox was founded in 2016 by Sven Efftinge, Moritz Eysholdt, and Dr. Jan Koehnlein, with the mission to build smart tools for smart people. The headquarters is in Kiel, Germany.</p>
-                                <p>We are a driving force behind the language server protocol and the initiators of Eclipse Theia, the next generation IDE that powers Gitpod.</p>
-                            </div>
-                            <div className="about__box">
-                                <img alt="TypeFox Team" src={Team} />
-                                <h3>About the Team</h3>
-                                <p>We're a small tech-driven team with collectively over 50 years of experience in language design, IDEs, and tool development and with strong values around openness, honesty, and effective pragmatism. If you're interested in joining us, please have a look at our <Link to="/careers">Job Openings</Link>.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <h2 className="statement">
-                        It's our mission to make developers' life easier!
-                        <img alt="TypeFox Logo" src={Fox} className="statement__fox" />
-                        <img alt="TypeFox Logo" src={TypeFox} className="statement__logo"/>
-                    </h2>
-
-                </div>
-            </div>
-
-            <MoreInfo />
-
-        </StyledAboutPage>
-    </IndexLayout>
+      <MoreInfo />
+    </StyledAboutPage>
+  </IndexLayout>
 )
 
 export default AboutPage

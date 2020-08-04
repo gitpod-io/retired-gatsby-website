@@ -9,7 +9,7 @@ image: https://cdn-images-1.medium.com/max/6908/1*HNDYawJpDgX6gP_e0w17mg.png
 
 After over one year of intensive work, we are proud to announce the public Beta of Gitpod.
 
-Gitpod is an online IDE which can be launched from any GitHub page. Simply **prefix any GitHub-URL with “*https://gitpod.io/#*”** or use our [browser extension](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki?hl=en) that adds a button to GitHub pages.
+Gitpod is an online IDE which can be launched from any GitHub page. Simply **prefix any GitHub-URL with “_https://gitpod.io/#_”** or use our [browser extension](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki?hl=en) that adds a button to GitHub pages.
 
 Within seconds, Gitpod provides you with a fully working development environment, including a VS Code-powered IDE and a cloud-based Linux container configured specifically for the project at hand.
 
@@ -35,7 +35,7 @@ Starting a Gitpod workspace from an issue will automatically create a branch and
 
 Once you are in the IDE, you can interact with GitHub in various ways. Besides the obvious Git integration, you can do things like **commenting inline in editors, approving and even merging PRs**.
 
-![Inline Comments For Pull Requests](https://cdn-images-1.medium.com/max/6908/1*HNDYawJpDgX6gP_e0w17mg.png)*Inline Comments For Pull Requests*
+![Inline Comments For Pull Requests](https://cdn-images-1.medium.com/max/6908/1*HNDYawJpDgX6gP_e0w17mg.png)_Inline Comments For Pull Requests_
 
 ## **Automated Setup**
 
@@ -61,13 +61,13 @@ Gitpod gives developers full featured terminals to run any processes such as com
 
 The IDE in Gitpod is based on [Theia](http://theia-ide.org), an open-source project that we ([TypeFox](https://www.typefox.io/)) have started together with our friends from Ericsson in early 2017. You can think of it as **the online version of VS Code**. We love VS Code, but needed some additional properties, like a more extensible architecture and the ability to run in browsers connected to a remote backend. Theia is a true open-source project, hosted at the Eclipse Foundation and developed by a diverse crowd of engineers backed by TypeFox, Ericsson, Red Hat, Arm and others.
 
-![Language Tooling In Action](https://cdn-images-1.medium.com/max/6796/1*5DnbR6-FbyVQ8ILgFHJXOw.png)*Language Tooling In Action*
+![Language Tooling In Action](https://cdn-images-1.medium.com/max/6796/1*5DnbR6-FbyVQ8ILgFHJXOw.png)_Language Tooling In Action_
 
 ## **Supports Many Languages**
 
 Being based on VS Code and its Language Server Protocol, Theia supports most major programming languages. The table below provides a good overview of the current state.
 
-![Current State of Supported Programming Languages](https://cdn-images-1.medium.com/max/4712/1*BshL6_wwY2XYRDKSMYiSDg.png)*Current State of Supported Programming Languages*
+![Current State of Supported Programming Languages](https://cdn-images-1.medium.com/max/4712/1*BshL6_wwY2XYRDKSMYiSDg.png)_Current State of Supported Programming Languages_
 
 Additional languages like **C#, Swift, Clojure, Groovy, Objective-C, Markdown, Less, XML and many others** are supported with syntax coloring, as well. Because it is so easy to create an extension for Theia, support will improve both in breadth (more languages) and depth, shortly.
 
@@ -77,23 +77,23 @@ You can use Gitpod with any GitHub repository. The login is done through GitHub 
 
 Why not try it now? If you don’t have a particular repository in mind, you can pick one of the below:
 
-* **JavaScript**:
-[https://gitpod.io/#**https://github.com/ooade/NextSimpleStarter**](https://gitpod.io/#https://github.com/ooade/NextSimpleStarter)
+- **JavaScript**:
+  [https://gitpod.io/#**https://github.com/ooade/NextSimpleStarter**](https://gitpod.io/#https://github.com/ooade/NextSimpleStarter)
 
-* **Go**:
-[https://gitpod.io/#**https://github.com/demo-apps/go-gin-app**](https://gitpod.io/#https://github.com/demo-apps/go-gin-app)
+- **Go**:
+  [https://gitpod.io/#**https://github.com/demo-apps/go-gin-app**](https://gitpod.io/#https://github.com/demo-apps/go-gin-app)
 
-* **Java**:
-[https://gitpod.io/#**https://github.com/gitpod-io/spring-petclinic**](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic)
+- **Java**:
+  [https://gitpod.io/#**https://github.com/gitpod-io/spring-petclinic**](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic)
 
-* **Ruby**:
-[https://gitpod.io/#**https://github.com/gitpod-io/rails\_sample\_app**](https://gitpod.io/#https://github.com/gitpod-io/rails_sample_app)
+- **Ruby**:
+  [https://gitpod.io/#**https://github.com/gitpod-io/rails_sample_app**](https://gitpod.io/#https://github.com/gitpod-io/rails_sample_app)
 
-* **Python**:
-[https://gitpod.io/#**https://github.com/sibtc/django-beginners-guide**](https://gitpod.io/#https://github.com/sibtc/django-beginners-guide)
+- **Python**:
+  [https://gitpod.io/#**https://github.com/sibtc/django-beginners-guide**](https://gitpod.io/#https://github.com/sibtc/django-beginners-guide)
 
-* **PHP**:
-[https://gitpod.io/#**https://github.com/symfony/demo**](https://gitpod.io/#https://github.com/symfony/demo)
+- **PHP**:
+  [https://gitpod.io/#**https://github.com/symfony/demo**](https://gitpod.io/#https://github.com/symfony/demo)
 
 ## **Where Are We Going From Here?**
 

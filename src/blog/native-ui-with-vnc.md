@@ -24,7 +24,7 @@ Let’s use Gitpod to write [a simple desktop-native application in Go](https://
 
 This Dockerfile uses the gitpod/workspace-full-vnc image which sports the setup necessary to run X11 and VNC in Gitpod. It runs a [web-based VNC viewer](https://novnc.com) on port 6080 — during startup, Gitpod will ask you if you want to open this page.
 
-![The Hello World UI example running in Gitpod](https://cdn-images-1.medium.com/max/6720/1*8xUjJfd3pV0QXyK-ytyhwA.png)*The Hello World UI example running in Gitpod*
+![The Hello World UI example running in Gitpod](https://cdn-images-1.medium.com/max/6720/1*8xUjJfd3pV0QXyK-ytyhwA.png)_The Hello World UI example running in Gitpod_
 
 ## Native UI in Gitpod = X11 + VNC
 

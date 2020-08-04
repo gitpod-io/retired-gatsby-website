@@ -2,10 +2,11 @@
 
 If you want to access services running in your workspace, e.g. a development HTTP server on port `8080`,
 you need to expose that port first. Gitpod has two means of doing that:
-  1. On-the-fly: when you start a process which listens on a port in your workspace, Gitpod will ask you
-     if you want to expose that port to the internet.
-  2. In your configuration: if you already know that you want a particular port exposed, you can configure
-     it in the `.gitpod.yml` file and skip the extra click later on. For example:
+
+1. On-the-fly: when you start a process which listens on a port in your workspace, Gitpod will ask you
+   if you want to expose that port to the internet.
+2. In your configuration: if you already know that you want a particular port exposed, you can configure
+   it in the `.gitpod.yml` file and skip the extra click later on. For example:
 
 ```yaml
 ports:
@@ -20,6 +21,7 @@ HTTP servers.
 You can configure entire ranges and tell Gitpod how it should behave when a service in such a range is opened.
 
 For instance, the following configs will stop notifying the user when a service opens on a port between 3000 and 8999:
+
 ```yaml
 ports:
   - port: 3000-8999
@@ -38,12 +40,11 @@ whether and how to open it.
 To change this behavior you can provide the property `onOpen`.
 It has four possible values:
 
- - `notify` (default) - Show the notification.
- - `open-preview` - Open in the preview on the right.
- - `open-browser` - Open in a browser tab.
- - `ignore` - Don't do anything.
+- `notify` (default) - Show the notification.
+- `open-preview` - Open in the preview on the right.
+- `open-browser` - Open in a browser tab.
+- `ignore` - Don't do anything.
 
 Any changes to the `.gitpod.yml` will have effect immediately.
 
- ![.gitpod.yml containing ports configuration](./images/ports-onOpen.png)
-
+![.gitpod.yml containing ports configuration](./images/ports-onOpen.png)

@@ -1,4 +1,4 @@
-import { sizes, colors, borders } from "./variables"
+import { sizes, colors, borders } from './variables'
 import DownArrow from '../resources/arrow-down.svg'
 import Pattern from '../resources/pattern.png'
 

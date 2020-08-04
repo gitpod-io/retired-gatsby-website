@@ -36,9 +36,9 @@ I feel your pain, but you should not take that shortcut. It will fire back event
 
 [Gitpod](https://www.gitpod.io) gives you a full development environment with a single click for any pull request on GitHub. You don’t have to manually setup or even change anything on your local development environment. Just click a button and you have the best of both worlds:
 
-* a full development environment (similar to VS Code)
+- a full development environment (similar to VS Code)
 
-* a great code review experience (similar to GitHub)
+- a great code review experience (similar to GitHub)
 
 ## Code Review in Gitpod
 

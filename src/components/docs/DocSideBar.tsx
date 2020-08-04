@@ -8,7 +8,6 @@ import styled from '@emotion/styled'
 import { sizes } from '../../styles/variables'
 import SideBarBg from '../../resources/sidebar-bg.jpg'
 
-
 const StyledSideBar = styled.div`
     position: relative;
     display: flex;
@@ -61,17 +60,23 @@ const StyledSideBar = styled.div`
 `
 
 const DocSideBar: React.SFC<{}> = () => (
-    <StyledSideBar>
-        <ul>
-            <Docsearch name="search-doc-input" />
-            {MENU.map((m, i) =>
-                <Linkset caption={m.title} path={m.path} key={'menu' + i}>
-                    {m.subMenu && m.subMenu.map((sub, i) =>
-                        <li><Link activeClassName='active' to={sub.path} key={'sub' + i}>{sub.title}</Link></li>
-                    )}
-                </Linkset>)}
-        </ul>
-    </StyledSideBar>
+  <StyledSideBar>
+    <ul>
+      <Docsearch name="search-doc-input" />
+      {MENU.map((m, i) => (
+        <Linkset caption={m.title} path={m.path} key={`menu${i}`}>
+          {m.subMenu &&
+            m.subMenu.map((sub, j) => (
+              <li>
+                <Link activeClassName="active" to={sub.path} key={`sub${j}`}>
+                  {sub.title}
+                </Link>
+              </li>
+            ))}
+        </Linkset>
+      ))}
+    </ul>
+  </StyledSideBar>
 )
 
 export default DocSideBar

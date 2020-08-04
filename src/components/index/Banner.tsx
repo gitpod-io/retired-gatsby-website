@@ -90,26 +90,30 @@ const Styled = styled.div`
 
 `
 
-
 const Banner = () => (
-    <Styled>
-            <div className="row">
-                <header role="banner" className="banner pattern">
-                    <div className="banner__text-box">
-                         <h1>
-                            Dev Environments as Code <span>for modern DevOps teams.</span>
-                        </h1>
-                        <p>Describe your dev environment as code and get fully prebuilt, ready-to-code development environments for any GitLab, GitHub, and Bitbucket project.</p>
-                        <div className="btn-wrapper">
-                            <a href="#get-started" className="btn btn--cta">Try Now</a>
-                        </div>
-                    </div>
-                    <div className="banner__screenshot-container">
-                        <img alt="Gitpod Screenshot" src={Screenshot} className="banner__screenshot" />
-                    </div>
-                </header>
-            </div>
-    </Styled>
+  <Styled>
+    <div className="row">
+      <header role="banner" className="banner pattern">
+        <div className="banner__text-box">
+          <h1>
+            Dev Environments as Code <span>for modern DevOps teams.</span>
+          </h1>
+          <p>
+            Describe your dev environment as code and get fully prebuilt, ready-to-code development environments for any GitLab, GitHub, and
+            Bitbucket project.
+          </p>
+          <div className="btn-wrapper">
+            <a href="#get-started" className="btn btn--cta">
+              Try Now
+            </a>
+          </div>
+        </div>
+        <div className="banner__screenshot-container">
+          <img alt="Gitpod Screenshot" src={Screenshot} className="banner__screenshot" />
+        </div>
+      </header>
+    </div>
+  </Styled>
 )
 
 export default Banner

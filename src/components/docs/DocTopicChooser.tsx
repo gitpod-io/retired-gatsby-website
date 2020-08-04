@@ -25,28 +25,33 @@ const StyledTopicChooser = styled.div`
 `
 
 function onSelectTopic(event: React.FormEvent<HTMLSelectElement>) {
-    navigate(event.currentTarget.value)
+  navigate(event.currentTarget.value)
 }
 
 const DocTopicChooser: React.SFC<{}> = () => {
-    return (
-        <StyledTopicChooser>
-            <select className='topic-chooser' onChange={onSelectTopic}>
-                <option value='#' selected={true}>Select A Topic</option>
-                {MENU.map(m => {
-                    return <>
-                        <option key={m.path} value={m.path}>{m.title}</option>
-                        {
-                            (m.subMenu || []).map(m =>
-                                <option key={m.path} value={m.path}>&nbsp;&nbsp;&nbsp;&nbsp;{m.title}</option>
-                            )
-                        }
-                    </>
-                })}
-            </select>
-        </StyledTopicChooser>
-    )
+  return (
+    <StyledTopicChooser>
+      <select className="topic-chooser" onChange={onSelectTopic}>
+        <option value="#" selected={true}>
+          Select A Topic
+        </option>
+        {MENU.map((m) => {
+          return (
+            <>
+              <option key={m.path} value={m.path}>
+                {m.title}
+              </option>
+              {(m.subMenu || []).map((s) => (
+                <option key={s.path} value={s.path}>
+                  &nbsp;&nbsp;&nbsp;&nbsp;{s.title}
+                </option>
+              ))}
+            </>
+          )
+        })}
+      </select>
+    </StyledTopicChooser>
+  )
 }
-
 
 export default DocTopicChooser

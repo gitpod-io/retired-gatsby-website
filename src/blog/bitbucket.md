@@ -25,18 +25,21 @@ For more convenience, you can also install Gitpod's browser extension (for [Chro
 
 Gitpod also supports other types of Bitbucket URLs, like:
 
- - Opening file URLs
+- Opening file URLs
 
-   <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/src/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/.../petclinic/PetClinicApplication.java</a></p>
- - Opening branches
+  <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/src/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/.../petclinic/PetClinicApplication.java</a></p>
 
-   <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/src/my-branch/" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/src/my-branch/</a></p>
- - Opening issues
+- Opening branches
 
-   <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/issues/1/make-first-name-optional" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/issues/1/make-first-name-optional</a></p>
- - Opening pull requests
+  <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/src/my-branch/" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/src/my-branch/</a></p>
 
-   <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/pull-requests/1/allow-omitting-first-name/diff" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/pull-requests/1/allow-omitting-first-name/diff</a></p>
+- Opening issues
+
+  <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/issues/1/make-first-name-optional" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/issues/1/make-first-name-optional</a></p>
+
+- Opening pull requests
+
+  <p style="font-size: 70%;">Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/pull-requests/1/allow-omitting-first-name/diff" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/pull-requests/1/allow-omitting-first-name/diff</a></p>
 
 Depending on the context, your dev environment will be initialized differently.
 
@@ -60,7 +63,8 @@ There is much more you can do to make sure every team member gets a ready-to-cod
 Gitpod’s [prebuilt workspaces](/docs/prebuilds/) are key to providing ephemeral, ready-to-code dev environments for your branches and projects. You can configure Gitpod to run your project's build asynchronously every time someone pushes new commits or branches to your repository. So when a developer wants to start coding, she can start immediately, because everything is already prepared.
 
 Enabling prebuilds on your Bitbucket project is done by configuring a Webhook. This can be done automatically: Just trigger the first prebuild on your project manually, and Gitpod will take it from there. To do that, use the prefix `https://gitpod.io/#prebuild/`, as in
-> __https://gitpod.io/#prebuild/__`https://bitbucket.org/<myuser>/<myrepo>`
+
+> **https://gitpod.io/#prebuild/**`https://bitbucket.org/<myuser>/<myrepo>`
 
 ## We Need Your Feedback
 

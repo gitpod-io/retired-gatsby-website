@@ -11,11 +11,11 @@ A core value at Gitpod is transparency: a lot of what we do is out in the open, 
 
 We had three main requirements for our status page:
 
-* It had to be **rock solid** because if your status page is not available, how am I going to trust your product?
+- It had to be **rock solid** because if your status page is not available, how am I going to trust your product?
 
-* It should **present the status of our service, nothing else**. We already have an extensive monitoring setup (based on Prometheus/Grafana/InfluxDB) that watches over our infrastructure. No need to introduce yet another monitoring solution. A surprising amount of status page projects also do monitoring/health checks on the side.
+- It should **present the status of our service, nothing else**. We already have an extensive monitoring setup (based on Prometheus/Grafana/InfluxDB) that watches over our infrastructure. No need to introduce yet another monitoring solution. A surprising amount of status page projects also do monitoring/health checks on the side.
 
-* It had to **integrate into our existing infrastructure**. If we could use Git, our existing cloud infrastructure and Gitpod to update/manage our incident reports, all the better. We already have this infrastructure in place, so if we could avoid setting up a brand new website deployment, that is a plus.
+- It had to **integrate into our existing infrastructure**. If we could use Git, our existing cloud infrastructure and Gitpod to update/manage our incident reports, all the better. We already have this infrastructure in place, so if we could avoid setting up a brand new website deployment, that is a plus.
 
 Our [documentation](https://github.com/gitpod-io/gitpod-docs) and website are statically generated from Markdown which we edit using Gitpod, push to GitHub and build/deploy using Jenkins. This pattern works well for us, it would be nice if we could use the same process for our status page.
 

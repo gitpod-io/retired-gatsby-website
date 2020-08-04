@@ -110,105 +110,79 @@ const StyledDropDown = styled.div`
 `
 
 interface Anchor {
-    text: string
-    to: string
-    target?: boolean
+  text: string
+  to: string
+  target?: boolean
 }
 
 interface DropDownProps {
-    title: string
-    links: Anchor[]
+  title: string
+  links: Anchor[]
 }
 
 class DropDown extends React.Component<DropDownProps, {}> {
+  state = {
+    isRendered: false
+  }
 
-    state = {
-        isRendered: false
-    }
+  handleClick = () => {
+    this.setState({ isRendered: !this.state.isRendered })
+  }
 
-    handleClick = () => {
-        this.setState({isRendered: !this.state.isRendered})
-    }
+  handleMouseEnter = () => {
+    this.setState({ isRendered: true })
+  }
 
-    handleMouseEnter = () => {
-        this.setState({isRendered: true})
-    }
+  handleMouseLeave = () => {
+    this.setState({ isRendered: false })
+  }
 
-    handleMouseLeave = () => {
-        this.setState({isRendered: false})
-    }
+  render() {
+    const { title, links } = this.props
+    const { isRendered } = this.state
 
-    render () {
-        const { title, links } = this.props
-        const { isRendered } = this.state
+    return (
+      <StyledDropDown onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+        <button
+          onClick={this.handleClick}
+          aria-label={isRendered ? "Hide Dropdown's Content" : "Show Dropdown's Content"}
+          aria-live="assertive"
+        >
+          <div>{title}</div>
+          <img alt="Arrow" className="arrow" src={ArrowDown} style={isRendered ? { transform: 'rotate(180deg)' } : {}} />
+        </button>
 
-        return (
-            <StyledDropDown
-                onMouseEnter={this.handleMouseEnter}
-                onMouseLeave={this.handleMouseLeave}
-            >
-                <button
-                    onClick={this.handleClick}
-                    aria-label={ isRendered ? "Hide Dropdown's Content" : "Show Dropdown's Content"}
-                    aria-live="assertive"
-                >
-                    <div>{title}</div>
-                    <img
-                        alt="Arrow"
-                        className="arrow"
-                        src={ArrowDown}
-                        style={ isRendered ? {transform: 'rotate(180deg)'}: {} }
-                        />
-                </button>
-
-                <ul  className={ isRendered ? 'shown' : 'hidden' }>
-                    {
-                        links.map(({text, to, target}, i) =>
-                            target ?
-                                (
-                                    <li key={i}>
-                                        <ExternalLink
-                                            href={to}
-                                            tabIndex={ isRendered ? 0 : -1 }
-                                            text={text}
-                                            className="link"
-                                            onBlur={i == links.length - 1 && this.handleMouseLeave}
-                                        />
-                                    </li>
-                                )
-                                    :
-                                (
-                                    <li key={i}>
-                                        {
-                                            i == links.length - 1 ? 
-                                                <Link
-                                                    to={to}
-                                                    className="link"
-                                                    tabIndex={ isRendered ? 0 : -1 }
-                                                    activeClassName="active"
-                                                    onBlur={this.handleMouseLeave}
-                                                >
-                                                    {text}
-                                                </Link>
-                                            :
-                                                <Link
-                                                        to={to}
-                                                        className="link"
-                                                        tabIndex={ isRendered ? 0 : -1 }
-                                                        activeClassName="active"
-                                                >
-                                                        {text}
-                                                </Link>
-                                        }
-                                    </li>
-                                )
-                        )
-                    }
-                    <span aria-hidden={true}></span>
-                </ul>
-            </StyledDropDown>
-        )
-    }
+        <ul className={isRendered ? 'shown' : 'hidden'}>
+          {links.map(({ text, to, target }, i) =>
+            target ? (
+              <li key={i}>
+                <ExternalLink
+                  href={to}
+                  tabIndex={isRendered ? 0 : -1}
+                  text={text}
+                  className="link"
+                  onBlur={i === links.length - 1 && this.handleMouseLeave}
+                />
+              </li>
+            ) : (
+              <li key={i}>
+                {i === links.length - 1 ? (
+                  <Link to={to} className="link" tabIndex={isRendered ? 0 : -1} activeClassName="active" onBlur={this.handleMouseLeave}>
+                    {text}
+                  </Link>
+                ) : (
+                  <Link to={to} className="link" tabIndex={isRendered ? 0 : -1} activeClassName="active">
+                    {text}
+                  </Link>
+                )}
+              </li>
+            )
+          )}
+          <span aria-hidden={true} />
+        </ul>
+      </StyledDropDown>
+    )
+  }
 }
 
 export default DropDown

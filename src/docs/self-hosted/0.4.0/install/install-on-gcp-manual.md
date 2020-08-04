@@ -4,16 +4,17 @@ url: /docs/self-hosted/0.4.0/install/install-on-gcp-manual/
 
 # Manually Install Gitpod on Google Cloud Platform
 
-  > **TODO** This document is a stub only.
+> **TODO** This document is a stub only.
 
 ## Before you begin
- - install [gcloud cli](https://cloud.google.com/sdk/docs/#install_the_latest_cloud_tools_version_cloudsdk_current_version)
-   - `gcloud components install beta`
- - setup Google cloud project
- - choose a [zone and region](https://cloud.google.com/compute/docs/regions-zones/#available) to install your Gitpod cluster
- - [Enable APIs](https://cloud.google.com/endpoints/docs/openapi/enable-api#enabling_an_api):
-   - Identity and Access Management (IAM)
-   - Cloud SQL Admin API
+
+- install [gcloud cli](https://cloud.google.com/sdk/docs/#install_the_latest_cloud_tools_version_cloudsdk_current_version)
+  - `gcloud components install beta`
+- setup Google cloud project
+- choose a [zone and region](https://cloud.google.com/compute/docs/regions-zones/#available) to install your Gitpod cluster
+- [Enable APIs](https://cloud.google.com/endpoints/docs/openapi/enable-api#enabling_an_api):
+  - Identity and Access Management (IAM)
+  - Cloud SQL Admin API
 
 ```
 gcloud auth login
@@ -32,19 +33,17 @@ gcloud compute addresses create gitpod-inbound-ip --region=$REGION
 IP_ADDRESS=$(gcloud compute addresses describe gitpod-inbound-ip --region $REGION | grep "address:" | cut -d' ' -f2)
 ```
 
-
 Now that you have a reserved IP address, you will have to set up the following DNS A records resolving to that IP address:
-  - `your-base-domain`
-  - `*.your-base-domain`
-  - `*.ws.your-base-domain`
 
+- `your-base-domain`
+- `*.your-base-domain`
+- `*.ws.your-base-domain`
 
 ### VPC Network
 
 ```
 gcloud compute networks create gitpod-vpc --bgp-routing-mode=regional --subnet-mode=auto
 ```
-
 
 ### Cluster
 
@@ -69,6 +68,7 @@ gcloud projects add-iam-policy-binding $PROJECT_ID --member="serviceAccount:gitp
 ```
 
 Choose one (or more) zones to install your cluster to
+
 ```
 ZONES=us-west1-a,us-west1-b
 gcloud beta container clusters create gitpod-cluster \
@@ -140,6 +140,7 @@ gcloud sql instances create $DB_NAME \
 gcloud sql users set-password root --host % --instance $DB_NAME --password $DB_PW
 echo "Database root password: $DB_PW"
 ```
+
 Note: Store password securely for later use!
 
 ```
@@ -148,27 +149,30 @@ gcloud projects add-iam-policy-binding $PROJECT_ID --member="serviceAccount:gitp
 gcloud iam service-accounts keys create gitpod-cloudsql-client-key.json --iam-account=gitpod-cloudsql-client@$PROJECT_ID.iam.gserviceaccount.com
 ```
 
-
 #### Initialize DB
 
- 1. [Get `cloud_sql_proxy` binary](https://cloud.google.com/sql/docs/mysql/sql-proxy#install)
+1.  [Get `cloud_sql_proxy` binary](https://cloud.google.com/sql/docs/mysql/sql-proxy#install)
+
     ```
     wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
     chmod +x cloud_sql_proxy
     ```
 
- 2. Connect to DB
+2.  Connect to DB
+
     ```
     ./cloud_sql_proxy -instances=$PROJECT_ID:$REGION:$DB_NAME=tcp:0.0.0.0:3306 -credential_file=./gitpod-cloudsql-client-key.json
     ```
 
     2nd terminal: login with root password
+
     ```
     mysql -u root -P 3306 -h 127.0.0.1 -p
     ```
 
- 3. Execute init scripts
+3.  Execute init scripts
     Generate password for gitpod user:
+
     ```
     GITPOD_DB_PW=$(openssl rand -base64 20)
     ```
@@ -181,7 +185,6 @@ gcloud iam service-accounts keys create gitpod-cloudsql-client-key.json --iam-ac
     source config/db/init/02-create-and-init-sessions-db.sql
     ```
 
-
 ### GCP Buckets for workspace backups
 
 ```
@@ -191,10 +194,10 @@ gcloud projects add-iam-policy-binding $PROJECT_ID --member="serviceAccount:gitp
 gcloud iam service-accounts keys create gitpod-workspace-syncer-key.json --iam-account=gitpod-workspace-syncer@$PROJECT_ID.iam.gserviceaccount.com
 ```
 
-
 ### GCP Registry
 
 Push and Pull access to the registry
+
 ```
 gcloud iam service-accounts create gitpod-registry-full
 gcloud projects add-iam-policy-binding $PROJECT_ID --member="serviceAccount:gitpod-registry-full@$PROJECT_ID.iam.gserviceaccount.com" --role=roles/storage.admin
@@ -204,12 +207,14 @@ gcloud iam service-accounts keys create gitpod-registry-full-key.json --iam-acco
 ## Install
 
 cluster init:
+
 ```
 kubectl create -f tiller-sa.yaml
 helm init --service-account tiller
 ```
 
 install gitpod:
+
 ```
 cd gitpod
 helm dependencies update
