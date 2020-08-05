@@ -33,7 +33,7 @@ const StyledBlogPage = styled.div`
     .posts {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
 
         @media (max-width: ${sizes.breakpoints.md}) {
             justify-content: space-around;
