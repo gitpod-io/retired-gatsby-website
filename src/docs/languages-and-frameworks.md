@@ -2,6 +2,7 @@
 
 Below is a list of language and framework specific tips & tricks.
 
+- [JavaScript](/docs/languages/javascript/)
 - [Python](/docs/languages/python/)
 - [HTML/CSS](/docs/languages/html/)
 - [Java](/docs/languages/java/)
