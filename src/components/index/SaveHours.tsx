@@ -57,10 +57,11 @@ const SaveHours = () => (
             <div className="text">
                 <h2>
                     <strong>
-                        Save countless of hours of watching your code build.
+                        Stop watching your code build.
                 </strong>
                 </h2>
-                <p>With Gitpod you can automate and prebuild your dev environments so that you and your team can start coding with a single click.</p>
+                <p>Gitpod builts your project before you even open it. <br/>
+                Simply configure a webhook and run the time wasting automation asynchronously. <a href="/blog/prebuilds/">Learn more</a>.</p>
             </div>
         </StyledSaveHours>
     </div>
