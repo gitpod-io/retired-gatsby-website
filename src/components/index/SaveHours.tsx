@@ -60,8 +60,8 @@ const SaveHours = () => (
                         Stop watching your code build.
                 </strong>
                 </h2>
-                <p>Gitpod builts your project before you even open it. <br/>
-                Simply configure a webhook and run the time wasting automation asynchronously. <a href="/blog/prebuilds/">Learn more</a>.</p>
+                <p>Gitpod builds your project before you even open it. <br/>
+                Configure a webhook on your Git project and run your builds asynchronously, so your team doesn't have to wait before coding. <a href="/blog/prebuilds/">Learn more</a>.</p>
             </div>
         </StyledSaveHours>
     </div>
