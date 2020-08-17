@@ -2,7 +2,7 @@
 
 module.exports = {
     siteMetadata: {
-        title: 'Gitpod - Prebuilt Dev Environments for GitLab, GitHub and Bitbucket',
+        title: 'Gitpod - Prebuilt Dev Environments for GitLab, GitHub, and Bitbucket',
         description: 'Describe your dev environment as code and get fully prebuilt, ready-to-code development environments for any GitLab, GitHub, and Bitbucket project.',
         siteUrl: 'https://www.gitpod.io',
         author: {
