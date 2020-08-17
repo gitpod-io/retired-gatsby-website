@@ -22,10 +22,6 @@ export const MENU: MenuEntry[] = [
         "getting-started"
     ),
     M(
-        "Browser Extension",
-        "browser-extension"
-    ),
-    M(
         "Workspaces",
         "workspaces",
         [
@@ -86,6 +82,28 @@ export const MENU: MenuEntry[] = [
             M(
                 "Editor Configuration",
                 "config-editor"
+            ),
+        ]
+    ),
+    M(
+        "Integrations",
+        "integrations",
+        [
+            M(
+                "GitLab Integration",
+                "gitlab-integration"
+            ),
+            M(
+                "GitHub Integration",
+                "github-integration"
+            ),
+            M(
+                "Bitbucket Integration",
+                "bitbucket-integration"
+            ),
+            M(
+                "Browser Extension",
+                "browser-extension"
             ),
         ]
     ),
