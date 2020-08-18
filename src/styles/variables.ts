@@ -16,7 +16,7 @@ export const colors = {
 export const sizes = {
   font: {
     h1: '5rem',
-    h2: '3.1rem',
+    h2: '3.7rem',
     h3: '2.3rem',
     h4: '2rem',
     text: '1.6rem',
