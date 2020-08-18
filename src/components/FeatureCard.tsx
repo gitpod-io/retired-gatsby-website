@@ -188,7 +188,7 @@ const Styled = styled.div<{ direction?: string; flexDirectionColumnForImgContain
     align-items: center;
     &::before {
       content: url(${IconTick});
-      transform: scale(1.4);
+      transform: scale(0.9);
       display: block;
       margin: 0 2rem 0 1rem;
       left: -0.5rem;

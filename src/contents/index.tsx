@@ -2,6 +2,8 @@ import React from 'react'
 
 import { FeatureCardProps } from '../components/FeatureCard'
 
+import Collaboration from '../resources/collaboration-placeholder.jpg'
+import KubernetesGraphics from '../resources/kubernetes-graphic.svg'
 import IPad from '../resources/ipad.png'
 import FullAutomationGraphics from '../components/features/FullAutomationGraphics'
 import FullAutomationButtons from '../components/features/FullAutomationButtons'
@@ -27,7 +29,7 @@ export const features: FeatureCardProps[] = [
   },
   {
     id: 'teams-together',
-    Graphic: FullAutomationGraphics,
+    src: Collaboration,
     title: <strong>Where Teams Code Together</strong>,
     text: (
       <ul className="text-list">
@@ -70,8 +72,8 @@ export const features: FeatureCardProps[] = [
     )
   },
   {
-    src: IPad,
-    alt: 'Gitpod on an iPad',
+    src: KubernetesGraphics,
+    alt: 'Kubernetes',
     title: <strong>Cloud Native Development Done Right</strong>,
     text: (
       <>
