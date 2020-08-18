@@ -2,114 +2,111 @@ import React from 'react'
 
 import Screenshot from '../../resources/screenshot.png'
 import styled from '@emotion/styled'
-import { sizes } from '../../styles/variables'
+import GitLab from '../../resources/gitlab.svg'
+import GitHub from '../../resources/octicons-mark-github.svg'
+import Bitbucket from '../../resources/bitbucket.svg'
 
 const Styled = styled.div`
-    .banner {
-        display: flex;
-        padding: 2rem 0 14rem;
-        position: relative;
+  height: 700px;
+  margin-bottom: 47rem;
 
+  @media (max-width: 1140px) {
+    margin-bottom: 35%;
+  }
 
-        @media(max-width: ${sizes.breakpoints.lg}) {
-            flex-direction: column;
-            padding-bottom: 5rem;
-        }
+  @media (max-width: 1020px) {
+    margin-bottom: 30%;
+  }
 
-        &__text-box {
-            margin-top: 8rem;
+  @media (max-width: 800px) {
+    height: 400px;
+    margin-bottom: 50rem;
+  }
 
-            h1 {
-                br {
-                    display: block;
-                    
-                    @media(min-width: 360px) {
-                        display: none;
-                    }
-                }
-            }
+  @media (max-width: 740px) {
+    margin-bottom: 45rem;
+  }
 
-            @media(max-width: ${sizes.breakpoints.lg}) {
-                text-align: center;
-                margin: 5rem 0 0;
-            }
+  @media (max-width: 640px) {
+    margin-bottom: 40rem;
+  }
 
-            @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
-                width: 41%;
-            }
-        }
+  @media (max-width: 560px) {
+    margin-bottom: 30rem;
+  }
 
-        .btn-wrapper {
-            margin-bottom: 3rem;
+  @media (max-width: 360px) {
+    margin-bottom: 25rem;
+  }
 
-            @media(max-width: ${sizes.breakpoints.lg}) {
-                justify-content: center;
-            }
-        }
+  @media (max-width: 320px) {
+    margin-bottom: 22rem;
+  }
 
-        &__screenshot {
-            display: block;
-            width: 100%;
-            box-shadow: 0 2rem 6rem rgba(0,0,0, .2);
+  .banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10rem 0 10rem;
 
-            @media(max-width: ${sizes.breakpoints.lg}) {
-                width: 100%;
-            }
-
-            @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
-                transform: translate(18.9rem,7rem) scale(1.21);
-
-                &-container {
-                    width: 40%;
-                }
-            }
-        }
-
-        h1 {
-            font-weight: 600;
-
-            span {
-                display: block;
-                font-weight: 400;
-            }
-        }
-
-        p {
-            margin: 2.5rem auto;
-            
-            @media(max-width: ${sizes.breakpoints.lg}) {
-                max-width: 700px;
-                padding: 0 5rem;
-            }
-
-            @media(max-width: 600px) {
-                padding: 0;
-            }
-        }
+    &__text-box {
     }
 
+    &__screenshot {
+      display: block;
+      width: 100%;
+      max-width: 1000px;
+      box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-weight: 400;
+
+      span {
+        display: block;
+        font-weight: 400;
+      }
+    }
+
+    p {
+      max-width: 450px;
+      margin: 2.5rem auto;
+
+      img {
+        height: 2rem;
+        margin-left: 1.5rem;
+      }
+    }
+  }
 `
 
-
 const Banner = () => (
-    <Styled>
-            <div className="row">
-                <header role="banner" className="banner pattern">
-                    <div className="banner__text-box">
-                         <h1>
-                            Prebuilt Dev Environments
-                        </h1>
-                        <p>Describe your dev environment as code and get fully prebuilt, ready-to-code development environments for any GitLab, GitHub, and Bitbucket project.</p>
-                        <div className="btn-wrapper">
-                            <a href="#get-started" className="btn btn--cta">Try Now</a>
-                        </div>
-                    </div>
-                    <div className="banner__screenshot-container">
-                        <img alt="Gitpod Screenshot" src={Screenshot} className="banner__screenshot" />
-                    </div>
-                </header>
-            </div>
-    </Styled>
+  <Styled className="pattern">
+    <div className="row">
+      <header role="banner" className="banner">
+        <div className="banner__text-box">
+          <h1>
+            <strong>Prebuilt</strong> Dev Environments.
+          </h1>
+          <p>Describe your dev environments as code and automate the last missing piece in your DevOps pipeline.</p>
+          <a href="#get-started" className="btn btn--cta">
+            Try Now
+          </a>
+          <p>
+            Works with
+            <img src={GitLab} alt="GitLab" />
+            <img src={GitHub} alt="GitHub" />
+            <img src={Bitbucket} alt="Bitbucket" />
+          </p>
+        </div>
+        <div className="banner__screenshot-container">
+          <img alt="Gitpod Screenshot" src={Screenshot} className="banner__screenshot" />
+        </div>
+      </header>
+    </div>
+  </Styled>
 )
 
 export default Banner
