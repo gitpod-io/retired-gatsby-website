@@ -2,55 +2,66 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { colors, borders } from '../../styles/variables'
-import TextFeatureBg from '../../resources/textcard-bg.png'
 
-const StyledTextFeature = styled.section`
-    padding: 8rem 0;
-    text-align: center;
-    background: url(${TextFeatureBg});
-    background-size: cover;
+const StyledTextFeature = styled.div`
+  max-width: 600px;
+  padding: 4rem 6rem;
+  background: ${colors.offWhite};
+  border: ${borders.light};
+  border-radius: 3px;
+  max-width: 450px;
 
-    h2 + p {
-        margin: 0;
+  @media (max-width: 500px) {
+    padding: 5rem 2rem;
+  }
+
+  h3 + p {
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    height: 8rem;
+    margin-bottom: 4rem;
+
+    @media (min-width: 501px) {
+      margin: 0 auto 4rem;
     }
+  }
 
-    .text {
-        max-width: 600px;
-        margin: auto;
-        padding: 6rem;
-        background: ${colors.white};
-        border: ${borders.light};
-        border-radius: 3px;
+  .btn {
+    display: block;
+    max-width: 240px;
+    margin-top: 4rem;
 
-        @media(max-width: 500px) {
-            padding: 5rem 2rem;
-        }
+    @media (min-width: 501px) {
+      margin: 4rem auto 0;
     }
-
-    img {
-        display: inline-block;
-        height: 8rem;
-        margin-bottom: 4rem;
-    }
+  }
 `
 
 interface TextFeatureProps {
-    path: any
-    alt: string
-    title: string
-    text: string | JSX.Element
+  path: any
+  alt: string
+  title: string
+  text: string | JSX.Element
+  btnText?: string
+  href?: string
 }
 
-const TextFeature = ({ path, alt, title, text }: TextFeatureProps) => (
-    <StyledTextFeature>
-        <div className="row">
-            <div className="text">
-                <img src={path} alt={alt} />
-                <h2><strong>{title}</strong></h2>
-                <p>{text}</p>
-            </div>
-        </div>
-    </StyledTextFeature>
+const TextFeature = ({ path, alt, title, text, btnText, href }: TextFeatureProps) => (
+  <StyledTextFeature>
+    <img src={path} alt={alt} />
+    <h3>
+      <strong>{title}</strong>
+    </h3>
+    <p>{text}</p>
+    {btnText ? (
+      <a href={href} target="_blank" className="btn">
+        {btnText}
+      </a>
+    ) : null}
+  </StyledTextFeature>
 )
 
 export default TextFeature
