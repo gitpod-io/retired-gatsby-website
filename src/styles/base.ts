@@ -1,4 +1,4 @@
-import { sizes, colors, borders } from "./variables"
+import { sizes, colors, borders } from './variables'
 import DownArrow from '../resources/arrow-down.svg'
 import Pattern from '../resources/pattern.png'
 
@@ -118,7 +118,7 @@ export default `
         font-size: ${sizes.font.h1};
 
         @media(max-width: ${sizes.breakpoints.md}) {
-            font-size: 3rem;
+            font-size: 3.5rem;
         }
     }
 
@@ -127,7 +127,7 @@ export default `
         margin-bottom: 4rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
-            font-size: 2.6rem;
+            font-size: 3.2rem;
             margin-bottom: 3rem;
         }
 
@@ -141,12 +141,12 @@ export default `
         margin-bottom: 2.8rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
-            font-size: 2rem;
+            font-size: 2.3rem;
             margin-bottom: 2rem;
         }
 
         @media(max-width: ${sizes.breakpoints.sm}) {
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
 
         &.sub {
@@ -354,7 +354,7 @@ export default `
         linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
         background-repeat: no-repeat, repeat;
         background-position: right 1em top 50%, 0 0;
-        background-size: 1.65em auto, 100%;
+        background-size: 1.25em auto, 100%;
     }
 
     /* ------------------------------------------- */
