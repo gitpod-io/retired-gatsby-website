@@ -2,40 +2,85 @@ import React from 'react'
 
 import { FeatureCardProps } from '../components/FeatureCard'
 
-import StayInFlow from '../resources/stay-in-flow.svg'
 import IPad from '../resources/ipad.png'
 import FullAutomationGraphics from '../components/features/FullAutomationGraphics'
 import FullAutomationButtons from '../components/features/FullAutomationButtons'
 import { Link } from 'gatsby'
 
 export const features: FeatureCardProps[] = [
-    {
-        id: 'automation',
-        Graphic: FullAutomationGraphics,
-        title: <>Frictionless Onboarding<br /><strong>Start Coding Instantly</strong></>,
-        text: (<>
-            <p>Avoid all the friction and get beamed into a fully set up, compiled, and tested dev environment with one click.</p>
-            <p>More about <Link to="/blog/continuous-dev-environment-in-devops/">Continuous Dev Environments.</Link></p>
-        </>),
-        Buttons: FullAutomationButtons
-    },
-    {
-        src: StayInFlow,
-        alt: 'GitLab, GitHub, and Bitbucket',
-        title: <>Stay in the Flow<br /><strong>Integrated with GitLab, GitHub, and Bitbucket</strong></>,
-        text: (<>
-            <p>Start your workflow from your Git hosting platform and let Gitpod beam you in a ready-to-code dev environment.</p>
-            <p>Whether you want to fix a bug, add a feature, or do a code review, Gitpod gets you started immediately in a self-contained browser tab.</p>
-            <p>More about <a href="/docs/context-urls/">Context URLs</a>.</p>
-        </>)
-    },
-    {
-        src: IPad,
-        alt: 'Gitpod on an iPad',
-        title: <>Code Anywhere<br /><strong>Use your Chromebook or Tablet</strong></>,
-        text: (<>
-            <p>You no longer need an over-powered laptop to work, Gitpod works just as smoothly on a Chromebook.</p>
-            <p>You can even code on the go with a tablet.</p>
-        </>)
-    },
+  {
+    id: 'automation',
+    Graphic: FullAutomationGraphics,
+    title: <strong>Think CI/CD for Dev Environments</strong>,
+    text: (
+      <>
+        <p>
+          Application code, configuration and infrastructure should all be stored as machine-executable code in your git repositories and
+          applied to dev environments automatically and continuously. This is why we invented prebuilds
+        </p>
+        <p>
+          More about <Link to="/blog/continuous-dev-environment-in-devops/">Continuous Dev Environments.</Link>
+        </p>
+      </>
+    ),
+    Buttons: FullAutomationButtons
+  },
+  {
+    id: 'teams-together',
+    Graphic: FullAutomationGraphics,
+    title: <strong>Where Teams Code Together</strong>,
+    text: (
+      <ul className="text-list">
+        <li>
+          <div>
+            <strong>Do code reviews within Gitpod</strong>
+            <br />
+            No need to switch contexts anymore.
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>Mentor or be mentored</strong>
+            <br />
+            Work together in one workspace in real-time.
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>Take snapshots</strong>
+            <br />
+            Share a reproducible workspace with your team.
+          </div>
+        </li>
+      </ul>
+    )
+  },
+  {
+    src: IPad,
+    alt: 'Gitpod on an iPad',
+    title: <strong>Remote-first. Secure by Design.</strong>,
+    text: (
+      <>
+        <p>
+          You no longer need an over-powered laptop to code, Gitpod works just as smoothly on a Chromebook or iPad. All you need is a
+          browser.
+        </p>
+        <p>Gitpod centralizes all source code and never stores it on insecure machines and networks.</p>
+      </>
+    )
+  },
+  {
+    src: IPad,
+    alt: 'Gitpod on an iPad',
+    title: <strong>Cloud Native Development Done Right</strong>,
+    text: (
+      <>
+        <p>Gitpod is a multi-service Kubernetes application that we develop in Gitpod.</p>
+        <p>
+          Code, build, debug and run K8s applications entirely in the cloud. Get fully-baked workspaces for every branch and pull/merge
+          request, pre-configured and pre-connected to their own dedicated K8s deployment
+        </p>
+      </>
+    )
+  }
 ]
