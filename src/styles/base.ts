@@ -1,4 +1,4 @@
-import { sizes, colors, borders } from "./variables"
+import { sizes, colors, borders } from './variables'
 import DownArrow from '../resources/arrow-down.svg'
 import Pattern from '../resources/pattern.png'
 
@@ -118,7 +118,7 @@ export default `
         font-size: ${sizes.font.h1};
 
         @media(max-width: ${sizes.breakpoints.md}) {
-            font-size: 3rem;
+            font-size: 3.5rem;
         }
     }
 
@@ -127,7 +127,7 @@ export default `
         margin-bottom: 4rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
-            font-size: 2.6rem;
+            font-size: 3.2rem;
             margin-bottom: 3rem;
         }
 
@@ -138,15 +138,16 @@ export default `
 
     h3 {
         font-size: ${sizes.font.h3};
+        font-weight: 400;
         margin-bottom: 2.8rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
-            font-size: 2rem;
+            font-size: 2.3rem;
             margin-bottom: 2rem;
         }
 
         @media(max-width: ${sizes.breakpoints.sm}) {
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
 
         &.sub {
