@@ -223,6 +223,8 @@ export interface FeatureCardProps {
   id?: string
   featuresList?: string[]
   Buttons?: any
+  icon?: string | JSX.Element
+  iconTitle?: string | JSX.Element
 }
 
 const FeatureCard = ({ src, alt, Graphic, title, text, direction, id, featuresList, Buttons }: FeatureCardProps) => {
