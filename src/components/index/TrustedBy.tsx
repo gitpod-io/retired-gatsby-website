@@ -6,7 +6,7 @@ import { sizes } from '../../styles/variables'
 const StyledTrustedBy = styled.section`
   padding: 3rem 0;
 
-  h2 {
+  h3 {
     text-align: center;
   }
 
@@ -104,9 +104,9 @@ interface TrustedByProps {
 const TrustedBy = ({ brands }: TrustedByProps) => (
   <StyledTrustedBy>
     <div className="row">
-      <h2>
+      <h3>
         Trusted by <strong>Visionary Teams</strong>
-      </h2>
+      </h3>
       <div className="logos">
         {brands.map((b: Brand) => (
           <a href={b.url} target="_blank" className="trustedBy">

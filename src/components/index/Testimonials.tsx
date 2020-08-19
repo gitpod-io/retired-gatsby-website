@@ -16,7 +16,7 @@ const StyledTestimonials = styled.div`
     /* ----- Section Testimonials ----- */
     /* ------------------------------------------- */
 
-    h2 {
+    h3 {
         margin-bottom: 3rem;
         text-align: center;
     }
@@ -83,9 +83,9 @@ const Testimonials: React.SFC<{}> = () => (
   <StyledTestimonials>
     <section className="testimonials">
       <div className="row">
-        <h2>
-          Trusted by <strong>200,000+ Developers</strong>
-        </h2>
+        <h3>
+          Used by 200,000+ <strong>Developers & Businesses</strong>
+        </h3>
       </div>
       <div className="tweets">
         {tweets.map((t, i) => (

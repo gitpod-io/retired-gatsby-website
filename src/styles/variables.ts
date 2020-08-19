@@ -17,8 +17,8 @@ export const sizes = {
   font: {
     h1: '5rem',
     h2: '3.7rem',
-    h3: '2.3rem',
-    h4: '2rem',
+    h3: '2.6rem',
+    h4: '2.1rem',
     text: '1.6rem',
     btnNormal: '1.7rem'
   },
