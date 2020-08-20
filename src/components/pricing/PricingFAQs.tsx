@@ -152,7 +152,7 @@ const SelfHostedFAQs = ({ title }: { title: string }) => (
                 Yes, qualified educational institutions may receive a special discount. Please visit{' '}
                 <Link to="/education">Gitpod Education</Link> for more information or <Link to="/contact">Contact Sales</Link>. If you are a
                 student, you may use the Student Unlimited Plan for {isEurope() ? '€8' : '$9'} per month (usually{' '}
-                {isEurope() ? '€35' : '$39'}). See Gitpod for Students for more information.
+                {isEurope() ? '€35' : '$39'}). See <a href="#plans">Gitpod for Students</a> for more information.
               </p>
             </div>
             <div>
