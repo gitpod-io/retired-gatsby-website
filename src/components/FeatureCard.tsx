@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import styled from '@emotion/styled'
 import { sizes } from '../styles/variables'
 import Pattern from '../resources/pattern-2.jpg'
-import IconTick from '../resources/icon-tick.svg'
+import IconTick from '../resources/icon-tick-2.svg'
 
 const Styled = styled.div<{ direction?: string; flexDirectionColumnForImgContainer?: boolean }>`
   display: flex;

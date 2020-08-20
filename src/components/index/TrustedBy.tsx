@@ -8,6 +8,7 @@ const StyledTrustedBy = styled.section`
 
   h3 {
     text-align: center;
+    font-weight: 400;
   }
 
   .logos {

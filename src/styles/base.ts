@@ -138,7 +138,6 @@ export default `
 
     h3 {
         font-size: ${sizes.font.h3};
-        font-weight: 400;
         margin-bottom: 2.8rem;
 
         @media(max-width: ${sizes.breakpoints.md}) {
