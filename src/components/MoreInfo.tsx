@@ -61,9 +61,10 @@ export interface PricingLinksProps {
   title?: JSX.Element
   text?: JSX.Element
   links?: JSX.Element
+  backgroundShouldBeWhite?: boolean
 }
 
-const PricingLinks = ({ img, title, text, links }: PricingLinksProps) => {
+const PricingLinks = ({ img, title, text, links, backgroundShouldBeWhite }: PricingLinksProps) => {
   let Img = img
   let Title = title
   let Text = text
@@ -88,7 +89,10 @@ const PricingLinks = ({ img, title, text, links }: PricingLinksProps) => {
     )
   }
   return (
-    <div className="pattern-bg" style={{ marginBottom: '10rem' }}>
+    <div
+      className="pattern-bg"
+      style={{ marginBottom: backgroundShouldBeWhite ? '' : '10rem', background: backgroundShouldBeWhite ? 'none' : '' }}
+    >
       <div className="row">
         <StyledPricingLinks>
           {Img}
