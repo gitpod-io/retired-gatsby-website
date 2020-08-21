@@ -6,7 +6,7 @@ import { sizes } from '../../styles/variables'
 
 const StyledTestimonials = styled.div`
     min-height: 60rem;
-    margin-bottom: 10rem;
+    margin: 8rem 0 10rem;
 
     @media(max-width: ${sizes.breakpoints.sm}) {
         text-align: center;
