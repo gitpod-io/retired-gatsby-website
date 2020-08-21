@@ -52,11 +52,9 @@ const Styled = styled.div`
     text-align: center;
     padding: 10rem 0 10rem;
 
-    &__text-box {
-    }
-
     &__screenshot {
       display: block;
+      margin-top: 3rem;
       width: 100%;
       max-width: 1000px;
       box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
