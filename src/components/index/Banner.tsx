@@ -5,6 +5,7 @@ import styled from '@emotion/styled'
 import GitLab from '../../resources/gitlab.svg'
 import GitHub from '../../resources/octicons-mark-github.svg'
 import Bitbucket from '../../resources/bitbucket.svg'
+import { sizes } from '../../styles/variables'
 
 const Styled = styled.div`
   height: 700px;
@@ -62,7 +63,12 @@ const Styled = styled.div`
     }
 
     h1 {
+      font-size: 4.5rem;
       font-weight: 400;
+
+      @media (max-width: ${sizes.breakpoints.md}) {
+        font-size: 3.8rem;
+      }
 
       span {
         display: block;
@@ -88,7 +94,7 @@ const Banner = () => (
       <header role="banner" className="banner">
         <div className="banner__text-box">
           <h1>
-            <strong>Prebuilt</strong> Dev Environments.
+            <strong>Dev Environments</strong> Built for the Cloud.
           </h1>
           <p>Describe your dev environments as code and automate the last missing piece in your DevOps pipeline.</p>
           <a href="#get-started" className="btn btn--cta">
