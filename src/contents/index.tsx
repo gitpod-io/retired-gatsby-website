@@ -13,7 +13,13 @@ export const features: FeatureCardProps[] = [
   {
     id: 'automation',
     Graphic: FullAutomationGraphics,
-    title: <strong>Think CI/CD for Dev Environments</strong>,
+    title: (
+      <strong>
+        Think CI/CD for
+        <br />
+        Dev Environments
+      </strong>
+    ),
     text: (
       <>
         <p>
@@ -30,7 +36,13 @@ export const features: FeatureCardProps[] = [
   {
     id: 'teams-together',
     src: Collaboration,
-    title: <strong>Where Teams Code Together</strong>,
+    title: (
+      <strong>
+        Where Teams
+        <br />
+        Code Together
+      </strong>
+    ),
     text: (
       <ul className="text-list">
         <li>
