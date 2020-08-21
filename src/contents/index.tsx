@@ -80,7 +80,7 @@ export const features: FeatureCardProps[] = [
         <p>Gitpod is a multi-service Kubernetes application that we develop in Gitpod.</p>
         <p>
           Code, build, debug and run K8s applications entirely in the cloud. Get fully-baked workspaces for every branch and pull/merge
-          request, pre-configured and pre-connected to their own dedicated K8s deployment
+          request, pre-configured and pre-connected to their own dedicated K8s deployment.
         </p>
       </>
     )
