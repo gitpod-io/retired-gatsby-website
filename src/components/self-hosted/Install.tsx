@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 import Kubernetes from '../../resources/kubernetes.svg'
 import { colors, sizes, borders } from '../../styles/variables'
 import GoogleCloudLogo from '../../resources/google-cloud-logo.svg'
+import AWSLogo from '../../resources/aws.svg'
 import { Link } from 'gatsby'
 
 interface InstallProps {
@@ -25,10 +26,18 @@ const installs: InstallProps[] = [
         btnBackground: true
     },
     {
+        title: "Amazon Web Services",
+        img: AWSLogo,
+        alt: "AWS",
+        text: " Install Gitpod optimised for Amazon Web Services.",
+        linkPath: 'install-on-aws-script',
+        btnBackground: true
+    },
+    {
         title: "Vanilla Kubernetes",
         img: Kubernetes,
         alt: "Kubernetes",
-        text: "All you need is a domain and a Kubernetes cluster.",
+        text: "All you need is a Kubernetes cluster.",
         linkPath: 'install-on-kubernetes' 
     }
 ]
@@ -100,7 +109,7 @@ const Install = () => (
                     ))
                 }
             </div>
-            <p>Enhanced support for AWS, Azure, and OpenShift is coming soon.</p>
+            <p>Enhanced support for Azure and OpenShift is coming soon.</p>
         </div>
     </StyledSection>
 )

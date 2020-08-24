@@ -2,9 +2,9 @@
 url: /docs/self-hosted/0.5.0/install/install-on-gcp-script/
 ---
 
-# Install Gitpod on Google Cloud Platform
+# Install Gitpod on GCP
 
-Gitpod runs best on GCP. That's also where [gitpod.io](https://gitpod.io) is deployed and operated at scale.
+Gitpod runs best on Google Cloud Platform. That's also where [gitpod.io](https://gitpod.io) is deployed and operated at scale.
 
 The easiest way to install Gitpod on GCP is by using our automated installation script. You can find it in this repository:
 
