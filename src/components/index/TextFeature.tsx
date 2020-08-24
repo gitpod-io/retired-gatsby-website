@@ -22,13 +22,21 @@ const StyledTextFeature = styled.div`
   img {
     display: block;
     height: 8rem;
-    margin: 0 auto 4rem;
+    margin-bottom: 4rem;
+
+    @media (min-width: 501px) {
+      margin: 0 auto 4rem;
+    }
   }
 
   .btn {
     display: block;
     max-width: 240px;
-    margin: 4rem auto 0;
+    margin-top: 4rem;
+
+    @media (min-width: 501px) {
+      margin: 4rem auto 0;
+    }
   }
 `
 

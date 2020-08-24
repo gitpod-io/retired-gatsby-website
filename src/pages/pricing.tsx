@@ -38,7 +38,7 @@ const PricingPage = () => {
 
       <div className="pattern-bg" style={!isRendered ? { margin: '10rem 0' } : {}}>
         <div className="row">
-          <PricingFAQs title={isRendered ? 'Self-Hosted' : 'Cloud'} />
+          <PricingFAQs title={isRendered ? 'Self-Hosted' : 'SaaS'} />
         </div>
       </div>
 

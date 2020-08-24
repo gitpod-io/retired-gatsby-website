@@ -5,7 +5,7 @@ import styled from '@emotion/styled'
 import GitLab from '../../resources/gitlab.svg'
 import GitHub from '../../resources/octicons-mark-github.svg'
 import Bitbucket from '../../resources/bitbucket.svg'
-import { sizes } from '../../styles/variables'
+import { sizes, colors } from '../../styles/variables'
 
 const Styled = styled.div`
   height: 700px;
@@ -84,6 +84,10 @@ const Styled = styled.div`
       }
     }
   }
+
+  .works-with {
+    color: ${colors.textLight};
+  }
 `
 
 const Banner = () => (
@@ -98,7 +102,7 @@ const Banner = () => (
           <a href="#get-started" className="btn btn--cta">
             Try Now
           </a>
-          <p>
+          <p className="works-with">
             Works with
             <img src={GitLab} alt="GitLab" />
             <img src={GitHub} alt="GitHub" />

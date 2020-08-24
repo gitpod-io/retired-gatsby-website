@@ -62,18 +62,12 @@ const SelfHostedFAQs = ({ title }: { title: string }) => (
           <div className="faqs__container">
             <div>
               <h3>Can I try Gitpod for free?</h3>
+              <p>Of course! You can use Gitpod Self-Hosted on your own infrastructure for free for unlimited users.</p>
               <p>
-                Of course! You can use Gitpod Self-Hosted on your own infrastructure for free for unlimited users. Obtain your trial license{' '}
-                <a href="https://gitpod.io/selfhosted-trial/" target="_blank">
-                  here
-                </a>{' '}
-                and get started by <Link to="/docs/self-hosted/latest/self-hosted/">installing Gitpod Self-Hosted</Link>.
-              </p>
-              <p>
-                If you'd like to access additional features like unlimited prebuilds, shared workspaces, snapshots and an admin dashboard, 
-                you can upgrade to the Professional Plan at any time. Simply update your existing instance with a purchased license key. 
-                Self-hosted Gitpod licenses can currently only be purchased by request. Please{' '}
-                <Link to="/contact/">Contact Sales</Link> to receive an offer.
+                If you'd like to access additional features like unlimited prebuilds, shared workspaces, snapshots and an admin dashboard,
+                you can upgrade to the Professional Plan at any time. Simply update your existing instance with a purchased license key.
+                Self-hosted Gitpod licenses can currently only be purchased by request. Please <Link to="/contact/">Contact Sales</Link> to
+                receive an offer.
               </p>
             </div>
             <div>
@@ -101,17 +95,14 @@ const SelfHostedFAQs = ({ title }: { title: string }) => (
           <div className="faqs__container">
             <div>
               <h3>Can I add more users to my plan at any time?</h3>
-              <p>
-                Yes, you can add as many users as you like to your plan at any time.
-              </p>
+              <p>Yes, you can add as many users as you like to your plan at any time.</p>
             </div>
             <div>
               <h3>How can I install Self-Hosted?</h3>
               <p>
-                You can either install <strong>Gitpod Self-Hosted</strong> on <strong>Google Cloud Platform</strong> or on{' '}
-                <strong>Vanilla Kubernetes</strong>. Enhanced support for <strong>AWS</strong>, <strong>Azure</strong> and{' '}
-                <strong>OpenShift</strong> is coming soon. See{' '}
-                <Link to="/docs/self-hosted/latest/self-hosted/">Self-Hosted Installation</Link> for more information.
+                You can either install <strong>Gitpod Self-Hosted</strong> on <strong>Google Cloud Platform</strong>, <strong>AWS</strong>,
+                or on <strong>Vanilla Kubernetes</strong>. Enhanced support for <strong>Azure</strong> and <strong>OpenShift</strong> is
+                coming soon. See <Link to="/docs/self-hosted/latest/self-hosted/">Self-Hosted Installation</Link> for more information.
               </p>
             </div>
             <div>

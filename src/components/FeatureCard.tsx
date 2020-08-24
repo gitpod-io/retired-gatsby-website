@@ -107,6 +107,11 @@ const Styled = styled.div<{ direction?: string; flexDirectionColumnForImgContain
       z-index: -1;
       opacity: 0.1;
       border-radius: 3px;
+
+      @media (max-width: ${sizes.breakpoints.md}) {
+        width: calc(30vh + 100%);
+        transform: translateX(-20vw);
+      }
     }
 
     @media (min-width: 1141px) {
@@ -164,6 +169,10 @@ const Styled = styled.div<{ direction?: string; flexDirectionColumnForImgContain
 
   .buttons {
     margin-top: 4rem;
+
+    @media (max-width: 600px) {
+      margin-top: 1.5rem;
+    }
   }
 
   ul {
