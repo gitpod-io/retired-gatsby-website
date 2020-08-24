@@ -22,6 +22,10 @@ const StyledTrustedBy = styled.section`
             border: 2px solid transparent;
             justify-content: center;
             margin: 1.2rem;
+
+            img {
+                height: 100%;
+            }
         }
     }
 
