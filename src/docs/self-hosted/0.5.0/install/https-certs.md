@@ -7,7 +7,7 @@ url: /docs/self-hosted/0.5.0/install/https-certs/
 
 
 While we highly recommend operating Gitpod using HTTPS, Gitpod is able to run on insecure HTTP.
-If you use Gitpod's inernal docker registry, the downside of not using HTTPS is that Kubernetes won't be able to pull images from the registry because it considers the registry insecure.
+If you use Gitpod's internal Docker registry, the downside of not using HTTPS is that Kubernetes won't be able to pull images from the registry because it considers the registry insecure.
 You can either resort to using an [external registry](#docker-registry-optional) or use HTTPS. For running Gitpod on insecure HTTP, no HTTPS certificates are needed and you can skip this section.
 
 > Important: The HTTPS certificates for your domain must include `your-domain.com`, `*.your-domain.com` and `*.ws.your-domain.com`. Beware that wildcard certificates are valid for one level only (i.e. `*.a.com` is not valid for `c.b.a.com`).
@@ -35,7 +35,7 @@ Gitpod requires [wildcard certificates](https://en.wikipedia.org/wiki/Wildcard_c
 There is a [plethora of tutorials](https://www.google.com/search?q=letsencrypt+wildcard) how to [generate wildcard certificates](https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7) using Let's Encrypt.
 Things get considerably easier when your domain is registered with a service for which a [Certbot DNS plugin exists](https://certbot.eff.org/docs/using.html#dns-plugins).
 
-Asuming you have `certbot` installed, the following script will generate and configure the required certificates (notice the placeholders):
+Assuming you have [certbot](https://certbot.eff.org/) installed, the following script will generate and configure the required certificates (notice the placeholders):
 ```bash
 export DOMAIN=your-domain.cm
 export EMAIL=your@email.here
