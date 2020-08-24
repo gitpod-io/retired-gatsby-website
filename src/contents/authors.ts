@@ -107,7 +107,7 @@ export const allAuthors: { [idx: string]: Author } = {
             twitter: 'jolandgraf',
             linkedin: 'johanneslandgraf'
         },
-        description: "Johannes is CCO at Gitpod and helping professional development teams to embrace prebuilt, remote dev environments. Before that he worked in Venture Capital focusing on everything around open source and developer tools."
+        description: "Johannes is CCO at Gitpod and helps professional development teams to embrace fully set-up, remote dev environments. Before that he worked in Venture Capital focusing on everything around open source and developer tools."
     }
     
 }
