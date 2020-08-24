@@ -99,7 +99,17 @@ export const allAuthors: { [idx: string]: Author } = {
             linkedin: 'sean-hellum-84ba401a2'
         },
         description: "Sean is a developer advocate and rustacean with a passion for Docker, Linux, Bash, Rust, and CLIs"
+    },
+    'JohannesLandgraf': {
+        name: "Johannes Landgraf",
+        socialProfiles: {
+            github: "JohannesLandgraf",
+            twitter: 'jolandgraf',
+            linkedin: 'johanneslandgraf'
+        },
+        description: "Johannes is CCO at Gitpod and helping professional development teams to embrace prebuilt, remote dev environments. Before that he worked in Venture Capital focusing on everything around open source and developer tools."
     }
+    
 }
 
 export function parseAuthors(input: string): Author[] {
