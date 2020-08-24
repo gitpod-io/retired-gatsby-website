@@ -74,7 +74,7 @@ The success of Gitpod Professional makes it possible for us to keep working towa
 
 <div class="wrapper">
     <a href= "https://www.gitpod.io/self-hosted/" target="_blank">
-        <button class="button">Get started for free</button>
+        <button class="button">Start for free</button>
     </a>
 </div>
 
