@@ -53,7 +53,7 @@ const selfHostedPlans: PricingBoxProps[] = [
     duration: 'For unlimited users',
     img: <object role="presentation" tabIndex={-1} data={Cloud} />,
     features: ['Unlimited Use', 'Private & Public Repos'],
-    price: '$0',
+    price: isEurope() ? '€0' : '$0',
     btnText: 'Install Now',
     btnBackground: true,
     link: '/self-hosted/#install',
