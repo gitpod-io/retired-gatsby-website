@@ -53,7 +53,7 @@ const Tabs = ({ isRendered, changeIsRendered }: PricingBoxesProps) => (
             onClick={() => changeIsRendered(false)}
             to="/pricing/#"
         >
-            Cloud
+            SaaS
         </Tab>
         <Tab 
             isRendered={isRendered}

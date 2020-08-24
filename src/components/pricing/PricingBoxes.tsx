@@ -49,7 +49,7 @@ const Styled = styled.div`
 
 const selfHostedPlans: PricingBoxProps[] = [
   {
-    title: 'Small Teams',
+    title: 'Free',
     duration: 'For unlimited users',
     img: <object role="presentation" tabIndex={-1} data={Cloud} />,
     features: ['Unlimited Use', 'Private & Public Repos'],
@@ -60,7 +60,7 @@ const selfHostedPlans: PricingBoxProps[] = [
     info: 'Limited Prebuilt Times'
   },
   {
-    title: 'Professional Teams',
+    title: 'Professional',
     img: <img alt="Rocket" src={Rocket} />,
     features: ['Unlimited Prebuilds', 'Shared Workspaces', 'Snapshots', 'Admin Dashboard', 'Unlimited Use', 'Private & Public Repos'],
     price: (

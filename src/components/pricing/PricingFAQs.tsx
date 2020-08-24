@@ -63,16 +63,16 @@ const SelfHostedFAQs = ({ title }: { title: string }) => (
             <div>
               <h3>Can I try Gitpod for free?</h3>
               <p>
-                Of course! You can try the full version on your own infrastructure for 30 days for free. Gitpod Self-Hosted is always free
-                for up to five users. Obtain your trial license{' '}
+                Of course! You can use Gitpod Self-Hosted on your own infrastructure for free for unlimited users. Obtain your trial license{' '}
                 <a href="https://gitpod.io/selfhosted-trial/" target="_blank">
                   here
                 </a>{' '}
                 and get started by <Link to="/docs/self-hosted/latest/self-hosted/">installing Gitpod Self-Hosted</Link>.
               </p>
               <p>
-                If you like the experience, you can continue using Gitpod by simply updating your existing instance with a purchased license
-                key. Self-hosted Gitpod licenses can currently only be purchased by request. Please{' '}
+                If you'd like to access additional features like unlimited prebuilds, shared workspaces, snapshots and an admin dashboard, 
+                you can upgrade to the Professional Plan at any time. Simply update your existing instance with a purchased license key. 
+                Self-hosted Gitpod licenses can currently only be purchased by request. Please{' '}
                 <Link to="/contact/">Contact Sales</Link> to receive an offer.
               </p>
             </div>
@@ -84,10 +84,10 @@ const SelfHostedFAQs = ({ title }: { title: string }) => (
               </p>
             </div>
             <div>
-              <h3>What is the difference between Cloud and Self-Hosted?</h3>
+              <h3>What is the difference between SaaS and Self-Hosted?</h3>
               <p>
-                If you choose <strong>Gitpod Cloud</strong>, we will manage and host Gitpod in the cloud for you. This means minimal setup
-                efforts for you and secure data storage in the cloud. Gitpod Cloud is be the best solution for teams who want to get started
+                If you choose <strong>Gitpod SaaS</strong>, we will manage and host Gitpod in the cloud for you. This means minimal setup
+                efforts for you and secure data storage in the cloud. Gitpod SaaS is be the best solution for teams who want to get started
                 immediately and don’t want to spend time on setup and operations.
               </p>
               <p>
@@ -102,8 +102,7 @@ const SelfHostedFAQs = ({ title }: { title: string }) => (
             <div>
               <h3>Can I add more users to my plan at any time?</h3>
               <p>
-                Yes, you can add as many users as you like to your plan at any time. As soon as you exceed the free plan of five users, your
-                plan upgrades to the paid plan for $20/month per user.
+                Yes, you can add as many users as you like to your plan at any time.
               </p>
             </div>
             <div>
@@ -122,10 +121,6 @@ const SelfHostedFAQs = ({ title }: { title: string }) => (
                 <Link to="/contact">Contact Sales</Link> to receive an offer.
               </p>
               <p>All our plans can be paid via invoice.</p>
-              <p>
-                <img src={MasterCard} alt="Mastercard" />
-                <img src={Visa} alt="Visa" />
-              </p>
             </div>
             <div>
               <h3>Still have more questions?</h3>
@@ -157,7 +152,7 @@ const SelfHostedFAQs = ({ title }: { title: string }) => (
             </div>
             <div>
               <h3>How can I pay?</h3>
-              <p>All our plans can only be paid via Credit Card.</p>
+              <p>All our plans can only be paid via credit card.</p>
               <p>
                 <img src={MasterCard} alt="Mastercard" />
                 <img src={Visa} alt="Visa" />
