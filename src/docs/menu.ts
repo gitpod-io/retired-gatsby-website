@@ -225,6 +225,10 @@ export const MENU: MenuEntry[] = [
                 "self-hosted/latest/install/install-on-gcp-script/"
             ),
             M(
+                "Install on Amazon Web Services",
+                "self-hosted/latest/install/install-on-aws-script/"
+            ),
+            M(
                 "Install on self-managed Kubernetes",
                 "self-hosted/latest/install/install-on-kubernetes/"
             ),
