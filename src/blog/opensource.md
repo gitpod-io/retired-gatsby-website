@@ -9,7 +9,7 @@ teaserImage: /confetti.jpg
 
 As of today Gitpod is open source under the AGPL license at [github.com/gitpod-io/core](https://github.com/gitpod-io/core). We want to allow the community to participate in the development of Gitpod, provide more transparency and make it even easier for developers to use and integrate Gitpod in their workflows.
 
-For those of you who know us, this probably does not come as a big surprise. Working in open source is in our DNA and everything we’ve created over the past 10 years, including [Theia](https://github.com/eclipse-theia/theia), [Xtext](https://github.com/eclipse/xtext), [Open-VSX](https://github.com/eclipse/openvsx) and many other projects has been open source. In fact, Gitpod ~~is~~ was our only closed-source project and it is a relief to change that going forward.
+For those of you who know us, this probably does not come as a big surprise. Working in open source is in our DNA and everything we’ve created over the past 10 years, including [Theia](https://github.com/eclipse-theia/theia), [Xtext](https://github.com/eclipse/xtext), [Open-VSX](https://github.com/eclipse/openvsx) and many other projects has been open source. In fact, Gitpod was our only closed-source project and it is a relief to change that going forward.
 
 # Open Source Contributions
 
@@ -61,7 +61,9 @@ Sven will run a webinar next Thursday, where we will showcase how we internally 
 
 # Gitpod Self-Hosted is Free
 
-Starting today, Gitpod Self-Hosted is free for unlimited users. Organizations using Gitpod can upgrade to Gitpod Professional to get additional features: 
+The [SaaS version of gitpod.io](https://www.gitpod.io/pricing/#) remains the most convenient way to streamline your developer workflows with continuously prebuilt dev environments. 
+
+In case you want to host Gitpod on your own infrastructure or private cloud, starting today, Gitpod Self-Hosted is free for unlimited users. Organizations using Gitpod can upgrade to Gitpod Professional to get additional features: 
 
 * [Snapshots](https://www.gitpod.io/features/#snapshot) (share a reproducible workspace with your team)
 * [Live Share](https://www.gitpod.io/features/#share) (invite others into your running workspace)
@@ -70,10 +72,10 @@ Starting today, Gitpod Self-Hosted is free for unlimited users. Organizations us
 
 The success of Gitpod Professional makes it possible for us to keep working towards building a new category of developer tools, which completes modern DevOps pipelines. In the future we will add additional functionality to both the open source code as well our paid plans.
 
-**We promise that we will never remove any features from the open source code base and make it a paid feature. Everything that is open source stays open source.**
+<div class="wrapper">
+    <a href= "https://www.gitpod.io/self-hosted/" target="_blank">
+        <button class="button">Get started for free</button>
+    </a>
+</div>
 
-# Getting Started
 
-The SaaS version of [gitpod.io](https://www.gitpod.io/pricing/#) remains the most convenient way to streamline your developer workflows with continuously prebuilt dev environments. 
-
-In case you want to host Gitpod on your own infrastructure or private cloud, [here are the options.](https://www.gitpod.io/self-hosted/)
