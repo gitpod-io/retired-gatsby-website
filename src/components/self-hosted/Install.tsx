@@ -29,7 +29,7 @@ const installs: InstallProps[] = [
         title: "Amazon Web Services",
         img: AWSLogo,
         alt: "AWS",
-        text: " Install Gitpod optimised for Amazon Web Services.",
+        text: "Getting started with Gitpod on Amazon Web Services.",
         linkPath: 'install-on-aws-script',
         btnBackground: true
     },
