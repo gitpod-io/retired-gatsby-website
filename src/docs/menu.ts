@@ -108,6 +108,56 @@ export const MENU: MenuEntry[] = [
         ]
     ),
     M(
+        "Gitpod Self-Hosted",
+        "self-hosted/latest/self-hosted",
+        [
+            M(
+                "Install on Google Cloud Platform",
+                "self-hosted/latest/install/install-on-gcp-script/"
+            ),
+            M(
+                "Install on Amazon Web Services",
+                "self-hosted/latest/install/install-on-aws-script/"
+            ),
+            M(
+                "Install on self-managed Kubernetes",
+                "self-hosted/latest/install/install-on-kubernetes/"
+            ),
+            M(
+                "Configure OAuth",
+                "self-hosted/latest/install/oauth/"
+            ),
+            M(
+                "Configure a Domain",
+                "self-hosted/latest/install/domain/"
+            ),
+            M(
+                "Configure HTTPS Certificates",
+                "self-hosted/latest/install/https-certs/"
+            ),
+            M(
+                "Configure a Database",
+                "self-hosted/latest/install/database/"
+            ),
+            M(
+                "Configure a Docker Registry",
+                "self-hosted/latest/install/docker-registry/"
+            ),
+            M(
+                "Configure Storage",
+                "self-hosted/latest/install/storage/"
+            ),
+            M(
+                "Configure Nodes",
+                "self-hosted/latest/install/nodes/"
+            ),
+            M(
+                "Configure Workspaces",
+                "self-hosted/latest/install/workspaces/"
+            ),
+        ]
+    ),
+    M(
         "Languages & Frameworks",
         "languages-and-frameworks",
         [   
@@ -233,56 +283,6 @@ export const MENU: MenuEntry[] = [
     M(
         "Changelog",
         "changelog",
-    ),
-    M(
-        "Gitpod Self-Hosted",
-        "self-hosted/latest/self-hosted",
-        [
-            M(
-                "Install on Google Cloud Platform",
-                "self-hosted/latest/install/install-on-gcp-script/"
-            ),
-            M(
-                "Install on Amazon Web Services",
-                "self-hosted/latest/install/install-on-aws-script/"
-            ),
-            M(
-                "Install on self-managed Kubernetes",
-                "self-hosted/latest/install/install-on-kubernetes/"
-            ),
-            M(
-                "Configure OAuth",
-                "self-hosted/latest/install/oauth/"
-            ),
-            M(
-                "Configure a Domain",
-                "self-hosted/latest/install/domain/"
-            ),
-            M(
-                "Configure HTTPS Certificates",
-                "self-hosted/latest/install/https-certs/"
-            ),
-            M(
-                "Configure a Database",
-                "self-hosted/latest/install/database/"
-            ),
-            M(
-                "Configure a Docker Registry",
-                "self-hosted/latest/install/docker-registry/"
-            ),
-            M(
-                "Configure Storage",
-                "self-hosted/latest/install/storage/"
-            ),
-            M(
-                "Configure Nodes",
-                "self-hosted/latest/install/nodes/"
-            ),
-            M(
-                "Configure Workspaces",
-                "self-hosted/latest/install/workspaces/"
-            ),
-        ]
     ),
     // M(
     //     "Release Notes",
