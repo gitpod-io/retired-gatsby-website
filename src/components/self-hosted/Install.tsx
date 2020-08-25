@@ -93,8 +93,8 @@ const StyledSection = styled.section`
       }
 
       img {
-        height: 8rem;
-        width: 8rem;
+        height: 10rem;
+        width: 10rem;
         margin-bottom: 3rem;
       }
 
