@@ -57,15 +57,15 @@ export const features: FeatureCardProps[] = [
     id: 'parallel',
     title: (
       <>
-        Run CPU-Heavy
+        Complete Tasks in
         <br />
-        <strong>Tasks in Parallel</strong>
+        <strong>Parallel Workspaces</strong>
       </>
     ),
     text: (
       <>
-        <p>Don’t postpone work because your workspaces is occupied with your work on the latest features.</p>
-        <p>To sneak in a bugfix on a maintenance branch or a code review - just start more workspaces - in parallel.</p>
+        <p>With Gitpod, you're always ready, even when your current workspace is occupied with work-in-progress.</p>
+        <p>Do code reviews, confirm a bugfix, debug someone's code, and update a maintenance branch - all in dedicated, self-contained browser tabs.</p>
       </>
     ),
     icon: (
