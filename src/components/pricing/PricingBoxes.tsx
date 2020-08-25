@@ -50,10 +50,14 @@ const Styled = styled.div`
 const selfHostedPlans: PricingBoxProps[] = [
   {
     title: 'Free',
-    duration: 'For unlimited users',
+    duration: 'Unlimited users',
     img: <object role="presentation" tabIndex={-1} data={Cloud} />,
     features: ['Unlimited Use', 'Private & Public Repos'],
-    price: isEurope() ? '€0' : '$0',
+    price: (
+      <>
+        {isEurope() ? '€0' : '$0'} <span>/ month</span>
+      </>
+    ),
     btnText: 'Install Now',
     btnBackground: true,
     link: '/self-hosted/#install',
@@ -80,7 +84,12 @@ const plans: PricingBoxProps[] = [
   {
     title: 'Free',
     img: <object role="presentation" tabIndex={-1} data={IconOpenSource} />,
-    price: 'Free',
+    price: (
+      <>
+        {isEurope() ? '€0' : '$0'}
+        <span> / month</span>
+      </>
+    ),
     duration: '50 hours / month',
     features: ['Public Repos', 'Private Repos (30-Day Trial)']
   },
