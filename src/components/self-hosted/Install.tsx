@@ -67,9 +67,7 @@ const StyledSection = styled.section`
       border-radius: 3px;
 
       @media (max-width: ${sizes.breakpoints.lg}) {
-        &:not(:last-of-type) {
-          margin-bottom: 5rem;
-        }
+        margin-bottom: 5rem;
       }
 
       @media (max-width: 900px) {
