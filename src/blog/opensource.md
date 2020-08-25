@@ -59,7 +59,7 @@ Sven will run a webinar next week on Thursday, where we will showcase how we use
     </a>
 </div>
 
-# Gitpod Self-Hosted is Free
+# Gitpod Self-Hosted is Now Free
 
 The [SaaS offering of gitpod.io](https://www.gitpod.io/pricing/#) remains the easiest way to streamline your development workflows with continuously prebuilt dev environments. 
 
