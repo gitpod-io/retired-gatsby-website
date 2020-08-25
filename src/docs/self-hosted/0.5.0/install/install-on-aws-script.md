@@ -8,7 +8,7 @@ This guide explains how to install an instance of Gitpod with 3 simple steps:
 
 ## 1. Get your AWS credentials
  
-Please see [here](https://portal.aws.amazon.com/billing/signup#/start) on how to create your first AWS account. Once you have access to an account, you can follow [these steps](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html) on how to obtain valid credentials.
+You need an [AWS account](https://aws.amazon.com/). Once you have access to an account, follow [these steps](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html) to obtain valid credentials.
 
 ```bash
 export AWS_ACCESS_KEY_ID=...
@@ -21,20 +21,19 @@ export AWS_SECRET_ACCESS_KEY=...
 
 ## 2. Run the installer image
 ```bash
-mkdir -p "$PWD/awsinstall"
 docker run --rm -it \
     -e AWS_ACCESS_KEY_ID \
     -e AWS_SECRET_ACCESS_KEY \
     -v "$PWD/awsinstall":"/workspace" \
-    eu.gcr.io/gitpod-core-dev/build/installer:cw-aws-installer-ii.3 aws
+    eu.gcr.io/gitpod-core-dev/build/installer:latest aws
 ```
 
 This will kickstart the installation process, authenticate with AWS and automatically set up your Gitpod deployment using Docker and Terraform.
 
 ### Note:
-  - This guide assumes you have the [docker cli](https://docs.docker.com/engine/install/) installed.
+  - This guide assumes you have the [docker](https://docs.docker.com/engine/install/) installed.
 
-  - The final step - creating the cluster - might take up to 25 minutes on AWS. Good time to grab a cup of coffee!
+  - The final step - creating the cluster - might take around 30 minutes on AWS. Good time to grab a cup of coffee!
 
 ## 3. Launch the first workspace
 Once finished, the installer will print the URL at which your Gitpod installation can be found. There you need to connect Gitpod to at least one Git provider:
@@ -48,8 +47,6 @@ Afterwards you can jump right into your first workspace:
 
 ### Note:
   - The local mount point `./awsinstall` will hold your Terraform config files. You can always modify them and re-run the install script in order to make changes to your Gitpod deployment.
-
-  - The local mount point `/tmp/gc` will cache your AWS credentials. It is safe to delete this folder if you don't wish to leave any tokens behind.
 
   - The first workspace start might take a up to 10 minutes because it needs to pull several docker images and initialize the registry.
 
