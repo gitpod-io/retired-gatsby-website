@@ -354,7 +354,7 @@ export default `
         linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
         background-repeat: no-repeat, repeat;
         background-position: right 1em top 50%, 0 0;
-        background-size: 1.65em auto, 100%;
+        background-size: 1.25em auto, 100%;
     }
 
     /* ------------------------------------------- */
