@@ -66,8 +66,8 @@ const SelfHostedFAQs = ({ title }: { title: string }) => (
               <p>
                 If you'd like to access additional features like unlimited prebuilds, shared workspaces, snapshots and an admin dashboard,
                 you can upgrade to the Professional Plan at any time. Simply update your existing instance with a purchased license key.
-                Self-hosted Gitpod licenses can currently only be purchased by request. Please <Link to="/contact/">Contact Sales</Link> to
-                receive an offer.
+                Self-hosted Gitpod licenses can currently only be purchased by request. Please request a license key{' '}
+                <Link to="/enterprise-license">here</Link> or <Link to="/contact">Contact sales</Link> if you have any questions.
               </p>
             </div>
             <div>
@@ -108,8 +108,9 @@ const SelfHostedFAQs = ({ title }: { title: string }) => (
             <div>
               <h3>How can I pay?</h3>
               <p>
-                Currently, <strong>Gitpod Self-Hosted</strong> can only be purchased on request. Please{' '}
-                <Link to="/contact">Contact Sales</Link> to receive an offer.
+                Currently, <strong>Gitpod Self-Hosted</strong> can only be purchased on request. Please request a license key{' '}
+                <Link to="/enterprise-license">here</Link> and we'll reach out to you. If you have any questions, please{' '}
+                <Link to="/contact">Contact sales</Link>.
               </p>
               <p>All our plans can be paid via invoice.</p>
             </div>
