@@ -16,7 +16,7 @@ To deploy Gitpod to your Google Cloud Platform account, simply follow these step
 docker run --rm -it \
     -v ./gcloud:/root/.config/gcloud \
     -v ./gpinstall:/workspace \
-    eu.gcr.io/gitpod-core-dev/build/installer:master.64 \
+    eu.gcr.io/gitpod-core-dev/build/installer:latest \
     gcp
 ```
 
