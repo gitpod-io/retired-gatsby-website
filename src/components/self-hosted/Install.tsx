@@ -19,25 +19,19 @@ const installs: InstallProps[] = [
   {
     title: 'Google Cloud Platform',
     img: GoogleCloudLogo,
-    alt: 'Google Cloud',
+    alt: 'Google Cloud logo',
     linkPath: 'install-on-gcp-script'
   },
   {
-    title: (
-      <>
-        Amazon Web Services
-        <br />
-        (AWS)
-      </>
-    ),
+    title: 'Amazon Web Services',
     img: AWS,
-    alt: 'Amazon Web Services(AWS)',
+    alt: 'AWS logo',
     linkPath: 'install-on-aws-script'
   },
   {
     title: 'Vanilla Kubernetes',
     img: Kubernetes,
-    alt: 'Kubernetes',
+    alt: 'Kubernetes logo',
     linkPath: 'install-on-kubernetes'
   }
 ]
@@ -55,7 +49,6 @@ const StyledSection = styled.section`
         max-width: 110rem;
         margin: 0 auto;
         padding: 4rem 0 5rem;
-    }
 
     @media (max-width: 900px) {
       flex-direction: column;
@@ -100,14 +93,15 @@ const StyledSection = styled.section`
       }
 
       img {
-        height: 6rem;
-        width: 6rem;
+        height: 8rem;
+        width: 8rem;
         margin-bottom: 3rem;
       }
 
       .btn {
         margin-top: 2rem;
       }
+    }
     }
 
     & + p {
