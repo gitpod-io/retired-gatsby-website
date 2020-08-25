@@ -13,7 +13,7 @@ For those of you who know us, this probably does not come as a big surprise. Wor
 
 # Open-Source Contributions
 
-Contributing to Gitpod should be easy and accessible for everyone. All contributions are welcome, including pull requests, issues, new docs as well as updates and tweaks, blog posts, workshops, and more. Please head over to [Github](https://github.com/gitpod-io/core) to find out about the various ways you can contribute and join our [Gitpod Community](https://community.gitpod.io/).
+Contributing to Gitpod should be easy and accessible for everyone. All contributions are welcome, including pull requests, issues, new docs as well as updates and tweaks, blog posts, workshops, and more. Please head over to [Github](https://github.com/gitpod-io/gitpod) to find out about the various ways you can contribute and join our [Gitpod Community](https://community.gitpod.io/).
 
 Over the last year, Gitpod has simplified contributions on many open source projects (see [contribute.dev](https://contribute.dev/)). Today, everybody in our team is excited to share our own development pipeline including Kubernetes preview environments, an aggressively caching build system, our slim and fast CI system and of course how Gitpod continuously beams us into ready-to-code (and debug) dev environments. [Chris](https://github.com/csweichel) gave a great talk about this setup earlier this year 👇
 
@@ -61,7 +61,7 @@ Sven will run a webinar next Thursday, where we will showcase how we internally 
 
 # Gitpod Self-Hosted is Free
 
-The [SaaS version of gitpod.io](https://www.gitpod.io/pricing/#) remains the most convenient way to streamline your developer workflows with continuously prebuilt dev environments. 
+The [SaaS version of gitpod.io](https://www.gitpod.io/pricing/#) remains the most convenient way to streamline your development workflows with continuously prebuilt dev environments. 
 
 In case you want to host Gitpod on your own infrastructure or private cloud, starting today, Gitpod Self-Hosted is free for unlimited users. Organizations using Gitpod can upgrade to Gitpod Professional to get additional features: 
 
