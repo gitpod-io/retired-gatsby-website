@@ -9,7 +9,7 @@ teaserImage: /Celebration-blog-post-06.jpg
 
 As of today Gitpod is open source under the AGPL license at [github.com/gitpod-io/gitpod](https://github.com/gitpod-io/gitpod). This allows the community to participate in the development of Gitpod, provides more transparency and makes it even easier for developers to use and integrate Gitpod in their workflows.
 
-For those of you who know us,this probably does not come as a big surprise. Working in open source is in our DNA and everything we’ve created over the past 10 years, including [Theia](https://github.com/eclipse-theia/theia), [Xtext](https://github.com/eclipse/xtext), [Open VSX](https://github.com/eclipse/openvsx) and many other projects have been open source. In fact, Gitpod was our only closed-source project and it is a relief to change that going forward.
+For those of you who know us, this probably does not come as a big surprise. Working in open source is in our DNA and everything we’ve created over the past 10 years, including [Theia](https://github.com/eclipse-theia/theia), [Xtext](https://github.com/eclipse/xtext), [Open VSX](https://github.com/eclipse/openvsx) and many other projects have been open source. In fact, Gitpod was our only closed-source project and it is a relief to change that going forward.
 
 # Open-Source Contributions
 
@@ -77,5 +77,4 @@ Offering a paid plan for enterprises makes it possible for us to keep working to
         <button class="button">Start for free</button>
     </a>
 </div>
-
 
