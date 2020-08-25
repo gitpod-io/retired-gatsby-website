@@ -37,11 +37,14 @@ This will kickstart the installation process, authenticate with AWS and automati
 
 ## 3. Launch the first workspace
 Once finished, the installer will print the URL at which your Gitpod installation can be found. There you need to connect Gitpod to at least one Git provider:
-  - `gitlab.com`
-  - `github.com`
-  - a custom installation, e.g. `gitlab.mycompany.com` or `github.mycompany.com`.
+  - [Configure an OAuth application for GitLab](/docs/gitlab-integration/#oauth-application)
+  - [Configure an OAuth application for GitHub](/docs/github-integration/#oauth-application)
 
-Afterwards you can jump right into your first workspace:
+## 4. Configure the Browser extension
+
+Afterwards you can jump right into your first workspace, by prefixing the repository URL with your Gitpod Self-Hosted URL.
+
+Examples:
  - GitLab: `<your-installation-url>/#https://gitlab.com/gitpod/spring-petclinic`
  - GitHub: `<your-installation-url>/#https://github.com/gitpod-io/spring-petclinic`
 
