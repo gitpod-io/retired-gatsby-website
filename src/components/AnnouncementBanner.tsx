@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import Bg from '../resources/announcement-banner.jpg'
@@ -101,12 +101,23 @@ const AnnoucementBanner = () => {
       bannerRef.current.style.marginTop = `-${bannerRef.current.offsetHeight}px`
     }
 
+    localStorage.setItem('wasShown', 'true')
+
     setTimeout(() => {
       if (null !== bannerRef.current) {
         bannerRef.current.style.display = 'none'
       }
     }, 300)
   }
+
+  useEffect(() => {
+    const wasAlreadyShown = localStorage.getItem('wasShown')
+    if (wasAlreadyShown) {
+      if (null !== bannerRef.current) {
+        bannerRef.current.style.display = 'none'
+      }
+    }
+  })
 
   return (
     <StyledAnnouncementBanner ref={bannerRef}>
@@ -116,7 +127,7 @@ const AnnoucementBanner = () => {
           <span>&nbsp;</span>
           <p>
             <strong>
-              Gitpod Is Now Open Source. <Link to="/">Learn More.</Link>
+              Gitpod Is Now Open Source. <Link to="/blog/opensource/">Learn More.</Link>
             </strong>
           </p>
           <button
