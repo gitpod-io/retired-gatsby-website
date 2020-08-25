@@ -29,6 +29,11 @@ declare module '*.png' {
     export = path
 }
 
+declare module '*.mp4' {
+    const path: string;
+    export = path
+}
+
 declare module 'react-modal-video' {
     const ModalVideo: any;
     export = ModalVideo;
