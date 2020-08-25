@@ -7,13 +7,13 @@ image: /Celebration-blog-post-06.jpg
 teaserImage: /Celebration-blog-post-06.jpg
 ---
 
-As of today Gitpod is open source under the AGPL license at [github.com/gitpod-io/core](https://github.com/gitpod-io/core). We want to allow the community to participate in the development of Gitpod, provide more transparency and make it even easier for developers to use and integrate Gitpod in their workflows.
+As of today Gitpod is open source under the AGPL license at [github.com/gitpod-io/gitpod](https://github.com/gitpod-io/gitpod). This allows the community to participate in the development of Gitpod, provide more transparency and make it even easier for developers to use and integrate Gitpod in their workflows.
 
-For those of you who know us, this probably does not come as a big surprise. Working in open source is in our DNA and everything we’ve created over the past 10 years, including [Theia](https://github.com/eclipse-theia/theia), [Xtext](https://github.com/eclipse/xtext), [Open-VSX](https://github.com/eclipse/openvsx) and many other projects has been open source. In fact, Gitpod was our only closed-source project and it is a relief to change that going forward.
+For those of you who know us, this probably does not come as a big surprise. Working in open source is in our DNA and everything we’ve created over the past 10 years, including [Theia](https://github.com/eclipse-theia/theia), [Xtext](https://github.com/eclipse/xtext), [Open-VSX](https://github.com/eclipse/openvsx) and many other projects have been open source. In fact, Gitpod was our only closed-source project and it is a relief to change that going forward.
 
-# Open Source Contributions
+# Open-Source Contributions
 
-Contributing to Gitpod should be easy and accessible for everyone. All contributions are welcome, including PRs, issues, new docs as well as updates and tweaks, blog posts, workshops, and more. Please head over to [Github](https://github.com/gitpod-io/core) to find out about the various ways you can contribute and join our [Gitpod Community](https://community.gitpod.io/).
+Contributing to Gitpod should be easy and accessible for everyone. All contributions are welcome, including pull requests, issues, new docs as well as updates and tweaks, blog posts, workshops, and more. Please head over to [Github](https://github.com/gitpod-io/core) to find out about the various ways you can contribute and join our [Gitpod Community](https://community.gitpod.io/).
 
 Over the last year, Gitpod has simplified contributions on many open source projects (see [contribute.dev](https://contribute.dev/)). Today, everybody in our team is excited to share our own development pipeline including Kubernetes preview environments, an aggressively caching build system, our slim and fast CI system and of course how Gitpod continuously beams us into ready-to-code (and debug) dev environments. [Chris](https://github.com/csweichel) gave a great talk about this setup earlier this year 👇
 
@@ -26,20 +26,20 @@ In line with the [pets vs. cattle](http://cloudscaling.com/blog/cloud-computing/
 
 Sven will run a webinar next Thursday, where we will showcase how we internally at Gitpod use  Gitpod and how much it has improved our workflows. Hope to see you there! 
 
+
 <style>
 .button {
   background-color: #0087BE; 
   border: none;
-  border-radius: 30px;
+  border-radius: 100px;
   color: white;
-  padding: 10px 27px;
+  padding: 12px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
   margin: 25px 1px;
   cursor: pointer;
-  box-shadow: 1px 3px #0E75A3;
   opacity: 1;
 
 }
@@ -68,9 +68,9 @@ In case you want to host Gitpod on your own infrastructure or private cloud, sta
 * [Snapshots](https://www.gitpod.io/features/#snapshot) (share a reproducible workspace with your team)
 * [Live Share](https://www.gitpod.io/features/#share) (invite others into your running workspace)
 * [Unlimited Prebuilds](https://www.gitpod.io/features/#prebuilt) (making ephemeral dev environments possible)
-* Support (2h response during working hours)
+* Admin Dashboard
 
-The success of Gitpod Professional makes it possible for us to keep working towards building a new category of developer tools, which completes modern DevOps pipelines. In the future we will add additional functionality to both the open source code as well our paid plans.
+Offering a paid plan for enterprises makes it possible for us to keep working towards building a new category of developer tools, which completes modern DevOps pipelines. In the future we will add additional functionality to both the open source code as well our paid plans.
 
 <div class="wrapper">
     <a href= "https://www.gitpod.io/self-hosted/" target="_blank">
