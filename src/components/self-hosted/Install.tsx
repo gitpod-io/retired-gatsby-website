@@ -49,12 +49,12 @@ const StyledSection = styled.section`
   /* ----- Section Install ----- */
   /* ------------------------------------------- */
 
-  .install {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 4rem 0 4rem;
+    .install {
+        display: flex;
+        justify-content: space-between;
+        max-width: 110rem;
+        margin: 0 auto;
+        padding: 4rem 0 5rem;
 
     @media (max-width: 900px) {
       flex-direction: column;
