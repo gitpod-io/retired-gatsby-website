@@ -52,7 +52,7 @@ const StyledSection = styled.section`
     .install {
         display: flex;
         justify-content: space-between;
-        max-width: 75rem;
+        max-width: 110rem;
         margin: 0 auto;
         padding: 4rem 0 5rem;
 
