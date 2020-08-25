@@ -24,7 +24,7 @@ Naturally, we develop Gitpod in Gitpod. This allows the  whole team  to spin up 
 
 In line with the [pets vs. cattle](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/?utm_source=thenewstack&utm_medium=website&utm_campaign=platform) analogy of the cloud-native world, we treat dev environments as automated (yet customizable) resources you can spin up when you need them and close down (and forget about) when you are done with your task. Once you experience the peace of mind of automated, ephemeral dev environments you never want to go back.
 
-Sven will run a webinar next week on Thursday, where we will showcase how we use Gitpod internally at Gitpod and how much it improves our workflows. Hope to see you there! 
+Sven will run a webinar next week on Thursday, where we will showcase how we use Gitpod internally at Gitpod and how much it improves our workflow. Hope to see you there! 
 
 
 <style>
