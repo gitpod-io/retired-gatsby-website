@@ -49,7 +49,7 @@ const SelfHostedPage: React.SFC<{}> = () => (
                 </h1>}
                 linkPath="/self-hosted/#install"
                 linkText="Install Now"
-                paragraph="Free for up to 5 Users."
+                paragraph="Free for unlimited users."
                 img={<object role="presentation" tabIndex={-1} data={Cloud} />}
                 />
 
