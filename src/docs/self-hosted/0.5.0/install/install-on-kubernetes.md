@@ -4,6 +4,9 @@ url: /docs/self-hosted/0.5.0/install/install-on-kubernetes/
 
 # Install Gitpod Self-Hosted on Kubernetes
 
+> **Note:** We currently working on improving the experience of Gitpod installations on vanilla Kubernetes clusters. The documention on this page is slightly outdated. We have [helm charts](https://github.com/gitpod-io/gitpod/tree/master/chart) on https://charts.gitpod.io/ and a [Docker image that runs Gitpod](https://github.com/gitpod-io/gitpod/tree/master/install/docker/examples) based on [k3s](https://k3s.io/). Detailed documentation will follow shortly. *Stay tuned.*
+
+
 This section describes how to install Gitpod on a vanilla Kubernetes cluster.
 Gitpod also provides more optimized installations offering better performance for particular cloud providers:
 * *Google Cloud Platform*: Install Gitpod in a blank GCP project, either [using a script that automates the procedure](../install-on-gcp-script/) or [manually step-by-step](../install-on-gcp-manual/).
