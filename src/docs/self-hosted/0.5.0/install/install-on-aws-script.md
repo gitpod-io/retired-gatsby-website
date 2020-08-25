@@ -16,7 +16,7 @@ export AWS_SECRET_ACCESS_KEY=...
 ```
 
 ### Note:
-  - Setting up an AWS account the first time can take some time as they require - and test for - a valid Credit Card.
+  - Setting up an AWS account the first time can take some time as they require - and test for - a valid credit card.
 
 
 ## 2. Run the installer image
