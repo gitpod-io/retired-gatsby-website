@@ -73,8 +73,8 @@ const selfHostedPlans: PricingBoxProps[] = [
       </>
     ),
     duration: 'Per user',
-    btnText: 'Contact Sales',
-    link: '/contact/',
+    btnText: 'Request license',
+    link: '/enterprise-license/',
     areFeaturesBold: true,
     boldFeaturesCount: 4
   }
