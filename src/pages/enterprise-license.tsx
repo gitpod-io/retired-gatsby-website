@@ -144,6 +144,7 @@ const EnterpriseLicensePage = () => {
     email?: string
     seats?: string
     company?: string
+    domain?:string
     address?: string
     postalCode?: string
     city?: string
@@ -206,6 +207,14 @@ const EnterpriseLicensePage = () => {
       setState({
         ...state,
         errorMessage: 'Please Enter a Company'
+      })
+      return
+    }
+
+    if (!state.domain) {
+      setState({
+        ...state,
+        errorMessage: 'Please Enter a Domain Name'
       })
       return
     }
@@ -326,6 +335,10 @@ const EnterpriseLicensePage = () => {
                     <label>
                       Company
                       <input onChange={handleChange} name="company" type="text" />
+                    </label>
+                    <label>
+                      Domain Name
+                      <input onChange={handleChange} name="domain" type="text" />
                     </label>
                     <label>
                       Street Address
