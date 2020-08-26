@@ -6,6 +6,7 @@ import { countryList } from '../contents/license-key'
 import { isEurope } from '../utils/helpers'
 import { encode } from './contact'
 import SubmissionSucess from '../components/SubmissionSucess'
+import { Link } from 'gatsby'
 const StyledEnterpriseLicensePage = styled.div`
   form {
     padding: 5rem 0;
@@ -144,7 +145,7 @@ const EnterpriseLicensePage = () => {
     email?: string
     seats?: string
     company?: string
-    domain?:string
+    domain?: string
     address?: string
     postalCode?: string
     city?: string
@@ -404,9 +405,9 @@ const EnterpriseLicensePage = () => {
               <a href="https://calendly.com/gitpod/sales" className="btn btn--cta">
                 Schedule a Call
               </a>
-              <a href="" className="btn">
+              <Link to="/contact" className="btn">
                 Write Us a Mail
-              </a>
+              </Link>
             </div>
           </div>
         </div>
