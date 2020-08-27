@@ -196,6 +196,14 @@ const EnterpriseLicensePage = () => {
       return
     }
 
+    if (!state.domain) {
+      setState({
+        ...state,
+        errorMessage: 'Please Enter the Installation Domain Name'
+      })
+      return
+    }
+
     if (!state.email) {
       setState({
         ...state,
@@ -215,7 +223,7 @@ const EnterpriseLicensePage = () => {
     if (!state.domain) {
       setState({
         ...state,
-        errorMessage: 'Please Enter a Domain Name'
+        errorMessage: 'Please Enter the Installation Domain Name'
       })
       return
     }
@@ -280,7 +288,7 @@ const EnterpriseLicensePage = () => {
             <form
               className="pattern"
               method="POST"
-              name="Contact"
+              name="ProfessionalLicense"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
@@ -319,6 +327,15 @@ const EnterpriseLicensePage = () => {
                   </div>
                 </div>
                 <div className="entry">
+                  <h3>What is the domain name of your Gitpod Self-Hosted installation?</h3>
+                  <div className="label-container">
+                    <label>
+                      <input onChange={handleChange} name="domain" type="text" placeholder="e.g. gitpod.mycompany.com"/>
+                    </label>
+                  </div>
+                    <p>The license key will be bound to this domain.</p>
+                </div>
+                <div className="entry">
                   <h3>Customer Information</h3>
                   <div className="label-container">
                     <label>
@@ -336,10 +353,6 @@ const EnterpriseLicensePage = () => {
                     <label>
                       Company
                       <input onChange={handleChange} name="company" type="text" />
-                    </label>
-                    <label>
-                      Domain Name
-                      <input onChange={handleChange} name="domain" type="text" />
                     </label>
                     <label>
                       Street Address
