@@ -16,6 +16,7 @@ Here are a few Ruby example projects that are already automated with Gitpod:
 Repository | Description | Try it
 ---------|----------|---------
 [rails_sample_app](https://github.com/gitpod-io/rails_sample_app) | Ruby on Rails tutorial sample application | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/rails_sample_app)
+[Gitpod-Ruby-On-Rails](https://github.com/gitpod-io/Gitpod-Ruby-On-Rails) | Minimal Ruby on Rails example | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-Ruby-On-Rails)
 [home-assistant.io](https://github.com/home-assistant/home-assistant.io) | Open source home automation | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/home-assistant/home-assistant.io)
 [dev.to](https://github.com/thepracticaldev/dev.to) | A platform where software developers write articles | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/thepracticaldev/dev.to)
 
@@ -38,6 +39,6 @@ vscode:
 
 ## Ruby On Rails
 
-So, you want to write your cool new Ruby On Rails application in Gitpod? Well, here is an idea of how to do it. Please take a look at our minimal Rails example running in Gitpod:
+So, you want to write your cool new Ruby On Rails application in Gitpod? Well, here is an idea of how to do it. Please take a look at our [minimal Rails example](https://github.com/gitpod-io/Gitpod-Ruby-On-Rails) running in Gitpod:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-Ruby-On-Rails)
