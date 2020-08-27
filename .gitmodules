@@ -1,0 +1,4 @@
+[submodule "gitpod"]
+	path = gitpod
+	url = https://github.com/gitpod-io/gitpod
+	branch = gpl/docs
