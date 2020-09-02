@@ -288,12 +288,12 @@ const EnterpriseLicensePage = () => {
             <form
               className="pattern"
               method="POST"
-              name="ProfessionalLicense"
+              name="enterprise-license"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
             >
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="form-name" value="enterprise-license" />
               <div style={{ visibility: 'hidden' }}>
                 <label>
                   Don’t fill this out if you're human: <input name="bot-field" />
