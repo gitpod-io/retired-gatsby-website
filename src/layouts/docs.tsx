@@ -37,7 +37,7 @@ const StyledDocsLayout = styled.div`
         }
 
         @media(max-width: ${sizes.breakpoints.md}) {
-            padding: 5rem 2rem;
+            padding: 5rem 3rem;
         }
 
         h1 {

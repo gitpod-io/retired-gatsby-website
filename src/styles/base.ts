@@ -62,7 +62,7 @@ export default `
         }
 
         @media(max-width: ${sizes.breakpoints.md}) {
-            padding: 0 4rem;
+            padding: 0 3rem;
         }
 
         @media(max-width: ${sizes.breakpoints.sm}) {

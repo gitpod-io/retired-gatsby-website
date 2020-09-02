@@ -149,7 +149,7 @@ const AnnoucementBanner = () => {
               hideTheBanner()
             }}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="29.86" height="29.86" data-name="Banner closing" viewBox="0 0 29.86 29.86">
+            <svg xmlns="http://www.w3.org/2000/svg" width="29.86" height="29.86" data-name="Banner closing" viewBox="0 0 30.86 30.86">
               <g data-name="Gruppe 950">
                 <g data-name="Pfad 1398">
                   <path d="M14.93 29.86a14.93 14.93 0 1114.93-14.93 14.93 14.93 0 01-14.93 14.93z"></path>

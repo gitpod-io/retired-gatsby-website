@@ -13,6 +13,10 @@ const StyledTextFeature = styled.div`
 
   @media (max-width: 500px) {
     padding: 5rem 2rem;
+
+    h3 {
+        text-align: center;
+    }
   }
 
   h3 + p {
@@ -23,20 +27,13 @@ const StyledTextFeature = styled.div`
     display: block;
     height: 8rem;
     margin-bottom: 4rem;
-
-    @media (min-width: 501px) {
-      margin: 0 auto 4rem;
-    }
+    margin: 0 auto 4rem;
   }
 
   .btn {
     display: block;
     max-width: 240px;
-    margin-top: 4rem;
-
-    @media (min-width: 501px) {
-      margin: 4rem auto 0;
-    }
+    margin: 4rem auto 0;
   }
 `
 
