@@ -8,40 +8,14 @@ import Bitbucket from '../../resources/bitbucket.svg'
 import { sizes, colors } from '../../styles/variables'
 
 const Styled = styled.div`
-  height: 700px;
-  margin-bottom: 47rem;
+  .pattern {
+    &::after {
+      height: 75%;
 
-  @media (max-width: 1140px) {
-    margin-bottom: 35%;
-  }
-
-  @media (max-width: 1020px) {
-    margin-bottom: 30%;
-  }
-
-  @media (max-width: 800px) {
-    height: 400px;
-    margin-bottom: 50rem;
-  }
-
-  @media (max-width: 740px) {
-    margin-bottom: 45rem;
-  }
-
-  @media (max-width: 640px) {
-    margin-bottom: 40rem;
-  }
-
-  @media (max-width: 560px) {
-    margin-bottom: 30rem;
-  }
-
-  @media (max-width: 360px) {
-    margin-bottom: 25rem;
-  }
-
-  @media (max-width: 320px) {
-    margin-bottom: 22rem;
+      @media (max-width: 800px) {
+        height: 90%;
+      }
+    }
   }
 
   .banner {
@@ -91,28 +65,30 @@ const Styled = styled.div`
 `
 
 const Banner = () => (
-  <Styled className="pattern">
-    <div className="row">
-      <header role="banner" className="banner">
-        <div className="banner__text-box">
-          <h1>
-            <strong>Dev Environments</strong> Built for the Cloud.
-          </h1>
-          <p>Describe your dev environments as code and automate the last missing piece in your DevOps pipeline.</p>
-          <a href="#get-started" className="btn btn--cta">
-            Try Now
-          </a>
-          <p className="works-with">
-            Works with
-            <img src={GitLab} alt="GitLab" />
-            <img src={GitHub} alt="GitHub" />
-            <img src={Bitbucket} alt="Bitbucket" />
-          </p>
-        </div>
-        <div className="banner__screenshot-container">
-          <img alt="Gitpod Screenshot" src={Screenshot} className="banner__screenshot" />
-        </div>
-      </header>
+  <Styled>
+    <div className="pattern">
+      <div className="row">
+        <header role="banner" className="banner">
+          <div className="banner__text-box">
+            <h1>
+              <strong>Dev Environments</strong> Built for the Cloud.
+            </h1>
+            <p>Describe your dev environments as code and automate the last missing piece in your DevOps pipeline.</p>
+            <a href="#get-started" className="btn btn--cta">
+              Try Now
+            </a>
+            <p className="works-with">
+              Works with
+              <img src={GitLab} alt="GitLab" />
+              <img src={GitHub} alt="GitHub" />
+              <img src={Bitbucket} alt="Bitbucket" />
+            </p>
+          </div>
+          <div className="banner__screenshot-container">
+            <img alt="Gitpod Screenshot" src={Screenshot} className="banner__screenshot" />
+          </div>
+        </header>
+      </div>
     </div>
   </Styled>
 )

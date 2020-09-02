@@ -58,7 +58,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     }
 
     @media(max-width: ${sizes.breakpoints.md}) {
-        min-height: ${({ isTitleOutside }) => (isTitleOutside ? '40rem' : '51rem')};
+        min-height: ${({ isTitleOutside }) => (isTitleOutside ? '40rem' : '49rem')};
         min-width: 30rem;
         padding: 2rem 3rem;
     }

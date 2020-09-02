@@ -148,9 +148,9 @@ class DropDown extends React.Component<DropDownProps, {}> {
                 onMouseLeave={this.handleMouseLeave}
             >
                 <button
-                    onClick={this.handleClick}
                     aria-label={ isRendered ? "Hide Dropdown's Content" : "Show Dropdown's Content"}
                     aria-live="assertive"
+                    onFocus={this.handleMouseEnter}
                 >
                     <div>{title}</div>
                     <img

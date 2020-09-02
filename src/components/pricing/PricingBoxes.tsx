@@ -17,6 +17,7 @@ import { Link } from 'gatsby'
 const Styled = styled.div`
   h1 {
     margin-bottom: 6rem;
+    text-align: center;
   }
 
   .pricing {
