@@ -180,7 +180,7 @@ class DropDown extends React.Component<DropDownProps, {}> {
                                 (
                                     <li key={i}>
                                         {
-                                            i == links.length - 1 ? 
+                                            i == links.length - 1 ?
                                                 <Link
                                                     to={to}
                                                     className="link"

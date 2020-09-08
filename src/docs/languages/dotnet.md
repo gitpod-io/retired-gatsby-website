@@ -57,7 +57,7 @@ vscode:
 
 Ionide-fsharp gives F# developers the following features:
 
-* A Widget for your F# needs 
+* A Widget for your F# needs
 * Auto completion
 * Shows errors inline
 * Quickfix

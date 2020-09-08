@@ -21,7 +21,7 @@ Adoption from the tool-side is going well, too. We started by supporting Open VS
 
 As you may already know, Gitpod lets you describe your dev environment as code. This means that you write configuration and code that makes Gitpod automatically generate ready-to-code dev environments for your project.
 
-An important part of such a configuration is the set of IDE extensions you need. In Gitpod you have two choices, you can either 
+An important part of such a configuration is the set of IDE extensions you need. In Gitpod you have two choices, you can either
 
 **[1] Install an extension for your project's dev environment, or**
 

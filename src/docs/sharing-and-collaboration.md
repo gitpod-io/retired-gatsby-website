@@ -15,7 +15,7 @@ and other UI state are currently not shared.
 
 ### How To Share and Unshare a Running Workspace
 
-Running workspaces can be shared from within the IDE. 
+Running workspaces can be shared from within the IDE.
 Click on the user's avatar and choose
 
 `Share Running Workspace`.

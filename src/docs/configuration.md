@@ -4,7 +4,7 @@ Gitpod dev environments are started with a single click. In order to make sure t
 
 ## Setup Assistant
 
-The setup assistant can help you get started with this. Once you open a project without a `.gitpod.yml` you should see a notification in the bottom right that lets you start the assistant. 
+The setup assistant can help you get started with this. Once you open a project without a `.gitpod.yml` you should see a notification in the bottom right that lets you start the assistant.
 
 > If you don't see the notification or you have already dismissed it, you can open the wizard by pressing `F1` and searching for `Toggle Project Setup View`.
 
@@ -32,7 +32,7 @@ In case you want to tell your team or community about the automated dev environm
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/<your-org>/<your-project>)
 ```
 
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](/docs/configuration/) 
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](/docs/configuration/)
 
 Alternatively you can use a button and put it into your documentation:
 

@@ -35,7 +35,7 @@ const StyledDescripion = styled.span`
         z-index: 1000 !important;
 
         @media(max-width: 1080px) {
-            position: absolute;     
+            position: absolute;
             right: -5rem;
             top: 2.4rem;
             min-width: 18rem;
@@ -43,7 +43,7 @@ const StyledDescripion = styled.span`
         }
 
          @media(min-width: 1081px) {
-            position: absolute;     
+            position: absolute;
             top: 0;
             left: 3rem;
             min-width: 19rem;
@@ -86,7 +86,7 @@ class Description extends React.Component<{description: string, textPosition?: s
         const { isRendered } = this.state
         const { description } = this.props
         const positionBottom = this.props.textPosition === 'bottom'
-        
+
         return (
             <StyledDescripion
                 className="description"

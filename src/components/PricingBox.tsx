@@ -156,7 +156,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         justify-content: space-between;
         align-items: center;
         z-index: 1999999999;
-        
+
         @media(min-width: calc(${sizes.breakpoints.sm} + 1px)) {
             position: absolute;
             left: 50%;
@@ -178,7 +178,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         width: 100%;
         opacity: .7;
         font-size: 90%;
-        
+
         @media(min-width: calc(${sizes.breakpoints.sm} + 1px)) {
             padding: 0 1.5rem;
         }
@@ -210,7 +210,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     .blue-on-hover {
         color: ${colors.text};
         border: 2px solid #fff;
-        
+
         &:hover {
             color: ${colors.white};
             border: 2px solid ${colors.lightBlue};

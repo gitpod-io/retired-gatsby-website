@@ -14,7 +14,7 @@ const StyledSideBar = styled.div`
     display: flex;
     flex-direction: column;
     padding: 3rem 0 10rem;
-    
+
     &::before {
         position: absolute;
         content: "";

@@ -21,7 +21,7 @@ Here are a few Go example projects that are already automated with Gitpod:
 
 ### VSCode Extensions
 
-<div class="table-container"> 
+<div class="table-container">
 
 | Name                                                                                               | Description                                                                             |
 | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |

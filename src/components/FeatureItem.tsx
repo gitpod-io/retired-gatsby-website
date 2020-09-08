@@ -36,7 +36,7 @@ const StyledFeatureItem = styled.div`
         @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             flex: 0 0 15%;
         }
-        
+
         @media(max-width: ${sizes.breakpoints.lg}) {
             height: 10rem;
             margin-bottom: 4rem;

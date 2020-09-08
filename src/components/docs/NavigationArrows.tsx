@@ -18,7 +18,7 @@ const NavigationArrows = ({ menuCtx }: { menuCtx: MenuContext }) => (
                 to={menuCtx.prev.path}
                 title={`Prev: ${menuCtx.prev.title}`}
             >
-                <Arrow 
+                <Arrow
                     styles={{transform: 'rotate(-180deg)'}}
                 />
             </Link> : <div />}
@@ -27,11 +27,11 @@ const NavigationArrows = ({ menuCtx }: { menuCtx: MenuContext }) => (
                 to={menuCtx.next.path}
                 title={`Next: ${menuCtx.next.title}`}
             >
-                <Arrow 
+                <Arrow
                     styles={{marginLeft: menuCtx.prev ? '6rem' : '0rem'}}
                 />
             </Link> : <div />}
     </StyledNavigationArrows>
 )
 
-export default NavigationArrows 
+export default NavigationArrows

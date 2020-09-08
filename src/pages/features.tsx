@@ -15,7 +15,7 @@ const FeaturesPage: React.SFC<{}> = () => (
     >
         <Intro />
 
-        <FeatureCards 
+        <FeatureCards
             features={features}
         />
 

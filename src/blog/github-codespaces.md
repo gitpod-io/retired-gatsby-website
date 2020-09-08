@@ -5,7 +5,7 @@ subtitle: A Milestone for Automated Development Environments
 title: GitHub Codespaces, Welcome to the Party!
 image: /gh-cs-bg.jpg
 ---
-Today, GitHub announced the private beta of [GitHub Codespaces](https://github.com/features/codespaces), which provide container-based dev environments for GitHub projects. At Gitpod, we are building a similar solution, and while GitHub’s Codespaces don’t fully implement everything we do, they truly embrace the notion of dev environments as code. 
+Today, GitHub announced the private beta of [GitHub Codespaces](https://github.com/features/codespaces), which provide container-based dev environments for GitHub projects. At Gitpod, we are building a similar solution, and while GitHub’s Codespaces don’t fully implement everything we do, they truly embrace the notion of dev environments as code.
 
 This is great news, because it really helps to explain why this is going to change professional software development entirely.
 
@@ -15,9 +15,9 @@ Describing development environments in code has many benefits:
 
 - It eliminates onboarding friction: no matter if you are new to a project, need to go back to an old branch or just picking up development after a few weeks. Just go to your project and start coding immediately.
 
-- Remote work becomes a breeze: now everyone can access source code more securely (no local copies) from any device, including Chromebooks and tablets. 
+- Remote work becomes a breeze: now everyone can access source code more securely (no local copies) from any device, including Chromebooks and tablets.
 
-- Everybody gets the same setup: this means that “works on my machine” situations are a problem of the past. 
+- Everybody gets the same setup: this means that “works on my machine” situations are a problem of the past.
 
 - With Gitpod, you can even take snapshots of any state of your dev environment and share exact clones of it.
 
@@ -29,7 +29,7 @@ As software systems become more complex so do dev environments. Have you ever tr
 
 When we started working on Gitpod, we had everything running locally in minikube, too. Very quickly we realized that this would not scale. Our SaaS offering is deployed in Kubernetes clusters across the globe—that’s nothing you’d want to replicate locally.
 
-For the past year the whole team has developed Gitpod in Gitpod. Everyone in the team can start coding on any branch immediately. That includes their own preview deployment which is already connected to and fully debuggable from their browser-based development environment. For a more in-depth look at our development pipeline—and what’s in it for you—check out [Chris’ talk](https://www.youtube.com/watch?v=dFMpXUsJcGM) (inlined below) and our [previous post](https://www.freecodecamp.org/news/developing-kubernetes-applications-with-joy/) on the matter. 
+For the past year the whole team has developed Gitpod in Gitpod. Everyone in the team can start coding on any branch immediately. That includes their own preview deployment which is already connected to and fully debuggable from their browser-based development environment. For a more in-depth look at our development pipeline—and what’s in it for you—check out [Chris’ talk](https://www.youtube.com/watch?v=dFMpXUsJcGM) (inlined below) and our [previous post](https://www.freecodecamp.org/news/developing-kubernetes-applications-with-joy/) on the matter.
 
 `youtube: dFMpXUsJcGM`
 
@@ -45,7 +45,7 @@ Given all these benefits, you might wonder why no one did this earlier. After al
 
 There have been attempts to automate dev environments in the past (e.g. Docker, Vagrant, Cloud9). These early approaches always came with too many compromises, and their benefits did not quite outweigh the drawbacks. The biggest blocker was that developers could no longer use the powerful tools they normally would, most importantly an awesome Editor/IDE.
 
-This has changed since, with VS Code, a web-technology based IDE has become so popular among developers. However, Microsoft has not open-sourced the browser version of VS Code. For GitHub, a Microsoft-owned company, this is obviously not an issue. For everyone else we have developed Eclipse [Theia](https://dev.to/svenefftinge/theia-1-0-finally-a-good-browser-ide-3ok0). 
+This has changed since, with VS Code, a web-technology based IDE has become so popular among developers. However, Microsoft has not open-sourced the browser version of VS Code. For GitHub, a Microsoft-owned company, this is obviously not an issue. For everyone else we have developed Eclipse [Theia](https://dev.to/svenefftinge/theia-1-0-finally-a-good-browser-ide-3ok0).
 
 Theia provides the same functionality as VS Code, even supports VS Code extensions, and comes with an architecture that allows everyone to customize the IDE easily. It is developed as a true open-source, vendor-neutral project at the Eclipse Foundation *) and is adopted by Google, IBM, RedHat, SAP, arm, Arduino and many more. Mike Milinkovich wrote about the [differences between Theia and VS Code](https://blogs.eclipse.org/post/mike-milinkovich/eclipse-theia-and-vs-code-differences-explained) recently.
 
@@ -66,15 +66,15 @@ To also serve users beyond just GitHub, we have been focussing on integrating Gi
 
 Chances are that you host your Git repositories or other dev infrastructure in a private cloud, or on a local network where they can't be accessed from the outside. Thus, a hosted IDE service must be on the same private cloud or network. This is possible with [Gitpod Self-Hosted](/self-hosted/) which can be installed on Kubernetes and does not require a connection to the public internet.
 
-Today we are releasing a new version which brings Gitpod Self-Hosted on par with Gitpod.io. The new release includes better GitLab integration and a new admin UI. With Gitpod Self-Hosted you can now enjoy this liberating way of developing software with your own GitLab installation. 
+Today we are releasing a new version which brings Gitpod Self-Hosted on par with Gitpod.io. The new release includes better GitLab integration and a new admin UI. With Gitpod Self-Hosted you can now enjoy this liberating way of developing software with your own GitLab installation.
 
 **Gitpod Self-Hosted is free for up to five users, and a free trial month for unlimited users is available, too.**
 
 ### Summary
 
-We are quickly headed into a wonderful future, where developers are no longer intimidated by tedious and outdated setup procedures. Professional software projects will provide automated, prebuilt development environments that enable teams to start contributing, doing code reviews, reproducing bugs or just exploring new ideas immediately from any device securely. 
+We are quickly headed into a wonderful future, where developers are no longer intimidated by tedious and outdated setup procedures. Professional software projects will provide automated, prebuilt development environments that enable teams to start contributing, doing code reviews, reproducing bugs or just exploring new ideas immediately from any device securely.
 
-CI/CD has taught us how versioned, reproducible infrastructure as code is key to scale modern software development. Now it is time to apply these lessons to our development environments and furthermore improve our lead times getting from ideas to production. 
+CI/CD has taught us how versioned, reproducible infrastructure as code is key to scale modern software development. Now it is time to apply these lessons to our development environments and furthermore improve our lead times getting from ideas to production.
 
 Experience the future of software development now!
 

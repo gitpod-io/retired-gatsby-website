@@ -82,7 +82,7 @@ const StyledBrandImage = styled.img<{ transform?: string }>`
     width: 9.5rem;
 
     @media(max-width: ${sizes.breakpoints.lg}) {
-        width: 9rem;   
+        width: 9rem;
     }
 
     @media(max-width: ${sizes.breakpoints.md}) {

@@ -22,7 +22,7 @@ const Arrow = ({ styles }: ArrrowProps) => (
         className="arrow"
         style={{...styles}}
     >
-        <Global 
+        <Global
             styles={css`
                 a {
                     &:hover,

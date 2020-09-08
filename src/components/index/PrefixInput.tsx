@@ -169,7 +169,7 @@ const Styled = styled.label`
                     left: -14rem;
                     transform: scale(.8);
                 }
-                
+
                 @media(max-width: 340px) {
                     left: -16rem;
                     bottom: -13rem;
@@ -265,7 +265,7 @@ const PrefixInput = () => {
                 window.open(`https://gitpod.io/#${el.value}`, '_blank')
                 setError('')
             } else {
-              setError(errorMessage)  
+              setError(errorMessage)
             }
         }
     }
@@ -306,7 +306,7 @@ const PrefixInput = () => {
                             onChange={handleChange}
                             type="text"
                         />
-                        <div className="message" style={ error ? {color: '#bf4338'} : {}}> 
+                        <div className="message" style={ error ? {color: '#bf4338'} : {}}>
                             <>
                                 <p>
                                     { error ? error : 'Enter your GitLab, GitHub, or Bitbucket URL' }
