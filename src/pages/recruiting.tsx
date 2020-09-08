@@ -28,7 +28,7 @@ const RecrutingPage: React.SFC<{}> = () => (
                 linkText="Choose your Solution"
                 img={<object role="presentation" tabIndex={-1} data={Recruiting}/>}
             />
-            
+
             <div className="grey-container">
             <TextCards title="Provide Coding Exercises Within Seconds">
                 {

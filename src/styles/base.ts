@@ -283,7 +283,7 @@ export default `
             }
 
             & > * {
-                margin: var(--gap) 0 0 var(--gap); 
+                margin: var(--gap) 0 0 var(--gap);
             }
         }
 
@@ -388,7 +388,7 @@ export default `
 
     .rows-3 {
         overflow-x: initial;
-        
+
         @media(max-width: 604px) {
             overflow-x: scroll;
         }

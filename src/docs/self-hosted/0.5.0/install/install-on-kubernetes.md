@@ -37,7 +37,7 @@ git remote rename origin upstream
 For the rest of this guide we will assume that you are located in the root of a working copy of this repository.
 
 ### Domain name and IP address
-Gitpod requires [domain names](../domain/) which resolve to the IP of your Kubernetes cluster. 
+Gitpod requires [domain names](../domain/) which resolve to the IP of your Kubernetes cluster.
 Set your domain in the `values.yaml` under `gitpod.hostname`.
 
 By default Gitpod deploys a [`LoadBalancer` service](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) as means of ingress.

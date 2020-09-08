@@ -28,7 +28,7 @@ const VendorPage: React.SFC<{}> = () => (
                 linkText="Choose your Solution"
                 img={<object role="presentation" tabIndex={-1} data={Vendor}/>}
             />
-            
+
             <div className="grey-container">
             <TextCards title="Highlight Your Developer Products">
                 {

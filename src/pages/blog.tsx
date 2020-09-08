@@ -117,7 +117,7 @@ const BlogPage: React.SFC<BlogPageProps> = (props) => {
                         <h1>Discover Articles and Tutorials about Gitpod</h1>
                     </div>
                 </div>
-                
+
                 <section className="post">
                     <div className="row">
                         <h1 className="visually-hidden">Discover Articles and Tutorials about Gitpod</h1>

@@ -16,7 +16,7 @@ const StyledSaveHours = styled.section`
     @media(max-width: ${sizes.breakpoints.md}) {
         max-width: 600px;
     }
-    
+
     @media(max-width: 640px) {
         max-width: 400px;
     }

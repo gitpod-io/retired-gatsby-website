@@ -13,7 +13,7 @@ By default Gitpod ships with [MinIO](https://min.io/) as built-in bucket storage
   When storing the data itself, MinIO relies on a [persistent volume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) which in turn supports a [wide range of storage backends](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#types-of-persistent-volumes).
 * Bring your own storage bucket: Gitpod can be configured to connect to your own installation of MinIO or Google Cloud Storage compatible storage solution.
 
-This helm chart ships with a [MinIO](https://min.io/) installation for this purpose. 
+This helm chart ships with a [MinIO](https://min.io/) installation for this purpose.
 Alternatively, you can connect to your own [MinIO](https://min.io/) installation using
  - `echo values/minio.yaml >> configuration.txt`
  - in `values.minio.yaml` change the values to match your installation

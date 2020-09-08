@@ -20,16 +20,16 @@ Over the past year, Gitpod has simplified contributions to many open source proj
 
 `youtube: dFMpXUsJcGM`
 
-Naturally, we develop Gitpod in Gitpod. This allows the  whole team  to spin up fully initialized, remote dev environments on any branch at any time. 
+Naturally, we develop Gitpod in Gitpod. This allows the  whole team  to spin up fully initialized, remote dev environments on any branch at any time.
 
 In line with the [pets vs. cattle](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/?utm_source=thenewstack&utm_medium=website&utm_campaign=platform) analogy of the cloud-native world, we treat dev environments as automated (yet customizable) resources you can spin up when you need them and close down (and forget about) when you are done with your task. Once you experience the peace of mind of automated, ephemeral dev environments you never want to go back.
 
-Sven will run a webinar next week on Thursday, where we will showcase how we use Gitpod internally at Gitpod and how much it improves our workflow. Hope to see you there! 
+Sven will run a webinar next week on Thursday, where we will showcase how we use Gitpod internally at Gitpod and how much it improves our workflow. Hope to see you there!
 
 
 <style>
 .button {
-  background-color: #0087BE; 
+  background-color: #0087BE;
   border: none;
   border-radius: 100px;
   color: white;
@@ -61,7 +61,7 @@ Sven will run a webinar next week on Thursday, where we will showcase how we use
 
 # Gitpod Self-Hosted is Now Free
 
-The [SaaS offering of gitpod.io](https://www.gitpod.io/pricing/#) remains the easiest way to streamline your development workflows with continuously prebuilt dev environments. 
+The [SaaS offering of gitpod.io](https://www.gitpod.io/pricing/#) remains the easiest way to streamline your development workflows with continuously prebuilt dev environments.
 
 In case you want to host Gitpod on your own infrastructure or private cloud, starting today, Gitpod Self-Hosted is free for unlimited users. Organizations using Gitpod Self-Hosted can purchase an enterprise license in order to get additional features like:
 

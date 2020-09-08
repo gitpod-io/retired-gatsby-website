@@ -91,7 +91,7 @@
  [[redirects]]
   from = "/docs/31_context_urls"
   to = "/docs/context-urls/"
-  status = 301 
+  status = 301
 
  [[redirects]]
   from = "/docs/60_dashboard"
@@ -131,7 +131,7 @@
  [[redirects]]
   from = "/docs/50_ide"
   to = "/docs/ide/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/java_in_gitpod"
@@ -161,7 +161,7 @@
  [[redirects]]
   from = "/docs/46_prebuilds"
   to = "/docs/prebuilds/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/58_pull_requests"
@@ -201,7 +201,7 @@
  [[redirects]]
   from = "/docs/70_subscription"
   to = "/docs/subscription/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/52_tips_and_tricks"
@@ -216,122 +216,122 @@
  [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/36_database"
   to = "/docs/self-hosted/0.3.0/install/database/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/36_database"
   to = "/docs/self-hosted/latest/install/database/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/35_docker_registry"
   to = "/docs/self-hosted/0.3.0/install/docker-registry/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/35_docker_registry"
   to = "/docs/self-hosted/latest/install/docker-registry/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/90_helm_2x"
   to = "/docs/self-hosted/0.3.0/install/helm-2x/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/90_helm_2x"
   to = "/docs/self-hosted/latest/install/helm-2x/"
-  status = 301 
+  status = 301
 
  [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/34_https_certs"
   to = "/docs/self-hosted/0.3.0/install/https-certs/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/34_https_certs"
   to = "/docs/self-hosted/latest/install/https-certs/"
-  status = 301  
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/12_install_on_gcp_manual"
   to = "/docs/self-hosted/0.3.0/install/install-on-gcp-manual/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/12_install_on_gcp_manual"
   to = "/docs/self-hosted/latest/install/install-on-gcp-manual/"
-  status = 301  
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/11_install_on_gcp_script"
   to = "/docs/self-hosted/0.3.0/install/install-on-gcp-script/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/11_install_on_gcp_script"
   to = "/docs/self-hosted/latest/install/install-on-gcp-script/"
-  status = 301  
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/10_install_on_kubernetes"
   to = "/docs/self-hosted/0.3.0/install/install-on-kubernetes/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/10_install_on_kubernetes"
   to = "/docs/self-hosted/latest/install/install-on-kubernetes/"
-  status = 301  
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/33_nodes"
   to = "/docs/self-hosted/0.3.0/install/nodes/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/33_nodes"
   to = "/docs/self-hosted/latest/install/nodes/"
-  status = 301  
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/30_oauth"
   to = "/docs/self-hosted/0.3.0/install/oauth/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/30_oauth"
   to = "/docs/self-hosted/latest/install/oauth/"
-  status = 301  
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/01_prepare_installation"
   to = "/docs/self-hosted/0.3.0/install/prepare-installation/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/01_prepare_installation"
   to = "/docs/self-hosted/latest/install/prepare-installation/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/32_storage"
   to = "/docs/self-hosted/0.3.0/install/storage/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/32_storage"
   to = "/docs/self-hosted/latest/install/storage/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/0.3.0/install/31_workspaces"
   to = "/docs/self-hosted/0.3.0/install/workspaces/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/self-hosted/latest/install/31_workspaces"
   to = "/docs/self-hosted/latest/install/workspaces/"
-  status = 301 
+  status = 301
 
 [[redirects]]
   from = "/docs/bash-in-gitpod"

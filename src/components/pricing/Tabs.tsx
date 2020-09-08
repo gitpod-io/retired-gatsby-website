@@ -48,14 +48,14 @@ const Tabs = ({ isRendered, changeIsRendered }: PricingBoxesProps) => (
         display: 'flex',
         justifyContent: 'center'
     }}>
-        <Tab 
+        <Tab
             isRendered={isRendered}
             onClick={() => changeIsRendered(false)}
             to="/pricing/#"
         >
             SaaS
         </Tab>
-        <Tab 
+        <Tab
             isRendered={isRendered}
             onClick={() => changeIsRendered(true)}
             to="/pricing/#self-hosted"

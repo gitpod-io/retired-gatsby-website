@@ -79,7 +79,7 @@ const ExpandableJob = ({ title, intro, paragraphs, lists, textAfterTheLists, ren
     return (
         <StyledExpandableJob>
             <button onClick={toggleIsRendered}>
-               <Arrow 
+               <Arrow
                 styles={{ transform: isRendered ? 'rotate(-90deg)' : 'rotate(90deg)', fill: isRendered ? colors.text : '' }}
                />
             </button>
@@ -89,7 +89,7 @@ const ExpandableJob = ({ title, intro, paragraphs, lists, textAfterTheLists, ren
             {paragraphs.split('\n').map((p, i) => <p key={i+title}>{p}</p>)}
                 { lists.map((item, i) => <List key={i + item.title} {...item} />) }
                 <p className="after">{textAfterTheLists}</p>
-                <a 
+                <a
                     href={`mailto:contact@typefox.io?subject=Application as ${title}`}
                     target="_blank"
                     className="btn btn--cta"
@@ -97,7 +97,7 @@ const ExpandableJob = ({ title, intro, paragraphs, lists, textAfterTheLists, ren
                     Apply Now
                 </a>
             </>) : null}
-            
+
         </StyledExpandableJob>
     )
 }

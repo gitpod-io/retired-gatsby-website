@@ -141,7 +141,7 @@ const StyledBlogTemplate = styled.div`
             transform: scale(1);
             margin: 4rem 0;
         }
-    } 
+    }
 `
 
 
@@ -167,7 +167,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
           data.markdownRemark.frontmatter.url ? <link rel="canonical" href={data.markdownRemark.frontmatter.url} /> : null
         }
         <meta name="twitter:image" content={metaPreview} />
-                
+
 
             </Helmet>
             <div className="pattern pattern--full-vp-height" style={{marginBottom: '10rem'}}>

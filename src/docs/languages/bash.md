@@ -10,7 +10,7 @@ Here are a few Bash example projects that are already automated with Gitpod:
 
 | Repository | Description | Try It |
 |------------|--------------|--------|
-|[inlets/inlets](https://github.com/inlets/inlets) | Reverse proxy and service tunnel | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/inlets/inlets) 
+|[inlets/inlets](https://github.com/inlets/inlets) | Reverse proxy and service tunnel | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/inlets/inlets)
 
 </div>
 

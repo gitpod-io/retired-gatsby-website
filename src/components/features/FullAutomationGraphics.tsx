@@ -7,7 +7,7 @@ import AutomatedSetupGraphicOrdinary from '../../resources/automated-setup-ordin
 const FullAutomationGraphics = ({ renderedGraphic }: { renderedGraphic: string }
 ) => {
     const graphics = [
-        { 
+        {
             src: ReadyToCodeImg,
             alt: 'Gitpod Ready to Code',
             name: ''
@@ -25,11 +25,11 @@ const FullAutomationGraphics = ({ renderedGraphic }: { renderedGraphic: string }
     ]
 
     return (
-        graphics.map((g, i) => ( 
+        graphics.map((g, i) => (
             <img
                 key={i}
-                src={g.src} 
-                alt={g.alt} 
+                src={g.src}
+                alt={g.alt}
                 style={ renderedGraphic !== g.name ? {display: 'none'}: {}}
             />
         ))

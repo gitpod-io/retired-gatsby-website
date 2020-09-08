@@ -15,7 +15,7 @@ import ExpandableJob, { ExpandableJobProps } from '../components/careers/Expanda
 const StyledCareersPage = styled.div`
     /* --------------------------------------------- */
     /* ----- Intro ----- */
-    /* --------------------------------------------- */    
+    /* --------------------------------------------- */
 
     .intro {
         text-align: center;
@@ -27,7 +27,7 @@ const StyledCareersPage = styled.div`
 
     /* --------------------------------------------- */
     /* ----- Team ----- */
-    /* --------------------------------------------- */    
+    /* --------------------------------------------- */
 
     .team {
         display: flex;

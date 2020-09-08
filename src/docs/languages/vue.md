@@ -29,7 +29,7 @@ RUN npm i -g vue-cli
 ```
 > Please note: If you don't already have one please run [`gp init`](https://www.gitpod.io/docs/command-line-interface/#init) which should generate two files [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) and [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/)
 
-## VSCode Extensions 
+## VSCode Extensions
 
 ### Vetur
 
@@ -37,7 +37,7 @@ RUN npm i -g vue-cli
 
 Vetur provides syntax highlighting, snippets, Emmet support, linting/error checking, auto-formatting, and auto-complete for Vue files.
 
-To add this extension to your repository add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) 
+To add this extension to your repository add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/)
 
 ```yaml
 vscode:

@@ -22,7 +22,7 @@ To fix this you'll need to wrap the `rustup` command in a login shell, like so:
 RUN bash -cl "rustup toolchain install nightly"
 ```
 
-You can override this default by committing a `rustup-toolchain` file in the root of your repository. Say for example you need the nightly compiler for March 4th, 2020, you would create a `rustup-toolchain` file and add the following 
+You can override this default by committing a `rustup-toolchain` file in the root of your repository. Say for example you need the nightly compiler for March 4th, 2020, you would create a `rustup-toolchain` file and add the following
 ```text
 nightly-2020-03-04
 ```

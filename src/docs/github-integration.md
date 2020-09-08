@@ -12,7 +12,7 @@ To enable [prebuilt workspaces](/docs/prebuilds/) for your GitHub project you ne
 
 ## OAuth Application
 
-In Gitpod Self-Hosted you can register your own GitLab OAuth application. This allows to use Gitpod with any GitHub instance. 
+In Gitpod Self-Hosted you can register your own GitLab OAuth application. This allows to use Gitpod with any GitHub instance.
 
 Here's how to do that:
 
@@ -34,7 +34,7 @@ Here's how to do that:
 
 <img width="794" alt="Screenshot 2020-08-25 at 10 09 53" src="https://user-images.githubusercontent.com/372735/91149546-7c7c1180-e6bb-11ea-956f-2f7190db4ca4.png">
 
-5) Copy the `Application ID` and the `Secret` in the corresponding form fields (`Client ID` resp. `Client Secret`) of your Gitpod installation. 
+5) Copy the `Application ID` and the `Secret` in the corresponding form fields (`Client ID` resp. `Client Secret`) of your Gitpod installation.
 
 <img width="774" alt="Screenshot 2020-08-25 at 10 10 15" src="https://user-images.githubusercontent.com/372735/91149544-7be37b00-e6bb-11ea-8ad6-5fb2d5eba7d4.png">
 
@@ -42,6 +42,6 @@ Here's how to do that:
 
 <img width="1125" alt="Screenshot 2020-08-25 at 10 10 41" src="https://user-images.githubusercontent.com/372735/91149536-79812100-e6bb-11ea-8fb4-1802e09f9a5b.png">
 
-Congrats you have setup the GitHub OAuth applicaton. 🎉 
+Congrats you have setup the GitHub OAuth applicaton. 🎉
 
 Next up you should install the browser extension and [configure it with your Gitpod installation URL](/docs/browser-extension/#use-with-gitpod-self-hosted).

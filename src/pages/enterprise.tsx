@@ -32,7 +32,7 @@ const EnterprisePage: React.SFC<{}> = () => (
             linkText="Choose your Solution"
             img={<object role="presentation" tabIndex={-1} data={Planet} />}
         />
-        
+
         <div className="grey-container">
             <TextCards title="Stay in the Flow and Scale Up Your Productivity">
                 {
