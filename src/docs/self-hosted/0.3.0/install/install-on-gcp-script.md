@@ -5,7 +5,7 @@ url: /docs/self-hosted/0.3.0/install/install-on-gcp-script/
 # Install Gitpod on Google Cloud Platform
 
 At its core setting up Gitpod on GCP does not differ much from installing it on any other Kubernetes platform.
-However, Gitpod sports a range of integrations with the Google Cloud Platform that increase performance and reliability.
+However, Gitpod supports a range of integrations with the Google Cloud Platform that increase performance and reliability.
 This section describes the neccesary steps to prepare a new GCP project for a Gitpod installation.
 
   > We have automated this process. If you want to get up and running as quickly as possible, that's the way to go.

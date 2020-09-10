@@ -1,6 +1,6 @@
 # Command Line Interface
 
-Gitpod sports a command line interface that is available in each workspace terminal called `gp`:
+Gitpod supports a command line interface that is available in each workspace terminal called `gp`:
 ```text
 Command line interface for Gitpod
 
@@ -25,7 +25,7 @@ Use "gp [command] --help" for more information about a command.
 Gitpod workspaces can be configured - see [Configuring Workspaces](/docs/configuration/) for more details. `gp init` helps creating this configuration by guiding through this process and producing a `gitpod.yml` in the end (think `npm init`).
 
 ## Open
-Modern editors/IDE's sport command line tooling to open a file (e.g. VS Code `code foo.txt`). In Gitpod this can be done using `gp open <filename>`.
+Modern editors/IDE's support command line tooling to open a file (e.g. VS Code `code foo.txt`). In Gitpod this can be done using `gp open <filename>`.
 We have also added common aliases for `gp open`: `code` and `open`.
 
 ## Preview
@@ -34,7 +34,7 @@ We have also added common aliases for `gp open`: `code` and `open`.
 ## URL
 Gitpod workspaces can expose services to the internet. `gp url` provides the URL which points to a service served from a Gitpod workspace. For example `gp url 8080` prints the URL which points to the service listening on port 8080 in this current workspace.
 
-You can combine the `preview`and the `url` command to open a certain path instead of the default URL.
+You can combine the `preview` and the `url` command to open a certain path instead of the default URL.
 
 For instance:
 ```sh
