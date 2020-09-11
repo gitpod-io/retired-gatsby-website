@@ -76,7 +76,7 @@ Better TOML adds syntax highlighting to your `Cargo.toml`.
 
 ## Cross-compiling with MUSL
 
-TODO
+TODO: https://doc.rust-lang.org/edition-guide/rust-2018/platform-and-target-support/musl-support-for-fully-static-binaries.html
 
 ## Debugging
 
