@@ -74,6 +74,10 @@ Do you have an idea of a library you want to use but don't know the version well
 
 Better TOML adds syntax highlighting to your `Cargo.toml`.
 
+## Cross-compiling with MUSL
+
+TODO
+
 ## Debugging
 
 In this section we will show you how to configure your project for debugging in Gitpod.
