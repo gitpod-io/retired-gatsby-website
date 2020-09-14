@@ -29,13 +29,15 @@ This will give you a full GUI Virtual Desktop for your .NET application! The Vir
 
 ## Compiling .NET Code in Gitpod
 
-To compile your **C#** Code in Gitpod, run `mono-csc <FILE>`,  where `<FILE>` is the path to the C# program you want to compile.
+To compile your **C#** or **F#** Code in Gitpod, run `dotnet build <FILE>`, where `<FILE>` is the path to the C# or F# project file or .NET solution file you want to compile.
 
-To compile your **F#** Code in Gitpod, run `fsharpc <FILE>`,  where `<FILE>` is the path to the F# program you want to compile.
+## Running .NET Code in Gitpod
 
+To run your code after it has been compiled run `dotnet <FILE>` where `<FILE>` is the path to the EXE file you want to run. You can also run application with `dotnet run <FILE>` where `<FILE>` is the path to the C# or F# project file you want to compile and run.
 
-## Running *.EXE files in Gitpod
-To run your code after it has been compiled run `mono <FILE>` where `<FILE>` is the path to the EXE file you want to run
+## Running .NET Code in watch-mode
+
+Alternatively, you can also run your application in so-called watch-mode. In such configuration application will recompile and rerun itself every time you'll save any source file belonging to the project. To run your code in watch-mode use `dotnet watch --project <FILE> run` where `<FILE>` is the path to the C# or F# project file you want to compile and run.
 
 ## Useful VSCode Extensions
 
@@ -55,7 +57,7 @@ vscode:
 
 ![Ionide fsharp Example](../images/Iondine_Example.png)
 
-Ionide-fsharp gives F# developers the following features:
+[Ionide-fsharp](http://ionide.io/) gives F# developers the following features:
 
 * A Widget for your F# needs
 * Auto completion
@@ -63,6 +65,7 @@ Ionide-fsharp gives F# developers the following features:
 * Quickfix
 * Goto definition
 * Peek definition
+* And more... 
 
 To add this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
 
