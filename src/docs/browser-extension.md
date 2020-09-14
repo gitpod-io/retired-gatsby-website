@@ -26,3 +26,9 @@ A user can view an extension's options by right-clicking the extension icon in t
 ### Accessing the options on Firefox
 
 An Options page enables you to define preferences for your extension that your users can change. Users can access the options page for an extension from the browser's add-ons manager.
+
+## Source Code
+
+Gitpod's browser extension is open source. You can check out its [source code](https://github.com/gitpod-io/browser-extension), or even open it in Gitpod:
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/gitpod-io/browser-extension)
