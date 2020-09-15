@@ -90,7 +90,7 @@ const ExpandableJob = ({ title, intro, paragraphs, lists, textAfterTheLists, ren
                 { lists.map((item, i) => <List key={i + item.title} {...item} />) }
                 <p className="after">{textAfterTheLists}</p>
                 <a
-                    href={`mailto:contact@typefox.io?subject=Application as ${title}`}
+                    href={`mailto:career@gitpod.io?subject=Application as ${title}`}
                     target="_blank"
                     className="btn btn--cta"
                 >
