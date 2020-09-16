@@ -8,15 +8,18 @@ Rust is a first-class language in Gitpod, and we believe that Gitpod is a great 
 * The blazing-fast workspace search is powered by [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ## Rust Version
-Both Rust `v1.39.0 stable` and `nightly` are pre-installed in Gitpod. Stable is the default, but you can switch to the nightly version of Rust by running `rustup default nightly` in a terminal.
 
-Note: If you try to use `rustup` in your Dockerfile, you might get the following error:
+Gitpod always comes with the latest available Rust toolchain pre-installed using [rustup](https://rustup.rs/). (As of 11 Sep 2020, the Rust version is `1.46.0`, and it's updated [semi-automatically](https://github.com/gitpod-io/workspace-images/pull/282/files) on every official Rust release.)
+
+You can also use `rustup` yourself in Gitpod in order to switch to a different Rust version, or to install extra components. See the [the rustup book](https://rust-lang.github.io/rustup/index.html) to learn more about `rustup` itself.
+
+Note: If you try to use `rustup` in your repository's [.gitpod.Dockerfile](/docs/config-docker/), you might get the following error:
 
 ```
 /bin/sh: rustup command not found
 ```
 
-To fix this you'll need to wrap the `rustup` command in a login shell, like so:
+To fix this, simply wrap the `rustup` command in a login Bash shell, like so:
 
 ```Dockerfile
 RUN bash -cl "rustup toolchain install nightly"
@@ -38,83 +41,54 @@ Here are a few Rust example projects that are already automated with Gitpod:
 |---------|------------|-----|
 |[MathLang](https://github.com/JesterOrNot/mathlang) | Basic maths language in Rust | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/MathLang) |
 |[NuShell](https://github.com/nushell/nushell/) | A next-gen shell for the GitHub era | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nushell/nushell) |
-|[Servo](https://github.com/servo/servo) | The Servo Browser Engine | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/servo/servo)
+|[Servo](https://github.com/servo/servo) | The Servo Browser Engine | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/servo/servo) |
 
 </div>
 
-## Workspace Configuration
+## VSCode Extensions
 
-### VSCode Extensions
+The most popular Rust VSCode extensions are already pre-installed in Gitpod. But here are a few "nice to have" extensions you may choose to install as well.
 
-The most popular Rust VSCode extensions come prebuilt in Gitpod but here are some "nice to have" extensions:
+In order to install one of these extensions for your repository, simply head to Gitpod's [Extensions panel](/docs/vscode-extensions/) (find it in the IDE's left vertical menu), then search for the desired extension by name, and install it for your project. This will add an entry to your [.gitpod.yml](/docs/config-gitpod-file/) file that ensures all future Gitpod workspaces for your repository will already have this extension pre-installed.
 
-#### Rust Test Explorer
+### Rust Test Explorer
 ![Rust test explorer example](../images/rustTest.png)
 <br>
 <br>
-The Rust Test Explorer makes it easy to run Rust tests. To install this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/41_config_gitpod_file/):
-```yaml
-vscode:
-  extensions:
-    - hbenl.vscode-test-explorer@2.15.0:koqDUMWDPJzELp/hdS/lWw==
-    - Swellaby.vscode-rust-test-adapter@0.11.0:Xg+YeZZQiVpVUsIkH+uiiw==
-```
-#### Crates
+The Rust Test Explorer makes it easy to run Rust tests.
+
+### Crates
 > ***Note: This extension outputs emojis by default if the crate version is set at the latest. You can disable this by using `crates.upToDateDecorator` option in your preferences***
 <br>
 
 ![A crates extension demo](../images/cratesDemo.gif)
-The VSCode extension Crates makes it easier to manage your Cargo dependency versions. To install this extension to your repository add the following to your [.gitpod.yml](https://www.gitpod.io/docs/41_config_gitpod_file/)
+The VSCode extension Crates makes it easier to manage your Cargo dependency versions.
 
-```yaml
-vscode:
-  extensions:
-    - serayuzgur.crates@0.4.7:HMkoguLcXp9M3ud7ac3eIw==
-```
-#### <p>Search Crates.io</p>
+### <p>Search Crates.io</p>
 ![An example of search crates.io extension](../images/searchCratesio.gif)
 
-Do you have an idea of a library you want to use but don't know the version well just type in the name of the library and Search Crates.io will get the version. To install this extension to your repository add the following to your [.gitpod.yml](https://www.gitpod.io/docs/41_config_gitpod_file/)
-```yaml
-vscode:
-  extensions:
-    - belfz.search-crates-io@1.2.1:kSLnyrOhXtYPjQpKnMr4eQ==
-```
+Do you have an idea of a library you want to use but don't know the version well just type in the name of the library and Search Crates.io will get the version.
 
-#### Better TOML
+### Better TOML
 ![TOML Syntax highlighting example](../images/feature_syntax_highlight.png)
 
-Better TOML adds syntax highlighting to your `Cargo.toml`. To install Better TOML to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file:
+Better TOML adds syntax highlighting to your `Cargo.toml`.
 
-```yaml
-vscode:
-  extensions:
-    - bungcip.better-toml@0.3.2:3QfgGxxYtGHfJKQU7H0nEw==
-```
+## Cross-compiling with MUSL
+
+TODO. See also [MUSL support for fully static binaries](https://doc.rust-lang.org/edition-guide/rust-2018/platform-and-target-support/musl-support-for-fully-static-binaries.html).
 
 ## Debugging
 
 In this section we will show you how to configure your project for debugging in Gitpod.
 
-First, before we get to that we need to get some prerequisites set-up first we'll add the needed extension
+First, before we get to that we need to get some prerequisites set-up.
 
-If you haven't added extensions to your repository already add the following snippet to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file:
+First we'll install the needed extension. If you haven't already, head over to Gitpod's [Extensions panel](/docs/vscode-extensions/) (left vertical menu in the IDE) and search for an extension called `Native Debug` by webfreak. When you see it, click to install it for your project.
 
-```yaml
-vscode:
-  extensions:
-    - webfreak.debug@0.24.0:1zVcRsAhewYEX3/A9xjMNw==
-```
+The next prerequisite is a Docker configuration.
 
-If you already added a extension just add the following below your other extensions.
-
-```yaml
-    - webfreak.debug@0.24.0:1zVcRsAhewYEX3/A9xjMNw==
-```
-
-The last prerequisite is a docker configuration.
-
-If you already have a [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/) just add the following:
+If you already have a [.gitpod.Dockerfile](/docs/config-docker/) just add the following:
 
 ```Dockerfile
 RUN sudo apt-get -q update \
@@ -126,7 +100,7 @@ RUN sudo apt-get -q update \
 ENV RUST_LLDB=/usr/bin/lldb-8
 ```
 
-If not there are two steps first create a file called `.gitpod.Dockerfile` with the following content:
+If not there are two steps. First, create a file called `.gitpod.Dockerfile` with the following content:
 
 ```Dockerfile
 FROM gitpod/workspace-full
@@ -142,7 +116,7 @@ RUN sudo apt-get -q update \
 ENV RUST_LLDB=/usr/bin/lldb-8
 ```
 
-Next add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file:
+Next, add the following to your [.gitpod.yml](/docs/config-gitpod-file/) file:
 
 ```yaml
 image:
