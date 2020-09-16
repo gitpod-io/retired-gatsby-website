@@ -37,7 +37,7 @@ To run your code after it has been compiled run `dotnet <FILE>` where `<FILE>` i
 
 ## Running .NET Code in watch-mode
 
-Alternatively, you can also run your application in so-called watch-mode. In such configuration application will recompile and rerun itself every time you'll save any source file belonging to the project. To run your code in watch-mode use `dotnet watch --project <FILE> run` where `<FILE>` is the path to the C# or F# project file you want to compile and run.
+Alternatively, you can also run your application in so-called watch-mode. In such configuration the application will recompile and rerun itself every time you save any source file belonging to the project. To run your code in watch-mode use `dotnet watch --project <FILE> run` where `<FILE>` is the path to the C# or F# project file you want to compile and run.
 
 ## Useful VSCode Extensions
 
