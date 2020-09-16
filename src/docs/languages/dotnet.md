@@ -57,7 +57,7 @@ vscode:
 
 ![Ionide fsharp Example](../images/Iondine_Example.png)
 
-[Ionide-fsharp](http://ionide.io/) gives F# developers the following features:
+[Ionide-fsharp](https://ionide.io/) gives F# developers the following features:
 
 * A Widget for your F# needs
 * Auto completion
