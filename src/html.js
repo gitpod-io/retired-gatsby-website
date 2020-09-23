@@ -14,7 +14,7 @@ export default function HTML(props) {
         <script
             dangerouslySetInnerHTML={{
                 __html: `
-                        if (location.pathname.length <= 1 && location.hash.length > 0) {
+                        if (location.pathname.length <= 1 && location.hash.indexOf("https://") > -1) {
                             window.location.replace("https://gitpod.io/" + window.location.hash);
                         }
                     `,
