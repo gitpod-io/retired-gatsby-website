@@ -65,7 +65,7 @@ vscode:
 * Quickfix
 * Goto definition
 * Peek definition
-* And more... 
+* And more...
 
 To add this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
 
