@@ -25,10 +25,10 @@ export const features: FeatureCardProps[] = [
       <>
         <p>
           Gitpod continuously builds your git branches like a CI server. This means no more waiting for dependencies to be downloaded and
-          builds to finish. More about Prebuilt Workspaces.
+          builds to finish.
         </p>
         <p>
-          Read more about <Link to="/docs/prebuilds/">Prebuilt Workspaces.</Link>
+          More about <Link to="/docs/prebuilds/">Prebuilt Workspaces.</Link>
         </p>
       </>
     ),
