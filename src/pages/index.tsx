@@ -9,10 +9,10 @@ import Testimonials from '../components/index/Testimonials'
 import GetStarted from '../components/index/GetStarted'
 import MoreInfo from '../components/MoreInfo'
 // import Gatsby from '../resources/gatsby.svg'
+import GitLab from '../resources/gitlab-logo.svg'
 import FreeCodeCamp from '../resources/freecodecamp.svg'
 import DWaveLogo from '../resources/dwave.svg'
 import GoogleLogo from '../resources/google.svg'
-import MozillaLogo from '../resources/mozilla.svg'
 import OpenAILogo from '../resources/openai.svg'
 import SauceLabsLogo from '../resources/sauce-labs.svg'
 import FacebookLogo from '../resources/facebook.svg'
@@ -33,6 +33,12 @@ const IndexPage: React.SFC<{}> = () => (
 
     <TrustedBy
       brands={[
+          {
+            alt: 'GitLab',
+            url: 'https://about.gitlab.com/',
+            svg: GitLab,
+            className: 'grey-logo'
+          },
         {
           alt: 'freeCodeCamp',
           url: 'https://www.freecodecamp.org/',
@@ -51,12 +57,6 @@ const IndexPage: React.SFC<{}> = () => (
           url: 'https://about.google/',
           svg: GoogleLogo,
           transform: 'scale(0.9)',
-          className: 'grey-logo'
-        },
-        {
-          alt: 'Mozilla',
-          url: 'https://www.mozilla.org/',
-          svg: MozillaLogo,
           className: 'grey-logo'
         },
         {
