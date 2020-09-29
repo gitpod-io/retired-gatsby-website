@@ -12,7 +12,7 @@ import LayoutRoot from '../components/LayoutRoot'
 import LayoutMain from '../components/LayoutMain'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
-import AnnoucementBanner from '../components/AnnouncementBanner'
+// import AnnoucementBanner from '../components/AnnouncementBanner'
 
 type StaticQueryProps = {
   site: {
@@ -89,7 +89,7 @@ class IndexLayout extends React.Component<{ title?: string; canonical?: string; 
 
               <meta name="google-site-verification" content="NBio3hCkfn2FKJpqZritJpXuyKo54noPGZzWsjDIp-M" />
             </Helmet>
-            <AnnoucementBanner />
+            {/* <AnnoucementBanner /> */}
             <Nav />
             <LayoutMain>
               <CookieConsent
