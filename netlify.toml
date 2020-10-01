@@ -1,3 +1,7 @@
+[build]
+  command = "yarn build"
+  functions = "lambda"
+
 [[redirects]]
   from = "/gitpod-business.html"
   to = "/pricing/#enterprise"

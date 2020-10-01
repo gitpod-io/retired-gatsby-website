@@ -4,9 +4,10 @@ import styled from '@emotion/styled'
 import { borders, colors } from '../styles/variables'
 import { countryList } from '../contents/license-key'
 import { isEurope } from '../utils/helpers'
-import { encode } from './contact'
 import SubmissionSucess from '../components/SubmissionSucess'
 import { Link } from 'gatsby'
+import { Email } from '../functions/submit-form';
+
 const StyledEnterpriseLicensePage = styled.div`
   form {
     padding: 5rem 0;
@@ -260,14 +261,30 @@ const EnterpriseLicensePage = () => {
       return
     }
 
-    const form = e.target as HTMLFormElement
-    fetch('/enterprise-license/', {
+    const email: Email = {
+        from: {
+            email: state.email,
+            name: state.firstName + ' ' + state.lastName
+        },
+        subject: 'Requesting a professional self-hosted license     (from ' + state.email + ')',
+        message: `
+    ${state.company}
+    ${state.firstName} ${state.lastName}
+    ${state.address}
+    ${state.postalCode} ${state.city}
+    ${state.country}
+
+    domain: ${state.domain}
+    seats: ${state.seats}
+    employees: ${state.noOfEmployees}
+
+    Message:
+    ${state.message}
+`
+    };
+    fetch('/.netlify/functions/submit-form', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...state
-      })
+      body: JSON.stringify(email)
     })
       .then(() =>
         setState({

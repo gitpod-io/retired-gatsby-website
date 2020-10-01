@@ -3,6 +3,7 @@ import styled from '@emotion/styled'
 import IndexLayout from '../layouts'
 import { sizes, borders } from '../styles/variables'
 import SubmissionSucess from '../components/SubmissionSucess'
+import { Email } from '../functions/submit-form'
 
 const StyledContactPage = styled.div`
     /* --------------------------------------------- */
@@ -74,15 +75,6 @@ const StyledContactPage = styled.div`
     }
 `
 
-export function encode(data: { [k: string]: string | number | boolean | null | undefined }) {
-  return Object.keys(data)
-    .map((key) => {
-      const value = data[key]
-      return encodeURIComponent(key) + '=' + (value === null || value === undefined ? 'null' : encodeURIComponent(value))
-    })
-    .join('&')
-}
-
 const subjects: string[] = [
   'I have a question regarding Gitpod Self-Hosted',
   'I have a question regarding Gitpod Education',
@@ -95,7 +87,7 @@ export default function ContactPage(props: any) {
   const [state, setState] = React.useState<{
     name?: string
     consent?: boolean
-    eMail?: string
+    email?: string
     subject?: string
     message?: string
     messageSent?: boolean
@@ -130,7 +122,7 @@ export default function ContactPage(props: any) {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    if (!state.eMail) {
+    if (!state.email) {
       setState({
         ...state,
         errorMessage: 'Please provide a valid email address so that we can reply to you.'
@@ -151,14 +143,19 @@ export default function ContactPage(props: any) {
       })
       return
     }
-    const form = e.target as HTMLFormElement
-    fetch('/contact/', {
+
+    const email: Email = {
+        from: {
+            email: state.email,
+            name: state.name
+        },
+        subject: state.subject + '  (from ' + state.email + ')',
+        message: state.message
+    };
+
+    fetch('/.netlify/functions/submit-form', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...state
-      })
+      body: JSON.stringify(email)
     })
       .then(() =>
         setState({
@@ -179,8 +176,6 @@ export default function ContactPage(props: any) {
               className="form"
               method="POST"
               name="Contact"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
             >
               <input type="hidden" name="form-name" value="contact" />
@@ -206,15 +201,15 @@ export default function ContactPage(props: any) {
                   id="Name"
                   onChange={handleChange}
                 />
-                <label className="visually-hidden" htmlFor="eMail">
+                <label className="visually-hidden" htmlFor="email">
                   E-Mail
                 </label>
                 <input
-                  name="eMail"
+                  name="email"
                   className="form__input form__input--half"
                   type="email"
                   placeholder="E-mail"
-                  id="eMail"
+                  id="email"
                   onChange={handleChange}
                 />
                 <div className="subject">
