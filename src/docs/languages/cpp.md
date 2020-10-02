@@ -25,6 +25,28 @@ However, if you're missing some additional tools, you can simply run `brew insta
 
 ## IDE Features
 
+### Clangd Language Server
+
+Gitpod's native C++ support is currently provided by Theia's native [C++ extension](https://www.npmjs.com/package/@theia/cpp), which builds upon Clangd for out-of-the-box language server support on C++ source files.
+
+More complex projects may need a build system capable of outputting a [`compile_commands.json` file](https://clang.llvm.org/docs/JSONCompilationDatabase.html) before Clangd can work fully.
+The extension can be pointed to a directory containing this file as part of a build configuration within Theia's `settings.json`:
+
+```
+{
+  "cpp.buildConfigurations": [
+    {
+      "name": "Release",
+      "directory": "/workspace/project/cmake/release/build"
+    },
+    {
+      "name": "Debug",
+      "directory": "/workspace/project/cmake/debug/build"
+    }
+  ]
+}
+```
+
 ### Debugging
 
 Since `gdb` is already pre-installed in Gitpod, you can already debug any C, C++, Go, etc. program directly from the Terminal with a single command.
@@ -63,7 +85,7 @@ Note: This example GDB launch configuration points to a compiled Firefox browser
 
 With this, you should be able to set breakpoints in your C++ code directly from the code editor margin, then start a debugging session from the Debug panel. The IDE should then show you debug information, hopefully pause execution on your breakpoint, and allow you to step through the code.
 
-If that doesn't work, please feel free to ask for help in [community.gitpod.io](https://commnity.gitpod.io) and we'll be happy to help you make debugging work for your project.
+If that doesn't work, please feel free to ask for help in [community.gitpod.io](https://community.gitpod.io) and we'll be happy to help you make debugging work for your project.
 
 ## Further Reading
 
