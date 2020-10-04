@@ -53,7 +53,7 @@ exports.handler = function (event: APIGatewayEvent, _: Context, callback: any) {
         email: SENDGRID_TO_EMAIL,
         name: 'Gitpod'
     }
-    
+
     client.setApiKey(SENDGRID_API_KEY);
     sendEmail(
         client,
