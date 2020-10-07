@@ -2,7 +2,7 @@ import React from 'react'
 
 import IndexLayout from '../layouts/index'
 import Banner from '../components/index/Banner'
-import TrustedBy from '../components/index/TrustedBy'
+import TrustedBy from '../components/TrustedBy'
 import SaveHours from '../components/index/SaveHours'
 import FeatureCards from '../components/FeatureCards'
 import Testimonials from '../components/index/Testimonials'
@@ -32,6 +32,7 @@ const IndexPage: React.SFC<{}> = () => (
     <Banner />
 
     <TrustedBy
+      title={<>Trusted by <strong>Visionary Teams</strong></>}
       brands={[
           {
             alt: 'GitLab',

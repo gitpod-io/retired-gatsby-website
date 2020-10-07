@@ -5,7 +5,12 @@ import { sizes } from '../styles/variables'
 import Pattern from '../resources/pattern-2.jpg'
 import IconTick from '../resources/icon-tick-2.svg'
 
-const Styled = styled.div<{ direction?: string; flexDirectionColumnForImgContainer?: boolean }>`
+const Styled = styled.div<{
+  direction?: string
+  flexDirectionColumnForImgContainer?: boolean
+  opposite?: boolean
+  hasFigFootnote?: boolean
+}>`
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -38,7 +43,7 @@ const Styled = styled.div<{ direction?: string; flexDirectionColumnForImgContain
 
   &:nth-of-type(2n) {
     @media (min-width: 1141px) {
-      flex-direction: row-reverse;
+      flex-direction: ${({ opposite }) => (opposite ? 'reverse' : 'row-reverse')};
     }
 
     @media (min-width: 1141px) {
@@ -52,6 +57,12 @@ const Styled = styled.div<{ direction?: string; flexDirectionColumnForImgContain
           transform: translateX(-5rem);
         }
       }
+    }
+  }
+
+  &:nth-of-type(2n + 1) {
+    @media (min-width: 1141px) {
+      flex-direction: ${({ opposite }) => (opposite ? 'row-reverse' : 'reverse')};
     }
   }
 
@@ -135,12 +146,16 @@ const Styled = styled.div<{ direction?: string; flexDirectionColumnForImgContain
     @media (max-width: 1140px) {
       min-height: 240px;
       padding: 5rem;
-      margin-bottom: 2.5rem;
+      margin-bottom: ${({ hasFigFootnote }) => (hasFigFootnote ? '7rem' : '2.5rem')};
 
       &::before {
         left: 0;
         right: 0;
       }
+    }
+
+    @media(max-width: 800px) {
+        margin-bottom: ${({ hasFigFootnote }) => (hasFigFootnote ? '10rem' : '2.5rem')};
     }
 
     @media (max-width: 560px) {
@@ -212,12 +227,34 @@ const Styled = styled.div<{ direction?: string; flexDirectionColumnForImgContain
     }
   }
 
+  p + .text-list {
+    margin-top: 2rem;
+  }
+
   .text-list {
     margin-top: 0;
     font-size: inherit;
 
+    @media (max-width: ${sizes.breakpoints.sm}) {
+        text-align: left;
+    }
+
     li + li {
       margin-top: 2rem;
+    }
+  }
+
+  .footnote {
+    position: absolute;
+    margin-top: 4rem;
+    bottom: -5.5rem;
+
+    @media (max-width: 454px) {
+      bottom: -5rem;
+    }
+
+    @media(max-width: 420px) {
+        bottom: -6.5rem;
     }
   }
 
@@ -238,13 +275,37 @@ export interface FeatureCardProps {
   Buttons?: any
   icon?: string | JSX.Element
   iconTitle?: string | JSX.Element
+  opposite?: boolean
+  Figure?: () => JSX.Element
+  figFootnote?: string | JSX.Element
+  footnote?: string | JSX.Element
 }
 
-const FeatureCard = ({ src, alt, Graphic, title, text, direction, id, featuresList, Buttons }: FeatureCardProps) => {
+const FeatureCard = ({
+  src,
+  alt,
+  Graphic,
+  title,
+  text,
+  direction,
+  id,
+  featuresList,
+  Buttons,
+  Figure,
+  opposite,
+  figFootnote,
+  footnote
+}: FeatureCardProps) => {
   const [renderedGraphic, setRenderedGraphic] = useState<string>('')
-
+  const hasFigFootnote = typeof figFootnote == 'string' || typeof figFootnote == 'object'
   return (
-    <Styled className="row" direction={direction} flexDirectionColumnForImgContainer={featuresList && featuresList.length ? true : false}>
+    <Styled
+      className="row"
+      direction={direction}
+      flexDirectionColumnForImgContainer={featuresList && featuresList.length ? true : false}
+      opposite={opposite}
+      hasFigFootnote={hasFigFootnote}
+    >
       <div className="img-container in-view">
         {Graphic ? <Graphic renderedGraphic={renderedGraphic} /> : null}
         {src ? <img src={src} alt={alt} style={featuresList && featuresList.length ? { transform: 'scale(.9)' } : {}} /> : null}
@@ -255,11 +316,14 @@ const FeatureCard = ({ src, alt, Graphic, title, text, direction, id, featuresLi
             ))}
           </ul>
         ) : null}
+        {Figure ? <Figure /> : null}
+        {figFootnote ? <p className="footnote">{figFootnote}</p> : null}
       </div>
       <div className="text">
         <h2>{title}</h2>
         {text ? text : null}
         {Buttons ? <Buttons setRenderedGraphic={setRenderedGraphic} /> : null}
+        {footnote ? <p className="footnote">{footnote}</p> : null}
       </div>
       {id && <div id={id}></div>}
     </Styled>
