@@ -4,13 +4,16 @@ export const colors = {
   text: '#4D4D4D',
   link: '#0087BE',
   lightBlue: '#1AA6E4',
+  orange: '#FE642E',
+  orangeLight: '#FF875D',
   white: ' #FFFFFF',
   offWhite0: '#fcfcfc',
   offWhite: '#F7F7F7',
   offWhite1: '#BCBCBC',
   offWhite2: '#e5e5e5',
   offWhite3: '#dbdbdb',
-  offWhite4: '#e6e6e6'
+  offWhite4: '#e6e6e6',
+  offWhite5: '#C4C4C4'
 }
 
 export const sizes = {

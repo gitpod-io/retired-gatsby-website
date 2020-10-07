@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { sizes } from '../../styles/variables'
+import { sizes } from '../styles/variables'
 
 const StyledTrustedBy = styled.section`
   padding: 3rem 0;
@@ -104,13 +104,15 @@ interface Brand {
 
 interface TrustedByProps {
   brands: Brand[]
+  title: string | JSX.Element
+  styles?: React.CSSProperties
 }
 
-const TrustedBy = ({ brands }: TrustedByProps) => (
-  <StyledTrustedBy>
+const TrustedBy = ({ brands, title, styles }: TrustedByProps) => (
+  <StyledTrustedBy style={{...styles}}>
     <div className="row">
       <h3>
-        Trusted by <strong>Visionary Teams</strong>
+        {title}
       </h3>
       <div className="logos">
         {brands.map((b: Brand) => (

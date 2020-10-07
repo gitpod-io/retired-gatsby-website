@@ -458,6 +458,19 @@ export default `
         }
     }
 
+    .footnote {
+        font-size: 79%;
+        color: ${colors.textLight};
+
+        @media (max-width: 800px) {
+            font-size: 76%;
+        }
+
+        a {
+            font-weight: 400;
+        }
+    }
+
     /* --------------------------------------------- */
     /* ----- Utils ----- */
     /* --------------------------------------------- */
