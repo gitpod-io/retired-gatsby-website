@@ -41,7 +41,7 @@ export const features: FeatureCardProps[] = [
       </>
     ),
     Figure: PowerComparison,
-    figFootnote: <>Compared hardware specs $9/month using 100 active hours. Last verified Sept 25, 2020. Sources: <Link to="/pricing">Gitpod Pricing</Link>, <a href=
+    figFootnote: <>Compared hardware specs for $9/month using 100 active hours. Last verified Sept 25, 2020. Sources: <Link to="/pricing">Gitpod Pricing</Link>, <a href=
     "https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces" target="_blank">Codespaces Pricing.</a></>,
   },
   {
