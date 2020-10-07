@@ -8,7 +8,7 @@ import { Link } from 'gatsby'
 export const features: FeatureCardProps[] = [
   {
     id: 'fast',
-    title: <strong>Loads 15x Faster</strong>,
+    title: <strong>15x Faster Loading</strong>,
     text: (
       <>
         <p>
@@ -24,7 +24,7 @@ export const features: FeatureCardProps[] = [
       </>
     ),
     Figure: SpeedComparison,
-    figFootnote: 'Compared start up time until ready-to-code of https://github.com/microsoft/vscode. Last verified Sept 25, 2020.'
+    figFootnote: 'Compared start-up time until ready-to-code for https://github.com/microsoft/vscode. Last verified 25 Sep 2020.'
   },
   {
     id: 'resource-efficient',
@@ -41,8 +41,8 @@ export const features: FeatureCardProps[] = [
       </>
     ),
     Figure: PowerComparison,
-    figFootnote: <>Compared hardware specs $9/month using 100 active hours. Last verified Sept 25, 2020. Sources: <Link to="/pricing">Gitpod Pricing</Link>, <a href=
-    "https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces" target="_blank">Codespaces Pricing.</a></>,
+    figFootnote: <>Compared resources for 100 active hours at $9/month. Last verified 25 Sep 2020. Sources: <Link to="/pricing/">Gitpod Pricing</Link>, <a href=
+    "https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces" target="_blank">Codespaces Pricing</a>.</>,
   },
   {
     id: 'open-source',
