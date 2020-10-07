@@ -35,7 +35,7 @@ const StyledSpeedComparison = styled.div`
     }
 
     .footnote {
-        bottom: -5rem;
+        bottom: -3rem;
     }
   }
 
@@ -138,16 +138,14 @@ const SpeedComparison = () => (
   <StyledSpeedComparison>
     <div className="mark mark--2">
       <div className="mark__title footnote">
-        Open
-        <br />
-        Project
+        Click
       </div>
       <div className="item item--1">
         <h4>Gitpod</h4>
         <div className="bar-container">
           <div className="bar bar--gitpod">
-            <div className="bar--gitpod-1"></div>
-            <div className="bar--gitpod-2 bar--time">&lt;1 min</div>
+            <div className="bar--gitpod-1" title="Boot Environment & Load UI (< 1 min)"></div>
+            <div className="bar--gitpod-2 bar--time">&lt; 1 min</div>
           </div>
         </div>
       </div>
@@ -155,8 +153,8 @@ const SpeedComparison = () => (
         <h4>Codespaces</h4>
         <div className="bar-container">
           <div className="bar bar--codespaces">
-            <div className="bar--codespaces-1">Loading</div>
-            <div className="bar--codespaces-2">Project Build</div>
+            <div className="bar--codespaces-1" title="Boot Environment & Load UI (> 5 min)">Load</div>
+            <div className="bar--codespaces-2" title="Build Project (> 10 min)">Build Project</div>
             <div className="bar--codespaces-3 bar--time">&gt; 15 min</div>
           </div>
         </div>
