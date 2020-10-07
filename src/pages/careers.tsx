@@ -131,28 +131,8 @@ const jobs: ExpandableJobProps[] = [
             }
         ],
         textAfterTheLists: 'We celebrate diversity, and we are committed to an equal and inclusive employment environment.',
-    },
-    {
-        title: 'UX Developer',
-        intro: 'Gitpod provides ready-to-code development environments for professional software engineering teams. We set out to change how developers work by eliminating tedious and repetitive configuration of local machines and replacing it with a fully integrated, cloud-based solution. Gitpod is the missing piece in a modern DevOps toolchain.',
-        paragraphs: `As a UX Developer, you will take care of the UI/UX design and development of Gitpod. You will become an essential part of a cross-functional team and directly work together with product management, development, and marketing.`,
-        lists: [
-            {
-                title: 'What you will do:',
-                items: ['Design, prototype, and iterate on the UX of new features and refresh existing UX.', 'Communicate design solutions through wireframes, mockups, and interactive prototypes.', 'Implement mockups using HTML and TypeScript/JavaScript.', 'Work closely with engineering and be the "go-to" person when user interface designs require clarification or change.']
-            },
-            {
-                title: 'What we are looking for:',
-                items: ['3+ years of experience designing UI / UX and web development (preferably in a B2B SaaS space).', 'Solid knowledge of developer workflows and tools.', 'A team player who can also work independently.', 'A curious mindset with a drive to learn and grow new skills.']
-            },
-            {
-                title: 'Your benefits:',
-                items: ['Space for creativity - feel free to create the non-existing.', 'Collaborate with a highly motivated team with a strong technical background', 'Flexible working hours.', 'Work remotely from Germany or France, or the office in Kiel (Germany).']
-            }
-        ],
-        textAfterTheLists: 'We celebrate diversity, and we are committed to an equal and inclusive employment environment.',
         rendered: true
-    }
+    },
 ]
 
 const Careers = () => (
