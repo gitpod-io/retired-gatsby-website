@@ -397,7 +397,6 @@ export default `
     table {
         border: 1px solid ${borders.light};
         border-collapse: collapse;
-        letter-spacing: 1px;
         margin: 0 auto;
         font-size: 1.5rem;
         width: 100%;
@@ -459,11 +458,11 @@ export default `
     }
 
     .footnote {
-        font-size: 79%;
+        font-size: 1.3rem;
         color: ${colors.textLight};
 
         @media (max-width: 800px) {
-            font-size: 76%;
+            font-size: 1.2rem;
         }
 
         a {
