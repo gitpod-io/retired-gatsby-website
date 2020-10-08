@@ -24,7 +24,7 @@ export const features: FeatureCardProps[] = [
       </>
     ),
     Figure: SpeedComparison,
-    figFootnote: 'Compared start-up time until ready-to-code for https://github.com/microsoft/vscode. Last verified 25 Sep 2020.'
+    figFootnote: 'Compared start-up time until ready-to-code for https://github.com/gitpod-io/vscode. Last verified 25 Sep 2020.'
   },
   {
     id: 'resource-efficient',
