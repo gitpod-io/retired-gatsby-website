@@ -112,22 +112,21 @@ const features: FeatureItemProps[] = [
 
 const jobs: ExpandableJobProps[] = [
     {
-        title: 'Developer Tools Engineer',
+        title: 'Platform Security Engineer',
         intro: 'If you were ever frustrated with a development tool you used and decided to build a better one yourself, this offer is for you.',
-        paragraphs: `We at TypeFox specialize in building tools and we are looking to expand our team. Our mission is to make software development fun and remove all tedious friction. We are a highly motivated team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.
-        What is exciting about tools is that your expertise benefits software developers as well as experts in many other fields. This includes electrical engineering, data science, mechanical engineering, healthcare, aerospace, insurance, finance, and many more. TypeFox helps customers from all over the world.`,
+        paragraphs: `We at Gitpod specialize in building tools and we are looking to expand our team. Our mission is to make software development fun and remove all tedious friction. We are a highly motivated team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.`,
         lists: [
             {
                 title: 'What you will do:',
-                items: ['Build desktop and cloud-based tools using Go, TypeScript, and Java.', 'Create, use, and dog-food cutting-edge technology.', 'Work with communities, users, and clients.']
+                items: ['Architect and develop the containerized platform powering Gitpod.', 'Create, use, and dog-food cutting-edge technology.', 'Work with communities, users, and customers.']
             },
             {
                 title: 'What you should bring:',
-                items: ['Four years or more of experience in software engineering.', 'Ability to work independently and in teams.', 'Desire to discover and learn.']
+                items: ['Production software development experience in a statically-typed language, preferably Golang/Typescript as well as K8s and cloud providers (GCP, AWS or Azure).', 'Worked with containers such as Docker, Containerd.', 'Aptitude for diagnosing complex problems in high-throughput web applications and network services.', 'Solid understanding of Linux systems and networking.']
             },
             {
                 title: 'We offer:',
-                items: ['Space for creativity - feel free to create the non-existing.', 'Collaborate with a highly motivated team with a strong technical background', 'Flexible working hours.', 'Work remotely from Germany or France, or the office in Kiel (Germany).']
+                items: ['Space for creativity - feel free to create the non-existing.', 'Collaborate with a highly motivated team with a strong technical background.', 'Flexible working hours.', 'Work remotely.']
             }
         ],
         textAfterTheLists: 'We celebrate diversity, and we are committed to an equal and inclusive employment environment.',
