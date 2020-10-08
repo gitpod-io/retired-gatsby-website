@@ -401,3 +401,8 @@
   from = "/docs/vue-in-gitpod"
   to = "/docs/languages/vue/"
   status = 301
+
+[[redirects]]
+  from = "/blog/gitlab-integration/+"
+  to = "/blog/gitlab-integration/"
+  status = 301
