@@ -6,7 +6,7 @@ title: Native GitLab Integration
 image: /teaser-gitlab-cover.png
 ---
 
-At Gitpod we want to make developers’ lives easier. Starting automated dev environments for your daily coding tasks is already very easy: Just prefix your repository URL with `gitpod.io/#` and you are ready to go. To make this even better, you can install a browser extension which adds a convenient button to any GitLab, GitHub, or Bitbucket repository that lets you launch a Gitpod workspace with one click. 
+At Gitpod we want to make developers’ lives easier. Starting automated dev environments for your daily coding tasks is already very easy: Just prefix your repository URL with `gitpod.io/#` and you are ready to go. To make this even better, you can install a browser extension which adds a convenient button to any GitLab, GitHub, or Bitbucket repository that lets you launch a Gitpod workspace with one click.
 
 Recently we asked ourselves how we could streamline the integration with your daily routine even more. Today, we are super excited to share that we’ve partnered with GitLab and built a [native Gitpod integration in GitLab’s UI](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/37985).
 
@@ -21,7 +21,7 @@ Until now GitLab users would set up and maintain a single dev environment on the
 
 Why not automate the provisioning of dev environments? Teams should be able to spin up fresh environments for each new task without waiting or any manual steps involved.
 
-GitLab and Gitpod started a partnership to bring Gitpod's ready-to-code dev environments to GitLab. As a first result of this collaboration you can now launch cloud-based dev environments with one click directly from gitlab.com (even without the Gitpod browser extension). 
+GitLab and Gitpod started a partnership to bring Gitpod's ready-to-code dev environments to GitLab. As a first result of this collaboration you can now launch cloud-based dev environments with one click directly from gitlab.com (even without the Gitpod browser extension).
 
 ![Gitpod button on GitLab project page](/gitlab-integration/gitpod-button-on-gitlab.png)
 
@@ -32,7 +32,7 @@ GitLab’s credo “Everyone can contribute” is a perfect fit for Gitpod becau
 
 GitLab’s engineers have worked on lowering the barrier to contributions on GitLab itself through a comprehensive [contribution guide](https://about.gitlab.com/community/contribute/) and even a [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit) that sets up your dev environment on your machine. But still, running the GDK installer takes at least 30 minutes to download and install dependencies, clone the GitLab repository, and start all services you need like the database, a webserver, etc.
 
-We are currently helping the GitLab team [to build a fully-automated Gitpod configuration for the GitLab source code](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/43103). This makes contributing to the GitLab source code itself as easy as clicking a button. Instead of waiting half an hour for a bunch of libs and tools to get installed, with Gitpod you are productive within just a few minutes. Once this configuration is merged, you will be able to just click on the Gitpod button of the [GitLab repository](https://gitlab.com/gitlab-org/gitlab), and everything will be set up for your first GitLab contribution. 
+We are currently helping the GitLab team [to build a fully-automated Gitpod configuration for the GitLab source code](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/43103). This makes contributing to the GitLab source code itself as easy as clicking a button. Instead of waiting half an hour for a bunch of libs and tools to get installed, with Gitpod you are productive within just a few minutes. Once this configuration is merged, you will be able to just click on the Gitpod button of the [GitLab repository](https://gitlab.com/gitlab-org/gitlab), and everything will be set up for your first GitLab contribution.
 
 [![GitLab integration quote](/gitlab-integration/gitlab-integration-quote.png)](https://gitlab.com/gitlab-org/gitlab-development-kit/-/issues/1076#note_419638250)
 

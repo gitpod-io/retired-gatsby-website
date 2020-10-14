@@ -12,7 +12,7 @@ export const features: FeatureCardProps[] = [
     text: (
       <>
         <p>
-          Gitpod removes long init and build times by continuously pre-building workspaces for your project. Thereby it allows you to start coding or debugging immediately, from any context, at any time. 
+          Gitpod removes long init and build times by continuously pre-building workspaces for your project. Thereby it allows you to start coding or debugging immediately, from any context, at any time.
         </p>
         <p>
           Simply add your build command into a .gitpod.yml file and let Gitpod do the heavy-lifting. Once you’ve experienced the freedom of
