@@ -112,21 +112,39 @@ const features: FeatureItemProps[] = [
 
 const jobs: ExpandableJobProps[] = [
     {
-        title: 'Platform Security Engineer',
-        intro: 'If you were ever frustrated with a development tool you used and decided to build a better one yourself, this offer is for you.',
-        paragraphs: `We at Gitpod specialize in building tools and we are looking to expand our team. Our mission is to make software development fun and remove all tedious friction. We are a highly motivated team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.`,
+        title: 'Senior DevOps Engineer',
+        intro: 
+`If you were ever frustrated with a development tool you used and decided to build a better one yourself, this offer is for you.`,
+        paragraphs: 
+`We at Gitpod specialize in building tools and we are looking to expand our team. 
+Our mission is to make software development fun and remove all tedious friction. We are a highly motivated team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.`,
         lists: [
             {
                 title: 'What you will do:',
-                items: ['Architect and develop the containerized platform powering Gitpod.', 'Create, use, and dog-food cutting-edge technology.', 'Work with communities, users, and customers.']
+                items: [
+                    'Architect and develop observability measures for the product (metrics, logging, tracing, alerting).', 
+                    'Operate and automate production, staging and preview deployments including gradual feature rollouts.', 
+                    'Establish best practices for operating production SaaS systems.',
+                    'Support clients with operating Gitpod Self-Hosted.']
             },
             {
                 title: 'What you should bring:',
-                items: ['Production software development experience in a statically-typed language, preferably Golang/Typescript as well as K8s and cloud providers (GCP, AWS or Azure).', 'Worked with containers such as Docker, Containerd.', 'Aptitude for diagnosing complex problems in high-throughput web applications and network services.', 'Solid understanding of Linux systems and networking.']
+                items: [
+                    'Ability to deploy and manage applications with Kubernetes and Helm Charts.',
+                    'Experience in automating infrastructure using Terraform.',
+                    'Ability to understand code written in Go, Node.js (ideally TypeScript) and bash.',
+                    'Experience with industry standard observability tools (Prometheus, Jaeger / OpenTracing, etc.).',
+                    'Experience with cloud providers (AWS, GCP, Azure).',
+                ]
             },
             {
                 title: 'We offer:',
-                items: ['Space for creativity - feel free to create the non-existing.', 'Collaborate with a highly motivated team with a strong technical background.', 'Flexible working hours.', 'Work remotely.']
+                items: [
+                    'Space for creativity - feel free to create the non-existing.', 
+                    'Collaborate with a highly motivated team with a strong technical background.', 
+                    'Flexible working hours.', 
+                    'Work remotely.'
+                ]
             }
         ],
         textAfterTheLists: 'We celebrate diversity, and we are committed to an equal and inclusive employment environment.',
