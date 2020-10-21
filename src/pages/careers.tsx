@@ -113,17 +113,17 @@ const features: FeatureItemProps[] = [
 const jobs: ExpandableJobProps[] = [
     {
         title: 'Senior DevOps Engineer',
-        intro: 
+        intro:
 `If you were ever frustrated with a development tool you used and decided to build a better one yourself, this offer is for you.`,
-        paragraphs: 
-`We at Gitpod specialize in building tools and we are looking to expand our team. 
+        paragraphs:
+`We at Gitpod specialize in building tools and we are looking to expand our team.
 Our mission is to make software development fun and remove all tedious friction. We are a highly motivated team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.`,
         lists: [
             {
                 title: 'What you will do:',
                 items: [
-                    'Architect and develop observability measures for the product (metrics, logging, tracing, alerting).', 
-                    'Operate and automate production, staging and preview deployments including gradual feature rollouts.', 
+                    'Architect and develop observability measures for the product (metrics, logging, tracing, alerting).',
+                    'Operate and automate production, staging and preview deployments including gradual feature rollouts.',
                     'Establish best practices for operating production SaaS systems.',
                     'Support clients with operating Gitpod Self-Hosted.']
             },
@@ -140,9 +140,9 @@ Our mission is to make software development fun and remove all tedious friction.
             {
                 title: 'We offer:',
                 items: [
-                    'Space for creativity - feel free to create the non-existing.', 
-                    'Collaborate with a highly motivated team with a strong technical background.', 
-                    'Flexible working hours.', 
+                    'Space for creativity - feel free to create the non-existing.',
+                    'Collaborate with a highly motivated team with a strong technical background.',
+                    'Flexible working hours.',
                     'Work remotely.'
                 ]
             }
