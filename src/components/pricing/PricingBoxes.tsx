@@ -56,7 +56,7 @@ const selfHostedPlans: PricingBoxProps[] = [
     features: ['Unlimited Use', 'Private & Public Repos'],
     price: (
       <>
-        {isEurope() ? '€0' : '$0'} <span>/ month</span>
+        {isEurope() ? '€0' : '$0'}
       </>
     ),
     btnText: 'Install Now',
@@ -70,7 +70,7 @@ const selfHostedPlans: PricingBoxProps[] = [
     features: ['Unlimited Prebuilds', 'Shared Workspaces', 'Snapshots', 'Admin Dashboard', 'Unlimited Use', 'Private & Public Repos'],
     price: (
       <>
-        {isEurope() ? '€18' : '$20'} <span>/ month</span>
+        {isEurope() ? '€18' : '$20'}
       </>
     ),
     duration: 'Per user',
@@ -88,11 +88,10 @@ const plans: PricingBoxProps[] = [
     price: (
       <>
         {isEurope() ? '€0' : '$0'}
-        <span> / month</span>
       </>
     ),
-    duration: '50 hours / month',
-    features: ['Public Repos', 'Private Repos (30-Day Trial)']
+    perUserMonth: true,
+    features: [<strong>50 hours/month</strong>, 'Public Repos', 'Private Repos (30-Day Trial)']
   },
   {
     title: 'Personal',
@@ -100,11 +99,11 @@ const plans: PricingBoxProps[] = [
     price: (
       <>
         {isEurope() ? '€8' : '$9'}
-        <span> / month</span>
       </>
     ),
-    duration: '100 hours / month',
+    perUserMonth: true,
     features: [
+      <strong>100 hours / month</strong>,
       'Private & Public Repos',
       <span className="span">
         4 Parallel Workspaces <PopOver description="The maximum number of workspaces a user can run at the same time" />
@@ -122,11 +121,11 @@ const plans: PricingBoxProps[] = [
     price: (
       <>
         {isEurope() ? '€23' : '$25'}
-        <span> / month</span>
       </>
     ),
-    duration: 'Unlimited hours',
+    perUserMonth: true,
     features: [
+      <strong>Unlimited hours</strong>,
       'Private & Public Repos',
       <span className="span">
         8 Parallel Workspaces <PopOver description="The maximum number of workspaces a user can run at the same time" />
@@ -150,11 +149,11 @@ const plans: PricingBoxProps[] = [
     price: (
       <>
         {isEurope() ? '€35' : '$39'}
-        <span> / month</span>
       </>
     ),
-    duration: 'Unlimited hours',
+    perUserMonth: true,
     features: [
+      <strong>Unlimited hours</strong>,
       'Private & Public Repos',
       <span className="span">
         16 Parallel Workspaces <PopOver description="The maximum number of workspaces a user can run at the same time" />
