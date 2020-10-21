@@ -19,7 +19,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     margin: 2rem 1rem;
     padding: 3rem 2.8rem;
     font-size: 95%;
-    min-height: ${({ isTitleOutside }) => (isTitleOutside ? '42rem' : '48rem')};
+    min-height: ${({ isTitleOutside }) => (isTitleOutside ? '42rem' : '51rem')};
     min-width: 20rem;
     max-width: 26rem;
     width: 25%;
@@ -261,6 +261,7 @@ export interface PricingBoxProps {
   info?: string
   areFeaturesBold?: boolean
   boldFeaturesCount?: number
+  perUserMonth?: boolean
 }
 
 const PricingBox: React.SFC<PricingBoxProps> = ({
@@ -284,7 +285,8 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
   isTitleOutside,
   info,
   areFeaturesBold,
-  boldFeaturesCount = 0
+  boldFeaturesCount = 0,
+  perUserMonth
 }) => (
   <StyledPricingBox
     transform={transform}
@@ -298,6 +300,7 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
     <h4>{title}</h4>
     {img ? img : null}
     {price ? <div className="price">{price}</div> : null}
+    { perUserMonth ? <div className="duration" style={{fontWeight: 400}}>per user/month</div> : null }
     {duration ? <div className="duration">{duration}</div> : null}
     {feature ? <div className="feature">{feature}</div> : null}
     {features && features.length ? (
