@@ -59,6 +59,7 @@ export const features: FeatureCardProps[] = [
         </ul>
       </>
     ),
-    src: GitPlatforms
+    src: GitPlatforms,
+    alt: 'Git Platforms'
   }
 ]
