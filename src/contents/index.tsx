@@ -36,6 +36,7 @@ export const features: FeatureCardProps[] = [
   {
     id: 'teams-together',
     src: Collaboration,
+    alt: 'A code review within Gitpod',
     title: (
       <strong>
         Where Teams
