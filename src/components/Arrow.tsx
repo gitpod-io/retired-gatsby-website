@@ -8,7 +8,7 @@ const StyledArrow = styled.svg`
     display: inline-block;
     fill: ${colors.offWhite1};
     transition: all .2s;
-    height: 4rem;
+    height: 4.5rem;
 `
 
 interface ArrrowProps {

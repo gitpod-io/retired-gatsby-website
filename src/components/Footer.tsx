@@ -62,11 +62,11 @@ const StyledFooter = styled.footer`
             color: ${colors.link};
 
             svg {
-                fill: ${colors.link};
+                fill: ${colors.text};
             }
 
             .mail {
-                stroke: ${colors.link};
+                stroke: ${colors.text};
             }
         }
 
