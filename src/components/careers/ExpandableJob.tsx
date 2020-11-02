@@ -80,7 +80,7 @@ const ExpandableJob = ({ title, intro, paragraphs, lists, textAfterTheLists, ren
         <StyledExpandableJob>
             <button onClick={toggleIsRendered}>
                <Arrow
-                styles={{ transform: isRendered ? 'rotate(-90deg)' : 'rotate(90deg)', fill: isRendered ? colors.text : '' }}
+                styles={{ transform: isRendered ? 'rotate(-90deg)' : 'rotate(90deg)' }}
                />
             </button>
             <h3>{title}</h3>
