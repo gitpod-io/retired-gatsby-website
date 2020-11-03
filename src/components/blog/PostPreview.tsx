@@ -11,7 +11,7 @@ const StyledPostPreview = styled.div`
     border-radius: 3px;
     max-width: 35rem;
     min-height: 60rem;
-    margin-bottom: 5rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -75,7 +75,7 @@ const PostPreview: React.SFC<PostPreviewProps> = (props) => {
     const date = new Date(Date.parse(b.frontmatter.date));
     const authors = parseAuthors(props.post.node.frontmatter.author);
     return (
-        <Link to={b.fields.slug}>
+        <Link to={b.fields.slug} style={{display: "block", marginBottom: '5rem'}}>
             <StyledPostPreview>
                 <div
                     aria-hidden={true}
