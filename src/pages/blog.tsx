@@ -6,6 +6,7 @@ import { sizes } from '../styles/variables'
 import { graphql } from 'gatsby'
 import PostPreview from '../components/blog/PostPreview'
 import BackToTopButton from '../components/BackToTopButton'
+import { Posts } from '../components/blog/Posts'
 // import NewsletterForm from '../components/NewsletterForm'
 
 const StyledBlogPage = styled.div`
@@ -29,17 +30,6 @@ const StyledBlogPage = styled.div`
             padding: 5rem 0;
         }
     }
-
-    .posts {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        @media (max-width: 1140px) {
-            justify-content: space-around;
-        }
-    }
-
 `
 
 export const query = graphql`
@@ -121,14 +111,14 @@ const BlogPage: React.SFC<BlogPageProps> = (props) => {
                 <section className="post">
                     <div className="row">
                         <h1 className="visually-hidden">Discover Articles and Tutorials about Gitpod</h1>
-                        <div className="posts">
+                        <Posts>
                             {posts.map(
                                 post => <PostPreview
                                     key={post.node.fields.slug}
                                     post={post}
                                 />
                             )}
-                        </div>
+                        </Posts>
                     </div>
                 </section>
 

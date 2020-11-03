@@ -68,7 +68,7 @@ export const allAuthors: { [idx: string]: Author } = {
         name: "Nisar Hassan",
         socialProfiles: {
             github: 'nisarhassan12',
-            twitter: 'nisarhassan',
+            twitter: 'nisarhassan12',
             linkedin: 'nisar-hassan-naqvi-413466199'
         },
         description: 'Nisar is a web developer who creates UX rich performant websites and web applications.'
