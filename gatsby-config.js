@@ -108,6 +108,13 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-P453T6T",
+        includeInDevelopment: false,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-sitemap',
       options: {
         exclude: ['/github-teacher-toolbox']
