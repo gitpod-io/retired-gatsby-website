@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import { sizes } from '../../styles/variables'
 import { projects } from '../../contents/projects'
 import Project from './Project'
-import PrefixInput from './PrefixInput'
+import Difference from '../gitpod-vs-codespaces/Difference'
 
 const StyledGetStarted = styled.div`
   /* ------------------------------------------- */
@@ -12,25 +12,6 @@ const StyledGetStarted = styled.div`
   /* ------------------------------------------- */
 
   .get-started {
-    padding-top: 0;
-    text-align: center;
-
-    h3 {
-      font-weight: 400;
-    }
-
-    &__prefix {
-      display: flex;
-      margin-bottom: 12rem;
-      text-align: left;
-    }
-
-    h2 + p {
-      font-size: 2rem;
-    }
-
-    /* ----- Projects ----- */
-
     &__projects {
       display: flex;
       justify-content: center;
@@ -55,35 +36,33 @@ const StyledGetStarted = styled.div`
 `
 
 const GetStarted = () => (
-  <StyledGetStarted className="row pattern">
-    <section className="get-started" id="get-started">
-      <h2>
-        <strong>Get Started</strong>
-      </h2>
-      <p>
-        Prefix any GitLab, GitHub, or Bitbucket URL with <strong>gitpod.io/#</strong>
-      </p>
-
-      <div className="get-started__prefix">
-        <PrefixInput />
-      </div>
-
-      <h3>Or Try an Example Project</h3>
-
-      <div className="get-started__projects">
-        {projects.map((project, i) => (
-          <Project
-            key={i}
-            image={project.image}
-            title={project.title}
-            githubUrl={project.githubUrl}
-            gitlabUrl={project.gitlabUrl}
-            bitbucketUrl={project.bitbucketUrl}
-          />
-        ))}
-      </div>
+    <section style={{ padding: '0' }}>
+        <Difference
+            spacing="small"
+            title="Get Started"
+        />
+        <section
+            className="get-started"
+            id="get-started"
+            style={{ padding: '8rem 0' }}
+        >
+            <StyledGetStarted className="row">
+                <h3>Or Try an Example Project</h3>
+                <div className="get-started__projects">
+                    {projects.map((project, i) => (
+                        <Project
+                            key={i}
+                            image={project.image}
+                            title={project.title}
+                            githubUrl={project.githubUrl}
+                            gitlabUrl={project.gitlabUrl}
+                            bitbucketUrl={project.bitbucketUrl}
+                        />
+                    ))}
+                </div>
+            </StyledGetStarted>
+        </section>
     </section>
-  </StyledGetStarted>
 )
 
 export default GetStarted

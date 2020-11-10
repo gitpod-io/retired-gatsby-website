@@ -6,7 +6,7 @@ import { colors, borders } from '../../styles/variables'
 const StyledTextFeature = styled.div`
   max-width: 600px;
   padding: 4rem 6rem;
-  background: ${colors.offWhite};
+  background: ${colors.white};
   border: ${borders.light};
   border-radius: 3px;
   max-width: 450px;
