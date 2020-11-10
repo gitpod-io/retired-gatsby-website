@@ -233,7 +233,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
                 </span>
               }
               shareButtons={
-                <SharePost 
+                <SharePost
                     title={title}
                     authors={authors}
                     url={`https://www.gitpod.io${data.markdownRemark.fields.slug}`}
@@ -245,7 +245,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
               <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
             </div>
 
-            <SharePost 
+            <SharePost
                 title={title}
                 authors={authors}
                 url={`https://www.gitpod.io${data.markdownRemark.fields.slug}`}
