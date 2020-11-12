@@ -39,5 +39,5 @@ Follow the guide linked above and:
 
    - set "Scopes" to `api`, `read_user` and `read_repository`.
    - copy the following values and configure them in `values.yaml`:
-      - `clientId` is the "Application ID" from the GitLab OAuth appication
-      - `clientSecret` is the "Secret" from the GitLab OAuth appication
+      - `clientId` is the "Application ID" from the GitLab OAuth application
+      - `clientSecret` is the "Secret" from the GitLab OAuth application
