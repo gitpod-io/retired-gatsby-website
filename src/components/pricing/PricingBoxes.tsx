@@ -73,7 +73,7 @@ const selfHostedPlans: PricingBoxProps[] = [
         {isEurope() ? '€18' : '$20'}
       </>
     ),
-    duration: 'Per user',
+    duration: 'Per user/month',
     btnText: 'Request license',
     link: '/enterprise-license/',
     areFeaturesBold: true,
@@ -103,7 +103,7 @@ const plans: PricingBoxProps[] = [
     ),
     perUserMonth: true,
     features: [
-      <strong>100 hours / month</strong>,
+      <strong>100 hours/month</strong>,
       'Private & Public Repos',
       <span className="span">
         4 Parallel Workspaces <PopOver description="The maximum number of workspaces a user can run at the same time" />
