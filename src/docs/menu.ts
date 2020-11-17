@@ -202,6 +202,10 @@ export const MENU: MenuEntry[] = [
                 "languages/vue"
             ),
             M(
+                "Svelte",
+                "languages/svelte"
+            ),
+            M(
                 "Scala",
                 "languages/scala"
             ),
