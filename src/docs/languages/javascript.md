@@ -71,30 +71,7 @@ and then search for `eslint` in the extensions tab and then install it from ther
 
 ## Making Live Reload work in Rollup based projects like Svelte
 
-If your porject uses Rollup as a module bundler then in order for live reload to work in Gitpod you'll have to add a bit of configuration as specified below:
-
-- Setup an environment variable called `CLIENT_URL` in the `.gitpod.yml` config file as shown below please make sure that you set it up before the task which starts the dev server(which is `npm run dev` in this case):
-
-  ```bash
-  - init: npm install
-      command: |
-        export CLIENT_URL="$(gp url 35729)/livereload.js?snipver=1&port=443"
-        npm run dev
-  ```
-
-- Pass the value of `CLIENT_URL` environment variable to the `rollup-plugin-livereload` in `rollup-config.js` inside of the `plugins` array as shown:
-  ```js
-  plugins: [
-    !production &&
-      livereload({
-        watch: 'public',
-        clientUrl: process.env.CLIENT_URL
-      })
-  ]
-  ```
-  This will set `CLIENT_URL` to the workspace url of port `35729` (default port for livereload in Gitpod).
-
-https://github.com/gitpod-io/sveltejs-template repo is a working example of the config described above <span aria-hidden="true">👆</span>.
+This section was moved into [Svelte guide](/docs/languages/svelte/).
 
 ## Further Reading
 
