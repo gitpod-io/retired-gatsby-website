@@ -151,10 +151,10 @@ const StyledBlogTemplate = styled.div`
 
 const Wrapper = styled.div`
   .pattern {
-      &::after {
-          top: -25vh;
-          max-height: 100vh;
-      }
+    &::after {
+      top: -25vh;
+      max-height: 100vh;
+    }
   }
 `
 
@@ -171,7 +171,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
   let start = 0
   let end = 3
 
-  if(currentIndex < 3) {
+  if (currentIndex < 3) {
     start += currentIndex + 1
     end += currentIndex + 1
   }
@@ -234,10 +234,10 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
               }
               shareButtons={
                 <SharePost
-                    title={title}
-                    authors={authors}
-                    url={`https://www.gitpod.io${data.markdownRemark.fields.slug}`}
-                    dontRenderHeading={true}
+                  title={title}
+                  authors={authors}
+                  url={`https://www.gitpod.io${data.markdownRemark.fields.slug}`}
+                  dontRenderHeading={true}
                 />
               }
             />
@@ -245,12 +245,7 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
               <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
             </div>
 
-            <SharePost
-                title={title}
-                authors={authors}
-                url={`https://www.gitpod.io${data.markdownRemark.fields.slug}`}
-            />
-
+            <SharePost title={title} authors={authors} url={`https://www.gitpod.io${data.markdownRemark.fields.slug}`} />
           </StyledBlogTemplate>
         </div>
       </Wrapper>

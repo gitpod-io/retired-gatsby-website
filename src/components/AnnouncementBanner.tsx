@@ -90,19 +90,19 @@ const StyledAnnouncementBanner = styled.div`
   .cross {
     stroke: ${colors.textDark};
   }
-`;
+`
 
 function markWasShown(): void {
-    if (typeof localStorage !== 'undefined') {
-        localStorage.setItem('wasShown', 'true');
-    }
+  if (typeof localStorage !== 'undefined') {
+    localStorage.setItem('wasShown', 'true')
+  }
 }
 
 function wasShown(): boolean {
-    if (typeof localStorage !== 'undefined') {
-        return localStorage.getItem('wasShown')
-    }
-    return false;
+  if (typeof localStorage !== 'undefined') {
+    return localStorage.getItem('wasShown')
+  }
+  return false
 }
 
 const AnnoucementBanner = () => {
@@ -114,7 +114,7 @@ const AnnoucementBanner = () => {
       bannerRef.current.style.marginTop = `-${bannerRef.current.offsetHeight}px`
     }
 
-    markWasShown(true);
+    markWasShown(true)
 
     setTimeout(() => {
       if (null !== bannerRef.current) {
@@ -124,16 +124,16 @@ const AnnoucementBanner = () => {
   }
 
   useEffect(() => {
-    const wasAlreadyShown = wasShown();
+    const wasAlreadyShown = wasShown()
     if (wasAlreadyShown) {
       if (null !== bannerRef.current) {
-        bannerRef.current.style.display = 'none';
+        bannerRef.current.style.display = 'none'
       }
     }
   })
 
   return (
-    <StyledAnnouncementBanner ref={bannerRef} style={{ display: wasShown() ? 'none' : 'inline'}}>
+    <StyledAnnouncementBanner ref={bannerRef} style={{ display: wasShown() ? 'none' : 'inline' }}>
       <div className="row">
         <div className="text">
           <strong className="announcement">New Announcement</strong>

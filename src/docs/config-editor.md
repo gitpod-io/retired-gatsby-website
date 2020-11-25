@@ -3,8 +3,9 @@
 Gitpod uses [Theia](https://github.com/eclipse-theia/theia) as its IDE which can be configured using VS Code setting files.
 
 Workspace settings are stored in a file within your project. They can reside either in:
- - `$GITPOD_REPO_ROOT/.theia/settings.json` or
- - `$GITPOD_REPO_ROOT/.vscode/settings.json`
+
+- `$GITPOD_REPO_ROOT/.theia/settings.json` or
+- `$GITPOD_REPO_ROOT/.vscode/settings.json`
 
 User settings override workspace settings and can be configured through the preferences editor, which you can open through the menu (`File -> Preferences`).
 
@@ -19,7 +20,7 @@ File `settings.json` follows JSON syntax as follows:
   // Comment
   "component.configuration": "value",
   "[language]": {
-       "component.configuration": "value"
+    "component.configuration": "value"
   }
 }
 ```
@@ -32,7 +33,7 @@ Example of this configuration:
   "editor.renderWhitespace": "all",
   // Enable wordWrap for markdown files
   "[markdown]": {
-       "editor.wordWrap": "on"
-   }
+    "editor.wordWrap": "on"
+  }
 }
 ```

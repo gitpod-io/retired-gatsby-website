@@ -6,73 +6,71 @@ import SubmissionSucess from '../components/SubmissionSucess'
 import { Email } from '../functions/submit-form'
 
 const StyledContactPage = styled.div`
-    /* --------------------------------------------- */
-    /* ----- Form ----- */
-    /* --------------------------------------------- */
+  /* --------------------------------------------- */
+  /* ----- Form ----- */
+  /* --------------------------------------------- */
 
-    .form {
-        padding: 10rem 0 8rem;
-        margin: 0 auto;
-        max-width: 650px;
+  .form {
+    padding: 10rem 0 8rem;
+    margin: 0 auto;
+    max-width: 650px;
 
-        &__container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        &__input {
-            display: block;
-            width: 100%;
-            padding: 1rem 2rem;
-            border: ${borders.light1};
-            border-radius: 3px;
-
-
-            &:not(:last-child) {
-                margin-bottom: 2rem;
-            }
-
-            &--half {
-                @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
-                    width: 48%;
-                    &:first-of-type {
-                        margin-right: 4%;
-                    }
-                }
-            }
-        }
-
-        &__textarea {
-            width: 100%;
-            padding: 1rem 2rem;
-            margin-bottom: 2rem;
-            height: 22rem;
-            border: ${borders.light1};
-            border-radius: 3px;
-
-        }
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
     }
 
-    select {
+    &__input {
+      display: block;
+      width: 100%;
+      padding: 1rem 2rem;
+      border: ${borders.light1};
+      border-radius: 3px;
+
+      &:not(:last-child) {
         margin-bottom: 2rem;
-        border-radius: 3px;
-        border: ${borders.light1};
-        color: inherit;
-        background-size: 1.2em auto, 100%;
-    }
+      }
 
-    .subject {
-        label {
-            display: block;
-            margin-bottom: 1rem;
+      &--half {
+        @media (min-width: calc(${sizes.breakpoints.md} + 1px)) {
+          width: 48%;
+          &:first-of-type {
+            margin-right: 4%;
+          }
         }
+      }
     }
 
-    .error {
-        color: red;
-        margin: 0 0 2rem;
-        width: 100%;
+    &__textarea {
+      width: 100%;
+      padding: 1rem 2rem;
+      margin-bottom: 2rem;
+      height: 22rem;
+      border: ${borders.light1};
+      border-radius: 3px;
     }
+  }
+
+  select {
+    margin-bottom: 2rem;
+    border-radius: 3px;
+    border: ${borders.light1};
+    color: inherit;
+    background-size: 1.2em auto, 100%;
+  }
+
+  .subject {
+    label {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .error {
+    color: red;
+    margin: 0 0 2rem;
+    width: 100%;
+  }
 `
 
 const subjects: string[] = [
@@ -145,13 +143,13 @@ export default function ContactPage(props: any) {
     }
 
     const email: Email = {
-        from: {
-            email: state.email,
-            name: state.name
-        },
-        subject: state.subject + '  (from ' + state.email + ')',
-        message: state.message
-    };
+      from: {
+        email: state.email,
+        name: state.name
+      },
+      subject: state.subject + '  (from ' + state.email + ')',
+      message: state.message
+    }
 
     fetch('/.netlify/functions/submit-form', {
       method: 'POST',
@@ -172,12 +170,7 @@ export default function ContactPage(props: any) {
           {state.messageSent ? (
             <SubmissionSucess />
           ) : (
-            <form
-              className="form"
-              method="POST"
-              name="Contact"
-              onSubmit={handleSubmit}
-            >
+            <form className="form" method="POST" name="Contact" onSubmit={handleSubmit}>
               <input type="hidden" name="form-name" value="contact" />
               <div style={{ visibility: 'hidden' }}>
                 <label>

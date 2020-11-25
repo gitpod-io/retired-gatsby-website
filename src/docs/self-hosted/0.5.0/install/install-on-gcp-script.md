@@ -26,6 +26,7 @@ docker run --rm -it \
 This will kickstart the installation process, log in with Google Cloud, and automatically set up your Gitpod deployment using [Terraform](https://www.terraform.io) and [Helm](https://helm.sh).
 
 ### Note:
+
 - This guide assumes you have the [docker](https://docs.docker.com/engine/install/) installed.
 
 - The local mount point `$PWD/gpinstall` will hold your Terraform config files. You can always modify them and re-run the install script in order to make changes to your Gitpod deployment.
@@ -35,17 +36,20 @@ This will kickstart the installation process, log in with Google Cloud, and auto
 Once the installation process is complete, the script will print the URL at which your Gitpod installation can be accessed.
 
 ## 3. Launch the first workspace
+
 Once finished, the installer will print the URL at which your Gitpod installation can be found. There you need to connect Gitpod to at least one Git provider:
-  - [Configure an OAuth application for GitLab](/docs/gitlab-integration/#oauth-application)
-  - [Configure an OAuth application for GitHub](/docs/github-integration/#oauth-application)
+
+- [Configure an OAuth application for GitLab](/docs/gitlab-integration/#oauth-application)
+- [Configure an OAuth application for GitHub](/docs/github-integration/#oauth-application)
 
 ## 4. Configure the Browser extension
 
 Afterwards you can jump right into your first workspace, by prefixing the repository URL with your Gitpod Self-Hosted URL.
 
 Examples:
- - GitLab: `<your-installation-url>/#https://gitlab.com/gitpod/spring-petclinic`
- - GitHub: `<your-installation-url>/#https://github.com/gitpod-io/spring-petclinic`
+
+- GitLab: `<your-installation-url>/#https://gitlab.com/gitpod/spring-petclinic`
+- GitHub: `<your-installation-url>/#https://github.com/gitpod-io/spring-petclinic`
 
 # Going further
 

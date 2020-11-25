@@ -1,6 +1,7 @@
 # Command Line Interface
 
 Gitpod supports a command line interface that is available in each workspace terminal called `gp`:
+
 ```text
 Command line interface for Gitpod
 
@@ -22,21 +23,26 @@ Use "gp [command] --help" for more information about a command.
 ```
 
 ## Init
+
 Gitpod workspaces can be configured - see [Configuring Workspaces](/docs/configuration/) for more details. `gp init` helps creating this configuration by guiding through this process and producing a `gitpod.yml` in the end (think `npm init`).
 
 ## Open
+
 Modern editors/IDE's support command line tooling to open a file (e.g. VS Code `code foo.txt`). In Gitpod this can be done using `gp open <filename>`.
 We have also added common aliases for `gp open`: `code` and `open`.
 
 ## Preview
+
 `gp preview` is similar to `gp open`, except that it does not open a file in the editor but a URL in a preview pane on the right.
 
 ## URL
+
 Gitpod workspaces can expose services to the internet. `gp url` provides the URL which points to a service served from a Gitpod workspace. For example `gp url 8080` prints the URL which points to the service listening on port 8080 in this current workspace.
 
 You can combine the `preview` and the `url` command to open a certain path instead of the default URL.
 
 For instance:
+
 ```sh
 gp preview $(gp url 3000)my/path/index.html
 ```
@@ -44,6 +50,7 @@ gp preview $(gp url 3000)my/path/index.html
 If you put this into the `.gitpod.yml` to open the a certain page on startup, don't forget to [ignore the default action](/docs/config-ports/) when the port opens.
 
 ## Forward Port
+
 In Gitpod services/servers running on a port need to be _exposed_ before they become accessible from the internet. This process only works with services listening on `0.0.0.0` and not just `localhost`.
 Sometimes it is not possible to make a server listen on `0.0.0.0`, e.g. because it is not your code and there are simply no means of configuration.
 

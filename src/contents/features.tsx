@@ -65,7 +65,10 @@ export const features: FeatureCardProps[] = [
     text: (
       <>
         <p>With Gitpod, you're always ready, even when your current workspace is occupied with work-in-progress.</p>
-        <p>Do code reviews, confirm a bugfix, debug someone's code, and update a maintenance branch - all in dedicated, self-contained browser tabs.</p>
+        <p>
+          Do code reviews, confirm a bugfix, debug someone's code, and update a maintenance branch - all in dedicated, self-contained
+          browser tabs.
+        </p>
       </>
     ),
     icon: (

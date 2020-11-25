@@ -5,6 +5,7 @@ subtitle: A Milestone for Automated Development Environments
 title: GitHub Codespaces, Welcome to the Party!
 image: /gh-cs-bg.jpg
 ---
+
 Today, GitHub announced the private beta of [GitHub Codespaces](https://github.com/features/codespaces), which provide container-based dev environments for GitHub projects. At Gitpod, we are building a similar solution, and while GitHub’s Codespaces don’t fully implement everything we do, they truly embrace the notion of dev environments as code.
 
 This is great news, because it really helps to explain why this is going to change professional software development entirely.
@@ -47,12 +48,11 @@ There have been attempts to automate dev environments in the past (e.g. Docker, 
 
 This has changed since, with VS Code, a web-technology based IDE has become so popular among developers. However, Microsoft has not open-sourced the browser version of VS Code. For GitHub, a Microsoft-owned company, this is obviously not an issue. For everyone else we have developed Eclipse [Theia](https://dev.to/svenefftinge/theia-1-0-finally-a-good-browser-ide-3ok0).
 
-Theia provides the same functionality as VS Code, even supports VS Code extensions, and comes with an architecture that allows everyone to customize the IDE easily. It is developed as a true open-source, vendor-neutral project at the Eclipse Foundation *) and is adopted by Google, IBM, RedHat, SAP, arm, Arduino and many more. Mike Milinkovich wrote about the [differences between Theia and VS Code](https://blogs.eclipse.org/post/mike-milinkovich/eclipse-theia-and-vs-code-differences-explained) recently.
+Theia provides the same functionality as VS Code, even supports VS Code extensions, and comes with an architecture that allows everyone to customize the IDE easily. It is developed as a true open-source, vendor-neutral project at the Eclipse Foundation \*) and is adopted by Google, IBM, RedHat, SAP, arm, Arduino and many more. Mike Milinkovich wrote about the [differences between Theia and VS Code](https://blogs.eclipse.org/post/mike-milinkovich/eclipse-theia-and-vs-code-differences-explained) recently.
 
 This new generation of Theia-based Web-IDEs go way beyond online-playgrounds which are barely sufficient for web development or quick prototypes. Today, we can finally run a professional IDE in a browser tab.
 
-<sub>*) To avoid misunderstandings: Theia has technically nothing in common with the classic Eclipse IDE, but is an independent project under the umbrella of the Eclipse Foundation.</sub>
-
+<sub>\*) To avoid misunderstandings: Theia has technically nothing in common with the classic Eclipse IDE, but is an independent project under the umbrella of the Eclipse Foundation.</sub>
 
 ### What About GitLab, Atlassian’s Bitbucket, and Other Git Hosting?
 

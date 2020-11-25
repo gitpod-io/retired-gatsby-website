@@ -61,11 +61,11 @@ In the terminal type
 
 A notification window will pop up asking you to either open the web app externally or in a view side-by-side to the editor area.
 
-![Running app in the Gitpod workspace](https://cdn-images-1.medium.com/max/3200/0*psT2Ar8PKkWYVpKV)*Running app in the Gitpod workspace*
+![Running app in the Gitpod workspace](https://cdn-images-1.medium.com/max/3200/0*psT2Ar8PKkWYVpKV)_Running app in the Gitpod workspace_
 
 ## **Bonus Points**
 
-Now you can start changing the application and of course committing to your repo. Also you should consider adding a *.gitpod* file to the root directory, so the build and dev server automatically startup next time you open a Gitpod workspace.
+Now you can start changing the application and of course committing to your repo. Also you should consider adding a _.gitpod_ file to the root directory, so the build and dev server automatically startup next time you open a Gitpod workspace.
 
 Here’s the contents:
 

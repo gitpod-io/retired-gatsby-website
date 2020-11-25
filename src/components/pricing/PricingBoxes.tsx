@@ -54,11 +54,7 @@ const selfHostedPlans: PricingBoxProps[] = [
     duration: 'Unlimited users',
     img: <object role="presentation" tabIndex={-1} data={Cloud} />,
     features: ['Unlimited Use', 'Private & Public Repos'],
-    price: (
-      <>
-        {isEurope() ? '€0' : '$0'}
-      </>
-    ),
+    price: <>{isEurope() ? '€0' : '$0'}</>,
     btnText: 'Install Now',
     btnBackground: true,
     link: '/self-hosted/#install',
@@ -68,11 +64,7 @@ const selfHostedPlans: PricingBoxProps[] = [
     title: 'Professional',
     img: <img alt="Rocket" src={Rocket} />,
     features: ['Unlimited Prebuilds', 'Shared Workspaces', 'Snapshots', 'Admin Dashboard', 'Unlimited Use', 'Private & Public Repos'],
-    price: (
-      <>
-        {isEurope() ? '€18' : '$20'}
-      </>
-    ),
+    price: <>{isEurope() ? '€18' : '$20'}</>,
     duration: 'Per user/month',
     btnText: 'Request license',
     link: '/enterprise-license/',
@@ -85,22 +77,14 @@ const plans: PricingBoxProps[] = [
   {
     title: 'Free',
     img: <object role="presentation" tabIndex={-1} data={IconOpenSource} />,
-    price: (
-      <>
-        {isEurope() ? '€0' : '$0'}
-      </>
-    ),
+    price: <>{isEurope() ? '€0' : '$0'}</>,
     perUserMonth: true,
     features: [<strong>50 hours/month</strong>, 'Public Repos', 'Private Repos (30-Day Trial)']
   },
   {
     title: 'Personal',
     img: <object role="presentation" tabIndex={-1} data={LightBulb} />,
-    price: (
-      <>
-        {isEurope() ? '€8' : '$9'}
-      </>
-    ),
+    price: <>{isEurope() ? '€8' : '$9'}</>,
     perUserMonth: true,
     features: [
       <strong>100 hours/month</strong>,
@@ -118,11 +102,7 @@ const plans: PricingBoxProps[] = [
   {
     title: 'Professional',
     img: <img alt="Rocket" src={Rocket} />,
-    price: (
-      <>
-        {isEurope() ? '€23' : '$25'}
-      </>
-    ),
+    price: <>{isEurope() ? '€23' : '$25'}</>,
     perUserMonth: true,
     features: [
       <strong>Unlimited hours</strong>,
@@ -146,11 +126,7 @@ const plans: PricingBoxProps[] = [
   {
     title: 'Unlimited',
     img: <object role="presentation" tabIndex={-1} data={MagicCap} />,
-    price: (
-      <>
-        {isEurope() ? '€35' : '$39'}
-      </>
-    ),
+    price: <>{isEurope() ? '€35' : '$39'}</>,
     perUserMonth: true,
     features: [
       <strong>Unlimited hours</strong>,

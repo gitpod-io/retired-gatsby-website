@@ -60,7 +60,7 @@ Read more on [Prebuilt Workspaces here](/docs/prebuilds/).
 
 ### Additional Information
 
-  * [Exposing Ports](/docs/config-ports/)
-  * [VS Code Extensions](/docs/vscode-extensions/)
-  * [Environment Variables](/docs/environment-variables/)
-  * [Workspace Location](/docs/checkout-location/)
+- [Exposing Ports](/docs/config-ports/)
+- [VS Code Extensions](/docs/vscode-extensions/)
+- [Environment Variables](/docs/environment-variables/)
+- [Workspace Location](/docs/checkout-location/)

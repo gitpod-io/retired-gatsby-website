@@ -54,7 +54,7 @@ First, we need to add a breakpoint to the routing logic. It is defined in routes
 
 Next, add a breakpoint in the editor margin against a line which you want to debug. A route callback handling / path looks promising.
 
-![Debugging: Breakpoints](https://cdn-images-1.medium.com/max/2988/1*AaqYqH5LILFw4g0-jNu5Bg.png)*Breakpoints are displayed in the debug view and applied to currently running sessions.*
+![Debugging: Breakpoints](https://cdn-images-1.medium.com/max/2988/1*AaqYqH5LILFw4g0-jNu5Bg.png)_Breakpoints are displayed in the debug view and applied to currently running sessions._
 
 Now, in the app, try navigating to the homepage. The debug session will pause on the breakpoint. You can traverse the current stack trace, inspect variables and control the execution flow with the debug actions toolbar:
 
@@ -64,11 +64,11 @@ Now, in the app, try navigating to the homepage. The debug session will pause on
 
 There are several ways to see variables’ values:
 
-* you can traverse current scopes and variables in the debug view;
+- you can traverse current scopes and variables in the debug view;
 
-* you can hover over expressions in the editor to evaluate them with a current session;
+- you can hover over expressions in the editor to evaluate them with a current session;
 
-* or you can use the debug console (REPL) to evaluate custom expressions.
+- or you can use the debug console (REPL) to evaluate custom expressions.
 
 You can always double-click on any variable to modify its value.
 

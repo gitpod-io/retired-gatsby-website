@@ -5,46 +5,46 @@ import RocketLaunch from '../../resources/rocket-launch.png'
 import { sizes } from '../../styles/variables'
 
 const StyledSaveHours = styled.section`
-    max-width: 750px;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
 
-    @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
-        padding-bottom: 2rem;
+  @media (min-width: calc(${sizes.breakpoints.md} + 1px)) {
+    padding-bottom: 2rem;
+  }
+
+  @media (max-width: ${sizes.breakpoints.md}) {
+    max-width: 600px;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 400px;
+  }
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+
+  img {
+    display: inline-block;
+    width: 18rem;
+    margin-bottom: 5rem;
+
+    @media (max-width: ${sizes.breakpoints.md}) {
+      margin-bottom: 3rem;
     }
 
-    @media(max-width: ${sizes.breakpoints.md}) {
-        max-width: 600px;
+    @media (max-width: 640px) {
+      width: 16rem;
+      margin-bottom: 4rem;
     }
+  }
 
-    @media(max-width: 640px) {
-        max-width: 400px;
-    }
-
-    h2 {
-        margin-bottom: 5rem;
-    }
-
-    img {
-        display: inline-block;
-        width: 18rem;
-        margin-bottom: 5rem;
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            margin-bottom: 3rem;
-        }
-
-        @media(max-width: 640px) {
-            width: 16rem;
-            margin-bottom: 4rem;
-        }
-    }
-
-    p {
-        max-width: 450px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  p {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `
 
 const SaveHours = () => (

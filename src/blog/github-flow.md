@@ -11,7 +11,7 @@ As software developers, we already spend a lot of our time in browsers. Be it fo
 
 However, when it comes to the actual coding and debugging, we have to prepare our local development environments manually. We do this based on often outdated, incomplete or just plain wrong documentation. The transition from an online repository to the actual coding is a barrier that hinders thousands of possible contributions every day. Coding needs to get more accessible.
 
-![(Programming Environment - Dilbert by Scott Adams. Source: [http://dilbert.com/strip/2017-01-02)](http://dilbert.com/strip/2017-01-02))](https://cdn-images-1.medium.com/max/2048/0*f260tcqJvgvCguFu)*(Source: [http://dilbert.com/strip/2017-01-02)](http://dilbert.com/strip/2017-01-02))*
+![(Programming Environment - Dilbert by Scott Adams. Source: [http://dilbert.com/strip/2017-01-02)](http://dilbert.com/strip/2017-01-02))](https://cdn-images-1.medium.com/max/2048/0*f260tcqJvgvCguFu)_(Source: [http://dilbert.com/strip/2017-01-02)](http://dilbert.com/strip/2017-01-02))_
 
 But that only needs to be done once, right? Unfortunately, no. Coding is a team sport. We are not just adding code, but also do code reviews or fix bugs on maintenance branches which often require a different setup. Moreover, today’s applications are loosely coupled compositions of independent microservices and sub-projects, written in different languages requiring different development setups. Consequently, we have to maintain setups for multiple projects and branches, trying to keep documentation in sync including all the cases for the different platforms. As a result, we are wasting precious time every day. We should spend this time and effort on more fun and productive things.
 
@@ -23,12 +23,13 @@ In this article, I will walk you through an automated, cloud-based development w
 
 Starting a workspace with Gitpod is much easier than with other cloud IDEs. Gitpod doesn’t require you to configure workspaces with container images, Git information and so on. Instead, you directly go to a GitHub repository and click the Gitpod-Button [see below]. Gitpod provides you with a ready to use workspace, so that you can immediately start coding without any configuration steps.
 
-![Button provided by Gitpod’s browser extension](https://cdn-images-1.medium.com/max/3200/0*MjUIJ1zspz3CF8oo)*Button provided by Gitpod’s browser extension*
+![Button provided by Gitpod’s browser extension](https://cdn-images-1.medium.com/max/3200/0*MjUIJ1zspz3CF8oo)_Button provided by Gitpod’s browser extension_
+
 > To see the Gitpod button on the GitHub page, you would have to [install a browser extension](https://gitpod.io). Alternatively, you can manually prefix any GitHub URL with `https://gitpod.io/#`. For instance, clicking the following link will instantly provide you a development workspace for the Eclipse Theia project: [https://gitpod.io/#https://github.com/theia-ide/theia](https://gitpod.io/#https://github.com/theia-ide/theia)
 
 Of course, different projects need different setups. Gitpod has a three-stage process to determine the workspace configuration, e.g. what docker image to use for development, what startup script to run, and which ports to expose:
 
-1. It first looks for a *.gitpod* configuration file in the repository. Note, that it will check the state of the currently viewed commit. This allows you to keep working configuration for old states as well as trying a new configuration in a pull request.
+1. It first looks for a _.gitpod_ configuration file in the repository. Note, that it will check the state of the currently viewed commit. This allows you to keep working configuration for old states as well as trying a new configuration in a pull request.
 
 1. Second, if there is no configuration in the cloned repository, a central repository called ‘[definitely-gp](https://github.com/gitpod-io/definitely-gp)’ is checked for configuration. It is a public repository which contains configurations for arbitrary GitHub projects. That is useful if you want to provide configuration for a repository you don’t have write access to. Everybody is invited to contribute to this.
 
@@ -44,7 +45,7 @@ Some great features, which are heavily used on GitHub, are issues and pull reque
 
 Lastly, of course, when clicking the Gitpod button on a pull request, Gitpod beams you right into code review mode. A panel on the left will list the changed files, allowing you to go through them one by one. Changes are opened in the diff editor where you can also read and add review comments. And because it is a full IDE, we can navigate through the entire code base, run code or add commits at will. Approving the pull request is supported, too.
 
-![Inline code review comments](https://cdn-images-1.medium.com/max/3200/0*8N39dT5P6Q1zQdIR)*Inline code review comments*
+![Inline code review comments](https://cdn-images-1.medium.com/max/3200/0*8N39dT5P6Q1zQdIR)_Inline code review comments_
 
 **Theia IDE**
 

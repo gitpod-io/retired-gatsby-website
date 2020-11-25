@@ -15,6 +15,7 @@ echo values/registry.yaml >> configuration.txt
 In `values/registry.yaml` replace `your.registry.com` with the name of your registry.
 
 Login to the registry and safe the authentication
+
 ```
 docker --config secrets/ login your.registry.com && mv secrets/config.json secrets/registry-auth.json
 ```

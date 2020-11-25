@@ -11,7 +11,7 @@ const StyledMorePosts = styled.section`
 `
 
 const MorePosts = ({ posts }: { posts: any[] }) => (
-  <div className="pattern-bg" style={{marginBottom: '10rem'}}>
+  <div className="pattern-bg" style={{ marginBottom: '10rem' }}>
     <StyledMorePosts>
       <div className="row">
         <h2>

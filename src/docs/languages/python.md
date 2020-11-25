@@ -8,12 +8,12 @@ Before we get started, here are some examples of already-[gitpodified](https://w
 
 <div class="table-container">
 
-| Repository                                                                                                |                                                                                                              Description |                                        Try it |
------------|-----------------------------------------------------------|----------------------------------------------------
+| Repository                                                                                          | Description                                               | Try it                                                                                                                                         |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | [breatheco-de/python-flask-api-tutorial](https://github.com/breatheco-de/python-flask-api-tutorial) | A step by step Todo List API tutorial with Flask + Python | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/breatheco-de/python-flask-api-tutorial) |
-| [gitpod-io/django-locallibrary-tutorial](https://github.com/gitpod-io/django-locallibrary-tutorial) | An example website written in Django by MDN | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/django-locallibrary-tutorial) |
-| [gitpod-io/Gitpod-PyQt](https://github.com/gitpod-io/Gitpod-PyQt) | A PyQt example for Gitpod | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-PyQt) |
-| [gitpod-io/wxPython-example](https://github.com/gitpod-io/wxPython-example) | A wxPython example for Gitpod | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/wxPython-example) |
+| [gitpod-io/django-locallibrary-tutorial](https://github.com/gitpod-io/django-locallibrary-tutorial) | An example website written in Django by MDN               | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/django-locallibrary-tutorial) |
+| [gitpod-io/Gitpod-PyQt](https://github.com/gitpod-io/Gitpod-PyQt)                                   | A PyQt example for Gitpod                                 | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-PyQt)                  |
+| [gitpod-io/wxPython-example](https://github.com/gitpod-io/wxPython-example)                         | A wxPython example for Gitpod                             | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/wxPython-example)             |
 
 </div>
 
@@ -28,6 +28,7 @@ You can switch between Python versions using `pyenv local <VERSION>`. For exampl
 ## [Start tasks](https://www.gitpod.io/docs/config-start-tasks/)
 
 You can start building your project when, or even [before](https://www.gitpod.io/docs/prebuilds/) you start your Gitpod workspace. Are you using a `requirements.txt` file to manage dependencies? If so, add this to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) to automatically pre-install all dependencies when starting a workspace:
+
 ```yaml
 tasks:
   - init: pip3 install -r requirements.txt
@@ -48,21 +49,27 @@ statistics = True
 You'll need to refresh the browser in order to update these rule. [Source](https://github.com/gitpod-io/gitpod/issues/640#issuecomment-506622491).
 
 ## VSCode Extensions
+
 While the most popular Python VSCode extensions are built into Gitpod, here are a few "nice to have" extensions that you can use as well.
 
 ### ARepl for Python
+
 ![ARepl extension example](../images/AReplExample.gif)
 ARepl for Python is helpful for constantly checking your code and debugging.
 To install this extension for your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
+
 ```yaml
 vscode:
   extensions:
     - almenon.arepl@1.0.20:Uu7lIOwyLgmNWpTwCl/iqQ==
 ```
+
 ### Python Test Explorer
+
 ![Python test explorer example](../images/python_Test_In_Gitpod.png)
 Easily test your python extensions with the Python Test Explorer.
 To add this to your repository add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/)
+
 ```yaml
 vscode:
   extensions:
@@ -108,6 +115,7 @@ ports:
 tasks:
   - command: python3 app.py
 ```
+
 <br>
 We also support other GUI frameworks such as `Kivy` and `PyQt`
 <br>
@@ -115,22 +123,24 @@ Here are some other examples of Python GUI applications in Gitpod:
 
 <div class="table-container">
 
-| Name             | Framework | Try it |
-|------------------|----------------|-----------|
-| [Tic-Tac-Toe-GUI](https://github.com/JesterOrNot/Tic-Tac-Toe-GUI)  | Kivy | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Tic-Tac-Toe-GUI) |
-| [Pong](https://github.com/JesterOrNot/Pong) | Kivy | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Pong) |
-| [Gitpod-PyQt](https://github.com/gitpod-io/Gitpod-PyQt) | PyQt | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-PyQt) |
+| Name                                                              | Framework | Try it                                                                                                                              |
+| ----------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| [Tic-Tac-Toe-GUI](https://github.com/JesterOrNot/Tic-Tac-Toe-GUI) | Kivy      | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Tic-Tac-Toe-GUI) |
+| [Pong](https://github.com/JesterOrNot/Pong)                       | Kivy      | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/Pong)            |
+| [Gitpod-PyQt](https://github.com/gitpod-io/Gitpod-PyQt)           | PyQt      | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-PyQt)       |
 
 </div>
 
 <br>
 
 ## Debugging
+
 Here is a quick clip on how to automatically configure debugging for Python!
 
 ![Python debugging example](../images/PythonDebug.gif)
 
 So, basically in this video we:
+
 1. First, open the Python file that we want to debug
 2. Then, go to the debug menu and select "Add Configuration..."
 3. Next, in the dropdown choose "Python"
@@ -140,24 +150,25 @@ So, basically in this video we:
 You can also create the Python debug configuration file manually
 
 To start debugging your Python application in Gitpod, please create a new directory called `.theia/`, and inside add a file called `launch.json`, finally, add the following to it:
+
 ```json
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "internalConsole"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "internalConsole"
+    }
+  ]
 }
 ```
+
 Then, simply open the Python file you want to debug, open the Debug panel (in the left vertical toolbar, click the icon with the crossed-out-spider), and click the green "Run" button.
 
 <br>
-
 
 To see a basic repository with Python debugging enabled, please check out [gitpod-io/Gitpod-Python-Debug](https://github.com/gitpod-io/Gitpod-Python-Debug):
 
@@ -177,6 +188,6 @@ To see a minimal project with Pandas installed and configured, please check out 
 
 ## Further Reading
 
-* ***[VSCode documentation for Python debugging](https://code.visualstudio.com/docs/python/debugging)*** All the information there should also apply to Gitpod as well.
-* ***[Troubleshooting Matplotlib/TK](https://github.com/gitpod-io/gitpod/issues/795)*** Here is how to troubleshoot Matplotlib/TK issues for Python GUI applications.
-* ***[Debugging Django](https://community.gitpod.io/t/django-debugging/381/6)*** This is how to debug Django applications in Gitpod.
+- **_[VSCode documentation for Python debugging](https://code.visualstudio.com/docs/python/debugging)_** All the information there should also apply to Gitpod as well.
+- **_[Troubleshooting Matplotlib/TK](https://github.com/gitpod-io/gitpod/issues/795)_** Here is how to troubleshoot Matplotlib/TK issues for Python GUI applications.
+- **_[Debugging Django](https://community.gitpod.io/t/django-debugging/381/6)_** This is how to debug Django applications in Gitpod.

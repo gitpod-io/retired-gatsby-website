@@ -8,12 +8,12 @@ Here are a few Go example projects that are already automated with Gitpod:
 
 <div class="table-container">
 
-| Repository                                                              |                                                                 Description                         |               Try It |
-| ----------------------------------------------------------------- | ------------------------------|-------------------------------------------------------------------------------------------------: |
+| Repository                                                        | Description                                              |                                                                                                                        Try It |
+| ----------------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------: |
 | [go-swagger/go-swagger](https://github.com/go-swagger/go-swagger) | A simple yet powerful representation of your RESTful API | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/go-swagger/go-swagger) |
-| [gitpod-io/go-gin-app](https://github.com/gitpod-io/go-gin-app)  | Gin example running in Gitpod |  [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/go-gin-app) |
-| [gosh-terminal/gosh](https://github.com/gosh-terminal/gosh)   | A terminal implemented in Go where you can do anything  |    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gosh-terminal/gosh) |
-| [gitpod-io/self-hosted](https://github.com/gitpod-io/self-hosted) | Self-Host your Gitpod | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/self-hosted) |
+| [gitpod-io/go-gin-app](https://github.com/gitpod-io/go-gin-app)   | Gin example running in Gitpod                            |  [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/go-gin-app) |
+| [gosh-terminal/gosh](https://github.com/gosh-terminal/gosh)       | A terminal implemented in Go where you can do anything   |    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gosh-terminal/gosh) |
+| [gitpod-io/self-hosted](https://github.com/gitpod-io/self-hosted) | Self-Host your Gitpod                                    | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/self-hosted) |
 
 </div>
 
@@ -23,8 +23,8 @@ Here are a few Go example projects that are already automated with Gitpod:
 
 <div class="table-container">
 
-| Name                                                                                               | Description                                                                             |
-| -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Name                                                                                               | Description                                                                                |
+| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | [Go Test Explorer](https://marketplace.visualstudio.com/items?itemName=premparihar.gotestexplorer) | Provides Test Explorer for Go which allows you to run your tests at the click of a button! |
 
 </div>
@@ -92,34 +92,36 @@ Here is a quick clip on how to automatically configure debugging for Go!
 ![Go debugging example](../images/GoDebug.gif)
 
 So, basically in this video we:
+
 1. First, open the Go file that we want to debug
 2. Then, go to the debug menu and select "Add Configuration..."
 3. Next, in the dropdown choose "Go launch file"
-5. Finally, start debugging your Go program!
+4. Finally, start debugging your Go program!
 
 You can also create the Go debug configuration file manually
 
 To start debugging your Go application in Gitpod, please create a new directory called `.theia/`, and inside add a file called `launch.json`, finally, add the following to it:
+
 ```json
 {
   // Use IntelliSense to learn about possible attributes.
   // Hover to view descriptions of existing attributes.
   "version": "0.2.0",
   "configurations": [
-  {
+    {
       "name": "Launch file",
       "type": "go",
       "request": "launch",
       "mode": "debug",
       "program": "${file}"
-  }
+    }
   ]
 }
 ```
+
 Then, simply open the Go file you want to debug, open the Debug panel (in the left vertical toolbar, click the icon with the crossed-out-spider), and click the green "Run" button.
 
 <br>
-
 
 To see a basic repository with Go debugging enabled, please check out [gitpod-io/Gitpod-Go-Debug](https://github.com/gitpod-io/Gitpod-Go-Debug):
 

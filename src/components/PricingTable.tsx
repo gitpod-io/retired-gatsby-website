@@ -3,9 +3,9 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { colors, sizes } from '../styles/variables'
 
-const StyledPricingTable = styled.section<{ enableScrollat1080?: boolean, disableMarginBottom?: boolean }>`
+const StyledPricingTable = styled.section<{ enableScrollat1080?: boolean; disableMarginBottom?: boolean }>`
   padding-bottom: 0;
-  margin-bottom: ${({disableMarginBottom}) => disableMarginBottom ? 0 :  '5rem'};
+  margin-bottom: ${({ disableMarginBottom }) => (disableMarginBottom ? 0 : '5rem')};
 
   .table-container {
     @media (max-width: 1180px) {
@@ -168,7 +168,16 @@ interface PricingTableProps {
   disableMarginBottom?: boolean
 }
 
-const PricingTable: React.SFC<PricingTableProps> = ({ title, paragraph, children, id, rows, styles, containerMaxWidthLarge, disableMarginBottom }) => (
+const PricingTable: React.SFC<PricingTableProps> = ({
+  title,
+  paragraph,
+  children,
+  id,
+  rows,
+  styles,
+  containerMaxWidthLarge,
+  disableMarginBottom
+}) => (
   <div className="row" id={id}>
     <StyledPricingTable enableScrollat1080={containerMaxWidthLarge} disableMarginBottom={disableMarginBottom}>
       <h2 style={!paragraph ? { paddingBottom: '5rem' } : {}}>{title}</h2>

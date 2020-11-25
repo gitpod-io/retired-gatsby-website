@@ -1,10 +1,10 @@
 # Context URLs
 
- * [Repository Context](#repository-context)
- * [Branch Context](#branch-context)
- * [Pull/Merge Request Context](#pull-merge-request-context)
- * [Issue Context](#issue-context)
- * [File Context](#file-context)
+- [Repository Context](#repository-context)
+- [Branch Context](#branch-context)
+- [Pull/Merge Request Context](#pull-merge-request-context)
+- [Issue Context](#issue-context)
+- [File Context](#file-context)
 
 Gitpod derives the workspace context from the URL of the repository page from which it was
 started. Different issues, pull/merge requests, or branches will result in different workspaces, allowing
@@ -82,9 +82,11 @@ gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/-/blob/master/src/main/jav
 ```
 
 When pointing to a directory, e.g.
+
 ```
 gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/-/blob/master/src/main/java/org/springframework/samples/petclinic
 ```
+
 `README.md` will be opened if it exists there.
 
 ## See Also

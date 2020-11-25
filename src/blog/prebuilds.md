@@ -9,7 +9,7 @@ image: /compiling-xkcd.png
 
 Once your development environment is freed from manual setup procedures it can do work even while you are not. We call this continuous development.
 
-A while ago Sven described the idea of [development environment as code](/blog/dev-env-as-code/). His main point: instead of using outdated README files that describe how to set up our development environment we should have executable, replicable and version-controlled descriptions thereof. In such a dev-environment as code world, on-boarding new team members/contributors is dead easy, going back to an old branch becomes a breeze (that old setup you had a year ago is now easy to restore) and playing with a new project becomes a joy. All those situations are very much *direct use* scenarios; you set up a dev-environment using code which you as a developer use straight away.
+A while ago Sven described the idea of [development environment as code](/blog/dev-env-as-code/). His main point: instead of using outdated README files that describe how to set up our development environment we should have executable, replicable and version-controlled descriptions thereof. In such a dev-environment as code world, on-boarding new team members/contributors is dead easy, going back to an old branch becomes a breeze (that old setup you had a year ago is now easy to restore) and playing with a new project becomes a joy. All those situations are very much _direct use_ scenarios; you set up a dev-environment using code which you as a developer use straight away.
 
 However, a machine-reproducible version of your development setup enables another powerful capability: your dev-environment can already checkout the latest code, download dependencies and build everything. Once you actually open your IDE, everything’s ready for you. No more siting there and watching ~~paint dry~~ yarn download the internet.
 
@@ -20,13 +20,14 @@ However, a machine-reproducible version of your development setup enables anothe
 Turns out we don’t actually have to be present for those things to happen. What if we had a system that would use our dev-environment description, check out the repo, build everything and then make it available to us?
 
 Sounds an awful lot like continuous integration (CI). Except there’s a subtle difference: CI checks if everything still fits together, i.e. does the code still build and do the tests still pass? The result of continuous integration is a test report and a bunch of built binaries/Docker images/update sites/APK files/you get the point. A CI build does not give you a ready-to-code workspace. But it tells you that the next time you want to build your software things will likely be fine.
+
 > Continuous Development means that your code is built before you even open it. Once you open an IDE on your project, everything is ready to go.
 
-The result of *continuous development* is a ready-to-code workspace. The second you open your IDE you can start working because all dependencies have been downloaded, indices updated, code generated and compiled, ~~and coffee has been brewed~~. Your dev environment has done all the things you’d otherwise do manually, except you didn’t have to trigger them or watch them finish.
+The result of _continuous development_ is a ready-to-code workspace. The second you open your IDE you can start working because all dependencies have been downloaded, indices updated, code generated and compiled, ~~and coffee has been brewed~~. Your dev environment has done all the things you’d otherwise do manually, except you didn’t have to trigger them or watch them finish.
 
 ## How could we build this?
 
-![Hands with paint on them. Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](./prebuilds/colored-hands.jpg)*Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
+![Hands with paint on them. Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](./prebuilds/colored-hands.jpg)_Photo by [Amaury Salas](https://unsplash.com/photos/IhXrWDckZOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
 To build a continuous development system we need three things:
 
@@ -57,7 +58,7 @@ Using for example Jenkins or GitHub Actions we can then build a ready-to-code en
 
 Once we’re ready to start working on a new feature, or want to review a PR, we just find the previously built Docker image and have everything ready to go. No faffing with git clone, waiting for the code to build or anything of the sorts. We have reduced many minutes of our time to a simple docker run.
 
-A similar way of implementing this is the way [gitpod.io](https://gitpod.io) does it (full disclosure: I am one of the folks working on this project). Gitpod comes with a GitHub app that triggers *workspace prebuilds* which in essence take your dev-environment as code (Dockerfile), execute a set of commands in there and associate the results with the particular commit that triggered it all. When you open a workspace on that commit, you’ll get the results of the prebuild instead of waiting for everything to complete.
+A similar way of implementing this is the way [gitpod.io](https://gitpod.io) does it (full disclosure: I am one of the folks working on this project). Gitpod comes with a GitHub app that triggers _workspace prebuilds_ which in essence take your dev-environment as code (Dockerfile), execute a set of commands in there and associate the results with the particular commit that triggered it all. When you open a workspace on that commit, you’ll get the results of the prebuild instead of waiting for everything to complete.
 
 ## Is this new?
 

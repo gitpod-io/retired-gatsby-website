@@ -6,7 +6,7 @@ import { countryList } from '../contents/license-key'
 import { isEurope } from '../utils/helpers'
 import SubmissionSucess from '../components/SubmissionSucess'
 import { Link } from 'gatsby'
-import { Email } from '../functions/submit-form';
+import { Email } from '../functions/submit-form'
 
 const StyledEnterpriseLicensePage = styled.div`
   form {
@@ -262,12 +262,12 @@ const EnterpriseLicensePage = () => {
     }
 
     const email: Email = {
-        from: {
-            email: state.email,
-            name: state.firstName + ' ' + state.lastName
-        },
-        subject: 'Requesting a professional self-hosted license     (from ' + state.email + ')',
-        message: `
+      from: {
+        email: state.email,
+        name: state.firstName + ' ' + state.lastName
+      },
+      subject: 'Requesting a professional self-hosted license     (from ' + state.email + ')',
+      message: `
     ${state.company}
     ${state.firstName} ${state.lastName}
     ${state.address}
@@ -281,7 +281,7 @@ const EnterpriseLicensePage = () => {
     Message:
     ${state.message}
 `
-    };
+    }
     fetch('/.netlify/functions/submit-form', {
       method: 'POST',
       body: JSON.stringify(email)
@@ -347,10 +347,10 @@ const EnterpriseLicensePage = () => {
                   <h3>What is the domain name of your Gitpod Self-Hosted installation?</h3>
                   <div className="label-container">
                     <label>
-                      <input onChange={handleChange} name="domain" type="text" placeholder="e.g. gitpod.mycompany.com"/>
+                      <input onChange={handleChange} name="domain" type="text" placeholder="e.g. gitpod.mycompany.com" />
                     </label>
                   </div>
-                    <p>The license key will be bound to this domain.</p>
+                  <p>The license key will be bound to this domain.</p>
                 </div>
                 <div className="entry">
                   <h3>Customer Information</h3>

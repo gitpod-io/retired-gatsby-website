@@ -15,7 +15,7 @@ const StyledTextFeature = styled.div`
     padding: 5rem 2rem;
 
     h3 {
-        text-align: center;
+      text-align: center;
     }
   }
 

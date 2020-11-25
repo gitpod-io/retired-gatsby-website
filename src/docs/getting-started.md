@@ -4,7 +4,7 @@ Gitpod provides continuous dev environments for the development flows of common 
 The following example shows how to use Gitpod with a source code repository.
 
 1. Point your browser to a GitLab, GitHub or Bitbucket repository, Pull/Merge Request, or issue, e.g.
-    [https://gitlab.com/gitpod/spring-petclinic](https://gitlab.com/gitpod/spring-petclinic)
+   [https://gitlab.com/gitpod/spring-petclinic](https://gitlab.com/gitpod/spring-petclinic)
 2. Either prefix the URL in the address bar of your browser with `gitpod.io/#` (e.g.
    https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic) or click the _Gitpod_ button if you've installed the [Gitpod browser extension](/docs/browser-extension/).
 

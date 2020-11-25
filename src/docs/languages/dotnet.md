@@ -2,29 +2,31 @@
 
 ## Example Repositories
 
-
 <div class="table-container">
 
-| Repository | Description | Try it |
-|------|----------------|-----------|
-|[uno](https://github.com/unoplatform/uno)|Build Mobile, Desktop and WebAssembly apps with C# and XAML|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno)
-|[coolstore-microservices](https://github.com/vietnam-devs/coolstore-microservices)|A Kubernetes-based microservices application on service mesh written in C#|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vietnam-devs/coolstore-microservices)|
-|[uno.quickstart](https://github.com/unoplatform/uno.quickstart)|An Uno "Hello world!" project using Windows UWP, iOS, Android and WebAssembly|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno.quickstart)|
-|[Fable](https://github.com/fable-compiler/Fable)|F# to JavaScript Compiler written in F#|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/fable-compiler/Fable)|
+| Repository                                                                         | Description                                                                   | Try it                                                                                                                                       |
+| ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| [uno](https://github.com/unoplatform/uno)                                          | Build Mobile, Desktop and WebAssembly apps with C# and XAML                   | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno)                      |
+| [coolstore-microservices](https://github.com/vietnam-devs/coolstore-microservices) | A Kubernetes-based microservices application on service mesh written in C#    | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vietnam-devs/coolstore-microservices) |
+| [uno.quickstart](https://github.com/unoplatform/uno.quickstart)                    | An Uno "Hello world!" project using Windows UWP, iOS, Android and WebAssembly | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno.quickstart)           |
+| [Fable](https://github.com/fable-compiler/Fable)                                   | F# to JavaScript Compiler written in F#                                       | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/fable-compiler/Fable)                 |
 
 </div>
 
 ## Installing the .NET Tools
 
 To get all the .NET tools that you need pre-installed in your Gitpod workspaces, use the following base image in your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
+
 ```YAML
 image: gitpod/workspace-dotnet
 ```
 
 If your project requires a GUI or Virtual Desktop, please use this image instead:
+
 ```YAML
 image: gitpod/workspace-dotnet-vnc
 ```
+
 This will give you a full GUI Virtual Desktop for your .NET application! The Virtual Desktop will be running on port `6080`.
 
 ## Compiling .NET Code in Gitpod
@@ -59,13 +61,13 @@ vscode:
 
 [Ionide-fsharp](https://ionide.io/) gives F# developers the following features:
 
-* A Widget for your F# needs
-* Auto completion
-* Shows errors inline
-* Quickfix
-* Goto definition
-* Peek definition
-* And more...
+- A Widget for your F# needs
+- Auto completion
+- Shows errors inline
+- Quickfix
+- Goto definition
+- Peek definition
+- And more...
 
 To add this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
 

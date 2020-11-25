@@ -35,8 +35,8 @@ const StyledSelfHostedFAQs = styled.section`
       }
 
       & > div {
-        @media(max-width: 400px) {
-            padding: 0 2rem;
+        @media (max-width: 400px) {
+          padding: 0 2rem;
         }
 
         &:not(:last-child) {

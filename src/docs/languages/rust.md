@@ -4,8 +4,8 @@ Welcome, Rustacean!
 
 Rust is a first-class language in Gitpod, and we believe that Gitpod is a great tool for Rust projects. Some of Gitpod's core developers frequently work with Rust code (in Gitpod), and several key components of Gitpod are written in Rust:
 
-* The fantastic language support is provided by the [rls](https://github.com/rust-lang/rls)
-* The blazing-fast workspace search is powered by [ripgrep](https://github.com/BurntSushi/ripgrep)
+- The fantastic language support is provided by the [rls](https://github.com/rust-lang/rls)
+- The blazing-fast workspace search is powered by [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ## Rust Version
 
@@ -26,9 +26,11 @@ RUN bash -cl "rustup toolchain install nightly"
 ```
 
 You can override this default by committing a `rustup-toolchain` file in the root of your repository. Say for example you need the nightly compiler for March 4th, 2020, you would create a `rustup-toolchain` file and add the following
+
 ```text
 nightly-2020-03-04
 ```
+
 which will set the required Rust version and if you commit the file into source control it will set the default nightly version across all workspaces.
 
 ## Example Repositories
@@ -37,11 +39,11 @@ Here are a few Rust example projects that are already automated with Gitpod:
 
 <div class="table-container">
 
-| Repository  | Description  | Try it    |
-|---------|------------|-----|
-|[MathLang](https://github.com/JesterOrNot/mathlang) | Basic maths language in Rust | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/MathLang) |
-|[NuShell](https://github.com/nushell/nushell/) | A next-gen shell for the GitHub era | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nushell/nushell) |
-|[Servo](https://github.com/servo/servo) | The Servo Browser Engine | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/servo/servo) |
+| Repository                                          | Description                         | Try it                                                                                                                       |
+| --------------------------------------------------- | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| [MathLang](https://github.com/JesterOrNot/mathlang) | Basic maths language in Rust        | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/MathLang) |
+| [NuShell](https://github.com/nushell/nushell/)      | A next-gen shell for the GitHub era | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nushell/nushell)      |
+| [Servo](https://github.com/servo/servo)             | The Servo Browser Engine            | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/servo/servo)          |
 
 </div>
 
@@ -52,24 +54,27 @@ The most popular Rust VSCode extensions are already pre-installed in Gitpod. But
 In order to install one of these extensions for your repository, simply head to Gitpod's [Extensions panel](/docs/vscode-extensions/) (find it in the IDE's left vertical menu), then search for the desired extension by name, and install it for your project. This will add an entry to your [.gitpod.yml](/docs/config-gitpod-file/) file that ensures all future Gitpod workspaces for your repository will already have this extension pre-installed.
 
 ### Rust Test Explorer
+
 ![Rust test explorer example](../images/rustTest.png)
 <br>
 <br>
 The Rust Test Explorer makes it easy to run Rust tests.
 
 ### Crates
-> ***Note: This extension outputs emojis by default if the crate version is set at the latest. You can disable this by using `crates.upToDateDecorator` option in your preferences***
-<br>
+
+> **_Note: This extension outputs emojis by default if the crate version is set at the latest. You can disable this by using `crates.upToDateDecorator` option in your preferences_** > <br>
 
 ![A crates extension demo](../images/cratesDemo.gif)
 The VSCode extension Crates makes it easier to manage your Cargo dependency versions.
 
 ### <p>Search Crates.io</p>
+
 ![An example of search crates.io extension](../images/searchCratesio.gif)
 
 Do you have an idea of a library you want to use but don't know the version well just type in the name of the library and Search Crates.io will get the version.
 
 ### Better TOML
+
 ![TOML Syntax highlighting example](../images/feature_syntax_highlight.png)
 
 Better TOML adds syntax highlighting to your `Cargo.toml`.
@@ -128,6 +133,7 @@ Now that thats out of the way, here is a video on how to configure the debug con
 ![Rust debugging example](../images/RustDebug.gif)
 
 So, basically in this video we:
+
 1. Go to the debug menu and select "Add Configuration..."
 2. Next, in the dropdown choose "GDB: Launch Program"
 3. Go to the `Cargo.toml` file and find the name of the program.
@@ -156,15 +162,15 @@ To start debugging your Rust application in Gitpod, please create a new director
   // Hover to view descriptions of existing attributes.
   "version": "0.2.0",
   "configurations": [
-      {
-          "type": "gdb",
-          "request": "launch",
-          "name": "Debug Rust Code",
-          "preLaunchTask": "cargo",
-          "target": "${workspaceFolder}/target/debug/rust_debug",
-          "cwd": "${workspaceFolder}",
-          "valuesFormatting": "parseText"
-      }
+    {
+      "type": "gdb",
+      "request": "launch",
+      "name": "Debug Rust Code",
+      "preLaunchTask": "cargo",
+      "target": "${workspaceFolder}/target/debug/rust_debug",
+      "cwd": "${workspaceFolder}",
+      "valuesFormatting": "parseText"
+    }
   ]
 }
 ```
@@ -173,23 +179,20 @@ Next create another file in the same `.theia/` directory called `tasks.json` wit
 
 ```json
 {
-    "tasks": [
-        {
-            "command": "cargo",
-            "args": [
-                "build"
-            ],
-            "type": "process",
-            "label": "cargo",
-        }
-    ],
+  "tasks": [
+    {
+      "command": "cargo",
+      "args": ["build"],
+      "type": "process",
+      "label": "cargo"
+    }
+  ]
 }
 ```
 
 Then, simply open the Rust file you want to debug, add some breakpoints, and open the Debug panel (in the left vertical toolbar, click the icon with the crossed-out-spider), and click the green "Run" button.
 
 <br>
-
 
 To see a basic repository with Rust debugging configured, please check out [gitpod-io/Gitpod-Rust-Debug](https://github.com/gitpod-io/Gitpod-Rust-Debug):
 
@@ -199,4 +202,4 @@ To see a basic repository with Rust debugging configured, please check out [gitp
 
 ## Further Reading
 
-* ***[Rocket-Example](https://www.gitpod.io/blog/docker-in-gitpod/)*** For an example of how to setup a project for the [`Rocket`](https://rocket.rs/) web-development framework
+- **_[Rocket-Example](https://www.gitpod.io/blog/docker-in-gitpod/)_** For an example of how to setup a project for the [`Rocket`](https://rocket.rs/) web-development framework

@@ -24,7 +24,7 @@ It often goes like that:
 1. **Reads lengthy, mostly outdated setup procedure**
 
 1. **Installs requirements on the developer machine,
-updates/downgrades versions, etc.**
+   updates/downgrades versions, etc.**
 
 1. **Tries to run the build … waits 20 minutes**
 
@@ -52,7 +52,7 @@ Another pet peeve is when you need to fix something on a maintenance branch. Fix
 
 Tinkering with a six months old technology stack can be so annoying. You have to deal with all those old libraries and versions of them. However, you still have to make it work somehow.
 
-![Photo by [JESHOOTS.COM](https://unsplash.com/@jeshoots?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10944/0*fni6JI11_OS6eJV7)*Photo by [JESHOOTS.COM](https://unsplash.com/@jeshoots?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
+![Photo by [JESHOOTS.COM](https://unsplash.com/@jeshoots?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10944/0*fni6JI11_OS6eJV7)_Photo by [JESHOOTS.COM](https://unsplash.com/@jeshoots?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)_
 
 All this suffering can end if we applied the ‘infrastructure as code’ idea to our dev environments, too. Why not make dev environment setups automated, reliably reproducible, and versioned by writing them down in an executable format and checking them into the project’s source code repository?
 
@@ -66,13 +66,13 @@ So let’s please stop polluting our readme files and start writing setup instru
 
 ### Dockerfiles
 
-Docker files are a pretty neat way to describe a development environment. Imagine you want to add something like ‘*asciidoctor*’ to your project’s toolchain. You could just add the following line to your dev environment’s Dockerfile:
+Docker files are a pretty neat way to describe a development environment. Imagine you want to add something like ‘_asciidoctor_’ to your project’s toolchain. You could just add the following line to your dev environment’s Dockerfile:
 
     RUN apt-get install -y asciidoctor
 
 Once you push the change to the repository and the docker image gets updated (automatically), all team members have the new tool in their development environment. We need to get to coding with a single click.
 
-![Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/12000/0*_7n4Htwk2Iz-r9qA)*Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
+![Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/12000/0*_7n4Htwk2Iz-r9qA)_Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)_
 
 ### **Automated IDE Setup**
 
@@ -94,4 +94,4 @@ Applying the lessons learned from DevOps to our development setup can save us so
 
 ![ActiveState’s Developer Survey 2018: How much time do you spent on managing dependencies and development tools](https://cdn-images-1.medium.com/max/3200/1*Vvl3N-1hDANiy15Pc9xeiQ.png)
 
-Do we really need to welcome new colleagues or contributors with a painful on-boarding experience? Let’s skip the prose in the *readme* and write code to have our dev environment setup **automated, reproducible, and versioned.**
+Do we really need to welcome new colleagues or contributors with a painful on-boarding experience? Let’s skip the prose in the _readme_ and write code to have our dev environment setup **automated, reproducible, and versioned.**

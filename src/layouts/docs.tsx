@@ -8,136 +8,135 @@ import DocTopicChooser from '../components/docs/DocTopicChooser'
 import BackToTopButton from '../components/BackToTopButton'
 
 const StyledDocsLayout = styled.div`
-    .content {
-        display: flex;
-        padding-top: 5rem;
+  .content {
+    display: flex;
+    padding-top: 5rem;
 
-        @media (max-width: ${sizes.breakpoints.lg}) {
-            flex-direction: column;
-        }
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            padding-top: 2rem;
-        }
+    @media (max-width: ${sizes.breakpoints.lg}) {
+      flex-direction: column;
     }
 
-    .article {
-        position: relative;
-        min-height: 100%;
-        padding: 3rem 1rem;
-        position: relative;
+    @media (max-width: ${sizes.breakpoints.md}) {
+      padding-top: 2rem;
+    }
+  }
 
-        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
-            width: 70%;
-        }
+  .article {
+    position: relative;
+    min-height: 100%;
+    padding: 3rem 1rem;
+    position: relative;
 
-        @media(min-width: calc(${sizes.breakpoints.md}) + 1px) {
-            padding: 5rem;
-            background: ${colors.white};
-        }
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            padding: 5rem 3rem;
-        }
-
-        h1 {
-            margin-bottom: 3rem;
-        }
-
-        h2 {
-            margin: 6rem 0 5rem;
-        }
-
-        h3 {
-            margin: 5rem 0 1rem;
-        }
-
-        h4 {
-            margin: 3rem 0 1rem;
-        }
-
-        h2 + p {
-            margin-block-end: 0em;
-        }
-        h2 + ul {
-            margin-block-end: 0em;
-        }
-
-        ul, ol {
-            margin: 2rem 0;
-            list-style: inherit;
-        }
-
-        li {
-            font-weight: 300;
-            margin-left: 3rem;
-
-            @media(max-width: ${sizes.breakpoints.lg}) {
-                list-style-position: inside;
-            }
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                margin-left: 1.2rem;
-            }
-
-            @media(max-width: ${sizes.breakpoints.sm}) {
-                margin-left: .7rem;
-            }
-
-        }
-
-        li + li {
-            margin-top: 0.5rem;
-        }
-
-        pre {
-            margin: 1.5rem 0;
-        }
-
-        img {
-            max-width: 100%;
-        }
-
-        blockquote {
-            padding: 1em;
-            margin: 0.5em 0;
-            background-color: #fdf6e3;
-        }
+    @media (min-width: calc(${sizes.breakpoints.lg} + 1px)) {
+      width: 70%;
     }
 
-    .active {
-        color: ${colors.link};
+    @media (min-width: calc(${sizes.breakpoints.md}) + 1px) {
+      padding: 5rem;
+      background: ${colors.white};
     }
 
-    .table-container {
-        margin: 2rem 0;
+    @media (max-width: ${sizes.breakpoints.md}) {
+      padding: 5rem 3rem;
     }
 
-    p > img {
-        margin: 1rem 0;
+    h1 {
+      margin-bottom: 3rem;
     }
+
+    h2 {
+      margin: 6rem 0 5rem;
+    }
+
+    h3 {
+      margin: 5rem 0 1rem;
+    }
+
+    h4 {
+      margin: 3rem 0 1rem;
+    }
+
+    h2 + p {
+      margin-block-end: 0em;
+    }
+    h2 + ul {
+      margin-block-end: 0em;
+    }
+
+    ul,
+    ol {
+      margin: 2rem 0;
+      list-style: inherit;
+    }
+
+    li {
+      font-weight: 300;
+      margin-left: 3rem;
+
+      @media (max-width: ${sizes.breakpoints.lg}) {
+        list-style-position: inside;
+      }
+
+      @media (max-width: ${sizes.breakpoints.md}) {
+        margin-left: 1.2rem;
+      }
+
+      @media (max-width: ${sizes.breakpoints.sm}) {
+        margin-left: 0.7rem;
+      }
+    }
+
+    li + li {
+      margin-top: 0.5rem;
+    }
+
+    pre {
+      margin: 1.5rem 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    blockquote {
+      padding: 1em;
+      margin: 0.5em 0;
+      background-color: #fdf6e3;
+    }
+  }
+
+  .active {
+    color: ${colors.link};
+  }
+
+  .table-container {
+    margin: 2rem 0;
+  }
+
+  p > img {
+    margin: 1rem 0;
+  }
 `
 
 interface DocsLayoutProps {
-    canonical: string
-    title: string
-    body: JSX.Element
+  canonical: string
+  title: string
+  body: JSX.Element
 }
 
-const DocsLayout: React.SFC<DocsLayoutProps> = ({ canonical, title, body}) => (
-    <IndexLayout canonical={canonical} title={title} description="Documentation site for Gitpod.">
-        <StyledDocsLayout>
-                <div className="row">
-                    <div className="content">
-                        <DocSideBar />
-                        <DocTopicChooser />
-                        {body}
-                    </div>
-                </div>
-            <BackToTopButton />
-
-        </StyledDocsLayout>
-    </IndexLayout>
+const DocsLayout: React.SFC<DocsLayoutProps> = ({ canonical, title, body }) => (
+  <IndexLayout canonical={canonical} title={title} description="Documentation site for Gitpod.">
+    <StyledDocsLayout>
+      <div className="row">
+        <div className="content">
+          <DocSideBar />
+          <DocTopicChooser />
+          {body}
+        </div>
+      </div>
+      <BackToTopButton />
+    </StyledDocsLayout>
+  </IndexLayout>
 )
 
 export default DocsLayout

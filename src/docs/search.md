@@ -2,11 +2,11 @@
 
 There are several ways to perform a search and to find things in the workspace:
 
-  * [Search in Workspace](#search-in-workspace)
-  * [Open File](#open-file)
-  * [Open Workspace Symbol](#open-workspace-symbol)
-  * [Navigator Search](#navigator-search)
-  * [Find and Replace in Editor](#find-and-replace-in-editor)
+- [Search in Workspace](#search-in-workspace)
+- [Open File](#open-file)
+- [Open Workspace Symbol](#open-workspace-symbol)
+- [Navigator Search](#navigator-search)
+- [Find and Replace in Editor](#find-and-replace-in-editor)
 
 ## Search in Workspace
 
@@ -32,12 +32,12 @@ enter `./theName`, it will match the directory `theName/` at the top level of yo
 to exclude those patterns from the search. `!theName` will skip searching any directory or file named
 `theName`. You can also use globbing syntax:
 
-  - `*` to match one or more characters in a path segment,
-  - `?` to match on one character in a path segment,
-  - `**` to match any number of path segments, including none,
-  - `{}` to group conditions (e.g., `{**/*.html,**/*.txt}` matches all HTML and text files), and
-  - `[]` to declare a range of characters to match (e.g., `theName.[0-9]` to match on `theName.0`,
-    `theName.1`, …).
+- `*` to match one or more characters in a path segment,
+- `?` to match on one character in a path segment,
+- `**` to match any number of path segments, including none,
+- `{}` to group conditions (e.g., `{**/*.html,**/*.txt}` matches all HTML and text files), and
+- `[]` to declare a range of characters to match (e.g., `theName.[0-9]` to match on `theName.0`,
+  `theName.1`, …).
 
 Theia excludes some directories by default (for instance, `node_modules` and others that are ignored
 through `.gitignore`) to reduce the number of search results. If you would like to search for all files in

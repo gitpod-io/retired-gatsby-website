@@ -9,8 +9,8 @@ const StyledSpeedComparison = styled.div`
   width: 100%;
   margin: 5rem 0 7rem;
 
-  @media(max-width: ${sizes.breakpoints.lg}) {
-      margin: 0rem 0 3rem;
+  @media (max-width: ${sizes.breakpoints.lg}) {
+    margin: 0rem 0 3rem;
   }
 
   @media (max-width: 560px) {
@@ -35,7 +35,7 @@ const StyledSpeedComparison = styled.div`
     }
 
     .footnote {
-        bottom: -3rem;
+      bottom: -3rem;
     }
   }
 
@@ -137,9 +137,7 @@ const StyledSpeedComparison = styled.div`
 const SpeedComparison = () => (
   <StyledSpeedComparison>
     <div className="mark mark--2">
-      <div className="mark__title footnote">
-        Click
-      </div>
+      <div className="mark__title footnote">Click</div>
       <div className="item item--1">
         <h4>Gitpod</h4>
         <div className="bar-container">
@@ -153,8 +151,12 @@ const SpeedComparison = () => (
         <h4>Codespaces</h4>
         <div className="bar-container">
           <div className="bar bar--codespaces">
-            <div className="bar--codespaces-1" title="Boot Environment & Load UI (> 5 min)">Load</div>
-            <div className="bar--codespaces-2" title="Build Project (> 10 min)">Build Project</div>
+            <div className="bar--codespaces-1" title="Boot Environment & Load UI (> 5 min)">
+              Load
+            </div>
+            <div className="bar--codespaces-2" title="Build Project (> 10 min)">
+              Build Project
+            </div>
             <div className="bar--codespaces-3 bar--time">&gt; 15 min</div>
           </div>
         </div>

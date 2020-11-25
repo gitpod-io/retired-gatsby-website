@@ -10,7 +10,6 @@ At Gitpod we want to make developers’ lives easier. Starting automated dev env
 
 Recently we asked ourselves how we could streamline the integration with your daily routine even more. Today, we are super excited to share that we’ve partnered with GitLab and built a [native Gitpod integration in GitLab’s UI](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/37985).
 
-
 # The last missing piece in your GitLab DevOps pipeline
 
 GitLab is one of the most popular DevOps tools/platforms out there, used by more than 100,000 organizations across the globe. Through its Web IDE, simple edits can already be made today from within the application. However, for more advanced programming tasks, developers require a full development environment.
@@ -25,7 +24,6 @@ GitLab and Gitpod started a partnership to bring Gitpod's ready-to-code dev envi
 
 ![Gitpod button on GitLab project page](/gitlab-integration/gitpod-button-on-gitlab.png)
 
-
 # “Everyone can contribute”
 
 GitLab’s credo “Everyone can contribute” is a perfect fit for Gitpod because contributing becomes much simpler when you allow anyone to spin up a ready-to-code development environment in a few seconds.
@@ -36,20 +34,17 @@ We are currently helping the GitLab team [to build a fully-automated Gitpod conf
 
 [![GitLab integration quote](/gitlab-integration/gitlab-integration-quote.png)](https://gitlab.com/gitlab-org/gitlab-development-kit/-/issues/1076#note_419638250)
 
-
 # Hook up your GitLab Self-Managed with Gitpod.io
 
 The Gitpod integration is already live on gitlab.com today and is going to be part of [GitLab&nbsp;13.5](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/61933) which is released on October 22nd. At that point, you’ll be able to connect your GitLab self-managed installation to gitpod.io, through a new feature that lets you register additional Git providers.
 
 Furthermore, you can [self-host Gitpod](https://www.gitpod.io/self-hosted/) (which is [open source](https://github.com/gitpod-io/gitpod)) on your own Kubernetes cluster and configure it with your GitLab instance. We have convenient installation scripts for GCP and AWS.
 
-
 # What’s next?
 
 We are continuously working on improving the GitLab integration and implementing new features for GitLab users (e.g. managing merge requests within Gitpod, [adding a Gitpod button on Merge Requests](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/43352), etc.). You can also install the [GitLab VS Code Extension](https://open-vsx.org/extension/GitLab/gitlab-workflow) in Gitpod to interact with GitLab. Just go to the Extensions view (in the left vertical menu), search for “GitLab” and choose “Install”.
 
 ![Gitpod button on GitLab project page](/gitlab-integration/gitlab-vscode-extension.png)
-
 
 # Try the Gitpod integration now!
 

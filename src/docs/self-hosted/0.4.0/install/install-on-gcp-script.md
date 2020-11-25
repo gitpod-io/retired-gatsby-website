@@ -8,7 +8,7 @@ Gitpod runs best on GCP. That's also where [gitpod.io](https://gitpod.io) is dep
 
 The easiest way to install Gitpod on GCP is by using our automated installation script. You can find it in this repository:
 
-  > https://github.com/gitpod-io/self-hosted/
+> https://github.com/gitpod-io/self-hosted/
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/self-hosted)
 
@@ -22,7 +22,6 @@ Alternatively, you can set up the GCP resources manually yourself. See the [manu
 - A [Google Cloud](https://cloud.google.com/) project
 - A [Domain](../domain)
 - Optional: [HTTPS Certificates](../https-certs)
-
 
 Note that Google Cloud offers a [free trial](https://console.cloud.google.com/freetrial) with $300 worth of resources, which allows deploying and evaluating Gitpod Self-Hosted for free.
 

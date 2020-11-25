@@ -27,14 +27,15 @@ Please see this [blog post](https://medium.com/gitpod/code-never-lies-creating-r
 The possibilities to fine-tune the developer experience when using Gitpod on your repository have been improved. Here are the features you can define in your `.gitpod.yml`:
 
 ### Tasks
+
 You can now specify multiple tasks. Each task will have its own terminal view on start. You can even specify where those terminals whould be opened.
 The following config, for instance, will make sure that two terminals are opened next to each other.
 
 ```yaml
 tasks:
- - command: echo 'left'
- - command: echo 'right'
-   openMode: split-right
+  - command: echo 'left'
+  - command: echo 'right'
+    openMode: split-right
 ```
 
 ![Split Terminals](img/terminal-split.png)
@@ -47,11 +48,11 @@ Check the table below for an overview of the different starting scenarios.
 
 <div class="table-container">
 
-| Start Mode | Execution |
-| ---------  | -------   |
-| Fresh Workspace | `before && init && command` |
-| Restart Workspace | `before && command` |
-| Snapshot | `before && command` |
+| Start Mode        | Execution                   |
+| ----------------- | --------------------------- |
+| Fresh Workspace   | `before && init && command` |
+| Restart Workspace | `before && command`         |
+| Snapshot          | `before && command`         |
 
 </div>
 
@@ -63,8 +64,8 @@ This behavior can now be pre-configured so users are not bothered with annoying 
 
 ```yaml
 ports:
- - port: 8080
-   onOpen: open-preview
+  - port: 8080
+    onOpen: open-preview
 ```
 
 Check out [the docs](https://www.gitpod.io/docs/config-start-tasks/) to learn more about pre-configuring things in Gitpod.
@@ -103,12 +104,14 @@ More information about writing `.gitpod.yml` configurations can be found in [the
 One of the things you do in a `.gitpod.yml` is declaring the exposed ports. Gitpod maps them to a specific subdomain in order to make them accessible. For instance if you have a dev server running on `0.0.0.0:3000` the `gp url` command gives you the external url for that service.
 
 Here is an example:
+
 ```sh
 gitpod /workspace/release-notes $ gp url 3000
 https://3000-b33f605e-b32a-4e44-ae5a-acad9641de0a.ws-eu0.gitpod.io/
 ```
 
 `gp url` can also give you the URL of the workspace itself:
+
 ```sh
 gitpod /workspace/release-notes $ gp url
 https://b33f605e-b32a-4e44-ae5a-acad9641de0a.ws-eu0.gitpod.io/
@@ -121,6 +124,7 @@ https://b33f605e-b32a-4e44-ae5a-acad9641de0a.ws-eu0.gitpod.io/
 This is especially handy together with `gp url` if you want to open a specific path from a script.
 
 Here's an example:
+
 ```sh
 gp preview $(gp url 3000)my/special/path.html
 ```
@@ -177,5 +181,5 @@ In addition to Markdown, Gitpod now also supports previewing AsciiDoc as you typ
 These are just the most noteworthy features we have been working on.
 For a more detailed list of bugfixes and enhancemenst see all the issues we've closed:
 
- - [Closed Issues in Gitpod](https://github.com/gitpod-io/gitpod/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+closed%3A%3E2018-11-01)
- - [Merged PRs in Theia](https://github.com/theia-ide/theia/pulls?utf8=%E2%9C%93&q=merged%3A%3E2018-11-01+merged%3A%3C2018-02-13+)
+- [Closed Issues in Gitpod](https://github.com/gitpod-io/gitpod/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+closed%3A%3E2018-11-01)
+- [Merged PRs in Theia](https://github.com/theia-ide/theia/pulls?utf8=%E2%9C%93&q=merged%3A%3E2018-11-01+merged%3A%3C2018-02-13+)

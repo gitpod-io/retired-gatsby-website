@@ -17,15 +17,13 @@ Contributing to Gitpod should be easy and accessible for everyone. All contribut
 
 Over the past year, Gitpod has simplified contributions to many open source projects (see [contribute.dev](https://contribute.dev/) for examples). Today, everyone in our team is excited to share our own streamlined development pipeline including Kubernetes preview deployments, an aggressively cached build system, our own slim and fast CI system and of course Gitpod, which continuously beams us into ready-to-code (and debug) dev environments. [Chris](https://github.com/csweichel) gave a great talk about this setup earlier this year 👇
 
-
 `youtube: dFMpXUsJcGM`
 
-Naturally, we develop Gitpod in Gitpod. This allows the  whole team  to spin up fully initialized, remote dev environments on any branch at any time.
+Naturally, we develop Gitpod in Gitpod. This allows the whole team to spin up fully initialized, remote dev environments on any branch at any time.
 
 In line with the [pets vs. cattle](http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/?utm_source=thenewstack&utm_medium=website&utm_campaign=platform) analogy of the cloud-native world, we treat dev environments as automated (yet customizable) resources you can spin up when you need them and close down (and forget about) when you are done with your task. Once you experience the peace of mind of automated, ephemeral dev environments you never want to go back.
 
 Sven will run a webinar next week on Thursday, where we will showcase how we use Gitpod internally at Gitpod and how much it improves our workflow. Hope to see you there!
-
 
 <style>
 .button {
@@ -65,10 +63,10 @@ The [SaaS offering of gitpod.io](https://www.gitpod.io/pricing/#) remains the ea
 
 In case you want to host Gitpod on your own infrastructure or private cloud, starting today, Gitpod Self-Hosted is free for unlimited users. Organizations using Gitpod Self-Hosted can purchase an enterprise license in order to get additional features like:
 
-* [Snapshots](https://www.gitpod.io/features/#snapshot) (share a reproducible workspace with your team)
-* [Live Share](https://www.gitpod.io/features/#share) (invite others into your running workspace)
-* [Unlimited Prebuilds](https://www.gitpod.io/features/#prebuilt) (making ephemeral dev environments possible)
-* Admin Dashboard
+- [Snapshots](https://www.gitpod.io/features/#snapshot) (share a reproducible workspace with your team)
+- [Live Share](https://www.gitpod.io/features/#share) (invite others into your running workspace)
+- [Unlimited Prebuilds](https://www.gitpod.io/features/#prebuilt) (making ephemeral dev environments possible)
+- Admin Dashboard
 
 Offering a paid plan for enterprises makes it possible for us to keep working towards building a new category in developer tooling, which completes modern DevOps pipelines. In the future we will add additional functionality to both the open source code as well our paid offering.
 

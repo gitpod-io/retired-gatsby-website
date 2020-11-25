@@ -127,4 +127,5 @@ A curated, chronologically ordered list of notable changes in [gitpod.io](https:
 <br><br>
 
 ---
+
 Inspired by [keepachangelog.com](https://keepachangelog.com/).

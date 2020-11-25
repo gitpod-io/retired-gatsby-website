@@ -154,8 +154,8 @@ const Styled = styled.div<{
       }
     }
 
-    @media(max-width: 800px) {
-        margin-bottom: ${({ hasFigFootnote }) => (hasFigFootnote ? '10rem' : '2.5rem')};
+    @media (max-width: 800px) {
+      margin-bottom: ${({ hasFigFootnote }) => (hasFigFootnote ? '10rem' : '2.5rem')};
     }
 
     @media (max-width: 560px) {
@@ -236,7 +236,7 @@ const Styled = styled.div<{
     font-size: inherit;
 
     @media (max-width: ${sizes.breakpoints.sm}) {
-        text-align: left;
+      text-align: left;
     }
 
     li + li {
@@ -253,8 +253,8 @@ const Styled = styled.div<{
       bottom: -5rem;
     }
 
-    @media(max-width: 420px) {
-        bottom: -6.5rem;
+    @media (max-width: 420px) {
+      bottom: -6.5rem;
     }
   }
 

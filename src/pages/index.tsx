@@ -32,14 +32,18 @@ const IndexPage: React.SFC<{}> = () => (
     <Banner />
 
     <TrustedBy
-      title={<>Trusted by <strong>Visionary Teams</strong></>}
+      title={
+        <>
+          Trusted by <strong>Visionary Teams</strong>
+        </>
+      }
       brands={[
-          {
-            alt: 'GitLab',
-            url: 'https://about.gitlab.com/',
-            svg: GitLab,
-            className: 'grey-logo'
-          },
+        {
+          alt: 'GitLab',
+          url: 'https://about.gitlab.com/',
+          svg: GitLab,
+          className: 'grey-logo'
+        },
         {
           alt: 'freeCodeCamp',
           url: 'https://www.freecodecamp.org/',

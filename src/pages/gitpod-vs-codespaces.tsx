@@ -69,7 +69,10 @@ const StyledGitpodVsCodespacesPage = styled.div`
 `
 
 const GitpodVsCodespacesPage = () => (
-  <IndexLayout title="Gitpod vs Codespaces" description="Experience Gitpod, the fast, resource-efficient, and open-source alternative to Codespaces.">
+  <IndexLayout
+    title="Gitpod vs Codespaces"
+    description="Experience Gitpod, the fast, resource-efficient, and open-source alternative to Codespaces."
+  >
     <StyledGitpodVsCodespacesPage>
       <section className="main">
         <div className="row">

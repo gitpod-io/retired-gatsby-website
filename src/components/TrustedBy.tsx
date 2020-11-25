@@ -79,19 +79,19 @@ const StyledTrustedBy = styled.section`
 `
 
 const StyledBrandImage = styled.img<{ transform?: string }>`
-    width: 9.5rem;
+  width: 9.5rem;
 
-    @media(max-width: ${sizes.breakpoints.lg}) {
-        width: 9rem;
-    }
+  @media (max-width: ${sizes.breakpoints.lg}) {
+    width: 9rem;
+  }
 
-    @media(max-width: ${sizes.breakpoints.md}) {
-        width: 7rem;
-    }
+  @media (max-width: ${sizes.breakpoints.md}) {
+    width: 7rem;
+  }
 
-    @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
-        transform: ${({ transform }) => (transform ? transform : 'none')};
-    }
+  @media (min-width: calc(${sizes.breakpoints.lg} + 1px)) {
+    transform: ${({ transform }) => (transform ? transform : 'none')};
+  }
 `
 
 interface Brand {
@@ -109,11 +109,9 @@ interface TrustedByProps {
 }
 
 const TrustedBy = ({ brands, title, styles }: TrustedByProps) => (
-  <StyledTrustedBy style={{...styles}}>
+  <StyledTrustedBy style={{ ...styles }}>
     <div className="row">
-      <h3>
-        {title}
-      </h3>
+      <h3>{title}</h3>
       <div className="logos">
         {brands.map((b: Brand) => (
           <a href={b.url} target="_blank" className="trustedBy">

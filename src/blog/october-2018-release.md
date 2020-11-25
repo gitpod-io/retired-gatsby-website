@@ -14,7 +14,7 @@ Please keep sending all that useful feedback!
 
 Today, we are pleased to announce a new version of [Gitpod](https://www.gitpod.io).
 
-![A Cake with Sparkles Photo by [Audrey Fretz](https://unsplash.com/@parkstreet?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10944/0*TrpIB26qJjpdoAmh)*Photo by [Audrey Fretz](https://unsplash.com/@parkstreet?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
+![A Cake with Sparkles Photo by [Audrey Fretz](https://unsplash.com/@parkstreet?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10944/0*TrpIB26qJjpdoAmh)_Photo by [Audrey Fretz](https://unsplash.com/@parkstreet?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)_
 
 Here are the most important new features and improvements:
 
@@ -27,9 +27,9 @@ To allow you using Gitpod as much as you want, during the beta you can now
 
 ## Docker File Support ⚙️
 
-Most projects need special tools, which can be provided by naming a custom Docker image in your *.gitpod* file.
+Most projects need special tools, which can be provided by naming a custom Docker image in your _.gitpod_ file.
 
-Starting today, you can point to a *Dockerfile* that sits next to the *.gitpod* file. Gitpod will take care of building and caching it for you. Instead of managing your own docker builds and versions, simply put the *Dockerfile* into the repository and you will always have a working setup for the branch at hand.
+Starting today, you can point to a _Dockerfile_ that sits next to the _.gitpod_ file. Gitpod will take care of building and caching it for you. Instead of managing your own docker builds and versions, simply put the _Dockerfile_ into the repository and you will always have a working setup for the branch at hand.
 
 Please read [Gero’s post](/blog/docker-in-gitpod) explaining this feature in more detail.
 

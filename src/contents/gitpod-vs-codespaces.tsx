@@ -12,7 +12,8 @@ export const features: FeatureCardProps[] = [
     text: (
       <>
         <p>
-          Gitpod removes long init and build times by continuously pre-building workspaces for your project. Thereby it allows you to start coding or debugging immediately, from any context, at any time.
+          Gitpod removes long init and build times by continuously pre-building workspaces for your project. Thereby it allows you to start
+          coding or debugging immediately, from any context, at any time.
         </p>
         <p>
           Simply add your build command into a .gitpod.yml file and let Gitpod do the heavy-lifting. Once you’ve experienced the freedom of
@@ -36,13 +37,27 @@ export const features: FeatureCardProps[] = [
           workspaces running on shared high-powered cloud servers.
         </p>
         <p>
-          Gitpod is not only more resource-efficient but it also runs on 100% carbon-neutral cloud servers (<a style={{fontWeight: 400}} href="https://cloud.google.com/sustainability" target="_blank">GCP</a>).
+          Gitpod is not only more resource-efficient but it also runs on 100% carbon-neutral cloud servers (
+          <a style={{ fontWeight: 400 }} href="https://cloud.google.com/sustainability" target="_blank">
+            GCP
+          </a>
+          ).
         </p>
       </>
     ),
     Figure: PowerComparison,
-    figFootnote: <>Compared resources for 100 active hours at $9/month. Last verified 25 Sep 2020. Sources: <Link to="/pricing/">Gitpod Pricing</Link>, <a href=
-    "https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces" target="_blank">Codespaces Pricing</a>.</>,
+    figFootnote: (
+      <>
+        Compared resources for 100 active hours at $9/month. Last verified 25 Sep 2020. Sources: <Link to="/pricing/">Gitpod Pricing</Link>,{' '}
+        <a
+          href="https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces"
+          target="_blank"
+        >
+          Codespaces Pricing
+        </a>
+        .
+      </>
+    )
   },
   {
     id: 'open-source',

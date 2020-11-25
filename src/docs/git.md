@@ -3,14 +3,14 @@
 Theia integrates closely with Git by offering convenient UIs on top of the command line `git`
 (which is available in the terminal as well).
 
-  * [Authoring Commits](#authoring-commits)
-  * [Git Status Bar](#git-status-bar)
-  * [Branches and Tags](#branches-and-tags)
-  * [Gutter Indicators](#gutter-indicators)
-  * [Blame Annotations](#blame-annotations)
-  * [Merge Conflicts](#merge-conflicts)
-  * [Viewing Diffs](#viewing-diffs)
-  * [Git History](#git-history)
+- [Authoring Commits](#authoring-commits)
+- [Git Status Bar](#git-status-bar)
+- [Branches and Tags](#branches-and-tags)
+- [Gutter Indicators](#gutter-indicators)
+- [Blame Annotations](#blame-annotations)
+- [Merge Conflicts](#merge-conflicts)
+- [Viewing Diffs](#viewing-diffs)
+- [Git History](#git-history)
 
 ## Authoring Commits
 
@@ -35,19 +35,18 @@ At the bottom of the `Git` view, a small section gives a quick insight into the 
 In the list of staged and unstaged changes, the file names are followed by the path to their
 parent directory and an indicator describing the type of the change. This can be:
 
-  - `A`: Added (new staged),
-  - `U`: new Unstaged,
-  - `R`: Renamed,
-  - `C`: Copied (blue), Conflicted (red),
-  - `M`: Modified, and
-  - `D`: Deleted.
+- `A`: Added (new staged),
+- `U`: new Unstaged,
+- `R`: Renamed,
+- `C`: Copied (blue), Conflicted (red),
+- `M`: Modified, and
+- `D`: Deleted.
 
 An unstaged change can be reverted by clicking on the `Discard Changes` action next to the file
 location. Double-clicking on a modified file will open it in a diff editor. The read-only editor on
 the left-hand side shows the state from the index. The right-hand side of the editor reflects the
 state of the working tree, and it lets you to further modify the file. New and deleted files do not
-open in a diff editor. Files can be staged (added to the index) by clicking on the `Stage
-Changes` action (`+` sign). To unstage changes, use `Unstage Changes` action (`-` sign).
+open in a diff editor. Files can be staged (added to the index) by clicking on the `Stage Changes` action (`+` sign). To unstage changes, use `Unstage Changes` action (`-` sign).
 
 After staging the desired files and specifying the commit message, the changes can be committed to
 the repository. After a successful commit, the `Last Commit` section is automatically updated.
@@ -60,9 +59,9 @@ current branch.
 
 The dirty indicators are as follows:
 
-  - `*`: You have unstaged changes in your branch.
-  - `+`: You have staged changes in your branch, but no unstaged.
-  - `!`: You have conflicting changes in your branch.
+- `*`: You have unstaged changes in your branch.
+- `+`: You have staged changes in your branch, but no unstaged.
+- `!`: You have conflicting changes in your branch.
 
 ![Git Status Bar](./images/54_Git/git_status_bar.jpg)
 
@@ -78,8 +77,7 @@ remote changes to your local repository and then push local commits to the upstr
 ![Git Checkout Command](./images/54_Git/git_checkout_command.jpg)
 
 You can create and check out branches directly within Theia through the `Git: Checkout` command in
-the command palette. For creating a new branch, select the first item from the list, `Create new
-branch...`, and specify the desired name of your branch. Theia creates the new branch for you and
+the command palette. For creating a new branch, select the first item from the list, `Create new branch...`, and specify the desired name of your branch. Theia creates the new branch for you and
 checks it out.
 
 ![Git Checkout Branches List](./images/54_Git/git_checkout_branches.jpg)
@@ -89,9 +87,9 @@ checks it out.
 If you open a file that is under version control by Git and start applying changes,
 Theia will add annotations to the gutter and to the overview ruler of the editor:
 
-  - A red triangle indicates where lines have been deleted.
-  - A green bar shows the newly added lines.
-  - A blue bar indicates modified lines.
+- A red triangle indicates where lines have been deleted.
+- A green bar shows the newly added lines.
+- A blue bar indicates modified lines.
 
 ![Git Gutter Indicators](./images/54_Git/git_gutter.jpg)
 
@@ -124,15 +122,14 @@ side is an editor for the working-tree state.
 
 Theia provides various ways to review the Git history.
 
-  - The history of an individual file can be checked, or
-  - The history of multiple files within a directory can be reviewed at once.
+- The history of an individual file can be checked, or
+- The history of multiple files within a directory can be reviewed at once.
 
 You can activate the `Git History` view by right-clicking on the file in the `Files` navigator and
 selecting the `Git History` context menu item. Alternatively, you can open the history view from the
 `View` > `Git History` menu or toggle the view with the <kbd>Alt+H</kbd> command. The content of the
 `Git History` view does not update when changing the active editor or when altering the selection in
-the `Files` view. To get the history of an individual resource you have to either use the `Git
-History` command from the command palette or from the `Files` navigator's context menu.
+the `Files` view. To get the history of an individual resource you have to either use the `Git History` command from the command palette or from the `Files` navigator's context menu.
 
 The top of the `Git History` view shows the path of the resource or resources. Right below the path,
 you can see the list of commits with some details such as the committer, the subject of the commit

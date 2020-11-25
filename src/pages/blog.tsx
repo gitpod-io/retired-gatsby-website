@@ -10,125 +10,114 @@ import { Posts } from '../components/blog/Posts'
 // import NewsletterForm from '../components/NewsletterForm'
 
 const StyledBlogPage = styled.div`
-    /* ------------------------------------------- */
-    /* ----- Section Posts ----- */
-    /* ------------------------------------------- */
+  /* ------------------------------------------- */
+  /* ----- Section Posts ----- */
+  /* ------------------------------------------- */
 
-    h1 {
-        margin-bottom: 3rem;
+  h1 {
+    margin-bottom: 3rem;
+  }
+
+  .pattern {
+    padding: 10rem 0 5rem;
+    text-align: center;
+  }
+
+  .post {
+    padding: 7rem 0;
+
+    @media (max-width: ${sizes.breakpoints.md}) {
+      padding: 5rem 0;
     }
-
-    .pattern {
-        padding: 10rem 0 5rem;
-        text-align: center;
-    }
-
-    .post {
-        padding: 7rem 0;
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            padding: 5rem 0;
-        }
-    }
+  }
 `
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: {
-        fileAbsolutePath: {
-        glob: "**/blog/*"
+    allMarkdownRemark(filter: { fileAbsolutePath: { glob: "**/blog/*" } }) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          timeToRead
+          fileAbsolutePath
+          excerpt
+          headings {
+            value
+          }
+          frontmatter {
+            title
+            image
+            date
+            author
+          }
         }
-    }) {
-        edges {
-            node {
-                fields {
-                    slug
-                }
-                timeToRead
-                fileAbsolutePath
-                excerpt
-                headings {
-                    value
-                }
-                frontmatter {
-                    title
-                    image
-                    date
-                    author
-                }
-            }
-            }
-        }
+      }
     }
+  }
 `
 
 interface BlogPageProps {
-    data: {
-        allMarkdownRemark: {
-            edges: BlogData[];
-        }
+  data: {
+    allMarkdownRemark: {
+      edges: BlogData[]
     }
+  }
 }
 
-
 interface BlogData {
-    node: {
-        fields: {
-            slug: string
-        },
-        timeToRead: string,
-        fileAbsolutePath: string,
-        excerpt: string,
-        headings: {
-            value: string
-        },
-        frontmatter: {
-            title: string
-            image: string
-            date: string
-            author: string
-        }
+  node: {
+    fields: {
+      slug: string
     }
+    timeToRead: string
+    fileAbsolutePath: string
+    excerpt: string
+    headings: {
+      value: string
+    }
+    frontmatter: {
+      title: string
+      image: string
+      date: string
+      author: string
+    }
+  }
 }
 
 const BlogPage: React.SFC<BlogPageProps> = (props) => {
+  const posts = props.data.allMarkdownRemark.edges.sort((a, b) => Date.parse(b.node.frontmatter.date) - Date.parse(a.node.frontmatter.date))
 
-    const posts = props.data.allMarkdownRemark.edges.sort((a, b) =>
-        Date.parse(b.node.frontmatter.date) - Date.parse(a.node.frontmatter.date));
+  return (
+    <IndexLayout canonical="/blog/" title="Blog" description="Discover articles and tutorials about Gitpod.">
+      <StyledBlogPage>
+        {/* ----- Section Posts ----- */}
 
-    return (
-        <IndexLayout canonical="/blog/" title="Blog" description="Discover articles and tutorials about Gitpod.">
-            <StyledBlogPage>
+        <div className="pattern" aria-hidden="true">
+          <div className="row">
+            <h1>Discover Articles and Tutorials about Gitpod</h1>
+          </div>
+        </div>
 
-                {/* ----- Section Posts ----- */}
+        <section className="post">
+          <div className="row">
+            <h1 className="visually-hidden">Discover Articles and Tutorials about Gitpod</h1>
+            <Posts>
+              {posts.map((post) => (
+                <PostPreview key={post.node.fields.slug} post={post} />
+              ))}
+            </Posts>
+          </div>
+        </section>
 
-                <div className="pattern" aria-hidden="true">
-                    <div className="row">
-                        <h1>Discover Articles and Tutorials about Gitpod</h1>
-                    </div>
-                </div>
+        {/* ----- Section Newsletter ----- */}
+        {/* <NewsletterForm /> */}
 
-                <section className="post">
-                    <div className="row">
-                        <h1 className="visually-hidden">Discover Articles and Tutorials about Gitpod</h1>
-                        <Posts>
-                            {posts.map(
-                                post => <PostPreview
-                                    key={post.node.fields.slug}
-                                    post={post}
-                                />
-                            )}
-                        </Posts>
-                    </div>
-                </section>
-
-                {/* ----- Section Newsletter ----- */}
-                {/* <NewsletterForm /> */}
-
-                <BackToTopButton />
-            </StyledBlogPage>
-        </IndexLayout>
-    )
+        <BackToTopButton />
+      </StyledBlogPage>
+    </IndexLayout>
+  )
 }
 
 export default BlogPage
