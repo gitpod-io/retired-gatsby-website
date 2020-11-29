@@ -13,7 +13,8 @@ export const colors = {
   offWhite2: '#e5e5e5',
   offWhite3: '#dbdbdb',
   offWhite4: '#e6e6e6',
-  offWhite5: '#C4C4C4'
+  offWhite5: '#C4C4C4',
+  lightGrey: '#9F9F9F',
 }
 
 export const sizes = {
