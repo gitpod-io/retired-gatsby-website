@@ -1,100 +1,145 @@
-import React from 'react'
+// @ts-nocheck
+import React, { useRef, useState, useEffect } from 'react'
 
 import styled from '@emotion/styled'
-import TweetEmbed from 'react-tweet-embed'
-import { sizes } from '../../styles/variables'
+import { sizes, colors } from '../../styles/variables'
+import Testimonial, { TestimonialProps } from './Testimonial'
+import { testimonials } from '../../contents'
 
 const StyledTestimonials = styled.div`
-    min-height: 60rem;
-    margin: 8rem 0 10rem;
+  min-height: 60rem;
+  margin: 8rem 0 10rem;
 
-    @media(max-width: ${sizes.breakpoints.sm}) {
-        text-align: center;
-    }
+  @media (max-width: ${sizes.breakpoints.sm}) {
+    text-align: center;
+  }
 
-    /* ------------------------------------------- */
-    /* ----- Section Testimonials ----- */
-    /* ------------------------------------------- */
+  /* ------------------------------------------- */
+  /* ----- Section Testimonials ----- */
+  /* ------------------------------------------- */
 
-    h3 {
-        margin-bottom: 3rem;
-        text-align: center;
-    }
+  h3 {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
 
-    .tweets {
-        display: flex;
+  .tweets {
+    display: flex;
+    transition: all 0.3s;
+
+    &-container {
+        padding-bottom: 4rem;
         overflow-x: scroll;
-        align-items: center;
-
-        @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
-            padding-left: calc((100% - ${sizes.grid.maxWidth})/2);
-        }
-
-        & > div {
-            &:first-of-type {
-                @media(max-width: ${sizes.breakpoints.lg}) {
-                    padding-left: 7rem;
-                }
-
-                @media(max-width: ${sizes.breakpoints.md}) {
-                    padding-left: 4rem;
-                }
-
-                @media(max-width: ${sizes.breakpoints.sm}) {
-                    padding-left: 1rem;
-                }
-            }
-        }
     }
 
-    .tweet {
-        min-width: 400px;
+    & > * {
+      flex: 0 0 32%;
 
-        @media(max-width: 440px) {
-            min-width: 95%;
-        }
+      &:not(:last-child) {
+        margin-right: 1.333%;
+      }
+    }
+  }
 
-        &:not(:last-of-type) {
-            margin-right: 3rem;
-        }
+  .dots {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0 5rem;
+
+    @media(max-width: 740px) {
+        padding-top: 3rem;
     }
 
+    @media(max-width: 440px) {
+        padding-top: 2.5rem;
+    }
+  }
+
+  .dot {
+    height: 1.5rem;
+    width: 1.5rem;
+    background: ${colors.offWhite4};
+    border: none;
+    border-radius: 50%;
+    transition: all .2s;
+
+    &:hover,
+    &:focus {
+        background: ${colors.lightGrey};
+    }
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
 `
 
-const twitterOptions = { theme: 'light', dnt: true, cards: 'hidden' }
+const Testimonials: React.SFC<{}> = () => {
+    const [currentCycle, setCurrentCycle] = useState<number>(0)
+    const tweetsRef = useRef<HTMLDivElement>(null)
+    const tweetsContainerRef = useRef<HTMLDivElement>(null)
+    const cycles = Math.ceil(testimonials.length / 3)
 
-const tweets = [
-  '1115274432958930946',
-  '1102215129696010240',
-  '1167463499779338243',
-  '1191710936605831169',
-  '1131239314346729482',
-  '1217728632887611397',
-  '1117695539540365312',
-  '1116152894548582402',
-  '1159698330764611584',
-  '1117141675745402881',
-  '1120015913024139265',
-  '1221093493214310400',
-  '1215700809104740354'
-]
+    useEffect(() => {
+        const tweetsContainer = tweetsContainerRef.current
+        const dots = document.querySelectorAll('.dot')
+        const cycleWidth = tweetsContainer?.scrollWidth / cycles
 
-const Testimonials: React.SFC<{}> = () => (
-  <StyledTestimonials>
-    <section className="testimonials">
-      <div className="row">
-        <h3>
-          Used by 200,000+ <strong>Developers & Businesses</strong>
-        </h3>
-      </div>
-      <div className="tweets">
-        {tweets.map((t, i) => (
-          <TweetEmbed key={i} className="tweet" id={t} options={twitterOptions} />
-        ))}
-        <TweetEmbed className="tweet" id="1215707492740739072" options={{ ...twitterOptions, conversation: 'none' }} />
-      </div>
-    </section>
-  </StyledTestimonials>
-)
+        tweetsContainer.addEventListener('scroll', (e) => {
+            const currentScrollPosition = tweetsContainer?.scrollLeft
+            setCurrentCycle(cycles - Math.floor((tweetsContainer?.scrollWidth - currentScrollPosition) / cycleWidth))
+        })
+    })
+
+    const switchTweets = (to: number) => {
+        const tweetsContainer = tweetsContainerRef.current
+        const cycleWidth = tweetsContainer?.scrollWidth / cycles
+        tweetsContainer.scroll({ left: parseFloat(cycleWidth * to), behavior: 'smooth' })
+
+        // Older method which regards the actuals tweets and the space between them and not the width of .tweets
+        
+        // const tweets = tweetsRef.current
+        // const firstTweet = tweets?.firstChild
+        // const spacing = getComputedStyle(firstTweet)['margin-right']
+        // const transform = firstTweet.offsetWidth * 3 + parseFloat(spacing.substring(0, spacing.length - 2)) * 2.8
+    }
+
+    return (
+        <StyledTestimonials>
+            <section className="testimonials">
+                <div className="row">
+                    <h3>
+                        Used by 200,000+ <strong>Developers & Businesses</strong>
+                    </h3>
+                    <div className="tweets-container" ref={tweetsContainerRef}>
+                        <div className="tweets" ref={tweetsRef}>
+                            {testimonials.map((t) => (
+                                <Testimonial key={t.name} {...t} />
+                            ))}
+                        </div>
+                    </div>
+                    <div className="dots">
+                        {[...Array(cycles).keys()].map((d) => {
+                            return (
+                                <button
+                                    className="dot"
+                                    key={d}
+                                    onClick={() => {
+                                        setCurrentCycle(d)
+                                        switchTweets(d)
+                                    }}
+                                    style={currentCycle === d ? { background: colors.lightGrey } : {}}
+                                    title={`Switch to ${d + 1}th set of tweets.`}
+                                >
+                                    &nbsp;
+                                </button>
+                            )
+                        })}
+                    </div>
+                </div>
+            </section>
+        </StyledTestimonials>
+    )
+}
 
 export default Testimonials
