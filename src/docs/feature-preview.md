@@ -18,7 +18,7 @@ This feature also enables Docker in your workspace. Run `sudo docker-up` to star
 
 Gitpod uses Theia as the default IDE. This setting allows you to choose between [Theia](https://github.com/eclipse-theia/theia) and [Code](https://github.com/microsoft/vscode) editors.
 
-You can choose between 3 options:
+You can choose between 2 options:
 
 - Theia
 - Code
