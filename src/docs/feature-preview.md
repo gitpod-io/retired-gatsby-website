@@ -1,6 +1,6 @@
 # Feature Preview
 
-You can enable Feature Preview from the Settings. This will enable a beta preview of some of the latest functionalities and features that are being actively developed. Some of them are user-facing features while others take place in the backstage.
+You can enable Feature Preview from the [Settings](https://gitpod.io/settings/). This will enable a beta preview of some of the latest functionalities and features that are being actively developed. Some of them are user-facing features while others take place in the backstage.
 
 You can disable Feature Preview at any time.
 
@@ -16,10 +16,11 @@ This feature also enables Docker in your workspace. Run `sudo docker-up` to star
 
 ## Default IDE
 
-Gitpod uses Theia as the default IDE. This setting allows you to choose between [Theia](https://github.com/eclipse-theia/theia) and [Code](https://github.com/microsoft/vscode) editors as well as provide a custom IDE image.
+Gitpod uses Theia as the default IDE. This setting allows you to choose between [Theia](https://github.com/eclipse-theia/theia) and [Code](https://github.com/microsoft/vscode) editors.
 
 You can choose between 3 options:
 
 - Theia
 - Code
-- Image
+
+> There's also a private beta for allowing a custom IDE image for the default IDE. If you are interested, feel free to reach out through the [contact form](https://www.gitpod.io/contact/).
