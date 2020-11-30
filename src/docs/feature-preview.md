@@ -10,7 +10,9 @@ If you have suggestions on how we can improve a feature, please provide feedback
 
 ## Root Access
 
-Root Access allows you to attain privileged control within a workspace and be able to run commands as root as well as run Docker and Docker Compose.
+Root Access allows you to attain privileged control within a workspace and be able to run commands as root.
+
+This feature also enables Docker in your workspace. Run `sudo docker-up` to start a Docker daemon.
 
 ## Default IDE
 
