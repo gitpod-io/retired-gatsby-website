@@ -22,4 +22,4 @@ You can choose between 3 options:
 
 - Theia
 - Code
-- Custom
+- Image
