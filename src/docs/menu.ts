@@ -108,6 +108,10 @@ export const MENU: MenuEntry[] = [
         ]
     ),
     M(
+        "Feature Preview",
+        "feature-preview",
+    ),
+    M(
         "Gitpod Self-Hosted",
         "self-hosted/latest/self-hosted",
         [
