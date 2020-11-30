@@ -145,7 +145,7 @@ Here are a few Vaadin example projects that are already automated with Gitpod:
 | Repository                                                                                   | Description                               | Try it                                                                                                                                                |
 | -------------------------------------------------------------------------------------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Vaadin CRM](https://github.com/vaadin-learning-center/crm-tutorial)                         | Full-stack Vaadin and Spring Boot         | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vaadin-learning-center/crm-tutorial)           |
-| [Vaadin starter](https://gitpod.io/#/https://github.com/vaadin/skeleton-starter-flow-spring) | An empty starter for a new Vaadin project | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#/https://github.com/vaadin/skeleton-starter-flow-spring/tree/v14) |
+| [Vaadin starter](https://github.com/vaadin/skeleton-starter-flow-spring) | An empty starter for a new Vaadin project | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vaadin/skeleton-starter-flow-spring) |
 
 </div>
 
