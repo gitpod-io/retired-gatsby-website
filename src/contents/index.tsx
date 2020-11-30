@@ -121,10 +121,14 @@ export const testimonials: TestimonialProps[] = [
     {
         name: 'Ben Halpern',
         avatar: BenHalpern,
-        org: <a href="https://twitter.com/forem" target="_blank">
-            @forem
-        </a>,
-        role: 'Creator and Co-founder ',
+        org: <>
+            <a href="https://twitter.com/forem" target="_blank">
+                @forem
+            </a> and <a href="https://twitter.com/ThePracticalDev" target="_blank">
+                @ThePracticalDev
+            </a>
+        </>,
+        role: 'Creator and Co-founder',
         text: (
             <>
                 <p>GitPod is incredibly cool.</p>
@@ -138,7 +142,7 @@ export const testimonials: TestimonialProps[] = [
         name: 'Michael Friedrich',
         avatar: Michael,
         org: <a href="https://twitter.com/gitlab" target="_blank">@GitLab</a>,
-        role: 'The Ops in Developer Evangelism',
+        role: 'Developer Evangelist',
         text: (
             <>
                 <p>
@@ -240,7 +244,7 @@ export const testimonials: TestimonialProps[] = [
         org: <a href="https://twitter.com/4GeeksAcademy" target="_blank">
             @4GeeksAcademy
         </a>,
-        role: 'Senior dev teaching code thru',
+        role: 'Co-Founder',
         text: (
             <>
                 <p>My setup is on <a href="https://twitter.com/gitpod" target="_blank">@gitpod</a>, just like Christopher McCandless, where I go my code goes with me, no setup whatsoever Smiling face with sunglasses 😎 #IntoTheWild</p>
