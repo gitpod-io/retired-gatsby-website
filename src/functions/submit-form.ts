@@ -28,7 +28,16 @@ async function sendEmail(client: client.MailService, email: Email): Promise<{sta
                 type: "text/plain",
                 value: `${email.message ? email.message : `${email.feedback}\n${email.otherFeedback}`}`
             }
-        ]
+        ],
+        tracking_settings: {
+            click_tracking: {
+                enable: false,
+                enable_text: false
+            },
+            open_tracking: {
+                enable: false
+            }
+        }
     }
     try {
         await client.send(data);
