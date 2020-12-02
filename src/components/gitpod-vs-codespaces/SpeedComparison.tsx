@@ -150,7 +150,7 @@ const SpeedComparison = () => (
         </div>
       </div>
       <div className="item item--2">
-        <h4>Codespaces</h4>
+        <h4>GitHub Codespaces</h4>
         <div className="bar-container">
           <div className="bar bar--codespaces">
             <div className="bar--codespaces-1" title="Boot Environment & Load UI (> 5 min)">Load</div>

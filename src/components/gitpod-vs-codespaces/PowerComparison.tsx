@@ -133,7 +133,7 @@ const PowerComparison = () => (
           <div className="bar bar--1">2 vCPU</div>
           <div className="bar bar--2">4GB RAM</div>
         </div>
-        <span className="item__title">Codespaces</span>
+        <span className="item__title">GitHub Codespaces</span>
       </div>
       <div className="item">
         <div className="bars">

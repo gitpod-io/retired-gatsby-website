@@ -69,17 +69,17 @@ const StyledGitpodVsCodespacesPage = styled.div`
 `
 
 const GitpodVsCodespacesPage = () => (
-  <IndexLayout title="Gitpod vs Codespaces" description="Experience Gitpod, the fast, resource-efficient, and open-source alternative to Codespaces.">
+  <IndexLayout title="Gitpod vs GitHub Codespaces" description="Experience Gitpod, the fast, resource-efficient, and open-source alternative to GitHub Codespaces.">
     <StyledGitpodVsCodespacesPage>
       <section className="main">
         <div className="row">
           <div className="intro pattern">
             <h1 className="intro__title">
-              <strong>Gitpod vs Codespaces</strong>
+              <strong>Gitpod vs GitHub Codespaces</strong>
             </h1>
             <p>
-              Experience Gitpod, the <a href="#fast">fast</a>, <a href="#resource-efficient">resource-efficient</a>, and{' '}
-              <a href="#open-source">open-source</a> alternative to Codespaces.
+               Gitpod is the <a href="#fast">faster</a>, <a href="#resource-efficient">more powerful</a>, and{' '}
+              <a href="#open-source">open-source</a> platform that integrates with your individual stack.
             </p>
           </div>
         </div>
@@ -90,7 +90,7 @@ const GitpodVsCodespacesPage = () => (
       <section className="glance">
         <div className="row">
           <PricingTable
-            title={<strong>Gitpod vs Codespaces at a Glance</strong>}
+            title={<strong>Gitpod vs GitHub Codespaces at a Glance</strong>}
             styles={{ minWidth: '800px', borderCollapse: 'separate', borderSpacing: '2rem 0', margin: '0 auto', tableLayout: 'fixed' }}
             containerMaxWidthLarge={true}
             disableMarginBottom={true}
@@ -104,7 +104,7 @@ const GitpodVsCodespacesPage = () => (
                   <h2>Gitpod</h2>
                 </th>
                 <th className="th__title">
-                  <h2>Codespaces</h2>
+                  <h2>GitHub Codespaces</h2>
                 </th>
               </tr>
             </thead>
