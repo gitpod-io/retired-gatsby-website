@@ -73,6 +73,7 @@ const StyledPowerComparison = styled.div`
 
     @media (max-width: 470px) {
       width: 8rem;
+      padding-bottom: 1rem;
     }
 
     @media (max-width: 360px) {
@@ -106,7 +107,7 @@ const StyledPowerComparison = styled.div`
     }
 
     &--3 {
-      height: 15rem;
+      height: 16rem;
       background: ${colors.link};
 
       @media (max-width: 470px) {
@@ -119,7 +120,7 @@ const StyledPowerComparison = styled.div`
       background: ${colors.lightBlue};
 
       @media (max-width: 470px) {
-        height: 16rem;
+        height: 24rem;
       }
     }
   }
