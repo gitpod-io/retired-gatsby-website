@@ -97,7 +97,7 @@ const Testimonials: React.SFC<{}> = () => {
         tweetsContainer.scroll({ left: parseFloat(cycleWidth * to), behavior: 'smooth' })
 
         // Older method which regards the actuals tweets and the space between them and not the width of .tweets
-        
+
         // const tweets = tweetsRef.current
         // const firstTweet = tweets?.firstChild
         // const spacing = getComputedStyle(firstTweet)['margin-right']

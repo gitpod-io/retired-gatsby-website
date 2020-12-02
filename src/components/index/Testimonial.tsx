@@ -60,10 +60,10 @@ const StyledTestimonial = styled.blockquote`
   a {
      &:hover,
      &:focus {
-        .twitter-icon { 
+        .twitter-icon {
             fill: ${colors.textDark};
         }
-     } 
+     }
   }
 `
 
