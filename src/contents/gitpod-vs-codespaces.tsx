@@ -21,6 +21,9 @@ export const features: FeatureCardProps[] = [
         <p>
           <strong>Why wait for long builds when you can start coding immediately?</strong>
         </p>
+        <p>
+          More about <Link to="/blog/continuous-dev-environment-in-devops/">Continuous Dev Environments.</Link>
+        </p>
       </>
     ),
     Figure: SpeedComparison,
@@ -42,7 +45,7 @@ export const features: FeatureCardProps[] = [
     ),
     Figure: PowerComparison,
     figFootnote: <>Compared resources for 100 active hours at $9/month. Last verified 25 Sep 2020. Sources: <Link to="/pricing/">Gitpod Pricing</Link>, <a href=
-    "https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces" target="_blank">Codespaces Pricing</a>.</>,
+    "https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces" target="_blank">GitHub Codespaces Pricing</a>.</>,
   },
   {
     id: 'open-source',
@@ -50,7 +53,7 @@ export const features: FeatureCardProps[] = [
     text: (
       <>
         <p>
-          <strong>Gitpod is open-source and thereby guarantees full transparency and flexibility</strong>
+          <strong>Gitpod puts developers' interest first and thereby guarantees full transparency and flexibility. Integrate, don't dictate.</strong>
         </p>
         <ul className="text-list">
           <li>host Gitpod yourself on GCP, AWS, Azure or self-managed Kubernetes</li>
