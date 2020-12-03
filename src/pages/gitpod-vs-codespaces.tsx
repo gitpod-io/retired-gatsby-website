@@ -31,6 +31,7 @@ import tickImg from '../resources/icon-tick-blue.svg'
 import questionMarkImg from '../resources/question-mark.svg'
 import crossImg from '../resources/cross.svg'
 import Difference from '../components/gitpod-vs-codespaces/Difference'
+import Octocat from '../resources/octocat.svg'
 
 const Tick = () => <img style={{ height: '2.1rem' }} src={tickImg} alt="Check Mark" />
 
@@ -54,13 +55,13 @@ const StyledGitpodVsCodespacesPage = styled.div`
     padding: 4rem 0 6rem;
     text-align: center;
 
-    &__img {
-      height: 7rem;
-    }
-
     &__title {
       margin: 2rem 0 2rem;
     }
+  }
+
+  .octocat {
+      height: 14rem;
   }
 
   .glance {
@@ -74,6 +75,7 @@ const GitpodVsCodespacesPage = () => (
       <section className="main">
         <div className="row">
           <div className="intro pattern">
+            <img className="octocat" src={Octocat} alt="Octocat"/>
             <h1 className="intro__title">
               <strong>Gitpod vs GitHub Codespaces</strong>
             </h1>
