@@ -44,8 +44,8 @@ export const features: FeatureCardProps[] = [
       </>
     ),
     Figure: PowerComparison,
-    figFootnote: <>Compared resources for 100 active hours at $9/month. Last verified 25 Sep 2020. Sources: <Link to="/pricing/">Gitpod Pricing</Link>, <a href=
-    "https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces" target="_blank">GitHub Codespaces Pricing</a>.</>,
+    figFootnote: <>Compared resources for 100 active hours at $9/month. Last verified 25 Sep 2020. Sources: <Link to="/pricing/">Gitpod</Link>, <a href=
+    "https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces" target="_blank">GitHub Codespaces</a>.</>,
   },
   {
     id: 'open-source',

@@ -10,7 +10,7 @@ const StyledSpeedComparison = styled.div`
   margin: 5rem 0 7rem;
 
   @media(max-width: ${sizes.breakpoints.lg}) {
-      margin: 0rem 0 3rem;
+    margin: 0rem 0 3rem;
   }
 
   @media (max-width: 560px) {
@@ -39,15 +39,6 @@ const StyledSpeedComparison = styled.div`
     }
   }
 
-  h4 {
-    margin-bottom: 1rem;
-    margin-left: 1.5rem;
-
-    @media (max-width: ${sizes.breakpoints.sm}) {
-      text-align: left;
-    }
-  }
-
   p {
     color: ${colors.textLight};
   }
@@ -55,6 +46,17 @@ const StyledSpeedComparison = styled.div`
   .bar {
     position: relative;
     display: flex;
+
+    &__title {
+        margin-bottom: 1rem;
+        margin-left: 1.5rem;
+        font-weight: 600;
+        color: ${colors.textDark};
+
+        @media (max-width: ${sizes.breakpoints.sm}) {
+            text-align: left;
+        }
+    }
 
     @media (max-width: 605px) {
       flex-wrap: wrap;
@@ -141,7 +143,7 @@ const SpeedComparison = () => (
         Click
       </div>
       <div className="item item--1">
-        <h4>Gitpod</h4>
+        <div className="bar__title">Gitpod</div>
         <div className="bar-container">
           <div className="bar bar--gitpod">
             <div className="bar--gitpod-1" title="Boot Environment & Load UI (< 1 min)"></div>
@@ -150,7 +152,7 @@ const SpeedComparison = () => (
         </div>
       </div>
       <div className="item item--2">
-        <h4>GitHub Codespaces</h4>
+        <div className="bar__title">GitHub Codespaces</div>
         <div className="bar-container">
           <div className="bar bar--codespaces">
             <div className="bar--codespaces-1" title="Boot Environment & Load UI (> 5 min)">Load</div>
