@@ -125,7 +125,7 @@ interface DocsLayoutProps {
 }
 
 const DocsLayout: React.SFC<DocsLayoutProps> = ({ canonical, title, body}) => (
-    <IndexLayout canonical={canonical} title={title} description="Documentation site for Gitpod.">
+    <IndexLayout canonical={canonical} title={title} description="Explore the documentation to learn more about Gitpod.io and Gitpod Self-Hosted.">
         <StyledDocsLayout>
                 <div className="row">
                     <div className="content">

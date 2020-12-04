@@ -97,7 +97,7 @@ const BlogPage: React.SFC<BlogPageProps> = (props) => {
         Date.parse(b.node.frontmatter.date) - Date.parse(a.node.frontmatter.date));
 
     return (
-        <IndexLayout canonical="/blog/" title="Blog" description="Discover articles and tutorials about Gitpod.">
+        <IndexLayout canonical="/blog/" title="Blog" description="Visit the Gitpod blog to learn about releases, tutorials, news and more.">
             <StyledBlogPage>
 
                 {/* ----- Section Posts ----- */}
