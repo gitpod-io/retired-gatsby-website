@@ -52,7 +52,7 @@ Another pet peeve is when you need to fix something on a maintenance branch. Fix
 
 Tinkering with a six months old technology stack can be so annoying. You have to deal with all those old libraries and versions of them. However, you still have to make it work somehow.
 
-![Photo by [JESHOOTS.COM](https://unsplash.com/@jeshoots?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10944/0*fni6JI11_OS6eJV7)*Photo by [JESHOOTS.COM](https://unsplash.com/@jeshoots?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
+![Photo by [JESHOOTS.COM](https://unsplash.com/@jeshoots?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](/jeeshoots.jpeg)*Photo by [JESHOOTS.COM](https://unsplash.com/@jeshoots?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
 
 All this suffering can end if we applied the ‘infrastructure as code’ idea to our dev environments, too. Why not make dev environment setups automated, reliably reproducible, and versioned by writing them down in an executable format and checking them into the project’s source code repository?
 
@@ -72,7 +72,7 @@ Docker files are a pretty neat way to describe a development environment. Imagin
 
 Once you push the change to the repository and the docker image gets updated (automatically), all team members have the new tool in their development environment. We need to get to coding with a single click.
 
-![Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/12000/0*_7n4Htwk2Iz-r9qA)*Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
+![Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](/clément-h.jpeg)*Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
 
 ### **Automated IDE Setup**
 

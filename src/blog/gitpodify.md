@@ -265,7 +265,7 @@ FROM gitpod/workspace-full-vnc
 
 This will give you a virtual X server and a Remote Desktop client running on port `6080`:
 
-![Virtual X server and Remote Desktop client running on port 6080](https://cdn-images-1.medium.com/max/11236/1*YaZqFJXHopwW0puvvmfEew.png)
+![Virtual X server and Remote Desktop client running on port 6080](/virtual-x-sever-running-on-a-remote-desktop-client.png)
 
 This can be useful for example to run Electron apps graphically. For that, you'll just need a few extra dependencies in your `.gitpod.dockerfile`:
 
