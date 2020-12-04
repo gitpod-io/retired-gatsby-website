@@ -128,7 +128,7 @@ Gitpod comes equipped with the following VS Code extensions:
  - [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
  - [Java Dependency Viewer](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-dependency)
 
-You can [install additional extensions](/docs/vscode_extensions/) for your project if you want.
+You can [install additional extensions](/docs/vscode-extensions/) for your project if you want.
 
 Most of the information you find in the [Java for VS Code](https://code.visualstudio.com/docs/languages/java) documentation applies to Gitpod as well.
 
