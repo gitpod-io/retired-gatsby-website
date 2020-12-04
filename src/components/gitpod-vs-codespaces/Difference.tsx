@@ -47,7 +47,7 @@ const Difference = () => {
         <a
           href={
             browser === 'Firefox'
-              ? 'https://addons.mozilla.org/en-GB/firefox/addon/gitpod/'
+              ? 'https://addons.mozilla.org/firefox/addon/gitpod/'
               : 'https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki'
           }
           target="_blank"
