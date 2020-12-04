@@ -39,7 +39,7 @@ const QuestionMark = () => <img style={{ height: '2.1rem' }} src={questionMarkIm
 
 const Cross = () => <img style={{ height: '2.1rem' }} src={crossImg} alt="Cross" />
 
-const StyledGitpodVsCodespacesPage = styled.div`
+const StyledGitpodVsGitHubCodespacesPage = styled.div`
   .main {
     padding: 0;
   }
@@ -69,9 +69,9 @@ const StyledGitpodVsCodespacesPage = styled.div`
   }
 `
 
-const GitpodVsCodespacesPage = () => (
-  <IndexLayout title="Gitpod vs GitHub Codespaces" description="Gitpod is the faster, more powerful open-source platform that integrates with your individual stack.">
-    <StyledGitpodVsCodespacesPage>
+const GitpodVsGitHubCodespacesPage = () => (
+  <IndexLayout title="Gitpod vs GitHub Codespaces" description="Gitpod is the faster, more powerful open-source platform that integrates with your individual stack." canonical="gitpod-vs-github-codespaces">
+    <StyledGitpodVsGitHubCodespacesPage>
       <section className="main">
         <div className="row">
           <div className="intro pattern">
@@ -378,8 +378,8 @@ const GitpodVsCodespacesPage = () => (
           }
         ]}
       />
-    </StyledGitpodVsCodespacesPage>
+    </StyledGitpodVsGitHubCodespacesPage>
   </IndexLayout>
 )
 
-export default GitpodVsCodespacesPage
+export default GitpodVsGitHubCodespacesPage

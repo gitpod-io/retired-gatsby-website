@@ -406,3 +406,8 @@
   from = "/blog/gitlab-integration/+"
   to = "/blog/gitlab-integration/"
   status = 301
+
+[[redirects]]
+  from = "/gitpod-vs-codespaces"
+  to = "/gitpod-vs-github-codespaces/"
+  status = 301
