@@ -20,7 +20,7 @@ You can find more information about [startup tasks here](/docs/config-start-task
 
 ### Step 2: Change Base Image
 
-The `.gitpod.yml` optionally references a Docker image or a Docker file, which is used as the container for you dev environment. This is where you install all the tools (such as runtimes, compilers, databases, etc.) that you need during development. The assistant can propose a couple of default Docker images which are based on the Dockerfiles maintained [here](https://github.com/gitpod-io/workspace-images). You can, of course, bring your own image.
+The `.gitpod.yml` optionally references a Docker image or a Docker file, which is used as the container for your dev environment. This is where you install all the tools (such as runtimes, compilers, databases, etc.) that you need during development. The assistant can propose a couple of default Docker images which are based on the Dockerfiles maintained [here](https://github.com/gitpod-io/workspace-images). You can, of course, bring your own image.
 
 You can find more information about [Docker configuration here](/docs/config-docker/).
 
