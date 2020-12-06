@@ -6,7 +6,7 @@ You can disable Feature Preview at any time.
 
 If you have suggestions on how we can improve a feature, please provide feedback by [opening an issue](https://github.com/gitpod-io/gitpod/issues/new/choose).
 
-> Once you enable this, existing and new workspaces will automatically start with all beta features. Disabling this could make existing workspaces unstable. 
+> Once you enable this, existing and new workspaces will automatically start with all beta features. Disabling this could make existing workspaces unstable.
 
 ## Root Access
 
