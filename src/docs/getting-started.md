@@ -1,6 +1,6 @@
 # Getting Started
 
-Gitpod provides continuous workspaces for the development flows of common code hosting platforms.
+Gitpod provides continuous dev environments for the development flows of common code hosting platforms.
 The following example shows how to use Gitpod with a source code repository.
 
 1. Point your browser to a GitLab, GitHub or Bitbucket repository, Pull/Merge Request, or issue, e.g.
