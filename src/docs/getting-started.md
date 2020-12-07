@@ -1,13 +1,23 @@
 # Getting Started
 
-Gitpod provides continuous dev environments for the development flows of common code hosting platforms.
+[Gitpod](https://www.gitpod.io) is an open source platform for automated and ready-to-code development environments that blends into your existing workflow. 
+
+>For an overview of Gitpod and its concepts and components you should first read [Introduction to Gitpd](/docs/).
 
 You can start using Gitpod with one or more of the following ways:
 
-- Enable [GitLab Integration](#gitlab-integration)
 - Install [Browser Extension](#browser-extension)
+- Enable [GitLab Integration](#gitlab-integration)
 - Use a [Prefixed URL](#prefixed-url)
-- Quick start using an [Example Project](#example-project)
+- Quick start using an [Example Project](#example-project) or [OSS Project](#gitpodified-open-source-project)
+
+## Browser Extension
+
+For convenience, we've made a browser extension that works with Google Chrome, Mozilla Firefox, and Safari. The extension adds a Gitpod button on every project and branch across GitLab, GitHub, and Bitbucket so you can easily start any existing projects in Gitpod.
+
+![Browser Extension](images/browser-extension-lense.png)
+
+[Learn more &rarr;](/docs/browser-extension/)
 
 ## GitLab Integration
 
@@ -16,14 +26,6 @@ GitLab comes with a native Gitpod integration. This feature is enabled on GitLab
 ![GitLab Integration](images/gitlab-integration/gitpod_button_project_page.png)
 
 [Learn more &rarr;](/docs/gitlab-integration/)
-
-## Browser Extension
-
-For convenience, we've made a browser extension that works with Google Chrome, Mozilla Firefox, and Safari. The extension adds a Gitpod button on every project across GitLab, GitHub, and Bitbucket so you can easily import any existing projects.
-
-![Browser Extension](images/browser-extension-lense.png)
-
-[Learn more &rarr;](/docs/browser-extension/)
 
 ## Prefixed URL
 
@@ -42,3 +44,13 @@ We've alrelay added Gitpod configuration for some example or existing projects.
 You can pick any of the example projects listed under [Languages & Frameworks](https://www.gitpod.io/docs/languages-and-frameworks/).
 
 For example, try opening [Vuepress](https://gitpod.io/#https://github.com/vuejs/vuepress) or a [Java with Spring Boot](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic) example.
+
+## Gitpodified Open Source Projects {#gitpodified-open-source-project}
+
+We all know that setting up a local dev environment for a contribution to your favourite OSS project can be daunting. Luckily there are already numerous projects out there that gitpodified their repositories allowing everyone to contribute with a single click. With [contribute.dev](https://contribute.dev/) we even made a website to list them. 
+
+Some of our favorits include: 
+- [GitLab](https://gitpod.io/#https://gitlab.com/gitlab-org/gitlab)
+- [freeCodeCamp](https://gitpod.io/#https://github.com/freeCodeCamp/freeCodeCamp)
+- [Prometheus](https://gitpod.io/#https://github.com/prometheus/prometheus)
+- [Forem](https://gitpod.io/#https://github.com/thepracticaldev/dev.to) powering dev.to 
