@@ -23,7 +23,7 @@ At its core Gitpod relies on a **client-server architecture** where the client c
 - **Any device** with a browser and internet connection (Gitpod works with Chrome, Firefox, Safari, Edge and other Chromium-based browsers)
 - Your **local machine** via local VS Code, IntelliJ or simply your shell/terminal where you SSH into your Gitpod workspace (*expected to be released in early Q1/2021*)
 
-Server-side Gitpod is a Kubernetes application that understands the context from GitLab, GitHub and Bitbucket and spins up containerized dev environments. Under the hood is a **customizable Linux environment**, which we call your *workspace*.
+Server-side Gitpod is a Kubernetes application that understands the context from GitLab, GitHub and Bitbucket and spins up containerized dev environments. Under the hood is a **customizable Linux container**, which we call your *workspace*.
 
 #### Workspace
 
@@ -53,9 +53,9 @@ Learn more about how to configure your repository [here](https://www.gitpod.io/d
 
 #### Prebuilds {#prebuilds}
 
-Gitpod continuously builds your git branches like a CI server. Whenever your code changes (e.g. when new commits are pushed to your repository), Gitpod can prebuild workspaces, i.e. run the init commands in your .gitpod.yml before you even start a workspace. 
+Gitpod continuously builds *all* your git branches like a CI server. Whenever your code changes (e.g. when new commits are pushed to your repository), Gitpod can prebuild workspaces, i.e. run the init commands in your .gitpod.yml before you even start a workspace. 
 
-Then, when you do create a new workspace on a branch, or Pull/Merge Request, for which a prebuild exists, this workspace will load much faster, because all dependencies will have been already downloaded ahead of time, and your code will be already compiled.
+Then, when you do create a new workspace on a branch, or Pull/Merge Request, for which a prebuild exists, this workspace will load much faster, because all dependencies will have been already downloaded ahead of time and your code will be already compiled.
 
 Only with [prebuilds enabled](https://www.gitpod.io/docs/prebuilds/#enable-prebuilt-workspaces) your dev environment can turn fully ephemeral. 
 
