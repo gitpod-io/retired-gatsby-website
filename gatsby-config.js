@@ -60,7 +60,12 @@ module.exports = {
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-gitpod',
-          'gatsby-remark-autolink-headers',
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              'enableCustomId': true
+            },
+          },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-external-links',
           'gatsby-remark-smartypants',

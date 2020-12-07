@@ -18,13 +18,13 @@ The webhook will be automatically installed when you trigger the first prebuild 
 
 ## OAuth Application
 
-In Gitpod Self-Hosted you can register your own GitLab OAuth application. This allows to use Gitpod with any GitLab instance.
+In Gitpod you can register your own GitLab OAuth application. This allows to use Gitpod with any GitLab instance.
 
 Here's how to do that:
 
-1) When first starting your Gitpod installation, you'll get redirected to /first-steps where you get prompted to add a Git Provider. Click the button.
+1) Head over to [the settings](https://gitpod.io/settings) and scroll to the section about `Git Provider`.
 
-<img width="1134" alt="Screenshot 2020-08-25 at 08 30 39" src="https://user-images.githubusercontent.com/372735/91142132-96642700-e6b0-11ea-9263-5b2d90906163.png">
+<img width="739" alt="Screenshot 2020-08-25 at 08 30 39" src="https://user-images.githubusercontent.com/372735/101290251-480f0a00-3801-11eb-8c2a-14dc442fceeb.png">
 
 2) In the pop-up you choose GitLab as the type and type the host URL of the GitLab installation you want to use. If you want to hook up with the gitlab.com you can use that host as well, of course.
 
