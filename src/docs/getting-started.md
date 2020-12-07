@@ -2,7 +2,7 @@
 
 [Gitpod](https://www.gitpod.io) is an open source platform for automated and ready-to-code development environments that blends into your existing workflow. 
 
->For an overview of Gitpod and its concepts and components you should first read [Introduction to Gitpd](/docs/).
+>For an overview of Gitpod you should first read [Introduction to Gitpd](/docs/).
 
 You can start using Gitpod with one or more of the following ways:
 
