@@ -14,13 +14,19 @@ Root Access allows you to attain privileged control within a workspace and be ab
 
 This feature also enables Docker in your workspace. Run `sudo docker-up` to start a Docker daemon.
 
+**Learn More**
+
+- [KubeCon 2020 Live Session: Rootless Workspaces in Gitpod](https://www.youtube.com/watch?v=l4I2TVAnBuw) (YouTube)
+- [How to get `sudo` and `root` in your Gitpod workspace](https://github.com/gitpod-io/gitpod/issues/39#issuecomment-738636446) (GitHub issue)
+- [How to use `docker` and `docker-compose` in your Gitpod workspace](https://github.com/gitpod-io/gitpod/issues/52#issuecomment-738629624) (GitHub issue)
+
 ## Default IDE
 
-Gitpod uses Theia as the default IDE. This setting allows you to choose between [Theia](https://github.com/eclipse-theia/theia) and [Code](https://github.com/microsoft/vscode) editors.
+Gitpod uses Theia as its default IDE. This setting allows you to choose between [Theia](https://github.com/eclipse-theia/theia) and [Code](https://github.com/microsoft/vscode) editors.
 
 You can choose between 2 options:
 
 - Theia
 - Code
 
-> There's also a private beta for allowing a custom IDE image for the default IDE. If you are interested, feel free to reach out through the [contact form](https://www.gitpod.io/contact/).
+> There is also a private beta for allowing a custom IDE image for the default IDE. If you are interested, feel free to reach out through the [contact form](https://www.gitpod.io/contact/).
