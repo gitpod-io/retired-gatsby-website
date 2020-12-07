@@ -12,7 +12,7 @@ This is what is at the heart of Gitpod: **an open platform that removes all fric
 
 `youtube: d6D-OUPnJeg`
 
-### Gitpod Concepts
+### Gitpod Concepts 👩‍🏫
 
 Gitpod seamlessly integrates in your workflow and works with all major git hosting platforms including GitHub, GitLab and Bitbucket. It understands the context you are in and adjusts your development environment accordingly. For example, if you create a Gitpod workspace from a Pull or Merge Request, Gitpod will open a fully-initialized development environment in code-review mode.
 
@@ -25,7 +25,7 @@ At its core Gitpod relies on a **client-server architecture** where the client c
 
 Server-side Gitpod is a Kubernetes application that understands the context from GitLab, GitHub and Bitbucket and spins up containerized dev environments. Under the hood is a **customizable Linux container**, which we call your *workspace*.
 
-#### Workspace
+####  🗳 Workspace
 
 A workspace comprises your whole development environment and gives you similar capabilities such as a local Linux machine. Compared to a local linux machine it is however **pre-configured and optimized for your individual development workflow**. Each workspace includes:
 
@@ -37,9 +37,9 @@ A workspace comprises your whole development environment and gives you similar c
 
 **Jetbrain's IDEs, Jupyter Notebook, Jupyter Labs are already available in [private beta](https://www.gitpod.io/contact/).*
 
-#### Dev-environment-as-code
+#### 🏗 Dev-environments-as-code
 
-Spinning up dev environments is easily repeatable and reproducible, because Gitpod applies lessons learned from infrastructure-as-code allowing you to **automate, version-control and easily share dev environments across your team**. We call this [dev-environment-as-code](https://www.gitpod.io/blog/dev-env-as-code/).
+Spinning up dev environments is easily repeatable and reproducible, because Gitpod applies lessons learned from infrastructure-as-code allowing you to **automate, version-control and easily share dev environments across your team**. We call this [dev-environments-as-code](https://www.gitpod.io/blog/dev-env-as-code/).
 
 To reap the resulting automation benefits you provide a then versioned configuration file `.gitpod.yml`  in the root of your git repository. The `.gitpod.yml` contains everything that describes your dev environment:
 
@@ -51,7 +51,7 @@ To reap the resulting automation benefits you provide a then versioned configura
 
 Learn more about how to configure your repository [here](https://www.gitpod.io/docs/configuration/).
 
-#### Prebuilds {#prebuilds}
+#### ⚡️ Prebuilds {#prebuilds}
 
 Gitpod continuously builds *all* your git branches like a CI server. Whenever your code changes (e.g. when new commits are pushed to your repository), Gitpod can prebuild workspaces, i.e. run the init commands in your .gitpod.yml before you even start a workspace. 
 
