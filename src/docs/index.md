@@ -1,12 +1,12 @@
 # Introduction to Gitpod
 
-[Gitpod](https://www.gitpod.io) is an open source platform for automated and **ready-to-code development** environments that blends into existing developer workflows. It enables developers to describe their dev environment as code and **start instant and fresh development environments for each new task** directly from your browser. 
+[Gitpod](https://www.gitpod.io) is an open source platform for automated and **ready-to-code development environments** that blends into your existing workflow. It enables developers to describe their dev environment as code and **start instant and fresh development environments for each new task** directly from your browser. 
 
 ### Gitpod does to Dev Environments what Docker did to Servers 🐳
 
 Today we are emotionally attached (for better or worse) to our development environments, give them names & massage them over time. They are pets - similar to servers before docker took advantage of `namespaces` and `cgroups` in Linux and turned these nice puppies into cattle. 
 
-With Gitpod it is the same - we treat development environments as automated resources you can spin up when you need them and close down (and forget about) when you are done with your task. Dev environments become fully automated and ephemeral. Only then you are always ready-to-code - immediately creative, immediately productive with the click of a button and without any friction. 
+With Gitpod it is the same - we treat development environments as automated resources you can spin up when you need them and close down (and forget about) when you are done with your task. Dev environments become fully automated and ephemeral. Only then you are **always ready-to-code** - immediately creative, immediately productive with the click of a button and without any friction. 
 
 This is what is at the heart of Gitpod: **an open platform that removes all friction of manually setting up and maintaining dev environments** allowing yourself and your team to build applications quicker and more collaboratively.
 
@@ -21,7 +21,7 @@ Gitpod seamlessly integrates in your workflow and works with all major git hosti
 At its core Gitpod relies on a **client-server architecture** where the client can either be: 
 
 - **Any device** with a browser and internet connection (Gitpod works with Chrome, Firefox, Safari, Edge and other Chromium-based browsers)
-- Your local machine via local **VS Code**, **IntelliJ** or simply your **shell/terminal** where you SSH into your Gitpod workspace (*expected to land in early Q1/2021*)
+- Your **local machine** via local VS Code, IntelliJ or simply your shell/terminal where you SSH into your Gitpod workspace (*expected to be released in early Q1/2021*)
 
 Server-side Gitpod is a Kubernetes application that understands the context from GitLab, GitHub and Bitbucket and spins up containerized dev environments. Under the hood is a **customizable Linux environment**, which we call your *workspace*.
 
@@ -30,9 +30,9 @@ Server-side Gitpod is a Kubernetes application that understands the context from
 A workspace comprises your whole development environment and gives you similar capabilities such as a local Linux machine. Compared to a local linux machine it is however **pre-configured and optimized for your individual development workflow**. Each workspace includes:
 
 - Your source code
-- A shell with [root/sudo capabilities](https://www.gitpod.io/blog/root-docker-and-vscode/#root-access)
+- A shell with [root / sudo capabilities](https://www.gitpod.io/blog/root-docker-and-vscode/#root-access)
 - Your IDE of choice* - currently this is [VS Code](https://www.gitpod.io/blog/root-docker-and-vscode/#vs-code) or [Theia](https://theia-ide.org/)
-- Your personal IDE extensions, themes
+- Your personal IDE extensions, themes, editor prefs
 - Full [Docker support](https://www.gitpod.io/blog/root-docker-and-vscode/#docker)
 
 **Jetbrain's IDEs, Jupyter Notebook, Jupyter Labs are already available in [private beta](https://www.gitpod.io/contact/).*
