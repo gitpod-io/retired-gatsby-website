@@ -19,5 +19,6 @@ Below is a list of language and framework specific tips & tricks.
 - [Julia](/docs/languages/julia/)
 - [LaTeX](/docs/languages/latex/)
 - [R](/docs/languages/r/)
-- [Kotlin](/docs/kotlin-in-gitpod/)
-- [Pandas](/docs/frameworks/pandas/)
+- [Deno](/docs/languages/deno)
+- [Kotlin](/docs/languages/kotlin)
+- [Pandas](/docs/languages/python/#pandas)
