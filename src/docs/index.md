@@ -43,49 +43,25 @@ Spinning up dev environments is easily repeatable and reproducible, because Gitp
 
 To reap the resulting automation benefits you provide a then versioned configuration file `.gitpod.yml`  in the root of your git repository. The `.gitpod.yml` contains everything that describes your dev environment:
 
-- A Docker image or file as the base to run your dev environment in.
-- Commands executed before dev environment  startup (see [Prebuilds](#prebuilds)).
-- Commands executed on dev environment  startup.
-- Ports to expose on dev environment  startup.
+- A Docker image or file as the base to run your workspace in.
+- Commands executed before workspace  startup (see [Prebuilds](#prebuilds)).
+- Commands executed on workspace startup.
+- Ports to expose on dev workspace startup.
 - and [more](https://www.gitpod.io/blog/gitpodify/).
 
-Our own gitpod.yml file at Gitpod for example looks similar to this:
-```yaml
-image: eu.gcr.io/gitpod-core-dev/dev/dev-environment:clu-update-dev-env-image.0
-workspaceLocation: gitpod/gitpod-ws.theia-workspace
-checkoutLocation: gitpod
-ports:
-  - port: 1337
-    onOpen: open-preview
-  - port: 9229
-    onOpen: ignore
-# Go proxy
-  - port: 9999
-    onOpen: ignore
-  - port: 13001
-    onOpen: ignore
-# Werft
-  - port: 7777
-    onOpen: ignore
-# Dev Theia
-  - port: 13444
-tasks:
-  - before: scripts/branch-namespace.sh
-    init: yarn --network-timeout 100000 && yarn build
-  - name: Go
-    init: leeway exec --filter-type go -v -- go get -v ./...
-    openMode: split-right
-vscode:
-  extensions:
-    - hangxingliu.vscode-nginx-conf-hint@0.1.0:UATTe2sTFfCYWQ3jw4IRsw==
-    - ms-kubernetes-tools.vscode-kubernetes-tools@1.2.1:j58HdmA0K7d9a9sEkogZNw==
-    - bajdzis.vscode-database@2.2.1:uXdjV53wtoTevFK6HOh3pQ==
-    - hashicorp.terraform@2.1.1:QEP7gdWtMuY+j8RZ5OLDkA==
-```
 Learn more about how to configure your repository [here](https://www.gitpod.io/docs/configuration/).
 
 #### Prebuilds {#prebuilds}
 
-You are always ready-to-code, because your dev environment  is already compiled and all dependencies of your code have been downloaded before you even start your workspace (no more maven/npm downloads the internet 🦥). Gitpod does that by running your build tools on git-push (like CI/CD would do) and *prebuilds* and stores prepared workspaces for all branches / contexts ready when you need one. 
+Gitpod continuously builds your git branches like a CI server. Whenever your code changes (e.g. when new commits are pushed to your repository), Gitpod can prebuild workspaces, i.e. run the init commands in your .gitpod.yml before you even start a workspace. 
+
+Then, when you do create a new workspace on a branch, or Pull/Merge Request, for which a prebuild exists, this workspace will load much faster, because all dependencies will have been already downloaded ahead of time, and your code will be already compiled.
+
+Only with [prebuilds enabled](https://www.gitpod.io/docs/prebuilds/#enable-prebuilt-workspaces) your dev environment can turn fully ephemeral. 
 
 More on [prebuilds](https://www.gitpod.io/docs/prebuilds/).
+
+### Next steps
+
+- Read about [Getting started with Gitpod](/docs/getting-started/)
+- Get hands on experience by [gitpodifying your first project](https://www.gitpod.io/docs/configuration/) 🛠
