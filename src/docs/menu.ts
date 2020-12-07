@@ -237,7 +237,15 @@ export const MENU: MenuEntry[] = [
             M(
                 "Kotlin",
                 "languages/kotlin"
-            )
+            ),
+            M(
+                "Pandas",
+                "languages/python/#pandas"
+            ),
+            M(
+                "Deno",
+                "languages/deno"
+            ),
         ]
     ),
     M(
