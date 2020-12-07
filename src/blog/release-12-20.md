@@ -7,7 +7,7 @@ image: /santa.jpg
 teaserImage: /santa.jpg
 ---
 
-The team has been focussing on shipping some major new features, which mark important milestones on our mission to **eliminate all friction around maintaining dev environments**. 
+The team has been focussing on shipping some major new features, which mark important milestones on our goal to **eliminate all friction around maintaining dev environments**. 
 
 > We are rolling out new features in [preview mode](/docs/feature-preview) first. So make sure to switch __Feature Preview__ on in [your settings](https://gitpod.io/settings/) if you want to try them out.
 
