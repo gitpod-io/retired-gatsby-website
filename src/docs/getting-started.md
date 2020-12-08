@@ -2,20 +2,26 @@
 
 [Gitpod](https://www.gitpod.io) is an open source platform for automated and ready-to-code development environments that blends into your existing workflow. 
 
->For an overview of Gitpod you should first read [Introduction to Gitpd](/docs/).
+> For an overview of Gitpod you should first read [Introduction to Gitpod](/docs/).
 
 You can start using Gitpod with one or more of the following ways:
 
-- Install [Browser Extension](#browser-extension)
-- Enable [GitLab Integration](#gitlab-integration)
-- Use a [Prefixed URL](#prefixed-url)
-- Quick start using an [Example Project](#example-project) or [OSS Project](#gitpodified-open-source-project)
+- Use a [Prefixed URL](#prefixed-url).
+- Install [Browser Extension](#browser-extension).
+- Enable [GitLab Integration](#gitlab-integration).
+- Quick start using an [Example Project](#example-project) or [OSS Project](#gitpodified-open-source-project).
+
+## Prefixed URL
+
+You can quickly open a new workspace for your project using a context URL like repository, branch, pull request, issue, or file. Just prefix the URL in the address bar of your browser with `gitpod.io/#`.
+
+For example, try opening [https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic](https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic) or [https://gitlab.com/gitpod/spring-petclinic/-/merge_requests/2](https://gitlab.com/gitpod/spring-petclinic/-/merge_requests/2).
+
+[Learn more &rarr;](/docs/context-urls/)
 
 ## Browser Extension
 
 For convenience, we've made a browser extension that works with Google Chrome, Mozilla Firefox, and Safari. The extension adds a Gitpod button on every project and branch across GitLab, GitHub, and Bitbucket so you can easily start any existing projects in Gitpod.
-
-![Browser Extension](images/browser-extension-lense.png)
 
 [Learn more &rarr;](/docs/browser-extension/)
 
@@ -23,19 +29,7 @@ For convenience, we've made a browser extension that works with Google Chrome, M
 
 GitLab comes with a native Gitpod integration. This feature is enabled on GitLab.com so you enable the GitLab integration in GitLab and choose to start a Gitpod workspace as an alternative to the GitLab Web IDE directly from GitLab.
 
-![GitLab Integration](images/gitlab-integration/gitpod_button_project_page.png)
-
 [Learn more &rarr;](/docs/gitlab-integration/)
-
-## Prefixed URL
-
-![prefix github URL](./images/prefix-screenshot.png)
-
-You can quickly open a new workspace for your project using a context URL like repository, branch, pull request, issue, or file. Just prefix the URL in the address bar of your browser with `gitpod.io/#`.
-
-For example, try opening [https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic](https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic) or [https://gitlab.com/gitpod/spring-petclinic/-/merge_requests/2](https://gitlab.com/gitpod/spring-petclinic/-/merge_requests/2).
-
-[Learn more &rarr;](/docs/context-urls/)
 
 ## Example Project
 
