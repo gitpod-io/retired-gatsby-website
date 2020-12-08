@@ -27,6 +27,7 @@ const StyledProject = styled.div`
   object {
     height: 8.5rem;
     width: 14rem;
+    object-fit: contain;
   }
 
   & > * {
