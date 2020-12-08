@@ -10,6 +10,8 @@ Gitpod derives the workspace context from the URL of the repository page from wh
 started. Different issues, pull/merge requests, or branches will result in different workspaces, allowing
 developers to easily perform different tasks in different isolated environments.
 
+![prefix github URL](./images/prefix-screenshot.png)
+
 Each workspace includes a full Linux container. From the IDE's terminal, the user can directly
 access all development tools of the Linux system and even install missing ones.
 
