@@ -6,6 +6,7 @@ import GitLab from '../../resources/gitlab.svg'
 import GitHub from '../../resources/octicons-mark-github.svg'
 import Bitbucket from '../../resources/bitbucket.svg'
 import { sizes, colors } from '../../styles/variables'
+import GitHubButton from 'react-github-btn'
 
 const Styled = styled.div`
   .pattern {
@@ -83,6 +84,10 @@ const Banner = () => (
               <img src={GitHub} alt="GitHub" />
               <img src={Bitbucket} alt="Bitbucket" />
             </p>
+          </div>
+          <div className="header__repository-details">
+            <GitHubButton href="https://github.com/gitpod-io/gitpod" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star gitpod-io/gitpod on GitHub">Star</GitHubButton>&nbsp;
+            <GitHubButton href="https://github.com/gitpod-io/gitpod/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork gitpod-io/gitpod on GitHub">Fork</GitHubButton>
           </div>
           <div className="banner__screenshot-container">
             <img alt="Gitpod Screenshot" src={Screenshot} className="banner__screenshot" />
