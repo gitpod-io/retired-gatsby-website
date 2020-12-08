@@ -277,28 +277,11 @@ const Nav = () => {
 
                     <ul className={`nav__items ${isNavRendered ? 'navIsRendered' : 'navIsNotRendered'}`} >
                         <li className="nav__item"><Link activeClassName="active" to='/features/' className="link">Features</Link></li>
-                        <li className="nav__item"><Link activeClassName="active" to='/self-hosted/' className="link">Self-Hosted</Link></li>
+                        <li className="nav__item"><Link activeClassName="active" to='/self-hosted/' className="link">Install</Link></li>
                         <li className="nav__item"><Link activeClassName="active" to='/pricing/' className="link">Pricing</Link></li>
-                        <li className="nav__item">
-                            <DropDown
-                                title="Resources"
-                                links={[
-                                    {
-                                        text: 'Docs',
-                                        to: '/docs/'
-                                    },
-                                    {
-                                        text: 'Blog',
-                                        to: '/blog/'
-                                    },
-                                    {
-                                        text: 'Community',
-                                        to: 'https://community.gitpod.io/',
-                                        target: true
-                                    }
-                                ]}
-                            />
-                        </li>
+                        <li className="nav__item"><Link activeClassName="active" to='/docs/' className="link">Docs</Link></li>
+                        <li className="nav__item"><Link activeClassName="active" to='/blog/' className="link">Blog</Link></li>
+                        <li className="nav__item"><Link activeClassName="active" to='https://community.gitpod.io/' target='true' className="link">Community</Link></li>
                         <li className="nav__item"><a href="https://gitpod.io/login/" rel="noopener" className="btn btn--small">Log In</a></li>
                     </ul>
 
