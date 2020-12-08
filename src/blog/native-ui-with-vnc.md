@@ -1,7 +1,7 @@
 ---
 url: https://medium.com/gitpod/developing-native-ui-applications-in-gitpod-15af2967c24e
 date: Thu Oct 04 2018 12:47:53 GMT+0000 (UTC)
-author: 32leaves
+author: csweichel
 subtitle: Cloud IDEs aren't limited to web apps
 title: Developing native UI applications in Gitpod
 image: /virtual-x-sever-running-on-a-remote-desktop-client.png
@@ -15,7 +15,7 @@ A few days ago [Gero introduced Docker builds to Gitpod](/blog/docker-in-gitpod)
 
 ## Hello World
 
-Let’s use Gitpod to write [a simple desktop-native application in Go](https://github.com/32leaves/gitpod-hello-ui-demo) using [libui](https://github.com/andlabs/libui). First, we create a GitHub repo and a [little bit of configuration](https://github.com/32leaves/gitpod-hello-ui-demo/commit/fea580735c09fa704531a810e8ec7ca6a5c03a88): we need a Dockerfile to install libui’s dependencies (see below), and we need to tell Gitpod to use that Dockerfile.
+Let’s use Gitpod to write [a simple desktop-native application in Go](https://github.com/csweichel/gitpod-hello-ui-demo) using [libui](https://github.com/andlabs/libui). First, we create a GitHub repo and a [little bit of configuration](https://github.com/csweichel/gitpod-hello-ui-demo/commit/fea580735c09fa704531a810e8ec7ca6a5c03a88): we need a Dockerfile to install libui’s dependencies (see below), and we need to tell Gitpod to use that Dockerfile.
 
     FROM gitpod/workspace-full-vnc
     RUN sudo apt-get update && \
@@ -50,4 +50,4 @@ I added this setup to [definitely-gp](https://github.com/gitpod-io/definitely-gp
 
 By plugging together a handful of tools we can develop native UI applications in Gitpod, and stay in the browser altogether. Naturally, this comes with a few limitations, e.g. at the moment this is Linux only, so testing on different platforms is not feasible. Also, noVNC disconnects from the VNC server every now and then; reloading noVNC brings it back.
 
-Surprisingly, frame-rate is not one of those limitations: you could [open a browser inside a Gitpod](https://gitpod.io/#https://github.com/32leaves/gitpod-browser-demo) and watch YouTube videos; it’s best you pick one without sound, though. :)
+Surprisingly, frame-rate is not one of those limitations: you could [open a browser inside a Gitpod](https://gitpod.io/#https://github.com/csweichel/gitpod-browser-demo) and watch YouTube videos; it’s best you pick one without sound, though. :)

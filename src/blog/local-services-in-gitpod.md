@@ -3,7 +3,7 @@ title: Using local services in Gitpod
 date: Thu Nov 13 2019 09:00:00 GMT+0000 (UTC)
 image: /local-services.jpg
 teaserImage: /local-services.jpg
-author: 32leaves
+author: csweichel
 ---
 
 Some things just aren't exposed to the internet. Either because we do not want them out in the open, think some on-prem database, or because they cannot easily be made available like the Docker daemon on your laptop.
@@ -54,9 +54,9 @@ Usually that daemon would run somewhere in the cloud, too, e.g. in your dev-clus
 
 Using inlets you can make the Docker enging running on your local machine (or in your local network) available in your Gitpod workspace.
 
-I've gone ahead and prepared a prepared an [example repository](https://github.com/32leaves/gitpod-goes-local/tree/docker) that demonstrates this idea:
+I've gone ahead and prepared a prepared an [example repository](https://github.com/csweichel/gitpod-goes-local/tree/docker) that demonstrates this idea:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/32leaves/gitpod-goes-local/tree/docker)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/csweichel/gitpod-goes-local/tree/docker)
 
 Once the workspace is up and running, follow the instructions in the upper-left terminal to complete the setup.
 
