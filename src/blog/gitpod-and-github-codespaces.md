@@ -7,9 +7,7 @@ image: /octocat-gitpod-hat.jpg
 teaserImage: /octocat-gitpod-hat.jpg
 ---
 
-GitHub has announced the public availability of GitHub Codespaces today at their Universe conference. Their investment into GitHub Codespaces pushes what Gitpod has been pioneering into the mainstream.
-
-In this post we would like to share some context and information around the rapidly spreading idea of automated dev environments within the developer community. Also, we’d like to point out some differences between Gitpod and GitHub Codespaces.
+As [described earlier this year](/blog/github-codespaces/), Microsoft's investment into GitHub Codespaces is helping to move more into the mainstream what Gitpod has been pioneering on during the past years. As this week is GitHub Universe we thought it's time to share some additional context and information around the rapidly spreading idea of automated dev environments within the developer community. Furthermore, we’d like to point out some differences between Gitpod and GitHub Codespaces.
 
 Since [we've started building Gitpod in July-2017](/blog/gitpod-online-ide/), we firmly believe that fully-automated development environments will be the standard for professional developers in 5-10 years. With a big player like Microsoft entering the market this whole space will gain additional velocity.
 
