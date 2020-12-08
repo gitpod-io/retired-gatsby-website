@@ -1,9 +1,10 @@
 ports:
   - port: 8000
-    onOpen: open-preview
+    onOpen: ignore
 
 tasks:
   - init: cd plugins/gatsby-remark-gitpod && npm install
+    command: gp await-port 8000 && sleep 10 && gp preview $(gp url 8000)
   - init: yarn --network-timeout 100000 && yarn build
     command: yarn dev --host 0.0.0.0
 
