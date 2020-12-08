@@ -6,10 +6,10 @@
 
 You can start using Gitpod with one or more of the following ways:
 
-- Use a [Prefixed URL](#prefixed-url).
-- Install [Browser Extension](#browser-extension).
-- Enable [GitLab Integration](#gitlab-integration).
-- Quick start using an [Example Project](#example-project) or [OSS Project](#gitpodified-open-source-project).
+- Use a [Prefixed URL](#prefixed-url)
+- Install [Browser Extension](#browser-extension)
+- Enable [GitLab Integration](#gitlab-integration)
+- Quick start using an [Example Project](#example-project) or [OSS Project](#gitpodified-open-source-project)
 
 ## Prefixed URL
 
@@ -21,13 +21,13 @@ For example, try opening [https://gitpod.io/#https://gitlab.com/gitpod/spring-pe
 
 ## Browser Extension
 
-For convenience, we've made a browser extension that works with Google Chrome, Mozilla Firefox, and Safari. The extension adds a Gitpod button on every project and branch across GitLab, GitHub, and Bitbucket so you can easily start any existing projects in Gitpod.
+For convenience, we've made a browser extension that works with Google Chrome, Mozilla Firefox, and Safari. The extension adds a Gitpod button on every project and branch across GitLab, GitHub, and Bitbucket so you can easily open a new workspace for any existing project.
 
 [Learn more &rarr;](/docs/browser-extension/)
 
 ## GitLab Integration
 
-GitLab comes with a native Gitpod integration. This feature is enabled on GitLab.com so you enable the GitLab integration in GitLab and choose to start a Gitpod workspace as an alternative to the GitLab Web IDE directly from GitLab.
+GitLab comes with a native Gitpod which is enabled by default for GitLab.com. To use the GitLab integration, you need to enable it from your [user preferences](https://gitlab.com/-/profile/preferences) at GitLab. Then you can choose to open a Gitpod workspace as an alternative to the GitLab Web IDE directly from GitLab for any existing project.
 
 [Learn more &rarr;](/docs/gitlab-integration/)
 
