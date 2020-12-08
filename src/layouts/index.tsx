@@ -24,7 +24,7 @@ type StaticQueryProps = {
   }
 }
 
-class IndexLayout extends React.Component<{ title?: string; canonical?: string; description?: string }, {}> {
+class IndexLayout extends React.Component<{ title?: string; canonical?: string; description?: string, ogImage?:string }, {}> {
   handleFirstTab = (e: any) => {
     if (e.key === 'Tab') {
       // the "I am a keyboard user" key
@@ -46,7 +46,7 @@ class IndexLayout extends React.Component<{ title?: string; canonical?: string; 
   }
 
   render() {
-    const { title, canonical, description, children } = this.props
+    const { title, canonical, description, ogImage, children } = this.props
 
     return (
       <StaticQuery
@@ -85,7 +85,7 @@ class IndexLayout extends React.Component<{ title?: string; canonical?: string; 
               <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
               <meta property="og:title" content={title || data.site.siteMetadata.title} />
               <meta property="og:description" content={description || data.site.siteMetadata.description} />
-              <meta property="og:image" content="https://www.gitpod.io/media-image.jpg" />
+              <meta property="og:image" content={ogImage || "https://www.gitpod.io/media-image.jpg"} />
 
               <meta name="google-site-verification" content="NBio3hCkfn2FKJpqZritJpXuyKo54noPGZzWsjDIp-M" />
             </Helmet>
