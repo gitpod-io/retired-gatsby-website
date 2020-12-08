@@ -46,10 +46,10 @@ export const allAuthors: { [idx: string]: Author } = {
         },
         description: "Gero is a passionate software developer with a strong interest in programming languages. He likes to learn new stuff but somehow always turns out to work on the backend side of things. His current pet peeve is Kubernetes and everything around it."
     },
-    '32leaves': {
+    'csweichel': {
         name: "Christian Weichel",
         socialProfiles: {
-            github: '32leaves',
+            github: 'csweichel',
             twitter: 'csweichel',
             linkedin: 'christian-weichel-740b4224'
         },
