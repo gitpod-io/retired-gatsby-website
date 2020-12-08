@@ -1,20 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import styled from '@emotion/styled'
+import Chrome from '../../resources/chrome-logo.svg'
+import Firefox from '../../resources/firefox-logo.svg'
+import { getBrowser } from '../../utils/helpers'
 
-const getBrowser = (userAgent: string) => {
-  const browsers = ['Opera', 'Chrome', 'Firefox', 'IE']
-  let browser
-
-  browsers.forEach((b) => {
-    if (userAgent.indexOf(b) !== -1) {
-      browser = b
-    }
-  })
-
-  return browser
-}
-
-const StyledDifference = styled.section`
+const StyledDifference = styled.section<{spacing?: 'small'}>`
+  padding: ${({spacing}) => spacing === 'small' ? '6rem 0' : ''};
   text-align: center;
 
   p {
@@ -22,28 +13,53 @@ const StyledDifference = styled.section`
   }
 
   h2 + p {
-    margin: 3rem 0 2rem;
+    max-width: 700px;
+    margin: 3rem auto 2rem;
   }
 
   .btn {
-    margin-bottom: 5rem;
+    margin: 2.5rem 0 5rem;
+    padding-left: 1.5rem;
+
+    span {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        width: 4rem;
+        margin-right: 2.5rem;
+    }
   }
 `
 
-const Difference = () => {
-  const [browser, setBrowser] = useState()
+interface DifferenceProps {
+    title?: string
+    spacing?: 'small'
+}
+
+const Difference = ({title, spacing}: DifferenceProps) => {
+  const [browser, setBrowser] = useState<any>()
+
+  const getBrowserString = (browser: any) => {
+    if ( browser === 'Firefox') {
+        return 'Firefox'
+    }
+    return 'Chrome'
+  }
 
   useEffect(() => {
-    setBrowser(getBrowser(window.navigator.userAgent))
+    let usersBrowser = getBrowser(window.navigator.userAgent)
+    setBrowser(getBrowserString(usersBrowser))
   })
 
   return (
-    <StyledDifference className="pattern-bg">
+    <StyledDifference className="pattern-bg" spacing={spacing}>
       <div className="row">
         <h2>
-          <strong>Want to See the Difference for Yourself?</strong>
+            <strong>{title ? title : 'Want to See the Difference for Yourself?'}</strong>
         </h2>
-        <p>Add a Gitpod button to your repository.</p>
+        <p>Install the browser extension which adds a Gitpod button to your GitLab, GitHub and Bitbucket projects to easily spin up a dev environment with a single click.</p>
         <a
           href={
             browser === 'Firefox'
@@ -53,7 +69,13 @@ const Difference = () => {
           target="_blank"
           className="btn btn--big btn--cta"
         >
-          Install Browser Extension
+         <span>
+              <img 
+            src={browser === 'Firefox' ? Firefox : Chrome } 
+            alt={browser}  
+          /> 
+          Add to {browser}
+         </span>
         </a>
         <p>
           Or prefix any GitLab, GitHub or Bitbucket URL with <strong>gitpod.io/#</strong>

@@ -9,7 +9,7 @@ const StyledProject = styled.div`
   text-align: center;
   font-weight: 600;
   border: ${borders.light2};
-  background: ${colors.white};
+  background: ${colors.offWhite};
   border-radius: 3px;
   min-width: 22rem;
 

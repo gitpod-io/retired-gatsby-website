@@ -5,6 +5,12 @@ import { borders, sizes } from '../styles/variables'
 import { Link } from 'gatsby'
 import MapGrey from '../resources/map-grey.svg'
 
+const StyledMoreInfo = styled.div<{negativeSpaceTop?: string}>`
+    @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
+        margin-top: ${({negativeSpaceTop}) => negativeSpaceTop };
+    }   
+`
+
 const StyledPricingLinks = styled.section`
   max-width: 850px;
   display: flex;
@@ -62,9 +68,10 @@ export interface PricingLinksProps {
   text?: JSX.Element
   links?: JSX.Element
   backgroundShouldBeWhite?: boolean
+  negativeSpaceTop?: string
 }
 
-const PricingLinks = ({ img, title, text, links, backgroundShouldBeWhite }: PricingLinksProps) => {
+const PricingLinks = ({ img, title, text, links, backgroundShouldBeWhite, negativeSpaceTop }: PricingLinksProps) => {
   let Img = img
   let Title = title
   let Text = text
@@ -89,9 +96,10 @@ const PricingLinks = ({ img, title, text, links, backgroundShouldBeWhite }: Pric
     )
   }
   return (
-    <div
+    <StyledMoreInfo
       className="pattern-bg"
-      style={{ marginBottom: backgroundShouldBeWhite ? '' : '10rem', background: backgroundShouldBeWhite ? 'none' : '' }}
+      style={{ marginBottom: backgroundShouldBeWhite ? '' : '10rem', background: backgroundShouldBeWhite ? 'none' : ''}}
+      negativeSpaceTop={negativeSpaceTop}
     >
       <div className="row">
         <StyledPricingLinks>
@@ -103,7 +111,7 @@ const PricingLinks = ({ img, title, text, links, backgroundShouldBeWhite }: Pric
           </div>
         </StyledPricingLinks>
       </div>
-    </div>
+    </StyledMoreInfo>
   )
 }
 
