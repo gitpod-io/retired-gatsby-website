@@ -51,7 +51,7 @@ export const projects = [
     },
     {
         image: RB,
-        title: 'Rails & PostgreSQL',
+        title: 'Rails & Postgres',
         githubUrl: "https://github.com/gitpod-io/ruby-on-rails",
         gitlabUrl: "https://gitlab.com/gitpod/rails",
         bitbucketUrl: "https://bitbucket.org/gitpod/ruby-on-rails",
