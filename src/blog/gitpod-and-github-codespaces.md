@@ -15,11 +15,11 @@ Since [we've started building Gitpod in July-2017](/blog/gitpod-online-ide/), we
 
 We certainly welcome the additional push Codespaces will bring, but it is important to communicate how and why [Gitpod is better than Codespaces](/gitpod-vs-github-codespaces/).
 
-### Gitpod is Open-Source, Multi-Cloud, and Works With GitLab and Bitbucket
+### Gitpod is Open-Source, Multi-Cloud, and Works With GitLab, GitHub, and Bitbucket
 
 Gitpod is an open-source platform which means you get full transparency over how Gitpod works and can even contribute to it. The vibrant open-source community of Gitpod welcomes everyone, and empowers them to develop additional features without restrictions. 
 
-Furthermore, you can run Gitpod on your own infrastructure and any cloud provider. Unlike Microsoft/GitHub, Gitpod’s business objective is not driving cloud revenues on Azure. As a true independent alternative Gitpod seamlessly works with GitHub, GitLab and Bitbucket. Gitpod can be deployed to public, private or hybrid clouds, neatly integrating into your infrastructure, giving you full control of your system and your source code.
+Furthermore, you can run Gitpod on your own infrastructure and any cloud provider. Unlike Microsoft/GitHub, Gitpod’s business objective is not driving cloud revenues to specific cloud providers such as Azure. As a true independent alternative Gitpod seamlessly works with GitHub, GitLab and Bitbucket. Gitpod can be deployed to public, private or hybrid clouds, neatly integrating into your infrastructure, giving you full control of your system and your source code.
 
 ### Gitpod is More Powerful 
 
