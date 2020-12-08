@@ -33,21 +33,21 @@ const StyledGetStarted = styled.div`
 
     &__projects {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      flex-wrap: wrap;
 
       @media (max-width: ${sizes.breakpoints.lg}) {
         overflow-x: scroll;
+        justify-content: space-between;
+        flex-wrap: nowrap;
       }
 
       & > .project {
-        margin-bottom: 3rem;
-
-        @media (min-wdith: ${sizes.breakpoints.md}) {
-          width: 19rem;
-        }
-
-        @media (max-width: ${sizes.breakpoints.lg}) {
+        margin-bottom: 5rem;
           margin-right: 5rem;
+
+        @media (min-width: ${sizes.breakpoints.md}) {
+          width: 19rem;
         }
       }
     }
