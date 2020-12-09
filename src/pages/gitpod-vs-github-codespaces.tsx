@@ -70,8 +70,8 @@ const StyledGitpodVsGitHubCodespacesPage = styled.div`
 `
 
 const GitpodVsGitHubCodespacesPage = () => (
-  <IndexLayout title="Gitpod vs GitHub Codespaces" 
-    description="Gitpod is the faster, more powerful open-source platform that integrates with your individual stack." 
+  <IndexLayout title="Gitpod vs GitHub Codespaces"
+    description="Gitpod is the faster, more powerful open-source platform that integrates with your individual stack."
     canonical="gitpod-vs-github-codespaces"
     ogImage="https://www.gitpod.io/octocat-gitpod-hat.jpg">
     <StyledGitpodVsGitHubCodespacesPage>

@@ -1,6 +1,6 @@
 # Deno in Gitpod
 
-It's easy to set up Deno in Gitpod. 
+It's easy to set up Deno in Gitpod.
 
 ## Setting up the Dockerfile
 
