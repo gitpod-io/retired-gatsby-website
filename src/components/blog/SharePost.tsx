@@ -43,7 +43,7 @@ const SharePost = ({ title, authors, url, dontRenderHeading }: SharePostProps) =
     <div>
       <a
         href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-          `${title} by @${authors.map((author) => '@' + author.socialProfiles.twitter).join(', ')} ${url}`
+          `${title} by ${authors.map((author) => '@' + author.socialProfiles.twitter).join(', ')} ${url}`
         )}`}
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="28.724" height="23.348" viewBox="0 0 28.724 23.348">
