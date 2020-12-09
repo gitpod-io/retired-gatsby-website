@@ -1,12 +1,12 @@
 # Introduction to Gitpod
 
-[Gitpod](https://www.gitpod.io) is an open source platform for automated and **ready-to-code development environments** that blends into your existing workflow. It enables developers to describe their dev environment as code and **start instant and fresh development environments for each new task** directly from your browser. 
+[Gitpod](https://www.gitpod.io) is an open source platform for automated and **ready-to-code development environments** that blends into your existing workflow. It enables developers to describe their dev environment as code and **start instant and fresh development environments for each new task** directly from your browser.
 
 ### Gitpod does to Dev Environments what Docker did to Servers 🐳
 
-Today we are emotionally attached (for better or worse) to our dev environments, give them names & massage them over time. They are pets - similar to servers before docker took advantage of `namespaces` and `cgroups` in Linux and turned these nice puppies into cattle. 
+Today we are emotionally attached (for better or worse) to our dev environments, give them names & massage them over time. They are pets - similar to servers before docker took advantage of `namespaces` and `cgroups` in Linux and turned these nice puppies into cattle.
 
-With Gitpod it is the same - we treat dev environments as automated resources you can spin up when you need them and close down (and forget about) when you are done with your task. Dev environments become fully automated and ephemeral. Only then you are **always ready-to-code** - immediately creative, immediately productive with the click of a button and without any friction. 
+With Gitpod it is the same - we treat dev environments as automated resources you can spin up when you need them and close down (and forget about) when you are done with your task. Dev environments become fully automated and ephemeral. Only then you are **always ready-to-code** - immediately creative, immediately productive with the click of a button and without any friction.
 
 This is what is at the heart of Gitpod: **an open platform that removes all friction of manually setting up and maintaining dev environments** allowing yourself and your team to build applications quicker and more collaboratively.
 
@@ -18,7 +18,7 @@ Gitpod seamlessly integrates in your workflow and works with all major git hosti
 
 ![gitpod-architecture](./images/gitpod-architecture.png)
 
-At its core Gitpod relies on a **client-server architecture** where the client can either be: 
+At its core Gitpod relies on a **client-server architecture** where the client can either be:
 
 - **Any device** with a browser and internet connection (Gitpod works with Chrome, Firefox, Safari, Edge and other Chromium-based browsers)
 - Your **local machine** via local VS Code, IntelliJ or simply your shell/terminal where you SSH into your Gitpod workspace (*expected to be released in early Q1/2021*)
@@ -53,11 +53,11 @@ Learn more about how to configure your repository [here](https://www.gitpod.io/d
 
 #### ⚡️ Prebuilds {#prebuilds}
 
-Gitpod continuously builds *all* your git branches like a CI server. Whenever your code changes (e.g. when new commits are pushed to your repository), Gitpod can prebuild workspaces, i.e. run the `init` commands in your `.gitpod.yml` before you even start a workspace. 
+Gitpod continuously builds *all* your git branches like a CI server. Whenever your code changes (e.g. when new commits are pushed to your repository), Gitpod can prebuild workspaces, i.e. run the `init` commands in your `.gitpod.yml` before you even start a workspace.
 
 Then, when you do create a new workspace on a branch, or Pull/Merge Request, for which a prebuild exists, this workspace will load much faster, because all dependencies will have been already downloaded ahead of time and your code will be already compiled.
 
-Only with [prebuilds enabled](https://www.gitpod.io/docs/prebuilds/#enable-prebuilt-workspaces) your dev environment can turn fully ephemeral. 
+Only with [prebuilds enabled](https://www.gitpod.io/docs/prebuilds/#enable-prebuilt-workspaces) your dev environment can turn fully ephemeral.
 
 More on [prebuilds](https://www.gitpod.io/docs/prebuilds/).
 
