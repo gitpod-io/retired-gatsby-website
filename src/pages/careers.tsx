@@ -172,7 +172,7 @@ const Careers = () => (
                 <div className="row">
                     <div className="team">
                         <div className="img-container">
-                            <img src={Team} alt="TypeFox Team" />
+                            <img src={Team} alt="Gitpod Team" />
                         </div>
                         <div className="text">
                             <p>Come join a young tech-driven team, with the mission of making software development better for everyone, and strong values around openness, honesty, and effective pragmatism. </p>
@@ -194,7 +194,7 @@ const Careers = () => (
                 <div className="pattern-bg">
                     <div className="row">
                         <div className="no-fit">
-                            <p>If no current Job offer fits your qualifications, but you're totally in love with Gitpod and want to help us improving it, please send your application at <a href="mailto:career@typefox.io">career@typefox.io</a> anyway.</p>
+                            <p>If no current Job offer fits your qualifications, but you're totally in love with Gitpod and want to help us improving it, please send your application at <a href="mailto:career@gitpod.io">career@gitpod.io</a> anyway.</p>
                             <p><strong>We're curious to hear about you.</strong></p>
                         </div>
                     </div>
