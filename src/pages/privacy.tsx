@@ -13,15 +13,15 @@ const PrivacyPage: React.SFC<{}> = () => (
                 </p>
 
                 <p>
-                    The controller is TypeFox GmbH, Am Germaniahafen 1, 24143 Kiel/Germany, registered with the commercial register of
-                    the local court (Amtsgericht) Kiel under HRB 17385, represented by the managing directors Sven Efftinge, Moritz Eysholdt,
+                    The controller is Gitpod GmbH, Am Germaniahafen 1, 24143 Kiel/Germany, registered with the commercial register of
+                    the local court (Amtsgericht) Kiel under HRB 22228, represented by the managing directors Sven Efftinge, Moritz Eysholdt,
 				    Dr. Jan K&ouml;hnlein (<strong>"we/us/our"</strong> or <strong>"Gitpod"</strong>). We offer services to our users and
 				    visitors (the <strong>"User/you/your"</strong>) on our website <a href="/">https://gitpod.io</a>
                     (<strong>"Website"</strong>) as well as related services including the use of our service according to our <a href="/terms/">terms of service</a>
                     (jointly the <strong>"Service"</strong>).
                 </p>
                 <p>
-                    For any questions about data protection you may contact us via <a href="mailto:data@typefox.io">data@typefox.io</a>.
+                    For any questions about data protection you may contact us via <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
                 </p>
 
                 <h2 id="short">In Short</h2>
@@ -31,11 +31,11 @@ const PrivacyPage: React.SFC<{}> = () => (
                         <td>Controller</td>
                         <td>
                             <p>
-                                TypeFox GmbH<br /> Am Germaniahafen 1, 24143 Kiel/Germany<br /> registered with the commercial register of the local
-							court <em>(Amtsgericht)</em> Kiel under HRB 17385<br /> represented by the managing directors Sven Efftinge, Moritz
-							Eysholdt, Dr. Jan K&ouml;hnlein <br /> Phone: +49-431-99026870<br /> Email: contact@typefox.io
+                                Gitpod GmbH<br /> Am Germaniahafen 1, 24143 Kiel/Germany<br /> registered with the commercial register of the local
+							court <em>(Amtsgericht)</em> Kiel under HRB 22228<br /> represented by the managing directors Sven Efftinge, Moritz
+							Eysholdt, Dr. Jan K&ouml;hnlein <br /> Email: contact@gitpod.io
 						</p>
-                            <p>We have appointed a data protection officer who may be contacted via <a href="mailto:data@typefox.io">data@typefox.io</a>.</p>
+                            <p>We have appointed a data protection officer who may be contacted via <a href="mailto:data@gitpod.io">data@gitpod.io</a>.</p>
                             <p>This privacy policy also contains further data controllers.</p>
                         </td>
                     </tr>
@@ -412,7 +412,7 @@ const PrivacyPage: React.SFC<{}> = () => (
                     In the event we process personal data controlled by the customer as data processor we will offer and enter into a respective
                     separate data processing agreement with such customer whereas such data processing agreement may be requested via email
                     to
-				<a href="mailto:data@typefox.io">data@typefox.io</a>.
+				<a href="mailto:data@gitpod.io">data@gitpod.io</a>.
 			        </p>
 
                 <p>
@@ -534,7 +534,7 @@ https://spectrum.chat/privacy.html</li>
 			</p>
 
                 <p>
-                    For more information please refer to this privacy policy or contact us via <a href="mailto:data@typefox.io">data@typefox.io</a>.
+                    For more information please refer to this privacy policy or contact us via <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
 			</p>
 
                 <h3>
@@ -617,7 +617,7 @@ further information please refer to <a href="#details-V">section V.</a>.
                 </ul>
 
                 <p>
-                    If you wish to make use of your rights mentioned above please send an email to <a href="mailto:data@typefox.io">data@typefox.io</a>.
+                    If you wish to make use of your rights mentioned above please send an email to <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
 			</p>
 
                 <p>
@@ -694,7 +694,7 @@ further information please refer to <a href="#details-V">section V.</a>.
                     Contact Details
 			</h3>
                 <p>
-                    For any inquiries and additional questions about processing personal data please contact <a href="mailto:data@typefox.io">data@typefox.io</a>.
+                    For any inquiries and additional questions about processing personal data please contact <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
 				Further details may be found here: <a href="/imprint/">https://gitpod.io/imprint/</a>
                 </p>
             </TextBox>

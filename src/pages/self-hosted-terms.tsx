@@ -10,15 +10,15 @@ const SelfHostedTermsPage: React.SFC<{}> = () => (
             <h3>1 Preamble</h3>
             <p>1.1 These Software Licensing Terms (“Terms”) provide the terms and conditions
             that govern usage of the Software Gitpod Self-Hosted Free Edition in source and
-            binary form (“Software”). The Software is provided by TypeFox GmbH, Am
-            Germaniahafen 1, 24143 Kiel (“TypeFox”). By downloading or using to the
+            binary form (“Software”). The Software is provided by Gitpod GmbH, Am
+            Germaniahafen 1, 24143 Kiel (“Gitpod”). By downloading or using to the
     Software, you agree to be bound by the following Terms.</p>
             <h3>2 Scope of Terms</h3>
             <p>2.1 These Terms apply to the usage of the Software, which is designed to be used
     for business purposes.</p>
             <p>2.2 These Terms apply to the binary code and to the source code of the Software,
     unless the header of a source file explicitly refers to a different license.</p>
-            <p>2.3 These Terms apply unless you have a separate agreement with TypeFox in
+            <p>2.3 These Terms apply unless you have a separate agreement with Gitpod in
     written form that explicitly supersedes these Terms.</p>
             <h3>3 License Fees</h3>
             <p>3.1 The use of the Software as described in Sec. 2 is free of charge. It is
@@ -33,7 +33,7 @@ const SelfHostedTermsPage: React.SFC<{}> = () => (
             internal purposes in accordance with these Terms and to distribute the
     unmodified software without charging a fee for it.</p>
             <p>4.2 Subject to the conditions of these Terms, you may modify the Software,
-            including patching it. You agree that TypeFox retains all right, title and
+            including patching it. You agree that Gitpod retains all right, title and
             interest in and to all such modifications and patches (“Modifications”). You may
             only use, reproduce and execute the Modifications for internal purposes in
             accordance with these Terms. You may not distribute Modifications to any third
@@ -54,19 +54,19 @@ const SelfHostedTermsPage: React.SFC<{}> = () => (
             prohibited. This includes any sale, lease, indirect use of the Software to the
             benefit of third parties and its provision as a commercial service, or offering
     it as a part of a commercial service or platform.</p>
-            <p>4.5 The Software remains the exclusive intellectual property of TypeFox at all
+            <p>4.5 The Software remains the exclusive intellectual property of Gitpod at all
             times. Mandatory rights resulting from applicable copyright law (e.g. related to
     decompilation) remain unaffected.</p>
-            <p>4.6 TypeFox provides the source code of the Software on a voluntary basis and is
-            not obligated to do so. Furthermore, TypeFox is not obligated to provide any
+            <p>4.6 Gitpod provides the source code of the Software on a voluntary basis and is
+            not obligated to do so. Furthermore, Gitpod is not obligated to provide any
     updates or upgrades it may develop.</p>
             <p>4.7 Please consider purchasing a license key (see above Sec. 3) for further
     usage rights and additional features.</p>
             <h3>5 Telemetry</h3>
-            <p>5.1 TypeFox intends to collect certain statistical data on the use of the
+            <p>5.1 Gitpod intends to collect certain statistical data on the use of the
             Software on an anonymized basis in the future with a future version of the
             Software. The data will only be used to improve the Software and the data will
-            not be sold to third parties. TypeFox will inform about this with the future
+            not be sold to third parties. Gitpod will inform about this with the future
     release.</p>
             <h3>6 Warranty and Liability</h3>
             <p>6.1 THE SOFTWARE IS PROVIDED FREE OF CHARGE ON AN “AS IS” BASIS, WITHOUT
@@ -89,7 +89,7 @@ const SelfHostedTermsPage: React.SFC<{}> = () => (
             License.third-party.go.txt. No stipulation in these Terms is intended to impose
             further restrictions on your use of such Third-Party Components licensed under
     Third-Party License Terms.</p>
-            <p>7.2 TypeFox reserves the right to introduce deviating or additional Third-Party
+            <p>7.2 Gitpod reserves the right to introduce deviating or additional Third-Party
             License Terms in the course of modifications of the Software and in case of
             updates for the Software to the extent necessary due to additional Third-Party
     Components or due to changed Third-Party License Terms.</p>

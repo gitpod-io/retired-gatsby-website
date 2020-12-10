@@ -7,18 +7,17 @@ const ImprintPage: React.SFC<{}> = () => (
     <IndexLayout canonical="/imprint/" title="Imprint">
             <TextBox>
                 <h1>Imprint</h1>
-                <p>TypeFox&nbsp;GmbH
+                <p>Gitpod&nbsp;GmbH
                     <br /> Managing Directors: Sven Efftinge, Moritz Eysholdt, Dr. Jan Köhnlein
                     <br /> Am Germaniahafen 1
                     <br /> 24143 Kiel
                     <br /> Germany
                 </p>
-                <p>HRB 17385, Amtsgericht Kiel</p>
+                <p>HRB 22228, Amtsgericht Kiel</p>
                 <p>VAT-ID :&nbsp;
-                    <span>DE304247102</span>
+                    <span>DE335127327</span>
                 </p>
-                <p>Phone:&nbsp;+49-431-99026870
-                    <br /> Email: contact@typefox.io
+                <p>Email: contact@gitpod.io
                 </p>
                 <h4>Responsible for all content according to
                     <b>§ 55 Rundfunkstaatsvertrag (RSTV)</b>:
