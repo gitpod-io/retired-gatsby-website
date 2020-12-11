@@ -528,9 +528,11 @@ https://spectrum.chat/privacy.html</li>
                     Transfer of Data to Third Parties
 			</h3>
                 <p>
-                    We will transfer your personal data to a third party only within the scope of legal provisions, i.e. if we are obliged to
-                    transfer the data due to a government or court order, or, if applicable, legal provisions authorize the transfer or if
-                    you give your explicit consent.
+                    We will transfer your personal data to a third party only (i) within the scope of legal provisions, 
+                    i.e. if we are obliged to transfer the data due to a government or court order, or, (ii) if applicable, 
+                    legal provisions authorize the transfer, e.g. if the transfer is required to pursue our legitimate 
+                    interests or to fulfil a contract, for example in case of mergers and acquisitions, (iii) or if you 
+                    give your explicit consent.
 			</p>
 
                 <p>
