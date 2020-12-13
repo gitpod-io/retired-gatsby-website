@@ -503,8 +503,8 @@ const TermsPage: React.SFC<{}> = () => (
                 </p>
             <ol>
                 <li>
-                    <strong>Gitpod, Inc.</strong>, a corporation incorporated and validly existing under the laws of the State of Delaware, 
-                    United States, registered with the Division of Corporations of the State of Delaware under file number 3353320 and with 
+                    <strong>Gitpod, Inc.</strong>, a corporation incorporated and validly existing under the laws of the State of Delaware,
+                    United States, registered with the Division of Corporations of the State of Delaware under file number 3353320 and with
                     business address at: 1390 Market Street, Suite 200, San Francisco. CA 94102, United States ("<strong>Gitpod, Inc.</strong>"); or
                     </li>
                 <li>
@@ -512,22 +512,22 @@ const TermsPage: React.SFC<{}> = () => (
                     </li>
             </ol>
             <p>
-                by way of a transfer of contract with discharging effect (Vertragsübernahme mit schuldbefreiender Wirkung) with the effect that 
-                Gitpod, Inc. or the Third-Party becomes your new contractual partner in our stead and assumes all our rights and obligations under 
+                by way of a transfer of contract with discharging effect (Vertragsübernahme mit schuldbefreiender Wirkung) with the effect that
+                Gitpod, Inc. or the Third-Party becomes your new contractual partner in our stead and assumes all our rights and obligations under
                 this Agreement.
                 </p>
             <p>
-                We will notify you of a contemplated transfer of this Agreement and provide you with the identity of your new contractual partner 
-                in text form with at least four three weeks' notice prior to the contemplated transfer of this Agreement becoming effective 
-                ("<strong>Transfer Notice</strong>"). 
+                We will notify you of a contemplated transfer of this Agreement and provide you with the identity of your new contractual partner
+                in text form with at least four three weeks' notice prior to the contemplated transfer of this Agreement becoming effective
+                ("<strong>Transfer Notice</strong>").
                 </p>
             <p>
-                In case of a contemplated transfer of this Agreement to a Third-Party you shall be entitled to terminate this Agreement without 
-                notice and without any additional cause being required. This termination right must be exercised within six weeks following receipt 
+                In case of a contemplated transfer of this Agreement to a Third-Party you shall be entitled to terminate this Agreement without
+                notice and without any additional cause being required. This termination right must be exercised within six weeks following receipt
                 of the Transfer Notice and must be exercised in text form.
                 </p>
             <p>
-                The above termination right shall not exist in case of a transfer of this Agreement to Gitpod, Inc. Other rights you may have to 
+                The above termination right shall not exist in case of a transfer of this Agreement to Gitpod, Inc. Other rights you may have to
                 terminate the Agreement with or without cause shall remain unaffected.
                 </p>
 
