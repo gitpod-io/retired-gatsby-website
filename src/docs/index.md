@@ -12,6 +12,8 @@ This is what is at the heart of Gitpod: **an open platform that removes all fric
 
 `youtube: d6D-OUPnJeg`
 
+`youtube: QV1fYt-7SLU`
+
 ### Gitpod Concepts
 
 Gitpod seamlessly integrates in your workflow and works with all major git hosting platforms including GitHub, GitLab and Bitbucket. It understands the context you are in and adjusts your dev environment accordingly. For example, if you create a Gitpod workspace from a Pull or Merge Request, Gitpod will open a fully-initialized dev environment in code-review mode.
