@@ -47,7 +47,7 @@ See for yourself and try opening some of our favorite OSS projects out there:
 - [freeCodeCamp](https://gitpod.io/#https://github.com/freeCodeCamp/freeCodeCamp)
 - [Prometheus](https://gitpod.io/#https://github.com/prometheus/prometheus)
 - [GitLab](https://gitpod.io/#https://gitlab.com/gitlab-org/gitlab)
-- [Forem](https://gitpod.io/#https://github.com/thepracticaldev/dev.to) powering [dev.to](https://dev.to/)
+- [Forem](https://gitpod.io/#https://github.com/forem/forem) powering [dev.to](https://dev.to/)
 - [Nushell](https://gitpod.io/#https://github.com/nushell/nushell)
 
 ## Next Steps
