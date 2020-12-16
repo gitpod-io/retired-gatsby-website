@@ -41,10 +41,17 @@ For example, try opening [Vuepress](https://gitpod.io/#https://github.com/vuejs/
 
 ## Gitpodified Open Source Projects {#gitpodified-open-source-project}
 
-We all know that setting up a local dev environment for a contribution to your favourite OSS project can be daunting. Luckily there are already numerous projects out there that gitpodified their repositories allowing everyone to contribute with a single click. With [contribute.dev](https://contribute.dev/) we even made a website to list them.
+Setting up a local dev environment for a contribution to your favourite OSS project can be daunting. Luckily there are already numerous projects out there that gitpodified their repositories allowing everyone to contribute with a single click. With [contribute.dev](https://contribute.dev/) we even made a website to list them.
 
-For example try opening some of our favorite OSS projects out there:
+See for yourself and try opening some of our favorite OSS projects out there:
 - [freeCodeCamp](https://gitpod.io/#https://github.com/freeCodeCamp/freeCodeCamp)
 - [Prometheus](https://gitpod.io/#https://github.com/prometheus/prometheus)
 - [GitLab](https://gitpod.io/#https://gitlab.com/gitlab-org/gitlab)
-- [Forem](https://gitpod.io/#https://github.com/thepracticaldev/dev.to) powering dev.to
+- [Forem](https://gitpod.io/#https://github.com/forem/forem) powering [dev.to](https://dev.to/)
+- [Nushell](https://gitpod.io/#https://github.com/nushell/nushell)
+
+## Next Steps
+
+With Gitpod you start treating your dev environments as something ephemeral: you start them, you code, you push your code, and you forget about them. For your next task, you'll use a fresh dev environment.
+
+🛠 [Gitpodify your first project!](https://www.gitpod.io/docs/configuration/)

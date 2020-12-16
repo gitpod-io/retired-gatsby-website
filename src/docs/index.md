@@ -61,7 +61,7 @@ Only with [prebuilds enabled](https://www.gitpod.io/docs/prebuilds/#enable-prebu
 
 More on [prebuilds](https://www.gitpod.io/docs/prebuilds/).
 
-### Next steps
+### Next Steps
 
 With Gitpod you start treating your dev environments as something ephemeral: you start them, you code, you push your code, and you forget about them. For your next task, you'll use a fresh dev environment.
 
