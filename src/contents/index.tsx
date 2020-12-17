@@ -3,7 +3,7 @@ import React from 'react'
 import { FeatureCardProps } from '../components/FeatureCard'
 
 import Collaboration from '../resources/collaboration-placeholder.png'
-import KubernetesGraphics from '../resources/kubernetes-graphic.svg'
+import KubernetesGraphics from '../resources/cloud-native.png'
 import IPad from '../resources/ipad.png'
 import FullAutomationGraphics from '../components/features/FullAutomationGraphics'
 import FullAutomationButtons from '../components/features/FullAutomationButtons'
