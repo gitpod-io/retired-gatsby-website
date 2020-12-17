@@ -47,7 +47,7 @@ const RecrutingPage: React.SFC<{}> = () => (
             title="We create the most convenient dev environments."
         />
 
-        <Bg url={RecruitingBG} />
+        <Bg url={RecruitingBG} alt="A road on Mountains with trees on either side." />
 
         <PricingTable
             title="Gitpod Recruiting Pricing"

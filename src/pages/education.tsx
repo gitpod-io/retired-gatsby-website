@@ -52,7 +52,7 @@ const EducationPage: React.SFC<{}> = () => (
             title="We eliminate tedious workflows."
         />
 
-        <Bg url={CollegeStudents} />
+        <Bg url={CollegeStudents} alt="Students going to the college"/>
 
         <PricingTable
             title="Gitpod Education Pricing"

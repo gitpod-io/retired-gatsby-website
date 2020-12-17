@@ -47,7 +47,7 @@ const VendorPage: React.SFC<{}> = () => (
             title="We’ll make your developer products shine."
         />
 
-        <Bg url={VendorBG} />
+        <Bg url={VendorBG} alt="A large hall with paintings embeded on it's walls." />
 
         <PricingTable
             title="Gitpod Vendor Pricing"
