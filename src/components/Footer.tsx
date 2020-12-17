@@ -111,6 +111,7 @@ const Footer: React.SFC<{}> = () => (
                     <li><Link to="/pricing/">Pricing</Link></li>
                     <li><Link to="/blog/">Blog</Link></li>
                     <li><Link to="/self-hosted/">Self-Hosted</Link></li>
+                    <li><Link to="/gitpod-vs-github-codespaces">Gitpod vs GitHub <br />Codespaces</Link></li>
                     <li><a href="https://gitpod.io/login/" style={{ color: colors.link, fontWeight: 600 }}>Log In</a></li>
                 </ul>
                 <ul>
