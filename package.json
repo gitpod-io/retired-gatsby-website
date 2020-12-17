@@ -24,6 +24,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
+    "@sendgrid/mail": "^7.2.6",
     "babel-plugin-styled-components": "^1.10.7",
     "bowser": "^2.9.0",
     "classnames": "^2.2.6",
@@ -59,11 +60,11 @@
     "react": "^16.13.1",
     "react-cookie-consent": "^5.0.1",
     "react-dom": "^16.13.1",
+    "react-github-btn": "^1.2.0",
     "react-helmet": "^6.0.0",
     "react-modal-video": "^1.2.3",
     "react-tweet-embed": "^1.2.2",
-    "typescript": "^3.9.3",
-    "@sendgrid/mail": "^7.2.6"
+    "typescript": "^3.9.3"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.63",
