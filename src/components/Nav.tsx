@@ -4,7 +4,6 @@ import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import GitpodLogoDark from '../resources/gitpod-logo-dark.svg'
 import { colors, sizes, borders } from '../styles/variables'
-import DropDown from '../components/DropDown'
 import { Global, css } from '@emotion/core'
 
 const StyledNav = styled.nav`
@@ -14,7 +13,7 @@ const StyledNav = styled.nav`
     padding: 4rem 0;
     position: relative;
 
-    @media(max-width: ${sizes.breakpoints.lg}) {
+    @media(max-width: 1040px) {
         font-size: 110%;
         display: block;
     }
@@ -41,7 +40,7 @@ const StyledNav = styled.nav`
         display: flex;
         align-items: center;
 
-        @media(max-width: ${sizes.breakpoints.lg}) {
+        @media(max-width: 1040px) {
             flex-direction: column;
             width: 100%;
             padding-top: 8rem;
@@ -55,7 +54,7 @@ const StyledNav = styled.nav`
         }
     }
 
-    @media(max-width: ${sizes.breakpoints.lg}) {
+    @media(max-width: 1040px) {
         .navIsRendered {
             display: flex;
         }
@@ -68,13 +67,13 @@ const StyledNav = styled.nav`
     .nav__item {
         cursor: pointer;
 
-        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
+        @media(min-width: 1041px) {
             &:not(:last-child) {
                 margin-right: 5rem;
             }
         }
 
-        @media(max-width: ${sizes.breakpoints.lg}) {
+        @media(max-width: 1040px) {
             width: 100%;
             padding: 2rem 0;
 
@@ -92,7 +91,7 @@ const StyledNav = styled.nav`
         display: flex;
         align-items: center;
 
-        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
+        @media(min-width: 1041px) {
             display: none;
         }
 
@@ -161,7 +160,7 @@ const StyledNav = styled.nav`
             }
         }
 
-        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
+        @media(min-width: 1041px) {
             display: none;
         }
 
@@ -172,7 +171,7 @@ const StyledNav = styled.nav`
     }
 
 
-    @media(max-width: ${sizes.breakpoints.lg}) {
+    @media(max-width: 1040px) {
         .shown {
             opacity: 1;
             transform: scale(1) translateX(0);
@@ -212,7 +211,7 @@ const Nav = () => {
     const [isNavRendered, setIsNavRendered] = useState(false)
 
     const unLock = () => {
-        if (window.innerWidth >= 1240) {
+        if (window.innerWidth >= 1040) {
             setIsNavRendered(false)
         }
     }
