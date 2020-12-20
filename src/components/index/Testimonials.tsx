@@ -63,8 +63,7 @@ const StyledTestimonials = styled.div`
     border-radius: 50%;
     transition: all .2s;
 
-    &:hover,
-    &:focus {
+    &:hover {
         background: ${colors.lightGrey};
     }
 
@@ -75,19 +74,34 @@ const StyledTestimonials = styled.div`
 `
 
 const Testimonials: React.SFC<{}> = () => {
-    const [currentCycle, setCurrentCycle] = useState<number>(0)
     const tweetsRef = useRef<HTMLDivElement>(null)
     const tweetsContainerRef = useRef<HTMLDivElement>(null)
     const cycles = Math.ceil(testimonials.length / 3)
 
+    const setDotsColor = (cycle) => {
+        const dots = document.querySelectorAll('.dot')
+
+        dots.forEach((d, i) => {
+            if (cycle === i) {
+                d.style.background = colors.lightGrey
+            } else {
+                d.style.background = colors.offWhite
+            }
+        })
+    }
+
     useEffect(() => {
         const tweetsContainer = tweetsContainerRef.current
-        const dots = document.querySelectorAll('.dot')
-        const cycleWidth = tweetsContainer?.scrollWidth / cycles
+        const tweets = tweetsRef.current
+        const firstTweet = tweets?.firstChild
+        const spacing = getComputedStyle(firstTweet)['margin-right']
+        const scrollBy = firstTweet.offsetWidth * 3 + parseFloat(spacing.substring(0, spacing.length - 2)) * 2.8
+        setDotsColor(0)
 
         tweetsContainer.addEventListener('scroll', (e) => {
             const currentScrollPosition = tweetsContainer?.scrollLeft
-            setCurrentCycle(cycles - Math.floor((tweetsContainer?.scrollWidth - currentScrollPosition) / cycleWidth))
+            const cycle = cycles - Math.ceil((tweetsContainer?.scrollWidth - currentScrollPosition) / scrollBy)
+            setDotsColor(cycle)
         })
     })
 
@@ -97,6 +111,7 @@ const Testimonials: React.SFC<{}> = () => {
         const firstTweet = tweets?.firstChild
         const spacing = getComputedStyle(firstTweet)['margin-right']
         const scrollBy = firstTweet.offsetWidth * 3 + parseFloat(spacing.substring(0, spacing.length - 2)) * 2.8
+
         tweetsContainer.scroll({ left: parseFloat(scrollBy * to), behavior: 'smooth' })
     }
 
@@ -121,10 +136,8 @@ const Testimonials: React.SFC<{}> = () => {
                                     className="dot"
                                     key={d}
                                     onClick={() => {
-                                        setCurrentCycle(d)
                                         switchTweets(d)
                                     }}
-                                    style={currentCycle === d ? { background: colors.lightGrey } : {}}
                                     title={`Switch to ${d + 1}th set of tweets.`}
                                 >
                                     &nbsp;
