@@ -216,7 +216,7 @@ const Footer: React.SFC<{}> = () => (
                 </ul>
             </div>
             <div className="info">
-                <p>Copyright © <a href="https://www.gitpod.io/" target="_blank" rel="noopener" title="Gitpod">Gitpod</a></p>
+                <p>Copyright &copy; <a href="https://www.gitpod.io/" target="_blank" rel="noopener" title="Gitpod">Gitpod</a></p>
                 <div><Link to="/imprint/">Imprint</Link>&nbsp;|&nbsp;<Link to="/terms/">Terms of Service</Link>&nbsp;|&nbsp;<Link to="/privacy/">Privacy Policy</Link></div>
             </div>
         </div>

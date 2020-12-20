@@ -38,15 +38,15 @@ interface DifferenceProps {
     spacing?: 'small'
 }
 
-const Difference = ({title, spacing}: DifferenceProps) => {
-  const [browser, setBrowser] = useState<any>()
-
-  const getBrowserString = (browser: any) => {
+export const getBrowserString = (browser: any) => {
     if ( browser === 'Firefox') {
         return 'Firefox'
     }
     return 'Chrome'
   }
+
+const Difference = ({title, spacing}: DifferenceProps) => {
+  const [browser, setBrowser] = useState<any>()
 
   useEffect(() => {
     let usersBrowser = getBrowser(window.navigator.userAgent)
