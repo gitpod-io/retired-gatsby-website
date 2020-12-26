@@ -12,8 +12,16 @@ const StyledFooter = styled.footer`
 
     .links {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        @media(min-width: 651px) {
+            ul {
+                width: 12.4rem;
+            }
+        }
 
         @media(max-width: 650px) {
             justify-content: space-between;
