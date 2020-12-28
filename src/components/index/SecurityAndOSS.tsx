@@ -49,12 +49,12 @@ const SecurityAndOSS = () => (
         <TextFeature
           path={OpenSourceImg}
           alt="Open Source"
-          title="Free For Open-Source!"
+          title="No Cost to Open-Source Projects!"
           text={
             <>
               <p>
-                Gitpod is built on open-source and wouldn’t exist without it. We’re happy to give something back by being completely{' '}
-                <strong>free for open source.</strong>
+                Gitpod is built on open-source and wouldn’t exist without it. We’re happy to give something back by providing {' '}
+                <strong>a no-cost license for open source projects.</strong>
               </p>
               <p>Do you want to contribute to a new project? Here is a list of all prebuilt open-source projects.</p>
             </>
