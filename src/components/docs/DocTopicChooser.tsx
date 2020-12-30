@@ -35,10 +35,32 @@ const DocTopicChooser: React.SFC<{}> = () => {
                 <option value='#' selected={true}>Select A Topic</option>
                 {MENU.map(m => {
                     return <>
-                        <option key={m.path} value={m.path}>{m.title}</option>
+                        <option
+                            key={m.path}
+                            value={m.path}
+                        >
+                            {m.title}
+                        </option>
                         {
                             (m.subMenu || []).map(m =>
-                                <option key={m.path} value={m.path}>&nbsp;&nbsp;&nbsp;&nbsp;{m.title}</option>
+                                <>
+                                    <option
+                                        key={m.path}
+                                        value={m.path}
+                                    >
+                                        &nbsp;&nbsp;&nbsp;&nbsp;{m.title}
+                                    </option>
+                                    {
+                                        (m.subMenu || []).map(sub => (
+                                            <option
+                                                key={sub.path}
+                                                value={sub.path}
+                                            >
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{sub.title}
+                                            </option>
+                                        ))
+                                    }
+                                </>
                             )
                         }
                     </>

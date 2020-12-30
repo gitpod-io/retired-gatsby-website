@@ -167,11 +167,27 @@ export const MENU: MenuEntry[] = [
         [
             M(
                 "JavaScript",
-                "languages/javascript"
+                "languages/javascript",
+                [
+                    M(
+                        "Vue",
+                        "languages/vue"
+                    ),
+                    M(
+                    "Svelte",
+                    "languages/svelte"
+                    ),
+                ]
             ),
             M(
                 "Python",
-                "languages/python"
+                "languages/python",
+                [
+                    M(
+                        "Pandas",
+                        "languages/python/#pandas"
+                    ),
+                ]
             ),
             M(
                 "HTML/CSS",
@@ -179,7 +195,13 @@ export const MENU: MenuEntry[] = [
             ),
             M(
                 "Java",
-                "languages/java"
+                "languages/java",
+                [
+                    M(
+                        "Kotlin",
+                        "languages/kotlin"
+                    ),
+                ]
             ),
             M(
                 "C++",
@@ -200,14 +222,6 @@ export const MENU: MenuEntry[] = [
             M(
                 "PHP",
                 "languages/php"
-            ),
-            M(
-                "Vue",
-                "languages/vue"
-            ),
-            M(
-                "Svelte",
-                "languages/svelte"
             ),
             M(
                 "Scala",
@@ -237,14 +251,6 @@ export const MENU: MenuEntry[] = [
             M(
                 "R",
                 "languages/r"
-            ),
-            M(
-                "Kotlin",
-                "languages/kotlin"
-            ),
-            M(
-                "Pandas",
-                "languages/python/#pandas"
             ),
             M(
                 "Deno",

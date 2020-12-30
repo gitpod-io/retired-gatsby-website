@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import { colors } from '../styles/variables'
 import { Link } from 'gatsby'
 
-const StyledLinkSet = styled.div`
+const StyledLinkSet = styled.ul`
 
     &:not(:last-child) {
         margin-bottom: 2rem;
@@ -43,16 +43,17 @@ const StyledLinkSet = styled.div`
 interface LinkSetProps {
     caption: string
     path: string
+    className?: string
 }
 
 class Linkset extends React.Component<LinkSetProps, {}> {
 
     render() {
 
-        const { caption, path, children } = this.props
+        const { caption, path, children, className } = this.props
 
         return (
-            <StyledLinkSet>
+            <StyledLinkSet className={className}>
                 <li>
                     <Link
                         to={path}

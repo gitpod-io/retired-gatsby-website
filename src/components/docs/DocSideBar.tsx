@@ -58,18 +58,83 @@ const StyledSideBar = styled.div`
     @media(max-width: ${sizes.breakpoints.lg}) {
         display: none;
     }
+
+    li {
+        ul {
+            margin: 1.5rem 0 1.5rem 1rem;
+        }
+    }
+
+    .linkset {
+        &--small {
+            a.caption { 
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: .2rem;
+            }
+        }
+    }
+
+    .link {
+        &--small {
+            font-size: 1.4rem;
+            margin-left: 1rem;
+        }
+    }
 `
 
 const DocSideBar: React.SFC<{}> = () => (
     <StyledSideBar>
         <ul>
             <Docsearch name="search-doc-input" />
-            {MENU.map((m, i) =>
-                <Linkset caption={m.title} path={m.path} key={'menu' + i}>
-                    {m.subMenu && m.subMenu.map((sub, i) =>
-                        <li><Link activeClassName='active' to={sub.path} key={'sub' + i}>{sub.title}</Link></li>
-                    )}
-                </Linkset>)}
+            {
+                MENU.map((m, i) => {
+                    console.log(m)
+                    return (
+                        <Linkset caption={m.title} path={m.path} key={'menu' + i}>
+                            {
+                                m.subMenu &&
+                                m.subMenu.map((sub, i) =>
+                                    <li>
+                                        {
+                                            sub.subMenu ? (
+                                                <Linkset
+                                                    caption={sub.title}
+                                                    path={sub.path}
+                                                    key={'sub' + i}
+                                                    className="linkset--small"
+                                                >
+                                                    {
+                                                        sub.subMenu.map((y, i) => (
+                                                            <li>
+                                                                <Link
+                                                                    activeClassName='active'
+                                                                    to={y.path}
+                                                                    key={'y' + i}
+                                                                    className="link--small"
+                                                                >
+                                                                    {y.title}
+                                                                </Link>
+                                                            </li>
+                                                        ))
+                                                    }
+                                                </Linkset>
+                                            ) : (
+                                                    <Link
+                                                        activeClassName='active'
+                                                        to={sub.path}
+                                                        key={'sub' + i}
+                                                    >
+                                                        {sub.title}
+                                                    </Link>
+                                                )
+                                        }
+                                    </li>
+                                )}
+                        </Linkset>
+                    )
+                }
+                )}
         </ul>
     </StyledSideBar>
 )
