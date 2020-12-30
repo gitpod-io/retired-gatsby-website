@@ -99,7 +99,7 @@ class IndexLayout extends React.Component<{ title?: string; canonical?: string; 
                   backgroundColor: colors.white,
                   color: colors.text,
                   borderTop: borders.light,
-                  zIndex: '1000000000'
+                  zIndex: '2000000000'
                 }}
                 contentStyle={{
                   backgroundColor: 'transparent',

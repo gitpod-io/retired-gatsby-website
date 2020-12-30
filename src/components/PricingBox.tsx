@@ -155,7 +155,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        z-index: 1999999999;
+        z-index: 9;
 
         @media(min-width: calc(${sizes.breakpoints.sm} + 1px)) {
             position: absolute;
