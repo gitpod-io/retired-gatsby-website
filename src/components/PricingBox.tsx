@@ -63,6 +63,13 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         padding: 2rem 3rem;
     }
 
+    @media(max-width: 650px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 0;
+    }
+
     @media(max-width: ${sizes.breakpoints.sm}) {
         min-width: 25rem;
         min-height: auto;
@@ -171,6 +178,12 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
 
         @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             bottom: ${({ transform }) => (transform ? '2rem' : '1.5rem')};
+        }
+
+        @media(max-width: 650px) {
+            position: static;
+            transform: none;
+            margin-top: 5rem;
         }
     }
 

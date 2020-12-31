@@ -44,7 +44,7 @@ const StyledDescripion = styled.span`
         font-weight: 400;
         color: ${colors.textDark};
         background: ${colors.offWhite2};
-        z-index: 1000 !important;
+        z-index: 1000;
         border-radius: 3px;
 
         @media(max-width: 1080px) {
@@ -52,7 +52,7 @@ const StyledDescripion = styled.span`
             right: -5rem;
             top: 2.4rem;
             min-width: 18rem;
-            z-index: 1999999999;
+            z-index: 9999999999;
         }
 
          @media(min-width: 1081px) {
