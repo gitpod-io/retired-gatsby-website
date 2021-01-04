@@ -1,33 +1,18 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { colors } from '../../styles/variables'
 
-const StyledEditInGitpod = styled.div`
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-
-    .pen {
-        fill: ${colors.white};
-        transition: all .2s;
-        height: 2.5rem;
-        width: 2.5rem;
+const StyledEditInGitpod = styled.div`   
+    svg {
+        height: 3.5rem;
     }
 
     a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 4.5rem;
-        width: 4.5rem;
-        background: ${colors.offWhite1};
-        border-radius: 50%;
-        transition: all .2s;
-
-        &:hover,
-        &:focus {
-            background: ${colors.text};
+        &:hover {
+            rect {
+                transition: all .2s;
+                fill: #5093EF;
+            }
         }
     }
 `
@@ -35,7 +20,42 @@ const StyledEditInGitpod = styled.div`
 const EditInGitpod = ({ editUrl }: { editUrl: string }) => (
     <StyledEditInGitpod className="pen-container">
         <a href={editUrl} title="Edit this page in Gitpod" target="_blank">
-            <svg className="pen" xmlns="http://www.w3.org/2000/svg" width="22.454" height="25.307" viewBox="0 0 22.454 25.307"><title>Edit this page in Gitpod</title><path d="M25.088,13.816,12.516,27.982h0L8.063,22.964,20.635,8.8l4.453,5.018Zm.787-.887L27.8,10.763a2.744,2.744,0,0,0,.011-3.55l-1.313-1.48a2.048,2.048,0,0,0-3.151.012L21.422,7.911l4.453,5.018ZM11.729,28.869l-.163.184L6,30.307l1.113-6.272.163-.184,4.453,5.018Z" transform="translate(-6 -5) translate(6 5) translate(-6 -5)" /></svg>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="138"
+                height="32"
+                viewBox="0 0 1380 320"
+            >
+                <g fill="none" fillRule="evenodd">
+                    <rect width="1380" height="320" fill="#1966D2" rx="40"></rect>
+                    <text
+                    fill="#FFF"
+                    fontFamily="Arial,Helvetica,sans-serif"
+                    fontWeight="400"
+                    fontSize="140"
+                    opacity="0.704"
+                    >
+                    <tspan x="650" y="210">
+                        in Gitpod
+                    </tspan>
+                    </text>
+                    <text
+                    fill="#FFF"
+                    fontFamily="Arial,Helvetica,sans-serif"
+                    fontWeight="400"
+                    fontSize="140"
+                    >
+                    <tspan x="350" y="210">
+                        Edit
+                    </tspan>
+                    </text>
+                    <g fill="#FFF">
+                    <path d="M129.74 201.58v-81.01L112 110.33v101.44l87.77 50.66V241.7z"></path>
+                    <path d="M199.77 220.95V161l-52.03-30.04v60.19zm1.58-143.4l70.14 40.42 17.72-10.23L201.35 57l-87.86 50.73 17.78 10.26z"></path>
+                    <path d="M253.48 128.37l-52.12-30.04-52.09 30.05 52.08 30.07zm-50.71 92.69l52.25-29.92v-20.48l-36.01 20.49v-20.71l54.01-30.74v61.88l-70.25 40.21v20.74l87.93-50.75V110.35l-87.93 50.75zm-1.42-60.88v.01-.01z"></path>
+                    </g>
+                </g>
+            </svg>
         </a>
     </StyledEditInGitpod>
 )
