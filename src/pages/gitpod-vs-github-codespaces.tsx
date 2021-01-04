@@ -292,7 +292,7 @@ const GitpodVsGitHubCodespacesPage = () => (
       <Difference />
 
       <TrustedBy
-        title={<strong>Used by 250,000+ Developers & Businesses</strong>}
+        title={<strong>Used by 300,000+ Developers & Businesses</strong>}
         styles={{ margin: '10rem 0' }}
         brands={[
           {
