@@ -109,7 +109,7 @@ const Testimonials: React.SFC<{}> = () => {
             <section className="testimonials">
                 <div className="row">
                     <h3>
-                        Used by 250,000+ <strong>Developers & Businesses</strong>
+                        Used by 300,000+ <strong>Developers & Businesses</strong>
                     </h3>
                     <div className="tweets-container" ref={tweetsContainerRef}>
                         <div className="tweets" ref={tweetsRef}>
