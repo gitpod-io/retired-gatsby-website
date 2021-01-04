@@ -128,6 +128,10 @@ export const MENU: MenuEntry[] = [
                 "self-hosted/latest/install/install-on-kubernetes/"
             ),
             M(
+                "Run as a Docker container",
+                "self-hosted/latest/install/run-as-docker/"
+            ),
+            M(
                 "Configure OAuth",
                 "self-hosted/latest/install/oauth/"
             ),
