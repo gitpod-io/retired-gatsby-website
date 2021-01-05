@@ -27,6 +27,11 @@ const StyledDocsLayout = styled.div`
         padding: 3rem 1rem;
         position: relative;
 
+        &__header {
+            display: flex;
+            justify-content: space-between;
+        }
+
         @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             width: 70%;
         }
