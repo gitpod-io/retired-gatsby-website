@@ -6,7 +6,7 @@
   * [Search in Workspace](#search-in-workspace)
   * [Symbols and References](#symbols-and-references)
   * [Format Document](#format-document)
-  * [Prevent accidental close](#prevent-accidental-close)
+  * [Prevent Accidental Close](#prevent-accidental-close)
 
 ## Command Palette
 
@@ -67,6 +67,6 @@ To tidy up your code, many languages support `Format Document` (<kbd>Alt+Shift+F
 If you want to apply this to only a subsection of the current document, select the desired region
 and pick `Format Selection` from the editor's context menu.
 
-## Prevent accidental close
+## Prevent Accidental Close
 
 To prevent accidental close of the editor using keyboard shortcuts like `CMD+W` or `CTRL+W`, you can set the `application.confirmExit` preference option to `always`.
