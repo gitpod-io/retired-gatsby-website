@@ -11,7 +11,7 @@ const StyledEditInGitpod = styled.div`
         &:hover {
             rect {
                 transition: all .2s;
-                fill: #5093EF;
+                fill: #287EF7;
             }
         }
     }
