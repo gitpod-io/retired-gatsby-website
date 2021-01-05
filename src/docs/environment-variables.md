@@ -71,7 +71,7 @@ Subsequently `*/*` makes that variable available everywhere.
 
 <br><br>
 
-# Passing In Environment Variables
+<h2 class="h1">Passing In Environment Variables</h2>
 
 In addition to user-specific env variables, Gitpod also allows passing in variables through the `gitpod.io/#` URL.
 The syntax for that is

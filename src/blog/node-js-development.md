@@ -15,7 +15,7 @@ In this blog post, I will show you a transparent way of getting started with Nod
 
 The dev environment is called [Gitpod](https://www.gitpod.io/) and is entirely free for open-source development.
 
-### Table of Contents
+<h2 class="h3">Table of Contents</h2>
 
 * [Hello World](#hello-world)
 

@@ -348,9 +348,9 @@ const TermsPage: React.SFC<{}> = () => (
                 <div>
                     -- begin instruction on withdrawal --
                         </div>
-                <h5>
+                <h4>
                     Right of Withdrawal
-                        </h5>
+                        </h4>
                 <p>
                     You have the right to withdraw from this contract within 14 days without giving any reason. The withdrawal period will expire
                     14 days from the day of the conclusion of the contract. To exercise the right of withdrawal, you must inform us to:
@@ -367,9 +367,9 @@ const TermsPage: React.SFC<{}> = () => (
                     To meet the withdrawal deadline, it is sufficient for you to send your communication concerning your exercise of the right
                     of withdrawal before the withdrawal period has expired.
                     </p>
-                <h5>
+                <h4>
                     Effects of Withdrawal
-                        </h5>
+                        </h4>
                 <p>
                     If you withdraw from this contract, we shall reimburse to you all payments received from you, including the costs of delivery
                     (with the exception of the supplementary costs resulting from your choice of a type of delivery other than the least

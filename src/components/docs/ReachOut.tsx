@@ -12,9 +12,8 @@ const StyledReachOut = styled.section`
     text-align: center;
     border-radius: 3px;
 
-    h3 {
-        margin-top: 0;
-        font-weight: 600;
+    h2 + p {
+        margin: 0;
     }
 
     svg {
@@ -49,7 +48,7 @@ const StyledReachOut = styled.section`
 
 const ReachOut = () => (
     <StyledReachOut>
-        <h3>Still Have Questions?</h3>
+        <h2 className="h3">Still Have Questions?</h2>
         <p>Please reach out. We’re happy to answer them.</p>
         <div>
             <a href="https://community.gitpod.io/" target="_blank" rel="noopener" title="Community">

@@ -76,8 +76,10 @@ const Banner: React.SFC<BannerProps> = ({ subtitle, title, paragraph, linkPath, 
   <div className="row pattern">
     <StyledBanner role="banner" className="banner">
       <div className="banner__text">
-        <h3 className="sub">{subtitle}</h3>
-        {title}
+        <header>
+            <p className="sub h3">{subtitle}</p>
+            {title}
+        </header>
         {paragraph ? <p className="para">{paragraph}</p> : null}
         {link(linkPath, linkText, '', true, false)}
         {children}

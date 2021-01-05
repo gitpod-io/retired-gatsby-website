@@ -10,7 +10,7 @@ We are happy to announce that you can finally enjoy Gitpod's frictionless ready-
 
 ![gitpod loves gitlab](./gitlab-support/teaser-gitlab-gitpod.jpg)
 
-# Getting Started with GitLab and Gitpod
+<h2 class="h1">Getting Started with GitLab and Gitpod</h2>
 
 Starting a dev environment for a GitLab project works just as with GitHub, i.e. you prefix any GitLab project URL with `gitpod.io/#`.
 

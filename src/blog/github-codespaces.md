@@ -9,7 +9,7 @@ Today, GitHub announced the private beta of [GitHub Codespaces](https://github.c
 
 This is great news, because it really helps to explain why this is going to change professional software development entirely.
 
-### Dev Environment As Code
+<h2 class="h3">Dev Environment As Code</h2>
 
 Describing development environments in code has many benefits:
 
@@ -23,7 +23,7 @@ Describing development environments in code has many benefits:
 
 It is our vision that **everybody can immediately start working in a fully set-up dev environment on any project, any branch, with any device, and at any time.**
 
-### A Lifesaver for Professional Teams
+<h2 class="h3">A Lifesaver for Professional Teams</h2>
 
 As software systems become more complex so do dev environments. Have you ever tried to develop a Kubernetes application locally, set up all the required infrastructure, and launch all microservices on your local machine? Halfway through you’ll find that your expensive MacBook Pro is not a suitable replacement for a datacenter. Even if you eventually manage to get things working it won’t be smooth or remotely close to what you run in production.
 
@@ -33,13 +33,13 @@ For the past year the whole team has developed Gitpod in Gitpod. Everyone in the
 
 `youtube: dFMpXUsJcGM`
 
-### Pre-build Everything!
+<h2 class="h3">Pre-build Everything!</h2>
 
 When reviewing a PR or starting work on that new cool feature, no developer wants to accidentally work with an old state. Imagine wasting hours hunting a bug that’s already fixed on master. Fresh working copies—and ideally dev environments—for each task would be great.
 
 Once dev environments have become code you can pre-build those dev environments ahead of time. **Think CI for your development setup**: on each change in the repository, Gitpod prepares a new dev environment for that change. Rather than having to manually adjust the tool versions, wait for all dependencies to download and for the code to compile, things are ready when you are. We call this [continuous dev environments](/blog/continuous-dev-environment-in-devops/).
 
-### At Last a Good Browser IDE
+<h2 class="h3">At Last a Good Browser IDE</h2>
 
 Given all these benefits, you might wonder why no one did this earlier. After all, developers automate the world on a daily basis. Thinking about it, it’s strange that most developers still set things up manually before they can get down to business.
 
@@ -54,7 +54,7 @@ This new generation of Theia-based Web-IDEs go way beyond online-playgrounds whi
 <sub>*) To avoid misunderstandings: Theia has technically nothing in common with the classic Eclipse IDE, but is an independent project under the umbrella of the Eclipse Foundation.</sub>
 
 
-### What About GitLab, Atlassian’s Bitbucket, and Other Git Hosting?
+<h2 class="h3">What About GitLab, Atlassian’s Bitbucket, and Other Git Hosting?</h2>
 
 We are thrilled to see GitHub/Microsoft investing in automated development environments as it will help convince developers around the world and get this new way of developing software adopted faster.
 
@@ -62,7 +62,7 @@ But most professional development happens on other platforms such as GitLab, Atl
 
 To also serve users beyond just GitHub, we have been focussing on integrating Gitpod with other platforms as well. In December we released support for GitLab, and integration with Atlassian’s Bitbucket (and Jira) will be available soon.
 
-### Closer to Home: Gitpod Self-Hosted
+<h2 class="h3">Closer to Home: Gitpod Self-Hosted</h2>
 
 Chances are that you host your Git repositories or other dev infrastructure in a private cloud, or on a local network where they can't be accessed from the outside. Thus, a hosted IDE service must be on the same private cloud or network. This is possible with [Gitpod Self-Hosted](/self-hosted/) which can be installed on Kubernetes and does not require a connection to the public internet.
 
@@ -70,7 +70,7 @@ Today we are releasing a new version which brings Gitpod Self-Hosted on par with
 
 **Gitpod Self-Hosted is free for up to five users, and a free trial month for unlimited users is available, too.**
 
-### Summary
+<h2 class="h3">Summary</h2>
 
 We are quickly headed into a wonderful future, where developers are no longer intimidated by tedious and outdated setup procedures. Professional software projects will provide automated, prebuilt development environments that enable teams to start contributing, doing code reviews, reproducing bugs or just exploring new ideas immediately from any device securely.
 

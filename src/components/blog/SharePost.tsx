@@ -39,7 +39,7 @@ interface SharePostProps {
 
 const SharePost = ({ title, authors, url, dontRenderHeading }: SharePostProps) => (
   <StyledSharePost>
-    {dontRenderHeading ? null : <h4>Share Blog Post</h4>}
+    {dontRenderHeading ? null : <h2 className="h4">Share Blog Post</h2>}
     <div>
       <a
         href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(

@@ -16,6 +16,10 @@ const StyledInfoCard = styled.section`
         padding-top: 0;
     }
 
+    .h3 + p {
+        margin: 0;
+    }
+
     .info {
         @media(min-width: 831px) {
             flex: 0 0 44%;
@@ -61,13 +65,13 @@ const InfoCard: React.SFC<{}> = () => (
     <StyledInfoCard>
         <section className="info-container">
             <div className="info">
-                <h3>Getting Started with Gitpod</h3>
+                <h2 className="h3">Getting Started with Gitpod</h2>
                 <p>You can simply start coding in Gitpod by prefixing any GitHub URL with <code>gitpod.io/#</code></p>
                 <p>For a more detailed description of Gitpod and its IDE, Theia, please have a look at our documentation.</p>
                 <Link to="/docs/" className="btn">Gitpod Docs</Link>
             </div>
             <div className="info">
-                <h3>Do You Need Help?</h3>
+                <h2 className="h3">Do You Need Help?</h2>
                 <p>If you have any question, issue or feedback, please get in touch. We love to hear your feedback and help you out.</p>
                 <Link to="/contact/" title="Contact">
                     <img alt="Mail Logo" src={Mail} />

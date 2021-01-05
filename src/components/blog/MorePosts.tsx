@@ -19,7 +19,7 @@ const MorePosts = ({ posts }: { posts: any[] }) => (
         </h2>
         <Posts>
           {posts.map((p: any) => (
-            <PostPreview key={p.node.fields.slug} post={p} />
+            <PostPreview key={p.node.fields.slug} headingType="h3" post={p} />
           ))}
         </Posts>
       </div>
