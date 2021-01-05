@@ -13,13 +13,13 @@ Since [we've started building Gitpod in July-2017](/blog/gitpod-online-ide/), we
 
 We certainly welcome the additional push Codespaces will bring, but it is important to communicate how [Gitpod compares to Codespaces](/gitpod-vs-github-codespaces/).
 
-### Gitpod is Open-Source, Multi-Cloud, and Works With GitLab, GitHub, and Bitbucket
+<h2 class="h3">Gitpod is Open-Source, Multi-Cloud, and Works With GitLab, GitHub, and Bitbucket</h2>
 
 Gitpod is an **open-source platform** which means you get full transparency over how Gitpod works and can even contribute to it. The [vibrant open-source community](https://community.gitpod.io/) of Gitpod welcomes everyone, and empowers them to develop additional features without restrictions.
 
 Furthermore, you can run Gitpod on your own infrastructure and any cloud provider. **Gitpod seamlessly works with GitHub, GitLab and Bitbucket** and can be deployed to public, private or hybrid clouds, neatly integrating into your infrastructure, **giving you full control of your system and your source code**.
 
-### Gitpod is Powerful
+<h2 class="h3">Gitpod is Powerful</h2>
 
 As a highly-optimized Kubernetes application **Gitpod is built on next-gen container technology** instead of VMs. This allows Gitpod to be extremely resource efficient giving you the best 💥 for the 💵
 
@@ -27,7 +27,7 @@ Compared to virtual machines, isolating workspace containers from each other is 
 
 The result is that Gitpod offers more powerful dev environments with a small ecological footprint. Furthermore, we run Gitpod.io on a 100% carbon-neutral cloud service ❤️🌍
 
-### Gitpod is Fast
+<h2 class="h3">Gitpod is Fast</h2>
 
 Gitpod is not only extremely fast because of the higher efficiency, but also because of what we call [prebuilds](https://www.gitpod.io/docs/prebuilds/). Let’s take a closer look.
 
@@ -43,7 +43,7 @@ The advantages of having your dev environments prebuilt can not be overstated. F
 
 We believe prebuilding dev environments the way Gitpod does it, is key towards [“dev environments as code”](https://www.gitpod.io/blog/dev-env-as-code/). Without prebuilds, developers have to manually maintain and reuse their dev environments, because of the manual labour put into them. Those stateful environments drift apart over time and teams are once again working in very different setups, wasting time and energy with the resulting problems and surprises. With Gitpod "it works (or doesn't work) on my machine is a thing of the past.
 
-### The Road Ahead
+<h2 class="h3">The Road Ahead</h2>
 
 The real competition is the habit of maintaining stateful environments on overpowered local machines. We welcome GitHub and Microsoft to join forces in convincing developers around the world about the workflow and productivity benefits of automated, cloud-based dev environments 🥰
 

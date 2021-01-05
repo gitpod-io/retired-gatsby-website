@@ -13,7 +13,7 @@ Since we released Gitpod into Public Beta it has been incredibly exciting to see
 
 Of course, there is always room for improvement, especially with a service as new as Gitpod. Luckily, people have started to share their questions and ideas with us on [https://github.com/gitpod-io/gitpod](https://github.com/gitpod-io/gitpod). One of the most often asked questions was:
 
-### “How do I add tool XYZ to my workspace?”
+<h2 class="h3">“How do I add tool XYZ to my workspace?”</h2>
 
 And indeed that hasn’t been straight forward. You had to:
 
@@ -33,7 +33,7 @@ And indeed that hasn’t been straight forward. You had to:
 
 That was way too tedious for everyone to start playing around.
 
-### Let Gitpod do the heavy lifting
+<h2 class="h3">Let Gitpod do the heavy lifting</h2>
 
 To improve this experience we introduced[ Dockerfile support (#62)](https://github.com/gitpod-io/gitpod/issues/62), which lets you reference your Dockerfile directly from inside your .gitpod.yml file:
 
@@ -42,7 +42,7 @@ To improve this experience we introduced[ Dockerfile support (#62)](https://gith
 
 Now, Gitpod knows about the Dockerfile and builds that image for you. Whenever you access the repository on Gitpod it checks whether the Dockerfile has been updated and rebuilds the image if needed. When this happens you’ll be shown the log output of the build for easier debugging, too.
 
-### An example, please!
+<h2 class="h3">An example, please!</h2>
 
 Let’s get concrete. As an exercise we’ll use [a minimal REST service](https://github.com/lankydan/rust-web-with-rocket) written in[ Rust](https://www.rust-lang.org/) using Rocket and Diesel that talks to a PostgreSQL DB. It also has a nice[ blog post](https://lankydanblog.com/2018/05/20/creating-a-rusty-rocket-fuelled-with-diesel/) to get started.
 

@@ -29,7 +29,7 @@ const StyledAboutPage = styled.div`
             }
         }
 
-        h3 {
+        .h3 {
             font-weight: 400;
             color: ${colors.textLight};
         }
@@ -40,7 +40,7 @@ const StyledAboutPage = styled.div`
             letter-spacing: 2px;
         }
 
-        p {
+        .text {
             font-size: ${sizes.font.btnNormal};
         }
 
@@ -202,9 +202,11 @@ const AboutPage: React.SFC<{}> = () => (
                         <img alt="2 Right Arrows" src={DoubleArrows} className="banner__img"/>
                     </div>
                     <div className="banner__text-box">
-                        <h3>About</h3>
-                        <h1>Type<strong>Fox</strong></h1>
-                        <p>Gitpod is developed by TypeFox, a team<br />of developer tool specialists and longtime<br />open-source contributors.</p>
+                        <header>
+                            <p className="h3">About</p>
+                            <h1>Type<strong>Fox</strong></h1>
+                        </header>
+                        <p className="text">Gitpod is developed by TypeFox, a team<br />of developer tool specialists and longtime<br />open-source contributors.</p>
                     </div>
                 </header>
             </div>

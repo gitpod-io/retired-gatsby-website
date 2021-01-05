@@ -72,6 +72,7 @@ const Offers: React.SFC<OffersProps> = ({ offers, title, para }) => (
                                 text={offer.text}
                                 banner={offer.banner}
                                 bannerColor={offer.bannerColor}
+                                headingLevel='h3'
                             />
                         )
                     )

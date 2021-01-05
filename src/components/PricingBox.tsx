@@ -76,8 +76,10 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         color: inherit;
     }
 
-    h4 {
+    .h4 {
         font-size: 1.8rem;
+        margin-bottom: 0;
+        color: ${colors.textDark};
         margin: ${({ isTitleOutside }) => (isTitleOutside ? '-7rem 0 6rem' : '')}
     }
 
@@ -262,6 +264,7 @@ export interface PricingBoxProps {
   areFeaturesBold?: boolean
   boldFeaturesCount?: number
   perUserMonth?: boolean
+  headingLevel?: 'h2' | 'h3'
 }
 
 const PricingBox: React.SFC<PricingBoxProps> = ({
@@ -286,7 +289,8 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
   info,
   areFeaturesBold,
   boldFeaturesCount = 0,
-  perUserMonth
+  perUserMonth,
+  headingLevel
 }) => (
   <StyledPricingBox
     transform={transform}
@@ -297,7 +301,9 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
     btnBackground={btnBackground}
     isTitleOutside={isTitleOutside}
   >
-    <h4>{title}</h4>
+    {
+        headingLevel === 'h3' ? <h3 className="h4">{title}</h3> : headingLevel === 'h2' ? <h2 className="h4">{title}</h2> : <h4>{title}</h4>
+    }
     {img ? img : null}
     {price ? <div className="price">{price}</div> : null}
     { perUserMonth ? <div className="duration" style={{fontWeight: 400}}>per user/month</div> : null }

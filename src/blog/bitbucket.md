@@ -13,7 +13,7 @@ Simply type `gitpod.io/#` in front of any Bitbucket repository URL, and get a fu
 
 `youtube: hIpFTGwsv-o`
 
-# Getting Started with Gitpod for Bitbucket
+<h2 class="h1">Getting Started with Gitpod for Bitbucket</h2>
 
 Starting a fresh dev environment for a Bitbucket project works just as with GitLab and GitHub: Simply prefix your Bitbucket project URL with `gitpod.io/#`.
 
@@ -47,7 +47,7 @@ The new local branch will be named like `<username>/<issue-title>-<issue-nr>`, i
 
 ![GitLab Issue Context](./gitlab-support/gitlab-issue-context-status.png)
 
-## Configure your project
+<h3 class="h2">Configure your project</h3>
 
 To get the most out of Gitpod, you should describe your project's dev environment with code. Dev environments are based on containers which you can configure through a custom `Dockerfile`.
 
@@ -55,7 +55,7 @@ Furthermore you can specify which tasks should run after a fresh checkout in a `
 
 There is much more you can do to make sure every team member gets a ready-to-code dev environment when they need one. Please refer to the [docs](/docs/configuration/) for details.
 
-## Prebuilds
+<h3 class="h2">Prebuilds</h3>
 
 Gitpod’s [prebuilt workspaces](/docs/prebuilds/) are key to providing ephemeral, ready-to-code dev environments for your branches and projects. You can configure Gitpod to run your project's build asynchronously every time someone pushes new commits or branches to your repository. So when a developer wants to start coding, she can start immediately, because everything is already prepared.
 

@@ -26,6 +26,10 @@ const StyledPostPreview = styled.div`
         border-top-right-radius: 3px;
     }
 
+    .h3 + p {
+        margin: 0;
+    }
+
     p {
         color: ${colors.text};
         font-weight: 400;
@@ -68,6 +72,7 @@ interface BlogData {
 
 interface PostPreviewProps {
     post: BlogData
+    headingType?: 'h2' | 'h3'
 }
 
 const PostPreview: React.SFC<PostPreviewProps> = (props) => {
@@ -85,7 +90,9 @@ const PostPreview: React.SFC<PostPreviewProps> = (props) => {
                     className="background"
                 />
                 <div className="content">
-                    <h3>{b.frontmatter.title}</h3>
+                    {
+                        props.headingType === 'h3' ? <h3>{b.frontmatter.title}</h3> : <h2 className="h3">{b.frontmatter.title}</h2>
+                    }
                     <p>{b.excerpt}</p>
                 </div>
                 <div className="info">

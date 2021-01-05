@@ -28,7 +28,7 @@ const StyledPostBanner = styled.header`
         margin-top: 2rem;
     }
 
-    h3 {
+    .h3 {
         margin: 0;
         color: ${colors.text};
         font-weight: 200;
@@ -79,8 +79,10 @@ const PostBanner: React.SFC<PostBannerProps> = ({ title, subtitle, teaserImage, 
     <StyledPostBanner>
         <div className="bg" aria-hidden="true" style={{backgroundImage: `url(${teaserImage})`}} />
         <div className="contents">
-            {subtitle ? <h3>{subtitle}</h3> : null }
-            <h1>{title}</h1>
+            <header>
+                {subtitle ? <p className="h3" style={{fontWeight: 400}}>{subtitle}</p> : null }
+                <h1>{title}</h1>
+            </header>
             <div className="info">
                 <div className="author">{author} {date}</div>
                 <div className="share">{shareButtons}</div>

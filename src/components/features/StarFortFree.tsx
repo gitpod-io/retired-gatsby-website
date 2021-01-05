@@ -10,7 +10,7 @@ const Styled = styled.section`
   .start {
     text-align: center;
 
-    h3 {
+    .h3 {
       font-weight: 400;
       margin: 3rem 0;
 
@@ -29,9 +29,9 @@ const StartForFree = () => (
         <Link to="/#get-started" className="btn btn--cta btn--big">
           Start for Free
         </Link>
-        <h3>
+        <h2 className="h3">
           Prefix any GitLab, GitHub or Bitbucket URL with <span>gitpod.io/#</span>
-        </h3>
+        </h2>
       </section>
     </div>
   </Styled>

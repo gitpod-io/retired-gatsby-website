@@ -45,7 +45,7 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
                 body={
                     <div className="article">
                         <div className="article__header">
-                            <h4 style={{ color: colors.textLight, marginBottom: 0, marginTop: 30 }}>Docs</h4>
+                            <p style={{ color: colors.textLight, marginBottom: 0, marginTop: 15, fontWeight: 600 }}>Docs</p>
                             <EditInGitpod editUrl={editUrl}/>
                         </div>
                         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />

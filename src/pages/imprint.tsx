@@ -19,12 +19,12 @@ const ImprintPage: React.SFC<{}> = () => (
                 </p>
                 <p>Email: contact@gitpod.io
                 </p>
-                <h4>Responsible for all content according to
+                <p className="h4">Responsible for all content according to
                     <b>§ 55 Rundfunkstaatsvertrag (RSTV)</b>:
-                </h4>
+                </p>
                 <p>Sven Efftinge,&nbsp;Hofteichstr.7,&nbsp;24113 Kiel</p>
-                <h2 >Disclaimer</h2>
-                <h3 >Liability for content</h3>
+                <h2>Disclaimer</h2>
+                <h3>Liability for content</h3>
                 <p>
                     As a service provider we are responsible according to § 7 paragraph 1 of TMG for own contents on these pages under the
                     general laws. According to § § 8 to 10 TMG we are not obliged as a service provider to monitor transmitted or stored

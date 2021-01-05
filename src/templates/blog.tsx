@@ -69,12 +69,16 @@ const StyledBlogTemplate = styled.div`
   }
 
   h2,
-  h1 {
+  .h2,
+  h1,
+  .h1 {
     margin: 6rem 0 2.5rem;
   }
 
   h3,
-  h4 {
+  .h3,
+  h4,
+  .h4 {
     margin: 3.5rem 0 1.5rem;
   }
 

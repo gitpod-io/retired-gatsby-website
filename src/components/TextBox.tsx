@@ -27,6 +27,10 @@ const StyledTextBox = styled.div`
         margin-top: 4rem;
     }
 
+    h4 {
+        margin: 3rem 0 1rem;
+    }
+
     li + li {
         margin-top: 2rem;
     }
