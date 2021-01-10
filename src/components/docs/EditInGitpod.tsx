@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 
-const StyledEditInGitpod = styled.div`   
+const StyledEditInGitpod = styled.div`
     svg {
         height: 3.5rem;
     }
