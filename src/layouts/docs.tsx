@@ -72,6 +72,9 @@ const StyledDocsLayout = styled.div`
 
         ul, ol {
             margin: 2rem 0;
+        }
+
+        ul {
             list-style: inherit;
         }
 
