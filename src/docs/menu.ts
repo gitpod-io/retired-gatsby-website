@@ -128,16 +128,12 @@ export const MENU: MenuEntry[] = [
                 "self-hosted/latest/install/install-on-kubernetes"
             ),
             M(
+                "Configure Ingress",
+                "self-hosted/latest/install/configure-ingress"
+            ),
+            M(
                 "Configure OAuth",
                 "self-hosted/latest/install/oauth"
-            ),
-            M(
-                "Configure a Domain",
-                "self-hosted/latest/install/domain"
-            ),
-            M(
-                "Configure HTTPS Certificates",
-                "self-hosted/latest/install/https-certs"
             ),
             M(
                 "Configure a Database",
