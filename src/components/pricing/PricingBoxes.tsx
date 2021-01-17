@@ -270,8 +270,8 @@ const PricingBoxes = ({ isRendered, changeIsRendered }: PricingBoxesProps) => {
           <div className="cards row">
             <div className={`pricing__boxes ${isRendered ? 'hide' : 'show'}`}>
               {plans.map((plan, i) => (
-                <PricingBox 
-                    key={i} 
+                <PricingBox
+                    key={i}
                     {...plan}
                     headingLevel="h2"
                 />
@@ -280,9 +280,9 @@ const PricingBoxes = ({ isRendered, changeIsRendered }: PricingBoxesProps) => {
             <div className={`pricing__boxes ${isRendered ? 'show' : 'hide'}`}>
               <object role="presentation" tabIndex={-1} data={Cloud} className="cloud-img cloud-img--1" />
               {selfHostedPlans.map((plan, i) => (
-                <PricingBox 
-                    key={i} 
-                    {...plan} 
+                <PricingBox
+                    key={i}
+                    {...plan}
                     isTitleOutside={true}
                     headingLevel="h2"
                 />

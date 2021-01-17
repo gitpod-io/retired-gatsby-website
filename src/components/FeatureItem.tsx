@@ -24,11 +24,11 @@ const StyledFeatureItem = styled.div`
             padding-left: 3rem;
         }
     }
-    
+
     .h3 {
         & + p {
             margin: 0;
-        } 
+        }
     }
 
     p {
