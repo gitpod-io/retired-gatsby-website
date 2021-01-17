@@ -46,9 +46,9 @@ It has four possible values:
 Any changes to the `.gitpod.yml` will have effect immediately.
 
  ![.gitpod.yml containing ports configuration](./images/ports-onOpen.png)
- 
+
 ## Configure port visibility
- 
+
 By default, all ports are in public visibiltiy state.
 
 To change this behavior you can provide the property `visibility`.
