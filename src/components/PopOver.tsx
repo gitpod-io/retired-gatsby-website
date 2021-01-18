@@ -77,7 +77,7 @@ const StyledDescripion = styled.span`
     }
 `
 
-class Description extends React.Component<{ description: string | JSX.Element; textPosition?: string }, {}> {
+class Description extends React.Component<{ description: string | JSX.Element; textPosition?: string; questionMarkShouldNotBeAButton?: boolean }, {}> {
   state = {
     isRendered: false
   }
@@ -96,7 +96,7 @@ class Description extends React.Component<{ description: string | JSX.Element; t
 
   render() {
     const { isRendered } = this.state
-    const { description } = this.props
+    const { description, questionMarkShouldNotBeAButton } = this.props
     const positionBottom = this.props.textPosition === 'bottom'
 
     return (
@@ -107,7 +107,9 @@ class Description extends React.Component<{ description: string | JSX.Element; t
         onFocus={this.handleMouseEnter}
         onBlur={this.handleMouseLeave}
       >
-        <button onClick={this.handleClick}>?</button>
+        {
+            questionMarkShouldNotBeAButton ? <span onClick={this.handleClick} tabIndex={1}>?</span> : <button onClick={this.handleClick}>?</button>
+        } 
         {isRendered ? <div className={`${positionBottom ? 'bottom' : ''} description__text`}>{description}</div> : null}
       </StyledDescripion>
     )

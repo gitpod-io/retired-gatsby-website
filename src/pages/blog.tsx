@@ -102,15 +102,15 @@ const BlogPage: React.SFC<BlogPageProps> = (props) => {
 
                 {/* ----- Section Posts ----- */}
 
-                <div className="pattern" aria-hidden="true">
+                <div className="pattern">
                     <div className="row">
                         <h1>Discover Articles and Tutorials about Gitpod</h1>
                     </div>
                 </div>
 
-                <section className="post">
+                <div className="post section">
                     <div className="row">
-                        <h1 className="visually-hidden">Discover Articles and Tutorials about Gitpod</h1>
+                        {/* <h1 className="visually-hidden">Discover Articles and Tutorials about Gitpod</h1> */}
                         <Posts>
                             {posts.map(
                                 post => <PostPreview
@@ -120,7 +120,7 @@ const BlogPage: React.SFC<BlogPageProps> = (props) => {
                             )}
                         </Posts>
                     </div>
-                </section>
+                </div>
 
                 {/* ----- Section Newsletter ----- */}
                 {/* <NewsletterForm /> */}

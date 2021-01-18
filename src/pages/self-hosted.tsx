@@ -51,7 +51,7 @@ const SelfHostedPage: React.SFC<{}> = ({ data }: any) => {
                     title={
                         <h1>
                             Self-Host Gitpod <br /> on Your Own Infrastructure.
-                    </h1>
+                        </h1>
                     }
                     linkPath="/self-hosted/#install"
                     linkText="Install Now"

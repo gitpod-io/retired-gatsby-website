@@ -47,7 +47,7 @@ const StyledEnterpriseLicensePage = styled.div`
     margin-bottom: 5rem;
   }
 
-  h3 {
+  h2 {
     font-size: 2rem;
   }
 
@@ -119,7 +119,7 @@ const StyledEnterpriseLicensePage = styled.div`
     max-width: 500px;
     margin: 0 auto 10rem;
 
-    h3 {
+    h2 {
       font-weight: 400;
     }
 
@@ -324,7 +324,7 @@ const EnterpriseLicensePage = () => {
               </div>
               <div className="entries">
                 <div className="entry">
-                  <h3>How many seats would you like to purchase?</h3>
+                  <h2 className="h3">How many seats would you like to purchase?</h2>
                   <div className="label-container">
                     <label className="seats">
                       <input
@@ -344,7 +344,7 @@ const EnterpriseLicensePage = () => {
                   </div>
                 </div>
                 <div className="entry">
-                  <h3>What is the domain name of your Gitpod Self-Hosted installation?</h3>
+                  <h2 className="h3">What is the domain name of your Gitpod Self-Hosted installation?</h2>
                   <div className="label-container">
                     <label>
                       <input onChange={handleChange} name="domain" type="text" placeholder="e.g. gitpod.mycompany.com"/>
@@ -353,7 +353,7 @@ const EnterpriseLicensePage = () => {
                     <p>The license key will be bound to this domain.</p>
                 </div>
                 <div className="entry">
-                  <h3>Customer Information</h3>
+                  <h2 className="h3">Customer Information</h2>
                   <div className="label-container">
                     <label>
                       First Name
@@ -410,7 +410,7 @@ const EnterpriseLicensePage = () => {
                   </div>
                 </div>
                 <div className="entry">
-                  <h3>Other</h3>
+                  <h2 className="h3">Other</h2>
                   <label>
                     <p>
                       Add personal message <span>(optional)</span>
@@ -430,7 +430,7 @@ const EnterpriseLicensePage = () => {
             </form>
           )}
           <div className="need-help">
-            <h3>Do you have any questions? We’re happy to help.</h3>
+            <h2 className="h3">Do you have any questions? We’re happy to help.</h2>
             <div className="btn-wrapper">
               <a href="https://calendly.com/gitpod/sales" className="btn btn--cta">
                 Schedule a Call

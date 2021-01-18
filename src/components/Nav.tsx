@@ -242,7 +242,7 @@ const Nav = () => {
                     <div className="nav__burger-container">
                         <Link to="/"><img alt="Gitpod Logo" src={GitpodLogoDark} /></Link>
                         <div className="btns">
-                            <a href="https://gitpod.io/login/" rel="noopener" style={{ display: isNavRendered ? 'none' : '' }}>Log In</a>
+                            <a href="https://gitpod.io/login/" rel="noopener" style={{...(isNavRendered && { display: 'none'})}}>Log In</a>
                             <div className="nav__btn-container" aria-live="assertive">
                                 <button
                                     className="nav__btn"

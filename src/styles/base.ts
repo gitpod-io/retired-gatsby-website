@@ -40,7 +40,8 @@ export default `
         overflow-x: hidden;
     }
 
-    section {
+    section,
+    .section {
         padding: 12rem 0;
 
         @media(max-width: ${sizes.breakpoints.md}) {

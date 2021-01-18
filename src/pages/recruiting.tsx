@@ -2,7 +2,6 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
-import Recruiting from '../resources/recruiting-icon.svg'
 import TextCards from '../components/TextCards'
 import TextCard from '../components/TextCard'
 import { textCardsData } from '../contents/recruiting'

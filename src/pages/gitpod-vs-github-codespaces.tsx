@@ -67,6 +67,11 @@ const StyledGitpodVsGitHubCodespacesPage = styled.div`
   .glance {
     text-align: center;
   }
+
+  .th__title {
+      font-size: 3rem;
+      color: ${colors.textDark};
+  }
 `
 
 const GitpodVsGitHubCodespacesPage = () => (
@@ -92,7 +97,7 @@ const GitpodVsGitHubCodespacesPage = () => (
         <FeatureCards opposite={true} features={features} />
       </section>
 
-      <section className="glance">
+      <div className="glance section">
         <div className="row">
           <PricingTable
             title={<strong>Gitpod vs GitHub Codespaces at a Glance</strong>}
@@ -106,10 +111,10 @@ const GitpodVsGitHubCodespacesPage = () => (
                   &nbsp;
                 </th>
                 <th className="th__title">
-                  <h2>Gitpod</h2>
+                  Gitpod
                 </th>
                 <th className="th__title">
-                  <h2>GitHub Codespaces</h2>
+                  GitHub Codespaces
                 </th>
               </tr>
             </thead>
@@ -287,7 +292,7 @@ const GitpodVsGitHubCodespacesPage = () => (
             </tbody>
           </PricingTable>
         </div>
-      </section>
+      </div>
 
       <Difference />
 

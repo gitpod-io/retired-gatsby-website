@@ -5,12 +5,7 @@ import { sizes } from '../styles/variables'
 import Pattern from '../resources/pattern-2.jpg'
 import IconTick from '../resources/icon-tick-2.svg'
 
-const Styled = styled.div<{
-  direction?: string
-  flexDirectionColumnForImgContainer?: boolean
-  opposite?: boolean
-  hasFigFootnote?: boolean
-}>`
+const Styled = styled.div<any>`
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -43,7 +38,7 @@ const Styled = styled.div<{
 
   &:nth-of-type(2n) {
     @media (min-width: 1141px) {
-      flex-direction: ${({ opposite }) => (opposite ? 'reverse' : 'row-reverse')};
+      flex-direction: ${({ opposite }) => (opposite ? 'row' : 'row-reverse')};
     }
 
     @media (min-width: 1141px) {
@@ -130,15 +125,15 @@ const Styled = styled.div<{
     }
 
     @media (min-width: 1141px) {
-      padding-right: ${({ direction }) => (direction === 'right' ? '8rem' : '')};
-      padding-left: ${({ direction }) => (!(direction === 'right') ? '8rem' : '')};
+      padding-right: ${(props) => (props["data-direction"] === 'right' ? '8rem' : '')};
+      padding-left: ${(props) => (!(props["data-direction"] === 'right') ? '8rem' : '')};
       min-height: 520px;
       max-height: 500px;
       flex: 0 0 52%;
 
       &::before {
-        left: ${({ direction }) => (direction === 'right' ? '' : 0)};
-        right: ${({ direction }) => (!(direction === 'right') ? '' : 0)};
+        left: ${(props) => (props["data-direction"] === 'right' ? '' : 0)};
+        right: ${(props) => (!(props["data-direction"] === 'right') ? '' : 0)};
         width: 60vw;
       }
     }
@@ -181,7 +176,7 @@ const Styled = styled.div<{
 
   .in-view::before {
     @media (min-width: 1141px) {
-      animation: ${({ direction }) => (direction === 'right' ? 'slideInLeft' : 'slideInRight')} 0.6s cubic-bezier(0.16, 1, 0.3, 1) 1 normal
+      animation: ${(props) => (props["data-direction"] === 'right' ? 'slideInLeft' : 'slideInRight')} 0.6s cubic-bezier(0.16, 1, 0.3, 1) 1 normal
         forwards;
     }
   }
@@ -303,7 +298,7 @@ const FeatureCard = ({
   return (
     <Styled
       className="row"
-      direction={direction}
+      data-direction={direction}
       flexDirectionColumnForImgContainer={featuresList && featuresList.length ? true : false}
       opposite={opposite}
       hasFigFootnote={hasFigFootnote}
