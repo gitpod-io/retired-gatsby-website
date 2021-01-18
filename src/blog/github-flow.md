@@ -4,7 +4,7 @@ date: Thu Jul 05 2018 11:49:24 GMT+0000 (UTC)
 author: svenefftinge
 subtitle: Stop setting up, start coding!
 title: A Better GitHub Flow
-image: https://cdn-images-1.medium.com/max/2048/0*f260tcqJvgvCguFu
+image: /a-better-github-flow.png
 ---
 
 As software developers, we already spend a lot of our time in browsers. Be it for searching Google/StackOverflow, checking our latest Continuous Integration builds on Jenkins resp. Travis, or doing code reviews on GitHub, Bitbucket, or Gerrit. Also, communication with the team happens in web applications, such as Gmail, Google Hangout or Slack. The convenience of web applications and OAuth-based authentication allows us to use any computer to do most of our work immediately.

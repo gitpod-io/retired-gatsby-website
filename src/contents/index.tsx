@@ -1,30 +1,13 @@
 import React from 'react'
 
 import { FeatureCardProps } from '../components/FeatureCard'
-
-import Collaboration from '../resources/collaboration-placeholder.png'
-import KubernetesGraphics from '../resources/cloud-native.svg'
-import IPad from '../resources/ipad.png'
 import FullAutomationGraphics from '../components/features/FullAutomationGraphics'
 import FullAutomationButtons from '../components/features/FullAutomationButtons'
-import BenHalpern from '../resources/ben-halpern.jpg'
-import HughDurkin from '../resources/hugh-durkin.jpg'
-import Mrugesh from '../resources/mrugesh.jpg'
-import DavidRessler from '../resources/david-ressler.jpg'
-import JonathanListerParsons from '../resources/jayfresh.jpg'
-import SvenPeters from '../resources/sven-peters.jpg'
-import Marcel from '../resources/marcel.jpg'
-import Brenden from '../resources/brenden-o-leary.jpg'
-import MikeNikles from '../resources/mike-nikles.jpg'
-import Alejandro from '../resources/alejandro.jpeg'
-import Joonas from '../resources/joonas-lehtinen.png'
-import Yo from '../resources/yo.jpg'
-import K33g from '../resources/k33g.jpg'
-import Michael from '../resources/michael.jpg'
-import Roku from '../resources/roku.jpg'
 import { TestimonialProps } from '../components/index/Testimonial'
 
 import { Link } from 'gatsby'
+import ImageProvider from '../components/ImageProvider'
+import AvatarProvider from '../components/index/AvatarProvider'
 
 export const features: FeatureCardProps[] = [
     {
@@ -52,8 +35,7 @@ export const features: FeatureCardProps[] = [
   },
   {
     id: 'teams-together',
-    src: Collaboration,
-    alt: 'A code review within Gitpod',
+    gatsbyImage: <ImageProvider isBlurred={true} isNotRelativeToGatsbyImgWrapper={true} fileName='collaboration-placeholder.png' alt="Collaboration" />,
     title: (
       <strong>
         Where Teams
@@ -83,34 +65,33 @@ export const features: FeatureCardProps[] = [
                         <br />
             Share a reproducible workspace with your team.
           </div>
-                </li>
-            </ul>
-        )
-    },
-    {
-        src: IPad,
-        alt: 'Gitpod on an iPad',
-        title: <strong>Remote-first. Secure by Design.</strong>,
-        text: (
-            <>
-                <p>
-                    You no longer need an over-powered laptop to code, Gitpod works just as smoothly on a Chromebook or iPad. All you need is a
-                    browser.
+        </li>
+      </ul>
+    )
+  },
+  {
+    gatsbyImage: <ImageProvider isBlurred={true}  isNotRelativeToGatsbyImgWrapper={true} fileName='ipad.png' alt="Gitpod on an iPad" />,
+    title: <strong>Remote-first. Secure by Design.</strong>,
+    text: (
+      <>
+        <p>
+          You no longer need an over-powered laptop to code, Gitpod works just as smoothly on a Chromebook or iPad. All you need is a
+          browser.
         </p>
-                <p>Gitpod centralizes all source code and never stores it on insecure machines and networks.</p>
-            </>
-        )
-    },
-    {
-        src: KubernetesGraphics,
-        alt: 'Kubernetes',
-        title: <strong>Cloud Native Development Done Right</strong>,
-        text: (
-            <>
-                <p>Gitpod is a multi-service Kubernetes application that we develop in Gitpod.</p>
-                <p>
-                    Code, build, debug and run K8s applications entirely in the cloud. Get fully-baked workspaces for every branch and pull/merge
-                    request, pre-configured and pre-connected to their own dedicated K8s deployment.
+        <p>Gitpod centralizes all source code and never stores it on insecure machines and networks.</p>
+      </>
+    )
+  },
+  {
+      gatsbyImage: <ImageProvider isBlurred={true}  isNotRelativeToGatsbyImgWrapper={true} fileName="kubernetes-graphic.png" alt="Kubernetes" />,
+    alt: '',
+    title: <strong>Cloud Native Development Done Right</strong>,
+    text: (
+      <>
+        <p>Gitpod is a multi-service Kubernetes application that we develop in Gitpod.</p>
+        <p>
+          Code, build, debug and run K8s applications entirely in the cloud. Get fully-baked workspaces for every branch and pull/merge
+          request, pre-configured and pre-connected to their own dedicated K8s deployment.
         </p>
             </>
         )
@@ -120,7 +101,7 @@ export const features: FeatureCardProps[] = [
 export const testimonials: TestimonialProps[] = [
     {
         name: 'Ben Halpern',
-        avatar: BenHalpern,
+        avatar: <AvatarProvider fileName="ben-halpern.jpg" alt="Ben Halpern" />,
         org: <>
             <a href="https://twitter.com/forem" target="_blank">
                 @forem
@@ -140,7 +121,7 @@ export const testimonials: TestimonialProps[] = [
     },
     {
         name: 'Michael Friedrich',
-        avatar: Michael,
+        avatar: <AvatarProvider fileName="michael.jpg" alt="Michael Friedrich" />,
         org: <a href="https://twitter.com/gitlab" target="_blank">@GitLab</a>,
         role: 'Developer Evangelist',
         text: (
@@ -158,7 +139,7 @@ export const testimonials: TestimonialProps[] = [
     },
     {
         name: 'David Ressler',
-        avatar: DavidRessler,
+        avatar: <AvatarProvider fileName="david-ressler.jpg" alt="David Ressler" />,
         org: <a href="https://twitter.com/instagram" target="_blank">
             @instagram
         </a>,
@@ -173,7 +154,7 @@ export const testimonials: TestimonialProps[] = [
     },
     {
         name: 'Mrugesh Mohapatra',
-        avatar: Mrugesh,
+        avatar: <AvatarProvider fileName="mrugesh.jpg" alt="Mrugesh Mohapatra" />,
         org: <a href="https://twitter.com/freeCodeCamp" target="_blank">
             @freeCodeCamp
         </a>,
@@ -192,7 +173,7 @@ export const testimonials: TestimonialProps[] = [
     },
     {
         name: 'Sven Peters',
-        avatar: SvenPeters,
+        avatar: <AvatarProvider fileName="sven-peters.jpg" alt="Sven Peters" />,
         org: <a href="https://twitter.com/MongoDB" target="_blank">
             @MongoDB
         </a>,
@@ -208,7 +189,7 @@ export const testimonials: TestimonialProps[] = [
     },
     {
         name: 'Mike Nikles',
-        avatar: MikeNikles,
+        avatar: <AvatarProvider fileName="mike-nikles.jpg" alt="Mike Nikles" />,
         org: <a href="https://twitter.com/Google" target="_blank">
             @Google
         </a>,
@@ -227,7 +208,7 @@ export const testimonials: TestimonialProps[] = [
     },
     {
         name: 'Jonathan Lister Parsons',
-        avatar: JonathanListerParsons,
+        avatar: <AvatarProvider fileName="jayfresh.jpg" alt="Jonathan Lister Parsons" />,
         org: <a href="https://twitter.com/pensionbee" target="_blank">@PensionBee</a>,
         role: 'CTO',
         text: (
@@ -240,7 +221,7 @@ export const testimonials: TestimonialProps[] = [
     },
     {
         name: 'Alejandro',
-        avatar: Alejandro,
+        avatar: <AvatarProvider fileName="alejandro.jpeg" alt="Alejandro" />,
         org: <a href="https://twitter.com/4GeeksAcademy" target="_blank">
             @4GeeksAcademy
         </a>,
@@ -255,7 +236,7 @@ export const testimonials: TestimonialProps[] = [
     },
     {
         name: 'ROKU',
-        avatar: Roku,
+        avatar: <AvatarProvider fileName="roku.jpg" alt="ROKU" />,
         org: <a href="https://twitter.com/gitlab" target="_blank">@GitLab</a>,
         role: 'Engineering Manager',
         text: (
@@ -270,7 +251,7 @@ export const testimonials: TestimonialProps[] = [
     },
     {
         name: 'Hugh Durkin',
-        avatar: HughDurkin,
+        avatar: <AvatarProvider fileName="hugh-durkin.jpg" alt="Hugh Durkin" />,
         org: <a href="https://twitter.com/HubSpot" target="_blank">
             @HubSpot
         </a>,
@@ -289,7 +270,7 @@ export const testimonials: TestimonialProps[] = [
     },
     {
         name: 'Marcel van Remmerden',
-        avatar: Marcel,
+        avatar: <AvatarProvider fileName="marcel.jpg" alt="Marcel van Remmerden" />,
         org: <a href="https://twitter.com/GitLab" target="_blank">
             @GitLab
         </a>,
@@ -306,7 +287,7 @@ export const testimonials: TestimonialProps[] = [
     },
     {
         name: 'Brendan O’Leary',
-        avatar: Brenden,
+        avatar: <AvatarProvider fileName="brenden-o-leary.jpg" alt="Brendan O’Leary" />,
         org: <a href="https://twitter.com/GitLab" target="_blank">
             @GitLab
         </a>,
@@ -324,7 +305,7 @@ export const testimonials: TestimonialProps[] = [
     },
     {
         name: 'Joonas Lehtinen',
-        avatar: Joonas,
+        avatar: <AvatarProvider fileName="joonas-lehtinen.png" alt="Joonas Lehtinen" />,
         org: <a href="https://twitter.com/vaadin" target="_blank">
             @vaadin
         </a>,
@@ -344,7 +325,7 @@ export const testimonials: TestimonialProps[] = [
     },
     {
         name: 'Yo',
-        avatar: Yo,
+        avatar: <AvatarProvider fileName="yo.jpg" alt="Yo" />,
         org: <a href="https://twitter.com/Taskord" target="_blank">@Taskord</a>,
         role: 'Creator',
         text: (
@@ -362,7 +343,7 @@ export const testimonials: TestimonialProps[] = [
     },
     {
         name: 'Senior Enterprise Geek',
-        avatar: K33g,
+        avatar: <AvatarProvider fileName="k33g.jpg" alt="Senior Enterprise Geek" />,
         org: <a href="https://twitter.com/gitlab" target="_blank">@GitLab</a>,
         role: 'Senior Technical Account Manager',
         text: (

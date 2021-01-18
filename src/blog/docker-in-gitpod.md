@@ -3,8 +3,7 @@ url: https://medium.com/gitpod/bring-your-own-docker-image-to-gitpod-52db1aa861d
 date: Wed Sep 12 2018 08:25:15 GMT+0000 (UTC)
 author: geropl
 title: Bring your own (Docker) image to Gitpod
-image: https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff
-teaserImage: https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff
+image: /docker-in-gitpod.jpeg
 ---
 
 Since we released Gitpod into Public Beta it has been incredibly exciting to see people from all over the world use our service. Even more so with feedback like this:

@@ -279,6 +279,7 @@ export interface FeatureCardProps {
   Figure?: () => JSX.Element
   figFootnote?: string | JSX.Element
   footnote?: string | JSX.Element
+  gatsbyImage?: JSX.Element
 }
 
 const FeatureCard = ({
@@ -294,7 +295,8 @@ const FeatureCard = ({
   Figure,
   opposite,
   figFootnote,
-  footnote
+  footnote,
+  gatsbyImage
 }: FeatureCardProps) => {
   const [renderedGraphic, setRenderedGraphic] = useState<string>('')
   const hasFigFootnote = typeof figFootnote == 'string' || typeof figFootnote == 'object'
@@ -309,6 +311,9 @@ const FeatureCard = ({
       <div className="img-container in-view">
         {Graphic ? <Graphic renderedGraphic={renderedGraphic} /> : null}
         {src ? <img src={src} alt={alt} style={featuresList && featuresList.length ? { transform: 'scale(.9)' } : {}} /> : null}
+        {
+            gatsbyImage ? gatsbyImage : null
+        }
         {featuresList && featuresList.length ? (
           <ul>
             {featuresList.map((feat, i) => (

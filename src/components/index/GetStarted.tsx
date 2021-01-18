@@ -74,7 +74,7 @@ const GetStarted = () => (
         {projects.map((project, i) => (
           <Project
             key={i}
-            image={<object role="presentation" tabIndex={-1} data={project.image} />}
+            image={project.image}
             title={project.title}
             githubUrl={project.githubUrl}
             gitlabUrl={project.gitlabUrl}

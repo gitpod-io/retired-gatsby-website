@@ -1,24 +1,22 @@
 import React from 'react'
 
-import ReadyToCodeImg from '../../resources/automated-setup-default.png'
-import AutomatedSetupGraphicGitpod from '../../resources/automated-setup-gitpod.png'
-import AutomatedSetupGraphicOrdinary from '../../resources/automated-setup-ordinary.png'
+import ImageProvider from '../ImageProvider'
 
 const FullAutomationGraphics = ({ renderedGraphic }: { renderedGraphic: string }
 ) => {
     const graphics = [
         {
-            src: ReadyToCodeImg,
+            src: 'automated-setup-default.png',
             alt: 'Gitpod Ready to Code',
             name: ''
         },
         {
-            src: AutomatedSetupGraphicGitpod,
+            src: 'automated-setup-gitpod.png',
             alt: 'Setup Automated with Gitpod',
             name: 'gitpod'
         },
         {
-            src: AutomatedSetupGraphicOrdinary,
+            src: 'automated-setup-ordinary.png',
             alt: 'Setup Ordinary without Gitpod',
             name: 'usual'
         }
@@ -26,12 +24,7 @@ const FullAutomationGraphics = ({ renderedGraphic }: { renderedGraphic: string }
 
     return (
         graphics.map((g, i) => (
-            <img
-                key={i}
-                src={g.src}
-                alt={g.alt}
-                style={ renderedGraphic !== g.name ? {display: 'none'}: {}}
-            />
+            <ImageProvider isNotRelativeToGatsbyImgWrapper={true} key={i+g.name}  fileName={g.src} alt={g.alt} wrapperStyles={renderedGraphic !== g.name ? {display: 'none'}: {}} />
         ))
     )
 }

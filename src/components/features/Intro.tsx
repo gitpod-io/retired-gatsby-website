@@ -4,7 +4,8 @@ import styled from '@emotion/styled'
 import FeatureBox from './FeatureBox'
 import { features } from '../../contents/features'
 import { sizes } from '../../styles/variables'
-import IceStick from '../../resources/ice-stick.svg'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 const Styled = styled.div`
   .intro {
@@ -14,6 +15,10 @@ const Styled = styled.div`
       display: block;
       width: 10rem;
       margin: 0 auto;
+    }
+
+    .gatsby-image-wrapper {
+        height: 20rem;
     }
 
     h1 {
@@ -60,19 +65,39 @@ const Styled = styled.div`
 `
 
 const Intro = () => (
-  <div className="row">
-    <Styled>
-      <section className="intro pattern">
-        <object role="presentation" tabIndex={-1} data={IceStick} className="ice-stick" />
-        <h1>Features</h1>
-        <div className="features">
-          {features.map((f, i) => (
-            <FeatureBox key={i} alt={f.alt} img={f.icon} text={f.iconTitle} path={f.id} />
-          ))}
-        </div>
-      </section>
-    </Styled>
-  </div>
+  <StaticQuery
+    query={graphql`
+      query {
+        file(relativePath: { eq: "ice-cream.png" }) {
+          childImageSharp {
+            fluid(traceSVG: { color: "#0b2144" }) {
+                tracedSVG
+                src
+            }
+          }
+        }
+      }
+    `}
+    render={(data) => (
+      <div className="row">
+        <Styled>
+          <section className="intro pattern">
+            <Img 
+                fluid={data.file.childImageSharp.fluid} 
+                alt="Ice Stick"
+                className="ice-stick"
+            />
+            <h1>Features</h1>
+            <div className="features">
+              {features.map((f, i) => (
+                <FeatureBox key={i} alt={f.alt} img={f.icon} text={f.iconTitle} path={f.id} />
+              ))}
+            </div>
+          </section>
+        </Styled>
+      </div>
+    )}
+  />
 )
 
 export default Intro

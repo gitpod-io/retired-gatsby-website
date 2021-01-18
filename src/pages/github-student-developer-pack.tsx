@@ -2,23 +2,21 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
-import BackPack from '../resources/backpack.svg'
 import { PricingBoxProps } from '../components/PricingBox'
 import { isEurope } from '../utils/helpers'
-import IconOpenSource from '../resources/icon-open-source.svg'
 import Quote from '../components/Quote'
-import Bag from '../resources/icon-backpack.svg'
-import Rocket from '../resources/icon-rocket.svg'
 import PopOver from '../components/PopOver'
 import { colors } from '../styles/variables'
 import InfoCard from '../components/InfoCard'
 import Offers from '../components/Offers'
-
+import Img from 'gatsby-image'
+import ImageProvider from '../components/ImageProvider'
+import { graphql } from 'gatsby'
 
 const offers: PricingBoxProps[] = [
     {
         title: 'Open-Source',
-        img: <object role="presentation" tabIndex={-1} data={IconOpenSource} />,
+        gatsbyImage: <ImageProvider fileName="free-pricing.png" alt="Heart" IsAPricingBoxIcon={true} />,
         price: 'Free',
         duration: '50 hours / month',
         hideButton: true,
@@ -27,7 +25,7 @@ const offers: PricingBoxProps[] = [
     },
     {
         title: 'Student',
-        img: <object role="presentation" tabIndex={-1} data={Bag} />,
+        gatsbyImage: <ImageProvider fileName="icon-backpack.png" alt="Backpack" IsAPricingBoxIcon={true} />,
         price: <><span style={{ textDecoration: 'line-through', opacity: .8 }}>{(isEurope() ? '€8' : '$9')}</span> Free</>,
         duration: '100 hours / month',
         hideButton: true,
@@ -46,7 +44,7 @@ const offers: PricingBoxProps[] = [
     },
     {
         title: 'Student Unlimited',
-        img: <object role="presentation" tabIndex={-1} data={Rocket} />,
+        gatsbyImage: <ImageProvider fileName="unlimited-pricing.png" alt="Magic Cap" IsAPricingBoxIcon={true} imageStyles={{transform: 'scale(.9)'}} />,
         price: <><span style={{ textDecoration: 'line-through', opacity: .8 }}>{(isEurope() ? '€35' : '$39')}</span> {(isEurope() ? '€8' : '$9')}</>,
         duration: 'Unlimited hours / month',
         hideButton: true,
@@ -54,7 +52,7 @@ const offers: PricingBoxProps[] = [
     }
 ]
 
-const GithubStudentPackPage: React.SFC<{}> = () => (
+const GithubStudentPackPage: React.SFC<{}> = ({data}: any) => (
     <IndexLayout canonical="/github-student-developer-pack/" title="GitHub Student Developer Pack">
 
         <Banner
@@ -63,7 +61,7 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
             paragraph={<span>With Gitpod you have no more tedious setups, you save hours of compiling code, and you can start coding from any device, immediately.</span>}
             linkPath="https://gitpod.io/subscription/"
             linkText="Claim Offer"
-            img={<img src={BackPack} alt="GitHub Backpack" />}
+            img={<Img fluid={data.file.childImageSharp.fluid} alt="GitHub Backpack" />}
         />
 
         <div className="grey-container">
@@ -88,3 +86,16 @@ const GithubStudentPackPage: React.SFC<{}> = () => (
 )
 
 export default GithubStudentPackPage
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "backpack.png" }) {
+        childImageSharp {
+            fluid(quality: 100, maxWidth: 1980, traceSVG: { color: "#0b2144" }) {
+                tracedSVG
+                src
+            }
+        }
+    }
+  }
+`

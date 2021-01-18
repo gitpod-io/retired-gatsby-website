@@ -3,7 +3,7 @@ url: https://hackernoon.com/when-code-reviews-lgtm-say-goodbye-to-shallow-review
 date: Thu Dec 20 2018 21:51:05 GMT+0000 (UTC)
 title: When code reviews LGTM
 subtitle: Say goodbye to shallow reviews!
-image: https://cdn-images-1.medium.com/max/13440/0*mNLW_yw55sVQgN36
+image: /when-code-reviews-lgtm.jpeg
 teaserImage: https://cdn-images-1.medium.com/max/13440/0*mNLW_yw55sVQgN36
 author: svenefftinge
 ---

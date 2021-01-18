@@ -17,8 +17,9 @@ import Bitbucket from '../resources/bitbucket.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
 import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 
-const VendorPage: React.SFC<{}> = () => (
+const VendorPage: React.SFC<{}> = ({data}: any) => (
     <IndexLayout canonical='/vendor/' title="Vendor">
 
             <Banner
@@ -26,7 +27,7 @@ const VendorPage: React.SFC<{}> = () => (
                 title={<h1>Use <strong>Gitpod as a Showroom</strong> for<br /> Your Developer Products</h1>}
                 linkPath="/vendor/#vendor"
                 linkText="Choose your Solution"
-                img={<object role="presentation" tabIndex={-1} data={Vendor}/>}
+                img={<Img fluid={data.file.childImageSharp.fluid} alt="Vendor"/>}
             />
 
             <div className="grey-container">
@@ -164,5 +165,17 @@ const VendorPage: React.SFC<{}> = () => (
 
     </IndexLayout>
 )
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "vendor.png" }) {
+        childImageSharp {
+            fluid(quality: 100, maxWidth: 1980) {
+                ...GatsbyImageSharpFluid
+            }
+        }
+    }
+  }
+`
 
 export default VendorPage

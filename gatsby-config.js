@@ -86,6 +86,20 @@ module.exports = {
     'gatsby-plugin-typescript',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    { 
+        resolve: `gatsby-source-filesystem`, 
+        options: { 
+            path: `./src/resources/`,
+            name: `resources`
+        } 
+    },
+    {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+            path: `./static`,
+            name: `static`
+        }
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
     {
