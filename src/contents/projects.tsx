@@ -1,34 +1,26 @@
-import JS from '../resources/js.svg'
-import TS from '../resources/ts.svg'
-import GO from '../resources/go.svg'
-import JAVA from '../resources/java.svg'
-import PY from '../resources/py.svg'
-import CS from '../resources/csharp.png'
-import RS from '../resources/rust.png'
-import RB from '../resources/ruby.png'
-
+import ImageProvider from '../components/ImageProvider'
 
 export const projects = [
     {
-        image: TS,
+        image: <ImageProvider fileName="typescript.png" alt="TypeScript" />,
         title: 'TypeScript',
         githubUrl: "https://github.com/eclipse-theia/theia",
         alt: "TypeScript",
     },
     {
-        image: GO,
+        image: <ImageProvider fileName="go.png" alt="Go" />,
         title: 'Go',
         githubUrl: "https://github.com/prometheus/prometheus",
         alt: "Go",
     },
     {
-        image: RS,
+        image: <ImageProvider fileName="rust.png" alt="Rust" />,
         title: 'Rust',
         githubUrl: "https://github.com/nushell/nushell",
         alt: "Rust",
     },
     {
-        image: JAVA,
+        image: <ImageProvider fileName="java.png" alt="Java" />,
         title: 'Java & Spring',
         githubUrl: "https://github.com/gitpod-io/spring-petclinic",
         gitlabUrl: "https://gitlab.com/gitpod/spring-petclinic",
@@ -36,13 +28,13 @@ export const projects = [
         alt: "Java",
     },
     {
-        image: PY,
+        image: <ImageProvider fileName="python.png" alt="Python" />,
         title: 'Python & Flask',
         githubUrl: "https://github.com/breatheco-de/python-flask-api-tutorial",
         alt: "Python",
     },
     {
-        image: CS,
+        image: <ImageProvider fileName="csharp.png" alt="C Sharp" />,
         title: '.NET Core',
         githubUrl: "https://github.com/gitpod-io/dotnetcore",
         gitlabUrl: "https://gitlab.com/gitpod/dotnetcore",
@@ -50,7 +42,7 @@ export const projects = [
         alt: "C#",
     },
     {
-        image: RB,
+        image: <ImageProvider fileName="ruby.png" alt="Ruby" imageStyles={{transform: 'scale(.9)'}} />,
         title: 'Rails & Postgres',
         githubUrl: "https://github.com/gitpod-io/ruby-on-rails",
         gitlabUrl: "https://gitlab.com/gitpod/rails",

@@ -149,4 +149,5 @@ const IndexPage: React.SFC<{}> = () => (
   </IndexLayout>
 )
 
+
 export default IndexPage

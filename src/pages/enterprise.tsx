@@ -2,7 +2,6 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
-import Planet from '../resources/planet.svg'
 import TextCards from '../components/TextCards'
 import TextCard from '../components/TextCard'
 import Quote from '../components/Quote'
@@ -14,10 +13,11 @@ import Circle from '../components/Circle'
 import Bitbucket from '../resources/bitbucket.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { textCardsData } from '../contents/enterprise'
+import Img from 'gatsby-image'
 
-const EnterprisePage: React.SFC<{}> = () => (
+const EnterprisePage: React.SFC<{}> = ({data}: any) => (
     <IndexLayout
         canonical='/enterprise/'
         title="Enterprise"
@@ -30,7 +30,7 @@ const EnterprisePage: React.SFC<{}> = () => (
             paragraph="Adding Gitpod to your development tools means less waiting, faster onboarding, faster development cycles, higher code quality, and a smooth consistent workflow."
             linkPath="/enterprise/#enterprise"
             linkText="Choose your Solution"
-            img={<object role="presentation" tabIndex={-1} data={Planet} />}
+            img={<Img fluid={data.file.childImageSharp.fluid} alt="Data Planet"/>}
         />
 
         <div className="grey-container">
@@ -56,7 +56,7 @@ const EnterprisePage: React.SFC<{}> = () => (
 
         {/* ----- BG ----- */}
 
-        <Bg url={EnterpriseBg} />
+        <Bg url={EnterpriseBg} alt="People in an Office sitting on a Desk." />
 
         <PricingTable
             title="Gitpod Enterprise Pricing"
@@ -157,5 +157,18 @@ const EnterprisePage: React.SFC<{}> = () => (
 
     </IndexLayout>
 )
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "enterprise.png" }) {
+        childImageSharp {
+            fluid(traceSVG: { color: "#0b2144" }) {
+                tracedSVG
+                src
+            }
+        }
+    }
+  }
+`
 
 export default EnterprisePage

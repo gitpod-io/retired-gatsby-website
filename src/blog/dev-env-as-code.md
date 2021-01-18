@@ -2,7 +2,7 @@
 subtitle: How to streamline developer onboarding
 title: Dev environments as code
 date: Mon Nov 19 2018 15:39:56 GMT+0000 (UTC)
-image: /dev-env-gilbert.gif
+image: /dev-env-gilbert.png
 author: svenefftinge
 url: /dev-env-gilbert.gif
 ---

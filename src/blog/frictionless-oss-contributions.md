@@ -3,8 +3,7 @@ subtitle: Frictionless Open Source Contributions For Everyone
 title: Announcing contribute.dev — Open Source in One Click
 date: Mon Oct 7 2019
 author: nisarhassan12
-teaserImage: https://user-images.githubusercontent.com/46004116/66325437-b11a9980-e940-11e9-9db4-69af48a0a52a.png
-image: https://user-images.githubusercontent.com/46004116/66325437-b11a9980-e940-11e9-9db4-69af48a0a52a.png
+image: /frictionless-oss-contributions.png
 ---
 
 To celebrate Open Source and Hacktoberfest, we're stoked <span aria-hidden="true">🧙✨🥰</span> to announce <a href="https://contribute.dev" target="blank">contribute.dev</a>, a list of welcoming open-source projects featuring ready-to-code Gitpod setups.

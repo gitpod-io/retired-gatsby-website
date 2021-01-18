@@ -3,8 +3,7 @@ url: https://medium.com/gitpod/sustainable-node-js-development-with-only-a-brows
 date: Wed Dec 12 2018 11:44:33 GMT+0000 (UTC)
 author: akosyakov
 title: Sustainable Node.js development with only a browser
-image: https://cdn-images-1.medium.com/max/4000/1*7zkVCKjkjvyutzD5hFn_Tw.jpeg
-teaserImage: https://cdn-images-1.medium.com/max/4000/1*7zkVCKjkjvyutzD5hFn_Tw.jpeg
+image: /node-js-development-with-only-a-browser.jpeg
 ---
 
 Nowadays, there are many collaborative platforms for showcasing JS code snippets and frameworks. Most of them run in your browser, some even manage to magically run Node.js applications in the cloud. They abstract away many possibilities in order to focus on prototyping and learning.

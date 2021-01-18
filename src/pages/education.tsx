@@ -2,7 +2,6 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
-import Saturn from '../resources/saturn-icon.svg'
 import TextCards from '../components/TextCards'
 import TextCard from '../components/TextCard'
 import { textCardsData } from '../contents/education'
@@ -15,11 +14,12 @@ import Circle from '../components/Circle'
 import Bitbucket from '../resources/bitbucket.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import PopOver from '../components/PopOver'
 import { isEurope } from '../utils/helpers'
+import Img from 'gatsby-image'
 
-const EducationPage: React.SFC<{}> = () => (
+const EducationPage: React.SFC<{}> = ({data}: any) => (
     <IndexLayout
         canonical='/education/'
         title="Education"
@@ -31,7 +31,7 @@ const EducationPage: React.SFC<{}> = () => (
                 paragraph="Gitpod simplifies the onboarding process, makes coding accessible from any device, and provides a productive learning environment."
                 linkPath="/education/#education"
                 linkText="Choose your Solution"
-                img={<object role="presentation" tabIndex={-1} style={{transform:"scale(0.8)"}} data={Saturn}/>}
+                img={<Img fluid={data.file.childImageSharp.fluid} alt="Education"/>}
             />
 
         <div className="grey-container">
@@ -169,5 +169,18 @@ const EducationPage: React.SFC<{}> = () => (
 
     </IndexLayout>
 )
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "education.png" }) {
+        childImageSharp {
+            fluid(traceSVG: { color: "#0b2144" }) {
+                tracedSVG
+                src
+            }
+        }
+    }
+  }
+`
 
 export default EducationPage

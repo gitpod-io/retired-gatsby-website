@@ -23,7 +23,7 @@ const StyledTextFeature = styled.div`
     margin: 0;
   }
 
-  img {
+  .img-container {
     display: block;
     height: 8rem;
     margin-bottom: 4rem;
@@ -38,17 +38,18 @@ const StyledTextFeature = styled.div`
 `
 
 interface TextFeatureProps {
-  path: any
-  alt: string
+  img: JSX.Element
   title: string
   text: string | JSX.Element
   btnText?: string
   href?: string
 }
 
-const TextFeature = ({ path, alt, title, text, btnText, href }: TextFeatureProps) => (
+const TextFeature = ({ img, title, text, btnText, href }: TextFeatureProps) => (
   <StyledTextFeature>
-    <img src={path} alt={alt} />
+    <div className="img-container">
+        {img}
+    </div>
     <h3>
       <strong>{title}</strong>
     </h3>

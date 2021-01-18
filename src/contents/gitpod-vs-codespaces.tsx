@@ -1,9 +1,9 @@
 import React from 'react'
 import { FeatureCardProps } from '../components/FeatureCard'
-import GitPlatforms from '../resources/stay-in-flow.svg'
 import SpeedComparison from '../components/gitpod-vs-codespaces/SpeedComparison'
 import PowerComparison from '../components/gitpod-vs-codespaces/PowerComparison'
 import { Link } from 'gatsby'
+import ImageProvider from '../components/ImageProvider'
 
 export const features: FeatureCardProps[] = [
   {
@@ -62,7 +62,6 @@ export const features: FeatureCardProps[] = [
         </ul>
       </>
     ),
-    src: GitPlatforms,
-    alt: 'Git Platforms'
+    gatsbyImage: <ImageProvider isNotRelativeToGatsbyImgWrapper={true} fileName="stay-in-flow.png" alt="Git Platforms" />,
   }
 ]
