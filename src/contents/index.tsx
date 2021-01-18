@@ -22,6 +22,7 @@ import Yo from '../resources/yo.jpg'
 import K33g from '../resources/k33g.jpg'
 import Michael from '../resources/michael.jpg'
 import Roku from '../resources/roku.jpg'
+import Julius from '../resources/julius.jpg'
 import { TestimonialProps } from '../components/index/Testimonial'
 
 import { Link } from 'gatsby'
@@ -155,6 +156,21 @@ export const testimonials: TestimonialProps[] = [
         ),
         twitterHandle: 'dnsmichi',
         tweetId: '1311560585717460992'
+    },
+    {
+        name: 'Julius Volz',
+        avatar: Julius,
+        org: <a href="https://twitter.com/PrometheusIO" target="_blank">@PrometheusIO</a>,
+        role: 'Creator',
+        text: (
+            <>
+                <p>
+                    Look at any PR (pull request) in a full coding environment where you can edit, build, and test the PR code, by just prepending "<a href="https://gitpod.io" target="_blank">gitpod.io#</a>" to the PR URL. Super useful for reviewing/testing stuff without having to check it out locally!
+                </p>
+            </>
+        ),
+        twitterHandle: 'juliusvolz',
+        tweetId: '1298972181708275717'
     },
     {
         name: 'David Ressler',
