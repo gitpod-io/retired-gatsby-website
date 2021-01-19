@@ -33,6 +33,11 @@ const StyledGetStarted = styled.div`
       }
     }
   }
+
+    h3 {
+        text-align: center;
+        font-weight: 400;
+    }
 `
 
 const GetStarted = () => (
