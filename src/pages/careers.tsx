@@ -218,7 +218,7 @@ const Careers = () => (
                         </div>
                         <div className="text">
                             <p>Come join a quickly growing venture-backed team and work together with incredible humans from 🇦🇺 🇧🇷 🇨🇦 🇫🇷 🇩🇪 🇬🇷 🇵🇰 🇷🇺 🇺🇸  - in an environment with strong values around openness, honesty, and diversity. </p>
-                            <p> Unfortunately, we are not as diverse as we would like to be.</p>
+                            <p> We are not as diverse as we would like to be.</p>
                             <p><strong>Help us to change that and shape Gitpod’s future from anywhere in the world! 🌈 🌍 </strong></p>
                         </div>
                     </div>
