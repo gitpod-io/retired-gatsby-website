@@ -53,6 +53,17 @@ const StyledExpandableJob = styled.div`
         list-style: initial;
         list-style-position: inside;
     }
+
+    ul li{
+        list-style: none;
+        margin-left: 20px;
+        text-indent: -20px;
+        margin-bottom: 10px;
+    }
+
+    ul li:before {
+        content: "▫️ ";
+    }
 `
 
 interface List {
