@@ -36,7 +36,7 @@ module.exports = {
     {
       // Exclude pages from the page build -- https://www.gatsbyjs.org/packages/gatsby-plugin-exclude/
       resolve: 'gatsby-plugin-exclude',
-      options: { paths: ['/docs/README'] }
+      options: { paths: ['/docs/README', '/extension-uninstall'] }
     },
     {
       resolve: 'gatsby-transformer-remark',
