@@ -243,7 +243,7 @@ const AboutPage: React.SFC<{}> = () => (
                             <div className="about__box">
                                 <img alt="Wallpaper1" src={gitpodWallpaper1} />
                                 <h3>✊ Values</h3>
-                                <p> Values are important to us. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We believe in the benifts of an open culture. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don't dictate. <br /><br /> Unfortunately, we are also not as diverse as we would like to be. We want to change that!  <br /><br /> <Link to="/careers"> Come join us! </Link></p>
+                                <p> Values are important to us. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We believe in the benifts of an open culture. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don't dictate. <br /><br /> We are also not as diverse as we would like to be. We want to change that!  <br /><br /> <Link to="/careers"> Come join us! </Link></p>
                             </div>
                         </div>
                     </section>
