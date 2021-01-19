@@ -8,7 +8,7 @@ import Line from '../resources/line.svg'
 import People from '../resources/people.svg'
 import Remote from '../resources/remote.svg'
 import Mission from '../resources/mission.svg'
-import Team from '../resources/team.jpg'
+import Team from '../resources/team_2020.jpg'
 import { sizes } from '../styles/variables'
 import ExpandableJob, { ExpandableJobProps } from '../components/careers/ExpandableJob'
 
@@ -85,26 +85,26 @@ const StyledCareersPage = styled.div`
 
 const features: FeatureItemProps[] = [
     {
-        title: "Flat Hierarchy",
-        text: "We don’t like hierarchies. At Gitpod everyone's opinion counts.",
+        title: "Open",
+        text: "We are open minded, transparent and curious. We remain students of the game, not masters of the game.",
         img: Line,
         alt: 'Line'
     },
     {
-        title: "People Who Care",
-        text: "We support each other and grow to new strengths together. On regular team events, we’re empowering this bond.",
+        title: "Developer-first",
+        text: "Developers architect our future. We are developers ourselves and built Gitpod to make lives of developers easier.",
         img: People,
         alt: 'People connected to each other'
     },
     {
-        title: "Work Remotely",
-        text: "You can work from anywhere and schedule your working hours the way it fits best for you.",
+        title: "Fully remote",
+        text: "You can work from anywhere and schedule your working hours the way it fits best for you. We make sure you are all set and will treat you well.",
         img: Remote,
         alt: 'Wifi'
     },
     {
-        title: "Worthy Mission",
-        text: "Together we want to make developers' lives easier by providing the best software tools.",
+        title: "Frictionless",
+        text: "Everybody should have a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps.",
         img: Mission,
         alt: 'Two Mountains: One with a flag on it.'
     },
@@ -217,9 +217,9 @@ const Careers = () => (
                             <img src={Team} alt="Gitpod Team" />
                         </div>
                         <div className="text">
-                            <p>Come join a young tech-driven team, with the mission of making software development better for everyone, and strong values around openness, honesty, and effective pragmatism. </p>
-                            <p>We're convinced that continuous learning and exploring is the way to build the best solutions sustainably.</p>
-                            <p><strong>Help us shape Gitpod’s future from Berlin, Paris, or anywhere in the world!</strong></p>
+                            <p>Come join a quickly growing venture-backed team and work together with incredible humans from 🇦🇺 🇧🇷 🇨🇦 🇫🇷 🇩🇪 🇬🇷 🇵🇰 🇷🇺 🇺🇸  - in an environment with strong values around openness, honesty, and diversity. </p>
+                            <p> We are not as diverse as we would like to be.</p>
+                            <p><strong>Help us to change that and shape Gitpod’s future from anywhere in the world! 🌈 🌍 </strong></p>
                         </div>
                     </div>
                 </div>
