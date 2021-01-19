@@ -92,7 +92,7 @@ const features: FeatureItemProps[] = [
     },
     {
         title: "Developer-first",
-        text: "Developers architect our future. We are developers ourselves and built Gitpod to make lifes of  developers easier.",
+        text: "Developers architect our future. We are developers ourselves and built Gitpod to make lives of developers easier.",
         img: People,
         alt: 'People connected to each other'
     },
