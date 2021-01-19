@@ -238,7 +238,7 @@ const AboutPage: React.SFC<{}> = () => (
                             <div className="about__box">
                                 <img alt="Team" src={Team} />
                                 <h3>⚓️ About Gitpod</h3>
-                                <p>We have built developer tools, created programming languages and successfully grew open source communities over the last 10 years. We are developers ourselves - with Gitpod we want to capitalize on our learnings and build a company that simplifies the lifes of all developers. Experienced international investors from the world of developer tools and open source <Link to="https://www.crunchbase.com/organization/gitpod">support us</Link> on our journey. <br /> <br /> We are a fully distributed team with people from all over the world including  🇦🇺 Australia, 🇧🇷 Brazil, 🇨🇦 Canada, 🇫🇷 France, 🇩🇪 Germany, 🇬🇷 Greece and 🇷🇺 Russia. </p>
+                                <p>We have built developer tools, created programming languages and successfully grew open source communities over the last 10 years. We are developers ourselves - with Gitpod we want to capitalize on our learnings and build a company that simplifies the lifes of all developers. Experienced international investors from the world of developer tools and open source <Link to="https://www.crunchbase.com/organization/gitpod">support us</Link> on our journey. <br /> <br /> We are a fully distributed team with people from all over the world 🇦🇺 🇧🇷 🇨🇦 🇫🇷 🇩🇪 🇬🇷 🇵🇰 🇷🇺 🇺🇸 </p>
                             </div>
                             <div className="about__box">
                                 <img alt="Wallpaper1" src={gitpodWallpaper1} />
