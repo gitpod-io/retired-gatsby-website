@@ -8,9 +8,9 @@ import Line from '../resources/line.svg'
 import People from '../resources/people.svg'
 import Remote from '../resources/remote.svg'
 import Mission from '../resources/mission.svg'
-import Team from '../resources/team_2020.jpg'
 import { sizes } from '../styles/variables'
 import ExpandableJob, { ExpandableJobProps } from '../components/careers/ExpandableJob'
+import ImageProvider from '../components/ImageProvider'
 
 const StyledCareersPage = styled.div`
     /* --------------------------------------------- */
@@ -194,7 +194,7 @@ Our mission is to make software development fun and remove all tedious friction.
     },
 ]
 
-const Careers = () => (
+const Careers = ({data}) => (
     <IndexLayout
         canonical="/careers"
         title="Careers"
@@ -212,7 +212,10 @@ const Careers = () => (
                 <div className="row">
                     <div className="team">
                         <div className="img-container">
-                            <img src={Team} alt="Gitpod Team" />
+                            <ImageProvider 
+                                fluidData={data.file.childImageSharp.fluid} alt="Gitpod Team" 
+                                isBlurred={true}
+                            />
                         </div>
                         <div className="text">
                             <p>Come join a quickly growing venture-backed team and work together with incredible humans from 🇦🇺 🇧🇷 🇨🇦 🇫🇷 🇩🇪 🇬🇷 🇵🇰 🇷🇺 🇺🇸  - in an environment with strong values around openness, honesty, and diversity. </p>
@@ -247,3 +250,15 @@ const Careers = () => (
 )
 
 export default Careers
+
+export const query = graphql` 
+    query {
+        file(relativePath: { eq: "team_2020.jpg" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`
