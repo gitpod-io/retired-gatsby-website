@@ -2,10 +2,8 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import IndexLayout from '../layouts'
-import DoubleArrows from '../resources/double-arrows.png'
 import { colors, sizes, shadows } from '../styles/variables'
-import Team from '../resources/team_2020.jpg'
-import gitpodWallpaper1 from '../resources/gitpod_wallpaper1.jpg'
+import ImageProvider from '../components/ImageProvider'
 // import gitpodWallpaper2 from '../resources/gitpod_wallpaper2.jpeg'
 import MoreInfo from '../components/MoreInfo'
 import { Link } from 'gatsby'
@@ -45,16 +43,15 @@ const StyledAboutPage = styled.div`
 
 
         &__img {
-            height: 23rem;
-
-            @media(max-width: ${sizes.breakpoints.md}) {
-                height: 19rem;
-            }
-
             &-container {
                 display: flex;
                 justify-content: flex-end;
                 width: 40%;
+                height: 23rem;
+
+                @media(max-width: ${sizes.breakpoints.md}) {
+                    height: 19rem;
+                }
 
                 @media(max-width: ${sizes.breakpoints.md}) {
                     width: 100%;
@@ -110,7 +107,9 @@ const StyledAboutPage = styled.div`
 
         &__img {
             &-container {
-                width: 30%;
+                @media(min-width: 801px) {
+                    width: 30%;
+                }
             }
         }
 
@@ -161,7 +160,6 @@ const StyledAboutPage = styled.div`
             img {
                 display: block;
                 width: 100%;
-                margin-bottom: 3rem;
                 border-radius: 3px;
             }
 
@@ -190,7 +188,7 @@ const StyledAboutPage = styled.div`
     }
 `
 
-const AboutPage: React.SFC<{}> = () => (
+const AboutPage: React.SFC<{}> = ({data}) => (
     <IndexLayout canonical='/about/' title="About">
         <StyledAboutPage>
             {/* ----- Banner ----- */}
@@ -198,7 +196,12 @@ const AboutPage: React.SFC<{}> = () => (
             <div className="row pattern">
                 <header role="banner" className="banner">
                     <div className="banner__img-container">
-                        <img alt="2 Right Arrows" src={DoubleArrows} className="banner__img"/>
+                        <ImageProvider 
+                            fluidData={data.doubleArrows.childImageSharp.fluid}
+                            alt="2 Right Arrows"
+                            className="banner__img"
+                            providerStyles={{width: '53%', minWidth: '22rem'}}
+                        />
                     </div>
                     <div className="banner__text-box">
                         <header>
@@ -218,8 +221,13 @@ const AboutPage: React.SFC<{}> = () => (
                         <h2>Democratizing Software Development</h2>
                         <p>With Gitpod, we set out to streamline how software is written today. We make software development more accessible with instant, automated, and ready-to-code development environments.</p>
                     </div>
-                    <div className="developer__img-container">
-                        <img alt="2 Right Arrows" src={DoubleArrows} className="banner__img" style={{transform: 'rotate(180deg)'}}/>
+                    <div className="developers__img-container">
+                        <ImageProvider 
+                            fluidData={data.doubleArrows.childImageSharp.fluid}
+                            alt="2 Right Arrows"
+                            className="banner__img"
+                            providerStyles={{transform: 'rotate(180deg)', minWidth: '22rem'}}
+                        />
                     </div>
                 </section>
             </div>
@@ -233,12 +241,18 @@ const AboutPage: React.SFC<{}> = () => (
                         <h2>That’s Us</h2>
                         <div className="about__container">
                             <div className="about__box">
-                                <img alt="Team" src={Team} />
+                                <ImageProvider
+                                    fluidData={data.team.childImageSharp.fluid} alt="Gitpod Team"
+                                    providerStyles={{height: 'auto', marginBottom: '3rem'}}
+                                />
                                 <h3>⚓️ About Gitpod</h3>
                                 <p>We have built developer tools, created programming languages and successfully grew open source communities over the last 10 years. We are developers ourselves - with Gitpod we want to capitalize on our learnings and build a company that simplifies the lives of all developers. Experienced international investors <Link to="https://www.crunchbase.com/organization/gitpod">support us</Link> on our journey. <br /> <br /> We are a fully distributed team with humans from all over the world 🇦🇺 🇧🇷 🇨🇦 🇫🇷 🇩🇪 🇬🇷 🇵🇰 🇷🇺 🇺🇸 </p>
                             </div>
                             <div className="about__box">
-                                <img alt="Wallpaper1" src={gitpodWallpaper1} />
+                                <ImageProvider
+                                    fluidData={data.wallpaper.childImageSharp.fluid} alt="Gitpod Wallpaper"
+                                    providerStyles={{height: 'auto', marginBottom: '3rem'}}
+                                />
                                 <h3>✊ Values</h3>
                                 <p> Values are important to us. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We believe in the benefits of an open culture. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don't dictate. <br /><br /> We are also not as diverse as we would like to be.<br /><br /> <Link to="/careers"> Help us change that and join us! </Link></p>
                             </div>
@@ -259,3 +273,29 @@ const AboutPage: React.SFC<{}> = () => (
 )
 
 export default AboutPage
+
+export const query = graphql` 
+    query {
+        team: file(relativePath: { eq: "team_2020.jpg" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        wallpaper: file(relativePath: { eq: "gitpod_wallpaper1.jpg" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        doubleArrows: file(relativePath: { eq: "double-arrows.png" }) {
+            childImageSharp {
+                fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`
