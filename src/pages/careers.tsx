@@ -208,9 +208,7 @@ const Careers = () => (
                 </section>
             </div>
 
-            <FeaturesSection features={features} />
-
-            <section className="pattern-bg">
+            <section>
                 <div className="row">
                     <div className="team">
                         <div className="img-container">
@@ -224,6 +222,8 @@ const Careers = () => (
                     </div>
                 </div>
             </section>
+
+            <FeaturesSection features={features} />
 
             <section className="jobs" id="jobs">
                 <div className="row">

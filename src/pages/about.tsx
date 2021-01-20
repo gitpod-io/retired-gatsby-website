@@ -4,12 +4,9 @@ import styled from '@emotion/styled'
 import IndexLayout from '../layouts'
 import DoubleArrows from '../resources/double-arrows.png'
 import { colors, sizes, shadows } from '../styles/variables'
-import Kiel from '../resources/kiel.jpg'
 import Team from '../resources/team_2020.jpg'
-import Fox from '../resources/fox.png'
-import TypeFox from '../resources/typefox.png'
 import gitpodWallpaper1 from '../resources/gitpod_wallpaper1.jpg'
-import gitpodWallpaper2 from '../resources/gitpod_wallpaper2.jpeg'
+// import gitpodWallpaper2 from '../resources/gitpod_wallpaper2.jpeg'
 import MoreInfo from '../components/MoreInfo'
 import { Link } from 'gatsby'
 
@@ -250,7 +247,6 @@ const AboutPage: React.SFC<{}> = () => (
 
                     <h2 className="statement">
                         It's our mission to make developers' life easier!
-                    
                     </h2>
 
                 </div>

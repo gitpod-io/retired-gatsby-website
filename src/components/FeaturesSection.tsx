@@ -23,7 +23,7 @@ const StyledFeatures = styled.div`
 `
 
 const FeaturesSection = ({ features }: { features: FeatureItemProps[] }) => (
-    <section>
+    <section className="pattern-bg">
         <StyledFeatures className="row">
             {
                 features.map(
