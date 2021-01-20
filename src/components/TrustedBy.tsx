@@ -78,7 +78,7 @@ const StyledTrustedBy = styled.section`
   }
 `
 
-const StyledBrandImage = styled.img<{ transform?: string }>`
+const StyledBrandImage = styled.img<{ transformValue?: string }>`
     width: 9.5rem;
 
     @media(max-width: ${sizes.breakpoints.lg}) {
@@ -90,7 +90,7 @@ const StyledBrandImage = styled.img<{ transform?: string }>`
     }
 
     @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
-        transform: ${({ transform }) => (transform ? transform : 'none')};
+        transform: ${({ transformValue }) => (transformValue ? transformValue : 'none')};
     }
 `
 
@@ -117,7 +117,7 @@ const TrustedBy = ({ brands, title, styles }: TrustedByProps) => (
       <div className="logos">
         {brands.map((b: Brand) => (
           <a href={b.url} target="_blank" className="trustedBy">
-            <StyledBrandImage src={b.svg} alt={b.alt} transform={b.transform} className={b.className} />
+            <StyledBrandImage src={b.svg} alt={b.alt} transformValue={b.transform} className={b.className} />
           </a>
         ))}
       </div>

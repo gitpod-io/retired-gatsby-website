@@ -91,14 +91,14 @@ const PricingLinks = ({ img, title, text, links, backgroundShouldBeWhite }: Pric
   return (
     <div
       className="pattern-bg"
-      style={{ marginBottom: backgroundShouldBeWhite ? '' : '10rem', background: backgroundShouldBeWhite ? 'none' : '' }}
+      style={{ marginBottom: backgroundShouldBeWhite ? '' : '10rem', ...(backgroundShouldBeWhite && {background: 'none'}) }}
     >
       <div className="row">
         <StyledPricingLinks>
           {Img}
           <div>
             <h2>{Title}</h2>
-            <p>{Text}</p>
+            {Text}
             <span className="btn-wrapper">{Links}</span>
           </div>
         </StyledPricingLinks>

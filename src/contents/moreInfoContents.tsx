@@ -13,7 +13,7 @@ export const MoreInfoContents = {
     text: (
       <>
         <h3>Unleash Developer Productivity.</h3>
-        Run your own Gitpod and enjoy automated setups, better collaboration, higher code quality, and a more streamlined workflow.
+        <p>Run your own Gitpod and enjoy automated setups, better collaboration, higher code quality, and a more streamlined workflow.</p>
       </>
     ),
     links: (

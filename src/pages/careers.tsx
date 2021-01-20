@@ -211,6 +211,7 @@ const Careers = () => (
             <FeaturesSection features={features} />
 
             <section className="pattern-bg">
+                <h2 className="visually-hidden">Gitpod Team</h2>
                 <div className="row">
                     <div className="team">
                         <div className="img-container">

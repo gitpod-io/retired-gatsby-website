@@ -2,7 +2,6 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
-import Vendor from '../resources/vendor.svg'
 import TextCards from '../components/TextCards'
 import TextCard from '../components/TextCard'
 import { textCardsData } from '../contents/vendor'
@@ -16,7 +15,7 @@ import Circle from '../components/Circle'
 import Bitbucket from '../resources/bitbucket.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 const VendorPage: React.SFC<{}> = ({data}: any) => (

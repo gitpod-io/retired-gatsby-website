@@ -272,33 +272,33 @@ const PrefixInput = () => {
 
     return (
         <Styled>
-            <div className="header" aria-hidden="true">
-                <div className="dots">
+            <span className="header" aria-hidden="true">
+                <span className="dots">
                     <span>&nbsp;</span>
                     <span>&nbsp;</span>
                     <span>&nbsp;</span>
-                </div>
-                <div className="tab">
-                    <div className="bar">
+                </span>
+                <span className="tab">
+                    <span className="bar">
                         &nbsp;
-                </div>
+                </span>
                     <img src={Close} />
-                </div>
-                <div className="new-tab">
+                </span>
+                <span className="new-tab">
                     <img src={Plus} />
-                </div>
-            </div>
-            <div className="main">
-                <div className="bar-container" aria-hidden="true">
-                    <div className="bar">&nbsp;</div>
-                    <div className="bar">&nbsp;</div>
-                    <div className="bar">&nbsp;</div>
-                </div>
-                <div className="input-container">
-                    <div className="label">
+                </span>
+            </span>
+            <span className="main">
+                <span className="bar-container" aria-hidden="true">
+                    <span className="bar">&nbsp;</span>
+                    <span className="bar">&nbsp;</span>
+                    <span className="bar">&nbsp;</span>
+                </span>
+                <span className="input-container">
+                    <span className="label">
                         <img src={World} aria-hidden="true" />
                         <span>https://gitpod.io/#</span>
-                    </div>
+                    </span>
                     <span className="wrapper">
                         <input
                             defaultValue={url}
@@ -306,7 +306,7 @@ const PrefixInput = () => {
                             onChange={handleChange}
                             type="text"
                         />
-                        <div className="message" style={ error ? {color: '#bf4338'} : {}}>
+                        <span className="message" style={ error ? {color: '#bf4338'} : {}}>
                             <>
                                 <p>
                                     { error ? error : 'Enter your GitLab, GitHub, or Bitbucket URL' }
@@ -320,13 +320,13 @@ const PrefixInput = () => {
                                     Start Workspace
                                 </a>
                             </>
-                        </div>
+                        </span>
                     </span>
-                </div>
-            </div>
-            <div className="info">
+                </span>
+            </span>
+            <span className="info">
                 &nbsp;
-            </div>
+            </span>
         </Styled>
     )
 }

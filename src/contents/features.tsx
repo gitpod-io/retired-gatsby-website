@@ -174,7 +174,7 @@ export const features: FeatureCardProps[] = [
       </>
     ),
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="128.354" height="29.009" transform="scale(.9)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="128.354" height="29.009" style={{transform: 'scale(.9)'}}>
         <g data-name="Gruppe 1199">
           <path
             d="M94.739 0a1.152 1.152 0 00-.857.359.983.983 0 00-.256.84l4.727 26.641a1.485 1.485 0 001.48 1.173h22.668a1.093 1.093 0 001.113-.868l4.725-26.941a.983.983 0 00-.256-.84 1.152 1.152 0 00-.857-.359zm19.9 19.251h-7.237l-1.959-9.5h10.947z"
@@ -218,17 +218,16 @@ export const features: FeatureCardProps[] = [
         <p>Collaborate with your friends, colleagues, and clients and run software or hunt down bugs together.</p>
         <p>
           More about <Link to="/docs/sharing-and-collaboration/">Sharing Workspaces.</Link>
-          <div className=""></div>
         </p>
       </>
     ),
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="50" height="49" fill="#BCBCBC" viewBox="0 0 50 49">
-        <g clip-path="url(#clip0)">
+        <g clip-path="url(#clip1)">
           <path d="M40.953 31.664a8.43 8.43 0 00-6.126 2.636l-18.01-8.817c.138-.828.14-1.672.005-2.5l17.983-8.721a8.452 8.452 0 10-2.314-5.8c.003.413.037.826.1 1.234l-17.983 8.72a8.46 8.46 0 10-.021 11.627l18.01 8.817a8.456 8.456 0 108.357-7.2l-.001.004z"></path>
         </g>
         <defs>
-          <clipPath id="clip0">
+          <clipPath id="clip1">
             <path fill="#fff" d="M0 0H49.414V48.587H0z"></path>
           </clipPath>
         </defs>
@@ -261,12 +260,12 @@ export const features: FeatureCardProps[] = [
     ),
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="54" height="42" viewBox="0 0 54 42" fill="#BCBCBC">
-        <g clip-path="url(#clip0)">
+        <g clip-path="url(#clip2)">
           <path d="M49.15 6.555h-8.676l-5.193-5.244s-.026-.026-.039-.026l-.026-.026A4.201 4.201 0 0032.223 0h-10.8a4.251 4.251 0 00-3.162 1.4v.013l-5.077 5.141H4.319A4.268 4.268 0 000 10.822V36.8a4.323 4.323 0 004.319 4.331H49.15a4.33 4.33 0 004.319-4.331V10.822a4.275 4.275 0 00-4.319-4.267zM26.734 34.639a11.9 11.9 0 1111.876-11.9 11.912 11.912 0 01-11.876 11.9zM48.34 13.431a1.812 1.812 0 11-.024-3.624 1.812 1.812 0 01.024 3.624z"></path>
           <path d="M26.734 13.74a9 9 0 108.971 9 8.976 8.976 0 00-8.971-9z"></path>
         </g>
         <defs>
-          <clipPath id="clip0">
+          <clipPath id="clip2">
             <path fill="#fff" d="M0 0H53.469V41.13H0z"></path>
           </clipPath>
         </defs>
@@ -297,7 +296,7 @@ export const features: FeatureCardProps[] = [
     ),
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="57" height="49" viewBox="0 0 57 49" fill="#BCBCBC">
-        <g clip-path="url(#clip0)">
+        <g clip-path="url(#clip3)">
           <path d="M53.735 0H2.542C1.257 0 .215 1.356.215 3.028L0 33.847c0 1.673 1.042 3.028 2.327 3.028h31.431L45.768 48.4l-3.089-11.524H53.52c1.285 0 2.327-1.356 2.327-3.028l.215-30.819C56.062 1.356 55.02 0 53.735 0z"></path>
           <path
             className="white"
@@ -307,7 +306,7 @@ export const features: FeatureCardProps[] = [
           ></path>
         </g>
         <defs>
-          <clipPath id="clip0">
+          <clipPath id="clip3">
             <path d="M0 0H56.062V48.399H0z"></path>
           </clipPath>
         </defs>

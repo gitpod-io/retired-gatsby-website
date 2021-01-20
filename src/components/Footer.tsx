@@ -24,13 +24,25 @@ const StyledFooter = styled.footer`
         }
 
         @media(max-width: 650px) {
-            justify-content: space-between;
+            justify-content: center;
 
             ul {
                 padding-bottom: 4rem;
                 border-bottom: 1px solid #ddd;
                 width: 48%;
                 text-align: center;
+
+                @media(max-width: 650px) {
+                    width: 46%;
+                    margin-left: 2%;
+                    margin-right: 2%;
+                }
+
+                @media(max-width: 400px) {
+                    width: 48%;
+                    margin-left: 1%;
+                    margin-right: 1%;
+                }
 
                 &:not(:last-child) {
                     margin-bottom: 5rem;
@@ -42,13 +54,16 @@ const StyledFooter = styled.footer`
                     img {
                         transform: translateX(1rem);
                     }
+
+                    @media(max-width: 650px) {
+                        transform: none;
+                    }
                 }
             }
         }
     }
 
     li {
-
         &:not(:last-child) {
             margin-bottom: 1.6rem;
         }
@@ -87,6 +102,8 @@ const StyledFooter = styled.footer`
     }
 
     .contact {
+        max-width: 11rem;
+
         li:not(:first-child) {
             display: inline-block;
             margin-left: 2rem;
@@ -181,7 +198,6 @@ const Footer: React.SFC<{}> = () => (
                             </svg>
                         </a>
                     </li>
-                    <br aria-hidden={true} />
                     <li>
                         <a href="https://twitter.com/gitpod" target="_blank" rel="noopener" title="Twitter">
                             <svg
