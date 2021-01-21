@@ -20,9 +20,22 @@ interface ImageProviderProps {
     fluidData?: any
     providerStyles?: CSSProperties
     className?: string
+    placeholderStyles?: CSSProperties
 }
 
-const ImageProvider = ({ fileName, alt, wrapperStyles, imageStyles, isNotRelativeToGatsbyImgWrapper, IsAPricingBoxIcon, isBlurred, fluidData, providerStyles, className }: ImageProviderProps) => {
+const ImageProvider = ({ 
+    fileName, 
+    alt, 
+    wrapperStyles, 
+    imageStyles, 
+    isNotRelativeToGatsbyImgWrapper, 
+    IsAPricingBoxIcon, 
+    isBlurred, 
+    fluidData, 
+    providerStyles, 
+    className,
+    placeholderStyles
+}: ImageProviderProps) => {
   const { allImageSharp } = useStaticQuery(graphql`
     query {
       allImageSharp {
@@ -68,7 +81,14 @@ const ImageProvider = ({ fileName, alt, wrapperStyles, imageStyles, isNotRelativ
 
   return (
     <StyledImageProvider style={providerStyles}>
-      <Img className={`gatsby-image ${className}`} fluid={!fluidData ? resultingFluid : fluidData} alt={alt} style={{position, ...wrapperStyles}} imgStyle={isNotRelativeToGatsbyImgWrapper ? imageStylesIfIsNotRelativeToGatsbyImgWrapper : imageStyles ? imageStyles : {}} />
+        <Img 
+            className={`gatsby-image ${className}`} 
+            fluid={!fluidData ? resultingFluid : fluidData} 
+            alt={alt} 
+            style={{position, ...wrapperStyles}}
+            imgStyle={isNotRelativeToGatsbyImgWrapper ? imageStylesIfIsNotRelativeToGatsbyImgWrapper : imageStyles ? imageStyles : {}} 
+            placeholderStyle={placeholderStyles}
+        />
     </StyledImageProvider>
   )
 }
