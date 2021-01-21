@@ -1,0 +1,52 @@
+{
+    "screencasts": [
+        {
+        "title": "Always ready-to-code",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima quas laboriosam, totam officiis magnam voluptate quibusdam eius harum molestiae necessitatibus.",
+        "duration": 3,
+        "tile": "screencast-placeholder.png",
+        "loomId": "21abe385398c4220ae3a106c860fe3bb",
+        "relatedDocs": [{"path": "/", "title": "Introduction"}, {"path": "/getting-started", "title": "Getting Started"}]
+        },
+        {
+        "title": "Personalize your workspace",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima quas laboriosam, totam officiis magnam voluptate quibusdam eius harum molestiae necessitatibus.",
+        "duration": 2,
+        "tile": "screencast-placeholder.png",
+        "loomId": "a32c9d57ad6546c3adb9fb0c36a61d77",
+        "relatedDocs": [{"path": "/config-editor", "title": "Editor Configuration"}, {"path": "/tips-and-tricks/#color-themes", "title": "Color Theme"}, {"path": "/vscode-extensions", "title": "VS Code Extensions"}]
+        },
+        {
+        "title": "Automate your project's dev setup",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima quas laboriosam, totam officiis magnam voluptate quibusdam eius harum molestiae necessitatibus.",
+        "duration": 4,
+        "tile": "screencast-placeholder.png",
+        "loomId": "aeafdc8e19b64008ba26feb98ea59124",
+        "relatedDocs": [{"path": "/config-gitpod-file", "title": ".gitpod.yml"}, {"path": "/config-docker", "title": "Docker Configuration"}, {"path": "/config-start-tasks", "title": "Start Tasks"}]
+        },
+        {
+        "title": "Continuously prebuild your project",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima quas laboriosam, totam officiis magnam voluptate quibusdam eius harum molestiae necessitatibus.",
+        "duration": 2,
+        "tile": "screencast-placeholder.png",
+        "loomId": "f675cf91f5634a139dd326310c241818",
+        "relatedDocs": [{"path": "/prebuilds", "title": "Prebuilds"}]
+        },
+        {
+        "title": "Fresh dev environments for each new task",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima quas laboriosam, totam officiis magnam voluptate quibusdam eius harum molestiae necessitatibus.",
+        "duration": 1,
+        "tile": "screencast-placeholder.png",
+        "loomId": "48c76f2f43e447dcb718c22c8de53d4e",
+        "relatedDocs": [{"path": "/workspaces", "title": "Workspaces"}]
+        },
+        {
+        "title": "Collaborating with your team",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima quas laboriosam, totam officiis magnam voluptate quibusdam eius harum molestiae necessitatibus.",
+        "duration": 2,
+        "tile": "screencast-placeholder.png",
+        "loomId": "589cd9ae24324edcb1e968e7a732004c",
+        "relatedDocs": [{"path": "/sharing-and-collaboration", "title": "Collaboration & Sharing of Workspaces"}]
+        }
+    ]
+}
