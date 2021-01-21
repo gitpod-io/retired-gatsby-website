@@ -25,7 +25,10 @@ To enable prebuilt workspaces for a GitLab or Bitbucket repository, follow these
 gitpod.io/#prebuild/https://gitlab.com/gitpod/spring-petclinic
 ```
 
-This will [trigger a prebuild](#manual-execution-of-prebuild), and also install a webhook that will trigger new Gitpod prebuilds for every new push to your repository. See also [GitLab prebuilds](https://www.gitpod.io/blog/gitlab-support/#prebuilds).
+This will [trigger a prebuild](#manual-execution-of-prebuild), and also install a webhook that will trigger new Gitpod prebuilds for every new push to any of your branches to your repository. See also [GitLab prebuilds](https://www.gitpod.io/blog/gitlab-support/#prebuilds).
+
+> **Note for Gitlab Users:** If you want to trigger new Gitpod prebuilds for specific branches only, you can configure this in your Gitlab project settings under Settings -> Webhooks -> Project Hooks (at the bottom, select the Gitpod hook) -> Edit -> [Push Events](https://docs.gitlab.com/ee/user/project/integrations/webhooks.html#branch-filtering).
+
 
 ## Manual execution of prebuild
 
