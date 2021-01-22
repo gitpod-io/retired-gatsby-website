@@ -2,7 +2,7 @@ import React from 'react'
 import IndexLayout from '../layouts'
 import { ScreencastProps } from '../components/screencasts/Screencast'
 import styled from '@emotion/styled'
-import LoomEmbed from '../components/screencasts/LoomEmbed'
+import YouTubeEmbed from '../components/screencasts/YouTubeEmbed'
 import RelatedDocs from '../components/screencasts/RelatedDocs'
 import NextUp from '../components/screencasts/NextUp'
 
@@ -32,7 +32,7 @@ const StyledScreencastTemplate = styled.div`
 `
 
 const ScreencastTemplate = ({ pageContext }: { pageContext: { screencast: ScreencastProps, nextScreencast: ScreencastProps } }) => {
-    const { title, description, duration, loomId, relatedDocs } = pageContext.screencast
+    const { title, description, duration, youtubeId, relatedDocs } = pageContext.screencast
     return (
         <IndexLayout>
             <StyledScreencastTemplate>
@@ -41,10 +41,10 @@ const ScreencastTemplate = ({ pageContext }: { pageContext: { screencast: Screen
                         <div className="text">
                             <h1><strong>{title}</strong></h1>
                             <p>{description}</p>
-                            <div className="duration">Duration: {duration} sec</div>
+                            <div className="duration">Duration: {duration}s</div>
                         </div>
                     </div>
-                    <LoomEmbed embedId={loomId} />
+                    <YouTubeEmbed embedId={youtubeId} />
                 </div>
                 <RelatedDocs relatedDocs={relatedDocs} />
                 <NextUp nextScreencast={pageContext.nextScreencast} />

@@ -14,7 +14,7 @@ const StyledRelatedDocs = styled.div`
 
 const RelatedDocs = ({ relatedDocs }: {relatedDocs: RelatedDoc[]}) => (
     <StyledRelatedDocs>
-        Related Documentation:&nbsp;
+        Related documentation:&nbsp;
         {
             relatedDocs.map(({path, title}: RelatedDoc, i) => (
                 <> 
