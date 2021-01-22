@@ -276,6 +276,7 @@ const Nav = () => {
 
                     <ul className={`nav__items ${isNavRendered ? 'navIsRendered' : 'navIsNotRendered'}`} >
                         <li className="nav__item"><Link activeClassName="active" to='/features/' className="link">Features</Link></li>
+                        <li className="nav__item"><Link activeClassName="active" to='/screencasts/' className="link">Screencasts</Link></li>
                         <li className="nav__item"><Link activeClassName="active" to='/self-hosted/' className="link">Install</Link></li>
                         <li className="nav__item"><Link activeClassName="active" to='/pricing/' className="link">Pricing</Link></li>
                         <li className="nav__item"><Link activeClassName="active" to='/docs/' className="link">Docs</Link></li>
