@@ -69,7 +69,7 @@ const Screencast = ({tile, title, duration, headingType}: ScreencastProps) => (
             placeholderStyles={{border: borders.light}}
         />
         { headingType === 'h3' ? <h3>{title}</h3> : <h2 className="h3">{title}</h2> }
-        <div className="duration">Duration: {duration*60} secs</div>
+        <div className="duration">Duration: {duration} secs</div>
     </StyledScreencast>
 )
 
