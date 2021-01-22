@@ -49,10 +49,10 @@ const StyledScreencast = styled(Link)`
 export interface ScreencastProps {
     title: string;
     description: string;
-    loomId: string; 
+    youtubeId: string;
     duration: number;
     tile: string;
-    relatedDocs: RelatedDoc[] 
+    relatedDocs: RelatedDoc[]
     headingType?: 'h3'
 }
 
@@ -63,13 +63,13 @@ const Screencast = ({tile, title, duration, headingType}: ScreencastProps) => (
     >
         <ImageProvider
             fileName={tile} 
-            alt="Screencast" 
+            alt={`Gitpod Screencast: ${title}`} 
             isBlurred={true} 
             providerStyles={{height: 'auto', boxShadow: '0 2rem 4rem rgba(0,0,0, .2)'}}
             placeholderStyles={{border: borders.light}}
         />
         { headingType === 'h3' ? <h3>{title}</h3> : <h2 className="h3">{title}</h2> }
-        <div className="duration">Duration: {duration} secs</div>
+        <div className="duration">Duration: {duration}s</div>
     </StyledScreencast>
 )
 

@@ -22,17 +22,18 @@ const StyledEmbed = styled.div`
     }
 `
 
-interface LoomEmbedProps {
+interface YouTubeEmbedProps {
     embedId: string
 }
 
-const LoomEmbed = ({embedId}: LoomEmbedProps) => (
+const YouTubeEmbed = ({embedId}: YouTubeEmbedProps) => (
     <StyledEmbed 
         className="row"
     >
         <iframe 
-            src={`https://www.loom.com/embed/${embedId}`}
+            src={`https://www.youtube.com/embed/${embedId}`}
             frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             // @ts-ignore
             webkitallowfullscreen 
             mozallowfullscreen 
@@ -43,4 +44,4 @@ const LoomEmbed = ({embedId}: LoomEmbedProps) => (
     </StyledEmbed>
 )
 
-export default LoomEmbed
+export default YouTubeEmbed
