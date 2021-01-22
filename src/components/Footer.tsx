@@ -131,6 +131,7 @@ const Footer: React.SFC<{}> = () => (
                 <ul>
                     <li>Developer</li>
                     <li><Link to="/#get-started">Getting started</Link></li>
+                    <li><Link to="/screencasts/">Screencasts</Link></li>
                     <li><Link to="/docs/">Documentation</Link></li>
                     <li>
                         <ExternalLink
