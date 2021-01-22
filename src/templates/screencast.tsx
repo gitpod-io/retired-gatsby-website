@@ -41,7 +41,7 @@ const ScreencastTemplate = ({ pageContext }: { pageContext: { screencast: Screen
                         <div className="text">
                             <h1><strong>{title}</strong></h1>
                             <p>{description}</p>
-                            <div className="duration">Duration: {duration * 60} sec</div>
+                            <div className="duration">Duration: {duration} sec</div>
                         </div>
                     </div>
                     <LoomEmbed embedId={loomId} />
