@@ -69,7 +69,7 @@ const StyledNav = styled.nav`
 
         @media(min-width: 1041px) {
             &:not(:last-child) {
-                margin-right: 5rem;
+                margin-right: 4rem;
             }
         }
 
