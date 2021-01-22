@@ -140,17 +140,8 @@ const jobs: ExpandableJobProps[] = [
                     'Gitpod is a distributed application running on Kubernetes. Services are written in Go and TypeScript (Node.JS), while all things frontend are React and TypeScript. We communicate using gRPC, RabbitMQ and JSON-RPC. We develop Gitpod in Gitpod, build using leeway and werft and automatically deploy preview environments for every branch. We organise our work using modern tools only. GitHub for issue tracking and source control, Slack for comms, Figma for design, Notion as knowledge base and Loom for screencasts.'
                 ]
             },
-            {
-                title: 'We offer:',
-                items: [
-                    'Space for creativity - feel free to create the non-existing.',
-                    'Collaborate with a highly motivated team with a strong technical background.',
-                    'Flexible working hours.',
-                    'Work remotely.',
-                ]
-            }
         ],
-        textAfterTheLists: 'We celebrate diversity, and we are committed to an equal and inclusive employment environment.',
+        textAfterTheLists: 'We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.',
         rendered: true
     },
     {
@@ -189,7 +180,7 @@ Our mission is to make software development fun and remove all tedious friction.
                 ]
             }
         ],
-        textAfterTheLists: 'We celebrate diversity, and we are committed to an equal and inclusive employment environment.',
+        textAfterTheLists: 'We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.',
         rendered: true
     },
 ]
