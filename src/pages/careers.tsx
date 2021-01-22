@@ -113,7 +113,7 @@ const features: FeatureItemProps[] = [
 const jobs: ExpandableJobProps[] = [
     {
         title: 'Software Engineer',
-        intro: `We at Gitpod specialize in building tools and we are looking to expand our team with brilliant software engineers.`,
+        intro: `You are just starting out as a software engineer, but are super motivated and curious. This might be for you.`,
         paragraphs: `We are a highly motivated team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.`,
         lists: [
             {
@@ -141,11 +141,11 @@ const jobs: ExpandableJobProps[] = [
             },
         ],
         textAfterTheLists: 'We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.',
-        rendered: true
+        rendered: false
     },
     {
         title: 'Senior Software Engineer (Full-Stack)',
-        intro: `We at Gitpod specialize in building tools and we are looking to expand our team with brilliant software engineers.`,
+        intro: `We at Gitpod build tools that require a view across the stack. If you don't think the frontend/backend is not my department, this might be for you.`,
         paragraphs: `We are a highly motivated team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.`,
         lists: [
             {
@@ -174,11 +174,11 @@ const jobs: ExpandableJobProps[] = [
             },
         ],
         textAfterTheLists: 'We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.',
-        rendered: true
+        rendered: false
     },
     {
         title: 'Senior Software Engineer (Workspace Runtime)',
-        intro: `We at Gitpod specialize in building tools and we are looking to expand our team with brilliant software engineers.`,
+        intro: `Workspaces are at the very heart of Gitpod. We want to provide best-in-class functionality by integrating deeply with cloud-native container tech. If that sounds like your cup of tea, have a look.`,
         paragraphs: `We are a highly motivated team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.`,
         lists: [
             {
@@ -207,7 +207,7 @@ const jobs: ExpandableJobProps[] = [
             },
         ],
         textAfterTheLists: 'We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.',
-        rendered: true
+        rendered: false
     },
     {
         title: 'Senior DevOps Engineer',
@@ -246,7 +246,7 @@ Our mission is to make software development fun and remove all tedious friction.
             }
         ],
         textAfterTheLists: 'We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.',
-        rendered: true
+        rendered: false
     },
 ]
 
