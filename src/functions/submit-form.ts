@@ -6,17 +6,19 @@ export interface Email {
         email: string,
         name?: string
     },
-    from: {
+    from?: {
         email: string,
         name?: string
     }
     subject: string,
-    message: string
+    message?: string,
+    feedback?: string,
+    otherFeedback?: string
 }
 
 async function sendEmail(client: client.MailService, email: Email): Promise<{statusCode: number, errorMessage?: string}> {
     const data: client.MailDataRequired = {
-        from: email.from,
+        from: email.from || '',
         subject: email.subject,
         to: [
             email.to!
@@ -24,7 +26,7 @@ async function sendEmail(client: client.MailService, email: Email): Promise<{sta
         content: [
             {
                 type: "text/plain",
-                value: email.message
+                value: `${email.message ? email.message : `${email.feedback}\n${email.otherFeedback}`}`
             }
         ]
     }

@@ -12,6 +12,7 @@ import LayoutRoot from '../components/LayoutRoot'
 import LayoutMain from '../components/LayoutMain'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+import MinimalFooter from '../components/MinimalFooter'
 // import AnnoucementBanner from '../components/AnnouncementBanner'
 
 type StaticQueryProps = {
@@ -24,7 +25,7 @@ type StaticQueryProps = {
   }
 }
 
-class IndexLayout extends React.Component<{ title?: string; canonical?: string; description?: string, ogImage?:string }, {}> {
+class IndexLayout extends React.Component<{ title?: string; canonical?: string; description?: string, isAFlowPage?: boolean, showReInstallExtensionButton?: boolean, ogImage?:string}, {}> {
   handleFirstTab = (e: any) => {
     if (e.key === 'Tab') {
       // the "I am a keyboard user" key
@@ -90,7 +91,7 @@ class IndexLayout extends React.Component<{ title?: string; canonical?: string; 
               <meta name="google-site-verification" content="NBio3hCkfn2FKJpqZritJpXuyKo54noPGZzWsjDIp-M" />
             </Helmet>
             {/* <AnnoucementBanner /> */}
-            <Nav />
+            <Nav isAFlowPage={this.props.isAFlowPage}  showReInstallExtensionButton={this.props.showReInstallExtensionButton}/>
             <LayoutMain>
               <CookieConsent
                 buttonClasses="primary"
@@ -123,7 +124,9 @@ class IndexLayout extends React.Component<{ title?: string; canonical?: string; 
               </CookieConsent>
               {children}
             </LayoutMain>
-            <Footer />
+            {  
+                !this.props.isAFlowPage ? <Footer /> : <MinimalFooter />
+            }
           </LayoutRoot>
         )}
       />

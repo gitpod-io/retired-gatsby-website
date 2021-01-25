@@ -4,6 +4,11 @@ import TextFeature from './TextFeature'
 import ImageProvider from '../ImageProvider'
 
 const Styled = styled.section`
+  .pattern {
+      padding-bottom: 12rem;
+      margin-top: 12rem;
+  }
+
   .text-container {
     display: flex;
     justify-content: center;
@@ -29,7 +34,7 @@ const Styled = styled.section`
 
 const SecurityAndOSS = () => (
   <Styled>
-    <div className="row">
+    <div className="row pattern">
       <div className="text-container">
         <TextFeature
           img={<ImageProvider fileName="highly-secure.png" alt="Secure" />}

@@ -6,7 +6,7 @@ import { colors, borders } from '../../styles/variables'
 const StyledTextFeature = styled.div`
   max-width: 600px;
   padding: 4rem 6rem;
-  background: ${colors.offWhite};
+  background: ${colors.white};
   border: ${borders.light};
   border-radius: 3px;
   max-width: 450px;
@@ -14,12 +14,12 @@ const StyledTextFeature = styled.div`
   @media (max-width: 500px) {
     padding: 5rem 2rem;
 
-    h3 {
+    .h3 {
         text-align: center;
     }
   }
 
-  h3 + p {
+  .h3 + p {
     margin: 0;
   }
 
@@ -50,9 +50,9 @@ const TextFeature = ({ img, title, text, btnText, href }: TextFeatureProps) => (
     <div className="img-container">
         {img}
     </div>
-    <h3>
+    <h2 className="h3">
       <strong>{title}</strong>
-    </h3>
+    </h2>
     <p>{text}</p>
     {btnText ? (
       <a href={href} target="_blank" className="btn">
