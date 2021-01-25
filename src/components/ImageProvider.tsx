@@ -10,16 +10,32 @@ const StyledImageProvider = styled.div`
 `
 
 interface ImageProviderProps {
-    fileName: string
+    fileName?: string
     alt: string
     wrapperStyles?: CSSProperties
     imageStyles?: CSSProperties
     isNotRelativeToGatsbyImgWrapper?: boolean
     IsAPricingBoxIcon?: boolean
     isBlurred?: boolean
+    fluidData?: any
+    providerStyles?: CSSProperties
+    className?: string
+    placeholderStyles?: CSSProperties
 }
 
-const ImageProvider = ({ fileName, alt, wrapperStyles, imageStyles, isNotRelativeToGatsbyImgWrapper, IsAPricingBoxIcon, isBlurred }: ImageProviderProps) => {
+const ImageProvider = ({ 
+    fileName, 
+    alt, 
+    wrapperStyles, 
+    imageStyles, 
+    isNotRelativeToGatsbyImgWrapper, 
+    IsAPricingBoxIcon, 
+    isBlurred, 
+    fluidData, 
+    providerStyles, 
+    className,
+    placeholderStyles
+}: ImageProviderProps) => {
   const { allImageSharp } = useStaticQuery(graphql`
     query {
       allImageSharp {
@@ -30,7 +46,7 @@ const ImageProvider = ({ fileName, alt, wrapperStyles, imageStyles, isNotRelativ
             src
           }
           blurredFluid: fluid {
-                originalName
+            originalName
             ...GatsbyImageSharpFluid
           }
         }
@@ -40,12 +56,14 @@ const ImageProvider = ({ fileName, alt, wrapperStyles, imageStyles, isNotRelativ
 
   let resultingFluid
 
-  const found = allImageSharp.nodes.find((n: any) => {
-    return n.fluid.originalName === fileName
-  })
+  if(!fluidData) {
+    const found = allImageSharp.nodes.find((n: any) => {
+        return n.fluid.originalName === fileName
+    })
    
-  resultingFluid = isBlurred ? found.blurredFluid : found.fluid
-
+    resultingFluid = isBlurred ? found.blurredFluid : found.fluid
+  }
+  
   const imageStylesIfIsNotRelativeToGatsbyImgWrapper = {
     top: '50%', 
     transform: 'translateY(-50%) scale(.93)',
@@ -62,8 +80,15 @@ const ImageProvider = ({ fileName, alt, wrapperStyles, imageStyles, isNotRelativ
   }
 
   return (
-    <StyledImageProvider>
-      <Img className="gatsby-image" fluid={resultingFluid} alt={alt} style={{position, ...wrapperStyles}} imgStyle={isNotRelativeToGatsbyImgWrapper ? imageStylesIfIsNotRelativeToGatsbyImgWrapper : imageStyles ? imageStyles : {}} />
+    <StyledImageProvider style={providerStyles}>
+        <Img 
+            className={`gatsby-image ${className}`} 
+            fluid={!fluidData ? resultingFluid : fluidData} 
+            alt={alt} 
+            style={{position, ...wrapperStyles}}
+            imgStyle={isNotRelativeToGatsbyImgWrapper ? imageStylesIfIsNotRelativeToGatsbyImgWrapper : imageStyles ? imageStyles : {}} 
+            placeholderStyle={placeholderStyles}
+        />
     </StyledImageProvider>
   )
 }
