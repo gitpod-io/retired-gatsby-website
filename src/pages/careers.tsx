@@ -141,7 +141,8 @@ const jobs: ExpandableJobProps[] = [
             },
         ],
         textAfterTheLists: 'We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.',
-        rendered: false
+        rendered: false,
+        date: '2021-01-26T14:00:00.000Z'
     },
     {
         title: 'Senior Software Engineer (Full-Stack)',
@@ -174,7 +175,8 @@ const jobs: ExpandableJobProps[] = [
             },
         ],
         textAfterTheLists: 'We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.',
-        rendered: false
+        rendered: false,
+        date: '2021-01-26T14:00:00.000Z'
     },
     {
         title: 'Senior Software Engineer (Workspace Runtime)',
@@ -208,7 +210,7 @@ const jobs: ExpandableJobProps[] = [
         ],
         textAfterTheLists: 'We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.',
         rendered: false,
-        date: '2021-19-01T19:00:00.000Z'
+        date: '2021-01-26T14:00:00.000Z'
     },
     {
         title: 'Senior DevOps Engineer',
@@ -248,7 +250,7 @@ Our mission is to make software development fun and remove all tedious friction.
         ],
         textAfterTheLists: 'We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.',
         rendered: false,
-        date: '2020-10-07T19:00:00.000Z'
+        date: '2021-01-26T14:00:00.000Z'
     },
 ]
 
