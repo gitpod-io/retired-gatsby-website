@@ -163,9 +163,17 @@ const List = ({ title, items }: Listing) => (
     <div>
         <h4>{title}</h4>
         <ul>
-            {items.map((item, i) => (
-                <li key={item + i}>{item}</li>
-            ))}
+            {items.map((item, i) => {
+                const sentences = item.split('. ')
+                let firstSentence: any = sentences[0]
+                firstSentence = sentences.length !== 1 ? <strong>{firstSentence}. </strong> : firstSentence
+                return (
+                    <li key={item + i}>
+                        { firstSentence }
+                        { sentences.slice(1, sentences.length).join('. ') }
+                    </li>
+                )
+            })}
         </ul>
     </div>
 )
