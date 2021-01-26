@@ -113,7 +113,7 @@ const ExpandableJob = ({ title, intro, paragraphs, lists, textAfterTheLists, ren
         datePosted: date,
         hiringOrganization: {
             '@type': 'Organization',
-            name: 'Gitpod Inc.',
+            name: 'Gitpod, Inc.',
             sameAs: 'https://www.gitpod.io/',
             logo: GitpodLogo,
             contactPoint: {
@@ -121,28 +121,8 @@ const ExpandableJob = ({ title, intro, paragraphs, lists, textAfterTheLists, ren
                 url: 'https://www.gitpod.io/contact/'
             }
         },
-        // Location: Kiel Office / Germany Remote / France Remote.
+        // Location: Remote, anywhere on Earth.
         // Ref: https://developers.google.com/search/docs/data-types/job-posting#remote-jobs
-        jobLocation: {
-            '@type': 'Place',
-            address: {
-                '@type': 'PostalAddress',
-                streetAddress: 'Am Germaniahafen 1',
-                addressLocality: 'Kiel',
-                postalCode: '24143',
-                addressCountry: 'Germany'
-            }
-        },
-        applicantLocationRequirements: [
-            {
-                '@type': 'Country',
-                name: 'Germany'
-            },
-            {
-                '@type': 'Country',
-                name: 'France'
-            }
-        ],
         jobLocationType: 'TELECOMMUTE',
         employmentType: 'FULL_TIME',
         applicationContact: {
