@@ -113,7 +113,7 @@ const features: FeatureItemProps[] = [
 const jobs: ExpandableJobProps[] = [
     {
         title: 'Software Engineer',
-        intro: `You are just starting out as a software engineer, but are super motivated and curious. This might be for you.`,
+        intro: `You are just starting out as a software engineer, and are super motivated and curious. This might be for you.`,
         paragraphs: `We are a highly motivated team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.`,
         lists: [
             {
