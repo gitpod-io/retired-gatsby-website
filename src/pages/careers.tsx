@@ -160,11 +160,7 @@ const jobs: ExpandableJobProps[] = [
         ],
         textAfterTheLists: '',
         rendered: false,
-<<<<<<< HEAD
         date: '2021-01-26T14:00:00.000Z'
-=======
-        date: '2021-19-01T19:00:00.000Z'
->>>>>>> 69341cb (Fixed dates)
     },
     {
         title: 'Senior Software Engineer (Full-Stack)',
