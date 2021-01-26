@@ -144,6 +144,19 @@ const jobs: ExpandableJobProps[] = [
                     'Browser-based productivity tools for the rest. Gitpod for development, GitHub for issue tracking and as git hoster, Slack for comms, Figma for design, Notion as our virtual HQ, Pitch for slides, Loom for screencasts and a few others.'
                 ]
             },
+            {
+                title: 'We care about you',
+                items: [
+                    'Work and life',
+                    '6 weeks paid time off',
+                    'Fully-remote environment & flexible working hours',
+                    'Competitive salary and equity package',
+                    'Monthly health benefit for your local gym or Freeletics',
+                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Blinkist, The Atlantic account and other educational budget',
+                    'Premium work-from-home equipment (Macbook Pro, standing desk, monitor, webcam, mic)',
+                ]
+            },
         ],
         textAfterTheLists: '',
         rendered: false,
@@ -183,6 +196,19 @@ const jobs: ExpandableJobProps[] = [
                     'Browser-based productivity tools for the rest. Gitpod for development, GitHub for issue tracking and as git hoster, Slack for comms, Figma for design, Notion as our virtual HQ, Pitch for slides, Loom for screencasts and a few others.'
                 ]
             },
+            {
+                title: 'We care about you',
+                items: [
+                    'Work and life',
+                    '6 weeks paid time off',
+                    'Fully-remote environment & flexible working hours',
+                    'Competitive salary and equity package',
+                    'Monthly health benefit for your local gym or Freeletics',
+                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Blinkist, The Atlantic account and other educational budget',
+                    'Premium work-from-home equipment (Macbook Pro, standing desk, monitor, webcam, mic)',
+                ]
+            },
         ],
         textAfterTheLists: '',
         rendered: false,
@@ -220,6 +246,19 @@ const jobs: ExpandableJobProps[] = [
                 items: [
                     'Gitpod is a distributed application running on Kubernetes. Services are written in Go and TypeScript (Node.JS), while all things frontend are React and TypeScript. We communicate using gRPC, RabbitMQ and JSON-RPC. We develop Gitpod in Gitpod, build using leeway and werft and automatically deploy preview environments for every branch.',
                     'Browser-based productivity tools for the rest. Gitpod for development, GitHub for issue tracking and as git hoster, Slack for comms, Figma for design, Notion as our virtual HQ, Pitch for slides, Loom for screencasts and a few others.'
+                ]
+            },
+            {
+                title: 'We care about you',
+                items: [
+                    'Work and life',
+                    '6 weeks paid time off',
+                    'Fully-remote environment & flexible working hours',
+                    'Competitive salary and equity package',
+                    'Monthly health benefit for your local gym or Freeletics',
+                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Blinkist, The Atlantic account and other educational budget',
+                    'Premium work-from-home equipment (Macbook Pro, standing desk, monitor, webcam, mic)',
                 ]
             },
         ],
@@ -267,6 +306,19 @@ const jobs: ExpandableJobProps[] = [
                     'Browser-based productivity tools for the rest. Gitpod for development, GitHub for issue tracking and as git hoster, Slack for comms, Figma for design, Notion as our virtual HQ, Pitch for slides, Loom for screencasts and a few others.'
                 ]
             },
+            {
+                title: 'We care about you',
+                items: [
+                    'Work and life',
+                    '6 weeks paid time off',
+                    'Fully-remote environment & flexible working hours',
+                    'Competitive salary and equity package',
+                    'Monthly health benefit for your local gym or Freeletics',
+                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Blinkist, The Atlantic account and other educational budget',
+                    'Premium work-from-home equipment (Macbook Pro, standing desk, monitor, webcam, mic)',
+                ]
+            },
         ],
         textAfterTheLists: '',
         rendered: false,
@@ -305,6 +357,19 @@ const jobs: ExpandableJobProps[] = [
                     'Figma. You will built with Figma, using components and variants to keep all our design documents in sync and consistent. ',
                     'JS/TS for the web. We use Gatsby for our website and deploy it with Netlify.',
                     'Browser-based productivity tools for the rest. Gitpod for development, GitHub for issue tracking and as git hoster, Slack for comms, Notion as our virtual HQ, Pitch for slides, Loom for screencasts and a few others.'
+                ]
+            },
+            {
+                title: 'We care about you',
+                items: [
+                    'Work and life',
+                    '6 weeks paid time off',
+                    'Fully-remote environment & flexible working hours',
+                    'Competitive salary and equity package',
+                    'Monthly health benefit for your local gym or Freeletics',
+                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Blinkist, The Atlantic account and other educational budget',
+                    'Premium work-from-home equipment (Macbook Pro, standing desk, monitor, webcam, mic)',
                 ]
             },
         ],
