@@ -35,11 +35,9 @@ GitLab comes with a native Gitpod which is enabled by default for GitLab.com. To
 
 ## Example Project
 
-We've alrelay added Gitpod configuration for some example or existing projects.
+Many example projects already have a working Gitpod configuration. We've listed a few of them in [Example Projects](/docs/examples/) so that you can inspect their configurations and try them out in Gitpod.
 
-You can pick any of the example projects listed under [Languages & Frameworks](https://www.gitpod.io/docs/languages-and-frameworks/).
-
-For example, try opening [Vuepress](https://gitpod.io/#https://github.com/vuejs/vuepress) or a [Java with Spring Boot](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic) example.
+For instance, you could try opening [Vuepress](https://gitpod.io/#https://github.com/vuejs/vuepress) or a [Java with Spring Boot](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic) example.
 
 ## Gitpodified Open Source Projects {#gitpodified-open-source-project}
 
