@@ -113,7 +113,7 @@ const features: FeatureItemProps[] = [
 const jobs: ExpandableJobProps[] = [
     {
         title: 'Software Engineer',
-        intro: `You are just starting out as a software engineer, but are super motivated and curious. This might be for you.`,
+        intro: `You are just starting out as a software engineer, and are super motivated and curious. This might be for you.`,
         paragraphs: `We are a highly motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.
         We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
         lists: [
@@ -322,7 +322,7 @@ const jobs: ExpandableJobProps[] = [
         ],
         textAfterTheLists: '',
         rendered: false,
-        date: '2021-19-01T19:00:00.000Z'
+        date: '2021-01-26T14:00:00.000Z'
     },
     {
         title: 'Design Lead',
