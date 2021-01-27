@@ -110,7 +110,7 @@ const features: FeatureItemProps[] = [
     },
 ]
 
-const jobs: ExpandableJobProps[] = [
+export const jobs: ExpandableJobProps[] = [
     {
         title: 'Software Engineer',
         intro: `You are just starting out as a software engineer, and are super motivated and curious. This might be for you.`,
