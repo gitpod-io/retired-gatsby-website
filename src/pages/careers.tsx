@@ -164,7 +164,7 @@ const jobs: ExpandableJobProps[] = [
     },
     {
         title: 'Senior Software Engineer (Full-Stack)',
-        intro: `We at Gitpod build tools that require a view across the stack. If you don't think the frontend/backend is not my department, this might be for you.`,
+        intro: `We at Gitpod build tools that require a view across the stack.`,
         paragraphs: `We are a highly motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.
         We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
         lists: [
