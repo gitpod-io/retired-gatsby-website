@@ -19,7 +19,13 @@ export const MENU: MenuEntry[] = [
     ),
     M(
         "Getting Started",
-        "getting-started"
+        "getting-started",
+        [
+            M(
+                "Example Projects",
+                "examples"
+            ),
+        ],
     ),
     M(
         "Workspaces",
