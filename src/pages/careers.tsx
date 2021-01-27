@@ -315,7 +315,7 @@ const jobs: ExpandableJobProps[] = [
         ],
         textAfterTheLists: '',
         rendered: false,
-        date: '2021-19-01T19:00:00.000Z'
+        date: '2021-01-26T14:00:00.000Z'
     },
     {
         title: 'Senior Software Engineer (Observability)',
@@ -366,7 +366,7 @@ const jobs: ExpandableJobProps[] = [
         ],
         textAfterTheLists: '',
         rendered: false,
-        date: '2021-19-01T19:00:00.000Z'
+        date: '2021-01-26T14:00:00.000Z'
     },
     {
         title: 'Senior Kubernetes Engineer',
@@ -417,7 +417,7 @@ const jobs: ExpandableJobProps[] = [
         ],
         textAfterTheLists: '',
         rendered: false,
-        date: '2021-19-01T19:00:00.000Z'
+        date: '2021-01-26T14:00:00.000Z'
     },
     {
         title: 'Senior Site Reliability Engineer (SRE)',
