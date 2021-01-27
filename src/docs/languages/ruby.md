@@ -15,10 +15,9 @@ Here are a few Ruby example projects that are already automated with Gitpod:
 
 Repository | Description | Try it
 ---------|----------|---------
-[rails_sample_app](https://github.com/gitpod-io/rails_sample_app) | Ruby on Rails tutorial sample application | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/rails_sample_app)
-[Gitpod-Ruby-On-Rails](https://github.com/gitpod-io/Gitpod-Ruby-On-Rails) | Minimal Ruby on Rails example | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-Ruby-On-Rails)
-[home-assistant.io](https://github.com/home-assistant/home-assistant.io) | Open source home automation | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/home-assistant/home-assistant.io)
-[dev.to](https://github.com/thepracticaldev/dev.to) | A platform where software developers write articles | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/thepracticaldev/dev.to)
+[Ruby on Rails template](https://github.com/gitpod-io/ruby-on-rails) | Ruby on Rails template with a PostgreSQL database | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/ruby-on-rails)
+[Forem](https://github.com/forem/forem) | The platform that powers [dev.to](https://dev.to) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/forem/forem)
+[GitLab](https://gitlab.com/gitlab-org/gitlab) | The open source end-to-end software development platform | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://gitlab.com/gitlab-org/gitlab)
 
  </div>
 
