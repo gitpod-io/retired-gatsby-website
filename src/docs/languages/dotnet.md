@@ -7,10 +7,9 @@
 
 | Repository | Description | Try it |
 |------|----------------|-----------|
-|[uno](https://github.com/unoplatform/uno)|Build Mobile, Desktop and WebAssembly apps with C# and XAML|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno)
-|[coolstore-microservices](https://github.com/vietnam-devs/coolstore-microservices)|A Kubernetes-based microservices application on service mesh written in C#|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vietnam-devs/coolstore-microservices)|
+|[dotnetcore](https://github.com/gitpod-io/dotnetcore)|C# .NET Core template|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/dotnetcore)|
+|[uno](https://github.com/unoplatform/uno)|Build Mobile, Desktop and WebAssembly apps with C# and XAML|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno)|
 |[uno.quickstart](https://github.com/unoplatform/uno.quickstart)|An Uno "Hello world!" project using Windows UWP, iOS, Android and WebAssembly|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno.quickstart)|
-|[Fable](https://github.com/fable-compiler/Fable)|F# to JavaScript Compiler written in F#|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/fable-compiler/Fable)|
 
 </div>
 
@@ -45,13 +44,9 @@ Alternatively, you can also run your application in so-called watch-mode. In suc
 
 ![C# Extension Demo](../images/CSharpDemo.png)
 
-This extension brings code completion, snippets, auto-formatting, peek definition, refactoring, and hover documentation for C#! To install this extension for your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file:
+This extension brings code completion, snippets, auto-formatting, peek definition, refactoring, and hover documentation for C#!
 
-```yaml
-vscode:
-  extensions:
-    - ms-vscode.csharp@1.21.12:kw8SkO8+aVTSFug281WfQQ==
-```
+To install this extension for your repository, open the **Extensions** panel in Gitpod (left vertical IDE menu), then search for "csharp" and install it "for this project". Next, commit the [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file that was automatically created (or updated) by Gitpod.
 
 ### Ionide-fsharp
 
