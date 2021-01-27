@@ -1,6 +1,4 @@
 import React from 'react'
-import Sven from '../../resources/sven.png'
-import SvenName from '../../resources/sven-signature-style-name.svg'
 import styled from '@emotion/styled'
 import { colors } from '../../styles/variables'
 
