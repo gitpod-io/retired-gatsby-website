@@ -31,16 +31,9 @@ const StyledMessage = styled.blockquote`
 
 const Message = () => (
     <StyledMessage>
-        <p>Hey there,</p>
-        <p>It’d be great if you could shortly let us know why you uninstalled the browser extension.</p>
-        <p>We’d like your feedback to understand how we can make Gitpod more useful. We’re committed to improving it, and we’re hoping to see you soon again.
-        </p>
-        <p>Best,</p>
-        <img src={SvenName} className="sig" alt="Sven" title="Sven" />
-        <div className="ceo">
-            <img src={Sven} alt="Sven Efftinge" />
-            <p>Co-Founder & CEO</p>
-        </div>
+        <p>Hi there,</p>
+        <p> Sad to see you leave 😕 To improve and make sure that other developers are happier with Gitpod, we’d love to get your opinion on why you decided to uninstall your browser extension.</p>
+        <p> We will work hard to build a product that (hopefully) convinces you to use Gitpod again at a later point ✌️</p>
     </StyledMessage>
 )
 
