@@ -9,7 +9,7 @@ Rust is a first-class language in Gitpod, and we believe that Gitpod is a great 
 
 ## Rust Version
 
-Gitpod always comes with the latest available Rust toolchain pre-installed using [rustup](https://rustup.rs/). (As of 24 Nov 2020, the Rust version is `1.49.0`, and it's updated [semi-automatically](https://github.com/gitpod-io/workspace-images/pull/282/files) on every official Rust release.)
+Gitpod always comes with the latest available Rust toolchain pre-installed using [rustup](https://rustup.rs/). (As of this writing, the Rust version is `1.49.0` and it's updated [semi-automatically](https://github.com/gitpod-io/workspace-images/pull/282/files) on every official Rust release.)
 
 You can also use `rustup` yourself in Gitpod in order to switch to a different Rust version, or to install extra components. See the [the rustup book](https://rust-lang.github.io/rustup/index.html) to learn more about `rustup` itself.
 
@@ -39,8 +39,8 @@ Here are a few Rust example projects that are already automated with Gitpod:
 
 | Repository  | Description  | Try it    |
 |---------|------------|-----|
+|[Nushell](https://github.com/nushell/nushell/) | A next-gen shell for the GitHub era | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nushell/nushell) |
 |[MathLang](https://github.com/JesterOrNot/mathlang) | Basic maths language in Rust | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/MathLang) |
-|[NuShell](https://github.com/nushell/nushell/) | A next-gen shell for the GitHub era | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nushell/nushell) |
 |[Servo](https://github.com/servo/servo) | The Servo Browser Engine | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/servo/servo) |
 
 </div>
@@ -76,7 +76,12 @@ Better TOML adds syntax highlighting to your `Cargo.toml`.
 
 ## Cross-compiling with MUSL
 
-TODO. See also [MUSL support for fully static binaries](https://doc.rust-lang.org/edition-guide/rust-2018/platform-and-target-support/musl-support-for-fully-static-binaries.html).
+To cross-compile with MUSL in Gitpod, you can:
+
+- Run `rustup target add x86_64-unknown-linux-musl`, for example in your [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/)
+- Then, build with `cargo build --target x86_64-unknown-linux-musl`
+
+To learn more, see [MUSL support for fully static binaries](https://doc.rust-lang.org/edition-guide/rust-2018/platform-and-target-support/musl-support-for-fully-static-binaries.html).
 
 ## Debugging
 
