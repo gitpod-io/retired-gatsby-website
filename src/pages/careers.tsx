@@ -151,8 +151,8 @@ const jobs: ExpandableJobProps[] = [
                     '6 weeks paid time off',
                     'Fully-remote environment & flexible working hours',
                     'Competitive salary and equity package',
-                    'Monthly health benefit for your local gym or Freeletics',
-                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Monthly physical health stipend for your local gym, home-gym equipment or Freeletics',
+                    'Monthly mental health stipend to support your 🧘‍♀️',
                     'Blinkist, The Atlantic account and other educational budget',
                     'Premium work-from-home equipment (Macbook Pro, standing desk, monitor, webcam, mic)',
                 ]
@@ -203,8 +203,8 @@ const jobs: ExpandableJobProps[] = [
                     '6 weeks paid time off',
                     'Fully-remote environment & flexible working hours',
                     'Competitive salary and equity package',
-                    'Monthly health benefit for your local gym or Freeletics',
-                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Monthly physical health stipend for your local gym, home-gym equipment or Freeletics',
+                    'Monthly mental health stipend to support your 🧘‍♀️',
                     'Blinkist, The Atlantic account and other educational budget',
                     'Premium work-from-home equipment (Macbook Pro, standing desk, monitor, webcam, mic)',
                 ]
@@ -255,8 +255,8 @@ const jobs: ExpandableJobProps[] = [
                     '6 weeks paid time off',
                     'Fully-remote environment & flexible working hours',
                     'Competitive salary and equity package',
-                    'Monthly health benefit for your local gym or Freeletics',
-                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Monthly physical health stipend for your local gym, home-gym equipment or Freeletics',
+                    'Monthly mental health stipend to support your 🧘‍♀️',
                     'Blinkist, The Atlantic account and other educational budget',
                     'Premium work-from-home equipment (Macbook Pro, standing desk, monitor, webcam, mic)',
                 ]
@@ -302,15 +302,14 @@ const jobs: ExpandableJobProps[] = [
             {
                 title: 'We care about you',
                 items: [
-                    'Work life balance',
-                    'Fully-remote environment',
+                    'Work and life',
+                    '6 weeks paid time off',
+                    'Fully-remote environment & flexible working hours',
                     'Competitive salary and equity package',
-                    'Monthly health benefit for your local gym or Freeletics',
-                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Monthly physical health stipend for your local gym, home-gym equipment or Freeletics',
+                    'Monthly mental health stipend to support your 🧘‍♀️',
                     'Blinkist, The Atlantic account and other educational budget',
-                    'Premium work-from-home equipment (Macbook Pro or Linux laptop, standing desk, monitor, webcam, mic)',
-                    'Flexible working hours',
-                    '6 weeks paid time-off'
+                    'Premium work-from-home equipment (Macbook Pro, standing desk, monitor, webcam, mic)',
                 ]
             },
         ],
@@ -354,15 +353,14 @@ const jobs: ExpandableJobProps[] = [
             {
                 title: 'We care about you',
                 items: [
-                    'Work life balance',
-                    'Fully-remote environment',
+                    'Work and life',
+                    '6 weeks paid time off',
+                    'Fully-remote environment & flexible working hours',
                     'Competitive salary and equity package',
-                    'Monthly health benefit for your local gym or Freeletics',
-                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Monthly physical health stipend for your local gym, home-gym equipment or Freeletics',
+                    'Monthly mental health stipend to support your 🧘‍♀️',
                     'Blinkist, The Atlantic account and other educational budget',
-                    'Premium work-from-home equipment (Macbook Pro or Linux laptop, standing desk, monitor, webcam, mic)',
-                    'Flexible working hours',
-                    '6 weeks paid time-off'
+                    'Premium work-from-home equipment (Macbook Pro, standing desk, monitor, webcam, mic)',
                 ]
             },
         ],
@@ -406,15 +404,14 @@ const jobs: ExpandableJobProps[] = [
             {
                 title: 'We care about you',
                 items: [
-                    'Work life balance',
-                    'Fully-remote environment',
+                    'Work and life',
+                    '6 weeks paid time off',
+                    'Fully-remote environment & flexible working hours',
                     'Competitive salary and equity package',
-                    'Monthly health benefit for your local gym or Freeletics',
-                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Monthly physical health stipend for your local gym, home-gym equipment or Freeletics',
+                    'Monthly mental health stipend to support your 🧘‍♀️',
                     'Blinkist, The Atlantic account and other educational budget',
-                    'Premium work-from-home equipment (Macbook Pro or Linux laptop, standing desk, monitor, webcam, mic)',
-                    'Flexible working hours',
-                    '6 weeks paid time-off'
+                    'Premium work-from-home equipment (Macbook Pro, standing desk, monitor, webcam, mic)',
                 ]
             },
         ],
@@ -460,15 +457,14 @@ const jobs: ExpandableJobProps[] = [
             {
                 title: 'We care about you',
                 items: [
-                    'Work life balance',
-                    'Fully-remote environment',
+                    'Work and life',
+                    '6 weeks paid time off',
+                    'Fully-remote environment & flexible working hours',
                     'Competitive salary and equity package',
-                    'Monthly health benefit for your local gym or Freeletics',
-                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Monthly physical health stipend for your local gym, home-gym equipment or Freeletics',
+                    'Monthly mental health stipend to support your 🧘‍♀️',
                     'Blinkist, The Atlantic account and other educational budget',
-                    'Premium work-from-home equipment (Macbook Pro or Linux laptop, standing desk, monitor, webcam, mic)',
-                    'Flexible working hours',
-                    '6 weeks paid time-off'
+                    'Premium work-from-home equipment (Macbook Pro, standing desk, monitor, webcam, mic)',
                 ]
             },
         ],
@@ -518,8 +514,8 @@ const jobs: ExpandableJobProps[] = [
                     '6 weeks paid time off',
                     'Fully-remote environment & flexible working hours',
                     'Competitive salary and equity package',
-                    'Monthly health benefit for your local gym or Freeletics',
-                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Monthly physical health stipend for your local gym, home-gym equipment or Freeletics',
+                    'Monthly mental health stipend to support your 🧘‍♀️',
                     'Blinkist, The Atlantic account and other educational budget',
                     'Premium work-from-home equipment (Macbook Pro, standing desk, monitor, webcam, mic)',
                 ]
