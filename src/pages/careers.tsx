@@ -267,56 +267,208 @@ const jobs: ExpandableJobProps[] = [
         date: '2021-01-26T14:00:00.000Z'
     },
     {
-        title: 'Senior DevOps Engineer',
-        intro:`If you were ever frustrated with a development tool you used and decided to build a better one yourself, this offer is for you.`,
-        paragraphs:`We are a highly motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.
-        We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
+        title: 'Senior Software Engineer (Infrastructure)',
+        intro:`The infrastructure behind Gitpod runs services and workspaces on a global scale and self-managed by customers. We want your help to improve and automate this infrastructure with us.`,
+        paragraphs:`We are a highly-motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
         lists: [
             {
                 title: 'As part of the team you will ...',
                 items: [
-                    'Architect and develop observability measures for the product (metrics, logging, tracing, alerting).',
-                    'Operate and automate production, staging and preview deployments including gradual feature rollouts.',
-                    'Establish best practices for operating production SaaS systems.',
-                    'Support clients with operating Gitpod Self-Hosted.']
+                    'Build global cloud-native infrastructure. We run dev environments (Kubernetes Pods) in clusters around the globe. You will help expand this infrastructure on GCP and other cloud providers to maximise resilience and global coverage. Describing the infrastructure-as-code helps us to keep it reproducible.',
+                    'Make Gitpod easier to install on more platforms. We want to our users to be able to easily self-host Gitpod on almost any Kubernetes. You will help to improve and expand the infrastructure-as-code that can be used to install Gitpod. This reaches from improving the Helm chart and Terraform scripts that we have today to introducing new ways of installing Gitpod.',
+                    'Co-own the product and work self-directed. We work with a very flat hierarchy, organizing our tasks in iterations with a lot of freedom. Create [work specific elements] where you think it makes sense.',
+                    'Work with the community and in the open. Our DNA is deeply rooted in open source and we are building Gitpod in public. We expect the same from you.']
             },
             {
                 title: 'You will be a great fit if ...',
                 items: [
-                    'Ability to deploy and manage applications with Kubernetes and Helm Charts.',
-                    'Experience in automating infrastructure using Terraform.',
-                    'Ability to understand code written in Go, Node.js (ideally TypeScript) and bash.',
-                    'Experience with industry standard observability tools (Prometheus, Jaeger / OpenTracing, etc.).',
-                    'Experience with cloud providers (AWS, GCP, Azure).',
-                ]
-            },
-            {
-                title: 'We offer:',
-                items: [
-                    'Space for creativity - feel free to create the non-existing.',
-                    'Collaborate with a highly motivated team with a strong technical background.',
-                    'Flexible working hours.',
-                    'Work remotely.'
+                    'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don\'t dictate.',
+                    'You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.',
+                    'You embrace Open Source. You follow relevant open-source projects, maybe you contributed, maybe you know the maintainers. Gitpod itself is open-source and built on open-source projects, such as Kubernetes, Helm, Terraform, Grafana, Prometheus and many more. Knowledge about such projects will help you work on Gitpod and knowledge about Open Source will help you make Gitpod a better Open Source project.',
+                    'You are Pragmatic. You understand that doing the right thing gives you momentum while doing a thing perfectly can cost a lot of time.',
+                    'You are a curious deep diver. You know that humans and documentation often do not have an answer. That is when you dive. You read code, issues, explore metrics, traces, logs or conduct experiments. When you surface, you know the answer and the team will love you.',
+                    'You are a good communicator. We work remote, our users are remote too. You value writing and express yourself concisely. You may hold strong opinions, but you are not ideological. You communicate thoughtfully, always assume others speak in good faith, aim to understand opposing perspectives and compromise when needed.'
                 ]
             },
             {
                 title: 'Our stack:',
                 items: [
-                    'Gitpod is a distributed application running on Kubernetes. Services are written in Go and TypeScript (Node.JS), while all things frontend are React and TypeScript. We communicate using gRPC, RabbitMQ and JSON-RPC. We develop Gitpod in Gitpod, build using leeway and werft and automatically deploy preview environments for every branch.',
-                    'Browser-based productivity tools for the rest. Gitpod for development, GitHub for issue tracking and as git hoster, Slack for comms, Figma for design, Notion as our virtual HQ, Pitch for slides, Loom for screencasts and a few others.'
+                    'Gitpod is an open source Kubernetes application. Services are written in Go and TypeScript (Node.JS), while all things frontend are React and TypeScript. We communicate using gRPC, RabbitMQ and JSON-RPC. We develop Gitpod in Gitpod, build using leeway and werft and automatically deploy preview environments for every branch.',
+                    'Browser-based productivity tools for the rest. Gitpod for development, GitHub for issue tracking and as git hoster, Slack for comms, Figma for design, Notion as our virtual HQ, Pitch for slides, Loom for screencasts and a few others.',
+                    'We run gitpod.io on Google Cloud Platform. There we use GKE, Buckets, BigQuery and more. We may expand to other cloud providers. We make Gitpod self-hosted available for vanilla Kubernetes, AWS, and more platforms in the future.',
+                    'We describe infrastructure using Helm and Terraform. We maintain a single helm chart to install Gitpod on Kubernetes. To create the cluster and other infrastructure around it, we use Terraform scripts.'
                 ]
             },
             {
                 title: 'We care about you',
                 items: [
-                    'Work and life',
-                    '6 weeks paid time off',
-                    'Fully-remote environment & flexible working hours',
+                    'Work life balance',
+                    'Fully-remote environment',
                     'Competitive salary and equity package',
                     'Monthly health benefit for your local gym or Freeletics',
                     'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
                     'Blinkist, The Atlantic account and other educational budget',
-                    'Premium work-from-home equipment (Macbook Pro, standing desk, monitor, webcam, mic)',
+                    'Premium work-from-home equipment (Macbook Pro or Linux laptop, standing desk, monitor, webcam, mic)',
+                    'Flexible working hours',
+                    '6 weeks paid time-off'
+                ]
+            },
+        ],
+        textAfterTheLists: '',
+        rendered: false,
+        date: '2021-19-01T19:00:00.000Z'
+    },
+    {
+        title: 'Senior Software Engineer (Observability)',
+        intro:`The infrastructure behind gitpod.io runs services and workspaces on a global scale. Want your help to get the best insights via metrics, traces, logs, and more.`,
+        paragraphs:`We are a highly-motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
+        lists: [
+            {
+                title: 'As part of the team you will ...',
+                items: [
+                    'Create obserability for our global infrastructure. We run dev environments (Kubernetes Pods) in Kubernetes clusters around the globe. You will impove and enhance our systems for collecting, storing and visualizing observability data, such as logs, metrics, alerts, traces and profiling data. We heavliy build on pre-existing solutions, such as Grafana, Prometheus, and the cloud platforms native solutions.',
+                    'Make Gitpod more observable. You will identify the best metrics endpoints Gitpod should expose and implement them or help colleageus to implement them. Same goes for proper tracing and logging.  ',
+                    'Co-own the product and work self-directed. We work with a very flat hierarchy, organizing our tasks in iterations with a lot of freedom. Create [work specific elements] where you think it makes sense.',
+                    'Work with the community and in the open. Our DNA is deeply rooted in open source and we are building Gitpod in public. We expect the same from you.']
+            },
+            {
+                title: 'You will be a great fit if ...',
+                items: [
+                    'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don\'t dictate.',
+                    'You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.',
+                    'You embrace Open Source. You follow relevant open-source projects, maybe you contributed, maybe you know the maintainers. Gitpod itself is open-source and built on open-source projects, such as Kubernetes, Helm, Terraform, Grafana, Prometheus and many more. Knowledge about such projects will help you work on Gitpod and knowledge about Open Source will help you make Gitpod a better Open Source project.',
+                    'You are Pragmatic. You understand that doing the right thing gives you momentum while doing a thing perfectly can cost a lot of time.',
+                    'You are a curious deep diver. You know that humans and documentation often do not have an answer. That is when you dive. You read code, issues, explore metrics, traces, logs or conduct experiments. When you surface, you know the answer and the team will love you.',
+                    'You are a good communicator. We work remote, our users are remote too. You value writing and express yourself concisely. You may hold strong opinions, but you are not ideological. You communicate thoughtfully, always assume others speak in good faith, aim to understand opposing perspectives and compromise when needed.'
+                ]
+            },
+            {
+                title: 'Our stack:',
+                items: [
+                    'Gitpod is an open source Kubernetes application. Services are written in Go and TypeScript (Node.JS), while all things frontend are React and TypeScript. We communicate using gRPC, RabbitMQ and JSON-RPC. We develop Gitpod in Gitpod, build using leeway and werft and automatically deploy preview environments for every branch.',
+                    'Browser-based productivity tools for the rest. Gitpod for development, GitHub for issue tracking and as git hoster, Slack for comms, Figma for design, Notion as our virtual HQ, Pitch for slides, Loom for screencasts and a few others.',
+                    'We run gitpod.io on Google Cloud Platform. There we use GKE, Buckets, BigQuery and more. We may expand to other cloud providers. We make Gitpod self-hosted available for vanilla Kubernetes, AWS, and more platforms in the future.',
+                    'We describe infrastructure using Helm and Terraform. We maintain a single helm chart to install Gitpod on Kubernetes. To create the cluster and other infrastructure around it, we use Terraform scripts.'
+                ]
+            },
+            {
+                title: 'We care about you',
+                items: [
+                    'Work life balance',
+                    'Fully-remote environment',
+                    'Competitive salary and equity package',
+                    'Monthly health benefit for your local gym or Freeletics',
+                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Blinkist, The Atlantic account and other educational budget',
+                    'Premium work-from-home equipment (Macbook Pro or Linux laptop, standing desk, monitor, webcam, mic)',
+                    'Flexible working hours',
+                    '6 weeks paid time-off'
+                ]
+            },
+        ],
+        textAfterTheLists: '',
+        rendered: false,
+        date: '2021-19-01T19:00:00.000Z'
+    },
+    {
+        title: 'Senior Kubernetes Engineer',
+        intro:`We want to run Gitpod workspaces in self-manged Kubernetes clusters to benefit from the latest and greated advancements from the open source ommunity. We want your help to create, automate and operate such clusters.`,
+        paragraphs:`We are a highly-motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
+        lists: [
+            {
+                title: 'As part of the team you will ...',
+                items: [
+                    'Create Kubernetes Clusters. You will use the latest and greatest Linux kernels, containerd and Kuberntes versions. You will automate the process of creating the cluster and ensure that it is perfectly suited to run Gitpods dev environemtns. The clusters will run on a public cloud.',
+                    'Help Gitpod being a good Kuberntes app. You know the best practices for running an app in Kuberntes and you will help implementing these best practices in Gitpod or help the team to folow the best practices. Resilience during incidents and deployment as well as security are of particular interest.',
+                    'Co-own the product and work self-directed. We work with a very flat hierarchy, organizing our tasks in iterations with a lot of freedom. Create [work specific elements] where you think it makes sense.',
+                    'Work with the community and in the open. Our DNA is deeply rooted in open source and we are building Gitpod in public. We expect the same from you.']
+            },
+            {
+                title: 'You will be a great fit if ...',
+                items: [
+                    'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don\'t dictate.',
+                    'You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.',
+                    'You embrace Open Source. You follow relevant open-source projects, maybe you contributed, maybe you know the maintainers. Gitpod itself is open-source and built on open-source projects, such as Kubernetes, Helm, Terraform, Grafana, Prometheus and many more. Knowledge about such projects will help you work on Gitpod and knowledge about Open Source will help you make Gitpod a better Open Source project.',
+                    'You are Pragmatic. You understand that doing the right thing gives you momentum while doing a thing perfectly can cost a lot of time.',
+                    'You are a curious deep diver. You know that humans and documentation often do not have an answer. That is when you dive. You read code, issues, explore metrics, traces, logs or conduct experiments. When you surface, you know the answer and the team will love you.',
+                    'You are a good communicator. We work remote, our users are remote too. You value writing and express yourself concisely. You may hold strong opinions, but you are not ideological. You communicate thoughtfully, always assume others speak in good faith, aim to understand opposing perspectives and compromise when needed.'
+                ]
+            },
+            {
+                title: 'Our stack:',
+                items: [
+                    'Gitpod is an open source Kubernetes application. Services are written in Go and TypeScript (Node.JS), while all things frontend are React and TypeScript. We communicate using gRPC, RabbitMQ and JSON-RPC. We develop Gitpod in Gitpod, build using leeway and werft and automatically deploy preview environments for every branch.',
+                    'Browser-based productivity tools for the rest. Gitpod for development, GitHub for issue tracking and as git hoster, Slack for comms, Figma for design, Notion as our virtual HQ, Pitch for slides, Loom for screencasts and a few others.',
+                    'We run gitpod.io on Google Cloud Platform. There we use GKE, Buckets, BigQuery and more. We may expand to other cloud providers. We make Gitpod self-hosted available for vanilla Kubernetes, AWS, and more platforms in the future.',
+                    'We describe infrastructure using Helm and Terraform. We maintain a single helm chart to install Gitpod on Kubernetes. To create the cluster and other infrastructure around it, we use Terraform scripts.'
+                ]
+            },
+            {
+                title: 'We care about you',
+                items: [
+                    'Work life balance',
+                    'Fully-remote environment',
+                    'Competitive salary and equity package',
+                    'Monthly health benefit for your local gym or Freeletics',
+                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Blinkist, The Atlantic account and other educational budget',
+                    'Premium work-from-home equipment (Macbook Pro or Linux laptop, standing desk, monitor, webcam, mic)',
+                    'Flexible working hours',
+                    '6 weeks paid time-off'
+                ]
+            },
+        ],
+        textAfterTheLists: '',
+        rendered: false,
+        date: '2021-19-01T19:00:00.000Z'
+    },
+    {
+        title: 'Senior Site Reliability Engineer (SRE)',
+        intro:`The infrastructure behind gitpod.io runs services and workspaces on a global scale and many professionals depend on it. We want your help to achive the required reliability.`,
+        paragraphs:`We are a highly-motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
+        lists: [
+            {
+                title: 'As part of the team you will ...',
+                items: [
+                    'Make gitpod more reliable. You apply best practices and lessons-learend from incidents to prevent future incidents. you implement the changes or work with colleageus and other teams to get the needed changes implemented.',
+                    'Conduct Root-Cause analysis of incidents. Post-Incident, you dive deep to understand what caused the incident and apply to knowledge to make gitpod.io more reliable.',
+                    'Mitigate incidents. If there is an incident, you know which switches to flip to quickly re-establish reliable service of Gitpod. You participate in on-call rotation.',
+                    'Drive aplication health. You help to establish SLIs and SLOs, so that we, as a company, can find a healthy balance between rolling out new features and fixing bugs.',
+                    'Co-own the product and work self-directed. We work with a very flat hierarchy, organizing our tasks in iterations with a lot of freedom. Create [work specific elements] where you think it makes sense.',
+                    'Work with the community and in the open. Our DNA is deeply rooted in open source and we are building Gitpod in public. We expect the same from you.']
+            },
+            {
+                title: 'You will be a great fit if ...',
+                items: [
+                    'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don\'t dictate.',
+                    'You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.',
+                    'You embrace Open Source. You follow relevant open-source projects, maybe you contributed, maybe you know the maintainers. Gitpod itself is open-source and built on open-source projects, such as Kubernetes, Helm, Terraform, Grafana, Prometheus and many more. Knowledge about such projects will help you work on Gitpod and knowledge about Open Source will help you make Gitpod a better Open Source project.',
+                    'You are Pragmatic. You understand that doing the right thing gives you momentum while doing a thing perfectly can cost a lot of time.',
+                    'You are a curious deep diver. You know that humans and documentation often do not have an answer. That is when you dive. You read code, issues, explore metrics, traces, logs or conduct experiments. When you surface, you know the answer and the team will love you.',
+                    'You are a good communicator. We work remote, our users are remote too. You value writing and express yourself concisely. You may hold strong opinions, but you are not ideological. You communicate thoughtfully, always assume others speak in good faith, aim to understand opposing perspectives and compromise when needed.'
+                ]
+            },
+            {
+                title: 'Our stack:',
+                items: [
+                    'Gitpod is an open source Kubernetes application. Services are written in Go and TypeScript (Node.JS), while all things frontend are React and TypeScript. We communicate using gRPC, RabbitMQ and JSON-RPC. We develop Gitpod in Gitpod, build using leeway and werft and automatically deploy preview environments for every branch.',
+                    'Browser-based productivity tools for the rest. Gitpod for development, GitHub for issue tracking and as git hoster, Slack for comms, Figma for design, Notion as our virtual HQ, Pitch for slides, Loom for screencasts and a few others.',
+                    'We run gitpod.io on Google Cloud Platform. There we use GKE, Buckets, BigQuery and more. We may expand to other cloud providers. We make Gitpod self-hosted available for vanilla Kubernetes, AWS, and more platforms in the future.',
+                    'We describe infrastructure using Helm and Terraform. We maintain a single helm chart to install Gitpod on Kubernetes. To create the cluster and other infrastructure around it, we use Terraform scripts.'
+                ]
+            },
+            {
+                title: 'We care about you',
+                items: [
+                    'Work life balance',
+                    'Fully-remote environment',
+                    'Competitive salary and equity package',
+                    'Monthly health benefit for your local gym or Freeletics',
+                    'Headspace | Calm and Asana Rebel | Dawn Dog account to support your 🧘‍♀️',
+                    'Blinkist, The Atlantic account and other educational budget',
+                    'Premium work-from-home equipment (Macbook Pro or Linux laptop, standing desk, monitor, webcam, mic)',
+                    'Flexible working hours',
+                    '6 weeks paid time-off'
                 ]
             },
         ],
