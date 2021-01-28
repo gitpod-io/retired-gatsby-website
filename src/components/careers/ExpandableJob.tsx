@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import styled from '@emotion/styled'
 import { colors, borders } from '../../styles/variables'
 import Arrow from '../Arrow'
 import GitpodLogo from '../../resources/gitpod-logo-dark.svg'
+// @ts-ignore
+import hyphenate from '../../utils/hyphenate'
 
 const StyledExpandableJob = styled.div`
   position: relative;
@@ -16,7 +18,7 @@ const StyledExpandableJob = styled.div`
     padding: 4rem 2rem 2rem 8rem;
   }
 
-  button {
+  .arrow-btn {
     position: absolute;
     top: 4rem;
     left: 4rem;
@@ -33,6 +35,28 @@ const StyledExpandableJob = styled.div`
       }
     }
   }
+
+  h3:hover {
+    .permalink {
+        visibility: visible;
+    }
+  }
+
+  .permalink {
+    display: inline-block;
+    height: 3rem;
+    transform: translateY(28%);
+    margin-left: 1rem;
+    visibility: hidden;
+
+    &:focus {
+      visibility: visible;  
+    }
+  }
+
+  .permalink-icon {
+    height: 3rem;
+   }
 
   p + p {
     margin-top: 2rem;
@@ -84,6 +108,13 @@ export interface ExpandableJobProps {
 
 const ExpandableJob = ({ title, intro, paragraphs, lists, textAfterTheLists, rendered, date }: ExpandableJobProps) => {
     const [isRendered, setIsRendered] = useState<boolean>(rendered || false)
+    const hash = `${hyphenate(title)}`
+
+    useEffect(() => {
+        if (window.location.hash === `#${hash}`) {
+            setIsRendered(true)
+        }
+    }, [])
 
     const toggleIsRendered = () => {
         setIsRendered(!isRendered)
@@ -132,13 +163,18 @@ const ExpandableJob = ({ title, intro, paragraphs, lists, textAfterTheLists, ren
     }
 
     return (
-        <StyledExpandableJob>
-            <button onClick={toggleIsRendered}>
+        <StyledExpandableJob id={hash}>
+            <button className="arrow-btn" onClick={toggleIsRendered}>
                 <Arrow
                     styles={{ transform: isRendered ? 'rotate(-90deg)' : 'rotate(90deg)' }}
                 />
             </button>
-            <h3>{title}</h3>
+            <h3>
+                {title} 
+                <a href={`#${hash}`} class="permalink">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="permalink-icon" viewBox="0 0 512 512"><path d="M208 352h-64a96 96 0 010-192h64m96 0h64a96 96 0 010 192h-64m-140.71-96h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+                </a>
+            </h3>
             <p>{intro}</p>
             {
                 isRendered ? (<>
