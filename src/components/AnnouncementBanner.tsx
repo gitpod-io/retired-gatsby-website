@@ -23,11 +23,14 @@ const StyledAnnouncementBanner = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .8rem 1rem;
+    padding: .8rem 0;
 
-    @media (max-width: 480px) {
-      flex-direction: column;
-      text-align: center;
+    @media(max-width: 340px) {
+        justify-content: flex-start;
+    }
+
+    @media(max-width: 290px) {
+        justify-content: center;
     }
   }
 
@@ -36,9 +39,9 @@ const StyledAnnouncementBanner = styled.div`
   }
 
   .wrapper {
-    @media(max-width: 460px) {
+    @media(max-width: 285px) {
         display: block;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
     }
   }
 
@@ -52,6 +55,11 @@ const StyledAnnouncementBanner = styled.div`
     border-color: ${colors.lightBlue};
     margin-left: 1.5rem;
     font-size: 1.4rem;
+
+    @media(max-width: 300px) {
+        font-size: 1.3rem;
+        margin-left: .3rem;
+    }
 
     &:hover,
     &:focus {

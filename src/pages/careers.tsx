@@ -69,6 +69,12 @@ const StyledCareersPage = styled.div`
             text-align: center;
         }
 
+        .text {
+            max-width:  720px;
+            text-align: center;
+            margin: auto;
+        }
+
         .pattern-bg {
             margin-top: 12rem;
         }
@@ -529,7 +535,7 @@ export const jobs: ExpandableJobProps[] = [
     },
 ]
 
-const Careers = ({data}) => (
+const Careers = ({data}: any) => (
     <IndexLayout
         canonical="/careers"
         title="Careers"
@@ -567,9 +573,9 @@ const Careers = ({data}) => (
                 <div className="row">
                     <h2>Current <strong>Job Openings</strong></h2>
                     <div className="text">
-                            <p>We aim to <strong>free developers from the friction of manual, stateful, local dev environments.</strong> We believe that in a few years working with ephemeral, automated dev environments is going to be as common as using version control or having CI/CD. <strong> Help us pioneering this! 👐 </strong> </p>
-                            <br /><br />
-                        </div>
+                        <p>We aim to <strong>free developers from the friction of manual, stateful, local dev environments.</strong> We believe that in a few years working with ephemeral, automated dev environments is going to be as common as using version control or having CI/CD. <strong> Help us pioneering this! 👐 </strong> </p>
+                        <br /><br />
+                    </div>
                     <div>
                         {jobs.map((job, i) => <ExpandableJob key={i + job.title} {...job} />)}
                     </div>
