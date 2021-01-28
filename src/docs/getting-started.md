@@ -11,6 +11,8 @@ You can start using Gitpod with one or more of the following ways:
 - Enable [GitLab Integration](#gitlab-integration)
 - Quick start using an [Example Project](#example-project) or [OSS Project](#gitpodified-open-source-project)
 
+`youtube: ZZ0_TQ6UApY`
+
 ## Prefixed URL
 
 You can quickly open a new workspace for your project using a context URL like repository, branch, pull request, issue, or file. Just prefix the URL in the address bar of your browser with `gitpod.io/#`.
