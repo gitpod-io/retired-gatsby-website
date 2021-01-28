@@ -10,9 +10,9 @@ Here are a few JavaScript example projects that are automated with Gitpod:
 
 | Repository                                             | Description                                                                 | Try it                                                                                                                      |
 | ------------------------------------------------------ | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| [MobX](https://github.com/mobxjs/mobx)                 | Simple, scalable state management.                                          | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mobxjs/mobx)         |
-| [Mozilla pdf.js](https://github.com/mozilla/pdf.js)    | PDF.js is a Portable Document Format (PDF) viewer that is built with HTML5. | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mozilla/pdf.js)      |
-| [Tesseract.js](https://github.com/naptha/tesseract.js) | Pure Javascript OCR for more than 100 Languages.                            | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/naptha/tesseract.js) |
+| [Tesseract.js](https://github.com/naptha/tesseract.js) | Pure JavaScript OCR for more than 100 Languages | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/naptha/tesseract.js) |
+| [freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | [freeCodeCamp.org](https://www.freecodecamp.org/)'s open source codebase and curriculum | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/freeCodeCamp/freeCodeCamp) |
+| [Mozilla PDF.js](https://github.com/mozilla/pdf.js)    | PDF.js is a PDF viewer that is built with HTML5 | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mozilla/pdf.js) |
 
 </div>
 
