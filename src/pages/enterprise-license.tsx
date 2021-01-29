@@ -435,7 +435,7 @@ const EnterpriseLicensePage = () => {
               <a href="https://calendly.com/gitpod/sales" className="btn btn--cta">
                 Schedule a Call
               </a>
-              <Link to="/contact" className="btn">
+              <Link to="/contact/" className="btn">
                 Write Us a Mail
               </Link>
             </div>

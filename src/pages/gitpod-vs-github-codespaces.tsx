@@ -279,7 +279,7 @@ const GitpodVsGitHubCodespacesPage = () => (
                 <td className="footnote disclaimer" colSpan={2}>
                   Disclaimer: All information, prices, and data were last verified on Sept. 25, 2020. To report any incorrect or outdated
                   information, please{' '}
-                  <Link to="/contact" style={{ fontWeight: 400 }}>
+                  <Link to="/contact/" style={{ fontWeight: 400 }}>
                     contact us.
                   </Link>
                 </td>

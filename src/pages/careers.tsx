@@ -537,7 +537,7 @@ export const jobs: ExpandableJobProps[] = [
 
 const Careers = ({data}: any) => (
     <IndexLayout
-        canonical="/careers"
+        canonical="/careers/"
         title="Careers"
     >
         <StyledCareersPage>
