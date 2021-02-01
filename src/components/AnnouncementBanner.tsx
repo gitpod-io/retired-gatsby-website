@@ -97,16 +97,16 @@ const StyledAnnouncementBanner = styled.div`
   }
 `;
 
-function markWasShown(): void {
+function markWasDisplayed(): void {
     if (typeof localStorage !== 'undefined') {
-        localStorage.setItem('wasShown', 'true');
+        localStorage.setItem('wasDisplayed', 'true');
     }
 }
 
-function wasShown(): boolean {
+function wasDisplayed(): boolean {
     if (typeof localStorage !== 'undefined') {
         // @ts-ignore
-        return localStorage.getItem('wasShown')
+        return localStorage.getItem('wasDisplayed')
     }
     return false;
 }
@@ -121,7 +121,7 @@ const AnnoucementBanner = () => {
         }
 
         // @ts-ignore
-        markWasShown(true);
+        markWasDisplayed(true);
 
         setTimeout(() => {
             if (null !== bannerRef.current) {
@@ -131,8 +131,8 @@ const AnnoucementBanner = () => {
     }
 
     useEffect(() => {
-        const wasAlreadyShown = wasShown();
-        if (wasAlreadyShown) {
+        const wasAlreadyDisplayed = wasDisplayed();
+        if (wasAlreadyDisplayed) {
             if (null !== bannerRef.current) {
                 bannerRef.current.style.display = 'none';
             }
@@ -142,7 +142,7 @@ const AnnoucementBanner = () => {
     return (
         <StyledAnnouncementBanner ref={bannerRef} style={{ 
             display: 
-            wasShown() ? 'none' : 
+            wasDisplayed() ? 'none' : 
             'inline' }}>
             <div className="row">
                 <div className="text">
