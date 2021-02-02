@@ -226,6 +226,13 @@ export default function ContactPage(props: any) {
                       ))}
                   </select>
                 </div>
+                <div>
+                    <p>Looking for help with a common request?</p>
+                    <ul>
+                        <li><a href="https://community.gitpod.io/">Get help from the Gitpod Community</a></li>
+                    </ul>
+                </div>
+                <label style={{ marginTop: 15, marginBottom: 10 }}>How can we help?</label>
                 <label className="visually-hidden" htmlFor="message">
                   Please type your message
                 </label>
