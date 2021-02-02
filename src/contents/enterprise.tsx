@@ -19,7 +19,7 @@ export const textCardsData = [
     },
     {
         title: "Smooth Integration",
-        paragraphs: ['All Gitpod needs is a Kubernetes cluster.', 'It enables user authentication and integration with your GitHub Enterprise, GitLab, or Bitbucket.', <>Please <Link to="/contact/" state={{ subject: 'I have a question regarding Gitpod Enterprise' }}>contact us</Link> for further customizations.</>],
+        paragraphs: ['All Gitpod needs is a Kubernetes cluster.', 'It enables user authentication and integration with your GitHub Enterprise, GitLab, or Bitbucket.', <>Please <Link to="/contact/" state={{ subject: 'Question about Gitpod Enterprise' }}>contact us</Link> for further customizations.</>],
         logos: ['Bitbucket', 'Github', 'Gitlab', 'Git']
     },
     // {

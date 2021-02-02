@@ -3,7 +3,7 @@
 Today we are happy to announce that we are moving out of beta.
 We want to thank all the beta testers who have provided great feedback. Gitpod wouldn't be what it is without you! ❤️
 
-You can read more about the announcement in [the blog post](https://www.gitpod.io/blog/gitpod-launch).
+You can read more about the announcement in [the blog post](https://www.gitpod.io/blog/gitpod-launch/).
 
 Besides a complete relaunch of the website and app, we have added some very exciting new features:
 

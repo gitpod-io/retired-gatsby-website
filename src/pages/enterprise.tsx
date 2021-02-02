@@ -143,7 +143,7 @@ const EnterprisePage: React.SFC<{}> = ({data}: any) => (
                 </tr>
                 <tr className="buttons">
                     <th></th>
-                    <td><Link to="/contact/" state={{ subject: "I have a question regarding Gitpod Enterprise" }} className="btn btn--cta">Contact Sales</Link></td>
+                    <td><Link to="/contact/" state={{ subject: "Question about Gitpod Enterprise" }} className="btn btn--cta">Contact Sales</Link></td>
                     <td><Link to="/self-hosted/" className="btn">Host Yourself</Link></td>
                 </tr>
             </tbody>
@@ -152,7 +152,7 @@ const EnterprisePage: React.SFC<{}> = ({data}: any) => (
         <ActionCard
             title='Didn’t find what you’re looking for?'
             text='Please get in touch. We’re happy to answer your questions.'
-            anchors={[{ href: 'https://calendly.com/gitpod/sales', text: 'Schedule a Call' }, { href: '/contact/', subject: "I have a question regarding Gitpod Enterprise", text: 'Contact' }]}
+            anchors={[{ href: 'https://calendly.com/gitpod/sales', text: 'Schedule a Call' }, { href: '/contact/', subject: "Question about Gitpod Enterprise", text: 'Contact' }]}
         />
 
     </IndexLayout>

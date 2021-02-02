@@ -61,6 +61,6 @@ All important features in Gitpod go through a beta phase, so you get the chance 
 
 ## I run GitLab Self-Managed!
 
-If you want to use Gitpod with your self-managed instance of GitLab, you'll need to wait a bit longer for Gitpod Enterprise (or [apply for our private beta](https://www.typefox.io/contact/)).
+If you want to use Gitpod with your self-managed instance of GitLab, you'll need to wait a bit longer for Gitpod Enterprise (or [apply for our private beta](https://www.gitpod.io/contact/)).
 
 Gitpod Enterprise will be released soon and allows to run Gitpod either self-managed or managed by us. Gitpod Enterprise runs on Google Cloud or any vanilla Kubernetes installation and can be configured to connect with any GitLab or GitHub installation.
