@@ -22,7 +22,7 @@ In Gitpod you can register your own GitLab OAuth application. This allows to use
 
 Here's how to do that:
 
-1) Head over to [the settings](https://gitpod.io/settings) and scroll to the section about `Git Provider`.
+1) Head over to [the settings](https://gitpod.io/settings/) and scroll to the section about `Git Provider`.
 
 <img width="739" alt="Screenshot 2020-08-25 at 08 30 39" src="https://user-images.githubusercontent.com/372735/101290251-480f0a00-3801-11eb-8c2a-14dc442fceeb.png">
 
