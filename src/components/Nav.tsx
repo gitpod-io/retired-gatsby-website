@@ -15,7 +15,7 @@ const StyledNav = styled.nav`
     padding: 4rem 0;
     position: relative;
 
-    @media(max-width: 1040px) {
+    @media(max-width: 900px) {
         font-size: 110%;
         display: block;
     }
@@ -42,7 +42,7 @@ const StyledNav = styled.nav`
         display: flex;
         align-items: center;
 
-        @media(max-width: 1040px) {
+        @media(max-width: 900px) {
             flex-direction: column;
             width: 100%;
             padding-top: 8rem;
@@ -56,7 +56,7 @@ const StyledNav = styled.nav`
         }
     }
 
-    @media(max-width: 1040px) {
+    @media(max-width: 900px) {
         .navIsRendered {
             display: flex;
         }
@@ -69,13 +69,13 @@ const StyledNav = styled.nav`
     .nav__item {
         cursor: pointer;
 
-        @media(min-width: 1041px) {
+        @media(min-width: 901px) {
             &:not(:last-child) {
                 margin-right: 4rem;
             }
         }
 
-        @media(max-width: 1040px) {
+        @media(max-width: 900px) {
             width: 100%;
             padding: 2rem 0;
 
@@ -93,7 +93,7 @@ const StyledNav = styled.nav`
         display: flex;
         align-items: center;
 
-        @media(min-width: 1041px) {
+        @media(min-width: 901px) {
             display: none;
         }
 
@@ -162,7 +162,7 @@ const StyledNav = styled.nav`
             }
         }
 
-        @media(min-width: 1041px) {
+        @media(min-width: 901px) {
             display: none;
         }
 
@@ -173,7 +173,7 @@ const StyledNav = styled.nav`
     }
 
 
-    @media(max-width: 1040px) {
+    @media(max-width: 900px) {
         .shown {
             opacity: 1;
             transform: scale(1) translateX(0);
@@ -214,7 +214,7 @@ const Nav = ({ isAFlowPage, showReInstallExtensionButton }: { isAFlowPage?: bool
     const [browser, setBrowser] = useState<any>()
 
     const unLock = () => {
-        if (window.innerWidth >= 1040) {
+        if (window.innerWidth >= 900) {
             setIsNavRendered(false)
         }
     }
@@ -296,15 +296,37 @@ const Nav = ({ isAFlowPage, showReInstallExtensionButton }: { isAFlowPage?: bool
 
                     {
                         !isAFlowPage ? (
-                            <ul className={`nav__items ${isNavRendered ? 'navIsRendered' : 'navIsNotRendered'}`} >
-                                <li className="nav__item"><Link activeClassName="active" to='/features/' className="link">Features</Link></li>
-                                <li className="nav__item"><Link activeClassName="active" to='/screencasts/' className="link">Screencasts</Link></li>
-                                <li className="nav__item"><Link activeClassName="active" to='/self-hosted/' className="link">Install</Link></li>
-                                <li className="nav__item"><Link activeClassName="active" to='/pricing/' className="link">Pricing</Link></li>
-                                <li className="nav__item"><Link activeClassName="active" to='/docs/' className="link">Docs</Link></li>
-                                <li className="nav__item"><Link activeClassName="active" to='/blog/' className="link">Blog</Link></li>
-                                <li className="nav__item"><Link activeClassName="active" to='https://community.gitpod.io/' target='true' className="link">Community</Link></li>
-                                <li className="nav__item"><a href="https://gitpod.io/login/" rel="noopener" className="btn btn--small">Log In</a></li>
+                           <ul className={`nav__items ${isNavRendered ? 'navIsRendered' : 'navIsNotRendered'}`} >
+                                <li className="nav__item">
+                                    <Link activeClassName="active" to='/features/' className="link">
+                                        Features
+                                    </Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link activeClassName="active" to='/screencasts/' className="link">
+                                        Screencasts
+                                    </Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link activeClassName="active" to='/docs/' className="link">
+                                        Docs
+                                    </Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link activeClassName="active" to='/blog/' className="link">
+                                        Blog
+                                    </Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link activeClassName="active" to='/pricing/' className="link">
+                                        Pricing
+                                    </Link>
+                                </li>
+                                <li className="nav__item">
+                                    <a href="https://gitpod.io/login/" rel="noopener" className="btn btn--small">
+                                        Log In
+                                    </a>
+                                </li>
                             </ul>
                         ) : null
                     }
