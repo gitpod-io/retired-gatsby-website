@@ -49,4 +49,10 @@ export const projects = [
         bitbucketUrl: "https://bitbucket.org/gitpod/ruby-on-rails",
         alt: "Ruby",
     },
+    {
+        image: <ImageProvider fileName="php.png" alt="Python" />,
+        title: 'PHP & Symfony',
+        githubUrl: "https://github.com/gitpod-io/symfony-demo",
+        alt: "PHP",
+    },
 ]
