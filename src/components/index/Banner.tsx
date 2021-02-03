@@ -94,6 +94,9 @@ const Banner = () => (
                 <a href="#get-started" className="btn btn--cta">
                   Try Now
                 </a>
+                <a href="https://www.gitpod.io/docs/getting-started/" className="btn" style={{ marginLeft: '8px' }}>
+                    Getting Started
+                </a>
                 <p className="works-with">
                   Works with
                   <img src={GitLab} alt="GitLab" />
