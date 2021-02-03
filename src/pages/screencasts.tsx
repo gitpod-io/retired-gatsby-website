@@ -8,7 +8,7 @@ import screencastsData from '../contents/screencasts.json'
 const ScreencastsPage = () => (
     <IndexLayout canonical='/screencasts/'>
         <Hero />
-        <Screencasts 
+        <Screencasts
             screencasts={screencastsData.screencasts}
         />
     </IndexLayout>

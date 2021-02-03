@@ -86,12 +86,12 @@ module.exports = {
     'gatsby-plugin-typescript',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    { 
-        resolve: `gatsby-source-filesystem`, 
-        options: { 
+    {
+        resolve: `gatsby-source-filesystem`,
+        options: {
             path: `./src/resources/`,
             name: `resources`
-        } 
+        }
     },
     {
         resolve: `gatsby-source-filesystem`,

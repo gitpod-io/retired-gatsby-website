@@ -145,8 +145,8 @@ const IndexPage: React.SFC<{}> = () => (
 
     <SecurityAndOSS />
 
-    <MoreInfo 
-        backgroundShouldBeWhite={true} 
+    <MoreInfo
+        backgroundShouldBeWhite={true}
         negativeSpaceTop={`-11rem`}
     />
   </IndexLayout>

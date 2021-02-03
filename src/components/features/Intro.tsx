@@ -82,8 +82,8 @@ const Intro = () => (
       <div className="row">
         <Styled>
           <section className="intro pattern">
-            <Img 
-                fluid={data.file.childImageSharp.fluid} 
+            <Img
+                fluid={data.file.childImageSharp.fluid}
                 alt="Ice Stick"
                 className="ice-stick"
             />

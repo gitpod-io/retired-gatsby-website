@@ -140,19 +140,19 @@ const AnnoucementBanner = () => {
     })
 
     return (
-        <StyledAnnouncementBanner ref={bannerRef} style={{ 
-            display: 
-            wasDisplayed() ? 'none' : 
+        <StyledAnnouncementBanner ref={bannerRef} style={{
+            display:
+            wasDisplayed() ? 'none' :
             'inline' }}>
             <div className="row">
                 <div className="text">
                     <p>
                             <span className="wrapper">We're hiring!<span className="emojis">🌈 🌎</span></span>
-                            <Link 
-                                to="/careers/#jobs" 
+                            <Link
+                                to="/careers/#jobs"
                                 className="btn btn--cta btn--small"
                             >
-                                <strong>{jobs.length}</strong> 
+                                <strong>{jobs.length}</strong>
                                 &nbsp;Openings
                             </Link>
                     </p>

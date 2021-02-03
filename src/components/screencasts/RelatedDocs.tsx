@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 
 export interface RelatedDoc {
-    title: string; 
+    title: string;
     path: string;
 }
 
@@ -17,7 +17,7 @@ const RelatedDocs = ({ relatedDocs }: {relatedDocs: RelatedDoc[]}) => (
         Related documentation:&nbsp;
         {
             relatedDocs.map(({path, title}: RelatedDoc, i) => (
-                <> 
+                <>
                 <Link to={`/docs${path}`}>{title}</Link>
                 {
                     relatedDocs.length > 0 && relatedDocs[i + 1] && !relatedDocs[i + 2] ? ' and ' : relatedDocs.length > 0 && relatedDocs[i + 1] ? ', ' : null
@@ -26,6 +26,6 @@ const RelatedDocs = ({ relatedDocs }: {relatedDocs: RelatedDoc[]}) => (
             ))
         }
     </StyledRelatedDocs>
-) 
+)
 
 export default RelatedDocs

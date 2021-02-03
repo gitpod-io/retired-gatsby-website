@@ -106,7 +106,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
     .g-image {
         position: relative;
         width: 7rem;
-        height: 7rem;        
+        height: 7rem;
         margin: 0 0 5rem;
     }
 

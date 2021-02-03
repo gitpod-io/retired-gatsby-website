@@ -23,16 +23,16 @@ interface ImageProviderProps {
     placeholderStyles?: CSSProperties
 }
 
-const ImageProvider = ({ 
-    fileName, 
-    alt, 
-    wrapperStyles, 
-    imageStyles, 
-    isNotRelativeToGatsbyImgWrapper, 
-    IsAPricingBoxIcon, 
-    isBlurred, 
-    fluidData, 
-    providerStyles, 
+const ImageProvider = ({
+    fileName,
+    alt,
+    wrapperStyles,
+    imageStyles,
+    isNotRelativeToGatsbyImgWrapper,
+    IsAPricingBoxIcon,
+    isBlurred,
+    fluidData,
+    providerStyles,
     className,
     placeholderStyles
 }: ImageProviderProps) => {
@@ -60,12 +60,12 @@ const ImageProvider = ({
     const found = allImageSharp.nodes.find((n: any) => {
         return n.fluid.originalName === fileName
     })
-   
+
     resultingFluid = isBlurred ? found.blurredFluid : found.fluid
   }
-  
+
   const imageStylesIfIsNotRelativeToGatsbyImgWrapper = {
-    top: '50%', 
+    top: '50%',
     transform: 'translateY(-50%) scale(.93)',
   };
 
@@ -81,12 +81,12 @@ const ImageProvider = ({
 
   return (
     <StyledImageProvider style={providerStyles}>
-        <Img 
-            className={`gatsby-image ${className}`} 
-            fluid={!fluidData ? resultingFluid : fluidData} 
-            alt={alt} 
+        <Img
+            className={`gatsby-image ${className}`}
+            fluid={!fluidData ? resultingFluid : fluidData}
+            alt={alt}
             style={{position, ...wrapperStyles}}
-            imgStyle={isNotRelativeToGatsbyImgWrapper ? imageStylesIfIsNotRelativeToGatsbyImgWrapper : imageStyles ? imageStyles : {}} 
+            imgStyle={isNotRelativeToGatsbyImgWrapper ? imageStylesIfIsNotRelativeToGatsbyImgWrapper : imageStyles ? imageStyles : {}}
             placeholderStyle={placeholderStyles}
         />
     </StyledImageProvider>

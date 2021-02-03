@@ -127,7 +127,7 @@ const ActivationPage = () => (
                     <p>Now you can easily spin up dev environments with a single click.</p>
                 </div>
             </div>
-            
+
             <div className="row">
                 <img className="screenshot" src={ExtensionScreenshot} alt="Gitpod Browser Extension" />
             </div>

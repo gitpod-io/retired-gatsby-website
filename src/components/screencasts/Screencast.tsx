@@ -35,7 +35,7 @@ const StyledScreencast = styled(Link)`
     }
 
     h3,
-    .h3 { 
+    .h3 {
         font-size: 1.9rem;
         margin: 2rem 0 .8rem;
         transition: all .2s;
@@ -62,9 +62,9 @@ const Screencast = ({tile, title, duration, headingType}: ScreencastProps) => (
         to={`/screencasts/${hyphenate(title)}/`}
     >
         <ImageProvider
-            fileName={tile} 
-            alt={`Gitpod Screencast: ${title}`} 
-            isBlurred={true} 
+            fileName={tile}
+            alt={`Gitpod Screencast: ${title}`}
+            isBlurred={true}
             providerStyles={{height: 'auto', boxShadow: '0 2rem 4rem rgba(0,0,0, .2)'}}
             placeholderStyles={{border: borders.light}}
         />

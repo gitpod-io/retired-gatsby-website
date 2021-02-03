@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 
 const StyledEmbed = styled.div`
     position: relative;
-    padding-bottom: 62.5%; 
+    padding-bottom: 62.5%;
     height: 0;
     margin: 4rem auto 6rem;
     max-width: 1040px;
@@ -27,17 +27,17 @@ interface YouTubeEmbedProps {
 }
 
 const YouTubeEmbed = ({embedId}: YouTubeEmbedProps) => (
-    <StyledEmbed 
+    <StyledEmbed
         className="row"
     >
-        <iframe 
+        <iframe
             src={`https://www.youtube.com/embed/${embedId}`}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             // @ts-ignore
-            webkitallowfullscreen 
-            mozallowfullscreen 
-            allowfullscreen 
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
             style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
         >
         </iframe>

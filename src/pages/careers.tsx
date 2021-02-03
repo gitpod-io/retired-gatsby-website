@@ -378,7 +378,7 @@ export const jobs: ExpandableJobProps[] = [
     {
         title: 'Senior Kubernetes Engineer',
         intro:`We want to run Gitpod workspaces in self-managed Kubernetes clusters to benefit from the latest and greatest advancements from the open source community. We want your help to create, automate and operate such clusters.`,
-        paragraphs:`We are a highly-motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. 
+        paragraphs:`We are a highly-motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others.
         We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
         lists: [
             {
@@ -553,8 +553,8 @@ const Careers = ({data}: any) => (
                 <div className="row">
                     <div className="team">
                         <div className="img-container">
-                            <ImageProvider 
-                                fluidData={data.file.childImageSharp.fluid} alt="Gitpod Team" 
+                            <ImageProvider
+                                fluidData={data.file.childImageSharp.fluid} alt="Gitpod Team"
                                 isBlurred={true}
                             />
                         </div>
@@ -596,7 +596,7 @@ const Careers = ({data}: any) => (
 
 export default Careers
 
-export const query = graphql` 
+export const query = graphql`
     query {
         file(relativePath: { eq: "team_2020.jpg" }) {
             childImageSharp {
