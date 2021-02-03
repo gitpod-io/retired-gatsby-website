@@ -70,10 +70,10 @@ const Difference = ({title, spacing}: DifferenceProps) => {
           className="btn btn--big btn--cta"
         >
          <span>
-              <img 
-            src={browser === 'Firefox' ? Firefox : Chrome } 
-            alt={browser}  
-          /> 
+              <img
+            src={browser === 'Firefox' ? Firefox : Chrome }
+            alt={browser}
+          />
           Add to {browser}
          </span>
         </a>

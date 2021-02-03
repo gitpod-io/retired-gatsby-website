@@ -4,7 +4,7 @@ const { execSync } = require('child_process');
 const { URL } = require('url');
 const path = require('path')
 const screencasts = require('./src/contents/screencasts.json').screencasts
-const hyphenate = require('./src/utils/hyphenate') 
+const hyphenate = require('./src/utils/hyphenate')
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
     const { createNodeField } = actions
@@ -104,7 +104,7 @@ exports.createPages = async ({ graphql, actions }) => {
             context: {
                 screencast,
                 nextScreencast: screencasts[i + 1] ? screencasts[i + 1] : null
-            }        
+            }
         })
     })
 }

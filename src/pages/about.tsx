@@ -196,7 +196,7 @@ const AboutPage: React.SFC<{}> = ({data}) => (
             <div className="row pattern">
                 <header role="banner" className="banner">
                     <div className="banner__img-container">
-                        <ImageProvider 
+                        <ImageProvider
                             fluidData={data.doubleArrows.childImageSharp.fluid}
                             alt="2 Right Arrows"
                             className="banner__img"
@@ -222,7 +222,7 @@ const AboutPage: React.SFC<{}> = ({data}) => (
                         <p>With Gitpod, we set out to streamline how software is written today. We make software development more accessible with instant, automated, and ready-to-code development environments.</p>
                     </div>
                     <div className="developers__img-container">
-                        <ImageProvider 
+                        <ImageProvider
                             fluidData={data.doubleArrows.childImageSharp.fluid}
                             alt="2 Right Arrows"
                             className="banner__img"
@@ -274,7 +274,7 @@ const AboutPage: React.SFC<{}> = ({data}) => (
 
 export default AboutPage
 
-export const query = graphql` 
+export const query = graphql`
     query {
         team: file(relativePath: { eq: "team_2020.jpg" }) {
             childImageSharp {

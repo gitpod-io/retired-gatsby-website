@@ -8,7 +8,7 @@ import MapGrey from '../resources/map-grey.svg'
 const StyledMoreInfo = styled.div<{negativeSpaceTop?: string}>`
     @media(min-width: calc(${sizes.breakpoints.md} + 1px)) {
         margin-top: ${({negativeSpaceTop}) => negativeSpaceTop };
-    }   
+    }
 `
 
 const StyledPricingLinks = styled.section`

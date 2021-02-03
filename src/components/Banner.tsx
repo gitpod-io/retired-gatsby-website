@@ -55,7 +55,7 @@ const StyledBanner = styled.header`
   .img-container {
     display: block;
     flex: 0 0 30%;
-    
+
     @media (min-width: 961px) {
       margin-left: 3rem;
     }

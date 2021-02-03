@@ -24,7 +24,7 @@ const Screencasts = ({ screencasts }: { screencasts: ScreencastProps[] }) => (
             screencasts.map(
                 (screencast: ScreencastProps, i) => <Screencast
                     key={i+screencast.title}
-                    {...screencast} 
+                    {...screencast}
                 />
             )
         }

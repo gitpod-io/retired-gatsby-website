@@ -128,11 +128,11 @@ const Form = () => {
                         <textarea onChange={handleTextAreaChange} aria-label="Do you have any other feedback?" placeholder="Do you have any other feedback?" name="otherFeedback"></textarea>
                         <button className="btn" disabled={!state.feedback && !state.otherFeedback}>Send</button>
                     </div>
-                </>) : ( 
+                </>) : (
                 <div className="sucess">
                     <img src={tick} className="tick" alt="Tick" />
                     <h3>Thanks for your Feedback</h3>
-                </div> 
+                </div>
                 )
             }
         </StyledForm>

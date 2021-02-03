@@ -124,7 +124,7 @@ class IndexLayout extends React.Component<{ title?: string; canonical?: string; 
               </CookieConsent>
               {children}
             </LayoutMain>
-            {  
+            {
                 !this.props.isAFlowPage ? <Footer /> : <MinimalFooter />
             }
           </LayoutRoot>
