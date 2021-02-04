@@ -47,6 +47,12 @@ In order to make live reload work we need to add a bit of configuration as speci
   ```
   This will set `CLIENT_URL` to the workspace url of port `35729` (default port for livereload in Gitpod).
 
+## Example Projects
+
+| Repository | Description | Try it |
+| --- | --- | --- |
+| [SvelteJS template](https://github.com/gitpod-io/sveltejs-template) | A project template for Svelte apps | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/sveltejs-template) |
+
 ## VSCode Extensions
 
 ### Svelte for VS Code
