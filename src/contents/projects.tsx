@@ -50,7 +50,7 @@ export const projects = [
         alt: "Ruby",
     },
     {
-        image: <ImageProvider fileName="php.png" alt="Python" />,
+        image: <ImageProvider fileName="php.png" alt="PHP" />,
         title: 'PHP & Symfony',
         githubUrl: "https://github.com/gitpod-io/symfony-demo",
         alt: "PHP",
