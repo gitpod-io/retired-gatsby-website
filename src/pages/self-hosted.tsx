@@ -41,7 +41,6 @@ const features: FeatureItemProps[] = [
 ]
 
 const SelfHostedPage: React.SFC<{}> = ({ data }: any) => {
-    console.log(data);
     return (
         <IndexLayout canonical="/self-hosted/" title="Self-Hosted">
             <>
