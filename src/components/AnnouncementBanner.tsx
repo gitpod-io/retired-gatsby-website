@@ -85,7 +85,7 @@ const StyledAnnouncementBanner = styled(Link)`
     }
 
     @media(max-width: 405px) {
-        padding: .2rem .9rem; 
+        padding: .2rem .9rem;
     }
   }
 
