@@ -269,7 +269,9 @@ const GitpodVsGitHubCodespacesPage = () => (
               </tr>
               <tr>
                 <th>Multi-IDE Support</th>
-                <td>Coming soon</td>
+                <td>
+                  <Tick />
+                </td>
                 <td>
                   <Cross />
                 </td>
