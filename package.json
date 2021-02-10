@@ -55,6 +55,7 @@
     "gatsby-transformer-json": "^2.4.3",
     "gatsby-transformer-remark": "^2.8.13",
     "gatsby-transformer-sharp": "^2.5.3",
+    "nanoid": "^3.1.20",
     "polished": "^3.6.4",
     "prism-themes": "^1.4.0",
     "prismjs": "^1.20.0",

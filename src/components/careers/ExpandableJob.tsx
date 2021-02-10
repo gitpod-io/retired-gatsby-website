@@ -6,6 +6,7 @@ import Arrow from '../Arrow'
 import GitpodLogo from '../../resources/gitpod-logo-dark.svg'
 // @ts-ignore
 import hyphenate from '../../utils/hyphenate'
+import { nanoid } from 'nanoid'
 
 const StyledExpandableJob = styled.div`
   position: relative;
@@ -120,7 +121,7 @@ const ExpandableJob = ({ title, intro, paragraphs, lists, textAfterTheLists, ren
         setIsRendered(!isRendered)
     }
 
-    const applicationEmail = `mailto:contact@typefox.io?subject=Application as ${title}`
+    const applicationEmail = `mailto:contact@typefox.io?subject=Application as ${title}, id=${nanoid(10)}`
 
     const structuredData = {
         '@context': 'https://schema.org/',
@@ -171,8 +172,8 @@ const ExpandableJob = ({ title, intro, paragraphs, lists, textAfterTheLists, ren
             </button>
             <h3>
                 {title}
-                <a href={`#${hash}`} class="permalink">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="permalink-icon" viewBox="0 0 512 512"><path d="M208 352h-64a96 96 0 010-192h64m96 0h64a96 96 0 010 192h-64m-140.71-96h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
+                <a href={`#${hash}`} className="permalink">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="permalink-icon" viewBox="0 0 512 512"><path d="M208 352h-64a96 96 0 010-192h64m96 0h64a96 96 0 010 192h-64m-140.71-96h187.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/></svg>
                 </a>
             </h3>
             <p>{intro}</p>
