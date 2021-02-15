@@ -12,7 +12,7 @@ To enable [prebuilt workspaces](/docs/prebuilds/) for your GitHub project you ne
 
 ## OAuth Application
 
-In Gitpod Self-Hosted you can register your own GitLab OAuth application. This allows to use Gitpod with any GitHub instance.
+In Gitpod Self-Hosted you can register your own GitHub OAuth application. This allows to use Gitpod with any GitHub instance.
 
 Here's how to do that:
 
