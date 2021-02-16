@@ -20,7 +20,7 @@ tasks:
 - command: echo Terminal1
 - command: echo Terminal2
 ```
-They are started in parallel. See [belows options](#openin) on configuring where and how the terminals are placed in the workbench.
+They are started in parallel. See [below options](#openin) on configuring where and how the terminals are placed in the workbench.
 
 ## Defining Commands
 
