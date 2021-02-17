@@ -266,7 +266,7 @@ const EnterpriseLicensePage = () => {
             email: state.email,
             name: state.firstName + ' ' + state.lastName
         },
-        subject: 'Requesting a professional self-hosted license     (from ' + state.email + ')',
+        subject: 'Requesting a professional self-hosted license (from ' + state.email + ')',
         message: `
     ${state.company}
     ${state.firstName} ${state.lastName}
