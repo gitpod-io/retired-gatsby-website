@@ -76,11 +76,11 @@ const StyledContactPage = styled.div`
 `
 
 const subjects: string[] = [
-    'Question about Gitpod\'s Plans / Pricing',
-    'Student Unlimited: Get Verified as a Student',
+    'Question about Gitpod Self-Hosted',
+    'Question about Gitpod\'s Paid Plans',
     'Applying for Professional Open Source',
-    'Applying for the Custom IDE Support Beta',
-    'Applying for a Job at Gitpod',
+    'Applying for the Custom IDE Beta',
+    'Student Unlimited: Get Verified as a Student',
     'Other',
 ]
 
@@ -235,11 +235,11 @@ export default function ContactPage(props: any) {
                                     <div>
                                         <p style={{marginBottom: '.5rem'}}>Looking for help with a common request?</p>
                                         <ul>
-                                            <li><a href="https://community.gitpod.io/">Get help from the Gitpod Community</a></li>
+                                            <li><a href="https://www.gitpod.io/docs/professional-open-source/">Professional Open-Source eligibility</a></li>
+                                            <li><a href="https://community.gitpod.io/">Ask the Gitpod Community</a></li>
                                         </ul>
                                     </div>
                                     <div style={{ flex: '0 0 100%', marginTop: '1.5rem' }}>
-                                        <label style={{ display: 'block', marginBottom: 10 }}>How can we help?</label>
                                         <textarea
                                             name="message"
                                             className="form__textarea"
