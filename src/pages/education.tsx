@@ -155,7 +155,7 @@ const EducationPage: React.SFC<{}> = ({data}: any) => (
                 <tr className="buttons">
                     <th></th>
                     <td><Link to="/#get-started" className="btn btn--cta">Start for Free</Link></td>
-                    <td><Link to="/contact/" state={{ subject: "I have a question regarding Gitpod Education" }} className="btn btn--cta">Contact Sales</Link></td>
+                    <td><Link to="/contact/" state={{ subject: "Question about Gitpod Education" }} className="btn btn--cta">Contact Sales</Link></td>
                     <td><Link to="/self-hosted/" className="btn">Host Yourself</Link></td>
                 </tr>
             </tbody>
@@ -164,7 +164,7 @@ const EducationPage: React.SFC<{}> = ({data}: any) => (
         <ActionCard
             title='Didn’t find what you’re looking for?'
             text='Please get in touch. We’re happy to answer your questions.'
-            anchors={[{href: 'https://calendly.com/gitpod/sales',text: 'Schedule a Call'}, {href: '/contact/', subject: "I have a question regarding Gitpod Education", text: 'Contact'}]}
+            anchors={[{href: 'https://calendly.com/gitpod/sales',text: 'Schedule a Call'}, {href: '/contact/', subject: "Question about Gitpod Education", text: 'Contact'}]}
         />
 
     </IndexLayout>

@@ -76,11 +76,12 @@ const StyledContactPage = styled.div`
 `
 
 const subjects: string[] = [
-  'I have a question regarding Gitpod Self-Hosted',
-  'I have a question regarding Gitpod Education',
+  'Question about Gitpod\'s Plans / Pricing',
   'Student Unlimited: Get Verified as a Student',
   'Applying for Professional Open Source',
-  'Other'
+  'Applying for the Custom IDE Support Beta',
+  'Applying for a Job at Gitpod',
+  'Other',
 ]
 
 export default function ContactPage(props: any) {
@@ -225,6 +226,13 @@ export default function ContactPage(props: any) {
                       ))}
                   </select>
                 </div>
+                <div>
+                    <p>Looking for help with a common request?</p>
+                    <ul>
+                        <li><a href="https://community.gitpod.io/">Get help from the Gitpod Community</a></li>
+                    </ul>
+                </div>
+                <label style={{ marginTop: 15, marginBottom: 10 }}>How can we help?</label>
                 <label className="visually-hidden" htmlFor="message">
                   Please type your message
                 </label>

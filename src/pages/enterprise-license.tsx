@@ -296,7 +296,7 @@ const EnterpriseLicensePage = () => {
   }
 
   return (
-    <IndexLayout>
+    <IndexLayout canonical="/enterprise-license/">
       <StyledEnterpriseLicensePage>
         <div className="row">
           {state.messageSent ? (
