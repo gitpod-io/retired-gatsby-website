@@ -6,6 +6,20 @@ Then, when you do create a new workspace on a branch, or Pull/Merge Request, for
 
 ## Enable Prebuilt Workspaces
 
+### On Bitbucket
+
+To enable prebuilt workspaces for a Bitbucket repository, follow these steps:
+
+1. Allow Gitpod to install repository webhooks, by granting `install webhooks` in [Access Control](https://gitpod.io/access-control/)
+2. Trigger a first prebuild manually, by prefixing the repository URL with `gitpod.io/#prebuild/` e.g. like so:
+
+```
+gitpod.io/#prebuild/https://bitbucket.org/gitpod-io/gitpod
+```
+
+This will [trigger a prebuild](#manual-execution-of-prebuild), and also install a webhook that will trigger new Gitpod prebuilds for every new push to any of your branches to your repository.
+
+
 ### On GitHub
 
 To enable prebuilt workspaces for a GitHub repository, follow these steps:
@@ -14,20 +28,20 @@ To enable prebuilt workspaces for a GitHub repository, follow these steps:
 2. Choose the organization or account you wish to install the Gitpod app for, then click `Install`
 3. You will be forwarded to Gitpod where you can confirm the installation
 
-### On GitLab and Bitbucket
+### On GitLab
 
-To enable prebuilt workspaces for a GitLab or Bitbucket repository, follow these steps:
+To enable prebuilt workspaces for a GitLab repository, follow these steps:
 
-1. Allow Gitpod to install repository webhooks, by granting `allow api calls` (GitLab) or `install webhooks` (Bitbucket) in [Access Control](https://gitpod.io/access-control/)
+1. Allow Gitpod to install repository webhooks, by granting `allow api calls` in [Access Control](https://gitpod.io/access-control/)
 2. Trigger a first prebuild manually, by prefixing the repository URL with `gitpod.io/#prebuild/` e.g. like so:
 
 ```
-gitpod.io/#prebuild/https://gitlab.com/gitpod/spring-petclinic
+gitpod.io/#prebuild/https://gitlab.com/gitpod-io/gitpod
 ```
 
-This will [trigger a prebuild](#manual-execution-of-prebuild), and also install a webhook that will trigger new Gitpod prebuilds for every new push to any of your branches to your repository. See also [GitLab prebuilds](https://www.gitpod.io/blog/gitlab-support/#prebuilds).
+This will [trigger a prebuild](#manual-execution-of-prebuild), and also install a webhook that will trigger new Gitpod prebuilds for every new push to any of your branches to your repository.
 
-> **Note for Gitlab Users:** If you want to trigger new Gitpod prebuilds for specific branches only, you can configure this in your Gitlab project settings under Settings -> Webhooks -> Project Hooks (at the bottom, select the Gitpod hook) -> Edit -> [Push Events](https://docs.gitlab.com/ee/user/project/integrations/webhooks.html#branch-filtering).
+If you want to trigger new Gitpod prebuilds for specific branches only, you can configure this in your Gitlab [project settings](https://docs.gitlab.com/ee/user/project/integrations/webhooks.html#branch-filtering).
 
 
 ## Manual execution of prebuild
