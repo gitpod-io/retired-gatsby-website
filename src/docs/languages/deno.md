@@ -44,10 +44,7 @@ Here is a useful extensions that you'll likely want to install in your Deno proj
 
 ### [Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
 
-To add this extension to your repository, simply add these lines to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) configuration file:
+To add this extension to your repository, simply open Gitpod's Extensions panel (see left vertical menu in the IDE), then search for "Deno" and install it "for this project".
 
-```YAML
-vscode:
-  extensions:
-    - denoland.vscode-deno@2.3.1:EQc/TzIQd+H8BcYsPXTo/A==
-```
+Next, simply commit the [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) configuration file that was automatically created (or updated) by Gitpod.
+

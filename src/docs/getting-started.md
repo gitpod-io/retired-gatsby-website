@@ -11,6 +11,8 @@ You can start using Gitpod with one or more of the following ways:
 - Enable [GitLab Integration](#gitlab-integration)
 - Quick start using an [Example Project](#example-project) or [OSS Project](#gitpodified-open-source-project)
 
+`youtube: ZZ0_TQ6UApY`
+
 ## Prefixed URL
 
 You can quickly open a new workspace for your project using a context URL like repository, branch, pull request, issue, or file. Just prefix the URL in the address bar of your browser with `gitpod.io/#`.
@@ -33,18 +35,23 @@ GitLab comes with a native Gitpod which is enabled by default for GitLab.com. To
 
 ## Example Project
 
-We've alrelay added Gitpod configuration for some example or existing projects.
+Many example projects already have a working Gitpod configuration. We've listed a few of them in [Example Projects](/docs/examples/) so that you can inspect their configurations and try them out in Gitpod.
 
-You can pick any of the example projects listed under [Languages & Frameworks](https://www.gitpod.io/docs/languages-and-frameworks/).
-
-For example, try opening [Vuepress](https://gitpod.io/#https://github.com/vuejs/vuepress) or a [Java with Spring Boot](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic) example.
+For instance, you could try opening [Vuepress](https://gitpod.io/#https://github.com/vuejs/vuepress) or a [Java with Spring Boot](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic) example.
 
 ## Gitpodified Open Source Projects {#gitpodified-open-source-project}
 
-We all know that setting up a local dev environment for a contribution to your favourite OSS project can be daunting. Luckily there are already numerous projects out there that gitpodified their repositories allowing everyone to contribute with a single click. With [contribute.dev](https://contribute.dev/) we even made a website to list them.
+Setting up a local dev environment for a contribution to your favourite OSS project can be daunting. Luckily there are already numerous projects out there that gitpodified their repositories allowing everyone to contribute with a single click. With [contribute.dev](https://contribute.dev/) we even made a website to list them.
 
-For example try opening some of our favorite OSS projects out there:
+See for yourself and try opening some of our favorite OSS projects out there:
 - [freeCodeCamp](https://gitpod.io/#https://github.com/freeCodeCamp/freeCodeCamp)
 - [Prometheus](https://gitpod.io/#https://github.com/prometheus/prometheus)
 - [GitLab](https://gitpod.io/#https://gitlab.com/gitlab-org/gitlab)
-- [Forem](https://gitpod.io/#https://github.com/thepracticaldev/dev.to) powering dev.to
+- [Forem](https://gitpod.io/#https://github.com/forem/forem) powering [dev.to](https://dev.to/)
+- [Nushell](https://gitpod.io/#https://github.com/nushell/nushell)
+
+## Next Steps
+
+With Gitpod you start treating your dev environments as something ephemeral: you start them, you code, you push your code, and you forget about them. For your next task, you'll use a fresh dev environment.
+
+🛠 [Gitpodify your first project!](https://www.gitpod.io/docs/configuration/)

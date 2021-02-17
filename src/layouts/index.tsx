@@ -12,7 +12,8 @@ import LayoutRoot from '../components/LayoutRoot'
 import LayoutMain from '../components/LayoutMain'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
-// import AnnoucementBanner from '../components/AnnouncementBanner'
+import MinimalFooter from '../components/MinimalFooter'
+import AnnoucementBanner from '../components/AnnouncementBanner'
 
 type StaticQueryProps = {
   site: {
@@ -24,7 +25,7 @@ type StaticQueryProps = {
   }
 }
 
-class IndexLayout extends React.Component<{ title?: string; canonical?: string; description?: string, ogImage?:string }, {}> {
+class IndexLayout extends React.Component<{ title?: string; canonical?: string; description?: string, isAFlowPage?: boolean, showReInstallExtensionButton?: boolean, ogImage?:string}, {}> {
   handleFirstTab = (e: any) => {
     if (e.key === 'Tab') {
       // the "I am a keyboard user" key
@@ -89,8 +90,8 @@ class IndexLayout extends React.Component<{ title?: string; canonical?: string; 
 
               <meta name="google-site-verification" content="NBio3hCkfn2FKJpqZritJpXuyKo54noPGZzWsjDIp-M" />
             </Helmet>
-            {/* <AnnoucementBanner /> */}
-            <Nav />
+            <AnnoucementBanner />
+            <Nav isAFlowPage={this.props.isAFlowPage}  showReInstallExtensionButton={this.props.showReInstallExtensionButton}/>
             <LayoutMain>
               <CookieConsent
                 buttonClasses="primary"
@@ -99,7 +100,7 @@ class IndexLayout extends React.Component<{ title?: string; canonical?: string; 
                   backgroundColor: colors.white,
                   color: colors.text,
                   borderTop: borders.light,
-                  zIndex: '1000000000'
+                  zIndex: '2000000000'
                 }}
                 contentStyle={{
                   backgroundColor: 'transparent',
@@ -123,7 +124,9 @@ class IndexLayout extends React.Component<{ title?: string; canonical?: string; 
               </CookieConsent>
               {children}
             </LayoutMain>
-            <Footer />
+            {
+                !this.props.isAFlowPage ? <Footer /> : <MinimalFooter />
+            }
           </LayoutRoot>
         )}
       />

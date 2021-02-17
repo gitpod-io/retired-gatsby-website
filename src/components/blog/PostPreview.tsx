@@ -1,9 +1,10 @@
 import React from 'react'
 
 import styled from '@emotion/styled'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import { colors, borders } from '../../styles/variables'
 import { parseAuthors } from '../../contents/authors'
+import BackgroundImage from 'gatsby-background-image'
 
 const StyledPostPreview = styled.div`
     background: ${colors.white};
@@ -18,12 +19,12 @@ const StyledPostPreview = styled.div`
 
     .background {
         height: 26rem;
-        background-origin: border-box;
-        background-position-x: 50%;
-        background-position-y: 50%;
-        background-size: cover;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
+    }
+
+    .h3 + p {
+        margin: 0;
     }
 
     p {
@@ -68,24 +69,48 @@ interface BlogData {
 
 interface PostPreviewProps {
     post: BlogData
+    headingType?: 'h2' | 'h3'
 }
 
 const PostPreview: React.SFC<PostPreviewProps> = (props) => {
+    const { allImageSharp } = useStaticQuery(graphql`
+        query {
+            allImageSharp {
+                nodes {
+                    fluid {
+                        originalName
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+        }
+    `)
+
     const b = props.post.node;
     const date = new Date(Date.parse(b.frontmatter.date));
     const authors = parseAuthors(props.post.node.frontmatter.author);
+
+    const image = b.frontmatter.image !== null && (b.frontmatter.image.substring(0,1) === '/' && !b.frontmatter.image.includes(".gif")) ? b.frontmatter.image.split('/')[1] : 'placeholder.jpg'
+
+    const fluid = allImageSharp.nodes.find((n: any) => {
+        return n.fluid.originalName === image
+    }).fluid
+
     return (
-        <Link to={b.fields.slug} style={{display: "block", marginBottom: '5rem'}}>
+        <Link to={b.fields.slug} style={{ display: "block", marginBottom: '5rem' }}>
             <StyledPostPreview>
-                <div
+                <BackgroundImage
+                    fluid={fluid}
+                >
+                    <div
                     aria-hidden={true}
-                    style={{
-                        backgroundImage: `url('${b.frontmatter.image}')`
-                    }}
                     className="background"
                 />
+                </BackgroundImage>
                 <div className="content">
-                    <h3>{b.frontmatter.title}</h3>
+                    {
+                        props.headingType === 'h3' ? <h3>{b.frontmatter.title}</h3> : <h2 className="h3">{b.frontmatter.title}</h2>
+                    }
                     <p>{b.excerpt}</p>
                 </div>
                 <div className="info">

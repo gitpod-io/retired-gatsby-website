@@ -20,7 +20,7 @@ const StyledFeatureBox = styled.div`
     }
   }
 
-  h3 {
+  .text {
     font-weight: 400;
     font-size: 1.7rem;
     transition: all 0.2s;
@@ -64,7 +64,7 @@ const StyledFeatureBox = styled.div`
       stroke: ${colors.white};
     }
 
-    h3 {
+    .text {
       color: ${colors.white};
     }
 
@@ -85,9 +85,7 @@ const FeatureBox: React.SFC<FeatureBoxProps> = ({ img, text, path, alt }) => (
   <StyledFeatureBox>
     <a href={`#${path}`}>
       <div>{typeof img === 'string' ? <img src={img} alt={alt} /> : img}</div>
-      <div>
-        <h3>{text}</h3>
-      </div>
+      <div className="text h3">{text}</div>
     </a>
   </StyledFeatureBox>
 )

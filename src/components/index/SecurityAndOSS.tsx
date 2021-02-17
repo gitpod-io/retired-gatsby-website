@@ -1,10 +1,14 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import TextFeature from './TextFeature'
-import HighlySecureImg from '../../resources/highly-secure.png'
-import OpenSourceImg from '../../resources/open-source.png'
+import ImageProvider from '../ImageProvider'
 
 const Styled = styled.section`
+  .pattern {
+      padding-bottom: 12rem;
+      margin-top: 12rem;
+  }
+
   .text-container {
     display: flex;
     justify-content: center;
@@ -30,11 +34,10 @@ const Styled = styled.section`
 
 const SecurityAndOSS = () => (
   <Styled>
-    <div className="row">
+    <div className="row pattern">
       <div className="text-container">
         <TextFeature
-          path={HighlySecureImg}
-          alt="Secure"
+          img={<ImageProvider fileName="highly-secure.png" alt="Secure" />}
           title="Secure and Flight-Proven"
           text={
             <>
@@ -47,8 +50,7 @@ const SecurityAndOSS = () => (
           }
         />
         <TextFeature
-          path={OpenSourceImg}
-          alt="Open Source"
+          img={<ImageProvider fileName="open-source.png" alt="Open Source" />}
           title="Free For Open-Source!"
           text={
             <>

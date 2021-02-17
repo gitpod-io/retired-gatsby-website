@@ -1,17 +1,9 @@
 import React from 'react'
 
-import VSCodeExtensions from '../resources/vscode-extensions.png'
-import LinuxTerminal from '../resources/linux-terminal.png'
-import PrebuiltWorkspaces from '../resources/prebuilt-workspaces.png'
-import ParallelWorkspaces from '../resources/parallel-workspaces.png'
-import CodeReview from '../resources/code-review.png'
 import SupportedLanguages from '../resources/languages.svg'
-import SharedWorkspaces from '../resources/shared-workspaces.png'
-import CreateASnapshot from '../resources/workspace-snapshot.png'
-import GitPlatforms from '../resources/stay-in-flow.svg'
-import Ephemeral from '../resources/disposable.jpg'
 import { Link } from 'gatsby'
 import { FeatureCardProps } from '../components/FeatureCard'
+import ImageProvider from '../components/ImageProvider'
 
 export const features: FeatureCardProps[] = [
   {
@@ -50,8 +42,7 @@ export const features: FeatureCardProps[] = [
         ></path>
       </svg>
     ),
-    src: PrebuiltWorkspaces,
-    alt: 'Prebuilt Workspaces'
+    gatsbyImage: <ImageProvider isBlurred={true}  isNotRelativeToGatsbyImgWrapper={true} fileName="prebuilt-workspaces.png" alt="Prebuilt Workspaces" />
   },
   {
     id: 'parallel',
@@ -85,8 +76,7 @@ export const features: FeatureCardProps[] = [
         Workspaces
       </span>
     ),
-    src: ParallelWorkspaces,
-    alt: 'Parallel Workspaces'
+    gatsbyImage: <ImageProvider isBlurred={true} isNotRelativeToGatsbyImgWrapper={true} fileName='parallel-workspaces.png' alt="Parallel Workspaces"/>,
   },
   {
     id: 'disposable',
@@ -97,8 +87,6 @@ export const features: FeatureCardProps[] = [
         Workspaces
       </span>
     ),
-    src: Ephemeral,
-    alt: 'Ephemeral Workspaces',
     title: (
       <>
         Start Fresh with
@@ -122,7 +110,8 @@ export const features: FeatureCardProps[] = [
           transform="translate(-16 -.111)"
         ></path>
       </svg>
-    )
+    ),
+    gatsbyImage: <ImageProvider isBlurred={true} isNotRelativeToGatsbyImgWrapper={true} fileName="disposable.jpg" alt="Ephemeral Workspaces" />
   },
   {
     id: 'vs',
@@ -164,8 +153,7 @@ export const features: FeatureCardProps[] = [
         Extensions
       </span>
     ),
-    src: VSCodeExtensions,
-    alt: 'VS Code Extensions'
+    gatsbyImage: <ImageProvider isBlurred={true} isNotRelativeToGatsbyImgWrapper={true} fileName="vscode-extensions.png" alt="VS Code Extensions"/>
   },
   {
     id: 'deep-integrations',
@@ -216,13 +204,10 @@ export const features: FeatureCardProps[] = [
         Integrations
       </span>
     ),
-    src: GitPlatforms,
-    alt: 'Git Platforms'
+    gatsbyImage: <ImageProvider isBlurred={true} isNotRelativeToGatsbyImgWrapper={true} fileName="stay-in-flow.png" alt="Git Platforms" />
   },
   {
     id: 'share',
-    src: SharedWorkspaces,
-    alt: 'Share Running Workspaces',
     title: (
       <>
         Better Collaboration with <strong>Workspace Sharing</strong>
@@ -255,12 +240,11 @@ export const features: FeatureCardProps[] = [
         <br />
         Workspaces
       </span>
-    )
+    ),
+    gatsbyImage: <ImageProvider isBlurred={true} isNotRelativeToGatsbyImgWrapper={true} fileName="shared-workspaces.png" alt="Share Running Workspaces" />
   },
   {
     id: 'snapshot',
-    src: CreateASnapshot,
-    alt: 'Create A Snapshot',
     title: (
       <>
         Take a Snapshot <strong>& Spread Your Work</strong>
@@ -288,12 +272,11 @@ export const features: FeatureCardProps[] = [
         </defs>
       </svg>
     ),
-    iconTitle: 'Snapshots'
+    iconTitle: 'Snapshots',
+    gatsbyImage: <ImageProvider isBlurred={true} isNotRelativeToGatsbyImgWrapper={true} fileName="workspace-snapshot.png" alt="Create A Snapshot" />
   },
   {
     id: 'code-review',
-    src: CodeReview,
-    alt: 'Code Review',
     title: (
       <>
         Do <strong>Code Reviews</strong>
@@ -336,12 +319,11 @@ export const features: FeatureCardProps[] = [
         <br />
         Reviews
       </span>
-    )
+    ),
+    gatsbyImage: <ImageProvider isBlurred={true} isNotRelativeToGatsbyImgWrapper={true} fileName="code-review.png" alt="Code Review"/>
   },
   {
     id: 'linux',
-    src: LinuxTerminal,
-    alt: 'Linux Terminals',
     title: (
       <>
         Get Access to a Full <strong>Linux Machine</strong>
@@ -372,12 +354,11 @@ export const features: FeatureCardProps[] = [
         <br />
         Terminals
       </span>
-    )
+    ),
+    gatsbyImage: <ImageProvider isBlurred={true} isNotRelativeToGatsbyImgWrapper={true} fileName="linux-terminal.png" alt="Linux Terminals" />
   },
   {
     id: 'intelligence',
-    src: SupportedLanguages,
-    alt: 'Supported Programming Languages',
     title: (
       <>
         Industry-Leading
@@ -417,6 +398,8 @@ export const features: FeatureCardProps[] = [
       'Refactoring',
       'Security Vulnerability Detection',
       'Suggested Optimizations'
-    ]
+    ],
+    src: SupportedLanguages,
+    alt: 'Supported Programming Languages',
   }
 ]

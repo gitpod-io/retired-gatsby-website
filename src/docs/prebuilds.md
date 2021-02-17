@@ -4,6 +4,8 @@ Whenever your code changes (e.g. when new commits are pushed to your repository)
 
 Then, when you do create a new workspace on a branch, or Pull/Merge Request, for which a prebuild exists, this workspace will load much faster, because all dependencies will have been already downloaded ahead of time, and your code will be already compiled.
 
+`youtube: KR8ESjGYsXI`
+
 ## Enable Prebuilt Workspaces
 
 ### On GitHub
@@ -40,7 +42,7 @@ https://gitpod.io/#prebuild/https://github.com/ORG/REPO
 By default Gitpod prebuilds workspaces for all changes on the default branch (e.g. `master`) and for Pull/Merge Requests coming from the same repository.
 
 > **Note**: prebuilds are executed as the user who enabled them. This means that if you want to use
-> prebuilds on a private repository, you must to give Gitpod access to private repositories.
+> prebuilds on a private repository, you must give Gitpod access to private repositories.
 
 There are three parts to configuring prebuilds:
 1. the tasks that will be run during a prebuild,

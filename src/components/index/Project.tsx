@@ -9,7 +9,7 @@ const StyledProject = styled.div`
   text-align: center;
   font-weight: 600;
   border: ${borders.light2};
-  background: ${colors.white};
+  background: ${colors.offWhite};
   border-radius: 3px;
   min-width: 22rem;
 
@@ -24,10 +24,11 @@ const StyledProject = styled.div`
     }
   }
 
-  object {
-    height: 8.5rem;
+  .img-container {
+    display: inline-block;
+    height: 8rem;
+    width: 8rem;
     width: 14rem;
-    object-fit: contain;
   }
 
   & > * {
@@ -51,7 +52,7 @@ const Project: React.SFC<ProjectProps> = ({ image, title, githubUrl, gitlabUrl, 
 
   return (
     <StyledProject className="project">
-      {image}
+      <div className="img-container">{image}</div>
       <p>{!shown ? title : 'Choose your platform'}</p>
       <StartWorkspace shown={shown} setIsShown={setIsShown} githubUrl={githubUrl} gitlabUrl={gitlabUrl} bitbucketUrl={bitbucketUrl} />
     </StyledProject>

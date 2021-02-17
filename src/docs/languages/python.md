@@ -10,10 +10,10 @@ Before we get started, here are some examples of already-[gitpodified](https://w
 
 | Repository                                                                                                |                                                                                                              Description |                                        Try it |
 -----------|-----------------------------------------------------------|----------------------------------------------------
-| [breatheco-de/python-flask-api-tutorial](https://github.com/breatheco-de/python-flask-api-tutorial) | A step by step Todo List API tutorial with Flask + Python | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/breatheco-de/python-flask-api-tutorial) |
-| [gitpod-io/django-locallibrary-tutorial](https://github.com/gitpod-io/django-locallibrary-tutorial) | An example website written in Django by MDN | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/django-locallibrary-tutorial) |
-| [gitpod-io/Gitpod-PyQt](https://github.com/gitpod-io/Gitpod-PyQt) | A PyQt example for Gitpod | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-PyQt) |
-| [gitpod-io/wxPython-example](https://github.com/gitpod-io/wxPython-example) | A wxPython example for Gitpod | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/wxPython-example) |
+| [python-flask-api-tutorial](https://github.com/breatheco-de/python-flask-api-tutorial) | A step by step Todo List API tutorial with Flask + Python | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/breatheco-de/python-flask-api-tutorial) |
+| [django-locallibrary-tutorial](https://github.com/gitpod-io/django-locallibrary-tutorial) | An example website written in Django by MDN | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/django-locallibrary-tutorial) |
+| [Gitpod-PyQt](https://github.com/gitpod-io/Gitpod-PyQt) | A PyQt example for Gitpod | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-PyQt) |
+| [wxPython-example](https://github.com/gitpod-io/wxPython-example) | A wxPython example for Gitpod | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/wxPython-example) |
 
 </div>
 

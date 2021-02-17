@@ -2,6 +2,8 @@ import React from 'react'
 
 import styled from '@emotion/styled'
 import { colors } from '../../styles/variables'
+import { useStaticQuery, graphql } from 'gatsby'
+import BackgroundImage from 'gatsby-background-image'
 
 const StyledPostBanner = styled.header`
     position: relative;
@@ -28,7 +30,7 @@ const StyledPostBanner = styled.header`
         margin-top: 2rem;
     }
 
-    h3 {
+    .h3 {
         margin: 0;
         color: ${colors.text};
         font-weight: 200;
@@ -67,7 +69,7 @@ const StyledPostBanner = styled.header`
 `
 
 interface PostBannerProps {
-    teaserImage?: string
+    teaserImage: string
     title: string
     subtitle: string
     date: JSX.Element
@@ -75,12 +77,38 @@ interface PostBannerProps {
     shareButtons: JSX.Element
 }
 
-const PostBanner: React.SFC<PostBannerProps> = ({ title, subtitle, teaserImage, date, author, shareButtons }) => (
+const PostBanner: React.SFC<PostBannerProps> = ({ title, subtitle, teaserImage, date, author, shareButtons }) => {
+    const { allImageSharp } = useStaticQuery(graphql`
+        query {
+            allImageSharp {
+                nodes {
+                    fluid {
+                        originalName
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+        }
+    `)
+
+    const image = teaserImage !== null && (teaserImage.substring(0,1) === '/' && !teaserImage.includes(".gif")) ? teaserImage.split('/')[1] : 'placeholder.jpg'
+
+    const fluid = allImageSharp.nodes.find((n: any) => {
+        return n.fluid.originalName === image
+    }).fluid
+
+    return (
     <StyledPostBanner>
-        <div className="bg" aria-hidden="true" style={{backgroundImage: `url(${teaserImage})`}} />
+        <BackgroundImage
+            fluid={fluid}
+        >
+            <div className="bg" aria-hidden="true" style={{backgroundImage: `url(${teaserImage})`}} />
+        </BackgroundImage>
         <div className="contents">
-            {subtitle ? <h3>{subtitle}</h3> : null }
-            <h1>{title}</h1>
+            <header>
+                {subtitle ? <p className="h3" style={{fontWeight: 400}}>{subtitle}</p> : null }
+                <h1>{title}</h1>
+            </header>
             <div className="info">
                 <div className="author">{author} {date}</div>
                 <div className="share">{shareButtons}</div>
@@ -88,5 +116,6 @@ const PostBanner: React.SFC<PostBannerProps> = ({ title, subtitle, teaserImage, 
         </div>
     </StyledPostBanner>
 )
+}
 
 export default PostBanner

@@ -17,11 +17,12 @@ const StyledBg = styled.img`
 
 interface BgProps {
     url: any
+    alt: string
 }
 
-const Bg: React.SFC<BgProps> = ({url}) => (
+const Bg = ({url, alt}: BgProps) => (
     <div className="row">
-        <StyledBg src={url} aria-hidden="true" />
+        <StyledBg src={url} alt={alt}/>
     </div>
 )
 

@@ -27,6 +27,11 @@ const StyledDocsLayout = styled.div`
         padding: 3rem 1rem;
         position: relative;
 
+        &__header {
+            display: flex;
+            justify-content: space-between;
+        }
+
         @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             width: 70%;
         }
@@ -48,23 +53,28 @@ const StyledDocsLayout = styled.div`
             margin: 6rem 0 5rem;
         }
 
-        h3 {
+        h3,
+        .h3 {
             margin: 5rem 0 1rem;
+        }
+
+        .h3 + p {
+            margin: 0;
         }
 
         h4 {
             margin: 3rem 0 1rem;
         }
 
-        h2 + p {
-            margin-block-end: 0em;
-        }
         h2 + ul {
             margin-block-end: 0em;
         }
 
         ul, ol {
             margin: 2rem 0;
+        }
+
+        ul {
             list-style: inherit;
         }
 

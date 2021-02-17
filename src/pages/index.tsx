@@ -145,8 +145,12 @@ const IndexPage: React.SFC<{}> = () => (
 
     <SecurityAndOSS />
 
-    <MoreInfo />
+    <MoreInfo
+        backgroundShouldBeWhite={true}
+        negativeSpaceTop={`-11rem`}
+    />
   </IndexLayout>
 )
+
 
 export default IndexPage

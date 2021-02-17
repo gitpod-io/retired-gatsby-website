@@ -269,7 +269,9 @@ const GitpodVsGitHubCodespacesPage = () => (
               </tr>
               <tr>
                 <th>Multi-IDE Support</th>
-                <td>Coming soon</td>
+                <td>
+                  <Tick />
+                </td>
                 <td>
                   <Cross />
                 </td>
@@ -279,7 +281,7 @@ const GitpodVsGitHubCodespacesPage = () => (
                 <td className="footnote disclaimer" colSpan={2}>
                   Disclaimer: All information, prices, and data were last verified on Sept. 25, 2020. To report any incorrect or outdated
                   information, please{' '}
-                  <Link to="/contact" style={{ fontWeight: 400 }}>
+                  <Link to="/contact/" style={{ fontWeight: 400 }}>
                     contact us.
                   </Link>
                 </td>
@@ -292,7 +294,7 @@ const GitpodVsGitHubCodespacesPage = () => (
       <Difference />
 
       <TrustedBy
-        title={<strong>Used by 250,000+ Developers & Businesses</strong>}
+        title={<strong>Used by 300,000+ Developers & Businesses</strong>}
         styles={{ margin: '10rem 0' }}
         brands={[
           {

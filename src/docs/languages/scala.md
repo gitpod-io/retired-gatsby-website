@@ -122,36 +122,17 @@ image:
 
 ![Scala Syntax demo](../images/scala-syntax.png)
 
-Scala Syntax adds basic syntax highlighting for Scala and `sbt` files. To get it, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file:
+Scala Syntax adds basic syntax highlighting for Scala and `sbt` files.
 
-```YAML
-vscode:
-  extensions:
-    - scala-lang.scala@0.3.9:kklqw+c/dNRmtTU8B5repw==
-```
+To get it, open Gitpod's **Extensions** panel (left vertical menu in the IDE), then search for "Scala Syntax", and install it "for this project". Then, commit the automatic `.gitpod.yml` change that was made by Gitpod.
 
 ### Metals
 
 ![An example of the metals in Gitpod](../images/metals-demo.png)
 
-Metals adds helpful Scala features to Gitpod, for example, advanced autocompletion and debugging support just to name a few. Although to use it you must also use the previously mentioned Scala Syntax you should do the following
+Metals adds helpful Scala features to Gitpod, for example, advanced autocompletion and debugging support just to name a few. Although to use it you must also have the previously mentioned Scala Syntax.
 
-If you already added Scala Syntax put the following on the following line
-
-```YAML
-    - scalameta.metals@1.7.8:oixMSF1r3cXQPfOQ34+sTA==
-```
-
-Otherwise, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/)
-
-```YAML
-vscode:
-  extensions:
-    - scala-lang.scala@0.3.9:kklqw+c/dNRmtTU8B5repw==
-    - scalameta.metals@1.7.8:oixMSF1r3cXQPfOQ34+sTA==
-```
-
-Either way, the end result should look like the snippet above.
+To get it, open Gitpod's **Extensions** panel (left vertical menu in the IDE), then search for "Scala Metals", and install it "for this project". Then, commit the automatic `.gitpod.yml` change that was made by Gitpod.
 
 Boom! You're done! (Just a reminder, don't forget to push the changes.)
 

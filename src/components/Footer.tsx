@@ -12,8 +12,16 @@ const StyledFooter = styled.footer`
 
     .links {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        @media(min-width: 651px) {
+            ul {
+                width: 12.4rem;
+            }
+        }
 
         @media(max-width: 650px) {
             justify-content: space-between;
@@ -111,6 +119,7 @@ const Footer: React.SFC<{}> = () => (
                     <li><Link to="/pricing/">Pricing</Link></li>
                     <li><Link to="/blog/">Blog</Link></li>
                     <li><Link to="/self-hosted/">Self-Hosted</Link></li>
+                    <li><Link to="/gitpod-vs-github-codespaces">Gitpod vs GitHub <br />Codespaces</Link></li>
                     <li><a href="https://gitpod.io/login/" style={{ color: colors.link, fontWeight: 600 }}>Log In</a></li>
                 </ul>
                 <ul>
@@ -122,6 +131,7 @@ const Footer: React.SFC<{}> = () => (
                 <ul>
                     <li>Developer</li>
                     <li><Link to="/#get-started">Getting started</Link></li>
+                    <li><Link to="/screencasts/">Screencasts</Link></li>
                     <li><Link to="/docs/">Documentation</Link></li>
                     <li>
                         <ExternalLink
@@ -206,7 +216,7 @@ const Footer: React.SFC<{}> = () => (
                 </ul>
             </div>
             <div className="info">
-                <p>Copyright © <a href="https://www.gitpod.io/" target="_blank" rel="noopener" title="Gitpod">Gitpod</a></p>
+                <p>Copyright &copy; <a href="https://www.gitpod.io/" target="_blank" rel="noopener" title="Gitpod">Gitpod</a></p>
                 <div><Link to="/imprint/">Imprint</Link>&nbsp;|&nbsp;<Link to="/terms/">Terms of Service</Link>&nbsp;|&nbsp;<Link to="/privacy/">Privacy Policy</Link></div>
             </div>
         </div>

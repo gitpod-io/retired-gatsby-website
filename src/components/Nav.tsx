@@ -4,8 +4,9 @@ import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import GitpodLogoDark from '../resources/gitpod-logo-dark.svg'
 import { colors, sizes, borders } from '../styles/variables'
-import DropDown from '../components/DropDown'
 import { Global, css } from '@emotion/core'
+import { getBrowser } from '../utils/helpers'
+import { getBrowserString } from './gitpod-vs-codespaces/Difference'
 
 const StyledNav = styled.nav`
     display: flex;
@@ -14,7 +15,7 @@ const StyledNav = styled.nav`
     padding: 4rem 0;
     position: relative;
 
-    @media(max-width: ${sizes.breakpoints.lg}) {
+    @media(max-width: 900px) {
         font-size: 110%;
         display: block;
     }
@@ -41,7 +42,7 @@ const StyledNav = styled.nav`
         display: flex;
         align-items: center;
 
-        @media(max-width: ${sizes.breakpoints.lg}) {
+        @media(max-width: 900px) {
             flex-direction: column;
             width: 100%;
             padding-top: 8rem;
@@ -55,7 +56,7 @@ const StyledNav = styled.nav`
         }
     }
 
-    @media(max-width: ${sizes.breakpoints.lg}) {
+    @media(max-width: 900px) {
         .navIsRendered {
             display: flex;
         }
@@ -68,13 +69,13 @@ const StyledNav = styled.nav`
     .nav__item {
         cursor: pointer;
 
-        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
+        @media(min-width: 901px) {
             &:not(:last-child) {
-                margin-right: 5rem;
+                margin-right: 4rem;
             }
         }
 
-        @media(max-width: ${sizes.breakpoints.lg}) {
+        @media(max-width: 900px) {
             width: 100%;
             padding: 2rem 0;
 
@@ -92,7 +93,7 @@ const StyledNav = styled.nav`
         display: flex;
         align-items: center;
 
-        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
+        @media(min-width: 901px) {
             display: none;
         }
 
@@ -161,7 +162,7 @@ const StyledNav = styled.nav`
             }
         }
 
-        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
+        @media(min-width: 901px) {
             display: none;
         }
 
@@ -172,7 +173,7 @@ const StyledNav = styled.nav`
     }
 
 
-    @media(max-width: ${sizes.breakpoints.lg}) {
+    @media(max-width: 900px) {
         .shown {
             opacity: 1;
             transform: scale(1) translateX(0);
@@ -208,17 +209,20 @@ const StyledNav = styled.nav`
     }
 `
 
-const Nav = () => {
+const Nav = ({ isAFlowPage, showReInstallExtensionButton }: { isAFlowPage?: boolean; showReInstallExtensionButton?: boolean }) => {
     const [isNavRendered, setIsNavRendered] = useState(false)
+    const [browser, setBrowser] = useState<any>()
 
     const unLock = () => {
-        if (window.innerWidth >= 1240) {
+        if (window.innerWidth >= 900) {
             setIsNavRendered(false)
         }
     }
 
     useEffect(() => {
         window.addEventListener('resize', unLock)
+        let usersBrowser = getBrowser(window.navigator.userAgent)
+        setBrowser(getBrowserString(usersBrowser))
 
         return () => {
             window.removeEventListener('resize', unLock)
@@ -240,50 +244,92 @@ const Nav = () => {
             />
             <div className="row">
                 <StyledNav role="navigation" className="nav">
-                    <div className="nav__burger-container">
+                    <div className="nav__burger-container" style={isAFlowPage ? { width: '100%' } : {}}>
                         <Link to="/"><img alt="Gitpod Logo" src={GitpodLogoDark} /></Link>
-                        <div className="btns">
-                            <a href="https://gitpod.io/login/" rel="noopener" style={{ display: isNavRendered ? 'none' : '' }}>Log In</a>
-                            <div className="nav__btn-container" aria-live="assertive">
-                                <button
-                                    className="nav__btn"
-                                    aria-label={isNavRendered ? "Hide the Navigation Items" : "Show the Navigation Items"}
-                                    onClick={toggleNavigation}
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.112 31.112"
-                                        className={isNavRendered ? 'is-shown--multiply' : 'is-hidden'}
-                                        aria-hidden={isNavRendered ? false : true}
-                                        id="multiply"
+                        {
+                            !isAFlowPage ? <div className="btns">
+                                <a href="https://gitpod.io/login/" rel="noopener" style={{ display: isNavRendered ? 'none' : '' }}>Log In</a>
+                                <div className="nav__btn-container" aria-live="assertive">
+                                    <button
+                                        className="nav__btn"
+                                        aria-label={isNavRendered ? "Hide the Navigation Items" : "Show the Navigation Items"}
+                                        onClick={toggleNavigation}
                                     >
-                                        <title>close menu icon</title>
-                                        <path d="M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z" />
-                                    </svg>
-                                    <svg
-                                        className={isNavRendered ? 'is-hidden' : 'is-shown'}
-                                        aria-hidden={isNavRendered ? true : false}
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 26 18"
-                                        id="hamburger"
-                                    >
-                                        <title>hamburger menu icon</title>
-                                        <g transform="translate(-647.5 -86.5)" strokeWidth="2"><line x2="24" transform="translate(648.5 87.5)" /><line x2="24" transform="translate(648.5 95.5)" /><line x2="24" transform="translate(648.5 103.5)" /></g>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.112 31.112"
+                                            className={isNavRendered ? 'is-shown--multiply' : 'is-hidden'}
+                                            aria-hidden={isNavRendered ? false : true}
+                                            id="multiply"
+                                        >
+                                            <title>close menu icon</title>
+                                            <path d="M31.112 1.414L29.698 0 15.556 14.142 1.414 0 0 1.414l14.142 14.142L0 29.698l1.414 1.414L15.556 16.97l14.142 14.142 1.414-1.414L16.97 15.556z" />
+                                        </svg>
+                                        <svg
+                                            className={isNavRendered ? 'is-hidden' : 'is-shown'}
+                                            aria-hidden={isNavRendered ? true : false}
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 26 18"
+                                            id="hamburger"
+                                        >
+                                            <title>hamburger menu icon</title>
+                                            <g transform="translate(-647.5 -86.5)" strokeWidth="2"><line x2="24" transform="translate(648.5 87.5)" /><line x2="24" transform="translate(648.5 95.5)" /><line x2="24" transform="translate(648.5 103.5)" /></g>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div> : null
+                        }
+                        {
+                            showReInstallExtensionButton ? <a
+                                className="btn"
+                                href={
+                                    browser === 'Firefox'
+                                        ? 'https://addons.mozilla.org/en-GB/firefox/addon/gitpod/'
+                                        : 'https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki'
+                                }
+                                target="_blank"
+                            >
+                                Reinstall Extension
+                            </a> : null
+                        }
                     </div>
 
 
-                    <ul className={`nav__items ${isNavRendered ? 'navIsRendered' : 'navIsNotRendered'}`} >
-                        <li className="nav__item"><Link activeClassName="active" to='/features/' className="link">Features</Link></li>
-                        <li className="nav__item"><Link activeClassName="active" to='/self-hosted/' className="link">Install</Link></li>
-                        <li className="nav__item"><Link activeClassName="active" to='/pricing/' className="link">Pricing</Link></li>
-                        <li className="nav__item"><Link activeClassName="active" to='/docs/' className="link">Docs</Link></li>
-                        <li className="nav__item"><Link activeClassName="active" to='/blog/' className="link">Blog</Link></li>
-                        <li className="nav__item"><Link activeClassName="active" to='https://community.gitpod.io/' target='true' className="link">Community</Link></li>
-                        <li className="nav__item"><a href="https://gitpod.io/login/" rel="noopener" className="btn btn--small">Log In</a></li>
-                    </ul>
+                    {
+                        !isAFlowPage ? (
+                           <ul className={`nav__items ${isNavRendered ? 'navIsRendered' : 'navIsNotRendered'}`} >
+                                <li className="nav__item">
+                                    <Link activeClassName="active" to='/features/' className="link">
+                                        Features
+                                    </Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link activeClassName="active" to='/screencasts/' className="link">
+                                        Screencasts
+                                    </Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link activeClassName="active" to='/docs/' className="link">
+                                        Docs
+                                    </Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link activeClassName="active" to='/blog/' className="link">
+                                        Blog
+                                    </Link>
+                                </li>
+                                <li className="nav__item">
+                                    <Link activeClassName="active" to='/pricing/' className="link">
+                                        Pricing
+                                    </Link>
+                                </li>
+                                <li className="nav__item">
+                                    <a href="https://gitpod.io/login/" rel="noopener" className="btn btn--small">
+                                        Log In
+                                    </a>
+                                </li>
+                            </ul>
+                        ) : null
+                    }
 
                 </StyledNav>
             </div>

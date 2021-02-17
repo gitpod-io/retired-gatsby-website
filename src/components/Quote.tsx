@@ -12,7 +12,7 @@ const StyledQuote = styled.section`
         padding: 8rem 0;
     }
 
-    h4 {
+    .h4 {
         position: relative;
         display: flex;
         justify-content: center;
@@ -74,11 +74,11 @@ interface QuoteProps {
 
 const Quote: React.SFC<QuoteProps> = ({title}) => (
         <StyledQuote className="quote row">
-            <h4 className="quote__text">
+            <h2 className="quote__text h4">
                 <object aria-label="Left Quotation Mark" tabIndex={-1} data={QuoteIcon}/>
                 <span><i>&ldquo;</i> {title}<i>&rdquo;</i></span>
                 <object aria-label="Right Quotation Mark" tabIndex={-1} data={QuoteIcon}/>
-            </h4>
+            </h2>
         </StyledQuote>
 )
 

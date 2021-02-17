@@ -46,7 +46,7 @@ Once you've installed the app for your GitHub repository, it will pre-build dev 
 
 We call this feature prebuilt workspaces and you can read more about it in [Chris' post](/blog/prebuilds/).
 
-![Prebuilt Workspaces](./gitpod-launch/prebuilt-workspaces.png)
+![Prebuilt Workspaces](/prebuilt-workspaces.png)
 
 ## More Flow
 Your dev environment opens differently depending on the GitHub page you are coming from. You can, for instance, open branches or files by simply going to the respective GitHub page and pressing the button (or prefixing the URL) there.

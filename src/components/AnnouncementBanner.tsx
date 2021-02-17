@@ -1,174 +1,201 @@
 import React, { useRef, useEffect } from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
-import Bg from '../resources/announcement-banner.jpg'
 import { colors, borders } from '../styles/variables'
+import { jobs } from '../pages/careers'
 
-const StyledAnnouncementBanner = styled.div`
-  background: url(${Bg});
-  background-size: cover;
-  background-position: top right;
-  background-repeat: no-repeat;
+const AnnoucementBannerWrapper = styled.div`
+    position: relative;
+    background: ${colors.grey};
+    transition: all 0.3s;
+
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2rem;
+        border: none;
+        border-radius: 50%;
+
+        @media(max-width: 472px) {
+            right: 1rem;
+        }
+
+        @media(max-width: 320px) {
+            right: .5rem;
+        }
+    }
+
+    .cross {
+        display: block;
+        height: 1.5rem;
+        width: 1.5rem;
+        fill: ${colors.white}
+    }
+`
+
+const StyledAnnouncementBanner = styled(Link)`
+  color: ${colors.white};
+  font-weight: 400;
   border-bottom: ${borders.light};
-  transition: all 0.3s;
 
-  @media (max-width: 1100px) {
-    background-position: bottom;
+  &:hover,
+  &:focus {
+    color: ${colors.white};
   }
 
   @media (max-width: 600px) {
     font-size: 85%;
   }
 
+  .row {
+    @media(max-width: 472px) {
+        padding: 0 2.8rem 0 .5rem;
+    }
+  }
+
   .text {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+    padding: 1rem 0;
+    font-weight: 600;
+    text-align: center;
+    font-size: 90%;
 
-    @media (max-width: 480px) {
-      flex-direction: column;
-      text-align: center;
+    @media(max-width: 472px) {
+        text-align: left;
+    }
 
-      span {
-        display: none;
-      }
+    @media(max-width: 410px) {
+        text-align: center;
+    }
+
+    @media(max-width: 320px) {
+        padding: .8rem;
     }
   }
 
-  .announcement {
-    padding: 3px 5px;
-    border-radius: 3px;
-    border: 1px solid;
-
-    @media (max-width: 600px) {
-      font-size: 70%;
-    }
-
-    @media (min-width: 601px) {
-      margin-right: 2rem;
-    }
-
-    @media (max-width: 480px) {
-      margin-bottom: 1rem;
-    }
-  }
-
-  a {
-    font-weight: 400;
-  }
-
-  button {
-    position: absolute;
-    right: 0;
+  .openings {
     background: ${colors.white};
-    border: none;
-    border-radius: 50%;
-  }
+    color: ${colors.grey};
+    padding: .5rem 1.4rem;
+    border-radius: 10rem;
+    margin-left: 2rem;
 
-  svg {
-    display: block;
-    height: 2.6rem;
-    width: 2.6rem;
-    fill: ${colors.white};
-    transition: all 0.2s;
+    @media(max-width: 505px) {
+        margin-left: 1rem;
+    }
 
-    &:hover {
-      fill: ${colors.textDark};
-
-      .cross {
-        stroke: ${colors.white};
-      }
+    @media(max-width: 405px) {
+        padding: .2rem .9rem;
     }
   }
 
-  .outline {
-    fill: ${colors.textDark};
+  i {
+      margin-left: .3rem;
+
+      @media(max-width: 472px) {
+          display: none;
+      }
   }
 
-  .cross {
-    stroke: ${colors.textDark};
+  .arrow {
+      height: 8px;
+      width: 15px;
   }
 `;
 
-function markWasShown(): void {
+function markWasDisplayed(): void {
     if (typeof localStorage !== 'undefined') {
-        localStorage.setItem('wasShown', 'true');
+        localStorage.setItem('wasDisplayed', 'true');
     }
 }
 
-function wasShown(): boolean {
+function wasDisplayed(): boolean {
     if (typeof localStorage !== 'undefined') {
-        return localStorage.getItem('wasShown')
+        // @ts-ignore
+        return localStorage.getItem('wasDisplayed')
     }
     return false;
 }
 
 const AnnoucementBanner = () => {
-  const bannerRef = useRef<HTMLDivElement>(null)
+    const bannerRef = useRef<any>(null)
 
-  const hideTheBanner = () => {
-    if (null !== bannerRef.current) {
-      bannerRef.current.style.transform = 'translateY(-100%)'
-      bannerRef.current.style.marginTop = `-${bannerRef.current.offsetHeight}px`
+    const hideTheBanner = () => {
+        if (null !== bannerRef.current) {
+            bannerRef.current.style.transform = 'translateY(-100%)'
+            bannerRef.current.style.marginTop = `-${bannerRef.current.offsetHeight}px`
+        }
+
+        // @ts-ignore
+        markWasDisplayed(true);
+
+        setTimeout(() => {
+            if (null !== bannerRef.current) {
+                bannerRef.current.style.display = 'none'
+            }
+        }, 300)
     }
 
-    markWasShown(true);
+    useEffect(() => {
+        const wasAlreadyDisplayed = wasDisplayed();
+        if (wasAlreadyDisplayed) {
+            if (null !== bannerRef.current) {
+                bannerRef.current.style.display = 'none';
+            }
+        }
+    })
 
-    setTimeout(() => {
-      if (null !== bannerRef.current) {
-        bannerRef.current.style.display = 'none'
-      }
-    }, 300)
-  }
-
-  useEffect(() => {
-    const wasAlreadyShown = wasShown();
-    if (wasAlreadyShown) {
-      if (null !== bannerRef.current) {
-        bannerRef.current.style.display = 'none';
-      }
-    }
-  })
-
-  return (
-    <StyledAnnouncementBanner ref={bannerRef} style={{ display: wasShown() ? 'none' : 'inline'}}>
-      <div className="row">
-        <div className="text">
-          <strong className="announcement">New Announcement</strong>
-          <span>&nbsp;</span>
-          <p>
-            <strong>
-              Gitpod Is Now Open Source. <Link to="/blog/opensource/">Learn More.</Link>
-            </strong>
-          </p>
-          <button
-            aria-label="Close"
-            onClick={() => {
-              hideTheBanner()
-            }}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="29.86" height="29.86" data-name="Banner closing" viewBox="0 0 30.86 30.86">
-              <g data-name="Gruppe 950">
-                <g data-name="Pfad 1398">
-                  <path d="M14.93 29.86a14.93 14.93 0 1114.93-14.93 14.93 14.93 0 01-14.93 14.93z"></path>
-                  <path
-                    className="outline"
-                    d="M14.93 27.86c3.454 0 6.7-1.345 9.143-3.787a12.845 12.845 0 003.787-9.143c0-3.454-1.345-6.7-3.787-9.143A12.845 12.845 0 0014.93 2c-3.454 0-6.7 1.345-9.143 3.787A12.845 12.845 0 002 14.93c0 3.454 1.345 6.7 3.787 9.143a12.845 12.845 0 009.143 3.787m0 2C6.684 29.86 0 23.176 0 14.93 0 6.684 6.684 0 14.93 0c8.246 0 14.93 6.684 14.93 14.93 0 8.246-6.684 14.93-14.93 14.93z"
-                  ></path>
-                </g>
-              </g>
-              <g className="cross" strokeLinecap="round" strokeWidth="2" data-name="Gruppe 1035">
-                <path d="M9.779 10.1l11.009 9.967" data-name="Pfad 940"></path>
-                <path d="M10.373 20.2l10.1-10.1" data-name="Linie 102"></path>
-              </g>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </StyledAnnouncementBanner>
-  )
+    return (
+        <AnnoucementBannerWrapper ref={bannerRef} style={{
+            display:
+                wasDisplayed() ? 'none' :
+                    'inline'
+        }}>
+            <StyledAnnouncementBanner to="/careers/#jobs">
+                <div className="row">
+                    <div className="text">
+                        Wanna help make Gitpod better? Join our team!
+                        <span className="openings">
+                            <strong>{jobs.length}</strong>
+                            &nbsp;Openings <i>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="283"
+                                    height="118"
+                                    fill="none"
+                                    viewBox="0 0 283 118"
+                                    className="arrow"
+                                >
+                                    <path
+                                        stroke="#000"
+                                        strokeLinecap="square"
+                                        strokeMiterlimit="10"
+                                        strokeWidth="18"
+                                        d="M224 9l50 50-50 50"
+                                    ></path>
+                                    <path stroke="#000" strokeWidth="18" d="M274.023 58L0.023 59.07"></path>
+                                </svg>
+                            </i>
+                        </span>
+                    </div>
+                </div>
+            </StyledAnnouncementBanner>
+            <button
+                aria-label="Close"
+                onClick={() => {
+                    hideTheBanner()
+                }}
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 94.926 94.926"
+                    className="cross"
+                >
+                    <path d="M55.931 47.463L94.306 9.09a2.118 2.118 0 000-2.994L88.833.62a2.123 2.123 0 00-2.996 0L47.463 38.994 9.089.62c-.795-.795-2.202-.794-2.995 0L.622 6.096a2.117 2.117 0 000 2.994l38.374 38.373L.622 85.836a2.117 2.117 0 000 2.994l5.473 5.476a2.123 2.123 0 002.995 0l38.374-38.374 38.374 38.374c.397.396.937.62 1.498.62s1.101-.224 1.498-.62l5.473-5.476a2.118 2.118 0 000-2.994L55.931 47.463z"></path>
+                </svg>
+            </button>
+        </AnnoucementBannerWrapper>
+    )
 }
 
 export default AnnoucementBanner

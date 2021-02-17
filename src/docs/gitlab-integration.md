@@ -12,7 +12,7 @@ To launch new Gitpod workspaces for issues, branches, specific commits, etc. you
 
 ## Enabling Prebuilds
 
-To enable [prebuilt workspaces](/docs/prebuilds/) for your GitLab project you need to grant `allow api calls` in Gitpod's [Access Control](/access-control/) page. This allows Gitpod to install a webhook. The webhook creates a new prebuild for every push event.
+To enable [prebuilt workspaces](/docs/prebuilds/) for your GitLab project you need to grant `allow api calls` in Gitpod's [Access Control](https://gitpod.io/access-control/) page. This allows Gitpod to install a webhook. The webhook creates a new prebuild for every push event.
 
 The webhook will be automatically installed when you trigger the first prebuild manually. For this, prefix your GitLab project URL with `gitpod.io/#prebuild/` as described in the [prebuilds page](/docs/prebuilds/#on-gitlab-and-bitbucket).
 
@@ -22,7 +22,7 @@ In Gitpod you can register your own GitLab OAuth application. This allows to use
 
 Here's how to do that:
 
-1) Head over to [the settings](https://gitpod.io/settings) and scroll to the section about `Git Provider`.
+1) Head over to [the settings](https://gitpod.io/settings/) and scroll to the section about `Git Provider`.
 
 <img width="739" alt="Screenshot 2020-08-25 at 08 30 39" src="https://user-images.githubusercontent.com/372735/101290251-480f0a00-3801-11eb-8c2a-14dc442fceeb.png">
 

@@ -122,7 +122,7 @@ export const allAuthors: { [idx: string]: Author } = {
 }
 
 export function parseAuthors(input: string): Author[] {
-    const authorNames = input.split(/\s*,\s*/);
+    const authorNames = input !== null ? input.split(/\s*,\s*/) : [];
     const authorArray = authorNames.map(name => allAuthors[name]);
     for (let i = 0; i < authorArray.length; i++) {
         if (!authorArray[i]) {

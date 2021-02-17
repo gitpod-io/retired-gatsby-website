@@ -4,7 +4,7 @@ date: Wed Jun 26 2019 11:57:00 GMT+0000 (UTC)
 author: anudeepreddy
 subtitle: Build and test your webhook using Gitpod
 title: Build a Webhook for Google Assistant Action
-image: https://res-3.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/Build-and-test-your-webhook.png
+image: /Build-and-test-your-webhook.png
 ---
 
 This post is all about how to build your webhook for your Google Assistant action and host it temporarily on Gitpod and test your code.
@@ -142,5 +142,5 @@ Refer to the links below to add your own functionalities.
 Gitpod can make your life much simpler by automating your development setup just by adding a simple configuration file to your repo. You can refer to the Gitpod [Docs](https://www.gitpod.io/docs/) to learn more about the platform. Gitpod lets you work with unlimited workspace but with 100hrs/month runtime. It also provides Personal and unlimited plans as well. If you are a student then you can claim Gitpod Unlimited plan for just $9.
 
 ![Animated character waving hand with a smile](https://res-3.cloudinary.com/anudeepc/image/upload/q_auto/v1/blog-images/character.gif)
-# Happy coding with Gitpod ✨
+<h1>Happy coding with Gitpod ✨</h1>
 

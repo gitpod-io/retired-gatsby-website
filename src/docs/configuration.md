@@ -2,6 +2,8 @@
 
 Gitpod dev environments are started with a single click. In order to make sure they come fully initialized and with the tools you need, you should provide a configuration file.
 
+`youtube: ZgY6a78mAnQ`
+
 ## Setup Assistant
 
 The setup assistant can help you get started with this. Once you open a project without a `.gitpod.yml` you should see a notification in the bottom right that lets you start the assistant.
@@ -58,7 +60,7 @@ Once the new configuration is merged into the project, you should install (or re
 
 Read more on [Prebuilt Workspaces here](/docs/prebuilds/).
 
-### Additional Information
+<h2 class="h3">Additional Information</h2>
 
   * [Exposing Ports](/docs/config-ports/)
   * [VS Code Extensions](/docs/vscode-extensions/)

@@ -63,6 +63,13 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         padding: 2rem 3rem;
     }
 
+    @media(max-width: 650px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 0;
+    }
+
     @media(max-width: ${sizes.breakpoints.sm}) {
         min-width: 25rem;
         min-height: auto;
@@ -76,12 +83,14 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         color: inherit;
     }
 
-    h4 {
+    .h4 {
         font-size: 1.8rem;
+        margin-bottom: 0;
+        color: ${colors.textDark};
         margin: ${({ isTitleOutside }) => (isTitleOutside ? '-7rem 0 6rem' : '')}
     }
 
-    img, object {
+    img, object, .g-image {
         display: inline-block;
         margin: 3rem 0 1rem;
         height: 8rem;
@@ -92,6 +101,13 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         @media(max-width: ${sizes.breakpoints.md}) {
             margin: 1.5rem 0 1rem;
         }
+    }
+
+    .g-image {
+        position: relative;
+        width: 7rem;
+        height: 7rem;
+        margin: 0 0 5rem;
     }
 
     .price {
@@ -155,7 +171,7 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        z-index: 1999999999;
+        z-index: 9;
 
         @media(min-width: calc(${sizes.breakpoints.sm} + 1px)) {
             position: absolute;
@@ -171,6 +187,12 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
 
         @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             bottom: ${({ transform }) => (transform ? '2rem' : '1.5rem')};
+        }
+
+        @media(max-width: 650px) {
+            position: static;
+            transform: none;
+            margin-top: 5rem;
         }
     }
 
@@ -241,7 +263,8 @@ const StyledPricingBox = styled.div<StyledPricingBoxProps>`
 
 export interface PricingBoxProps {
   title: string
-  img: JSX.Element
+  img?: HTMLImageElement
+  gatsbyImage?: JSX.Element
   price?: string | JSX.Element
   duration?: string
   feature?: string | JSX.Element
@@ -262,6 +285,7 @@ export interface PricingBoxProps {
   areFeaturesBold?: boolean
   boldFeaturesCount?: number
   perUserMonth?: boolean
+  headingLevel?: 'h2' | 'h3'
 }
 
 const PricingBox: React.SFC<PricingBoxProps> = ({
@@ -286,7 +310,9 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
   info,
   areFeaturesBold,
   boldFeaturesCount = 0,
-  perUserMonth
+  perUserMonth,
+  headingLevel,
+  gatsbyImage
 }) => (
   <StyledPricingBox
     transform={transform}
@@ -297,8 +323,11 @@ const PricingBox: React.SFC<PricingBoxProps> = ({
     btnBackground={btnBackground}
     isTitleOutside={isTitleOutside}
   >
-    <h4>{title}</h4>
+    {
+        headingLevel === 'h3' ? <h3 className="h4">{title}</h3> : headingLevel === 'h2' ? <h2 className="h4">{title}</h2> : <h4>{title}</h4>
+    }
     {img ? img : null}
+    {gatsbyImage ? <div className="g-image">{gatsbyImage}</div> : null}
     {price ? <div className="price">{price}</div> : null}
     { perUserMonth ? <div className="duration" style={{fontWeight: 400}}>per user/month</div> : null }
     {duration ? <div className="duration">{duration}</div> : null}

@@ -3,9 +3,22 @@
 It's relatively easy to set up your Ruby project in Gitpod.
 
 ## Ruby Versions
-Gitpod comes with Ruby 2.5 and 2.6 pre-installed (2.6 is the default).
+As of this writing, Gitpod comes with Ruby 2.6.6 pre-installed.
 
-To change the default Ruby version, you can simply run `rvm use 2.5 --default` in Gitpod's Terminal. You can also install other versions, e.g. by running `rvm install 2.7`.
+To use a different Ruby version (for example, 2.5.1) you can create a [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/) for your project, and then add something like the second paragraph to it:
+
+```Dockerfile
+FROM gitpod/workspace-full
+USER gitpod
+
+# Install Ruby version 2.5.1 and set it as default
+RUN echo "rvm_gems_path=/home/gitpod/.rvm" > ~/.rvmrc
+RUN bash -lc "rvm install ruby-2.5.1 && \
+              rvm use ruby-ruby-2.5.1 --default"
+RUN echo "rvm_gems_path=/workspace/.rvm" > ~/.rvmrc
+```
+
+> 💡 Explanation: Gitpod initially [sets up RVM](https://github.com/gitpod-io/workspace-images/blob/b4b8a2b796ce570efa3aef2fc9d12d5c9803d0d2/full/Dockerfile#L228-L243) in `/home/gitpod/.rvm`, but then later switches the RVM configuration directory to `/workspace/.rvm`, so that any user-made changes (like installing new gems) are persisted within a Gitpod workspace. However, during the Dockerfile build, the `/workspace` directory doesn't exist yet, so we temporarily reset RVM's configuration directory to `/home/gitpod/.rvm`.
 
 ## Example Repositories
 
@@ -15,10 +28,9 @@ Here are a few Ruby example projects that are already automated with Gitpod:
 
 Repository | Description | Try it
 ---------|----------|---------
-[rails_sample_app](https://github.com/gitpod-io/rails_sample_app) | Ruby on Rails tutorial sample application | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/rails_sample_app)
-[Gitpod-Ruby-On-Rails](https://github.com/gitpod-io/Gitpod-Ruby-On-Rails) | Minimal Ruby on Rails example | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-Ruby-On-Rails)
-[home-assistant.io](https://github.com/home-assistant/home-assistant.io) | Open source home automation | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/home-assistant/home-assistant.io)
-[dev.to](https://github.com/thepracticaldev/dev.to) | A platform where software developers write articles | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/thepracticaldev/dev.to)
+[Ruby on Rails template](https://github.com/gitpod-io/ruby-on-rails) | Ruby on Rails template with a PostgreSQL database | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/ruby-on-rails)
+[Forem](https://github.com/forem/forem) | The platform that powers [dev.to](https://dev.to) | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/forem/forem)
+[GitLab](https://gitlab.com/gitlab-org/gitlab) | The open source end-to-end software development platform | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://gitlab.com/gitlab-org/gitlab)
 
  </div>
 

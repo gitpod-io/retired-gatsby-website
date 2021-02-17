@@ -3,7 +3,7 @@ url: /docs/self-hosted/0.4.0/install/https-certs/
 ---
 
 
-### HTTPS certificates
+# HTTPS certificates
 
 
 While we highly recommend operating Gitpod using HTTPS, Gitpod is able to run on insecure HTTP.
@@ -28,7 +28,7 @@ Generate the [dhparams.pem](https://security.stackexchange.com/questions/94390/w
 openssl dhparam -out secrets/https-certificates/dhparams.pem 2048
 ```
 
-#### Using Let's Encrypt
+## Using Let's Encrypt
 
 The most accessible means of obtaining HTTPS certificates is using [Let's Encrypt](https://letsencrypt.org/) which provides free certificats to anybody who can prove ownership of a domain.
 Gitpod requires [wildcard certificates](https://en.wikipedia.org/wiki/Wildcard_certificate) (e.g. `*.ws.your-domain.com`) which [can be obtained via Let's Encrypt](https://community.letsencrypt.org/t/acme-v2-production-environment-wildcards/55578) but require [proof of ownership via DNS](https://letsencrypt.org/docs/challenge-types/#dns-01-challenge).

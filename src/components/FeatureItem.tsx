@@ -25,6 +25,12 @@ const StyledFeatureItem = styled.div`
         }
     }
 
+    .h3 {
+        & + p {
+            margin: 0;
+        }
+    }
+
     p {
         max-width: 320px;
     }
@@ -55,7 +61,7 @@ const FeatureItem = ({ title, text, img, alt }: FeatureItemProps) => (
     <StyledFeatureItem>
         <img src={img} alt={alt ? alt : title}/>
         <div>
-            <h3>{title}</h3>
+            <h2 className="h3">{title}</h2>
             <p>{text}</p>
         </div>
     </StyledFeatureItem>

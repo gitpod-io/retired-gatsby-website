@@ -8,10 +8,10 @@ Gitpod supports PHP right out of the box, but more advanced features such as deb
 
 | Repository | Description | Try it |
 |------------|-------------|--------|
+| [symfony-demo](https://github.com/gitpod-io/symfony-demo) | A PHP/Symfony reference application following best practices |[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/symfony-demo) |
 | [magento2gitpod](https://github.com/nemke82/magento2gitpod) | Magento 2 optimized setup for Gitpod: Nginx, MySQL, PHP 7.2, PHP-FPM and more | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nemke82/magento2gitpod) |
 | [koel](https://github.com/phanan/koel) | A personal music streaming server that works | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/phanan/koel) |
-| [symfony-demo](https://github.com/gitpod-io/symfony-demo) | Symfony Demo Application |[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/symfony-demo)
-| [Drupal 9](github.com/bserem/gitpod-drupal-mysql-starterkit) | Drupal 9 with MySQL, suitable for site building and contrib module development |[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/bserem/gitpod-drupal-mysql-starterkit)
+| [drupal](github.com/bserem/gitpod-drupal-mysql-starterkit) | Drupal 9 with MySQL, suitable for site building and contrib module development |[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/bserem/gitpod-drupal-mysql-starterkit) |
 
 </div>
 

@@ -12,7 +12,7 @@ Here are a few Dart example projects that are already automated with Gitpod:
 
 ## Installing Dart
 
-To install the Dart SDK in Gitpod one must add the following to your [.gitpod.Dockerfile](https://gitpod.io/docs/config-docker)
+To install the Dart SDK in Gitpod one must add the following to your [.gitpod.Dockerfile](/docs/config-docker)
 
 ```Dockerfile
 RUN brew tap dart-lang/dart && brew install dart

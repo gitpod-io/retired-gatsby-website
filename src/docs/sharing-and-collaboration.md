@@ -5,6 +5,8 @@ There are two different ways to share your workspaces:
  - [Sharing Running Workspaces](#sharing-running-workspaces)
  - [Sharing Snapshots](#sharing-snapshots)
 
+`youtube: 9RftoWFzJ2s`
+
 ## Sharing Running Workspaces
 
 Sharing running workspaces makes it possible to quickly look at a workspace together with a (remote) colleague.

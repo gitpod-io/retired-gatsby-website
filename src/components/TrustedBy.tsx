@@ -111,9 +111,9 @@ interface TrustedByProps {
 const TrustedBy = ({ brands, title, styles }: TrustedByProps) => (
   <StyledTrustedBy style={{...styles}}>
     <div className="row">
-      <h3>
+      <h2 className="h3">
         {title}
-      </h3>
+      </h2>
       <div className="logos">
         {brands.map((b: Brand) => (
           <a href={b.url} target="_blank" className="trustedBy">

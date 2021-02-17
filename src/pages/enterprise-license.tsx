@@ -296,7 +296,7 @@ const EnterpriseLicensePage = () => {
   }
 
   return (
-    <IndexLayout>
+    <IndexLayout canonical="/enterprise-license/">
       <StyledEnterpriseLicensePage>
         <div className="row">
           {state.messageSent ? (
@@ -435,7 +435,7 @@ const EnterpriseLicensePage = () => {
               <a href="https://calendly.com/gitpod/sales" className="btn btn--cta">
                 Schedule a Call
               </a>
-              <Link to="/contact" className="btn">
+              <Link to="/contact/" className="btn">
                 Write Us a Mail
               </Link>
             </div>
