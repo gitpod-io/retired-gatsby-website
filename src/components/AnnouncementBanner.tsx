@@ -17,12 +17,8 @@ const AnnoucementBannerWrapper = styled.div`
         border: none;
         border-radius: 50%;
 
-        @media(max-width: 472px) {
-            right: 1rem;
-        }
-
-        @media(max-width: 320px) {
-            right: .5rem;
+        @media(max-width: 505px) {
+            display: none;
         }
     }
 
@@ -48,58 +44,54 @@ const StyledAnnouncementBanner = styled(Link)`
     font-size: 85%;
   }
 
-  .row {
-    @media(max-width: 472px) {
-        padding: 0 2.8rem 0 .5rem;
-    }
-  }
-
   .text {
     padding: 1rem 0;
     font-weight: 600;
     text-align: center;
-    font-size: 90%;
-
-    @media(max-width: 472px) {
-        text-align: left;
-    }
-
-    @media(max-width: 410px) {
-        text-align: center;
-    }
+    font-size: 90%; 
 
     @media(max-width: 320px) {
         padding: .8rem;
     }
   }
 
-  .openings {
-    background: ${colors.white};
-    color: ${colors.grey};
-    padding: .5rem 1.4rem;
-    border-radius: 10rem;
-    margin-left: 2rem;
-
-    @media(max-width: 505px) {
-        margin-left: 1rem;
+  @media(max-width: 505px) {
+    .help {
+        display: none;
     }
 
-    @media(max-width: 405px) {
-        padding: .2rem .9rem;
+    .openings {
+        margin-left: .3rem;
     }
   }
 
-  i {
-      margin-left: .3rem;
-
-      @media(max-width: 472px) {
-          display: none;
-      }
+  @media(min-width: 506px) {
+    .openings {
+        display: inline flex;
+        align-items: center;
+        background: ${colors.white};
+        color: ${colors.grey};
+        padding: .5rem 1.4rem;
+        border-radius: 10rem;
+        margin-left: 2rem;
+    }
   }
 
   .arrow {
-      height: 8px;
-      width: 15px;
+    margin-left: .8rem;
+
+    @media(max-width: 505px) {
+        height: .8rem;
+        margin-left: .2rem;
+    }
+  }
+
+  .arrow-path {
+    stroke: #3D515E;
+
+    @media(max-width: 505px) {
+        stroke: #fff;
+    }
   }
 `;
 
@@ -154,28 +146,13 @@ const AnnoucementBanner = () => {
             <StyledAnnouncementBanner to="/careers/#jobs">
                 <div className="row">
                     <div className="text">
-                        Wanna help make Gitpod better? Join our team!
+                        <span className="help">Wanna help make Gitpod better?&nbsp;</span>Join our team!&nbsp;
                         <span className="openings">
                             <strong>{jobs.length}</strong>
-                            &nbsp;Openings <i>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="283"
-                                    height="118"
-                                    fill="none"
-                                    viewBox="0 0 283 118"
-                                    className="arrow"
-                                >
-                                    <path
-                                        stroke="#000"
-                                        strokeLinecap="square"
-                                        strokeMiterlimit="10"
-                                        strokeWidth="18"
-                                        d="M224 9l50 50-50 50"
-                                    ></path>
-                                    <path stroke="#000" strokeWidth="18" d="M274.023 58L0.023 59.07"></path>
-                                </svg>
-                            </i>
+                            &nbsp;Openings
+                                <svg className="arrow" width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path className="arrow-path" d="M15 1.5L19 5.5M19 5.5L15 9.5M19 5.5H1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </span>
                     </div>
                 </div>
