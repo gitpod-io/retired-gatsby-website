@@ -36,8 +36,6 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-mdx`,
-      options: {
-      },
     },
     {
       // Exclude pages from the page build -- https://www.gatsbyjs.org/packages/gatsby-plugin-exclude/
