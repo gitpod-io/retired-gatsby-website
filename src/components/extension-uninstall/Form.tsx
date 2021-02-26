@@ -48,14 +48,9 @@ const StyledForm = styled.form`
 
 const Form = () => {
     const [state, setState] = useState<{
-        name?: string
-        consent?: boolean
-        email?: string
         feedback: string
         otherFeedback?: string
         messageSent?: boolean
-        errorMessage?: string
-
     }>({
         feedback: ''
     })
@@ -83,12 +78,9 @@ const Form = () => {
         e.preventDefault()
 
         const email: Email = {
-            from: {
-                email: state.email,
-                name: state.name
-            },
-            subject: 'Why did I uninstall the browser extension?' + '  (from ' + state.email + ')',
-            message: state.feedback + state.otherFeedback
+            subject: 'Why did I uninstall the browser extension?',
+            feedback: state.feedback,
+            otherFeedback: state.otherFeedback
         }
 
         fetch('/.netlify/functions/submit-form', {
@@ -111,20 +103,8 @@ const Form = () => {
             onSubmit={handleSubmit}
         >
             {
-                state.messageSent ? (
-                    <div className="sucess">
-                        <img src={tick} className="tick" alt="Tick" />
-                        <h3>Thanks for your Feedback</h3>
-                    </div>
-                ) : (
+                !state.messageSent ? (
                 <>
-
-                    <div style={{ visibility: 'hidden' }}>
-                        <label>
-                            Don’t fill this out if you're human: <input name="bot-field" />
-                        </label>
-                    </div>
-
                     <input type="hidden" name="form-name" value="extension-deletion" />
                     <h3>Why did you uninstall the browser extension?</h3>
                     <p>Check all that apply:</p>
@@ -145,53 +125,15 @@ const Form = () => {
                             <input type="checkbox" onChange={handleChange} name="expected" data-text="Gitpod isn’t what I expected" />
                                 Gitpod isn’t what I expected
                         </label>
-
                         <textarea onChange={handleTextAreaChange} aria-label="Do you have any other feedback?" placeholder="Do you have any other feedback?" name="otherFeedback"></textarea>
-
-                                                <label className="visually-hidden" htmlFor="Name">
-                            {' '}
-                            Name
-                        </label>
-                        <input
-                            autoFocus
-                            name="name"
-                            className="form__input form__input--half"
-                            type="text"
-                            placeholder="Name"
-                            id="Name"
-                            onChange={handleChange}
-                        />
-                        <label className="visually-hidden" htmlFor="email">
-                            E-Mail
-                        </label>
-                        <input
-                            name="email"
-                            className="form__input form__input--half"
-                            type="email"
-                            placeholder="E-mail"
-                            id="email"
-                            onChange={handleChange}
-                        />
-
-                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', margin: '0px 0px 20px 0px' }}>
-
-                            <input
-                                name="consent"
-                                id="consent"
-                                type="checkbox"
-                                onChange={handleChange}
-                                style={{ margin: '0px 10px', transform: 'translateY(.5rem)' }}
-                            />
-                            <label htmlFor="consent">
-                                I consent to having this website store my submitted information so that a support staff can respond to my inquiry.
-                            </label>
-                        </div>
-
-                        {state.errorMessage ? <p className="error">{state.errorMessage}</p> : null}
-
                         <button className="btn" disabled={!state.feedback && !state.otherFeedback}>Send</button>
                     </div>
-                </>) 
+                </>) : (
+                <div className="sucess">
+                    <img src={tick} className="tick" alt="Tick" />
+                    <h3>Thanks for your Feedback</h3>
+                </div>
+                )
             }
         </StyledForm>
     )
