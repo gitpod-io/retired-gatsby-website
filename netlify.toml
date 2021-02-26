@@ -411,3 +411,8 @@
   from = "/gitpod-vs-codespaces"
   to = "/gitpod-vs-github-codespaces/"
   status = 301
+
+[[redirects]]
+  from = "/changelog"
+  to = "/docs/changelog/"
+  status = 301
