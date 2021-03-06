@@ -39,8 +39,8 @@ const SubmissionSucess = () => (
   <Styled>
     <img src={tick} alt="Tick" />
     <h1>
-      <span>Thanks for Your Mail,</span>
-      <br /> We'll Get Back to you soon!
+      <span>Thanks!</span>
+      <br /> We'll get back to you soon.
     </h1>
   </Styled>
 )
