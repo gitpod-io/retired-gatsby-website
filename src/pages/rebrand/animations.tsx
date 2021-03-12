@@ -673,7 +673,7 @@ const GitpodConsole: React.FunctionComponent<{}> = () => {
     }
 
     async function run() {
-      await printInput('Hello')
+      await printInput('cargo install --path . --features=stable')
 
       await sleep(50)
 
