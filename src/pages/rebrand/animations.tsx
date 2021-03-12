@@ -637,6 +637,10 @@ const GitpodConsole: React.FunctionComponent<{}> = () => {
     if (wrapperRef.current) {
       observer.observe(wrapperRef.current)
     }
+
+    return () => {
+      observer.disconnect()
+    }
   }, [])
 
   React.useEffect(() => {
