@@ -229,6 +229,10 @@ export const MENU: MenuEntry[] = [
                 "languages/dart"
             ),
             M(
+                "Flutter",
+                "languages/dart#flutter"
+            ),
+            M(
                 "Julia",
                 "languages/julia"
             ),
