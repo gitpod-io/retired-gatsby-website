@@ -1,3 +1,7 @@
+---
+url: /docs/self-hosted/0.3.0/install/workspaces/
+---
+
 # Workspaces
 
 ## Sizing

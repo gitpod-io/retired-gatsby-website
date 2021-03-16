@@ -2,7 +2,7 @@
 subtitle: How to streamline developer onboarding
 title: Dev environments as code
 date: Mon Nov 19 2018 15:39:56 GMT+0000 (UTC)
-image: /dev-env-gilbert.gif
+image: /dev-env-gilbert.png
 author: svenefftinge
 url: /dev-env-gilbert.gif
 ---
@@ -44,7 +44,7 @@ Unfortunately, the pain doesn’t stop here.
 
 You probably know the famous phrase “It works on my machine”? The situation when a bug only appears on one machine and is hard to reproduce on others? **That feeling when a bad thing happens in production, but you can’t reproduce it locally?** Not very surprising, though, as long you are running the code on a different platform based on a different setup.
 
-![](https://cdn-images-1.medium.com/max/2000/1*I3-fRXyMaZDfesAxyA2eKw.jpeg)
+![But it works... On my machine](https://cdn-images-1.medium.com/max/2000/1*I3-fRXyMaZDfesAxyA2eKw.jpeg)
 
 ## **Going back to fix something on an old branch**
 
@@ -52,7 +52,7 @@ Another pet peeve is when you need to fix something on a maintenance branch. Fix
 
 Tinkering with a six months old technology stack can be so annoying. You have to deal with all those old libraries and versions of them. However, you still have to make it work somehow.
 
-![Photo by [JESHOOTS.COM](https://unsplash.com/@jeshoots?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10944/0*fni6JI11_OS6eJV7)*Photo by [JESHOOTS.COM](https://unsplash.com/@jeshoots?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
+![Photo by [JESHOOTS.COM](https://unsplash.com/@jeshoots?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](/jeeshoots.jpeg)*Photo by [JESHOOTS.COM](https://unsplash.com/@jeshoots?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
 
 All this suffering can end if we applied the ‘infrastructure as code’ idea to our dev environments, too. Why not make dev environment setups automated, reliably reproducible, and versioned by writing them down in an executable format and checking them into the project’s source code repository?
 
@@ -72,7 +72,7 @@ Docker files are a pretty neat way to describe a development environment. Imagin
 
 Once you push the change to the repository and the docker image gets updated (automatically), all team members have the new tool in their development environment. We need to get to coding with a single click.
 
-![Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/12000/0*_7n4Htwk2Iz-r9qA)*Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
+![Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](/clément-h.jpeg)*Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
 
 ### **Automated IDE Setup**
 
@@ -92,6 +92,6 @@ It integrates with code hosting platforms such as GitHub. It eliminates all the 
 
 Applying the lessons learned from DevOps to our development setup can save us so much precious time and energy. [ActiveState’s Developer Survey 2018 ](https://www.activestate.com/developer-survey-2018-open-source-runtime-pains/)underlines this with some numbers:
 
-![](https://cdn-images-1.medium.com/max/3200/1*Vvl3N-1hDANiy15Pc9xeiQ.png)
+![ActiveState’s Developer Survey 2018: How much time do you spent on managing dependencies and development tools](https://cdn-images-1.medium.com/max/3200/1*Vvl3N-1hDANiy15Pc9xeiQ.png)
 
 Do we really need to welcome new colleagues or contributors with a painful on-boarding experience? Let’s skip the prose in the *readme* and write code to have our dev environment setup **automated, reproducible, and versioned.**

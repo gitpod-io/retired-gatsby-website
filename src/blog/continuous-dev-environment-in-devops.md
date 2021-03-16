@@ -32,7 +32,7 @@ We should automate dev environments using code, just as we do with testing, stag
 
 Automating a dev environment means we can recreate it any time. Starting fresh every time will make sure the setup works correctly and that you get a clean state. Since the build and the tests ran through and the dependencies are all fresh, you can be sure that any problems come from your changes. Such a setup makes it super easy to reproduce bugs, as well.
 
-![disposable dev environments](./continuous-dev-environment-in-devops/same-shoes.jpg)
+![Self-service rack with available pairs of bowling shoes](./continuous-dev-environment-in-devops/same-shoes.jpg)
 
 Moreover, a use-once dev environment frees you from cleaning up afterward. You never pollute your local system with any heavy checkouts, dependencies, builds, databases, and the like. Enter zero-waste coding.
 
@@ -64,7 +64,7 @@ The Theia IDE open-source project is fully configured with continuously prebuilt
 
 > https://gitpod.io/#https://github.com/theia-ide/theia
 
-![Individual](./continuous-dev-environment-in-devops/theia.png)
+![Theia in Gitpod](./continuous-dev-environment-in-devops/theia.png)
 
 ## But my environment is different than those from my teammates!
 Yes, of course, there are personal preferences like themes, keybindings, or even one or the other tool. Some developers heavily use command-line tools and have very advanced configurations. Others use particular VS Code extensions that improve their workflow significantly.
@@ -78,6 +78,6 @@ While [Gitpod](/) lets you have user-specific settings, we see an opportunity in
 ## The missing piece in DevOps
 I'm pretty sure, automated ready-to-code dev environments will become mainstream. The advantages and implications are just too good to be ignored. Everyone who has understood and experienced the benefits of a proper DevOps toolchain should understand how providing dev environments on-demand completes that experience. Ironing out that last area of non-reproducible and very annoying yak-shaving should be high on our todo list as it will improve developer productivity drastically.
 
-Gitpod is available [to open-source projects for free and affordable for commercial projects](/pricing), through the Saas offering (Gitpod.io). [Gitpod Enterprise](/pricing#enterprise) will soon be released, allows self-hosting Gitpod on any Kubernetes cluster, and integrates with GitHub Enterprise, GitLab, Jenkins, JIRA and other tools in your DevOps toolchain.
+Gitpod is available [to open-source projects for free and affordable for commercial projects](/pricing/), through the Saas offering (Gitpod.io). [Gitpod Enterprise](/pricing/#enterprise) will soon be released, allows self-hosting Gitpod on any Kubernetes cluster, and integrates with GitHub Enterprise, GitLab, Jenkins, JIRA and other tools in your DevOps toolchain.
 
 [Comments?](https://dev.to/svenefftinge/continuous-dev-environments-the-next-step-in-devops-4ab7)

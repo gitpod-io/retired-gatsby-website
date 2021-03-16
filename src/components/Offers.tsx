@@ -57,21 +57,7 @@ const Offers: React.SFC<OffersProps> = ({ offers, title, para }) => (
                         (offer, i) => (
                             <PricingBox
                                 key={i}
-                                title={offer.title}
-                                img={offer.img}
-                                price={offer.price}
-                                duration={offer.duration}
-                                feature={offer.feature}
-                                features={offer.features}
-                                transform={offer.transform}
-                                btnText={offer.btnText}
-                                link={offer.link}
-                                background={offer.background}
-                                hideButton={offer.hideButton}
-                                btn={offer.btn}
-                                text={offer.text}
-                                banner={offer.banner}
-                                bannerColor={offer.bannerColor}
+                                {...offer}
                             />
                         )
                     )

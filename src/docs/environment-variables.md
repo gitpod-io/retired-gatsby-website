@@ -2,6 +2,15 @@
 
 You can pass environment variables into your workspace.
 
+## Default Environment Variables
+The following environment variables are set automatically by Gitpod and are guaranteed to exist:
+
+- `GITPOD_WORKSPACE_ID`: The Universally Unique Identifier (UUID) associated with the workspace.
+- `GITPOD_WORKSPACE_URL`: The unique URL of the workspace.
+
+### Reserved Prefix
+Environment variables beginning with the prefix  `GITPOD_` are reserved for internal use by Gitpod and are overridden on every workspace startup. This means that a _user-defined_ variable set with the name `GITPOD_FOOBAR` will be ignored and not accessible in the workspace.
+
 ## User-Specific Environment Variables
 Gitpod supports encrypted, user-specific environment variables.
 They are stored as part of your user settings and can be used to set access tokens, or pass any other kind of user-specific information to your workspaces.
@@ -62,7 +71,7 @@ Subsequently `*/*` makes that variable available everywhere.
 
 <br><br>
 
-# Passing In Environment Variables
+<h2 class="h1">Passing In Environment Variables</h2>
 
 In addition to user-specific env variables, Gitpod also allows passing in variables through the `gitpod.io/#` URL.
 The syntax for that is

@@ -20,7 +20,7 @@ const StyledLinkSet = styled.div`
         &:hover {
             color: ${colors.lightBlue};
         }
-        
+
         &.active {
             color: ${colors.lightBlue};
             border-left: solid 1px ${colors.lightBlue};

@@ -2,64 +2,57 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
-import Saturn from '../resources/saturn-icon.svg'
-import Features from '../components/Features'
-import Feature from '../components/Feature'
-import { features } from '../utils/education'
+import TextCards from '../components/TextCards'
+import TextCard from '../components/TextCard'
+import { textCardsData } from '../contents/education'
 import Quote from '../components/Quote'
 import CollegeStudents from '../resources/college-students.png'
 import Bg from '../components/Bg'
 import ActionCard from '../components/ActionCard'
 import PricingTable from '../components/PricingTable'
 import Circle from '../components/Circle'
-import Layer from '../resources/layer.svg'
+import Bitbucket from '../resources/bitbucket.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import PopOver from '../components/PopOver'
-import { isEurope } from './pricing'
+import { isEurope } from '../utils/helpers'
+import Img from 'gatsby-image'
 
-const EducationPage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/education/' title="Education">
-        <div className="grey-container">
-
-            {/* ----- Banner ----- */}
-
+const EducationPage: React.SFC<{}> = ({data}: any) => (
+    <IndexLayout
+        canonical='/education/'
+        title="Education"
+        description="Gitpod simplifies the onboarding process, makes coding accessible from anywhere, and provides a productive learning environment."
+    >
             <Banner
                 subtitle="Gitpod Education"
                 title={<h1>Let’s <strong>Focus on Teaching Code,</strong><br /> not Tedious Setups!</h1>}
-                paragraph="Gitpod simplifies the onboarding process, makes coding accessible from any device and provides a productive learning environment."
+                paragraph="Gitpod simplifies the onboarding process, makes coding accessible from any device, and provides a productive learning environment."
                 linkPath="/education/#education"
                 linkText="Choose your Solution"
-                img={<object tabIndex={-1} style={{transform:"scale(0.8)"}} data={Saturn}/>}
+                img={<Img fluid={data.file.childImageSharp.fluid} alt="Education"/>}
             />
 
-            {/* ----- Section Features ----- */}
-
-            <Features title="For Schools, Universities, Coding Bootcamps, etc.">
+        <div className="grey-container">
+            <TextCards title="For Schools, Universities, Coding Bootcamps, etc.">
                 {
-                    features.map((f, i) => (
-                        <Feature
+                    textCardsData.map((f, i) => (
+                        <TextCard
                             key={i}
                             title={f.title}
                             paragraphs={f.paragraphs}
                         />
                     ))
                 }
-            </Features>
+            </TextCards>
         </div>
-
-        {/* ----- Quote ----- */}
 
         <Quote
             title="We eliminate tedious workflows."
         />
 
-        {/* ----- BG ----- */}
-
-        <Bg url={CollegeStudents} />
-
-        {/* ----- Pricing Table ----- */}
+        <Bg url={CollegeStudents} alt="Students going to the college"/>
 
         <PricingTable
             title="Gitpod Education Pricing"
@@ -142,7 +135,7 @@ const EducationPage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Layer} alt="Layer Logo"/> Bitbucket</th>
+                    <th><img src={Bitbucket} alt="Bitbucket Logo"/> Bitbucket</th>
                     <td>Soon</td>
                     <td>Soon</td>
                     <td>Soon</td>
@@ -162,21 +155,32 @@ const EducationPage: React.SFC<{}> = () => (
                 <tr className="buttons">
                     <th></th>
                     <td><Link to="/#get-started" className="btn btn--cta">Start for Free</Link></td>
-                    <td><Link to="/contact/" state={{ subject: "I'm interested in Gitpod Education" }} className="btn btn--cta">Contact Sales</Link></td>
+                    <td><Link to="/contact/" state={{ subject: "Question about Gitpod Education" }} className="btn btn--cta">Contact Sales</Link></td>
                     <td><Link to="/self-hosted/" className="btn">Host Yourself</Link></td>
                 </tr>
             </tbody>
         </PricingTable>
 
-        {/* ----- Didn't find ----- */}
-
         <ActionCard
             title='Didn’t find what you’re looking for?'
             text='Please get in touch. We’re happy to answer your questions.'
-            anchors={[{href: 'https://calendly.com/gitpod/sales',text: 'Schedule a Call'}, {href: '/contact/', subject: "I have a question regarding Gitpod Education", text: 'Contact'}]}
+            anchors={[{href: 'https://calendly.com/gitpod/sales',text: 'Schedule a Call'}, {href: '/contact/', subject: "Question about Gitpod Education", text: 'Contact'}]}
         />
 
     </IndexLayout>
 )
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "education.png" }) {
+        childImageSharp {
+            fluid(traceSVG: { color: "#0b2144" }) {
+                tracedSVG
+                src
+            }
+        }
+    }
+  }
+`
 
 export default EducationPage

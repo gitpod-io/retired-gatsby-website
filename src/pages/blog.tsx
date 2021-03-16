@@ -2,13 +2,14 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import styled from '@emotion/styled'
-import { colors, sizes } from '../styles/variables'
+import { sizes } from '../styles/variables'
 import { graphql } from 'gatsby'
-import PostPreview from '../components/PostPreview'
-import NewsletterForm from '../components/NewsletterForm'
+import PostPreview from '../components/blog/PostPreview'
+import BackToTopButton from '../components/BackToTopButton'
+import { Posts } from '../components/blog/Posts'
+// import NewsletterForm from '../components/NewsletterForm'
 
 const StyledBlogPage = styled.div`
-
     /* ------------------------------------------- */
     /* ----- Section Posts ----- */
     /* ------------------------------------------- */
@@ -17,33 +18,18 @@ const StyledBlogPage = styled.div`
         margin-bottom: 3rem;
     }
 
+    .pattern {
+        padding: 10rem 0 5rem;
+        text-align: center;
+    }
+
     .post {
+        padding: 7rem 0;
+
         @media(max-width: ${sizes.breakpoints.md}) {
-            padding: 3rem 0;
-        }
-
-        @media(max-width: ${sizes.breakpoints.sm}) {
-            padding: 1rem 0;
+            padding: 5rem 0;
         }
     }
-
-    .page-subtitle {
-        margin-top: 5rem;
-        color: ${colors.textLight};
-        font-weight: 400;
-        margin-bottom: 0;
-    }
-
-    .posts {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        @media (max-width: ${sizes.breakpoints.md}) {
-            justify-content: space-around;
-        }
-    }
-
 `
 
 export const query = graphql`
@@ -107,33 +93,39 @@ interface BlogData {
 
 const BlogPage: React.SFC<BlogPageProps> = (props) => {
 
-    const posts = props.data.allMarkdownRemark.edges.sort((a,b) =>
-            Date.parse(b.node.frontmatter.date) - Date.parse(a.node.frontmatter.date));
+    const posts = props.data.allMarkdownRemark.edges.sort((a, b) =>
+        Date.parse(b.node.frontmatter.date) - Date.parse(a.node.frontmatter.date));
 
     return (
-        <IndexLayout canonical="/blog/" title="Blog">
+        <IndexLayout canonical="/blog/" title="Blog" description="Visit the Gitpod blog to learn about releases, tutorials, news and more.">
             <StyledBlogPage>
 
                 {/* ----- Section Posts ----- */}
 
-                <section className="post grey-container">
+                <div className="pattern" aria-hidden="true">
                     <div className="row">
-                        <h3 className="page-subtitle">Blog Posts</h3>
                         <h1>Discover Articles and Tutorials about Gitpod</h1>
-                        <div className="posts">
+                    </div>
+                </div>
+
+                <section className="post">
+                    <div className="row">
+                        <h1 className="visually-hidden">Discover Articles and Tutorials about Gitpod</h1>
+                        <Posts>
                             {posts.map(
                                 post => <PostPreview
-                                        key={post.node.fields.slug}
-                                        post={post}
-                                    />
+                                    key={post.node.fields.slug}
+                                    post={post}
+                                />
                             )}
-                        </div>
+                        </Posts>
                     </div>
                 </section>
 
                 {/* ----- Section Newsletter ----- */}
+                {/* <NewsletterForm /> */}
 
-                <NewsletterForm />
+                <BackToTopButton />
             </StyledBlogPage>
         </IndexLayout>
     )

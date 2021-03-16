@@ -12,7 +12,7 @@ const StyledQuote = styled.section`
         padding: 8rem 0;
     }
 
-    h4 {
+    .h4 {
         position: relative;
         display: flex;
         justify-content: center;
@@ -28,6 +28,11 @@ const StyledQuote = styled.section`
 
         span {
             max-width: 80rem;
+
+            @media(max-width: 560px) {
+                padding: 0 1rem;
+            }
+
             @media(max-width: ${sizes.breakpoints.sm}) {
                 width: 100%;
             }
@@ -64,16 +69,16 @@ const StyledQuote = styled.section`
 `
 
 interface QuoteProps {
-    title: string
+    title: string | JSX.Element
 }
 
 const Quote: React.SFC<QuoteProps> = ({title}) => (
         <StyledQuote className="quote row">
-            <h4 className="quote__text">
-                <object tabIndex={-1} data={QuoteIcon}/>
+            <h2 className="quote__text h4">
+                <object aria-label="Left Quotation Mark" tabIndex={-1} data={QuoteIcon}/>
                 <span><i>&ldquo;</i> {title}<i>&rdquo;</i></span>
-                <object tabIndex={-1} data={QuoteIcon}/>
-            </h4>
+                <object aria-label="Right Quotation Mark" tabIndex={-1} data={QuoteIcon}/>
+            </h2>
         </StyledQuote>
 )
 

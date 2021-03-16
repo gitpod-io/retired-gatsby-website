@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35.891" height="57.919" viewBox="0 0 35.891 57.919">
-      <defs>
-    <pattern id="img1" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" width="82.373" height="102.373" viewBox="140 0 52.373 52.373">
-        <image xlink:href="https://www.gitpod.io/galaxy.jpg" y="-30" width="370" height="100" />
-    </pattern>
-  </defs>
-    <g transform="translate(35.891) rotate(90)"><g transform="translate(0 0)"><g transform="translate(0 35.891) rotate(-90)">
-        <path d="M35.89,53.588c0,2.382-1.554,4.331-3.451,4.331H3.451C1.553,57.919,0,55.97,0,53.588V4.331C0,1.949,1.553,0,3.451,0H32.44c1.9,0,3.451,1.949,3.451,4.331V53.588Z" fill="url(#img1)" /><circle cx="0.21" cy="0.21" r="0.21" transform="translate(17.779 2.293)" fill="#4d4d4d"/><ellipse cx="1.895" cy="1.906" rx="1.895" ry="1.906" transform="translate(15.942 52.985)" fill="#fff"/></g><path d="M0,32.869V0H45.416V32.869Z" transform="translate(5.355 1.497)" fill="#fff" opacity="0.954"/></g></g></svg>

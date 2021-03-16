@@ -2,125 +2,51 @@ import React from 'react'
 
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
-import Planet from '../resources/planet.svg'
-import Features from '../components/Features'
-import Feature from '../components/Feature'
+import TextCards from '../components/TextCards'
+import TextCard from '../components/TextCard'
 import Quote from '../components/Quote'
 import Bg from '../components/Bg'
 import ActionCard from '../components/ActionCard'
-import TrustedBy from '../components/TrustedBy'
 import EnterpriseBg from '../resources/enterprise-bg.png'
 import PricingTable from '../components/PricingTable'
 import Circle from '../components/Circle'
-import Layer from '../resources/layer.svg'
+import Bitbucket from '../resources/bitbucket.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
-import AppliToolsLogo from '../resources/aplitools.svg'
-import Gatsby from '../resources/gatsby.svg'
-import FreeCodeCamp from '../resources/freecodecamp.svg'
-import CodeInstituteLogo from '../resources/code.png'
-import FourGeeksAcademyLogo from '../resources/4-geeks-academy.png'
-import TheiaIDELogo from '../resources/theia-grey.svg'
+import { Link, graphql } from 'gatsby'
+import { textCardsData } from '../contents/enterprise'
+import Img from 'gatsby-image'
 
-import { Link } from 'gatsby'
+const EnterprisePage: React.SFC<{}> = ({data}: any) => (
+    <IndexLayout
+        canonical='/enterprise/'
+        title="Enterprise"
+        description="Adding Gitpod to your development tools means less waiting, faster onboarding, faster development cycles, higher code quality, and a smooth consistent workflow."
+    >
 
-export const features = [
-    {
-        title: 'Better Teamwork',
-        paragraphs: ['With Gitpod, reviewing code and finding bugs becomes more convenient than ever. ', 'Your team can collaborate asynchronously with Gitpod Snapshots, and synchronously with live-shared workspaces', 'Gitpod also makes it easy for non-developers to open a workspace.'],
-        // more:<p>Read more about <Link to="/docs/sharing-and-collaboration/">Collaboration</Link></p>
-    },
-    {
-        title: "Less Costs for More Machine Power",
-        paragraphs: ['You can use elastic clouds to satisfy your demand as needed.', 'With Gitpod there is no need for many $3000 laptops, a few good servers are already enough.', 'Servers are also more cost-effective because they are shared resources.']
-    },
-    {
-        title: "More Secure",
-        paragraphs: ['Host Gitpod yourself and your source code will never leave your corporate infrastructure.', 'With Gitpod you can roll out new runtimes, libraries and frameworks faster, as they only need to be on the server and not on developer laptops and workstations.', 'Self-Hosted Gitpod runs on your corporate network, keeps your data in your infrastructure, and does not require an internet connection.'],
-        // more: <p>Read more about <a href="#">Security</a></p>
-    },
-    {
-        title: "Smooth Integration",
-        paragraphs: ['All Gitpod needs is a Kubernetes cluster.', 'It enables user authentication and integration with your GitHub Enterprise, GitLab, or Bitbucket.', <>Please <Link to="/contact/"  state={{ subject: 'Gitpod Enterprise: Request for Customizations' }}>contact us</Link> for further customizations.</>],
-        logos: ['Layer', 'Github', 'Gitlab', 'Git']
-    },
-    // {
-    //     title: "Full Compatibility",
-    //     paragraphs: ['With Gitpod you can program in any language thanks to LSP. It is based on your runtime, your frameworks, and all the original binaries.', 'Also, it’s fully compatibly with your Docker containers, your VS Code extensions and your Theia extensions. Your workspaces are powerful enough to run a database easily.', 'Thanks to the similar UX to VS Code, Gitpod is a very familiar dev environment.'],
-    //     // more: <p>Read more about <a href="#">Compatibility</a></p>,
-    //     logos: ['VSC', 'Theia', 'Docker']
-    // }
-]
+        <Banner
+            subtitle="Gitpod Enterprise"
+            title={<h1>Unleash Developer Productivity</h1>}
+            paragraph="Adding Gitpod to your development tools means less waiting, faster onboarding, faster development cycles, higher code quality, and a smooth consistent workflow."
+            linkPath="/enterprise/#enterprise"
+            linkText="Choose your Solution"
+            img={<Img fluid={data.file.childImageSharp.fluid} alt="Data Planet"/>}
+        />
 
-const EnterprisePage: React.SFC<{}> = () => (
-    <IndexLayout canonical='/enterprise/' title="Enterprise">
         <div className="grey-container">
-
-            {/* ----- Banner ----- */}
-
-            <Banner
-                subtitle="Gitpod Enterprise"
-                title={<h1>Unleash Developer Productivity</h1>}
-                paragraph="Adding Gitpod to your development tools means less waiting, no tedious setups, faster onboarding, higher code quality and a smoother workflow."
-                linkPath="/enterprise/#enterprise"
-                linkText="Choose your Solution"
-                img={<object tabIndex={-1} data={Planet} />}
-            />
-
-            {/* ----- Section Features ----- */}
-
-            <Features title="Stay in the Flow and Scale Up Your Productivity">
+            <TextCards title="Stay in the Flow and Scale Up Your Productivity">
                 {
-                    features.map((f, i) => (
-                        <Feature
+                    textCardsData.map((f, i) => (
+                        <TextCard
                             key={i}
                             title={f.title}
                             paragraphs={f.paragraphs}
-                            // more={f.more}
                             logos={f.logos}
                         />
                     ))
                 }
-            </Features>
+            </TextCards>
         </div>
-
-        {/* ----- Section Trusted By ----- */}
-
-        <TrustedBy
-            brands={[
-                {
-                    alt: 'freeCodeCamp.org',
-                    url: 'https://www.freecodecamp.org/',
-                    svg: FreeCodeCamp,
-                    className: 'fcc'
-                },
-                {
-                    alt: 'Gatsby Logo',
-                    url: 'https://www.gatsbyjs.org/',
-                    svg: Gatsby
-                },
-                {
-                    alt: 'Theia Ide Logo',
-                    url: 'https://theia-ide.org',
-                    svg: TheiaIDELogo
-                },
-                {
-                    alt: 'Code Institute',
-                    url: 'https://codeinstitute.net/',
-                    svg: CodeInstituteLogo
-                },
-                {
-                    alt: 'Aplitools Logo',
-                    url: 'https://applitools.com/',
-                    svg: AppliToolsLogo
-                },
-                {
-                    alt: '4 Geeks Academy Logo',
-                    url: 'https://www.4geeksacademy.co/',
-                    svg: FourGeeksAcademyLogo
-                },
-            ]}
-        />
 
         {/* ----- Quote ----- */}
 
@@ -130,7 +56,7 @@ const EnterprisePage: React.SFC<{}> = () => (
 
         {/* ----- BG ----- */}
 
-        <Bg url={EnterpriseBg} />
+        <Bg url={EnterpriseBg} alt="People in an Office sitting on a Desk." />
 
         <PricingTable
             title="Gitpod Enterprise Pricing"
@@ -153,7 +79,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                 <tr>
                     <th>Pricing</th>
                     <td>Starting at $3000 per month</td>
-                    <td>$20 per user</td>
+                    <td>$20 per user per month</td>
                 </tr>
                 <tr>
                     <th>Domain</th>
@@ -201,7 +127,7 @@ const EnterprisePage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Layer} alt="Layer Logo" /> Bitbucket</th>
+                    <th><img src={Bitbucket} alt="Bitbucket Logo" /> Bitbucket</th>
                     <td>Soon</td>
                     <td>Soon</td>
                 </tr>
@@ -217,21 +143,32 @@ const EnterprisePage: React.SFC<{}> = () => (
                 </tr>
                 <tr className="buttons">
                     <th></th>
-                    <td><Link to="/contact/" state={{ subject: "I'm interested in Gitpod Enterprise" }} className="btn btn--cta">Contact Sales</Link></td>
+                    <td><Link to="/contact/" state={{ subject: "Question about Gitpod Enterprise" }} className="btn btn--cta">Contact Sales</Link></td>
                     <td><Link to="/self-hosted/" className="btn">Host Yourself</Link></td>
                 </tr>
             </tbody>
         </PricingTable>
 
-        {/* ----- Didn't find ----- */}
-
         <ActionCard
             title='Didn’t find what you’re looking for?'
             text='Please get in touch. We’re happy to answer your questions.'
-            anchors={[{ href: 'https://calendly.com/gitpod/sales', text: 'Schedule a Call' }, { href: '/contact/', subject: "I have a question regarding Gitpod Enterprise", text: 'Contact' }]}
+            anchors={[{ href: 'https://calendly.com/gitpod/sales', text: 'Schedule a Call' }, { href: '/contact/', subject: "Question about Gitpod Enterprise", text: 'Contact' }]}
         />
 
     </IndexLayout>
 )
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "enterprise.png" }) {
+        childImageSharp {
+            fluid(traceSVG: { color: "#0b2144" }) {
+                tracedSVG
+                src
+            }
+        }
+    }
+  }
+`
 
 export default EnterprisePage

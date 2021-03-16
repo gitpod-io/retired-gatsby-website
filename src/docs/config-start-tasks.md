@@ -10,8 +10,8 @@ For instance, the start script for the Gitpod documentation repository is define
 
 ```yaml
 tasks:
-- init: yarn && yarn build
-  command: yarn dev --host 0.0.0.0
+  - init: yarn && yarn build
+    command: yarn dev --host 0.0.0.0
 ```
 
 You can have multiple tasks, which are opened on separated terminals.
@@ -20,7 +20,7 @@ tasks:
 - command: echo Terminal1
 - command: echo Terminal2
 ```
-They are started in parallel. See [belows options](#openin) on configuring where and how the terminals are placed in the workbench.
+They are started in parallel. See [below options](#openin) on configuring where and how the terminals are placed in the workbench.
 
 ## Defining Commands
 
@@ -67,7 +67,7 @@ In case you need to run something even before init, that is a requirement for bo
 
 ```yaml
 tasks:
-  - before: setup.sh
+  - before: ./setup.sh
     init: npm install
     command: npm run dev
 ```
@@ -100,10 +100,10 @@ You can configure where in the IDE the terminal should be opened:
 
 | openIn       | Where |
 | ---------------|---------------------------|
-| `openIn:bottom`| the bottom panel (default)|
-| `openIn:left`  | the left panel|
-| `openIn:right` | the right panel|
-| `openIn:main`  | the main editor area|
+| `openIn: bottom`| the bottom panel (default)|
+| `openIn: left`  | the left panel|
+| `openIn: right` | the right panel|
+| `openIn: main`  | the main editor area|
 
 </div>
 
@@ -115,11 +115,11 @@ You can configure how the terminal should be opened relative to the previous tas
 
 | openMode        | Description |
 | --------------- | ----------- |
-| `openMode:tab-after`     | Opens in the same tab group right after the previous tab |
-| `openMode:tab-before`    | Opens in the same tab group left before the previous tab |
-| `openMode:split-right`   | Splits and adds the terminal to the right |
-| `openMode:split-left`    | Splits and adds the terminal to the left |
-| `openMode:split-top`     | Splits and adds the terminal to the top |
-| `openMode:split-bottom`  | Splits and adds the terminal to the bottom |
+| `openMode: tab-after`     | Opens in the same tab group right after the previous tab |
+| `openMode: tab-before`    | Opens in the same tab group left before the previous tab |
+| `openMode: split-right`   | Splits and adds the terminal to the right |
+| `openMode: split-left`    | Splits and adds the terminal to the left |
+| `openMode: split-top`     | Splits and adds the terminal to the top |
+| `openMode: split-bottom`  | Splits and adds the terminal to the bottom |
 
 </div>

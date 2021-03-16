@@ -62,7 +62,7 @@ Do you wish Gitpod would do more for your project? Then please read on. 👇
 
 ## Running init scripts
 
-Adding a `.gitpod.yml` file at the root of your repository allows customizing Gitpod for your project. A useful thing it can do is running scripts on start-up (or sometimes even before start-up: the [Gitpod app](https://github.com/marketplace/gitpod-io) can watch your repo and start pre-building the `init` step for every commit, see the next section for more info):
+Adding a `.gitpod.yml` file at the root of your repository allows customizing Gitpod for your project. A useful thing it can do is running scripts on start-up (or sometimes even before start-up: the [Gitpod app](https://github.com/apps/gitpod-io) can watch your repo and start pre-building the `init` step for every commit, see the next section for more info):
 
 ```yml
 tasks:
@@ -105,7 +105,7 @@ To learn more about configuring Terminals, please visit [the docs](https://www.g
 
 With medium-to-large GitHub projects, your `init` step might take a long time to complete, especially if you need to compile code. To avoid that you and your contributors wait forever, you can make Gitpod auto-build your repository on every push, and start building workspaces even before Gitpod is opened. This will shave up to several minutes off your workspace loading times, and make your developers very happy.
 
-To enable prebuilt workspaces, simply install the [Gitpod app](https://github.com/marketplace/gitpod-io) for your GitHub repository, and Gitpod will start auto-building all your branches and Pull Requests continuously in the background.
+To enable prebuilt workspaces, simply install the [Gitpod app](https://github.com/apps/gitpod-io) for your GitHub repository, and Gitpod will start auto-building all your branches and Pull Requests continuously in the background.
 
 Optionally, you can then customize the app's behavior for your project by editing your `.gitpod.yml` like so:
 
@@ -265,7 +265,7 @@ FROM gitpod/workspace-full-vnc
 
 This will give you a virtual X server and a Remote Desktop client running on port `6080`:
 
-![](https://cdn-images-1.medium.com/max/11236/1*YaZqFJXHopwW0puvvmfEew.png)
+![Virtual X server and Remote Desktop client running on port 6080](/virtual-x-sever-running-on-a-remote-desktop-client.png)
 
 This can be useful for example to run Electron apps graphically. For that, you'll just need a few extra dependencies in your `.gitpod.dockerfile`:
 

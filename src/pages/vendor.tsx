@@ -3,9 +3,9 @@ import React from 'react'
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
 import Vendor from '../resources/vendor.svg'
-import Features from '../components/Features'
-import Feature from '../components/Feature'
-import { features } from '../utils/vendor'
+import TextCards from '../components/TextCards'
+import TextCard from '../components/TextCard'
+import { textCardsData } from '../contents/vendor'
 import Quote from '../components/Quote'
 import VendorBG from '../resources/vendor-bg.png'
 import Bg from '../components/Bg'
@@ -13,51 +13,42 @@ import ActionCard from '../components/ActionCard'
 import PricingTable from '../components/PricingTable'
 import PopOver from '../components/PopOver'
 import Circle from '../components/Circle'
-import Layer from '../resources/layer.svg'
+import Bitbucket from '../resources/bitbucket.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
 import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 
-const VendorPage: React.SFC<{}> = () => (
+const VendorPage: React.SFC<{}> = ({data}: any) => (
     <IndexLayout canonical='/vendor/' title="Vendor">
-        <div className="grey-container">
-
-            {/* ----- Banner ----- */}
 
             <Banner
                 subtitle="Gitpod Vendor"
                 title={<h1>Use <strong>Gitpod as a Showroom</strong> for<br /> Your Developer Products</h1>}
                 linkPath="/vendor/#vendor"
                 linkText="Choose your Solution"
-                img={<object tabIndex={-1} data={Vendor}/>}
+                img={<Img fluid={data.file.childImageSharp.fluid} alt="Vendor"/>}
             />
 
-            {/* ----- Section Features ----- */}
-
-            <Features title="Highlight Your Developer Products">
+            <div className="grey-container">
+            <TextCards title="Highlight Your Developer Products">
                 {
-                    features.map((f, i) => (
-                        <Feature
+                    textCardsData.map((f, i) => (
+                        <TextCard
                             key={i}
                             title={f.title}
                             paragraphs={f.paragraphs}
                         />
                     ))
                 }
-            </Features>
+            </TextCards>
         </div>
-
-        {/* ----- Quote ----- */}
 
         <Quote
             title="We’ll make your developer products shine."
         />
 
-        {/* ----- BG ----- */}
-
-        <Bg url={VendorBG} />
-
-        {/* ----- Pricing Table ----- */}
+        <Bg url={VendorBG} alt="A large hall with paintings embeded on it's walls." />
 
         <PricingTable
             title="Gitpod Vendor Pricing"
@@ -140,7 +131,7 @@ const VendorPage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Layer} alt="Layer Logo"/> Bitbucket</th>
+                    <th><img src={Bitbucket} alt="Bitbucket Logo"/> Bitbucket</th>
                     <td>Soon</td>
                     <td>Soon</td>
                     <td>Soon</td>
@@ -160,21 +151,31 @@ const VendorPage: React.SFC<{}> = () => (
                 <tr className="buttons">
                     <th></th>
                     <td><Link to="/#get-started" className="btn btn--cta">Start for Free</Link></td>
-                    <td><Link to="/contact/" state={{ subject: "I'm interested in Gitpod Vendor" }} className="btn btn--cta">Contact Sales</Link></td>
+                    <td><Link to="/contact/" state={{ subject: "Question about Gitpod Vendor" }} className="btn btn--cta">Contact Sales</Link></td>
                     <td><Link to="/self-hosted/" className="btn">Host Yourself</Link></td>
                 </tr>
             </tbody>
         </PricingTable>
 
-        {/* ----- Didn't find ----- */}
-
         <ActionCard
             title='Didn’t find what you’re looking for?'
             text='Please get in touch. We’re happy to answer your questions.'
-            anchors={[{href: 'https://calendly.com/gitpod/sales',text: 'Schedule a Call'}, {href: '/contact/', subject: "I have a question regarding Gitpod Vendor", text: 'Contact'}]}
+            anchors={[{href: 'https://calendly.com/gitpod/sales',text: 'Schedule a Call'}, {href: '/contact/', subject: "Question about Gitpod Vendor", text: 'Contact'}]}
         />
 
     </IndexLayout>
 )
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "vendor.png" }) {
+        childImageSharp {
+            fluid(quality: 100, maxWidth: 1980) {
+                ...GatsbyImageSharpFluid
+            }
+        }
+    }
+  }
+`
 
 export default VendorPage

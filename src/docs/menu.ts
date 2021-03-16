@@ -1,3 +1,4 @@
+// This file is used to define entries in the side menu
 
 export interface MenuEntry {
     title: string;
@@ -18,11 +19,13 @@ export const MENU: MenuEntry[] = [
     ),
     M(
         "Getting Started",
-        "getting-started"
-    ),
-    M(
-        "Browser Extension",
-        "browser-extension"
+        "getting-started",
+        [
+            M(
+                "Example Projects",
+                "examples"
+            ),
+        ],
     ),
     M(
         "Workspaces",
@@ -47,7 +50,7 @@ export const MENU: MenuEntry[] = [
         ]
     ),
     M(
-        "Configure Your Repository",
+        "Configure Your Project",
         "configuration",
         [
             M(
@@ -55,12 +58,8 @@ export const MENU: MenuEntry[] = [
                 "config-gitpod-file"
             ),
             M(
-                "Docker Image",
+                "Docker Configuration",
                 "config-docker"
-            ),
-            M(
-                "Exposing Ports",
-                "config-ports"
             ),
             M(
                 "Start Tasks",
@@ -71,8 +70,8 @@ export const MENU: MenuEntry[] = [
                 "vscode-extensions"
             ),
             M(
-                "Workspace Location",
-                "checkout-location"
+                "Exposing Ports",
+                "config-ports"
             ),
             M(
                 "Prebuilt Workspaces",
@@ -81,7 +80,87 @@ export const MENU: MenuEntry[] = [
             M(
                 "Environment Variables",
                 "environment-variables"
-            )
+            ),
+            M(
+                "Workspace Location",
+                "checkout-location"
+            ),
+            M(
+                "Editor Configuration",
+                "config-editor"
+            ),
+        ]
+    ),
+    M(
+        "Integrations",
+        "integrations",
+        [
+            M(
+                "GitLab Integration",
+                "gitlab-integration"
+            ),
+            M(
+                "GitHub Integration",
+                "github-integration"
+            ),
+            M(
+                "Bitbucket Integration",
+                "bitbucket-integration"
+            ),
+            M(
+                "Browser Extension",
+                "browser-extension"
+            ),
+        ]
+    ),
+    M(
+        "Feature Preview",
+        "feature-preview",
+    ),
+    M(
+        "Gitpod Self-Hosted",
+        "self-hosted/latest/self-hosted",
+        [
+            M(
+                "Install on Google Cloud Platform",
+                "self-hosted/latest/install/install-on-gcp-script"
+            ),
+            M(
+                "Install on Amazon Web Services",
+                "self-hosted/latest/install/install-on-aws-script"
+            ),
+            M(
+                "Install on self-managed Kubernetes",
+                "self-hosted/latest/install/install-on-kubernetes"
+            ),
+            M(
+                "Configure Ingress",
+                "self-hosted/latest/install/configure-ingress"
+            ),
+            M(
+                "Configure OAuth",
+                "self-hosted/latest/install/oauth"
+            ),
+            M(
+                "Configure a Database",
+                "self-hosted/latest/install/database"
+            ),
+            M(
+                "Configure a Docker Registry",
+                "self-hosted/latest/install/docker-registry"
+            ),
+            M(
+                "Configure Storage",
+                "self-hosted/latest/install/storage"
+            ),
+            M(
+                "Configure Nodes",
+                "self-hosted/latest/install/nodes"
+            ),
+            M(
+                "Configure Workspaces",
+                "self-hosted/latest/install/workspaces"
+            ),
         ]
     ),
     M(
@@ -89,57 +168,95 @@ export const MENU: MenuEntry[] = [
         "languages-and-frameworks",
         [
             M(
+                "JavaScript",
+                "languages/javascript"
+            ),
+            M(
                 "Python",
-                "python-in-gitpod"
+                "languages/python"
             ),
             M(
                 "HTML/CSS",
-                "html-in-gitpod"
+                "languages/html"
             ),
             M(
                 "Java",
-                "java-in-gitpod"
+                "languages/java"
             ),
             M(
                 "C++",
-                "cpp-in-gitpod"
+                "languages/cpp"
             ),
             M(
                 "Go",
-                "go-in-gitpod"
+                "languages/go"
             ),
             M(
                 "Bash",
-                "bash-in-gitpod"
+                "languages/bash"
             ),
             M(
                 "Ruby",
-                "ruby-in-gitpod"
+                "languages/ruby"
             ),
             M(
                 "PHP",
-                "php-in-gitpod"
+                "languages/php"
             ),
             M(
-                "Vue.js",
-                "vue-in-gitpod"
+                "Vue",
+                "languages/vue"
+            ),
+            M(
+                "Svelte",
+                "languages/svelte"
+            ),
+            M(
+                "Scala",
+                "languages/scala"
             ),
             M(
                 "Rust",
-                "rust-in-gitpod"
+                "languages/rust"
+            ),
+            M(
+                ".NET",
+                "languages/dotnet"
+
+            ),
+            M(
+                "Dart",
+                "languages/dart"
             ),
             M(
                 "Julia",
-                "julia-in-gitpod"
+                "languages/julia"
+            ),
+            M(
+                "LaTeX",
+                "languages/latex"
             ),
             M(
                 "R",
-                "r-in-gitpod"
+                "languages/r"
+            ),
+            M(
+                "Kotlin",
+                "languages/kotlin"
+            ),
+            M(
+                "Pandas",
+                "languages/python/#pandas"
+            ),
+            M(
+                "Deno",
+                "languages/deno"
             ),
             M(
                 "Elm",
-                "elm-in-gitpod"
-            )
+                "languages/elm"
+            ),
+
         ]
     ),
     M(
@@ -159,6 +276,10 @@ export const MENU: MenuEntry[] = [
                 "search"
             ),
             M(
+                "Fork a Repository",
+                "fork-a-repo"
+            ),
+            M(
                 "Pull Requests",
                 "pull-requests"
             ),
@@ -175,25 +296,16 @@ export const MENU: MenuEntry[] = [
             M(
                 "Professional Open Source",
                 "professional-open-source"
+            ),
+            M(
+                "Create a Team",
+                "teams"
             )
         ]
     ),
     M(
-        "Gitpod Self-Hosted",
-        "self-hosted/latest/self-hosted",
-        [
-            M(
-                "Prerequisites",
-                "self-hosted/latest/install/prepare-installation/"
-            ),M(
-                "Install on Vanilla Kubernetes",
-                "self-hosted/latest/install/install-on-kubernetes/"
-            ),
-            M(
-                "Install on Google Cloud Platform",
-                "self-hosted/latest/install/install-on-gcp-script/"
-            )
-        ]
+        "Changelog",
+        "changelog",
     ),
     // M(
     //     "Release Notes",
@@ -215,28 +327,28 @@ export const MENU: MenuEntry[] = [
     // )
 ];
 
-interface MenuContext {
-  prev?: MenuEntry;
-  thisEntry?: MenuEntry;
-  next?: MenuEntry;
+export interface MenuContext {
+    prev?: MenuEntry;
+    thisEntry?: MenuEntry;
+    next?: MenuEntry;
 }
 
 export function getMenuContext(slug: string, menu: MenuEntry[] = MENU, context: MenuContext = {}): MenuContext {
-  for (const e of menu) {
-    if (context.next) {
-      return context;
+    for (const e of menu) {
+        if (context.next) {
+            return context;
+        }
+        if (context.thisEntry) {
+            context.next = e;
+            return context;
+        } else if (e.path === slug) {
+            context.thisEntry = e;
+        } else {
+            context.prev = e;
+        }
+        if (e.subMenu) {
+            getMenuContext(slug, e.subMenu, context);
+        }
     }
-    if (context.thisEntry) {
-      context.next = e;
-      return context;
-    } else if (e.path === slug) {
-      context.thisEntry = e;
-    } else {
-      context.prev = e;
-    }
-    if (e.subMenu) {
-      getMenuContext(slug, e.subMenu, context);
-    }
-  }
-  return context;
+    return context;
 }

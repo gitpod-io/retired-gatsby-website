@@ -133,8 +133,9 @@ For example, here is a Dockerfile that allows developing native UI applications 
 
 ```sh
 FROM gitpod/workspace-full-vnc
-RUN apt-get update \
-    && apt-get install -y libgtk-3-dev
+RUN sudo apt-get update && \
+    sudo apt-get install -y libgtk-3-dev && \
+    sudo rm -rf /var/lib/apt/lists/*
 ```
 
 Since we launched this feature, the performance and logging for docker builds have also been improved significantly.

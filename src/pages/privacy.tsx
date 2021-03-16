@@ -4,9 +4,8 @@ import TextBox from '../components/TextBox'
 
 const PrivacyPage: React.SFC<{}> = () => (
     <IndexLayout canonical="/privacy/" title="Privacy">
-        <div className="grey-container">
             <TextBox>
-               <h1>Privacy Policy</h1>
+                <h1>Privacy Policy</h1>
 
                 <p>
                     Below we provide you with an overview of what data we collect for what purpose and how we ensure the protection of
@@ -14,15 +13,15 @@ const PrivacyPage: React.SFC<{}> = () => (
                 </p>
 
                 <p>
-                    The controller is TypeFox GmbH, Am Germaniahafen 1, 24143 Kiel/Germany, registered with the commercial register of
-                    the local court (Amtsgericht) Kiel under HRB 17385, represented by the managing directors Sven Efftinge, Moritz Eysholdt,
+                    The controller is Gitpod GmbH, Am Germaniahafen 1, 24143 Kiel/Germany, registered with the commercial register of
+                    the local court (Amtsgericht) Kiel under HRB 22228, represented by the managing directors Sven Efftinge, Moritz Eysholdt,
 				    Dr. Jan K&ouml;hnlein (<strong>"we/us/our"</strong> or <strong>"Gitpod"</strong>). We offer services to our users and
 				    visitors (the <strong>"User/you/your"</strong>) on our website <a href="/">https://gitpod.io</a>
                     (<strong>"Website"</strong>) as well as related services including the use of our service according to our <a href="/terms/">terms of service</a>
                     (jointly the <strong>"Service"</strong>).
                 </p>
                 <p>
-                    For any questions about data protection you may contact us via <a href="mailto:data@typefox.io">data@typefox.io</a>.
+                    For any questions about data protection you may contact us via <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
                 </p>
 
                 <h2 id="short">In Short</h2>
@@ -32,11 +31,11 @@ const PrivacyPage: React.SFC<{}> = () => (
                         <td>Controller</td>
                         <td>
                             <p>
-                                TypeFox GmbH<br /> Am Germaniahafen 1, 24143 Kiel/Germany<br /> registered with the commercial register of the local
-							court <em>(Amtsgericht)</em> Kiel under HRB 17385<br /> represented by the managing directors Sven Efftinge, Moritz
-							Eysholdt, Dr. Jan K&ouml;hnlein <br /> Phone: +49-431-99026870<br /> Email: contact@typefox.io
+                                Gitpod GmbH<br /> Am Germaniahafen 1, 24143 Kiel/Germany<br /> registered with the commercial register of the local
+							court <em>(Amtsgericht)</em> Kiel under HRB 22228<br /> represented by the managing directors Sven Efftinge, Moritz
+							Eysholdt, Dr. Jan K&ouml;hnlein <br /> Email: contact@gitpod.io
 						</p>
-                            <p>We have appointed a data protection officer who may be contacted via <a href="mailto:data@typefox.io">data@typefox.io</a>.</p>
+                            <p>We have appointed a data protection officer who may be contacted via <a href="mailto:data@gitpod.io">data@gitpod.io</a>.</p>
                             <p>This privacy policy also contains further data controllers.</p>
                         </td>
                     </tr>
@@ -58,7 +57,7 @@ const PrivacyPage: React.SFC<{}> = () => (
                                 Council of 27 April 2016, repealing the directive 95/46/EC, on the protection of individuals with regard to the processing
                                 of personal data, on the free movement of such data ("General Data Protection Regulation", GDPR) as well as in the
 							Federal Data Protection Act <em>(Bundesdatenschutzgesetz, BDSG)</em> and the German Telemedia Act <em>(Telemediengesetz,
-                                                      TMG)
+                                                          TMG)
 							</em>.</p>
                             <p>We as well as our external service partners receive your data for processing those for the purpose of providing
                                 our Service. You provide data if this is necessary for the aforementioned purposes. In the event you refrain from
@@ -249,13 +248,13 @@ const PrivacyPage: React.SFC<{}> = () => (
                 <p>
                     We use Google Analytics a web analytics tool offered by Google (inter alia Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland
             and Google LLC, Mountain View, CA, USA (<strong>"Google"</strong>).
-                      This analysis service uses so-called "cookies". For analysis, text files will be stored on your device. The information
-                      stored in the corresponding files about the use of this website are generally transmitted and stored in Google server
-                      in the USA. As the IP anonymization is active on this Website, your IP address will be shortened by Google within the
-                      member states of the European Union (EU). This information will be used to evaluate your use of the services offered
-                      here and enable the operator of this website to analyze your website activity and provide other services associated with
-                      the website service. The IP address transmitted from your browser, as part of Google Analytics will not be merged with
-                      other data from Google.
+                              This analysis service uses so-called "cookies". For analysis, text files will be stored on your device. The information
+                              stored in the corresponding files about the use of this website are generally transmitted and stored in Google server
+                              in the USA. As the IP anonymization is active on this Website, your IP address will be shortened by Google within the
+                              member states of the European Union (EU). This information will be used to evaluate your use of the services offered
+                              here and enable the operator of this website to analyze your website activity and provide other services associated with
+                              the website service. The IP address transmitted from your browser, as part of Google Analytics will not be merged with
+                              other data from Google.
 			        </p>
 
                 <p>
@@ -406,14 +405,14 @@ const PrivacyPage: React.SFC<{}> = () => (
                     We use the information and data collected in the Service, including your personal data, in order to fulfill our contractual
                     obligations for you/our customers based on the legal basis of Art. 6 (1) b. GDPR or TMG and as further set forth in this
 				privacy policy or our <a href="/terms/">terms of service</a>. This also includes sending
-                                      you emails and notifications necessary for the Service.
+                                          you emails and notifications necessary for the Service.
 			        </p>
 
                 <p>
                     In the event we process personal data controlled by the customer as data processor we will offer and enter into a respective
                     separate data processing agreement with such customer whereas such data processing agreement may be requested via email
                     to
-				<a href="mailto:data@typefox.io">data@typefox.io</a>.
+				<a href="mailto:data@gitpod.io">data@gitpod.io</a>.
 			        </p>
 
                 <p>
@@ -529,13 +528,15 @@ https://spectrum.chat/privacy.html</li>
                     Transfer of Data to Third Parties
 			</h3>
                 <p>
-                    We will transfer your personal data to a third party only within the scope of legal provisions, i.e. if we are obliged to
-                    transfer the data due to a government or court order, or, if applicable, legal provisions authorize the transfer or if
-                    you give your explicit consent.
+                    We will transfer your personal data to a third party only (i) within the scope of legal provisions,
+                    i.e. if we are obliged to transfer the data due to a government or court order, or, (ii) if applicable,
+                    legal provisions authorize the transfer, e.g. if the transfer is required to pursue our legitimate
+                    interests or to fulfil a contract, for example in case of mergers and acquisitions, (iii) or if you
+                    give your explicit consent.
 			</p>
 
                 <p>
-                    For more information please refer to this privacy policy or contact us via <a href="mailto:data@typefox.io">data@typefox.io</a>.
+                    For more information please refer to this privacy policy or contact us via <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
 			</p>
 
                 <h3>
@@ -618,7 +619,7 @@ further information please refer to <a href="#details-V">section V.</a>.
                 </ul>
 
                 <p>
-                    If you wish to make use of your rights mentioned above please send an email to <a href="mailto:data@typefox.io">data@typefox.io</a>.
+                    If you wish to make use of your rights mentioned above please send an email to <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
 			</p>
 
                 <p>
@@ -695,11 +696,10 @@ further information please refer to <a href="#details-V">section V.</a>.
                     Contact Details
 			</h3>
                 <p>
-                    For any inquiries and additional questions about processing personal data please contact <a href="mailto:data@typefox.io">data@typefox.io</a>.
+                    For any inquiries and additional questions about processing personal data please contact <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
 				Further details may be found here: <a href="/imprint/">https://gitpod.io/imprint/</a>
                 </p>
             </TextBox>
-        </div>
     </IndexLayout>
 )
 

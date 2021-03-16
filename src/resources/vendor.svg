@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="508.902" height="508.902" viewBox="0 0 508.902 508.902">
-  <defs>
-    <pattern id="pattern" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" width="434" height="396.222" viewBox="120 30 434 376">
-        <image xlink:href="https://www.gitpod.io/galaxy.jpg" width="600"  height="450"/>
-    </pattern>
-  </defs>
-  <g transform="matrix(1, 0, 0, 1, 0, 0)">
-    <path id="andy-holmes-rCbdp8VCYhQ-unsplash-2" data-name="andy-holmes-rCbdp8VCYhQ-unsplash" d="M332.474,94.993a47.626,47.626,0,1,0-33.1-13.513l-37.475,65.569a69.719,69.719,0,0,0-73.358,15.128L91.383,89.317a48.393,48.393,0,1,0-14.391,18.9l97.415,73.073a66.948,66.948,0,0,0-4.583,53.671L67.92,289.751a47.236,47.236,0,1,0,19.212,16.624l93.4-50.227a69.988,69.988,0,0,0,89.6,20.566l23.2,28.9a48.819,48.819,0,1,0,18.025-15.484l-22.181-27.643a70.463,70.463,0,0,0-6.7-103.566L320.077,93.14A46.425,46.425,0,0,0,332.474,94.993Z" transform="translate(9 142.17) rotate(-21)" fill="url(#pattern)"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="508.902" height="508.902" viewBox="0 0 508.902 508.902"><defs><pattern id="pattern" width="434" height="396.222" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMin slice" viewBox="120 30 434 376"><image width="600" height="450" xlink:href="https://www.gitpod.io/galaxy.jpg"/></pattern></defs><g transform="matrix(1, 0, 0, 1, 0, 0)"><path id="andy-holmes-rCbdp8VCYhQ-unsplash-2" fill="url(#pattern)" d="M332.474,94.993a47.626,47.626,0,1,0-33.1-13.513l-37.475,65.569a69.719,69.719,0,0,0-73.358,15.128L91.383,89.317a48.393,48.393,0,1,0-14.391,18.9l97.415,73.073a66.948,66.948,0,0,0-4.583,53.671L67.92,289.751a47.236,47.236,0,1,0,19.212,16.624l93.4-50.227a69.988,69.988,0,0,0,89.6,20.566l23.2,28.9a48.819,48.819,0,1,0,18.025-15.484l-22.181-27.643a70.463,70.463,0,0,0-6.7-103.566L320.077,93.14A46.425,46.425,0,0,0,332.474,94.993Z" data-name="andy-holmes-rCbdp8VCYhQ-unsplash" transform="translate(9 142.17) rotate(-21)"/></g></svg>

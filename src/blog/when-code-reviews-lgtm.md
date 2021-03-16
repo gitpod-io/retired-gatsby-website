@@ -3,7 +3,7 @@ url: https://hackernoon.com/when-code-reviews-lgtm-say-goodbye-to-shallow-review
 date: Thu Dec 20 2018 21:51:05 GMT+0000 (UTC)
 title: When code reviews LGTM
 subtitle: Say goodbye to shallow reviews!
-image: https://cdn-images-1.medium.com/max/13440/0*mNLW_yw55sVQgN36
+image: /when-code-reviews-lgtm.jpeg
 teaserImage: https://cdn-images-1.medium.com/max/13440/0*mNLW_yw55sVQgN36
 author: svenefftinge
 ---
@@ -44,11 +44,11 @@ I feel your pain, but you should not take that shortcut. It will fire back event
 
 When you start a Gitpod workspace from a pull request, it will automatically open with the list of changes on the left. You can now use either the cursor keys or the mouse to go through the changes one by one.
 
-![](https://cdn-images-1.medium.com/max/2880/1*JXfHOvLeHj-RyczGleIpZg.gif)
+![Gitpod Diff Editor](https://cdn-images-1.medium.com/max/2880/1*JXfHOvLeHj-RyczGleIpZg.gif)
 
 The opened diff editors are full-fledged code editors, so you can navigate to inspect references and easily check out alternative code. You can even comment right within those editors.
 
-![](https://cdn-images-1.medium.com/max/6200/1*qGnEh6LFqkiChDY9-UXk8w.png)
+![Diff Editor an example review comment](https://cdn-images-1.medium.com/max/6200/1*qGnEh6LFqkiChDY9-UXk8w.png)
 
 The build starts automatically, so you can already spot any issues coming up from there, while you are reviewing.
 
@@ -56,7 +56,7 @@ Launching the tests or even running and trying the application is something that
 
 The last thing you do is to submit your review and close the browser tab.
 
-![](https://cdn-images-1.medium.com/max/6200/1*eu_d_3DJvBOhC9rMDwjb1w.png)
+![Gitpod submit review tab](https://cdn-images-1.medium.com/max/6200/1*eu_d_3DJvBOhC9rMDwjb1w.png)
 
 ## TL;DR
 

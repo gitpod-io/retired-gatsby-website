@@ -1,31 +1,30 @@
 import React from 'react'
+
 import IndexLayout from '../layouts'
 import TextBox from '../components/TextBox'
 
 const ImprintPage: React.SFC<{}> = () => (
     <IndexLayout canonical="/imprint/" title="Imprint">
-        <div className="grey-container">
             <TextBox>
                 <h1>Imprint</h1>
-                <p>TypeFox&nbsp;GmbH
+                <p>Gitpod&nbsp;GmbH
                     <br /> Managing Directors: Sven Efftinge, Moritz Eysholdt, Dr. Jan Köhnlein
                     <br /> Am Germaniahafen 1
                     <br /> 24143 Kiel
                     <br /> Germany
                 </p>
-                <p>HRB 17385, Amtsgericht Kiel</p>
+                <p>HRB 22228, Amtsgericht Kiel</p>
                 <p>VAT-ID :&nbsp;
-                    <span>DE304247102</span>
+                    <span>DE335127327</span>
                 </p>
-                <p>Phone:&nbsp;+49-431-99026870
-                    <br /> Email: contact@typefox.io
+                <p>Email: contact@gitpod.io
                 </p>
-                <h4>Responsible for all content according to
+                <p className="h4">Responsible for all content according to
                     <b>§ 55 Rundfunkstaatsvertrag (RSTV)</b>:
-                </h4>
+                </p>
                 <p>Sven Efftinge,&nbsp;Hofteichstr.7,&nbsp;24113 Kiel</p>
-                <h2 >Disclaimer</h2>
-                <h3 >Liability for content</h3>
+                <h2>Disclaimer</h2>
+                <h3>Liability for content</h3>
                 <p>
                     As a service provider we are responsible according to § 7 paragraph 1 of TMG for own contents on these pages under the
                     general laws. According to § § 8 to 10 TMG we are not obliged as a service provider to monitor transmitted or stored
@@ -52,12 +51,10 @@ const ImprintPage: React.SFC<{}> = () => (
                 </p>
                 <h3>Settlements of Disputes</h3>
                 <p>
-                    The European Commission provides a platform for an online settlement of disputes which can be accessed under
-                    http://ec.europa.eu/consumers/odr/. Gitpod is neither obliged to take part in alternative dispute resolutions before a consumer
+                    The European Commission provides a platform for an online settlement of disputes which can be accessed under <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a>. Gitpod is neither obliged to take part in alternative dispute resolutions before a consumer
                     dispute settlement commission or will do so voluntarily.
                 </p>
             </TextBox>
-        </div>
     </IndexLayout>
 )
 

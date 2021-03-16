@@ -7,6 +7,7 @@ const StyledDescripion = styled.span`
     position: relative;
 
     button {
+        position: relative;
         display: inline-block;
         height: 1.4rem;
         width: 1.4rem;
@@ -22,70 +23,95 @@ const StyledDescripion = styled.span`
             margin-left: 1rem;
         }
 
-        @media(min-width: ${sizes.breakpoints.lg}) {
+        @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
             transform: translateX(1rem);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -25%;
+            display: block;
+            height: 3.5rem;
+            width: 3.5rem;
         }
     }
 
     .description__text {
-        padding: .2rem .5rem;
+        padding: .5rem .5rem .5rem 1.5rem;
         font-size: 1.2rem;
+        font-weight: 400;
         color: ${colors.textDark};
         background: ${colors.offWhite2};
-        z-index: 1000 !important;
+        z-index: 1000;
+        border-radius: 3px;
 
-        @media(max-width: 907px) {
+        @media(max-width: 1080px) {
             position: absolute;
             right: -5rem;
             top: 2.4rem;
             min-width: 18rem;
-            z-index: 1999999999;
+            z-index: 9999999999;
         }
 
-         @media(min-width: 907px) {
+         @media(min-width: 1081px) {
             position: absolute;
             top: 0;
             left: 3rem;
             min-width: 19rem;
         }
     }
+
+    .bottom {
+        font-weight: 400;
+        right: -10rem;
+        top: 2.4rem;
+        min-width: 18rem;
+        z-index: 9999999999;
+        transform: translateX(-16.5rem);
+
+        @media(max-width: 1081px) {
+            transform: translateX(-7.5rem);
+        }
+    }
 `
 
-class Description extends React.Component<{description: string}, {}> {
+class Description extends React.Component<{ description: string | JSX.Element; textPosition?: string }, {}> {
+  state = {
+    isRendered: false
+  }
 
-    state={
-        isRendered: false
-    }
+  handleClick = () => {
+    this.setState({ isRendered: !this.state.isRendered })
+  }
 
-    handleClick = () => {
-        this.setState({isRendered: !this.state.isRendered})
-    }
+  handleMouseEnter = () => {
+    this.setState({ isRendered: true })
+  }
 
-    handleMouseEnter = () => {
-        this.setState({isRendered: true})
-    }
+  handleMouseLeave = () => {
+    this.setState({ isRendered: false })
+  }
 
-    handleMouseLeave = () => {
-        this.setState({isRendered: false})
-    }
+  render() {
+    const { isRendered } = this.state
+    const { description } = this.props
+    const positionBottom = this.props.textPosition === 'bottom'
 
-    render() {
-        const { isRendered } = this.state
-        const { description } = this.props
-
-        return (
-            <StyledDescripion
-                className="description"
-                onMouseEnter={this.handleMouseEnter}
-                onMouseLeave={this.handleMouseLeave}
-                onFocus={this.handleMouseEnter}
-                onBlur={this.handleMouseLeave}
-            >
-                <button onClick={this.handleClick}>?</button>
-                { isRendered ? <div className="description__text">{ description }</div> : null }
-            </StyledDescripion>
-        )
-    }
+    return (
+      <StyledDescripion
+        className="description"
+        onMouseEnter={this.handleMouseEnter}
+        onMouseLeave={this.handleMouseLeave}
+        onFocus={this.handleMouseEnter}
+        onBlur={this.handleMouseLeave}
+      >
+        <button onClick={this.handleClick}>?</button>
+        {isRendered ? <div className={`${positionBottom ? 'bottom' : ''} description__text`}>{description}</div> : null}
+      </StyledDescripion>
+    )
+  }
 }
 
 export default Description

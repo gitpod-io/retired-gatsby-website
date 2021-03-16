@@ -4,8 +4,7 @@ date: Wed Nov 21 2018 13:34:27 GMT+0000 (UTC)
 author: svenefftinge
 title: Creating reproducibles for any programming language
 subtitle: Code never lies
-image: https://cdn-images-1.medium.com/max/7776/0*xIYVtetr9mExEzBd
-teaserImage: https://cdn-images-1.medium.com/max/7776/0*xIYVtetr9mExEzBd
+image: /workspace-snapshots.jpeg
 ---
 
 Whenever you want to share a reproducible example on StackOverflow or an issue report, providing real code that can be quickly tried, executed and explored is the best you can do. Online code playgrounds, such as CodePen or JSFiddle, are an excellent way to do that, as they are very accessible for both the creator and the readers. Unfortunately, they are not available for every programming platform, language and often don’t work for larger projects or examples.
@@ -55,11 +54,11 @@ In the case of this project I added a task to start the failing Java process:
 
 With the **.gitpod.yml **configured and the editors and views laid out as needed, we are ready to take a snapshot. Simply click on the avatar on the top right:
 
-![](https://cdn-images-1.medium.com/max/2212/1*nOXkwor5kPsdJb-o2oHy4w.png)
+![Gitpod menu share workspace snapshot](https://cdn-images-1.medium.com/max/2212/1*nOXkwor5kPsdJb-o2oHy4w.png)
 
 Pick “Share Workspace Snapshot” and copy and share the link or one of the snippets in the opened dialog:
 
-![](https://cdn-images-1.medium.com/max/4348/1*2aDOY4sHSyefz2uepzGskw.png)
+![Gitpod workspace snapshot prompt](https://cdn-images-1.medium.com/max/4348/1*2aDOY4sHSyefz2uepzGskw.png)
 
 Here’s the snapshot link for you to try:
 [https://gitpod.io/#snapshot/f7f5954a-250b-4113-909c-aae88b64321c](https://gitpod.io/#snapshot/f7f5954a-250b-4113-909c-aae88b64321c)

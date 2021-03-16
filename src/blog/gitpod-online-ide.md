@@ -4,7 +4,7 @@ date: Tue Jul 31 2018 06:02:26 GMT+0000 (UTC)
 author: svenefftinge
 subtitle: One Click to Coding!
 title: Gitpod — Online IDE For GitHub
-image: https://cdn-images-1.medium.com/max/6908/1*HNDYawJpDgX6gP_e0w17mg.png
+image: /gitpod-online-ide.png
 ---
 
 After over one year of intensive work, we are proud to announce the public Beta of Gitpod.
@@ -55,7 +55,7 @@ You usually never need to go back to any workspace, but of course you can in cas
 
 Gitpod gives developers full featured terminals to run any processes such as compiling, linting or simply running tests or your application. Any docker image works and you can even configure Gitpod to automatically launch certain tasks on start.
 
-![](https://cdn-images-1.medium.com/max/6796/1*K8oKjiVfaptpeI27UXPbcA.png)
+![Terminal](https://cdn-images-1.medium.com/max/6796/1*K8oKjiVfaptpeI27UXPbcA.png)
 
 ## **Open Source**
 

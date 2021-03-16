@@ -29,7 +29,7 @@ freely arranged by dragging and dropping them around.
 Within the main area, the drag-and-drop functionality allows for splitting freely as you will. Also
 widgets can be moved to the side or bottom panels.
 
-![](./images/workbench-shell.jpg)
+![Main Area and Panels](./images/workbench-shell.jpg)
 
 ## Theia vs VSCode
 

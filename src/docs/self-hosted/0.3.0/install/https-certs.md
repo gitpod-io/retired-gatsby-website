@@ -1,4 +1,8 @@
-### HTTPS certificates
+---
+url: /docs/self-hosted/0.3.0/install/https-certs/
+---
+
+# HTTPS certificates
 
 Gitpod needs HTTPS certificates, your own Docker registry, or both to function properly. If you don't have certificates, but a Docker registry available, jump to the [next step](../docker-registry/).
 
@@ -20,7 +24,7 @@ Generate the [dhparams.pem](https://security.stackexchange.com/questions/94390/w
 openssl dhparam -out secrets/https-certificates/dhparams.pem 2048
 ```
 
-#### Using Let's Encrypt
+## Using Let's Encrypt
 If you do not have HTTPS certificates for your domain already, you can generate some using [Let's Encrypt](https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7).
 Asuming you have `certbot` installed, the following script will generate and configure the required certificates (notice the placeholders):
 ```bash

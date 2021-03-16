@@ -24,6 +24,11 @@ declare module '*.jpg' {
     export = path
 }
 
+declare module '*.jpeg' {
+    const path: string;
+    export = path
+}
+
 declare module '*.png' {
     const path: string;
     export = path

@@ -44,7 +44,7 @@ const NewsletterForm: React.SFC<{}> = () => (
                     placeholder="Enter your Email"
                     className="newsletter__input"
                 />
-                <button className="btn btn--normal btn--cta">Sign Up</button>
+                <button className="btn btn--cta">Sign Up</button>
             </form>
         </StyledNewsletterForm>
     </div>

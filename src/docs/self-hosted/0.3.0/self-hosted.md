@@ -1,3 +1,8 @@
+---
+url: /docs/self-hosted/0.3.0/self-hosted/
+---
+
+
 # Gitpod Self-Hosted
 
 Gitpod, just as you know it from [gitpod.io](https://gitpod.io), can be installed and operated on your own infrastructure.

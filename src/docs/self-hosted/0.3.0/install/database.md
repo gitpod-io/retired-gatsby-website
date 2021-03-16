@@ -1,4 +1,9 @@
-#### Database
+---
+url: /docs/self-hosted/0.3.0/install/database/
+---
+
+
+# Database
 This chart installs a MySQL database which gets Gitpod up and running but is not suitable for production (the data is lost on each restart of the DB pod). To connect to a porper MySQL installation:
    - initialize your MySQL database using the SQL files in `database/`. E.g. in a mysql session connected to your database server run:
      ```

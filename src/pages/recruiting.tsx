@@ -3,9 +3,9 @@ import React from 'react'
 import IndexLayout from '../layouts'
 import Banner from '../components/Banner'
 import Recruiting from '../resources/recruiting-icon.svg'
-import Features from '../components/Features'
-import Feature from '../components/Feature'
-import { features } from '../utils/recruiting'
+import TextCards from '../components/TextCards'
+import TextCard from '../components/TextCard'
+import { textCardsData } from '../contents/recruiting'
 import Quote from '../components/Quote'
 import RecruitingBG from '../resources/recruiting-bg.png'
 import Bg from '../components/Bg'
@@ -13,51 +13,42 @@ import ActionCard from '../components/ActionCard'
 import PricingTable from '../components/PricingTable'
 import PopOver from '../components/PopOver'
 import Circle from '../components/Circle'
-import Layer from '../resources/layer.svg'
+import Bitbucket from '../resources/bitbucket.svg'
 import Github from '../resources/octicons-mark-github.svg'
 import Gitlab from '../resources/gitlab.svg'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
-const RecrutingPage: React.SFC<{}> = () => (
+const RecrutingPage: React.SFC<{}> = ({data}: any) => (
     <IndexLayout canonical='/recruiting/' title="Recruiting">
+
+        <Banner
+            subtitle="Gitpod Recruiting"
+            title={<h1>Make Sure You’re <strong>Discovering Your<br />Best Applicants</strong></h1>}
+            linkPath="/recruiting/#recruiting"
+            linkText="Choose your Solution"
+            img={<Img fluid={data.file.childImageSharp.fluid} alt="Recruiting"/>}
+        />
+
         <div className="grey-container">
-
-            {/* ----- Banner ----- */}
-
-            <Banner
-                subtitle="Gitpod Recruiting"
-                title={<h1>Make Sure You’re <strong>Discovering Your<br />Best Applicants</strong></h1>}
-                linkPath="/recruiting/#recruiting"
-                linkText="Choose your Solution"
-                img={<object tabIndex={-1} data={Recruiting}/>}
-            />
-
-            {/* ----- Section Features ----- */}
-
-            <Features title="Provide Coding Exercises Within Seconds">
+            <TextCards title="Provide Coding Exercises Within Seconds">
                 {
-                    features.map((f, i) => (
-                        <Feature
+                    textCardsData.map((f, i) => (
+                        <TextCard
                             key={i}
                             title={f.title}
                             paragraphs={f.paragraphs}
                         />
                     ))
                 }
-            </Features>
+            </TextCards>
         </div>
-
-        {/* ----- Quote ----- */}
 
         <Quote
             title="We create the most convenient dev environments."
         />
 
-        {/* ----- BG ----- */}
-
-        <Bg url={RecruitingBG} />
-
-        {/* ----- Pricing Table ----- */}
+        <Bg url={RecruitingBG} alt="A road on Mountains with trees on either side." />
 
         <PricingTable
             title="Gitpod Recruiting Pricing"
@@ -66,7 +57,7 @@ const RecrutingPage: React.SFC<{}> = () => (
         >
             <thead>
                 <tr className="header">
-                    <th style={{border: 'none', background: 'none'}}>&nbsp;</th>
+                    <th style={{ border: 'none', background: 'none' }}>&nbsp;</th>
                     <th>Gitpod.io
                         <span><span>FREE</span> Trial</span>
                     </th>
@@ -104,7 +95,7 @@ const RecrutingPage: React.SFC<{}> = () => (
                     <td>On-prem or private cloud</td>
                 </tr>
                 <tr>
-                    <th>SLA <PopOver description="Custom Service Level Agreement"/></th>
+                    <th>SLA <PopOver description="Custom Service Level Agreement" /></th>
                     <td>Optional</td>
                     <td>Optional</td>
                     <td></td>
@@ -122,31 +113,31 @@ const RecrutingPage: React.SFC<{}> = () => (
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Github} alt="GitHub Logo"/> github.com</th>
+                    <th><img src={Github} alt="GitHub Logo" /> github.com</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Github} alt="GitHub Logo"/> GitHub Enterprise</th>
+                    <th><img src={Github} alt="GitHub Logo" /> GitHub Enterprise</th>
                     <td>Public only</td>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Gitlab} alt="GitLab Logo"/> gitlab.com</th>
+                    <th><img src={Gitlab} alt="GitLab Logo" /> gitlab.com</th>
                     <td><Circle /></td>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Gitlab} alt="GitLab Logo"/> Gitlab Self-Managed</th>
+                    <th><img src={Gitlab} alt="GitLab Logo" /> Gitlab Self-Managed</th>
                     <td>Public only</td>
                     <td><Circle /></td>
                     <td><Circle /></td>
                 </tr>
                 <tr>
-                    <th><img src={Layer} alt="Layer Logo"/> Bitbucket</th>
+                    <th><img src={Bitbucket} alt="Bitbucket Logo" /> Bitbucket</th>
                     <td>Soon</td>
                     <td>Soon</td>
                     <td>Soon</td>
@@ -166,21 +157,31 @@ const RecrutingPage: React.SFC<{}> = () => (
                 <tr className="buttons">
                     <th></th>
                     <td><Link to="/#get-started" className="btn btn--cta">Start for Free</Link></td>
-                    <td><Link to="/contact/"  state={{ subject: "I'm interested in Gitpod Recruiting" }}className="btn btn--cta">Contact Sales</Link></td>
+                    <td><Link to="/contact/" state={{ subject: "Question about Gitpod Recruiting" }} className="btn btn--cta">Contact Sales</Link></td>
                     <td><Link to="/self-hosted/" className="btn">Host Yourself</Link></td>
                 </tr>
             </tbody>
         </PricingTable>
 
-        {/* ----- Didn't find ----- */}
-
         <ActionCard
             title='Didn’t find what you’re looking for?'
             text='Please get in touch. We’re happy to answer your questions.'
-            anchors={[{href: 'https://calendly.com/gitpod/sales',text: 'Schedule a Call'}, {href: '/contact/', subject: "I have a question regarding Gitpod Recruiting", text: 'Contact'}]}
+            anchors={[{ href: 'https://calendly.com/gitpod/sales', text: 'Schedule a Call' }, { href: '/contact/', subject: "Qestion about Gitpod Recruiting", text: 'Contact' }]}
         />
 
     </IndexLayout>
 )
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "recruiting.png" }) {
+        childImageSharp {
+            fluid(quality: 100, maxWidth: 1980) {
+                ...GatsbyImageSharpFluid
+            }
+        }
+    }
+  }
+`
 
 export default RecrutingPage

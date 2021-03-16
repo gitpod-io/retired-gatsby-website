@@ -4,92 +4,125 @@ import styled from '@emotion/styled'
 import { sizes } from '../styles/variables'
 
 const StyledTrustedBy = styled.section`
-    /* ------------------------------------------- */
-    /* ----- Section Trusted By ----- */
-    /* ------------------------------------------- */
+  padding: 3rem 0;
 
-    padding: 4rem 0;
-    margin-top: 2rem;
+  h3 {
+    text-align: center;
+    font-weight: 400;
+  }
 
-    @media(max-width: ${sizes.breakpoints.sm}) {
-        text-align: center;
+  h2 {
+    text-align: center;
+  }
+
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: 540px) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
 
-    h2 {
-        margin-bottom: 2rem;
+    a {
+      flex-basis: calc(14% - 2.2rem);
+      display: flex;
+      border: 2px solid transparent;
+      justify-content: center;
+      margin: 1.2rem;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .grey-logo {
+    filter: grayscale(100%) contrast(0%) brightness(116%);
+    -webkit-filter: grayscale(100%) contrast(0%) brightness(116%);
+  }
+
+  .fcc {
+    filter: grayscale(100%) contrast(0%);
+    -webkit-filter: grayscale(100%) contrast(0%);
+    width: 13rem;
+
+    @media (max-width: ${sizes.breakpoints.md}) {
+      width: 12rem;
     }
 
-    .logos {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-
-        @media(max-width: ${sizes.breakpoints.lg}) {
-            grid-template-columns: repeat(3, 1fr);
-
-            a {
-                text-align: center;
-            }
-        }
-
-        @media(max-width: ${sizes.breakpoints.md}) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @media(max-width: ${sizes.breakpoints.sm}) {
-            grid-template-columns: repeat(1, 1fr);
-        }
+    @media (max-width: ${sizes.breakpoints.md}) {
+      width: 11rem;
     }
+  }
 
-    .fcc {
-        transform: scale(1.05);
+  .dwave-logo {
+    transform: scale(1.2);
+    filter: grayscale(100%) contrast(0%) brightness(112%);
+    -webkit-filter: grayscale(100%) contrast(0%) brightness(112%);
+  }
 
-        @media(max-width: ${sizes.breakpoints.sm}) {
-            transform: scale(1.3);
-        }
-    }
+  .four-geeks {
+    transform: scale(0.9);
+  }
+
+  .gatsby-logo {
+    filter: grayscale(100%) opacity(47%);
+    -webkit-filter: grayscale(100%) opacity(47%);
+  }
+
+  .vue-logo {
+    filter: grayscale(100%) opacity(62%);
+    -webkit-filter: grayscale(100%) opacity(62%);
+  }
 `
 
-const StyledBrandImage = styled.img<{transform?: string}>`
-    height: 10rem;
-    width: 14rem;
+const StyledBrandImage = styled.img<{ transform?: string }>`
+    width: 9.5rem;
 
-    @media(min-width: ${sizes.breakpoints.lg}) {
-        transform: ${ ({transform}) => transform ? transform : 'none' };
+    @media(max-width: ${sizes.breakpoints.lg}) {
+        width: 9rem;
+    }
+
+    @media(max-width: ${sizes.breakpoints.md}) {
+        width: 7rem;
+    }
+
+    @media(min-width: calc(${sizes.breakpoints.lg} + 1px)) {
+        transform: ${({ transform }) => (transform ? transform : 'none')};
     }
 `
 
 interface Brand {
-    alt: string
-    url: string
-    svg: string
-    transform?: string,
-    className?: string 
+  alt: string
+  url: string
+  svg: string
+  transform?: string
+  className?: string
 }
 
 interface TrustedByProps {
-    brands: Brand[]
+  brands: Brand[]
+  title: string | JSX.Element
+  styles?: React.CSSProperties
 }
 
-const TrustedBy: React.SFC<TrustedByProps> = ({brands}) => (
-    <StyledTrustedBy>
-            <div className="row">
-                <h2>Trusted by</h2>
-                <div className="logos">
-                    {
-                        brands.map((b, i) => (
-                            <a href={b.url} target="_blank" key={i}>
-                                <StyledBrandImage 
-                                    src={b.svg} 
-                                    alt={b.alt} 
-                                    transform={b.transform}
-                                    className={b.className}
-                                />
-                            </a>
-                        ))
-                    }
-                </div>
-            </div>
-    </StyledTrustedBy>
+const TrustedBy = ({ brands, title, styles }: TrustedByProps) => (
+  <StyledTrustedBy style={{...styles}}>
+    <div className="row">
+      <h2 className="h3">
+        {title}
+      </h2>
+      <div className="logos">
+        {brands.map((b: Brand) => (
+          <a href={b.url} target="_blank" className="trustedBy">
+            <StyledBrandImage src={b.svg} alt={b.alt} transform={b.transform} className={b.className} />
+          </a>
+        ))}
+      </div>
+    </div>
+  </StyledTrustedBy>
 )
 
 export default TrustedBy

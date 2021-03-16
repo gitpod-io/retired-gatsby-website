@@ -1,3 +1,7 @@
+---
+url: /docs/self-hosted/0.3.0/install/docker-registry/
+---
+
 # Docker Registry
 
 Gitpod uses a Docker registry to push the workspace images it builds.
