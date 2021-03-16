@@ -3,6 +3,11 @@
   functions = "lambda"
 
 [[redirects]]
+  from = "/security"
+  to = "/.well-known/security.txt"
+  status = 302
+
+[[redirects]]
   from = "/gitpod-business.html"
   to = "/pricing/#enterprise"
   status = 301
