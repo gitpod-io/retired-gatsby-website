@@ -134,7 +134,7 @@ Refer to the links below to add your own functionalities.
 
 ## Links to Refer
 * If you would like to learn more about the actions-on-google library, you can find it here - https://www.npmjs.com/package/actions-on-google
-* Go through these examples - https://developers.google.com/actions/samples/github
+* Go through these examples - https://developers.google.com/assistant/conversational/df-asdk/samples/github
 * Rich responses example - https://github.com/actions-on-google/dialogflow-conversation-components-nodejs
 
 ## Conclusion
