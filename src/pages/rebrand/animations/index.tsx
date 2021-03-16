@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from 'react'
+import React, { useCallback, useRef, useEffect } from 'react'
 import styled from '@emotion/styled'
 import { data } from './_console-data'
 import { crelt } from './_crelt'
@@ -94,8 +94,8 @@ const StyledGitpodConsole = styled.div`
 
 const GitpodConsole: React.FunctionComponent<{ data: string }> = (props) => {
   const [wrapperRef, visible] = useIntersection({ rootMargin: '0%' })
-  const scrollContainerRef = React.useRef<HTMLDivElement>(null)
-  const bufferRef = React.useRef<HTMLSpanElement>(null)
+  const scrollContainerRef = useRef<HTMLDivElement>(null)
+  const bufferRef = useRef<HTMLSpanElement>(null)
 
   const shouldAutoScrollRef = useRef(true)
 
@@ -103,7 +103,7 @@ const GitpodConsole: React.FunctionComponent<{ data: string }> = (props) => {
     shouldAutoScrollRef.current = false
   }, [])
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!visible) {
       return
     }
@@ -162,6 +162,10 @@ const GitpodConsole: React.FunctionComponent<{ data: string }> = (props) => {
         let index = 0
 
         function next() {
+          if (unmounted) {
+            return
+          }
+
           $command.textContent = command.slice(0, index++)
 
           if (index >= command.length) {
