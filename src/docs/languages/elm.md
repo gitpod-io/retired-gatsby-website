@@ -40,7 +40,7 @@ Here are a few Elm example projects that are already automated with Gitpod:
 
 ### Elm
 
-![Demo of the Elm extension](images/ElmExtensionDemo.png)
+![Demo of the Elm extension](../images/ElmExtensionDemo.png)
 
 This extension adds many features:
 
