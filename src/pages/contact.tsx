@@ -179,10 +179,10 @@ export default function ContactPage(props: any) {
                                 name="Contact"
                                 onSubmit={handleSubmit}
                             >
-                                <input 
-                                    type="hidden" 
-                                    name="form-name" 
-                                    value="contact" 
+                                <input
+                                    type="hidden"
+                                    name="form-name"
+                                    value="contact"
                                 />
                                 <div style={{ visibility: 'hidden' }}>
                                     <label>
