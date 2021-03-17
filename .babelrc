@@ -8,11 +8,20 @@
           "node": "6.10.3"
         }
       }
+    ],
+    [
+      "babel-preset-gatsby",
+      {
+        "targets": {
+          "browsers": [">0.25%", "not dead"]
+        }
+      }
     ]
   ],
   "plugins": [
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-transform-object-assign",
-    "@babel/plugin-proposal-object-rest-spread"
+    "@babel/plugin-proposal-object-rest-spread",
+    "babel-plugin-macros"
   ]
 }
