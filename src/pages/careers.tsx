@@ -511,7 +511,7 @@ export const jobs: ExpandableJobProps[] = [
                 title: 'Our stack:',
                 items: [
                     'Figma. You will built with Figma, using components and variants to keep all our design documents in sync and consistent. ',
-                    'JS/TS for the web. We use Gatsby for our website and deploy it with Netlify.',
+                    'JS/TS for the web. We use Svelte for our website and deploy it with Netlify.',
                     'Browser-based productivity tools for the rest. Gitpod for development, GitHub for issue tracking and as git hoster, Slack for comms, Notion as our virtual HQ, Pitch for slides, Loom for screencasts and a few others.'
                 ]
             },
