@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.28",
-    "@emotion/styled": "^10.0.27",
+    "@emotion/styled": "^11.1.5",
     "@sendgrid/mail": "^7.2.6",
     "babel-plugin-styled-components": "^1.10.7",
     "bowser": "^2.9.0",
@@ -35,7 +35,7 @@
     "gatsby-plugin-algolia-docsearch": "^1.0.5",
     "gatsby-plugin-canonical-urls": "^2.3.2",
     "gatsby-plugin-catch-links": "^2.3.3",
-    "gatsby-plugin-emotion": "^4.3.2",
+    "gatsby-plugin-emotion": "^6.1.0",
     "gatsby-plugin-exclude": "^1.0.2",
     "gatsby-plugin-feed": "^2.5.3",
     "gatsby-plugin-google-analytics": "^2.3.2",
@@ -68,6 +68,7 @@
     "typescript": "^3.9.3"
   },
   "devDependencies": {
+    "@emotion/react": "^11.1.5",
     "@types/aws-lambda": "^8.10.63",
     "@types/classnames": "^2.2.10",
     "@types/node": "^14.0.6",
@@ -79,9 +80,11 @@
     "netlify-lambda": "^2.0.1",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
+    "tailwindcss": "^2.0.3",
     "tslint": "^6.1.2",
     "tslint-config-blvd": "^1.2.1",
     "tslint-config-prettier": "^1.18.0",
-    "tslint-plugin-prettier": "^2.3.0"
+    "tslint-plugin-prettier": "^2.3.0",
+    "twin.macro": "^2.3.0"
   }
 }
