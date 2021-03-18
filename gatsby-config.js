@@ -59,7 +59,7 @@ module.exports = {
             }
           },
           'gatsby-remark-prismjs',
-          'gatsby-remark-gitpod',
+        //   'gatsby-remark-gitpod',
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {

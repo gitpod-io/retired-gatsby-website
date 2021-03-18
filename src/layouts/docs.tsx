@@ -3,9 +3,6 @@ import React from 'react'
 import IndexLayout from './index'
 import styled from '@emotion/styled'
 import { colors, sizes } from '../styles/variables'
-import DocSideBar from '../components/docs/DocSideBar'
-import DocTopicChooser from '../components/docs/DocTopicChooser'
-import BackToTopButton from '../components/BackToTopButton'
 
 const StyledDocsLayout = styled.div`
     .content {
@@ -134,18 +131,14 @@ interface DocsLayoutProps {
     body: JSX.Element
 }
 
-const DocsLayout: React.SFC<DocsLayoutProps> = ({ canonical, title, body}) => (
+const DocsLayout: React.SFC<DocsLayoutProps> = ({ canonical, title, body }) => (
     <IndexLayout canonical={canonical} title={title} description="Explore the documentation to learn more about Gitpod.io and Gitpod Self-Hosted.">
         <StyledDocsLayout>
-                <div className="row">
-                    <div className="content">
-                        <DocSideBar />
-                        <DocTopicChooser />
-                        {body}
-                    </div>
+            <div className="row">
+                <div className="content">
+                    {body}
                 </div>
-            <BackToTopButton />
-
+            </div>
         </StyledDocsLayout>
     </IndexLayout>
 )

@@ -4,9 +4,6 @@ import { graphql } from 'gatsby'
 import { getMenuContext } from '../docs/menu'
 import { colors } from '../styles/variables'
 import DocsLayout from '../layouts/docs'
-import ReachOut from '../components/docs/ReachOut'
-import EditInGitpod from '../components/docs/EditInGitpod'
-import NavigationArrows from '../components/docs/NavigationArrows'
 
 interface DocTemplateProps {
     data: {
@@ -46,11 +43,8 @@ const DocTemplate: React.SFC<DocTemplateProps> = ({ data }) => {
                     <div className="article">
                         <div className="article__header">
                             <p style={{ color: colors.textLight, marginBottom: 0, marginTop: 15, fontWeight: 600 }}>Docs</p>
-                            <EditInGitpod editUrl={editUrl}/>
                         </div>
                         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-                        <NavigationArrows menuCtx={menuCtx} />
-                        <ReachOut />
                     </div>
                 }
             >

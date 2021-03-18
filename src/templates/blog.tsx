@@ -3,14 +3,10 @@ import styled from '@emotion/styled'
 import { graphql } from 'gatsby'
 
 import IndexLayout from '../layouts'
-import PostBanner from '../components/blog/PostBanner'
 import { Helmet } from 'react-helmet'
 import { parseAuthors } from '../contents/authors'
 import { colors, shadows, sizes, borders } from '../styles/variables'
 // import NewsletterForm from '../components/NewsletterForm'
-import BackToTopButton from '../components/BackToTopButton'
-import MorePosts from '../components/blog/MorePosts'
-import SharePost from '../components/blog/SharePost'
 
 interface BlogTemplateProps {
   data: {
@@ -205,65 +201,15 @@ const BlogTemplate: React.SFC<BlogTemplateProps> = ({ data }) => {
       <Wrapper>
         <div className="pattern" style={{ marginBottom: '10rem' }}>
           <StyledBlogTemplate>
-            <PostBanner
-              teaserImage={
-                data.markdownRemark.frontmatter.teaserImage
-                  ? data.markdownRemark.frontmatter.teaserImage
-                  : data.markdownRemark.frontmatter.image
-              }
-              title={title}
-              subtitle={data.markdownRemark.frontmatter.subtitle}
-              date={
-                <span>
-                  {new Date(Date.parse(data.markdownRemark.frontmatter.date)).toLocaleDateString('en-GB', {
-                    weekday: 'long',
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric'
-                  })}
-                </span>
-              }
-              author={
-                <span>
-                  By{' '}
-                  {authors.map((author, idx) => (
-                    <React.Fragment>
-                      <a href={`https://github.com/${author.socialProfiles.github}`} target="_blank">
-                        {author.name}
-                      </a>
-                      {idx < authors.length - 1 ? ', ' : ''}
-                    </React.Fragment>
-                  ))}
-                </span>
-              }
-              shareButtons={
-                <SharePost
-                    title={title}
-                    authors={authors}
-                    url={`https://www.gitpod.io${data.markdownRemark.fields.slug}`}
-                    dontRenderHeading={true}
-                />
-              }
-            />
             <div className="contents">
               <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
             </div>
 
-            <SharePost
-                title={title}
-                authors={authors}
-                url={`https://www.gitpod.io${data.markdownRemark.fields.slug}`}
-            />
-
           </StyledBlogTemplate>
         </div>
       </Wrapper>
-
-      <MorePosts posts={posts} />
-
       {/* <NewsletterForm /> */}
 
-      <BackToTopButton />
     </IndexLayout>
   )
 }
