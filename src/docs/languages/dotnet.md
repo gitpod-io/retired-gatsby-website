@@ -40,19 +40,26 @@ Alternatively, you can also run your application in so-called watch-mode. In suc
 
 ## Useful VSCode Extensions
 
-### <p>The C# Extension</p>
+### <p>C#</p>
+
+The official C# extension from Microsoft [is proprietary](https://aka.ms/VSCode-DotNet-DbgLicense
+) and unfortunately cannot be used. The MIT licensed [muhammad-sammy.csharp](https://open-vsx.org/extension/muhammad-sammy/csharp) extension from Samsung brings code completion, snippets, auto-formatting, peek definition, refactoring, hover documentation and breakpoint debugging for C# however!
 
 ![C# Extension Demo](../images/CSharpDemo.png)
 
-This extension brings code completion, snippets, auto-formatting, peek definition, refactoring, and hover documentation for C#!
 
-To install this extension for your repository, open the **Extensions** panel in Gitpod (left vertical IDE menu), then search for "csharp" and install it "for this project". Next, commit the [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) file that was automatically created (or updated) by Gitpod.
+To add this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
 
-### Ionide-fsharp
+```yaml
+vscode:
+  extensions:
+    - muhammad-sammy.csharp
+```
 
-![Ionide fsharp Example](../images/Iondine_Example.png)
 
-[Ionide-fsharp](https://ionide.io/) gives F# developers the following features:
+### <p>F#</p>
+
+The [Ionide-fsharp](https://ionide.io/) extensin gives F# developers the following features:
 
 * A Widget for your F# needs
 * Auto completion
@@ -61,6 +68,8 @@ To install this extension for your repository, open the **Extensions** panel in 
 * Goto definition
 * Peek definition
 * And more...
+
+![Ionide fsharp Example](../images/Iondine_Example.png)
 
 To add this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
 
