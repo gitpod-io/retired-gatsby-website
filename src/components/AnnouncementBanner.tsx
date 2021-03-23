@@ -48,7 +48,7 @@ const StyledAnnouncementBanner = styled(Link)`
     padding: 1rem 0;
     font-weight: 600;
     text-align: center;
-    font-size: 90%; 
+    font-size: 90%;
 
     @media(max-width: 320px) {
         padding: .8rem;

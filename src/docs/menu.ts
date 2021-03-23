@@ -256,6 +256,11 @@ export const MENU: MenuEntry[] = [
                 "Deno",
                 "languages/deno"
             ),
+            M(
+                "Elm",
+                "languages/elm"
+            ),
+
         ]
     ),
     M(
