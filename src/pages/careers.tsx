@@ -118,6 +118,63 @@ const features: FeatureItemProps[] = [
 
 export const jobs: ExpandableJobProps[] = [
     {
+        title: 'Senior Developer Success Engineer',
+        intro: `You are a "jack of all trades, master of some" software engineer, a marketer and a public speaker or accomplished technical writer. We are in the early stages of hiring the team so there's loads of room for you to add your own unique twist, find your passion, help define and execute Gitpod's growth strategies.`,
+        paragraphs: `
+        
+        As a small team, we favour cross-discipline generalists and lean towards people with polyglot technical backgrounds as the role involves working in many different technology ecosystems and demonstrating how to make that technology work on Gitpod. Outstanding communication skills are much more important than polyglot knowledge, however. We have found that some knowledge of bash scripting and how to build a Docker container based on instructions in a projects CONTRIBUTING.md is the happy path that will enable learning new ecosystems on the job.
+
+        We are a highly-motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others.
+        
+        We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community and are not sure if you should apply, please get in touch.
+        `,
+        lists: [
+            {
+                title: 'As part of the team you will ...',
+                items: [
+                    'Work with the community and in the open. Our DNA is deeply rooted in open source and we are building Gitpod in public. We expect the same from you.',
+                    'Co-own the product and work self-directed. We work with a very flat hierarchy, organizing our tasks with a lot of freedom. As a member of the team you\'re encouraged to advocate for or implement the changes you know that need to be done to resolve customer pain-points.',
+                    'Help define and execute Gitpod\'s growth strategy. We are in the early stages of hiring the team so there\'s loads of room for you to add your own unique twist and find your passion.',
+                    'Gitpodify all the things. Use your knowledge of bash scripting and building Docker containers to introduce other developers to Gitpod. https://www.gitpod.io/blog/gitpodify/',
+                    'Author technical documentation, examples, articles and tutorials. Gitpod is not as widely adopted and used by development teams around the world as we\'d like it to be and there\'s a difference between how devs perceive the value of Gitpod and what we internally think Gitpod\'s value actually is.']
+            },
+            {
+                title: 'You will be a great fit if ...',
+                items: [
+                    'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don`t dictate.',
+                    'You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.',
+                    'You have been an open-source maintainer or can empathise.  Maintainers are the unseen labor behind the digital infrastructure that powers the world. We seek people with empathy that understand the unique challenges and pressures that being an open-source maintainer entails.',
+                    'You have pre-existing knowledge of Go and TypeScript. As a member of the team you\'re encouraged to implement the changes you know that need to be done to resolve customer pain-points. Golang and TypeScript are the core technologies in our development stack.',
+                    'You enjoy working across different technology stacks and ecosystems. During an average week may find yourself hopping between between Golang, Rust, Typescript, Python, Erlang, JavaScript, Infrastructure as Code or open-source education ecosystems. As long as you have knowledge of bash scripting and how to build a Docker container based on instructions in a projects CONTRIBUTING.md then you can learn new ecosystems on the job.',
+                    'You are a good communicator. We work remote, our users are remote too. You value writing and express yourself concisely. You may hold strong opinions, but you are not ideological. You communicate thoughtfully, always assume others speak in good faith, aim to understand opposing perspectives and compromise when needed.',
+                ]
+            },
+            {
+                title: 'Our stack:',
+                items: [
+                    'Gitpod is a distributed application running on Kubernetes. Services are written in Go and TypeScript (Node.JS), while all things frontend are React and TypeScript. We communicate using gRPC, RabbitMQ and JSON-RPC. We develop Gitpod in Gitpod, build using leeway and werft and automatically deploy preview environments for every branch.',
+                    'Browser-based productivity tools for the rest. Gitpod for development, GitHub for issue tracking and as git hoster, Slack for comms, Figma for design, Notion as our virtual HQ, Pitch for slides, Loom for screencasts and a few others.'
+                ]
+            },
+            {
+                title: 'We care about you',
+                items: [
+                    'Work and life',
+                    '6 weeks paid time off',
+                    'Fully-remote environment & flexible working hours',
+                    'Competitive salary and equity package',
+                    'Monthly physical health stipend for your local gym, home-gym equipment or Freeletics',
+                    'Monthly mental health stipend to support your 🧘‍♀️',
+                    'Blinkist, The Atlantic account and other educational budget',
+                    'Premium work-from-home equipment (Macbook Pro, standing desk, monitor, webcam, mic)',
+                ]
+            },
+        ],
+        textAfterTheLists: '',
+        rendered: false,
+        date: '2021-03-20T14:00:00.000Z'
+    },
+    {
         title: 'Software Engineer',
         intro: `You are just starting out as a software engineer, and are super motivated and curious. This might be for you.`,
         paragraphs: `We are a highly motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. In this fashion, we present at international conferences and collaborate openly around the globe.
