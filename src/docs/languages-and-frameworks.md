@@ -22,4 +22,5 @@ Below is a list of language and framework specific tips & tricks.
 - [Kotlin](/docs/languages/kotlin)
 - [Pandas](/docs/languages/python/#pandas)
 - [Deno](/docs/languages/deno)
+- [Flutter](/docs/languages/dart#flutter)
 - [Elm](/docs/languages/elm)
