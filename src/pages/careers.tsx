@@ -641,7 +641,7 @@ const Careers = ({data}: any) => (
                 <div className="pattern-bg">
                     <div className="row">
                         <div className="no-fit">
-                            <p>If no current Job offer fits your qualifications, but you're totally in love with Gitpod and want to help us improving it, please send your application at <a href="mailto:career@gitpod.io">career@gitpod.io</a> anyway.</p>
+                            <p>If no current job offer fits your qualifications, but you're totally in love with Gitpod and want to help us improving it, please send your application at <a href="mailto:career@gitpod.io">career@gitpod.io</a> anyway.</p>
                             <p><strong>We're curious to hear about you.</strong></p>
                         </div>
                     </div>
