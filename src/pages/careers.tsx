@@ -130,7 +130,7 @@ export const jobs: ExpandableJobProps[] = [
         `,
         lists: [
             {
-                title: 'As part of the team you will ...',
+                title: 'As part of the team you will...',
                 items: [
                     'Work with the community and in the open. Our DNA is deeply rooted in open source and we are building Gitpod in public. We expect the same from you.',
                     'Co-own the product and work self-directed. We work with a very flat hierarchy, organizing our tasks with a lot of freedom. As a member of the team you\'re encouraged to advocate for or implement the changes you know that need to be done to resolve customer pain-points.',
@@ -139,9 +139,9 @@ export const jobs: ExpandableJobProps[] = [
                     'Author technical documentation, examples, articles and tutorials. Gitpod is not as widely adopted and used by development teams around the world as we\'d like it to be and there\'s a difference between how devs perceive the value of Gitpod and what we internally think Gitpod\'s value actually is.']
             },
             {
-                title: 'You will be a great fit if ...',
+                title: 'You will be a great fit if...',
                 items: [
-                    'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don`t dictate.',
+                    'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don\'t dictate.',
                     'You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.',
                     'You have been an open-source maintainer or can empathise.  Maintainers are the unseen labor behind the digital infrastructure that powers the world. We seek people with empathy that understand the unique challenges and pressures that being an open-source maintainer entails.',
                     'You have pre-existing knowledge of Go and TypeScript. As a member of the team you\'re encouraged to implement the changes you know that need to be done to resolve customer pain-points. Golang and TypeScript are the core technologies in our development stack.',
@@ -181,7 +181,7 @@ export const jobs: ExpandableJobProps[] = [
         We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
         lists: [
             {
-                title: 'As part of the team you will ...',
+                title: 'As part of the team you will...',
                 items: [
                     'Directly impact users. Gitpod has little fat to trim and changes directly affect users. We always have our users in mind and focus on making Gitpod work for them, not some abstract potential future requirement.',
                     'Be a "jack of all trades, master of some". As a small team we favour generalists. You might work on React code, or dive into the backend. There is loads of room to find your passion and see everything that makes the platform tick.',
@@ -190,9 +190,9 @@ export const jobs: ExpandableJobProps[] = [
                     'Work with the community and in the open. Our DNA is deeply rooted in open source and we are building Gitpod in public. We expect the same from you.']
             },
             {
-                title: 'You will be a great fit if ...',
+                title: 'You will be a great fit if...',
                 items: [
-                    'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don`t dictate.',
+                    'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don\'t dictate.',
                     'You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.',
                     'You enjoy working across the front- and backend. We hardly ever have a task that is clear cut along fontend/backend lines. If React is your thing, you should feel comfortable enough to have a look at the server. If Kubernetes is your thing, you should still feel comfortable enough to make that change on the dashboard. You do not think "not my department", but welcome the opportunity to venture out of your comfort zone.',
                     'You have experience shipping code in production. Your code is mostly ready for prime time, and you know how to test it. You understand the difference between "making something work" and "making something work reliably". You have read other people`s code, know how to make yourself at home and understand that code is read way more often than it`s written. You understand that every new dependency comes at a cost, as do lines of code.',
@@ -232,7 +232,7 @@ export const jobs: ExpandableJobProps[] = [
         We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
         lists: [
             {
-                title: 'As part of the team you will ...',
+                title: 'As part of the team you will...',
                 items: [
                     'Directly impact users. Gitpod has little fat to trim and changes directly affect users. We always have our users in mind and focus on making Gitpod work for them, not some abstract potential future requirement.',
                     'Be a "jack of all trades, master of some". As a small team we favour generalists. You might work on React code, dive deeply into Kubernetes or read the Linux sources. There is loads of room to find your passion and see everything that makes the platform tick.',
@@ -241,13 +241,13 @@ export const jobs: ExpandableJobProps[] = [
                     'Work with the community and in the open. Our DNA is deeply rooted in open source and we are building Gitpod in public. We expect the same from you.']
             },
             {
-                title: 'You will be a great fit if ...',
+                title: 'You will be a great fit if...',
                 items: [
-                    'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don`t dictate.',
+                    'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don\'t dictate.',
                     'You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.',
                     'You enjoy working across the front- and backend. We hardly ever have a task that is clear cut along fontend/backend lines. If React is your thing, you should feel comfortable enough to have a look at the server. If Kubernetes is your thing, you should still feel comfortable enough to make that change on the dashboard. You do not think "not my department", but welcome the opportunity to venture out of your comfort zone.',
-                    'You enjoy building distributed systems. That means understanding their idiosyncrasies, and wallowing in the fact that anyone elses computer can break yours. You don`t blindly follow trends, but have a keen eye for stable and pragmatic solutions. You have developed and interacted with distributed systems in the real world, have seen them fail and fixed them.',
-                    'You have experience shipping code in production. Your code is ready for prime time, and you don`t expect others to test it thoroughly for you. You understand the difference between "making something work" and "making something work reliably". You have read other people`s code, know how to make yourself at home and understand that code is read way more often than it`s written. You understand that every new dependency comes at a cost, as do lines of code.',
+                    'You enjoy building distributed systems. That means understanding their idiosyncrasies, and wallowing in the fact that anyone elses computer can break yours. You don\'t blindly follow trends, but have a keen eye for stable and pragmatic solutions. You have developed and interacted with distributed systems in the real world, have seen them fail and fixed them.',
+                    'You have experience shipping code in production. Your code is ready for prime time, and you don\'t expect others to test it thoroughly for you. You understand the difference between "making something work" and "making something work reliably". You have read other people`s code, know how to make yourself at home and understand that code is read way more often than it`s written. You understand that every new dependency comes at a cost, as do lines of code.',
                     'You are product minded. You enjoy using what you`ve helped build, and still pay attention to things that feel off. You can empathize with other users and understand how they might see things differently, or that messaging that`s completely clear to you might be unintelligible to others. You are eager to understand why things are not working for others and quickly act when unexpected things happen.',
                     'You are a good communicator. We work remote, our users are remote too. You value writing and express yourself concisely. You may hold strong opinions, but you are not ideological. You communicate thoughtfully, always assume others speak in good faith, aim to understand opposing perspectives and compromise when needed.',
                 ]
@@ -284,7 +284,7 @@ export const jobs: ExpandableJobProps[] = [
         We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
         lists: [
             {
-                title: 'As part of the team you will ...',
+                title: 'As part of the team you will...',
                 items: [
                     'Directly impact users. Gitpod has little fat to trim and changes directly affect users. We always have our users in mind and focus on making Gitpod work for them, not some abstract potential future requirement.',
                     'Be a "jack of all trades, master of some". As a small team we favour generalists. You might work on React code, dive deeply into Kubernetes or read the Linux sources. There is loads of room to find your passion and see everything that makes the platform tick.',
@@ -293,13 +293,13 @@ export const jobs: ExpandableJobProps[] = [
                     'Work with the community and in the open. Our DNA is deeply rooted in open source and we are building Gitpod in public. We expect the same from you.']
             },
             {
-                title: 'You will be a great fit if ...',
+                title: 'You will be a great fit if...',
                 items: [
-                    'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don`t dictate.',
+                    'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don\'t dictate.',
                     'You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.',
                     'You work on the intersection between Kubernetes and Linux. You understand deeply how containers are built, and how the OCI/CNCF landscape works. You have seen the nitty gritty of Kubernetes, interacted with it\'s API (e.g. written a controller), and are aware of some of its idiosyncrasies. You have some understanding of the Kubernetes integrations, e.g. CRI, CSI or CNI. You don\'t mind reading into the Linux, Kubernetes or runc source code and may have done that in the past.',
-                    'You enjoy building distributed systems. That means understanding their idiosyncrasies, and wallowing in the fact that anyone elses computer can break yours. You don`t blindly follow trends, but have a keen eye for stable and pragmatic solutions. You have developed and interacted with distributed systems in the real world, have seen them fail and fixed them.',
-                    'You have experience shipping code in production. Your code is ready for prime time, and you don`t expect others to test it thoroughly for you. You understand the difference between "making something work" and "making something work reliably". You have read other people`s code, know how to make yourself at home and understand that code is read way more often than it`s written. You understand that every new dependency comes at a cost, as do lines of code.',
+                    'You enjoy building distributed systems. That means understanding their idiosyncrasies, and wallowing in the fact that anyone elses computer can break yours. You don\'t blindly follow trends, but have a keen eye for stable and pragmatic solutions. You have developed and interacted with distributed systems in the real world, have seen them fail and fixed them.',
+                    'You have experience shipping code in production. Your code is ready for prime time, and you don\'t expect others to test it thoroughly for you. You understand the difference between "making something work" and "making something work reliably". You have read other people`s code, know how to make yourself at home and understand that code is read way more often than it`s written. You understand that every new dependency comes at a cost, as do lines of code.',
                     'You are product minded. You enjoy using what you`ve helped build, and still pay attention to things that feel off. You can empathize with other users and understand how they might see things differently, or that messaging that`s completely clear to you might be unintelligible to others. You are eager to understand why things are not working for others and quickly act when unexpected things happen.',
                     'You are a good communicator. We work remote, our users are remote too. You value writing and express yourself concisely. You may hold strong opinions, but you are not ideological. You communicate thoughtfully, always assume others speak in good faith, aim to understand opposing perspectives and compromise when needed.',
                 ]
@@ -336,7 +336,7 @@ export const jobs: ExpandableJobProps[] = [
         We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
         lists: [
             {
-                title: 'As part of the team you will ...',
+                title: 'As part of the team you will...',
                 items: [
                     'Build global cloud-native infrastructure. We run dev environments (Kubernetes Pods) in clusters around the globe. You will help expand this infrastructure on GCP and other cloud providers to maximise resilience and global coverage. Describing the infrastructure-as-code helps us to keep it reproducible.',
                     'Make Gitpod easier to install on more platforms. We want our users to be able to easily self-host Gitpod on almost any Kubernetes. You will help to improve and expand the infrastructure-as-code that can be used to install Gitpod. This reaches from improving the Helm chart and Terraform scripts that we have today to introducing new ways of installing Gitpod.',
@@ -344,7 +344,7 @@ export const jobs: ExpandableJobProps[] = [
                     'Work with the community and in the open. Our DNA is deeply rooted in open source and we are building Gitpod in public. We expect the same from you.']
             },
             {
-                title: 'You will be a great fit if ...',
+                title: 'You will be a great fit if...',
                 items: [
                     'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don\'t dictate.',
                     'You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.',
@@ -387,7 +387,7 @@ export const jobs: ExpandableJobProps[] = [
         paragraphs:`We are a highly-motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
         lists: [
             {
-                title: 'As part of the team you will ...',
+                title: 'As part of the team you will...',
                 items: [
                     'Create observability for our global infrastructure. We run dev environments (Kubernetes Pods) in Kubernetes clusters around the globe. You will improve and enhance our systems for collecting, storing and visualizing observability data, such as logs, metrics, alerts, traces and profiling data. We heavily build on pre-existing solutions, such as Grafana, Prometheus, and the cloud platforms native solutions.',
                     'Make Gitpod more observable. You will identify the best metrics endpoints Gitpod should expose and implement them or help colleagues to implement them. Same goes for proper tracing and logging.  ',
@@ -395,7 +395,7 @@ export const jobs: ExpandableJobProps[] = [
                     'Work with the community and in the open. Our DNA is deeply rooted in open source and we are building Gitpod in public. We expect the same from you.']
             },
             {
-                title: 'You will be a great fit if ...',
+                title: 'You will be a great fit if...',
                 items: [
                     'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don\'t dictate.',
                     'You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.',
@@ -439,7 +439,7 @@ export const jobs: ExpandableJobProps[] = [
         We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
         lists: [
             {
-                title: 'As part of the team you will ...',
+                title: 'As part of the team you will...',
                 items: [
                     'Create Kubernetes Clusters. You will use the latest and greatest Linux kernels, containerd and K8s versions. You will automate the process of creating the cluster and ensure that it is perfectly suited to run Gitpod`s dev environments. The clusters will run on a public cloud.',
                     'Help Gitpod being a good K8s app. You know the best practices for running an app in Kubernetes and you will help to implement these best practices in Gitpod or help the team to follow the best practices. Resilience during incidents and deployment as well as security are of particular interest.',
@@ -447,7 +447,7 @@ export const jobs: ExpandableJobProps[] = [
                     'Work with the community and in the open. Our DNA is deeply rooted in open source and we are building Gitpod in public. We expect the same from you.']
             },
             {
-                title: 'You will be a great fit if ...',
+                title: 'You will be a great fit if...',
                 items: [
                     'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don\'t dictate.',
                     'You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.',
@@ -490,7 +490,7 @@ export const jobs: ExpandableJobProps[] = [
         paragraphs:`We are a highly-motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others. We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
         lists: [
             {
-                title: 'As part of the team you will ...',
+                title: 'As part of the team you will...',
                 items: [
                     'Make gitpod more reliable. You apply best practices and lessons-learned from incidents to prevent future incidents. you implement the changes or work with colleagues and other teams to get the needed changes implemented.',
                     'Conduct Root-Cause analysis of incidents. Post-Incident, you dive deep to understand what caused the incident and apply your knowledge to make gitpod.io more reliable.',
@@ -500,7 +500,7 @@ export const jobs: ExpandableJobProps[] = [
                     'Work with the community and in the open. Our DNA is deeply rooted in open source and we are building Gitpod in public. We expect the same from you.']
             },
             {
-                title: 'You will be a great fit if ...',
+                title: 'You will be a great fit if...',
                 items: [
                     'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don\'t dictate.',
                     'You care for our mission. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.',
@@ -544,7 +544,7 @@ export const jobs: ExpandableJobProps[] = [
         We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community, and are not sure if you should apply, please get in touch.`,
         lists: [
             {
-                title: 'As part of the team you will ...',
+                title: 'As part of the team you will...',
                 items: [
                     'Build a brand around developer experience. Enhance our brand identity and establish a visual language to embody the tone of a product that delights developers.',
                     'Produce clear guidelines and art direction. Work on producing designs and commissioning illustrations that shape Gitpod`s identity both on the website and product.',
@@ -554,14 +554,14 @@ export const jobs: ExpandableJobProps[] = [
                     'Work with the community and in the open. Our DNA is deeply rooted in open source and we are building Gitpod in public. We expect the same from you.']
             },
             {
-                title: 'You will be a great fit if ...',
+                title: 'You will be a great fit if...',
                 items: [
-                    'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don`t dictate.',
+                    'You share our values. We are developer-led and aim for a frictionless experience when interacting with our product, our company and our brand: no hurdles, no BS, no unnecessary extra steps. We are open minded, inclusive, transparent and curious. We always remain students of the game, not masters of the game. We have opinions, but are not opinionated. We integrate, don\'t dictate.',
                     'You love creating meaningful products. Developers architect our future. Gitpod democratises software development by making it more accessible to all developers.  Ready-to-code, cloud-based development environments streamline how software is written today.',
                     'You have built design systems and designed interactive applications. We expect a broad set of design skills. As you will be in charge of setting the standard, we are looking for humans who have worked in cross-functional product teams and created interactive products and applications.',
                     'You`re highly productive while designing best-in class UI. You are entrepreneurial and break down big projects in small deliverables and move fast based on user feedback. You prefer simple solutions and know when to improve something.',
                     'You have empathy for developers. Gitpod is developed by developers for developers. Preferably, you designed developer tools before and feel familiar with their workflows.',
-                    'You like to establish a brand and culture. Gitpod isn`t just some tool. We want to build a brand around developer experience and productivity that developers fall in love with. We are also human beings and want to create a long-lasting empathetic and diverse culture that stands for something good.',
+                    'You like to establish a brand and culture. Gitpod isn\'t just some tool. We want to build a brand around developer experience and productivity that developers fall in love with. We are also human beings and want to create a long-lasting empathetic and diverse culture that stands for something good.',
                 ]
             },
             {
