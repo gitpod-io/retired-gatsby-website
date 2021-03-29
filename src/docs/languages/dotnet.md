@@ -1,5 +1,46 @@
 # .NET in Gitpod
 
+It's easy to set up your .NET project in Gitpod.
+
+## .NET Versions
+
+To get all the .NET tools that you need pre-installed in your Gitpod workspaces choose the appropriate base image for your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
+
+### Current
+
+For the latest .NET SDK and Runtime:
+
+
+```YAML
+image: gitpod/workspace-dotnet
+```
+
+If your project requires a GUI or Virtual Desktop:
+
+```YAML
+image: gitpod/workspace-dotnet-vnc
+```
+
+This will give you a full GUI Virtual Desktop running on port `6080` for your .NET application.
+
+
+### Long Term Support (LTS)
+
+For the latest .NET SDK and Runtime with [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core):
+
+```YAML
+image: gitpod/workspace-dotnet-lts
+```
+
+If your project requires a GUI or Virtual Desktop:
+
+```YAML
+image: gitpod/workspace-dotnet-lts-vnc
+```
+
+This will give you a full GUI Virtual Desktop running on port `6080` for your .NET application.
+
+
 ## Example Repositories
 
 
@@ -12,19 +53,6 @@
 |[uno.quickstart](https://github.com/unoplatform/uno.quickstart)|An Uno "Hello world!" project using Windows UWP, iOS, Android and WebAssembly|[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno.quickstart)|
 
 </div>
-
-## Installing the .NET Tools
-
-To get all the .NET tools that you need pre-installed in your Gitpod workspaces, use the following base image in your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
-```YAML
-image: gitpod/workspace-dotnet
-```
-
-If your project requires a GUI or Virtual Desktop, please use this image instead:
-```YAML
-image: gitpod/workspace-dotnet-vnc
-```
-This will give you a full GUI Virtual Desktop for your .NET application! The Virtual Desktop will be running on port `6080`.
 
 ## Compiling .NET Code in Gitpod
 
