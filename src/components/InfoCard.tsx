@@ -71,8 +71,8 @@ const InfoCard: React.SFC<{}> = () => (
                 <Link to="/docs/" className="btn">Gitpod Docs</Link>
             </div>
             <div className="info">
-                <h2 className="h3">Do You Need Help?</h2>
-                <p>If you have any question, issue or feedback, please get in touch. We love to hear your feedback and help you out.</p>
+                <h2 className="h3">Need help?</h2>
+                <p>If you have any questions, issues or feedback, please get in touch. We love to hear your feedback and help you out.</p>
                 <Link to="/contact/" title="Contact">
                     <img alt="Mail Logo" src={Mail} />
                 </Link>
