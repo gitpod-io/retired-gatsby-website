@@ -121,11 +121,11 @@ export const jobs: ExpandableJobProps[] = [
         title: 'Senior Developer Success Engineer',
         intro: `You are a "jack of all trades, master of some" software engineer, a marketer and a public speaker or accomplished technical writer. We are in the early stages of hiring the team so there's loads of room for you to add your own unique twist, find your passion, help define and execute Gitpod's growth strategies.`,
         paragraphs: `
-        
+
         As a small team, we favour cross-discipline generalists and lean towards people with polyglot technical backgrounds as the role involves working in many different technology ecosystems and demonstrating how to make that technology work on Gitpod. Outstanding communication skills are much more important than polyglot knowledge, however. We have found that some knowledge of bash scripting and how to build a Docker container based on instructions in a projects CONTRIBUTING.md is the happy path that will enable learning new ecosystems on the job.
 
         We are a highly-motivated, fully-remote team, organized in a flat hierarchy, and led by technical founders. We love open-source, have started and lead many popular open-source projects, and contribute to many others.
-        
+
         We celebrate diversity and strive for an equal, inclusive, empathetic and welcoming environment. Bringing diversity to the team is a big plus. If you are part of a marginalised community and are not sure if you should apply, please get in touch.
         `,
         lists: [
