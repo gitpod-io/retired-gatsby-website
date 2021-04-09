@@ -13,7 +13,7 @@ Gitpod also provides more optimized installations offering better performance fo
 
 ## Prerequisites
 
-- A Kubernetes Cluster in Version 1.13 or newer.
+- A Kubernetes Cluster in Version 1.13 or newer. See [additional Kubernetes configurations](../additional-kubernetes-configs/) for vendor-specific implementations.
 - [Domain](../domain)
 - [HTTPS Certificates](../https-certs): Optional, if you use an external docker registry.
 - `kubectl` with access to that cluster.
