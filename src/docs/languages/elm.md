@@ -32,7 +32,7 @@ Here are a few Elm example projects that are already automated with Gitpod:
 
 | Repository | Description | Try It |
 |------------|--------------|--------|
-|[elm-spa-example](https://github.com/svenefftinge/elm-spa-example) | A Single Page Application written in Elm | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/svenefftinge/elm-spa-example) 
+|[elm-spa-example](https://github.com/svenefftinge/elm-spa-example) | A Single Page Application written in Elm | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/svenefftinge/elm-spa-example)
 
 </div>
 
