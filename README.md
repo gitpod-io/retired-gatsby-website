@@ -1,4 +1,8 @@
-# Gitpod Website
+# Gitpod Website (archived)
+
+> As of April 8, 2021 the Gitpd website source code is available in the [website-kumquat](https://github.com/gitpod-io/website-kumquat) repository.
+> 
+> Please refer to the [Next Chapter for Gitpod](https://www.gitpod.io/blog/next-chapter-for-gitpod) blog post to read more about funding, brand, and product updates.
 
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/gitpod-io/website)
 [![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
