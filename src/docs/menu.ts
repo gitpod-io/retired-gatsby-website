@@ -161,6 +161,10 @@ export const MENU: MenuEntry[] = [
                 "Configure Workspaces",
                 "self-hosted/latest/install/workspaces"
             ),
+            M(
+                "Upgrade Notes",
+                "self-hosted/latest/install/upgrade"
+            ),
         ]
     ),
     M(
