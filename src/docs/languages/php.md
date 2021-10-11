@@ -15,6 +15,11 @@ Gitpod supports PHP right out of the box, but more advanced features such as deb
 
 </div>
 
+## VSCode Extensions
+
+- Symfony for VSCode (by TheNouillet)
+- Symfony code snippets (by Nadim Al Abdou)
+
 ## Debugging PHP in Gitpod
 
 ![PHP debugging example](../images/phpDebug.gif)
