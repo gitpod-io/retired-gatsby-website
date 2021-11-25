@@ -67,6 +67,36 @@ const StyledGitpodVsGitHubCodespacesPage = styled.div`
   .glance {
     text-align: center;
   }
+
+  .comparison-table {
+      &__wrap {
+
+      }
+
+      &__row {
+        display: grid;
+        grid-template-columns: 33.33333% auto;
+        grid-column-gap: 4rem;
+
+        .h3 {
+            margin-bottom: 0;
+        }
+      }
+
+      &__field-name {
+          font-weight: 600;
+      }
+
+      &__field-value {
+          background: ${colors.offWhite};  
+
+          &-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 4rem;
+          }
+      }
+  }
 `
 
 const GitpodVsGitHubCodespacesPage = () => (
@@ -94,9 +124,52 @@ const GitpodVsGitHubCodespacesPage = () => (
 
       <section className="glance">
         <div className="row">
+
+          <div className="comparison-table">
+              <h2><strong>Gitpod vs GitHub Codespaces at a Glance</strong></h2>
+
+              <div className="comparison-table__wrap">
+                  <div className="comparison-table__row">
+                      <div className="comparison-table__field-name"></div>
+                      <div className="comparison-table__field-value-wrapper">
+                        <h2 className="comparison-table__field-value h3">
+                          Gitpod
+                        </h2>
+                        <h2 className="comparison-table__field-value h3">
+                          GitHub Codespaces
+                        </h2>
+                      </div>
+                  </div>
+
+                  <div className="comparison-table__row">
+                      <div className="comparison-table__field-name">Pricing (Hosted)</div>
+                      <div className="comparison-table__field-value-wrapper">
+                        <div className="comparison-table__field-value">
+                          Free for Open-Source
+                        </div>
+                        <div className="comparison-table__field-value">
+                          <QuestionMark />
+                        </div>
+                      </div>
+                  </div>
+
+                  <div className="comparison-table__row">
+                      <div className="comparison-table__field-name">License</div>
+                      <div className="comparison-table__field-value-wrapper">
+                        <div className="comparison-table__field-value">
+                          Open-Source
+                        </div>
+                        <div className="comparison-table__field-value">
+                          Proprietary
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
           <PricingTable
-            title={<strong>Gitpod vs GitHub Codespaces at a Glance</strong>}
-            styles={{ minWidth: '800px', borderCollapse: 'separate', borderSpacing: '2rem 0', margin: '0 auto', tableLayout: 'fixed' }}
+            // title={<strong>Gitpod vs GitHub Codespaces at a Glance</strong>}
+            styles={{ minWidth: '800px', borderCollapse: 'separate', borderSpacing: '2rem 0', margin: '0 auto', tableLayout: 'fixed', display: 'none' }}
             containerMaxWidthLarge={true}
             disableMarginBottom={true}
           >
