@@ -237,6 +237,10 @@ export const MENU: MenuEntry[] = [
                 "languages/julia"
             ),
             M(
+                "Firebase",
+                "frameworks/firebase"
+            ),
+            M(
                 "LaTeX",
                 "languages/latex"
             ),
