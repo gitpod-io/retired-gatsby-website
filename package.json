@@ -8,7 +8,7 @@
   ],
   "main": "n/a",
   "scripts": {
-    "build": "cp -r src/docs/release-notes/* static/release-notes/ && gatsby build && npx netlify-lambda build src/functions",
+    "build": "cp -r src/docs/release-notes/* static/release-notes/ && gatsby build && yarn netlify-lambda build src/functions",
     "clean": "rimraf public",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "dev": "env-cmd -f .env.development gatsby develop",
