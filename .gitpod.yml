@@ -3,8 +3,8 @@ ports:
     onOpen: open-preview
 
 tasks:
-  - init: cd plugins/gatsby-remark-gitpod && npm install
-  - init: yarn --network-timeout 100000 && yarn build
+  - init: cd plugins/gatsby-remark-gitpod && npm install --ignore-scripts
+  - init: yarn --network-timeout 100000 --ignore-scripts && yarn build
     command: yarn dev --host 0.0.0.0
 
 vscode:
